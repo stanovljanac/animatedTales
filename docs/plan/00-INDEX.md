@@ -47,6 +47,7 @@ Ovo su činjenice zatečene na disku koje izvorni plan nije imao. Svaka je upisa
 1. **`ffprobe` ne postoji.** `imageio_ffmpeg` isporučuje isključivo
    `C:\Python311\Lib\site-packages\imageio_ffmpeg\binaries\ffmpeg-win-x86_64-v7.1.exe`.
    Na PATH-u nema ni `ffmpeg` ni `ffprobe`. `probe()` mora da parsira stderr od `ffmpeg -i`. → **C04**
+   — *zatvoreno: `tools/ffmpeg.mjs`, verifikacija V1 prolazi.*
 2. **`storyboard.json` shema nije nigde specificirana**, a konzumiraju je `lint`, `render`, `shotlist`,
    `assemble` i oba skila. Postaje eksplicitan artefakt (`docs/reference/schemas.md`). → **C01**
 3. **Nema git repozitorijuma**, a folder je 1.7 GB (uglavnom mp4). `git init` + `.gitignore` koji
@@ -58,6 +59,7 @@ Ovo su činjenice zatečene na disku koje izvorni plan nije imao. Svaka je upisa
 6. **Algoritam sečenja beata ima nepokrivenu ivicu:** beat od npr. 30.5s sa svega 2 rečenice
    (14s + 16.5s) ne može da poštuje i „max 10s po shotu" i „rez pada na granicu rečenice".
    Ponašanje mora biti definisano. → **C04**
+   — *zatvoreno: četiri nivoa kandidata za rez + upozorenja, `docs/reference/schemas.md` §5.3.*
 7. **R4 (n-gram ponavljanje) sudara se sa C1 (doslovno kopiranje `locked_description`).**
    C1 *zahteva* identičan blok od 25–40 reči u svakom shotu; R4 kažnjava >12 identičnih reči.
    R4 mora da izuzme `locked_description` i kanonski style string. → **C07**
@@ -91,6 +93,6 @@ jedna epizoda ne prođe ceo lanac od `narration.mp3` do `final.mp4`.
 
 Svaka celina ima kućicu ovde. Ažurira se na kraju sesije.
 
-- [x] C01  - [x] C02  - [x] C03  - [ ] C04  - [ ] C05
+- [x] C01  - [x] C02  - [x] C03  - [x] C04  - [ ] C05
 - [ ] C06  - [ ] C07  - [ ] C08  - [ ] C09  - [ ] C10
 - [ ] C11  - [ ] C12  - [ ] C13  - [ ] C14  - [ ] C15

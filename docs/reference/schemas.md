@@ -552,8 +552,63 @@ dostupna kao podaci.
   ako se doda polje, raste `schema_version`.
 - **Konvencija ofseta nule u narraciji** (`0.025057s`) — **C05** i **C09**. Shema traži samo da
   ista konvencija važi u oba alata.
-- **Ivica algoritma sečenja beata** — beat od 30.5s sa dve rečenice (14s + 16.5s) ne može istovremeno
-  da poštuje „max 10s po shotu" i „rez pada na granicu rečenice". Shema takav storyboard odbija
-  (invarijanta 9), pa **C04** mora da definiše ponašanje splittera pre nego što se na to naiđe.
+- ~~**Ivica algoritma sečenja beata**~~ — **zatvoreno u C04**, vidi 5.3.
 - **Katalog uređaja (3.6) i lista blokova u S2** dupliraju sadržaj koji je izvor istine u
   `docs/reference/` (C02). Kad se tamo promene, menjaju se i ovde.
+
+### 5.3 Odluke donete u C04 (obavezujuće) — ponašanje splittera
+
+Izvor istine je `tools/timeline.mjs`; ovde stoji ono što ostatak lanca sme da pretpostavi.
+
+**1. Gde tačno pada rez između dve rečenice.** Rez je uvek `start` **sledeće** rečenice, nikad
+`end` prethodne. Pauza između dve rečenice time pripada shotu koji se završava, a novi shot
+počinje tačno na prvoj reči. Razlog je invarijanta 5 (granice su vrednosti prepisane iz
+`timing.json` neizmenjene — `start` sledeće rečenice to jeste, sredina pauze nije) i invarijanta 7
+(tajmlajn bez rupa, pa pauza mora nekom da pripadne).
+
+**2. Beatovi popločavaju tajmlajn.** Ista konvencija važi i na granici beatova:
+`beat.end` je `start` prve rečenice **sledećeg** beata, a poslednji beat se završava na `end`
+svoje poslednje rečenice. Prvi beat počinje na `0.0`, ne na `sentences[0].start` — narracija
+epizode *night-when-rome-almost-fell* počinje na `0.025057s`, a tajmlajn mora da krene od nule;
+ta tišina se pripaja prvom shotu. (Da li se ofset oduzima pri lepljenju audia i dalje je odluka
+C05/C09 — ovde se samo ne pravi rupa.)
+
+**3. Izbor broja shotova.** Umesto petlje `n = ceil(D/9)` pa „smanji n ako je grupa < 3.0s",
+splitter rešava jednu optimizaciju nad podelama na granicama rečenica:
+
+```
+minimizuj  Σ (use_len_i − targetShot)²    uz   minShot ≤ use_len_i ≤ maxShot
+```
+
+Broj shotova nije zadat unapred nego ispada iz rešenja. Ishod je isti kao verbatim algoritam na
+svim slučajevima iz izvornog plana (4.6s → 1; 23.4s → 3; 11.5s → 2×5.75; 20s → 3×6.67, ne 2×10),
+ali „grupe najbliže jednake" i „najmanje odstupanje od 8s" postaju jedan kriterijum umesto dva
+koja mogu da se posvađaju, a `minShot` je tvrdo ograničenje pa se podela sa prekratkom grupom
+nikad ne razmatra. **`minShot` je jači od „rez na granici rečenice"**: podela `(2.5)(8)(8)` se
+odbija i radije se seče unutar rečenice.
+
+**4. Beat koji se ne može iseći na granicama rečenica** (30.5s / dve rečenice; jedna rečenica od
+12s). `sliceBeat` **nikad ne baca** zbog trajanja — spušta se niz četiri nivoa i diže upozorenje:
+
+| Nivo | Kandidati za rez | Upozorenje |
+|---|---|---|
+| 1 | granice rečenica | — |
+| 2 | granice reči iz `timing.json.words` | `intra-sentence-cut` |
+| 3 | mreža od 0.25s unutar rečenice (kad za nju nema reči) | `blind-cut` |
+| 4 | jednaka podela, bez obzira na granice | `forced-split` |
+
+Niži nivo se koristi samo kad viši nema rešenje — kazna po rezu je za red veličine iznad najgore
+kvadratne kazne, pa nivoi ne mogu da se pomešaju.
+
+**5. Upozorenja nisu prekršaji sheme.** Storyboard nastao rezom unutar rečenice i dalje zadovoljava
+invarijantu 9 (svi shotovi ostaju u 3.0–10.0s) i prolazi BLOCKING. Upozorenja su podaci
+(`{ code, message, beat_id, sentence_id, at }`) koje `at-storyboard` prikazuje korisniku da odluči
+hoće li da prepravi beat mapu. Jedini izuzetak je **`beat-too-short`**: beat kraći od `minShot`
+dobija jedan shot ispod 3.0s, T2 će ga s pravom prijaviti, a popravka je spajanje beatova u beat
+mapi — ne u splitteru.
+
+**6. Dva upozorenja koja diže `planTimeline`, ne `sliceBeat`.** `beat-coverage` — beat mapa ne
+pokriva sve rečenice iz `timing.json` tačno jednom i u redosledu (invarijanta 4). `narration-tail` —
+`timing.duration` je više od 0.2s duži od kraja poslednjeg beata, pa rep tišine u `narration.mp3`
+ostaje bez slike i invarijanta 11 (T1) pada. Splitter tu ne sme sam da odluči: produžavanje
+poslednjeg shota preko `maxShot` i skraćivanje audia su obe odluke montaže i pripadaju **C09**.

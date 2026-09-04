@@ -1,7 +1,7 @@
 {
-  "ffmpegPath": null,
+  "ffmpegPath": "C:\\Python311\\Lib\\site-packages\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v7.1.exe",
   "fps": 24,
-  "maxShot": 10.0,
-  "minShot": 3.0,
-  "targetShot": 8.0
+  "maxShot": 10,
+  "minShot": 3,
+  "targetShot": 8
 }
