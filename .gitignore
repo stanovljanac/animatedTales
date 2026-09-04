@@ -1,0 +1,36 @@
+# Animated Tales — repo tracks contracts and code, never media.
+# Folder is ~1.7 GB, overwhelmingly .mp4. Committing media makes the repo unusable.
+
+# --- Media (never tracked) ---
+*.mp4
+*.mov
+*.mkv
+*.webm
+*.mp3
+*.wav
+*.m4a
+*.aac
+*.flac
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.webp
+*.avif
+*.tiff
+*.psd
+
+# --- Build / runtime junk ---
+node_modules/
+**/.cache/
+**/temp/
+**/tmp/
+*.log
+
+# --- OS junk ---
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# --- Explicitly tracked despite the rules above ---
+!.gitignore

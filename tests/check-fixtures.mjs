@@ -1,0 +1,160 @@
+// tests/check-fixtures.mjs
+//
+// Izvršni oblik ugovora iz docs/reference/schemas.md.
+// Čita tests/fixtures/episode.sample.json + storyboard.sample.json i proverava
+// svaku invarijantu iz sekcija 1–3, plus svaku BLOCKING proveru iz sekcije 4.
+//
+//   node tests/check-fixtures.mjs
+//
+// C06 (lint.mjs) polazi odavde: iste funkcije countWords/normalize/q, isti pragovi.
+
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+const HERE = path.dirname(fileURLToPath(import.meta.url));
+const FIX = path.join(HERE, 'fixtures');
+
+// ---- kanonski helperi (schemas.md 0.2, 0.6, 0.7) ----
+export const countWords = (text) =>
+  String(text).split(/\s+/).filter((t) => /[A-Za-z0-9]/.test(t)).length;
+export const normalize = (s) => String(s).replace(/\s+/g, ' ').trim().toLowerCase();
+export const q = (t, fps) => Math.round((Math.round(t * fps) / fps) * 1000) / 1000;
+export const isFrameAligned = (t, fps) => Math.abs(t * fps - Math.round(t * fps)) <= 0.02;
+
+const EPS = 0.0011;
+const TAGS = {
+  subject_type: ['character', 'group', 'environment', 'object', 'map-diagram', 'crowd', 'architecture'],
+  shot_size: ['XLS', 'LS', 'MS', 'CU', 'ECU', 'aerial'],
+  angle: ['eye', 'low', 'high', 'overhead', 'profile'],
+  camera_motion: ['locked', 'push', 'pull', 'pan', 'track', 'parallax', 'reveal'],
+};
+const DEVICES = ['animated-map', 'ledger-accumulation', 'process-cutaway', 'before-after',
+  'timeline-seasons', 'macro-object', 'silhouette', 'crowd-as-texture', 'empty-aftermath'];
+const SLUG = /^[a-z0-9]+(-[a-z0-9]+)*$/;
+const S2_BLOCKS = ['CAMERA', 'FRAME LAYOUT', 'FACING', 'SCREEN DIRECTION', 'NOT IN FRAME'];
+const S1_PHRASES = ['in the background', 'behind them', 'in the distance behind', 'in front of'];
+const S3_WORDS = ['then', 'later', 'afterwards', 'cuts to', 'meanwhile'];
+
+const errs = [];
+const ok = (cond, msg) => { if (!cond) errs.push(msg); };
+const near = (a, b) => Math.abs(a - b) < EPS;
+
+const episode = JSON.parse(fs.readFileSync(path.join(FIX, 'episode.sample.json'), 'utf8'));
+const sb = JSON.parse(fs.readFileSync(path.join(FIX, 'storyboard.sample.json'), 'utf8'));
+const fps = sb.fps;
+
+// ---- episode.json (schemas.md 1) ----
+ok(SLUG.test(episode.slug), 'episode.slug nije kebab slug');
+ok(['draft', 'in-progress', 'done'].includes(episode.status), 'episode.status van enuma');
+for (const k of ['voice', 'narration_file', 'final_file', 'endcard_file'])
+  ok(k in episode, `episode.json: nedostaje polje ${k} (obavezna polja su uvek prisutna, makar kao null)`);
+
+const entities = [...episode.characters, ...episode.locations, ...episode.key_props];
+const byId = new Map(entities.map((e) => [e.id, e]));
+ok(byId.size === entities.length, 'entity id nije jedinstven preko sva tri niza');
+for (const e of entities) {
+  ok(SLUG.test(e.id), `entity ${e.id}: id nije kebab slug`);
+  ok(typeof e.name === 'string' && e.name.length > 0, `entity ${e.id}: nema name`);
+  const n = countWords(e.locked_description);
+  ok(n >= 25 && n <= 40, `entity ${e.id}: locked_description ${n} reči (traži se 25–40)`);
+}
+
+// ---- storyboard.json (schemas.md 3) ----
+ok(sb.schema_version === 1, 'schema_version != 1');
+ok(sb.episode === episode.slug, 'storyboard.episode != episode.slug');
+ok(/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z$/.test(sb.generated_at), 'generated_at nije ISO 8601 UTC');
+ok(sb.beats.length >= 1, 'nema beatova');
+
+const shots = sb.beats.flatMap((b) => b.shots);
+ok(shots.some((s) => s.link_group !== null), 'fixture nema nijedan link_group par');
+ok(shots.some((s) => s.link_group === null), 'fixture nema nijedan samostalan shot');
+
+let cursor = 0;
+sb.beats.forEach((b, bi) => {
+  ok(b.beat_id === 'B' + String(bi + 1).padStart(2, '0'), `${b.beat_id}: beat_id van redosleda`);
+  ok(b.shots.length >= 1, `${b.beat_id}: nema shotova`);
+  ok(b.sentences.length >= 1, `${b.beat_id}: nema rečenica`);
+  ok(near(b.dur, b.end - b.start), `${b.beat_id}: dur != end - start`);
+  ok(b.device === null || DEVICES.includes(b.device), `${b.beat_id}: device "${b.device}" van kataloga`);
+  ok(typeof b.narration_says === 'string' && b.narration_says.length > 0, `${b.beat_id}: prazan narration_says`);
+  ok(typeof b.viewer_sees === 'string' && b.viewer_sees.length > 0, `${b.beat_id}: prazan viewer_sees`);
+  // invarijanta 6
+  ok(near(b.shots[0].t_in, q(b.start, fps)), `${b.beat_id}: prvi t_in != q(beat.start)`);
+  ok(near(b.shots.at(-1).t_out, q(b.end, fps)), `${b.beat_id}: poslednji t_out != q(beat.end)`);
+  const sumBeat = b.shots.reduce((a, s) => a + s.use_len, 0);
+  ok(near(sumBeat, q(b.end, fps) - q(b.start, fps)), `${b.beat_id}: zbir use_len ne pokriva beat`);
+
+  for (const s of b.shots) {
+    const id = `shot ${s.shot_id}`;
+    ok(/^\d{2,}$/.test(s.shot_id), `${id}: shot_id nije string sa vodećom nulom`);
+    ok(s.beat_id === b.beat_id, `${id}: beat_id ne odgovara roditelju`);
+    ok(s.link_group === null || s.link_group === b.beat_id, `${id}: link_group prelazi granicu beata`);
+
+    // invarijante 7–10 / T2 / T3
+    ok(near(s.t_in, cursor), `${id}: t_in ${s.t_in} ne nastavlja tajmlajn na ${cursor} (T1: gap/preklapanje)`);
+    ok(near(s.t_out, s.t_in + s.use_len), `${id}: t_out != t_in + use_len`);
+    ok(near(s.use_out, s.use_in + s.use_len), `${id}: use_out != use_in + use_len`);
+    ok(s.use_len >= 3.0 && s.use_len <= 10.0, `${id}: T2 use_len ${s.use_len} van 3.0–10.0`);
+    for (const [k, v] of Object.entries({ t_in: s.t_in, t_out: s.t_out, use_in: s.use_in, use_out: s.use_out, use_len: s.use_len }))
+      ok(isFrameAligned(v, fps), `${id}: ${k}=${v} nije frejm-poravnato na ${fps}fps`);
+    ok(s.use_len >= 9.0 || s.motion_budget !== null, `${id}: T3 motion_budget nedostaje (use_len ${s.use_len} < 9.0)`);
+    if (s.motion_budget !== null) ok(near(s.motion_budget, s.use_len), `${id}: motion_budget != use_len`);
+
+    // invarijanta 13 / F1 (postojanje fajla proverava assemble.mjs nad pravom epizodom)
+    ok(s.source_file === `shots/part${s.shot_id}.mp4`, `${id}: source_file ne prati konvenciju`);
+    ok(s.ingredient_image === null || s.ingredient_image === `images/shot${s.shot_id}.jpeg`,
+      `${id}: ingredient_image ne prati konvenciju`);
+
+    // tags (3.5)
+    ok(Object.keys(s.tags).length === 6, `${id}: tags nema tačno šest osa`);
+    for (const [k, allowed] of Object.entries(TAGS))
+      ok(allowed.includes(s.tags[k]), `${id}: tags.${k}="${s.tags[k]}" van enuma`);
+    for (const k of ['location', 'time_light'])
+      ok(SLUG.test(s.tags[k]), `${id}: tags.${k}="${s.tags[k]}" nije normalizovan slug`);
+
+    // P1 / P2
+    const pi = countWords(s.image_prompt), pa = countWords(s.animation_prompt);
+    ok(pi >= 90 && pi <= 160, `${id}: P1 image_prompt ${pi} reči (90–160)`);
+    ok(pa >= 60 && pa <= 100, `${id}: P2 animation_prompt ${pa} reči (60–100)`);
+
+    // S1 / S2 / S3
+    for (const blk of S2_BLOCKS) ok(s.image_prompt.includes(blk + ':'), `${id}: S2 nedostaje blok ${blk}`);
+    const both = normalize(`${s.image_prompt} ${s.animation_prompt}`);
+    for (const ph of S1_PHRASES) ok(!both.includes(ph), `${id}: S1 zabranjena fraza "${ph}"`);
+    for (const w of S3_WORDS) ok(!new RegExp(`\\b${w}\\b`, 'i').test(s.animation_prompt), `${id}: S3 reč "${w}"`);
+
+    // C1 + invarijanta 12
+    for (const eid of s.characters) {
+      ok(byId.has(eid), `${id}: nepoznat entitet "${eid}"`);
+      if (byId.has(eid))
+        ok(normalize(s.image_prompt).includes(normalize(byId.get(eid).locked_description)),
+          `${id}: C1 locked_description za "${eid}" nije doslovno u image_prompt-u`);
+    }
+
+    cursor = s.t_out;
+  }
+});
+
+// shot_id kontinuitet (invarijanta 2)
+shots.forEach((s, i) => ok(s.shot_id === String(i + 1).padStart(2, '0'), `shot ${s.shot_id}: numeracija ima rupu`));
+
+// T1
+const sumUse = shots.reduce((a, s) => a + s.use_len, 0);
+ok(Math.abs(sumUse - sb.narration_duration) <= 0.2,
+  `T1: sum(use_len)=${sumUse.toFixed(3)} vs narration_duration=${sb.narration_duration}`);
+
+// ---- izveštaj ----
+console.log(`episode.sample.json   ${entities.length} entiteta, locked_description: ` +
+  entities.map((e) => `${e.id} ${countWords(e.locked_description)}`).join(' · '));
+for (const s of shots)
+  console.log(`shot ${s.shot_id}  P1=${countWords(s.image_prompt)}  P2=${countWords(s.animation_prompt)}` +
+    `  use_len=${s.use_len}  t=${s.t_in.toFixed(3)}→${s.t_out.toFixed(3)}  link_group=${s.link_group}`);
+console.log(`T1  sum(use_len)=${sumUse.toFixed(3)}  narration_duration=${sb.narration_duration}` +
+  `  drift=${(sb.narration_duration - sumUse).toFixed(3)}s`);
+
+if (errs.length) {
+  console.error(`\nFAIL — ${errs.length} prekršaja ugovora:\n` + errs.map((e) => '  - ' + e).join('\n'));
+  process.exit(1);
+}
+console.log('\nOK — fixture je usklađen sa docs/reference/schemas.md');

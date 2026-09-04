@@ -1,0 +1,7 @@
+{
+  "ffmpegPath": null,
+  "fps": 24,
+  "maxShot": 10.0,
+  "minShot": 3.0,
+  "targetShot": 8.0
+}

@@ -1,0 +1,13 @@
+{
+  "slug": "croesus",
+  "title": "The Last Lydian King, Croesus",
+  "status": "done",
+  "voice": null,
+  "narration_file": "narration.mp3",
+  "final_file": "final.mp4",
+  "endcard_file": "endKartica.jpeg",
+  "characters": [],
+  "locations": [],
+  "key_props": [],
+  "notes": "Legacy epizoda — proizvedena pre timeline-first pipeline-a. Nema script.md, timing.json ni storyboard.json, i fajlovi nisu u shots/ i images/ podfolderima (part*.mp4 i *.jpeg stoje u korenu foldera). Ništa se ne dira. Idea #3 iz docs/ideas.md (nije bila označena DONE — uskladiti u C03). Izvor „Sardis\" problema opisanog u izvornom planu (vojnici izlaze iz grada). final720p.mp4 je niža rezolucija istog videa."
+}

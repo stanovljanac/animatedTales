@@ -1,0 +1,13 @@
+{
+  "slug": "night-when-rome-almost-fell",
+  "title": "The Night Rome Nearly Lost Everything",
+  "status": "done",
+  "voice": null,
+  "narration_file": "narration.mp3",
+  "final_file": "finalv2.mp4",
+  "endcard_file": "endKartica.jpeg",
+  "characters": [],
+  "locations": [],
+  "key_props": [],
+  "notes": "Legacy epizoda — proizvedena pre timeline-first pipeline-a. Nema script.md, timing.json ni storyboard.json, i fajlovi nisu u shots/ i images/ podfolderima (part*.mp4 i *.jpeg stoje u korenu foldera). Ništa se ne dira. Idea #4 iz docs/ideas.md (označena DONE). Postoje dva finala: finalv1.mp4 (2026-08-27) i finalv2.mp4 (2026-09-02, poslednje) — final_file pokazuje na v2. narration.mp3 počinje na 0.025057s, ne na nuli (relevantno za C05/C09)."
+}

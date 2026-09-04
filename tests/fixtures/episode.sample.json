@@ -1,0 +1,31 @@
+{
+  "slug": "sample-episode",
+  "title": "Sample Episode",
+  "status": "in-progress",
+  "voice": "Nathaniel - Engaging, British and Calm",
+  "narration_file": "narration.mp3",
+  "final_file": null,
+  "endcard_file": "endcard.jpeg",
+  "characters": [
+    {
+      "id": "brennus",
+      "name": "Brennus",
+      "locked_description": "a broad-shouldered Gallic chieftain in his forties, long red-blond hair in a thick braid, drooping moustache, a bronze torc at his throat, chainmail over a red woollen tunic"
+    }
+  ],
+  "locations": [
+    {
+      "id": "capitoline-hill",
+      "name": "The Capitoline Hill",
+      "locked_description": "a steep rocky outcrop above the Forum, its flank a sheer pale cliff, crowned by a squat temple with a red-tiled roof and a low defensive wall of rough tufa blocks"
+    }
+  ],
+  "key_props": [
+    {
+      "id": "bronze-scales",
+      "name": "The bronze scales",
+      "locked_description": "a set of heavy bronze balance scales with two shallow dished pans hanging on chains from a plain crossbeam, the metal dull and scratched from long use"
+    }
+  ],
+  "notes": "Fixture manifest, ne prava epizoda. Postoji da bi tests/fixtures/storyboard.sample.json mogao da zatvori C1 (locked_description) i invarijantu 11 (reference likova)."
+}
