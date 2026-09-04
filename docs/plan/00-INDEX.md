@@ -91,6 +91,6 @@ jedna epizoda ne prođe ceo lanac od `narration.mp3` do `final.mp4`.
 
 Svaka celina ima kućicu ovde. Ažurira se na kraju sesije.
 
-- [x] C01  - [ ] C02  - [ ] C03  - [ ] C04  - [ ] C05
+- [x] C01  - [x] C02  - [x] C03  - [ ] C04  - [ ] C05
 - [ ] C06  - [ ] C07  - [ ] C08  - [ ] C09  - [ ] C10
 - [ ] C11  - [ ] C12  - [ ] C13  - [ ] C14  - [ ] C15
