@@ -1,0 +1,624 @@
+{
+  "duration": 38.66,
+  "model": "small.en",
+  "sentences": [
+    {
+      "id": "S01",
+      "start": 0,
+      "end": 7.16,
+      "dur": 7.16,
+      "text": "Before Rome ruled an empire, another army marched into the city and nearly destroyed it.",
+      "confidence": 0.983
+    },
+    {
+      "id": "S02",
+      "start": 7.9,
+      "end": 17.56,
+      "dur": 9.66,
+      "text": "In 390 BCE, a Gallic army under Brennus defeated the Romans at the Allia River, just a short distance from Rome.",
+      "confidence": 0.947
+    },
+    {
+      "id": "S03",
+      "start": 18.48,
+      "end": 19.86,
+      "dur": 1.38,
+      "text": "The defeat was catastrophic.",
+      "confidence": 0.998
+    },
+    {
+      "id": "S04",
+      "start": 20.7,
+      "end": 24.2,
+      "dur": 3.5,
+      "text": "The Roman army broke and the road to the city was open.",
+      "confidence": 0.97
+    },
+    {
+      "id": "S05",
+      "start": 25,
+      "end": 29.4,
+      "dur": 4.4,
+      "text": "With no army left to stop them, the Romans fled toward Rome.",
+      "confidence": 0.996
+    },
+    {
+      "id": "S06",
+      "start": 30.2,
+      "end": 38.48,
+      "dur": 8.28,
+      "text": "Some escaped into the countryside, others crowded into the strongest position they still had, the Capitoline Hill.",
+      "confidence": 0.966
+    }
+  ],
+  "words": [
+    {
+      "sentence_id": "S01",
+      "word": "Before",
+      "start": 0,
+      "end": 0.5,
+      "confidence": 0.961
+    },
+    {
+      "sentence_id": "S01",
+      "word": "Rome",
+      "start": 0.5,
+      "end": 0.78,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S01",
+      "word": "ruled",
+      "start": 0.78,
+      "end": 1.1,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S01",
+      "word": "an",
+      "start": 1.1,
+      "end": 1.34,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S01",
+      "word": "empire",
+      "start": 1.34,
+      "end": 1.88,
+      "confidence": 0.933
+    },
+    {
+      "sentence_id": "S01",
+      "word": "another",
+      "start": 2.46,
+      "end": 2.78,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S01",
+      "word": "army",
+      "start": 2.78,
+      "end": 3.18,
+      "confidence": 0.996
+    },
+    {
+      "sentence_id": "S01",
+      "word": "marched",
+      "start": 3.18,
+      "end": 3.62,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S01",
+      "word": "into",
+      "start": 3.62,
+      "end": 4.02,
+      "confidence": 0.994
+    },
+    {
+      "sentence_id": "S01",
+      "word": "the",
+      "start": 4.02,
+      "end": 4.2,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S01",
+      "word": "city",
+      "start": 4.2,
+      "end": 4.52,
+      "confidence": 1
+    },
+    {
+      "sentence_id": "S01",
+      "word": "and",
+      "start": 4.52,
+      "end": 5.32,
+      "confidence": 0.885
+    },
+    {
+      "sentence_id": "S01",
+      "word": "nearly",
+      "start": 5.32,
+      "end": 5.98,
+      "confidence": 0.992
+    },
+    {
+      "sentence_id": "S01",
+      "word": "destroyed",
+      "start": 5.98,
+      "end": 6.74,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S01",
+      "word": "it",
+      "start": 6.74,
+      "end": 7.16,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S02",
+      "word": "In",
+      "start": 7.9,
+      "end": 8.12,
+      "confidence": 0.992
+    },
+    {
+      "sentence_id": "S02",
+      "word": "390",
+      "start": 8.12,
+      "end": 9.02,
+      "confidence": 0.994
+    },
+    {
+      "sentence_id": "S02",
+      "word": "BCE",
+      "start": 9.02,
+      "end": 9.88,
+      "confidence": 0.827
+    },
+    {
+      "sentence_id": "S02",
+      "word": "a",
+      "start": 10.66,
+      "end": 10.82,
+      "confidence": 0.99
+    },
+    {
+      "sentence_id": "S02",
+      "word": "Gallic",
+      "start": 10.82,
+      "end": 11.26,
+      "confidence": 0.974
+    },
+    {
+      "sentence_id": "S02",
+      "word": "army",
+      "start": 11.26,
+      "end": 11.64,
+      "confidence": 0.985
+    },
+    {
+      "sentence_id": "S02",
+      "word": "under",
+      "start": 11.64,
+      "end": 12.08,
+      "confidence": 0.942
+    },
+    {
+      "sentence_id": "S02",
+      "word": "Brennus",
+      "start": 12.08,
+      "end": 12.68,
+      "confidence": 0.805
+    },
+    {
+      "sentence_id": "S02",
+      "word": "defeated",
+      "start": 12.68,
+      "end": 13.28,
+      "confidence": 0.983
+    },
+    {
+      "sentence_id": "S02",
+      "word": "the",
+      "start": 13.28,
+      "end": 13.58,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S02",
+      "word": "Romans",
+      "start": 13.58,
+      "end": 13.88,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S02",
+      "word": "at",
+      "start": 13.88,
+      "end": 14.32,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S02",
+      "word": "the",
+      "start": 14.32,
+      "end": 14.54,
+      "confidence": 0.984
+    },
+    {
+      "sentence_id": "S02",
+      "word": "Allia",
+      "start": 14.54,
+      "end": 14.9,
+      "confidence": 0.689
+    },
+    {
+      "sentence_id": "S02",
+      "word": "River",
+      "start": 14.9,
+      "end": 15.22,
+      "confidence": 0.744
+    },
+    {
+      "sentence_id": "S02",
+      "word": "just",
+      "start": 15.88,
+      "end": 16.16,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S02",
+      "word": "a",
+      "start": 16.16,
+      "end": 16.32,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S02",
+      "word": "short",
+      "start": 16.32,
+      "end": 16.5,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S02",
+      "word": "distance",
+      "start": 16.5,
+      "end": 16.92,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S02",
+      "word": "from",
+      "start": 16.92,
+      "end": 17.24,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S02",
+      "word": "Rome",
+      "start": 17.24,
+      "end": 17.56,
+      "confidence": 1
+    },
+    {
+      "sentence_id": "S03",
+      "word": "The",
+      "start": 18.48,
+      "end": 18.66,
+      "confidence": 0.996
+    },
+    {
+      "sentence_id": "S03",
+      "word": "defeat",
+      "start": 18.66,
+      "end": 18.92,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S03",
+      "word": "was",
+      "start": 18.92,
+      "end": 19.16,
+      "confidence": 1
+    },
+    {
+      "sentence_id": "S03",
+      "word": "catastrophic",
+      "start": 19.16,
+      "end": 19.86,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S04",
+      "word": "The",
+      "start": 20.7,
+      "end": 20.92,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S04",
+      "word": "Roman",
+      "start": 20.92,
+      "end": 21.2,
+      "confidence": 0.995
+    },
+    {
+      "sentence_id": "S04",
+      "word": "army",
+      "start": 21.2,
+      "end": 21.6,
+      "confidence": 0.985
+    },
+    {
+      "sentence_id": "S04",
+      "word": "broke",
+      "start": 21.6,
+      "end": 22.02,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S04",
+      "word": "and",
+      "start": 22.02,
+      "end": 22.64,
+      "confidence": 0.671
+    },
+    {
+      "sentence_id": "S04",
+      "word": "the",
+      "start": 22.64,
+      "end": 22.8,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S04",
+      "word": "road",
+      "start": 22.8,
+      "end": 23.02,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S04",
+      "word": "to",
+      "start": 23.02,
+      "end": 23.24,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S04",
+      "word": "the",
+      "start": 23.24,
+      "end": 23.38,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S04",
+      "word": "city",
+      "start": 23.38,
+      "end": 23.6,
+      "confidence": 1
+    },
+    {
+      "sentence_id": "S04",
+      "word": "was",
+      "start": 23.6,
+      "end": 23.82,
+      "confidence": 1
+    },
+    {
+      "sentence_id": "S04",
+      "word": "open",
+      "start": 23.82,
+      "end": 24.2,
+      "confidence": 0.995
+    },
+    {
+      "sentence_id": "S05",
+      "word": "With",
+      "start": 25,
+      "end": 25.16,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S05",
+      "word": "no",
+      "start": 25.16,
+      "end": 25.42,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S05",
+      "word": "army",
+      "start": 25.42,
+      "end": 25.76,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S05",
+      "word": "left",
+      "start": 25.76,
+      "end": 26.04,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S05",
+      "word": "to",
+      "start": 26.04,
+      "end": 26.28,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S05",
+      "word": "stop",
+      "start": 26.28,
+      "end": 26.52,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S05",
+      "word": "them",
+      "start": 26.52,
+      "end": 26.92,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S05",
+      "word": "the",
+      "start": 27.28,
+      "end": 27.44,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S05",
+      "word": "Romans",
+      "start": 27.44,
+      "end": 27.8,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S05",
+      "word": "fled",
+      "start": 27.8,
+      "end": 28.28,
+      "confidence": 1
+    },
+    {
+      "sentence_id": "S05",
+      "word": "toward",
+      "start": 28.28,
+      "end": 28.88,
+      "confidence": 0.967
+    },
+    {
+      "sentence_id": "S05",
+      "word": "Rome",
+      "start": 28.88,
+      "end": 29.4,
+      "confidence": 1
+    },
+    {
+      "sentence_id": "S06",
+      "word": "Some",
+      "start": 30.2,
+      "end": 30.88,
+      "confidence": 0.578
+    },
+    {
+      "sentence_id": "S06",
+      "word": "escaped",
+      "start": 30.88,
+      "end": 31.38,
+      "confidence": 0.996
+    },
+    {
+      "sentence_id": "S06",
+      "word": "into",
+      "start": 31.38,
+      "end": 31.72,
+      "confidence": 0.993
+    },
+    {
+      "sentence_id": "S06",
+      "word": "the",
+      "start": 31.72,
+      "end": 31.88,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S06",
+      "word": "countryside",
+      "start": 31.88,
+      "end": 32.44,
+      "confidence": 0.988
+    },
+    {
+      "sentence_id": "S06",
+      "word": "others",
+      "start": 33.22,
+      "end": 33.54,
+      "confidence": 0.989
+    },
+    {
+      "sentence_id": "S06",
+      "word": "crowded",
+      "start": 33.54,
+      "end": 33.94,
+      "confidence": 0.996
+    },
+    {
+      "sentence_id": "S06",
+      "word": "into",
+      "start": 33.94,
+      "end": 34.28,
+      "confidence": 0.992
+    },
+    {
+      "sentence_id": "S06",
+      "word": "the",
+      "start": 34.28,
+      "end": 34.46,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S06",
+      "word": "strongest",
+      "start": 34.46,
+      "end": 34.86,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S06",
+      "word": "position",
+      "start": 34.86,
+      "end": 35.38,
+      "confidence": 0.991
+    },
+    {
+      "sentence_id": "S06",
+      "word": "they",
+      "start": 35.38,
+      "end": 35.66,
+      "confidence": 0.993
+    },
+    {
+      "sentence_id": "S06",
+      "word": "still",
+      "start": 35.66,
+      "end": 35.94,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S06",
+      "word": "had",
+      "start": 35.94,
+      "end": 36.42,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S06",
+      "word": "the",
+      "start": 37.2,
+      "end": 37.42,
+      "confidence": 0.984
+    },
+    {
+      "sentence_id": "S06",
+      "word": "Capitoline",
+      "start": 37.42,
+      "end": 38.14,
+      "confidence": 0.979
+    },
+    {
+      "sentence_id": "S06",
+      "word": "Hill",
+      "start": 38.14,
+      "end": 38.48,
+      "confidence": 0.947
+    }
+  ],
+  "outro_start": 30.2
+}

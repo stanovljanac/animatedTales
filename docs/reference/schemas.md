@@ -233,7 +233,7 @@ je novi `align.mjs` run nad novim `narration.mp3`.
 
 | Polje | Tip | Obavezno | Opis |
 |---|---|---|---|
-| `duration` | number | da | Trajanje `narration.mp3` u sekundama, izmereno nad fajlom (ne zbir rečenica). |
+| `duration` | number | da | Trajanje narracije u sekundama, izmereno nad fajlom (ne zbir rečenica), na osi tajmlajna — vidi 5.4 tačku 1. |
 | `model` | string | da | Whisper model koji je proizveo vremena: `"small.en"` ili `"medium.en"`. |
 | `sentences` | array\<Sentence\> | da | Bar jedan element, u rastućem redosledu. |
 | `words` | array\<Word\> | da | Sve reči, u rastućem redosledu. |
@@ -270,9 +270,9 @@ je novi `align.mjs` run nad novim `narration.mp3`.
 5. Kad `outro_start` nije `null`, poklapa se sa `start` neke rečenice.
 
 **Napomena o nuli:** `narration.mp3` epizode *night-when-rome-almost-fell* počinje na
-`0.025057s`, ne na nuli. Da li se taj ofset oduzima pri alignmentu i pri lepljenju audia u
-montaži je odluka koja pripada **C05** i **C09** — ova shema samo zahteva da `start` bude
-merena vrednost, koja god konvencija da se izabere, i da ista konvencija važi u oba alata.
+`0.025057s`, ne na nuli. **Zatvoreno u C05, vidi 5.4 tačku 1:** ofset se ne oduzima ni ne
+dodaje — nula tajmlajna je prvi dekodirani sempl, a `duration` je trajanje na toj istoj osi.
+C09 je vezan istom konvencijom (nikad `-copyts` nad narracijom).
 
 ### 2.5 Primer
 
@@ -550,8 +550,8 @@ dostupna kao podaci.
   samodeklarisano — autor storyboarda ga jednostavno postavi na `false`), ili heuristika koju
   linter izvodi iz `animation_prompt`-a. Odluka i eventualno novo polje pripadaju **C07**;
   ako se doda polje, raste `schema_version`.
-- **Konvencija ofseta nule u narraciji** (`0.025057s`) — **C05** i **C09**. Shema traži samo da
-  ista konvencija važi u oba alata.
+- ~~**Konvencija ofseta nule u narraciji**~~ (`0.025057s`) — **zatvoreno u C05**, vidi 5.4.
+  C09 nasleđuje odluku, ne bira je ponovo.
 - ~~**Ivica algoritma sečenja beata**~~ — **zatvoreno u C04**, vidi 5.3.
 - **Katalog uređaja (3.6) i lista blokova u S2** dupliraju sadržaj koji je izvor istine u
   `docs/reference/` (C02). Kad se tamo promene, menjaju se i ovde.
@@ -612,3 +612,69 @@ pokriva sve rečenice iz `timing.json` tačno jednom i u redosledu (invarijanta 
 `timing.duration` je više od 0.2s duži od kraja poslednjeg beata, pa rep tišine u `narration.mp3`
 ostaje bez slike i invarijanta 11 (T1) pada. Splitter tu ne sme sam da odluči: produžavanje
 poslednjeg shota preko `maxShot` i skraćivanje audia su obe odluke montaže i pripadaju **C09**.
+
+### 5.4 Odluke donete u C05 (obavezujuće) — alignment i nula na tajmlajnu
+
+Izvor istine je `tools/align.mjs`; ovde stoji ono što ostatak lanca sme da pretpostavi.
+
+**1. Nula na tajmlajnu je prvi dekodirani sempl. Ofset se ne oduzima.** `narration.mp3`
+epizode *night-when-rome-almost-fell* ima `start: 0.025057` u kontejneru (mp3 encoder delay).
+ffmpeg pri dekodovanju u wav (align.mjs) i pri lepljenju audia u montaži (C09) oba počinju od
+prvog sempla i oba odbacuju taj ofset, pa je konvencija ista na oba kraja lanca i drifta nema.
+Iz toga slede dve obaveze:
+
+- **C09 nikad ne koristi `-copyts`** nad narracijom, niti sam dodaje/skida ofset.
+- `timing.duration` je trajanje **na toj istoj osi**: `probe().duration − probe().start`, a kad
+  je ASR run izmerio dekodirano trajanje, uzima se ono (tačnije je od dve decimale koje ffmpeg
+  ispisuje) — uz proveru da se dve vrednosti slažu u granici od 0.5s. Za Rome: kontejner kaže
+  217.21s uz start 0.025057, dekodirano je 217.182s, i u `timing.json` ide 217.182.
+
+Tišina pre prve reči ostaje deo tajmlajna i pripada prvom shotu (5.3, tačka 2).
+
+**2. Tekst je iz skripte, vreme iz ASR-a.** Poravnanje ide Needleman–Wunsch-om nad
+normalizovanim tokenima, skorovi `match +1 / mismatch −1 / gap −1`. Bitan je odnos: zamena
+košta −1, a par brisanje+umetanje −2, pa se pogrešno čuta reč poravna sa reči iz skripte i time
+ipak dobije vreme, umesto da se raspadne na dve rupe. `sentence.text` i `word.word` uvek dolaze
+iz skripte; ASR ne prepisuje ništa.
+
+**3. Normalizacija tokena.** Mala slova; sve što nije slovo ili cifra otpada (`Rome,` → `rome`,
+`B.C.` → `bc`, apostrof otpada bez deljenja reči: `don't` → `dont`); crtica, en/em crta, kosa
+crta i donja crta **dele** reč (`eye-level` → `eye`, `level`); `&` → `and`, `%` → `percent`;
+ceo broj se **širi u reči** (`390` → `three hundred ninety`, `3.5` → `three point five`,
+`1st` → `first`). Širenje se primenjuje na obe strane, pa se `390` i „three hundred ninety"
+poklapaju bez obzira ko je koji oblik napisao. Poznato ograničenje: godine izgovorene u
+parovima („fourteen fifty three") poklapaju se samo delimično sa kardinalom.
+
+**4. Segmentacija skripte.** Naslovi (`#`…`######`) nisu narracija i izbacuju se, ali **jesu
+granica pasusa**; sve ostalo je izgovoreni tekst. Rečenica se prekida na `.` `!` `?` `…` (uz
+opciono zatvaranje navodnika) kad iza sledi belina pa veliko slovo ili cifra — zato decimale
+(`3.5`), skraćenice pred malim slovom (`390 B.C. the Gauls`) i `...` pred malim slovom ne dele.
+Za skraćenicu pred velikim slovom postoji lista (`Mr.`, `Dr.`, `B.C.`, `U.S.`, …) plus pravilo
+da je jedno slovo uvek inicijal (`J. R. Smith`). Prazan red deli rečenice i bez interpunkcije.
+
+**5. `confidence`.** Reč dobija ASR verovatnoću kad se njen normalizovani token poklopi sa
+skriptom, inače **0** — i kad je whisper čuo drugu reč i kad je nije čuo uopšte. Rečenica je
+prosek po svojim rečima (2.2). Prag 0.85 time znači „bar 85% reči je prepoznato tačno onako
+kako piše u skripti", što je i mera koliko se sme verovati njenim granicama.
+
+**6. Reč bez ijednog ASR parnjaka** dobija vreme **linearnom interpolacijom** kroz rupu između
+susednih poznatih vremena. Kad je rupa nulte dužine (whisper je preskočio celu rečenicu bez
+pauze), reči dobijaju po 1ms i tajmlajn se pomera unapred — 1ms je ispod frejma (41ms na 24fps),
+a rečenica je ionako prijavljena upozorenjem.
+
+**7. `outro_start`** je `start` prve rečenice ispod naslova `## OUTRO`; bez tog naslova je
+`null`. Legacy epizoda bez `script.md` se poravnava na sopstveni transkript
+(`align.mjs --asr-script`) i tada je `outro_start` uvek `null`.
+
+**8. Upozorenja `align.mjs`-a nisu prekršaji sheme**, isto kao kod splittera (5.3, tačka 5):
+`gap` (pauza između rečenica preko 1.5s), `low-confidence` (rečenica ispod 0.85, uz predlog
+`--model medium.en`) i `unheard` (rečenica koju whisper nije čuo, pa joj je vreme interpolirano).
+
+**9. Keš ASR-a je obavezan.** `episodes/<slug>/.cache/asr-words.json` (gitignorisan) drži reči,
+model i izmereno trajanje. Keš snimljen drugim modelom se ne koristi; `--force` ga preskače uvek.
+Whisper izlaz se nikad ne štampa u konzolu — samo agregati.
+
+**Mereno na epizodi Rome (217.182s, small.en, CPU int8, beam 5):** whisper run **48.4s**
+(~4.5× brže od realnog vremena), 479 reči, 43 rečenice, poklapanje sa sopstvenim transkriptom
+100%, nijedan gap preko 1.5s, nijedna rečenica ispod 0.85. Zbir trajanja rečenica je 179.3s —
+razlika do 217.2s su stvarne pauze između rečenica (invarijanta 4), ne greška alignmenta.

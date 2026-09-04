@@ -1,8 +1,8 @@
 // tests/check-fixtures.mjs
 //
 // Izvršni oblik ugovora iz docs/reference/schemas.md.
-// Čita tests/fixtures/episode.sample.json + storyboard.sample.json i proverava
-// svaku invarijantu iz sekcija 1–3, plus svaku BLOCKING proveru iz sekcije 4.
+// Čita tests/fixtures/{episode,timing,storyboard}.sample.json i proverava svaku invarijantu
+// iz sekcija 1–3, plus svaku BLOCKING proveru iz sekcije 4.
 //
 //   node tests/check-fixtures.mjs
 //
@@ -41,6 +41,7 @@ const ok = (cond, msg) => { if (!cond) errs.push(msg); };
 const near = (a, b) => Math.abs(a - b) < EPS;
 
 const episode = JSON.parse(fs.readFileSync(path.join(FIX, 'episode.sample.json'), 'utf8'));
+const timing = JSON.parse(fs.readFileSync(path.join(FIX, 'timing.sample.json'), 'utf8'));
 const sb = JSON.parse(fs.readFileSync(path.join(FIX, 'storyboard.sample.json'), 'utf8'));
 const fps = sb.fps;
 
@@ -144,12 +145,66 @@ const sumUse = shots.reduce((a, s) => a + s.use_len, 0);
 ok(Math.abs(sumUse - sb.narration_duration) <= 0.2,
   `T1: sum(use_len)=${sumUse.toFixed(3)} vs narration_duration=${sb.narration_duration}`);
 
+// ---- timing.json (schemas.md 2) ----
+// Fixture je izrezan iz stvarnog align.mjs run-a nad episodes/night-when-rome-almost-fell:
+// prvih 6 rečenica sa svojim rečima, merena vremena, plus outro_start na poslednjoj.
+const SENT_ID = /^S\d{2,}$/;
+ok(typeof timing.duration === 'number' && timing.duration > 0, 'timing.duration nije pozitivan broj');
+ok(['small.en', 'medium.en'].includes(timing.model), `timing.model "${timing.model}" van enuma`);
+ok(Array.isArray(timing.sentences) && timing.sentences.length > 0, 'timing.sentences je prazan');
+ok(Array.isArray(timing.words), 'timing.words nije niz');
+ok('outro_start' in timing, 'timing.json: nedostaje outro_start (null je vrednost, ne odsustvo)');
+
+let maxGap = 0;
+timing.sentences.forEach((s, i) => {
+  ok(SENT_ID.test(s.id), `timing ${s.id}: id nije oblika S01`);
+  ok(s.id === 'S' + String(i + 1).padStart(2, '0'), `timing ${s.id}: numeracija ima rupu`);
+  ok(s.end > s.start, `timing ${s.id}: end nije veće od start`);
+  ok(near(s.dur, s.end - s.start), `timing ${s.id}: dur != end - start`);
+  ok(typeof s.text === 'string' && s.text.length > 0, `timing ${s.id}: nema text`);
+  ok(s.confidence >= 0 && s.confidence <= 1, `timing ${s.id}: confidence van 0–1`);
+  const prev = timing.sentences[i - 1];
+  if (prev) {
+    // invarijanta 1
+    ok(prev.end <= s.start + EPS, `timing ${s.id}: preklapa se sa ${prev.id}`);
+    maxGap = Math.max(maxGap, s.start - prev.end);
+  }
+});
+// invarijante 2 i 3
+ok(maxGap <= 1.5 + EPS, `timing: gap od ${maxGap.toFixed(3)}s između rečenica (granica je 1.5s)`);
+ok(timing.sentences[0].start >= 0, 'timing: prva rečenica počinje pre nule');
+ok(timing.sentences.at(-1).end <= timing.duration + EPS,
+  `timing: poslednja rečenica (${timing.sentences.at(-1).end}) prelazi duration ${timing.duration}`);
+// invarijanta 5
+ok(timing.outro_start === null || timing.sentences.some((s) => near(s.start, timing.outro_start)),
+  'timing.outro_start ne pada na start nijedne rečenice');
+
+const sentIds = new Set(timing.sentences.map((s) => s.id));
+const sentById = new Map(timing.sentences.map((s) => [s.id, s]));
+let wcursor = -Infinity;
+for (const w of timing.words) {
+  ok(sentIds.has(w.sentence_id), `timing: reč "${w.word}" pokazuje na nepostojeću rečenicu ${w.sentence_id}`);
+  ok(typeof w.word === 'string' && w.word.length > 0, 'timing: reč bez teksta');
+  ok(w.end >= w.start, `timing: reč "${w.word}" se završava pre nego što počne`);
+  ok(w.confidence >= 0 && w.confidence <= 1, `timing: reč "${w.word}" ima confidence van 0–1`);
+  ok(w.start >= wcursor - EPS, `timing: reči nisu u rastućem redosledu kod "${w.word}"`);
+  wcursor = w.start;
+  const s = sentById.get(w.sentence_id);
+  if (s) {
+    ok(w.start >= s.start - EPS && w.end <= s.end + EPS,
+      `timing: reč "${w.word}" je van granica rečenice ${s.id}`);
+  }
+}
+
 // ---- izveštaj ----
 console.log(`episode.sample.json   ${entities.length} entiteta, locked_description: ` +
   entities.map((e) => `${e.id} ${countWords(e.locked_description)}`).join(' · '));
 for (const s of shots)
   console.log(`shot ${s.shot_id}  P1=${countWords(s.image_prompt)}  P2=${countWords(s.animation_prompt)}` +
     `  use_len=${s.use_len}  t=${s.t_in.toFixed(3)}→${s.t_out.toFixed(3)}  link_group=${s.link_group}`);
+console.log(`timing.sample.json     ${timing.sentences.length} rečenica, ${timing.words.length} reči, ` +
+  `duration=${timing.duration}, najveći gap=${maxGap.toFixed(3)}s, ` +
+  `ispod 0.85: ${timing.sentences.filter((s) => s.confidence < 0.85).length}`);
 console.log(`T1  sum(use_len)=${sumUse.toFixed(3)}  narration_duration=${sb.narration_duration}` +
   `  drift=${(sb.narration_duration - sumUse).toFixed(3)}s`);
 
