@@ -1,0 +1,31 @@
+{
+  "slug": "good-episode",
+  "title": "Good Episode (lint fixture)",
+  "status": "in-progress",
+  "voice": "Nathaniel - Engaging, British and Calm",
+  "narration_file": "narration.mp3",
+  "final_file": null,
+  "endcard_file": "endcard.jpeg",
+  "characters": [
+    {
+      "id": "hanno",
+      "name": "Hanno",
+      "locked_description": "a lean Carthaginian clerk of about fifty, close-cropped grey hair, a short curled beard, an undyed linen tunic belted with rope, a wax tablet under one arm"
+    }
+  ],
+  "locations": [
+    {
+      "id": "carthage-quay",
+      "name": "The Carthage quay",
+      "locked_description": "a long stone quay of fitted limestone blocks, its edge worn round by rope, crates and amphorae stacked along it, moored hulls riding low in green harbour water"
+    }
+  ],
+  "key_props": [
+    {
+      "id": "wax-tablet",
+      "name": "The wax tablet",
+      "locked_description": "a hinged wooden writing tablet the size of two palms, its recessed panels filled with dark beeswax, the surface scored by columns of tally marks and thumbed smooth at the edges"
+    }
+  ],
+  "notes": "Fixture za C06, ne prava epizoda. Prolazi svih deset BLOCKING provera sa nula nalaza. Shot 01 nosi izbrojane primere promptova iz docs/reference/prompt-templates.md doslovno — ako oni ovde padnu na P1 ili S1, greška je u linteru ili u template-u, ne u fixture-u."
+}

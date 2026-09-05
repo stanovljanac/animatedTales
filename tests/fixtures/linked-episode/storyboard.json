@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "episode": "linked-episode",
+  "generated_at": "2026-09-05T00:00:00Z",
+  "narration_duration": 15.06,
+  "fps": 24,
+  "beats": [
+    {
+      "beat_id": "B01",
+      "sentences": [
+        "S01",
+        "S02"
+      ],
+      "start": 0,
+      "end": 15.012,
+      "dur": 15.012,
+      "device": "silhouette",
+      "narration_says": "A pan of sea water becomes a bank of salt in eleven days, and every one of them is walked.",
+      "viewer_sees": "SILHOUETTE — one worker, one pan, read three times without letting go of the place.",
+      "shots": [
+        {
+          "shot_id": "01",
+          "beat_id": "B01",
+          "link_group": "B01",
+          "t_in": 0,
+          "t_out": 4,
+          "use_in": 0,
+          "use_out": 4,
+          "use_len": 4,
+          "motion_budget": 4,
+          "source_file": "shots/part01.mp4",
+          "ingredient_image": "images/shot01.jpeg",
+          "characters": [
+            "nola"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Nola, a sun-dark salt worker in her thirties, hair bound in faded indigo cloth, a coarse linen shift knotted at the waist, wooden rake in both hands, salt crust white to the elbow.\nWEARING/PROPS: rope sandals, a gourd flask slung at her hip.\nACTION: she draws the rake through the shallow pan.\nSETTING: a terrace of evaporation pans cut into pale clay, ridges of drying salt between them.\nCAMERA: camera looks down from the ridge path, high angle, wide.\nFRAME LAYOUT: center — Nola, small in the pan; upper edge — the terrace steps, far and glare-washed.\nFACING: we see her from behind and above, bent to the work.\nSCREEN DIRECTION: the rake travels from the right edge toward mid-frame.\nLIGHT: white noon glare, almost no shadow.\nPALETTE: bleached clay, salt white, faded indigo.\nNOT IN FRAME: the sea, the village roofs.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 4s.\n0–1s: the rake bites into the brine crust.\n1–3s: she hauls it toward herself in one long steady pull, a bank of wet salt building at the head.\n3–4s: she lifts the head clear and lets the brine run off.\nCAMERA: locked, no movement.\nENVIRONMENT: heat shivers over the pans; the water skin trembles.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "LS",
+            "angle": "high",
+            "location": "salt-pan-terrace",
+            "time_light": "noon-white-glare",
+            "camera_motion": "locked"
+          }
+        },
+        {
+          "shot_id": "02",
+          "beat_id": "B01",
+          "link_group": "B01",
+          "t_in": 4,
+          "t_out": 9,
+          "use_in": 0,
+          "use_out": 5,
+          "use_len": 5,
+          "motion_budget": 5,
+          "source_file": "shots/part02.mp4",
+          "ingredient_image": "images/shot02.jpeg",
+          "characters": [
+            "nola"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Nola, a sun-dark salt worker in her thirties, hair bound in faded indigo cloth, a coarse linen shift knotted at the waist, wooden rake in both hands, salt crust white to the elbow.\nWEARING/PROPS: a rag knotted around her right palm.\nACTION: she pushes the gathered salt into a ridge.\nSETTING: the same pan, its far lip crusted and cracking.\nCAMERA: camera stands in the pan at her working height, eye level, medium.\nFRAME LAYOUT: left third — Nola, near-camera; center — the ridge of gathered salt; right third — the empty pan.\nFACING: we see her profile; her eyes follow the rake head.\nSCREEN DIRECTION: the ridge grows from mid-frame toward the left edge.\nLIGHT: white noon glare thrown back off the brine.\nPALETTE: salt white, wet clay, indigo.\nNOT IN FRAME: the terrace above, the sky.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 5s.\n0–1s: she plants her back foot and leans into the shaft.\n1–4s: the ridge lengthens ahead of the rake, water running back into the pan behind it.\n4–5s: she pauses with the head buried and breathes out.\nCAMERA: one continuous slow push along the ridge.\nENVIRONMENT: brine seeps back into the cut; glare crawls along the wet edge.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "salt-pan-terrace",
+            "time_light": "noon-white-glare",
+            "camera_motion": "push"
+          }
+        },
+        {
+          "shot_id": "03",
+          "beat_id": "B01",
+          "link_group": "B01",
+          "t_in": 9,
+          "t_out": 15,
+          "use_in": 0,
+          "use_out": 6,
+          "use_len": 6,
+          "motion_budget": 6,
+          "source_file": "shots/part03.mp4",
+          "ingredient_image": "images/shot03.jpeg",
+          "characters": [
+            "nola"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Nola, a sun-dark salt worker in her thirties, hair bound in faded indigo cloth, a coarse linen shift knotted at the waist, wooden rake in both hands, salt crust white to the elbow.\nWEARING/PROPS: salt drying in the creases of her knuckles.\nACTION: she opens one hand and looks at the crust on it.\nSETTING: the same pan lip, the finished ridge behind her shoulder.\nCAMERA: camera sits at the pan floor looking up, low angle, close.\nFRAME LAYOUT: center — her open hand, near-camera; upper-left — her face, cropped at the brow.\nFACING: we see the palm straight on and her face angled down to it.\nSCREEN DIRECTION: her gaze drops from the upper edge toward mid-frame.\nLIGHT: white noon glare, the crust almost blown out.\nPALETTE: salt white, sunburn brown, indigo.\nNOT IN FRAME: the rake, the terrace path.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 6s.\n0–1s: the fingers uncurl and the palm turns up.\n1–4s: she tips the hand and a fine drift of salt slides off the heel of it.\n4–6s: the hand closes again and drops out of the lower edge.\nCAMERA: one continuous slow pull back from the hand.\nENVIRONMENT: grains scatter across the wet clay; the ridge glitters behind her.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "CU",
+            "angle": "low",
+            "location": "salt-pan-terrace",
+            "time_light": "noon-white-glare",
+            "camera_motion": "pull"
+          }
+        }
+      ]
+    }
+  ]
+}

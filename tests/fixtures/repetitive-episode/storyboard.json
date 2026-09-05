@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "episode": "repetitive-episode",
+  "generated_at": "2026-09-05T00:00:00Z",
+  "narration_duration": 23.55,
+  "fps": 24,
+  "beats": [
+    {
+      "beat_id": "B01",
+      "sentences": [
+        "S01",
+        "S02"
+      ],
+      "start": 0,
+      "end": 11.019,
+      "dur": 11.019,
+      "device": null,
+      "narration_says": "The rain did not stop the count. It only made it slower.",
+      "viewer_sees": "A carter working through a tally in a shut-down market, twice over.",
+      "shots": [
+        {
+          "shot_id": "01",
+          "beat_id": "B01",
+          "link_group": null,
+          "t_in": 0,
+          "t_out": 5,
+          "use_in": 0,
+          "use_out": 5,
+          "use_len": 5,
+          "motion_budget": 5,
+          "source_file": "shots/part01.mp4",
+          "ingredient_image": "images/shot01.jpeg",
+          "characters": [
+            "duro"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Duro, a broad-shouldered Gaulish carter of about forty, a drooping moustache, a hooded wool cloak pinned at the shoulder, mud to the knees, a tally stick thrust through his belt.\nWEARING/PROPS: a leather satchel, a lantern hooked to the cart rail.\nACTION: he counts sacks on the cart bed.\nSETTING: a rain-slicked forum of grey stone porticoes, market stalls shuttered against the weather.\nCAMERA: camera stands beside the cart wheel, eye level, medium.\nFRAME LAYOUT: center — Duro, near-camera and large; right third — the loaded cart, far and rain-blurred.\nFACING: we see his face three-quarter on; his eyes stay on the sacks.\nSCREEN DIRECTION: porters cross from the left edge toward the right.\nLIGHT: flat grey daylight, no shadows.\nPALETTE: wet turf green, iron grey, one note of red.\nNOT IN FRAME: the basilica steps, the river.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 5s.\n0–1s: Duro sets a palm on the topmost sack.\n1–3s: he counts along the row, lips moving, rain beading on the wool of his hood.\n3–5s: he straightens and lets the tally stick drop against his hip.\nCAMERA: locked, no movement.\nENVIRONMENT: rain stipples the puddles; a canvas awning sags and drips.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "lugdunum-forum",
+            "time_light": "grey-rain",
+            "camera_motion": "locked"
+          }
+        },
+        {
+          "shot_id": "02",
+          "beat_id": "B01",
+          "link_group": null,
+          "t_in": 5,
+          "t_out": 11,
+          "use_in": 0,
+          "use_out": 6,
+          "use_len": 6,
+          "motion_budget": 6,
+          "source_file": "shots/part02.mp4",
+          "ingredient_image": "images/shot02.jpeg",
+          "characters": [
+            "duro"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Duro, a broad-shouldered Gaulish carter of about forty, a drooping moustache, a hooded wool cloak pinned at the shoulder, mud to the knees, a tally stick thrust through his belt.\nWEARING/PROPS: a wet ledger board tucked against his ribs.\nACTION: he scratches a figure onto the board.\nSETTING: the same forum arcade, water sheeting off the tiled roof edge.\nCAMERA: camera waits under the arcade arch, eye level, medium.\nFRAME LAYOUT: left third — Duro, near-camera; center — the ledger board; upper edge — the dripping roofline.\nFACING: we see his shoulders square to us; his head is bowed to the board.\nSCREEN DIRECTION: a mule train passes from the right edge toward the left.\nLIGHT: flat grey daylight off standing water.\nPALETTE: slate, ochre, rope brown.\nNOT IN FRAME: the far colonnade, the sky.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 6s.\n0–1s: the stylus tip finds the wax of the ledger board.\n1–4s: he works a column of figures, pausing once to shake water from his sleeve.\n4–6s: he clamps the board under his arm and turns his shoulder to the rain.\nCAMERA: one continuous slow push toward the board.\nENVIRONMENT: runoff streams from the roof tiles; a mule shakes its harness.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "lugdunum-forum",
+            "time_light": "grey-rain",
+            "camera_motion": "push"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B02",
+      "sentences": [
+        "S03",
+        "S04"
+      ],
+      "start": 11.019,
+      "end": 23.488,
+      "dur": 12.469,
+      "device": "before-after",
+      "narration_says": "By the third hour the stalls were shut and the forum belonged to the water.",
+      "viewer_sees": "BEFORE/AFTER — the same market row, first read from the kerb, then walked end to end and empty.",
+      "shots": [
+        {
+          "shot_id": "03",
+          "beat_id": "B02",
+          "link_group": null,
+          "t_in": 11,
+          "t_out": 16.5,
+          "use_in": 0,
+          "use_out": 5.5,
+          "use_len": 5.5,
+          "motion_budget": 5.5,
+          "source_file": "shots/part03.mp4",
+          "ingredient_image": "images/shot03.jpeg",
+          "characters": [
+            "duro"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Duro, a broad-shouldered Gaulish carter of about forty, a drooping moustache, a hooded wool cloak pinned at the shoulder, mud to the knees, a tally stick thrust through his belt.\nWEARING/PROPS: rain running from the point of his hood.\nACTION: he looks up at the shuttered stalls.\nSETTING: a rain-slicked forum of grey stone porticoes, market stalls shuttered against the weather.\nCAMERA: at the kerb below him, low angle, close.\nFRAME LAYOUT: center — Duro, near-camera and filling the frame; upper edge — the portico beam, far.\nFACING: we see his face straight on, chin lifted.\nSCREEN DIRECTION: his gaze travels from mid-frame toward the right edge.\nLIGHT: grey daylight through the gap in the portico.\nPALETTE: pewter, rain grey, dull red.\nNOT IN FRAME: the cart, the porters.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 5.5s.\n0–1s: his chin lifts and the hood falls back a finger width.\n1–4s: his eyes travel the row of shutters, and the moustache twitches once.\n4–5.5s: the jaw sets and he holds still, rain running past his temple.\nCAMERA: one continuous slow push toward his face.\nENVIRONMENT: rain crosses the frame in slanted threads; a shutter knocks in the wind.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "CU",
+            "angle": "low",
+            "location": "lugdunum-forum",
+            "time_light": "grey-rain",
+            "camera_motion": "push"
+          }
+        },
+        {
+          "shot_id": "04",
+          "beat_id": "B02",
+          "link_group": null,
+          "t_in": 16.5,
+          "t_out": 23.5,
+          "use_in": 0,
+          "use_out": 7,
+          "use_len": 7,
+          "motion_budget": 7,
+          "source_file": "shots/part04.mp4",
+          "ingredient_image": "images/shot04.jpeg",
+          "characters": [
+            "duro"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Duro, a broad-shouldered Gaulish carter of about forty, a drooping moustache, a hooded wool cloak pinned at the shoulder, mud to the knees, a tally stick thrust through his belt.\nWEARING/PROPS: the cloak dark with water to the hem.\nACTION: he walks the length of the empty market row.\nSETTING: the forum floor under standing rain, stalls closed along both sides.\nCAMERA: camera looks down from the portico gallery, high angle, wide.\nFRAME LAYOUT: lower-left — Duro, small against the paving; center — the empty market row running away from us.\nFACING: we see his back and the crown of the hood.\nSCREEN DIRECTION: he walks from the lower edge toward mid-frame.\nLIGHT: flat grey daylight, water mirroring the sky.\nPALETTE: pewter, wet stone, dull ochre.\nNOT IN FRAME: the crowd, the temple front.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 7s.\n0–1s: Duro steps off the kerb into the standing water.\n1–5s: he walks the row, his reflection breaking under each stride.\n5–7s: he slows near the middle of the row and his shoulders drop.\nCAMERA: one continuous pan following him across the paving.\nENVIRONMENT: rings spread through the surface water; a shutter swings loose on its hinge.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "LS",
+            "angle": "high",
+            "location": "lugdunum-forum",
+            "time_light": "grey-rain",
+            "camera_motion": "pan"
+          }
+        }
+      ]
+    }
+  ]
+}

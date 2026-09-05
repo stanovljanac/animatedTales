@@ -1,0 +1,25 @@
+{
+  "slug": "bad-episode",
+  "title": "Bad Episode (lint fixture)",
+  "status": "in-progress",
+  "voice": "Nathaniel - Engaging, British and Calm",
+  "narration_file": "narration.mp3",
+  "final_file": null,
+  "endcard_file": "endcard.jpeg",
+  "characters": [
+    {
+      "id": "cadwal",
+      "name": "Cadwal",
+      "locked_description": "a broad Gallic warlord in his fifties, grey-streaked hair roped back, a puckered scar across one cheek, a bronze torc at his throat, a red cloak pinned at the shoulder"
+    }
+  ],
+  "locations": [
+    {
+      "id": "hill-fort",
+      "name": "The hill fort",
+      "locked_description": "a turf-and-timber hill fort ringed by three earthen banks, its palisade of split oak stakes silvered by weather, a single timber gate tower rising above the rampart line"
+    }
+  ],
+  "key_props": [],
+  "notes": "Fixture za C06, ne prava epizoda. Namerno obara tačno četiri provere — S1, S2, T2, C1 — po jednu na svakom shotu, i nijednu drugu. Svaka izmena ovde mora da održi tu tabelu: tests/lint-blocking.test.mjs proverava i broj i raspored nalaza."
+}

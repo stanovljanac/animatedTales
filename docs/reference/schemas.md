@@ -22,8 +22,10 @@ i svaku BLOCKING proveru iz sekcije 4, pa ih pušta nad `tests/fixtures/`:
 node tests/check-fixtures.mjs
 ```
 
-Kanonski helperi (`countWords`, `normalize`, `q`, `isFrameAligned`) tamo su izvezeni — `lint.mjs`
-(C06) ih preuzima, ne piše ponovo. Kad se ovaj dokument promeni, menja se i taj fajl.
+Kanonski helperi (`countWords`, `normalize`, `q`, `isFrameAligned`) i rečnici (enumeracije tagova,
+katalog uređaja, nazivi S2 blokova, S3 reči, pragovi) žive u **`tools/contract.mjs`** — jedna
+definicija za ceo lanac. Uvoze ih `check-fixtures.mjs`, `lint.mjs` i `timeline.mjs`; nijedan
+potrošač ih ne piše ponovo (vidi 5.5, tačka 1). Kad se ovaj dokument promeni, menja se taj modul.
 
 ### 0.1 Vreme
 
@@ -515,14 +517,14 @@ Ne blokira montažu, ali čita iste podatke.
 | R1 | pravilo razlike (šest osa) | `shot.tags.*`, izuzeće preko `shot.link_group` |
 | R2 | miks tipova shotova | `shot.tags.subject_type` |
 | R3 | korišćeni vizuelni uređaji | `beat.device` |
-| R4 | ponavljanje n-grama > 12 reči | `shot.image_prompt`, `shot.animation_prompt`, **minus** svi `locked_description` iz `episode.json` i kanonski style string iz `docs/reference/style-string.md` |
-| C2 | broj multi-visual klipova | **nema polje** — vidi 5.2 |
+| R4 | ponavljanje n-grama > 12 reči | `shot.image_prompt`, `shot.animation_prompt`, **minus** svi `locked_description` iz `episode.json`, kanonski style string iz `docs/reference/style-string.md` i fiksne `PRESERVE`/`FORBID` linije iz `docs/reference/prompt-templates.md` |
+| C2 | broj multi-visual klipova | **nema polje**; meri se iz `shot.animation_prompt` — vidi 5.6 tačka 11 |
 
 **R4 protiv C1.** C1 *zahteva* da isti blok od 25–40 reči stoji u svakom shotu gde se lik pojavljuje;
 R4 kažnjava >12 uzastopnih identičnih reči. Bez izuzeća bi R4 lajao na svaki ispravan storyboard.
 Zato R4 pre poređenja izbacuje `locked_description` stringove i kanonski style string iz teksta.
-Detaljna implementacija pripada **C07**; shema ovde samo garantuje da su oba izvora izuzeća
-dostupna kao podaci.
+C07 je našao i **treći** izvor iste vrste: fiksne `PRESERVE`/`FORBID` linije animation šablona, od
+kojih `PRESERVE` sama nosi tačno 13 reči. Sva tri izvora su izuzeta; vidi 5.6 tačke 2–4.
 
 ---
 
@@ -545,11 +547,9 @@ dostupna kao podaci.
 
 ### 5.2 Otvorene stavke, svesno prosleđene dalje
 
-- **C2 (broj multi-visual klipova) nema polje.** „Multi-visual klip" nigde nije definisan u
-  izvornom planu. Dve mogućnosti: eksplicitno `multi_visual: boolean` na shotu (pošteno, ali
-  samodeklarisano — autor storyboarda ga jednostavno postavi na `false`), ili heuristika koju
-  linter izvodi iz `animation_prompt`-a. Odluka i eventualno novo polje pripadaju **C07**;
-  ako se doda polje, raste `schema_version`.
+- ~~**C2 (broj multi-visual klipova) nema polje**~~ — **zatvoreno u C07**, vidi 5.6 tačka 11.
+  Izabrana je druga mogućnost: linter ga izvodi iz `animation_prompt`-a, po deklaraciji iz
+  `visualPromptEngine.md`. Novo polje se ne dodaje, `schema_version` ostaje 1.
 - ~~**Konvencija ofseta nule u narraciji**~~ (`0.025057s`) — **zatvoreno u C05**, vidi 5.4.
   C09 nasleđuje odluku, ne bira je ponovo.
 - ~~**Ivica algoritma sečenja beata**~~ — **zatvoreno u C04**, vidi 5.3.
@@ -678,3 +678,162 @@ Whisper izlaz se nikad ne štampa u konzolu — samo agregati.
 (~4.5× brže od realnog vremena), 479 reči, 43 rečenice, poklapanje sa sopstvenim transkriptom
 100%, nijedan gap preko 1.5s, nijedna rečenica ispod 0.85. Zbir trajanja rečenica je 179.3s —
 razlika do 217.2s su stvarne pauze između rečenica (invarijanta 4), ne greška alignmenta.
+
+### 5.5 Odluke donete u C06 (obavezujuće) — BLOCKING linter
+
+Izvor istine je `tools/lint.mjs` (provere) i `tools/contract.mjs` (helperi i rečnici); ovde stoji
+ono što ostatak lanca sme da pretpostavi. Linter je autoritet za tehničku ispravnost i **ništa
+više** — ADVISORY sloj je C07 i u izveštaju stoji kao prazna sekcija.
+
+**1. Kanonski helperi žive u `tools/contract.mjs`, ne u `tests/check-fixtures.mjs`.** §0 je tražio
+da ih `lint.mjs` preuzme odatle; doslovno to nije izvodljivo, jer `check-fixtures.mjs` radi ceo
+posao na uvozu (čita fixture, štampa, zove `process.exit`) pa bi `import` iz njega oborio linter —
+a `tools/` bi zavisio od `tests/`. Namera (jedna definicija, ne dve) ispunjena je novim modulom:
+`countWords`, `normalize`, `q`, `isFrameAligned`, `round3`, `EPS`, `TAGS`, `DEVICES`, `SLUG`,
+`S2_BLOCKS`, `S3_WORDS` i `LIMITS` su tamo, a `check-fixtures.mjs`, `lint.mjs` i `timeline.mjs`
+ih uvoze. Vrednosti su nepromenjene — konsolidacija, ne redefinicija.
+
+**2. S1 liste se čitaju iz `camera-language.md` u vreme izvršavanja.** `loadCameraLanguage()`
+parsira blokove koda iz odeljka „Liste koje provera S1 konzumira". Pravilo se time menja na jednom
+mestu — u dokumentu. Format tog odeljka je zato API, a ne stil (`camera-language.md` §C).
+Prazna ili nepročitana lista **baca**, nikad ne prolazi tiho: nečujno ugašen S1 je gori ishod od
+pada alata.
+
+**3. „Ista rečenica" za S1 je izvršno definisana.** Segment je tekst između preloma reda **ili**
+rečenične interpunkcije (`.` `!` `?` `…`) iza koje sledi belina. Prelom reda je granica sam za
+sebe, jer se blokovi prompta ne pišu uvek sa tačkom na kraju; tačka bez beline (`6.5s`) ne deli.
+`image_prompt` i `animation_prompt` se segmentiraju **odvojeno** — klauzula na početku animation
+prompta ne otključava frazu sa kraja image prompta. Poređenje ide po granici reči, pa `far` u
+„farmers" ne otključava ništa.
+
+**4. T3 proverava i broj u promptu.** `prompt-templates.md` traži da `MOTION BUDGET:` linija nosi
+isti broj kao `shot.motion_budget`, i to pripisuje proveri T3. Linter to sprovodi: kad
+`motion_budget !== null`, animation prompt mora da ima tu liniju i broj mora da se poklopi.
+Kad je `motion_budget` `null` (`use_len >= 9.0`), linija se ne proverava.
+
+**5. F1 meri na osi prvog dekodiranog sempla.** Dostupno trajanje klipa je
+`probe().duration − probe().start`, ista konvencija kao za narraciju u 5.4 tačka 1 — `ffmpeg -ss`
+nad izvorom računa odatle, pa kontejnerski ofset ne sme da se broji kao materijal. Tolerancija je
+**jedan frejm** na `storyboard.fps`. Nedostajući fajl, nečitljiv fajl i fajl bez prijavljenog
+trajanja su nalazi, ne padovi alata.
+
+**6. `--no-media` preskače F1.** Linter se pušta i pre nego što ijedan klip postoji (posle
+`at-storyboard`, pre Flow-a); tada bi F1 dao po jedan nalaz na svaki shot i zatrpao stvarne
+nalaze. Zastava to isključuje i **piše u izveštaj** da je F1 preskočen. Ostalih devet provera su
+čista funkcija dva JSON-a i uvek rade.
+
+**7. Pokvaren oblik ulaza nije nalaz nego pad.** `assertShape` prvo proverava da su obavezna polja
+prisutna i baca sa spiskom svih problema odjednom. Bez toga bi linter pao na `undefined` usred T1
+i prijavio nešto što nema veze sa stvarnim problemom. Nalaz je uvek izjava o **sadržaju**, ne o
+obliku.
+
+**8. Nalaz nosi izmerenu i očekivanu vrednost** kao zasebna polja
+(`{ code, where, message, measured, expected }`), ne samo u tekstu poruke. Izveštaj bez izmerene
+vrednosti ne može da se iskoristi za popravku. Nalazi se sortiraju redosledom BLOCKING tabele
+(T1 → F1), pa unutar koda po `where`.
+
+**9. `qa-report.md` je generisan artefakt** — gitignorisan i za epizode i za fixture-e. Prepisuje
+se pri svakom pokretanju; nikad se ne menja ručno, isto pravilo kao za `storyboard.md`.
+
+**10. Fixture-i su folderi epizoda, ne pojedinačni JSON-ovi.** `tests/fixtures/good-episode/` i
+`bad-episode/` nose `episode.json`, `storyboard.json` i `shots/partNN.mp4`, jer je definicija
+gotovog u C06 komanda nad folderom (`node tools/lint.mjs tests/fixtures/bad-episode`). Klipovi su
+16×16 crni `testsrc`, ~2 KB po fajlu (~14 KB ukupno) i **jesu u gitu**, uz izuzetak u
+`.gitignore` — bez njih se F1 ne može pustiti iz komandne linije, a fixture koji traži korak
+generisanja pre upotrebe nije fixture. Prava medija ostaje van gita.
+
+**11. Loš fixture obara tačno četiri provere** — S1, S2, T2, C1 — po jednu na svakom od četiri
+shota, i nijednu drugu; dobar fixture prolazi svih deset sa nula nalaza i u shotu 01 nosi
+izbrojane primere promptova iz `prompt-templates.md` **doslovno** (151 / 90 reči). Ako ti primeri
+ikad obore P1 ili S1, greška je u linteru ili u template-u, ne u fixture-u — test to i tvrdi.
+Shot 02 dobrog fixture-a namerno nosi zabranjenu frazu **otključanu** listom B, da se lista B vidi
+i na primeru koji prolazi, ne samo na onom koji pada.
+
+**12. `use_len` od 1.2s nije predstavljiv na 24fps.** Plan traži shot od 1.2s kao okidač za T2;
+`1.2 × 24 = 28.8`, pa bi takav shot razbio frejm-poravnanje (invarijanta 10) i povukao lažne T1
+nalaze na granicama beata. Fixture zato koristi najbližu frejm-poravnatu vrednost, **1.208s**
+(29 frejmova). Provera koja se time demonstrira je ista.
+
+### 5.6 Odluke donete u C07 (obavezujuće) — ADVISORY linter
+
+Izvor istine je `tools/lint.mjs` (signali) i `tools/contract.mjs` (rečnici i izuzeća). Ovaj sloj
+meri i prikazuje; **ne menja exit code ni u jednom slučaju**. Vodeće načelo izvornog plana:
+šumni linter koji stalno laje naučiš da ignorišeš.
+
+**1. ADVISORY ne ulazi u `findings`.** `lintEpisode` vraća `{ findings, signals }` kao dva
+odvojena niza, a `main()` računa exit code isključivo iz `findings`. Signal nema polje `expected`:
+R2/R3/C2 su mere bez praga, a „očekivana vrednost" za R1 i R4 bila bi režiserska odluka, ne
+činjenica. Nosi `{ code, where, message, measured }`.
+
+**2. R4 izuzima tri izvora, ne dva.** Plan imenuje `locked_description` (C1) i kanonski style
+string. Treći je nađen na kanonskom primeru iz `prompt-templates.md`: fiksne `PRESERVE` i `FORBID`
+linije. Šablon ih zove „fiksne linije, ne šablon za popunjavanje", a `PRESERVE` sama nosi **tačno
+13 reči** — dakle sama obara prag „>12" — i stoji doslovno u svakom animation promptu. Bez tog
+izuzeća R4 laje na svaki ispravan storyboard, iz istog razloga kao kod `locked_description`-a.
+Provereno na `good-episode` fixture-u: bez njega par shot 01 ↔ shot 02 daje nalaz od 25 reči.
+
+**3. Izuzeća se čitaju iz `docs/reference/` u vreme izvršavanja**, isto kao S1 liste (5.5 tačka 2).
+Style string dolazi iz `style-string.md` (prvi blok koda koji počinje sa `STYLE:`), fiksne linije
+iz `prompt-templates.md` (odeljak „Animation template"). Promena stringa u dokumentu automatski
+menja ono što R4 briše. Nepročitan izvor ili izvor promenjenog oblika **baca**, nikad ne prolazi
+tiho — tiho izgubljeno izuzeće ne gasi proveru nego je pretvara u lajanje.
+
+**4. Rez izuzeća deli tekst, ne spaja ga.** Kad se fraza izbaci, ostatak se ne slepljuje: na mesto
+reza ide barijera, pa n-gram ne može da nastane od reči pre i posle izuzete fraze. Bez toga bi
+brisanje 28-rečnog opisa samo po sebi proizvodilo lažne nalaze.
+
+**5. R4 poredi promptove različitih shotova.** Image i animation prompt istog shota idu dvama
+različitim generatorima i nikad se ne vide zajedno, pa njihovo preklapanje ništa ne košta; kroz
+shotove je ono od čega epizoda izgleda isto od početka do kraja. Po paru se prijavljuje **najduži**
+niz, jedan signal; prikaz se skraćuje na 20 reči, izmerena vrednost ostaje puna.
+
+**6. R4 meri tok tokena celog prompta — prelome reda i nazive blokova uključivo.** Segmenti se
+prave isključivo na mestima izuzetih fraza. Posledica: identična linija od 14 reči koju u oba
+prompta prati obavezni blok `CAMERA:` broji se kao 15, jer je naziv bloka stvarno ponovljena reč.
+Barijera na svakom prelomu reda bi tu jedinicu skinula, ali bi sakrila stvaran slučaj — dve
+uzastopne identične linije od po osam reči jesu šesnaest ponovljenih reči, a razdvojene bi obe
+pale ispod praga.
+
+**7. `r4Tokens` skida interpunkciju sa ivica tokena.** `image.` i `image` su ista reč. Bez toga bi
+izuzeće promašilo svaku liniju koju prompt završava tačkom, a šablon ne — `prompt-templates.md`
+piše `PRESERVE` bez tačke, `good-episode` sa njom.
+
+**8. R1 izuzima linkovane shotove i iz para i iz lanca.** Isti `link_group` (3.4) prekida lanac
+eskalacije, inače bi A/B/C lanac sam sebe eskalirao. `link_group: null` na oba shota **nije** isti
+link_group — `null === null` bi izuzeo ceo storyboard.
+
+**9. R1 eskalacija ide preko granice beata.** „Uzastopni shotovi" znači redosled tajmlajna, ne
+ugnežđenost u beat. Dva praga su nezavisna: par se flag-uje na ≤1 različitu osu **od šest**,
+eskalacija na 3+ uzastopna shota koji dele **tri** ose (`subject_type` + `location` + `time_light`).
+Eskalacije se u izveštaju štampaju pre parova.
+
+**10. R2 prikazuje i vrednosti sa nulom**, i to slugovima iz 3.5, ne prevodom — slug je ono što
+stoji u JSON-u i što autor menja. Nepoznata vrednost se prikazuje na kraju liste umesto da nestane
+u zbiru; time se tipfeler u tagu vidi bez nove BLOCKING provere.
+
+**11. C2 nema polje u shemi; meri se iz `animation_prompt`-a.** Zatvara otvorenu stavku iz 5.2.
+Klip je multi-visual kad prompt to **deklariše** rečnikom iz `visualPromptEngine.md` §16/§30/§37 —
+`OPENING VISUAL`, `MIDDLE VISUAL`, `FINAL VISUAL`, `VISUAL TRANSITION`, `VISUAL SEQUENCE`,
+`TRANSITION 1`, `TRANSITION 2`, `CINEMATIC TRANSITION` — verzalom, istim mehanizmom kao S2 blokovi.
+Samodeklarisani `multi_visual: boolean` bi merio samo to šta je autor upisao (5.2 to i kaže), a uz
+to bi dizao `schema_version` zbog signala koji prikazuje broj. **`schema_version` ostaje 1.**
+Napomena koja ide uz brojku: aktuelni animation template u `prompt-templates.md` **nema**
+multi-visual oblik, pa je danas tačan odgovor uvek 0. Kad ga C11 doda, brojač počinje da radi bez
+ijedne izmene u linteru.
+
+**12. `assertShape` sada traži i `shot.link_group`, `shot.tags` (svih šest osa kao stringove) i
+`beat.device`.** ADVISORY ih čita. Kad `tags` nedostaje, `undefined === undefined` znači „shotovi
+dele osu" — R1 bi merio ništa i ćutao. Tiho ugašen signal je gori ishod od pada alata, isto pravilo
+kao za S1 liste. Polja su ionako obavezna po 3.2 i 3.3; C06 ih nije tražio samo zato što ih nijedna
+BLOCKING provera nije čitala.
+
+**13. Izveštaj se grupiše po kodu, ne po shotu.** Svih pet pododeljaka je uvek prisutno; prazan
+kaže „Nema signala." R4 i C2 nose red legende — bez njega se broj ne može ispravno pročitati
+(šta je izuzeto, odnosno šta se uopšte meri).
+
+**14. Fixture-i za C07 prolaze BLOCKING sloj sa nula nalaza.** `repetitive-episode` (4 shota, dva
+beata: eskalacija 01–04, par 01→02 i jedan namerni R4 od 15 reči) i `linked-episode` (3 linked
+shota istog beata koji dele sve tri ose eskalacije, R1 mora da ćuti). Da fixture pada na BLOCKING,
+ne bi se videlo ono što se njime dokazuje — da ADVISORY ne menja exit code. Kontra-test ide korak
+dalje: isti fixture sa obrisanim `link_group`-om **mora** da eskalira, inače tišina dokazuje samo
+da podataka nema.

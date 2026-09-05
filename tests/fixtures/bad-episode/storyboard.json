@@ -1,0 +1,154 @@
+{
+  "schema_version": 1,
+  "episode": "bad-episode",
+  "generated_at": "2026-09-05T00:00:00Z",
+  "narration_duration": 25.25,
+  "fps": 24,
+  "beats": [
+    {
+      "beat_id": "B01",
+      "sentences": [
+        "S01",
+        "S02"
+      ],
+      "start": 0,
+      "end": 14.995,
+      "dur": 14.995,
+      "device": null,
+      "narration_says": "Cadwal had held the fort for eleven years without once opening the gate to a Roman. The twelfth year was different.",
+      "viewer_sees": "The warlord on the track below his own rampart, then on the bank above it, weighing the pin of his cloak.",
+      "shots": [
+        {
+          "shot_id": "01",
+          "beat_id": "B01",
+          "link_group": null,
+          "t_in": 0,
+          "t_out": 7.5,
+          "use_in": 0,
+          "use_out": 7.5,
+          "use_len": 7.5,
+          "motion_budget": 7.5,
+          "source_file": "shots/part01.mp4",
+          "ingredient_image": "images/shot01.jpeg",
+          "characters": [
+            "cadwal"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Cadwal, a broad Gallic warlord in his fifties, grey-streaked hair roped back, a puckered scar across one cheek, a bronze torc at his throat, a red cloak pinned at the shoulder.\nACTION: soldiers march out of the fortress in the background.\nSETTING: a rutted track of churned mud and wet grass.\nCAMERA: camera stands on the track, eye level, wide.\nFRAME LAYOUT: left third — Cadwal, near-camera and large; right third — the gate tower, far and hazy.\nFACING: we see his face and chest; he looks along the track, past camera.\nSCREEN DIRECTION: the column moves from the right edge toward the left.\nLIGHT: low grey light before rain, no shadows.\nPALETTE: wet turf green, iron grey, one note of red.\nNOT IN FRAME: the ditches, the horses.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 7.5s.\n0–1s: Cadwal turns his head toward the track.\n1–4s: he steps forward twice, the cloak swinging heavy with rain, and lifts one hand.\n4–7.5s: he stops, the hand still raised, and his shoulders drop as he lets out a breath.\nCAMERA: one continuous slow push toward him.\nENVIRONMENT: rain drifts across the frame; mud sucks at boots along the lower edge.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "hill-fort",
+            "time_light": "grey-before-rain",
+            "camera_motion": "push"
+          }
+        },
+        {
+          "shot_id": "02",
+          "beat_id": "B01",
+          "link_group": null,
+          "t_in": 7.5,
+          "t_out": 15,
+          "use_in": 0,
+          "use_out": 7.5,
+          "use_len": 7.5,
+          "motion_budget": 7.5,
+          "source_file": "shots/part02.mp4",
+          "ingredient_image": "images/shot02.jpeg",
+          "characters": [
+            "cadwal"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Cadwal, a broad Gallic warlord in his fifties, grey-streaked hair roped back, a puckered scar across one cheek, a bronze torc at his throat, a red cloak pinned at the shoulder.\nACTION: he pulls the cloak pin free and holds it up.\nSETTING: the top of the earthen bank, stakes to either side.\nCAMERA: camera sits just below him on the slope, low angle, medium.\nFRAME LAYOUT: center — Cadwal, near-camera and large; upper edge — the palisade tops, cropped at the stake line.\nSCREEN DIRECTION: he turns from screen-left toward screen-right.\nLIGHT: flat grey light, no shadows.\nPALETTE: wet turf green, iron grey, one note of red.\nNOT IN FRAME: the gate, the track below.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 7.5s.\n0–1s: Cadwal works the pin loose with his thumb.\n1–4s: he raises it to eye height and turns it once, the cloak sagging open at his shoulder.\n4–7.5s: he closes his fist around it and lowers the arm to his side.\nCAMERA: one continuous slow pull back down the slope.\nENVIRONMENT: wind combs the grass on the bank; a stake creaks.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "low",
+            "location": "hill-fort",
+            "time_light": "grey-before-rain",
+            "camera_motion": "pull"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B02",
+      "sentences": [
+        "S03"
+      ],
+      "start": 14.995,
+      "end": 16.21,
+      "dur": 1.215,
+      "device": "macro-object",
+      "narration_says": "The gate went shut.",
+      "viewer_sees": "MACRO OBJECT — the bar dropping into its brackets, nothing else.",
+      "shots": [
+        {
+          "shot_id": "03",
+          "beat_id": "B02",
+          "link_group": null,
+          "t_in": 15,
+          "t_out": 16.208,
+          "use_in": 0,
+          "use_out": 1.208,
+          "use_len": 1.208,
+          "motion_budget": 1.208,
+          "source_file": "shots/part03.mp4",
+          "ingredient_image": "images/shot03.jpeg",
+          "characters": [],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a single iron-shod gate bar, thick as a man's thigh, its timber cracked and grey with age, the black iron collars at each end pitted by rust and rain.\nACTION: the bar drops into its brackets.\nSETTING: the inner face of a timber gate, planks fitted edge to edge.\nCAMERA: camera is a pace from the gate, eye level, close.\nFRAME LAYOUT: center — the bar, near-camera and filling the width; lower edge — a bracket, cropped at the iron.\nFACING: we see the bar side-on, its length crossing the frame.\nSCREEN DIRECTION: the bar drops from the upper edge toward mid-frame.\nLIGHT: one torch to the left, warm, raking across the timber.\nPALETTE: soot black, wet oak, rust orange.\nNOT IN FRAME: hands, faces, the yard beyond.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 1.208s.\n0–0.4s: the bar tips off the shoulder of the bracket.\n0.4–0.8s: it falls the width of two planks, timber blurring, dust jumping off the grain.\n0.8–1.208s: it seats into the iron collar and stops dead, the whole gate shuddering once.\nCAMERA: locked, no movement.\nENVIRONMENT: torchlight jumps across the planks; grit drifts down through the beam.\nPRESERVE: same props, palette, lighting and composition as the source image.\nFORBID: cuts, scene changes, characters entering, on-screen text, camera moves, style shifts.",
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "CU",
+            "angle": "eye",
+            "location": "hill-fort",
+            "time_light": "night-torchlit",
+            "camera_motion": "locked"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B03",
+      "sentences": [
+        "S04"
+      ],
+      "start": 16.21,
+      "end": 25.2,
+      "dur": 8.99,
+      "device": null,
+      "narration_says": "For the rest of that winter the fort spoke to no one, and no one came up the hill to ask why.",
+      "viewer_sees": "The whole fort from far down the slope, smoke standing over it, not a person in the frame.",
+      "shots": [
+        {
+          "shot_id": "04",
+          "beat_id": "B03",
+          "link_group": null,
+          "t_in": 16.208,
+          "t_out": 25.208,
+          "use_in": 0,
+          "use_out": 9,
+          "use_len": 9,
+          "motion_budget": null,
+          "source_file": "shots/part04.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "hill-fort"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: the hill fort seen whole, its banks and ditches stepping down the slope, the palisade a grey comb along the crest and one squat tower breaking the line above the gate.\nACTION: smoke lifts from three fires inside the walls.\nSETTING: open downland under a low sky, grass flattened by wind.\nCAMERA: camera stands far down the slope, low angle, extreme wide.\nFRAME LAYOUT: center — the fort, small and hazy on the crest; lower edge — bare turf, near-camera and large.\nFACING: we see the gate side of the fort square on.\nSCREEN DIRECTION: the smoke drifts from screen-left toward screen-right.\nLIGHT: flat overcast, the light dropping toward evening.\nPALETTE: turf green, chalk white, smoke grey.\nNOT IN FRAME: people, animals, the road.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 9s.\n0–1s: the smoke columns lean as the wind takes them.\n1–5s: they bend further and thin out across the crest, the grass in the lower edge combing flat.\n5–9s: the wind eases, the smoke straightens, and the fort settles into stillness.\nCAMERA: one continuous slow push toward the crest.\nENVIRONMENT: cloud shadow slides across the downland; a bird crosses the upper edge.\nPRESERVE: same architecture, palette, lighting and composition as the source image.\nFORBID: cuts, scene changes, characters entering, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "architecture",
+            "shot_size": "XLS",
+            "angle": "low",
+            "location": "hill-fort",
+            "time_light": "overcast-evening",
+            "camera_motion": "push"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "slug": "repetitive-episode",
+  "title": "Repetitive Episode (advisory fixture)",
+  "status": "in-progress",
+  "voice": "Nathaniel - Engaging, British and Calm",
+  "narration_file": "narration.mp3",
+  "final_file": null,
+  "endcard_file": "endcard.jpeg",
+  "characters": [
+    {
+      "id": "duro",
+      "name": "Duro",
+      "locked_description": "a broad-shouldered Gaulish carter of about forty, a drooping moustache, a hooded wool cloak pinned at the shoulder, mud to the knees, a tally stick thrust through his belt"
+    }
+  ],
+  "locations": [],
+  "key_props": [],
+  "notes": "Fixture za C07. Prolazi svih deset BLOCKING provera sa nula nalaza, a obara R1 (eskalacija na četiri uzastopna shota istog subject_type + location + time_light, plus par 01→02 koji se razlikuje samo po camera_motion) i R4 (ista SETTING linija u shotovima 01 i 03, van svakog izuzeća: 14 reči, plus obavezni naziv bloka CAMERA koji za njom sledi u oba prompta = 15 uzastopnih identičnih reči). Nije prava epizoda."
+}

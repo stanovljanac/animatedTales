@@ -9,9 +9,12 @@ brojaču iz `schemas.md` §0.6. Taj brojač broji i nazive blokova (`FRAME LAYOU
 oznake (`0–1s:` = 1 reč), pa je gornja granica uža nego što deluje: `STYLE` blok pojede 16 reči, a
 svaki `locked_description` još 25–40.
 
-> **Namerno ponavljanje, jedini dozvoljeni izuzetak:** kanonski style string iz `style-string.md`
-> stoji doslovno i u image primeru ispod, jer se po definiciji kopira neizmenjen u svaki prompt;
-> R4 ga zato izuzima iz provere ponavljanja n-grama (`schemas.md` §4.1).
+> **Namerno ponavljanje, tri dozvoljena izuzetka:** kanonski style string iz `style-string.md`,
+> `locked_description` iz `episode.json` i fiksne `PRESERVE`/`FORBID` linije animation šablona
+> stoje doslovno u svakom promptu — prva dva jer se po definiciji kopiraju neizmenjeni, treće jer
+> su fiksne linije, ne šablon za popunjavanje. R4 sva tri izuzima iz provere ponavljanja n-grama
+> (`schemas.md` §4.1 i §5.6 tačka 2). Sama `PRESERVE` linija nosi 13 reči, pa bi bez izuzeća
+> obarala prag „>12" na svakom paru shotova.
 
 ---
 

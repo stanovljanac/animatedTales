@@ -32,5 +32,16 @@ Thumbs.db
 desktop.ini
 .DS_Store
 
+# --- Generisani artefakti alata ---
+episodes/*/qa-report.md
+tests/fixtures/*-episode/qa-report.md
+episodes/*/storyboard.md
+tests/fixtures/*-episode/storyboard.md
+
 # --- Explicitly tracked despite the rules above ---
 !.gitignore
+
+# Fixture klipovi za F1 (C06): 16x16 crni testsrc, 2 KB po fajlu, ukupno ~14 KB.
+# Bez njih se F1 ne može pustiti iz komandne linije nad fixture-om, a fixture koji
+# traži korak generisanja pre upotrebe nije fixture. Prava medija ostaje van gita.
+!tests/fixtures/*-episode/shots/*.mp4

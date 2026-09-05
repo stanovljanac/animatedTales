@@ -15,26 +15,18 @@ import { fileURLToPath } from 'node:url';
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const FIX = path.join(HERE, 'fixtures');
 
-// ---- kanonski helperi (schemas.md 0.2, 0.6, 0.7) ----
-export const countWords = (text) =>
-  String(text).split(/\s+/).filter((t) => /[A-Za-z0-9]/.test(t)).length;
-export const normalize = (s) => String(s).replace(/\s+/g, ' ').trim().toLowerCase();
-export const q = (t, fps) => Math.round((Math.round(t * fps) / fps) * 1000) / 1000;
-export const isFrameAligned = (t, fps) => Math.abs(t * fps - Math.round(t * fps)) <= 0.02;
+// ---- kanonski helperi i rečnici (schemas.md 0.2, 0.6, 0.7, 3.5, 3.6) ----
+// Jedna definicija za ceo lanac živi u tools/contract.mjs; ovde se re-eksportuje zbog
+// potrošača koji su ih uvozili odavde.
+import {
+  DEVICES, EPS, S2_BLOCKS, S3_WORDS, SLUG, TAGS,
+  countWords, isFrameAligned, loadCameraLanguage, normalize, q, s1Violations,
+} from '../tools/contract.mjs';
 
-const EPS = 0.0011;
-const TAGS = {
-  subject_type: ['character', 'group', 'environment', 'object', 'map-diagram', 'crowd', 'architecture'],
-  shot_size: ['XLS', 'LS', 'MS', 'CU', 'ECU', 'aerial'],
-  angle: ['eye', 'low', 'high', 'overhead', 'profile'],
-  camera_motion: ['locked', 'push', 'pull', 'pan', 'track', 'parallax', 'reveal'],
-};
-const DEVICES = ['animated-map', 'ledger-accumulation', 'process-cutaway', 'before-after',
-  'timeline-seasons', 'macro-object', 'silhouette', 'crowd-as-texture', 'empty-aftermath'];
-const SLUG = /^[a-z0-9]+(-[a-z0-9]+)*$/;
-const S2_BLOCKS = ['CAMERA', 'FRAME LAYOUT', 'FACING', 'SCREEN DIRECTION', 'NOT IN FRAME'];
-const S1_PHRASES = ['in the background', 'behind them', 'in the distance behind', 'in front of'];
-const S3_WORDS = ['then', 'later', 'afterwards', 'cuts to', 'meanwhile'];
+export { countWords, normalize, q, isFrameAligned };
+
+// S1 liste dolaze iz docs/reference/camera-language.md (C06), ne iz koda.
+const S1_LISTS = loadCameraLanguage();
 
 const errs = [];
 const ok = (cond, msg) => { if (!cond) errs.push(msg); };
@@ -121,8 +113,9 @@ sb.beats.forEach((b, bi) => {
 
     // S1 / S2 / S3
     for (const blk of S2_BLOCKS) ok(s.image_prompt.includes(blk + ':'), `${id}: S2 nedostaje blok ${blk}`);
-    const both = normalize(`${s.image_prompt} ${s.animation_prompt}`);
-    for (const ph of S1_PHRASES) ok(!both.includes(ph), `${id}: S1 zabranjena fraza "${ph}"`);
+    for (const text of [s.image_prompt, s.animation_prompt])
+      for (const v of s1Violations(text, S1_LISTS))
+        ok(false, `${id}: S1 zabranjena fraza "${v.phrase}" bez screen-position klauzule`);
     for (const w of S3_WORDS) ok(!new RegExp(`\\b${w}\\b`, 'i').test(s.animation_prompt), `${id}: S3 reč "${w}"`);
 
     // C1 + invarijanta 12

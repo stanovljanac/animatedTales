@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "episode": "good-episode",
+  "generated_at": "2026-09-05T00:00:00Z",
+  "narration_duration": 23.08,
+  "fps": 24,
+  "beats": [
+    {
+      "beat_id": "B01",
+      "sentences": [
+        "S01",
+        "S02"
+      ],
+      "start": 0,
+      "end": 13.502,
+      "dur": 13.502,
+      "device": null,
+      "narration_says": "Every cargo that came off a Carthaginian ship was counted twice. Once by the captain who brought it, and once by a clerk who had never been to sea.",
+      "viewer_sees": "A clerk on the quay marking a wax tablet, then holding it out to a captain who checks the count with his thumb.",
+      "shots": [
+        {
+          "shot_id": "01",
+          "beat_id": "B01",
+          "link_group": "B01",
+          "t_in": 0,
+          "t_out": 6.5,
+          "use_in": 0,
+          "use_out": 6.5,
+          "use_len": 6.5,
+          "motion_budget": 6.5,
+          "source_file": "shots/part01.mp4",
+          "ingredient_image": "images/shot01.jpeg",
+          "characters": [
+            "hanno"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Hanno, a lean Carthaginian clerk of about fifty, close-cropped grey hair, a short curled beard, an undyed linen tunic belted with rope, a wax tablet under one arm.\nWEARING/PROPS: worn sandals, a bronze stylus.\nACTION: he cuts one more mark into the wax.\nSETTING: a stone quay of fitted limestone, crates along the edge.\nCAMERA: camera stands two paces from him on the quay, eye level, medium.\nFRAME LAYOUT: left third — Hanno, near-camera and large; center — the open tablet; right third — a moored hull, far and hazy.\nFACING: we see his face and chest three-quarter on; his eyes stay down.\nSCREEN DIRECTION: dockhands cross from the right edge toward the left.\nLIGHT: flat morning haze off the water.\nPALETTE: sand ochre, weathered timber, sea green.\nNOT IN FRAME: the city walls, the open sea.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 6.5s.\n0–1s: Hanno presses the stylus into the wax.\n1–4s: he lifts the tablet toward the light, counting; a dockhand crosses the lower edge with a crate.\n4–6.5s: he tucks the tablet under his arm and his shoulders settle.\nCAMERA: one continuous slow push toward the tablet.\nENVIRONMENT: haze drifts over the water; a rope sways against the quay.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "carthage-quay",
+            "time_light": "morning-haze",
+            "camera_motion": "push"
+          }
+        },
+        {
+          "shot_id": "02",
+          "beat_id": "B01",
+          "link_group": "B01",
+          "t_in": 6.5,
+          "t_out": 13.5,
+          "use_in": 0,
+          "use_out": 7,
+          "use_len": 7,
+          "motion_budget": 7,
+          "source_file": "shots/part02.mp4",
+          "ingredient_image": "images/shot02.jpeg",
+          "characters": [
+            "hanno",
+            "carthage-quay"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Hanno, a lean Carthaginian clerk of about fifty, close-cropped grey hair, a short curled beard, an undyed linen tunic belted with rope, a wax tablet under one arm.\nSETTING: a long stone quay of fitted limestone blocks, its edge worn round by rope, crates and amphorae stacked along it, moored hulls riding low in green harbour water.\nACTION: he holds the tablet out to a captain.\nCAMERA: camera stands at the crates, eye level, medium.\nFRAME LAYOUT: center — Hanno stands in front of the tallest crate, near-camera and large; right third — the captain, cropped.\nFACING: we see Hanno's profile; the captain's back is to us.\nSCREEN DIRECTION: a porter crosses from the left edge toward the right.\nLIGHT: hard noon sun, short black shadows.\nPALETTE: bleached limestone, harbour green, bronze.\nNOT IN FRAME: the harbour mouth, the city gate.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 7s.\n0–1s: Hanno turns the tablet so the captain can read it.\n1–4s: the captain leans in, one hand on a crate, and traces a column of marks with his thumb.\n4–7s: he straightens, nods once, and Hanno lowers the tablet to his hip.\nCAMERA: one continuous slow push past the crates.\nENVIRONMENT: heat shimmer rises off the stone; a gull crosses the upper edge.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "carthage-quay",
+            "time_light": "midday-hard-sun",
+            "camera_motion": "push"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B02",
+      "sentences": [
+        "S03"
+      ],
+      "start": 13.502,
+      "end": 22.995,
+      "dur": 9.493,
+      "device": "macro-object",
+      "narration_says": "The tablet was the only thing in the harbour that could not be argued with.",
+      "viewer_sees": "MACRO OBJECT — the wax surface alone, one fresh stroke cut into it. No people at all.",
+      "shots": [
+        {
+          "shot_id": "03",
+          "beat_id": "B02",
+          "link_group": null,
+          "t_in": 13.5,
+          "t_out": 23,
+          "use_in": 0,
+          "use_out": 9.5,
+          "use_len": 9.5,
+          "motion_budget": null,
+          "source_file": "shots/part03.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "wax-tablet"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a hinged wooden writing tablet the size of two palms, its recessed panels filled with dark beeswax, the surface scored by columns of tally marks and thumbed smooth at the edges.\nSETTING: a plank table in a shuttered counting room.\nACTION: a stylus adds one more mark to the last column.\nCAMERA: camera is level with the table top, eye level, extreme close.\nFRAME LAYOUT: center — the open tablet, near-camera and filling most of the frame; lower edge — the stylus tip; upper edge — a shuttered window, far and hazy.\nFACING: we see the wax straight on, its marks catching the light.\nSCREEN DIRECTION: the stylus travels from the left edge toward mid-frame.\nLIGHT: one bar of afternoon sun through the shutter slats.\nPALETTE: beeswax brown, pale plank, dusty gold.\nNOT IN FRAME: hands, faces, the harbour.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 9.5s.\n0–1s: the stylus tip settles into the wax at the left edge.\n1–5s: it draws one slow stroke, curls of wax lifting away from the groove.\n5–9.5s: the stylus lifts clear and the tablet sits still, the fresh mark darker than the rest.\nCAMERA: locked, no movement.\nENVIRONMENT: dust turns in the bar of light; the shutter slats tremble once.\nPRESERVE: same props, palette, lighting and composition as the source image.\nFORBID: cuts, scene changes, characters entering, on-screen text, camera moves, style shifts.",
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "ECU",
+            "angle": "eye",
+            "location": "carthage-quay",
+            "time_light": "afternoon-shuttered",
+            "camera_motion": "locked"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -102,11 +102,23 @@ Primer koji **prolazi** uprkos zabranjenoj frazi:
 `the herald stands in front of the altar, center, near-camera and large`.
 Primer koji **pada**: `the herald stands in front of the altar` — nema nijedan token iz liste B.
 
-### C. Napomena o trenutnom izvršnom obliku
+### C. Izvršni oblik — **zatvoreno u C06**
 
-`tests/check-fixtures.mjs` (C01) implementira **samo listu A**, kao bezuslovnu zabranu — lista B tamo
-još ne postoji. Fixture zato ne sme da sadrži nijednu od četiri fraze čak ni sa screen-position
-klauzulom. Ugovor iz `schemas.md` §4 („zabranjene prostorne fraze **bez** screen-position klauzule")
-opisuje strožu meru nego što je kod danas ume; usklađivanje, tj. ugradnja liste B u `lint.mjs`,
-pripada **C06**. Do tada važi konzervativno pravilo: piši promptove tako da ti liste B uopšte ne
-treba.
+Obe liste se **čitaju iz ovog fajla u vreme izvršavanja** (`loadCameraLanguage()` u
+`tools/contract.mjs`): parsiraju se blokovi koda iz pododeljaka A i B ovog odeljka. Pravilo se
+zato menja ovde, u dokumentu, i nigde više — ni `lint.mjs` ni `check-fixtures.mjs` ne drže kopiju.
+Oba potrošača od C06 sprovode isto pravilo, sa listom B; raniji stroži oblik (lista A kao
+bezuslovna zabrana) više ne postoji.
+
+Dve posledice za pisanje ovog fajla:
+
+- **Format je API.** Lista A je jedna fraza po liniji; lista B je više tokena po liniji,
+  razdvojenih sa **dva ili više razmaka** — jedan razmak je unutar tokena (`cropped at`,
+  `left third`). Naslovi `### A.` / `### B.` i naslov odeljka `## Liste koje provera S1 konzumira`
+  su tačke oslonca parsera. Prazna lista bi tiho ugasila S1, pa je to greška koja se baca, ne
+  prećutkuje.
+- **„Ista rečenica" ima izvršnu definiciju** (`segments()`): prelom reda **ili** rečenična
+  interpunkcija (`.` `!` `?` `…`) iza koje sledi belina. Promptovi su blokovski, po jedan blok u
+  liniji, pa je prelom reda jednako jaka granica kao tačka — klauzula iz `FRAME LAYOUT` linije ne
+  otključava frazu iz `ACTION` linije. Tačka bez beline iza sebe (`6.5s`, `B.C.`) ne deli.
+  `image_prompt` i `animation_prompt` se gledaju odvojeno, nikad spojeni.

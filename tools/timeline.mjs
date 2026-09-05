@@ -63,6 +63,8 @@
 //   · invarijanta 7 traži tajmlajn bez rupa, pa pauza mora da pripadne nekom shotu.
 // Ista konvencija važi i unutar beata i na granici između beatova (`planTimeline`).
 
+import { EPS, isFrameAligned, q, round3 } from './contract.mjs';
+
 // ---------------------------------------------------------------- konstante
 
 /** Podrazumevane vrednosti; ista imena kao ključevi u tools/config.json. */
@@ -80,19 +82,12 @@ export const DEFAULTS = {
 /** Kazne po rezu; red veličine iznad najgore kvadratne kazne (64), pa nivoi ne mogu da se pomešaju. */
 const PENALTY = { sentence: 0, word: 1e4, grid: 1e5 };
 
-/** Tolerancija na poređenja vremena; vrednosti su zaokružene na 3 decimale (schemas.md §3.7). */
-const EPS = 0.0011;
-
 // ---------------------------------------------------------------- helperi
+//
+// Kanonski helperi i tolerancija žive u tools/contract.mjs — jedna definicija za ceo lanac
+// (schemas.md §0). Ovde se re-eksportuju da javni API modula ostane isti.
 
-/** Kanonska kvantizacija na frejm (schemas.md §0.2). */
-export const q = (t, fps) => Math.round((Math.round(t * fps) / fps) * 1000) / 1000;
-
-/** Zaokruživanje na 3 decimale (schemas.md §0.1). */
-export const round3 = (t) => Math.round(t * 1000) / 1000;
-
-/** Provera frejm-poravnanja (schemas.md §0.2). */
-export const isFrameAligned = (t, fps) => Math.abs(t * fps - Math.round(t * fps)) <= 0.02;
+export { q, round3, isFrameAligned };
 
 const warn = (code, message, extra = {}) => ({ code, message, beat_id: null, sentence_id: null, at: null, ...extra });
 

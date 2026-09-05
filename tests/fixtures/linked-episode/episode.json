@@ -1,0 +1,19 @@
+{
+  "slug": "linked-episode",
+  "title": "Linked Episode (advisory counter-fixture)",
+  "status": "in-progress",
+  "voice": "Nathaniel - Engaging, British and Calm",
+  "narration_file": "narration.mp3",
+  "final_file": null,
+  "endcard_file": "endcard.jpeg",
+  "characters": [
+    {
+      "id": "nola",
+      "name": "Nola",
+      "locked_description": "a sun-dark salt worker in her thirties, hair bound in faded indigo cloth, a coarse linen shift knotted at the waist, wooden rake in both hands, salt crust white to the elbow"
+    }
+  ],
+  "locations": [],
+  "key_props": [],
+  "notes": "Kontra-fixture za C07. Tri linked shota istog beata dele subject_type, location i time_light — bez izuzeća iz schemas.md §3.4 dizali bi R1 eskalaciju. Sa izuzećem R1 mora da ćuti. Nije prava epizoda."
+}
