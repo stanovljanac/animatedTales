@@ -150,12 +150,25 @@ Ovo su činjenice zatečene na disku koje izvorni plan nije imao. Svaka je upisa
     potvrđen u skilovima. Zamka celine tako obara njenu tabelu: fajl dobija `DEPRECATED` u prvoj
     liniji i briše se **zajedno sa `visualPromptEngine.md`, posle C12**. Time pada i jedna
     stavka definicije gotovog (`ls docs/masterPrompt.md` → ne postoji). → **C11**, zatvara se u **C12**
+    — *zatvoreno u C12: sve tri sekcije su u `.claude/skills/at-storyboard/SKILL.md` (VISUAL MODES,
+    EARLY MOTION, STILL IMAGE MONTAGE — poslednja i kao merljiv signal u `at-qa`); oba fajla su
+    obrisana, citati na njih po repou označeni kao provenijencija (`schemas.md` §5.10 tačka 5).*
 
 22. **Mera „zbir `prompts/` + `reference/` ≈ 1000 linija" više ne meri ništa.** `schemas.md` je u
     međuvremenu narastao na 1018 linija sam za sebe, jer je mašinski ugovor koji je rastao sa
     svakom celinom C01–C10, a ne prompt-proza. Merodavno je: **svaki fajl u `prompts/` < 200**
     (133 / 152 / 191) i **`prompts/` = 476 linija** naspram 2134 iz tri originala. → **C11**
 
+
+23. **`timeline.mjs` nema CLI, pa lanac od `timing.json` do `storyboard.json` nije postojao.**
+    `schemas.md` §3 je tvrdio da `storyboard.json` piše „at-storyboard (kroz `timeline.mjs`)", a C12
+    i C13 su oba zvali `node tools/timeline.mjs`. Modul je čist — bez fajl I/O, po sopstvenom
+    zaglavlju — i jedini potrošač `planTimeline`-a u repou bio je njegov test. Skil je tu prazninu
+    mogao da popuni samo ad-hoc skriptom po epizodi, što je tačno zamka koju C12 navodi prvu
+    („skil koji opisuje CLI koji ne postoji"). Dodat je `tools/beatplan.mjs` — tanak alat iznad
+    modula, koji ispisuje checkpoint i piše skelet; `timeline.mjs` ostaje čist. → **C12**
+    — *zatvoreno: `tools/beatplan.mjs` + `tests/beatplan.test.mjs` (29 testova), ugovor u
+    `schemas.md` §5.11. C13 korak 6–7 time dobija oslonac.*
 
 ## Verifikacije iz izvornog plana → gde su
 
@@ -168,17 +181,6 @@ Ovo su činjenice zatečene na disku koje izvorni plan nije imao. Svaka je upisa
 | 4. `lint.mjs` — ADVISORY + kontra-test | C07 |
 | 5. `assemble.mjs` end-to-end na Marathonu | C09 (+ drift sa dissolve u C10 — 0 frejmova) |
 | 6. Suvi hod na novoj epizodi | C13–C15 |
-
-23. **`timeline.mjs` nema CLI, pa lanac od `timing.json` do `storyboard.json` nije postojao.**
-    `schemas.md` §3 je tvrdio da `storyboard.json` piše „at-storyboard (kroz `timeline.mjs`)", a C12
-    i C13 su oba zvali `node tools/timeline.mjs`. Modul je čist — bez fajl I/O, po sopstvenom
-    zaglavlju — i jedini potrošač `planTimeline`-a u repou bio je njegov test. Skil je tu prazninu
-    mogao da popuni samo ad-hoc skriptom po epizodi, što je tačno zamka koju C12 navodi prvu
-    („skil koji opisuje CLI koji ne postoji"). Dodat je `tools/beatplan.mjs` — tanak alat iznad
-    modula, koji ispisuje checkpoint i piše skelet; `timeline.mjs` ostaje čist. → **C12**
-    — *zatvoreno: `tools/beatplan.mjs` + `tests/beatplan.test.mjs` (29 testova), ugovor u
-    `schemas.md` §5.11. C13 korak 6–7 time dobija oslonac.*
-
 
 ## Van scope-a — ni u jednoj celini, svesno
 
@@ -199,4 +201,4 @@ Svaka celina ima kućicu ovde. Ažurira se na kraju sesije.
 
 - [x] C01  - [x] C02  - [x] C03  - [x] C04  - [x] C05
 - [x] C06  - [x] C07  - [x] C08  - [x] C09  - [x] C10
-- [x] C11  - [ ] C12  - [ ] C13  - [ ] C14  - [ ] C15
+- [x] C11  - [x] C12  - [ ] C13  - [ ] C14  - [ ] C15

@@ -12,8 +12,9 @@ STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outl
 
 ## Zašto baš taj
 
-`visualPromptEngine.md` i `masterPrompt.md` nose četiri različita opisa stila, nijedan kao gotov
-string za lepljenje. Izabran je onaj izveden iz `visualPromptEngine.md` §21, iz tri razloga:
+`visualPromptEngine.md` i `masterPrompt.md` (oba obrisana u C12) nosili su četiri različita opisa
+stila, nijedan kao gotov string za lepljenje. Izabran je onaj izveden iz `visualPromptEngine.md`
+§21, iz tri razloga:
 
 1. To je jedini opis koji dolazi sa **rangiranom** listom („Prioritize", pa „Avoid"), pa se iz njega
    može izvesti redosled reči; ostali su ravne nabrajalice bez težine.

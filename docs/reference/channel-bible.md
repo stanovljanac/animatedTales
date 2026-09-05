@@ -1,6 +1,6 @@
 # Biblija kanala — Animated Tales
 
-Jedini deo `docs/masterPrompt.md` koji preživljava Fazu 2. Ovde stoji ono što važi za **svaku**
+Jedini deo `docs/masterPrompt.md` koji je preživeo Fazu 2 (taj fajl je obrisan u C12). Ovde stoji ono što važi za **svaku**
 epizodu bez obzira na temu: ko je kanal, koliko video sme da traje, kako se postupa sa izvorima i
 kako se generišu klipovi. Sve što se tiče pojedinačnog kadra živi u ostala četiri fajla ovog foldera.
 

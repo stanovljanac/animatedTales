@@ -445,6 +445,7 @@ function checkR3(storyboard) {
 /**
  * Broj multi-visual klipova. Meri se iz `animation_prompt`-a, ne iz zasebnog polja: klip je
  * multi-visual onda kad prompt to **deklariše** rečnikom iz visualPromptEngine.md §16/§30/§37
+ * (fajl obrisan u C12; rečnik živi u contract.MULTI_VISUAL_MARKERS)
  * (`OPENING VISUAL`, `MIDDLE VISUAL`, …), verzalom, isto kao S2 blokovi. Samodeklarisani
  * boolean u JSON-u ne bi merio ništa — autor ga postavi na `false` i signal ćuti — a digao bi
  * i `schema_version` zbog signala koji samo prikazuje broj (schemas.md §5.2, zatvoreno u §5.6).

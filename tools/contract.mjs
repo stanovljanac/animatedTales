@@ -175,8 +175,9 @@ export const R1_MAX_DIFFERING = 1;
 export const R4_MIN_WORDS = 13;
 
 /**
- * C2: markeri kojima animation prompt deklariše multi-visual klip
- * (`docs/visualPromptEngine.md` §15–17, §30, §37). Traže se verzalom, kao S2 blokovi.
+ * C2: markeri kojima animation prompt deklariše multi-visual klip. Traže se verzalom, kao S2
+ * blokovi. Poreklo je `docs/visualPromptEngine.md` §15–17/§30/§37, obrisan u C12 — lista ispod
+ * je cela, drugog izvora nema (schemas.md §5.6 tačka 11).
  */
 export const MULTI_VISUAL_MARKERS = ['OPENING VISUAL', 'MIDDLE VISUAL', 'FINAL VISUAL',
   'VISUAL TRANSITION', 'VISUAL SEQUENCE', 'TRANSITION 1', 'TRANSITION 2', 'CINEMATIC TRANSITION'];

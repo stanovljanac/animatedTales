@@ -812,7 +812,8 @@ stoji u JSON-u i što autor menja. Nepoznata vrednost se prikazuje na kraju list
 u zbiru; time se tipfeler u tagu vidi bez nove BLOCKING provere.
 
 **11. C2 nema polje u shemi; meri se iz `animation_prompt`-a.** Zatvara otvorenu stavku iz 5.2.
-Klip je multi-visual kad prompt to **deklariše** rečnikom iz `visualPromptEngine.md` §16/§30/§37 —
+Klip je multi-visual kad prompt to **deklariše** rečnikom iz `visualPromptEngine.md` §16/§30/§37
+(fajl je obrisan u C12; lista ispod je njegova cela sadržina za ovu proveru) —
 `OPENING VISUAL`, `MIDDLE VISUAL`, `FINAL VISUAL`, `VISUAL TRANSITION`, `VISUAL SEQUENCE`,
 `TRANSITION 1`, `TRANSITION 2`, `CINEMATIC TRANSITION` — verzalom, istim mehanizmom kao S2 blokovi.
 Samodeklarisani `multi_visual: boolean` bi merio samo to šta je autor upisao (5.2 to i kaže), a uz
@@ -1045,8 +1046,12 @@ To je jedini bezbedan način da tri ponuđene varijante prežive u istom fajlu; 
 pada na tačku 2. Provereno end-to-end: skripta sa izabranim outro-om i dve alternative u
 komentaru daje `outroIndex` na prvoj outro rečenici, bez ijednog traga alternativa.
 
-**5. `masterPrompt.md` i `visualPromptEngine.md` nose `DEPRECATED` u prvoj liniji i nisu obrisani.**
-Razlog i rok su u odstupanju 21 (`docs/plan/00-INDEX.md`); brišu se u C12.
+**5. `masterPrompt.md` i `visualPromptEngine.md` su obrisani u C12.** U C11 su dobili `DEPRECATED`
+u prvoj liniji i ostali na disku samo kao ulaz za vizuelni sloj; kad je taj sloj usvojio tri sekcije
+`masterPrompt.md`-a bez kopije igde (12 VISUAL MODES, 22 EARLY MOTION, 25 STILL IMAGE MONTAGE — sada
+u `.claude/skills/at-storyboard/SKILL.md`), oba fajla su nestala. Razlog i rok su u odstupanju 21
+(`docs/plan/00-INDEX.md`). Citati na `§` tih fajlova po repou su **provenijencija, ne pokazivač** —
+sadržaj na koji se pozivaju prepisan je na mesto citata pre brisanja.
 
 ### 5.11 Odluke donete u C12 (obavezujuće) — beat plan i skilovi
 
