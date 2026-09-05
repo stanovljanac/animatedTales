@@ -883,3 +883,137 @@ shota bez tog podatka je najlakši način da se lanac raspadne.
 invarijante 13.** `image_prompt` je obavezan i kod shota sa `ingredient_image: null`, dakle slika
 se ipak generiše; `null` znači samo da se ne vraća u Flow kao ingredient. Čeklista to i kaže tim
 rečima umesto da izostavi korak.
+
+### 5.8 Odluke donete u C09 (obavezujuće) — montaža, jezgro
+
+Izvor istine je `tools/assemble.mjs`. Dissolve i `qc-report.md` nisu ovde — to je C10.
+
+**1. End card drži outro, ne dolazi posle njega.** Plan (korak 5) kaže da se end card drži
+„koliko traje outro deo narracije + 1.5s repa", a izvorni plan da outro „dobija zaseban end-card
+shot u montaži". Dakle end card je slika **nad** outro delom narracije: CTA se vidi dok se čuje,
+pa se rep od 1.5s prelije preko kraja narracije. Posledica koja se mora znati: splitter pokriva
+**sve** rečenice, pa i outro (3.7 tačka 4), pa shotovi iza `outro_start` u montaži otpadaju, a
+onaj koji granicu prelazi se krati. Oba se ispisuju, nikad tiho. Alternativa (end card zalepljen
+posle svega) daje ~11s tišine preko slike na kraju i odbačena je zbog toga.
+
+**2. Ukupno trajanje je za rep duže od narracije, i to nije drift.** Jedini broj koji se poredi
+sa `narration_duration` je **pokrivenost** (`coverage` = trajanje do kraja narracije). Za Marathon:
+pokrivenost 293.75s prema narraciji 293.72s (razlika 0.03s), ukupno 295.25s. Prihvatanje iz
+izvorne verifikacije 5 („293.7s ±0.2s") meri se na pokrivenosti — ukupno trajanje ga po definiciji
+premašuje za `tail`.
+
+**3. `outro_start` ima tri izvora, tim redom:** `--outro-start` (eksplicitno), `timing.json`
+(kanonski, 2.1), pa `outro_start` u korenu `storyboard.json`-a. Treći postoji samo zbog legacy
+epizoda bez `timing.json`-a i nije deo sheme storyboard-a; alat ispisuje iz kog izvora je uzeo
+vrednost. Bez ijednog izvora end card je samo rep od 1.5s — ista formula, jedna grana manje.
+
+**4. Nula tajmlajna se ne pomera ni ovde.** Nigde `-copyts`, nigde `-itsoffset`, nigde ručnog
+oduzimanja `probe().start` — obaveza iz 5.4 tačke 1. Isto važi i za merenje izvornog materijala:
+dostupno trajanje klipa je `duration − start`, isto kao u F1.
+
+**5. `-ss` ide posle `-i`.** Pre `-i` je brže ali seče na keyframe; pošto se zbog `scale`+`fps`
+ionako re-enkodira, tačno sečenje ne košta ništa dodatno. **Mereno na Marathonu:** 34 segmenta
+(33 shota + end card), 1280×720 → 1920×1080, CRF 18, preset medium — **133.3s ukupno**, ~3.5s po
+shotu. Ponovno pokretanje bez izmena: 9.1s (sve iz keša), izlaz bajt-identičan.
+
+**6. Broj frejmova je zakucan, `-t` je samo prozor.** Segment se traži sa `-frames:v round(len·fps)`,
+a prozor čitanja je za dva frejma duži. `-t` sam ume da isporuči frejm više ili manje na granici, a
+33 takve greške se saberu u drift koji T1 vidi. Mereno: očekivano 7086 frejmova, izmereno 7086.
+
+**7. Segmenti na disku, ne jedan `filter_complex`.** Svaki shot je fajl u `.cache/seg/NN.mp4` uz
+recept (`NN.json`: izvor + veličina i vreme izmene, `use_in`, broj frejmova, rezolucija, fps, CRF,
+preset). Zamena jednog `partNN.mp4` regeneriše tačno taj segment; sve ostalo dolazi iz keša.
+Idempotentnost je zahtev iz plana i provereno je da drži i u povratku: zamenjen klip → drugi
+`final.mp4`, vraćen original → **isti md5 kao pre zamene**.
+
+**8. Izlaz se ne prepisuje naslepo.** `final.mp4` legacy epizode je ručna montaža koju niko ne može
+da vrati. Alat prepisuje samo fajl za koji u `.cache/assemble.json` ima pečat (ime, veličina, vreme)
+da ga je sam napravio; sve drugo traži `--out` ili `--force`. Otud i `--out final-new.mp4` u
+verifikaciji 5 — zaštita je u kodu, ne u pamćenju onoga ko pokreće.
+
+**9. Montaža čita `episode.json`, za razliku od formatera iz 5.7 tačke 1.** Razlog je konkretan:
+Marathon end card se zove `endKartica.jpeg`, a ne `endcard.jpeg`. Uzimaju se `narration_file` i
+`endcard_file`; konvencija iz plana ostaje rezerva kad manifesta nema. `endcard_file: null` znači
+da epizoda nema end card i tada nema ni repa.
+
+**10. Treći spisak obaveznih polja.** `ASSEMBLE_FIELDS` nije ni linterov `SHOT_FIELDS` ni
+`DISPLAY_FIELDS`: montaža ne meri reči i ne prikazuje promptove, ali bez `t_in`/`t_out` ne zna
+gde pada outro. Uz oblik se traži i vremenska konzistentnost (invarijante 6–8) — kad se `use_len`
+i `t_out − t_in` raziđu, montaža bi tiho isporučila pomeren video, pa umesto toga pada i upućuje
+na `lint.mjs`.
+
+**11. Sintetički `storyboard.json` Marathona je fixture, ne primer.** Legacy epizoda nema
+`script.md` ni `timing.json`, pa su sva kreativna polja popuna; pravi ga
+`tests/make-marathon-storyboard.mjs`, deterministički. Dva svesna odstupanja od sheme: `source_file`
+je `part7.mp4` (klipovi stoje u korenu foldera i bez vodeće nule — legacy raspored iz
+`episode.json.notes`, a ne `shots/part07.mp4` iz invarijante 13), i `outro_start` u korenu (tačka 3).
+Granice rezova su birane tako da broj frejmova bude deljiv sa 3: `n/24` je tačno na tri decimale
+(0.1) samo tada, pa se `use_len` i `t_out − t_in` inače raziđu za 0.001 i invarijanta 8 padne na
+zaokruživanju umesto na grešci.
+
+### 5.9 Odluke donete u C10 (obavezujuće) — dissolve i QC izveštaj
+
+Izvor istine je `tools/assemble.mjs`. Nastavak 5.8; sve odluke odatle važe nepromenjene.
+
+**1. Kompenzacija trajanja je opcija (a), ali se računa po granici, a ne po shotu.** Plan traži da
+se `use_len` svakog linked shota produži „za pola trajanja prelaza". To se poklapa samo za lanac od
+dva: lanac od **tri** traži 2·N frejmova viška, a ne 3·N/2. Zato višak dobija **levi deo svake
+preživele granice**, ceo, i zbir viška je tačno `(broj delova − 1) · N`. Marathon lanac B05
+(shotovi 13/14/15) posle toga ima 221 + 221 + 213 frejmova ulaza i 639 frejmova izlaza — tačno
+3 × 213, koliko su i pre bili.
+
+**2. Višak se uzima sa repa, ne simetrično oko granice.** Simetrična varijanta (N/2 sa svake
+strane, prelaz centriran na rez) traži `use_in ≥ N/2` u desnom delu. U praksi je `use_in` nula —
+sva tri shota lanca B05 imaju `use_in: 0`, pa sa simetrijom Marathon ne bi dobio **nijedan**
+prelaz. Rep je jedina varijanta koja radi na zatečenom materijalu, a obe podjednako čuvaju početke:
+`offset` prelaza pada na kraj **baznog** dela, pa desni deo počinje tačno tamo gde bi ga i hard cut
+ostavio.
+
+**3. Ukupan broj frejmova je isti sa zastavom i bez nje.** To nije procena nego uslov: Marathon
+daje 7086 frejmova u oba slučaja, izmereno dekodiranjem, a bez `--dissolve` je izlaz **bajt-identičan**
+onome iz C09 (isti md5, provereno i u povratku — posle dissolve prolaza pa nazad). Zbog toga T1
+prihvatanje od ±0.2s uz `--dissolve` nije ni pod pritiskom: drift je 0.
+
+**4. Prelaz koji se ne može izvesti otpada u hard cut, ne u pad alata.** Dva razloga i oba se
+zapisuju u `dissolve.skipped` i u `qc-report.md`: deo kraći ili jednak prelazu (prelaz bi pojeo ceo
+kadar), i izvor bez N frejmova rezerve iza svog reza. Prekinuta granica **deli** lanac, ne ruši ga
+ceo — lanac A/B/C sa neupotrebljivim A ostaje lanac B/C. Alternativa (pad sa porukom „skrati
+--dissolve") bila bi grublja nego što nedostatak nice-to-have zasluži.
+
+**5. Dissolve ide isključivo unutar `link_group`-a, preko `linkChains` iz `contract.mjs`.** To je
+ista funkcija kojom R1 izuzima linkovane shotove (§3.4), pa je grupisanje na jednom mestu.
+Između beatova hard cut ostaje, namerno: rez na granici beata prati rez u priči.
+
+**6. Lanac je jedan segment u kešu, sastavljen od keširanih delova.** Delovi ostaju `NN.mp4` sa
+svojim receptima, lanac je `chain-NN.mp4` (NN = prvi deo) čiji recept nosi recepte svih delova i
+dužinu prelaza. Zamenjen `partNN.mp4` regeneriše taj deo **i** lanac, a ne ostale delove.
+
+**7. `qc-report.md` se piše uvek** — i kad je sve u redu, i uz `--dry-run`, i **pre** pada
+validacije. Poslednje je i najvažnije: kad montaža stane, izveštaj je jedini fajl koji kaže šta
+tačno fali, dok poruka u terminalu ode sa istorijom.
+
+**8. ERROR je rezervisan za ono što montažu obara ili pomera.** ERROR: nedostajući ili nečitljiv
+klip, izvor kraći od reza, drift pokrivenosti preko ±0.2s, izmereno trajanje koje se od plana
+razilazi za više od jednog frejma. WARN: kandidati za regeneraciju i preskočeni prelazi — savet,
+ne kvar. Ispravna epizoda nema nijedan ERROR i to je uslov gotovog iz plana; Marathon ga ispunjava.
+
+**9. Iskorišćenje se meri baznim delom, a odsečen shot se označava.** Produženje za prelaz se
+potroši unutar prelaza i ne sme da prikaže shot kao bolje iskorišćen nego što jeste. Shot koji je
+outro skratio troši malo svog klipa iz sasvim drugog razloga nego shot kome je rez od početka bio
+kratak; savet je isti (regeneriši sa kraćim pokretom), uzrok nije, pa se u tabeli razdvajaju.
+
+**10. `--dissolve` je u frejmovima, ne u sekundama.** 8 frejmova na 24 fps je 0.333…s i po §0.2
+nije predstavljivo; prelaz mora da padne na frejm.
+
+**11. Jedan `probe()` po klipu za ceo prolaz.** `inspectSources` meri svaki izvor jednom, a plan
+dissolve-a, validacija i QC izveštaj čitaju iste izmerene vrednosti. Nepostojeći fajl i probe koji
+pukne su **podaci**, ne izuzetak — izveštaj postoji da ih izlista, a ne da stane na prvom.
+
+**12. Mereno na Marathonu (`--dissolve 8`, jedan lanac, dva prelaza).** Prelaz je stvaran i
+simetričan: PSNR sredine prelaza prema oba izvora je 18.05 i 18.08 dB, a prema 42.1 dB neposredno
+pre i 42.3 dB neposredno posle — dakle mešanje, a ne rez. Prosečna luma preko osam frejmova
+prelaza raste monotono 140.5 → 149.2 bez preskoka iznad odredišta, pa „bleštanja" iz plana
+objektivno nema. Poravnanje se ne pomera: korelacija envelope-a izlaza prema `narration.mp3` je
+r = 0.99999 pri pomaku 0 ms. Subjektivnu glatkoću 8 frejmova ovim nije procenjena — to i dalje
+traži pogled u plejer.
+

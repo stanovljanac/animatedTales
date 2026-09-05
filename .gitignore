@@ -35,6 +35,8 @@ desktop.ini
 # --- Generisani artefakti alata ---
 episodes/*/qa-report.md
 tests/fixtures/*-episode/qa-report.md
+episodes/*/qc-report.md
+tests/fixtures/*-episode/qc-report.md
 episodes/*/storyboard.md
 tests/fixtures/*-episode/storyboard.md
 

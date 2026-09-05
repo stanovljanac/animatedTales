@@ -1,0 +1,978 @@
+{
+  "schema_version": 1,
+  "episode": "marathon",
+  "generated_at": "2026-09-05T00:00:00Z",
+  "narration_duration": 293.72,
+  "fps": 24,
+  "outro_start": 288,
+  "beats": [
+    {
+      "beat_id": "B01",
+      "sentences": [
+        "S01",
+        "S02",
+        "S03"
+      ],
+      "start": 0,
+      "end": 26.75,
+      "dur": 26.75,
+      "device": null,
+      "narration_says": "[sintetički beat 1 — legacy epizoda nema script.md]",
+      "viewer_sees": "[sintetički opis — storyboard postoji zbog verifikacije montaže, ne zbog sadržaja]",
+      "shots": [
+        {
+          "shot_id": "01",
+          "beat_id": "B01",
+          "link_group": null,
+          "t_in": 0,
+          "t_out": 8.875,
+          "use_in": 0,
+          "use_out": 8.875,
+          "use_len": 8.875,
+          "motion_budget": 8.875,
+          "source_file": "part1.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "image_prompt": "[sintetički image prompt za shot 01 — Marathon je legacy epizoda, klipovi su generisani ručno pre pipeline-a i prompt nije sačuvan]",
+          "animation_prompt": "[sintetički animation prompt za shot 01 — vidi napomenu uz image prompt]",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "eye",
+            "camera_motion": "locked",
+            "location": "marathon-plain",
+            "time_light": "dawn-overcast"
+          }
+        },
+        {
+          "shot_id": "02",
+          "beat_id": "B01",
+          "link_group": null,
+          "t_in": 8.875,
+          "t_out": 17.75,
+          "use_in": 0,
+          "use_out": 8.875,
+          "use_len": 8.875,
+          "motion_budget": 8.875,
+          "source_file": "part2.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "image_prompt": "[sintetički image prompt za shot 02 — Marathon je legacy epizoda, klipovi su generisani ručno pre pipeline-a i prompt nije sačuvan]",
+          "animation_prompt": "[sintetički animation prompt za shot 02 — vidi napomenu uz image prompt]",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "low",
+            "camera_motion": "push",
+            "location": "athenian-camp",
+            "time_light": "midday-hard-sun"
+          }
+        },
+        {
+          "shot_id": "03",
+          "beat_id": "B01",
+          "link_group": null,
+          "t_in": 17.75,
+          "t_out": 26.75,
+          "use_in": 0,
+          "use_out": 9,
+          "use_len": 9,
+          "motion_budget": null,
+          "source_file": "part3.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "image_prompt": "[sintetički image prompt za shot 03 — Marathon je legacy epizoda, klipovi su generisani ručno pre pipeline-a i prompt nije sačuvan]",
+          "animation_prompt": "[sintetički animation prompt za shot 03 — vidi napomenu uz image prompt]",
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "CU",
+            "angle": "high",
+            "camera_motion": "pull",
+            "location": "persian-fleet",
+            "time_light": "dusk-golden"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B02",
+      "sentences": [
+        "S04",
+        "S05",
+        "S06"
+      ],
+      "start": 26.75,
+      "end": 53.375,
+      "dur": 26.625,
+      "device": "animated-map",
+      "narration_says": "[sintetički beat 2 — legacy epizoda nema script.md]",
+      "viewer_sees": "[sintetički opis — storyboard postoji zbog verifikacije montaže, ne zbog sadržaja]",
+      "shots": [
+        {
+          "shot_id": "04",
+          "beat_id": "B02",
+          "link_group": null,
+          "t_in": 26.75,
+          "t_out": 35.625,
+          "use_in": 0,
+          "use_out": 8.875,
+          "use_len": 8.875,
+          "motion_budget": 8.875,
+          "source_file": "part4.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "image_prompt": "[sintetički image prompt za shot 04 — Marathon je legacy epizoda, klipovi su generisani ručno pre pipeline-a i prompt nije sačuvan]",
+          "animation_prompt": "[sintetički animation prompt za shot 04 — vidi napomenu uz image prompt]",
+          "tags": {
+            "subject_type": "architecture",
+            "shot_size": "XLS",
+            "angle": "overhead",
+            "camera_motion": "pan",
+            "location": "athens-agora",
+            "time_light": "night-torchlit"
+          }
+        },
+        {
+          "shot_id": "05",
+          "beat_id": "B02",
+          "link_group": null,
+          "t_in": 35.625,
+          "t_out": 44.5,
+          "use_in": 0,
+          "use_out": 8.875,
+          "use_len": 8.875,
+          "motion_budget": 8.875,
+          "source_file": "part5.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "image_prompt": "[sintetički image prompt za shot 05 — Marathon je legacy epizoda, klipovi su generisani ručno pre pipeline-a i prompt nije sačuvan]",
+          "animation_prompt": "[sintetički animation prompt za shot 05 — vidi napomenu uz image prompt]",
+          "tags": {
+            "subject_type": "crowd",
+            "shot_size": "aerial",
+            "angle": "profile",
+            "camera_motion": "track",
+            "location": "marathon-plain",
+            "time_light": "dawn-overcast"
+          }
+        },
+        {
+          "shot_id": "06",
+          "beat_id": "B02",
+          "link_group": null,
+          "t_in": 44.5,
+          "t_out": 53.375,
+          "use_in": 0,
+          "use_out": 8.875,
+          "use_len": 8.875,
+          "motion_budget": 8.875,
+          "source_file": "part6.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "image_prompt": "[sintetički image prompt za shot 06 — Marathon je legacy epizoda, klipovi su generisani ručno pre pipeline-a i prompt nije sačuvan]",
+          "animation_prompt": "[sintetički animation prompt za shot 06 — vidi napomenu uz image prompt]",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "eye",
+            "camera_motion": "locked",
+            "location": "athenian-camp",
+            "time_light": "midday-hard-sun"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B03",
+      "sentences": [
+        "S07",
+        "S08",
+        "S09"
+      ],
+      "start": 53.375,
+      "end": 80.125,
+      "dur": 26.75,
+      "device": null,
+      "narration_says": "[sintetički beat 3 — legacy epizoda nema script.md]",
+      "viewer_sees": "[sintetički opis — storyboard postoji zbog verifikacije montaže, ne zbog sadržaja]",
+      "shots": [
+        {
+          "shot_id": "07",
+          "beat_id": "B03",
+          "link_group": null,
+          "t_in": 53.375,
+          "t_out": 62.25,
+          "use_in": 0.5,
+          "use_out": 9.375,
+          "use_len": 8.875,
+          "motion_budget": 8.875,
+          "source_file": "part7.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "image_prompt": "[sintetički image prompt za shot 07 — Marathon je legacy epizoda, klipovi su generisani ručno pre pipeline-a i prompt nije sačuvan]",
+          "animation_prompt": "[sintetički animation prompt za shot 07 — vidi napomenu uz image prompt]",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "low",
+            "camera_motion": "push",
+            "location": "persian-fleet",
+            "time_light": "dusk-golden"
+          }
+        },
+        {
+          "shot_id": "08",
+          "beat_id": "B03",
+          "link_group": null,
+          "t_in": 62.25,
+          "t_out": 71.25,
+          "use_in": 0,
+          "use_out": 9,
+          "use_len": 9,
+          "motion_budget": null,
+          "source_file": "part8.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "image_prompt": "[sintetički image prompt za shot 08 — Marathon je legacy epizoda, klipovi su generisani ručno pre pipeline-a i prompt nije sačuvan]",
+          "animation_prompt": "[sintetički animation prompt za shot 08 — vidi napomenu uz image prompt]",
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "CU",
+            "angle": "high",
+            "camera_motion": "pull",
+            "location": "athens-agora",
+            "time_light": "night-torchlit"
+          }
+        },
+        {
+          "shot_id": "09",
+          "beat_id": "B03",
+          "link_group": null,
+          "t_in": 71.25,
+          "t_out": 80.125,
+          "use_in": 0,
+          "use_out": 8.875,
+          "use_len": 8.875,
+          "motion_budget": 8.875,
+          "source_file": "part9.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "image_prompt": "[sintetički image prompt za shot 09 — Marathon je legacy epizoda, klipovi su generisani ručno pre pipeline-a i prompt nije sačuvan]",
+          "animation_prompt": "[sintetički animation prompt za shot 09 — vidi napomenu uz image prompt]",
+          "tags": {
+            "subject_type": "architecture",
+            "shot_size": "XLS",
+            "angle": "overhead",
+            "camera_motion": "pan",
+            "location": "marathon-plain",
+            "time_light": "dawn-overcast"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B04",
+      "sentences": [
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "start": 80.125,
+      "end": 106.875,
+      "dur": 26.75,
+      "device": "crowd-as-texture",
+      "narration_says": "[sintetički beat 4 — legacy epizoda nema script.md]",
+      "viewer_sees": "[sintetički opis — storyboard postoji zbog verifikacije montaže, ne zbog sadržaja]",
+      "shots": [
+        {
+          "shot_id": "10",
+          "beat_id": "B04",
+          "link_group": null,
+          "t_in": 80.125,
+          "t_out": 89,
+          "use_in": 0,
+          "use_out": 8.875,
+          "use_len": 8.875,
+          "motion_budget": 8.875,
+          "source_file": "part10.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "image_prompt": "[sintetički image prompt za shot 10 — Marathon je legacy epizoda, klipovi su generisani ručno pre pipeline-a i prompt nije sačuvan]",
+          "animation_prompt": "[sintetički animation prompt za shot 10 — vidi napomenu uz image prompt]",
+          "tags": {
+            "subject_type": "crowd",
+            "shot_size": "aerial",
+            "angle": "profile",
+            "camera_motion": "track",
+            "location": "athenian-camp",
+            "time_light": "midday-hard-sun"
+          }
+        },
+        {
+          "shot_id": "11",
+          "beat_id": "B04",
+          "link_group": null,
+          "t_in": 89,
+          "t_out": 97.875,
+          "use_in": 0,
+          "use_out": 8.875,
+          "use_len": 8.875,
+          "motion_budget": 8.875,
+          "source_file": "part11.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "image_prompt": "[sintetički image prompt za shot 11 — Marathon je legacy epizoda, klipovi su generisani ručno pre pipeline-a i prompt nije sačuvan]",
+          "animation_prompt": "[sintetički animation prompt za shot 11 — vidi napomenu uz image prompt]",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "eye",
+            "camera_motion": "locked",
+            "location": "persian-fleet",
+            "time_light": "dusk-golden"
+          }
+        },
+        {
+          "shot_id": "12",
+          "beat_id": "B04",
+          "link_group": null,
+          "t_in": 97.875,
+          "t_out": 106.875,
+          "use_in": 0,
+          "use_out": 9,
+          "use_len": 9,
+          "motion_budget": null,
+          "source_file": "part12.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "image_prompt": "[sintetički image prompt za shot 12 — Marathon je legacy epizoda, klipovi su generisani ručno pre pipeline-a i prompt nije sačuvan]",
+          "animation_prompt": "[sintetički animation prompt za shot 12 — vidi napomenu uz image prompt]",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "low",
+            "camera_motion": "push",
+            "location": "athens-agora",
+            "time_light": "night-torchlit"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B05",
+      "sentences": [
+        "S13",
+        "S14",
+        "S15"
+      ],
+      "start": 106.875,
+      "end": 133.5,
+      "dur": 26.625,
+      "device": null,
+      "narration_says": "[sintetički beat 5 — legacy epizoda nema script.md]",
+      "viewer_sees": "[sintetički opis — storyboard postoji zbog verifikacije montaže, ne zbog sadržaja]",
+      "shots": [
+        {
+          "shot_id": "13",
+          "beat_id": "B05",
+          "link_group": "B05",
+          "t_in": 106.875,
+          "t_out": 115.75,
+          "use_in": 0,
+          "use_out": 8.875,
+          "use_len": 8.875,
+          "motion_budget": 8.875,
+          "source_file": "part13.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "image_prompt": "[sintetički image prompt za shot 13 — Marathon je legacy epizoda, klipovi su generisani ručno pre pipeline-a i prompt nije sačuvan]",
+          "animation_prompt": "[sintetički animation prompt za shot 13 — vidi napomenu uz image prompt]",
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "CU",
+            "angle": "high",
+            "camera_motion": "pull",
+            "location": "marathon-plain",
+            "time_light": "dawn-overcast"
+          }
+        },
+        {
+          "shot_id": "14",
+          "beat_id": "B05",
+          "link_group": "B05",
+          "t_in": 115.75,
+          "t_out": 124.625,
+          "use_in": 0,
+          "use_out": 8.875,
+          "use_len": 8.875,
+          "motion_budget": 8.875,
+          "source_file": "part14.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "image_prompt": "[sintetički image prompt za shot 14 — Marathon je legacy epizoda, klipovi su generisani ručno pre pipeline-a i prompt nije sačuvan]",
+          "animation_prompt": "[sintetički animation prompt za shot 14 — vidi napomenu uz image prompt]",
+          "tags": {
+            "subject_type": "architecture",
+            "shot_size": "XLS",
+            "angle": "overhead",
+            "camera_motion": "pan",
+            "location": "athenian-camp",
+            "time_light": "midday-hard-sun"
+          }
+        },
+        {
+          "shot_id": "15",
+          "beat_id": "B05",
+          "link_group": "B05",
+          "t_in": 124.625,
+          "t_out": 133.5,
+          "use_in": 0,
+          "use_out": 8.875,
+          "use_len": 8.875,
+          "motion_budget": 8.875,
+          "source_file": "part15.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "image_prompt": "[sintetički image prompt za shot 15 — Marathon je legacy epizoda, klipovi su generisani ručno pre pipeline-a i prompt nije sačuvan]",
+          "animation_prompt": "[sintetički animation prompt za shot 15 — vidi napomenu uz image prompt]",
+          "tags": {
+            "subject_type": "crowd",
+            "shot_size": "aerial",
+            "angle": "profile",
+            "camera_motion": "track",
+            "location": "persian-fleet",
+            "time_light": "dusk-golden"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B06",
+      "sentences": [
+        "S16",
+        "S17",
+        "S18"
+      ],
+      "start": 133.5,
+      "end": 160.25,
+      "dur": 26.75,
+      "device": "before-after",
+      "narration_says": "[sintetički beat 6 — legacy epizoda nema script.md]",
+      "viewer_sees": "[sintetički opis — storyboard postoji zbog verifikacije montaže, ne zbog sadržaja]",
+      "shots": [
+        {
+          "shot_id": "16",
+          "beat_id": "B06",
+          "link_group": null,
+          "t_in": 133.5,
+          "t_out": 142.375,
+          "use_in": 0,
+          "use_out": 8.875,
+          "use_len": 8.875,
+          "motion_budget": 8.875,
+          "source_file": "part16.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "image_prompt": "[sintetički image prompt za shot 16 — Marathon je legacy epizoda, klipovi su generisani ručno pre pipeline-a i prompt nije sačuvan]",
+          "animation_prompt": "[sintetički animation prompt za shot 16 — vidi napomenu uz image prompt]",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "eye",
+            "camera_motion": "locked",
+            "location": "athens-agora",
+            "time_light": "night-torchlit"
+          }
+        },
+        {
+          "shot_id": "17",
+          "beat_id": "B06",
+          "link_group": null,
+          "t_in": 142.375,
+          "t_out": 151.375,
+          "use_in": 0,
+          "use_out": 9,
+          "use_len": 9,
+          "motion_budget": null,
+          "source_file": "part17.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "image_prompt": "[sintetički image prompt za shot 17 — Marathon je legacy epizoda, klipovi su generisani ručno pre pipeline-a i prompt nije sačuvan]",
+          "animation_prompt": "[sintetički animation prompt za shot 17 — vidi napomenu uz image prompt]",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "low",
+            "camera_motion": "push",
+            "location": "marathon-plain",
+            "time_light": "dawn-overcast"
+          }
+        },
+        {
+          "shot_id": "18",
+          "beat_id": "B06",
+          "link_group": null,
+          "t_in": 151.375,
+          "t_out": 160.25,
+          "use_in": 0,
+          "use_out": 8.875,
+          "use_len": 8.875,
+          "motion_budget": 8.875,
+          "source_file": "part18.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "image_prompt": "[sintetički image prompt za shot 18 — Marathon je legacy epizoda, klipovi su generisani ručno pre pipeline-a i prompt nije sačuvan]",
+          "animation_prompt": "[sintetički animation prompt za shot 18 — vidi napomenu uz image prompt]",
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "CU",
+            "angle": "high",
+            "camera_motion": "pull",
+            "location": "athenian-camp",
+            "time_light": "midday-hard-sun"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B07",
+      "sentences": [
+        "S19",
+        "S20",
+        "S21"
+      ],
+      "start": 160.25,
+      "end": 186.875,
+      "dur": 26.625,
+      "device": null,
+      "narration_says": "[sintetički beat 7 — legacy epizoda nema script.md]",
+      "viewer_sees": "[sintetički opis — storyboard postoji zbog verifikacije montaže, ne zbog sadržaja]",
+      "shots": [
+        {
+          "shot_id": "19",
+          "beat_id": "B07",
+          "link_group": null,
+          "t_in": 160.25,
+          "t_out": 169.125,
+          "use_in": 0,
+          "use_out": 8.875,
+          "use_len": 8.875,
+          "motion_budget": 8.875,
+          "source_file": "part19.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "image_prompt": "[sintetički image prompt za shot 19 — Marathon je legacy epizoda, klipovi su generisani ručno pre pipeline-a i prompt nije sačuvan]",
+          "animation_prompt": "[sintetički animation prompt za shot 19 — vidi napomenu uz image prompt]",
+          "tags": {
+            "subject_type": "architecture",
+            "shot_size": "XLS",
+            "angle": "overhead",
+            "camera_motion": "pan",
+            "location": "persian-fleet",
+            "time_light": "dusk-golden"
+          }
+        },
+        {
+          "shot_id": "20",
+          "beat_id": "B07",
+          "link_group": null,
+          "t_in": 169.125,
+          "t_out": 178,
+          "use_in": 0.5,
+          "use_out": 9.375,
+          "use_len": 8.875,
+          "motion_budget": 8.875,
+          "source_file": "part20.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "image_prompt": "[sintetički image prompt za shot 20 — Marathon je legacy epizoda, klipovi su generisani ručno pre pipeline-a i prompt nije sačuvan]",
+          "animation_prompt": "[sintetički animation prompt za shot 20 — vidi napomenu uz image prompt]",
+          "tags": {
+            "subject_type": "crowd",
+            "shot_size": "aerial",
+            "angle": "profile",
+            "camera_motion": "track",
+            "location": "athens-agora",
+            "time_light": "night-torchlit"
+          }
+        },
+        {
+          "shot_id": "21",
+          "beat_id": "B07",
+          "link_group": null,
+          "t_in": 178,
+          "t_out": 186.875,
+          "use_in": 0,
+          "use_out": 8.875,
+          "use_len": 8.875,
+          "motion_budget": 8.875,
+          "source_file": "part21.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "image_prompt": "[sintetički image prompt za shot 21 — Marathon je legacy epizoda, klipovi su generisani ručno pre pipeline-a i prompt nije sačuvan]",
+          "animation_prompt": "[sintetički animation prompt za shot 21 — vidi napomenu uz image prompt]",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "eye",
+            "camera_motion": "locked",
+            "location": "marathon-plain",
+            "time_light": "dawn-overcast"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B08",
+      "sentences": [
+        "S22",
+        "S23",
+        "S24"
+      ],
+      "start": 186.875,
+      "end": 213.625,
+      "dur": 26.75,
+      "device": "silhouette",
+      "narration_says": "[sintetički beat 8 — legacy epizoda nema script.md]",
+      "viewer_sees": "[sintetički opis — storyboard postoji zbog verifikacije montaže, ne zbog sadržaja]",
+      "shots": [
+        {
+          "shot_id": "22",
+          "beat_id": "B08",
+          "link_group": null,
+          "t_in": 186.875,
+          "t_out": 195.875,
+          "use_in": 0,
+          "use_out": 9,
+          "use_len": 9,
+          "motion_budget": null,
+          "source_file": "part22.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "image_prompt": "[sintetički image prompt za shot 22 — Marathon je legacy epizoda, klipovi su generisani ručno pre pipeline-a i prompt nije sačuvan]",
+          "animation_prompt": "[sintetički animation prompt za shot 22 — vidi napomenu uz image prompt]",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "low",
+            "camera_motion": "push",
+            "location": "athenian-camp",
+            "time_light": "midday-hard-sun"
+          }
+        },
+        {
+          "shot_id": "23",
+          "beat_id": "B08",
+          "link_group": null,
+          "t_in": 195.875,
+          "t_out": 204.75,
+          "use_in": 0,
+          "use_out": 8.875,
+          "use_len": 8.875,
+          "motion_budget": 8.875,
+          "source_file": "part23.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "image_prompt": "[sintetički image prompt za shot 23 — Marathon je legacy epizoda, klipovi su generisani ručno pre pipeline-a i prompt nije sačuvan]",
+          "animation_prompt": "[sintetički animation prompt za shot 23 — vidi napomenu uz image prompt]",
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "CU",
+            "angle": "high",
+            "camera_motion": "pull",
+            "location": "persian-fleet",
+            "time_light": "dusk-golden"
+          }
+        },
+        {
+          "shot_id": "24",
+          "beat_id": "B08",
+          "link_group": null,
+          "t_in": 204.75,
+          "t_out": 213.625,
+          "use_in": 0,
+          "use_out": 8.875,
+          "use_len": 8.875,
+          "motion_budget": 8.875,
+          "source_file": "part24.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "image_prompt": "[sintetički image prompt za shot 24 — Marathon je legacy epizoda, klipovi su generisani ručno pre pipeline-a i prompt nije sačuvan]",
+          "animation_prompt": "[sintetički animation prompt za shot 24 — vidi napomenu uz image prompt]",
+          "tags": {
+            "subject_type": "architecture",
+            "shot_size": "XLS",
+            "angle": "overhead",
+            "camera_motion": "pan",
+            "location": "athens-agora",
+            "time_light": "night-torchlit"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B09",
+      "sentences": [
+        "S25",
+        "S26",
+        "S27"
+      ],
+      "start": 213.625,
+      "end": 240.375,
+      "dur": 26.75,
+      "device": null,
+      "narration_says": "[sintetički beat 9 — legacy epizoda nema script.md]",
+      "viewer_sees": "[sintetički opis — storyboard postoji zbog verifikacije montaže, ne zbog sadržaja]",
+      "shots": [
+        {
+          "shot_id": "25",
+          "beat_id": "B09",
+          "link_group": null,
+          "t_in": 213.625,
+          "t_out": 222.5,
+          "use_in": 0,
+          "use_out": 8.875,
+          "use_len": 8.875,
+          "motion_budget": 8.875,
+          "source_file": "part25.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "image_prompt": "[sintetički image prompt za shot 25 — Marathon je legacy epizoda, klipovi su generisani ručno pre pipeline-a i prompt nije sačuvan]",
+          "animation_prompt": "[sintetički animation prompt za shot 25 — vidi napomenu uz image prompt]",
+          "tags": {
+            "subject_type": "crowd",
+            "shot_size": "aerial",
+            "angle": "profile",
+            "camera_motion": "track",
+            "location": "marathon-plain",
+            "time_light": "dawn-overcast"
+          }
+        },
+        {
+          "shot_id": "26",
+          "beat_id": "B09",
+          "link_group": null,
+          "t_in": 222.5,
+          "t_out": 231.5,
+          "use_in": 0,
+          "use_out": 9,
+          "use_len": 9,
+          "motion_budget": null,
+          "source_file": "part26.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "image_prompt": "[sintetički image prompt za shot 26 — Marathon je legacy epizoda, klipovi su generisani ručno pre pipeline-a i prompt nije sačuvan]",
+          "animation_prompt": "[sintetički animation prompt za shot 26 — vidi napomenu uz image prompt]",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "eye",
+            "camera_motion": "locked",
+            "location": "athenian-camp",
+            "time_light": "midday-hard-sun"
+          }
+        },
+        {
+          "shot_id": "27",
+          "beat_id": "B09",
+          "link_group": null,
+          "t_in": 231.5,
+          "t_out": 240.375,
+          "use_in": 0,
+          "use_out": 8.875,
+          "use_len": 8.875,
+          "motion_budget": 8.875,
+          "source_file": "part27.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "image_prompt": "[sintetički image prompt za shot 27 — Marathon je legacy epizoda, klipovi su generisani ručno pre pipeline-a i prompt nije sačuvan]",
+          "animation_prompt": "[sintetički animation prompt za shot 27 — vidi napomenu uz image prompt]",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "low",
+            "camera_motion": "push",
+            "location": "persian-fleet",
+            "time_light": "dusk-golden"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B10",
+      "sentences": [
+        "S28",
+        "S29",
+        "S30"
+      ],
+      "start": 240.375,
+      "end": 267,
+      "dur": 26.625,
+      "device": "macro-object",
+      "narration_says": "[sintetički beat 10 — legacy epizoda nema script.md]",
+      "viewer_sees": "[sintetički opis — storyboard postoji zbog verifikacije montaže, ne zbog sadržaja]",
+      "shots": [
+        {
+          "shot_id": "28",
+          "beat_id": "B10",
+          "link_group": null,
+          "t_in": 240.375,
+          "t_out": 249.25,
+          "use_in": 0,
+          "use_out": 8.875,
+          "use_len": 8.875,
+          "motion_budget": 8.875,
+          "source_file": "part28.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "image_prompt": "[sintetički image prompt za shot 28 — Marathon je legacy epizoda, klipovi su generisani ručno pre pipeline-a i prompt nije sačuvan]",
+          "animation_prompt": "[sintetički animation prompt za shot 28 — vidi napomenu uz image prompt]",
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "CU",
+            "angle": "high",
+            "camera_motion": "pull",
+            "location": "athens-agora",
+            "time_light": "night-torchlit"
+          }
+        },
+        {
+          "shot_id": "29",
+          "beat_id": "B10",
+          "link_group": null,
+          "t_in": 249.25,
+          "t_out": 258.125,
+          "use_in": 0,
+          "use_out": 8.875,
+          "use_len": 8.875,
+          "motion_budget": 8.875,
+          "source_file": "part29.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "image_prompt": "[sintetički image prompt za shot 29 — Marathon je legacy epizoda, klipovi su generisani ručno pre pipeline-a i prompt nije sačuvan]",
+          "animation_prompt": "[sintetički animation prompt za shot 29 — vidi napomenu uz image prompt]",
+          "tags": {
+            "subject_type": "architecture",
+            "shot_size": "XLS",
+            "angle": "overhead",
+            "camera_motion": "pan",
+            "location": "marathon-plain",
+            "time_light": "dawn-overcast"
+          }
+        },
+        {
+          "shot_id": "30",
+          "beat_id": "B10",
+          "link_group": null,
+          "t_in": 258.125,
+          "t_out": 267,
+          "use_in": 0,
+          "use_out": 8.875,
+          "use_len": 8.875,
+          "motion_budget": 8.875,
+          "source_file": "part30.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "image_prompt": "[sintetički image prompt za shot 30 — Marathon je legacy epizoda, klipovi su generisani ručno pre pipeline-a i prompt nije sačuvan]",
+          "animation_prompt": "[sintetički animation prompt za shot 30 — vidi napomenu uz image prompt]",
+          "tags": {
+            "subject_type": "crowd",
+            "shot_size": "aerial",
+            "angle": "profile",
+            "camera_motion": "track",
+            "location": "athenian-camp",
+            "time_light": "midday-hard-sun"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B11",
+      "sentences": [
+        "S31",
+        "S32",
+        "S33"
+      ],
+      "start": 267,
+      "end": 293.75,
+      "dur": 26.75,
+      "device": "empty-aftermath",
+      "narration_says": "[sintetički beat 11 — legacy epizoda nema script.md]",
+      "viewer_sees": "[sintetički opis — storyboard postoji zbog verifikacije montaže, ne zbog sadržaja]",
+      "shots": [
+        {
+          "shot_id": "31",
+          "beat_id": "B11",
+          "link_group": null,
+          "t_in": 267,
+          "t_out": 276,
+          "use_in": 0,
+          "use_out": 9,
+          "use_len": 9,
+          "motion_budget": null,
+          "source_file": "part31.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "image_prompt": "[sintetički image prompt za shot 31 — Marathon je legacy epizoda, klipovi su generisani ručno pre pipeline-a i prompt nije sačuvan]",
+          "animation_prompt": "[sintetički animation prompt za shot 31 — vidi napomenu uz image prompt]",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "eye",
+            "camera_motion": "locked",
+            "location": "persian-fleet",
+            "time_light": "dusk-golden"
+          }
+        },
+        {
+          "shot_id": "32",
+          "beat_id": "B11",
+          "link_group": null,
+          "t_in": 276,
+          "t_out": 284.875,
+          "use_in": 0,
+          "use_out": 8.875,
+          "use_len": 8.875,
+          "motion_budget": 8.875,
+          "source_file": "part32.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "image_prompt": "[sintetički image prompt za shot 32 — Marathon je legacy epizoda, klipovi su generisani ručno pre pipeline-a i prompt nije sačuvan]",
+          "animation_prompt": "[sintetički animation prompt za shot 32 — vidi napomenu uz image prompt]",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "low",
+            "camera_motion": "push",
+            "location": "athens-agora",
+            "time_light": "night-torchlit"
+          }
+        },
+        {
+          "shot_id": "33",
+          "beat_id": "B11",
+          "link_group": null,
+          "t_in": 284.875,
+          "t_out": 293.75,
+          "use_in": 0,
+          "use_out": 8.875,
+          "use_len": 8.875,
+          "motion_budget": 8.875,
+          "source_file": "part33.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "image_prompt": "[sintetički image prompt za shot 33 — Marathon je legacy epizoda, klipovi su generisani ručno pre pipeline-a i prompt nije sačuvan]",
+          "animation_prompt": "[sintetički animation prompt za shot 33 — vidi napomenu uz image prompt]",
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "CU",
+            "angle": "high",
+            "camera_motion": "pull",
+            "location": "marathon-plain",
+            "time_light": "dawn-overcast"
+          }
+        }
+      ]
+    }
+  ]
+}
