@@ -1017,3 +1017,33 @@ objektivno nema. Poravnanje se ne pomera: korelacija envelope-a izlaza prema `na
 r = 0.99999 pri pomaku 0 ms. Subjektivnu glatkoću 8 frejmova ovim nije procenjena — to i dalje
 traži pogled u plejer.
 
+
+### 5.10 Odluke donete u C11 (obavezujuće) — outro kao mašinski ugovor
+
+Promptovi su prešli u `docs/prompts/` (`01-idea-discovery.md`, `03-research.md`, `04-script.md`).
+Samo jedan njihov deo je mašinski ugovor: `## OUTRO` odeljak koji `align.mjs` (5.4, tačka 7)
+pretvara u `timing.outro_start`, a `assemble.mjs` (5.8, tačka 3) koristi da zadrži end card.
+Sve ostalo u tim fajlovima je kreativno uputstvo i ne obavezuje nijedan alat.
+
+**1. Raspon outro-a je 30–42 reči (~11–16s)**, kanonsko brojanje po 0.6. Izvorni plan je tražio
+18–28, ali referentni uzorak koji isti plan propisuje kao obavezan ima 37 reči — raspon je bio
+neproverena procena, uzorak je isporučena epizoda. Formula ima četiri dela i reprodukuje uzorak
+doslovno (jednakost po `normalize()`, 0.7): most 13 + poziv 13 + like/subscribe 8 + odjava 3.
+
+**2. `## OUTRO` mora biti poslednji naslov u fajlu.** `parseScript` ulazi u outro sekciju i
+**nikad iz nje ne izlazi** — nema grane koja vraća `section` na `body`. Sve ispod tog naslova,
+pa i naredni naslov druge teme, postaje outro narracija.
+
+**3. Nijedan drugi naslov ne sme počinjati rečju „outro".** Poređenje je `/^outro/i` nad
+tekstom naslova, pa `## OUTRO OPTIONS` i `## Outro variants` pale isti prekidač i tiho progutaju
+ostatak skripte. Provereno: `## OUTRO OPTIONS` na sredini dokumenta obeleži i sve što sledi kao
+outro i postavi `outroIndex` na pogrešnu rečenicu.
+
+**4. Varijante outro-a stoje u HTML komentaru.** `parseScript` briše `<!-- ... -->` pre parsiranja,
+pa dve neizabrane varijante mogu ostati u fajlu za čoveka a da nikad ne postanu narracija.
+To je jedini bezbedan način da tri ponuđene varijante prežive u istom fajlu; svaki drugi oblik
+pada na tačku 2. Provereno end-to-end: skripta sa izabranim outro-om i dve alternative u
+komentaru daje `outroIndex` na prvoj outro rečenici, bez ijednog traga alternativa.
+
+**5. `masterPrompt.md` i `visualPromptEngine.md` nose `DEPRECATED` u prvoj liniji i nisu obrisani.**
+Razlog i rok su u odstupanju 21 (`docs/plan/00-INDEX.md`); brišu se u C12.

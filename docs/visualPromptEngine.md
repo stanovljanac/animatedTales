@@ -1,3 +1,7 @@
+> **DEPRECATED — ne koristi se u produkciji.** Zamenjuju ga skilovi iz C12.
+> Fajl ostaje na disku samo kao ulaz za tu celinu i **briše se tek posle C12**.
+> Kreativna pravila koja su preživela stoje u `docs/reference/`, promptovi u `docs/prompts/`.
+
 # ANIMATED TALES — STORYBOARD & VISUAL PROMPT ENGINE v3.0
 
 ## ROLE

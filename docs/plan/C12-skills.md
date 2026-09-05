@@ -15,6 +15,17 @@
 
 Plus brisanje `docs/visualPromptEngine.md` (njegov sadržaj je sada podeljen između `reference/` i ova dva skila).
 
+**Nasleđeno iz C11 (odstupanje 21):** briše se i `docs/masterPrompt.md`, ali **tek pošto** ova
+celina usvoji tri njegove sekcije koje nemaju kopiju nigde u repou:
+
+| Sekcija `masterPrompt.md` | Šta nosi | Gde bi trebalo da završi |
+|---|---|---|
+| 12 — VISUAL MODES | pet vizuelnih modova (narrative visualization / extension, environmental storytelling, visual journey, still montage) | `at-storyboard` |
+| 22 — EARLY MOTION | „smislen pokret počinje u prve 2–3 sekunde", osim kad je kadar namerno miran | `at-storyboard`, merljivo u `at-qa` |
+| 25 — STILL IMAGE MONTAGE | kada je niz statičnih slika bolji od animacije | `at-storyboard` |
+
+Oba fajla su od C11 označena `DEPRECATED` u prvoj liniji i stoje na disku samo kao ulaz za ovu celinu.
+
 ## `at-storyboard` — stage 05–06
 
 Ulaz: `script.md` + `narration.mp3`. Tok:
@@ -82,6 +93,7 @@ izmere tri epizode.
 - suvi prolaz `at-assemble` nad `episodes/marathon` → čita `qc-report.md` i imenuje kandidate za regeneraciju
 - checkpoint format se ispisuje tačno kako je gore prikazan
 - `ls docs/visualPromptEngine.md` → ne postoji
+- `ls docs/masterPrompt.md` → ne postoji (dug iz C11, odstupanje 21)
 
 ## Tačka preseka ako sesija pređe budžet
 

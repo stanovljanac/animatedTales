@@ -63,6 +63,99 @@ Ovo su činjenice zatečene na disku koje izvorni plan nije imao. Svaka je upisa
 7. **R4 (n-gram ponavljanje) sudara se sa C1 (doslovno kopiranje `locked_description`).**
    C1 *zahteva* identičan blok od 25–40 reči u svakom shotu; R4 kažnjava >12 identičnih reči.
    R4 mora da izuzme `locked_description` i kanonski style string. → **C07**
+   — *zatvoreno: `docs/reference/schemas.md` §5.6 tačke 2–4; izuzeća su tri, ne dva.*
+8. **`use_len` od 1.2s, koji C06 traži kao okidač za T2, nije predstavljiv na 24fps** (28.8 frejma).
+   Loš fixture koristi najbližu frejm-poravnatu vrednost, 1.208s. → **C06**
+   — *zatvoreno: `docs/reference/schemas.md` §5.5 tačka 12.*
+9. **Fixture za C06 mora da bude folder epizode, ne pojedinačni JSON**, jer je definicija gotovog
+   komanda nad folderom. Uz njega idu i klipovi za F1 (~14 KB, izuzetak u `.gitignore`). → **C06**
+   — *zatvoreno: `docs/reference/schemas.md` §5.5 tačka 10.*
+
+10. **Sudar R4 protiv C1 ima i treći izvor koji plan ne pominje: fiksne `PRESERVE`/`FORBID`
+    linije animation šablona.** `prompt-templates.md` ih propisuje kao fiksne, a `PRESERVE` sama
+    nosi tačno 13 reči — dakle sama obara prag „>12" na svakom paru shotova. Bez trećeg izuzeća
+    R4 laje na svaki ispravan storyboard, baš kao i bez prva dva. → **C07**
+    — *zatvoreno: `docs/reference/schemas.md` §5.6 tačka 2; provereno na `good-episode` fixture-u.*
+
+11. **C2 („broj multi-visual klipova") nije definisan ni u izvornom planu ni u shemi**, a
+    `visualPromptEngine.md` §15–17 ga definiše kao klip sa više povezanih vizuelnih momenata.
+    Merenje je izvedeno iz deklaracije u `animation_prompt`-u, bez novog polja i bez rasta
+    `schema_version`-a. Posledica koju treba znati: **aktuelni animation šablon nema
+    multi-visual oblik**, pa je danas tačan broj uvek 0 dok ga C11 ne doda. → **C07**
+    — *zatvoreno: `docs/reference/schemas.md` §5.6 tačka 11, §5.2.*
+
+12. **`lint.mjs` ne traži polja koja nijedna BLOCKING provera ne čita.** `beat.dur`,
+    `beat.sentences`, `beat.narration_says`, `beat.viewer_sees` i `shot.ingredient_image` obavezni su
+    po shemi (3.2/3.3), ali ih `assertShape` ne proverava jer ih nijedno pravilo ne meri — storyboard
+    bez njih prolazi BLOCKING. Od C08 ih traži bar prikaz, i to padom umesto `undefined`-a u sredini
+    dokumenta. → **C08**
+    — *zatvoreno za prikaz: `assertDisplayable` + `DISPLAY_FIELDS` u `tools/contract.mjs`,
+    `docs/reference/schemas.md` §5.7 tačka 5. Za BLOCKING ostaje otvoreno, svesno.*
+
+13. **Verifikacija iz samog plana ne bi ništa ispisala bez normalizacije `--only`.** Plan traži
+    `node tools/shotlist.mjs … --only 1,3`, a `shot_id` je string sa vodećom nulom (`"01"`, odluka
+    C01 tačka 6). `--only` zato prima oba oblika. → **C08**
+    — *zatvoreno: `resolveOnly` u `tools/shotlist.mjs`, `docs/reference/schemas.md` §5.7 tačka 6.*
+
+14. **End card i splitter traže istu sekundu.** Korak 5 daje end card-u outro deo narracije, a
+    splitter po invarijanti 4 pokriva **sve** rečenice — uključujući outro. Dve odluke se sudaraju
+    nad istim vremenom i neko mora da popusti: popušta slika, jer se rep od 11s tišine preko
+    poslednjih shotova ne može odbraniti. Shotovi iza `outro_start` u montaži otpadaju, onaj koji
+    granicu prelazi se krati, i oba se ispisuju. → **C09**
+    — *zatvoreno: `planCuts` u `tools/assemble.mjs`, `docs/reference/schemas.md` §5.8 tačka 1.*
+
+15. **Prihvatanje „293.7s ±0.2s" ne meri ukupno trajanje.** Isti izvorni plan traži i zbir
+    `use_len` = 293.7s i end card koji se drži duže od kraja narracije; oboje odjednom ne mogu da
+    stanu u ±0.2s. Meri se **pokrivenost** (trajanje do kraja narracije), a rep od 1.5s je poznat
+    dodatak, ne drift. Marathon: pokrivenost 293.75s, ukupno 295.25s, izmereno = očekivano u
+    frejm. → **C09**
+    — *zatvoreno: `coverage` u `planCuts`, `docs/reference/schemas.md` §5.8 tačka 2.*
+
+16. **Legacy raspored fajlova probija dve konvencije odjednom.** Marathon klipovi stoje u korenu
+    foldera, bez vodeće nule (`part7.mp4`, ne `shots/part07.mp4` iz invarijante 13), a end card se
+    zove `endKartica.jpeg`. Zato montaža uzima putanju iz `source_file` polja, a imena medija iz
+    `episode.json` — za razliku od formatera, kojima je manifest zabranjen (§5.7 tačka 1). → **C09**
+    — *zatvoreno: `mediaNames` i `shotArgs`, `docs/reference/schemas.md` §5.8 tačke 9 i 11.*
+
+17. **Formula za kompenzaciju dissolve-a iz plana važi samo za lanac od dva.** Plan traži
+    produženje `use_len` „za pola trajanja prelaza" **po shotu**; lanac od tri tako dobije 3·N/2
+    frejmova viška, a `xfade` mu uzme 2·N. Računa se po granici, ne po shotu. → **C10**
+    — *zatvoreno: `applyDissolve` u `tools/assemble.mjs`, `docs/reference/schemas.md` §5.9 tačka 1.*
+
+18. **Simetričan prelaz oko reza nije izvodljiv na zatečenom materijalu.** Centriranje traži
+    `use_in ≥ N/2` u desnom delu, a `use_in` je u praksi nula — sva tri shota jedinog Marathon
+    lanca (B05) stoje na `use_in: 0`, pa bi sa simetrijom epizoda dobila nula prelaza. Višak se
+    uzima sa repa levog dela. → **C10**
+    — *zatvoreno: `docs/reference/schemas.md` §5.9 tačka 2; početak desnog dela se ne pomera.*
+
+19. **Marathon nema nijedan shot ispod 50% iskorišćenja koji nije posledica outro reza.** Svi
+    klipovi traju 10.01s, a rezovi su 8.875s ili 9.0s — 89%. Jedini kandidat je shot 33, i to
+    zato što ga je `outro_start` skratio na 3.125s. Zato izveštaj razdvaja „odsečen outrom" od
+    „kratko sečen od početka", a drugi primer za ručnu proveru iz plana je konstruisan
+    (`--outro-start 280` daje shot 32 na 4s = 40%). → **C10**
+    — *zatvoreno: `docs/reference/schemas.md` §5.9 tačka 9.*
+
+20. **Formula outro-a i propisan raspon reči se sudaraju.** Plan traži 18–28 reči, a referentni
+    uzorak koji ista celina navodi kao obavezan da se reprodukuje ima **37** (kanonsko brojanje,
+    §0.6): most 13 + poziv 13 + like/subscribe 8 + odjava 3. Raspon je procena koja nikad nije
+    proverena nad uzorkom, a uzorak je stvarna, isporučena epizoda — pa popušta raspon.
+    Novi raspon je **30–42 reči (~11–16s)**. → **C11**
+    — *zatvoreno: `docs/prompts/04-script.md`, odeljak „The OUTRO"; formula reprodukuje uzorak
+    doslovno (`normalize()` jednakost, §0.7).*
+
+21. **`masterPrompt.md` se ne može obrisati u ovoj celini a da se ne izgubi sadržaj bez kopije.**
+    Sekcije 12 (VISUAL MODES), 22 (EARLY MOTION — „pokret počinje u prve 2–3 sekunde") i 25
+    (STILL IMAGE MONTAGE) ne postoje ni u `reference/` ni u `visualPromptEngine.md`. To je
+    vizuelni sloj, dakle ulaz za C12 — a plan sam zabranjuje brisanje dok jedinstven sadržaj nije
+    potvrđen u skilovima. Zamka celine tako obara njenu tabelu: fajl dobija `DEPRECATED` u prvoj
+    liniji i briše se **zajedno sa `visualPromptEngine.md`, posle C12**. Time pada i jedna
+    stavka definicije gotovog (`ls docs/masterPrompt.md` → ne postoji). → **C11**, zatvara se u **C12**
+
+22. **Mera „zbir `prompts/` + `reference/` ≈ 1000 linija" više ne meri ništa.** `schemas.md` je u
+    međuvremenu narastao na 1018 linija sam za sebe, jer je mašinski ugovor koji je rastao sa
+    svakom celinom C01–C10, a ne prompt-proza. Merodavno je: **svaki fajl u `prompts/` < 200**
+    (133 / 152 / 191) i **`prompts/` = 476 linija** naspram 2134 iz tri originala. → **C11**
+
 
 ## Verifikacije iz izvornog plana → gde su
 
@@ -73,7 +166,7 @@ Ovo su činjenice zatečene na disku koje izvorni plan nije imao. Svaka je upisa
 | 3. `timeline.mjs` unit testovi | C04 |
 | 4. `lint.mjs` na lošem fixture-u — BLOCKING | C06 |
 | 4. `lint.mjs` — ADVISORY + kontra-test | C07 |
-| 5. `assemble.mjs` end-to-end na Marathonu | C09 (+ drift sa dissolve u C10) |
+| 5. `assemble.mjs` end-to-end na Marathonu | C09 (+ drift sa dissolve u C10 — 0 frejmova) |
 | 6. Suvi hod na novoj epizodi | C13–C15 |
 
 ## Van scope-a — ni u jednoj celini, svesno
@@ -93,6 +186,6 @@ jedna epizoda ne prođe ceo lanac od `narration.mp3` do `final.mp4`.
 
 Svaka celina ima kućicu ovde. Ažurira se na kraju sesije.
 
-- [x] C01  - [x] C02  - [x] C03  - [x] C04  - [ ] C05
-- [ ] C06  - [ ] C07  - [ ] C08  - [ ] C09  - [ ] C10
-- [ ] C11  - [ ] C12  - [ ] C13  - [ ] C14  - [ ] C15
+- [x] C01  - [x] C02  - [x] C03  - [x] C04  - [x] C05
+- [x] C06  - [x] C07  - [x] C08  - [x] C09  - [x] C10
+- [x] C11  - [ ] C12  - [ ] C13  - [ ] C14  - [ ] C15

@@ -1,3 +1,11 @@
+> **DEPRECATED — ne koristi se u produkciji.** Penzionisan u C11.
+> Identitet kanala, runtime, istorijski integritet i hard reset preseljeni su u
+> `docs/reference/channel-bible.md`; faze 01/03/04 u `docs/prompts/`.
+> **Nije obrisan** iako C11 to traži: sekcije 12 (VISUAL MODES), 22 (EARLY MOTION) i
+> 25 (STILL IMAGE MONTAGE) nemaju kopiju ni u `reference/` ni u `visualPromptEngine.md`,
+> a to je vizuelni sloj — dakle ulaz za C12. Briše se zajedno sa `visualPromptEngine.md`,
+> posle C12. Vidi odstupanje 21 u `docs/plan/00-INDEX.md`.
+
 # ANIMATED TALES — VIDEO PRODUCTION MASTER WORKFLOW v4.0
 
 ## ROLE
