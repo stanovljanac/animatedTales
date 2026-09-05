@@ -30,6 +30,13 @@ Izbor epizode: **najviše rangirana ideja iz `docs/ideas.md`** koja nije `done` 
 6. `timeline.mjs` sečenje → shot slotovi sa `use_in/use_out/use_len/motion_budget`, **bez promptova**.
 7. Upiši `storyboard.json` sa praznim promptovima i commituj.
 
+> **Izmena iz C12 (odstupanje 23):** koraci 4–7 se ne rade ručno. Beat mapa se piše u
+> `episodes/<slug>/beats.json`, a koraci 5–7 su dve komande istog alata:
+> `node tools/beatplan.mjs episodes/<slug> --beats episodes/<slug>/beats.json` ispisuje checkpoint
+> i **ništa ne upisuje**; ista komanda sa `--write` piše skelet posle odobrenja. `timeline.mjs`
+> je i dalje čist modul bez CLI-ja — `beatplan.mjs` seče kroz njega. Vidi
+> `.claude/skills/at-storyboard/SKILL.md` i `schemas.md` §5.11.
+
 ## Zašto se staje ovde
 
 Pisanje 30 parova promptova je zaseban, veliki posao (C14). Beat plan i sečenje moraju biti

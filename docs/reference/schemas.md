@@ -301,7 +301,7 @@ C09 je vezan istom konvencijom (nikad `-copyts` nad narracijom).
 
 ## 3. `storyboard.json`
 
-**Piše:** `at-storyboard` (kroz `timeline.mjs`), popravlja `at-qa`.
+**Piše:** `at-storyboard` — skelet kroz `beatplan.mjs` (koji seče kroz `timeline.mjs`), promptove sam; popravlja `at-qa`.
 **Čita:** `lint.mjs`, `render.mjs`, `shotlist.mjs`, `assemble.mjs`, `at-qa`, `at-assemble` — **pet potrošača**.
 **Putanja:** `episodes/<slug>/storyboard.json`
 
@@ -1047,3 +1047,50 @@ komentaru daje `outroIndex` na prvoj outro rečenici, bez ijednog traga alternat
 
 **5. `masterPrompt.md` i `visualPromptEngine.md` nose `DEPRECATED` u prvoj liniji i nisu obrisani.**
 Razlog i rok su u odstupanju 21 (`docs/plan/00-INDEX.md`); brišu se u C12.
+
+### 5.11 Odluke donete u C12 (obavezujuće) — beat plan i skilovi
+
+Skilovi `at-storyboard` / `at-qa` / `at-assemble` žive u `.claude/skills/<ime>/SKILL.md` i
+**dokumentuju stvarni CLI**, ne plan. Ovde stoji samo ono što obavezuje alate.
+
+**1. `timeline.mjs` je ostao čist modul; most je `tools/beatplan.mjs`.** C12 je zatekao prazninu:
+§3 je tvrdio da `storyboard.json` piše „at-storyboard (kroz timeline.mjs)", ali `timeline.mjs` nema
+CLI ni fajl I/O, pa u repou nije postojalo ništa što od `timing.json`-a i grupisanja rečenica pravi
+fajl. Umesto dodavanja I/O u modul (čije zaglavlje eksplicitno tvrdi suprotno), dodat je tanak alat
+iznad njega. Podela: **vremena** iz `planTimeline`, **kreativne odluke** iz beat mape, **prompti,
+tagovi, likovi i `link_group`** se ne popunjavaju — to je C14.
+
+**2. Beat mapa je ulazni fajl `episodes/<slug>/beats.json`.** Niz beatova, ili `{ "beats": [...] }`:
+
+| Polje | Obavezno | Opis |
+|---|---|---|
+| `sentences` | da | `sentence.id` iz `timing.json`, uzastopni, u redosledu |
+| `beat_id` | ne | `B01…Bnn` bez rupa; kad izostane, izvodi se iz redosleda |
+| `device` | ne | slug iz kataloga 3.6 ili `null` (podrazumevano `null`) |
+| `viewer_sees` | ne | šta se vidi; podrazumevano prazan string |
+| `tags` | ne | gazi samo navedene ose placeholder-a iz tačke 4 |
+
+**3. `narration_says` se izvodi iz `timing.json`-a i beat mapa ne sme da ga prepiše.** Ovo je
+mašinski oblik pravila „skripta je zamrznuta posle rendera narracije": kad bi mapa smela da ponese
+svoj tekst, prvo doterivanje rečenice tiho bi razišlo `storyboard.json` i `narration.mp3`, a to se
+otkriva tek na montaži. Polje `narration_says` u beat mapi se **ignoriše**, ne prijavljuje.
+
+**4. Skelet je vidljivo nedovršen, i to je zahtev.** Prompti su `""`, `characters` je `[]`,
+`ingredient_image` i `link_group` su `null`, a tagovi su `PLACEHOLDER_TAGS` — strukturno ispravni
+(prolaze enumeracije 3.5, pa `render.mjs` i `shotlist.mjs` rade nad skeletom odmah), ali identični
+na svim shotovima, sa `location`/`time_light` = `tbd`. Posledica je namerna: `lint.mjs` nad
+skeletom prijavljuje P1/P2/S2 na svakom shotu i R1 na svakom paru. Skelet koji prolazi linter bio
+bi gori ishod — izgledao bi kao gotov storyboard.
+
+**5. Checkpoint je podrazumevano stanje, upis je zaseban korak.** Bez `--write` alat ne dodiruje
+disk. Ponovni upis traži `--force`, jer skelet gazi promptove. Format checkpoint bloka je ugovor
+prema korisniku i pokriven je doslovnim testom (`tests/beatplan.test.mjs`) — beat plan je usko grlo
+sistema, pa se odobrava pre nego što nastane ijedan artefakt.
+
+**6. Vreme u checkpointu se ispisuje `MM:SS.d` sa dvocifrenim minutom** (`00:41.2`, `01:04.6`), što
+nije isto kao `clock()` u `render.mjs` (`0:41.2`). Kolona brojeva koju čovek skenira mora da bude
+poravnata; `storyboard.md` nema kolonu, nego rečenicu. Dve funkcije, dva namenska formata.
+
+**7. `beat.start` prvog beata i dalje pada na nulu tajmlajna** (5.3 tačka 2), pa prvi beat nikad ne
+može da počne na `sentences[0].start`. Primer iz plana (`B03 [00:41.2–01:04.6]`) je zato treći beat,
+ne prvi — što je i jedini način da se format uopšte reprodukuje u testu.
