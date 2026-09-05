@@ -837,3 +837,49 @@ shota istog beata koji dele sve tri ose eskalacije, R1 mora da ćuti). Da fixtur
 ne bi se videlo ono što se njime dokazuje — da ADVISORY ne menja exit code. Kontra-test ide korak
 dalje: isti fixture sa obrisanim `link_group`-om **mora** da eskalira, inače tišina dokazuje samo
 da podataka nema.
+
+### 5.7 Odluke donete u C08 (obavezujuće) — formateri
+
+Izvor istine je `tools/render.mjs` (`storyboard.md`) i `tools/shotlist.mjs` (čeklista za Flow).
+Oba su prikaz i ništa više: nemaju nijednu odluku, nijedan prag i nijedan izlaz osim teksta.
+
+**1. Formater otvara samo `storyboard.json`.** Zamka iz plana („ne dodavati u `storyboard.md`
+ništa čega nema u izvoru") sprovedena je doslovno: nijedan od dva alata ne čita `episode.json`,
+`timing.json` ni `docs/reference/`. Posledica koju treba znati pri čitanju: u prikazu stoji
+`likovi: hanno`, ne ime i `locked_description` — to su polja drugog dokumenta. Ko hoće opis,
+otvara manifest; ko hoće da vidi kako je opis upotrebljen, čita `image_prompt` koji je tu ceo.
+
+**2. Izvedena vrednost nije dodata informacija.** Zbir `use_len`, razlika prema
+`narration_duration`, broj reči prompta i sat-format vremena su funkcije polja iz istog
+dokumenta, pa se ne mogu razići sa izvorom. Broj reči ide kroz kanonski `countWords` (0.6), isti
+kojim P1/P2 mere — prikaz i linter tu ne smeju da daju dva broja.
+
+**3. Determinizam znači: nigde `new Date()`, nigde redosled ključeva.** Vreme u zaglavlju je
+prepisano `generated_at`; šest osa se ispisuje po `R1_AXES`, nikad po `Object.keys(tags)`. Test to
+proverava dokumentom kojem su svi ključevi obrnuti — izlaz mora da bude identičan.
+
+**4. `storyboard.md` je generisan artefakt i ne ide u git**, isto kao `qa-report.md`
+(`.gitignore`). Fajl počinje DO-NOT-EDIT redom; ručna izmena bi preživela do sledećeg pokretanja
+render-a i to je jedini razlog zašto taj red postoji.
+
+**5. Prikaz ima svoj spisak obaveznih polja, odvojen od linterovog.** `assertDisplayable` +
+`DISPLAY_FIELDS` u `contract.mjs` traže sve što se ispisuje; `assertShape` u `lint.mjs` traži ono
+što se meri. Spiskovi se **ne poklapaju**, i to je namerno — ali otkriva stvarnu rupu: `beat.dur`,
+`beat.sentences`, `beat.narration_says`, `beat.viewer_sees` i `shot.ingredient_image` su obavezni
+po 3.2/3.3, a nijedna BLOCKING provera ih ne čita, pa ih `lint.mjs` ne bi ni primetio da fale.
+Od C08 ih hvata bar prikaz, i to padom, ne ispisom `undefined` u sredini dokumenta.
+
+**6. `--only` prima i `07` i `7`.** `shot_id` je string sa vodećom nulom (5.1 tačka 6), a
+verifikacija iz plana traži `--only 1,3` — bez normalizacije bi sopstvena komanda iz plana
+ispisala prazno. Poredi se i doslovno, zbog `shot_id`-jeva koji nisu broj. Nepoznat broj **pada**
+i izlistava postojeće: alat koji postoji da bi ti dao baš taj prompt ne sme da ćuti kad ga nema.
+
+**7. Lanac preživljava filtriranje.** Kad `--only` izvuče jedan shot iz A/B/C lanca, zaglavlje
+lanca i dalje izlazi, sa naznakom koji su shotovi sakriveni i koje je mesto izvučenog u lancu
+(`B od 3`). Dissolve prema susedu i dalje traži istu lokaciju i svetlo — regenerisanje jednog
+shota bez tog podatka je najlakši način da se lanac raspadne.
+
+**8. Podsetnik „sačuvaj sliku" prati `ingredient_image` kad ga ima, inače konvenciju iz
+invarijante 13.** `image_prompt` je obavezan i kod shota sa `ingredient_image: null`, dakle slika
+se ipak generiše; `null` znači samo da se ne vraća u Flow kao ingredient. Čeklista to i kaže tim
+rečima umesto da izostavi korak.
