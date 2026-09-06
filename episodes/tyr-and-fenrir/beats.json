@@ -1,0 +1,128 @@
+[
+  {
+    "beat_id": "B01",
+    "sentences": ["S01", "S02", "S03"],
+    "device": "silhouette",
+    "viewer_sees": "SILHOUETTE — a file of gods carrying a heavy coiled chain along a black ridge toward a seated wolf shape on the skyline; the shadow the wolf throws down the slope is several times longer than the wolf itself",
+    "tags": { "location": "binding-ground", "time_light": "dusk-overcast" }
+  },
+  {
+    "beat_id": "B02",
+    "sentences": ["S04", "S05"],
+    "device": "macro-object",
+    "viewer_sees": "MACRO OBJECT — a weathered carved memorial stone: a wolf figure at its centre bound by a carved chain; the camera pushes in until the carving fills the frame, the carved chain splits, and the carved sun and carved hall behind it break into pieces",
+    "tags": { "location": "gods-hall", "time_light": "night-firelit" }
+  },
+  {
+    "beat_id": "B03",
+    "sentences": ["S06", "S07", "S08", "S09"],
+    "device": "timeline-seasons",
+    "viewer_sees": "TIMELINE — one locked framing of the hall doorway with gods watching from the near shadow; on each pass the wolf in the doorway is larger, the light runs green to grey to snow, and the door frame splinters wider around him",
+    "tags": { "location": "gods-hall", "time_light": "seasons-shifting" }
+  },
+  {
+    "beat_id": "B04",
+    "sentences": ["S10", "S11", "S12"],
+    "device": null,
+    "viewer_sees": "Læding wound in heavy coils around the wolf's chest and shoulders; he braces low, the links draw straight and thin at the strain, then burst and whip away across the rock",
+    "tags": { "location": "binding-ground", "time_light": "day-overcast" }
+  },
+  {
+    "beat_id": "B05",
+    "sentences": ["S13", "S14", "S15"],
+    "device": null,
+    "viewer_sees": "the same framing as the first attempt but with Drómi, visibly twice as thick, dragged into place by several gods; the wolf rises against it and the reinforced links tear open the same way",
+    "tags": { "location": "binding-ground", "time_light": "storm-grey" }
+  },
+  {
+    "beat_id": "B06",
+    "sentences": ["S16", "S17", "S18"],
+    "device": "empty-aftermath",
+    "viewer_sees": "EMPTY AFTERMATH — the churned ground where the wolf stood: two burst chains half-sunk in mud, deep claw furrows filling with rainwater, one abandoned spear; NOT IN FRAME: the wolf, the gods",
+    "tags": { "location": "binding-ground", "time_light": "dusk-overcast" }
+  },
+  {
+    "beat_id": "B07",
+    "sentences": ["S19"],
+    "device": "process-cutaway",
+    "viewer_sees": "PROCESS CUTAWAY — the forge shown in cross-section: coal beds glowing in the lower chamber, the dwarfs at the anvil above drawing out a thread finer than a hair instead of hammering iron",
+    "tags": { "location": "dwarf-forge", "time_light": "forge-red" }
+  },
+  {
+    "beat_id": "B08",
+    "sentences": ["S20", "S21"],
+    "device": "macro-object",
+    "viewer_sees": "MACRO OBJECT — the finished ribbon coiled on a dwarf's open palm, near-camera and weightless enough to lift on a breath; behind it, far and out of focus, a single burst iron link from Drómi as wide as the whole hand",
+    "tags": { "location": "dwarf-forge", "time_light": "forge-emberlow" }
+  },
+  {
+    "beat_id": "B09",
+    "sentences": ["S22"],
+    "device": "ledger-accumulation",
+    "viewer_sees": "LEDGER / ACCUMULATION — six impossible things drawn one after another into a braiding thread: a cat's soundless print, a root under a mountain, a bear's sinew, a fish's breath, a bird's spittle, a woman's beard, each dissolving into the strand as it joins and the strand growing no thicker",
+    "tags": { "location": "impossible-origins", "time_light": "mixed-elemental" }
+  },
+  {
+    "beat_id": "B10",
+    "sentences": ["S23", "S24", "S25", "S26"],
+    "device": null,
+    "viewer_sees": "the gods hold the thin ribbon out on the open rock; the wolf circles it at a distance, head low and ears flat, glancing back at the two burst chains still lying where they fell",
+    "tags": { "location": "binding-ground", "time_light": "day-overcast" }
+  },
+  {
+    "beat_id": "B11",
+    "sentences": ["S27", "S28", "S29"],
+    "device": null,
+    "viewer_sees": "the wolf lies down deliberately and holds his jaws wide open, waiting; the gods stand in a half-circle just beyond the reach of the teeth, none of them moving",
+    "tags": { "location": "binding-ground", "time_light": "day-overcast" }
+  },
+  {
+    "beat_id": "B12",
+    "sentences": ["S30", "S31", "S32"],
+    "device": null,
+    "viewer_sees": "the half-circle holds still and no one steps out of it; then Týr breaks the line, walks in alone, and lays his right hand flat between the open jaws",
+    "tags": { "location": "binding-ground", "time_light": "day-overcast" }
+  },
+  {
+    "beat_id": "B13",
+    "sentences": ["S33", "S34", "S35", "S36"],
+    "device": null,
+    "viewer_sees": "the gods pass the ribbon around the wolf in quick loops; he throws his weight against it, hind legs driving, the thread cutting a bright line into his fur — and it holds without stretching",
+    "tags": { "location": "binding-ground", "time_light": "day-overcast" }
+  },
+  {
+    "beat_id": "B14",
+    "sentences": ["S37", "S38", "S39", "S40"],
+    "device": null,
+    "viewer_sees": "the wolf stops straining and turns his eyes to the gods as he works it out; the jaws close; Týr's shoulder drops and he steps back with his forearm ending at the wrist",
+    "tags": { "location": "binding-ground", "time_light": "day-overcast" }
+  },
+  {
+    "beat_id": "B15",
+    "sentences": ["S41", "S42"],
+    "device": "empty-aftermath",
+    "viewer_sees": "EMPTY AFTERMATH — the flat rock where Týr knelt: his bronze arm-ring lying on the stone, a dark stain spreading from a handprint, the ribbon's slack end nearby; NOT IN FRAME: Týr, the wolf, the other gods",
+    "tags": { "location": "binding-ground", "time_light": "overcast-late" }
+  },
+  {
+    "beat_id": "B16",
+    "sentences": ["S43", "S44", "S45"],
+    "device": "timeline-seasons",
+    "viewer_sees": "TIMELINE — one locked framing of the bound wolf on the island; the light runs through summer, snow and thaw and back again, the ribbon never slackening, the wolf's eyes open in every state",
+    "tags": { "location": "binding-ground", "time_light": "seasons-shifting" }
+  },
+  {
+    "beat_id": "B17",
+    "sentences": ["S46", "S47"],
+    "device": "silhouette",
+    "viewer_sees": "SILHOUETTE — the bound wolf black against a low grey sky, framed as in the opening shot; at this distance the thread is invisible, so nothing appears to be holding him at all",
+    "tags": { "location": "binding-ground", "time_light": "dusk-overcast" }
+  },
+  {
+    "beat_id": "B18",
+    "sentences": ["S48", "S49", "S50"],
+    "device": "macro-object",
+    "viewer_sees": "MACRO OBJECT — the three bindings laid side by side on wet stone: Læding burst, Drómi burst, and the thin ribbon whole and still taut, with a bronze arm-ring set beside them",
+    "tags": { "location": "binding-ground", "time_light": "last-light" }
+  }
+]

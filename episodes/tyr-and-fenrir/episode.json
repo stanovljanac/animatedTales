@@ -1,0 +1,66 @@
+{
+  "slug": "tyr-and-fenrir",
+  "title": "Týr and Fenrir: The Binding of the Wolf",
+  "status": "in-progress",
+  "voice": null,
+  "narration_file": "narration.mp3",
+  "final_file": null,
+  "endcard_file": null,
+  "characters": [
+    {
+      "id": "fenrir",
+      "name": "Fenrir",
+      "locked_description": "a colossal grey-black wolf with a lean muscular frame, amber eyes, coarse shaggy fur along the shoulders, scarred muzzle and heavy jaws, always drawn larger than the gods around him"
+    },
+    {
+      "id": "tyr",
+      "name": "Týr",
+      "locked_description": "a lean Norse warrior god in his thirties, short dark blond hair, a close-cropped beard, calm steady eyes, a plain iron-grey woollen tunic under a leather cuirass, a bronze arm-ring on his right wrist"
+    },
+    {
+      "id": "the-gods",
+      "name": "The Gods",
+      "locked_description": "a group of six to eight Norse gods in layered woollen cloaks, bronze brooches and iron-grey mail, tall and broad, faces set and wary, carrying spears and coiled chains, drawn as a cautious close-knit council"
+    },
+    {
+      "id": "dwarf-smiths",
+      "name": "The Dwarfs",
+      "locked_description": "three short broad-shouldered dwarf smiths with soot-darkened skin, long braided beards, leather aprons over rough linen, thick forearms and burn-scarred hands, working with impossibly fine thread rather than hammers and heavy iron"
+    }
+  ],
+  "locations": [
+    {
+      "id": "binding-ground",
+      "name": "The Binding Ground",
+      "locked_description": "a bleak windswept island of flat black rock and pale grass in a cold grey lake, low ridges at the shore, ringed by distant dark mountains under a wide overcast northern sky"
+    },
+    {
+      "id": "gods-hall",
+      "name": "The Hall of the Gods",
+      "locked_description": "a long timber Norse hall with carved pillars, a central fire trench, shields and hanging furs along the walls, high beams lost in smoke, dim orange light and deep shadow between the posts"
+    },
+    {
+      "id": "dwarf-forge",
+      "name": "The Dwarf Forge",
+      "locked_description": "a cramped underground smithy of dark stone, glowing coal beds and hanging tools, veins of ore in the walls, low vaulted ceilings, warm red firelight cutting through drifting smoke and cold blue depth beyond"
+    }
+  ],
+  "key_props": [
+    {
+      "id": "laeding",
+      "name": "Læding",
+      "locked_description": "a heavy iron chain of thick hand-forged links, dark grey with hammer marks and rust bloom, coiled in a loose pile, strong-looking but plainly made, the kind of binding that trusts sheer mass"
+    },
+    {
+      "id": "dromi",
+      "name": "Drómi",
+      "locked_description": "a massive black iron chain with links twice the thickness of ordinary forgework, riveted bands and reinforced collars, oily dark sheen, so heavy it sags deeply and drags furrows in the ground"
+    },
+    {
+      "id": "gleipnir",
+      "name": "Gleipnir",
+      "locked_description": "a slender silk-smooth ribbon no thicker than a bootlace, pale silver-grey with a faint inner shimmer, light enough to lift on one finger, coiled small, looking far too delicate to hold anything"
+    }
+  ],
+  "notes": "Epizoda 1 kroz kompletan timeline-first lanac (C13/C14/C15). script.md je isporučen bez `## OUTRO` naslova; naslov je umetnut pred poslednji pasus u C13 — parseScript() daje identičnih 50 rečenica pre i posle, menja se samo outro_start (null -> S48), pa narracija i timing nisu dirnuti. research.md nije isporučen; locked_description-i su izvedeni iz script.md-a i nordijske tradicije. voice nije zabeležen. endcard_file još ne postoji — mora se postaviti pre C15 (assemble)."
+}

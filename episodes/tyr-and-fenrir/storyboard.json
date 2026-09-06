@@ -1,0 +1,941 @@
+{
+  "schema_version": 1,
+  "episode": "tyr-and-fenrir",
+  "generated_at": "2026-09-06T12:11:24Z",
+  "narration_duration": 200.438,
+  "fps": 24,
+  "beats": [
+    {
+      "beat_id": "B01",
+      "sentences": [
+        "S01",
+        "S02",
+        "S03"
+      ],
+      "start": 0,
+      "end": 8.46,
+      "dur": 8.46,
+      "device": "silhouette",
+      "narration_says": "The gods wanted to bind a wolf. But not because he was merely dangerous. They feared what he would become.",
+      "viewer_sees": "SILHOUETTE — a file of gods carrying a heavy coiled chain along a black ridge toward a seated wolf shape on the skyline; the shadow the wolf throws down the slope is several times longer than the wolf itself",
+      "shots": [
+        {
+          "shot_id": "01",
+          "beat_id": "B01",
+          "link_group": null,
+          "t_in": 0,
+          "t_out": 8.458,
+          "use_in": 0,
+          "use_out": 8.458,
+          "use_len": 8.458,
+          "motion_budget": 8.458,
+          "source_file": "shots/part01.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "image_prompt": "",
+          "animation_prompt": "",
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "binding-ground",
+            "time_light": "dusk-overcast",
+            "camera_motion": "locked"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B02",
+      "sentences": [
+        "S04",
+        "S05"
+      ],
+      "start": 8.46,
+      "end": 25.14,
+      "dur": 16.68,
+      "device": "macro-object",
+      "narration_says": "His name was Fenrir. Fenrir was one of Loki's monstrous children, and according to Norse tradition, the gods knew that he was destined to play a role in Ragnarök — the catastrophe that would bring the gods and their world to destruction.",
+      "viewer_sees": "MACRO OBJECT — a weathered carved memorial stone: a wolf figure at its centre bound by a carved chain; the camera pushes in until the carving fills the frame, the carved chain splits, and the carved sun and carved hall behind it break into pieces",
+      "shots": [
+        {
+          "shot_id": "02",
+          "beat_id": "B02",
+          "link_group": null,
+          "t_in": 8.458,
+          "t_out": 16.833,
+          "use_in": 0,
+          "use_out": 8.375,
+          "use_len": 8.375,
+          "motion_budget": 8.375,
+          "source_file": "shots/part02.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "image_prompt": "",
+          "animation_prompt": "",
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "gods-hall",
+            "time_light": "night-firelit",
+            "camera_motion": "locked"
+          }
+        },
+        {
+          "shot_id": "03",
+          "beat_id": "B02",
+          "link_group": null,
+          "t_in": 16.833,
+          "t_out": 25.125,
+          "use_in": 0,
+          "use_out": 8.292,
+          "use_len": 8.292,
+          "motion_budget": 8.292,
+          "source_file": "shots/part03.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "image_prompt": "",
+          "animation_prompt": "",
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "gods-hall",
+            "time_light": "night-firelit",
+            "camera_motion": "locked"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B03",
+      "sentences": [
+        "S06",
+        "S07",
+        "S08",
+        "S09"
+      ],
+      "start": 25.14,
+      "end": 40.8,
+      "dur": 15.66,
+      "device": "timeline-seasons",
+      "narration_says": "So while Fenrir was still young, the gods decided that he could not be left unrestrained. But there was a problem. Fenrir kept growing. And the stronger he became, the harder he was to control.",
+      "viewer_sees": "TIMELINE — one locked framing of the hall doorway with gods watching from the near shadow; on each pass the wolf in the doorway is larger, the light runs green to grey to snow, and the door frame splinters wider around him",
+      "shots": [
+        {
+          "shot_id": "04",
+          "beat_id": "B03",
+          "link_group": null,
+          "t_in": 25.125,
+          "t_out": 32.042,
+          "use_in": 0,
+          "use_out": 6.917,
+          "use_len": 6.917,
+          "motion_budget": 6.917,
+          "source_file": "shots/part04.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "image_prompt": "",
+          "animation_prompt": "",
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "gods-hall",
+            "time_light": "seasons-shifting",
+            "camera_motion": "locked"
+          }
+        },
+        {
+          "shot_id": "05",
+          "beat_id": "B03",
+          "link_group": null,
+          "t_in": 32.042,
+          "t_out": 40.792,
+          "use_in": 0,
+          "use_out": 8.75,
+          "use_len": 8.75,
+          "motion_budget": 8.75,
+          "source_file": "shots/part05.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "image_prompt": "",
+          "animation_prompt": "",
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "gods-hall",
+            "time_light": "seasons-shifting",
+            "camera_motion": "locked"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B04",
+      "sentences": [
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "start": 40.8,
+      "end": 48.34,
+      "dur": 7.54,
+      "device": null,
+      "narration_says": "The gods first tried to bind him with a chain called Læding. Fenrir pulled against it. The chain broke.",
+      "viewer_sees": "Læding wound in heavy coils around the wolf's chest and shoulders; he braces low, the links draw straight and thin at the strain, then burst and whip away across the rock",
+      "shots": [
+        {
+          "shot_id": "06",
+          "beat_id": "B04",
+          "link_group": null,
+          "t_in": 40.792,
+          "t_out": 48.333,
+          "use_in": 0,
+          "use_out": 7.541,
+          "use_len": 7.541,
+          "motion_budget": 7.541,
+          "source_file": "shots/part06.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "image_prompt": "",
+          "animation_prompt": "",
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "binding-ground",
+            "time_light": "day-overcast",
+            "camera_motion": "locked"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B05",
+      "sentences": [
+        "S13",
+        "S14",
+        "S15"
+      ],
+      "start": 48.34,
+      "end": 56.02,
+      "dur": 7.68,
+      "device": null,
+      "narration_says": "They brought a stronger binding, called Drómi. Again, Fenrir strained against it. Again, he escaped.",
+      "viewer_sees": "the same framing as the first attempt but with Drómi, visibly twice as thick, dragged into place by several gods; the wolf rises against it and the reinforced links tear open the same way",
+      "shots": [
+        {
+          "shot_id": "07",
+          "beat_id": "B05",
+          "link_group": null,
+          "t_in": 48.333,
+          "t_out": 56,
+          "use_in": 0,
+          "use_out": 7.667,
+          "use_len": 7.667,
+          "motion_budget": 7.667,
+          "source_file": "shots/part07.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "image_prompt": "",
+          "animation_prompt": "",
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "binding-ground",
+            "time_light": "storm-grey",
+            "camera_motion": "locked"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B06",
+      "sentences": [
+        "S16",
+        "S17",
+        "S18"
+      ],
+      "start": 56.02,
+      "end": 65.58,
+      "dur": 9.56,
+      "device": "empty-aftermath",
+      "narration_says": "The gods had learned something important. They could not defeat Fenrir with strength alone. So they sought something different.",
+      "viewer_sees": "EMPTY AFTERMATH — the churned ground where the wolf stood: two burst chains half-sunk in mud, deep claw furrows filling with rainwater, one abandoned spear; NOT IN FRAME: the wolf, the gods",
+      "shots": [
+        {
+          "shot_id": "08",
+          "beat_id": "B06",
+          "link_group": null,
+          "t_in": 56,
+          "t_out": 65.583,
+          "use_in": 0,
+          "use_out": 9.583,
+          "use_len": 9.583,
+          "motion_budget": null,
+          "source_file": "shots/part08.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "image_prompt": "",
+          "animation_prompt": "",
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "binding-ground",
+            "time_light": "dusk-overcast",
+            "camera_motion": "locked"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B07",
+      "sentences": [
+        "S19"
+      ],
+      "start": 65.58,
+      "end": 71.76,
+      "dur": 6.18,
+      "device": "process-cutaway",
+      "narration_says": "They turned to the dwarfs, who created a magical binding called Gleipnir.",
+      "viewer_sees": "PROCESS CUTAWAY — the forge shown in cross-section: coal beds glowing in the lower chamber, the dwarfs at the anvil above drawing out a thread finer than a hair instead of hammering iron",
+      "shots": [
+        {
+          "shot_id": "09",
+          "beat_id": "B07",
+          "link_group": null,
+          "t_in": 65.583,
+          "t_out": 71.75,
+          "use_in": 0,
+          "use_out": 6.167,
+          "use_len": 6.167,
+          "motion_budget": 6.167,
+          "source_file": "shots/part09.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "image_prompt": "",
+          "animation_prompt": "",
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "dwarf-forge",
+            "time_light": "forge-red",
+            "camera_motion": "locked"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B08",
+      "sentences": [
+        "S20",
+        "S21"
+      ],
+      "start": 71.76,
+      "end": 85.7,
+      "dur": 13.94,
+      "device": "macro-object",
+      "narration_says": "Unlike the heavy chains that had come before it, Gleipnir was remarkably light and thin. Its strength came from things that, according to Norse tradition, could not normally be captured at all.",
+      "viewer_sees": "MACRO OBJECT — the finished ribbon coiled on a dwarf's open palm, near-camera and weightless enough to lift on a breath; behind it, far and out of focus, a single burst iron link from Drómi as wide as the whole hand",
+      "shots": [
+        {
+          "shot_id": "10",
+          "beat_id": "B08",
+          "link_group": null,
+          "t_in": 71.75,
+          "t_out": 78.458,
+          "use_in": 0,
+          "use_out": 6.708,
+          "use_len": 6.708,
+          "motion_budget": 6.708,
+          "source_file": "shots/part10.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "image_prompt": "",
+          "animation_prompt": "",
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "dwarf-forge",
+            "time_light": "forge-emberlow",
+            "camera_motion": "locked"
+          }
+        },
+        {
+          "shot_id": "11",
+          "beat_id": "B08",
+          "link_group": null,
+          "t_in": 78.458,
+          "t_out": 85.708,
+          "use_in": 0,
+          "use_out": 7.25,
+          "use_len": 7.25,
+          "motion_budget": 7.25,
+          "source_file": "shots/part11.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "image_prompt": "",
+          "animation_prompt": "",
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "dwarf-forge",
+            "time_light": "forge-emberlow",
+            "camera_motion": "locked"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B09",
+      "sentences": [
+        "S22"
+      ],
+      "start": 85.7,
+      "end": 98.78,
+      "dur": 13.08,
+      "device": "ledger-accumulation",
+      "narration_says": "It was made from six impossible things: the sound of a cat's footsteps, the roots of mountains, the sinews of bears, the breath of fish, the spittle of birds, and the beard of a woman.",
+      "viewer_sees": "LEDGER / ACCUMULATION — six impossible things drawn one after another into a braiding thread: a cat's soundless print, a root under a mountain, a bear's sinew, a fish's breath, a bird's spittle, a woman's beard, each dissolving into the strand as it joins and the strand growing no thicker",
+      "shots": [
+        {
+          "shot_id": "12",
+          "beat_id": "B09",
+          "link_group": null,
+          "t_in": 85.708,
+          "t_out": 92.042,
+          "use_in": 0,
+          "use_out": 6.334,
+          "use_len": 6.334,
+          "motion_budget": 6.334,
+          "source_file": "shots/part12.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "image_prompt": "",
+          "animation_prompt": "",
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "impossible-origins",
+            "time_light": "mixed-elemental",
+            "camera_motion": "locked"
+          }
+        },
+        {
+          "shot_id": "13",
+          "beat_id": "B09",
+          "link_group": null,
+          "t_in": 92.042,
+          "t_out": 98.792,
+          "use_in": 0,
+          "use_out": 6.75,
+          "use_len": 6.75,
+          "motion_budget": 6.75,
+          "source_file": "shots/part13.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "image_prompt": "",
+          "animation_prompt": "",
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "impossible-origins",
+            "time_light": "mixed-elemental",
+            "camera_motion": "locked"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B10",
+      "sentences": [
+        "S23",
+        "S24",
+        "S25",
+        "S26"
+      ],
+      "start": 98.78,
+      "end": 112.1,
+      "dur": 13.32,
+      "device": null,
+      "narration_says": "The gods brought Gleipnir to Fenrir. But the wolf was suspicious. He had already broken the bindings they had used against him. This new one looked weaker than all of them.",
+      "viewer_sees": "the gods hold the thin ribbon out on the open rock; the wolf circles it at a distance, head low and ears flat, glancing back at the two burst chains still lying where they fell",
+      "shots": [
+        {
+          "shot_id": "14",
+          "beat_id": "B10",
+          "link_group": null,
+          "t_in": 98.792,
+          "t_out": 104.417,
+          "use_in": 0,
+          "use_out": 5.625,
+          "use_len": 5.625,
+          "motion_budget": 5.625,
+          "source_file": "shots/part14.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "image_prompt": "",
+          "animation_prompt": "",
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "binding-ground",
+            "time_light": "day-overcast",
+            "camera_motion": "locked"
+          }
+        },
+        {
+          "shot_id": "15",
+          "beat_id": "B10",
+          "link_group": null,
+          "t_in": 104.417,
+          "t_out": 112.083,
+          "use_in": 0,
+          "use_out": 7.666,
+          "use_len": 7.666,
+          "motion_budget": 7.666,
+          "source_file": "shots/part15.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "image_prompt": "",
+          "animation_prompt": "",
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "binding-ground",
+            "time_light": "day-overcast",
+            "camera_motion": "locked"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B11",
+      "sentences": [
+        "S27",
+        "S28",
+        "S29"
+      ],
+      "start": 112.1,
+      "end": 126.16,
+      "dur": 14.06,
+      "device": null,
+      "narration_says": "Fenrir agreed to be bound only if the gods gave him a guarantee that they would release him. And there was only one guarantee he would accept. One of the gods had to place a hand inside his mouth.",
+      "viewer_sees": "the wolf lies down deliberately and holds his jaws wide open, waiting; the gods stand in a half-circle just beyond the reach of the teeth, none of them moving",
+      "shots": [
+        {
+          "shot_id": "16",
+          "beat_id": "B11",
+          "link_group": null,
+          "t_in": 112.083,
+          "t_out": 118.5,
+          "use_in": 0,
+          "use_out": 6.417,
+          "use_len": 6.417,
+          "motion_budget": 6.417,
+          "source_file": "shots/part16.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "image_prompt": "",
+          "animation_prompt": "",
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "binding-ground",
+            "time_light": "day-overcast",
+            "camera_motion": "locked"
+          }
+        },
+        {
+          "shot_id": "17",
+          "beat_id": "B11",
+          "link_group": null,
+          "t_in": 118.5,
+          "t_out": 126.167,
+          "use_in": 0,
+          "use_out": 7.667,
+          "use_len": 7.667,
+          "motion_budget": 7.667,
+          "source_file": "shots/part17.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "image_prompt": "",
+          "animation_prompt": "",
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "binding-ground",
+            "time_light": "day-overcast",
+            "camera_motion": "locked"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B12",
+      "sentences": [
+        "S30",
+        "S31",
+        "S32"
+      ],
+      "start": 126.16,
+      "end": 133.32,
+      "dur": 7.16,
+      "device": null,
+      "narration_says": "The others hesitated. Týr stepped forward. He placed his hand between Fenrir's jaws.",
+      "viewer_sees": "the half-circle holds still and no one steps out of it; then Týr breaks the line, walks in alone, and lays his right hand flat between the open jaws",
+      "shots": [
+        {
+          "shot_id": "18",
+          "beat_id": "B12",
+          "link_group": null,
+          "t_in": 126.167,
+          "t_out": 133.333,
+          "use_in": 0,
+          "use_out": 7.166,
+          "use_len": 7.166,
+          "motion_budget": 7.166,
+          "source_file": "shots/part18.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "image_prompt": "",
+          "animation_prompt": "",
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "binding-ground",
+            "time_light": "day-overcast",
+            "camera_motion": "locked"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B13",
+      "sentences": [
+        "S33",
+        "S34",
+        "S35",
+        "S36"
+      ],
+      "start": 133.32,
+      "end": 142.92,
+      "dur": 9.6,
+      "device": null,
+      "narration_says": "Then the gods wrapped Gleipnir around the wolf. Fenrir pulled. He strained against the binding. But this time, it did not break.",
+      "viewer_sees": "the gods pass the ribbon around the wolf in quick loops; he throws his weight against it, hind legs driving, the thread cutting a bright line into his fur — and it holds without stretching",
+      "shots": [
+        {
+          "shot_id": "19",
+          "beat_id": "B13",
+          "link_group": null,
+          "t_in": 133.333,
+          "t_out": 142.917,
+          "use_in": 0,
+          "use_out": 9.584,
+          "use_len": 9.584,
+          "motion_budget": null,
+          "source_file": "shots/part19.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "image_prompt": "",
+          "animation_prompt": "",
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "binding-ground",
+            "time_light": "day-overcast",
+            "camera_motion": "locked"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B14",
+      "sentences": [
+        "S37",
+        "S38",
+        "S39",
+        "S40"
+      ],
+      "start": 142.92,
+      "end": 151.84,
+      "dur": 8.92,
+      "device": null,
+      "narration_says": "And Fenrir understood. The gods had deceived him. His jaws closed around Týr's hand. The god lost it.",
+      "viewer_sees": "the wolf stops straining and turns his eyes to the gods as he works it out; the jaws close; Týr's shoulder drops and he steps back with his forearm ending at the wrist",
+      "shots": [
+        {
+          "shot_id": "20",
+          "beat_id": "B14",
+          "link_group": null,
+          "t_in": 142.917,
+          "t_out": 151.833,
+          "use_in": 0,
+          "use_out": 8.916,
+          "use_len": 8.916,
+          "motion_budget": 8.916,
+          "source_file": "shots/part20.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "image_prompt": "",
+          "animation_prompt": "",
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "binding-ground",
+            "time_light": "day-overcast",
+            "camera_motion": "locked"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B15",
+      "sentences": [
+        "S41",
+        "S42"
+      ],
+      "start": 151.84,
+      "end": 162.28,
+      "dur": 10.44,
+      "device": "empty-aftermath",
+      "narration_says": "The gods had finally found something Fenrir could not break. But they had paid for it with the hand of the god who had been willing to guarantee their promise.",
+      "viewer_sees": "EMPTY AFTERMATH — the flat rock where Týr knelt: his bronze arm-ring lying on the stone, a dark stain spreading from a handprint, the ribbon's slack end nearby; NOT IN FRAME: Týr, the wolf, the other gods",
+      "shots": [
+        {
+          "shot_id": "21",
+          "beat_id": "B15",
+          "link_group": null,
+          "t_in": 151.833,
+          "t_out": 156.292,
+          "use_in": 0,
+          "use_out": 4.459,
+          "use_len": 4.459,
+          "motion_budget": 4.459,
+          "source_file": "shots/part21.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "image_prompt": "",
+          "animation_prompt": "",
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "binding-ground",
+            "time_light": "overcast-late",
+            "camera_motion": "locked"
+          }
+        },
+        {
+          "shot_id": "22",
+          "beat_id": "B15",
+          "link_group": null,
+          "t_in": 156.292,
+          "t_out": 162.292,
+          "use_in": 0,
+          "use_out": 6,
+          "use_len": 6,
+          "motion_budget": 6,
+          "source_file": "shots/part22.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "image_prompt": "",
+          "animation_prompt": "",
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "binding-ground",
+            "time_light": "overcast-late",
+            "camera_motion": "locked"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B16",
+      "sentences": [
+        "S43",
+        "S44",
+        "S45"
+      ],
+      "start": 162.28,
+      "end": 175.5,
+      "dur": 13.22,
+      "device": "timeline-seasons",
+      "narration_says": "And Fenrir was still alive. He remained bound, waiting for the day when his bonds would finally break. According to Norse tradition, that day would come at Ragnarök.",
+      "viewer_sees": "TIMELINE — one locked framing of the bound wolf on the island; the light runs through summer, snow and thaw and back again, the ribbon never slackening, the wolf's eyes open in every state",
+      "shots": [
+        {
+          "shot_id": "23",
+          "beat_id": "B16",
+          "link_group": null,
+          "t_in": 162.292,
+          "t_out": 171.792,
+          "use_in": 0,
+          "use_out": 9.5,
+          "use_len": 9.5,
+          "motion_budget": null,
+          "source_file": "shots/part23.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "image_prompt": "",
+          "animation_prompt": "",
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "binding-ground",
+            "time_light": "seasons-shifting",
+            "camera_motion": "locked"
+          }
+        },
+        {
+          "shot_id": "24",
+          "beat_id": "B16",
+          "link_group": null,
+          "t_in": 171.792,
+          "t_out": 175.5,
+          "use_in": 0,
+          "use_out": 3.708,
+          "use_len": 3.708,
+          "motion_budget": 3.708,
+          "source_file": "shots/part24.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "image_prompt": "",
+          "animation_prompt": "",
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "binding-ground",
+            "time_light": "seasons-shifting",
+            "camera_motion": "locked"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B17",
+      "sentences": [
+        "S46",
+        "S47"
+      ],
+      "start": 175.5,
+      "end": 182.06,
+      "dur": 6.56,
+      "device": "silhouette",
+      "narration_says": "The gods had managed to restrain the wolf. But they had never truly defeated him.",
+      "viewer_sees": "SILHOUETTE — the bound wolf black against a low grey sky, framed as in the opening shot; at this distance the thread is invisible, so nothing appears to be holding him at all",
+      "shots": [
+        {
+          "shot_id": "25",
+          "beat_id": "B17",
+          "link_group": null,
+          "t_in": 175.5,
+          "t_out": 182.042,
+          "use_in": 0,
+          "use_out": 6.542,
+          "use_len": 6.542,
+          "motion_budget": 6.542,
+          "source_file": "shots/part25.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "image_prompt": "",
+          "animation_prompt": "",
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "binding-ground",
+            "time_light": "dusk-overcast",
+            "camera_motion": "locked"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B18",
+      "sentences": [
+        "S48",
+        "S49",
+        "S50"
+      ],
+      "start": 182.06,
+      "end": 200.438,
+      "dur": 18.378,
+      "device": "macro-object",
+      "narration_says": "Fenrir's story is a tale of trust, sacrifice, and the price of binding something you cannot destroy. If you want to explore more forgotten myths and legends like this, leave a like and subscribe to Animated Tales. Until next time.",
+      "viewer_sees": "MACRO OBJECT — the three bindings laid side by side on wet stone: Læding burst, Drómi burst, and the thin ribbon whole and still taut, with a bronze arm-ring set beside them",
+      "shots": [
+        {
+          "shot_id": "26",
+          "beat_id": "B18",
+          "link_group": null,
+          "t_in": 182.042,
+          "t_out": 191.375,
+          "use_in": 0,
+          "use_out": 9.333,
+          "use_len": 9.333,
+          "motion_budget": null,
+          "source_file": "shots/part26.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "image_prompt": "",
+          "animation_prompt": "",
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "binding-ground",
+            "time_light": "last-light",
+            "camera_motion": "locked"
+          }
+        },
+        {
+          "shot_id": "27",
+          "beat_id": "B18",
+          "link_group": null,
+          "t_in": 191.375,
+          "t_out": 200.458,
+          "use_in": 0,
+          "use_out": 9.083,
+          "use_len": 9.083,
+          "motion_budget": null,
+          "source_file": "shots/part27.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "image_prompt": "",
+          "animation_prompt": "",
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "binding-ground",
+            "time_light": "last-light",
+            "camera_motion": "locked"
+          }
+        }
+      ]
+    }
+  ]
+}
