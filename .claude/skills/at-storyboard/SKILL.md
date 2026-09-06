@@ -118,9 +118,11 @@ i dalje prolazi BLOCKING:
 | `blind-cut` | za tu rečenicu nema vremena po rečima; tačka reza je pogođena, ne izmerena — proveri je |
 | `forced-split` | jednaka podela bez obzira na granice |
 | `beat-coverage` | mapa ne pokriva sve rečenice tačno jednom i u redosledu |
-| `narration-tail` | rep tišine ostaje bez slike i T1 (±0.2s) će pasti |
+| `tail-absorbed` | rep tišine posle poslednje rečenice pripojen je poslednjem shotu — normalan ishod, samo pogledaj koliko ga ima |
+| `narration-tail` | rep tišine ostaje bez slike i T1 (±0.2s) će pasti — posle C13 samo ako je `timelineEnd: null` prosleđen svesno |
 
-Popravka za sva je ista: **prepravi beat mapu**, ne splitter. Beat kraći od 3.0s spaja se sa
+`tail-absorbed` ne traži nikakvu akciju. Popravka za ostala je ista: **prepravi beat mapu**, ne
+splitter. Beat kraći od 3.0s spaja se sa
 susedom; beat koji stalno traži `blind-cut` je prevelik i deli se.
 
 ### 4. Upis skeleta

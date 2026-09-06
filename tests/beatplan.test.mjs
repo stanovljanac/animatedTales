@@ -205,14 +205,18 @@ test('buildStoryboard: beat.start/end su prepisani iz timing.json neizmenjeni (i
   const { storyboard } = build(MAP, t);
   const byId = new Map(t.sentences.map((s) => [s.id, s]));
 
+  // Oba kraja tajmlajna su i dalje vrednosti *iz* `timing.json`, samo ne iz `sentences`:
+  // prvi beat kreće od nule, poslednji se završava na `timing.duration`, pa tišina na
+  // krajevima pripada krajnjim shotovima umesto nikome (invarijanta 11 / T1).
   storyboard.beats.forEach((b, i) => {
     const first = byId.get(b.sentences[0]);
     const next = MAP[i + 1] ? byId.get(MAP[i + 1].sentences[0]) : null;
     if (i > 0) assert.equal(b.start, first.start);
-    assert.equal(b.end, next ? next.start : byId.get(b.sentences.at(-1)).end);
+    assert.equal(b.end, next ? next.start : t.duration);
     assert.ok(Math.abs(b.dur - (b.end - b.start)) <= EPS);
   });
   assert.equal(storyboard.beats[0].start, 0, 'prvi beat kreće od nule tajmlajna');
+  assert.equal(storyboard.beats.at(-1).end, t.duration, 'poslednji beat ide do kraja narracije');
 });
 
 test('buildStoryboard: tajmlajn je neprekidan i frejm-poravnat (invarijante 6–10)', () => {

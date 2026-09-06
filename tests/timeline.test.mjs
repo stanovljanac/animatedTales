@@ -267,18 +267,52 @@ test('planTimeline: neprekidan tajmlajn od 0.0 preko granica beatova', () => {
     if (i + 1 < out.length) assert.equal(b.end, out[i + 1].start, 'beatovi ne popločavaju tajmlajn');
   });
 
-  // invarijanta 11: zbir use_len naspram trajanja narracije
-  const sum = shots.reduce((a, s) => a + s.use_len, 0);
-  assert.ok(Math.abs(sum - timing.duration) <= 0.5, `zbir ${sum} predaleko od ${timing.duration}`);
+  // invarijanta 11 / T1: zbir use_len naspram trajanja narracije. Prag je 0.2s, ne "otprilike" —
+  // tišina na oba kraja je pripojena krajnjim shotovima, pa ostaje samo greška kvantizacije.
+  const sum = round3(shots.reduce((a, s) => a + s.use_len, 0));
+  assert.ok(Math.abs(sum - timing.duration) <= 0.2, `zbir ${sum} predaleko od ${timing.duration}`);
 });
 
-test('planTimeline: rep tišine u narraciji -> narration-tail warning', () => {
+test('planTimeline: rep tišine se pripaja poslednjem shotu, simetrično glavi', () => {
   const sentences = mk([4.0, 4.0, 4.0]);
-  const bez = planTimeline({ duration: 12.1, sentences }, [{ beat_id: 'B01', sentences: ['S01', 'S02', 'S03'] }]);
-  assert.equal(bez.warnings.filter((w) => w.code === 'narration-tail').length, 0);
+  const beats = [{ beat_id: 'B01', sentences: ['S01', 'S02', 'S03'] }];
 
-  const sa = planTimeline({ duration: 13.5, sentences }, [{ beat_id: 'B01', sentences: ['S01', 'S02', 'S03'] }]);
-  assert.ok(sa.warnings.some((w) => w.code === 'narration-tail'));
+  // rep od 1.5s: tajmlajn ide do trajanja narracije, T1 prolazi, narration-tail se ne diže
+  const { shots, beats: out, warnings } = planTimeline({ duration: 13.5, sentences }, beats);
+  assert.equal(warnings.filter((w) => w.code === 'narration-tail').length, 0);
+  assert.equal(out.at(-1).end, 13.5, 'poslednji beat mora da se završi na trajanju narracije');
+  assert.ok(Math.abs(shots.at(-1).t_out - q(13.5, FPS)) < EPS);
+  const sum = round3(shots.reduce((a, s) => a + s.use_len, 0));
+  assert.ok(Math.abs(sum - 13.5) <= 0.2, `T1: zbir ${sum} vs 13.5`);
+
+  // pripajanje je vidljivo na checkpointu, sa izmerenom dužinom repa
+  const abs = warnings.find((w) => w.code === 'tail-absorbed');
+  assert.ok(abs, 'nema tail-absorbed upozorenja');
+  assert.equal(abs.beat_id, 'B01');
+  assert.match(abs.message, /1\.5s/);
+
+  // rep ne sme da probije maxShot — ulazi u optimizaciju, ne dodaje se gotovom shotu
+  const veliki = planTimeline({ duration: 20.0, sentences }, beats);
+  checkBounds(veliki.shots);
+  assert.ok(veliki.shots.length > 1, 'rep od 8s mora da proizvede više od jednog shota');
+});
+
+test('planTimeline: bez repa nema ni upozorenja', () => {
+  const sentences = mk([4.0, 4.0, 4.0]);
+  const { warnings } = planTimeline({ duration: 12.1, sentences }, [{ beat_id: 'B01', sentences: ['S01', 'S02', 'S03'] }]);
+  assert.equal(warnings.filter((w) => w.code === 'narration-tail').length, 0);
+  assert.equal(warnings.filter((w) => w.code === 'tail-absorbed').length, 0);
+});
+
+test('planTimeline: timelineEnd null vraća staro ponašanje i diže narration-tail', () => {
+  const sentences = mk([4.0, 4.0, 4.0]);
+  const { beats: out, warnings } = planTimeline(
+    { duration: 13.5, sentences },
+    [{ beat_id: 'B01', sentences: ['S01', 'S02', 'S03'] }],
+    { timelineEnd: null },
+  );
+  assert.equal(out.at(-1).end, 12.0, 'sa timelineEnd:null beat se završava na poslednjoj rečenici');
+  assert.ok(warnings.some((w) => w.code === 'narration-tail'));
 });
 
 test('planTimeline: nepokrivena rečenica -> beat-coverage warning', () => {

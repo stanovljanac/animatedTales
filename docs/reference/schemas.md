@@ -334,8 +334,8 @@ prikazuje upravo ovaj nivo.
 |---|---|---|---|
 | `beat_id` | string | da | `B01`, `B02`, … redom, bez rupa. |
 | `sentences` | array\<string\> | da | `sentence.id` iz `timing.json`, **uzastopne i u rastućem redosledu**. Bar jedna. |
-| `start` | number | da | `= timing.sentences[prva].start` |
-| `end` | number | da | `= timing.sentences[poslednja].end` |
+| `start` | number | da | `= timing.sentences[prva].start`, osim prvog beata: `0.0` (5.12) |
+| `end` | number | da | `= timing.sentences[sledeća].start`, osim poslednjeg beata: `timing.duration` (5.12) |
 | `dur` | number | da | `end - start` |
 | `device` | string \| null | da | Slug vizuelnog uređaja iz kataloga (3.6), ili `null` za doslovan/konkretan beat. |
 | `narration_says` | string | da | Tekst rečenica beata, spojen. Ono što gledalac **čuje**. |
@@ -437,7 +437,8 @@ Vreme. Sve jednakosti ispod porede se sa tolerancijom `EPS = 0.0011` — vrednos
 na 3 decimale (0.1), pa stroga jednakost pada na zaokruživanju, ne na grešci.
 
 5. `beat.start` / `beat.end` prepisani iz `timing.json` **neizmenjeni** (nisu frejm-poravnati),
-   `dur = end - start`.
+   `dur = end - start`. Na krajevima tajmlajna to su `0.0` i `timing.duration` — i dalje vrednosti
+   iz `timing.json`, samo ne iz `sentences` (5.12).
 6. Beat na tajmlajnu zauzima `[q(beat.start), q(beat.end)]`: prvi shot ima `t_in = q(beat.start)`,
    poslednji `t_out = q(beat.end)`, a unutar beata `shots[i].t_out === shots[i+1].t_in`.
    Zbir `use_len` shotova beata je zato `q(beat.end) - q(beat.start)`, a **poslednji shot upija
@@ -610,8 +611,10 @@ mapi — ne u splitteru.
 **6. Dva upozorenja koja diže `planTimeline`, ne `sliceBeat`.** `beat-coverage` — beat mapa ne
 pokriva sve rečenice iz `timing.json` tačno jednom i u redosledu (invarijanta 4). `narration-tail` —
 `timing.duration` je više od 0.2s duži od kraja poslednjeg beata, pa rep tišine u `narration.mp3`
-ostaje bez slike i invarijanta 11 (T1) pada. Splitter tu ne sme sam da odluči: produžavanje
-poslednjeg shota preko `maxShot` i skraćivanje audia su obe odluke montaže i pripadaju **C09**.
+ostaje bez slike i invarijanta 11 (T1) pada. ~~Splitter tu ne sme sam da odluči… pripada C09.~~ —
+**zatvoreno u C13, vidi 5.12**: rep se pripaja poslednjem beatu isto kao što se tišina na početku
+pripaja prvom, `narration-tail` ostaje sa nepromenjenim značenjem, a normalan ishod je novo
+upozorenje `tail-absorbed`.
 
 ### 5.4 Odluke donete u C05 (obavezujuće) — alignment i nula na tajmlajnu
 
@@ -1099,3 +1102,33 @@ poravnata; `storyboard.md` nema kolonu, nego rečenicu. Dve funkcije, dva namens
 **7. `beat.start` prvog beata i dalje pada na nulu tajmlajna** (5.3 tačka 2), pa prvi beat nikad ne
 može da počne na `sentences[0].start`. Primer iz plana (`B03 [00:41.2–01:04.6]`) je zato treći beat,
 ne prvi — što je i jedini način da se format uopšte reprodukuje u testu.
+
+### 5.12 Odluke donete u C13 (obavezujuće) — rep narracije
+
+Otvorena stavka iz 5.3 tačke 6, prosleđena C09-u i tamo nedodirnuta. Epizoda *tyr-and-fenrir* je
+prva koja je na nju naletela: poslednja rečenica se završava na `199.96s`, narracija traje
+`200.438s`, pa je `0.478s` repa ostajalo bez slike i T1 (±0.2s) bi pao na gotovom storyboard-u.
+
+**1. Rep tišine pripada poslednjem shotu, simetrično glavi.** `planTimeline` je od početka
+apsorbovao tišinu na **početku** (prvi beat kreće od `timelineStart = 0.0`, ne od
+`sentences[0].start`), a na **kraju** nije — asimetrija koja nije bila odluka nego propust.
+Poslednji beat se sada završava na `timelineEnd`, podrazumevano `timing.duration`. Obe granice
+su i dalje vrednosti iz `timing.json` (invarijanta 5), samo ne iz `sentences`.
+
+Razmatrana alternativa je bila skraćivanje audia u montaži. Odbijena: `assemble.mjs` bi morao da
+seče fajl koji je `align.mjs` izmerio, pa bi `timing.json` i `final.mp4` prestali da govore o istoj
+osi — a rep tišine je ionako korisna slika, jer end card na njemu i stoji (5.10).
+
+**2. Produžetak ulazi u `sliceBeat` kao `beatEnd`, ne dodaje se gotovom shotu.** Zato rep ne može
+da probije `maxShot`: optimizacija ga vidi kao deo beata i po potrebi ga iseče na jedan shot više.
+Time otpada jedini razlog zbog kojeg je odluka uopšte bila odložena montaži.
+
+**3. `narration-tail` zadržava značenje, uz novo `tail-absorbed`.** Rep se posle ovoga prijavljuje
+kao normalan ishod (`tail-absorbed`, sa izmerenom dužinom), a `narration-tail` — rep koji **niko
+nije pokrio** — može da se digne još samo kad se `timelineEnd: null` prosledi svesno. Prag oba
+upozorenja je `LIMITS.t1Drift` (0.2s): ispod njega rep nije problem ni da ga niko nije pripojio,
+pa nema šta ni da se prijavi.
+
+**4. Staro ponašanje je dostupno kroz `opts.timelineEnd: null`.** Ne zato što ga neko koristi, nego
+zato što je bez njega upozorenje `narration-tail` postalo mrtav kod koji nijedan test ne može da
+dosegne.

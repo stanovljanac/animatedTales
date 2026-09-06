@@ -63,7 +63,7 @@
 //   · invarijanta 7 traži tajmlajn bez rupa, pa pauza mora da pripadne nekom shotu.
 // Ista konvencija važi i unutar beata i na granici između beatova (`planTimeline`).
 
-import { EPS, isFrameAligned, q, round3 } from './contract.mjs';
+import { EPS, LIMITS, isFrameAligned, q, round3 } from './contract.mjs';
 
 // ---------------------------------------------------------------- konstante
 
@@ -348,19 +348,32 @@ export function sliceBeat(sentences, opts = {}) {
  *
  * Granice beatova prate istu konvenciju kao rezovi unutar beata: beat se završava tamo gde
  * počinje prva rečenica sledećeg beata, pa je tajmlajn neprekidan (schemas.md invarijanta 7).
- * Prvi beat počinje na `timelineStart` (podrazumevano 0.0), ne na `sentences[0].start` —
- * narracija epizode *night-when-rome-almost-fell* počinje na 0.025057s, a tajmlajn mora da
- * krene od nule. Konvencija oduzimanja tog ofseta pripada C05/C09; ovde se tišina na početku
- * samo pripaja prvom shotu.
+ *
+ * Oba kraja tajmlajna su tišina i tretiraju se isto. Prvi beat počinje na `timelineStart`
+ * (podrazumevano 0.0), ne na `sentences[0].start` — narracija epizode
+ * *night-when-rome-almost-fell* počinje na 0.025057s, a tajmlajn mora da krene od nule.
+ * Poslednji beat se simetrično završava na `timelineEnd` (podrazumevano `timing.duration`),
+ * ne na `end` svoje poslednje rečenice — rep tišine posle poslednje reči inače ne bi pripao
+ * nijednom shotu i invarijanta 11 (T1, ±0.2s) bi pala na svakoj epizodi koja ima rep duži od
+ * toga. Tišina se u oba slučaja samo pripaja krajnjem shotu; konvencija oduzimanja ofseta pri
+ * lepljenju audia pripada C05/C09 (vidi schemas.md §5.5).
+ *
+ * Produženi kraj ulazi u `sliceBeat` kao `beatEnd`, ne dodaje se gotovom shotu — zato rep ne
+ * može da probije `maxShot`: optimizacija ga vidi i po potrebi seče beat na jedan shot više.
  *
  * @param {{sentences: Array<object>, words?: Array<object>, duration?: number}} timing
  * @param {Array<{beat_id: string, sentences: string[]}>} beats
- * @param {object} [opts] isto kao sliceBeat, plus `timelineStart`
+ * @param {object} [opts] isto kao sliceBeat, plus `timelineStart` i `timelineEnd`
+ *        (`timelineEnd: null` isključuje produžetak i vraća staro ponašanje — poslednji beat
+ *        se završava na poslednjoj rečenici, a rep se prijavljuje kao `narration-tail`)
  * @returns {{fps: number, beats: Array<object>, shots: Array<object>, warnings: Array<object>}}
  */
 export function planTimeline(timing, beats, opts = {}) {
   const o = { ...DEFAULTS, ...opts };
   const timelineStart = opts.timelineStart ?? 0;
+  const timelineEnd = opts.timelineEnd !== undefined
+    ? opts.timelineEnd
+    : (typeof timing.duration === 'number' ? timing.duration : null);
 
   if (!timing || !Array.isArray(timing.sentences) || timing.sentences.length === 0) {
     throw new TypeError('planTimeline: timing.sentences mora biti neprazan niz');
@@ -400,8 +413,11 @@ export function planTimeline(timing, beats, opts = {}) {
   for (let i = 0; i < groups.length; i++) {
     const g = groups[i];
     const next = groups[i + 1];
+    const lastSentenceEnd = g.sentences[g.sentences.length - 1].end;
     const start = i === 0 ? Math.min(timelineStart, g.sentences[0].start) : g.sentences[0].start;
-    const end = next ? next.sentences[0].start : g.sentences[g.sentences.length - 1].end;
+    const end = next
+      ? next.sentences[0].start
+      : (timelineEnd === null ? lastSentenceEnd : Math.max(timelineEnd, lastSentenceEnd));
 
     const { shots, warnings: w } = sliceBeat(g.sentences, {
       ...o,
@@ -428,18 +444,34 @@ export function planTimeline(timing, beats, opts = {}) {
     });
   }
 
-  // invarijanta 11 / T1: zbir use_len naspram trajanja mp3 fajla. Rep tišine posle poslednje
-  // rečenice ostaje nepokriven videom, a T1 dozvoljava samo 0.2s razlike. Prijavljuje se ovde,
-  // gde se prvi put vidi, a ne tek u linteru — odluka šta se s repom radi (produžiti poslednji
-  // shot ili skratiti audio) pripada C09.
-  const timelineEnd = outBeats[outBeats.length - 1].end;
-  if (typeof timing.duration === 'number' && timing.duration - timelineEnd > 0.2) {
+  // invarijanta 11 / T1: zbir use_len naspram trajanja mp3 fajla.
+  //
+  // Rep tišine posle poslednje rečenice je od C13 pripojen poslednjem shotu (vidi gore), pa je
+  // `tail-absorbed` normalan ishod i samo se prijavljuje — čovek na checkpointu treba da vidi
+  // koliko slike pokriva tišinu, jer rep od par sekundi nije isto što i rep od 0.4s.
+  // `narration-tail` ostaje sa nepromenjenim značenjem: rep koji **niko nije pokrio** i zbog
+  // kojeg T1 pada. Posle produžetka to može samo kad je `timelineEnd: null` prosleđen svesno.
+  //
+  // Oba praga su `LIMITS.t1Drift`, i to nije slučajno: ispod njega rep uopšte nije problem —
+  // T1 bi prošao i da niko ništa nije pripojio — pa nema šta ni da se prijavi.
+  const lastEnd = outBeats[outBeats.length - 1].end;
+  const lastSaid = groups[groups.length - 1].sentences.at(-1).end;
+  if (typeof timing.duration === 'number' && timing.duration - lastEnd > LIMITS.t1Drift) {
     warnings.push(
       warn(
         'narration-tail',
-        `narracija traje ${round3(timing.duration)}s, a tajmlajn se završava na ${timelineEnd}s — ` +
-          `${round3(timing.duration - timelineEnd)}s repa ostaje bez slike i T1 (±0.2s) će pasti`,
-        { at: timelineEnd },
+        `narracija traje ${round3(timing.duration)}s, a tajmlajn se završava na ${lastEnd}s — ` +
+          `${round3(timing.duration - lastEnd)}s repa ostaje bez slike i T1 (±${LIMITS.t1Drift}s) će pasti`,
+        { at: lastEnd },
+      ),
+    );
+  } else if (lastEnd - lastSaid > LIMITS.t1Drift) {
+    warnings.push(
+      warn(
+        'tail-absorbed',
+        `${round3(lastEnd - lastSaid)}s tišine posle poslednje rečenice pripojeno je poslednjem ` +
+          `shotu, da bi tajmlajn pokrio celu narraciju (${round3(lastEnd)}s)`,
+        { beat_id: outBeats[outBeats.length - 1].beat_id, at: round3(lastSaid) },
       ),
     );
   }
