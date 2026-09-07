@@ -113,7 +113,7 @@ test('buildStoryboard: koren nosi tačno kanonska polja, u kanonskom redosledu',
   const { storyboard } = build();
   assert.deepEqual(Object.keys(storyboard),
     ['schema_version', 'episode', 'generated_at', 'narration_duration', 'fps', 'beats']);
-  assert.equal(storyboard.schema_version, 1);
+  assert.equal(storyboard.schema_version, 2);
   assert.equal(storyboard.episode, 'rome-sample');
   assert.equal(storyboard.generated_at, AT);
   assert.equal(storyboard.narration_duration, timing().duration);

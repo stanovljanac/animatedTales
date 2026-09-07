@@ -65,6 +65,54 @@ const dash = (v) => (v === null || v === undefined || v === '' ? '—' : v);
 /** Šest osa u kanonskom redosledu (schemas.md §3.5); nikad `Object.keys(tags)`. */
 const tagLine = (tags) => R1_AXES.map((k) => `${k} \`${tags[k]}\``).join(' · ');
 
+/** Ponovljena vrednost u koloni se prikazuje kao navodnik — ponavljanje se tako vidi. */
+const DITTO = '„';
+const ditto = (value, prev) => (prev !== undefined && value === prev ? DITTO : value);
+
+/**
+ * Jedan red po shotu, redosledom tajmlajna — ceo storyboard na jednom ekranu.
+ *
+ * Postoji zato što je pun prikaz (jedan odeljak po shotu, dva prompta u bloku koda) tačan ali
+ * nečitljiv za režijsku odluku: 27 shotova je preko hiljadu redova, pa se ritam epizode —
+ * smenjivanje veličina kadra, ponavljanje lokacije i svetla, gde su lanci — ne vidi ni na jednom
+ * ekranu. Tabela ne nosi nijedan podatak kojeg nema u `storyboard.json`; kolone `lokacija` i
+ * `svetlo` su upravo ose po kojima R1 meri razliku, pa navodnik u njima čita isto što i linter.
+ */
+function boardRows(storyboard) {
+  const L = [
+    '| # | beat | uređaj | vreme | len | lanac | tip | vel. | ugao | kamera | lokacija | svetlo | lockovi | P1/P2 |',
+    '|---|---|---|---|---|---|---|---|---|---|---|---|---|---|',
+  ];
+  let prev = {};
+  for (const b of storyboard.beats) {
+    const chains = linkChains(b.shots);
+    for (const c of chains) {
+      c.shots.forEach((s, i) => {
+        const t = s.tags;
+        const cur = { beat: b.beat_id, device: dash(b.device), location: t.location, light: t.time_light };
+        L.push('| ' + [
+          s.shot_id,
+          ditto(cur.beat, prev.beat),
+          cell(ditto(cur.device, prev.device)),
+          clock(s.t_in),
+          fmt(s.use_len),
+          c.group === null ? '—' : `${c.group} ${chainLetter(i)}`,
+          t.subject_type,
+          t.shot_size,
+          t.angle,
+          t.camera_motion,
+          ditto(cur.location, prev.location),
+          ditto(cur.light, prev.light),
+          s.characters.length ? s.characters.join(' + ') : '—',
+          `${countWords(s.image_prompt)}/${countWords(s.animation_prompt)}`,
+        ].join(' | ') + ' |');
+        prev = cur;
+      });
+    }
+  }
+  return L;
+}
+
 /**
  * @param {object} storyboard već proveren sa `assertDisplayable`
  * @returns {string} ceo `storyboard.md`, sa završnim prelomom reda
@@ -88,6 +136,18 @@ export function renderStoryboard(storyboard) {
       `tajmlajn ${range(tIn, tOut)} (${fmt(tIn)} → ${fmt(tOut)}s)`,
     `- narracija ${fmt(storyboard.narration_duration)}s · zbir \`use_len\` ${fmt(useSum)}s · ` +
       `razlika ${fmt(drift)}s`,
+    '',
+    '## Režijska tabla',
+    '',
+    'Jedan red po shotu, redosledom tajmlajna — ceo storyboard na jednom ekranu. ' +
+      `\`${DITTO}\` znači „isto kao red iznad"; ` +
+      'kolone `lokacija` i `svetlo` su ose po kojima R1 meri razliku, pa se ponavljanje ' +
+      'vidi u tabeli pre nego u izveštaju. `lockovi` su `shot.characters` u zapisanom ' +
+      'redosledu — na shemi 2 je prvi PRIMARY.',
+    '',
+    ...boardRows(storyboard),
+    '',
+    '## Beat mapa',
     '',
     '| beat | vreme | trajanje | uređaj | shotovi |',
     '|---|---|---|---|---|',
@@ -134,6 +194,11 @@ export function renderStoryboard(storyboard) {
           `- motion budget: ${s.motion_budget === null ? '—' : `${fmt(s.motion_budget)}s`}`,
           `- ingredient: ${s.ingredient_image === null ? '—' : `\`${s.ingredient_image}\``}`,
           `- likovi: ${s.characters.length ? s.characters.join(', ') : '—'}`,
+          // Shema 2: redosled `characters` nosi PRIMARY/SECONDARY, a `visual_priority` je
+          // jedino mesto na kome piše šta kadar sme da promaši poslednje (schemas.md §3.3.1).
+          ...(Array.isArray(s.visual_priority) && s.visual_priority.length
+            ? [`- visual_priority: ${s.visual_priority.map((v, i) => `${i + 1}. ${v}`).join(' · ')}`]
+            : []),
           `- tags: ${tagLine(s.tags)}`,
           '',
           `**IMAGE PROMPT** · ${countWords(s.image_prompt)} reči`,

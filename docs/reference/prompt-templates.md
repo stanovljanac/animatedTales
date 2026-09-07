@@ -115,3 +115,91 @@ po trinaestak svaki.
 3. Nijedna zabranjena prostorna fraza (lista A u `camera-language.md`).
 4. Nijedna od pet reči koje impliciraju rez, u animation promptu.
 5. `locked_description` svakog lika iz `shot.characters[]` stoji doslovno u image promptu.
+
+---
+
+# Shema 2 — image template sa hijerarhijom vizuelne težine
+
+> Sve iznad opisuje **shemu 1** i važi za epizode koje nose `schema_version: 1`. Linter bira
+> pravila po tom broju, pa postojeće epizode ostaju validne bez prepravke. Nove epizode se pišu
+> po ovom odeljku. Obrazloženje promene je u `schemas.md` §3.3.1.
+
+Tri stvari se menjaju: plafon je **90–280 reči** (meki cilj 180–260, R5), uvode se blokovi
+`SCALE` i `DETAIL`, i redosled blokova prestaje da bude preporuka — **`SUBJECT` i `SCALE` idu pre
+kamera-blokova**, jer je to jedino mesto na kome front-loading nešto znači.
+
+```
+STYLE:            <kanonski string iz style-string.md, doslovno>
+SUBJECT:          <PRIMARY lock — characters[0], locked_description doslovno>
+SCALE:            <3–4 tvrdnje o veličini; obavezan kad je entitet scale_critical>
+SUBJECT 2:        <SECONDARY lock, ako postoji; najviše dva>
+ACTION:           <jedna radnja, kontinuirana, bez „pa onda">
+SETTING:          <mesto, period, materijali>
+CAMERA:           <gde kamera stoji | eye/low/high/overhead | wide/medium/close>
+FRAME LAYOUT:     <šta je na kojoj trećini ekrana, sa near-camera / far parovima>
+FACING:           <koju stranu tela vidimo, gde ko gleda>
+SCREEN DIRECTION: <kretanje preko kadra — nikad negacija, vidi listu D>
+LIGHT:            <izvor, doba dana, tvrdoća senke>
+PALETTE:          <tri do četiri boje, ne više>
+DETAIL:           <gustina koju ova veličina kadra uopšte može da pokaže — style-string.md>
+NOT IN FRAME:     <šta je namerno isključeno>
+```
+
+**S2 na shemi 2** traži sedam naziva: pet kamera-blokova plus `SUBJECT` i `DETAIL`. `SCALE` je
+uslovan i nosi ga **S4**. `SUBJECT` mora da sadrži PRIMARY lock doslovno — **S5**; C1 bi ga našao
+bilo gde u promptu, pa bi lock zaključan u `SETTING` liniji prošao, a upravo to se dogodilo u prvoj
+epizodi na tri shota.
+
+## `SCALE` — zašto se ista stvar tvrdi četiri puta
+
+Ovo je jedini blok u kome je ponavljanje **namerno i obavezno**. Difuzioni model raspoređuje težinu
+po učestalosti i poziciji, ne po tome koliko je rečenica elegantna. Jedna precizna tvrdnja o veličini
+na 40. reči prompta gubi od pet raspoređenih tvrdnji.
+
+- **Loše (jedna tvrdnja, i to unutar locka):** `…always drawn larger than the gods around him`
+- **Dobro:** `SCALE: Fenrir is monumental, drawn far larger than any figure near him; his shoulder rises above the gods' heads; the gods read as small dark shapes beside his ribs; strong size contrast carries the frame.`
+
+Odnos prema drugim likovima ide **ovde**, nikad u `locked_description` — inače prompt tvrdi odnos
+prema bogovima u kadru iz kog ih `NOT IN FRAME` izbacuje.
+
+**R4 izuzima `SCALE` i `DETAIL`** iz provere ponavljanja n-grama, iz istog razloga iz kog izuzima
+style string i `locked_description`: to su blokovi čiji je posao da se ponavljaju.
+
+## `visual_priority` se ne upisuje u prompt
+
+Rangirana lista od 3 do 5 stavki živi u `storyboard.json` i služi da se PRIMARY lock može mašinski
+proveriti (S5). U prompt **ne ide**: model ne čita meta-instrukcije o važnosti, pa bi lista trošila
+30-ak reči ne menjajući sliku. Prioritet se modelu saopštava pozicijom i učestalošću — dakle
+`SUBJECT` blokom, `SCALE` blokom i redosledom — a ne tako što mu se napiše da je nešto prioritet.
+
+## Primer — shot sa dva locka, PRIMARY je lik a ne rekvizit
+
+```
+STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.
+SUBJECT: Fenrir, a colossal grey-black wolf with a lean muscular frame, amber eyes, coarse shaggy fur along the shoulders, scarred muzzle and heavy jaws.
+SCALE: Fenrir is monumental, drawn far larger than any figure near him; his shoulder rises above the gods' heads; the gods read as small dark shapes beside his ribs; strong size contrast carries the frame.
+SUBJECT 2: Drómi, a massive black iron chain with links twice the thickness of ordinary forgework, riveted bands and reinforced collars, oily dark sheen, with the mass to sag under its own weight.
+ACTION: he rises against the collar as four gods haul on the slack.
+SETTING: black rock, standing water, cold northern shore.
+CAMERA: camera stands twelve paces off on the rock, low, wide.
+FRAME LAYOUT: center — the wolf, near-camera and large; left third — the gods, small; right third — a ridge, far and hazy.
+FACING: we see the wolf's flank and head three-quarter on, eyes toward screen-left; the gods stand half-turned from camera.
+SCREEN DIRECTION: the gods haul from center toward the left edge; loose grit skitters toward camera.
+LIGHT: hard storm light under a black sky, one break of pale light on the wet flank.
+PALETTE: oiled black, storm slate, cold white.
+DETAIL: coarse individual fur strands catch the light, hammer marks and rivet seams read on every link.
+NOT IN FRAME: the far mountains, the ribbon.
+```
+
+Isti kadar je na shemi 1 bio nemoguć: lock je morao da bira između vuka i lanca, izabrao je lanac,
+i vuk — `center, near-camera and large` — dobijao je četiri reči.
+
+## Kontrolna lista pre upisa (shema 2)
+
+1. Prebroj obe dužine kanonskim brojačem: **90–280** i 60–100. Cilj je pokrivenost, ne broj.
+2. Sedam naziva blokova stoji u image promptu, plus `SCALE` kad je entitet `scale_critical`.
+3. `characters[0]` je vizuelni subjekt kadra i njegov lock stoji **u `SUBJECT` bloku**.
+4. `visual_priority` ima 3–5 stavki i `[0]` imenuje PRIMARY lock.
+5. Nijedna zabranjena prostorna fraza (lista A), nijedna prazna `SCREEN DIRECTION` (lista D).
+6. Nijedna od pet reči koje impliciraju rez, u animation promptu.
+7. `locked_description` nosi identitet — ako u njemu piše poza, greška je u `episode.json`.

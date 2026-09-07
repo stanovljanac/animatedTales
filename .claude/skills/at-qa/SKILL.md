@@ -46,9 +46,11 @@ Popravke po vrsti nalaza:
 | **T1** | zbir `use_len` ne prati narraciju | **ne diraj promptove** — beat mapa je pogrešna, vrati se na `at-storyboard` |
 | **T2** | `use_len` van 3–10s | isto: beat mapa, ne prompt |
 | **T3** | nema `MOTION BUDGET` linije sa brojem | dopiši je; broj mora da bude jednak `use_len` |
-| **P1/P2** | broj reči van 90–160 / 60–100 | skrati `SETTING` i `WEARING/PROPS`, **nikad kamera-blokove** i nikad `locked_description` |
+| **P1/P2** | broj reči van 90–280 / 60–100 (shema 1: 90–160) | skrati `SETTING` i `ACTION`, **nikad kamera-blokove**, nikad `locked_description` i nikad `SCALE` |
 | **S1** | zabranjena prostorna fraza | zameni je screen-position klauzulom po `docs/reference/camera-language.md` |
-| **S2** | fali jedan od pet blokova | dopiši blok verzalom sa dvotačkom |
+| **S2** | fali jedan od obaveznih blokova (pet kamera-blokova, na shemi 2 i `SUBJECT` i `DETAIL`) | dopiši blok verzalom sa dvotačkom |
+| **S4** | shot nosi `scale_critical` lock bez `SCALE` bloka | dopiši `SCALE` sa 3–4 tvrdnje o veličini; ponavljanje je tu namerno |
+| **S5** | PRIMARY lock nije u `SUBJECT` bloku, previše lockova, ili `visual_priority` nije 3–5 stavki sa PRIMARY na vrhu | premesti lock u `SUBJECT`; ako kadar traži tri locka, problem je kadar, ne prompt |
 | **S3** | reč koja implicira rez u animation promptu | izrazi napredovanje vremenskim prorezom, ne veznikom |
 | **C1** | `locked_description` nije doslovno u promptu | prekopiraj ga iz `episode.json` neizmenjen |
 | **F1** | klip ne postoji ili je prekratak | nije prompt — regeneriši klip, vidi `at-assemble` |
@@ -81,6 +83,8 @@ ne mehanički.
 | **R2** — miks tipova shotova | **nema prag.** Epizoda o jednoj bici legitimno je puna `crowd` i `group` kadrova. |
 | **R3** — upotrebljeni uređaji | **nema prag.** Samo izlistava. Epizoda bez ijednog uređaja je signal da je pogledaš, ne nalaz. |
 | **R4** — ponavljanje n-grama | `locked_description`, style string i fiksne `PRESERVE`/`FORBID` linije su već izuzeti. Ono što ostane je stvarno ponavljanje i vredi ga pogledati. |
+| **R5** — P1 van mekog opsega 180–260 | **nije nalaz.** Kadar kome je dovoljno 170 reči ne razvlačiš; signal čuva da to bude odluka, a ne previd. Preko 260 je po pravilu kadar sa dva locka i `SCALE`-om — proveri da li mu oba locka stvarno trebaju. |
+| **R6** — prazna `SCREEN DIRECTION` | blok popunjen negacijom („nothing crosses the frame") je potrošen blok. Zaključan kadar je u redu — imenuj najsitniji živi element (pramen dlake, para daha, senka oblaka). |
 | **C2** — multi-visual klipovi | meri deklaraciju u `animation_prompt`-u (`OPENING VISUAL`, …), ne posebno polje |
 
 > **R2 i R3 nemaju prag i ne traže akciju** dok se ne izmere tri epizode. Kvote se mere, ne

@@ -122,3 +122,67 @@ Dve posledice za pisanje ovog fajla:
   liniji, pa je prelom reda jednako jaka granica kao tačka — klauzula iz `FRAME LAYOUT` linije ne
   otključava frazu iz `ACTION` linije. Tačka bez beline iza sebe (`6.5s`, `B.C.`) ne deli.
   `image_prompt` i `animation_prompt` se gledaju odvojeno, nikad spojeni.
+
+### D. Prazne `SCREEN DIRECTION` formulacije — signal **R6**
+
+`SCREEN DIRECTION` postoji da imenuje **šta se kreće preko kadra**. Popunjen negacijom je formalno
+ispravan i informaciono prazan: model iz njega ne dobija ništa, a blok je potrošen.
+
+```
+nothing crosses the frame
+no movement across the frame
+nothing moves across the frame
+nothing moves
+no motion
+static frame
+```
+
+Pravilo nije „kadar ne sme da bude miran". Zaključan kadar je legitiman i čest. Pravilo je da se i u
+mirnom kadru **imenuje najsitniji živi element** — pramen dlake, ivica plašta, kap koja klizi, senka
+oblaka, para daha, mreškanje vode. To zadržava istu kompoziciju, a bloku vraća sadržaj.
+
+- **Loše:** `SCREEN DIRECTION: nothing crosses the frame.`
+- **Dobro:** `SCREEN DIRECTION: one loose strand of fur whips across the lower-left; nothing else moves.`
+
+R6 je **ADVISORY** — ne obara exit code. Meri se nad sadržajem `SCREEN DIRECTION` linije
+`image_prompt`-a, po `normalize` (`schemas.md` §0.7). Format bloka koda je isti kao kod liste A:
+jedna fraza po liniji.
+
+---
+
+## Osa ekrana — jedna po epizodi
+
+Pet kamera-blokova drže **jedan kadar** konzistentnim. Ništa u njima ne drži konzistentnim
+**rez između dva kadra**, a tu se gubi orijentacija gledaoca: ako u jednom kadru progonitelj
+gleda udesno a u sledećem ulevo, gledalac ne vidi dva ugla iste scene nego dve različite scene.
+U filmu je to pravilo ose (180°); ovde ne postoji snimanje, pa osu ne čuva postavka kamere nego
+**tekst prompta** — i mora da je čuva svesno, jer image model svaki kadar generiše od nule i
+nema pojma šta je bilo u prethodnom.
+
+Pravilo je jedno i tvrdo:
+
+> **Epizoda ima jednu osu. Dve strane sukoba dobijaju svaka svoju polovinu ekrana i drže je od
+> prvog do poslednjeg kadra.** Ko drži levu stranu, gleda udesno i kreće se udesno; ko drži desnu,
+> gleda ulevo i kreće se ulevo.
+
+Osa se bira jednom, pre pisanja ijedne `FRAME LAYOUT` linije, i zapisuje se u `notes.md` epizode.
+Podrazumevana podela, kad nema razloga za drugu: **strana sa kojom gledalac ide drži levu polovinu**
+(zapadni smer čitanja čini kretanje nalevo otporom, a nadesno napredovanjem).
+
+Osa se ne poštuje u tri bloka, nego u pet:
+
+| Blok | Šta osa traži |
+|---|---|
+| `FRAME LAYOUT` | ista strana za istu stranu sukoba u svakom kadru |
+| `FACING` | pogled ide **preko** ose, ka suprotnoj polovini |
+| `SCREEN DIRECTION` | kretanje ide ka suprotnoj polovini, ne nasumično |
+| `CAMERA` | kamera ostaje na istoj strani ose; prelazak je rez u nerazumljivo |
+| `NOT IN FRAME` | isključenje ne sme da izbaci stranu koju `FACING` gleda |
+
+**Namerni prelazak ose** je legitiman, ali samo kao događaj: kadar u kome se odnos snage obrne
+sme da obrne i osu, i tada je to informacija, ne greška. Uslov je da bude jedan po epizodi i da
+stoji u `notes.md` uz obrazloženje — inače je nerazlikovan od previda.
+
+Osa se **ne meri linterom**. Merenje bi tražilo da alat razume ko je ko u sceni, što je isti
+kreativni sud koji `visual-devices.md` ostavlja `at-storyboard`/`at-qa` skilu. Ovaj odeljak je
+zato kontrolna lista za pisca prompta, a ne još jedan kod provere.

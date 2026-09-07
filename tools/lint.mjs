@@ -40,16 +40,16 @@ import { fileURLToPath } from 'node:url';
 import { probe } from './ffmpeg.mjs';
 import {
   EPS, LIMITS, MULTI_VISUAL_MARKERS, R1_AXES, R1_ESCALATION_AXES, R1_MAX_DIFFERING,
-  R4_MIN_WORDS, S2_BLOCKS, S3_WORDS, TAGS,
+  R4_MIN_WORDS, S2_BLOCKS, S2_BLOCKS_V2, S3_WORDS, TAGS,
   countWords, loadCameraLanguage, loadFixedPromptLines, loadStyleString,
   normalize, q, r4Tokens, round3, s1Violations,
 } from './contract.mjs';
 
 /** Redosled kojim se nalazi sortiraju u izveštaju — isti kao BLOCKING tabela. */
-export const CHECKS = ['T1', 'T2', 'T3', 'S1', 'S2', 'S3', 'P1', 'P2', 'C1', 'F1'];
+export const CHECKS = ['T1', 'T2', 'T3', 'S1', 'S2', 'S3', 'S4', 'S5', 'P1', 'P2', 'C1', 'F1'];
 
 /** ADVISORY kodovi, redosledom ADVISORY tabele. Nikad ne ulaze u exit code. */
-export const ADVISORY = ['R1', 'R2', 'R3', 'R4', 'C2'];
+export const ADVISORY = ['R1', 'R2', 'R3', 'R4', 'R5', 'R6', 'C2'];
 
 const near = (a, b) => Math.abs(a - b) < EPS;
 const fmt = (t) => Number(t).toFixed(3).replace(/\.?0+$/, '');
@@ -130,6 +130,31 @@ export function entityIndex(episode) {
   );
 }
 
+/**
+ * Sadržaj jednog bloka image prompta, od `NAZIV:` do sledećeg naziva bloka ili kraja teksta.
+ * Vraća `null` kad bloka nema. Nosi S5 (PRIMARY lock mora da stoji baš u `SUBJECT`) i R6.
+ */
+export function promptBlock(prompt, name) {
+  const isHeader = (l) => {
+    const c = l.indexOf(':');
+    if (c < 1) return false;
+    const head = l.slice(0, c);
+    return head === head.toUpperCase() && head !== head.toLowerCase();
+  };
+  const lines = String(prompt).split(String.fromCharCode(10)).map((l) => l.trim());
+  const i = lines.findIndex((l) => l.startsWith(name + ':'));
+  if (i < 0) return null;
+  const out = [lines[i].slice(name.length + 1)];
+  for (let j = i + 1; j < lines.length && !isHeader(lines[j]); j++) out.push(lines[j]);
+  return out.join(' ').trim();
+}
+
+/** Da li tekst imenuje entitet — po `name`, ili po `id` sa crticama pretvorenim u razmake. */
+const namesEntity = (text, e) => {
+  const t = normalize(text);
+  return t.includes(normalize(e.name)) || t.includes(normalize(String(e.id).split('-').join(' ')));
+};
+
 // ---------------------------------------------------------------- T1
 
 /**
@@ -193,7 +218,7 @@ function checkT1(storyboard) {
 
 const MOTION_LINE = /MOTION BUDGET:[^\n]*?(\d+(?:\.\d+)?)\s*s\b/i;
 
-function checkShot(shot, { lists, entities }) {
+function checkShot(shot, { lists, entities, v = 1 }) {
   const out = [];
   const where = `shot ${shot.shot_id}`;
   const { min: uMin, max: uMax } = LIMITS.useLen;
@@ -242,8 +267,8 @@ function checkShot(shot, { lists, entities }) {
     }
   }
 
-  // S2 — pet obaveznih blokova
-  for (const blk of S2_BLOCKS) {
+  // S2 — obavezni blokovi. Shema 2 uz pet kamera-blokova traži i SUBJECT i DETAIL.
+  for (const blk of (v >= 2 ? S2_BLOCKS_V2 : S2_BLOCKS)) {
     if (!String(shot.image_prompt).includes(blk + ':')) {
       out.push(finding('S2', where, `image prompt nema blok ${blk}`,
         'nema bloka', `${blk}:`));
@@ -261,7 +286,7 @@ function checkShot(shot, { lists, entities }) {
 
   // P1 / P2 — dužine
   for (const [code, field, text, lim] of [
-    ['P1', 'image', shot.image_prompt, LIMITS.imageWords],
+    ['P1', 'image', shot.image_prompt, v >= 2 ? LIMITS.imageWordsV2 : LIMITS.imageWords],
     ['P2', 'animation', shot.animation_prompt, LIMITS.animWords],
   ]) {
     const n = countWords(text);
@@ -285,6 +310,47 @@ function checkShot(shot, { lists, entities }) {
       out.push(finding('C1', where,
         `locked_description entiteta "${id}" nije doslovno u image promptu`,
         'nema ga', `${countWords(e.locked_description)} reči iz episode.json, doslovno`));
+    }
+  }
+
+  // S4 / S5 — hijerarhija vizuelne težine. Samo shema 2 (schemas.md §3.3).
+  if (v >= 2) {
+    const critical = shot.characters.map((id) => entities.get(id))
+      .filter((e) => e && e.scale_critical === true);
+    if (critical.length && !String(shot.image_prompt).includes('SCALE:')) {
+      out.push(finding('S4', where,
+        `entitet "${critical[0].id}" je scale_critical, a image prompt nema blok SCALE`,
+        'nema bloka', 'SCALE: — 3–4 tvrdnje o veličini'));
+    }
+
+    if (shot.characters.length > LIMITS.maxLocks) {
+      out.push(finding('S5', where,
+        `${shot.characters.length} zaključanih entiteta — najviše ${LIMITS.maxLocks}`,
+        `${shot.characters.length}`, `PRIMARY + najviše ${LIMITS.maxLocks - 1} SECONDARY`));
+    }
+
+    if (shot.characters.length) {
+      const primary = entities.get(shot.characters[0]);
+      const subject = promptBlock(shot.image_prompt, 'SUBJECT');
+      if (primary && subject === null) {
+        out.push(finding('S5', where, 'image prompt nema blok SUBJECT za PRIMARY lock',
+          'nema bloka', 'SUBJECT:'));
+      } else if (primary && !normalize(subject).includes(normalize(primary.locked_description))) {
+        out.push(finding('S5', where,
+          `PRIMARY lock "${primary.id}" nije doslovno u bloku SUBJECT`,
+          'van SUBJECT bloka', 'ceo locked_description unutar SUBJECT:'));
+      }
+
+      const vp = shot.visual_priority;
+      if (!Array.isArray(vp) || vp.length < 3 || vp.length > 5) {
+        out.push(finding('S5', where,
+          'visual_priority mora da bude rangirana lista od 3 do 5 stavki',
+          Array.isArray(vp) ? `${vp.length} stavki` : 'nema polja', '3–5 stavki'));
+      } else if (primary && !namesEntity(vp[0], primary)) {
+        out.push(finding('S5', where,
+          `visual_priority[0] ne imenuje PRIMARY lock "${primary.id}"`,
+          `"${vp[0]}"`, `stavka koja imenuje ${primary.name}`));
+      }
     }
   }
 
@@ -474,6 +540,9 @@ function checkC2(storyboard) {
  *
  * Prva dva izuzeća plan imenuje (C07 §⚠, schemas.md §4.1); treće je isti sudar iz istog razloga,
  * nađen na kanonskom primeru iz `prompt-templates.md` — vidi schemas.md §5.6.
+ *
+ * Na shemi 2 se istim pravom izuzimaju i blokovi `SCALE` i `DETAIL`, ali ne ovde: njihov
+ * sadržaj je različit po shotu, pa ih `checkR4` čita po shotu umesto iz fiksne liste.
  * Duže fraze idu prve, da kraća sadržana fraza ne raspolovi dužu.
  */
 export function r4Exemptions(episode, {
@@ -549,11 +618,22 @@ function longestCommonRun(a, b) {
  */
 function checkR4(storyboard, episode, opts) {
   const phrases = r4Exemptions(episode, opts);
+  const v = storyboard.schema_version || 1;
   const prompts = [];
   for (const s of flatShots(storyboard)) {
+    // Shema 2: SCALE i DETAIL su blokovi čiji je posao da se ponavljaju (style-string.md),
+    // pa se izuzimaju iz R4 iz istog razloga kao style string i locked_description. Sadržaj
+    // im je različit po shotu, pa se ne mogu izuzeti kao fiksna fraza — čitaju se po shotu.
+    const extra = v >= 2
+      ? ['SCALE', 'DETAIL'].map((b) => promptBlock(s.image_prompt, b))
+        .filter(Boolean).map(r4Tokens).filter((t) => t.length)
+      : [];
+    const ph = extra.length
+      ? [...phrases, ...extra].sort((a, b) => b.length - a.length)
+      : phrases;
     for (const [field, text] of [['image', s.image_prompt], ['animation', s.animation_prompt]]) {
       const tokens = [];
-      r4Segments(text, phrases).forEach((seg, k) => {
+      r4Segments(text, ph).forEach((seg, k) => {
         if (k) tokens.push(BARRIER(prompts.length, k));
         tokens.push(...seg);
       });
@@ -602,6 +682,44 @@ function checkR4(storyboard, episode, opts) {
 export const sortSignals = (signals) => signals.slice()
   .sort((a, b) => ADVISORY.indexOf(a.code) - ADVISORY.indexOf(b.code));
 
+// ---------------------------------------------------------------- R5
+
+/**
+ * Meki ciljni opseg P1. Tvrd plafon nosi P1 (BLOCKING); ovo meri samo raspodelu, da
+ * generator ne bi ponovo počeo da puni prompt do plafona. Isključivo shema 2.
+ */
+function checkR5(storyboard) {
+  if ((storyboard.schema_version || 1) < 2) return [];
+  const { min, max } = LIMITS.imageSoft;
+  return flatShots(storyboard)
+    .map((sh) => [sh, countWords(sh.image_prompt)])
+    .filter(([, n]) => n < min || n > max)
+    .map(([sh, n]) => signal('R5', `shot ${sh.shot_id}`,
+      `image prompt ${n} reči — izvan mekog opsega ${min}–${max}`, `${n} reči`));
+}
+
+// ---------------------------------------------------------------- R6
+
+/**
+ * `SCREEN DIRECTION` popunjen negacijom. Lista praznih formulacija se čita iz
+ * camera-language.md (lista D), isto kao liste A i B za S1. Isključivo shema 2.
+ */
+function checkR6(storyboard, lists) {
+  if ((storyboard.schema_version || 1) < 2) return [];
+  const nulls = lists.nullDirection || [];
+  const out = [];
+  for (const sh of flatShots(storyboard)) {
+    const dir = promptBlock(sh.image_prompt, 'SCREEN DIRECTION');
+    if (dir === null) continue;
+    const hit = nulls.find((p) => normalize(dir).includes(p));
+    if (hit) {
+      out.push(signal('R6', `shot ${sh.shot_id}`,
+        `SCREEN DIRECTION ne imenuje nijedan pokret — „${dir}"`, `"${hit}"`));
+    }
+  }
+  return out;
+}
+
 /**
  * Ceo ADVISORY sloj nad učitanim JSON-ovima. Ne vraća nalaze nego signale i **ne sme** da
  * učestvuje u exit code-u.
@@ -610,11 +728,14 @@ export const sortSignals = (signals) => signals.slice()
  */
 export function advise(storyboard, episode, opts = {}) {
   assertShape(storyboard, episode);
+  const lists = opts.lists || loadCameraLanguage();
   return sortSignals([
     ...checkR1(storyboard),
     ...checkR2(storyboard),
     ...checkR3(storyboard),
     ...checkR4(storyboard, episode, opts),
+    ...checkR5(storyboard),
+    ...checkR6(storyboard, lists),
     ...checkC2(storyboard),
   ]);
 }
@@ -630,7 +751,8 @@ export function lintStatic(storyboard, episode, { lists = loadCameraLanguage() }
   const entities = entityIndex(episode);
   const out = [...checkT1(storyboard)];
   for (const b of storyboard.beats) {
-    for (const s of b.shots) out.push(...checkShot(s, { lists, entities }));
+    const v = storyboard.schema_version || 1;
+    for (const s of b.shots) out.push(...checkShot(s, { lists, entities, v }));
   }
   return sortFindings(out);
 }
@@ -674,6 +796,8 @@ const ADVISORY_TITLES = {
   R2: 'miks tipova shotova',
   R3: 'upotrebljeni vizuelni uređaji',
   R4: 'ponavljanje n-grama između promptova',
+  R5: 'dužina image prompta izvan mekog opsega',
+  R6: 'SCREEN DIRECTION bez imenovanog pokreta',
   C2: 'multi-visual klipovi',
 };
 

@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "episode": "sample-episode",
   "generated_at": "2026-09-04T15:22:31Z",
   "narration_duration": 23.18,
@@ -34,7 +34,13 @@
             "brennus",
             "capitoline-hill"
           ],
-          "image_prompt": "STYLE: painterly 2D historical illustration, warm muted palette, soft volumetric light.\nSUBJECT: Brennus, a broad-shouldered Gallic chieftain in his forties, long red-blond hair in a thick braid, drooping moustache, a bronze torc at his throat, chainmail over a red woollen tunic.\nSETTING: a steep rocky outcrop above the Forum, its flank a sheer pale cliff, crowned by a squat temple with a red-tiled roof and a low defensive wall of rough tufa blocks.\nCAMERA: camera stands on the paved slope below the cliff, low angle, wide.\nFRAME LAYOUT: left third — Brennus, large and near-camera; upper-right — the temple roof, small and hazy; centre — bare wet rock.\nFACING: we see his face and chest, his eyes lifted past camera.\nSCREEN DIRECTION: he climbs from the lower-left edge toward the upper-right.\nLIGHT: thin overcast dawn, no hard shadows.\nPALETTE: slate grey, cold bronze, one note of dull red.\nNOT IN FRAME: the Forum, Roman soldiers.",
+          "visual_priority": [
+            "Brennus large and near-camera against the cliff",
+            "the Capitoline outcrop and its temple roof",
+            "the low angle that makes the climb read",
+            "the overcast dawn without hard shadow"
+          ],
+          "image_prompt": "STYLE: painterly 2D historical illustration, warm muted palette, soft volumetric light.\nSUBJECT: Brennus, a broad-shouldered Gallic chieftain in his forties, long red-blond hair in a thick braid, drooping moustache, a bronze torc at his throat, chainmail over a red woollen tunic.\nSETTING: a steep rocky outcrop above the Forum, its flank a sheer pale cliff, crowned by a squat temple with a red-tiled roof and a low defensive wall of rough tufa blocks.\nCAMERA: camera stands on the paved slope below the cliff, low angle, wide.\nFRAME LAYOUT: left third — Brennus, large and near-camera; upper-right — the temple roof, small and hazy; centre — bare wet rock.\nFACING: we see his face and chest, his eyes lifted past camera.\nSCREEN DIRECTION: he climbs from the lower-left edge toward the upper-right.\nLIGHT: thin overcast dawn, no hard shadows.\nPALETTE: slate grey, cold bronze, one note of dull red.\nDETAIL: layered rock shelves and tufa block joints, figures readable by outline, wet sheen on the bare stone.\nNOT IN FRAME: the Forum, Roman soldiers.",
           "animation_prompt": "MOTION BUDGET: key motion completes within 7.25s.\n0-1s: Brennus plants a boot on the rock and shifts his weight upward.\n1-4s: he climbs three slow steps, the braid swinging, his breath clouding in the cold air.\n4-7.25s: he settles onto a ledge, shoulders rising and falling, and holds still.\nCAMERA: one continuous slow push toward him.\nENVIRONMENT: thin mist drifts across the cliff face; loose grit slides underfoot.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
           "tags": {
             "subject_type": "character",
@@ -60,7 +66,13 @@
           "characters": [
             "brennus"
           ],
-          "image_prompt": "STYLE: painterly 2D historical illustration, warm muted palette, soft volumetric light.\nSUBJECT: Brennus, a broad-shouldered Gallic chieftain in his forties, long red-blond hair in a thick braid, drooping moustache, a bronze torc at his throat, chainmail over a red woollen tunic.\nSETTING: the same pale cliff, a few metres higher up.\nCAMERA: camera sits at the cliff edge above him, high angle, medium.\nFRAME LAYOUT: centre — Brennus small against pale rock; lower edge — a lip of wet stone crossing the frame; right third — the defensive wall, cropped.\nFACING: we see the top of his head and his shoulders; he looks up toward camera.\nSCREEN DIRECTION: he rises toward camera, growing larger.\nLIGHT: thin overcast dawn, no hard shadows.\nPALETTE: slate grey, cold bronze, one note of dull red.\nNOT IN FRAME: the temple, the sky.",
+          "visual_priority": [
+            "Brennus small against the pale rock, seen from above",
+            "the lip of wet stone crossing the lower edge",
+            "the cropped defensive wall at the right third",
+            "the same overcast dawn as the shot before"
+          ],
+          "image_prompt": "STYLE: painterly 2D historical illustration, warm muted palette, soft volumetric light.\nSUBJECT: Brennus, a broad-shouldered Gallic chieftain in his forties, long red-blond hair in a thick braid, drooping moustache, a bronze torc at his throat, chainmail over a red woollen tunic.\nSETTING: the same pale cliff, a few metres higher up.\nCAMERA: camera sits at the cliff edge above him, high angle, medium.\nFRAME LAYOUT: centre — Brennus small against pale rock; lower edge — a lip of wet stone crossing the frame; right third — the defensive wall, cropped.\nFACING: we see the top of his head and his shoulders; he looks up toward camera.\nSCREEN DIRECTION: he rises toward camera, growing larger.\nLIGHT: thin overcast dawn, no hard shadows.\nPALETTE: slate grey, cold bronze, one note of dull red.\nDETAIL: woven wool nap on the tunic, individual mail rings at the shoulder, water beading on the pale rock.\nNOT IN FRAME: the temple, the sky.",
           "animation_prompt": "MOTION BUDGET: key motion completes within 7.375s.\n0-1s: his hand closes over the lip of stone at the lower edge.\n1-4s: he pulls himself up, the wall sliding out of frame as he rises.\n4-7.375s: he stands, chest heaving, and lifts his face to camera.\nCAMERA: one continuous slow pull back and up.\nENVIRONMENT: mist thins; a few grains of grit fall away from the ledge.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
           "tags": {
             "subject_type": "character",
@@ -100,7 +112,13 @@
           "characters": [
             "bronze-scales"
           ],
-          "image_prompt": "STYLE: painterly 2D historical illustration, warm muted palette, soft volumetric light.\nSUBJECT: a set of heavy bronze balance scales with two shallow dished pans hanging on chains from a plain crossbeam, the metal dull and scratched from long use.\nSETTING: a plain trestle table of scarred oak, nothing else on it.\nCAMERA: camera is level with the table top, eye level, extreme close.\nFRAME LAYOUT: centre — the left pan, filling most of the frame, tipping down; right edge — the chains of the second pan, cropped; upper edge — the crossbeam, dark and out of focus.\nFACING: we see the pans side-on, their rims catching the light.\nSCREEN DIRECTION: the near pan sinks toward the lower edge as coins slide across it.\nLIGHT: a single low lamp from the left, warm, raking across the metal.\nPALETTE: warm bronze, deep brown, black.\nNOT IN FRAME: hands, faces, the room.",
+          "visual_priority": [
+            "the bronze scales tipping under the weight",
+            "the coins sliding across the near pan",
+            "the single raking lamp from the left",
+            "the crossbeam dark and out of focus"
+          ],
+          "image_prompt": "STYLE: painterly 2D historical illustration, warm muted palette, soft volumetric light.\nSUBJECT: a set of heavy bronze balance scales with two shallow dished pans hanging on chains from a plain crossbeam, the metal dull and scratched from long use.\nSETTING: a plain trestle table of scarred oak, nothing else on it.\nCAMERA: camera is level with the table top, eye level, extreme close.\nFRAME LAYOUT: centre — the left pan, filling most of the frame, tipping down; right edge — the chains of the second pan, cropped; upper edge — the crossbeam, dark and out of focus.\nFACING: we see the pans side-on, their rims catching the light.\nSCREEN DIRECTION: the near pan sinks toward the lower edge as coins slide across it.\nLIGHT: a single low lamp from the left, warm, raking across the metal.\nPALETTE: warm bronze, deep brown, black.\nDETAIL: single scratches and casting pits in the bronze, grain of the scarred oak, dust on the chain links.\nNOT IN FRAME: hands, faces, the room.",
           "animation_prompt": "MOTION BUDGET: key motion completes within 8.5s.\n0-1s: a single coin drops into the near pan and rings.\n1-5s: more coins slide in, one by one, the pan sinking a little with each.\n5-8.5s: the chains draw tight, the pan steadies, the metal still trembling faintly.\nCAMERA: locked, no movement.\nENVIRONMENT: lamplight flickers once across the bronze; fine dust hangs in the beam.\nPRESERVE: same props, palette, lighting and composition as the source image.\nFORBID: cuts, scene changes, characters entering, on-screen text, camera moves, style shifts.",
           "tags": {
             "subject_type": "object",

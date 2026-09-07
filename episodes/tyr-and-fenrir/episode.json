@@ -10,22 +10,23 @@
     {
       "id": "fenrir",
       "name": "Fenrir",
-      "locked_description": "a colossal grey-black wolf with a lean muscular frame, amber eyes, coarse shaggy fur along the shoulders, scarred muzzle and heavy jaws, always drawn larger than the gods around him"
+      "locked_description": "a colossal grey-black wolf with a lean muscular frame, amber eyes, coarse shaggy fur along the shoulders, a scarred muzzle over heavy jaws, dark guard hairs over a paler undercoat, one torn ear",
+      "scale_critical": true
     },
     {
       "id": "tyr",
       "name": "Týr",
-      "locked_description": "a lean Norse warrior god in his thirties, short dark blond hair, a close-cropped beard, calm steady eyes, a plain iron-grey woollen tunic under a leather cuirass, a bronze arm-ring on his right wrist"
+      "locked_description": "a lean Norse warrior god in his thirties, short dark blond hair, a close-cropped beard, calm steady eyes, a plain iron-grey woollen tunic under a leather cuirass, a heavy bronze arm-ring of twisted strands"
     },
     {
       "id": "the-gods",
       "name": "The Gods",
-      "locked_description": "a group of six to eight Norse gods in layered woollen cloaks, bronze brooches and iron-grey mail, tall and broad, faces set and wary, carrying spears and coiled chains, drawn as a cautious close-knit council"
+      "locked_description": "a group of six to eight Norse gods in layered woollen cloaks, bronze brooches and iron-grey mail, tall and broad, weather-worn faces, plaited hair and beards, iron-shod spears taller than the men who carry them"
     },
     {
       "id": "dwarf-smiths",
       "name": "The Dwarfs",
-      "locked_description": "three short broad-shouldered dwarf smiths with soot-darkened skin, long braided beards, leather aprons over rough linen, thick forearms and burn-scarred hands, working with impossibly fine thread rather than hammers and heavy iron"
+      "locked_description": "three short broad-shouldered dwarf smiths with soot-darkened skin, long braided beards, leather aprons over rough linen, thick forearms and burn-scarred hands, fine-fingered despite their build, iron rings braided into the beards"
     }
   ],
   "locations": [
@@ -37,30 +38,31 @@
     {
       "id": "gods-hall",
       "name": "The Hall of the Gods",
-      "locked_description": "a long timber Norse hall with carved pillars, a central fire trench, shields and hanging furs along the walls, high beams lost in smoke, dim orange light and deep shadow between the posts"
+      "locked_description": "a long timber Norse hall with carved pillars, a central fire trench, shields and hanging furs along the walls, high beams lost in smoke, soot-blackened roof shingles and a carved doorframe of interlacing beasts"
     },
     {
       "id": "dwarf-forge",
       "name": "The Dwarf Forge",
-      "locked_description": "a cramped underground smithy of dark stone, glowing coal beds and hanging tools, veins of ore in the walls, low vaulted ceilings, warm red firelight cutting through drifting smoke and cold blue depth beyond"
+      "locked_description": "a cramped underground smithy of dark stone, glowing coal beds and hanging tools, veins of ore in the walls, low vaulted ceilings, tool racks and quench troughs cut into the stone"
     }
   ],
   "key_props": [
     {
       "id": "laeding",
       "name": "Læding",
-      "locked_description": "a heavy iron chain of thick hand-forged links, dark grey with hammer marks and rust bloom, coiled in a loose pile, strong-looking but plainly made, the kind of binding that trusts sheer mass"
+      "locked_description": "a heavy iron chain of thick hand-forged links, dark grey with hammer marks and rust bloom, each link closed by a visible weld seam, strong-looking but plainly made, the kind of binding that trusts sheer mass"
     },
     {
       "id": "dromi",
       "name": "Drómi",
-      "locked_description": "a massive black iron chain with links twice the thickness of ordinary forgework, riveted bands and reinforced collars, oily dark sheen, so heavy it sags deeply and drags furrows in the ground"
+      "locked_description": "a massive black iron chain with links twice the thickness of ordinary forgework, riveted bands and reinforced collars, oily dark sheen, with the mass to sag under its own weight"
     },
     {
       "id": "gleipnir",
       "name": "Gleipnir",
-      "locked_description": "a slender silk-smooth ribbon no thicker than a bootlace, pale silver-grey with a faint inner shimmer, light enough to lift on one finger, coiled small, looking far too delicate to hold anything"
+      "locked_description": "a slender silk-smooth ribbon no thicker than a bootlace, pale silver-grey with a faint inner shimmer, light enough to lift on one finger, with no visible weave or join, looking far too delicate to hold anything",
+      "scale_critical": true
     }
   ],
-  "notes": "Epizoda 1 kroz kompletan timeline-first lanac (C13/C14/C15). script.md je isporučen bez `## OUTRO` naslova; naslov je umetnut pred poslednji pasus u C13 — parseScript() daje identičnih 50 rečenica pre i posle, menja se samo outro_start (null -> S48), pa narracija i timing nisu dirnuti. research.md nije isporučen; locked_description-i su izvedeni iz script.md-a i nordijske tradicije. voice nije zabeležen. endcard_file još ne postoji — mora se postaviti pre C15 (assemble)."
+  "notes": "Epizoda 1 kroz kompletan timeline-first lanac (C13/C14/C15). script.md je isporučen bez `## OUTRO` naslova; naslov je umetnut pred poslednji pasus u C13 — parseScript() daje identičnih 50 rečenica pre i posle, menja se samo outro_start (null -> S48), pa narracija i timing nisu dirnuti. research.md nije isporučen; locked_description-i su izvedeni iz script.md-a i nordijske tradicije. voice nije zabeležen. endcard_file još ne postoji — mora se postaviti pre C15 (assemble). C14: 27 parova promptova upisano, lint BLOCKING 0. Posle pregleda epizoda je prebačena na schema_version 2 (SUBJECT/SCALE/DETAIL, PRIMARY lock, visual_priority): svi locked_description-i su očišćeni od poza i relacija, fenrir i gleipnir su scale_critical, osa ekrana je bogovi levo / Fenrir desno. Nalazi, merenja i otvorene stavke su u notes.md."
 }

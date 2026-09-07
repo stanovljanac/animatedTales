@@ -58,6 +58,13 @@ export const SLUG = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 /** S2: nazivi blokova se traže verzalom, sa dvotačkom (camera-language.md). */
 export const S2_BLOCKS = ['CAMERA', 'FRAME LAYOUT', 'FACING', 'SCREEN DIRECTION', 'NOT IN FRAME'];
 
+/**
+ * S2 na shemi 2: uz pet kamera-blokova i dva bloka vizuelne težine.
+ * `SUBJECT` nosi PRIMARY lock (S5), `DETAIL` gustinu vezanu za `tags.shot_size`
+ * (style-string.md). `SCALE` nije ovde jer je uslovan — vidi S4.
+ */
+export const S2_BLOCKS_V2 = [...S2_BLOCKS, 'SUBJECT', 'DETAIL'];
+
 /** S3: reči koje impliciraju rez unutar klipa (schemas.md §4). */
 export const S3_WORDS = ['then', 'later', 'afterwards', 'cuts to', 'meanwhile'];
 
@@ -65,8 +72,11 @@ export const S3_WORDS = ['then', 'later', 'afterwards', 'cuts to', 'meanwhile'];
 export const LIMITS = {
   useLen: { min: 3.0, max: 10.0 },   // T2
   motionBelow: 9.0,                  // T3
-  imageWords: { min: 90, max: 160 }, // P1
+  imageWords: { min: 90, max: 160 }, // P1, shema 1
   animWords: { min: 60, max: 100 },  // P2
+  imageWordsV2: { min: 90, max: 280 },  // P1, shema 2 — tvrd plafon
+  imageSoft: { min: 180, max: 260 },    // R5, shema 2 — meki ciljni opseg (ADVISORY)
+  maxLocks: 3,                          // S5 — PRIMARY + najviše dva SECONDARY
   t1Drift: 0.2,                      // T1
 };
 
@@ -92,9 +102,10 @@ function fencedBlock(section, letter, file) {
  * Lista A (zabranjene fraze) je jedna fraza po liniji.
  * Lista B (screen-position tokeni) je više tokena po liniji, razdvojenih sa 2+ razmaka —
  * jedan razmak je unutar tokena (`cropped at`, `left third`), pa se po njemu ne sme deliti.
+ * Lista D (prazne SCREEN DIRECTION formulacije, R6) je jedna fraza po liniji, kao lista A.
  *
  * @param {string} [file]
- * @returns {{phrases: string[], tokens: string[], file: string}}
+ * @returns {{phrases: string[], tokens: string[], nullDirection: string[], file: string}}
  */
 export function loadCameraLanguage(file = CAMERA_LANGUAGE_FILE) {
   let md;
@@ -112,11 +123,16 @@ export function loadCameraLanguage(file = CAMERA_LANGUAGE_FILE) {
   const tokens = fencedBlock(section, 'B', file)
     .split(/\r?\n|\s{2,}/).map((s) => normalize(s)).filter(Boolean);
 
+  // normalize() sažima belinu, pa je dovoljno deliti po \n; CR pada u trim.
+  const nullDirection = fencedBlock(section, 'D', file)
+    .split(String.fromCharCode(10)).map((x) => normalize(x)).filter(Boolean);
+
   // Prazna lista bi tiho ugasila S1 — to je najgori mogući ishod ovog parsiranja.
   if (!phrases.length) throw new Error(`${file}: lista A (zabranjene fraze) je prazna`);
   if (!tokens.length) throw new Error(`${file}: lista B (screen-position tokeni) je prazna`);
+  if (!nullDirection.length) throw new Error(`${file}: lista D (prazne SCREEN DIRECTION) je prazna`);
 
-  return { phrases, tokens, file };
+  return { phrases, tokens, nullDirection, file };
 }
 
 // ---------------------------------------------------------------- S1: poređenje

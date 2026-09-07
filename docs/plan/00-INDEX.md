@@ -170,6 +170,33 @@ Ovo su činjenice zatečene na disku koje izvorni plan nije imao. Svaka je upisa
     — *zatvoreno: `tools/beatplan.mjs` + `tests/beatplan.test.mjs` (29 testova), ugovor u
     `schemas.md` §5.11. C13 korak 6–7 time dobija oslonac.*
 
+24. **Plafon P1 od 160 reči nije bio ograničenje modela nego generatora, i počeo je da izbacuje
+    sadržaj.** Prva merena epizoda: 17 od 27 shotova na ≤5 reči od plafona, a iz tog pritiska je
+    izvedeno „pravilo" jednog zaključanog entiteta po shotu — pa je u tri kadra u kojima je vuk bio
+    `center, near-camera and large` lock otišao na lanac. Uvedena je **shema 2**
+    (`schema_version: 2`): plafon 280 uz meki cilj 180–260 (R5), blokovi `SUBJECT`/`SCALE`/`DETAIL`,
+    PRIMARY/SECONDARY lock kroz redosled `characters[]`, i `visual_priority` kao mašinski uporediv
+    prioritet (S5). Shema 1 ostaje validna — linter bira pravila po broju. → **C14**
+    — *zatvoreno: `schemas.md` §3.3.1 + S4/S5/R5/R6 u `lint.mjs`, tyr-and-fenrir prepisan na shemu 2
+    sa BLOCKING 0; merenja u `episodes/tyr-and-fenrir/notes.md`. `beatplan.mjs` od sada piše skelet
+    na shemi 2, a `check-fixtures.mjs` bira pravila po istom broju — inače bi odluka važila za jednu
+    epizodu, a sledeća bi tiho krenula na starom ugovoru.*
+
+25. **Pet kamera-blokova drže jedan kadar, ali ništa ne drži rez između dva.** Prva epizoda je imala
+    dve ose ekrana koje se sudaraju na dva reza, jedan od njih na vrhuncu; nijedna provera to nije
+    mogla da vidi, jer bi merenje tražilo da alat razume ko je ko u sceni. Pravilo je zapisano u
+    `camera-language.md` („Osa ekrana — jedna po epizodi"), a izabrana vrednost ide u `notes.md`
+    epizode. Ostaje **kontrolna lista za pisca prompta, ne provera** — iz istog razloga iz kog
+    `visual-devices.md` ostavlja izbor uređaja skilu. → **C14**
+    — *zatvoreno: odeljak u `camera-language.md`; tyr-and-fenrir ima jednu osu u svih 27 kadrova.*
+
+26. **`storyboard.md` je tačan i nerežijski.** 27 shotova daje 1347 redova, pa se ritam epizode —
+    smenjivanje veličina kadra, ponavljanje lokacije i svetla, gde su lanci — ne vidi ni na jednom
+    ekranu. Dodata je **režijska tabla**: jedan red po shotu na vrhu dokumenta, sa navodnikom u
+    kolonama koje se ponavljaju — a to su upravo ose po kojima R1 meri razliku. Pravilo iz C08
+    ostaje netaknuto: tabla ne nosi nijedan podatak kojeg nema u `storyboard.json`. → **C08**
+    — *zatvoreno: `boardRows()` u `tools/render.mjs` + 5 testova u `tests/render.test.mjs`.*
+
 ## Verifikacije iz izvornog plana → gde su
 
 | Izvorna verifikacija | Celina |

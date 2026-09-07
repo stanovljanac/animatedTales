@@ -19,7 +19,7 @@ const FIX = path.join(HERE, 'fixtures');
 // Jedna definicija za ceo lanac živi u tools/contract.mjs; ovde se re-eksportuje zbog
 // potrošača koji su ih uvozili odavde.
 import {
-  DEVICES, EPS, S2_BLOCKS, S3_WORDS, SLUG, TAGS,
+  DEVICES, EPS, LIMITS, S2_BLOCKS, S2_BLOCKS_V2, S3_WORDS, SLUG, TAGS,
   countWords, isFrameAligned, loadCameraLanguage, normalize, q, s1Violations,
 } from '../tools/contract.mjs';
 
@@ -54,7 +54,12 @@ for (const e of entities) {
 }
 
 // ---- storyboard.json (schemas.md 3) ----
-ok(sb.schema_version === 1, 'schema_version != 1');
+// Ugovor od C14 ima dve verzije (schemas.md §3.3.1). Fixture je skelet za **nove** epizode, pa
+// stoji na shemi 2; pravila koja se razlikuju biraju se ovde po istom broju po kom ih bira linter.
+ok([1, 2].includes(sb.schema_version), 'schema_version nije 1 ni 2');
+const V2 = sb.schema_version >= 2;
+const P1_LIMIT = V2 ? LIMITS.imageWordsV2 : LIMITS.imageWords;
+const BLOCKS = V2 ? S2_BLOCKS_V2 : S2_BLOCKS;
 ok(sb.episode === episode.slug, 'storyboard.episode != episode.slug');
 ok(/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z$/.test(sb.generated_at), 'generated_at nije ISO 8601 UTC');
 ok(sb.beats.length >= 1, 'nema beatova');
@@ -108,11 +113,21 @@ sb.beats.forEach((b, bi) => {
 
     // P1 / P2
     const pi = countWords(s.image_prompt), pa = countWords(s.animation_prompt);
-    ok(pi >= 90 && pi <= 160, `${id}: P1 image_prompt ${pi} reči (90–160)`);
-    ok(pa >= 60 && pa <= 100, `${id}: P2 animation_prompt ${pa} reči (60–100)`);
+    ok(pi >= P1_LIMIT.min && pi <= P1_LIMIT.max,
+      `${id}: P1 image_prompt ${pi} reči (${P1_LIMIT.min}–${P1_LIMIT.max})`);
+    ok(pa >= LIMITS.animWords.min && pa <= LIMITS.animWords.max,
+      `${id}: P2 animation_prompt ${pa} reči (${LIMITS.animWords.min}–${LIMITS.animWords.max})`);
+
+    // S5: redosled `characters` nosi PRIMARY, i njegov lock mora da stoji baš u `SUBJECT` bloku.
+    if (V2) {
+      ok(Array.isArray(s.visual_priority) && s.visual_priority.length >= 3
+        && s.visual_priority.length <= 5, `${id}: S5 visual_priority nije lista od 3–5 stavki`);
+      ok(s.characters.length <= LIMITS.maxLocks,
+        `${id}: S5 ${s.characters.length} lockova (najviše ${LIMITS.maxLocks})`);
+    }
 
     // S1 / S2 / S3
-    for (const blk of S2_BLOCKS) ok(s.image_prompt.includes(blk + ':'), `${id}: S2 nedostaje blok ${blk}`);
+    for (const blk of BLOCKS) ok(s.image_prompt.includes(blk + ':'), `${id}: S2 nedostaje blok ${blk}`);
     for (const text of [s.image_prompt, s.animation_prompt])
       for (const v of s1Violations(text, S1_LISTS))
         ok(false, `${id}: S1 zabranjena fraza "${v.phrase}" bez screen-position klauzule`);

@@ -1,7 +1,7 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "episode": "tyr-and-fenrir",
-  "generated_at": "2026-09-06T12:11:24Z",
+  "generated_at": "2026-09-06T21:31:30Z",
   "narration_duration": 200.438,
   "fps": 24,
   "beats": [
@@ -15,9 +15,9 @@
       "start": 0,
       "end": 8.46,
       "dur": 8.46,
-      "device": "silhouette",
+      "device": null,
       "narration_says": "The gods wanted to bind a wolf. But not because he was merely dangerous. They feared what he would become.",
-      "viewer_sees": "SILHOUETTE — a file of gods carrying a heavy coiled chain along a black ridge toward a seated wolf shape on the skyline; the shadow the wolf throws down the slope is several times longer than the wolf itself",
+      "viewer_sees": "a file of gods climbing a black ridge toward a seated wolf on the skyline, all of them fully rendered and backlit by the dusk glare off the lake; the shadow the wolf throws down the slope is several times longer than the wolf itself",
       "shots": [
         {
           "shot_id": "01",
@@ -31,17 +31,26 @@
           "motion_budget": 8.458,
           "source_file": "shots/part01.mp4",
           "ingredient_image": null,
-          "characters": [],
-          "image_prompt": "",
-          "animation_prompt": "",
+          "characters": [
+            "binding-ground",
+            "fenrir"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: The Binding Ground, a bleak windswept island of flat black rock and pale grass in a cold grey lake, low ridges at the shore, ringed by distant dark mountains under a wide overcast northern sky.\nSCALE: Fenrir is monumental, taller seated on the far ridge than the whole file of figures below him; his shadow runs several times his own length down the rock; the gods read as small dark marks against him.\nSUBJECT 2: Fenrir, a colossal grey-black wolf with a lean muscular frame, amber eyes, coarse shaggy fur along the shoulders, a scarred muzzle over heavy jaws, dark guard hairs over a paler undercoat, one torn ear.\nACTION: the file climbs the ridge toward the seated wolf.\nSETTING: late dusk on the island, wet rock underfoot, the lake flat and cold.\nCAMERA: camera stands low on the rock below the ridge line, eye level, wide.\nFRAME LAYOUT: left third — the file of gods, near-camera and small; center — the open ridge; right third — the seated wolf, far and much larger; lower edge — his shadow reaching toward camera.\nFACING: we see the gods from the shoulder as they climb; the wolf is in profile, head turned toward screen-left.\nSCREEN DIRECTION: the file moves from the left edge toward the right edge; the grass drags the same way.\nLIGHT: flat dusk glare off the lake, every figure backlit.\nPALETTE: slate grey, wet black, cold pewter.\nDETAIL: three layers of ridge fading into haze, weather moving across the lake, scale carried by outline.\nNOT IN FRAME: any building, any chain already unwound.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 8.458s.\n0–1s: the leading god crests the ridge and the coiled chain on his shoulder swings.\n1–5s: the file walks the ridge line, each figure rising over the crest in turn; the wolf lifts his head.\n5–8.458s: the long shadow slides down the slope toward camera as the file halts.\nCAMERA: one continuous slow pan following the file rightward.\nENVIRONMENT: grass flattens in the wind; the lake surface ripples.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
           "tags": {
             "subject_type": "environment",
-            "shot_size": "MS",
+            "shot_size": "XLS",
             "angle": "eye",
             "location": "binding-ground",
             "time_light": "dusk-overcast",
-            "camera_motion": "locked"
-          }
+            "camera_motion": "pan"
+          },
+          "visual_priority": [
+            "the binding ground — flat black rock and the cold grey lake",
+            "Fenrir's size against the climbing file",
+            "the long shadow running down the slope",
+            "the file of gods reading as small dark marks"
+          ]
         }
       ]
     },
@@ -61,7 +70,7 @@
         {
           "shot_id": "02",
           "beat_id": "B02",
-          "link_group": null,
+          "link_group": "B02",
           "t_in": 8.458,
           "t_out": 16.833,
           "use_in": 0,
@@ -70,22 +79,30 @@
           "motion_budget": 8.375,
           "source_file": "shots/part02.mp4",
           "ingredient_image": null,
-          "characters": [],
-          "image_prompt": "",
-          "animation_prompt": "",
+          "characters": [
+            "gods-hall"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: The Hall of the Gods, a long timber Norse hall with carved pillars, a central fire trench, shields and hanging furs along the walls, high beams lost in smoke, soot-blackened roof shingles and a carved doorframe of interlacing beasts.\nACTION: firelight rakes across a carved memorial stone standing on the hall floor.\nSETTING: night in the hall, the fire trench burned low, no daylight.\nCAMERA: camera stands four paces from the stone on the hall floor, eye level, medium.\nFRAME LAYOUT: center — the memorial stone, near-camera and large, a wolf figure worked into its face; left third — a carved pillar, cropped at the frame edge; right third — hanging furs and shields, far and dim.\nFACING: the carved face of the stone is square to camera; the hall runs away toward screen-left.\nSCREEN DIRECTION: smoke drifts from the lower edge toward the upper edge and thins along the beams.\nLIGHT: low orange firelight from the trench at screen-left, hard shadow in every cut.\nPALETTE: soot black, ember orange, stone grey.\nDETAIL: adze marks on the pillars, the woven nap of the hanging furs, lichen crust in the deeper cuts of the stone.\nNOT IN FRAME: people, weapons, daylight.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 8.375s.\n0–1s: firelight flares along the knotwork and the cut lines deepen.\n1–5s: the framing closes steadily on the stone, the carved wolf at its centre growing until the knotwork fills the width.\n5–8.375s: the carved chain around the wolf holds, one carved link catching the light.\nCAMERA: one continuous push toward the centre of the stone.\nENVIRONMENT: smoke drifts across the pillars; the fire trench pulses.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
           "tags": {
-            "subject_type": "environment",
+            "subject_type": "architecture",
             "shot_size": "MS",
             "angle": "eye",
             "location": "gods-hall",
             "time_light": "night-firelit",
-            "camera_motion": "locked"
-          }
+            "camera_motion": "push"
+          },
+          "visual_priority": [
+            "the hall of the gods — carved pillars, fire trench and hanging furs",
+            "the carved wolf at the centre of the stone",
+            "the carved chain wrapped around it",
+            "firelight as the only source"
+          ]
         },
         {
           "shot_id": "03",
           "beat_id": "B02",
-          "link_group": null,
+          "link_group": "B02",
           "t_in": 16.833,
           "t_out": 25.125,
           "use_in": 0,
@@ -95,16 +112,22 @@
           "source_file": "shots/part03.mp4",
           "ingredient_image": null,
           "characters": [],
-          "image_prompt": "",
-          "animation_prompt": "",
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a carved wolf figure filling the stone face, bound at the neck and body by a carved chain, cut in shallow relief and worn smooth at the high points.\nACTION: a hairline crack runs through the carved chain.\nSETTING: weathered granite, lichen in the deeper cuts, a carved sun disc and a carved roofline at the panel edge.\nCAMERA: camera is a hand's width from the stone face, eye level, extreme close.\nFRAME LAYOUT: center — the carved wolf, near-camera and filling the frame; upper edge — the carved sun disc; lower-right — a carved roofline, cropped at the panel border.\nFACING: the carved wolf is shown in profile, its head turned toward the upper-left.\nSCREEN DIRECTION: the crack travels from the lower-left toward the upper-right.\nLIGHT: raking ember light from the lower edge, hard shadow in every cut.\nPALETTE: granite grey, lichen ochre, ember red.\nDETAIL: individual chisel strokes inside every cut, grains of quartz in the granite, dust caught in the lichen and along the crack.\nNOT IN FRAME: the hall, the pillars, any living figure.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 8.292s.\n0–1s: the crack opens across the carved chain and a chip of stone drops away.\n1–5s: the carved chain splits fully apart, its two ends drawing back into the relief.\n5–8.292s: the carved sun disc and the carved roofline break into pieces along the panel edge.\nCAMERA: locked, the carved wolf held centred.\nENVIRONMENT: stone dust drifts down through the raking light.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
           "tags": {
-            "subject_type": "environment",
-            "shot_size": "MS",
+            "subject_type": "object",
+            "shot_size": "ECU",
             "angle": "eye",
             "location": "gods-hall",
             "time_light": "night-firelit",
-            "camera_motion": "locked"
-          }
+            "camera_motion": "push"
+          },
+          "visual_priority": [
+            "the carved chain splitting across the wolf figure",
+            "the shallow relief and its chisel work",
+            "the carved sun disc at the upper edge",
+            "the crack line and the falling stone dust"
+          ]
         }
       ]
     },
@@ -126,7 +149,7 @@
         {
           "shot_id": "04",
           "beat_id": "B03",
-          "link_group": null,
+          "link_group": "B03",
           "t_in": 25.125,
           "t_out": 32.042,
           "use_in": 0,
@@ -136,21 +159,27 @@
           "source_file": "shots/part04.mp4",
           "ingredient_image": null,
           "characters": [],
-          "image_prompt": "",
-          "animation_prompt": "",
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a half-grown wolf standing square in the open hall doorway, shoulders already level with the door posts.\nACTION: the young wolf holds the doorway and gives no ground.\nSETTING: inside a long timber hall of carved pillars and a central fire trench, shields and hanging furs along the walls, summer daylight in the doorway.\nCAMERA: camera stands inside the hall facing the doorway, eye level, wide.\nFRAME LAYOUT: left third — three gods, near-camera and large, cropped at the shoulder; center — the fire trench running away; right third — the doorway, its opening pale green, the young wolf square in it.\nFACING: we see the gods from the shoulder, faces turned toward screen-right; the wolf faces camera.\nSCREEN DIRECTION: smoke crawls along the beams from the right edge toward the left; one god shifts his grip on a spear.\nLIGHT: green summer daylight through the doorway against dim orange firelight.\nPALETTE: smoke brown, ember orange, pale green.\nDETAIL: figures readable by outline and posture, layered furs and shields along the wall, the doorway light carrying the depth.\nNOT IN FRAME: the outside landscape, the roof beams.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 6.917s.\n0–1s: the wolf's head lifts and turns toward the watching gods.\n1–4s: one god shifts his grip on a spear and the group draws together at screen-left.\n4–6.917s: the light through the doorway cools from green to flat grey and the wolf's shoulders rise a hand's width against the post.\nCAMERA: locked, the doorway held exactly centred.\nENVIRONMENT: smoke rolls along the beams; the fire trench dims.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
           "tags": {
-            "subject_type": "environment",
-            "shot_size": "MS",
+            "subject_type": "character",
+            "shot_size": "LS",
             "angle": "eye",
             "location": "gods-hall",
             "time_light": "seasons-shifting",
             "camera_motion": "locked"
-          }
+          },
+          "visual_priority": [
+            "the young wolf filling the doorway",
+            "the locked framing of doorway and fire trench",
+            "the three gods watching from the near shadow",
+            "the green daylight against the firelight"
+          ]
         },
         {
           "shot_id": "05",
           "beat_id": "B03",
-          "link_group": null,
+          "link_group": "B03",
           "t_in": 32.042,
           "t_out": 40.792,
           "use_in": 0,
@@ -159,17 +188,26 @@
           "motion_budget": 8.75,
           "source_file": "shots/part05.mp4",
           "ingredient_image": null,
-          "characters": [],
-          "image_prompt": "",
-          "animation_prompt": "",
+          "characters": [
+            "fenrir",
+            "gods-hall"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Fenrir, a colossal grey-black wolf with a lean muscular frame, amber eyes, coarse shaggy fur along the shoulders, a scarred muzzle over heavy jaws, dark guard hairs over a paler undercoat, one torn ear.\nSCALE: Fenrir is monumental, grown to fill the doorway from post to post; the gods at screen-left stand no higher than his shoulder; the split door posts read as kindling beside his chest.\nSUBJECT 2: The Hall of the Gods, a long timber Norse hall with carved pillars, a central fire trench, shields and hanging furs along the walls, high beams lost in smoke, soot-blackened roof shingles and a carved doorframe of interlacing beasts.\nACTION: he fills the doorway, the carved posts splintered wide around his shoulders.\nSETTING: the same timber hall in deep winter, the fire trench nearly out, snow-light in the broken doorway.\nCAMERA: camera stands inside the hall facing the doorway, low, medium.\nFRAME LAYOUT: left third — the gods, small and drawn together; center and right third — the wolf, near-camera and large, cropped at the ears and at the split door post.\nFACING: we see the wolf's head and chest square to camera, amber eyes turned toward the gods at screen-left.\nSCREEN DIRECTION: his breath rolls from the right edge toward the left; snow blows through the opening the same way.\nLIGHT: white snow-light through the broken doorway, firelight nearly out.\nPALETTE: bone white, soot black, dull amber.\nDETAIL: coarse guard hairs separating at the shoulder, split grain in the door posts, woven nap on the cloaks.\nNOT IN FRAME: the outside landscape, the roof beams.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 8.75s.\n0–1s: the wolf leans his weight into the doorway and a post cracks along the grain.\n1–5s: he pushes forward a half pace, the splintered jamb opening wider around his shoulders.\n5–8.75s: he settles and holds, amber eyes fixed at screen-left, breath steaming in the cold light.\nCAMERA: locked, the doorway held exactly centred.\nENVIRONMENT: snow blows through the opening; the fire trench gutters low.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
           "tags": {
-            "subject_type": "environment",
+            "subject_type": "character",
             "shot_size": "MS",
-            "angle": "eye",
+            "angle": "low",
             "location": "gods-hall",
             "time_light": "seasons-shifting",
             "camera_motion": "locked"
-          }
+          },
+          "visual_priority": [
+            "Fenrir grown to the size of the doorway",
+            "the splintered door posts around his shoulders",
+            "the gods small at screen-left",
+            "the amber eyes carried across the frame"
+          ]
         }
       ]
     },
@@ -199,17 +237,26 @@
           "motion_budget": 7.541,
           "source_file": "shots/part06.mp4",
           "ingredient_image": null,
-          "characters": [],
-          "image_prompt": "",
-          "animation_prompt": "",
+          "characters": [
+            "fenrir",
+            "laeding"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Fenrir, a colossal grey-black wolf with a lean muscular frame, amber eyes, coarse shaggy fur along the shoulders, a scarred muzzle over heavy jaws, dark guard hairs over a paler undercoat, one torn ear.\nSCALE: Fenrir is monumental, deeper through the chest than the two gods at screen-left are tall; the heavy chain reads as wire laid across him; one foreleg fills the lower third.\nSUBJECT 2: Læding, a heavy iron chain of thick hand-forged links, dark grey with hammer marks and rust bloom, each link closed by a visible weld seam, strong-looking but plainly made, the kind of binding that trusts sheer mass.\nACTION: the wolf braces low and drives against the coils across his chest.\nSETTING: flat black rock and pale grass, standing water, a cold grey lake.\nCAMERA: camera stands six paces off on the rock, low, medium.\nFRAME LAYOUT: center and right third — the wolf, near-camera and large, cropped at the hindquarters; left third — two gods on the chain, small; lower-left — a drawn coil, near-camera.\nFACING: we see the wolf's shoulder and chest three-quarter on, head down, eyes toward the gods at screen-left.\nSCREEN DIRECTION: the coils drag from the left edge toward the right edge as he throws his weight away.\nLIGHT: dull daylight under low cloud.\nPALETTE: iron grey, wet black, dun grass.\nDETAIL: hammer marks and weld seams on every link, coarse fur separating over the shoulder, wet grit on the rock.\nNOT IN FRAME: the lake shore, the mountains.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 7.541s.\n0–1s: the wolf drops his weight and the coils snap taut across his chest.\n1–5s: the links draw straight and thin under the strain, one weld seam twisting open.\n5–7.541s: the chain bursts and the loose ends whip away across the rock.\nCAMERA: one continuous short push toward the straining shoulder.\nENVIRONMENT: grass lashes sideways; grit lifts off the stone.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
           "tags": {
-            "subject_type": "environment",
+            "subject_type": "character",
             "shot_size": "MS",
-            "angle": "eye",
+            "angle": "low",
             "location": "binding-ground",
             "time_light": "day-overcast",
-            "camera_motion": "locked"
-          }
+            "camera_motion": "push"
+          },
+          "visual_priority": [
+            "Fenrir straining against the coils",
+            "Læding's thick hand-forged links drawn straight",
+            "the two gods small at screen-left",
+            "the low angle carrying his mass"
+          ]
         }
       ]
     },
@@ -239,17 +286,26 @@
           "motion_budget": 7.667,
           "source_file": "shots/part07.mp4",
           "ingredient_image": null,
-          "characters": [],
-          "image_prompt": "",
-          "animation_prompt": "",
+          "characters": [
+            "fenrir",
+            "dromi"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Fenrir, a colossal grey-black wolf with a lean muscular frame, amber eyes, coarse shaggy fur along the shoulders, a scarred muzzle over heavy jaws, dark guard hairs over a paler undercoat, one torn ear.\nSCALE: Fenrir is monumental, standing higher at the shoulder than the tallest god at screen-left; the reinforced collar sits on him like a belt; four gods on the chain do not shift him.\nSUBJECT 2: Drómi, a massive black iron chain with links twice the thickness of ordinary forgework, riveted bands and reinforced collars, oily dark sheen, with the mass to sag under its own weight.\nACTION: the wolf rises against the collar as the gods haul on the slack.\nSETTING: the same black rock, standing water, rain driving across the island.\nCAMERA: camera stands twelve paces off on the rock, eye level, wide.\nFRAME LAYOUT: center and right third — the wolf, large; left third — the gods on the chain, cropped at the knee; lower edge — a dragging furrow, near-camera.\nFACING: we see the wolf's flank and head three-quarter on, eyes toward screen-left; the gods lean back on the chain.\nSCREEN DIRECTION: the gods haul from center toward the left edge; loose grit skitters toward camera.\nLIGHT: hard storm light under a black sky, one break of pale light on the wet flank.\nPALETTE: oiled black, storm slate, cold white.\nDETAIL: layered rock shelves, figures readable by outline and lean, rivet seams on the near links.\nNOT IN FRAME: the far mountains, the dwarf forge.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 7.667s.\n0–1s: the wolf surges upward and the riveted collar jerks tight around his chest.\n1–5s: the gods brace and lean back on the slack, the reinforced bands grinding as he twists.\n5–7.667s: two links tear open along their rivets and the chain drops in a heap.\nCAMERA: one continuous slow track leftward along the rock.\nENVIRONMENT: rain drives across the frame; standing water shivers.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
           "tags": {
-            "subject_type": "environment",
-            "shot_size": "MS",
+            "subject_type": "character",
+            "shot_size": "LS",
             "angle": "eye",
             "location": "binding-ground",
             "time_light": "storm-grey",
-            "camera_motion": "locked"
-          }
+            "camera_motion": "track"
+          },
+          "visual_priority": [
+            "Fenrir rising against Drómi's collar",
+            "Drómi's doubled links and riveted bands",
+            "the gods hauling from screen-left",
+            "the furrow the chain drags in the rock"
+          ]
         }
       ]
     },
@@ -279,17 +335,26 @@
           "motion_budget": null,
           "source_file": "shots/part08.mp4",
           "ingredient_image": null,
-          "characters": [],
-          "image_prompt": "",
-          "animation_prompt": "",
+          "characters": [
+            "laeding",
+            "dromi"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Læding, a heavy iron chain of thick hand-forged links, dark grey with hammer marks and rust bloom, each link closed by a visible weld seam, strong-looking but plainly made, the kind of binding that trusts sheer mass.\nSUBJECT 2: Drómi, a massive black iron chain with links twice the thickness of ordinary forgework, riveted bands and reinforced collars, oily dark sheen, with the mass to sag under its own weight.\nACTION: rainwater fills the claw furrows between the two burst chains.\nSETTING: churned black rock and mud where the wolf stood, standing rainwater, no figure present.\nCAMERA: camera looks down on the ground from above head height, high, medium.\nFRAME LAYOUT: center — the two burst chains, near-camera; lower-left — one deep claw furrow filling with water; upper-right — an abandoned spear on the mud.\nFACING: the ground is seen from above; no figure is present.\nSCREEN DIRECTION: water creeps from the lower edge toward the center.\nLIGHT: failing overcast dusk, flat and colourless.\nPALETTE: mud brown, rust, pewter.\nDETAIL: rust bloom crusting the torn ends, silt film on the standing water, grass flattened into the mud at the edges.\nNOT IN FRAME: the wolf, the gods, the lake.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 9.583s.\n0–1s: rainwater breaks over the lip of a furrow and runs along it.\n1–5s: the water spreads across the churned ground, lifting a film of silt around the burst links.\n5–9.583s: the abandoned spear settles a finger deeper into the mud and the surface goes still.\nCAMERA: one continuous slow pull back from the ground.\nENVIRONMENT: fine rain stipples the water; grass at the edges bends.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
           "tags": {
-            "subject_type": "environment",
+            "subject_type": "object",
             "shot_size": "MS",
-            "angle": "eye",
+            "angle": "high",
             "location": "binding-ground",
             "time_light": "dusk-overcast",
-            "camera_motion": "locked"
-          }
+            "camera_motion": "pull"
+          },
+          "visual_priority": [
+            "Læding burst and half-sunk in the mud",
+            "Drómi torn open beside it",
+            "the claw furrows filling with rainwater",
+            "the empty ground where the wolf stood"
+          ]
         }
       ]
     },
@@ -317,17 +382,26 @@
           "motion_budget": 6.167,
           "source_file": "shots/part09.mp4",
           "ingredient_image": null,
-          "characters": [],
-          "image_prompt": "",
-          "animation_prompt": "",
+          "characters": [
+            "dwarf-smiths",
+            "dwarf-forge"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: The Dwarfs, three short broad-shouldered dwarf smiths with soot-darkened skin, long braided beards, leather aprons over rough linen, thick forearms and burn-scarred hands, fine-fingered despite their build, iron rings braided into the beards.\nSUBJECT 2: The Dwarf Forge, a cramped underground smithy of dark stone, glowing coal beds and hanging tools, veins of ore in the walls, low vaulted ceilings, tool racks and quench troughs cut into the stone.\nACTION: the three smiths draw one thread finer than a hair between them.\nSETTING: the forge shown in cross-section, its near wall cut away, coal beds glowing in the chamber below.\nCAMERA: camera faces the cut-away wall, eye level, medium.\nFRAME LAYOUT: center — the anvil and the three smiths; lower third — the coal beds, near-camera and bright; upper edge — hanging tools and tool racks.\nFACING: we see the smiths in profile, faces lit from the coals, hands turned toward each other.\nSCREEN DIRECTION: the thread runs from the left edge toward the right edge between their hands.\nLIGHT: red coal glow from below, cold blue depth at the cut-away edges.\nPALETTE: forge red, soot black, cold blue.\nDETAIL: leather apron seams and burn scars on the hands, ore veins glinting in the cut stone, embers riding the coal bed.\nNOT IN FRAME: hammers, heavy iron, daylight.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 6.167s.\n0–1s: the two outer smiths draw their hands apart and the thread lengthens between them.\n1–4s: the coal beds pulse brighter as the third smith passes a palm along the strand.\n4–6.167s: the thread narrows until it reads as a single bright line across the frame.\nCAMERA: one continuous push toward the anvil.\nENVIRONMENT: smoke drifts up the cut-away wall; embers rise from the coals.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
           "tags": {
-            "subject_type": "environment",
+            "subject_type": "group",
             "shot_size": "MS",
             "angle": "eye",
             "location": "dwarf-forge",
             "time_light": "forge-red",
-            "camera_motion": "locked"
-          }
+            "camera_motion": "push"
+          },
+          "visual_priority": [
+            "the dwarfs drawing the thread between them",
+            "the dwarf forge in cross-section with its coal beds",
+            "the thread reading as a single bright line",
+            "the fine-fingered hands against the heavy build"
+          ]
         }
       ]
     },
@@ -347,7 +421,7 @@
         {
           "shot_id": "10",
           "beat_id": "B08",
-          "link_group": null,
+          "link_group": "B08",
           "t_in": 71.75,
           "t_out": 78.458,
           "use_in": 0,
@@ -356,22 +430,30 @@
           "motion_budget": 6.708,
           "source_file": "shots/part10.mp4",
           "ingredient_image": null,
-          "characters": [],
-          "image_prompt": "",
-          "animation_prompt": "",
+          "characters": [
+            "gleipnir"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Gleipnir, a slender silk-smooth ribbon no thicker than a bootlace, pale silver-grey with a faint inner shimmer, light enough to lift on one finger, with no visible weave or join, looking far too delicate to hold anything.\nSCALE: Gleipnir is minute, no thicker than a bootlace; the whole coil sits inside the creases of one open palm and takes less room than a finger joint; against a thick burn-scarred smith's hand it reads as a thread, not a rope; the smallness is the subject.\nACTION: the palm tilts and the coil settles across the skin.\nSETTING: a cramped underground smithy, coal beds burned down to embers, a stone bench beneath the hand.\nCAMERA: camera is two hand-widths from the palm, eye level, close.\nFRAME LAYOUT: center — the open palm and the coiled ribbon, near-camera and large; lower edge — a leather apron, cropped; right third — the ember bed, far and out of focus.\nFACING: the palm is turned up toward camera; the smith's face is out of frame above.\nSCREEN DIRECTION: one loop of the ribbon lifts on a breath of forge air and drifts toward the upper-left.\nLIGHT: dim ember glow from the lower-right, soft shadow.\nPALETTE: pale silver, ember red, soot black.\nDETAIL: the grain and burn scars of the palm skin, the silk sheen of the ribbon with no weave showing, ash dust in the creases.\nNOT IN FRAME: faces, hammers, daylight.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 6.708s.\n0–1s: the palm tips and the coiled ribbon slides a finger-width across the skin.\n1–4s: one loop lifts free on a breath of forge air and drifts, weightless.\n4–6.708s: the loop settles back onto the palm and the inner shimmer runs once along its length.\nCAMERA: one continuous slow push toward the palm.\nENVIRONMENT: embers dim and brighten; thin smoke crosses the lower-right.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
           "tags": {
-            "subject_type": "environment",
-            "shot_size": "MS",
+            "subject_type": "object",
+            "shot_size": "CU",
             "angle": "eye",
             "location": "dwarf-forge",
             "time_light": "forge-emberlow",
-            "camera_motion": "locked"
-          }
+            "camera_motion": "push"
+          },
+          "visual_priority": [
+            "Gleipnir coiled on the open palm",
+            "the impossible thinness against the thick hand",
+            "the silk surface with no visible join",
+            "the ember light as the only source"
+          ]
         },
         {
           "shot_id": "11",
           "beat_id": "B08",
-          "link_group": null,
+          "link_group": "B08",
           "t_in": 78.458,
           "t_out": 85.708,
           "use_in": 0,
@@ -380,17 +462,25 @@
           "motion_budget": 7.25,
           "source_file": "shots/part11.mp4",
           "ingredient_image": null,
-          "characters": [],
-          "image_prompt": "",
-          "animation_prompt": "",
+          "characters": [
+            "gleipnir"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Gleipnir, a slender silk-smooth ribbon no thicker than a bootlace, pale silver-grey with a faint inner shimmer, light enough to lift on one finger, with no visible weave or join, looking far too delicate to hold anything.\nSCALE: Gleipnir is minute beside the iron: the burst link at the right third is as wide as the whole hand while the ribbon is a bootlace-thin line across the palm; ten lengths of it laid side by side would not cover one link; the mismatch carries the frame.\nACTION: the ribbon lies still as a thumb turns the burst iron link beside it.\nSETTING: a stone bench in the smithy, ember light and cold stone.\nCAMERA: camera is a hand-width from the bench, eye level, extreme close.\nFRAME LAYOUT: center — the ribbon on the palm, near-camera and sharp; right third — the burst iron link, far and out of focus; lower edge — the stone bench, cropped.\nFACING: the palm is angled toward camera; no face is visible.\nSCREEN DIRECTION: the link rolls a quarter turn toward the lower edge while the ribbon holds still.\nLIGHT: low ember light from the left edge, one soft highlight along the ribbon.\nPALETTE: pale silver, black iron, ember red.\nDETAIL: a single burr on the torn rivet, the seamless silk surface with no fibre showing, dust caught in the palm creases.\nNOT IN FRAME: faces, tools, daylight.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 7.25s.\n0–1s: a thumb rolls the burst iron link a quarter turn on the stone.\n1–4s: the torn rivet edge catches the ember light and the ribbon beside it stays completely still.\n4–7.25s: the faint shimmer travels the length of the ribbon and fades at its coiled end.\nCAMERA: locked, the palm held centred.\nENVIRONMENT: ember light rises and falls; thin smoke crosses the left edge.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
           "tags": {
-            "subject_type": "environment",
-            "shot_size": "MS",
+            "subject_type": "object",
+            "shot_size": "ECU",
             "angle": "eye",
             "location": "dwarf-forge",
             "time_light": "forge-emberlow",
             "camera_motion": "locked"
-          }
+          },
+          "visual_priority": [
+            "Gleipnir sharp and still on the palm",
+            "the torn rivet of the burst link out of focus",
+            "the width of the link against the width of the ribbon",
+            "the inner shimmer running the ribbon's length"
+          ]
         }
       ]
     },
@@ -409,7 +499,7 @@
         {
           "shot_id": "12",
           "beat_id": "B09",
-          "link_group": null,
+          "link_group": "B09",
           "t_in": 85.708,
           "t_out": 92.042,
           "use_in": 0,
@@ -419,21 +509,27 @@
           "source_file": "shots/part12.mp4",
           "ingredient_image": null,
           "characters": [],
-          "image_prompt": "",
-          "animation_prompt": "",
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a single pale strand being braided out of three impossible sources — a soundless cat footfall, the root of a mountain, the drawn sinew of a bear.\nACTION: each source thins into light and folds into the strand as it joins.\nSETTING: a dark undefined field, each source rendered as a small lit vignette, no horizon.\nCAMERA: camera travels alongside the strand, eye level, close.\nFRAME LAYOUT: center — the braiding strand running the width of the frame, near-camera; upper-left — the cat print, small; lower-left — the mountain root; right third — the bear sinew, drawn taut.\nFACING: each vignette is turned square to camera; no figure is present.\nSCREEN DIRECTION: the strand travels from the left edge toward the right edge.\nLIGHT: each source carries its own light, the field around them unlit.\nPALETTE: pale silver, deep black, muted earth.\nDETAIL: the twist of the braid where each source enters, grain in the root bark, the fibre of the drawn sinew.\nNOT IN FRAME: any person, any hall, any horizon.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 6.334s.\n0–1s: the cat print flattens into a thread of light and folds into the strand.\n1–4s: the mountain root unwinds from the stone and twists into the braid without thickening it.\n4–6.334s: the bear sinew draws out long, joins the strand, and dissolves into it.\nCAMERA: one continuous track rightward along the strand.\nENVIRONMENT: the unlit field drifts; motes of light cross the frame.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
           "tags": {
-            "subject_type": "environment",
-            "shot_size": "MS",
+            "subject_type": "object",
+            "shot_size": "CU",
             "angle": "eye",
             "location": "impossible-origins",
             "time_light": "mixed-elemental",
-            "camera_motion": "locked"
-          }
+            "camera_motion": "track"
+          },
+          "visual_priority": [
+            "the braiding strand growing no thicker as sources join",
+            "the three impossible sources as lit vignettes",
+            "the unlit field holding them apart",
+            "the moment each source dissolves into light"
+          ]
         },
         {
           "shot_id": "13",
           "beat_id": "B09",
-          "link_group": null,
+          "link_group": "B09",
           "t_in": 92.042,
           "t_out": 98.792,
           "use_in": 0,
@@ -442,17 +538,25 @@
           "motion_budget": 6.75,
           "source_file": "shots/part13.mp4",
           "ingredient_image": null,
-          "characters": [],
-          "image_prompt": "",
-          "animation_prompt": "",
+          "characters": [
+            "gleipnir"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Gleipnir, a slender silk-smooth ribbon no thicker than a bootlace, pale silver-grey with a faint inner shimmer, light enough to lift on one finger, with no visible weave or join, looking far too delicate to hold anything.\nSCALE: Gleipnir stays minute through every join: six impossible things enter it and it never thickens past a bootlace; the last source folds in and it is still light enough to lift on one finger; nothing else in the frame is as small.\nACTION: the last three sources thin into light and join the finished ribbon.\nSETTING: the same unlit field, three small lit vignettes, no horizon.\nCAMERA: camera travels alongside the ribbon, eye level, close.\nFRAME LAYOUT: center — the ribbon, near-camera and unchanged in width; upper-right — a fish breathing in dark water; lower-right — a spitting bird; left third — a woman with a braided beard, far and dim.\nFACING: the woman is turned three-quarter toward camera, eyes down; the other vignettes face camera square.\nSCREEN DIRECTION: the ribbon travels from the left edge toward the right edge as each source folds in.\nLIGHT: three small separate sources, the field unlit.\nPALETTE: pale silver, deep black, muted earth.\nDETAIL: the seamless surface where each source enters, water beading on the fish, the plait of the beard.\nNOT IN FRAME: any hall, any horizon, any weapon.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 6.75s.\n0–1s: the breath leaves the fish as a silver line and folds into the ribbon.\n1–4s: the spittle of the bird draws out to a filament and joins; the ribbon stays as thin.\n4–6.75s: the braided beard unwinds into the strand and the ribbon coils small.\nCAMERA: one continuous track rightward along the ribbon.\nENVIRONMENT: the unlit field drifts; motes of light cross the frame.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
           "tags": {
-            "subject_type": "environment",
-            "shot_size": "MS",
+            "subject_type": "object",
+            "shot_size": "CU",
             "angle": "eye",
             "location": "impossible-origins",
             "time_light": "mixed-elemental",
-            "camera_motion": "locked"
-          }
+            "camera_motion": "track"
+          },
+          "visual_priority": [
+            "Gleipnir finished and still bootlace-thin",
+            "the three last impossible sources joining it",
+            "the unchanged width as the proof of the magic",
+            "the faint inner shimmer running its length"
+          ]
         }
       ]
     },
@@ -483,17 +587,26 @@
           "motion_budget": 5.625,
           "source_file": "shots/part14.mp4",
           "ingredient_image": null,
-          "characters": [],
-          "image_prompt": "",
-          "animation_prompt": "",
+          "characters": [
+            "the-gods",
+            "gleipnir"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: The Gods, a group of six to eight Norse gods in layered woollen cloaks, bronze brooches and iron-grey mail, tall and broad, weather-worn faces, plaited hair and beards, iron-shod spears taller than the men who carry them.\nSCALE: Gleipnir is minute in their hands: the whole binding lies slack across two open palms and weighs nothing; beside their iron-shod spears it reads as a bootlace.\nSUBJECT 2: Gleipnir, a slender silk-smooth ribbon no thicker than a bootlace, pale silver-grey with a faint inner shimmer, light enough to lift on one finger, with no visible weave or join, looking far too delicate to hold anything.\nACTION: the foremost god holds the ribbon out across two open hands.\nSETTING: flat black rock and pale grass, a cold grey lake.\nCAMERA: camera stands four paces from the group, eye level, medium.\nFRAME LAYOUT: left third and center — the gods shoulder to shoulder; center — the offered ribbon on two open palms, near-camera; right third — open rock.\nFACING: we see their faces and chests three-quarter on; every one of them looks toward the right edge.\nSCREEN DIRECTION: cloaks drag from the left edge toward the right; the loose end of the ribbon swings the same way.\nLIGHT: flat overcast daylight, no shadow.\nPALETTE: wool grey, wet black, dun grass.\nDETAIL: woven wool nap on the cloaks, bronze brooch edges, wet grit on the rock.\nNOT IN FRAME: the wolf, the lake, the burst chains.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 5.625s.\n0–1s: the foremost god extends both hands and the ribbon swings loose between them.\n1–3.5s: the others hold still, one shifting his grip on a spear shaft.\n3.5–5.625s: the ribbon settles across the open palms and every head turns toward the right edge.\nCAMERA: locked, the group held centred.\nENVIRONMENT: cloaks lift in the wind; grass flattens across the rock.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
           "tags": {
-            "subject_type": "environment",
+            "subject_type": "group",
             "shot_size": "MS",
             "angle": "eye",
             "location": "binding-ground",
             "time_light": "day-overcast",
             "camera_motion": "locked"
-          }
+          },
+          "visual_priority": [
+            "the gods offering the ribbon on two open hands",
+            "Gleipnir reading as far too thin to hold anything",
+            "the wary weather-worn faces turned toward the right edge",
+            "the iron-shod spears held back at the edge of the group"
+          ]
         },
         {
           "shot_id": "15",
@@ -507,17 +620,26 @@
           "motion_budget": 7.666,
           "source_file": "shots/part15.mp4",
           "ingredient_image": null,
-          "characters": [],
-          "image_prompt": "",
-          "animation_prompt": "",
+          "characters": [
+            "fenrir",
+            "laeding"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Fenrir, a colossal grey-black wolf with a lean muscular frame, amber eyes, coarse shaggy fur along the shoulders, a scarred muzzle over heavy jaws, dark guard hairs over a paler undercoat, one torn ear.\nSCALE: Fenrir is monumental, long enough to cross the width of the frame at this distance; the gods at screen-left stand no higher than his flank; the burst chain near-camera is small beside his foreleg.\nSUBJECT 2: Læding, a heavy iron chain of thick hand-forged links, dark grey with hammer marks and rust bloom, each link closed by a visible weld seam, strong-looking but plainly made, the kind of binding that trusts sheer mass.\nACTION: he circles wide of the offered ribbon, head low and ears flat.\nSETTING: open black rock, two burst chains lying where they fell.\nCAMERA: camera stands low on the rock inside his arc, low, wide.\nFRAME LAYOUT: center and right third — the wolf, large and crossing the frame; lower-left — a burst chain, near-camera; upper-left — the gods, small and hazy.\nFACING: we see the wolf's flank in profile, head lowered; his eyes cut back toward the gods at screen-left.\nSCREEN DIRECTION: he moves from the left edge toward the right edge; loose grit skitters after him.\nLIGHT: flat overcast daylight, no hard shadow.\nPALETTE: charcoal grey, dun grass, wet iron.\nDETAIL: layered rock shelves, the wolf readable by outline and lowered posture, wind-torn grass across the middle ground.\nNOT IN FRAME: the mountains, any structure.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 7.666s.\n0–1s: the wolf breaks into a low prowl and his ears go flat against his skull.\n1–5s: he tracks a wide arc rightward, weight low, shoulders rolling under the coarse fur.\n5–7.666s: his head swings down toward the burst chain at the lower-left and he stops.\nCAMERA: one continuous pan rightward with the wolf.\nENVIRONMENT: grass flattens under him; loose grit skitters across the rock.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
           "tags": {
-            "subject_type": "environment",
-            "shot_size": "MS",
-            "angle": "eye",
+            "subject_type": "character",
+            "shot_size": "LS",
+            "angle": "low",
             "location": "binding-ground",
             "time_light": "day-overcast",
-            "camera_motion": "locked"
-          }
+            "camera_motion": "pan"
+          },
+          "visual_priority": [
+            "Fenrir circling wide with his head low",
+            "the burst chain near-camera at the lower-left",
+            "the gods small and hazy at screen-left",
+            "his length against the open rock"
+          ]
         }
       ]
     },
@@ -547,17 +669,25 @@
           "motion_budget": 6.417,
           "source_file": "shots/part16.mp4",
           "ingredient_image": null,
-          "characters": [],
-          "image_prompt": "",
-          "animation_prompt": "",
+          "characters": [
+            "fenrir"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Fenrir, a colossal grey-black wolf with a lean muscular frame, amber eyes, coarse shaggy fur along the shoulders, a scarred muzzle over heavy jaws, dark guard hairs over a paler undercoat, one torn ear.\nSCALE: Fenrir is monumental even lying down: his lowered chest still reads higher than the standing gods at screen-left; one foreleg fills the lower third of the frame; his head alone is the size of a man; the size difference is the subject.\nACTION: he lowers himself deliberately onto the rock and holds.\nSETTING: flat black rock, pale grass, standing water, low cloud.\nCAMERA: camera stands five paces from the wolf, eye level, medium.\nFRAME LAYOUT: lower half and center — the wolf lowering himself onto the stone, near-camera and large; left third — the gods, small and hazy beyond him; upper edge — flat grey sky.\nFACING: we see the wolf's head and chest three-quarter on; his amber eyes hold the gods at screen-left.\nSCREEN DIRECTION: his tail sweeps once from the right edge toward the center and standing water rings where it passes.\nLIGHT: flat overcast daylight.\nPALETTE: charcoal grey, dun grass, pewter water.\nDETAIL: coarse fur strands separating at the shoulder, the scarred muzzle catching flat light, grit and standing water on the rock.\nNOT IN FRAME: the ribbon, the mountains.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 6.417s.\n0–1s: the wolf folds his forelegs and drops his chest onto the stone.\n1–4s: he settles his weight, tail sweeping once across the water at the lower edge.\n4–6.417s: his gaze locks toward the left edge and his jaws part a hand-width.\nCAMERA: one continuous slow push toward the head.\nENVIRONMENT: standing water ripples; grass bends in the wind.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
           "tags": {
-            "subject_type": "environment",
+            "subject_type": "character",
             "shot_size": "MS",
             "angle": "eye",
             "location": "binding-ground",
             "time_light": "day-overcast",
-            "camera_motion": "locked"
-          }
+            "camera_motion": "push"
+          },
+          "visual_priority": [
+            "Fenrir lowering himself deliberately onto the rock",
+            "the amber eyes held on the gods at screen-left",
+            "his size carried even at rest",
+            "the jaws parting a hand-width"
+          ]
         },
         {
           "shot_id": "17",
@@ -571,17 +701,25 @@
           "motion_budget": 7.667,
           "source_file": "shots/part17.mp4",
           "ingredient_image": null,
-          "characters": [],
-          "image_prompt": "",
-          "animation_prompt": "",
+          "characters": [
+            "the-gods"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: The Gods, a group of six to eight Norse gods in layered woollen cloaks, bronze brooches and iron-grey mail, tall and broad, weather-worn faces, plaited hair and beards, iron-shod spears taller than the men who carry them.\nACTION: they stand a half-circle and none of them steps forward.\nSETTING: open black rock under a wide overcast sky, the lake far off at the frame edge.\nCAMERA: camera sits on the rock at the level of the open jaws, low, medium.\nFRAME LAYOUT: lower-right — the open jaws of the wolf, near-camera and large, cropped at the right edge; center and left third — the gods in a half-circle, small.\nFACING: we see the faces of the gods square to camera; every one of them looks toward the lower-right.\nSCREEN DIRECTION: the half-circle draws back from the right edge toward the left; a spear butt grinds on the stone.\nLIGHT: flat grey lake light, no shadow.\nPALETTE: wool grey, wet black, bone white.\nDETAIL: woven wool nap and mail rings on the cloaks, weather worked into the faces, wet grit across the rock.\nNOT IN FRAME: the lake, the mountains, the ribbon.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 7.667s.\n0–1s: the near jaw opens another hand-width and the teeth at the lower-right come clear.\n1–5s: not one god moves; two glance sideways at each other and a spear butt grinds on the stone.\n5–7.667s: the half-circle draws a pace back and the gap at its centre widens.\nCAMERA: locked, the half-circle held centred.\nENVIRONMENT: cloaks pull in the wind; grass lies flat.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
           "tags": {
-            "subject_type": "environment",
+            "subject_type": "group",
             "shot_size": "MS",
-            "angle": "eye",
+            "angle": "low",
             "location": "binding-ground",
             "time_light": "day-overcast",
             "camera_motion": "locked"
-          }
+          },
+          "visual_priority": [
+            "the gods holding a half-circle without stepping in",
+            "the open jaws cropped at the lower-right",
+            "the gap widening at the centre of the line",
+            "the wary faces all turned one way"
+          ]
         }
       ]
     },
@@ -611,17 +749,25 @@
           "motion_budget": 7.166,
           "source_file": "shots/part18.mp4",
           "ingredient_image": null,
-          "characters": [],
-          "image_prompt": "",
-          "animation_prompt": "",
+          "characters": [
+            "tyr"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Týr, a lean Norse warrior god in his thirties, short dark blond hair, a close-cropped beard, calm steady eyes, a plain iron-grey woollen tunic under a leather cuirass, a heavy bronze arm-ring of twisted strands.\nACTION: he lays his right hand flat between the open jaws of the wolf.\nSETTING: flat black rock, pale grass, a cold grey lake under flat cloud.\nCAMERA: camera stands three paces to his right, eye level, medium.\nFRAME LAYOUT: center — Týr, near-camera and large, cropped at the knee; right third — the open jaws, large; left third — the gods, small and hazy.\nFACING: we see his face and chest three-quarter on; he looks down at his own hand, the jaws at screen-right.\nSCREEN DIRECTION: he crosses from the left edge toward the right edge; the wind pulls his cloak the same way.\nLIGHT: even overcast light, no shadow.\nPALETTE: iron grey, dun grass, dull bronze.\nDETAIL: woven wool nap on the tunic, the twisted strands of the bronze arm-ring, wet grit under his boots.\nNOT IN FRAME: the ribbon, the mountains, blood.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 7.166s.\n0–1s: Týr steps out of the half-circle and walks rightward across the rock.\n1–4s: he crouches at the jaws and turns his right palm upward, the bronze arm-ring sliding down his wrist.\n4–7.166s: he lays the hand flat between the teeth and holds it there without flinching.\nCAMERA: one continuous track rightward with him.\nENVIRONMENT: grass flattens in the wind; the wolf breathes steadily.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
           "tags": {
-            "subject_type": "environment",
+            "subject_type": "character",
             "shot_size": "MS",
             "angle": "eye",
             "location": "binding-ground",
             "time_light": "day-overcast",
-            "camera_motion": "locked"
-          }
+            "camera_motion": "track"
+          },
+          "visual_priority": [
+            "Týr walking in alone and laying the hand flat",
+            "the calm steady face that does not flinch",
+            "the open jaws waiting at screen-right",
+            "the bronze arm-ring on the wrist that goes in"
+          ]
         }
       ]
     },
@@ -652,17 +798,26 @@
           "motion_budget": null,
           "source_file": "shots/part19.mp4",
           "ingredient_image": null,
-          "characters": [],
-          "image_prompt": "",
-          "animation_prompt": "",
+          "characters": [
+            "fenrir",
+            "gleipnir"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Fenrir, a colossal grey-black wolf with a lean muscular frame, amber eyes, coarse shaggy fur along the shoulders, a scarred muzzle over heavy jaws, dark guard hairs over a paler undercoat, one torn ear.\nSCALE: Fenrir is monumental, his body running the whole width of the frame while six gods work along it; Gleipnir is minute against him, a bootlace-thin line laid over a chest deeper than a man is tall.\nSUBJECT 2: Gleipnir, a slender silk-smooth ribbon no thicker than a bootlace, pale silver-grey with a faint inner shimmer, light enough to lift on one finger, with no visible weave or join, looking far too delicate to hold anything.\nACTION: the wolf drives against the ribbon as the gods draw the loops closed.\nSETTING: open black rock, two burst chains at the frame edges.\nCAMERA: camera stands eight paces off on the rock, low, wide.\nFRAME LAYOUT: center — the wolf's body across the frame, large and straining; right third — his head and Týr at the jaws, near-camera; left third — three gods on the loops, cropped at the knee.\nFACING: we see the wolf's flank three-quarter on, head turned toward screen-right; the gods lean back toward the left edge.\nSCREEN DIRECTION: the loops draw from the right edge toward the left edge as the gods pull them tight.\nLIGHT: flat overcast daylight.\nPALETTE: pale silver, charcoal grey, dun grass.\nDETAIL: layered rock shelves, figures readable by outline and lean, the bright line of the ribbon in the fur.\nNOT IN FRAME: the mountains, the lake shore.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 9.584s.\n0–1s: two gods snap a loop of the ribbon closed over the wolf shoulder.\n1–5s: he throws his weight sideways, hind legs driving, claws tearing furrows in the rock.\n5–9.584s: the ribbon cuts a bright line into the coarse fur and does not stretch a finger-width.\nCAMERA: one continuous push toward the straining body.\nENVIRONMENT: grit sprays from under the claws; grass tears loose.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
           "tags": {
-            "subject_type": "environment",
-            "shot_size": "MS",
-            "angle": "eye",
+            "subject_type": "character",
+            "shot_size": "LS",
+            "angle": "low",
             "location": "binding-ground",
             "time_light": "day-overcast",
-            "camera_motion": "locked"
-          }
+            "camera_motion": "push"
+          },
+          "visual_priority": [
+            "Fenrir throwing his whole weight against the binding",
+            "Gleipnir cutting a bright line without stretching",
+            "the gods hauling the loops from screen-left",
+            "Týr held at the jaws at the right third"
+          ]
         }
       ]
     },
@@ -693,17 +848,25 @@
           "motion_budget": 8.916,
           "source_file": "shots/part20.mp4",
           "ingredient_image": null,
-          "characters": [],
-          "image_prompt": "",
-          "animation_prompt": "",
+          "characters": [
+            "tyr"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Týr, a lean Norse warrior god in his thirties, short dark blond hair, a close-cropped beard, calm steady eyes, a plain iron-grey woollen tunic under a leather cuirass, a heavy bronze arm-ring of twisted strands.\nACTION: he steps back, his right forearm ending at the wrist.\nSETTING: flat black rock under a low grey sky, the bound wolf at the frame edge.\nCAMERA: camera stands two paces from him, eye level, close.\nFRAME LAYOUT: center and left third — Týr from the chest up, near-camera and large; right third — the closed jaws, cropped at the right edge; upper-left — low grey sky.\nFACING: we see his face and shoulders square to camera, eyes on the wolf at screen-right.\nSCREEN DIRECTION: he steps back from the right edge toward the left; his breath drags away the same way.\nLIGHT: flat grey daylight, no shadow.\nPALETTE: iron grey, bone white, dull bronze.\nDETAIL: the weave of the woollen tunic, the twisted strands of the bronze arm-ring, wind and sweat on the skin.\nNOT IN FRAME: blood, the other gods, the lake.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 8.916s.\n0–1s: the jaws at the right edge close and his whole shoulder drops.\n1–5s: his jaw sets, breath held, and he draws the shortened arm in against his chest.\n5–8.916s: he takes one steady pace backward and his eyes stay on the wolf.\nCAMERA: locked, holding him centred.\nENVIRONMENT: wind pulls at his hair; grass moves at the lower edge.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
           "tags": {
-            "subject_type": "environment",
-            "shot_size": "MS",
+            "subject_type": "character",
+            "shot_size": "CU",
             "angle": "eye",
             "location": "binding-ground",
             "time_light": "day-overcast",
             "camera_motion": "locked"
-          }
+          },
+          "visual_priority": [
+            "Týr's face holding steady as the jaws close",
+            "the shortened right forearm drawn in against the chest",
+            "the closed jaws cropped at the right edge",
+            "the one steady pace backward"
+          ]
         }
       ]
     },
@@ -723,7 +886,7 @@
         {
           "shot_id": "21",
           "beat_id": "B15",
-          "link_group": null,
+          "link_group": "B15",
           "t_in": 151.833,
           "t_out": 156.292,
           "use_in": 0,
@@ -733,21 +896,27 @@
           "source_file": "shots/part21.mp4",
           "ingredient_image": null,
           "characters": [],
-          "image_prompt": "",
-          "animation_prompt": "",
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a heavy bronze arm-ring of twisted strands lying open on wet black rock, one end sprung wide, a dark stain spreading from a pressed handprint beside it.\nACTION: the stain creeps outward along a seam in the rock.\nSETTING: flat black stone, pale grass at the edges, standing rainwater, no horizon.\nCAMERA: camera looks down on the flat stone, high, close.\nFRAME LAYOUT: center — the arm-ring, near-camera and large; lower-left — the handprint and the stain running out of it; upper-right — the slack end of a pale ribbon, small and far.\nFACING: the stone is seen from directly above; no figure is present.\nSCREEN DIRECTION: the stain travels from the lower-left toward the center.\nLIGHT: failing overcast daylight, flat and colourless, no shadow anywhere on the stone.\nPALETTE: wet black, dull bronze, rust dark.\nDETAIL: the twist and hammer facets of the bronze strands, rain film standing on the stone, grit caught in the edge of the handprint.\nNOT IN FRAME: Týr, the wolf, the other gods.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 4.459s.\n0–1s: the stain runs a finger-length along the seam in the stone.\n1–2.5s: rainwater creeps under the arm-ring and lifts a thin edge of it.\n2.5–4.459s: the ribbon end shifts once and pulls taut toward the upper-right.\nCAMERA: locked, the arm-ring held centred.\nENVIRONMENT: fine rain stipples the water; grass bends at the frame edges.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
           "tags": {
-            "subject_type": "environment",
-            "shot_size": "MS",
-            "angle": "eye",
+            "subject_type": "object",
+            "shot_size": "CU",
+            "angle": "high",
             "location": "binding-ground",
             "time_light": "overcast-late",
             "camera_motion": "locked"
-          }
+          },
+          "visual_priority": [
+            "the bronze arm-ring left open on the stone",
+            "the handprint and the stain spreading from it",
+            "the slack ribbon end at the upper-right",
+            "the emptiness where the god knelt"
+          ]
         },
         {
           "shot_id": "22",
           "beat_id": "B15",
-          "link_group": null,
+          "link_group": "B15",
           "t_in": 156.292,
           "t_out": 162.292,
           "use_in": 0,
@@ -757,16 +926,22 @@
           "source_file": "shots/part22.mp4",
           "ingredient_image": null,
           "characters": [],
-          "image_prompt": "",
-          "animation_prompt": "",
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a heavy bronze arm-ring on wet stone, its inner face worn smooth by years of wear, resting at the edge of a dark handprint.\nACTION: rainwater rings the bronze and runs off its curve toward the lower edge.\nSETTING: flat black stone, standing rainwater, pale grass out of frame, no horizon.\nCAMERA: camera is a hand-width above the stone, high, extreme close.\nFRAME LAYOUT: center — the arm-ring, near-camera and filling most of the frame; lower edge — the handprint, cropped; upper-right — the slack ribbon end, far and out of focus.\nFACING: the ring is seen from directly above; no figure is present.\nSCREEN DIRECTION: water runs from the center toward the lower edge.\nLIGHT: flat late overcast, one dull highlight riding the curve of the bronze.\nPALETTE: dull bronze, wet black, rust dark.\nDETAIL: the worn inner face of the bronze, single grains of grit suspended in the water film, a hairline scratch across one twisted strand.\nNOT IN FRAME: Týr, the wolf, any weapon.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 6s.\n0–1s: a bead of rainwater breaks over the bronze and runs down its curve.\n1–4s: the dull highlight travels along the ring as the water film thins.\n4–6s: the stain at the lower edge darkens and stops spreading.\nCAMERA: one continuous slow push toward the bronze.\nENVIRONMENT: rain dimples the standing water around the stone.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
           "tags": {
-            "subject_type": "environment",
-            "shot_size": "MS",
-            "angle": "eye",
+            "subject_type": "object",
+            "shot_size": "ECU",
+            "angle": "high",
             "location": "binding-ground",
             "time_light": "overcast-late",
-            "camera_motion": "locked"
-          }
+            "camera_motion": "push"
+          },
+          "visual_priority": [
+            "the worn inner face of the arm-ring",
+            "the bead of water running off the bronze",
+            "the darkened edge of the handprint",
+            "the ribbon end soft at the upper-right"
+          ]
         }
       ]
     },
@@ -787,7 +962,7 @@
         {
           "shot_id": "23",
           "beat_id": "B16",
-          "link_group": null,
+          "link_group": "B16",
           "t_in": 162.292,
           "t_out": 171.792,
           "use_in": 0,
@@ -796,22 +971,30 @@
           "motion_budget": null,
           "source_file": "shots/part23.mp4",
           "ingredient_image": null,
-          "characters": [],
-          "image_prompt": "",
-          "animation_prompt": "",
+          "characters": [
+            "fenrir"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Fenrir, a colossal grey-black wolf with a lean muscular frame, amber eyes, coarse shaggy fur along the shoulders, a scarred muzzle over heavy jaws, dark guard hairs over a paler undercoat, one torn ear.\nSCALE: Fenrir is monumental even lying still: his body runs a third of the width of the island in frame; the ridge line above him is far off and reads smaller; the ribbon across his chest is a thread laid on a mass; size contrast carries the frame.\nACTION: he lies bound on the rock, eyes open.\nSETTING: a bleak island of black rock and pale grass, dark mountains far off, high summer.\nCAMERA: camera stands fifteen paces off on the open rock, eye level, wide.\nFRAME LAYOUT: center — the bound wolf, large and low; lower-left — a wind-bent tuft of grass, near-camera; upper-right — the ridge line, far and hazy.\nFACING: we see the wolf's flank and head in profile; his amber eyes are turned toward camera.\nSCREEN DIRECTION: cloud shadow crosses from the left edge toward the right and the grass runs the same way.\nLIGHT: high summer daylight, thin cloud.\nPALETTE: charcoal grey, pale silver, dun grass.\nDETAIL: layered rock shelves, the wolf readable by outline and by the line of the ribbon, wind-torn grass across the middle ground.\nNOT IN FRAME: the gods, any chain, any structure.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 9.5s.\n0–1s: the wolf tests the ribbon once and his shoulder rises hard against it.\n1–5s: the light runs from summer through falling snow, the grass whitening around him and the ribbon staying exactly as taut.\n5–9.5s: the snow thaws off the rock and his amber eyes stay open through every state.\nCAMERA: locked, the framing held exactly.\nENVIRONMENT: cloud shadow sweeps the island; the lake changes colour.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
           "tags": {
-            "subject_type": "environment",
-            "shot_size": "MS",
+            "subject_type": "character",
+            "shot_size": "LS",
             "angle": "eye",
             "location": "binding-ground",
             "time_light": "seasons-shifting",
             "camera_motion": "locked"
-          }
+          },
+          "visual_priority": [
+            "Fenrir bound and lying still with his eyes open",
+            "the ribbon holding without slackening",
+            "the locked framing the seasons pass through",
+            "his size against the open island"
+          ]
         },
         {
           "shot_id": "24",
           "beat_id": "B16",
-          "link_group": null,
+          "link_group": "B16",
           "t_in": 171.792,
           "t_out": 175.5,
           "use_in": 0,
@@ -820,17 +1003,25 @@
           "motion_budget": 3.708,
           "source_file": "shots/part24.mp4",
           "ingredient_image": null,
-          "characters": [],
-          "image_prompt": "",
-          "animation_prompt": "",
+          "characters": [
+            "fenrir"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Fenrir, a colossal grey-black wolf with a lean muscular frame, amber eyes, coarse shaggy fur along the shoulders, a scarred muzzle over heavy jaws, dark guard hairs over a paler undercoat, one torn ear.\nSCALE: Fenrir is monumental even lying still: his body runs a third of the width of the island in frame; the ridge line above him is far off and reads smaller; the ribbon across his chest is a thread laid on a mass; size contrast carries the frame.\nACTION: he waits without straining.\nSETTING: the same island of black rock and pale grass, late thaw, standing meltwater.\nCAMERA: camera stands fifteen paces off on the open rock, eye level, wide.\nFRAME LAYOUT: center — the bound wolf, large and low; lower-left — a wind-bent tuft of grass, near-camera; upper-right — the ridge line, far and hazy.\nFACING: we see the wolf's flank and head in profile; his amber eyes are turned toward camera.\nSCREEN DIRECTION: meltwater runs from the center toward the lower edge and his ear turns once toward the lake.\nLIGHT: thin late daylight through breaking cloud.\nPALETTE: charcoal grey, pale silver, meltwater grey.\nDETAIL: layered rock shelves, the wolf readable by outline and by the line of the ribbon, wind-torn grass across the middle ground.\nNOT IN FRAME: the gods, any chain, any structure.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 3.708s.\n0–1s: the ribbon across his chest pulls tighter as he draws one breath.\n1–2.5s: his ear turns once toward the lake and settles.\n2.5–3.708s: his amber eyes widen a fraction and hold on camera.\nCAMERA: locked, the framing held exactly.\nENVIRONMENT: meltwater trembles on the stone; grass moves in the wind.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
           "tags": {
-            "subject_type": "environment",
-            "shot_size": "MS",
+            "subject_type": "character",
+            "shot_size": "LS",
             "angle": "eye",
             "location": "binding-ground",
             "time_light": "seasons-shifting",
             "camera_motion": "locked"
-          }
+          },
+          "visual_priority": [
+            "Fenrir waiting without straining",
+            "the identical locked framing through the thaw",
+            "the ribbon still exactly as taut",
+            "the meltwater standing on the rock"
+          ]
         }
       ]
     },
@@ -845,7 +1036,7 @@
       "dur": 6.56,
       "device": "silhouette",
       "narration_says": "The gods had managed to restrain the wolf. But they had never truly defeated him.",
-      "viewer_sees": "SILHOUETTE — the bound wolf black against a low grey sky, framed as in the opening shot; at this distance the thread is invisible, so nothing appears to be holding him at all",
+      "viewer_sees": "SILHOUETTE — the bound wolf black against a low grey sky, framed as in the opening shot; at this distance the thread is invisible, so nothing appears to be holding him at all. Locked camera, and the only movement in frame is ambient — cloud, grass, water — never the silhouette itself",
       "shots": [
         {
           "shot_id": "25",
@@ -859,17 +1050,25 @@
           "motion_budget": 6.542,
           "source_file": "shots/part25.mp4",
           "ingredient_image": null,
-          "characters": [],
-          "image_prompt": "",
-          "animation_prompt": "",
+          "characters": [
+            "binding-ground"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: The Binding Ground, a bleak windswept island of flat black rock and pale grass in a cold grey lake, low ridges at the shore, ringed by distant dark mountains under a wide overcast northern sky.\nACTION: a black wolf shape lies alone on the ridge line.\nSETTING: late dusk over the island, the lake flat, no binding visible at this distance.\nCAMERA: camera stands far off across the open rock, eye level, wide.\nFRAME LAYOUT: lower third — the ridge, flat black; center and right third — the wolf shape, small and featureless; upper two thirds — low grey sky.\nFACING: the wolf is a featureless silhouette in profile, head toward screen-left, no eyes and no colour.\nSCREEN DIRECTION: cloud drags from the left edge toward the right and the grass on the near slope runs the same way; the shape itself does not move.\nLIGHT: flat dusk glare off the lake, everything backlit.\nPALETTE: slate grey, wet black, cold pewter.\nDETAIL: three layers of ridge fading into haze, weather moving across the lake, scale carried by silhouette alone.\nNOT IN FRAME: the ribbon, the gods, facial detail.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 6.542s.\n0–1s: cloud drags across the low sky and the grass on the near slope lays over.\n1–4s: light moves off the lake as the weather thins; the black shape on the ridge holds still.\n4–6.542s: the last glare goes off the water and the shape reads as one flat black mass.\nCAMERA: locked, the ridge line held exactly.\nENVIRONMENT: grass runs in the wind; the lake dulls.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
           "tags": {
             "subject_type": "environment",
-            "shot_size": "MS",
+            "shot_size": "XLS",
             "angle": "eye",
             "location": "binding-ground",
             "time_light": "dusk-overcast",
             "camera_motion": "locked"
-          }
+          },
+          "visual_priority": [
+            "the binding ground reduced to ridge, lake and sky",
+            "the wolf shape small and featureless on the skyline",
+            "the absence of any visible binding",
+            "the backlit dusk flattening everything to shape"
+          ]
         }
       ]
     },
@@ -890,7 +1089,7 @@
         {
           "shot_id": "26",
           "beat_id": "B18",
-          "link_group": null,
+          "link_group": "B18",
           "t_in": 182.042,
           "t_out": 191.375,
           "use_in": 0,
@@ -899,22 +1098,31 @@
           "motion_budget": null,
           "source_file": "shots/part26.mp4",
           "ingredient_image": null,
-          "characters": [],
-          "image_prompt": "",
-          "animation_prompt": "",
+          "characters": [
+            "dromi",
+            "laeding"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Drómi, a massive black iron chain with links twice the thickness of ordinary forgework, riveted bands and reinforced collars, oily dark sheen, with the mass to sag under its own weight.\nSUBJECT 2: Læding, a heavy iron chain of thick hand-forged links, dark grey with hammer marks and rust bloom, each link closed by a visible weld seam, strong-looking but plainly made, the kind of binding that trusts sheer mass.\nACTION: last light moves across the two broken chains.\nSETTING: wet black stone at the shore, standing rainwater drying in patches.\nCAMERA: camera looks down on the wet stone, high, medium.\nFRAME LAYOUT: center — Drómi, large and torn open; left third — Læding, near-camera and burst; right third — a pale ribbon, taut and bright, cropped at the frame edge.\nFACING: the stone is seen from above; no figure is present.\nSCREEN DIRECTION: the last light travels from the right edge toward the left across both chains.\nLIGHT: low last daylight, long soft highlights.\nPALETTE: rust dark, oiled black, pale silver.\nDETAIL: rivet seams and hammer marks on the links, rust bloom in the torn ends, drying water film on the stone.\nNOT IN FRAME: the wolf, the gods, the lake.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 9.333s.\n0–1s: the last light slides onto the torn end of the iron.\n1–5s: the highlight travels leftward across both broken chains, finding every hammer mark and rivet.\n5–9.333s: it reaches the pale ribbon at the right third, which stays taut and does not move.\nCAMERA: one continuous slow push toward the ribbon.\nENVIRONMENT: rainwater dries in patches; grass moves at the frame edge.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
           "tags": {
-            "subject_type": "environment",
+            "subject_type": "object",
             "shot_size": "MS",
-            "angle": "eye",
+            "angle": "high",
             "location": "binding-ground",
             "time_light": "last-light",
-            "camera_motion": "locked"
-          }
+            "camera_motion": "push"
+          },
+          "visual_priority": [
+            "Drómi torn open on the wet stone",
+            "Læding burst beside it",
+            "the pale ribbon still taut at the right third",
+            "the last light crossing both chains"
+          ]
         },
         {
           "shot_id": "27",
           "beat_id": "B18",
-          "link_group": null,
+          "link_group": "B18",
           "t_in": 191.375,
           "t_out": 200.458,
           "use_in": 0,
@@ -923,17 +1131,25 @@
           "motion_budget": null,
           "source_file": "shots/part27.mp4",
           "ingredient_image": null,
-          "characters": [],
-          "image_prompt": "",
-          "animation_prompt": "",
+          "characters": [
+            "gleipnir"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Gleipnir, a slender silk-smooth ribbon no thicker than a bootlace, pale silver-grey with a faint inner shimmer, light enough to lift on one finger, with no visible weave or join, looking far too delicate to hold anything.\nSCALE: Gleipnir is minute and still the only thing in frame that held: a bootlace-thin line beside torn links four times its width and an arm-ring wider than its whole coil; the smallest object in the frame is the one under load.\nACTION: the ribbon holds its tension across the wet stone.\nSETTING: flat wet stone, standing rainwater, no horizon.\nCAMERA: camera looks down on the ribbon, high, close.\nFRAME LAYOUT: center — the taut ribbon, near-camera and sharp; lower-left — the bronze arm-ring, large; upper-right — two torn iron links, far and out of focus.\nFACING: the ribbon is seen from directly above, running corner to corner; nobody is in the frame.\nSCREEN DIRECTION: the inner shimmer travels the ribbon from the lower-left toward the upper-right.\nLIGHT: the last daylight going flat and blue.\nPALETTE: pale silver, dull bronze, wet black.\nDETAIL: the silk surface with no weave or join showing, water beading along the taut line, the twist of the bronze strands beside it.\nNOT IN FRAME: the wolf, any lettering, the gods.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 9.083s.\n0–1s: the taut ribbon shivers once along its whole length and holds.\n1–5s: the inner shimmer travels it from the lower-left to the upper-right and fades out.\n5–9.083s: the light drains toward blue and the bronze arm-ring keeps one last dull highlight.\nCAMERA: one continuous slow push toward the ribbon.\nENVIRONMENT: rainwater stills on the stone; a thread of grass moves at the edge.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
           "tags": {
-            "subject_type": "environment",
-            "shot_size": "MS",
-            "angle": "eye",
+            "subject_type": "object",
+            "shot_size": "CU",
+            "angle": "high",
             "location": "binding-ground",
             "time_light": "last-light",
-            "camera_motion": "locked"
-          }
+            "camera_motion": "push"
+          },
+          "visual_priority": [
+            "Gleipnir taut and unbroken across the stone",
+            "the torn iron links out of focus at the upper-right",
+            "the bronze arm-ring as the price that was paid",
+            "the thinness against everything that broke"
+          ]
         }
       ]
     }

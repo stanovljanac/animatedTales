@@ -133,9 +133,10 @@ Posle odobrenja:
 node tools/beatplan.mjs episodes/<slug> --beats episodes/<slug>/beats.json --write
 ```
 
-Piše `storyboard.json` sa popunjenim vremenima i **praznim promptovima**: `image_prompt` i
-`animation_prompt` su `""`, `characters` je `[]`, `ingredient_image` i `link_group` su `null`,
-a tagovi su placeholder (`location`/`time_light` = `tbd`) osim onih iz beat mape.
+Piše `storyboard.json` na **shemi 2** (`schema_version: 2`), sa popunjenim vremenima i **praznim
+promptovima**: `image_prompt` i `animation_prompt` su `""`, `characters` i `visual_priority` su
+`[]`, `ingredient_image` i `link_group` su `null`, a tagovi su placeholder
+(`location`/`time_light` = `tbd`) osim onih iz beat mape.
 
 To je namerno vidljivo nedovršeno stanje — `lint.mjs` nad ovakvim skeletom prijavljuje P1/P2/S2
 na svakom shotu. Skelet ne sme da izgleda gotovo.
@@ -144,9 +145,14 @@ Ponovni upis traži `--force`, jer gazi promptove.
 
 ### 5. Promptovi
 
-Po paru na shot, po šablonima iz `docs/reference/prompt-templates.md`. **Ne prepisuj taj fajl
-ovde** — otvori ga i radi po njemu. Ukratko: P1 = 90–160 reči, P2 = 60–100 reči, kanonskim
-brojačem iz `schemas.md` §0.6, koji broji i nazive blokova.
+Po paru na shot, po šablonima iz `docs/reference/prompt-templates.md`, **odeljak „Shema 2"**.
+**Ne prepisuj taj fajl ovde** — otvori ga i radi po njemu. Ukratko: P1 = 90–280 reči (meki cilj
+180–260, R5), P2 = 60–100 reči, kanonskim brojačem iz `schemas.md` §0.6, koji broji i nazive
+blokova.
+
+**Pre prvog prompta odluči osu ekrana** (`camera-language.md`, „Osa ekrana — jedna po epizodi") i
+upiši je u `notes.md`. Osa ulazi u `FRAME LAYOUT`, `FACING`, `SCREEN DIRECTION`, `CAMERA` i
+`NOT IN FRAME` svakog kadra; posle 27 napisanih promptova njena promena znači 27 prepravki.
 
 Uz njega idu, i svaki nosi svoj deo:
 
@@ -157,12 +163,22 @@ Uz njega idu, i svaki nosi svoj deo:
 | `docs/reference/visual-devices.md` | katalog uređaja i kada se koji koristi |
 | `episodes/<slug>/episode.json` | `locked_description` svakog lika/lokacije/rekvizita, doslovno (C1) |
 
-Popuni i `characters[]` (`id`-jevi iz `episode.json`), `tags` (šest osa, `schemas.md` §3.5) i
-`link_group` tamo gde shotovi jednog beata čine A/B/C lanac istog kadra.
+Popuni i `characters[]` (`id`-jevi iz `episode.json`), `visual_priority` (3–5 stavki, `[0]`
+imenuje PRIMARY lock), `tags` (šest osa, `schemas.md` §3.5) i `link_group` tamo gde shotovi
+jednog beata čine A/B/C lanac istog kadra.
 
-Budžet je uži nego što deluje: 16 reči na `STYLE` + 25–40 po `locked_description`-u. Shot sa
-**tri** zaključana entiteta P1 realno ne može da prođe — takav kadar se rasformira na dva
-shota, ne skraćuje se opis (skraćivanje ruši C1).
+**`characters[0]` je PRIMARY lock i njegov opis mora da stoji u `SUBJECT` bloku** — ne bilo gde u
+promptu (to bi prošlo C1, ali pada na S5). PRIMARY je entitet koji je vizuelni subjekt kadra na
+veličini na kojoj mu se opis vidi; ostali idu u `SUBJECT 2` i dalje.
+
+Budžet: 16 reči na `STYLE` + 25–40 po `locked_description`-u + 30–40 na `SCALE` kad je entitet
+`scale_critical`. Izmereno na prvoj epizodi: **dva locka su stvarna granica**, ne tri koliko
+dozvoljava `LIMITS.maxLocks` — kadar sa tri probija 280. Kadar kome trebaju tri se rasformira na
+dva shota; opis se ne skraćuje (skraćivanje ruši C1).
+
+**Promptove ne kucaj lock po lock.** `locked_description`-e i `STYLE` čitaj iz `episode.json` i
+`style-string.md` programski i ubacuj doslovno — ručno prepisivanje istog opisa u 9 kadrova je
+tačno ono što C1 i S5 hvataju, i najskuplje je da se otkrije na kraju.
 
 ### 6. Render i provera
 

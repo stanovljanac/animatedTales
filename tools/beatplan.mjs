@@ -173,6 +173,7 @@ export function buildStoryboard(timing, beatMap, opts = {}) {
         source_file: s.source_file,
         ingredient_image: null,
         characters: [],
+        visual_priority: [],
         image_prompt: '',
         animation_prompt: '',
         tags: { ...m.tags },
@@ -181,7 +182,10 @@ export function buildStoryboard(timing, beatMap, opts = {}) {
   });
 
   const storyboard = {
-    schema_version: 1,
+    // Nove epizode kreću na shemi 2 (schemas.md §3.3.1). Skelet zato nosi i prazan
+    // `visual_priority`: polje koje se ne vidi u skeletu se ne popunjava ni kasnije.
+    // Epizode zatečene na shemi 1 ostaju validne — linter bira pravila po ovom broju.
+    schema_version: 2,
     episode: opts.episode,
     generated_at: opts.generatedAt ?? stamp(),
     narration_duration: round3(timing.duration),

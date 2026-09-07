@@ -329,6 +329,9 @@ test('S1: obe liste dolaze iz camera-language.md, ne iz koda', () => {
   assert.equal(LISTS.tokens.length, 18);
   for (const t of ['upper-right', 'left third', 'near-camera', 'cropped at', 'centre'])
     assert.ok(LISTS.tokens.includes(t), `lista B nema token "${t}"`);
+  // Lista D nosi R6 i čita se iz istog dokumenta, pa pada pod isto pravilo.
+  assert.ok(LISTS.nullDirection.includes('nothing crosses the frame'));
+  assert.ok(LISTS.nullDirection.includes('no movement across the frame'));
 });
 
 test('S1: prazan ili pokvaren camera-language.md se ne prećutkuje', () => {
@@ -338,8 +341,13 @@ test('S1: prazan ili pokvaren camera-language.md se ne prećutkuje', () => {
   assert.throws(() => loadCameraLanguage(noSection), /nema odeljka/);
 
   const emptyList = path.join(dir, 'b.md');
-  fs.writeFileSync(emptyList, '## Liste koje provera S1 konzumira\n\n### A. x\n\n```\n\n```\n\n### B. y\n\n```\nfar\n```\n');
+  fs.writeFileSync(emptyList, '## Liste koje provera S1 konzumira\n\n### A. x\n\n```\n\n```\n\n### B. y\n\n```\nfar\n```\n\n### D. z\n\n```\nnothing moves\n```\n');
   assert.throws(() => loadCameraLanguage(emptyList), /lista A/);
+
+  // Lista D je uvedena uz R6 i obavezna je kao A i B: bez nje R6 tiho nikad ne bi javio.
+  const noD = path.join(dir, 'c.md');
+  fs.writeFileSync(noD, '## Liste koje provera S1 konzumira\n\n### A. x\n\n```\nin front of\n```\n\n### B. y\n\n```\nfar\n```\n');
+  assert.throws(() => loadCameraLanguage(noD), /### D/);
 
   assert.throws(() => loadCameraLanguage(path.join(dir, 'nema.md')), /se ne mogu pročitati/);
   fs.rmSync(dir, { recursive: true, force: true });

@@ -193,6 +193,59 @@ test('render: tabela sadržaja ima red po beatu', () => {
   assert.ok(rows[1].includes('macro-object'));
 });
 
+// ---------------------------------------------------------------- režijska tabla
+
+/** Redovi režijske table počinju `shot_id`-jem; beat mapa ispod počinje `beat_id`-jem. */
+const boardRows = (md) => md.split('\n').filter((l) => /^\| \d\d \|/.test(l));
+
+test('render: režijska tabla ima red po shotu, u redosledu tajmlajna', () => {
+  const sb = load(GOOD);
+  const rows = boardRows(renderStoryboard(sb));
+  const shots = sb.beats.flatMap((b) => b.shots);
+  assert.equal(rows.length, shots.length);
+  assert.deepEqual(rows.map((r) => r.split(' | ')[0].slice(2)), shots.map((s) => s.shot_id));
+  // Kolone se broje jednom: red koji ispadne iz šeme razbija ceo prikaz tiho.
+  for (const r of rows) assert.equal(r.split(/(?<!\\)\|/).length - 1, 15);
+});
+
+test('render: tabla nosi tagove, lanac, lockove i obe dužine prompta', () => {
+  const sb = load(GOOD);
+  const [first] = boardRows(renderStoryboard(sb));
+  const s = sb.beats[0].shots[0];
+  const cells = first.split(' | ');
+  assert.ok(cells.includes(s.tags.shot_size) && cells.includes(s.tags.camera_motion));
+  assert.ok(first.includes(`${s.link_group} A`), 'nema oznake lanca');
+  assert.ok(first.includes(s.characters.join(' + ')), 'nema lockova');
+  assert.ok(first.includes(`${countWords(s.image_prompt)}/${countWords(s.animation_prompt)}`),
+    'nema P1/P2 dužina');
+});
+
+test('render: ponovljena vrednost u koloni je navodnik, prvi red nikad nije', () => {
+  const rows = boardRows(renderStoryboard(load(GOOD)));
+  assert.ok(!rows[0].includes('„'), 'prvi red nema od čega da se ponovi');
+  // sva tri shota fixture-a dele `location`, i to je jedina kolona koja se ponavlja u sva tri.
+  assert.ok(rows[1].includes('„') && rows[2].includes('„'), 'ponavljanje se ne vidi');
+  assert.ok(rows[1].includes('midday-hard-sun'), 'različit `time_light` je pretvoren u navodnik');
+});
+
+test('render: tabla ne piše `null` ni za uređaj ni za prazan `characters`', () => {
+  const sb = load(GOOD);
+  sb.beats[0].shots[0].characters = [];
+  const [first] = boardRows(renderStoryboard(sb));
+  assert.ok(!first.includes('null'));
+  assert.equal(first.split(' | ').filter((c) => c === '—').length, 2, 'uređaj i lockovi su crte');
+});
+
+// ---------------------------------------------------------------- visual_priority (shema 2)
+
+test('render: visual_priority se ispisuje rangirano kad polje postoji', () => {
+  const sb = load(GOOD);
+  assert.ok(!renderStoryboard(sb).includes('- visual_priority:'),
+    'shema 1 nema polje, pa ni red');
+  sb.beats[0].shots[0].visual_priority = ['prvo', 'drugo', 'treće'];
+  assert.ok(renderStoryboard(sb).includes('- visual_priority: 1. prvo · 2. drugo · 3. treće'));
+});
+
 test('render: pipe u slobodnom tekstu ne razbija red tabele', () => {
   const sb = load(GOOD);
   sb.beats[0].device = 'a|b';

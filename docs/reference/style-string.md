@@ -54,3 +54,42 @@ su prazni booster tokeni koji troše P1 budžet ne menjajući sliku.
 R4 (ponavljanje n-grama > 12 reči, ADVISORY) **izuzima** ovaj string pre poređenja — po definiciji
 stoji identičan u svakom shotu. Izuzeće je zapisano u `schemas.md` §4.1; ovaj fajl je njegov izvor
 istine, pa promena stringa ovde automatski menja i ono što R4 briše.
+
+---
+
+# Shema 2 — `DETAIL` blok uz konstantni style string
+
+Kanonski string iznad **ostaje nepromenjen i konstantan**. Ono što se menja je da on više nije
+jedini nosilac gustine.
+
+**Šta je merenje pokazalo.** Stari `visualPromptEngine` je gustinu tvrdio sedam puta i menjao je po
+kadru (`rich`, `detailed environments and props`, `detailed midground characters`, `layered
+foreground rocks`, `subtle texture`, `cinematic illustrated film frame`, `atmospheric dramatic
+lighting`). Ovaj string je od toga zadržao dva tokena — `detailed` i `layered environments` — i to
+identično u svakom shotu. Obrazloženje iznad je tačno: svaka reč konstante košta svaki put. Ali
+posledica je da ECU na traci i XLS na ostrvu traže istu gustinu, što nijedan od njih ne opisuje.
+
+Otud podela na dva sloja:
+
+- **GLOBAL STYLE** — `STYLE:` blok, 16 reči, konstantan, prva linija svakog prompta. Nepromenjen.
+- **SHOT DETAIL DENSITY** — `DETAIL:` blok, 10–20 reči, **različit po kadru**, vezan za
+  `tags.shot_size`. Obavezan na shemi 2 (S2).
+
+Pravilo je jedno: **`DETAIL` imenuje samo ono što ta veličina kadra uopšte može da pokaže.** Traženje
+pojedinačnih dlaka u XLS-u i atmosferske dubine u ECU-u su dva oblika iste greške.
+
+| `shot_size` | Šta `DETAIL` imenuje | Primer |
+|---|---|---|
+| `ECU` | mikrotekstura jedne površine | `individual fibres of the ribbon, a single burr on the torn rivet, dust caught in the weave` |
+| `CU` | tekstura materijala i koža/dlaka | `coarse fur strands separating at the shoulder, hammer marks in the iron, wet sheen on stone` |
+| `MS` | tkanina, oprema, površina tla | `woven wool nap on the cloaks, bronze brooch edges, grit and standing water on the rock` |
+| `LS` | siluete, obrisi, slojevi terena | `layered rock shelves, figures readable by outline and posture, wind-torn grass across the middle ground` |
+| `XLS` | atmosferska dubina i slojevi | `three layers of ridge fading into haze, weather moving across the lake, scale carried by silhouette` |
+| `aerial` | šara i raspored, ne detalj | `pattern of shoreline and rock, figures as marks, no facial or material detail` |
+
+**`DETAIL` ne sme da nosi stilske tokene.** Zabranjena lista iznad važi i ovde: `4k`, `masterpiece`,
+`photorealistic` i ostali prazni booster tokeni su zabranjeni u celom image promptu, a ne samo u
+`STYLE` bloku. `DETAIL` imenuje **konkretnu vidljivu stvar**, ne stepen kvaliteta.
+
+**Odnos prema R4.** Kao i style string i `locked_description`, blokovi `SCALE` i `DETAIL` se izuzimaju
+iz provere ponavljanja n-grama — njihov posao je da se ponavljaju (`schemas.md` §4.1).

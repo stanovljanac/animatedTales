@@ -176,6 +176,14 @@ Isti oblik za `characters`, `locations` i `key_props`.
 | `id` | string (kebab) | da | **Jedinstven preko sva tri niza zajedno**, ne samo unutar svog. `shot.characters[]` referiše ovaj `id`. |
 | `name` | string | da | Ime za ljudski prikaz (`render.mjs`, `shotlist.mjs`). Za lokacije/rekvizite kratak naziv. |
 | `locked_description` | string | da | **25–40 reči** po `countWords` (0.6). Kopira se doslovno u `image_prompt` svakog shota gde entitet učestvuje — proverava C1. |
+| `scale_critical` | boolean | ne | Shema 2. `true` kad je veličina entiteta deo njegovog identiteta (Fenrir, div, brod, građevina). Svaki shot koji ga nosi mora da ima blok `SCALE` — proverava S4. Podrazumevano `false`. |
+
+**`locked_description` nosi identitet, nikad pozu ni stanje.** „Coiled in a loose pile" i „coiled
+small" su poze; kad shot iste te predmete pokaže rasprsnute ili zategnute, C1 doslovno ubaci pozu
+koja protivreči kadru, u istoj rečenici. Poza pripada blokovima `ACTION` i `FRAME LAYOUT`, koji se
+pišu po kadru. Isto važi za relacione instrukcije („always drawn larger than the gods around him"):
+odnos zadaje `SCALE`, a ne opis entiteta — inače prompt tvrdi odnos prema nečemu što `NOT IN FRAME`
+istovremeno izbacuje iz kadra.
 
 `locked_description` piše se kao **imenička fraza bez tačke na kraju**, tako da se uklapa u
 `SUBJECT:` blok prompta bez prepravke:
@@ -314,7 +322,7 @@ Izvorni plan ovaj fajl nigde ne definiše iako ga pet alata čita — zato je ov
 
 | Polje | Tip | Obavezno | Opis |
 |---|---|---|---|
-| `schema_version` | number | da | Trenutno `1`. Raste kad se ugovor probije nekompatibilno. |
+| `schema_version` | number | da | `1` ili `2`. Raste kad se ugovor probije nekompatibilno. **Shema 2** uvodi `SCALE`/`DETAIL` blokove, PRIMARY/SECONDARY lockove, `visual_priority` i plafon P1 od 280 reči (3.3.1). Linter bira pravila po ovom broju, pa epizode na shemi 1 ostaju validne bez prepravke. |
 | `episode` | string (kebab) | da | Slug; mora da odgovara `episode.json.slug`. |
 | `generated_at` | string | da | ISO 8601 UTC, npr. `"2026-09-04T15:22:31Z"`. |
 | `narration_duration` | number | da | Prepisano iz `timing.json.duration`. Referenca za T1. |
@@ -357,8 +365,9 @@ prikazuje upravo ovaj nivo.
 | `motion_budget` | number \| null | da | Sekunde u koje pokret mora da stane; ide u `MOTION BUDGET:` liniju animation prompta. Obavezan (`!== null`) kad `use_len < 9.0` (T3); tada `= use_len`. |
 | `source_file` | string | da | `"shots/part07.mp4"` — klip iz Flow-a. F1 traži da postoji i da traje ≥ `use_out`. |
 | `ingredient_image` | string \| null | da | `"images/shot07.jpeg"` — slika koja u Flow ide kao *ingredient*. `null` kad se shot generiše bez nje. |
-| `characters` | array\<string\> | da | `id`-jevi iz `episode.json` (bilo kog od tri niza) koji se u shotu vide. Ulaz za C1. Prazan niz je legitiman. |
-| `image_prompt` | string | da | 90–160 reči po `countWords` (P1). Sadrži blokove iz S2. |
+| `characters` | array\<string\> | da | `id`-jevi iz `episode.json` (bilo kog od tri niza) koji se u shotu vide. Ulaz za C1. Prazan niz je legitiman. **Shema 2: redosled nosi značenje** — `characters[0]` je PRIMARY lock i mora doslovno da stoji u bloku `SUBJECT`; ostali su SECONDARY. Najviše `LIMITS.maxLocks` (3). Proverava S5. |
+| `visual_priority` | array\<string\> | shema 2 | Rangirana lista od **3 do 5** stavki: šta model sme da promaši poslednje. Stavka `[0]` mora da imenuje PRIMARY lock. **Ne ulazi u prompt** — vidi 3.3.1. Proverava S5. |
+| `image_prompt` | string | da | Shema 1: 90–160 reči. **Shema 2: 90–280 reči** po `countWords` (P1), sa mekim ciljnim opsegom 180–260 (R5, ADVISORY). Sadrži blokove iz S2. |
 | `animation_prompt` | string | da | 60–100 reči po `countWords` (P2). |
 | `tags` | Tags | da | Šest osa, vidi 3.5. |
 
@@ -368,12 +377,35 @@ ne mora da bude — kad prva sekunda generisanog klipa ima artefakt, seče se od
 `t_in`/`t_out` nisu u izvornom nabrajanju iz C01; bez njih T1 (gapovi i preklapanja) ne može da se
 proveri, jer bi linter morao da rekonstruiše poziciju sabiranjem — a onda gap po definiciji ne postoji.
 
-**Budžet reči je uzak čim shot referiše više entiteta.** Dva zaključana opisa (28 + 31 reč u
-kanonskom primeru) pojedu 59 od 160 reči P1 budžeta pre nego što se napiše ijedan blok. Provereno
-na fixture-u: shot sa dva entiteta staje u 152 reči samo uz kratke `FRAME LAYOUT` i `FACING` linije.
-Shot sa **tri** zaključana entiteta P1 realno ne može da prođe. To je ograničenje, ne bug — kadar u
-kome se tri zaključana entiteta jasno vide je ionako prepakovan, i pravilnije je da se rasformira
-na dva shota nego da se zaključani opisi skraćuju (skraćivanje ruši C1 na oba mesta).
+### 3.3.1 Hijerarhija vizuelne težine (shema 2)
+
+**Zašto je plafon podignut sa 160 na 280.** Broj 90–160 je postavljen pre nego što je ijedna
+epizoda postojala i nikad nije bio ograničenje modela. Prva merena epizoda pokazala je šta je
+stvarno kupio: 16 reči `STYLE` + 30–35 reči `locked_description` + pet kamera-blokova (~66) troše
+~112 reči pre nego što se napiše išta o radnji, svetlu i boji, a **17 od 27 shotova sedelo je na
+≤5 reči od plafona**. Posledica nije bila sažetost nego gubitak sadržaja: iz plafona je izvedeno
+„pravilo" jednog zaključanog entiteta po shotu, pa je u tri kadra u kojima je vuk bio
+`center, near-camera, large` lock potrošen na lanac, a glavni lik epizode dobio četiri reči.
+
+**Zaobilaženje ograničenja ne sme da postane princip.** Otud tri polja umesto jednog broja:
+
+1. **PRIMARY / SECONDARY lock** (`characters[]`, redosled). PRIMARY je vizuelni subjekt kadra
+   na veličini na kojoj mu se opis vidi, i stoji u `SUBJECT` bloku — najranije mesto u promptu
+   posle stila. SECONDARY (najviše dva) idu u `SUBJECT 2` i dalje. Poredak nije kozmetika:
+   `PRIMARY: Fenrir / SECONDARY: Gleipnir` i obrnuto daju dve različite slike.
+2. **`SCALE` blok** (S4), obavezan kad je entitet `scale_critical`. Njegov posao je da **više puta**
+   tvrdi istu stvar o veličini. To nije ponavljanje koje treba skratiti — za difuzioni model je
+   učestalost težina, i to je jedini način da se kaže „ovo je važnije od ostalog".
+3. **`visual_priority`** (S5), rangirana lista od 3 do 5 stavki. Živi u `storyboard.json` i
+   **nikad se ne upisuje u prompt**: model ne čita meta-instrukcije o važnosti, pa bi lista
+   trošila budžet ne menjajući sliku. Njena vrednost je što je mašinski uporediva sa PRIMARY
+   lockom — kad `visual_priority[0]` kaže „Fenrirova veličina", a `characters[0]` je `laeding`,
+   S5 to prijavi. Isti nesklad je u prvoj epizodi prošao neprimećen kroz ceo BLOCKING sloj.
+
+**Meki opseg umesto novog tvrdog.** P1 blokira samo na 90 i 280. Ciljni opseg 180–260 je ADVISORY
+(R5), zato što se generator prema tvrdom pragu ponaša isto kao ranije — puni prompt do plafona.
+Cilj nije popuniti broj reči nego pokriti vizuelne prioritete; kadar kome je dovoljno 170 reči
+ne treba da se razvlači, a R5 čuva da to bude odluka, a ne previd.
 
 ### 3.4 `link_group`
 
@@ -493,9 +525,11 @@ Tabela je prođena red po red.
 | **T2** | `use_len` u granicama | 3.0–10.0s | `shot.use_len` | da |
 | **T3** | `motion_budget` prisutan kad `use_len < 9.0` | — | `shot.motion_budget`, `shot.use_len` | da |
 | **S1** | zabranjene prostorne fraze bez screen-position klauzule | — | `shot.image_prompt`, `shot.animation_prompt` | da |
-| **S2** | obavezni blokovi `CAMERA`, `FRAME LAYOUT`, `FACING`, `SCREEN DIRECTION`, `NOT IN FRAME` | — | `shot.image_prompt` | da |
+| **S2** | obavezni blokovi `CAMERA`, `FRAME LAYOUT`, `FACING`, `SCREEN DIRECTION`, `NOT IN FRAME`; **shema 2 uz njih `SUBJECT` i `DETAIL`** | — | `shot.image_prompt` | da |
 | **S3** | reči koje impliciraju rez unutar klipa (`then`, `later`, `afterwards`, `cuts to`, `meanwhile`) | — | `shot.animation_prompt` | da |
-| **P1** | dužina image prompta | 90–160 reči | `shot.image_prompt` + `countWords` (0.6) | da |
+| **S4** | blok `SCALE` kad shot nosi `scale_critical` entitet (shema 2) | — | `shot.characters[]` → `episode.json.*.scale_critical`, `shot.image_prompt` | da |
+| **S5** | hijerarhija lockova (shema 2): PRIMARY u `SUBJECT`, najviše 3 locka, `visual_priority` 3–5 stavki sa PRIMARY na vrhu | — | `shot.characters[]`, `shot.visual_priority`, `shot.image_prompt` | da |
+| **P1** | dužina image prompta | shema 1: 90–160; **shema 2: 90–280** reči | `shot.image_prompt` + `countWords` (0.6) | da |
 | **P2** | dužina animation prompta | 60–100 reči | `shot.animation_prompt` + `countWords` (0.6) | da |
 | **C1** | `locked_description` doslovno u svakom shotu gde lik učestvuje | — | `shot.characters[]` → `episode.json.{characters,locations,key_props}[].locked_description`, traži se u `shot.image_prompt` po `normalize` (0.7) | da |
 | **F1** | svaki shot ima svoj `shots/partNN.mp4`, izvor ≥ `use_out` | — | `shot.source_file`, `shot.use_out` (+ `probe()` iz `ffmpeg.mjs`) | da |
@@ -519,6 +553,8 @@ Ne blokira montažu, ali čita iste podatke.
 | R2 | miks tipova shotova | `shot.tags.subject_type` |
 | R3 | korišćeni vizuelni uređaji | `beat.device` |
 | R4 | ponavljanje n-grama > 12 reči | `shot.image_prompt`, `shot.animation_prompt`, **minus** svi `locked_description` iz `episode.json`, kanonski style string iz `docs/reference/style-string.md` i fiksne `PRESERVE`/`FORBID` linije iz `docs/reference/prompt-templates.md` |
+| R5 | dužina image prompta izvan mekog opsega 180–260 (shema 2) | `shot.image_prompt` + `countWords` |
+| R6 | `SCREEN DIRECTION` popunjen negacijom (shema 2) | `shot.image_prompt`, lista D iz `docs/reference/camera-language.md` |
 | C2 | broj multi-visual klipova | **nema polje**; meri se iz `shot.animation_prompt` — vidi 5.6 tačka 11 |
 
 **R4 protiv C1.** C1 *zahteva* da isti blok od 25–40 reči stoji u svakom shotu gde se lik pojavljuje;
@@ -1066,7 +1102,12 @@ Skilovi `at-storyboard` / `at-qa` / `at-assemble` žive u `.claude/skills/<ime>/
 CLI ni fajl I/O, pa u repou nije postojalo ništa što od `timing.json`-a i grupisanja rečenica pravi
 fajl. Umesto dodavanja I/O u modul (čije zaglavlje eksplicitno tvrdi suprotno), dodat je tanak alat
 iznad njega. Podela: **vremena** iz `planTimeline`, **kreativne odluke** iz beat mape, **prompti,
-tagovi, likovi i `link_group`** se ne popunjavaju — to je C14.
+tagovi, likovi, `visual_priority` i `link_group`** se ne popunjavaju — to je C14.
+
+**1a. Skelet se od C14 piše sa `schema_version: 2`** i nosi prazan `visual_priority` uz prazan
+`characters`. Razlog za prazno polje umesto izostavljenog: polje koje se ne vidi u skeletu se ne
+popunjava ni kasnije — isto pravilo po kom `ingredient_image` stoji kao `null` umesto da nedostaje.
+Zatečene epizode na shemi 1 ostaju validne; broj bira pravila, i u linteru i u `check-fixtures.mjs`.
 
 **2. Beat mapa je ulazni fajl `episodes/<slug>/beats.json`.** Niz beatova, ili `{ "beats": [...] }`:
 

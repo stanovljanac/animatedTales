@@ -104,3 +104,56 @@ nije upotrebljen — samo je imenica prevedena u sliku.
 Kontrola pre predaje storyboarda: uzmi kolonu `VIEWER SEES` i pročitaj je bez narracije. Ako se iz nje
 sama od sebe ne vidi priča, uređaji nisu odradili posao. Koji su uređaji korišćeni izlistava ADVISORY
 signal R3; on ne blokira, ali epizoda u kojoj se isti slug ponavlja više od dvaput je crvena zastava.
+
+---
+
+## Bezbednost uređaja za animaciju
+
+Ovaj katalog je do sada opisivao **slike**. Ali slika nije proizvod — ona je *startni frejm za
+video*. To su dva različita kriterijuma, i razilaze se: kadar koji je odlična ilustracija ume da
+bude loš izvor za image-to-video model.
+
+Otud jedno polje uz svaki uređaj:
+
+| Uređaj | `animation_risk` | Zašto |
+|---|---|---|
+| `animated-map` | nizak | linije i markeri se crtaju sami, model ih prati |
+| `ledger-accumulation` | nizak | akumulacija je po prirodi kontinuiran pokret |
+| `process-cutaway` | nizak | presek je statična geometrija, pokret nose samo delovi |
+| `before-after` | **visok** | prelaz između dva stanja je rez u svemu osim po imenu; model ga izvede kao scene change, što `FORBID` linija zabranjuje |
+| `timeline-seasons` | srednji | radi samo uz zaključanu kameru; čim se kadar pomeri, model menja i sadržaj a ne samo svetlo |
+| `macro-object` | nizak | najpouzdaniji uređaj u katalogu; jedan predmet, plitka dubina |
+| `silhouette` | **visok** | vidi ispod |
+| `crowd-as-texture` | srednji | šara se drži, pojedinačne figure se rekomponuju iz frejma u frejm |
+| `empty-aftermath` | nizak | kadar je ionako miran, pokret je ambijentalni |
+
+### `silhouette` — zašto je visok rizik
+
+Silueta je ravna crna površina bez unutrašnjih obeležja. Image-to-video model prati crte, teksturu i
+ivice; kad ih nema, nema ni šta da prati. Tri posledice, sve tri viđene u prvoj epizodi:
+
+1. model **preslika** siluetu i pored nje se pojavi drugi primerak istog lika;
+2. model je protumači kao **senku ili rupu** i pusti da se stopi sa susednim tamnim objektom;
+3. silueta **iscuri** iz kadra jer joj model ne prepoznaje granicu kao granicu tela.
+
+Uređaj se ne izbacuje — vizuelno je jak i jeftin. Ali se koristi pod dva uslova:
+
+- **zaključana kamera**, i jedini pokret u kadru je **ambijentalni** (trava, oblak, voda, dim), nikad
+  sama silueta;
+- ili kao **ulazna slika iz koje se izlazi** u puni render u istom klipu (silueta u prvoj sekundi,
+  svetlo je otvara u lik) — tada model ima šta da prati od trenutka kada mu treba.
+
+**Nikad kao uvodni kadar epizode.** Prvi shot je mesto gde gledalac odlučuje da ostane, a ovo je
+najmanje pouzdana tehnika u katalogu.
+
+### Zašto samo jedna osa, a ne matrica rizika
+
+Predlagana je šira matrica (`animation_risk`, `identity_risk`, `continuity_risk`). Ostala je jedna
+osa iz dva razloga. Prvo, ostale dve nisu svojstva uređaja: **rizik identiteta** je svojstvo
+entiteta (da li je zaključan i na kojoj veličini — to meri C1 i S5), a **rizik kontinuiteta** je
+svojstvo reza (da li su shotovi u istom `link_group` — to meri R1). Upisati ih ovde značilo bi
+držati tri kopije istog podatka. Drugo, vrednosti u tabeli iznad su izvedene iz jedne epizode i
+biće ispravljane; devet uređaja puta četiri ose je trideset šest izmišljenih ocena, a ovaj projekat
+kvote **meri, ne nameće** — isto pravilo po kome R2 i R3 još nemaju prag.
+
+Matrica se otvara kad postoje podaci iz tri epizode, ne pre.
