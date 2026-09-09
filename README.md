@@ -23,7 +23,10 @@ Zato nijedan kadar ne može da „pojede" tuđe vreme, a zbir se poklapa sa narr
 | 08 | montaža u `final.mp4` | `tools/assemble.mjs` |
 
 Slike i klipovi se generišu ručno u Google Flow-u — `shotlist.mjs` ispisuje čeklistu kojom se
-to radi. Faze 05–08 vode skilovi u [`.claude/skills/`](.claude/skills).
+to radi. Ista čeklista u zaglavlju nosi i **budžet kredita**: slika je u Flow-u besplatna, klip
+nije, pa je budžet epizode uvek budžet za video, a dnevnih 50 kredita diktira raspored —
+[`docs/reference/google-ai-plus.md`](docs/reference/google-ai-plus.md).
+Faze 05–08 vode skilovi u [`.claude/skills/`](.claude/skills).
 
 ## Pokretanje
 
@@ -55,6 +58,7 @@ node tests/check-fixtures.mjs # izvršni oblik ugovora iz schemas.md
 | `docs/reference/` | **ugovori** — `schemas.md` je izvor istine za sva tri JSON fajla epizode |
 | `docs/plan/` | plan rada po celinama (C01–C15) i evidencija odstupanja |
 | `docs/prompts/` | promptovi za faze koje se rade u chat modelu |
+| `docs/reference/google-ai-plus.md` | šta pretplata daje lancu i koliko epizoda staje u mesec |
 | `tools/` | ceo lanac, čist Node, bez zavisnosti |
 | `tests/` | testovi i fixture epizode koje definišu ugovor |
 | `episodes/<slug>/` | `episode.json`, `script.md`, `timing.json`, `storyboard.json`, `notes.md` |

@@ -66,6 +66,67 @@ export function resolveOnly(shots, only) {
   return out;
 }
 
+// ----------------------------------------------------------- Flow krediti
+//
+// Slika je besplatna, klip nije — ceo budžet epizode je budžet za video. Brojke i
+// obrazloženje su u `docs/reference/google-ai-plus.md`; ovde stoje zato što se odluka o
+// tieru donosi pred Flow-om, sa ovom listom u ruci, a ne pri čitanju dokumentacije.
+
+/** Kredita po klipu. Slika (Nano Banana) je 0 i ne pojavljuje se u računici. */
+export const TIERS = [
+  { name: 'Veo 3.1 Lite', cost: 10 },
+  { name: 'Veo 3.1 Fast', cost: 20 },
+  { name: 'Veo 3.1 Quality', cost: 100 },
+];
+
+export const DAILY = 50;          // svima, ne prenosi se u sutra
+export const MONTHLY = 200;       // AI Plus, ne prenosi se u naredni mesec
+export const CEILING = 30 * DAILY + MONTHLY;
+
+// 1700 -> 1.700; bez regexa i bez toLocaleString, koji zavisi od ICU u okruženju.
+const thousands = (n) => {
+  const d = String(n);
+  let out = '';
+  for (let k = 0; k < d.length; k += 1) {
+    if (k > 0 && (d.length - k) % 3 === 0) out += '.';
+    out += d[k];
+  }
+  return out;
+};
+
+/**
+ * Cena liste klipova po tieru.
+ *
+ * `days` računa **samo dnevne kredite**, jer je 200 mesečnih jednokratno: pokriju četiri
+ * dana prvoj epizodi u mesecu i posle ih nema. Broj dana je zato gornja granica koja ne laže
+ * u drugoj polovini meseca — a dnevni plafon je ono što stvarno diktira raspored.
+ *
+ * @param {number} clips broj klipova koji se generiše
+ * @returns {{name: string, cost: number, total: number, days: number, overCeiling: boolean}[]}
+ */
+export function creditPlan(clips) {
+  return TIERS.map(({ name, cost }) => {
+    const total = clips * cost;
+    return { name, cost, total, days: Math.ceil(total / DAILY), overCeiling: total > CEILING };
+  });
+}
+
+/** Blok o kreditima za zaglavlje čekliste. @returns {string[]} redovi */
+export function creditLines(clips) {
+  const out = [
+    '',
+    `FLOW KREDITI — ${clips} ${plural(clips, 'klip', 'klipa', 'klipova')}; slike su besplatne (Nano Banana, 0 kredita)`,
+  ];
+  for (const r of creditPlan(clips)) {
+    const head = `  ${r.name.padEnd(16)}${String(r.cost).padStart(3)} cr/klip ${thousands(r.total).padStart(7)} cr`;
+    out.push(r.overCeiling
+      ? `${head}   preko mesečnog plafona (${thousands(CEILING)})`
+      : `${head}   ${r.days} ${plural(r.days, 'dan', 'dana', 'dana')} po ${DAILY} cr/dan`);
+  }
+  out.push(`  Stanje: ${DAILY} cr/dan + ${MONTHLY} cr/mesec (AI Plus); ništa se ne prenosi.`);
+  return out;
+}
+
 /**
  * @param {object} storyboard već proveren sa `assertDisplayable`
  * @param {{only?: Set<string>|null}} [opts]
@@ -80,6 +141,7 @@ export function renderShotlist(storyboard, { only = null } = {}) {
       `${plural(kept.length, 'shot', 'shota', 'shotova')}` +
       (only ? ` od ${all.length} (--only)` : '') + ' · redosled generisanja',
     'Promptovi se kopiraju doslovno, red po red, bez izmena i bez prelamanja.',
+    ...creditLines(kept.length),
   ];
 
   for (const b of storyboard.beats) {
