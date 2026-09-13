@@ -8,26 +8,34 @@
 // ako ima ijedan BLOCKING nalaz. ADVISORY sloj (C07) meri i prikazuje, ali **nikad ne menja
 // exit code** — šumni linter koji stalno laje naučiš da ignorišeš.
 //
-// Deset provera, sve determinističke, sve sa jednoznačnim odgovorom da/ne
+// Provere su determinističke, sa jednoznačnim odgovorom da/ne
 // (docs/plan/C06-lint-blocking.md, docs/reference/schemas.md §4):
 //
+//   M1  režim rendera — still_motion je važeći na still shotu i odsutan na clip shotu
 //   T1  pokrivenost tajmlajna — gapovi, preklapanja, sum(use_len) vs narration_duration (±0.2s)
-//   T2  use_len u 3.0–10.0s
-//   T3  motion_budget prisutan kad use_len < 9.0
+//   T2  use_len u 3.0–10.0s (still: 2.5–9.0s, uz use_in = 0)
+//   T3  motion_budget prisutan kad use_len < 9.0 (still: mora da bude null)
 //   S1  zabranjene prostorne fraze bez screen-position klauzule
 //   S2  pet obaveznih blokova u image promptu
-//   S3  reči koje impliciraju rez unutar klipa, u animation promptu
+//   S3  reči koje impliciraju rez unutar klipa, u animation promptu (still: ne meri se)
 //   P1  image prompt 90–160 reči
-//   P2  animation prompt 60–100 reči
+//   P2  animation prompt 60–100 reči (still: mora da bude null)
 //   C1  locked_description doslovno u image promptu svakog shota gde entitet učestvuje
-//   F1  svaki shot ima svoj klip, izvor ≥ use_out
+//   F1  svaki shot ima svoj klip, izvor ≥ use_out (still: slika postoji i čita se)
 //
-// Pet ADVISORY signala (docs/plan/C07-lint-advisory.md, schemas.md §4.1):
+// **Grananje ide po shotu, ne po shemi** (schemas.md §3.3.2). Režim rendera i oblik prompta su
+// dve nezavisne ose: `schema_version` bira P1 plafon i S2 blokove, `render_mode` bira gornju
+// granu. Sedam provera — T1, S1, S2, S4, S5, P1, C1 — ne zna ni za jednu od te dve.
+//
+// ADVISORY signali (docs/plan/C07-lint-advisory.md, schemas.md §4.1):
 //
 //   R1  pravilo razlike — uzastopni shotovi dele previše osa, plus eskalacija na 3+ shota
 //   R2  miks tipova shotova — samo mera, bez praga
 //   R3  upotrebljeni vizuelni uređaji — samo lista
 //   R4  ponavljanje n-grama između promptova, >12 uzastopnih identičnih reči
+//   R5  dužina image prompta izvan mekog opsega (shema 2)
+//   R6  SCREEN DIRECTION bez imenovanog pokreta (shema 2)
+//   R7  still_motion se ne slaže sa tags.camera_motion
 //   C2  broj multi-visual klipova
 //
 // Nalaz uvek nosi izmerenu i očekivanu vrednost. Bez izmerene vrednosti izveštaj je
@@ -40,16 +48,21 @@ import { fileURLToPath } from 'node:url';
 import { probe } from './ffmpeg.mjs';
 import {
   EPS, LIMITS, MULTI_VISUAL_MARKERS, R1_AXES, R1_ESCALATION_AXES, R1_MAX_DIFFERING,
-  R4_MIN_WORDS, S2_BLOCKS, S2_BLOCKS_V2, S3_WORDS, TAGS,
-  countWords, loadCameraLanguage, loadFixedPromptLines, loadStyleString,
-  normalize, q, r4Tokens, round3, s1Violations,
+  R4_MIN_WORDS, RENDER_MODES, S2_BLOCKS, S2_BLOCKS_V2, S3_WORDS, STILL_MOTIONS,
+  STILL_MOTION_CAMERA, TAGS,
+  countWords, isStill, loadCameraLanguage, loadFixedPromptLines, loadStyleString,
+  normalize, q, r4Tokens, renderMode, round3, s1Violations,
 } from './contract.mjs';
 
-/** Redosled kojim se nalazi sortiraju u izveštaju — isti kao BLOCKING tabela. */
-export const CHECKS = ['T1', 'T2', 'T3', 'S1', 'S2', 'S3', 'S4', 'S5', 'P1', 'P2', 'C1', 'F1'];
+/**
+ * Redosled kojim se nalazi sortiraju u izveštaju — isti kao BLOCKING tabela.
+ * `M1` stoji prvi jer režim rendera odlučuje po kojim su se pravilima merila ostala:
+ * čitalac koji vidi M1 nalaz zna zašto su T3 i P2 rekli ono što su rekli.
+ */
+export const CHECKS = ['M1', 'T1', 'T2', 'T3', 'S1', 'S2', 'S3', 'S4', 'S5', 'P1', 'P2', 'C1', 'F1'];
 
 /** ADVISORY kodovi, redosledom ADVISORY tabele. Nikad ne ulaze u exit code. */
-export const ADVISORY = ['R1', 'R2', 'R3', 'R4', 'R5', 'R6', 'C2'];
+export const ADVISORY = ['R1', 'R2', 'R3', 'R4', 'R5', 'R6', 'R7', 'C2'];
 
 const near = (a, b) => Math.abs(a - b) < EPS;
 const fmt = (t) => Number(t).toFixed(3).replace(/\.?0+$/, '');
@@ -102,6 +115,11 @@ export function assertShape(storyboard, episode) {
       const sid = s?.shot_id ?? '(bez shot_id)';
       for (const k of SHOT_FIELDS) if (!has(s, k)) bad.push(`shot ${sid}: nedostaje ${k}`);
       if (has(s, 'characters') && !Array.isArray(s.characters)) bad.push(`shot ${sid}: characters nije niz`);
+      // Nepoznat režim nije nalaz nego razlog da alat stane: sve provere ispod biraju granu
+      // po njemu, pa bi ih nepoznata vrednost tiho pustila kroz clip granu (schemas.md 3.7/15).
+      if (!RENDER_MODES.includes(renderMode(s))) {
+        bad.push(`shot ${sid}: render_mode "${s.render_mode}" nije ${RENDER_MODES.join(' ni ')}`);
+      }
       // Šest osa iz §3.5 su ulaz za R1 i R2. Kad ih nema, `undefined === undefined` bi značilo
       // „shotovi dele osu" — R1 bi merio ništa i ćutao, što je gore od pada.
       if (!has(s, 'tags') || s.tags === null || typeof s.tags !== 'object') {
@@ -221,45 +239,88 @@ const MOTION_LINE = /MOTION BUDGET:[^\n]*?(\d+(?:\.\d+)?)\s*s\b/i;
 function checkShot(shot, { lists, entities, v = 1 }) {
   const out = [];
   const where = `shot ${shot.shot_id}`;
-  const { min: uMin, max: uMax } = LIMITS.useLen;
+  const still = isStill(shot);
+  const { min: uMin, max: uMax } = still ? LIMITS.stillUseLen : LIMITS.useLen;
 
-  // T2 — use_len u granicama
+  // M1 — režim rendera je sam sebi ugovor (schemas.md §3.3.2).
+  if (still) {
+    if (!STILL_MOTIONS.includes(shot.still_motion)) {
+      out.push(finding('M1', where,
+        `still_motion "${shot.still_motion}" nije pokret koji montaža ume da izvede`,
+        `"${shot.still_motion}"`, STILL_MOTIONS.join(' | ')));
+    }
+    if (shot.ingredient_image !== null && shot.ingredient_image !== undefined) {
+      out.push(finding('M1', where,
+        `ingredient_image je "${shot.ingredient_image}", a still shot nema klip u koji bi slika ušla`,
+        `"${shot.ingredient_image}"`, 'null'));
+    }
+  } else if (shot.still_motion !== null && shot.still_motion !== undefined) {
+    // Deklarisan pokret koji ništa neće izvesti je tiši kvar od pogrešnog pokreta: sve
+    // prolazi, a slika se ne pomera.
+    out.push(finding('M1', where,
+      `still_motion "${shot.still_motion}" na clip shotu — nad klipom se ne izvodi ništa`,
+      `"${shot.still_motion}"`, 'null (pokret nosi animation prompt)'));
+  }
+
+  // T2 — use_len u granicama; still ima svoj, uži raspon (schemas.md §3.3.2)
   if (shot.use_len < uMin - EPS || shot.use_len > uMax + EPS) {
     out.push(finding('T2', where,
-      `use_len ${fmt(shot.use_len)}s — izvan granica ${uMin.toFixed(1)}–${uMax.toFixed(1)}`,
+      `use_len ${fmt(shot.use_len)}s — izvan granica ${uMin.toFixed(1)}–${uMax.toFixed(1)}` +
+        (still ? ' (still)' : ''),
       `${fmt(shot.use_len)}s`, `${uMin.toFixed(1)}–${uMax.toFixed(1)}s`));
   }
 
-  // T3 — motion_budget kad se pokret mora ugurati u manje od 9s
-  if (shot.use_len < LIMITS.motionBelow - EPS) {
-    if (shot.motion_budget === null) {
-      out.push(finding('T3', where,
-        `motion_budget je null, a use_len je ${fmt(shot.use_len)}s`,
-        'null', `${fmt(shot.use_len)}s (= use_len)`));
-    } else if (!near(shot.motion_budget, shot.use_len)) {
-      out.push(finding('T3', where,
-        `motion_budget ${fmt(shot.motion_budget)}s != use_len ${fmt(shot.use_len)}s`,
-        `${fmt(shot.motion_budget)}s`, `${fmt(shot.use_len)}s`));
-    }
+  // T2 — slika nema unutrašnji tajmlajn, pa se u nju ne ulazi od 0.5s
+  if (still && !near(shot.use_in, 0)) {
+    out.push(finding('T2', where,
+      `use_in ${fmt(shot.use_in)}s na still shotu — slika nema unutrašnji tajmlajn`,
+      `${fmt(shot.use_in)}s`, '0'));
   }
-  if (shot.motion_budget !== null) {
-    // prompt-templates.md: MOTION BUDGET linija nosi isti broj kao shot.motion_budget
-    const m = String(shot.animation_prompt).match(MOTION_LINE);
-    if (!m) {
+
+  // T3 — motion_budget kad se pokret mora ugurati u manje od 9s.
+  // Na still shotu je obrnuto: budžet pokreta je instrukcija Veo modelu koliko sekundi ima,
+  // a modela nema — pa polje mora da bude prazno.
+  if (still) {
+    if (shot.motion_budget !== null && shot.motion_budget !== undefined) {
       out.push(finding('T3', where,
-        'animation prompt nema MOTION BUDGET liniju sa brojem sekundi',
-        'nema linije', `MOTION BUDGET: … ${fmt(shot.motion_budget)}s`));
-    } else if (!near(Number(m[1]), shot.motion_budget)) {
-      out.push(finding('T3', where,
-        `MOTION BUDGET u promptu kaže ${m[1]}s, a motion_budget je ${fmt(shot.motion_budget)}s`,
-        `${m[1]}s`, `${fmt(shot.motion_budget)}s`));
+        `motion_budget je ${fmt(shot.motion_budget)}s, a still shot nema model kome bi ga zadao`,
+        `${fmt(shot.motion_budget)}s`, 'null'));
+    }
+  } else {
+    if (shot.use_len < LIMITS.motionBelow - EPS) {
+      if (shot.motion_budget === null) {
+        out.push(finding('T3', where,
+          `motion_budget je null, a use_len je ${fmt(shot.use_len)}s`,
+          'null', `${fmt(shot.use_len)}s (= use_len)`));
+      } else if (!near(shot.motion_budget, shot.use_len)) {
+        out.push(finding('T3', where,
+          `motion_budget ${fmt(shot.motion_budget)}s != use_len ${fmt(shot.use_len)}s`,
+          `${fmt(shot.motion_budget)}s`, `${fmt(shot.use_len)}s`));
+      }
+    }
+    if (shot.motion_budget !== null) {
+      // prompt-templates.md: MOTION BUDGET linija nosi isti broj kao shot.motion_budget
+      const m = String(shot.animation_prompt).match(MOTION_LINE);
+      if (!m) {
+        out.push(finding('T3', where,
+          'animation prompt nema MOTION BUDGET liniju sa brojem sekundi',
+          'nema linije', `MOTION BUDGET: … ${fmt(shot.motion_budget)}s`));
+      } else if (!near(Number(m[1]), shot.motion_budget)) {
+        out.push(finding('T3', where,
+          `MOTION BUDGET u promptu kaže ${m[1]}s, a motion_budget je ${fmt(shot.motion_budget)}s`,
+          `${m[1]}s`, `${fmt(shot.motion_budget)}s`));
+      }
     }
   }
 
   // S1 — zabranjene prostorne fraze bez screen-position klauzule.
   // Promptovi se gledaju odvojeno: klauzula na početku animation prompta ne sme da otključa
-  // frazu sa kraja image prompta, jer to nije ista rečenica.
-  for (const [field, text] of [['image', shot.image_prompt], ['animation', shot.animation_prompt]]) {
+  // frazu sa kraja image prompta, jer to nije ista rečenica. Na still shotu se meri samo
+  // image prompt — drugog nema.
+  const prompts = still
+    ? [['image', shot.image_prompt]]
+    : [['image', shot.image_prompt], ['animation', shot.animation_prompt]];
+  for (const [field, text] of prompts) {
     for (const v of s1Violations(text, lists)) {
       out.push(finding('S1', where,
         `${field} prompt: "${v.phrase}" bez screen-position klauzule — „${v.segment}"`,
@@ -275,25 +336,42 @@ function checkShot(shot, { lists, entities, v = 1 }) {
     }
   }
 
-  // S3 — reči koje impliciraju rez unutar klipa
-  for (const w of S3_WORDS) {
-    if (new RegExp(`\\b${w}\\b`, 'i').test(shot.animation_prompt)) {
-      out.push(finding('S3', where,
-        `animation prompt sadrži "${w}" — implicira rez unutar klipa`,
-        `"${w}"`, 'napredovanje se izražava vremenskim prorezom, ne veznikom'));
+  // S3 — reči koje impliciraju rez unutar klipa. Still shot nema animation prompt u kome bi
+  // „later" stajalo, pa se ne meri.
+  if (!still) {
+    for (const w of S3_WORDS) {
+      if (new RegExp(`\\b${w}\\b`, 'i').test(shot.animation_prompt)) {
+        out.push(finding('S3', where,
+          `animation prompt sadrži "${w}" — implicira rez unutar klipa`,
+          `"${w}"`, 'napredovanje se izražava vremenskim prorezom, ne veznikom'));
+      }
     }
   }
 
-  // P1 / P2 — dužine
-  for (const [code, field, text, lim] of [
-    ['P1', 'image', shot.image_prompt, v >= 2 ? LIMITS.imageWordsV2 : LIMITS.imageWords],
-    ['P2', 'animation', shot.animation_prompt, LIMITS.animWords],
-  ]) {
-    const n = countWords(text);
-    if (n < lim.min || n > lim.max) {
-      out.push(finding(code, where,
-        `${field} prompt ${n} reči — izvan granica ${lim.min}–${lim.max}`,
-        `${n} reči`, `${lim.min}–${lim.max}`));
+  // P1 — dužina image prompta; isto u oba režima, jer se slika piše isto.
+  const lim = v >= 2 ? LIMITS.imageWordsV2 : LIMITS.imageWords;
+  const n = countWords(shot.image_prompt);
+  if (n < lim.min || n > lim.max) {
+    out.push(finding('P1', where,
+      `image prompt ${n} reči — izvan granica ${lim.min}–${lim.max}`,
+      `${n} reči`, `${lim.min}–${lim.max}`));
+  }
+
+  // P2 — dužina animation prompta. Na still shotu obrnuto: prompta ne sme biti. `countWords`
+  // bi nad `null`-om vratio 1 („null" je token sa alfanumerikom), pa bi tišina ovde izgledala
+  // kao prompt od jedne reči.
+  if (still) {
+    if (shot.animation_prompt !== null && shot.animation_prompt !== undefined) {
+      out.push(finding('P2', where,
+        'animation prompt postoji na still shotu — nema šta da se animira',
+        `${countWords(shot.animation_prompt)} reči`, 'null'));
+    }
+  } else {
+    const a = countWords(shot.animation_prompt);
+    if (a < LIMITS.animWords.min || a > LIMITS.animWords.max) {
+      out.push(finding('P2', where,
+        `animation prompt ${a} reči — izvan granica ${LIMITS.animWords.min}–${LIMITS.animWords.max}`,
+        `${a} reči`, `${LIMITS.animWords.min}–${LIMITS.animWords.max}`));
     }
   }
 
@@ -374,10 +452,13 @@ export async function checkF1(storyboard, dir, { probe: probeFn = probe } = {}) 
     for (const s of b.shots) {
       const where = `shot ${s.shot_id}`;
       const file = path.join(dir, s.source_file);
+      const still = isStill(s);
 
       if (!fs.existsSync(file)) {
-        out.push(finding('F1', where, `nema klipa ${s.source_file}`,
-          'fajl ne postoji', `${s.source_file} ≥ ${fmt(s.use_out)}s`));
+        out.push(still
+          ? finding('F1', where, `nema slike ${s.source_file}`, 'fajl ne postoji', s.source_file)
+          : finding('F1', where, `nema klipa ${s.source_file}`,
+            'fajl ne postoji', `${s.source_file} ≥ ${fmt(s.use_out)}s`));
         continue;
       }
 
@@ -386,7 +467,18 @@ export async function checkF1(storyboard, dir, { probe: probeFn = probe } = {}) 
         p = await probeFn(file);
       } catch (err) {
         out.push(finding('F1', where, `${s.source_file} se ne može pročitati: ${err.message.split('\n')[0]}`,
-          'probe je pao', 'čitljiv video fajl'));
+          'probe je pao', still ? 'čitljiva slika' : 'čitljiv video fajl'));
+        continue;
+      }
+
+      // Slika nema trajanje i ne sme da se meri po njemu. Traži se da postoji i da se čita —
+      // a da se čita dokazuju dimenzije. Da li je dovoljno velika za zum meri montaža, koja
+      // jedina zna sa kojim `--res` se renderuje (schemas.md §5.13).
+      if (still) {
+        if (!(p.width > 0) || !(p.height > 0)) {
+          out.push(finding('F1', where, `${s.source_file}: ffmpeg ne prijavljuje dimenzije slike`,
+            'bez dimenzija', 'čitljiva slika'));
+        }
         continue;
       }
 
@@ -517,11 +609,16 @@ function checkR3(storyboard) {
  * i `schema_version` zbog signala koji samo prikazuje broj (schemas.md §5.2, zatvoreno u §5.6).
  */
 function checkC2(storyboard) {
-  const shots = flatShots(storyboard);
-  const hits = shots.filter((s) =>
+  // Samo klipovi: still shot nema animation prompt u kome bi marker stajao, pa bi u imeniocu
+  // bio shot koji po definiciji ne može da bude multi-visual.
+  const clips = flatShots(storyboard).filter((s) => !isStill(s));
+  if (!clips.length) {
+    return [signal('C2', 'episode', 'epizoda nema klipova — svi shotovi su still', '0 klipova')];
+  }
+  const hits = clips.filter((s) =>
     MULTI_VISUAL_MARKERS.some((m) => String(s.animation_prompt).includes(m)));
   return [signal('C2', 'episode',
-    `${hits.length} od ${shots.length} klipova je multi-visual` +
+    `${hits.length} od ${clips.length} klipova je multi-visual` +
     (hits.length ? ` — ${hits.map((s) => `shot ${s.shot_id}`).join(', ')}` : ''),
     `${hits.length} klipova`)];
 }
@@ -631,7 +728,11 @@ function checkR4(storyboard, episode, opts) {
     const ph = extra.length
       ? [...phrases, ...extra].sort((a, b) => b.length - a.length)
       : phrases;
-    for (const [field, text] of [['image', s.image_prompt], ['animation', s.animation_prompt]]) {
+    // Still shot nema animation prompt; `null` bi ovde ušao kao prompt od jedne reči („null").
+    const fields = isStill(s)
+      ? [['image', s.image_prompt]]
+      : [['image', s.image_prompt], ['animation', s.animation_prompt]];
+    for (const [field, text] of fields) {
       const tokens = [];
       r4Segments(text, ph).forEach((seg, k) => {
         if (k) tokens.push(BARRIER(prompts.length, k));
@@ -720,6 +821,38 @@ function checkR6(storyboard, lists) {
   return out;
 }
 
+// ---------------------------------------------------------------- R7
+
+/**
+ * Neslaganje `still_motion`-a i `tags.camera_motion`-a na still shotu (schemas.md §3.3.2).
+ *
+ * Zašto signal a ne izvođenje jednog iz drugog: `pan` ne kaže na koju stranu, pa se pokret iz
+ * taga ne može izvesti bez čitanja proze iz `SCREEN DIRECTION`. Zašto signal a ne nalaz: kadar
+ * u kome tag opisuje ono što slika prikazuje, a `still_motion` ono što montaža radi, ume da
+ * bude namerno različit — `reveal` kroz spor zum je legitiman. Merenje ostaje, presuda ne.
+ */
+function checkR7(storyboard) {
+  const out = [];
+  for (const s of flatShots(storyboard)) {
+    if (!isStill(s)) continue;
+    const want = STILL_MOTION_CAMERA[s.still_motion];
+    if (want === undefined) continue; // nevažeći pokret je M1 nalaz, ne signal
+    const got = s.tags.camera_motion;
+    if (got === want) continue;
+
+    // Dva različita nalaza pod istim kodom: „pogrešan parnjak" se popravlja jednim od dva
+    // polja, a `track`/`parallax`/`reveal` znači da kadar traži klip, ne sliku.
+    const expressible = Object.values(STILL_MOTION_CAMERA).includes(got);
+    out.push(signal('R7', `shot ${s.shot_id}`,
+      expressible
+        ? `still_motion "${s.still_motion}" traži camera_motion "${want}", a stoji "${got}"`
+        : `still_motion "${s.still_motion}", a camera_motion "${got}" — nijedan pokret nad ` +
+          'jednom slikom ga ne izražava',
+      `"${s.still_motion}" / "${got}"`));
+  }
+  return out;
+}
+
 /**
  * Ceo ADVISORY sloj nad učitanim JSON-ovima. Ne vraća nalaze nego signale i **ne sme** da
  * učestvuje u exit code-u.
@@ -736,6 +869,7 @@ export function advise(storyboard, episode, opts = {}) {
     ...checkR4(storyboard, episode, opts),
     ...checkR5(storyboard),
     ...checkR6(storyboard, lists),
+    ...checkR7(storyboard),
     ...checkC2(storyboard),
   ]);
 }
@@ -798,6 +932,7 @@ const ADVISORY_TITLES = {
   R4: 'ponavljanje n-grama između promptova',
   R5: 'dužina image prompta izvan mekog opsega',
   R6: 'SCREEN DIRECTION bez imenovanog pokreta',
+  R7: 'still_motion se ne slaže sa camera_motion',
   C2: 'multi-visual klipovi',
 };
 

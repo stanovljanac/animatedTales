@@ -22,7 +22,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 import {
-  R1_AXES, chainLetter, countWords, linkChains, loadStoryboard, plural, round3,
+  R1_AXES, chainLetter, countWords, isStill, linkChains, loadStoryboard, plural, round3,
 } from './contract.mjs';
 
 export const HEADER =
@@ -80,8 +80,8 @@ const ditto = (value, prev) => (prev !== undefined && value === prev ? DITTO : v
  */
 function boardRows(storyboard) {
   const L = [
-    '| # | beat | uređaj | vreme | len | lanac | tip | vel. | ugao | kamera | lokacija | svetlo | lockovi | P1/P2 |',
-    '|---|---|---|---|---|---|---|---|---|---|---|---|---|---|',
+    '| # | beat | uređaj | vreme | len | lanac | režim | tip | vel. | ugao | kamera | lokacija | svetlo | lockovi | P1/P2 |',
+    '|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|',
   ];
   let prev = {};
   for (const b of storyboard.beats) {
@@ -97,6 +97,9 @@ function boardRows(storyboard) {
           clock(s.t_in),
           fmt(s.use_len),
           c.group === null ? '—' : `${c.group} ${chainLetter(i)}`,
+          // Režim se ne skraćuje navodnikom: niz od pet slika je režijska činjenica koja se
+          // gleda, a ne ponavljanje koje smeta (§3.3.2).
+          isStill(s) ? `still ${s.still_motion}` : '—',
           t.subject_type,
           t.shot_size,
           t.angle,
@@ -104,7 +107,7 @@ function boardRows(storyboard) {
           ditto(cur.location, prev.location),
           ditto(cur.light, prev.light),
           s.characters.length ? s.characters.join(' + ') : '—',
-          `${countWords(s.image_prompt)}/${countWords(s.animation_prompt)}`,
+          `${countWords(s.image_prompt)}/${isStill(s) ? '—' : countWords(s.animation_prompt)}`,
         ].join(' | ') + ' |');
         prev = cur;
       });
@@ -143,7 +146,8 @@ export function renderStoryboard(storyboard) {
       `\`${DITTO}\` znači „isto kao red iznad"; ` +
       'kolone `lokacija` i `svetlo` su ose po kojima R1 meri razliku, pa se ponavljanje ' +
       'vidi u tabeli pre nego u izveštaju. `lockovi` su `shot.characters` u zapisanom ' +
-      'redosledu — na shemi 2 je prvi PRIMARY.',
+      'redosledu — na shemi 2 je prvi PRIMARY. `režim` je `—` za klip i `still <pokret>` za ' +
+      'kadar koji je jedna slika (schemas.md §3.3.2).',
     '',
     ...boardRows(storyboard),
     '',
@@ -186,13 +190,21 @@ export function renderStoryboard(storyboard) {
           ? 'samostalan · tvrd rez'
           : `lanac ${c.group} (${chainLetter(i)} od ${c.shots.length})`;
 
+        // Still kadar nema ni `use` raspon ni ingredient: slika je izvor, a pokret pravi
+        // montaža. Prikaz koji bi mu ispisao `use 0 → 4.5s` tvrdio bi da postoji klip.
+        const source = isStill(s)
+          ? [`- slika: \`${s.source_file}\` · pokret: ${s.still_motion}`]
+          : [
+            `- klip: \`${s.source_file}\` · use ${fmt(s.use_in)} → ${fmt(s.use_out)}s ` +
+              `(\`use_len\` ${fmt(s.use_len)}s)`,
+            `- motion budget: ${s.motion_budget === null ? '—' : `${fmt(s.motion_budget)}s`}`,
+            `- ingredient: ${s.ingredient_image === null ? '—' : `\`${s.ingredient_image}\``}`,
+          ];
+
         L.push('', `### shot ${s.shot_id} · ${range(s.t_in, s.t_out)} · ${fmt(s.use_len)}s · ${inChain}`,
           '',
           `- tajmlajn: ${fmt(s.t_in)} → ${fmt(s.t_out)}s`,
-          `- klip: \`${s.source_file}\` · use ${fmt(s.use_in)} → ${fmt(s.use_out)}s ` +
-            `(\`use_len\` ${fmt(s.use_len)}s)`,
-          `- motion budget: ${s.motion_budget === null ? '—' : `${fmt(s.motion_budget)}s`}`,
-          `- ingredient: ${s.ingredient_image === null ? '—' : `\`${s.ingredient_image}\``}`,
+          ...source,
           `- likovi: ${s.characters.length ? s.characters.join(', ') : '—'}`,
           // Shema 2: redosled `characters` nosi PRIMARY/SECONDARY, a `visual_priority` je
           // jedino mesto na kome piše šta kadar sme da promaši poslednje (schemas.md §3.3.1).
@@ -204,10 +216,12 @@ export function renderStoryboard(storyboard) {
           `**IMAGE PROMPT** · ${countWords(s.image_prompt)} reči`,
           '',
           fence(s.image_prompt),
-          '',
-          `**ANIMATION PROMPT** · ${countWords(s.animation_prompt)} reči`,
-          '',
-          fence(s.animation_prompt));
+          ...(isStill(s) ? [] : [
+            '',
+            `**ANIMATION PROMPT** · ${countWords(s.animation_prompt)} reči`,
+            '',
+            fence(s.animation_prompt),
+          ]));
       });
     }
   }

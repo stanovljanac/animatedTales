@@ -205,7 +205,8 @@ test('render: režijska tabla ima red po shotu, u redosledu tajmlajna', () => {
   assert.equal(rows.length, shots.length);
   assert.deepEqual(rows.map((r) => r.split(' | ')[0].slice(2)), shots.map((s) => s.shot_id));
   // Kolone se broje jednom: red koji ispadne iz šeme razbija ceo prikaz tiho.
-  for (const r of rows) assert.equal(r.split(/(?<!\\)\|/).length - 1, 15);
+  // 16 od uvođenja kolone `režim` (schemas.md §3.3.2).
+  for (const r of rows) assert.equal(r.split(/(?<!\\)\|/).length - 1, 16);
 });
 
 test('render: tabla nosi tagove, lanac, lockove i obe dužine prompta', () => {
@@ -233,7 +234,8 @@ test('render: tabla ne piše `null` ni za uređaj ni za prazan `characters`', ()
   sb.beats[0].shots[0].characters = [];
   const [first] = boardRows(renderStoryboard(sb));
   assert.ok(!first.includes('null'));
-  assert.equal(first.split(' | ').filter((c) => c === '—').length, 2, 'uređaj i lockovi su crte');
+  assert.equal(first.split(' | ').filter((c) => c === '—').length, 3,
+    'uređaj, režim i lockovi su crte');
 });
 
 // ---------------------------------------------------------------- visual_priority (shema 2)
@@ -349,4 +351,53 @@ test('CLI: --stdout ne piše fajl', () => {
   assert.equal(out, renderStoryboard(load(GOOD)));
   assert.equal(fs.existsSync(path.join(dir, 'storyboard.md')), false);
   fs.rmSync(dir, { recursive: true, force: true });
+});
+
+// ---------------------------------------------------------------- still kadrovi (schemas.md §3.3.2)
+//
+// Režijska tabla dobija kolonu `režim`. Pravilo iz C08 ostaje netaknuto — kolona ne nosi
+// nijedan podatak kojeg nema u `storyboard.json` — a bez nje se najvažnija režijska činjenica
+// novog formata (koliko slika stoji u nizu i sa kojim pokretima) ne vidi ni na jednom ekranu.
+
+const STILL = path.join(FIX, 'still-episode');
+
+/** Redovi režijske table: počinju `| ` i imaju broj shota u prvoj koloni. */
+const boardRowsOf = (md) => md.split('\n').filter((l) => /^\| \d\d \|/.test(l));
+
+test('tabla: kolona režim postoji i imenuje pokret still kadra', () => {
+  const md = renderStoryboard(load(STILL));
+  assert.match(md, /\| režim \|/);
+  const rows = boardRowsOf(md);
+  assert.match(rows[0], /still push/);
+  assert.match(rows[4], /still pan-right/);
+  assert.match(rows[5], /\| — \|/); // clip shot nema pokret
+});
+
+test('tabla: still shot nema broj reči animation prompta, jer prompta nema', () => {
+  const rows = boardRowsOf(renderStoryboard(load(STILL)));
+  assert.match(rows[0], /\d+\/— \|/);
+  assert.match(rows[5], /\d+\/\d+ \|/);
+});
+
+test('odeljak still shota nosi sliku i pokret, ne klip i use raspon', () => {
+  const md = renderStoryboard(load(STILL));
+  const block = md.split(/^### shot /m).find((b) => b.startsWith('01'));
+  assert.match(block, /- slika: `shots\/shot01\.jpeg` · pokret: push/);
+  assert.ok(!block.includes('- klip:'), block);
+  assert.ok(!block.includes('ANIMATION PROMPT'), block);
+  assert.match(block, /IMAGE PROMPT/);
+});
+
+test('odeljak clip shota u istoj epizodi ostaje nepromenjen', () => {
+  const md = renderStoryboard(load(STILL));
+  const block = md.split(/^### shot /m).find((b) => b.startsWith('06'));
+  assert.match(block, /- klip: `shots\/part06\.mp4`/);
+  assert.match(block, /ANIMATION PROMPT/);
+  assert.ok(!block.includes('- slika:'), block);
+});
+
+test('storyboard.md still epizode nema ni undefined ni null u tekstu', () => {
+  const md = renderStoryboard(load(STILL));
+  assert.ok(!md.includes('undefined'), 'undefined u prikazu izgleda kao podatak');
+  assert.ok(!/\bnull\b/.test(md.replace(/`[^`]*`/g, '')), md.split('\n').find((l) => /\bnull\b/.test(l)));
 });

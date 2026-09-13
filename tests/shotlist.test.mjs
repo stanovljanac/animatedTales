@@ -291,3 +291,64 @@ test('shotlist: blok o kreditima stoji pre prvog shota, ne posle', () => {
   assert.ok(credits !== -1 && firstShot !== -1);
   assert.ok(credits < firstShot, 'čeklista se čita odozgo — budžet mora da dođe pre posla');
 });
+
+// ---------------------------------------------------------------- still kadrovi (schemas.md §3.3.2)
+//
+// Ceo smisao still formata je da budžet epizode padne na nulu, pa je zaglavlje čekliste —
+// jedini red koji čovek pred Flow-om zaista računa — mesto na kome se to mora videti.
+// Slika u brojanju kredita ne sme da učestvuje ni kao nula: „45 klipova po 0" i „45 slika"
+// nisu ista rečenica.
+
+const STILL = path.join(FIX, 'still-episode');
+
+test('krediti: slike stoje uz klipove u zaglavlju, ali ne ulaze u račun', () => {
+  const out = creditLines(1, 5).join('\n');
+  assert.ok(out.includes('1 klip + 5 slika'), out);
+  assert.ok(out.includes(`${TIERS[0].cost} cr`), out);
+  assert.ok(!out.includes('6 klipova'), out);
+});
+
+test('krediti: epizoda bez ijednog klipa dobija jedan red, ne tabelu tierova', () => {
+  const lines = creditLines(0, 45);
+  const out = lines.join('\n');
+  assert.ok(out.includes('45 slika'), out);
+  assert.ok(out.includes('0 kredita'), out);
+  for (const t of TIERS) assert.ok(!out.includes(t.name), `tier ${t.name} nema šta da bira`);
+});
+
+test('shotlist: budžet broji samo klipove, i kad su shotovi mešani', () => {
+  const out = renderShotlist(load(STILL));
+  assert.ok(out.includes('FLOW KREDITI — 1 klip + 5 slika'), out.split('\n').slice(0, 8).join('\n'));
+});
+
+test('shotlist: still shot ima dva koraka i nijedan animation prompt', () => {
+  const out = renderShotlist(load(STILL));
+  const block = out.split(/^shot /m).find((b) => b.startsWith('01'));
+  assert.ok(block.includes('IMAGE PROMPT'), block);
+  assert.ok(!block.includes('ANIMATION PROMPT'), block);
+  assert.ok(block.includes('[ ] 1.'), block);
+  assert.ok(block.includes('[ ] 2. sačuvaj sliku kao shots/shot01.jpeg'), block);
+  assert.ok(!block.includes('[ ] 3.'), block);
+});
+
+test('shotlist: zaglavlje still shota imenuje pokret — bez njega se slika ne razlikuje', () => {
+  const out = renderShotlist(load(STILL));
+  assert.match(out, /^shot 01 .*STILL \(push\)/m);
+  assert.match(out, /^shot 05 .*STILL \(pan-right\)/m);
+});
+
+test('shotlist: clip shot u istoj epizodi zadržava sva tri koraka', () => {
+  const out = renderShotlist(load(STILL));
+  const block = out.split(/^shot /m).find((b) => b.startsWith('06'));
+  assert.ok(block.includes('ANIMATION PROMPT'), block);
+  assert.ok(block.includes('[ ] 3. sačuvaj klip kao shots/part06.mp4'), block);
+  assert.ok(!block.includes('STILL ('), block);
+});
+
+test('imageFile: na still shotu je slika sam izvor, ne ulaz u nešto drugo', () => {
+  const sb = load(STILL);
+  const [s1] = sb.beats[0].shots;
+  assert.equal(imageFile(s1), 'shots/shot01.jpeg');
+  const clip = sb.beats[1].shots.at(-1);
+  assert.equal(imageFile(clip), 'images/shot06.jpeg');
+});

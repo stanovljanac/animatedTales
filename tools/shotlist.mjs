@@ -8,6 +8,9 @@
 // šta snima. Promptovi izlaze **doslovno**, bez markdown ukrasa i bez prelamanja — kopiraju
 // se direktno u Flow, pa je svaki dodati znak greška u generisanju, ne kozmetika.
 //
+// Still kadar (schemas.md §3.3.2) izlazi sa jednim promptom i dva koraka umesto tri — pokret
+// mu daje montaža, ne Flow. U budžetu kredita se broji odvojeno i ne učestvuje u računu.
+//
 // Linkovani shotovi (A/B/C istog beata, schemas.md §3.4) izlaze grupisano, sa naznakom da
 // dele lokaciju i svetlo: dissolve između kadrova koji to ne dele vidi se kao greška.
 //
@@ -20,7 +23,7 @@
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-import { chainLetter, countWords, linkChains, loadStoryboard, plural } from './contract.mjs';
+import { chainLetter, countWords, isStill, linkChains, loadStoryboard, plural } from './contract.mjs';
 
 const RULE = '='.repeat(74);
 const THIN = '-'.repeat(74);
@@ -33,9 +36,12 @@ const fmt = (t) => Number(t).toFixed(3).replace(/\.?0+$/, '');
  * Kad shot ima `ingredient_image`, to je ta putanja — ista slika se generiše i vraća u Flow
  * kao ingredient. Kad je `null`, shot se generiše bez ingredienta, ali `image_prompt` i dalje
  * postoji (obavezno polje), pa se slika i dalje pravi i čuva po konvenciji iz invarijante 13.
- * @param {{shot_id: string, ingredient_image: string|null}} shot
+ *
+ * Na still shotu slika **jeste** izvor, ne ulaz u nešto drugo, pa se čuva pod `source_file`.
+ * @param {{shot_id: string, ingredient_image: string|null, source_file: string}} shot
  */
-export const imageFile = (shot) => shot.ingredient_image ?? `images/shot${shot.shot_id}.jpeg`;
+export const imageFile = (shot) =>
+  (isStill(shot) ? shot.source_file : shot.ingredient_image ?? `images/shot${shot.shot_id}.jpeg`);
 
 /**
  * Razrešava `--only 07,12,18`. Prima i `7` i `07`; poredi se i doslovno, zbog `shot_id`-jeva
@@ -111,12 +117,31 @@ export function creditPlan(clips) {
   });
 }
 
-/** Blok o kreditima za zaglavlje čekliste. @returns {string[]} redovi */
-export function creditLines(clips) {
-  const out = [
-    '',
-    `FLOW KREDITI — ${clips} ${plural(clips, 'klip', 'klipa', 'klipova')}; slike su besplatne (Nano Banana, 0 kredita)`,
-  ];
+/**
+ * Blok o kreditima za zaglavlje čekliste.
+ *
+ * Still kadrovi se broje odvojeno i **ne ulaze u račun** (schemas.md §3.3.2): ceo smisao tog
+ * formata je da budžet epizode padne na nulu, a „45 klipova po 0 kredita" i „45 slika" nisu
+ * ista rečenica pred Flow-om. Epizoda bez ijednog klipa zato ne dobija ni tabelu tierova —
+ * nema šta da se bira.
+ *
+ * @param {number} clips broj klipova
+ * @param {number} [stills] broj still kadrova
+ * @returns {string[]} redovi
+ */
+export function creditLines(clips, stills = 0) {
+  const what = [
+    clips ? `${clips} ${plural(clips, 'klip', 'klipa', 'klipova')}` : null,
+    stills ? `${stills} ${plural(stills, 'slika', 'slike', 'slika')}` : null,
+  ].filter(Boolean).join(' + ') || '0 klipova';
+
+  const out = ['', `FLOW KREDITI — ${what}; slike su besplatne (Nano Banana, 0 kredita)`];
+
+  if (!clips) {
+    out.push('  Epizoda je cela od slika — nema šta da se plati i nema tiera da se bira.');
+    return out;
+  }
+
   for (const r of creditPlan(clips)) {
     const head = `  ${r.name.padEnd(16)}${String(r.cost).padStart(3)} cr/klip ${thousands(r.total).padStart(7)} cr`;
     out.push(r.overCeiling
@@ -136,12 +161,13 @@ export function renderShotlist(storyboard, { only = null } = {}) {
   const all = storyboard.beats.flatMap((b) => b.shots);
   const kept = only ? all.filter((s) => only.has(s.shot_id)) : all;
 
+  const clips = kept.filter((s) => !isStill(s)).length;
   const L = [
     `shotlist — ${storyboard.episode} · ${kept.length} ` +
       `${plural(kept.length, 'shot', 'shota', 'shotova')}` +
       (only ? ` od ${all.length} (--only)` : '') + ' · redosled generisanja',
     'Promptovi se kopiraju doslovno, red po red, bez izmena i bez prelamanja.',
-    ...creditLines(kept.length),
+    ...creditLines(clips, kept.length - clips),
   ];
 
   for (const b of storyboard.beats) {
@@ -168,16 +194,31 @@ export function renderShotlist(storyboard, { only = null } = {}) {
         const where = chain.group === null
           ? 'samostalan, tvrd rez'
           : `lanac ${chain.group}, ${chainLetter(i)} od ${chain.shots.length}`;
+        const n = countWords(s.image_prompt);
 
         L.push('', THIN,
-          `shot ${s.shot_id}   beat ${s.beat_id} · ${where} · ${fmt(s.use_len)}s`,
+          `shot ${s.shot_id}   beat ${s.beat_id} · ${where} · ${fmt(s.use_len)}s` +
+            (isStill(s) ? ` · STILL (${s.still_motion})` : ''),
           THIN,
           '',
-          `IMAGE PROMPT (${countWords(s.image_prompt)} ${plural(countWords(s.image_prompt), 'reč', 'reči', 'reči')})`,
+          `IMAGE PROMPT (${n} ${plural(n, 'reč', 'reči', 'reči')})`,
           '',
-          s.image_prompt,
-          '',
-          `ANIMATION PROMPT (${countWords(s.animation_prompt)} ${plural(countWords(s.animation_prompt), 'reč', 'reči', 'reči')})`,
+          s.image_prompt);
+
+        // Still shot: jedan prompt, dva koraka. Nema klipa, pa nema ni ingredienta ni
+        // trajanja koje bi izvor morao da pokrije — pokret pravi montaža (§3.3.2).
+        if (isStill(s)) {
+          L.push('',
+            `POKRET: ${s.still_motion} — daje ga montaža, ne Flow.`,
+            '',
+            '  [ ] 1. image prompt -> slika',
+            `  [ ] 2. sačuvaj sliku kao ${imageFile(s)}`);
+          continue;
+        }
+
+        const a = countWords(s.animation_prompt);
+        L.push('',
+          `ANIMATION PROMPT (${a} ${plural(a, 'reč', 'reči', 'reči')})`,
           '',
           s.animation_prompt,
           '',

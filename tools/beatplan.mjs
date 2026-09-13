@@ -5,6 +5,11 @@
 //
 //   node tools/beatplan.mjs episodes/<slug> --beats beats.json
 //   node tools/beatplan.mjs episodes/<slug> --beats beats.json --write
+//   node tools/beatplan.mjs episodes/<slug> --beats beats.json --still --write
+//
+// `--still` menja granice reza **pre** nego što išta bude napisano (2.5–9.0s, cilj 5s umesto
+// 8s) i piše skelet still kadrova (schemas.md §3.3.2). Bez toga still format nije dostižan:
+// pisac bi dobio 27 rezova od 8s i ručno ih proglasio slikama.
 //
 // Zašto postoji (C12). `schemas.md` §3 kaže da `storyboard.json` piše „at-storyboard (kroz
 // timeline.mjs)", ali `timeline.mjs` je čist modul bez fajl I/O — u repou nije postojalo ništa
@@ -37,8 +42,25 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-import { DEVICES, R1_AXES, SLUG, TAGS, assertDisplayable, plural, round3 } from './contract.mjs';
+import {
+  DEVICES, LIMITS, R1_AXES, SLUG, TAGS, assertDisplayable, isStill, plural, round3,
+} from './contract.mjs';
 import { DEFAULTS, planTimeline } from './timeline.mjs';
+
+/**
+ * Granice reza za still epizodu (schemas.md §3.3.2). Min i max dolaze iz istog mesta odakle
+ * ih uzima T2; cilj je zaseban broj, jer plafon nije cilj. `motionBelow: 0` isključuje
+ * `motion_budget` — nema Veo modela kome bi se zadao.
+ */
+export const STILL_DEFAULTS = {
+  minShot: LIMITS.stillUseLen.min,
+  maxShot: LIMITS.stillUseLen.max,
+  targetShot: 5.0,
+  motionBelow: 0,
+};
+
+/** Ciljni opseg koji checkpoint meri, po režimu. Plafon nije cilj, pa se meri sredina. */
+const TARGET_BAND = { clip: [7, 9], still: [4, 6] };
 
 const slash = (p) => p.replace(/\\/g, '/');
 
@@ -136,7 +158,11 @@ export function loadBeatMap(file) {
  */
 export function buildStoryboard(timing, beatMap, opts = {}) {
   const fps = opts.fps ?? DEFAULTS.fps;
-  const plan = planTimeline(timing, beatMap.map((b) => ({ beat_id: b.beat_id, sentences: b.sentences })), { fps });
+  // Granice reza se biraju **pre** nego što išta bude napisano: tempo reza je jedina stvar
+  // koja odlučuje da li niz slika čita kao film ili kao slajdšou (schemas.md §3.3.2).
+  const still = opts.still === true;
+  const cut = still ? { fps, ...STILL_DEFAULTS } : { fps };
+  const plan = planTimeline(timing, beatMap.map((b) => ({ beat_id: b.beat_id, sentences: b.sentences })), cut);
   const meta = new Map(beatMap.map((b) => [b.beat_id, b]));
   const text = new Map(timing.sentences.map((s) => [s.id, s.text ?? '']));
 
@@ -170,12 +196,15 @@ export function buildStoryboard(timing, beatMap, opts = {}) {
         use_out: s.use_out,
         use_len: s.use_len,
         motion_budget: s.motion_budget,
-        source_file: s.source_file,
+        // `hold` je namerno najdosadnija vrednost, ne nasumična: skelet koji sam sebe
+        // proglasi režiranim gori je od skeleta koji vidno traži da ga neko prođe.
+        ...(still ? { render_mode: 'still', still_motion: 'hold' } : {}),
+        source_file: still ? `shots/shot${s.shot_id}.jpeg` : s.source_file,
         ingredient_image: null,
         characters: [],
         visual_priority: [],
         image_prompt: '',
-        animation_prompt: '',
+        animation_prompt: still ? null : '',
         tags: { ...m.tags },
       })),
     };
@@ -252,16 +281,24 @@ export function checkpoint(storyboard, warnings = []) {
     L.push('');
   }
 
-  const shots = storyboard.beats.reduce((a, b) => a + b.shots.length, 0);
-  const lens = storyboard.beats.flatMap((b) => b.shots.map((s) => s.use_len));
-  const inTarget = lens.filter((v) => v >= 7 && v <= 9).length;
+  const all = storyboard.beats.flatMap((b) => b.shots);
+  const shots = all.length;
+  const lens = all.map((s) => s.use_len);
+  // Ciljni opseg zavisi od režima: 8s cilj nad slikama bi merio pogrešnu stvar.
+  const stills = all.filter(isStill).length;
+  const [lo, hi] = TARGET_BAND[stills * 2 > shots ? 'still' : 'clip'];
+  const inTarget = lens.filter((v) => v >= lo && v <= hi).length;
   const used = storyboard.beats.map((b) => b.device).filter(Boolean);
   const tally = [...new Set(used)].map((d) => `${d} ×${used.filter((x) => x === d).length}`);
 
   L.push(`${storyboard.beats.length} ${plural(storyboard.beats.length, 'beat', 'beata', 'beatova')} · ` +
     `${shots} ${plural(shots, 'shot', 'shota', 'shotova')} · ` +
     `prosek ${(lens.reduce((a, v) => a + v, 0) / lens.length).toFixed(2)}s · ` +
-    `${inTarget}/${shots} u ciljnom opsegu 7–9s`);
+    `${inTarget}/${shots} u ciljnom opsegu ${lo}–${hi}s`);
+  if (stills) {
+    L.push(`režim: ${stills} still · ${shots - stills} ` +
+      `${plural(shots - stills, 'klip', 'klipa', 'klipova')} — slike su besplatne`);
+  }
   L.push(`uređaji: ${tally.length ? tally.join(' · ') : 'nijedan'} · ` +
     `${storyboard.beats.length - used.length} od ${storyboard.beats.length} bez uređaja (device: null)`);
 
@@ -287,15 +324,18 @@ const USAGE = `node tools/beatplan.mjs <folder-epizode> --beats <mapa.json> [opc
 
   --beats <fajl>        beat mapa: [{ beat_id, sentences, device, viewer_sees, tags }]
   --write               upiši <folder>/storyboard.json (bez ovoga: samo checkpoint)
+  --still               epizoda od slika: rez 2.5–9.0s (cilj 5s), render_mode "still"
   --force               dozvoli prepisivanje postojećeg storyboard.json
   --generated-at <ISO>  vrednost za generated_at (podrazumevano: sada, UTC)
   -h, --help            ovaj tekst`;
 
 export function parseArgs(argv) {
-  const out = { dir: null, beats: null, write: false, force: false, generatedAt: null, help: false };
+  const out = { dir: null, beats: null, write: false, force: false, still: false,
+    generatedAt: null, help: false };
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
     if (a === '--write') out.write = true;
+    else if (a === '--still') out.still = true;
     else if (a === '--force') out.force = true;
     else if (a === '-h' || a === '--help') out.help = true;
     else if (a === '--beats') {
@@ -348,6 +388,7 @@ export function main(argv, io = {}) {
   const { storyboard, warnings } = buildStoryboard(timing, beatMap, {
     episode,
     generatedAt: args.generatedAt ?? stamp(),
+    still: args.still,
   });
   assertDisplayable(storyboard);
 

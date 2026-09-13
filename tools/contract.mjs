@@ -49,6 +49,42 @@ export const TAGS = {
   camera_motion: ['locked', 'push', 'pull', 'pan', 'track', 'parallax', 'reveal'],
 };
 
+// ---------------------------------------------------------------- režim rendera (schemas.md §3.3.2)
+
+/**
+ * Kako shot postaje slika u pokretu. `clip` je Veo klip iz Flow-a; `still` je jedna slika
+ * kojoj pokret daje montaža.
+ *
+ * **Odsutno polje znači `clip`.** Da je polje obavezno, svaki zatečeni `storyboard.json` bi u
+ * trenutku uvođenja postao nevažeći i `schema_version` bi morao na 3 — a režim rendera i oblik
+ * prompta su dve nezavisne ose. Shema opisuje oblik prompta; ovo opisuje šta se renderuje.
+ */
+export const RENDER_MODES = ['clip', 'still'];
+
+/** Pet pokreta koje montaža ume da izvede nad jednom slikom (assemble.mjs, `stillFilter`). */
+export const STILL_MOTIONS = ['push', 'pull', 'pan-left', 'pan-right', 'hold'];
+
+/**
+ * Koji `tags.camera_motion` odgovara kom pokretu. Ne služi da se jedno izvede iz drugog —
+ * `pan` ne kaže na koju stranu — nego da R7 (ADVISORY) prijavi kad se to dvoje razilazi.
+ */
+export const STILL_MOTION_CAMERA = {
+  push: 'push',
+  pull: 'pull',
+  'pan-left': 'pan',
+  'pan-right': 'pan',
+  hold: 'locked',
+};
+
+/** @param {{render_mode?: string|null}} shot @returns {string} `clip` | `still` | zatečena vrednost */
+export function renderMode(shot) {
+  const m = shot?.render_mode;
+  return m === undefined || m === null ? 'clip' : m;
+}
+
+/** @param {{render_mode?: string|null}} shot */
+export const isStill = (shot) => renderMode(shot) === 'still';
+
 /** Katalog vizuelnih uređaja (schemas.md §3.6). */
 export const DEVICES = ['animated-map', 'ledger-accumulation', 'process-cutaway', 'before-after',
   'timeline-seasons', 'macro-object', 'silhouette', 'crowd-as-texture', 'empty-aftermath'];
@@ -70,7 +106,14 @@ export const S3_WORDS = ['then', 'later', 'afterwards', 'cuts to', 'meanwhile'];
 
 /** Pragovi iz BLOCKING tabele (docs/plan/C06-lint-blocking.md). */
 export const LIMITS = {
-  useLen: { min: 3.0, max: 10.0 },   // T2
+  useLen: { min: 3.0, max: 10.0 },   // T2, clip
+  /**
+   * T2, still. 3.0–10.0 je Veo raspon i za sliku ne znači ništa. Uži raspon sa nižim podom
+   * drži tempo reza dovoljno visoko da niz slika čita kao film a ne kao slajdšou: epizoda od
+   * četiri minuta pada na ~40–50 slika umesto 27. Pod je 2.5, a ne niže, zbog splittera —
+   * rez kraći od toga ne može da padne na granicu rečenice u prosečnoj naraciji.
+   */
+  stillUseLen: { min: 2.5, max: 9.0 },
   motionBelow: 9.0,                  // T3
   imageWords: { min: 90, max: 160 }, // P1, shema 1
   animWords: { min: 60, max: 100 },  // P2
@@ -307,6 +350,24 @@ export function assertDisplayable(storyboard) {
       const sid = s?.shot_id ?? '(bez shot_id)';
       for (const k of DISPLAY_FIELDS.shot) if (!has(s, k)) bad.push(`shot ${sid}: nedostaje ${k}`);
       if (has(s, 'characters') && !Array.isArray(s.characters)) bad.push(`shot ${sid}: characters nije niz`);
+
+      // Režim rendera. Nepoznata vrednost nije nalaz nego razlog da alat stane: prikaz bi
+      // tiho svrstao shot u `clip` i pokazao `use` raspon nad slikom koja ga nema.
+      const mode = renderMode(s);
+      if (!RENDER_MODES.includes(mode)) {
+        bad.push(`shot ${sid}: render_mode "${s.render_mode}" nije ${RENDER_MODES.join(' ni ')}`);
+      } else if (mode === 'still') {
+        // `still_motion` je jedino mesto na kome piše šta kamera radi nad slikom; bez njega
+        // bi `storyboard.md` ispisao `undefined` u redu koji čita režiser.
+        if (!STILL_MOTIONS.includes(s.still_motion)) {
+          bad.push(`shot ${sid}: still_motion "${s.still_motion}" nije jedan od ` +
+            STILL_MOTIONS.join(', '));
+        }
+      } else if (s.animation_prompt === null || s.animation_prompt === undefined) {
+        // Na clip shotu animation prompt je sadržaj, ne opciono polje; `null` bi kroz
+        // `countWords` prošao kao „1 reč".
+        bad.push(`shot ${sid}: animation_prompt je null, a shot nije still`);
+      }
       // Šest osa se ispisuje po R1_AXES; osa koja fali izašla bi kao `undefined` u redu tagova.
       if (!has(s, 'tags') || s.tags === null || typeof s.tags !== 'object') {
         bad.push(`shot ${sid}: nedostaje tags`);

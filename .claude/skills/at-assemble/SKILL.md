@@ -39,7 +39,8 @@ proveru.
 | **Nedostajući partovi** | shot iz storyboard-a nema klip na disku — montaža ga ne može ubaciti |
 | **Prekratki izvori** | klip ne traje do kraja svog reza; sa `--dissolve` treba i višak za prelaz |
 | **Ukupni drift** | pokrivenost naspram narracije, prihvatanje ±0.2s. Rep end carda **nije** drift — poredi se pokrivenost, ne ukupno trajanje. |
-| **Kandidati za regeneraciju** | vidi dole — ovo je glavni posao ovog skila |
+| **Kandidati za regeneraciju** | vidi dole — ovo je glavni posao ovog skila. **Still kadrovi se ovde ne pojavljuju** — slika nema trajanje, pa ni udeo iskorišćenja. |
+| **Still kadrovi** | sekcija postoji samo kad epizoda ima slika. WARN znači da je slika uža od `1.15 × širina izlaza`, pa je zum dovlači naviše i to se vidi. Popravka je regenerisati sliku u većoj rezoluciji ili montirati na nižem `--res`, ne menjati pokret. |
 | **Primenjeni prelazi** | koliko dissolve-ova je stvarno primenjeno i koliko preskočeno |
 | **Izostavljeni i skraćeni shotovi** | shot koji prelazi `outro_start` end card skraćuje ili izbacuje. Nije greška, ali se ne prećutkuje. |
 
@@ -75,6 +76,10 @@ poklopio sa klipom je pomeranje tajmlajna i pripada `at-storyboard`-u.
 
 Shot označen `(skraćen outrom)` je poseban slučaj: njega je skratio end card, ne loš rez.
 Regeneracija ima smisla samo ako se i dalje jasno vidi da je pokret presečen.
+
+**Still kadar se ne regeneriše zbog iskorišćenja.** Slika nema trajanje koje bi se bacilo, pa
+jedini razlog da se pravi ponovo jeste WARN o rezoluciji ili sam sadržaj kadra. `--only` radi
+isto — ispisuje image prompt i dva koraka umesto tri.
 
 ### 4. Finalni render
 

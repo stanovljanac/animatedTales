@@ -1,0 +1,36 @@
+{
+  "slug": "still-episode",
+  "title": "Still Episode (fixture za still kadrove)",
+  "status": "in-progress",
+  "voice": "Nathaniel - Engaging, British and Calm",
+  "narration_file": "narration.mp3",
+  "final_file": null,
+  "endcard_file": "endcard.jpeg",
+  "characters": [
+    {
+      "id": "hanno",
+      "name": "Hanno",
+      "locked_description": "a lean Carthaginian clerk of about fifty, close-cropped grey hair, a short curled beard, an undyed linen tunic belted with rope, a wax tablet under one arm"
+    }
+  ],
+  "locations": [
+    {
+      "id": "carthage-quay",
+      "name": "The Carthage quay",
+      "locked_description": "a long stone quay of fitted limestone blocks, its edge worn round by rope, crates and amphorae stacked along it, moored hulls riding low in green harbour water"
+    },
+    {
+      "id": "counting-house",
+      "name": "The counting house",
+      "locked_description": "a low vaulted room of whitewashed stone with a beaten earth floor, rows of sealed clay jars on plank shelves, a single high window, ledger scrolls stacked in wooden pigeonholes along one wall"
+    }
+  ],
+  "key_props": [
+    {
+      "id": "wax-tablet",
+      "name": "The wax tablet",
+      "locked_description": "a hinged wooden writing tablet the size of two palms, its recessed panels filled with dark beeswax, the surface scored by columns of tally marks and thumbed smooth at the edges"
+    }
+  ],
+  "notes": "Fixture za still kadrove (schemas.md §3.3.2), ne prava epizoda. Šest shotova: pet still sa svih pet pokreta, jedan clip — dokaz da se režimi mešaju u istoj epizodi. Entiteti su isti kao u good-episode namerno: fixture porodica deli kanon, pa se razlika između fixture-a svede na ono što svaki od njih meri. Prolazi BLOCKING sa nula nalaza."
+}

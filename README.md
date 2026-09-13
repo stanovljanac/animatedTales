@@ -28,6 +28,12 @@ nije, pa je budžet epizode uvek budžet za video, a dnevnih 50 kredita diktira 
 [`docs/reference/google-ai-plus.md`](docs/reference/google-ai-plus.md).
 Faze 05–08 vode skilovi u [`.claude/skills/`](.claude/skills).
 
+Epizoda ne mora da bude od klipova. Shot sa `render_mode: "still"` je **jedna slika kojoj
+pokret kamere daje montaža** — push, pull, pan ili hold, jedan zatvoren enum. Takva epizoda
+košta nula kredita, a pošto joj je rez kraći (2.5–9.0s umesto 3.0–10.0s), četiri minuta nose
+40–50 slika umesto 27 klipova. Režim je po shotu, pa se mešanje podrazumeva; ugovor je u
+[`schemas.md`](docs/reference/schemas.md) §3.3.2, skelet pravi `beatplan.mjs --still`.
+
 ## Pokretanje
 
 Alati su čist Node — nema `package.json`, nema `npm install`. Traži se **Node 20+**
@@ -47,7 +53,7 @@ node tools/assemble.mjs  episodes/<slug>
 Svaki alat ima `--help`. Provere:
 
 ```
-node --test tests/            # 392 testa
+node --test tests/            # 469 testova
 node tests/check-fixtures.mjs # izvršni oblik ugovora iz schemas.md
 ```
 

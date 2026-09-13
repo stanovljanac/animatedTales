@@ -607,3 +607,120 @@ test('parseArgs: zastave i greške', () => {
   assert.throws(() => parseArgs(['x', '--sta-je-ovo']), /nepoznata opcija/);
   assert.throws(() => parseArgs(['x', 'y']), /višak argumenta/);
 });
+
+// ---------------------------------------------------------------- still kadrovi (schemas.md §3.3.2)
+//
+// Grananje ide **po shotu, ne po shemi**: režim rendera i oblik prompta su dve nezavisne ose.
+// Sedam provera (T1, S1, S2, S4, S5, P1, C1) ostaje netaknuto; ovde stoje samo one koje se
+// razlikuju — i za svaku i suprotan smer, jer provera koja se na still shotu samo ugasi ne
+// razlikuje se od provere koja je nestala.
+
+/** Still shot sa razumnim podrazumevanim vrednostima. */
+const mkStill = (over = {}) => mkShot({
+  render_mode: 'still',
+  still_motion: 'push',
+  source_file: 'shots/shot01.jpeg',
+  animation_prompt: null,
+  motion_budget: null,
+  ingredient_image: null,
+  use_in: 0,
+  ...over,
+});
+
+test('still-episode: nula BLOCKING nalaza (statički sloj)', () => {
+  const dir = path.join(FIX, 'still-episode');
+  const sb = JSON.parse(fs.readFileSync(path.join(dir, 'storyboard.json'), 'utf8'));
+  const ep = JSON.parse(fs.readFileSync(path.join(dir, 'episode.json'), 'utf8'));
+  const findings = lintStatic(sb, ep, { lists: LISTS });
+  assert.deepEqual(findings, [], findings.map((f) => `[${f.code}] ${f.where}: ${f.message}`).join('\n'));
+});
+
+test('T2: still shot ima raspon 2.5–9.0, ne 3.0–10.0', () => {
+  assert.deepEqual(codes(only(run({ ...mkStill(), use_len: 2.5, use_out: 2.5, t_out: 2.5 }), 'T2')), []);
+  assert.deepEqual(codes(only(run({ ...mkStill(), use_len: 9.5, use_out: 9.5, t_out: 9.5 }), 'T2')), ['T2']);
+  // ista dva trajanja na clip shotu daju obrnut ishod
+  assert.deepEqual(codes(only(run({ use_len: 2.5, use_out: 2.5, t_out: 2.5 }), 'T2')), ['T2']);
+  assert.deepEqual(codes(only(run({ use_len: 9.5, use_out: 9.5, t_out: 9.5, motion_budget: null }), 'T2')), []);
+});
+
+test('T2: still shot mora da kreće od nule — slika nema unutrašnji tajmlajn', () => {
+  const f = only(run({ ...mkStill(), use_in: 0.5, use_out: 6.5 }), 'T2');
+  assert.equal(f.length, 1);
+  assert.match(f[0].message, /use_in/);
+});
+
+test('T3: na still shotu motion_budget mora da bude null, a ne da se poklopi sa use_len', () => {
+  assert.deepEqual(codes(only(run(mkStill()), 'T3')), []);
+  const f = only(run({ ...mkStill(), motion_budget: 6 }), 'T3');
+  assert.equal(f.length, 1);
+  assert.match(f[0].message, /motion_budget/);
+});
+
+test('P2: na still shotu animation_prompt mora da bude null, ne kratak tekst', () => {
+  assert.deepEqual(codes(only(run(mkStill()), 'P2')), []);
+  const f = only(run({ ...mkStill(), animation_prompt: animPrompt(80, 6) }), 'P2');
+  assert.equal(f.length, 1);
+  assert.match(f[0].message, /animation prompt/);
+});
+
+test('S3 se na still shotu ne meri — nema animation prompta u kome bi „later" stajalo', () => {
+  assert.deepEqual(codes(only(run(mkStill()), 'S3')), []);
+});
+
+test('S1 se na still shotu meri samo nad image promptom', () => {
+  const bad = imagePrompt(200, 'ACTION: he stands in front of the altar.');
+  assert.deepEqual(codes(only(run({ ...mkStill(), image_prompt: bad }), 'S1')), ['S1']);
+});
+
+test('M1: still_motion na clip shotu je nalaz — polje nema značenje nad klipom', () => {
+  const f = only(run({ still_motion: 'push' }), 'M1');
+  assert.equal(f.length, 1);
+  assert.match(f[0].message, /still_motion/);
+});
+
+test('M1: still_motion van enuma je nalaz', () => {
+  const f = only(run({ ...mkStill(), still_motion: 'zoom-out' }), 'M1');
+  assert.equal(f.length, 1);
+  assert.match(f[0].message, /zoom-out/);
+});
+
+test('M1: still shot bez still_motion je nalaz', () => {
+  const s = mkStill();
+  delete s.still_motion;
+  const f = only(run(s), 'M1');
+  assert.equal(f.length, 1);
+  assert.match(f[0].message, /still_motion/);
+});
+
+test('M1: ingredient_image na still shotu mora da bude null — nema klipa u koji bi ušao', () => {
+  assert.deepEqual(codes(only(run(mkStill()), 'M1')), []);
+  const f = only(run({ ...mkStill(), ingredient_image: 'images/shot01.jpeg' }), 'M1');
+  assert.equal(f.length, 1);
+  assert.match(f[0].message, /ingredient_image/);
+});
+
+test('M1 stoji prvi u redosledu izveštaja — kaže po kojim se pravilima ostalo merilo', () => {
+  assert.equal(CHECKS[0], 'M1');
+});
+
+test('nepoznat render_mode zaustavlja lint, ne prijavljuje se kao nalaz', () => {
+  assert.throws(
+    () => lintStatic(mkSb([mkShot({ render_mode: 'kenburns' })]), mkEp(), { lists: LISTS }),
+    /render_mode/,
+  );
+});
+
+test('F1: na still shotu se traži slika, ne trajanje', { skip: noBinary }, async () => {
+  const dir = path.join(FIX, 'still-episode');
+  const sb = JSON.parse(fs.readFileSync(path.join(dir, 'storyboard.json'), 'utf8'));
+  assert.deepEqual(await checkF1(sb, dir), []);
+});
+
+test('F1: slika koja ne postoji je nalaz i na still shotu', { skip: noBinary }, async () => {
+  const dir = path.join(FIX, 'still-episode');
+  const sb = JSON.parse(fs.readFileSync(path.join(dir, 'storyboard.json'), 'utf8'));
+  sb.beats[0].shots[0].source_file = 'shots/shot99.jpeg';
+  const f = await checkF1(sb, dir);
+  assert.equal(f.length, 1);
+  assert.match(f[0].message, /nema slike/);
+});

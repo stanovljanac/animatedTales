@@ -47,3 +47,7 @@ tests/fixtures/*-episode/storyboard.md
 # Bez njih se F1 ne može pustiti iz komandne linije nad fixture-om, a fixture koji
 # traži korak generisanja pre upotrebe nije fixture. Prava medija ostaje van gita.
 !tests/fixtures/*-episode/shots/*.mp4
+
+# Iz istog razloga i slike still fixture-a: 64x36 testsrc, ~0.9 KB po fajlu.
+# Na still shotu je slika ono što F1 traži na disku, pa bez njih fixture ne postoji.
+!tests/fixtures/*-episode/shots/*.jpeg

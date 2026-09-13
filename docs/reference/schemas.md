@@ -368,8 +368,10 @@ prikazuje upravo ovaj nivo.
 | `characters` | array\<string\> | da | `id`-jevi iz `episode.json` (bilo kog od tri niza) koji se u shotu vide. Ulaz za C1. Prazan niz je legitiman. **Shema 2: redosled nosi značenje** — `characters[0]` je PRIMARY lock i mora doslovno da stoji u bloku `SUBJECT`; ostali su SECONDARY. Najviše `LIMITS.maxLocks` (3). Proverava S5. |
 | `visual_priority` | array\<string\> | shema 2 | Rangirana lista od **3 do 5** stavki: šta model sme da promaši poslednje. Stavka `[0]` mora da imenuje PRIMARY lock. **Ne ulazi u prompt** — vidi 3.3.1. Proverava S5. |
 | `image_prompt` | string | da | Shema 1: 90–160 reči. **Shema 2: 90–280 reči** po `countWords` (P1), sa mekim ciljnim opsegom 180–260 (R5, ADVISORY). Sadrži blokove iz S2. |
-| `animation_prompt` | string | da | 60–100 reči po `countWords` (P2). |
+| `animation_prompt` | string \| null | da | 60–100 reči po `countWords` (P2). **`null` na still shotu** — nema šta da se animira (3.3.2). |
 | `tags` | Tags | da | Šest osa, vidi 3.5. |
+| `render_mode` | `"clip"` \| `"still"` | ne | Odsutno ili `null` znači `"clip"`. `"still"` znači: shot nije klip nego jedna slika kojoj montaža daje pokret. Vidi 3.3.2. |
+| `still_motion` | string | still | `push` · `pull` · `pan-left` · `pan-right` · `hold`. Obavezan na still shotu, odsutan ili `null` na clip shotu. Vidi 3.3.2. |
 
 **Dve vremenske ose se ne smeju mešati.** `t_in`/`t_out` su gde shot stoji u finalnom videu;
 `use_in`/`use_out` su koji deo desetosekundnog Flow klipa se seče. `use_in` je najčešće `0.0`, ali
@@ -406,6 +408,54 @@ stvarno kupio: 16 reči `STYLE` + 30–35 reči `locked_description` + pet kamer
 (R5), zato što se generator prema tvrdom pragu ponaša isto kao ranije — puni prompt do plafona.
 Cilj nije popuniti broj reči nego pokriti vizuelne prioritete; kadar kome je dovoljno 170 reči
 ne treba da se razvlači, a R5 čuva da to bude odluka, a ne previd.
+
+### 3.3.2 Still kadrovi — epizoda od slika
+
+Slika je u Flow-u besplatna, klip nije, pa video budžet — ne pisanje i ne montaža — određuje
+koliko epizoda mesečno može da postoji (`docs/reference/google-ai-plus.md`). Still kadar je
+odgovor na to: jedna slika kojoj **montaža** daje pokret kamere, umesto klipa koji pokret nosi
+u sebi. Epizoda sme da bude cela od slika, cela od klipova, ili mešana — režim je po shotu.
+
+**`schema_version` ostaje 2.** Režim rendera i oblik prompta su dve nezavisne ose: shema
+opisuje kako prompt izgleda, `render_mode` šta se renderuje. Oba nova polja su opciona sa
+podrazumevanom vrednošću koja opisuje zatečeno stanje, pa svaki postojeći `storyboard.json`
+ostaje validan bez ijedne izmene.
+
+**Zašto zatvoren enum a ne izvođenje iz `tags.camera_motion`.** Izvođenje bi puklo na `pan` i
+`track`: tag kaže da se kamera pomera bočno, ali ne i na koju stranu, a ta informacija postoji
+jedino kao proza u bloku `SCREEN DIRECTION:`. Parsiranje engleskog unutar mašinskog ugovora radi
+na 25 shotova i tiho pogrešno renderuje 26. Objekat `{kind, amount, direction}` bi dao punu
+kontrolu, ali bi uveo treće mesto na kome živi namera kamere i tražio da neko po svakom shotu
+bira brzinu zuma — 27 malo različitih brzina umesto jednog izgleda epizode. Otud jedan string
+iz zatvorene liste, a neslaganje sa `tags.camera_motion` prijavljuje R7 (ADVISORY).
+
+Šta na still shotu mora da stoji drugačije:
+
+| Polje | Vrednost | Zašto |
+|---|---|---|
+| `source_file` | `shots/shot<shot_id>.jpeg` | Izvor shota je slika. Svaki potrošač već čita `source_file` kao „medij iz kog shot nastaje". |
+| `ingredient_image` | `null` | Ingredient postoji da bi ušao u Flow klip; klipa nema. |
+| `animation_prompt` | `null` | Nema šta da se animira. `null`, ne prazan string (0.5). |
+| `motion_budget` | `null` | Budžet pokreta je instrukcija Veo modelu koliko sekundi ima; nema modela. |
+| `use_in` | `0.0` | Slika nema unutrašnji tajmlajn u koji bi se ušlo od 0.5s. |
+| `use_out` | `= use_len` | Posledica prethodnog. |
+| `use_len` | **2.5–9.0s** | Uži raspon od klipa (T2). Obrazloženje ispod. |
+
+`tags` (svih šest osa), `characters`, `visual_priority`, `image_prompt` i S2 blokovi rade
+**potpuno isto**. Still kadar je i dalje kadar: subjekt, veličina, ugao, svetlo i zaključani
+opisi važe nepromenjeno. `link_group` je dozvoljen — dissolve između dve slike radi isto kao
+između dva klipa, jer `xfade` radi nad segmentima, ne nad izvorima.
+
+**Zašto 2.5–9.0 a ne 3.0–10.0.** Veo raspon za sliku ne znači ništa. Uži raspon sa nižim podom
+drži tempo reza dovoljno visoko da niz slika čita kao film a ne kao slajdšou: epizoda od četiri
+minuta pada na ~40–50 slika umesto 27. To je najveća poluga na to da li format radi, pa je i
+jedini broj ovde koji se očekuje da se menja posle prve merene epizode. Pod je 2.5 zbog
+splittera: rez kraći od toga ne može da padne na granicu rečenice u prosečnoj naraciji, pa bi
+`forcedSplit` počeo da seče na proizvoljnim mestima (5.3).
+
+**Pokret je konstanta, ne polje.** Iznos zuma (`STILL_ZOOM`, 1.15) živi u `assemble.mjs` iz
+istog razloga iz kog je `still_motion` enum: jedna konstanta daje jedan prepoznatljiv izgled
+epizode, a per-shot brojka daje 45 malo različitih. Izvođenje pokreta je u 5.13.
 
 ### 3.4 `link_group`
 
@@ -490,6 +540,16 @@ Referencijalno:
     `images/shot<shot_id>.jpeg`.
 14. `link_group` je `null` ili jednak sopstvenom `beat_id`.
 
+Režim rendera (3.3.2):
+
+15. `render_mode` je odsutno, `null`, `"clip"` ili `"still"`. Nepoznata vrednost je razlog da
+    alat stane, ne nalaz — prikaz bi tiho svrstao shot u `clip`.
+16. Na still shotu: `still_motion` je jedna od pet vrednosti; `animation_prompt`,
+    `motion_budget` i `ingredient_image` su `null`; `use_in` je `0.0`; `source_file` je
+    `shots/shot<shot_id>.jpeg`; `2.5 <= use_len <= 9.0`.
+17. Na clip shotu: `still_motion` je odsutno ili `null`; ostalo kao u 13 i 9.
+18. Mešanje režima unutar epizode je dozvoljeno; beat sme da nosi i still i clip shotove.
+
 ### 3.8 Primer
 
 Kanonski primer živi u `tests/fixtures/` i **on je merodavan** — kad se ovaj dokument i fixture
@@ -521,18 +581,29 @@ Tabela je prođena red po red.
 
 | # | Provera | Prag | Polja koja je nose | Pokriveno |
 |---|---|---|---|---|
+| **M1** | režim rendera: `still_motion` važeći na still shotu, odsutan na clip shotu, `ingredient_image` prazan na still shotu | — | `shot.render_mode`, `shot.still_motion`, `shot.ingredient_image` | da |
 | **T1** | pokrivenost tajmlajna: gapovi / preklapanja / `sum(use)` vs trajanje narracije | ±0.2s | `shot.t_in`, `shot.t_out`, `shot.use_len`, `beat.start`, `beat.end`, `storyboard.narration_duration` | da |
-| **T2** | `use_len` u granicama | 3.0–10.0s | `shot.use_len` | da |
-| **T3** | `motion_budget` prisutan kad `use_len < 9.0` | — | `shot.motion_budget`, `shot.use_len` | da |
-| **S1** | zabranjene prostorne fraze bez screen-position klauzule | — | `shot.image_prompt`, `shot.animation_prompt` | da |
+| **T2** | `use_len` u granicama; na still shotu i `use_in = 0` | clip 3.0–10.0s; **still 2.5–9.0s** | `shot.use_len`, `shot.use_in`, `shot.render_mode` | da |
+| **T3** | `motion_budget` prisutan kad `use_len < 9.0`; **na still shotu mora da bude `null`** | — | `shot.motion_budget`, `shot.use_len`, `shot.render_mode` | da |
+| **S1** | zabranjene prostorne fraze bez screen-position klauzule; na still shotu samo image prompt | — | `shot.image_prompt`, `shot.animation_prompt` | da |
 | **S2** | obavezni blokovi `CAMERA`, `FRAME LAYOUT`, `FACING`, `SCREEN DIRECTION`, `NOT IN FRAME`; **shema 2 uz njih `SUBJECT` i `DETAIL`** | — | `shot.image_prompt` | da |
-| **S3** | reči koje impliciraju rez unutar klipa (`then`, `later`, `afterwards`, `cuts to`, `meanwhile`) | — | `shot.animation_prompt` | da |
+| **S3** | reči koje impliciraju rez unutar klipa (`then`, `later`, `afterwards`, `cuts to`, `meanwhile`); na still shotu se ne meri | — | `shot.animation_prompt` | da |
 | **S4** | blok `SCALE` kad shot nosi `scale_critical` entitet (shema 2) | — | `shot.characters[]` → `episode.json.*.scale_critical`, `shot.image_prompt` | da |
 | **S5** | hijerarhija lockova (shema 2): PRIMARY u `SUBJECT`, najviše 3 locka, `visual_priority` 3–5 stavki sa PRIMARY na vrhu | — | `shot.characters[]`, `shot.visual_priority`, `shot.image_prompt` | da |
 | **P1** | dužina image prompta | shema 1: 90–160; **shema 2: 90–280** reči | `shot.image_prompt` + `countWords` (0.6) | da |
-| **P2** | dužina animation prompta | 60–100 reči | `shot.animation_prompt` + `countWords` (0.6) | da |
+| **P2** | dužina animation prompta; **na still shotu prompta ne sme biti** | 60–100 reči | `shot.animation_prompt` + `countWords` (0.6), `shot.render_mode` | da |
 | **C1** | `locked_description` doslovno u svakom shotu gde lik učestvuje | — | `shot.characters[]` → `episode.json.{characters,locations,key_props}[].locked_description`, traži se u `shot.image_prompt` po `normalize` (0.7) | da |
-| **F1** | svaki shot ima svoj `shots/partNN.mp4`, izvor ≥ `use_out` | — | `shot.source_file`, `shot.use_out` (+ `probe()` iz `ffmpeg.mjs`) | da |
+| **F1** | svaki shot ima svoj `shots/partNN.mp4`, izvor ≥ `use_out`; **na still shotu: `shots/shotNN.jpeg` postoji i čita se** | — | `shot.source_file`, `shot.use_out`, `shot.render_mode` (+ `probe()` iz `ffmpeg.mjs`) | da |
+
+**Grananje ide po shotu, ne po shemi.** `schema_version` bira P1 plafon i S2 blokove;
+`render_mode` bira granu u M1, T2, T3, S3, P2 i F1. To su dve nezavisne ose i namerno se ne
+mešaju — inače bi svaka kombinacija tražila novu verziju sheme. Sedam provera (T1, S1, S2, S4,
+S5, P1, C1) ne zna ni za jednu od te dve.
+
+**M1 je jedina provera dodata posle C06.** Bez nje `still_motion` nema pravilo koje ga meri:
+pogrešna vrednost bi pala tek u montaži, a `still_motion` na clip shotu ne bi pao nikad — slika
+bi mirno stajala, a niko ne bi znao zašto. Stoji **prva** u redosledu izveštaja, jer režim
+odlučuje po kojim su se pravilima merila ostala.
 
 Tri stvari koje je ovaj prolaz otkrio i koje su zbog toga u shemi:
 
@@ -555,7 +626,8 @@ Ne blokira montažu, ali čita iste podatke.
 | R4 | ponavljanje n-grama > 12 reči | `shot.image_prompt`, `shot.animation_prompt`, **minus** svi `locked_description` iz `episode.json`, kanonski style string iz `docs/reference/style-string.md` i fiksne `PRESERVE`/`FORBID` linije iz `docs/reference/prompt-templates.md` |
 | R5 | dužina image prompta izvan mekog opsega 180–260 (shema 2) | `shot.image_prompt` + `countWords` |
 | R6 | `SCREEN DIRECTION` popunjen negacijom (shema 2) | `shot.image_prompt`, lista D iz `docs/reference/camera-language.md` |
-| C2 | broj multi-visual klipova | **nema polje**; meri se iz `shot.animation_prompt` — vidi 5.6 tačka 11 |
+| R7 | `still_motion` se ne slaže sa `tags.camera_motion` (samo still shotovi) | `shot.still_motion`, `shot.tags.camera_motion` |
+| C2 | broj multi-visual klipova; **imenilac su samo klipovi** | **nema polje**; meri se iz `shot.animation_prompt` — vidi 5.6 tačka 11 |
 
 **R4 protiv C1.** C1 *zahteva* da isti blok od 25–40 reči stoji u svakom shotu gde se lik pojavljuje;
 R4 kažnjava >12 uzastopnih identičnih reči. Bez izuzeća bi R4 lajao na svaki ispravan storyboard.
@@ -1173,3 +1245,62 @@ pa nema šta ni da se prijavi.
 **4. Staro ponašanje je dostupno kroz `opts.timelineEnd: null`.** Ne zato što ga neko koristi, nego
 zato što je bez njega upozorenje `narration-tail` postalo mrtav kod koji nijedan test ne može da
 dosegne.
+
+### 5.13 Odluke donete uz still kadrove (obavezujuće) — epizoda od slika
+
+Spec: `docs/superpowers/specs/2026-09-09-still-kadrovi.md`. Povod je budžet: slika je u Flow-u
+besplatna, klip nije, pa video budžet — ne pisanje i ne montaža — određuje koliko epizoda
+mesečno može da postoji.
+
+**1. `schema_version` ostaje 2.** Oba nova polja (`render_mode`, `still_motion`) su opciona sa
+podrazumevanom vrednošću koja opisuje zatečeno stanje, pa nijedan postojeći `storyboard.json`
+nije morao da se dira. Režim rendera i oblik prompta su nezavisne ose; da su spojene u jedan
+broj, svaka buduća kombinacija bi tražila novu verziju sheme.
+
+**2. Zatvoren enum od pet vrednosti, ne izvođenje iz taga i ne objekat.** Izvođenje iz
+`tags.camera_motion` puca na `pan` i `track` — tag ne kaže na koju stranu, a to piše jedino kao
+proza u `SCREEN DIRECTION`. Objekat `{kind, amount, direction}` bi uveo treće mesto na kome živi
+namera kamere i tražio per-shot brzinu zuma koju niko ne može dobro da proceni. Neslaganje
+enuma i taga meri R7, i to je **signal, ne nalaz**: `reveal` izveden kao spor zum je legitiman.
+
+**3. Iznos zuma je konstanta u rendereru** (`STILL_ZOOM = 1.15`), ne polje. Jedna vrednost daje
+jedan prepoznatljiv izgled epizode; 45 pojedinačno biranih brzina daje 45 malo različitih.
+Isti broj otvara i marginu po kojoj `pan-*` putuje.
+
+**4. Still kadar se popunjava, ne uokviruje.** Klip putanja ostaje `decrease` + `pad` (Veo klip
+je 16:9, pa je `pad` no-op); still putanja je `increase` + `crop`. Flow slika je 2752×1536, to
+jest 43:24, pa bi `pad` na 1920×1080 dodao 4 px crne trake gore i dole **na svakoj slici**.
+
+**5. `zoompan` sa `d=1` nad `-loop 1` ulazom, na dvostrukom međukanvasu.** `d=1` daje po jedan
+izlazni frejm na svaki ulazni, pa `on` broji od 0 do N−1 i pokret je ravnomeran. Međukanvas
+postoji jer `zoompan` računa `x`/`y` u celim pikselima **ulaza**: na ulazu jednakom izlazu
+pokret trza za ceo piksel po frejmu. Provereno na ffmpeg 7.1 — sva četiri pokreta daju 24 od 24
+različita frejma u sekundi, a `pan-left` prvi frejm je bajt-identičan `pan-right` poslednjem.
+
+**6. Opseg boje je bio pokvaren i pre still kadrova.** JPEG se dekodira kao `yuvj420p` (pun
+opseg) i bez konverzije izlazi takav iz filter lanca, pa ga libx264 i tagira punim opsegom —
+dok Veo klipovi izlaze kao `yuv420p`. Posle `concat -c copy` zaglavlje toka nosi tag prvog
+segmenta, pa end card dobija ugašeno crno i spaljeno belo: siva RGB 20 je čuvana kao Y=20
+umesto Y≈31. Popravka je `format=yuv420p` na kraju `videoFilter`-a plus
+`-color_range tv -colorspace bt709 -color_primaries bt709 -color_trc bt709` na enkodiranju, uz
+`recipe.v: 2` da se keširani segmenti regenerišu. Nad klip putanjom ne menja nijedan sempl
+(provereno `framemd5` poređenjem).
+
+**7. T2 granice za still su 2.5–9.0s, cilj 5.0s.** Obrazloženje je u 3.3.2; ovo je jedini broj
+ovde koji se očekuje da se menja posle prve merene epizode.
+
+**8. Rezolucija slike se meri u montaži, ne u linteru.** Linter ne zna sa kojim `--res` će se
+renderovati, pa bi prag bio izmišljen. `qc-report.md` ima sekciju „Still kadrovi" koja traži bar
+`STILL_ZOOM × width` piksela širine i prijavljuje WARN, ne ERROR — `--res` se bira posle
+generisanja slika.
+
+**9. Budžet kredita broji samo klipove.** „45 klipova po 0 kredita" i „45 slika" nisu ista
+rečenica pred Flow-om; epizoda bez ijednog klipa ne dobija ni tabelu tierova. Iz istog razloga
+C2 ima klipove u imeniocu, a „Kandidati za regeneraciju" u QC izveštaju ne vide still kadrove —
+slika nema udeo iskorišćenja i izašla bi kao 0%.
+
+**10. Fixture je `tests/fixtures/still-episode/`, a `storyboard.sample.json` se ne dira.** Sample
+je kanonski clip primer sa izmerenim brojevima citiranim u 3.8; still ugovor se izvršno
+proverava nad fixture folderom kroz lint testove, tačno kao što `linked-episode` nosi ugovor
+lanaca. Fixture ima šest shotova — pet still sa svih pet pokreta i jedan clip, koji dokazuje da
+se režimi mešaju u istoj epizodi.

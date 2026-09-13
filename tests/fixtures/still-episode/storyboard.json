@@ -1,0 +1,240 @@
+{
+  "schema_version": 2,
+  "episode": "still-episode",
+  "generated_at": "2026-09-09T12:00:00Z",
+  "narration_duration": 29.3,
+  "fps": 24,
+  "beats": [
+    {
+      "beat_id": "B01",
+      "sentences": [
+        "S01",
+        "S02"
+      ],
+      "start": 0,
+      "end": 12.75,
+      "dur": 12.75,
+      "device": null,
+      "narration_says": "Every cargo that came off a Carthaginian ship was counted twice. Once by the captain who brought it, and once by a clerk who had never been to sea.",
+      "viewer_sees": "A clerk reading back his own tally on the quay, then the wax itself, cut column by column.",
+      "shots": [
+        {
+          "shot_id": "01",
+          "beat_id": "B01",
+          "link_group": "B01",
+          "t_in": 0,
+          "t_out": 4.5,
+          "use_in": 0,
+          "use_out": 4.5,
+          "use_len": 4.5,
+          "motion_budget": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot01.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "hanno"
+          ],
+          "visual_priority": [
+            "Hanno’s face and hands",
+            "the open wax tablet",
+            "the quay stones",
+            "the moored hull"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Hanno, a lean Carthaginian clerk of about fifty, close-cropped grey hair, a short curled beard, an undyed linen tunic belted with rope, a wax tablet under one arm.\nDETAIL: at this distance the detail belongs to the face and the hands — the crease held between the brows, the ink-dark thumbnail, the rope belt knotted twice at the hip; the quay stones stay broad and simple behind him.\nWEARING/PROPS: worn leather sandals, a bronze stylus tucked behind one ear.\nACTION: he stands over the open tablet and reads the last column back to himself.\nSETTING: a long stone quay of fitted limestone blocks, crates and amphorae stacked along its edge.\nCAMERA: camera stands two paces from him on the quay, eye level, medium.\nFRAME LAYOUT: left third — Hanno, near-camera and large; center — the open tablet held at chest height; right third — a moored hull, far and hazy.\nFACING: we see his face and chest three-quarter on, his eyes down on the wax.\nSCREEN DIRECTION: a gull's shadow slides across the lower-left stones and off the frame.\nLIGHT: flat morning haze off the water, no hard shadows anywhere.\nPALETTE: sand ochre, weathered timber, sea green.\nNOT IN FRAME: the city walls, the open sea, any written number.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "carthage-quay",
+            "time_light": "morning-haze",
+            "camera_motion": "push"
+          }
+        },
+        {
+          "shot_id": "02",
+          "beat_id": "B01",
+          "link_group": "B01",
+          "t_in": 4.5,
+          "t_out": 7.75,
+          "use_in": 0,
+          "use_out": 3.25,
+          "use_len": 3.25,
+          "motion_budget": null,
+          "render_mode": "still",
+          "still_motion": "pull",
+          "source_file": "shots/shot02.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "wax-tablet"
+          ],
+          "visual_priority": [
+            "the wax tablet and its tally marks",
+            "the depth of the cuts",
+            "the bronze stylus",
+            "the crate lid"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a hinged wooden writing tablet the size of two palms, its recessed panels filled with dark beeswax, the surface scored by columns of tally marks and thumbed smooth at the edges.\nDETAIL: the wax carries the whole frame — each tally cut sits at its own depth, the fresh ones bright-edged and the old ones rubbed shallow, a thumbprint smeared across the corner of the lower panel.\nWEARING/PROPS: the bronze stylus laid across the hinge.\nACTION: the tablet rests open on a crate lid, one column finished and one begun.\nSETTING: the same stretch of quay, the same crates, seen from directly above the crate lid.\nCAMERA: camera hangs a forearm above the tablet, looking straight down, extreme close.\nFRAME LAYOUT: center — the open tablet, near-camera and large; upper edge — the stylus, cropped at the hinge; lower-right — a corner of rope, far and out of focus.\nFACING: the wax panels face the lens square on, tilted a few degrees.\nSCREEN DIRECTION: one loose fibre of rope trembles at the lower-right; nothing else stirs.\nLIGHT: the same flat morning haze, arriving from the upper-left.\nPALETTE: dark beeswax brown, pale limewood, sea green.\nNOT IN FRAME: hands, faces, the harbour water.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "ECU",
+            "angle": "overhead",
+            "location": "carthage-quay",
+            "time_light": "morning-haze",
+            "camera_motion": "pull"
+          }
+        },
+        {
+          "shot_id": "03",
+          "beat_id": "B01",
+          "link_group": null,
+          "t_in": 7.75,
+          "t_out": 12.75,
+          "use_in": 0,
+          "use_out": 5,
+          "use_len": 5,
+          "motion_budget": null,
+          "render_mode": "still",
+          "still_motion": "hold",
+          "source_file": "shots/shot03.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "carthage-quay"
+          ],
+          "visual_priority": [
+            "the emptied Carthage quay",
+            "the rope-worn stone edge",
+            "the stacked crates",
+            "the moored hulls"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a long stone quay of fitted limestone blocks, its edge worn round by rope, crates and amphorae stacked along it, moored hulls riding low in green harbour water.\nDETAIL: the detail is in the wear — rope grooves cut round the stone edge, salt bloom along the lower courses, amphora shoulders chipped where they have been set down a thousand times; the far hulls stay simple shapes.\nWEARING/PROPS: coils of mooring rope, a stack of empty crates.\nACTION: the quay stands emptied at the turn of the day, every cargo already counted and carried off.\nSETTING: the full length of the quay, from the near bollard to the far mooring posts.\nCAMERA: camera stands back at the head of the quay, eye level, wide.\nFRAME LAYOUT: lower-left — the near bollard, near-camera and large; center — the emptied quay running away; right third — the moored hulls, far and small.\nFACING: the quay runs from the lower-left corner toward the upper-right.\nSCREEN DIRECTION: heat shimmer climbs off the stones at the right edge; nothing else moves.\nLIGHT: midday sun straight overhead, hard short shadows under every crate.\nPALETTE: bleached limestone, sun-grey timber, flat green water.\nNOT IN FRAME: people, gulls, the city behind.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "carthage-quay",
+            "time_light": "midday-hard-sun",
+            "camera_motion": "locked"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B02",
+      "sentences": [
+        "S03",
+        "S04"
+      ],
+      "start": 12.75,
+      "end": 29.25,
+      "dur": 16.5,
+      "device": "macro-object",
+      "narration_says": "The jars themselves carried the record. One stroke at the shoulder for one count, and the wax seal to say the count was closed.",
+      "viewer_sees": "The marks on the sealed jars, the room that holds them, and the clerk putting the day away.",
+      "shots": [
+        {
+          "shot_id": "04",
+          "beat_id": "B02",
+          "link_group": null,
+          "t_in": 12.75,
+          "t_out": 15.25,
+          "use_in": 0,
+          "use_out": 2.5,
+          "use_len": 2.5,
+          "motion_budget": null,
+          "render_mode": "still",
+          "still_motion": "pan-left",
+          "source_file": "shots/shot04.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "the scored marks on the jar shoulders",
+            "the cracked wax seals",
+            "the lamp-light on the wall"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a row of sealed clay jars on a plank shelf, each one stoppered with wax and marked at the shoulder with a single scored stroke.\nDETAIL: the marks are the point — a scored stroke on every shoulder, some cut clean and some cut twice, the wax seals cracked in a fine web, dust settled in the throat of every jar.\nWEARING/PROPS: the plank shelf, a lamp bracket driven into the stone.\nACTION: the jars stand in an unbroken row, sealed and unmoved since they were counted.\nSETTING: one wall of a low vaulted counting house, whitewashed stone above the shelf.\nCAMERA: camera stands close to the shelf, slightly below the jar shoulders, close.\nFRAME LAYOUT: center — three jars, near-camera and large; left edge — a fourth jar, cropped at the belly; upper edge — the shelf plank above, far and dim.\nFACING: the marked shoulders face the lens, the row running left to right.\nSCREEN DIRECTION: lamp-light wavers along the wall behind the upper-left jar.\nLIGHT: a single oil lamp at dusk, warm and low, the vault above going dark.\nPALETTE: terracotta, cracked wax cream, soot black.\nNOT IN FRAME: the doorway, the high window, any person.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "CU",
+            "angle": "low",
+            "location": "counting-house",
+            "time_light": "lamplit-dusk",
+            "camera_motion": "pan"
+          }
+        },
+        {
+          "shot_id": "05",
+          "beat_id": "B02",
+          "link_group": null,
+          "t_in": 15.25,
+          "t_out": 21.25,
+          "use_in": 0,
+          "use_out": 6,
+          "use_len": 6,
+          "motion_budget": null,
+          "render_mode": "still",
+          "still_motion": "pan-right",
+          "source_file": "shots/shot05.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "counting-house"
+          ],
+          "visual_priority": [
+            "the counting house as a whole",
+            "the pigeonhole grid",
+            "the shaft of window light",
+            "the ranked shelves"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a low vaulted room of whitewashed stone with a beaten earth floor, rows of sealed clay jars on plank shelves, a single high window, ledger scrolls stacked in wooden pigeonholes along one wall.\nDETAIL: at this height the room reads as pattern — the pigeonhole grid, the ranked shelves, the one bright shaft from the high window laid across the earth floor; individual jars fall to shape and shadow.\nWEARING/PROPS: pigeonholes packed with scrolls, a ladder against the far shelf.\nACTION: the counting house sits closed for the night with every ledger returned to its hole.\nSETTING: the whole vaulted room seen from the springing of the vault.\nCAMERA: camera hangs high under the vault, looking down across the room, very wide.\nFRAME LAYOUT: upper-left — the pigeonhole wall, far and dim; center — the lit floor, mid-frame; lower-right — the shelf tops, near-camera and large.\nFACING: the room runs away from the lower-right corner toward the upper-left.\nSCREEN DIRECTION: dust drifts down the shaft of window light at the center.\nLIGHT: the last dusk light from the high window, one warm lamp far below.\nPALETTE: whitewash grey, scroll ivory, lamp amber.\nNOT IN FRAME: the quay, the sky, any open ledger.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "architecture",
+            "shot_size": "XLS",
+            "angle": "aerial",
+            "location": "counting-house",
+            "time_light": "lamplit-dusk",
+            "camera_motion": "pan"
+          }
+        },
+        {
+          "shot_id": "06",
+          "beat_id": "B02",
+          "link_group": null,
+          "t_in": 21.25,
+          "t_out": 29.25,
+          "use_in": 0,
+          "use_out": 8,
+          "use_len": 8,
+          "motion_budget": 8,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/part06.mp4",
+          "ingredient_image": "images/shot06.jpeg",
+          "characters": [
+            "hanno"
+          ],
+          "visual_priority": [
+            "Hanno walking the aisle",
+            "the tablet against his chest",
+            "the pigeonhole wall",
+            "the torch shadows"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Hanno, a lean Carthaginian clerk of about fifty, close-cropped grey hair, a short curled beard, an undyed linen tunic belted with rope, a wax tablet under one arm.\nDETAIL: torchlight does the work — the beard edge lit and the cheek beyond it lost, the tablet corner catching a hard highlight, the tunic weave visible only where the flame reaches it.\nWEARING/PROPS: worn leather sandals, the wax tablet held against his chest.\nACTION: he walks the length of the counting house and sets the tablet into its pigeonhole.\nSETTING: the aisle of a low vaulted counting house, shelves running away on both sides.\nCAMERA: camera keeps pace beside him down the aisle, eye level, medium.\nFRAME LAYOUT: left third — Hanno in profile, near-camera and large; center — the aisle running away; right third — the pigeonhole wall, far and dark.\nFACING: we see him in full profile, his eyes forward down the aisle.\nSCREEN DIRECTION: torch shadows sweep from the right edge toward the left as he passes.\nLIGHT: a single wall torch, warm and moving, deep shadow between the shelves.\nPALETTE: torch amber, whitewash grey, undyed linen.\nNOT IN FRAME: the quay, daylight, any other clerk.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 8s.\n0–2s: Hanno steps into the aisle with the tablet held against his chest.\n2–6s: he walks the length of the shelves, torch shadows crossing his face.\n6–8s: he slides the tablet into its pigeonhole and his hand comes away.\nCAMERA: one continuous track beside him, holding the same distance.\nENVIRONMENT: torch flame wavers; dust lifts off the shelf edge.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "profile",
+            "location": "counting-house",
+            "time_light": "night-torchlit",
+            "camera_motion": "track"
+          }
+        }
+      ]
+    }
+  ]
+}

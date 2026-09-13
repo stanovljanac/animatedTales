@@ -524,3 +524,60 @@ test('assertShape: shot bez link_group-a i beat bez device-a ne prolaze', () => 
   delete b.beats[0].device;
   assert.throws(() => advise(b, mkEp(), BARE), /beat B01: nedostaje device/);
 });
+
+// ---------------------------------------------------------------- R7
+
+/** Still shot: pokret plus `tags.camera_motion` koji mu odgovara, osim kad test meri suprotno. */
+const mkStill = (id, motion, camera, over = {}) => mkShot(id, {
+  render_mode: 'still',
+  still_motion: motion,
+  source_file: `shots/shot${id}.jpeg`,
+  animation_prompt: null,
+  motion_budget: null,
+  ...over,
+  tags: tags({ camera_motion: camera, ...(over.tags ?? {}) }),
+});
+
+test('R7: pokret koji se poklapa sa camera_motion ne daje signal', () => {
+  const pairs = [['push', 'push'], ['pull', 'pull'], ['pan-left', 'pan'], ['pan-right', 'pan'], ['hold', 'locked']];
+  const shots = pairs.map(([m, c], i) => mkStill(String(i + 1).padStart(2, '0'), m, c));
+  assert.deepEqual(of(advise(mkSb(shots), mkEp(), BARE), 'R7'), []);
+});
+
+test('R7: neslaganje se prijavljuje, sa obe izmerene vrednosti', () => {
+  const s = of(advise(mkSb([mkStill('01', 'push', 'locked')]), mkEp(), BARE), 'R7');
+  assert.equal(s.length, 1);
+  assert.match(s[0].message, /push/);
+  assert.match(s[0].message, /locked/);
+});
+
+test('R7: camera_motion koji nijedan pokret ne izražava je uvek signal', () => {
+  for (const cam of ['track', 'parallax', 'reveal']) {
+    const s = of(advise(mkSb([mkStill('01', 'push', cam)]), mkEp(), BARE), 'R7');
+    assert.equal(s.length, 1, cam);
+    assert.match(s[0].message, new RegExp(cam));
+  }
+});
+
+test('R7 ćuti nad clip shotovima — nad klipom pokret nosi animation prompt', () => {
+  const shots = [mkShot('01', { tags: { camera_motion: 'track' } }), mkShot('02')];
+  assert.deepEqual(of(advise(mkSb(shots), mkEp(), BARE), 'R7'), []);
+});
+
+test('R7 je ADVISORY: ne ulazi u BLOCKING nalaze', () => {
+  const sb = mkSb([mkStill('01', 'push', 'locked')]);
+  assert.ok(!lintStatic(sb, mkEp(), { lists: undefined }).some((f) => f.code === 'R7'));
+});
+
+test('C2 broji samo klipove — slike nemaju animation prompt u kome bi marker stajao', () => {
+  const shots = [mkStill('01', 'push', 'push'), mkStill('02', 'hold', 'locked'), mkShot('03')];
+  const s = of(advise(mkSb(shots), mkEp(), BARE), 'C2');
+  assert.equal(s.length, 1);
+  assert.match(s[0].message, /0 od 1 klipova/);
+});
+
+test('C2 nad epizodom bez ijednog klipa kaže da klipova nema', () => {
+  const shots = [mkStill('01', 'push', 'push'), mkStill('02', 'pull', 'pull')];
+  const s = of(advise(mkSb(shots), mkEp(), BARE), 'C2');
+  assert.match(s[0].message, /nema klipova/);
+});

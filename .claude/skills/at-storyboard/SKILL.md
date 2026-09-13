@@ -133,6 +133,20 @@ Posle odobrenja:
 node tools/beatplan.mjs episodes/<slug> --beats episodes/<slug>/beats.json --write
 ```
 
+**Epizoda od slika** (`--still`) je odluka koja se donosi **ovde, pre upisa** — ne kasnije,
+jer menja granice reza i time ceo tempo epizode:
+
+```
+node tools/beatplan.mjs episodes/<slug> --beats episodes/<slug>/beats.json --still --write
+```
+
+Sa `--still` rez je 2.5–9.0s (cilj 5s) umesto 3.0–10.0s (cilj 8s), pa epizoda od četiri minuta
+dobija ~40–50 kadrova umesto 27. Svaki shot izlazi kao `render_mode: "still"`,
+`still_motion: "hold"`, `animation_prompt: null`, `source_file: shots/shotNN.jpeg`. Razlog je
+budžet: slika je u Flow-u besplatna, klip nije, pa cela epizoda može da stane u nula kredita
+(`docs/reference/google-ai-plus.md`). Mešanje je dozvoljeno — pojedinačni shot se posle ručno
+prebaci u clip kad kadar stvarno traži animaciju.
+
 Piše `storyboard.json` na **shemi 2** (`schema_version: 2`), sa popunjenim vremenima i **praznim
 promptovima**: `image_prompt` i `animation_prompt` su `""`, `characters` i `visual_priority` su
 `[]`, `ingredient_image` i `link_group` su `null`, a tagovi su placeholder
@@ -214,7 +228,36 @@ Alat za izbor, ne obavezne kategorije. Uzmi najjednostavnije rešenje koje radi.
 lokacija, kad prelaz dobija na statičnoj slici ili kad zaključak dobija na vizuelnim pauzama.
 Nije podrazumevana zamena za animaciju.
 
+### Still kadar — mašinski oblik
+
+Still montage ima parnjak u ugovoru (`schemas.md` §3.3.2): shot sa `render_mode: "still"` je
+jedna slika kojoj pokret kamere daje **montaža**, ne Flow. Po takvom shotu:
+
+| Polje | Vrednost |
+|---|---|
+| `still_motion` | `push` · `pull` · `pan-left` · `pan-right` · `hold` |
+| `animation_prompt`, `motion_budget`, `ingredient_image` | `null` |
+| `source_file` | `shots/shotNN.jpeg` |
+| `use_in` | `0.0`, a `use_len` u 2.5–9.0s |
+
+`image_prompt`, S2 blokovi, lockovi i `visual_priority` rade **potpuno isto** — still kadar je i
+dalje kadar.
+
+**`still_motion` se bira u istom dahu sa `tags.camera_motion`**, i to dvoje mora da se slaže:
+`push`↔`push`, `pull`↔`pull`, `pan-left`/`pan-right`↔`pan`, `hold`↔`locked`. R7 prijavljuje
+neslaganje. `track`, `parallax` i `reveal` nad jednom slikom nemaju parnjaka — ako kadar zaista
+traži jedan od njih, on traži klip, ne sliku.
+
+Smer panovanja **mora da prati `SCREEN DIRECTION`**: to je jedino mesto u promptu na kome piše
+šta se kreće preko kadra, i pokret kamere koji ide protiv njega vidi se kao greška. Iznos zuma
+se ne bira — konstanta je u rendereru, da bi cela epizoda imala jedan izgled.
+
+`hold` je pun izbor, ne izostanak izbora: postoji da bi rez imao gde da stane. Niz od pet
+identičnih zumova je isto tako umoran kao slajdšou.
+
 ## Early motion
+
+**Važi za clip shotove.** Still kadar nema animation prompt — njegov pokret je `still_motion`.
 
 Osim kad je kadar **namerno miran ili refleksivan**, smislen pokret počinje u prve 2–3 sekunde.
 

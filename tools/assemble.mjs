@@ -11,6 +11,11 @@
 //   4. narracija — jedini audio stream, od `t=0`
 //   5. end card — drži outro deo narracije + 1.5s repa
 //
+// Still kadrovi (schemas.md §3.3.2): shot sa `render_mode: "still"` nije klip nego jedna slika
+// kojoj pokret kamere daje **ovaj alat** — `stillFilter` + `zoompan`. Korak 2 zato ima tri
+// grane umesto dve (klip, slika, end card), a validacija i QC mere sliku rezolucijom umesto
+// trajanjem. Sve ostalo — plan rezova, dissolve, konkatenacija, mux — ne zna za razliku.
+//
 // Dopune iz docs/plan/C10-assemble-dissolve-qc.md:
 //   6. `--dissolve N` — cross-dissolve od N frejmova između linked shotova **istog beata**.
 //      Između beatova ostaje hard cut: rez na granici beata prati rez u priči.
@@ -36,7 +41,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-import { EPS, linkChains, plural, round3 } from './contract.mjs';
+import { EPS, STILL_MOTIONS, isStill, linkChains, plural, renderMode, round3 } from './contract.mjs';
 import { probe, run } from './ffmpeg.mjs';
 
 // ---------------------------------------------------------------- konstante
@@ -61,6 +66,24 @@ export const ENCODE = {
 
 /** Rep end carda posle poslednje reči narracije (plan, korak 5). */
 export const TAIL = 1.5;
+
+/**
+ * Koliko se zumira nad still kadrom (schemas.md §3.3.2).
+ *
+ * Konstanta, ne polje po shotu, iz istog razloga iz kog je `still_motion` zatvoren enum:
+ * jedna vrednost daje jedan prepoznatljiv izgled epizode, a per-shot brojka daje 45 malo
+ * različitih. 1.15 je dovoljno da se pokret vidi na 5s, a nedovoljno da se na 2752 px izvoru
+ * vidi mekoća. Isti broj otvara i marginu po kojoj `pan-*` putuje — bez zuma je nema kuda,
+ * jer je Flow slika 43:24, svega 1.4% šira od 16:9.
+ */
+export const STILL_ZOOM = 1.15;
+
+/**
+ * Međukanvas pre `zoompan`-a, u odnosu na izlaz. `zoompan` računa `x`/`y` u celim pikselima
+ * **ulaza**, pa na ulazu jednakom izlazu pokret trza za ceo piksel po frejmu. Na dvostrukom
+ * ulazu greška pada na pola izlaznog piksela i pokret se čita kao gladak.
+ */
+export const STILL_SUPERSAMPLE = 2;
 
 /** Trajanje cross-dissolve-a iz C10, u frejmovima. Zastava je podrazumevano isključena. */
 export const DEFAULT_DISSOLVE = 8;
@@ -286,6 +309,10 @@ export function planCuts(storyboard, opts = {}) {
     }
     shotSegments.push({
       kind: 'shot',
+      // Režim i pokret putuju sa segmentom, pa `build` bira granu bez ponovnog čitanja
+      // storyboard-a — a lanac sme da meša režime, jer `xfade` radi nad segmentima.
+      mode: renderMode(s),
+      motion: isStill(s) ? s.still_motion : null,
       id: s.shot_id,
       name: `${s.shot_id}.mp4`,
       source: s.source_file,
@@ -488,6 +515,14 @@ export async function validate(plan, dir, media, { probe: probeFn = probe, sourc
       if (!fs.existsSync(path.join(dir, seg.source))) problems.push(`nema end card slike ${seg.source}`);
       continue;
     }
+    if (seg.mode === 'still') {
+      // Isto važi i za still kadar: trajanje pravi `-loop 1`. Traži se da slika postoji;
+      // da li je dovoljno velika za zum meri QC izveštaj, jer to nije razlog da montaža stane.
+      if (!fs.existsSync(path.join(dir, seg.source))) {
+        problems.push(`shot ${seg.id}: nema slike ${seg.source}`);
+      }
+      continue;
+    }
     const info = src.get(seg.source);
     if (!info || !info.exists) {
       problems.push(`shot ${seg.id}: nema klipa ${seg.source}`);
@@ -519,14 +554,16 @@ export async function validate(plan, dir, media, { probe: probeFn = probe, sourc
  *
  * @param {string[]} files putanje relativne u odnosu na folder epizode; ponavljanja se skupljaju
  * @returns {Promise<Map<string, {source: string, file: string, exists: boolean,
- *   duration: number|null, start: number|null, available: number|null, error: string|null}>>}
+ *   duration: number|null, start: number|null, available: number|null, width: number|null,
+ *   height: number|null, error: string|null}>>}
  */
 export async function inspectSources(files, dir, { probe: probeFn = probe } = {}) {
   const map = new Map();
   for (const source of files) {
     if (map.has(source)) continue;
     const file = path.join(dir, source);
-    const row = { source, file, exists: false, duration: null, start: null, available: null, error: null };
+    const row = { source, file, exists: false, duration: null, start: null, available: null,
+      width: null, height: null, error: null };
     if (!fs.existsSync(file)) {
       map.set(source, row);
       continue;
@@ -536,6 +573,9 @@ export async function inspectSources(files, dir, { probe: probeFn = probe } = {}
       const p = await probeFn(file);
       row.duration = p.duration ?? null;
       row.start = p.start ?? 0;
+      // Dimenzije su tu zbog still kadrova: slika se ne meri trajanjem nego rezolucijom.
+      row.width = p.width ?? null;
+      row.height = p.height ?? null;
       // Dostupno se meri na osi prvog dekodiranog sempla, isto kao F1 i C05 (§5.4 tačka 1).
       row.available = row.duration === null ? null : round3(row.duration - row.start);
     } catch (err) {
@@ -548,19 +588,36 @@ export async function inspectSources(files, dir, { probe: probeFn = probe } = {}
 
 // ---------------------------------------------------------------- ffmpeg argumenti (koraci 2–5)
 
-/** Filter lanac: prvo fps (manje frejmova za skaliranje), pa uklapanje u okvir bez razvlačenja. */
+/**
+ * Filter lanac: prvo fps (manje frejmova za skaliranje), pa uklapanje u okvir bez razvlačenja,
+ * pa **konverzija opsega boje**.
+ *
+ * `format=yuv420p` na kraju nije kozmetika ni duplikat `-pix_fmt`-a. JPEG se dekodira kao
+ * `yuvj420p` — pun opseg — i bez ove konverzije izlazi iz lanca takav, pa ga libx264 i tagira
+ * punim opsegom. Veo klipovi u isto vreme izlaze kao `yuv420p`, ograničeni. Posle
+ * `concat -c copy` zaglavlje toka nosi tag prvog segmenta, pa plejer koji mu veruje prikaže
+ * end card sa ugašenim crnim i spaljenim belim: siva RGB 20 je u still segmentu čuvana kao
+ * Y=20 umesto Y≈31. Nad Veo klipom je ovo no-op — provereno `framemd5` poređenjem, semplovi
+ * su identični pre i posle.
+ */
 export function videoFilter(width, height, fps) {
   return [
     `fps=${fps}`,
     `scale=${width}:${height}:force_original_aspect_ratio=decrease:flags=lanczos`,
     `pad=${width}:${height}:(ow-iw)/2:(oh-ih)/2`,
     'setsar=1',
+    `format=${ENCODE.pix}`,
   ].join(',');
 }
 
+/**
+ * Zajednički izlazni profil. Tagovi opsega i primara idu uz konverziju iz `videoFilter`-a:
+ * bez njih izlaz ostaje netagovan, pa se ista slika u dva plejera vidi različito.
+ */
 const encodeArgs = () => [
   '-c:v', 'libx264', '-preset', ENCODE.preset, '-crf', String(ENCODE.crf),
   '-pix_fmt', ENCODE.pix, '-fps_mode', 'cfr', '-video_track_timescale', String(ENCODE.timescale),
+  '-color_range', 'tv', '-colorspace', 'bt709', '-color_primaries', 'bt709', '-color_trc', 'bt709',
 ];
 
 /**
@@ -584,6 +641,99 @@ export function shotArgs(seg, { dir, width, height, fps, out }) {
     '-t', String(round3(seg.len + 2 / fps)),
     '-an',
     '-vf', videoFilter(width, height, fps),
+    '-frames:v', String(seg.frames),
+    ...encodeArgs(),
+    out,
+  ];
+}
+
+/**
+ * Filter lanac still kadra: jedna slika -> pokret kamere (schemas.md §3.3.2).
+ *
+ * Tri odluke stoje u ovom lancu:
+ *
+ * 1. **Popunjava, ne uokviruje.** `increase` + `crop`, ne `decrease` + `pad` kao klip putanja.
+ *    Flow slika je 2752×1536 (43:24), pa bi je `pad` na 1920×1080 spustio na 1071.6 px visine
+ *    i dodao 4 px crne trake gore i dole — na svakoj slici u epizodi.
+ * 2. **Međukanvas pre `zoompan`-a** (`STILL_SUPERSAMPLE`), zbog celobrojnog `x`/`y`.
+ * 3. **`d=1` nad `-loop 1` ulazom.** Ulaz je već sekvenca od N frejmova, pa `zoompan` daje po
+ *    jedan izlazni frejm na svaki ulazni, a `on` broji od 0 do N−1. Varijanta „jedan ulazni
+ *    frejm, `d=N`" takođe radi, ali tamo `on` ne postoji kao poluga za ravnomeran pokret.
+ *
+ * `hold` namerno nema `zoompan`: postoji da bi rez imao gde da stane. Isto i kadar od jednog
+ * frejma — nema po čemu da se pomera.
+ *
+ * @param {number} width @param {number} height @param {number} fps
+ * @param {string} motion jedan od `STILL_MOTIONS`
+ * @param {number} frames broj izlaznih frejmova
+ * @returns {string}
+ */
+export function stillFilter(width, height, fps, motion, frames) {
+  if (!STILL_MOTIONS.includes(motion)) {
+    throw new Error(`nepoznat still_motion "${motion}" — očekuje se ${STILL_MOTIONS.join(' | ')}`);
+  }
+
+  const sw = width * STILL_SUPERSAMPLE;
+  const sh = height * STILL_SUPERSAMPLE;
+  const fill = [
+    `fps=${fps}`,
+    `scale=${sw}:${sh}:force_original_aspect_ratio=increase:flags=lanczos`,
+    `crop=${sw}:${sh}`,
+  ];
+
+  // Statičan kadar ne treba da prođe kroz zoompan; skalira se pravo u izlaz.
+  if (motion === 'hold' || frames < 2) {
+    return [
+      `fps=${fps}`,
+      `scale=${width}:${height}:force_original_aspect_ratio=increase:flags=lanczos`,
+      `crop=${width}:${height}`,
+      `format=${ENCODE.pix}`,
+      'setsar=1',
+    ].join(',');
+  }
+
+  const k = frames - 1;                      // poslednji frejm je `on = k`
+  const d = round3(STILL_ZOOM - 1);          // koliko zum putuje
+  const centerX = 'iw/2-(iw/zoom/2)';
+  const centerY = 'ih/2-(ih/zoom/2)';
+
+  // `pan-*` putuje po margini koju otvara sam zum: `iw - iw/zoom`.
+  const pan = {
+    z: `${STILL_ZOOM}`,
+    'pan-right': `(iw-iw/zoom)*on/${k}`,
+    'pan-left': `(iw-iw/zoom)*(1-on/${k})`,
+  };
+
+  const expr = {
+    push: { z: `'1+${d}*on/${k}'`, x: `'${centerX}'`, y: `'${centerY}'` },
+    pull: { z: `'${STILL_ZOOM}-${d}*on/${k}'`, x: `'${centerX}'`, y: `'${centerY}'` },
+    'pan-right': { z: pan.z, x: `'${pan['pan-right']}'`, y: `'${centerY}'` },
+    'pan-left': { z: pan.z, x: `'${pan['pan-left']}'`, y: `'${centerY}'` },
+  }[motion];
+
+  return [
+    ...fill,
+    `zoompan=z=${expr.z}:x=${expr.x}:y=${expr.y}:d=1:s=${width}x${height}:fps=${fps}`,
+    `format=${ENCODE.pix}`,
+    'setsar=1',
+  ].join(',');
+}
+
+/**
+ * Still kadar -> segment. Bez `-ss` (slika nema unutrašnji tajmlajn) i bez `-tune stillimage`
+ * (pokret postoji, a tune cilja raspodelu bitova za nepomičnu sliku — end card ga zadržava,
+ * on jeste nepomičan).
+ *
+ * Broj frejmova je zakucan `-frames:v` iz istog razloga kao na klip putanji: `-t` ume da
+ * isporuči frejm više ili manje, a 45 takvih grešaka je drift koji T1 vidi.
+ */
+export function stillArgs(seg, { dir, width, height, fps, out }) {
+  return [
+    '-hide_banner', '-nostdin', '-loglevel', 'error', '-y',
+    '-loop', '1', '-framerate', String(fps), '-t', String(round3(seg.len + 2 / fps)),
+    '-i', path.join(dir, seg.source),
+    '-an',
+    '-vf', stillFilter(width, height, fps, seg.motion, seg.frames),
     '-frames:v', String(seg.frames),
     ...encodeArgs(),
     out,
@@ -694,8 +844,14 @@ export function recipe(seg, { dir, width, height, fps }) {
     stat = null;
   }
   return {
-    v: 1,
+    // v:2 — popravka opsega boje (`format=yuv420p` + color tagovi). Keširani segmenti
+    // napravljeni pre nje moraju da postanu nevažeći, inače popravka preskoči baš one
+    // epizode zbog kojih postoji.
+    v: 2,
     kind: seg.kind,
+    mode: seg.mode ?? 'clip',
+    motion: seg.motion ?? null,
+    zoom: seg.mode === 'still' ? STILL_ZOOM : null,
     source: seg.source,
     stat,
     use_in: seg.use_in,
@@ -715,7 +871,9 @@ export function recipe(seg, { dir, width, height, fps }) {
  */
 export function chainRecipe(seg, opts) {
   return {
-    v: 1,
+    // Ide u korak sa `recipe()`: delovi već nose v:2, pa se lanac ionako regeneriše — ali dve
+    // verzije koje se razilaze čitaju se kao da su lanci bili izuzeti iz popravke boje.
+    v: 2,
     kind: 'chain',
     dissolve: seg.dissolve,
     frames: seg.frames,
@@ -830,9 +988,12 @@ export async function build(plan, dir, opts) {
   };
 
   const opt = { dir, width, height, fps };
-  const makeShot = (seg) => make(seg, recipe(seg, opt), (out_) => (seg.kind === 'endcard'
-    ? endcardArgs(seg, { ...opt, out: out_ })
-    : shotArgs(seg, { ...opt, out: out_ })), 'built');
+  const argsFor = (seg, out_) => {
+    if (seg.kind === 'endcard') return endcardArgs(seg, { ...opt, out: out_ });
+    if (seg.mode === 'still') return stillArgs(seg, { ...opt, out: out_ });
+    return shotArgs(seg, { ...opt, out: out_ });
+  };
+  const makeShot = (seg) => make(seg, recipe(seg, opt), (out_) => argsFor(seg, out_), 'built');
 
   for (const seg of plan.segments) {
     if (seg.kind !== 'chain') {
@@ -900,19 +1061,33 @@ export function qcReport(ctx) {
   const info = (u) => sources.get(u.source) ?? null;
   const need = (u) => round3(u.use_in + u.len);
 
+  // Slika i klip se mere različitim stvarima: klip trajanjem, slika rezolucijom. Meriti
+  // sliku trajanjem znači prijaviti je kao 0% iskorišćenu i tražiti regeneraciju koja nema
+  // smisla (schemas.md §5.13).
+  const stills = units.filter((u) => u.mode === 'still');
+  const clips = units.filter((u) => u.mode !== 'still');
+
   const missing = units.filter((u) => !info(u)?.exists);
-  const unreadable = units.filter((u) => {
+  const unreadable = clips.filter((u) => {
     const i = info(u);
     return i?.exists && (i.error !== null || i.available === null);
   });
-  const short = units.filter((u) => {
+  const short = clips.filter((u) => {
     const i = info(u);
     return i?.exists && i.available !== null && i.available < need(u) - tol;
   });
 
+  // Na kraju zuma se vidi `STILL_ZOOM` puta manje slike, pa je toliko i potrebno da se ne
+  // dovlači naviše. WARN, ne ERROR: `--res` je odluka koja se donosi posle generisanja slika.
+  const needWidth = Math.ceil(width * STILL_ZOOM);
+  const smallStills = stills.filter((u) => {
+    const i = info(u);
+    return i?.exists && typeof i.width === 'number' && i.width > 0 && i.width < needWidth;
+  });
+
   // Iskorišćenje se meri **baznim** delom: produženje za dissolve se potroši unutar prelaza
   // i ne bi smelo da prikaže shot kao bolje iskorišćen nego što jeste.
-  const usage = units.map((u) => {
+  const usage = clips.map((u) => {
     const have = info(u)?.available ?? null;
     const used = round3((u.base ?? u.frames) / fps);
     return { id: u.id, source: u.source, used, have, share: have ? used / have : null };
@@ -937,15 +1112,21 @@ export function qcReport(ctx) {
 
   L.push('| Provera | Status | Nalaz |', '|---|---|---|');
   L.push(`| Nedostajući partovi | ${missing.length + unreadable.length ? 'ERROR' : 'OK'} | ${missing.length + unreadable.length} od ${units.length} |`);
-  L.push(`| Prekratki izvori | ${short.length ? 'ERROR' : 'OK'} | ${short.length} od ${units.length} |`);
+  L.push(`| Prekratki izvori | ${short.length ? 'ERROR' : 'OK'} | ${short.length} od ${clips.length} |`);
   L.push(`| Ukupni drift | ${driftBad ? 'ERROR' : 'OK'} | ${signed(drift)}s (${signed(Math.round(drift * fps))} ${frameWord(Math.round(drift * fps))}) |`);
-  L.push(`| Kandidati za regeneraciju | ${candidates.length ? 'WARN' : 'OK'} | ${candidates.length} od ${units.length} |`);
+  L.push(`| Kandidati za regeneraciju | ${candidates.length ? 'WARN' : 'OK'} | ${candidates.length} od ${clips.length} |`);
+  if (stills.length) {
+    L.push(`| Still kadrovi | ${smallStills.length ? 'WARN' : 'OK'} | ` +
+      `${stills.length} od ${units.length}, ${smallStills.length} ispod ${needWidth} px širine |`);
+  }
   L.push(`| Primenjeni prelazi | ${d.skipped.length ? 'WARN' : '—'} | ${d.applied.length} primenjeno, ${d.skipped.length} preskočeno |`);
   L.push('');
 
   L.push('## Nedostajući partovi', '');
   if (missing.length + unreadable.length === 0) {
-    L.push('Svaki shot u montaži ima svoj klip na disku.');
+    L.push(stills.length
+      ? 'Svaki shot u montaži ima svoj izvor na disku — klip ili sliku.'
+      : 'Svaki shot u montaži ima svoj klip na disku.');
   } else {
     L.push('| Shot | Klip | Problem |', '|---|---|---|');
     for (const u of missing) L.push(`| ${u.id} | \`${u.source}\` | fajl ne postoji |`);
@@ -955,8 +1136,25 @@ export function qcReport(ctx) {
   }
   L.push('');
 
+  if (stills.length) {
+    L.push('## Still kadrovi', '');
+    L.push('Slika kojoj pokret daje montaža (schemas.md §3.3.2). Ne meri se trajanjem — nema ga — ' +
+      `nego rezolucijom: na kraju zuma se vidi ${STILL_ZOOM}× manje slike, pa je za ` +
+      `${width}×${height} potrebno bar **${needWidth} px** širine. Uža slika se dovlači naviše ` +
+      'i to se vidi; nije greška montaže, jer se `--res` bira posle generisanja.', '');
+    L.push('| Shot | Slika | Pokret | Dimenzije | Dovoljno |', '|---|---|---|---|---|');
+    for (const u of stills) {
+      const i = info(u);
+      const dim = i?.exists && i.width ? `${i.width}×${i.height}` : '—';
+      const ok = !i?.exists || !i.width ? '—' : (i.width < needWidth ? `WARN — treba ${needWidth}` : 'da');
+      L.push(`| ${u.id} | \`${u.source}\` | ${u.motion} | ${dim} | ${ok} |`);
+    }
+    L.push('');
+  }
+
   L.push('## Prekratki izvori', '');
-  L.push('Izvor mora da traje bar do kraja svog reza; sa `--dissolve` i za prelaz viška.', '');
+  L.push('Izvor mora da traje bar do kraja svog reza; sa `--dissolve` i za prelaz viška. ' +
+    'Still kadrovi se ovde ne pojavljuju — slika nema trajanje.', '');
   if (short.length === 0) {
     L.push('Nijedan izvor nije kraći od onoga što se iz njega seče.');
   } else {
@@ -983,7 +1181,10 @@ export function qcReport(ctx) {
   L.push(`Shotovi kod kojih je iskorišćeno manje od ${pct(REGEN_SHARE)} generisanog klipa: ` +
     'bačeno generisanje i, po pravilu, pokret sabijen u premalo vremena. Ovo je direktan ulaz ' +
     'u `at-assemble` — regeneriši ih sa kraćim pokretom pre finalnog reviewa.', '');
-  if (candidates.length === 0) {
+  if (!clips.length) {
+    L.push('Epizoda nema klipova — svi shotovi su still, a slika se ne generiše ponovo zbog ' +
+      'iskorišćenja.');
+  } else if (candidates.length === 0) {
     L.push('Nijedan shot ne troši manje od pola svog klipa.');
   } else {
     L.push('| Shot | Klip | Generisano | Iskorišćeno | Udeo |', '|---|---|---|---|---|');

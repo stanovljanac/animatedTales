@@ -197,6 +197,24 @@ Ovo su činjenice zatečene na disku koje izvorni plan nije imao. Svaka je upisa
     ostaje netaknuto: tabla ne nosi nijedan podatak kojeg nema u `storyboard.json`. → **C08**
     — *zatvoreno: `boardRows()` u `tools/render.mjs` + 5 testova u `tests/render.test.mjs`.*
 
+27. **Still kadrovi probijaju pravilo „nijedan novi feature dok jedna epizoda ne prođe ceo
+    lanac".** C13–C15 su otvoreni, a uveden je nov režim rendera (`render_mode: "still"`,
+    `docs/superpowers/specs/2026-09-09-still-kadrovi.md`). Pravilo postoji da spreči gomilanje
+    nedovršenih puteva kroz lanac — a still kadrovi ne dodaju novi put nego skraćuju postojeći:
+    suvi hod C15 se sa slikama može završiti bez ijednog kredita, dok je sa klipovima vezan za
+    50 kredita dnevno. Odstupanje je svesno i upisano ovde, a ne prećutano. → **van C-celina**
+    — *zatvoreno: `schemas.md` §3.3.2 i §5.13; fixture `tests/fixtures/still-episode/`;
+    BLOCKING dobija M1, ADVISORY dobija R7.*
+
+28. **End card je od početka izlazio u pogrešnom opsegu boje.** JPEG se dekodira kao `yuvj420p`
+    (pun opseg) i bez `format=yuv420p` izlazi takav iz filter lanca, pa ga libx264 tagira punim
+    opsegom — dok Veo klipovi izlaze `yuv420p`. Posle `concat -c copy` zaglavlje nosi tag prvog
+    segmenta, pa end card dobija ugašeno crno i spaljeno belo (siva RGB 20 čuvana kao Y=20
+    umesto Y≈31). Bug je zatečen pri uvođenju still kadrova, ali stoji sam za sebe: pogađa svaku
+    dosad montiranu epizodu. → **van C-celina**
+    — *zatvoreno: `videoFilter` + `encodeArgs` + `recipe.v: 2` u `tools/assemble.mjs`,
+    `schemas.md` §5.13 tačka 6. Nad klip putanjom ne menja nijedan sempl.*
+
 ## Verifikacije iz izvornog plana → gde su
 
 | Izvorna verifikacija | Celina |

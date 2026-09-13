@@ -19,9 +19,9 @@ import os from 'node:os';
 import path from 'node:path';
 
 import {
-  ENCODE, RES, TAIL, assertAssemblable, build, canWrite, concatArgs, concatText, endcardArgs,
-  mediaNames, muxArgs, parseArgs, planCuts, readOutroStart, recipe, shotArgs, timeProblems,
-  validate, videoFilter,
+  ENCODE, RES, STILL_SUPERSAMPLE, STILL_ZOOM, TAIL, assertAssemblable, build, canWrite,
+  concatArgs, concatText, endcardArgs, mediaNames, muxArgs, parseArgs, planCuts, qcReport,
+  readOutroStart, recipe, shotArgs, stillArgs, stillFilter, timeProblems, validate, videoFilter,
 } from '../tools/assemble.mjs';
 
 // ---------------------------------------------------------------- pomoćno
@@ -313,7 +313,40 @@ test('videoFilter: fps pre skaliranja, lanczos, bez razvlačenja slike', () => {
   assert.match(f, /flags=lanczos/);
   assert.match(f, /force_original_aspect_ratio=decrease/);
   assert.match(f, /pad=1920:1080/);
-  assert.match(f, /setsar=1$/);
+  assert.match(f, /setsar=1,format=yuv420p$/);
+});
+
+// Izmereno, ne pretpostavljeno: bez `format=yuv420p` u lancu JPEG ulaz izlazi kao
+// `yuvj420p(pc)` — pun opseg — dok Veo klipovi izlaze kao `yuv420p`, pa posle `concat -c copy`
+// end card dobija ugašeno crno i spaljeno belo. Siva RGB 20 se čuvala kao Y=20 umesto Y≈31.
+test('videoFilter: format=yuv420p je na kraju lanca, ne pre skaliranja', () => {
+  const f = videoFilter(1920, 1080, 24);
+  assert.equal(f.indexOf('format=yuv420p'), f.length - 'format=yuv420p'.length);
+  assert.ok(f.indexOf('scale=') < f.indexOf('format=yuv420p'));
+});
+
+test('encodeArgs: izlaz se tagira ograničenim opsegom i bt709, na svakoj putanji', () => {
+  const sb = storyboardOf([5]);
+  const plan = planCuts(sb, { outroStart: null });
+  const opts = { dir: 'ep', width: 1920, height: 1080, fps: FPS };
+  for (const args of [
+    shotArgs(plan.segments[0], { ...opts, out: 'o.mp4' }),
+    endcardArgs(plan.segments[1], { ...opts, out: 'e.mp4' }),
+  ]) {
+    assert.equal(args[idx(args, '-color_range') + 1], 'tv', args.join(' '));
+    assert.equal(args[idx(args, '-colorspace') + 1], 'bt709');
+    assert.equal(args[idx(args, '-color_primaries') + 1], 'bt709');
+    assert.equal(args[idx(args, '-color_trc') + 1], 'bt709');
+  }
+});
+
+// Recept je jedina zaštita od toga da popravka boje preskoči baš epizode zbog kojih postoji:
+// segmenti keširani pre nje moraju da postanu nevažeći.
+test('recipe: verzija je dignuta, pa keš od pre popravke boje ne prolazi', () => {
+  const sb = storyboardOf([5]);
+  const r = recipe(planCuts(sb, { outroStart: null }).segments[0],
+    { dir: 'ep', width: 1920, height: 1080, fps: FPS });
+  assert.equal(r.v, 2);
 });
 
 test('nigde -copyts (ista nula na oba kraja lanca, schemas.md §5.4)', () => {
@@ -682,4 +715,161 @@ test('parseArgs: opcija bez vrednosti pada', () => {
 
 test('parseArgs: --help ne traži folder', () => {
   assert.equal(parseArgs(['--help']).help, true);
+});
+
+// ---------------------------------------------------------------- still kadrovi (schemas.md §3.3.2)
+//
+// Still shot je jedna slika kojoj pokret daje montaža. Testovi ispod čuvaju tri odluke:
+//   - still se **popunjava** (`increase` + `crop`), a ne uokviruje — izvor 43:24 bi na `pad`-u
+//     dobio 4 px crne trake gore i dole na svakoj slici
+//   - iznos zuma je konstanta, ne polje po shotu (jedan izgled epizode, ne 45 njih)
+//   - `zoompan` ide sa `d=1` nad `-loop 1` ulazom, pa `on` broji izlazne frejmove
+
+/** Still shot sa slikom kao izvorom. */
+const stillShot = (n, tIn, len, motion = 'push') => shot(n, tIn, len, {
+  render_mode: 'still',
+  still_motion: motion,
+  source_file: `shots/shot${String(n).padStart(2, '0')}.jpeg`,
+  motion_budget: null,
+  animation_prompt: null,
+});
+
+/** Storyboard od jednog still shota. */
+function stillStoryboardOf(motion = 'push', len = 5) {
+  const sb = storyboardOf([len]);
+  sb.beats[0].shots = [stillShot(1, 0, len, motion)];
+  return sb;
+}
+
+/** Red iz `inspectSources` za sliku: postoji, ima dimenzije, nema trajanje. */
+const stillSource = (width, height) => new Map([['shots/shot01.jpeg', {
+  source: 'shots/shot01.jpeg', file: 'x', exists: true, duration: null, start: 0,
+  available: null, error: null, width, height,
+}]]);
+
+test('stillFilter: slika se popunjava, ne uokviruje — nigde pad, svuda crop', () => {
+  const f = stillFilter(1920, 1080, FPS, 'push', 120);
+  assert.ok(!f.includes('pad='), f);
+  assert.match(f, /force_original_aspect_ratio=increase/);
+  assert.match(f, /crop=3840:2160/);
+  assert.match(f, /setsar=1$/);
+  assert.ok(f.includes('format=yuv420p'), f);
+});
+
+test('stillFilter: međukanvas je STILL_SUPERSAMPLE puta izlaz — sub-pikselska glatkoća', () => {
+  assert.equal(STILL_SUPERSAMPLE, 2);
+  const f = stillFilter(1920, 1080, FPS, 'push', 120);
+  assert.match(f, new RegExp(`scale=${1920 * STILL_SUPERSAMPLE}:${1080 * STILL_SUPERSAMPLE}`));
+});
+
+test('stillFilter: zoompan ide sa d=1 i izlazom na punoj rezoluciji', () => {
+  const f = stillFilter(1920, 1080, FPS, 'push', 120);
+  assert.match(f, /zoompan=/);
+  assert.match(f, /:d=1:/);
+  assert.match(f, /s=1920x1080/);
+  assert.match(f, /fps=24/);
+});
+
+test('stillFilter: push i pull su ista putanja u dva smera', () => {
+  const push = stillFilter(1920, 1080, FPS, 'push', 120);
+  const pull = stillFilter(1920, 1080, FPS, 'pull', 120);
+  assert.match(push, /z='1\+/);
+  assert.match(pull, new RegExp(`z='${STILL_ZOOM}-`));
+  assert.notEqual(push, pull);
+});
+
+test('stillFilter: pan drži zum konstantnim i pomera x, a pan-left je obrnut pan-right', () => {
+  const right = stillFilter(1920, 1080, FPS, 'pan-right', 120);
+  const left = stillFilter(1920, 1080, FPS, 'pan-left', 120);
+  for (const f of [right, left]) assert.match(f, new RegExp(`z=${STILL_ZOOM}:`));
+  assert.match(right, /x='\(iw-iw\/zoom\)\*on\//);
+  assert.match(left, /x='\(iw-iw\/zoom\)\*\(1-on\//);
+});
+
+test('stillFilter: hold je potpuno statičan — bez zoompan-a', () => {
+  const f = stillFilter(1920, 1080, FPS, 'hold', 120);
+  assert.ok(!f.includes('zoompan'), f);
+  assert.match(f, /crop=1920:1080/);
+});
+
+test('stillFilter: jedan frejm nema po čemu da se pomera, pa zoompan otpada', () => {
+  assert.ok(!stillFilter(1920, 1080, FPS, 'push', 1).includes('zoompan'));
+});
+
+test('stillFilter: nepoznat pokret pada, ne renderuje se tiho kao hold', () => {
+  assert.throws(() => stillFilter(1920, 1080, FPS, 'zoom-out', 120), /zoom-out/);
+});
+
+test('stillArgs: -loop 1 pre -i, zakucan broj frejmova, bez -tune i bez -ss', () => {
+  const seg = segOf(stillStoryboardOf('push'));
+  const args = stillArgs(seg, { dir: 'ep', width: 1920, height: 1080, fps: FPS, out: 'o.mp4' });
+  assert.ok(idx(args, '-loop') < idx(args, '-i'), '-loop mora da bude ulazna opcija');
+  assert.equal(args[idx(args, '-frames:v') + 1], String(seg.frames));
+  assert.ok(args.includes('-an'));
+  assert.ok(!args.includes('-tune'), 'pokret postoji, pa stillimage tune nije tačan');
+  assert.ok(!args.includes('-ss'), 'u sliku se ne ulazi od 0.5s');
+  assert.equal(args[idx(args, '-i') + 1], path.join('ep', 'shots/shot01.jpeg'));
+});
+
+test('planCuts: segment nosi režim i pokret, pa build zna koju granu da uzme', () => {
+  const still = planCuts(stillStoryboardOf('pan-left'), { outroStart: null }).segments[0];
+  assert.equal(still.mode, 'still');
+  assert.equal(still.motion, 'pan-left');
+  // clip segment nosi režim takođe, samo drugi — grananje je uvek eksplicitno
+  const clip = planCuts(storyboardOf([5]), { outroStart: null }).segments[0];
+  assert.equal(clip.mode, 'clip');
+  assert.equal(clip.motion, null);
+});
+
+test('recipe: promena pokreta regeneriše segment', () => {
+  const opts = { dir: 'ep', width: 1920, height: 1080, fps: FPS };
+  const a = recipe(segOf(stillStoryboardOf('push')), opts);
+  const b = recipe(segOf(stillStoryboardOf('pull')), opts);
+  assert.equal(a.mode, 'still');
+  assert.notDeepEqual(a, b);
+});
+
+test('validate: slika se ne meri trajanjem, samo postojanjem', async () => {
+  const plan = planCuts(stillStoryboardOf('push'), { outroStart: null, endcard: null });
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'at-still-'));
+  fs.mkdirSync(path.join(dir, 'shots'));
+  fs.writeFileSync(path.join(dir, 'shots', 'shot01.jpeg'), 'x');
+  fs.writeFileSync(path.join(dir, 'n.mp3'), 'x');
+  // probe nad slikom ne vraća trajanje; na clip putanji bi to bio problem
+  const probe = async () => ({ duration: null, start: 0, width: 2752, height: 1536 });
+  const problems = await validate(plan, dir, { narration: 'n.mp3', endcard: null }, { probe });
+  assert.deepEqual(problems, []);
+});
+
+test('validate: slika koja ne postoji je i dalje problem', async () => {
+  const plan = planCuts(stillStoryboardOf('push'), { outroStart: null, endcard: null });
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'at-still-'));
+  fs.writeFileSync(path.join(dir, 'n.mp3'), 'x');
+  const probe = async () => ({ duration: null, start: 0 });
+  const problems = await validate(plan, dir, { narration: 'n.mp3', endcard: null }, { probe });
+  assert.equal(problems.length, 1);
+  assert.match(problems[0], /shot01\.jpeg/);
+});
+
+test('qcReport: still kadrovi imaju svoju sekciju, sa pokretom i dimenzijama', () => {
+  const plan = planCuts(stillStoryboardOf('pan-right'), { outroStart: null, endcard: null });
+  const md = qcReport({ plan, sources: stillSource(2752, 1536), width: 1920, height: 1080 });
+  assert.match(md, /## Still kadrovi/);
+  assert.match(md, /pan-right/);
+  assert.match(md, /2752×1536/);
+});
+
+test('qcReport: still ne ulazi u kandidate za regeneraciju — slika nema udeo iskorišćenja', () => {
+  const plan = planCuts(stillStoryboardOf('push'), { outroStart: null, endcard: null });
+  const md = qcReport({ plan, sources: stillSource(2752, 1536), width: 1920, height: 1080 });
+  const summary = md.split('## Nedostajući partovi')[0];
+  assert.ok(!summary.includes('ERROR'), summary);
+  assert.match(md, /Kandidati za regeneraciju \| OK/);
+});
+
+test('qcReport: preuska slika za zum je WARN, ne ERROR', () => {
+  const plan = planCuts(stillStoryboardOf('push'), { outroStart: null, endcard: null });
+  const md = qcReport({ plan, sources: stillSource(64, 36), width: 1920, height: 1080 });
+  assert.match(md, /Still kadrovi \| WARN/);
+  assert.match(md, /64×36/);
 });

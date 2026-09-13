@@ -382,3 +382,60 @@ test('main: --help ne traži ni folder ni mapu', () => {
 test('DEVICES iz kataloga i dalje pokrivaju uređaje iz beat mape', () => {
   for (const b of MAP) if (b.device) assert.ok(DEVICES.includes(b.device));
 });
+
+// ---------------------------------------------------------------- --still (schemas.md §3.3.2)
+//
+// Bez ovoga still format nije dostižan: pisac bi dobio 27 rezova od 8s i ručno ih proglasio
+// slikama. `--still` menja granice reza pre nego što išta bude napisano, jer je tempo reza
+// jedina stvar koja odlučuje da li niz slika čita kao film ili kao slajdšou.
+
+const buildStill = (map = MAP, t = timing()) =>
+  buildStoryboard(t, map, { episode: 'rome-sample', generatedAt: AT, still: true });
+
+test('--still: skelet nosi režim, pokret i sliku kao izvor', () => {
+  const { storyboard } = buildStill();
+  for (const s of storyboard.beats.flatMap((b) => b.shots)) {
+    assert.equal(s.render_mode, 'still');
+    assert.equal(s.still_motion, 'hold', 'skelet ne sme sam sebe da proglasi režiranim');
+    assert.equal(s.source_file, `shots/shot${s.shot_id}.jpeg`);
+    assert.equal(s.animation_prompt, null);
+    assert.equal(s.motion_budget, null);
+    assert.equal(s.ingredient_image, null);
+    assert.equal(s.use_in, 0);
+  }
+});
+
+test('--still: rezovi staju u 2.5–9.0, a bez zastave u 3.0–10.0', () => {
+  for (const s of buildStill().storyboard.beats.flatMap((b) => b.shots)) {
+    assert.ok(s.use_len >= 2.5 - EPS && s.use_len <= 9.0 + EPS, `use_len ${s.use_len}`);
+  }
+  for (const s of build().storyboard.beats.flatMap((b) => b.shots)) {
+    assert.ok(s.use_len >= 3.0 - EPS && s.use_len <= 10.0 + EPS, `use_len ${s.use_len}`);
+  }
+});
+
+test('--still: kraći cilj znači više shotova nad istom naracijom', () => {
+  const clip = build().storyboard.beats.flatMap((b) => b.shots).length;
+  const still = buildStill().storyboard.beats.flatMap((b) => b.shots).length;
+  assert.ok(still > clip, `still ${still} nije više od clip ${clip}`);
+});
+
+test('--still: skelet prolazi assertDisplayable, kao i klip skelet', () => {
+  assert.doesNotThrow(() => assertDisplayable(buildStill().storyboard));
+});
+
+test('--still: checkpoint imenuje režim i meri drugi ciljni opseg', () => {
+  const { storyboard, warnings } = buildStill();
+  const out = checkpoint(storyboard, warnings);
+  assert.match(out, /ciljnom opsegu 4–6s/);
+  assert.match(out, /režim: .*still/);
+  // klip skelet ostaje na starom opsegu i ne pominje režim
+  const clip = checkpoint(build().storyboard);
+  assert.match(clip, /ciljnom opsegu 7–9s/);
+  assert.ok(!clip.includes('režim:'), clip);
+});
+
+test('parseArgs: --still je zastava i podrazumevano je isključena', () => {
+  assert.equal(parseArgs(['x', '--beats', 'b.json']).still, false);
+  assert.equal(parseArgs(['x', '--beats', 'b.json', '--still']).still, true);
+});
