@@ -1,0 +1,52 @@
+{
+  "slug": "antikythera-mechanism",
+  "title": "The Ancient Machine That Shouldn't Exist",
+  "status": "in-progress",
+  "voice": null,
+  "narration_file": "narration.mp3",
+  "final_file": null,
+  "endcard_file": null,
+  "characters": [
+    {
+      "id": "sponge-diver",
+      "name": "The Sponge Diver",
+      "locked_description": "a Greek sponge diver of 1900 in a heavy patched canvas diving suit, a round copper helmet with three small glass portholes, lead-weighted boots, a thick black air hose and a rope line trailing upward"
+    },
+    {
+      "id": "valerios-stais",
+      "name": "Valerios Stais",
+      "locked_description": "a Greek archaeologist of about forty in 1902, neatly parted dark hair, a full dark moustache, round wire spectacles, a dark wool three-piece suit and a white high-collared shirt"
+    }
+  ],
+  "locations": [
+    {
+      "id": "wreck-seabed",
+      "name": "The Antikythera Wreck",
+      "locked_description": "a steep slope of grey sand and pale rock deep under blue-green water, the scattered timber ribs of an ancient hull, broken amphorae half-buried in sand, bronze and marble statues lying among the stones"
+    },
+    {
+      "id": "museum-workroom",
+      "name": "The Athens Museum Workroom",
+      "locked_description": "a workroom of the National Archaeological Museum in Athens around 1902, tall shuttered windows, long wooden tables covered with shipwreck finds in labelled trays, glass display cases and plain plaster walls"
+    }
+  ],
+  "key_props": [
+    {
+      "id": "sponge-boat",
+      "name": "The Sponge Boat",
+      "locked_description": "a small Greek sponge-diving boat of 1900, a single-masted wooden caïque with a high curved prow, a patched canvas sail, a hand-cranked brass air pump on deck and coils of rope"
+    },
+    {
+      "id": "mechanism-fragment",
+      "name": "The Fragment",
+      "locked_description": "the main Antikythera fragment, a flat slab of green-brown corroded bronze about the size of a hand, crusted like stone, a large four-spoked gear wheel with fine triangular teeth emerging from its surface",
+      "scale_critical": true
+    },
+    {
+      "id": "mechanism-restored",
+      "name": "The Mechanism, Restored",
+      "locked_description": "the Antikythera mechanism as it looked when new, a wooden case the size of a shoebox with a bright bronze front plate, engraved zodiac and calendar rings, slender bronze pointers and a hand crank on one side"
+    }
+  ],
+  "notes": "Prva still epizoda (render_mode: still, beatplan --still). Ideja #16 iz docs/ideas.md; hook je doslovan. research.md je u folderu. Narracija još ne postoji — skripta je isporučena za ElevenLabs. Nacrt beat mape (beats.json) pravljen je iz parseScript() pre narracije; ID-jevi rečenica zavise samo od script.md, pa ostaju validni dok se skripta ne menja. Detalji u notes.md."
+}
