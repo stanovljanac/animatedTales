@@ -12,7 +12,7 @@
 //   5. end card — drži outro deo narracije + 1.5s repa
 //
 // Still kadrovi (schemas.md §3.3.2): shot sa `render_mode: "still"` nije klip nego jedna slika
-// kojoj pokret kamere daje **ovaj alat** — `stillFilter` + `zoompan`. Korak 2 zato ima tri
+// kojoj pokret kamere daje **ovaj alat** — `stillFilter` + `perspective` (ne `zoompan`, koji trza). Korak 2 zato ima tri
 // grane umesto dve (klip, slika, end card), a validacija i QC mere sliku rezolucijom umesto
 // trajanjem. Sve ostalo — plan rezova, dissolve, konkatenacija, mux — ne zna za razliku.
 //
@@ -72,18 +72,27 @@ export const TAIL = 1.5;
  *
  * Konstanta, ne polje po shotu, iz istog razloga iz kog je `still_motion` zatvoren enum:
  * jedna vrednost daje jedan prepoznatljiv izgled epizode, a per-shot brojka daje 45 malo
- * različitih. 1.15 je dovoljno da se pokret vidi na 5s, a nedovoljno da se na 2752 px izvoru
- * vidi mekoća. Isti broj otvara i marginu po kojoj `pan-*` putuje — bez zuma je nema kuda,
+ * različitih. Isti broj otvara i marginu po kojoj `pan-*` putuje — bez zuma je nema kuda,
  * jer je Flow slika 43:24, svega 1.4% šira od 16:9.
+ *
+ * **1.06, ne 1.15** (antikythera-mechanism, final-video01 — prihvaćeni template). Na 1.15 se
+ * zum čita kao „slika se uvećava i klizi"; 1.06 sa ease-in-out daje pokret koji se oseća, a ne
+ * gleda.
  */
-export const STILL_ZOOM = 1.15;
+export const STILL_ZOOM = 1.06;
 
 /**
- * Međukanvas pre `zoompan`-a, u odnosu na izlaz. `zoompan` računa `x`/`y` u celim pikselima
- * **ulaza**, pa na ulazu jednakom izlazu pokret trza za ceo piksel po frejmu. Na dvostrukom
- * ulazu greška pada na pola izlaznog piksela i pokret se čita kao gladak.
+ * Međukanvas pre `perspective`-a, u odnosu na izlaz. Prozor se iseca na dvostrukom kanvasu i
+ * posle fiksno smanjuje lanczos-om, pa je i ostatak greške interpolacije ispod pola izlaznog
+ * piksela.
  */
 export const STILL_SUPERSAMPLE = 2;
+
+/** Jačina zvuka uvodnog klipa ispod narracije kad `episode.json` ne kaže drugačije. */
+export const INTRO_VOLUME = 0.2;
+
+/** Fade zvuka uvodnog klipa pred rez, u sekundama. */
+export const INTRO_FADE = 0.3;
 
 /** Trajanje cross-dissolve-a iz C10, u frejmovima. Zastava je podrazumevano isključena. */
 export const DEFAULT_DISSOLVE = 8;
@@ -225,6 +234,31 @@ export function mediaNames(dir) {
     endcard: manifest.endcard_file === null ? null : pick(manifest.endcard_file, DEFAULT_ENDCARD),
     source: 'episode.json',
   };
+}
+
+/**
+ * Uvodni animirani klip iz `episode.json` (`intro_file`, opciono `intro_volume`). Kad postoji,
+ * zamenjuje sliku **prvog** shota: iz klipa se uzima tačno onoliko frejmova koliko shot traje,
+ * a zvuk klipa ide ispod narracije na `intro_volume` (podrazumevano `INTRO_VOLUME`).
+ * Template iz antikythera-mechanism: still epizoda, animiran samo hook.
+ * @returns {{file: string, volume: number} | null}
+ */
+export function introClip(dir) {
+  const file = path.join(dir, 'episode.json');
+  if (!fs.existsSync(file)) return null;
+  const manifest = JSON.parse(fs.readFileSync(file, 'utf8'));
+  if (typeof manifest.intro_file !== 'string' || !manifest.intro_file.trim()) return null;
+  const volume = num(manifest.intro_volume) ? manifest.intro_volume : INTRO_VOLUME;
+  return { file: manifest.intro_file, volume };
+}
+
+/**
+ * Pravilo template-a: **end card je poslednji shot.** Preuzima sliku na početku poslednjeg
+ * shota i drži do kraja narracije + `TAIL`, umesto da pokrije ceo outro od `outro_start`-a.
+ * `--outro-start` i dalje nadjačava.
+ */
+export function endcardStart(storyboard) {
+  return storyboard.beats.flatMap((b) => b.shots).at(-1).t_in;
 }
 
 /**
@@ -655,12 +689,16 @@ export function shotArgs(seg, { dir, width, height, fps, out }) {
  * 1. **Popunjava, ne uokviruje.** `increase` + `crop`, ne `decrease` + `pad` kao klip putanja.
  *    Flow slika je 2752×1536 (43:24), pa bi je `pad` na 1920×1080 spustio na 1071.6 px visine
  *    i dodao 4 px crne trake gore i dole — na svakoj slici u epizodi.
- * 2. **Međukanvas pre `zoompan`-a** (`STILL_SUPERSAMPLE`), zbog celobrojnog `x`/`y`.
- * 3. **`d=1` nad `-loop 1` ulazom.** Ulaz je već sekvenca od N frejmova, pa `zoompan` daje po
- *    jedan izlazni frejm na svaki ulazni, a `on` broji od 0 do N−1. Varijanta „jedan ulazni
- *    frejm, `d=N`" takođe radi, ali tamo `on` ne postoji kao poluga za ravnomeran pokret.
+ * 2. **`perspective`, ne `zoompan`.** `zoompan` iseca prozor u celim pikselima, pa i na
+ *    dvostrukom kanvasu slika trza (izmereno RMS 0.4–0.55 px, vrh ~1 px po frejmu) — to je
+ *    „treperenje" koje je vraćeno u antikythera-mechanism. `perspective` sa `eval=frame` prima
+ *    float uglove prozora i razvlači ga na ceo kanvas (`cubic`, uvek uvećanje), pa fiksno 2×
+ *    smanjenje (lanczos). Izmereno trzanje ~0.005 px.
+ * 3. **Ease-in-out (sinus), ne linearno.** `p = 0.5 − 0.5·cos(π·on/k)`: pokret kreće i staje
+ *    mekano, pa hard cut ne preseče kameru u punoj brzini. `on` je redni broj frejma nad
+ *    `-loop 1` ulazom, od 0 do N−1.
  *
- * `hold` namerno nema `zoompan`: postoji da bi rez imao gde da stane. Isto i kadar od jednog
+ * `hold` namerno nema pokret: postoji da bi rez imao gde da stane. Isto i kadar od jednog
  * frejma — nema po čemu da se pomera.
  *
  * @param {number} width @param {number} height @param {number} fps
@@ -681,39 +719,50 @@ export function stillFilter(width, height, fps, motion, frames) {
     `crop=${sw}:${sh}`,
   ];
 
-  // Statičan kadar ne treba da prođe kroz zoompan; skalira se pravo u izlaz.
-  if (motion === 'hold' || frames < 2) {
-    return [
-      `fps=${fps}`,
-      `scale=${width}:${height}:force_original_aspect_ratio=increase:flags=lanczos`,
-      `crop=${width}:${height}`,
-      `format=${ENCODE.pix}`,
-      'setsar=1',
-    ].join(',');
-  }
+  // Statičan kadar ne treba da prođe kroz perspective; skalira se pravo u izlaz.
+  if (motion === 'hold' || frames < 2) return fillFilter(width, height, fps);
 
-  const k = frames - 1;                      // poslednji frejm je `on = k`
-  const d = round3(STILL_ZOOM - 1);          // koliko zum putuje
-  const centerX = 'iw/2-(iw/zoom/2)';
-  const centerY = 'ih/2-(ih/zoom/2)';
+  const k = frames - 1;                              // poslednji frejm je `on = k`
+  const d = round3(STILL_ZOOM - 1);                  // koliko zum putuje
+  const p = `(0.5-0.5*cos(PI*on/${k}))`;             // ease-in-out, 0 -> 1
 
-  // `pan-*` putuje po margini koju otvara sam zum: `iw - iw/zoom`.
-  const pan = {
-    z: `${STILL_ZOOM}`,
-    'pan-right': `(iw-iw/zoom)*on/${k}`,
-    'pan-left': `(iw-iw/zoom)*(1-on/${k})`,
-  };
-
-  const expr = {
-    push: { z: `'1+${d}*on/${k}'`, x: `'${centerX}'`, y: `'${centerY}'` },
-    pull: { z: `'${STILL_ZOOM}-${d}*on/${k}'`, x: `'${centerX}'`, y: `'${centerY}'` },
-    'pan-right': { z: pan.z, x: `'${pan['pan-right']}'`, y: `'${centerY}'` },
-    'pan-left': { z: pan.z, x: `'${pan['pan-left']}'`, y: `'${centerY}'` },
+  // `z` je zum u trenutku, `fx` udeo slobodne margine levo od prozora (0.5 = centar).
+  // `pan-*` putuje po margini koju otvara sam zum: `W - W/z`.
+  const { z, fx } = {
+    push: { z: `(1+${d}*${p})`, fx: '0.5' },
+    pull: { z: `(${STILL_ZOOM}-${d}*${p})`, fx: '0.5' },
+    'pan-right': { z: `${STILL_ZOOM}`, fx: p },
+    'pan-left': { z: `${STILL_ZOOM}`, fx: `(1-${p})` },
   }[motion];
+
+  const w = `(W/${z})`;
+  const h = `(H/${z})`;
+  const x0 = `(${fx}*(W-${w}))`;
+  const y0 = `(0.5*(H-${h}))`;
+  const x1 = `(${x0}+${w})`;
+  const y1 = `(${y0}+${h})`;
+  const q = (s) => `'${s}'`;
+  const corners = `x0=${q(x0)}:y0=${q(y0)}:x1=${q(x1)}:y1=${q(y0)}:x2=${q(x0)}:y2=${q(y1)}:x3=${q(x1)}:y3=${q(y1)}`;
 
   return [
     ...fill,
-    `zoompan=z=${expr.z}:x=${expr.x}:y=${expr.y}:d=1:s=${width}x${height}:fps=${fps}`,
+    'format=yuv444p',
+    `perspective=${corners}:interpolation=cubic:sense=source:eval=frame`,
+    `scale=${width}:${height}:flags=lanczos`,
+    `format=${ENCODE.pix}`,
+    'setsar=1',
+  ].join(',');
+}
+
+/**
+ * Slika bez pokreta, popunjena na izlaz: `hold` still kadar i end card. `increase` + `crop`
+ * iz istog razloga kao u `stillFilter` — Flow slika 43:24 bi na `pad`-u dobila crne trake.
+ */
+export function fillFilter(width, height, fps) {
+  return [
+    `fps=${fps}`,
+    `scale=${width}:${height}:force_original_aspect_ratio=increase:flags=lanczos`,
+    `crop=${width}:${height}`,
     `format=${ENCODE.pix}`,
     'setsar=1',
   ].join(',');
@@ -747,7 +796,7 @@ export function endcardArgs(seg, { dir, width, height, fps, out }) {
     '-loop', '1', '-framerate', String(fps), '-t', String(round3(seg.len + 2 / fps)),
     '-i', path.join(dir, seg.source),
     '-an',
-    '-vf', videoFilter(width, height, fps),
+    '-vf', fillFilter(width, height, fps),
     '-frames:v', String(seg.frames),
     ...encodeArgs(), '-tune', 'stillimage',
     out,
@@ -815,11 +864,33 @@ export function concatArgs(listFile, out) {
  * Nigde `-copyts` ni `-itsoffset` (schemas.md §5.4 tačka 1). Nema ni `-shortest`: video je za
  * rep end carda duži od narracije i `-shortest` bi baš taj rep odsekao.
  */
-export function muxArgs(video, audio, out) {
+export function muxArgs(video, audio, out, intro = null) {
+  if (!intro) {
+    return [
+      '-hide_banner', '-nostdin', '-loglevel', 'error', '-y',
+      '-i', video, '-i', audio,
+      '-map', '0:v:0', '-map', '1:a:0',
+      '-c:v', 'copy', '-c:a', 'aac', '-b:a', ENCODE.audioBitrate,
+      '-movflags', '+faststart',
+      out,
+    ];
+  }
+  // Uvodni klip: njegov zvuk ide ispod narracije samo dok je klip na ekranu, tiho i sa fade-om
+  // pred rez. Narracija je mono, pa se razvlači na oba kanala; `normalize=0` jer bi `amix`
+  // inače prepolovio i narraciju.
+  const cut = fmt6(intro.len);
+  const fadeAt = fmt6(Math.max(0, intro.len - INTRO_FADE));
+  const graph = [
+    '[1:a]aresample=44100,pan=stereo|c0=c0|c1=c0[nar]',
+    `[2:a]aresample=44100,atrim=0:${cut},asetpts=PTS-STARTPTS,volume=${intro.volume},` +
+      `afade=t=out:st=${fadeAt}:d=${INTRO_FADE}[sfx]`,
+    '[nar][sfx]amix=inputs=2:duration=first:normalize=0[a]',
+  ].join(';');
   return [
     '-hide_banner', '-nostdin', '-loglevel', 'error', '-y',
-    '-i', video, '-i', audio,
-    '-map', '0:v:0', '-map', '1:a:0',
+    '-i', video, '-i', audio, '-i', intro.file,
+    '-filter_complex', graph,
+    '-map', '0:v:0', '-map', '[a]',
     '-c:v', 'copy', '-c:a', 'aac', '-b:a', ENCODE.audioBitrate,
     '-movflags', '+faststart',
     out,
@@ -847,7 +918,8 @@ export function recipe(seg, { dir, width, height, fps }) {
     // v:2 — popravka opsega boje (`format=yuv420p` + color tagovi). Keširani segmenti
     // napravljeni pre nje moraju da postanu nevažeći, inače popravka preskoči baš one
     // epizode zbog kojih postoji.
-    v: 2,
+    // v:3 — still pokret preko `perspective`-a sa ease-in-out i end card bez `pad`-a.
+    v: 3,
     kind: seg.kind,
     mode: seg.mode ?? 'clip',
     motion: seg.motion ?? null,
@@ -873,7 +945,7 @@ export function chainRecipe(seg, opts) {
   return {
     // Ide u korak sa `recipe()`: delovi već nose v:2, pa se lanac ionako regeneriše — ali dve
     // verzije koje se razilaze čitaju se kao da su lanci bili izuzeti iz popravke boje.
-    v: 2,
+    v: 3,
     kind: 'chain',
     dissolve: seg.dissolve,
     frames: seg.frames,
@@ -1016,7 +1088,10 @@ export async function build(plan, dir, opts) {
 
   const outFile = path.join(dir, out);
   onProgress({ state: 'mux' });
-  await runner(muxArgs(videoFile, path.join(dir, narration), outFile));
+  const intro = opts.intro
+    ? { file: path.join(dir, opts.intro.file), volume: opts.intro.volume, len: plan.segments[0].len }
+    : null;
+  await runner(muxArgs(videoFile, path.join(dir, narration), outFile, intro));
 
   return {
     out: outFile, built, cached, dissolves,
@@ -1092,7 +1167,9 @@ export function qcReport(ctx) {
     const used = round3((u.base ?? u.frames) / fps);
     return { id: u.id, source: u.source, used, have, share: have ? used / have : null };
   });
-  const candidates = usage.filter((r) => r.share !== null && r.share < REGEN_SHARE);
+  // Uvodni klip se namerno seče na trajanje hook-a; nizak udeo tu nije bačeno generisanje.
+  const introIds = new Set(clips.filter((u) => u.intro).map((u) => u.id));
+  const candidates = usage.filter((r) => r.share !== null && r.share < REGEN_SHARE && !introIds.has(r.id));
   // Shot koji je outro odsekao troši malo svog klipa iz sasvim drugog razloga nego shot
   // kome je rez od početka bio kratak. Savet je isti, ali uzrok nije, pa se ne mešaju.
   const trimmedIds = new Set(plan.trimmed.map((t) => t.shot_id));
@@ -1332,15 +1409,27 @@ export async function main(argv) {
   }
 
   const media = mediaNames(dir);
-  const outro = readOutroStart(dir, storyboard, args.outroStart);
+  const intro = introClip(dir);
+  const outro = args.outroStart === null && media.endcard !== null
+    ? { value: endcardStart(storyboard), source: 'poslednji shot' }
+    : readOutroStart(dir, storyboard, args.outroStart);
   const [width, height] = RES[args.res];
 
   // Jedan probe po klipu, pre plana: dissolve mora da zna ima li izvor rezervu za produženje,
   // a validacija i QC izveštaj posle čitaju iste izmerene vrednosti umesto da mere ponovo.
-  const sources = await inspectSources(shots.map((s) => s.source_file), dir);
+  const sources = await inspectSources(
+    [...shots.map((s) => s.source_file), ...(intro ? [intro.file] : [])], dir);
   const plan = planCuts(storyboard, {
     outroStart: outro.value, endcard: media.endcard, dissolveFrames: args.dissolve, sources,
   });
+
+  // Uvodni klip preuzima prvi segment: isti broj frejmova, izvor je klip od nule.
+  if (intro) {
+    const first = plan.segments[0];
+    if (first.kind !== 'shot') throw new Error('intro_file traži da prvi segment bude običan shot, ne lanac');
+    Object.assign(first, { mode: 'clip', motion: null, source: intro.file, use_in: 0, intro: true });
+    console.log(`uvodni klip ${slash(intro.file)} umesto shota ${first.id} · zvuk ${intro.volume}`);
+  }
 
   console.log(`${storyboard.episode} · ${shots.length} ${plural(shots.length, 'shot', 'shota', 'shotova')} · ` +
     `${args.res} ${width}x${height} @ ${plan.fps} fps`);
@@ -1388,7 +1477,7 @@ export async function main(argv) {
   if (!allowed.ok) throw new Error(allowed.reason);
 
   const report = await build(plan, dir, {
-    width, height, fps: plan.fps, narration: media.narration, out: args.out,
+    width, height, fps: plan.fps, narration: media.narration, out: args.out, intro,
     onProgress: ({ seg, state, ms }) => {
       if (state === 'built') console.log(`  ${seg.id} · ${seg.frames} frejmova · ${(ms / 1000).toFixed(1)}s`);
       else if (state === 'dissolve') console.log(`  lanac ${seg.id} · ${seg.parts.length} dela · ${(ms / 1000).toFixed(1)}s`);

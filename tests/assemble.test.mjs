@@ -19,8 +19,8 @@ import os from 'node:os';
 import path from 'node:path';
 
 import {
-  ENCODE, RES, STILL_SUPERSAMPLE, STILL_ZOOM, TAIL, assertAssemblable, build, canWrite,
-  concatArgs, concatText, endcardArgs, mediaNames, muxArgs, parseArgs, planCuts, qcReport,
+  ENCODE, INTRO_VOLUME, RES, STILL_SUPERSAMPLE, STILL_ZOOM, TAIL, assertAssemblable, build, canWrite,
+  concatArgs, concatText, endcardArgs, endcardStart, introClip, mediaNames, muxArgs, parseArgs, planCuts, qcReport,
   readOutroStart, recipe, shotArgs, stillArgs, stillFilter, timeProblems, validate, videoFilter,
 } from '../tools/assemble.mjs';
 
@@ -342,11 +342,11 @@ test('encodeArgs: izlaz se tagira ograničenim opsegom i bt709, na svakoj putanj
 
 // Recept je jedina zaštita od toga da popravka boje preskoči baš epizode zbog kojih postoji:
 // segmenti keširani pre nje moraju da postanu nevažeći.
-test('recipe: verzija je dignuta, pa keš od pre popravke boje ne prolazi', () => {
+test('recipe: verzija je dignuta, pa keš od pre popravke boje i zoompan-a ne prolazi', () => {
   const sb = storyboardOf([5]);
   const r = recipe(planCuts(sb, { outroStart: null }).segments[0],
     { dir: 'ep', width: 1920, height: 1080, fps: FPS });
-  assert.equal(r.v, 2);
+  assert.equal(r.v, 3);
 });
 
 test('nigde -copyts (ista nula na oba kraja lanca, schemas.md §5.4)', () => {
@@ -723,7 +723,7 @@ test('parseArgs: --help ne traži folder', () => {
 //   - still se **popunjava** (`increase` + `crop`), a ne uokviruje — izvor 43:24 bi na `pad`-u
 //     dobio 4 px crne trake gore i dole na svakoj slici
 //   - iznos zuma je konstanta, ne polje po shotu (jedan izgled epizode, ne 45 njih)
-//   - `zoompan` ide sa `d=1` nad `-loop 1` ulazom, pa `on` broji izlazne frejmove
+//   - pokret je `perspective` sa float prozorom i ease-in-out, nikad `zoompan` (trza u celim px)
 
 /** Still shot sa slikom kao izvorom. */
 const stillShot = (n, tIn, len, motion = 'push') => shot(n, tIn, len, {
@@ -762,38 +762,79 @@ test('stillFilter: međukanvas je STILL_SUPERSAMPLE puta izlaz — sub-pikselska
   assert.match(f, new RegExp(`scale=${1920 * STILL_SUPERSAMPLE}:${1080 * STILL_SUPERSAMPLE}`));
 });
 
-test('stillFilter: zoompan ide sa d=1 i izlazom na punoj rezoluciji', () => {
+test('stillFilter: perspective sa float prozorom po frejmu, bez zoompan-a, pa 2× smanjenje', () => {
   const f = stillFilter(1920, 1080, FPS, 'push', 120);
-  assert.match(f, /zoompan=/);
-  assert.match(f, /:d=1:/);
-  assert.match(f, /s=1920x1080/);
+  assert.ok(!f.includes('zoompan'), 'zoompan iseca u celim pikselima i trza');
+  assert.match(f, /perspective=.*:interpolation=cubic:sense=source:eval=frame/);
+  assert.match(f, /scale=1920:1080:flags=lanczos/);
   assert.match(f, /fps=24/);
+});
+
+test('stillFilter: zum je blag (1.06) i ide ease-in-out, ne linearno', () => {
+  assert.equal(STILL_ZOOM, 1.06);
+  const f = stillFilter(1920, 1080, FPS, 'push', 120);
+  assert.ok(f.includes('(0.5-0.5*cos(PI*on/119))'), f);
 });
 
 test('stillFilter: push i pull su ista putanja u dva smera', () => {
   const push = stillFilter(1920, 1080, FPS, 'push', 120);
   const pull = stillFilter(1920, 1080, FPS, 'pull', 120);
-  assert.match(push, /z='1\+/);
-  assert.match(pull, new RegExp(`z='${STILL_ZOOM}-`));
+  assert.ok(push.includes('(W/(1+0.06*'), push);
+  assert.ok(pull.includes(`(W/(${STILL_ZOOM}-0.06*`), pull);
   assert.notEqual(push, pull);
 });
 
 test('stillFilter: pan drži zum konstantnim i pomera x, a pan-left je obrnut pan-right', () => {
   const right = stillFilter(1920, 1080, FPS, 'pan-right', 120);
   const left = stillFilter(1920, 1080, FPS, 'pan-left', 120);
-  for (const f of [right, left]) assert.match(f, new RegExp(`z=${STILL_ZOOM}:`));
-  assert.match(right, /x='\(iw-iw\/zoom\)\*on\//);
-  assert.match(left, /x='\(iw-iw\/zoom\)\*\(1-on\//);
+  for (const f of [right, left]) {
+    assert.ok(f.includes(`(W/${STILL_ZOOM})`), f);
+    assert.ok(f.includes(`y0='(0.5*(H-(H/${STILL_ZOOM})))'`), 'vertikalno ostaje centrirano');
+  }
+  assert.ok(right.includes("x0='((0.5-0.5*cos("), right);
+  assert.ok(left.includes("x0='((1-(0.5-0.5*cos("), left);
 });
 
-test('stillFilter: hold je potpuno statičan — bez zoompan-a', () => {
+test('stillFilter: hold je potpuno statičan — bez pokreta', () => {
   const f = stillFilter(1920, 1080, FPS, 'hold', 120);
-  assert.ok(!f.includes('zoompan'), f);
+  assert.ok(!f.includes('perspective'), f);
   assert.match(f, /crop=1920:1080/);
 });
 
-test('stillFilter: jedan frejm nema po čemu da se pomera, pa zoompan otpada', () => {
-  assert.ok(!stillFilter(1920, 1080, FPS, 'push', 1).includes('zoompan'));
+test('stillFilter: jedan frejm nema po čemu da se pomera, pa pokret otpada', () => {
+  assert.ok(!stillFilter(1920, 1080, FPS, 'push', 1).includes('perspective'));
+});
+
+test('endcardArgs: end card se popunjava kao still, bez crnih traka', () => {
+  const seg = planCuts(storyboardOf([5]), { outroStart: null }).segments.at(-1);
+  const args = endcardArgs(seg, { dir: 'ep', width: 1920, height: 1080, fps: FPS, out: 'e.mp4' });
+  const vf = args[idx(args, '-vf') + 1];
+  assert.ok(!vf.includes('pad='), vf);
+  assert.match(vf, /crop=1920:1080/);
+});
+
+test('endcardStart: end card preuzima sliku na početku poslednjeg shota', () => {
+  assert.equal(endcardStart(storyboardOf([5, 4, 3])), 9);
+});
+
+test('introClip: intro_file iz manifesta, jačina podrazumevano INTRO_VOLUME', () => {
+  const dir = tmpEpisode({ 'episode.json': JSON.stringify({ intro_file: 'shots/video1.mp4' }) });
+  assert.deepEqual(introClip(dir), { file: 'shots/video1.mp4', volume: INTRO_VOLUME });
+  rm(dir);
+  const bez = tmpEpisode({ 'episode.json': JSON.stringify({ intro_file: null }) });
+  assert.equal(introClip(bez), null);
+  rm(bez);
+});
+
+test('muxArgs sa uvodom: zvuk klipa ispod narracije samo tokom uvoda, sa fade-om', () => {
+  const args = muxArgs('v.mp4', 'n.mp3', 'f.mp4', { file: 'i.mp4', volume: 0.2, len: 3.917 });
+  const graph = args[idx(args, '-filter_complex') + 1];
+  assert.match(graph, /atrim=0:3\.917000/);
+  assert.match(graph, /volume=0\.2/);
+  assert.match(graph, /afade=t=out:st=3\.617000:d=0\.3/);
+  assert.match(graph, /normalize=0/);
+  assert.deepEqual(args.filter((a, i) => args[i - 1] === '-map'), ['0:v:0', '[a]']);
+  assert.ok(!args.includes('-shortest'));
 });
 
 test('stillFilter: nepoznat pokret pada, ne renderuje se tiho kao hold', () => {

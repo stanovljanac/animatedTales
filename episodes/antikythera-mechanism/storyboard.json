@@ -1,0 +1,1927 @@
+{
+  "schema_version": 2,
+  "episode": "antikythera-mechanism",
+  "generated_at": "2026-09-13T16:57:56Z",
+  "narration_duration": 244.271,
+  "fps": 24,
+  "beats": [
+    {
+      "beat_id": "B01",
+      "sentences": [
+        "S01"
+      ],
+      "start": 0,
+      "end": 3.9,
+      "dur": 3.9,
+      "device": "macro-object",
+      "narration_says": "Divers pulled this machine from a shipwreck.",
+      "viewer_sees": "MACRO OBJECT — the corroded fragment hanging in dark water, one gear tooth catching a glint of surface light",
+      "shots": [
+        {
+          "shot_id": "01",
+          "beat_id": "B01",
+          "link_group": null,
+          "t_in": 0,
+          "t_out": 3.917,
+          "use_in": 0,
+          "use_out": 3.917,
+          "use_len": 3.917,
+          "motion_budget": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot01.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "mechanism-fragment"
+          ],
+          "visual_priority": [
+            "the fragment, gear face toward camera",
+            "one glint on a single gear tooth",
+            "rope sling rising out of frame",
+            "dark water around it"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSHOT: a close view of a corroded bronze lump rising through dark water in a rope sling, one gear tooth catching a single glint of light — stone until the light finds the machine.\nSUBJECT: the main Antikythera fragment, a flat slab of green-brown corroded bronze about the size of a hand, crusted like stone, a large four-spoked gear wheel with fine triangular teeth emerging from its surface.\nSCALE: the fragment is small, no larger than a hand; it fills the center only because the camera is close; the rope knots beside it look thick as fingers.\nSETTING: open water above the Antikythera wreck, silt hanging in the blue-green.\nCAMERA: camera floats level with the fragment, an arm's length away, eye level, close.\nFRAME LAYOUT: center — the fragment, near-camera and large; foreground — soft blurred silt motes; far background — water darkening to black, thin light shafts small and hazy at the upper edge.\nFACING: the gear face turns squarely toward camera.\nSCREEN DIRECTION: the sling draws the fragment toward the upper edge; bubbles stream upward past it.\nLIGHT: faint sunlight from far above, one bright glint on a single tooth.\nPALETTE: deep sea blue, verdigris green, dull bronze, one spark of white-gold.\nDETAIL: crusted mineral texture, fine triangular teeth, twisted rope fibres, suspended silt grains.\nNOT IN FRAME: open dark water on every side; divers and boat far above the upper edge.\nRENDER: richly detailed hand-drawn 2D historical animation illustration, cinematic film frame.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "CU",
+            "angle": "eye",
+            "location": "wreck-seabed",
+            "time_light": "deep-water-shafts",
+            "camera_motion": "push"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B02",
+      "sentences": [
+        "S02"
+      ],
+      "start": 3.9,
+      "end": 7.2,
+      "dur": 3.3,
+      "device": "macro-object",
+      "narration_says": "Then scientists realized what it could calculate.",
+      "viewer_sees": "MACRO OBJECT — the same fragment on black with a faint golden ghost of the complete dial and its gear train drawn over it",
+      "shots": [
+        {
+          "shot_id": "02",
+          "beat_id": "B02",
+          "link_group": null,
+          "t_in": 3.917,
+          "t_out": 7.208,
+          "use_in": 0,
+          "use_out": 3.291,
+          "use_len": 3.291,
+          "motion_budget": null,
+          "render_mode": "still",
+          "still_motion": "pull",
+          "source_file": "shots/shot02.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "mechanism-fragment"
+          ],
+          "visual_priority": [
+            "the fragment at the hub of the ghost dial",
+            "golden ghost of the complete dial and gears",
+            "pointers radiating from the gear hub",
+            "black void"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSHOT: the corroded fragment alone on pure black while a golden ghost of the complete machine grows around it — rings, pointers and gear trains, what it could calculate made visible.\nSUBJECT: the main Antikythera fragment, a flat slab of green-brown corroded bronze about the size of a hand, crusted like stone, a large four-spoked gear wheel with fine triangular teeth emerging from its surface.\nSCALE: the fragment is small, hand-sized, at the center; the ghost dial around it is many times larger, reaching nearly to the frame edges; the fragment reads as one small piece of a far larger design.\nSETTING: an abstract black void, the golden drawing floating like lines of light on dark paper.\nCAMERA: camera faces the fragment straight on, a few paces back, eye level, medium.\nFRAME LAYOUT: center — the fragment, solid and dark, where the ghost dial's hub would be; around it — concentric golden rings and two slender pointers; upper-left and lower-right — ghost gear wheels, cropped at the edges.\nFACING: the gear face turns squarely toward camera; ghost pointers radiate from its hub.\nSCREEN DIRECTION: golden lines spread outward from the fragment toward all four edges, fading at the tips.\nLIGHT: the golden lines glow softly, throwing a warm rim onto the crust.\nPALETTE: pure black, warm gold, verdigris green, dark bronze.\nDETAIL: hair-thin engraved gold lines, tiny zodiac glyphs, crust texture on the fragment edge.\nNOT IN FRAME: a clean black field holding only the fragment and its drawing.\nRENDER: richly detailed hand-drawn 2D historical animation illustration, cinematic film frame.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "abstract-black",
+            "time_light": "golden-glow",
+            "camera_motion": "pull"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B03",
+      "sentences": [
+        "S03",
+        "S04"
+      ],
+      "start": 7.2,
+      "end": 19.3,
+      "dur": 12.1,
+      "device": null,
+      "narration_says": "In the spring of 1900, a boat of Greek sponge divers was running from a storm. They sheltered off Antikythera, a small rocky island between Crete and mainland Greece.",
+      "viewer_sees": "a tiny single-masted sponge boat heeling under a black squall between towering waves; the boat slipping into the lee of Antikythera's bare limestone cliffs",
+      "shots": [
+        {
+          "shot_id": "03",
+          "beat_id": "B03",
+          "link_group": null,
+          "t_in": 7.208,
+          "t_out": 12.917,
+          "use_in": 0,
+          "use_out": 5.709,
+          "use_len": 5.709,
+          "motion_budget": null,
+          "render_mode": "still",
+          "still_motion": "pan-right",
+          "source_file": "shots/shot03.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "sponge-boat"
+          ],
+          "visual_priority": [
+            "the sponge boat heeling under the squall",
+            "towering wave crests",
+            "black squall cloud",
+            "slanting rain"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSHOT: a tiny sponge-diving boat heeling hard between towering grey waves under a black squall, seen from low in a trough — one patched sail fighting the whole storm.\nSUBJECT: a small Greek sponge-diving boat of 1900, a single-masted wooden caïque with a high curved prow, a patched canvas sail, a hand-cranked brass air pump on deck and coils of rope.\nACTION: the boat runs before the wind, crewmen hunched at the gunwale.\nSETTING: the open Aegean, spring 1900, spray torn off the crests.\nCAMERA: camera sits low in a wave trough, looking up at the boat, low, wide.\nFRAME LAYOUT: foreground (near-camera, large) — a dark foam-streaked wave face at the lower-left; midground, center — the boat, small; far background — the squall filling the upper half, rain veils hazy at the right edge.\nFACING: we see the port side and curved prow three-quarter on; the crew look back toward screen-left.\nSCREEN DIRECTION: the boat drives toward screen-right; rain slants toward the lower-right.\nLIGHT: dim storm light, one pale break lighting the sail from the left.\nPALETTE: slate grey, foam white, dark teal, weathered ochre sail.\nDETAIL: layered wave crests with torn spray, patched canvas seams, crew readable by outline.\nNOT IN FRAME: storm sea stretching to both edges, one boat alone and land still unseen.\nRENDER: richly detailed hand-drawn 2D historical animation illustration, cinematic film frame.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "LS",
+            "angle": "low",
+            "location": "antikythera-coast",
+            "time_light": "storm-grey",
+            "camera_motion": "pan"
+          }
+        },
+        {
+          "shot_id": "04",
+          "beat_id": "B03",
+          "link_group": null,
+          "t_in": 12.917,
+          "t_out": 19.292,
+          "use_in": 0,
+          "use_out": 6.375,
+          "use_len": 6.375,
+          "motion_budget": null,
+          "render_mode": "still",
+          "still_motion": "pull",
+          "source_file": "shots/shot04.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "bare limestone cliffs of Antikythera",
+            "calm water in the lee",
+            "tiny boat at anchor",
+            "retreating storm"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSHOT: a high wide view of Antikythera's bare limestone cliffs rising from a grey sea, a tiny boat sheltering in their calm lee — a small rock alone between two coastlines.\nSUBJECT: Antikythera, a small rocky island of pale bare limestone, steep cliffs dropping straight into the sea, scrub on the ridges, no village.\nSUBJECT 2: the sponge boat, sail lowered, a small dark shape at anchor.\nSETTING: the Aegean between Crete and mainland Greece, spring 1900.\nCAMERA: camera hangs high over the sea off the north shore, high, extra wide.\nFRAME LAYOUT: right third and center — the cliffs, large and pale; lower-center — a pocket of calm water with the boat, very small; left third — the retreating squall, far, small and hazy.\nFACING: we see the cliffs' sea face head-on; the boat's prow points toward them.\nSCREEN DIRECTION: storm clouds drift away toward the left edge; foam trails toward screen-left.\nLIGHT: storm clearing, a silver shaft falling on the cliffs, the sea dark at the left.\nPALETTE: pale limestone, dark slate sea, silver light, sage scrub.\nDETAIL: three layers of ridge fading into haze, surf lines at the rock foot, boat readable by silhouette.\nNOT IN FRAME: empty open sea beyond the island, Crete and Greece far past the edges.\nRENDER: richly detailed hand-drawn 2D historical animation illustration, cinematic film frame.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "XLS",
+            "angle": "high",
+            "location": "antikythera-coast",
+            "time_light": "storm-clearing",
+            "camera_motion": "pull"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B04",
+      "sentences": [
+        "S05"
+      ],
+      "start": 19.3,
+      "end": 22.86,
+      "dur": 3.56,
+      "device": null,
+      "narration_says": "When the sea calmed, one diver went down to look around.",
+      "viewer_sees": "from below the surface: the diver's copper helmet and weighted boots sinking into blue, the boat's hull a small dark shape on the bright water above, the air hose a line between them",
+      "shots": [
+        {
+          "shot_id": "05",
+          "beat_id": "B04",
+          "link_group": null,
+          "t_in": 19.292,
+          "t_out": 22.875,
+          "use_in": 0,
+          "use_out": 3.583,
+          "use_len": 3.583,
+          "motion_budget": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot05.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "sponge-diver"
+          ],
+          "visual_priority": [
+            "the sponge diver sinking toward camera",
+            "air hose line to the surface",
+            "boat hull silhouette on bright water",
+            "blue depth"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSHOT: from deep below, a lone diver in a copper helmet sinks toward camera, his air hose a thin line back to the tiny dark hull on the bright surface.\nSUBJECT: a Greek sponge diver of 1900 in a heavy patched canvas diving suit, a round copper helmet with three small glass portholes, lead-weighted boots, a thick black air hose and a rope line trailing upward.\nACTION: he descends feet first, one hand on the rope.\nSETTING: clear blue water off Antikythera, the seabed still far below.\nCAMERA: camera is deep under him looking straight up along the rope, low, medium.\nFRAME LAYOUT: center and lower half — the diver, near-camera and large, boots toward camera; upper-center — the boat hull, a small dark oval, far and hazy; between them — hose and rope, two thin lines.\nFACING: we see his boot soles and the front of his helmet tilted down toward camera.\nSCREEN DIRECTION: he sinks from the upper edge toward camera; bubbles rise toward the upper edge.\nLIGHT: bright sunlit surface, light shafts fanning down around him.\nPALETTE: bright aqua, deep ultramarine, copper orange, canvas tan.\nDETAIL: canvas seams and patches, rivets on the helmet collar, rising bubble streams.\nNOT IN FRAME: open blue water all around, the wreck hidden deep below the lower edge.\nRENDER: richly detailed hand-drawn 2D historical animation illustration, cinematic film frame.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "low",
+            "location": "open-water",
+            "time_light": "deep-water-shafts",
+            "camera_motion": "push"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B05",
+      "sentences": [
+        "S06",
+        "S07",
+        "S08"
+      ],
+      "start": 22.86,
+      "end": 33.2,
+      "dur": 10.34,
+      "device": "silhouette",
+      "narration_says": "According to the story the crew told, he came back up terrified. He said the seabed was covered in bodies. Men and horses, lying in the dark.",
+      "viewer_sees": "SILHOUETTE — through murk, human and horse shapes lying tangled on the slope, outlines only, seen past the diver's helmet porthole close to camera; the crew on deck crowding around the diver as his helmet comes off, faces frightened",
+      "shots": [
+        {
+          "shot_id": "06",
+          "beat_id": "B05",
+          "link_group": null,
+          "t_in": 22.875,
+          "t_out": 27,
+          "use_in": 0,
+          "use_out": 4.125,
+          "use_len": 4.125,
+          "motion_budget": null,
+          "render_mode": "still",
+          "still_motion": "hold",
+          "source_file": "shots/shot06.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "sponge-diver"
+          ],
+          "visual_priority": [
+            "the sponge diver's terrified bare face",
+            "crewmen crowding around him",
+            "helmet held by a crewman",
+            "brass pump wheel"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSHOT: crewmen crowd the diver the moment his copper helmet comes off — his face white with terror, their faces turning from curiosity to fear.\nSUBJECT: a Greek sponge diver of 1900 in a heavy patched canvas diving suit, a round copper helmet with three small glass portholes, lead-weighted boots, a thick black air hose and a rope line trailing upward, the helmet lifted off, his wet face bare and staring.\nACTION: he grips a crewman's arm, mouth open mid-word.\nSETTING: the sponge boat's deck at anchor, rope coils and the brass pump by the mast.\nCAMERA: camera stands on deck among the crew, eye level, medium.\nFRAME LAYOUT: center — the diver on the gunwale, near-camera and large; left third and right third — three crewmen leaning in, cropped at the chest; upper-right — pale cliffs, far and hazy.\nFACING: we see the diver's face head-on, eyes fixed past camera; the crew in three-quarter, all looking at him.\nSCREEN DIRECTION: the crew leans inward toward center; seawater runs off his suit toward the lower edge.\nLIGHT: flat grey light after the storm, wet sheen on canvas.\nPALETTE: wet canvas tan, copper orange, grey sky, pale limestone.\nDETAIL: water beads on canvas, rough wool shirts and caps, frayed rope.\nNOT IN FRAME: the crowded deck and its crew; the sea floor stays unseen.\nRENDER: richly detailed hand-drawn 2D historical animation illustration, cinematic film frame.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "boat-deck",
+            "time_light": "overcast-calm",
+            "camera_motion": "locked"
+          }
+        },
+        {
+          "shot_id": "07",
+          "beat_id": "B05",
+          "link_group": null,
+          "t_in": 27,
+          "t_out": 33.208,
+          "use_in": 0,
+          "use_out": 6.208,
+          "use_len": 6.208,
+          "motion_budget": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot07.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "tangled human and horse shapes on the slope",
+            "round porthole rim of the helmet",
+            "murky green water",
+            "one pale shaft of light"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSHOT: through the round porthole of a diving helmet, a murky slope covered in tangled shapes that read as lying men and horses — outlines only, before anyone knows they are statues.\nSUBJECT: dozens of dark human and horse shapes lying tangled across a slope of sand and stone, limbs outstretched, a horse head raised, every form a pure silhouette.\nSETTING: the Antikythera seabed at depth, green-black water thick with silt.\nCAMERA: camera looks out from inside the helmet down the slope, high, wide.\nFRAME LAYOUT: frame edges — the thick copper porthole rim, near-camera and large, a dark circle cropping all corners; center — the slope of shapes; far background — the slope dropping into black, hazy.\nFACING: the figures lie at odd angles; a horse shape at center lifts its head toward camera.\nSCREEN DIRECTION: silt drifts from the left edge across the shapes toward screen-right.\nLIGHT: murky green gloom, one pale shaft grazing the center shapes.\nPALETTE: murky olive green, black, grey-blue, faint white.\nDETAIL: figures readable only by outline and posture, silt haze in layers, condensation beads on the glass.\nNOT IN FRAME: shapes kept as dark silhouettes; the diver present only as his porthole.\nRENDER: richly detailed hand-drawn 2D historical animation illustration, cinematic film frame.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "LS",
+            "angle": "high",
+            "location": "wreck-seabed",
+            "time_light": "murk",
+            "camera_motion": "push"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B06",
+      "sentences": [
+        "S09",
+        "S10",
+        "S11"
+      ],
+      "start": 33.2,
+      "end": 45.76,
+      "dur": 12.56,
+      "device": null,
+      "narration_says": "His captain went down to see for himself. The bodies were statues. Bronze and marble, the cargo of a ship that had sunk more than two thousand years earlier, probably on its way to Italy.",
+      "viewer_sees": "the reveal: a light shaft falls across a bronze arm and a marble horse head half-buried in sand, the bodies are statues; wider, the whole debris field around ancient hull timbers and spilled amphorae",
+      "shots": [
+        {
+          "shot_id": "08",
+          "beat_id": "B06",
+          "link_group": null,
+          "t_in": 33.208,
+          "t_out": 38.167,
+          "use_in": 0,
+          "use_out": 4.959,
+          "use_len": 4.959,
+          "motion_budget": null,
+          "render_mode": "still",
+          "still_motion": "pan-right",
+          "source_file": "shots/shot08.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "bronze arm with open hand",
+            "marble horse head half-buried in sand",
+            "shaft of light across both",
+            "diver's glove on the bronze"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSHOT: the reveal: a shaft of light falls across a green bronze arm and a white marble horse head half-buried in sand, a diver's glove touching the metal — the bodies were statues.\nSUBJECT: a lifesize ancient bronze arm, green with corrosion, fingers open, beside a pale marble horse head with a carved mane, pitted and crusted with shells.\nSETTING: grey sand of the wreck slope, stones and amphora shards.\nCAMERA: camera hovers just above the sand, looking down, high, close.\nFRAME LAYOUT: left third — the bronze arm and open hand, near-camera and large; right third — the marble horse head turned up toward the light; lower-left edge — a canvas glove, cropped at the wrist.\nFACING: we see the bronze palm and the horse's left eye and cheek three-quarter on.\nSCREEN DIRECTION: the light shaft runs from the upper-left across the arm toward the horse head at screen-right.\nLIGHT: one hard shaft of daylight, bright on bronze and marble, deep blue shadow elsewhere.\nPALETTE: verdigris green, marble white, sand grey, deep blue.\nDETAIL: pitted bronze skin, chisel marks in the marble mane, sand grains in the carved eye.\nNOT IN FRAME: two statue pieces, sand and a single glove fill the view.\nRENDER: richly detailed hand-drawn 2D historical animation illustration, cinematic film frame.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "CU",
+            "angle": "high",
+            "location": "wreck-seabed",
+            "time_light": "deep-water-shafts",
+            "camera_motion": "pan"
+          }
+        },
+        {
+          "shot_id": "09",
+          "beat_id": "B06",
+          "link_group": null,
+          "t_in": 38.167,
+          "t_out": 45.75,
+          "use_in": 0,
+          "use_out": 7.583,
+          "use_len": 7.583,
+          "motion_budget": null,
+          "render_mode": "still",
+          "still_motion": "pull",
+          "source_file": "shots/shot09.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "wreck-seabed"
+          ],
+          "visual_priority": [
+            "the wreck seabed debris field",
+            "ancient hull timber ribs",
+            "statues among the stones",
+            "two small divers"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSHOT: a wide high view over the whole wreck — hull ribs, spilled amphorae and fallen statues across a deep slope — a ship's cargo frozen where it sank two thousand years ago.\nSUBJECT: a steep slope of grey sand and pale rock deep under blue-green water, the scattered timber ribs of an ancient hull, broken amphorae half-buried in sand, bronze and marble statues lying among the stones.\nSUBJECT 2: two sponge divers, small figures in canvas suits and copper helmets among the statues.\nSETTING: a first-century BCE merchant wreck off Antikythera.\nCAMERA: camera hovers above the upper end of the slope, looking down its length, high, wide.\nFRAME LAYOUT: foreground (near-camera, large) — a broken amphora and a toppled marble torso at the lower-left; midground, center — curved hull ribs; far background — the slope dropping toward the upper-right, small and hazy.\nFACING: fallen statues lie face-up toward camera; the divers turn their helmets toward the hull.\nSCREEN DIRECTION: a school of silver fish crosses toward screen-right; the slope leads the eye to the upper-right.\nLIGHT: broad light shafts pooling on the hull timbers, fading to blue at depth.\nPALETTE: blue-green water, pale sand, dark timber brown, marble white.\nDETAIL: amphora rims and handles, scattered stones, figures readable by outline, drifting fish.\nNOT IN FRAME: open blue water above, the boats far overhead.\nRENDER: richly detailed hand-drawn 2D historical animation illustration, cinematic film frame.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "LS",
+            "angle": "high",
+            "location": "wreck-seabed",
+            "time_light": "deep-water-shafts",
+            "camera_motion": "pull"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B07",
+      "sentences": [
+        "S12",
+        "S13"
+      ],
+      "start": 45.76,
+      "end": 57.6,
+      "dur": 11.84,
+      "device": "process-cutaway",
+      "narration_says": "With help from the Greek navy, the divers spent months bringing it up. In canvas suits and copper helmets, at depths their bodies were never built for, the work was brutal.",
+      "viewer_sees": "PROCESS / CUTAWAY — a vertical section of the sea: navy ship and sponge boat on top, hose and rope running down to divers roping a bronze statue into a sling at the bottom; two men on deck turning the brass pump wheel",
+      "shots": [
+        {
+          "shot_id": "10",
+          "beat_id": "B07",
+          "link_group": null,
+          "t_in": 45.75,
+          "t_out": 50.5,
+          "use_in": 0,
+          "use_out": 4.75,
+          "use_len": 4.75,
+          "motion_budget": null,
+          "render_mode": "still",
+          "still_motion": "hold",
+          "source_file": "shots/shot10.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "vertical cutaway of the sea",
+            "navy ship and sponge boat on the surface",
+            "divers slinging a bronze statue on the bottom",
+            "hose and rope lines"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSHOT: a cutaway of the sea like a museum illustration — a navy ship and a sponge boat on the sunlit surface, ropes and hoses dropping to tiny divers slinging a bronze statue on the seabed.\nSUBJECT: a vertical slice of sea from sky to seabed drawn as an explanatory illustration, the waterline a clean horizontal edge across the upper third.\nSUBJECT 2: a grey steam-era Greek navy ship with a tall funnel, a small sponge boat beside it, and two divers in copper helmets far below.\nSETTING: the Antikythera recovery site, 1901, the wreck slope drawn in section.\nCAMERA: camera faces the section straight on, eye level, wide.\nFRAME LAYOUT: upper third — the navy ship at left and the sponge boat at right; center — long hoses and a heavy rope, near-vertical; lower third — the divers and the slung statue on the grey slope, small but clear.\nFACING: both vessels side-on, prows toward screen-right; the divers face each other across the statue.\nSCREEN DIRECTION: the rope runs taut from the statue up to the ship's crane at the upper-left.\nLIGHT: hard noon sun on the surface, water darkening in bands with depth.\nPALETTE: sky blue, graded ultramarine, navy grey, bronze green.\nDETAIL: depth bands from aqua to ink, fine rope lines, figures as clear small marks.\nNOT IN FRAME: open water on both sides of the section, the island shore past the right edge.\nRENDER: richly detailed hand-drawn 2D historical animation illustration, cinematic film frame.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "map-diagram",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "sea-cross-section",
+            "time_light": "hard-noon",
+            "camera_motion": "locked"
+          }
+        },
+        {
+          "shot_id": "11",
+          "beat_id": "B07",
+          "link_group": null,
+          "t_in": 50.5,
+          "t_out": 57.583,
+          "use_in": 0,
+          "use_out": 7.083,
+          "use_len": 7.083,
+          "motion_budget": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot11.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "sponge-diver"
+          ],
+          "visual_priority": [
+            "the sponge diver straining on the rope",
+            "copper helmet bent forward",
+            "gloved hands on the line",
+            "crushing dark water"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSHOT: a close low view of a diver straining to haul a sling rope at crushing depth, helmet bent forward, hands knotted on the line — the brutal cost of every object raised.\nSUBJECT: a Greek sponge diver of 1900 in a heavy patched canvas diving suit, a round copper helmet with three small glass portholes, lead-weighted boots, a thick black air hose and a rope line trailing upward.\nACTION: he leans his whole weight back, knees bent in the sand.\nSETTING: the bottom of the wreck slope, cold and nearly dark.\nCAMERA: camera sits low on the sand beside him, looking up, low, close.\nFRAME LAYOUT: center and right third — helmet and shoulders, near-camera and large; left third — the taut rope rising out of frame; lower edge — gloved hands, cropped at the wrist.\nFACING: we see the front porthole three-quarter on, tilted down toward his hands.\nSCREEN DIRECTION: the rope strains toward the upper-left; bubbles burst from the valve upward.\nLIGHT: almost dark, a faint cold glow catching the copper.\nPALETTE: ink blue, dull copper, canvas grey, faint aqua.\nDETAIL: dents and rivets on the copper, stretched canvas creases, fraying rope fibres.\nNOT IN FRAME: black water around him, the statue somewhere up the rope.\nRENDER: richly detailed hand-drawn 2D historical animation illustration, cinematic film frame.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "CU",
+            "angle": "low",
+            "location": "wreck-seabed",
+            "time_light": "deep-dark",
+            "camera_motion": "push"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B08",
+      "sentences": [
+        "S14",
+        "S15"
+      ],
+      "start": 57.6,
+      "end": 61.04,
+      "dur": 3.44,
+      "device": "empty-aftermath",
+      "narration_says": "One diver died. Two were left paralyzed.",
+      "viewer_sees": "EMPTY AFTERMATH — an empty copper helmet resting on a coil of rope on the deck, a canvas suit lying flat beside it, evening light",
+      "shots": [
+        {
+          "shot_id": "12",
+          "beat_id": "B08",
+          "link_group": null,
+          "t_in": 57.583,
+          "t_out": 61.042,
+          "use_in": 0,
+          "use_out": 3.459,
+          "use_len": 3.459,
+          "motion_budget": null,
+          "render_mode": "still",
+          "still_motion": "hold",
+          "source_file": "shots/shot12.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "empty copper helmet on a coil of rope",
+            "flat empty canvas suit",
+            "idle brass pump",
+            "dusk light"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSHOT: an empty copper diving helmet on a coil of rope at dusk, a canvas suit lying flat and empty beside it — the men who wore them are gone.\nSUBJECT: a round copper diving helmet with three small glass portholes, dented and dull, upright on a coil of rope, beside a patched canvas suit laid flat.\nSETTING: worn planks of the sponge boat deck, the brass pump idle.\nCAMERA: camera stands over the deck looking down, high, medium.\nFRAME LAYOUT: center — the helmet on its coil, near-camera and large; left third — the flat suit, arms spread; upper-right — the pump wheel, cropped at the edge.\nFACING: the front porthole faces camera, dark and empty.\nSCREEN DIRECTION: the mast's long evening shadow stretches across the planks toward screen-left.\nLIGHT: low dusk sun from the right, a last warm glint on the copper.\nPALETTE: dusk rose, dull copper, bleached wood, cold blue shadow.\nDETAIL: caulking lines in the planks, dents in the copper, salt stains on canvas.\nNOT IN FRAME: a deserted deck holding only the gear the divers left.\nRENDER: richly detailed hand-drawn 2D historical animation illustration, cinematic film frame.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "MS",
+            "angle": "high",
+            "location": "boat-deck",
+            "time_light": "dusk",
+            "camera_motion": "locked"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B09",
+      "sentences": [
+        "S16",
+        "S17",
+        "S18"
+      ],
+      "start": 61.04,
+      "end": 70.5,
+      "dur": 9.46,
+      "device": "ledger-accumulation",
+      "narration_says": "They raised statues, glass and pottery. They also raised a shapeless lump of corroded bronze and rotting wood. Nobody paid it much attention.",
+      "viewer_sees": "LEDGER / ACCUMULATION — museum tables filling with finds, statues, glass, pottery in rows; at the edge of one table a nondescript green lump on a tray with no label, ignored",
+      "shots": [
+        {
+          "shot_id": "13",
+          "beat_id": "B09",
+          "link_group": null,
+          "t_in": 61.042,
+          "t_out": 65.917,
+          "use_in": 0,
+          "use_out": 4.875,
+          "use_len": 4.875,
+          "motion_budget": null,
+          "render_mode": "still",
+          "still_motion": "pan-right",
+          "source_file": "shots/shot13.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "museum-workroom"
+          ],
+          "visual_priority": [
+            "the museum workroom tables in long rows",
+            "statues, glass and pottery in trays",
+            "clerk writing labels",
+            "shutter light bars"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSHOT: a high view down the museum workroom as long tables fill with the wreck's treasures in orderly rows — an inventory of riches growing along the room.\nSUBJECT: a workroom of the National Archaeological Museum in Athens around 1902, tall shuttered windows, long wooden tables covered with shipwreck finds in labelled trays, glass display cases and plain plaster walls.\nSUBJECT 2: a single clerk in a dark coat writing a label at the far table, small.\nSETTING: Athens, 1901, the finds still crusted from the sea.\nCAMERA: camera is high in a corner near the ceiling, high, wide.\nFRAME LAYOUT: foreground (near-camera, large) — a table end at the lower-left with a bronze statuette and glass bowl; midground, center — rows of trays with pottery; far background — shuttered windows at the upper-right, small and hazy.\nFACING: statues lie face-up; the clerk is side-on, bent over his writing.\nSCREEN DIRECTION: rows of trays march toward the upper-right; shutter light falls across them toward screen-right.\nLIGHT: daylight through half-closed shutters, parallel bars of light and shadow.\nPALETTE: plaster white, dark oak, verdigris green, terracotta.\nDETAIL: trays and paper labels in rows, objects readable by outline, pottery shelves.\nNOT IN FRAME: tables of finds filling the room, the small lump lost at its far end.\nRENDER: richly detailed hand-drawn 2D historical animation illustration, cinematic film frame.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "architecture",
+            "shot_size": "LS",
+            "angle": "high",
+            "location": "museum-workroom",
+            "time_light": "shuttered-daylight",
+            "camera_motion": "pan"
+          }
+        },
+        {
+          "shot_id": "14",
+          "beat_id": "B09",
+          "link_group": null,
+          "t_in": 65.917,
+          "t_out": 70.5,
+          "use_in": 0,
+          "use_out": 4.583,
+          "use_len": 4.583,
+          "motion_budget": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot14.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "shapeless green lump on a bare tray",
+            "labelled tray of glass beside it",
+            "table edge",
+            "dust in shutter light"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSHOT: at the edge of a crowded table, a shapeless green lump of bronze and rotting wood sits on a bare unlabelled tray while a neatly labelled tray of glass gets the light.\nSUBJECT: a shapeless lump of green-brown corroded bronze fused with black rotting wood, shoebox-sized, cracked and crusted like a sea rock.\nSETTING: the end of a long oak table in the workroom, trays receding along it.\nCAMERA: camera sits level with the tabletop at its end, eye level, medium.\nFRAME LAYOUT: left third — the lump on its bare tray, near-camera and large; right third — glass bottles with a neat paper label; upper-right — a clerk's back, far, small and hazy.\nFACING: the lump's broken side faces camera; the clerk turns toward the glass.\nSCREEN DIRECTION: dust motes drift through a bar of light from the upper-right toward the lump.\nLIGHT: dim daylight, one bar of light on the glass, the lump half in shadow.\nPALETTE: dull green-brown, black wood, glass glint, oak brown.\nDETAIL: crumbling crust and wood grain, a hand-written label, dust in the light.\nNOT IN FRAME: a plain crusted surface on the lump, its gears sealed inside.\nRENDER: richly detailed hand-drawn 2D historical animation illustration, cinematic film frame.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "museum-workroom",
+            "time_light": "shuttered-daylight",
+            "camera_motion": "push"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B10",
+      "sentences": [
+        "S19",
+        "S20",
+        "S21"
+      ],
+      "start": 70.5,
+      "end": 85.16,
+      "dur": 14.66,
+      "device": "macro-object",
+      "narration_says": "Then, in 1902, the lump split apart. An archaeologist named Valerios Stais looked closer, and saw something that did not seem to belong in the ancient world. A gear wheel.",
+      "viewer_sees": "the lump split into pieces on the tray; Stais leaning in with a magnifying glass; MACRO — a single hand-cut gear wheel emerging from the crust",
+      "shots": [
+        {
+          "shot_id": "15",
+          "beat_id": "B10",
+          "link_group": null,
+          "t_in": 70.5,
+          "t_out": 74.583,
+          "use_in": 0,
+          "use_out": 4.083,
+          "use_len": 4.083,
+          "motion_budget": null,
+          "render_mode": "still",
+          "still_motion": "hold",
+          "source_file": "shots/shot15.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "the lump split into several pieces",
+            "crumbled wood flakes",
+            "straight bronze edges in the crust",
+            "bare wooden tray"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSHOT: looking straight down on a tray where the corroded lump has split into flat pieces, wood crumbled between them — straight, deliberate bronze edges where rock should be.\nSUBJECT: four flat broken pieces of green-brown corroded bronze lying slightly apart, black wood flaking between them, fresh pale cracks along the breaks.\nSETTING: a shallow wooden museum tray on an oak table, 1902.\nCAMERA: camera is directly above the tray, overhead, close.\nFRAME LAYOUT: center — the largest piece, near-camera and large; upper-left and lower-right — smaller pieces pulled apart along the crack; left edge — the tray rim, cropped.\nFACING: the inner faces of the break turn up toward camera.\nSCREEN DIRECTION: the pieces spread outward from the center crack; wood crumbs scatter toward the lower-right.\nLIGHT: window light from screen-left, raking across the crust.\nPALETTE: verdigris green, rust brown, black wood, pale oak.\nDETAIL: layered corrosion strata at the break, wood flakes, hair-thin straight plate edges.\nNOT IN FRAME: just the broken pieces on their tray, untouched.\nRENDER: richly detailed hand-drawn 2D historical animation illustration, cinematic film frame.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "CU",
+            "angle": "overhead",
+            "location": "museum-workroom",
+            "time_light": "window-side-light",
+            "camera_motion": "locked"
+          }
+        },
+        {
+          "shot_id": "16",
+          "beat_id": "B10",
+          "link_group": null,
+          "t_in": 74.583,
+          "t_out": 79.917,
+          "use_in": 0,
+          "use_out": 5.334,
+          "use_len": 5.334,
+          "motion_budget": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot16.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "valerios-stais"
+          ],
+          "visual_priority": [
+            "valerios stais leaning in with a magnifying glass",
+            "the broken fragments on the tray",
+            "his intent expression",
+            "window light"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSHOT: Valerios Stais leans low over the split fragments with a brass magnifying glass, face lit by the window — an archaeologist seeing something that should not be there.\nSUBJECT: a Greek archaeologist of about forty in 1902, neatly parted dark hair, a full dark moustache, round wire spectacles, a dark wool three-piece suit and a white high-collared shirt.\nACTION: he bends over the tray, the glass raised to one eye.\nSETTING: the Athens museum workroom, 1902, shuttered windows and trays of finds.\nCAMERA: camera stands across the table from him, eye level, medium.\nFRAME LAYOUT: right third — Stais, near-camera and large, leaning in; left third — the broken fragments on their tray, lit; upper-right — a shuttered window, far and hazy.\nFACING: we see his face and chest three-quarter on, eyes toward screen-left through the lens.\nSCREEN DIRECTION: he leans from the right edge toward the tray at screen-left.\nLIGHT: strong window light from screen-left, warm on his face.\nPALETTE: dark wool black, crisp white collar, brass gold, verdigris green.\nDETAIL: woven wool of the suit, brass magnifier rim, spectacle glint, crust on the fragments.\nNOT IN FRAME: Stais alone at his table in a quiet room.\nRENDER: richly detailed hand-drawn 2D historical animation illustration, cinematic film frame.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "museum-workroom",
+            "time_light": "window-side-light",
+            "camera_motion": "push"
+          }
+        },
+        {
+          "shot_id": "17",
+          "beat_id": "B10",
+          "link_group": null,
+          "t_in": 79.917,
+          "t_out": 85.167,
+          "use_in": 0,
+          "use_out": 5.25,
+          "use_len": 5.25,
+          "motion_budget": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot17.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "mechanism-fragment"
+          ],
+          "visual_priority": [
+            "the fragment's four-spoked gear wheel",
+            "fine triangular teeth",
+            "surrounding crust",
+            "magnifier rim at the edge"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSHOT: an extreme close view of a single hand-cut gear wheel emerging from stone-like crust, its fine teeth sharp in the window light — something that does not belong in the ancient world.\nSUBJECT: the main Antikythera fragment, a flat slab of green-brown corroded bronze about the size of a hand, crusted like stone, a large four-spoked gear wheel with fine triangular teeth emerging from its surface.\nSCALE: the gear is tiny, its whole wheel smaller than a coin; each tooth thinner than a fingernail edge; the magnifier rim at the edge looks huge beside it.\nSETTING: the fragment on its tray under the workroom window.\nCAMERA: camera is almost touching the bronze, eye level, extreme close.\nFRAME LAYOUT: center — the four-spoked gear, near-camera and large; around it — rough green crust to the frame edges; upper-right edge — a brass magnifier rim, cropped.\nFACING: the gear face turns squarely toward camera, spokes forming a clear cross.\nSCREEN DIRECTION: loose crust grains tumble away from the gear rim toward the lower-left.\nLIGHT: raking window light from screen-left, each tooth casting a tiny sharp shadow.\nPALETTE: verdigris green, bright bronze at the breaks, rust brown, brass gold.\nDETAIL: individual triangular teeth, hand-filed marks on the spokes, crystalline corrosion.\nNOT IN FRAME: bronze and crust edge to edge, the room lost in blur.\nRENDER: richly detailed hand-drawn 2D historical animation illustration, cinematic film frame.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "ECU",
+            "angle": "eye",
+            "location": "museum-workroom",
+            "time_light": "window-side-light",
+            "camera_motion": "push"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B11",
+      "sentences": [
+        "S22",
+        "S23"
+      ],
+      "start": 85.16,
+      "end": 92.46,
+      "dur": 7.3,
+      "device": "process-cutaway",
+      "narration_says": "And not just one. Layers of gears, packed inside a case about the size of a shoebox.",
+      "viewer_sees": "PROCESS / CUTAWAY — the fragment drawn as a translucent layered section, gear stacked behind gear inside it; the fragments laid out inside the faint outline of a shoebox-sized case",
+      "shots": [
+        {
+          "shot_id": "18",
+          "beat_id": "B11",
+          "link_group": null,
+          "t_in": 85.167,
+          "t_out": 92.458,
+          "use_in": 0,
+          "use_out": 7.291,
+          "use_len": 7.291,
+          "motion_budget": null,
+          "render_mode": "still",
+          "still_motion": "pull",
+          "source_file": "shots/shot18.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "mechanism-fragment"
+          ],
+          "visual_priority": [
+            "the fragment drawn as a translucent section",
+            "gears stacked in layers inside",
+            "faint shoebox-sized case outline",
+            "other pieces inside the outline"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSHOT: the fragment drawn as a translucent cutaway, gear behind gear stacked inside the crust, set within the faint outline of a shoebox-sized case — not one gear, a packed machine.\nSUBJECT: the main Antikythera fragment, a flat slab of green-brown corroded bronze about the size of a hand, crusted like stone, a large four-spoked gear wheel with fine triangular teeth emerging from its surface.\nSCALE: the fragment is hand-sized and fills only the lower-left of the case outline; the outline is a shoebox, several times larger; each gear inside is no wider than a thumb.\nSETTING: a clean explanatory drawing, pale lines on a dark green-brown field.\nCAMERA: camera faces the fragment straight on, eye level, close.\nFRAME LAYOUT: lower-left — the fragment, large, half solid and half transparent; center and right third — the pale case outline with smaller pieces placed inside; inside the fragment — five gear layers overlapping.\nFACING: the gear faces turn toward camera, each layer offset so every wheel reads.\nSCREEN DIRECTION: the gear layers fan out toward the upper-right, each fainter than the last.\nLIGHT: a soft glow inside the transparent section, thin white outlines.\nPALETTE: deep green-brown, ivory lines, warm bronze, faint gold.\nDETAIL: crisp tooth outlines on each layer, dotted axle lines, crust on the solid half.\nNOT IN FRAME: a clean diagram field around the pieces and their case.\nRENDER: richly detailed hand-drawn 2D historical animation illustration, cinematic film frame.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "map-diagram",
+            "shot_size": "CU",
+            "angle": "eye",
+            "location": "museum-workroom",
+            "time_light": "diagram-glow",
+            "camera_motion": "pull"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B12",
+      "sentences": [
+        "S24"
+      ],
+      "start": 92.46,
+      "end": 97.62,
+      "dur": 5.16,
+      "device": null,
+      "narration_says": "Some experts insisted it had to be a later object that had fallen onto the wreck.",
+      "viewer_sees": "scholars in 1900s suits arguing over the table, one pointing at the fragment, another shaking his head",
+      "shots": [
+        {
+          "shot_id": "19",
+          "beat_id": "B12",
+          "link_group": null,
+          "t_in": 92.458,
+          "t_out": 97.625,
+          "use_in": 0,
+          "use_out": 5.167,
+          "use_len": 5.167,
+          "motion_budget": null,
+          "render_mode": "still",
+          "still_motion": "pan-left",
+          "source_file": "shots/shot19.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "scholars arguing over the table",
+            "one pointing at the fragment",
+            "one shaking his head",
+            "lone archaeologist at screen-left"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSHOT: a heated argument in the workroom — bearded scholars in dark frock coats crowd a table, one jabbing a finger at the fragment, another shaking his head, while one archaeologist stands his ground.\nSUBJECT: three scholars of 1902 in dark frock coats and high collars, bearded and moustached, gesturing, facing a younger archaeologist in spectacles.\nSETTING: the museum workroom, trays, books and papers spread on the table.\nCAMERA: camera stands at the end of the room, eye level, wide.\nFRAME LAYOUT: left third — the archaeologist, a hand on the fragment's tray; center — the table with the fragment, small; right third — the three scholars grouped; upper edge — shuttered windows, far and hazy.\nFACING: the archaeologist looks toward screen-right in three-quarter; the scholars' faces turn toward screen-left at him.\nSCREEN DIRECTION: the lead scholar's pointing arm thrusts toward the fragment at screen-left.\nLIGHT: bars of shutter light, faces lit in slices.\nPALETTE: charcoal black, starched white, oak brown, plaster cream.\nDETAIL: frock coats and watch chains by outline, clear gestures and posture, papers on the table.\nNOT IN FRAME: the argument filling the near end of an otherwise empty room.\nRENDER: richly detailed hand-drawn 2D historical animation illustration, cinematic film frame.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "museum-workroom",
+            "time_light": "shuttered-daylight",
+            "camera_motion": "pan"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B13",
+      "sentences": [
+        "S25"
+      ],
+      "start": 97.62,
+      "end": 100.58,
+      "dur": 2.96,
+      "device": null,
+      "narration_says": "Nothing this intricate could be that old.",
+      "viewer_sees": "the fragment alone on a velvet tray, unlabelled, beside a much simpler ancient bronze object for comparison",
+      "shots": [
+        {
+          "shot_id": "20",
+          "beat_id": "B13",
+          "link_group": null,
+          "t_in": 97.625,
+          "t_out": 100.583,
+          "use_in": 0,
+          "use_out": 2.958,
+          "use_len": 2.958,
+          "motion_budget": null,
+          "render_mode": "still",
+          "still_motion": "hold",
+          "source_file": "shots/shot20.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "mechanism-fragment"
+          ],
+          "visual_priority": [
+            "the fragment on a velvet tray",
+            "a plain ancient bronze pin beside it",
+            "contrast of intricacy",
+            "dark velvet"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSHOT: the fragment on dark velvet beside a plain ancient bronze pin — the most intricate thing ever raised from the sea next to what experts expected from its age.\nSUBJECT: the main Antikythera fragment, a flat slab of green-brown corroded bronze about the size of a hand, crusted like stone, a large four-spoked gear wheel with fine triangular teeth emerging from its surface.\nSCALE: the fragment is hand-sized and fills the left half; the pin is long and slender but plain; the gear teeth are finer than anything on the pin.\nSETTING: a museum velvet tray under soft daylight.\nCAMERA: camera faces the tray straight on, eye level, close.\nFRAME LAYOUT: left third and center — the fragment, near-camera and large; right third — the plain pin lying diagonally; around both — dark velvet.\nFACING: the gear face turns toward camera; the pin lies flat, point toward the lower-right.\nSCREEN DIRECTION: the pin's diagonal leads from the lower-right corner toward the fragment at screen-left.\nLIGHT: soft even daylight, a gentle highlight on the gear rim.\nPALETTE: deep burgundy velvet, verdigris green, dull bronze, soft cream.\nDETAIL: velvet nap, fine gear teeth, plain hammered surface of the pin.\nNOT IN FRAME: two objects resting alone on bare velvet.\nRENDER: richly detailed hand-drawn 2D historical animation illustration, cinematic film frame.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "CU",
+            "angle": "eye",
+            "location": "museum-workroom",
+            "time_light": "soft-daylight",
+            "camera_motion": "locked"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B14",
+      "sentences": [
+        "S26",
+        "S27",
+        "S28"
+      ],
+      "start": 100.58,
+      "end": 117.2,
+      "dur": 16.62,
+      "device": "macro-object",
+      "narration_says": "For decades it stayed a puzzle. Then, in 2005, researchers scanned every fragment with X-rays in extraordinary detail. They found about thirty surviving gears, and thousands of tiny letters hidden beneath the corrosion.",
+      "viewer_sees": "the fragment in a dim display case gathering dust; an X-ray scan view, glowing blue-white gears and rows of tiny Greek letters appearing out of solid crust",
+      "shots": [
+        {
+          "shot_id": "21",
+          "beat_id": "B14",
+          "link_group": null,
+          "t_in": 100.583,
+          "t_out": 108.583,
+          "use_in": 0,
+          "use_out": 8,
+          "use_len": 8,
+          "motion_budget": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot21.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "huge X-ray CT cabinet",
+            "tiny fragment on the turntable",
+            "researchers at glowing monitors",
+            "blue-white glow"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSHOT: decades later, the tiny fragment sits on a turntable inside an X-ray CT machine the size of a van — modern machinery built to read an ancient one.\nSUBJECT: a massive shielded X-ray CT cabinet of 2005, heavy lead-lined door open, thick cables, a small turntable at its heart holding a hand-sized green bronze fragment.\nSUBJECT 2: two researchers in lab coats at glowing flat LCD monitors.\nSETTING: a temporary lab in the Athens museum, 2005, cables across a concrete floor.\nCAMERA: camera sits low on the floor at the open door, low, wide.\nFRAME LAYOUT: center and right third — the scanner, near-camera and large, chamber glowing; chamber center — the fragment, very small; left third — the researchers, far, small and hazy.\nFACING: we see the scanner front head-on; the researchers side-on, faces lit toward screen-right.\nSCREEN DIRECTION: cables snake across the floor toward the left edge; pale light spills from the chamber toward camera.\nLIGHT: cold blue-white glow from the chamber and monitors, the room dark.\nPALETTE: cold blue-white, gunmetal grey, black, one note of verdigris.\nDETAIL: riveted shield panels, warning stripes, cable bundles, slim flat-panel monitor silhouettes.\nNOT IN FRAME: a dim working lab sealed from daylight.\nRENDER: richly detailed hand-drawn 2D historical animation illustration, cinematic film frame.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "architecture",
+            "shot_size": "LS",
+            "angle": "low",
+            "location": "scan-lab",
+            "time_light": "xray-glow",
+            "camera_motion": "push"
+          }
+        },
+        {
+          "shot_id": "22",
+          "beat_id": "B14",
+          "link_group": null,
+          "t_in": 108.583,
+          "t_out": 117.208,
+          "use_in": 0,
+          "use_out": 8.625,
+          "use_len": 8.625,
+          "motion_budget": null,
+          "render_mode": "still",
+          "still_motion": "pan-right",
+          "source_file": "shots/shot22.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "glowing X-ray gears inside the crust",
+            "rows of tiny Greek letters",
+            "ghostly crust outline",
+            "black field"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSHOT: an X-ray view inside the fragment, glowing blue-white gears and rows of tiny Greek letters appearing out of solid crust — hidden words read for the first time.\nSUBJECT: a translucent grey silhouette of corroded bronze, dozens of interlocking gears glowing bright inside it, lines of minute Greek capitals engraved across a plate.\nSETTING: a scan image seen full frame on black.\nCAMERA: camera looks straight into the scan, eye level, extreme close.\nFRAME LAYOUT: left third — a large glowing gear, near-camera, cropped at the edge; center — overlapping smaller gears; right third — rows of tiny letters, crisp and bright.\nFACING: gears and lettered plate face camera flat.\nSCREEN DIRECTION: lines of letters run toward the right edge; brightness sweeps toward screen-right as the scan resolves.\nLIGHT: glowing from within, brightest where metal is densest.\nPALETTE: X-ray blue-white, soft grey, black, faint cyan.\nDETAIL: gear teeth as bright zigzags, engraved letter strokes, grainy scan noise.\nNOT IN FRAME: the scan image alone, edge to edge.\nRENDER: richly detailed hand-drawn 2D historical animation illustration, cinematic film frame.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "map-diagram",
+            "shot_size": "ECU",
+            "angle": "eye",
+            "location": "scan-lab",
+            "time_light": "xray-glow",
+            "camera_motion": "pan"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B15",
+      "sentences": [
+        "S29",
+        "S30"
+      ],
+      "start": 117.2,
+      "end": 121.34,
+      "dur": 4.14,
+      "device": null,
+      "narration_says": "Slowly, its purpose became clear. You turned a handle on the side.",
+      "viewer_sees": "the restored mechanism, bright bronze, on an ancient Greek workshop table; a hand on the side crank",
+      "shots": [
+        {
+          "shot_id": "23",
+          "beat_id": "B15",
+          "link_group": null,
+          "t_in": 117.208,
+          "t_out": 121.333,
+          "use_in": 0,
+          "use_out": 4.125,
+          "use_len": 4.125,
+          "motion_budget": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot23.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "mechanism-restored"
+          ],
+          "visual_priority": [
+            "the mechanism restored on the workshop table",
+            "a hand turning the side crank",
+            "bright bronze front plate",
+            "workshop tools"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSHOT: the mechanism as it was when new, bright bronze on a Greek workshop table, a craftsman's hand closing on its side crank — its purpose becoming clear.\nSUBJECT: the Antikythera mechanism as it looked when new, a wooden case the size of a shoebox with a bright bronze front plate, engraved zodiac and calendar rings, slender bronze pointers and a hand crank on one side, the crank on its right side.\nACTION: a tanned hand grips the crank mid-turn.\nSETTING: a Greek workshop, second century BCE, files, calipers and scrolls on a worn table.\nCAMERA: camera stands across the table, eye level, medium.\nFRAME LAYOUT: center — the mechanism, near-camera and large; right third — the hand on the crank, cropped at the elbow; left third — tools and a rolled scroll, soft.\nFACING: the front plate faces camera three-quarter on; the hand enters from the right edge.\nSCREEN DIRECTION: the crank handle sweeps downward; the dial pointers lean toward screen-right.\nLIGHT: warm oil lamp from the upper-left, gold highlights on bronze.\nPALETTE: bright bronze, lamp gold, dark walnut, umber.\nDETAIL: engraved ring markings, polished pointer tips, wood grain, file marks on tools.\nNOT IN FRAME: a quiet workshop corner, the craftsman present only as his hand.\nRENDER: richly detailed hand-drawn 2D historical animation illustration, cinematic film frame.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "greek-workshop",
+            "time_light": "warm-lamplight",
+            "camera_motion": "push"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B16",
+      "sentences": [
+        "S31"
+      ],
+      "start": 121.34,
+      "end": 125.84,
+      "dur": 4.5,
+      "device": null,
+      "narration_says": "And as the gears moved, the machine moved the sky.",
+      "viewer_sees": "the gear train seen through the open case, a star map and the Sun and Moon glowing faintly above it as if the gears drive the sky",
+      "shots": [
+        {
+          "shot_id": "24",
+          "beat_id": "B16",
+          "link_group": null,
+          "t_in": 121.333,
+          "t_out": 125.833,
+          "use_in": 0,
+          "use_out": 4.5,
+          "use_len": 4.5,
+          "motion_budget": null,
+          "render_mode": "still",
+          "still_motion": "pull",
+          "source_file": "shots/shot24.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "gear train seen through the open case",
+            "Sun, Moon and stars rising above it",
+            "golden arcs linking gears to sky",
+            "lamplit case edge"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSHOT: looking up through the open case, a meshing gear train while a glowing sky of Sun, Moon and stars rises out of it — as the gears move, the machine moves the sky.\nSUBJECT: the inside of an ancient bronze gear train, a dozen interlocking wheels of different sizes on slender axles in an open wooden case.\nSUBJECT 2: a golden Sun disc, a silver crescent Moon and star points hanging above the case.\nSETTING: the Greek workshop at night.\nCAMERA: camera sits low at the edge of the open case, looking up past the gears, low, close.\nFRAME LAYOUT: lower half — the gear train, near-camera and large, cropped at the lower edge; upper-left — the Sun; upper-right — the Moon; top edge — a band of soft stars, far.\nFACING: the gear faces tilt toward camera; Sun and Moon face camera flat.\nSCREEN DIRECTION: thin golden arcs rise from the axles toward the Sun and Moon at the upper edge.\nLIGHT: lamp glow on the gears from below, the sky bodies glowing on dark blue.\nPALETTE: warm bronze, midnight blue, gold, silver-white.\nDETAIL: meshing teeth and axle pins, fine engraved arcs, stars of varied brightness.\nNOT IN FRAME: workshop walls dissolving into night sky above the case.\nRENDER: richly detailed hand-drawn 2D historical animation illustration, cinematic film frame.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "CU",
+            "angle": "low",
+            "location": "greek-workshop",
+            "time_light": "star-glow",
+            "camera_motion": "pull"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B17",
+      "sentences": [
+        "S32",
+        "S33"
+      ],
+      "start": 125.84,
+      "end": 140.1,
+      "dur": 14.26,
+      "device": "macro-object",
+      "narration_says": "On the front, pointers carried the Sun and the Moon through the zodiac, around a calendar of three hundred and sixty-five days. A small turning ball, half dark and half bright, showed the phase of the Moon.",
+      "viewer_sees": "MACRO OBJECT — the front dial, zodiac ring, Sun and Moon pointers; close on the small half-silver half-black moon-phase ball",
+      "shots": [
+        {
+          "shot_id": "25",
+          "beat_id": "B17",
+          "link_group": null,
+          "t_in": 125.833,
+          "t_out": 134.792,
+          "use_in": 0,
+          "use_out": 8.959,
+          "use_len": 8.959,
+          "motion_budget": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot25.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "mechanism-restored"
+          ],
+          "visual_priority": [
+            "the mechanism restored front dial",
+            "Sun and Moon pointers",
+            "zodiac ring with engraved signs",
+            "365-day calendar ring"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSHOT: the front dial filling the frame — a zodiac ring inside a calendar ring of 365 days, Sun and Moon pointers sweeping across them like a clock of the heavens.\nSUBJECT: the Antikythera mechanism as it looked when new, a wooden case the size of a shoebox with a bright bronze front plate, engraved zodiac and calendar rings, slender bronze pointers and a hand crank on one side, its front face seen close.\nSETTING: the Greek workshop table under lamplight.\nCAMERA: camera faces the dial straight on at arm's length, eye level, close.\nFRAME LAYOUT: center — the hub and pointers, near-camera and large; outer ring — the calendar ring to the frame edges; inner ring — the zodiac band; upper-right — the gold Sun pointer tip; lower-left — the silver Moon pointer tip.\nFACING: the dial faces camera flat, pointers radiating from the hub.\nSCREEN DIRECTION: the Sun pointer reaches toward the upper-right, the Moon pointer toward the lower-left.\nLIGHT: warm lamplight from the upper-left, a bright arc of reflection.\nPALETTE: bright bronze, gold, silver, umber shadow.\nDETAIL: engraved Greek zodiac glyphs, day tick marks, a gold ball on the Sun pointer.\nNOT IN FRAME: the dial face filling the whole view.\nRENDER: richly detailed hand-drawn 2D historical animation illustration, cinematic film frame.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "CU",
+            "angle": "eye",
+            "location": "greek-workshop",
+            "time_light": "warm-lamplight",
+            "camera_motion": "push"
+          }
+        },
+        {
+          "shot_id": "26",
+          "beat_id": "B17",
+          "link_group": null,
+          "t_in": 134.792,
+          "t_out": 140.083,
+          "use_in": 0,
+          "use_out": 5.291,
+          "use_len": 5.291,
+          "motion_budget": null,
+          "render_mode": "still",
+          "still_motion": "hold",
+          "source_file": "shots/shot26.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "the moon-phase ball, half silver half black",
+            "its bronze housing",
+            "engraved phase marks",
+            "lamplight glint"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSHOT: an extreme close view of the tiny moon-phase ball set in the dial, half bright silver and half black — a whole lunar month in something smaller than a pea.\nSUBJECT: a small sphere split into a silver half and a black half, set in a round bronze housing engraved with four phase marks.\nSETTING: the front dial of the mechanism in the lamplit workshop.\nCAMERA: camera is almost touching the dial, eye level, extreme close.\nFRAME LAYOUT: center — the phase ball, near-camera and large; around it — the bronze housing ring; left edge and right edge — the Moon pointer arm, cropped.\nFACING: the silver half faces screen-left toward the lamp; the black half faces screen-right.\nSCREEN DIRECTION: the silver-black boundary curves top to bottom like a waxing crescent, leaning toward screen-right.\nLIGHT: one soft lamp from screen-left, a pin-point highlight on the silver.\nPALETTE: bright silver, jet black, warm bronze, umber.\nDETAIL: polished sphere surface, fine engraved phase marks, tool marks on the housing.\nNOT IN FRAME: the ball and housing sharp at center, edges melting into warm blur.\nRENDER: richly detailed hand-drawn 2D historical animation illustration, cinematic film frame.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "ECU",
+            "angle": "eye",
+            "location": "greek-workshop",
+            "time_light": "warm-lamplight",
+            "camera_motion": "locked"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B18",
+      "sentences": [
+        "S34",
+        "S35",
+        "S36"
+      ],
+      "start": 140.1,
+      "end": 153.4,
+      "dur": 13.3,
+      "device": null,
+      "narration_says": "On the back, spiral dials counted long cycles of time. One predicted eclipses, years in advance. Another kept track of the great athletic games of Greece, including the Olympics.",
+      "viewer_sees": "the back plate with its two great spiral dials; a moon sliding across a darkening sun over a Greek city; runners in the stadium at Olympia",
+      "shots": [
+        {
+          "shot_id": "27",
+          "beat_id": "B18",
+          "link_group": null,
+          "t_in": 140.083,
+          "t_out": 144.625,
+          "use_in": 0,
+          "use_out": 4.542,
+          "use_len": 4.542,
+          "motion_budget": null,
+          "render_mode": "still",
+          "still_motion": "pull",
+          "source_file": "shots/shot27.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "back plate with two great spiral dials",
+            "engraved spiral cells",
+            "pointer pins in the grooves",
+            "Greek inscriptions"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSHOT: the back plate of the mechanism, dominated by two great engraved spirals one above the other — calendars winding through years and decades.\nSUBJECT: the rear bronze plate of the ancient mechanism, two large spiral dials engraved one above the other, divided into small cells, slender pointers riding the grooves.\nSETTING: the case turned around on the workshop table, lamplight.\nCAMERA: camera faces the back plate straight on, eye level, close.\nFRAME LAYOUT: upper half — the larger spiral, near-camera and large; lower half — the smaller spiral with a subsidiary dial; left edge and right edge — wooden case sides, cropped.\nFACING: the plate faces camera flat, pointers reaching out from each spiral center.\nSCREEN DIRECTION: the spiral grooves wind outward from each center toward the edges, clockwise.\nLIGHT: warm lamplight from the upper-left, glints in the grooves.\nPALETTE: aged bronze, dark walnut, gold highlight, umber.\nDETAIL: rows of engraved cells with tiny glyphs, rivets at the plate corners.\nNOT IN FRAME: the back face alone, the front dial turned away from camera.\nRENDER: richly detailed hand-drawn 2D historical animation illustration, cinematic film frame.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "CU",
+            "angle": "eye",
+            "location": "greek-workshop",
+            "time_light": "warm-lamplight",
+            "camera_motion": "pull"
+          }
+        },
+        {
+          "shot_id": "28",
+          "beat_id": "B18",
+          "link_group": null,
+          "t_in": 144.625,
+          "t_out": 147.875,
+          "use_in": 0,
+          "use_out": 3.25,
+          "use_len": 3.25,
+          "motion_budget": null,
+          "render_mode": "still",
+          "still_motion": "hold",
+          "source_file": "shots/shot28.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "Moon covering a darkening Sun",
+            "corona ring",
+            "Greek temple",
+            "citizens looking up"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSHOT: a black Moon slides across a darkening Sun over a Greek city, citizens on temple steps shading their eyes — an eclipse the machine predicted years before.\nSUBJECT: a solar eclipse in a darkened midday sky, the black disc of the Moon almost covering the Sun, a thin blazing corona ring.\nSUBJECT 2: Greek citizens in chitons and himations on temple steps, faces upturned.\nSETTING: a Greek city, second century BCE, marble temple and tiled roofs.\nCAMERA: camera stands at the foot of the temple steps looking up, low, wide.\nFRAME LAYOUT: upper-right — the eclipse, a bright ring on dark sky; center — the temple pediment and columns, large; lower third — the crowd, near-camera, cropped at the lower edge.\nFACING: we see the citizens' faces and chests, heads tilted back toward the upper-right.\nSCREEN DIRECTION: the Moon edges across the Sun toward screen-right; eclipse shadows fall across the steps toward screen-left.\nLIGHT: strange dim twilight at midday, cold silver on the marble.\nPALETTE: twilight violet, marble white, corona gold, shadow blue.\nDETAIL: fluted columns and roof tiles by outline, drapery folds, faint stars in the dim sky.\nNOT IN FRAME: an ancient city under the sky; the machine itself absent from this moment.\nRENDER: richly detailed hand-drawn 2D historical animation illustration, cinematic film frame.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "LS",
+            "angle": "low",
+            "location": "greek-city",
+            "time_light": "eclipse-dim",
+            "camera_motion": "locked"
+          }
+        },
+        {
+          "shot_id": "29",
+          "beat_id": "B18",
+          "link_group": null,
+          "t_in": 147.875,
+          "t_out": 153.417,
+          "use_in": 0,
+          "use_out": 5.542,
+          "use_len": 5.542,
+          "motion_budget": null,
+          "render_mode": "still",
+          "still_motion": "pan-right",
+          "source_file": "shots/shot29.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "runners mid-stride on the track",
+            "crowd on grassy embankments",
+            "judges at the finish",
+            "wooded hills"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSHOT: runners in mid-stride pound down the long clay track at Olympia as crowds cheer from grassy banks — the great games the machine counted years toward.\nSUBJECT: six ancient Greek runners in full sprint, lean and sunburnt, arms pumping, strung out along a straight clay track.\nSUBJECT 2: thousands of spectators on grassy embankments, robed judges at the far end.\nSETTING: the stadium of Olympia, packed earth track, stone starting line, wooded hills.\nCAMERA: camera stands at the track edge level with the runners, eye level, wide.\nFRAME LAYOUT: center and left third — the runners, near-camera and large; upper half — the embankment crowd, a dense band; right third — the finish line and judges, far, small and hazy.\nFACING: we see the runners side-on and three-quarter, faces set toward screen-right.\nSCREEN DIRECTION: the runners drive toward screen-right; dust kicks back toward screen-left.\nLIGHT: hard midsummer noon, short dark shadows.\nPALETTE: clay ochre, sunburnt skin, olive green, sky blue.\nDETAIL: crowd readable by outline and color, dust clouds, laurel trees on the hills.\nNOT IN FRAME: the straight track and its banks, the temples out past the left edge.\nRENDER: richly detailed hand-drawn 2D historical animation illustration, cinematic film frame.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "crowd",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "olympia-stadium",
+            "time_light": "bright-noon",
+            "camera_motion": "pan"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B19",
+      "sentences": [
+        "S37"
+      ],
+      "start": 153.4,
+      "end": 156.36,
+      "dur": 2.96,
+      "device": null,
+      "narration_says": "The most astonishing detail was the Moon.",
+      "viewer_sees": "a full Moon rising over dark Greek rooftops, large and luminous, the single subject of the sky",
+      "shots": [
+        {
+          "shot_id": "30",
+          "beat_id": "B19",
+          "link_group": null,
+          "t_in": 153.417,
+          "t_out": 156.375,
+          "use_in": 0,
+          "use_out": 2.958,
+          "use_len": 2.958,
+          "motion_budget": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot30.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "huge luminous full Moon",
+            "dark Greek rooftops",
+            "thin silver clouds",
+            "scattered stars"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSHOT: a huge luminous full Moon rising over dark Greek rooftops, the single subject of the night sky — the most astonishing detail of all.\nSUBJECT: the full Moon, enormous and bright, its grey seas clearly drawn, a silver halo around it.\nSETTING: a Greek town at night, flat roofs, tiled eaves, a temple pediment.\nCAMERA: camera sits low among the rooftops, looking up, low, wide.\nFRAME LAYOUT: center and upper-right — the Moon, very large; lower third — black rooftop and pediment silhouettes, near-camera; upper-left — thin clouds and stars, far and faint.\nFACING: the Moon faces camera full; the pediment is seen straight on.\nSCREEN DIRECTION: thin clouds drift from the left edge toward the Moon; moonlight spills across roofs toward screen-left.\nLIGHT: strong silver moonlight, deep blue shadow everywhere else.\nPALETTE: moon silver, midnight blue, black, pale cloud grey.\nDETAIL: lunar seas and craters, roof tile edges in silhouette, faint star field.\nNOT IN FRAME: an empty night sky around the Moon above sleeping streets.\nRENDER: richly detailed hand-drawn 2D historical animation illustration, cinematic film frame.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "LS",
+            "angle": "low",
+            "location": "greek-rooftop",
+            "time_light": "night-moonlit",
+            "camera_motion": "push"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B20",
+      "sentences": [
+        "S38"
+      ],
+      "start": 156.36,
+      "end": 161.46,
+      "dur": 5.1,
+      "device": null,
+      "narration_says": "It does not cross the sky at a steady speed, and Greek astronomers knew it.",
+      "viewer_sees": "a Greek astronomer on a rooftop at night marking the Moon against the stars on a wax tablet; a string of moon positions spaced unevenly across the sky",
+      "shots": [
+        {
+          "shot_id": "31",
+          "beat_id": "B20",
+          "link_group": null,
+          "t_in": 156.375,
+          "t_out": 161.458,
+          "use_in": 0,
+          "use_out": 5.083,
+          "use_len": 5.083,
+          "motion_budget": null,
+          "render_mode": "still",
+          "still_motion": "hold",
+          "source_file": "shots/shot31.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "Greek astronomer marking a wax tablet",
+            "arc of unevenly spaced Moon positions",
+            "sighting rod",
+            "moonlit rooftop"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSHOT: a Greek astronomer on a rooftop marks the Moon on a wax tablet while an arc of Moon positions crosses the sky, crowded at one end, spread wide at the other — a Moon that changes speed.\nSUBJECT: an elderly Greek astronomer with a white beard, a dark wool himation over one shoulder, wax tablet and stylus in hand, a wooden sighting rod beside him.\nSUBJECT 2: seven ghostly Moon discs in an arc, close together at the left, spaced far apart toward the right.\nSETTING: a flat Greek rooftop at night, a low parapet.\nCAMERA: camera stands on the rooftop a few paces away, eye level, medium.\nFRAME LAYOUT: left third — the astronomer, near-camera and large, seated at the parapet; center and right third — the arc of Moon positions across the upper half.\nFACING: we see his face three-quarter on, eyes raised toward the arc at screen-right.\nSCREEN DIRECTION: the Moon positions march toward screen-right, the gaps widening as they go.\nLIGHT: bright moonlight from the upper-right, a silver rim on his beard.\nPALETTE: moon silver, night blue, wax amber, dark wool brown.\nDETAIL: wool weave of the himation, scratched marks in the wax, grain of the rod.\nNOT IN FRAME: a lone astronomer above a dark sleeping town.\nRENDER: richly detailed hand-drawn 2D historical animation illustration, cinematic film frame.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "greek-rooftop",
+            "time_light": "night-moonlit",
+            "camera_motion": "locked"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B21",
+      "sentences": [
+        "S39",
+        "S40"
+      ],
+      "start": 161.46,
+      "end": 173.06,
+      "dur": 11.6,
+      "device": "process-cutaway",
+      "narration_says": "So the builder set two gears on slightly offset axles, joined by a pin sliding in a slot. The Moon's pointer sped up and slowed down, just like the real Moon.",
+      "viewer_sees": "PROCESS / CUTAWAY — two gears on offset axles, a pin riding in a slot, drawn large and clear like a technical illustration; the moon pointer on the dial in its fast and slow positions",
+      "shots": [
+        {
+          "shot_id": "32",
+          "beat_id": "B21",
+          "link_group": null,
+          "t_in": 161.458,
+          "t_out": 168.792,
+          "use_in": 0,
+          "use_out": 7.334,
+          "use_len": 7.334,
+          "motion_budget": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot32.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "two gears on offset axles",
+            "pin riding in a slot",
+            "marked axle centers",
+            "parchment field"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSHOT: a large clear technical illustration of two bronze gears on offset axles, a pin on one riding in a slot on the other — the trick that makes a pointer speed up and slow down.\nSUBJECT: two stacked bronze gears of equal size, centers slightly offset, the lower gear carrying a short upright pin inside a straight radial slot cut in the upper gear.\nSETTING: an explanatory drawing on warm parchment, like an engineer's notebook page.\nCAMERA: camera faces the drawing straight on, eye level, close.\nFRAME LAYOUT: center — the two overlapping gears, near-camera and large; left third — the first axle center, ringed; right third — the offset second axle center, ringed; overlap — the pin in its slot, highlighted.\nFACING: both gear faces face camera flat, slot and pin fully visible.\nSCREEN DIRECTION: curved arrows run clockwise around both gears; a dotted line shows the pin sliding outward toward screen-right.\nLIGHT: even soft light on parchment, pin and slot picked out in gold.\nPALETTE: parchment cream, bronze brown, ink black, gold accent.\nDETAIL: crisp inked gear teeth, dotted construction lines, ring marks at the axles.\nNOT IN FRAME: a clean parchment page holding only the drawing.\nRENDER: richly detailed hand-drawn 2D historical animation illustration, cinematic film frame.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "map-diagram",
+            "shot_size": "CU",
+            "angle": "eye",
+            "location": "diagram-parchment",
+            "time_light": "neutral",
+            "camera_motion": "push"
+          }
+        },
+        {
+          "shot_id": "33",
+          "beat_id": "B21",
+          "link_group": null,
+          "t_in": 168.792,
+          "t_out": 173.042,
+          "use_in": 0,
+          "use_out": 4.25,
+          "use_len": 4.25,
+          "motion_budget": null,
+          "render_mode": "still",
+          "still_motion": "pan-right",
+          "source_file": "shots/shot33.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "mechanism-restored"
+          ],
+          "visual_priority": [
+            "the mechanism restored dial with the Moon pointer",
+            "ghost trail of pointer positions",
+            "close and wide spacing",
+            "zodiac ring"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSHOT: the Moon pointer on the front dial with a fan of ghost positions, bunched close on one side and spread wide on the other — speeding up and slowing down like the real Moon.\nSUBJECT: the Antikythera mechanism as it looked when new, a wooden case the size of a shoebox with a bright bronze front plate, engraved zodiac and calendar rings, slender bronze pointers and a hand crank on one side, its Moon pointer picked out in silver.\nSETTING: the workshop table under lamplight.\nCAMERA: camera faces the dial at a slight angle, eye level, close.\nFRAME LAYOUT: center — the dial hub, near-camera and large; left third — five ghost pointers packed close; right third — five ghost pointers spread wide; outer edge — the zodiac ring, cropped.\nFACING: the dial faces camera three-quarter on; the solid pointer points toward screen-right.\nSCREEN DIRECTION: the ghost pointers sweep clockwise toward screen-right, the gaps widening.\nLIGHT: warm lamp from the upper-left, ghost pointers glowing faintly silver.\nPALETTE: bright bronze, silver, soft gold, umber.\nDETAIL: engraved zodiac glyphs, tick marks, faint motion-trail glow.\nNOT IN FRAME: the dial filling the frame, the craftsman's hand just off-frame.\nRENDER: richly detailed hand-drawn 2D historical animation illustration, cinematic film frame.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "CU",
+            "angle": "eye",
+            "location": "greek-workshop",
+            "time_light": "warm-lamplight",
+            "camera_motion": "pan"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B22",
+      "sentences": [
+        "S41",
+        "S42"
+      ],
+      "start": 173.06,
+      "end": 185.42,
+      "dur": 12.36,
+      "device": "timeline-seasons",
+      "narration_says": "It was probably built in the second century BCE, though the exact date is still debated. Nothing of comparable complexity is known again for more than a thousand years.",
+      "viewer_sees": "TIMELINE — a long road of history: the mechanism at the near end, a vast empty dark stretch, a medieval cathedral astronomical clock tiny at the far end",
+      "shots": [
+        {
+          "shot_id": "34",
+          "beat_id": "B22",
+          "link_group": null,
+          "t_in": 173.042,
+          "t_out": 180.208,
+          "use_in": 0,
+          "use_out": 7.166,
+          "use_len": 7.166,
+          "motion_budget": null,
+          "render_mode": "still",
+          "still_motion": "pan-right",
+          "source_file": "shots/shot34.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "long road of history from left to right",
+            "glowing mechanism at the left end",
+            "vast dark empty stretch",
+            "tiny medieval clock tower at the right end"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSHOT: a long road of history from high above — the glowing ancient mechanism at its left end, a vast empty dark stretch, a tiny medieval clock tower at the far right.\nSUBJECT: a long straight stone road across a dark plain, faint century stones along it, a small glowing bronze machine on a pedestal at its start, a tiny gothic clock tower at its end.\nSETTING: an abstract symbolic landscape under a dim sky.\nCAMERA: camera hangs high above the road near its start, high, extra wide.\nFRAME LAYOUT: left third — the glowing mechanism on its pedestal, near-camera and large; center — the long bare road; right third — the clock tower, far, small and hazy.\nFACING: the mechanism's dial faces toward screen-right along the road; the tower's dial faces back toward screen-left.\nSCREEN DIRECTION: the road runs toward the upper-right; century stones shrink toward screen-right.\nLIGHT: warm glow at the mechanism, faint cold glow at the tower, darkness between.\nPALETTE: warm bronze glow, charcoal plain, cold grey-blue, stone grey.\nDETAIL: pattern of road stones and markers, silhouettes of pedestal and tower.\nNOT IN FRAME: a bare plain along the whole road between the two ends.\nRENDER: richly detailed hand-drawn 2D historical animation illustration, cinematic film frame.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "map-diagram",
+            "shot_size": "XLS",
+            "angle": "high",
+            "location": "abstract-timeline",
+            "time_light": "neutral",
+            "camera_motion": "pan"
+          }
+        },
+        {
+          "shot_id": "35",
+          "beat_id": "B22",
+          "link_group": null,
+          "t_in": 180.208,
+          "t_out": 185.417,
+          "use_in": 0,
+          "use_out": 5.209,
+          "use_len": 5.209,
+          "motion_budget": null,
+          "render_mode": "still",
+          "still_motion": "pull",
+          "source_file": "shots/shot35.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "towering medieval astronomical clock",
+            "painted zodiac dial",
+            "small monk looking up",
+            "cathedral stone"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSHOT: a towering medieval astronomical clock in a cathedral, its painted zodiac dial high above a small monk — the next machine this complex, more than a thousand years later.\nSUBJECT: a tall gothic astronomical clock of painted wood and gilded iron, a large circular dial with zodiac ring, Sun and Moon hands and a star field.\nSUBJECT 2: a monk in a black habit, small, at its foot.\nSETTING: a European cathedral transept, fourteenth century, pointed arches and stained glass.\nCAMERA: camera stands on the floor near the monk, looking up, low, wide.\nFRAME LAYOUT: center and upper half — the clock dial, large; lower-left — the monk, near-camera but small against the clock; right third — a stained glass window, far and hazy.\nFACING: the clock face is head-on; the monk is seen from behind at three-quarter, face tilted up.\nSCREEN DIRECTION: a beam of window light slants from the right edge across the dial toward screen-left.\nLIGHT: cold pale daylight, gilded details catching light.\nPALETTE: deep blue dial, gold leaf, cold stone grey, black habit.\nDETAIL: gothic tracery and carved niches by outline, gilded zodiac glyphs.\nNOT IN FRAME: a hushed cathedral with a single monk.\nRENDER: richly detailed hand-drawn 2D historical animation illustration, cinematic film frame.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "architecture",
+            "shot_size": "LS",
+            "angle": "low",
+            "location": "medieval-cathedral",
+            "time_light": "cold-daylight",
+            "camera_motion": "pull"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B23",
+      "sentences": [
+        "S43",
+        "S44"
+      ],
+      "start": 185.42,
+      "end": 189.91,
+      "dur": 4.49,
+      "device": null,
+      "narration_says": "So is this a machine that shouldn't exist? Not quite.",
+      "viewer_sees": "the corroded fragment alone in its museum case, lit from above, a visitor's reflection faint in the glass",
+      "shots": [
+        {
+          "shot_id": "36",
+          "beat_id": "B23",
+          "link_group": null,
+          "t_in": 185.417,
+          "t_out": 189.917,
+          "use_in": 0,
+          "use_out": 4.5,
+          "use_len": 4.5,
+          "motion_budget": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot36.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "mechanism-fragment"
+          ],
+          "visual_priority": [
+            "the fragment alone in its museum case",
+            "spotlight from above",
+            "faint visitor reflection in the glass",
+            "dark gallery"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSHOT: the corroded fragment alone in a modern display case under one spotlight, a visitor's faint reflection floating in the glass — a machine that seems like it should not exist.\nSUBJECT: the main Antikythera fragment, a flat slab of green-brown corroded bronze about the size of a hand, crusted like stone, a large four-spoked gear wheel with fine triangular teeth emerging from its surface.\nSCALE: the fragment is hand-sized on a stand in a case far larger than it; the reflected face is many times its size; empty dark space surrounds it.\nSETTING: the National Archaeological Museum in Athens today, a dark gallery.\nCAMERA: camera faces the case at a visitor's height, eye level, medium.\nFRAME LAYOUT: center — the fragment on its acrylic stand, lit and sharp; left third — the visitor's reflected face, large and translucent; around the case — dark gallery.\nFACING: the gear face turns toward camera; the reflection looks at it in three-quarter.\nSCREEN DIRECTION: the spotlight cone falls from the upper edge onto the fragment.\nLIGHT: one hard spotlight from above, the gallery in shadow.\nPALETTE: gallery black, spotlight white, verdigris green, glass teal.\nDETAIL: glass edge highlights, crust texture, a small label plate at the stand.\nNOT IN FRAME: a dark quiet gallery, the visitor only a reflection.\nRENDER: richly detailed hand-drawn 2D historical animation illustration, cinematic film frame.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "museum-gallery",
+            "time_light": "display-spotlight",
+            "camera_motion": "push"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B24",
+      "sentences": [
+        "S45",
+        "S46",
+        "S47",
+        "S48"
+      ],
+      "start": 189.91,
+      "end": 206.58,
+      "dur": 16.67,
+      "device": null,
+      "narration_says": "The Roman writer Cicero described devices that showed the motions of the Sun, the Moon and the planets. One, he wrote, was built by Archimedes. For centuries, that sounded like exaggeration. The Antikythera mechanism proves it was not.",
+      "viewer_sees": "Cicero writing by lamplight on a scroll; Archimedes in Syracuse beside a bronze sphere of rings; the ancient sphere and the restored mechanism side by side",
+      "shots": [
+        {
+          "shot_id": "37",
+          "beat_id": "B24",
+          "link_group": null,
+          "t_in": 189.917,
+          "t_out": 197.292,
+          "use_in": 0,
+          "use_out": 7.375,
+          "use_len": 7.375,
+          "motion_budget": null,
+          "render_mode": "still",
+          "still_motion": "hold",
+          "source_file": "shots/shot37.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "Cicero writing on a scroll",
+            "bronze oil lamp",
+            "ring sketch on the scroll",
+            "scroll shelves"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSHOT: the Roman writer Cicero writing by oil lamp, his pen describing a bronze device of rings that showed the Sun, Moon and planets — an account nobody would believe for centuries.\nSUBJECT: Marcus Tullius Cicero, a Roman statesman in his fifties, receding grey hair, strong nose, clean-shaven lined face, a white toga with a broad purple stripe.\nACTION: he writes on an unrolled papyrus beside a small sketch of nested rings.\nSETTING: a Roman study, first century BCE, pigeonhole shelves of scrolls.\nCAMERA: camera stands across the desk, eye level, medium.\nFRAME LAYOUT: left third — Cicero, near-camera and large, bent over the desk; center — the scroll with the ring sketch, lit; right third — scroll shelves, soft and dim.\nFACING: we see his face three-quarter on, eyes down on the scroll toward screen-right.\nSCREEN DIRECTION: his pen stroke moves toward screen-right; lamp smoke curls toward the upper-right.\nLIGHT: a single bronze oil lamp, warm pool of light, deep brown shadows.\nPALETTE: lamp amber, toga white, purple stripe, cedar brown.\nDETAIL: papyrus fibres, ink strokes, toga folds, scroll tags on the shelves.\nNOT IN FRAME: Cicero alone at night, the device present only as ink.\nRENDER: richly detailed hand-drawn 2D historical animation illustration, cinematic film frame.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "roman-study",
+            "time_light": "lamplight",
+            "camera_motion": "locked"
+          }
+        },
+        {
+          "shot_id": "38",
+          "beat_id": "B24",
+          "link_group": null,
+          "t_in": 197.292,
+          "t_out": 200.542,
+          "use_in": 0,
+          "use_out": 3.25,
+          "use_len": 3.25,
+          "motion_budget": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot38.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "Archimedes beside a bronze sphere of rings",
+            "nested rings of the sphere",
+            "diagrams in the sand",
+            "afternoon sun"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSHOT: Archimedes in a sunlit Syracuse courtyard, one hand on a bronze sphere of nested rings that models the heavens — the legendary inventor Cicero named.\nSUBJECT: Archimedes of Syracuse, a wiry Greek man in his sixties, unkempt grey hair and beard, a plain undyed chiton, dusty bare feet.\nSUBJECT 2: a waist-high bronze armillary sphere of nested rings, a small globe at its center.\nSETTING: a Syracuse courtyard, third century BCE, geometric diagrams traced in sand, a colonnade.\nCAMERA: camera sits low near the sand diagrams, looking up, low, medium.\nFRAME LAYOUT: left third — Archimedes, near-camera and large; center and right third — the bronze sphere on its stand, gleaming; lower edge — circles drawn in sand, cropped.\nFACING: we see his face three-quarter on, eyes on the sphere toward screen-right.\nSCREEN DIRECTION: his hand turns the outer ring toward screen-right; the sphere's shadow stretches toward screen-left.\nLIGHT: golden afternoon sun from the right, rim light on the rings.\nPALETTE: golden sand, bright bronze, undyed linen, warm stone.\nDETAIL: engraved star marks on the rings, linen weave, lines traced in sand.\nNOT IN FRAME: a quiet courtyard with Archimedes alone, the city walls unseen.\nRENDER: richly detailed hand-drawn 2D historical animation illustration, cinematic film frame.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "low",
+            "location": "syracuse-courtyard",
+            "time_light": "golden-afternoon",
+            "camera_motion": "push"
+          }
+        },
+        {
+          "shot_id": "39",
+          "beat_id": "B24",
+          "link_group": null,
+          "t_in": 200.542,
+          "t_out": 206.583,
+          "use_in": 0,
+          "use_out": 6.041,
+          "use_len": 6.041,
+          "motion_budget": null,
+          "render_mode": "still",
+          "still_motion": "pull",
+          "source_file": "shots/shot39.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "mechanism-fragment",
+            "mechanism-restored"
+          ],
+          "visual_priority": [
+            "the fragment at screen-left",
+            "the mechanism restored at screen-right",
+            "matching spotlights",
+            "dark field"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSHOT: the corroded fragment and the restored mechanism side by side under matching spotlights — the broken proof beside the working machine.\nSUBJECT: the main Antikythera fragment, a flat slab of green-brown corroded bronze about the size of a hand, crusted like stone, a large four-spoked gear wheel with fine triangular teeth emerging from its surface.\nSCALE: the fragment is hand-sized; the restored case beside it is shoebox-sized, several times larger; the fragment's gear matches one wheel of the restored machine.\nSUBJECT 2: the Antikythera mechanism as it looked when new, a wooden case the size of a shoebox with a bright bronze front plate, engraved zodiac and calendar rings, slender bronze pointers and a hand crank on one side.\nSETTING: a dark gallery plinth with two pools of light.\nCAMERA: camera faces the plinth straight on, eye level, medium.\nFRAME LAYOUT: left third — the fragment, lit; right third — the restored mechanism, large and gleaming; center — dark space between the pools of light.\nFACING: both gear faces turn toward camera.\nSCREEN DIRECTION: a thin golden line runs from the fragment's gear toward the matching wheel at screen-right.\nLIGHT: two overhead spotlights, cool on the fragment, warm on the restored bronze.\nPALETTE: verdigris green, bright bronze, gallery black, gold line.\nDETAIL: crust texture, engraved rings, case wood grain.\nNOT IN FRAME: a bare dark plinth holding just the two objects.\nRENDER: richly detailed hand-drawn 2D historical animation illustration, cinematic film frame.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "museum-gallery",
+            "time_light": "dual-spotlight",
+            "camera_motion": "pull"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B25",
+      "sentences": [
+        "S49",
+        "S50",
+        "S51"
+      ],
+      "start": 206.58,
+      "end": 219.72,
+      "dur": 13.14,
+      "device": "empty-aftermath",
+      "narration_says": "Which leaves a harder question. If the Greeks could build one, they almost certainly built others. But bronze was valuable, and old metal was melted down and made into something new.",
+      "viewer_sees": "empty pegs and dust outlines on the shelf of an ancient workshop where other mechanisms once stood; a foundry crucible glowing, bronze objects melting into it",
+      "shots": [
+        {
+          "shot_id": "40",
+          "beat_id": "B25",
+          "link_group": null,
+          "t_in": 206.583,
+          "t_out": 213.833,
+          "use_in": 0,
+          "use_out": 7.25,
+          "use_len": 7.25,
+          "motion_budget": null,
+          "render_mode": "still",
+          "still_motion": "pan-left",
+          "source_file": "shots/shot40.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "long shelf of dust outlines",
+            "one surviving case at the right end",
+            "empty tool pegs",
+            "dust in low light"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSHOT: a long ancient workshop shelf where one mechanism remains and the rest are clean rectangles in the dust — the outlines of all the other machines that must have existed.\nSUBJECT: a long wooden shelf covered in grey dust, a row of clean rectangular outlines where cases once stood, a single small bronze-faced case at its right end.\nSETTING: an abandoned Greek workshop, tools on pegs, cobwebs.\nCAMERA: camera stands level with the shelf near its right end, looking along it, eye level, medium.\nFRAME LAYOUT: right third — the surviving case, near-camera and large; center and left third — the row of dust outlines, smaller toward the left edge.\nFACING: the case's front plate faces camera three-quarter on.\nSCREEN DIRECTION: the row of outlines runs toward the left edge, fading; dust drifts toward screen-left.\nLIGHT: low dusty light from a high window at the right, long shadows.\nPALETTE: dust grey, dim bronze, weathered wood, amber light.\nDETAIL: thick dust with crisp clean edges, cobweb strands, tool pegs.\nNOT IN FRAME: an abandoned room, one machine left on the whole shelf.\nRENDER: richly detailed hand-drawn 2D historical animation illustration, cinematic film frame.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "architecture",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "greek-workshop",
+            "time_light": "dim-dusty",
+            "camera_motion": "pan"
+          }
+        },
+        {
+          "shot_id": "41",
+          "beat_id": "B25",
+          "link_group": null,
+          "t_in": 213.833,
+          "t_out": 219.708,
+          "use_in": 0,
+          "use_out": 5.875,
+          "use_len": 5.875,
+          "motion_budget": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot41.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "crucible of molten bronze",
+            "gear plate sinking into it",
+            "scrap bronze waiting",
+            "sparks"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSHOT: looking down into a glowing crucible where old bronze melts — a gear-toothed plate sinking among broken scrap, knowledge melted into something new.\nSUBJECT: a clay crucible brimming with glowing orange molten bronze, a flat engraved plate with gear teeth half-sunk in it, its edge softening.\nSETTING: an ancient foundry, charcoal furnace, heaps of scrap vessels and statue pieces.\nCAMERA: camera looks down over the crucible rim, high, close.\nFRAME LAYOUT: center — the molten surface and sinking plate, near-camera and large; right third — scrap bronze heap, dark; left edge — iron tongs on the rim, cropped.\nFACING: the plate's engraved face tilts toward camera as it sinks.\nSCREEN DIRECTION: the plate slides into the melt toward the lower-left; sparks rise toward the upper edge.\nLIGHT: intense orange glow from below, black shadow around.\nPALETTE: molten orange, furnace yellow, charred black, dull bronze.\nDETAIL: skin on the molten metal, softening teeth, embers, rough clay.\nNOT IN FRAME: crucible, tongs and scrap in glow; the smith unseen beyond the heat.\nRENDER: richly detailed hand-drawn 2D historical animation illustration, cinematic film frame.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "CU",
+            "angle": "high",
+            "location": "ancient-foundry",
+            "time_light": "furnace-glow",
+            "camera_motion": "push"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B26",
+      "sentences": [
+        "S52",
+        "S53"
+      ],
+      "start": 219.72,
+      "end": 229.64,
+      "dur": 9.92,
+      "device": null,
+      "narration_says": "This one survived only because it never reached the shore. The same sea that swallowed the ship kept the machine safe for two thousand years.",
+      "viewer_sees": "the ancient ship going down in a storm off the cliffs, cargo tumbling through blue water; the fragment resting in sand on the dark seabed under one faint shaft of light, fish passing",
+      "shots": [
+        {
+          "shot_id": "42",
+          "beat_id": "B26",
+          "link_group": null,
+          "t_in": 219.708,
+          "t_out": 223.917,
+          "use_in": 0,
+          "use_out": 4.209,
+          "use_len": 4.209,
+          "motion_budget": null,
+          "render_mode": "still",
+          "still_motion": "hold",
+          "source_file": "shots/shot42.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "ancient merchant ship tilting in the storm",
+            "cargo tumbling overboard",
+            "cliffs in lightning",
+            "huge waves"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSHOT: an ancient merchant ship heels over in a night storm off Antikythera's cliffs, amphorae and statues tumbling into black water — the wreck that kept the machine.\nSUBJECT: a Roman-era merchant ship with a broad round hull and a torn square sail, tilting hard onto its side, amphorae and a bronze statue sliding off the deck.\nSETTING: the sea off Antikythera, first century BCE, night, huge waves.\nCAMERA: camera sits low on the water facing the ship, eye level, wide.\nFRAME LAYOUT: center — the tilting ship, near-camera and large; right third — pale cliffs in a lightning flash, far and hazy; lower third — wave crests with falling cargo.\nFACING: we see the deck tilting toward camera, the torn sail facing screen-left.\nSCREEN DIRECTION: the ship rolls toward screen-left; cargo spills toward the lower edge.\nLIGHT: one white lightning flash from the right, black night elsewhere.\nPALETTE: storm black, lightning white, wet timber, foam grey.\nDETAIL: layered wave crests, torn rigging in outline, amphorae by shape.\nNOT IN FRAME: one lone ship on a raging empty sea.\nRENDER: richly detailed hand-drawn 2D historical animation illustration, cinematic film frame.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "antikythera-coast",
+            "time_light": "storm-night",
+            "camera_motion": "locked"
+          }
+        },
+        {
+          "shot_id": "43",
+          "beat_id": "B26",
+          "link_group": null,
+          "t_in": 223.917,
+          "t_out": 229.625,
+          "use_in": 0,
+          "use_out": 5.708,
+          "use_len": 5.708,
+          "motion_budget": null,
+          "render_mode": "still",
+          "still_motion": "pull",
+          "source_file": "shots/shot43.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "mechanism-fragment"
+          ],
+          "visual_priority": [
+            "the fragment resting in sand on the dark seabed",
+            "one faint shaft of light",
+            "passing fish",
+            "drifted sand"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSHOT: the fragment half-buried in sand on the dark seabed under one faint shaft of light, fish drifting past — the same sea that swallowed the ship keeping it safe.\nSUBJECT: the main Antikythera fragment, a flat slab of green-brown corroded bronze about the size of a hand, crusted like stone, a large four-spoked gear wheel with fine triangular teeth emerging from its surface.\nSCALE: the fragment is hand-sized, a little green shape on a wide sand floor; the passing fish are nearly as long as it; darkness stretches far around it.\nSETTING: a quiet sand hollow among stones at the Antikythera wreck.\nCAMERA: camera hovers above the sand looking down, high, medium.\nFRAME LAYOUT: center — the fragment in its light shaft; upper-left — three small fish, soft; around — dark sand fading to black at every edge.\nFACING: the gear face tilts up toward camera, half covered by sand.\nSCREEN DIRECTION: the fish drift toward screen-right; a veil of sand slides across the fragment.\nLIGHT: one faint pale shaft from above, deep darkness around.\nPALETTE: deep navy, pale sand, verdigris green, faint silver.\nDETAIL: sand ripples, crust on the fragment, fish scales.\nNOT IN FRAME: a still seabed with the fragment alone, the hull far off in the dark.\nRENDER: richly detailed hand-drawn 2D historical animation illustration, cinematic film frame.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "MS",
+            "angle": "high",
+            "location": "wreck-seabed",
+            "time_light": "deep-dark",
+            "camera_motion": "pull"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B27",
+      "sentences": [
+        "S54",
+        "S55",
+        "S56"
+      ],
+      "start": 229.64,
+      "end": 244.271,
+      "dur": 14.631,
+      "device": null,
+      "narration_says": "A single machine on the seabed held a whole lost world of knowledge. If you want to discover more forgotten stories and lost inventions like this, leave a like and subscribe to Animated Tales. Until next time.",
+      "viewer_sees": "END CARD — the restored mechanism and the corroded fragment side by side on deep blue, channel end card",
+      "shots": [
+        {
+          "shot_id": "44",
+          "beat_id": "B27",
+          "link_group": null,
+          "t_in": 229.625,
+          "t_out": 234.75,
+          "use_in": 0,
+          "use_out": 5.125,
+          "use_len": 5.125,
+          "motion_budget": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot44.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "fragment on the seabed",
+            "golden constellations rising from it",
+            "surface far above",
+            "deep blue"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSHOT: from a small corroded fragment on the seabed, golden constellations, planets and zodiac rings rise toward the distant surface — a whole lost world of knowledge in one machine.\nSUBJECT: a hand-sized corroded bronze fragment on grey sand, a column of glowing golden lines rising from it, forming constellations, orbits and zodiac signs.\nSETTING: the deep Antikythera seabed under blue water.\nCAMERA: camera sits low on the sand near the fragment, looking up, low, wide.\nFRAME LAYOUT: lower-center — the fragment, small; center and upper half — the golden column widening upward; upper edge — the rippled surface, far and hazy.\nFACING: the gear face turns up; the zodiac rings face camera.\nSCREEN DIRECTION: golden lines rise toward the upper edge, spreading as they go.\nLIGHT: golden glow from the lines, cool blue light from above.\nPALETTE: deep blue, gold, pale sand, verdigris green.\nDETAIL: fine star points and orbit lines, silt catching gold light.\nNOT IN FRAME: open water around the glowing column.\nRENDER: richly detailed hand-drawn 2D historical animation illustration, cinematic film frame.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "LS",
+            "angle": "low",
+            "location": "wreck-seabed",
+            "time_light": "golden-glow",
+            "camera_motion": "push"
+          }
+        },
+        {
+          "shot_id": "45",
+          "beat_id": "B27",
+          "link_group": null,
+          "t_in": 234.75,
+          "t_out": 239.458,
+          "use_in": 0,
+          "use_out": 4.708,
+          "use_len": 4.708,
+          "motion_budget": null,
+          "render_mode": "still",
+          "still_motion": "pull",
+          "source_file": "shots/shot45.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "small sponge boat silhouette",
+            "cliffs at sunset",
+            "calm gold sea",
+            "first stars"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSHOT: a small sponge boat sails away from Antikythera's cliffs across a calm golden sea at sunset — the discovery over, the story left behind.\nSUBJECT: a small single-masted sponge boat in silhouette, sail full, heading out across open water.\nSETTING: the sea off Antikythera at sunset, still water, cliffs turning pink.\nCAMERA: camera sits low on the water behind the wake, eye level, extra wide.\nFRAME LAYOUT: center — the boat silhouette, small; left third — the cliffs, pink and hazy; upper half — sunset sky with first stars; lower third — golden sea.\nFACING: we see the stern and sail from behind at three-quarter.\nSCREEN DIRECTION: the boat sails toward screen-right; its wake trails toward the lower-left.\nLIGHT: low sun at screen-right, a long gold reflection.\nPALETTE: sunset gold, rose pink, dusk violet, silhouette black.\nDETAIL: three layers of cliff fading into haze, scale by silhouette, glitter on water.\nNOT IN FRAME: a calm open sea with one boat on it.\nRENDER: richly detailed hand-drawn 2D historical animation illustration, cinematic film frame.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "XLS",
+            "angle": "eye",
+            "location": "antikythera-coast",
+            "time_light": "sunset",
+            "camera_motion": "pull"
+          }
+        },
+        {
+          "shot_id": "46",
+          "beat_id": "B27",
+          "link_group": null,
+          "t_in": 239.458,
+          "t_out": 244.292,
+          "use_in": 0,
+          "use_out": 4.834,
+          "use_len": 4.834,
+          "motion_budget": null,
+          "render_mode": "still",
+          "still_motion": "hold",
+          "source_file": "shots/shot46.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "mechanism-restored"
+          ],
+          "visual_priority": [
+            "the mechanism restored floating on deep blue",
+            "faint star field",
+            "golden rim light",
+            "open space at screen-left"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSHOT: the restored mechanism floating in a deep blue star field, lit gold at its edges, open space beside it — a quiet final image.\nSUBJECT: the Antikythera mechanism as it looked when new, a wooden case the size of a shoebox with a bright bronze front plate, engraved zodiac and calendar rings, slender bronze pointers and a hand crank on one side.\nSETTING: an abstract deep blue space with faint stars.\nCAMERA: camera faces the mechanism straight on, eye level, medium.\nFRAME LAYOUT: right third — the mechanism, near-camera and large; center and left third — open deep blue with faint stars.\nFACING: the front plate faces camera three-quarter on, turned slightly toward screen-left.\nSCREEN DIRECTION: faint star points drift toward screen-left; a soft gold glow spreads from the mechanism toward the left.\nLIGHT: warm rim light from the right, cool blue ambient.\nPALETTE: deep ultramarine, gold, bronze, faint white.\nDETAIL: engraved rings and pointers, case wood grain, soft star field.\nNOT IN FRAME: clean deep blue space, open emptiness at screen-left.\nRENDER: richly detailed hand-drawn 2D historical animation illustration, cinematic film frame.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "abstract-starfield",
+            "time_light": "star-glow",
+            "camera_motion": "locked"
+          }
+        }
+      ]
+    }
+  ]
+}

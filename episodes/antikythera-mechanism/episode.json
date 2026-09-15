@@ -4,8 +4,10 @@
   "status": "in-progress",
   "voice": null,
   "narration_file": "narration.mp3",
-  "final_file": null,
-  "endcard_file": null,
+  "final_file": "final.mp4",
+  "endcard_file": "shots/endKartica.jpeg",
+  "intro_file": "shots/video1.mp4",
+  "intro_volume": 0.2,
   "characters": [
     {
       "id": "sponge-diver",
@@ -48,5 +50,5 @@
       "locked_description": "the Antikythera mechanism as it looked when new, a wooden case the size of a shoebox with a bright bronze front plate, engraved zodiac and calendar rings, slender bronze pointers and a hand crank on one side"
     }
   ],
-  "notes": "Prva still epizoda (render_mode: still, beatplan --still). Ideja #16 iz docs/ideas.md; hook je doslovan. research.md je u folderu. Narracija još ne postoji — skripta je isporučena za ElevenLabs. Nacrt beat mape (beats.json) pravljen je iz parseScript() pre narracije; ID-jevi rečenica zavise samo od script.md, pa ostaju validni dok se skripta ne menja. Detalji u notes.md."
+  "notes": "Prva still epizoda (render_mode: still, beatplan --still). Ideja #16 iz docs/ideas.md; hook je doslovan. research.md je u folderu. Narracija 244.27s, storyboard.json na shemi 2 sa 46 still kadrova po profilu v3; A/B test forme prompta u ab-test.md. Detalji u notes.md."
 }

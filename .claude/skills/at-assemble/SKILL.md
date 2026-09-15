@@ -85,6 +85,24 @@ isto — ispisuje image prompt i dva koraka umesto tri.
 
 Kad su kandidati regenerisani (ili svesno prihvaćeni), pusti montažu bez `--dry-run`.
 
+### Template (antikythera-mechanism, prihvaćen 2026-09-15)
+
+Ovako izgleda svaki video, a ne slideshow:
+
+- **Still pokret je gladak.** `stillFilter` koristi `perspective` (float prozor, `eval=frame`) na
+  2× kanvasu, zum `STILL_ZOOM = 1.06`, ease-in-out. **Nikad `zoompan`** — iseca u celim
+  pikselima i slika trza/treperi (to je bila greška prve verzije, zum 1.15 linearno).
+- **Uvod je animiran.** `episode.json` → `intro_file` (npr. `shots/video1.mp4`) zamenjuje prvi
+  shot; zvuk klipa ide ispod narracije na `intro_volume` (0.2) sa fade-om 0.3s pred rez.
+- **End kartica je poslednji shot.** `endcard_file` (npr. `shots/endKartica.jpeg`) preuzima
+  sliku na `t_in` poslednjeg shota i drži do kraja narracije + 1.5s. `--outro-start` nadjačava.
+
+### 5. Publish komplet
+
+Kad je video spreman za objavu, napravi `episodes/<slug>/publish.md` po `docs/publish.md`:
+TITLE, DESCRIPTION, HASHTAGS i PINNED COMMENT (pitanje publici iz sadržaja narracije, bez
+izmišljenih činjenica). Naslov dopunjuje thumbnail, ne ponavlja njegov tekst.
+
 ## Šta ovaj skil ne radi
 
 - **Ne menja `storyboard.json`.** Ni promptove, ni vremena. Prompt pale provere popravlja
