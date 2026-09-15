@@ -1,0 +1,306 @@
+1
+00:00:00,000 --> 00:00:02,820
+Divers pulled this
+machine from a shipwreck.
+
+2
+00:00:03,900 --> 00:00:06,720
+Then scientists realized
+what it could calculate.
+
+3
+00:00:07,200 --> 00:00:12,480
+In the spring of 1900, a boat of Greek
+sponge divers was running from a storm.
+
+4
+00:00:12,900 --> 00:00:14,880
+They sheltered off Antikythera,
+
+5
+00:00:14,880 --> 00:00:18,480
+a small rocky island between
+Crete and mainland Greece.
+
+6
+00:00:19,300 --> 00:00:22,660
+When the sea calmed, one diver
+went down to look around.
+
+7
+00:00:22,860 --> 00:00:26,640
+According to the story the crew
+told, he came back up terrified.
+
+8
+00:00:26,980 --> 00:00:29,580
+He said the seabed was covered in bodies.
+
+9
+00:00:29,820 --> 00:00:32,200
+Men and horses, lying in the dark.
+
+10
+00:00:33,200 --> 00:00:35,780
+His captain went down to see for himself.
+
+11
+00:00:36,020 --> 00:00:37,660
+The bodies were statues.
+
+12
+00:00:38,160 --> 00:00:41,040
+Bronze and marble, the cargo of
+a ship that had sunk more than
+
+13
+00:00:41,040 --> 00:00:44,960
+two thousand years earlier,
+probably on its way to Italy.
+
+14
+00:00:45,760 --> 00:00:50,120
+With help from the Greek navy, the
+divers spent months bringing it up.
+
+15
+00:00:50,480 --> 00:00:52,580
+In canvas suits and copper helmets,
+
+16
+00:00:52,580 --> 00:00:56,660
+at depths their bodies were never
+built for, the work was brutal.
+
+17
+00:00:57,600 --> 00:00:58,980
+One diver died.
+
+18
+00:00:59,220 --> 00:01:00,780
+Two were left paralyzed.
+
+19
+00:01:01,040 --> 00:01:03,220
+They raised statues, glass and pottery.
+
+20
+00:01:03,220 --> 00:01:07,760
+They also raised a shapeless lump
+of corroded bronze and rotting wood.
+
+21
+00:01:08,240 --> 00:01:10,240
+Nobody paid it much attention.
+
+22
+00:01:10,500 --> 00:01:13,720
+Then, in 1902, the lump split apart.
+
+23
+00:01:14,600 --> 00:01:18,640
+An archaeologist named
+Valerios Stais looked closer,
+
+24
+00:01:18,640 --> 00:01:23,020
+and saw something that did not seem
+to belong in the ancient world.
+
+25
+00:01:23,940 --> 00:01:25,120
+A gear wheel.
+
+26
+00:01:25,160 --> 00:01:26,480
+And not just one.
+
+27
+00:01:27,660 --> 00:01:31,980
+Layers of gears, packed inside a
+case about the size of a shoebox.
+
+28
+00:01:32,460 --> 00:01:37,200
+Some experts insisted it had to be a later
+object that had fallen onto the wreck.
+
+29
+00:01:37,620 --> 00:01:40,380
+Nothing this intricate could be that old.
+
+30
+00:01:40,580 --> 00:01:42,760
+For decades it stayed a puzzle.
+
+31
+00:01:42,800 --> 00:01:45,680
+Then, in 2005, researchers scanned every
+
+32
+00:01:45,680 --> 00:01:48,580
+fragment with X-rays in
+extraordinary detail.
+
+33
+00:01:48,580 --> 00:01:52,040
+They found about thirty surviving gears,
+
+34
+00:01:52,040 --> 00:01:55,800
+and thousands of tiny letters
+hidden beneath the corrosion.
+
+35
+00:01:57,200 --> 00:01:59,380
+Slowly, its purpose became clear.
+
+36
+00:01:59,560 --> 00:02:01,340
+You turned a handle on the side.
+
+37
+00:02:01,340 --> 00:02:04,760
+And as the gears moved,
+the machine moved the sky.
+
+38
+00:02:05,840 --> 00:02:10,020
+On the front, pointers carried the
+Sun and the Moon through the zodiac,
+
+39
+00:02:10,400 --> 00:02:14,040
+around a calendar of three
+hundred and sixty-five days.
+
+40
+00:02:14,800 --> 00:02:19,640
+A small turning ball, half dark and half
+bright, showed the phase of the Moon.
+
+41
+00:02:20,100 --> 00:02:24,180
+On the back, spiral dials
+counted long cycles of time.
+
+42
+00:02:24,640 --> 00:02:27,460
+One predicted eclipses, years in advance.
+
+43
+00:02:27,860 --> 00:02:32,400
+Another kept track of the great athletic
+games of Greece, including the Olympics.
+
+44
+00:02:33,400 --> 00:02:36,340
+The most astonishing detail was the Moon.
+
+45
+00:02:36,360 --> 00:02:41,160
+It does not cross the sky at a steady
+speed, and Greek astronomers knew it.
+
+46
+00:02:41,460 --> 00:02:45,540
+So the builder set two gears
+on slightly offset axles,
+
+47
+00:02:45,540 --> 00:02:48,220
+joined by a pin sliding in a slot.
+
+48
+00:02:48,800 --> 00:02:52,780
+The Moon's pointer sped up and
+slowed down, just like the real Moon.
+
+49
+00:02:53,060 --> 00:02:56,680
+It was probably built in
+the second century BCE,
+
+50
+00:02:56,880 --> 00:02:59,400
+though the exact date is still debated.
+
+51
+00:03:00,220 --> 00:03:05,020
+Nothing of comparable complexity is known
+again for more than a thousand years.
+
+52
+00:03:05,420 --> 00:03:08,020
+So is this a machine that shouldn't exist?
+
+53
+00:03:08,440 --> 00:03:09,460
+Not quite.
+
+54
+00:03:09,910 --> 00:03:13,160
+The Roman writer Cicero
+described devices that showed
+
+55
+00:03:13,160 --> 00:03:16,160
+the motions of the Sun,
+the Moon and the planets.
+
+56
+00:03:17,280 --> 00:03:20,100
+One, he wrote, was built by Archimedes.
+
+57
+00:03:20,540 --> 00:03:23,260
+For centuries, that
+sounded like exaggeration.
+
+58
+00:03:23,660 --> 00:03:26,580
+The Antikythera mechanism
+proves it was not.
+
+59
+00:03:26,580 --> 00:03:28,680
+Which leaves a harder question.
+
+60
+00:03:29,260 --> 00:03:32,800
+If the Greeks could build one,
+they almost certainly built others.
+
+61
+00:03:33,820 --> 00:03:39,060
+But bronze was valuable, and old metal was
+melted down and made into something new.
+
+62
+00:03:39,720 --> 00:03:43,400
+This one survived only because
+it never reached the shore.
+
+63
+00:03:43,900 --> 00:03:48,540
+The same sea that swallowed the ship kept
+the machine safe for two thousand years.
+
+64
+00:03:49,640 --> 00:03:53,740
+A single machine on the seabed held
+a whole lost world of knowledge.
+
+65
+00:03:54,760 --> 00:03:58,760
+If you want to discover more forgotten
+stories and lost inventions like this,
+
+66
+00:03:58,760 --> 00:04:01,940
+leave a like and subscribe
+to Animated Tales.
+
+67
+00:04:02,980 --> 00:04:04,260
+Until next time.

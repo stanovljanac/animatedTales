@@ -99,9 +99,15 @@ Ovako izgleda svaki video, a ne slideshow:
 
 ### 5. Publish komplet
 
-Kad je video spreman za objavu, napravi `episodes/<slug>/publish.md` po `docs/publish.md`:
-TITLE, DESCRIPTION, HASHTAGS i PINNED COMMENT (pitanje publici iz sadržaja narracije, bez
-izmišljenih činjenica). Naslov dopunjuje thumbnail, ne ponavlja njegov tekst.
+Kad je video spreman za objavu:
+
+1. `node tools/publish.mjs episodes/<slug>` — piše `subtitles.srt` (YouTube ne prima JSON) i
+   štampa rečenice sa m:ss vremenima.
+2. Napravi `episodes/<slug>/publish.md` po `docs/publish.md`: 5 različitih TITLE OPTIONS
+   (rangirano, 1 = preporuka), DESCRIPTION sa Chapters blokom (prvi 0:00, najmanje 3, svaki
+   ≥10s, vremena samo iz liste rečenica), HASHTAGS i PINNED COMMENT. Naslov dopunjuje
+   thumbnail, ne ponavlja njegov tekst.
+3. Ponovo `node tools/publish.mjs episodes/<slug>` — mora da javi da chapteri prolaze.
 
 ## Šta ovaj skil ne radi
 
