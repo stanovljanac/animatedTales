@@ -1,0 +1,126 @@
+{
+  "slug": "greek-gods-part-1",
+  "title": "Zeus, Poseidon, Hades: The Lottery for the Universe (Greek Gods, Part 1)",
+  "status": "draft",
+  "voice": null,
+  "narration_file": "narration.mp3",
+  "final_file": null,
+  "endcard_file": null,
+  "intro_file": null,
+  "intro_volume": 0.2,
+  "characters": [
+    {
+      "id": "zeus",
+      "name": "Zeus",
+      "locked_description": "a broad powerfully built Greek god in his prime, thick dark hair swept back from a high brow, a full curled beard, deep-set grey eyes under heavy brows, a purple-red himation over one shoulder, bare chest and bare feet"
+    },
+    {
+      "id": "poseidon",
+      "name": "Poseidon",
+      "locked_description": "a heavily muscled Greek god in his prime, long dark hair in heavy salt-stiffened ropes, a thick pointed beard, sun-darkened weathered skin, pale sea-green eyes, a deep sea-green himation knotted low at the waist, bare feet"
+    },
+    {
+      "id": "hades",
+      "name": "Hades",
+      "locked_description": "a lean severe Greek god in his prime, long black hair and a full black beard, pale bloodless skin, dark hooded eyes, a heavy black-violet himation covering both shoulders and falling to the ankles, bare feet"
+    },
+    {
+      "id": "the-three-brothers",
+      "name": "The Three Brothers",
+      "locked_description": "three powerfully built bearded Greek gods in their prime, one in a purple-red himation with dark waving hair, one salt-weathered in sea-green with hair in heavy ropes, one pale in black-violet covering both shoulders"
+    },
+    {
+      "id": "cronus",
+      "name": "Cronus",
+      "locked_description": "a gaunt ageing Titan with long grey-white hair and a heavy matted grey beard, a hollowed lined face, corded veined arms and big knuckled hands, a coarse dark ochre himation over one shoulder, bare chest and bare feet",
+      "scale_critical": true
+    },
+    {
+      "id": "rhea",
+      "name": "Rhea",
+      "locked_description": "a tall Titan woman in middle age, thick dark hair bound up under a veil that falls down her back, a strong grave wide-cheekboned face, a long saffron peplos pinned at both shoulders and belted high, bare feet",
+      "scale_critical": true
+    },
+    {
+      "id": "the-six-siblings",
+      "name": "The Six Children of Cronus",
+      "locked_description": "six newly grown Greek gods, three bearded men and three women of the same tall strong build, plain undyed himatia and peploi without ornament, wet hair, pale skin, no crowns, no jewellery and no weapons"
+    },
+    {
+      "id": "the-cyclopes",
+      "name": "The Cyclopes",
+      "locked_description": "three giant one-eyed smiths with broad slab-muscled shoulders, one large eye set under a heavy single brow, shaggy black hair and beards, soot-blackened skin, rough leather aprons over bare torsos, scarred forearms and thick burned hands",
+      "scale_critical": true
+    },
+    {
+      "id": "the-hundred-handers",
+      "name": "The Hundred-Handers",
+      "locked_description": "three vast grey giants, each with fifty heads crowded together on massive shoulders and a hundred arms in overlapping ranks down both sides of the body, coarse matted hair, skin like weathered stone",
+      "scale_critical": true
+    }
+  ],
+  "locations": [
+    {
+      "id": "olympus",
+      "name": "Mount Olympus",
+      "locked_description": "the summit of Mount Olympus above the cloud line, broad terraces of pale marble and bare rock, tall plain columns, wide open sky, snowfields and lower peaks showing far below through breaks in the cloud"
+    },
+    {
+      "id": "the-sea",
+      "name": "The Sea",
+      "locked_description": "the open Aegean under a wide sky, deep blue-green water in long swells, white spray tearing off the crests, bare rocky islands low on the horizon, the pale sandy floor visible far down through clear water"
+    },
+    {
+      "id": "the-underworld",
+      "name": "The Underworld",
+      "locked_description": "a vast grey cavern world under the earth, a slow black river in a wide bed, colourless asphodel meadows stretching into darkness, distant walls of dark rock, no sun and no horizon, a dim even greyness everywhere"
+    },
+    {
+      "id": "the-war-plain",
+      "name": "The Plain of the Titan War",
+      "locked_description": "a scorched plain of cracked rock between two mountain ranges, the ground split into deep fissures, shattered boulders the size of houses, burning craters, smoke and ash blowing low across everything under a dark sky"
+    },
+    {
+      "id": "tartarus",
+      "name": "Tartarus",
+      "locked_description": "a black pit far below the underworld, sheer walls of dark iron-veined rock falling out of sight, a bronze gate set in a bronze threshold, coiling mist, no floor visible anywhere down the shaft"
+    },
+    {
+      "id": "crete-cave",
+      "name": "The Cave on Crete",
+      "locked_description": "a high limestone cave on a Cretan mountainside, pale stalactites hanging from a ribbed roof, a wide dry floor of sand and fallen stone, a bright opening onto sunlit slopes of scrub and grazing goats"
+    }
+  ],
+  "key_props": [
+    {
+      "id": "thunderbolt",
+      "name": "The Thunderbolt",
+      "locked_description": "a hand-length weapon of solid white-gold light shaped like a spindle, tapering to sharp points at both ends, bound at the middle by a band of bronze, thin forks of lightning standing out from each end",
+      "scale_critical": true
+    },
+    {
+      "id": "trident",
+      "name": "The Trident",
+      "locked_description": "a bronze fishing spear the height of a man, a worn dark wooden shaft bound with cord below the head, three barbed prongs on a socketed head, the bronze dark and polished from long use",
+      "scale_critical": true
+    },
+    {
+      "id": "cap-of-darkness",
+      "name": "The Cap of Darkness",
+      "locked_description": "a close-fitting cap of dark dog-skin leather with a rough furred surface, plain and unornamented, seams stitched in dark thread, a short neck flap at the back, a surface that drinks light instead of reflecting it"
+    },
+    {
+      "id": "lot-helmet",
+      "name": "The Helmet and the Lots",
+      "locked_description": "a battered bronze war helmet serving as a lot-urn, and three lots for it, each a flat river pebble scratched with a single mark, the bronze dented and dull, its horsehair crest torn short",
+      "scale_critical": true
+    },
+    {
+      "id": "the-stone",
+      "name": "The Stone",
+      "locked_description": "a smooth oval boulder of grey limestone about the size of a swaddled newborn, worn round by a river, the surface faintly veined and pitted, one end slightly narrower than the other",
+      "scale_critical": true
+    }
+  ],
+  "notes": "Part 1 od 4 u seriji Greek Gods. Serijska biblija je docs/series/greek-gods.md i ona je izvor istine za svaki locked_description ciji id nosi oznaku REGISTRY (zeus, poseidon, hades, the-three-brothers, cronus, the-six-siblings, the-cyclopes, olympus, the-sea, the-underworld, the-war-plain, thunderbolt, trident) - taj tekst se kopira doslovno, nikad se ne prepravlja po epizodi. Lokalni za Part 1: rhea, the-hundred-handers, tartarus, crete-cave, cap-of-darkness, lot-helmet, the-stone. Kicma je zreb iz Ilijade 15.187-193. Outro imenuje Part 2 - lanac je zakljucan u biblji. Materijal namerno ostavljen Part 3: nadmetanje za Atinu, Metida i proricanje. Research u research.md, skripta u script.md."
+}

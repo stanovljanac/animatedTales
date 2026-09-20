@@ -30,16 +30,24 @@ do sada bile odložene.
 | **Plafon** | 30 × 50 + 200 = **1.700/mesec** | — |
 | **Plafon u jednom danu** | 50 + 200 = **250** | — |
 
-Cena po generisanju:
+Cena po generisanju. **Radni model je Omni 1.1 Flash i cena mu ide po dužini klipa, ne po
+tieru** — Veo tierovi ispod stoje samo da bi se znalo šta se ne koristi.
 
-| Model | Kredita | Napomena |
+| Generisanje | Kredita | Kr/s |
 |---|---|---|
-| **Slika (Nano Banana / Pro)** | **0** | neograničeno, i na besplatnom nivou |
-| Veo 3.1 Lite | 10 | |
-| Veo 3.1 Fast | 20 | |
-| Veo 3.1 Quality | 100 | ista cena na svim planovima |
-| Gemini Omni Flash 720p | 7–15 | zavisi od dužine |
-| Gemini Omni Flash 360p | 4–7 | |
+| **Slika** | **0** | — |
+| Omni 1.1 Flash · 10s | 15 | 1,50 |
+| Omni 1.1 Flash · 8s | 12 | 1,50 |
+| Omni 1.1 Flash · 6s | 10 | 1,67 |
+| Omni 1.1 Flash · 4s | 7 | 1,75 |
+| ~~Veo 3.1 Lite / Fast / Quality~~ | ~~10 / 20 / 100~~ | ne koristi se |
+
+Dve stvari koje ta kolona `Kr/s` govori:
+
+- **Kratak klip nije ušteda.** Cena po sekundi raste kako klip biva kraći, pa je 4s najskuplja
+  sekunda u cenovniku. Klip od 4s se zato izbegava i kad kadar to trpi.
+- Ciljni opseg od 7–9s iz `schemas.md` se poklapa sa najjeftinijom sekundom. Ne treba birati
+  između tempa i budžeta.
 
 ## 3. Jedno pravilo koje iz toga sledi
 
@@ -59,25 +67,26 @@ promašen identitet lika je plaćena regeneracija koju je besplatan korak mogao 
 
 ## 4. Budžet epizode
 
-Epizoda je 27–33 shota, dakle 27–33 klipa. Slike se ne računaju.
+> **Budžet je ograničenje kalendara, ne dizajna.** Ovo je jedino pravilo u ovom odeljku i ono
+> gazi svaku računicu ispod.
 
-| Tier | 27 shotova | 33 shota | Dana samo od dnevnih kredita (33) |
-|---|---|---|---|
-| Lite (10) | 270 | 330 | 7 |
-| Fast (20) | 540 | 660 | 14 |
-| Quality (100) | 2.700 | 3.300 | **preko mesečnog plafona** |
+Radni tok je: generiše se dok ima dnevnih kredita, pa se stane. Kad kredita nema, prelazi se
+na **paralelnu epizodu sastavljenu samo od slika** — one su 0 kredita, pa taj tok nikad ne
+čeka. Iz toga slede dve posledice za `at-storyboard` i `at-qa`:
 
-Prva epizoda u mesecu je kraća za četiri dana, jer mesečnih 200 pokrije toliko.
+- **Režim shota se bira vizuelno, nikad po ceni.** Pokret nosi informaciju → `clip`. Kadar je
+  držana tvrdnja (makro predmet, prazna posledica, punch rez) → `still`. Nijedan kadar ne
+  postaje still zato što je jeftiniji.
+- **Ne praviti tabele troška po epizodi.** Broj klipova se saopšti jednom, u jednoj liniji.
+  Optimizacija po kreditima krade kvalitet a ne štedi ništa što se inače ne bi potrošilo:
+  dnevnih 50 se ionako potroši do kraja.
 
-**Dnevni plafon od 50 je pravi raspored, ne mesečni.** Epizoda na Plus-u nije jedna smena
-pred Flow-om nego višednevni posao, i tempo diktira kapaljka, ne brzina rada. Zato je izbor
-tiera odluka o kalendaru, a ne o kvalitetu: 33 shota na Lite-u su dva-tri dana, isti ti
-shotovi na Fast-u su dve nedelje.
+**Podrazumevani režim epizode je mešovit, pretežno animacija.** Kanal se zove Animated Tales i
+ime obećava animaciju. Epizoda u kojoj je svaki shot `still` prolazi sve provere ugovora, ali
+pripada paralelnom toku za manje nosive teme — ne glavnoj seriji.
 
-**Preporuka:** Lite kao podrazumevani tier, Quality rezervisan za jedan do dva nosiva kadra
-(otvaranje, vrhunac). 31 × 10 + 2 × 100 = **510 kredita** — staje u mesec sa rezervom za
-regeneracije i epizoda ipak ima vizuelni vrh. Ovo se poklapa sa `visual_priority` iz sheme 2:
-kadrovi koji već nose najveću vizuelnu težinu su isti oni koji zaslužuju Quality.
+Za orijentaciju u kalendaru, ne u dizajnu: epizoda od ~38 shotova sa ~25 klipova na ~6s je oko
+250 kredita, dakle pet radnih dana od samih dnevnih 50.
 
 **Veo audio se ionako baca.** `assemble.mjs` seče klipove sa `-an` jer je narracija jedini
 audio stream. Nijedan tier se ne bira zbog zvuka.
