@@ -116,12 +116,30 @@ export const LIMITS = {
   stillUseLen: { min: 2.5, max: 9.0 },
   motionBelow: 9.0,                  // T3
   imageWords: { min: 90, max: 160 }, // P1, shema 1
-  animWords: { min: 60, max: 100 },  // P2
+  // P2. Plafon je podignut sa 100 na 110 kad je `MOTION BUDGET` linija dobila drugu
+  // obavezu — uz budzet pokreta imenuje i `gen_len` (T4). Klauzula kosta ~5 reci, a 22
+  // od 27 klipova prve epizode je vec stajalo na 96-100, pa bi plafon od 100 naterao
+  // rezijsko skracivanje zbog knjigovodstva. Pomera se plafon, ne proza.
+  animWords: { min: 60, max: 110 },
   imageWordsV2: { min: 90, max: 280 },  // P1, shema 2 — tvrd plafon
   imageSoft: { min: 180, max: 260 },    // R5, shema 2 — meki ciljni opseg (ADVISORY)
   maxLocks: 3,                          // S5 — PRIMARY + najviše dva SECONDARY
   t1Drift: 0.2,                      // T1
 };
+
+/**
+ * Duzine klipa koje Flow ume da generise. Sve ostalo je zaokruzivanje navise.
+ *
+ * Ovo je **ogranicenje alata, ne estetike**: `use_len` izlazi iz naracije i pada gde padne,
+ * a generator prima samo ove cetiri vrednosti. Bez ovog polja rezija pise `MOTION BUDGET`
+ * prema `use_len`, generator rasporedi pokret na svoju duzinu, i kljucni pokret zavrsi posle
+ * reza — ili ga model stisne i stane ranije. Otud `gen_len`: prompt se pise prema duzini koja
+ * se stvarno generise, a visak preko `use_len` je izricito zadrzan kadar.
+ */
+export const GEN_TIERS = [4, 6, 8, 10];
+
+/** Najmanja dozvoljena duzina generisanja koja pokriva `useLen`; `null` kad ni 10s ne stize. */
+export const genLen = (useLen) => GEN_TIERS.find((t) => t >= useLen - EPS) ?? null;
 
 // ---------------------------------------------------------------- S1: liste iz camera-language.md
 

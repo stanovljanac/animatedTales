@@ -4,7 +4,7 @@ Dva šablona: jedan za startni frejm (`shot.image_prompt`), jedan za klip (`shot
 Redosled blokova nije preporuka — model čita s početka, pa ono što je front-loaded dobija najviše
 težine. Zato identitet lika ide gore, a isključenja dole.
 
-Dužine su BLOCKING: **P1 = 90–160 reči** za image, **P2 = 60–100 reči** za animation, po kanonskom
+Dužine su BLOCKING: **P1 = 90–160 reči** za image, **P2 = 60–110 reči** za animation, po kanonskom
 brojaču iz `schemas.md` §0.6. Taj brojač broji i nazive blokova (`FRAME LAYOUT:` = 2 reči) i vremenske
 oznake (`0–1s:` = 1 reč), pa je gornja granica uža nego što deluje: `STYLE` blok pojede 16 reči, a
 svaki `locked_description` još 25–40.
@@ -87,10 +87,10 @@ Tri vremenska proreza su obavezna i moraju da pokriju ceo klip bez rupe. Zbog to
 ne sme da sadrži reči koje impliciraju rez **unutar** klipa — `then`, `later`, `afterwards`,
 `cuts to`, `meanwhile` — to meri **S3**. Napredovanje se izražava vremenskim prorezom, ne veznikom.
 
-### Primer — 90 reči, prolazi P2, S1, S3
+### Primer — 98 reči, prolazi P2, S1, S3, T4
 
 ```
-MOTION BUDGET: key motion completes within 6.5s.
+MOTION BUDGET: key motion completes within 6.5s; hold to the end of an 8s generation.
 0–1s: Hanno presses the stylus into the wax.
 1–4s: he lifts the tablet toward the light, counting; a dockhand crosses the lower edge with a crate.
 4–6.5s: he tucks the tablet under his arm and his shoulders settle.

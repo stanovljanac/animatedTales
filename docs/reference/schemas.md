@@ -82,7 +82,7 @@ razlikuju „nema ključa" od „ključ je prazan". Jedini izuzetak su nizovi: p
 
 ### 0.6 Kanonsko brojanje reči — **odluka C01**
 
-Tri provere zavise od brojanja reči: **P1** (image prompt 90–160), **P2** (animation prompt 60–100)
+Tri provere zavise od brojanja reči: **P1** (image prompt 90–160), **P2** (animation prompt 60–110)
 i pravilo da `locked_description` ima 25–40 reči. Bez jedne definicije te provere nikad ne bi bile
 stabilne, pa je ovde zakucana.
 
@@ -134,7 +134,7 @@ promenjena reč, dodat zarez ili izbačena crtica ruše proveru. To je i namera:
 
 **C1 se proverava nad `image_prompt`, ne nad `animation_prompt`.** Identitet lika se uspostavlja
 u slici; animation prompt umesto opisa nosi `PRESERVE` liniju (šablon 2c iz izvornog plana).
-Ponavljanje 25–40 reči i tamo bi probilo P2 (60–100 reči) na svakom shotu sa dva lika.
+Ponavljanje 25–40 reči i tamo bi probilo P2 (60–110 reči) na svakom shotu sa dva lika.
 
 ---
 
@@ -363,12 +363,13 @@ prikazuje upravo ovaj nivo.
 | `use_out` | number | da | `= use_in + use_len`. Frejm-poravnato. |
 | `use_len` | number | da | Trajanje reza, 3.0–10.0s (T2). Frejm-poravnato. |
 | `motion_budget` | number \| null | da | Sekunde u koje pokret mora da stane; ide u `MOTION BUDGET:` liniju animation prompta. Obavezan (`!== null`) kad `use_len < 9.0` (T3); tada `= use_len`. |
+| `gen_len` | number \| null | da | **Dužina koja se stvarno generiše u Flow-u**, iz `GEN_TIERS` (4 · 6 · 8 · 10s): najmanja koja pokriva `use_len`. `null` na still shotu. Proverava T4. |
 | `source_file` | string | da | `"shots/part07.mp4"` — klip iz Flow-a. F1 traži da postoji i da traje ≥ `use_out`. |
 | `ingredient_image` | string \| null | da | `"images/shot07.jpeg"` — slika koja u Flow ide kao *ingredient*. `null` kad se shot generiše bez nje. |
 | `characters` | array\<string\> | da | `id`-jevi iz `episode.json` (bilo kog od tri niza) koji se u shotu vide. Ulaz za C1. Prazan niz je legitiman. **Shema 2: redosled nosi značenje** — `characters[0]` je PRIMARY lock i mora doslovno da stoji u bloku `SUBJECT`; ostali su SECONDARY. Najviše `LIMITS.maxLocks` (3). Proverava S5. |
 | `visual_priority` | array\<string\> | shema 2 | Rangirana lista od **3 do 5** stavki: šta model sme da promaši poslednje. Stavka `[0]` mora da imenuje PRIMARY lock. **Ne ulazi u prompt** — vidi 3.3.1. Proverava S5. |
 | `image_prompt` | string | da | Shema 1: 90–160 reči. **Shema 2: 90–280 reči** po `countWords` (P1), sa mekim ciljnim opsegom 180–260 (R5, ADVISORY). Sadrži blokove iz S2. |
-| `animation_prompt` | string \| null | da | 60–100 reči po `countWords` (P2). **`null` na still shotu** — nema šta da se animira (3.3.2). |
+| `animation_prompt` | string \| null | da | 60–110 reči po `countWords` (P2). **`null` na still shotu** — nema šta da se animira (3.3.2). |
 | `tags` | Tags | da | Šest osa, vidi 3.5. |
 | `render_mode` | `"clip"` \| `"still"` | ne | Odsutno ili `null` znači `"clip"`. `"still"` znači: shot nije klip nego jedna slika kojoj montaža daje pokret. Vidi 3.3.2. |
 | `still_motion` | string | still | `push` · `pull` · `pan-left` · `pan-right` · `hold`. Obavezan na still shotu, odsutan ili `null` na clip shotu. Vidi 3.3.2. |
@@ -591,7 +592,8 @@ Tabela je prođena red po red.
 | **S4** | blok `SCALE` kad shot nosi `scale_critical` entitet (shema 2) | — | `shot.characters[]` → `episode.json.*.scale_critical`, `shot.image_prompt` | da |
 | **S5** | hijerarhija lockova (shema 2): PRIMARY u `SUBJECT`, najviše 3 locka, `visual_priority` 3–5 stavki sa PRIMARY na vrhu | — | `shot.characters[]`, `shot.visual_priority`, `shot.image_prompt` | da |
 | **P1** | dužina image prompta | shema 1: 90–160; **shema 2: 90–280** reči | `shot.image_prompt` + `countWords` (0.6) | da |
-| **P2** | dužina animation prompta; **na still shotu prompta ne sme biti** | 60–100 reči | `shot.animation_prompt` + `countWords` (0.6), `shot.render_mode` | da |
+| **P2** | dužina animation prompta; **na still shotu prompta ne sme biti** | 60–110 reči | `shot.animation_prompt` + `countWords` (0.6), `shot.render_mode` | da |
+| **T4** | `gen_len` je najmanji član `GEN_TIERS` koji pokriva `use_len`; **na still shotu `null`**; `MOTION BUDGET` linija imenuje istu brojku | 4 · 6 · 8 · 10s | `shot.gen_len`, `shot.use_len`, `shot.render_mode`, `shot.animation_prompt` | da |
 | **C1** | `locked_description` doslovno u svakom shotu gde lik učestvuje | — | `shot.characters[]` → `episode.json.{characters,locations,key_props}[].locked_description`, traži se u `shot.image_prompt` po `normalize` (0.7) | da |
 | **F1** | svaki shot ima svoj `shots/partNN.mp4`, izvor ≥ `use_out`; **na still shotu: `shots/shotNN.jpeg` postoji i čita se** | — | `shot.source_file`, `shot.use_out`, `shot.render_mode` (+ `probe()` iz `ffmpeg.mjs`) | da |
 

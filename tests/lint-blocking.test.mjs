@@ -127,11 +127,11 @@ test('good-episode: nula BLOCKING nalaza (devet provera bez medija)', () => {
   assert.deepEqual(findings, [], findings.map((f) => `[${f.code}] ${f.where}: ${f.message}`).join('\n'));
 });
 
-test('good-episode: shot 01 su izbrojani primeri iz prompt-templates.md (151 / 90 reči)', () => {
+test('good-episode: shot 01 su izbrojani primeri iz prompt-templates.md (151 / 98 reči)', () => {
   const sb = JSON.parse(fs.readFileSync(path.join(GOOD, 'storyboard.json'), 'utf8'));
   const s = sb.beats[0].shots[0];
   assert.equal(countWords(s.image_prompt), 151);
-  assert.equal(countWords(s.animation_prompt), 90);
+  assert.equal(countWords(s.animation_prompt), 98);
 });
 
 test('good-episode: shot 02 nosi zabranjenu frazu OTKLJUČANU listom B', () => {
@@ -425,11 +425,11 @@ test('P1: 89 pada, 90 i 160 prolaze, 161 pada', () => {
   assert.equal(only(run({ image_prompt: imagePrompt(161) }), 'P1').length, 1);
 });
 
-test('P2: 59 pada, 60 i 100 prolaze, 101 pada', () => {
+test('P2: 59 pada, 60 i 110 prolaze, 111 pada', () => {
   assert.equal(only(run({ animation_prompt: animPrompt(59) }), 'P2').length, 1);
   assert.deepEqual(only(run({ animation_prompt: animPrompt(60) }), 'P2'), []);
-  assert.deepEqual(only(run({ animation_prompt: animPrompt(100) }), 'P2'), []);
-  assert.equal(only(run({ animation_prompt: animPrompt(101) }), 'P2').length, 1);
+  assert.deepEqual(only(run({ animation_prompt: animPrompt(110) }), 'P2'), []);
+  assert.equal(only(run({ animation_prompt: animPrompt(111) }), 'P2').length, 1);
 });
 
 test('P1: nalaz nosi izmereni broj reči', () => {
@@ -591,7 +591,7 @@ test('renderReport: bez nalaza i sa preskočenim F1', () => {
 test('nalazi su sortirani redosledom BLOCKING tabele', () => {
   const sb = mkSb([mkShot({
     image_prompt: imagePrompt(200, 'ACTION: he stands in front of the altar.'),
-    animation_prompt: `${animPrompt(101, 6)}\nlater the hand lifts`,
+    animation_prompt: `${animPrompt(111, 6)}\nlater the hand lifts`,
   })]);
   const got = codes(lintStatic(sb, mkEp(), { lists: LISTS }));
   const want = got.slice().sort((a, b) => CHECKS.indexOf(a) - CHECKS.indexOf(b));

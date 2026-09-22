@@ -15,7 +15,7 @@ import { fileURLToPath } from 'node:url';
 
 import {
   CEILING, DAILY, TIERS, creditLines, creditPlan,
-  imageFile, main, parseArgs, renderShotlist, resolveOnly,
+  imageFile, main, parseArgs, renderBoard, renderShotlist, resolveOnly, shiftLine,
 } from '../tools/shotlist.mjs';
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
@@ -163,7 +163,7 @@ test('shotlist: prompt sa dugim redom se ne prelama', () => {
 test('shotlist: broj reči uz prompt poštuje srpsku gramatiku broja', () => {
   const out = renderShotlist(load(GOOD));
   assert.ok(/IMAGE PROMPT \(151 reč\)/.test(out), 'broj reči image prompta nije 151 reč');
-  assert.ok(/ANIMATION PROMPT \(90 reči\)/.test(out), 'broj reči animation prompta nije 90 reči');
+  assert.ok(/ANIMATION PROMPT \(98 reči\)/.test(out), 'broj reči animation prompta nije 98 reči');
 });
 
 // ---------------------------------------------------------------- čeklista
@@ -351,4 +351,128 @@ test('imageFile: na still shotu je slika sam izvor, ne ulaz u nešto drugo', () 
   assert.equal(imageFile(s1), 'shots/shot01.jpeg');
   const clip = sb.beats[1].shots.at(-1);
   assert.equal(imageFile(clip), 'images/shot06.jpeg');
+});
+
+// ---------------------------------------------------------------- --board (Flow tabla)
+//
+// Tabla je isti radni papir, ali se čita u tabu Google Docs-a sa posla, ne u terminalu.
+// Otud tri zahteva koje obična čeklista nema: markdown zaglavlja (Docs ih pri nalepljivanju
+// pretvara u prava zaglavlja, pa tab od 46 shotova dobija outline), nijedan red koji počinje
+// sa `=` ili `-` (u Sheets-u bi to bila formula, a tabla mora da preživi i taj lepak), i dva
+// datuma jedan pored drugog — tab zalepljen pre QA prolaza gura u Flow stari prompt i to se
+// vidi samo ako oba vremena stoje u zaglavlju.
+
+const NOW = new Date('2026-09-20T10:00:00Z');
+const board = (sb, opts = {}) => renderBoard(sb, { now: NOW, ...opts });
+const boardOnly = (sb, list) => board(sb, { only: resolveOnly(ids(sb), list) });
+
+test('board: zaglavlje drži slug, vreme storyboarda i datum štampe', () => {
+  const out = board(load(GOOD));
+  assert.ok(out.startsWith('# good-episode — Flow tabla\n'), out.split('\n')[0]);
+  assert.ok(out.includes('storyboard od 2026-09-05T00:00:00Z'), out);
+  assert.ok(out.includes('tabla štampana 2026-09-20'), out);
+});
+
+test('board: nijedan red ne počinje sa = ili -', () => {
+  for (const dir of [GOOD, LINKED, STILL]) {
+    for (const line of board(load(dir)).split('\n')) {
+      assert.ok(!/^[=-]/.test(line), `red bi u Sheets-u bio formula: ${line}`);
+    }
+  }
+});
+
+test('board: promptovi izlaze doslovno, red po red', () => {
+  for (const dir of [GOOD, STILL]) {
+    const sb = load(dir);
+    const lines = board(sb).split('\n');
+    for (const b of sb.beats) {
+      for (const s of b.shots) {
+        for (const p of [s.image_prompt, s.animation_prompt]) {
+          if (p === null) continue;
+          assert.ok(blockAt(lines, p) >= 0,
+            `prompt shota ${s.shot_id} (${dir}) nije izašao kao neprekinut blok redova`);
+        }
+      }
+    }
+  }
+});
+
+test('board: svaki shot ima svoje markdown zaglavlje, i nijedno više', () => {
+  const heads = board(load(GOOD)).split('\n').filter((l) => l.startsWith('## '));
+  assert.equal(heads.length, 3);
+  assert.match(heads[0], /^## shot 01 · beat B01 · /);
+  assert.ok(heads[0].endsWith('6.5s'), heads[0]);
+});
+
+test('board: still zaglavlje imenuje pokret, isto kao u čeklisti', () => {
+  assert.match(board(load(STILL)), /^## shot 01 · beat B01 · .*· STILL \(push\)$/m);
+});
+
+test('board: telo shota je isto kao u čeklisti — koraci se ne razilaze', () => {
+  const out = board(load(STILL));
+  assert.ok(out.includes('  [ ] 2. sačuvaj sliku kao shots/shot01.jpeg'), out);
+  assert.ok(out.includes('  [ ] 3. sačuvaj klip kao shots/part06.mp4'), out);
+  assert.ok(out.includes('POKRET: push — daje ga montaža, ne Flow.'), out);
+});
+
+test('board: kaže da se na poslu ne čuva ništa i gde se stalo', () => {
+  const out = board(load(GOOD));
+  assert.ok(out.includes('ostaje u Flow biblioteci'), out);
+  assert.match(out, /^LAST DONE: /m);
+});
+
+test('board: lanac zadržava naznaku, bez linija koje Sheets čita kao formulu', () => {
+  const out = board(load(LINKED));
+  assert.ok(out.includes('LANAC B01 — 3 shota (01, 02, 03), spajaju se dissolve-om.'), out);
+  assert.ok(out.includes('istom lokacijom i istim svetlom'), out);
+});
+
+test('board: --only komponuje i broji zaglavlje po prikazanim shotovima', () => {
+  const out = boardOnly(load(LINKED), ['2']);
+  assert.equal(out.split('\n').filter((l) => l.startsWith('## shot ')).length, 1);
+  assert.ok(out.includes('1 shot od 3 (--only)'), out);
+  assert.ok(out.includes('(--only prikazuje 02)'), out);
+});
+
+test('board: smena se meri dnevnim kreditima, ne satima', () => {
+  assert.ok(board(load(GOOD)).includes(`Jedna smena = dnevnih ${DAILY} cr: 5 Lite · 2 Fast · 0 Quality`),
+    shiftLine(3));
+  assert.ok(board(load(STILL)).includes('Jedna smena = dnevnih 50 cr: 5 Lite · 2 Fast · 0 Quality'));
+});
+
+test('board: epizoda bez ijednog klipa ne meri smenu kreditima', () => {
+  const sb = load(STILL);
+  for (const b of sb.beats) b.shots = b.shots.filter((s) => s.render_mode === 'still');
+  const out = board(sb);
+  assert.ok(out.includes('nema dnevnog plafona koji bi je prekinuo'), out);
+  assert.ok(!out.includes('Jedna smena = dnevnih'), out);
+});
+
+test('board: izlaz je deterministički', () => {
+  assert.equal(board(load(GOOD)), board(load(GOOD)));
+});
+
+test('board: čeklista ostaje netaknuta — nijedno markdown zaglavlje ne curi u nju', () => {
+  const out = renderShotlist(load(GOOD));
+  assert.ok(out.startsWith('shotlist — good-episode ·'), out.split('\n')[0]);
+  assert.ok(!out.includes('## shot '), 'markdown zaglavlje je procurilo u čeklistu');
+  assert.ok(!out.includes('LAST DONE'), 'tabla je procurila u čeklistu');
+});
+
+test('parseArgs: --board je zastava, podrazumevano ugašena', () => {
+  assert.equal(parseArgs(['x']).board, false);
+  assert.equal(parseArgs(['x', '--board']).board, true);
+  assert.equal(parseArgs(['x', '--board', '--only', '1']).board, true);
+});
+
+test('CLI: --board piše tablu na stdout', () => {
+  const write = process.stdout.write;
+  let out = '';
+  process.stdout.write = (chunk) => { out += chunk; return true; };
+  try {
+    assert.equal(main([GOOD, '--board']), 0);
+  } finally {
+    process.stdout.write = write;
+  }
+  assert.ok(out.startsWith('# good-episode — Flow tabla\n'), out.split('\n')[0]);
 });

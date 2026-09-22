@@ -17,6 +17,10 @@
 // `--only` postoji jer Flow nije deterministički — kad se pojedinačni shot odbaci i
 // regeneriše, treba ti tih par promptova, ne cela lista od 30. Prima i `07` i `7`.
 //
+// `--board` je isti radni papir za drugo mesto čitanja: tab u Google Docs-u umesto terminala,
+// za smenu van kuće, gde `storyboard.json` ne postoji. Razlike su u zaglavljima, ne u poslu —
+// obrazloženje uz `renderBoard`, ceo krug u `docs/reference/flow-board.md`.
+//
 // Izlaz ide na stdout i ništa se ne piše na disk: ovo je radni papir za jednu smenu pred
 // Flow-om, ne artefakt epizode. `storyboard.md` (render.mjs) je taj koji se čuva.
 
@@ -153,6 +157,95 @@ export function creditLines(clips, stills = 0) {
 }
 
 /**
+ * Jedan red o tome koliko jedna smena pred Flow-om stvarno nosi.
+ *
+ * Dnevnih 50 kredita je ono što deli posao na smene (google-ai-plus.md §4), pa se smena meri
+ * njima, a ne satima: pola sata je dovoljno za pet Lite klipova i za nijedan Quality.
+ * Epizoda bez ijednog klipa nema plafon koji bi je prekinuo i to mora da stoji doslovno —
+ * inače se čeka kredit koji se ne troši.
+ *
+ * @param {number} clips broj klipova
+ * @returns {string} red
+ */
+export function shiftLine(clips) {
+  if (!clips) return '  Smena traje koliko traje: nema dnevnog plafona koji bi je prekinuo.';
+  const parts = TIERS.map(({ name, cost }) => `${Math.floor(DAILY / cost)} ${name.split(' ').at(-1)}`);
+  return `  Jedna smena = dnevnih ${DAILY} cr: ${parts.join(' · ')}.`;
+}
+
+/**
+ * Gde se shot nalazi u odnosu na susede — isti tekst u čeklisti i u tabli.
+ * @param {{group: string|null, shots: object[]}} chain
+ * @param {number} i mesto shota u lancu
+ */
+const chainWhere = (chain, i) => (chain.group === null
+  ? 'samostalan, tvrd rez'
+  : `lanac ${chain.group}, ${chainLetter(i)} od ${chain.shots.length}`);
+
+/**
+ * Naznaka lanca: dissolve između kadrova koji ne dele lokaciju i svetlo vidi se kao greška,
+ * pa naznaka mora da preživi i `--only` koji iz lanca izvuče jedan shot.
+ * @param {{group: string|null, shots: object[]}} chain
+ * @param {object[]} shown shotovi lanca koji stvarno izlaze
+ * @returns {string[]} dva reda
+ */
+export function chainNotice(chain, shown) {
+  return [
+    `LANAC ${chain.group} — ${chain.shots.length} ` +
+      `${plural(chain.shots.length, 'shot', 'shota', 'shotova')} ` +
+      `(${chain.shots.map((s) => s.shot_id).join(', ')}), spajaju se dissolve-om.`,
+    'Generiši ih sa istom lokacijom i istim svetlom — to je nastavak istog kadra.' +
+      (shown.length < chain.shots.length
+        ? ` (--only prikazuje ${shown.map((s) => s.shot_id).join(', ')})`
+        : ''),
+  ];
+}
+
+/**
+ * Telo shota — sve ispod zaglavlja: promptovi doslovno i koraci generisanja.
+ *
+ * Čeklista i tabla dele ovaj blok namerno. Razlika između terminala i taba u Docs-u je samo
+ * u zaglavljima; korak koji bi se razišao („sačuvaj kao…") je isti posao nad istim fajlom,
+ * a dva opisa istog posla su dva opisa koja se razilaze.
+ *
+ * Still kadar (schemas.md §3.3.2) ima jedan prompt i dva koraka — pokret mu daje montaža.
+ *
+ * @param {object} s shot
+ * @returns {string[]} redovi, počev od praznog reda ispod zaglavlja
+ */
+export function shotBody(s) {
+  const n = countWords(s.image_prompt);
+  const L = ['', `IMAGE PROMPT (${n} ${plural(n, 'reč', 'reči', 'reči')})`, '', s.image_prompt];
+
+  if (isStill(s)) {
+    L.push('',
+      `POKRET: ${s.still_motion} — daje ga montaža, ne Flow.`,
+      '',
+      '  [ ] 1. image prompt -> slika',
+      `  [ ] 2. sačuvaj sliku kao ${imageFile(s)}`);
+    return L;
+  }
+
+  const a = countWords(s.animation_prompt);
+  L.push('',
+    `ANIMATION PROMPT (${a} ${plural(a, 'reč', 'reči', 'reči')})`,
+    '',
+    s.animation_prompt,
+    '',
+    '  [ ] 1. image prompt -> slika; sačuvaj je kao ' + imageFile(s),
+    '  [ ] 2. animation prompt -> klip; ingredient: ' +
+      (s.ingredient_image === null
+        ? 'nema (ingredient_image: null), generiši bez ulazne slike'
+        : s.ingredient_image),
+    `  [ ] 3. sačuvaj klip kao ${s.source_file} (traje bar ${fmt(s.use_out)}s)`);
+  return L;
+}
+
+/** Broj shotova za zaglavlje, sa naznakom da je lista filtrirana. */
+const countLabel = (kept, all, only) =>
+  `${kept} ${plural(kept, 'shot', 'shota', 'shotova')}` + (only ? ` od ${all} (--only)` : '');
+
+/**
  * @param {object} storyboard već proveren sa `assertDisplayable`
  * @param {{only?: Set<string>|null}} [opts]
  * @returns {string} ceo izlaz, sa završnim prelomom reda
@@ -163,9 +256,8 @@ export function renderShotlist(storyboard, { only = null } = {}) {
 
   const clips = kept.filter((s) => !isStill(s)).length;
   const L = [
-    `shotlist — ${storyboard.episode} · ${kept.length} ` +
-      `${plural(kept.length, 'shot', 'shota', 'shotova')}` +
-      (only ? ` od ${all.length} (--only)` : '') + ' · redosled generisanja',
+    `shotlist — ${storyboard.episode} · ${countLabel(kept.length, all.length, only)}` +
+      ' · redosled generisanja',
     'Promptovi se kopiraju doslovno, red po red, bez izmena i bez prelamanja.',
     ...creditLines(clips, kept.length - clips),
   ];
@@ -177,57 +269,73 @@ export function renderShotlist(storyboard, { only = null } = {}) {
 
       // Lanac ostaje lanac i kad `--only` iz njega izvuče jedan shot: dissolve sa susedom
       // i dalje traži istu lokaciju i svetlo, pa naznaka mora da preživi filtriranje.
-      if (chain.group !== null) {
-        L.push('', RULE,
-          `LANAC ${chain.group} — ${chain.shots.length} ` +
-            `${plural(chain.shots.length, 'shot', 'shota', 'shotova')} ` +
-            `(${chain.shots.map((s) => s.shot_id).join(', ')}), spajaju se dissolve-om.`,
-          'Generiši ih sa istom lokacijom i istim svetlom — to je nastavak istog kadra.' +
-            (shots.length < chain.shots.length
-              ? ` (--only prikazuje ${shots.map((s) => s.shot_id).join(', ')})`
-              : ''),
-          RULE);
-      }
+      if (chain.group !== null) L.push('', RULE, ...chainNotice(chain, shots), RULE);
 
       for (const s of shots) {
-        const i = chain.shots.indexOf(s);
-        const where = chain.group === null
-          ? 'samostalan, tvrd rez'
-          : `lanac ${chain.group}, ${chainLetter(i)} od ${chain.shots.length}`;
-        const n = countWords(s.image_prompt);
-
+        const where = chainWhere(chain, chain.shots.indexOf(s));
         L.push('', THIN,
           `shot ${s.shot_id}   beat ${s.beat_id} · ${where} · ${fmt(s.use_len)}s` +
             (isStill(s) ? ` · STILL (${s.still_motion})` : ''),
           THIN,
-          '',
-          `IMAGE PROMPT (${n} ${plural(n, 'reč', 'reči', 'reči')})`,
-          '',
-          s.image_prompt);
+          ...shotBody(s));
+      }
+    }
+  }
 
-        // Still shot: jedan prompt, dva koraka. Nema klipa, pa nema ni ingredienta ni
-        // trajanja koje bi izvor morao da pokrije — pokret pravi montaža (§3.3.2).
-        if (isStill(s)) {
-          L.push('',
-            `POKRET: ${s.still_motion} — daje ga montaža, ne Flow.`,
-            '',
-            '  [ ] 1. image prompt -> slika',
-            `  [ ] 2. sačuvaj sliku kao ${imageFile(s)}`);
-          continue;
-        }
+  L.push('');
+  return L.join('\n');
+}
 
-        const a = countWords(s.animation_prompt);
+// ------------------------------------------------------------------ Flow tabla
+//
+// Ista čeklista, ali za tab u Google Docs-u umesto za terminal: prompt je na poslu, gde
+// `storyboard.json` ne postoji. Google ne daje nikakav programski pristup (google-ai-plus.md
+// §1), pa se tabla ne sinhronizuje — ona se odštampa, nalepi u tab i ručno precrtava.
+//
+// Tri razlike u odnosu na čeklistu, sve tri iznuđene mestom na kome se čita:
+//
+//   1. markdown zaglavlja umesto ASCII linija — Docs ih pri nalepljivanju pretvara u prava
+//      zaglavlja, pa tab od 46 shotova dobija outline po kome se skače na sledeći kadar;
+//   2. nijedan red ne počinje sa `=` ili `-` — u Sheets-u bi takav red bio formula i izašao
+//      kao `#ERROR!`, a tabla treba da preživi i taj lepak;
+//   3. oba vremena u zaglavlju — tab nalepljen pre QA prolaza gura u Flow stari prompt, i to
+//      se vidi jedino ako `generated_at` storyboarda i datum štampe stoje jedan pored drugog.
+
+/**
+ * @param {object} storyboard već proveren sa `assertDisplayable`
+ * @param {{only?: Set<string>|null, now?: Date}} [opts]
+ * @returns {string} ceo izlaz, sa završnim prelomom reda
+ */
+export function renderBoard(storyboard, { only = null, now = new Date() } = {}) {
+  const all = storyboard.beats.flatMap((b) => b.shots);
+  const kept = only ? all.filter((s) => only.has(s.shot_id)) : all;
+  const clips = kept.filter((s) => !isStill(s)).length;
+
+  const L = [
+    `# ${storyboard.episode} — Flow tabla`,
+    '',
+    `storyboard od ${storyboard.generated_at} · tabla štampana ${now.toISOString().slice(0, 10)}` +
+      ` · ${countLabel(kept.length, all.length, only)} · redosled generisanja`,
+    'Promptovi se kopiraju doslovno, red po red, bez izmena i bez prelamanja.',
+    'Na poslu se samo generiše: fajl ostaje u Flow biblioteci, ime dobija kod kuće, pri skidanju.',
+    'LAST DONE: ___ — precrtaj shot čim je gotov; sledeći je prvi neprecrtan.',
+    ...creditLines(clips, kept.length - clips),
+    shiftLine(clips),
+  ];
+
+  for (const b of storyboard.beats) {
+    for (const chain of linkChains(b.shots)) {
+      const shots = chain.shots.filter((s) => kept.includes(s));
+      if (!shots.length) continue;
+
+      if (chain.group !== null) L.push('', ...chainNotice(chain, shots));
+
+      for (const s of shots) {
+        const where = chainWhere(chain, chain.shots.indexOf(s));
         L.push('',
-          `ANIMATION PROMPT (${a} ${plural(a, 'reč', 'reči', 'reči')})`,
-          '',
-          s.animation_prompt,
-          '',
-          '  [ ] 1. image prompt -> slika; sačuvaj je kao ' + imageFile(s),
-          '  [ ] 2. animation prompt -> klip; ingredient: ' +
-            (s.ingredient_image === null
-              ? 'nema (ingredient_image: null), generiši bez ulazne slike'
-              : s.ingredient_image),
-          `  [ ] 3. sačuvaj klip kao ${s.source_file} (traje bar ${fmt(s.use_out)}s)`);
+          `## shot ${s.shot_id} · beat ${s.beat_id} · ${where} · ${fmt(s.use_len)}s` +
+            (isStill(s) ? ` · STILL (${s.still_motion})` : ''),
+          ...shotBody(s));
       }
     }
   }
@@ -244,13 +352,17 @@ const USAGE = `node tools/shotlist.mjs <folder-epizode> [opcije]
   Linkovani shotovi izlaze grupisano; promptovi izlaze doslovno.
 
   --only 07,12,18   samo ti shotovi (prima i 7 i 07)
-  -h, --help        ovaj tekst`;
+  --board           Flow tabla za tab u Google Docs-u umesto čekliste za terminal
+  -h, --help        ovaj tekst
+
+  node tools/shotlist.mjs episodes/<slug> --board | Set-Clipboard   (PowerShell)`;
 
 export function parseArgs(argv) {
-  const out = { dir: null, only: null, help: false };
+  const out = { dir: null, only: null, board: false, help: false };
   for (let i = 0; i < argv.length; i += 1) {
     const a = argv[i];
     if (a === '-h' || a === '--help') out.help = true;
+    else if (a === '--board') out.board = true;
     else if (a === '--only' || a.startsWith('--only=')) {
       const value = a.startsWith('--only=') ? a.slice('--only='.length) : argv[++i];
       if (value === undefined) throw new Error(`--only traži spisak shotova\n\n${USAGE}`);
@@ -276,7 +388,8 @@ export function main(argv) {
   const ids = storyboard.beats.flatMap((b) => b.shots).map((s) => s.shot_id);
   const only = args.only ? resolveOnly(ids, args.only) : null;
 
-  process.stdout.write(renderShotlist(storyboard, { only }));
+  const render = args.board ? renderBoard : renderShotlist;
+  process.stdout.write(render(storyboard, { only }));
   return 0;
 }
 

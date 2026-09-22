@@ -19,7 +19,8 @@
 //   S2  pet obaveznih blokova u image promptu
 //   S3  reči koje impliciraju rez unutar klipa, u animation promptu (still: ne meri se)
 //   P1  image prompt 90–160 reči
-//   P2  animation prompt 60–100 reči (still: mora da bude null)
+//   P2  animation prompt 60–110 reči (still: mora da bude null)
+//   T4  gen_len je najmanje Flow generisanje koje pokriva use_len; prompt ga imenuje
 //   C1  locked_description doslovno u image promptu svakog shota gde entitet učestvuje
 //   F1  svaki shot ima svoj klip, izvor ≥ use_out (still: slika postoji i čita se)
 //
@@ -47,7 +48,7 @@ import { fileURLToPath } from 'node:url';
 
 import { probe } from './ffmpeg.mjs';
 import {
-  EPS, LIMITS, MULTI_VISUAL_MARKERS, R1_AXES, R1_ESCALATION_AXES, R1_MAX_DIFFERING,
+  EPS, genLen, GEN_TIERS, LIMITS, MULTI_VISUAL_MARKERS, R1_AXES, R1_ESCALATION_AXES, R1_MAX_DIFFERING,
   R4_MIN_WORDS, RENDER_MODES, S2_BLOCKS, S2_BLOCKS_V2, S3_WORDS, STILL_MOTIONS,
   STILL_MOTION_CAMERA, TAGS,
   countWords, isStill, loadCameraLanguage, loadFixedPromptLines, loadStyleString,
@@ -59,7 +60,7 @@ import {
  * `M1` stoji prvi jer režim rendera odlučuje po kojim su se pravilima merila ostala:
  * čitalac koji vidi M1 nalaz zna zašto su T3 i P2 rekli ono što su rekli.
  */
-export const CHECKS = ['M1', 'T1', 'T2', 'T3', 'S1', 'S2', 'S3', 'S4', 'S5', 'P1', 'P2', 'C1', 'F1'];
+export const CHECKS = ['M1', 'T1', 'T2', 'T3', 'T4', 'S1', 'S2', 'S3', 'S4', 'S5', 'P1', 'P2', 'C1', 'F1'];
 
 /** ADVISORY kodovi, redosledom ADVISORY tabele. Nikad ne ulaze u exit code. */
 export const ADVISORY = ['R1', 'R2', 'R3', 'R4', 'R5', 'R6', 'R7', 'C2'];
@@ -236,6 +237,14 @@ function checkT1(storyboard) {
 
 const MOTION_LINE = /MOTION BUDGET:[^\n]*?(\d+(?:\.\d+)?)\s*s\b/i;
 
+/**
+ * Duzina generisanja, bilo gde u animation promptu. Ne vezuje se za `MOTION BUDGET`
+ * liniju zato sto je ona uslovna: kad je `use_len >= 9.0`, `motion_budget` je `null` i T3
+ * tu liniju ne trazi. Duzina generisanja je obavezna i tada, pa provera mora da je nadje
+ * i u promptu bez budzeta pokreta.
+ */
+const GEN_LINE = /(\d+(?:\.\d+)?)\s*s generation\b/i;
+
 function checkShot(shot, { lists, entities, v = 1 }) {
   const out = [];
   const where = `shot ${shot.shot_id}`;
@@ -312,6 +321,42 @@ function checkShot(shot, { lists, entities, v = 1 }) {
       }
     }
   }
+
+  // T4 - duzina generisanja. Flow prima samo 4/6/8/10s (contract.mjs `GEN_TIERS`), pa svaki
+  // klip nosi tu brojku i animation prompt je pise. Still shot nema sta da generise.
+  if (still) {
+    if (shot.gen_len !== null && shot.gen_len !== undefined) {
+      out.push(finding('T4', where,
+        `gen_len je ${fmt(shot.gen_len)}s, a still shot se ne generiše`,
+        `${fmt(shot.gen_len)}s`, 'null'));
+    }
+  } else {
+    const want = genLen(shot.use_len);
+    if (want === null) {
+      out.push(finding('T4', where,
+        `use_len ${fmt(shot.use_len)}s je duži od najdužeg generisanja`,
+        `${fmt(shot.use_len)}s`, `≤ ${GEN_TIERS[GEN_TIERS.length - 1]}s`));
+    } else if (shot.gen_len === null || shot.gen_len === undefined) {
+      out.push(finding('T4', where, `gen_len je null, a use_len je ${fmt(shot.use_len)}s`,
+        'null', `${want}s`));
+    } else if (!near(shot.gen_len, want)) {
+      out.push(finding('T4', where,
+        `gen_len ${fmt(shot.gen_len)}s nije najmanje generisanje koje pokriva use_len ${fmt(shot.use_len)}s`,
+        `${fmt(shot.gen_len)}s`, `${want}s`));
+    } else {
+      const g = String(shot.animation_prompt).match(GEN_LINE);
+      if (!g) {
+        out.push(finding('T4', where,
+          'MOTION BUDGET linija ne imenuje dužinu generisanja',
+          'nema brojke', `… to the end of a ${want}s generation`));
+      } else if (!near(Number(g[1]), want)) {
+        out.push(finding('T4', where,
+          `MOTION BUDGET kaže ${g[1]}s generation, a gen_len je ${want}s`,
+          `${g[1]}s`, `${want}s`));
+      }
+    }
+  }
+
 
   // S1 — zabranjene prostorne fraze bez screen-position klauzule.
   // Promptovi se gledaju odvojeno: klauzula na početku animation prompta ne sme da otključa
@@ -725,8 +770,14 @@ function checkR4(storyboard, episode, opts) {
       ? ['SCALE', 'DETAIL'].map((b) => promptBlock(s.image_prompt, b))
         .filter(Boolean).map(r4Tokens).filter((t) => t.length)
       : [];
-    const ph = extra.length
-      ? [...phrases, ...extra].sort((a, b) => b.length - a.length)
+    // Od T4 je `MOTION BUDGET` linija boilerplate po konstrukciji: nosi dve brojke i fiksnu
+    // frazu oko njih, pa dva shota sa istim `use_len` i istim `gen_len` dele 17 uzastopnih
+    // reci a da niko nista nije prepisao. Izuzima se po shotu, iz istog razloga kao SCALE.
+    const mb = isStill(s) ? null : String(s.animation_prompt).match(/^MOTION BUDGET:[^\n]*$/m);
+    const extra2 = mb ? [r4Tokens(mb[0])].filter((t) => t.length) : [];
+    const all = [...extra, ...extra2];
+    const ph = all.length
+      ? [...phrases, ...all].sort((a, b) => b.length - a.length)
       : phrases;
     // Still shot nema animation prompt; `null` bi ovde ušao kao prompt od jedne reči („null").
     const fields = isStill(s)

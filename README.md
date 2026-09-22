@@ -26,6 +26,10 @@ Slike i klipovi se generišu ručno u Google Flow-u — `shotlist.mjs` ispisuje 
 to radi. Ista čeklista u zaglavlju nosi i **budžet kredita**: slika je u Flow-u besplatna, klip
 nije, pa je budžet epizode uvek budžet za video, a dnevnih 50 kredita diktira raspored —
 [`docs/reference/google-ai-plus.md`](docs/reference/google-ai-plus.md).
+
+Ista čeklista sa `--board` izlazi kao **Flow tabla** za tab u Google Docs-u: promptovi tamo gde
+`storyboard.json` ne postoji, za generisanje van kuće. Ništa se ne sinhronizuje — tabla se
+nalepi i ručno precrta ([`docs/reference/flow-board.md`](docs/reference/flow-board.md)).
 Faze 05–08 vode skilovi u [`.claude/skills/`](.claude/skills).
 
 Epizoda ne mora da bude od klipova. Shot sa `render_mode: "still"` je **jedna slika kojoj
@@ -47,6 +51,7 @@ node tools/beatplan.mjs  episodes/<slug> --beats episodes/<slug>/beats.json --wr
 node tools/lint.mjs      episodes/<slug> --no-media
 node tools/render.mjs    episodes/<slug>
 node tools/shotlist.mjs  episodes/<slug>
+node tools/shotlist.mjs  episodes/<slug> --board | Set-Clipboard
 node tools/assemble.mjs  episodes/<slug>
 ```
 
@@ -65,6 +70,7 @@ node tests/check-fixtures.mjs # izvršni oblik ugovora iz schemas.md
 | `docs/plan/` | plan rada po celinama (C01–C15) i evidencija odstupanja |
 | `docs/prompts/` | promptovi za faze koje se rade u chat modelu |
 | `docs/reference/google-ai-plus.md` | šta pretplata daje lancu i koliko epizoda staje u mesec |
+| `docs/reference/flow-board.md` | `--board` tabla: generisanje van kuće, iz taba u Google Docs-u |
 | `tools/` | ceo lanac, čist Node, bez zavisnosti |
 | `tests/` | testovi i fixture epizode koje definišu ugovor |
 | `episodes/<slug>/` | `episode.json`, `script.md`, `timing.json`, `storyboard.json`, `notes.md` |

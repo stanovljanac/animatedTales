@@ -43,7 +43,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 import {
-  DEVICES, LIMITS, R1_AXES, SLUG, TAGS, assertDisplayable, isStill, plural, round3,
+  DEVICES, LIMITS, R1_AXES, SLUG, TAGS, assertDisplayable, genLen, isStill, plural, round3,
 } from './contract.mjs';
 import { DEFAULTS, planTimeline } from './timeline.mjs';
 
@@ -196,6 +196,7 @@ export function buildStoryboard(timing, beatMap, opts = {}) {
         use_out: s.use_out,
         use_len: s.use_len,
         motion_budget: s.motion_budget,
+        gen_len: still ? null : genLen(s.use_len),
         // `hold` je namerno najdosadnija vrednost, ne nasumična: skelet koji sam sebe
         // proglasi režiranim gori je od skeleta koji vidno traži da ga neko prođe.
         ...(still ? { render_mode: 'still', still_motion: 'hold' } : {}),
