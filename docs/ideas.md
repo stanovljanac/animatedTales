@@ -7,7 +7,7 @@ u skor od 100 po formuli `zbir(težina × ocena) / 95 × 100`. Rubrika je izvor 
 **Pojasevi:** `radi odmah` ≥ 80 · `oštriji ugao` 65–79.9 · `parkiraj` < 65.
 
 **Status:** `idea` (nebodovana) · `scored` (bodovana, čeka izbor) · `done` (epizoda postoji u `episodes/`,
-ostaje u tabeli ali **ispada iz rangiranja**) · `rejected` (odbačena ili spojena).
+ostaje u tabeli ali **ispada iz rangiranja**) · `rejected` (odbačena ili spojena) · `re-aim` (epizoda je potrošila deo materijala, ideja je preusmerena na ostatak — stari skor više ne opisuje priču, mora da se preboduje, i **ne učestvuje u rangiranju** dok se to ne uradi).
 
 ---
 
@@ -49,7 +49,7 @@ Legenda kolona: **M1** snaga hooka (×3) · **M2** naslov + tambnejl (×3) · **
 | 6 | The Emperor Who Was Killed by His Own Guards | 5 | 5 | 5 | 4 | 4 | 4 | 3 | 4 | 4 | 4 | **86.8** | radi odmah | `scored` |
 | 3 | The King Who Accidentally Started a War by Losing His Sandals | 5 | 4 | 5 | 5 | 4 | 4 | 4 | 4 | 3 | 3 | **85.3** | radi odmah | `done` |
 | 25 | Medusa Wasn't Always a Monster | 5 | 5 | 4 | 5 | 4 | 4 | 2 | 4 | 3 | 4 | **84.2** | radi odmah | `scored` |
-| 21 | Why Zeus Was Terrified of His Own Children | 5 | 5 | 5 | 4 | 4 | 4 | 2 | 3 | 4 | 4 | **83.7** | radi odmah | `scored` |
+| 21 | ~~Why Zeus Was Terrified of His Own Children~~ → Titanomahija (preusmerena) | 5 | 5 | 5 | 4 | 4 | 4 | 2 | 3 | 4 | 4 | **83.7** | — | `re-aim` |
 | 30 | The Giant Who Tried to Steal the Sun | 5 | 5 | 4 | 4 | 3 | 4 | 5 | 3 | 3 | 4 | **83.2** | radi odmah | `scored` |
 | 10 | The War Against Birds | 5 | 5 | 5 | 5 | 2 | 3 | 2 | 5 | 4 | 3 | **81.6** | radi odmah | `scored` |
 | 11 | How Humans Learned to Cross Entire Oceans Without a Compass | 5 | 4 | 4 | 4 | 3 | 4 | 4 | 4 | 4 | 4 | **81.1** | radi odmah | `done` |
@@ -338,11 +338,34 @@ Zašto ovaj skor: Najoriginalniji ugao u kategoriji i pravi obrt (carstvo zavisi
 
 Ocene M1–M10: 5 / 5 / 5 / 4 / 4 / 4 / 2 / 3 / 4 / 4 — sirovo 79.5 / 95.
 
-Story: Greek tradition tells of Cronus swallowing his children because of a prophecy that one would overthrow him. Zeus survived through a deception, eventually freed his siblings and led the revolt against the Titans.
+**PREUSMERENA — skor ispod opisuje potrošenu verziju, mora da se preboduje pre produkcije.**
 
-Hook: “Why did the king of the gods swallow his own children?”
+`greek-gods-part-1` je pojeo **prvu polovinu ove ideje**: proročanstvo, gutanje dece, kamen i
+izbacivanje. To se ne sme ispričati dva puta. Ono što ideji ostaje je **rat**, koji je u Part 1
+stišnjen u jedan pasus od ~70 reči i namerno ostavljen takav.
 
-Zašto ovaj skor: Slika oca koji guta sopstvenu decu je neodoljiva i jeftina za animaciju, ali tema je najzasićenija u mitologiji, a naslov obećava Zevsa dok priča govori o Kronu — nesklad koji obara jasnoću.
+Nova story: deset godina rata koji nijedna strana ne može da završi, i kralj koji pobeđuje tako
+što siđe u jamu i oslobodi zatvorenike koje je neko drugi tamo bacio. Kiklopi kuju tri oružja,
+sto-ruki završavaju rat, Titani zauzimaju mesto zatvorenika. Tu idu i Uran i srp, Otris, Atlas,
+mera Tartara nakovnjem i Kureti sa Krita — sve što je Part 1 morao da izostavi.
+
+Nova hook kandidatura: “The king of the gods won his war by opening a prison.”
+
+**Van numeracije Greek Gods 1–4** — ne nosi broj parta, ne ulazi u lanac outroa, ne dira
+compilation. Izlazi **posle** Part 1. Detalji u `docs/series/greek-gods.md` §2.
+
+Zašto je preusmerenje dobro: dizajn je već plaćen — `cronus`, `the-cyclopes`,
+`the-hundred-handers`, `tartarus` i `the-war-plain` su zaključani u Part 1 i kopiraju se doslovno,
+pa je ovo najjeftiniji video u celoj listi. I rešava kaznu koja je oborila M8: stari naslov je
+obećavao Zevsa a priča je bila o Kronu; rat je **zaista** Zevsova priča.
+
+Stari zapis, radi traga:
+
+> Story: Greek tradition tells of Cronus swallowing his children because of a prophecy that one would overthrow him. Zeus survived through a deception, eventually freed his siblings and led the revolt against the Titans.
+>
+> Hook: “Why did the king of the gods swallow his own children?”
+>
+> Zašto ovaj skor: Slika oca koji guta sopstvenu decu je neodoljiva i jeftina za animaciju, ali tema je najzasićenija u mitologiji, a naslov obećava Zevsa dok priča govori o Kronu — nesklad koji obara jasnoću.
 
 #### #22 — The Man Who Stole Fire From the Gods
 
@@ -462,8 +485,10 @@ Zašto ovaj skor: Pomračenje kao napad na nebo daje sliku koju niko u niši ne 
 - **Numeracija:** originalni fajl je koristio #1–#10 unutar svake od tri kategorije, pa je isti broj
   označavao tri različite ideje. Uvedena je jedinstvena numeracija 1–30 (kat. 1 → 1–10, kat. 2 → 11–20,
   kat. 3 → 21–30). Izvorna oznaka je zadržana uz svaku ideju.
-- **Nesklad naslova i priče kod #21:** naslov imenuje Zevsa, a priča je o Kronu. Naslov i tekst kuke su
-  ostavljeni doslovno, a nesklad je kažnjen kroz M8 (jasnoća = 3) umesto tihim ispravljanjem.
+- **Nesklad naslova i priče kod #21 — rešen preusmerenjem.** Naslov je imenovao Zevsa, a priča je bila
+  o Kronu; nesklad je bio kažnjen kroz M8 (jasnoća = 3). `greek-gods-part-1` je u međuvremenu potrošio
+  Kronov deo, pa je ideja preusmerena na Titanomahiju — koja **jeste** Zevsova priča. Skor 83.7 je
+  zatečen i **nije** preračunat: on opisuje staru priču. Preboduje se kad ideji dođe red.
 - **M9 kod mitologije:** mit se ne kažnjava zato što je mit. Kod mitskih ideja M9 meri koliko je izvor
   jasno određen i koliko je verzija stabilna (Hesiod i Eda → 4; kasna ili razuđena tradicija → 3).
 - Bodovanje je rađeno isključivo iz proze koja je već bila u ovom fajlu. Nijedna nova ideja nije dodata.
