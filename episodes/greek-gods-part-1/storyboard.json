@@ -28,6 +28,7 @@
           "use_out": 6.583,
           "use_len": 6.583,
           "motion_budget": 6.583,
+          "gen_len": 8,
           "source_file": "shots/part01.mp4",
           "ingredient_image": null,
           "characters": [
@@ -40,7 +41,7 @@
             "drifting ash"
           ],
           "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a battered bronze war helmet serving as a lot-urn, and three lots for it, each a flat river pebble scratched with a single mark, the bronze dented and dull, its horsehair crest torn short, tipped toward camera with the three pebbles loose in the bowl of it.\nSCALE: the helmet reads as an ordinary man-sized war helmet; each of the three hands closed on its rim is wide enough to cover it whole; the pebbles are thumb-sized against those knuckles.\nACTION: three enormous hands tilt the helmet and the pebbles roll across the bronze.\nSETTING: a scorched plain at the end of a ten-year war, bronze dulled by ash.\nCAMERA: camera looks down into the bowl from just above it, high, close.\nFRAME LAYOUT: center — the helmet mouth and three pebbles, near-camera and very large; left third and right third — knuckles and forearms, cropped at the wrist; lower edge — cracked ground, far and hazy.\nFACING: we see the inside of the bowl and the backs of all three hands; no faces.\nSCREEN DIRECTION: the pebbles roll from the left of the bowl toward screen-right; ash drifts down across the upper-left.\nLIGHT: dim red afterglow from burning ground, raking from the right edge.\nPALETTE: dull bronze, ash grey, ember red.\nDETAIL: dents and hammer scars in the bronze, torn crest stubble, grit in the scratched pebbles.\nNOT IN FRAME: faces, bodies, sky.",
-          "animation_prompt": "MOTION BUDGET: key motion completes within 6.583s.\n0–1s: the three hands tilt the helmet and the pebbles start rolling.\n1–4.3s: the pebbles circle the bowl and knock against the dented bronze, one riding up the rim and dropping back.\n4.3–6.6s: they settle into the bottom of the bowl and the hands steady.\nCAMERA: one slow push toward the mouth of the helmet.\nENVIRONMENT: ash drifts down through the frame; ember light pulses on the bronze.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 6.583s; hold to the end of an 8s generation.\n0–1s: the three hands tilt the helmet and the pebbles start rolling.\n1–4.3s: the pebbles circle the bowl and knock against the dented bronze, one riding up the rim and dropping back.\n4.3–6.5s: they settle into the bottom of the bowl and the hands steady.\nCAMERA: one slow push toward the mouth of the helmet.\nENVIRONMENT: ash drifts down through the frame; ember light pulses on the bronze.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
           "tags": {
             "subject_type": "object",
             "shot_size": "CU",
@@ -73,11 +74,12 @@
           "beat_id": "B02",
           "link_group": null,
           "t_in": 6.583,
-          "t_out": 12.792,
+          "t_out": 12.583,
           "use_in": 0,
-          "use_out": 6.209,
-          "use_len": 6.209,
-          "motion_budget": 6.209,
+          "use_out": 6.0,
+          "use_len": 6.0,
+          "motion_budget": 6.0,
+          "gen_len": 6,
           "source_file": "shots/part02.mp4",
           "ingredient_image": null,
           "characters": [
@@ -90,7 +92,7 @@
             "his slack open hands"
           ],
           "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a gaunt ageing Titan with long grey-white hair and a heavy matted grey beard, a hollowed lined face, corded veined arms and big knuckled hands, a coarse dark ochre himation over one shoulder, bare chest and bare feet, seated heavily on a block throne, forearms along his thighs.\nSCALE: Cronus is colossal and fills the whole height of the hall; the stone columns reach only to his knee; a man would stand no higher than his ankle bone.\nACTION: he sits still and does not look at the hall below him.\nSETTING: a vast pillared throne hall of black basalt, soot on every surface.\nCAMERA: camera stands on the hall floor looking steeply up at him, low, wide.\nFRAME LAYOUT: right third and center — Cronus, enormous, cropped at the crown of the head; left third — a row of columns, small against his shin; lower edge — the flagstone floor, near-camera.\nFACING: we see his front and left side three-quarter on; his head is turned toward screen-left.\nSCREEN DIRECTION: one loose end of his himation stirs toward screen-left; torch smoke climbs the right edge.\nLIGHT: orange torchlight from brackets low on the columns, hard shadow up the chest.\nPALETTE: soot black, dark ochre, torch orange.\nDETAIL: figures readable by outline against the columns, layered soot and cracked basalt, matted beard mass.\nNOT IN FRAME: the throne room doors, any other figure.",
-          "animation_prompt": "MOTION BUDGET: key motion completes within 6.209s.\n0–1s: his huge hand closes slowly on the arm of the block throne.\n1–4.1s: his head turns a few degrees further from the hall below him and his shoulders drop into the seat.\n4.1–6.2s: he settles and goes completely still.\nCAMERA: one continuous slow pull back along the hall floor.\nENVIRONMENT: torch flames gutter on the columns; smoke climbs past his shin.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 6s; hold to the end of a 6s generation.\n0–1s: his huge hand closes slowly on the arm of the block throne.\n1–4.1s: his head turns a few degrees further from the hall below him and his shoulders drop into the seat.\n4.1–6s: he settles and goes completely still.\nCAMERA: one continuous slow pull back along the hall floor.\nENVIRONMENT: torch flames gutter on the columns; smoke climbs past his shin.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
           "tags": {
             "subject_type": "character",
             "shot_size": "XLS",
@@ -106,12 +108,13 @@
           "shot_id": "03",
           "beat_id": "B02",
           "link_group": null,
-          "t_in": 12.792,
+          "t_in": 12.583,
           "t_out": 22.458,
           "use_in": 0,
-          "use_out": 9.666,
-          "use_len": 9.666,
+          "use_out": 9.875,
+          "use_len": 9.875,
           "motion_budget": null,
+          "gen_len": 10,
           "source_file": "shots/part03.mp4",
           "ingredient_image": null,
           "characters": [
@@ -124,7 +127,7 @@
             "the dark hall falling away to one side"
           ],
           "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a gaunt ageing Titan with long grey-white hair and a heavy matted grey beard, a hollowed lined face, corded veined arms and big knuckled hands, a coarse dark ochre himation over one shoulder, bare chest and bare feet, seen from the chest down, both enormous hands open palm-up in his lap.\nSCALE: each hand is the size of a cart bed; one knuckle is as broad as a man's chest; the cloth weave under them reads as rope-thick cord.\nACTION: the open fingers begin to curl in.\nSETTING: coarse dark ochre wool over his thighs, a soot-blackened basalt hall.\nCAMERA: camera stands at the height of his lap a few paces out, eye level, close.\nFRAME LAYOUT: center — both open palms, near-camera and filling most of the frame; upper edge — his chest and the lower edge of his beard, cropped; left third — dark hall, far and hazy.\nFACING: we see the palms and the inside of the fingers; his face sits above the upper edge and is not yet in the frame.\nSCREEN DIRECTION: the fingers draw inward toward screen-left; torch smoke climbs the right edge.\nLIGHT: low torchlight from screen-left, raking hard across the scar ridges.\nPALETTE: weathered grey skin, dark ochre, torch amber.\nDETAIL: old ridged scar tissue across every knuckle, cracked callus, individual wool fibres of the cloth.\nNOT IN FRAME: his throne, the hall floor, any other figure.",
-          "animation_prompt": "MOTION BUDGET: key motion completes within 9.666s.\n0–1s: the open fingers curl in and drag the ochre cloth taut across his knee.\n1–6.2s: the fist closes and the frame climbs his chest to the beard.\n6.2–9.7s: the face arrives, eyes still cut away to one side.\nCAMERA: one continuous tilt up the body from the lap to the face.\nENVIRONMENT: torchlight slides across the scars as the frame rises; smoke crosses the upper edge.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 9.875s; hold to the end of a 10s generation.\n0–1s: the open fingers curl in and drag the ochre cloth taut across his knee.\n1–6.2s: the fist closes and the frame climbs his chest to the beard.\n6.2–9.7s: the face arrives, eyes still cut away to one side.\nCAMERA: one continuous tilt up the body from the lap to the face.\nENVIRONMENT: torchlight slides across the scars as the frame rises; smoke crosses the upper edge.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
           "tags": {
             "subject_type": "character",
             "shot_size": "CU",
@@ -161,6 +164,7 @@
           "use_out": 6.75,
           "use_len": 6.75,
           "motion_budget": null,
+          "gen_len": null,
           "source_file": "shots/shot04.jpeg",
           "ingredient_image": null,
           "characters": [
@@ -214,6 +218,7 @@
           "use_out": 7.5,
           "use_len": 7.5,
           "motion_budget": 7.5,
+          "gen_len": 8,
           "source_file": "shots/part05.mp4",
           "ingredient_image": null,
           "characters": [
@@ -226,7 +231,7 @@
             "the cut edge of the chest wall"
           ],
           "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a gaunt ageing Titan with long grey-white hair and a heavy matted grey beard, a hollowed lined face, corded veined arms and big knuckled hands, a coarse dark ochre himation over one shoulder, bare chest and bare feet, drawn as a cross-section with the near wall of his torso cut away, the chest standing open like a dark chamber.\nSCALE: the opened torso is a room, not a wound; each figure inside stands no taller than one of his ribs; the cut chest wall is as thick as a house beam.\nACTION: five full-grown gods stand alive on five separate ledges inside the dark of the chamber.\nSETTING: a cutaway chamber of ribbed dark walls, three bearded men and two women in plain undyed cloth.\nCAMERA: camera holds square on the cut face of the torso, eye level, medium.\nFRAME LAYOUT: center — the opened chamber, near-camera and filling the frame, five small figures at five different heights; upper edge — his jaw, cropped; left third and right third — the cut chest wall.\nFACING: we see all five front on, looking out past camera; his jaw turns toward screen-left.\nSCREEN DIRECTION: the faint glow around each figure pulses slowly; one hem stirs at the lowest ledge.\nLIGHT: no outside light; each figure lit only by a faint cold glow of its own.\nPALETTE: chamber black, bone grey, pale cold glow.\nDETAIL: ribbed wall texture and the cut edge of bone, plain undyed cloth, faces readable but small.\nNOT IN FRAME: blood, organs, the hall outside.",
-          "animation_prompt": "MOTION BUDGET: key motion completes within 7.5s.\n0–1s: the five figures inside shift their weight on their separate ledges.\n1–4.9s: their faint glows brighten one by one from the lowest ledge upward and their hems stir in the dead air.\n4.9–7.5s: all five glows hold steady and the figures stand looking out.\nCAMERA: one slow push toward the opened chamber.\nENVIRONMENT: the ribbed walls flex faintly; dust falls through the glow.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 7.5s; hold to the end of an 8s generation.\n0–1s: the five figures inside shift their weight on their separate ledges.\n1–4.9s: their faint glows brighten one by one from the lowest ledge upward and their hems stir in the dead air.\n4.9–7.5s: all five glows hold steady and the figures stand looking out.\nCAMERA: one slow push toward the opened chamber.\nENVIRONMENT: the ribbed walls flex faintly; dust falls through the glow.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
           "tags": {
             "subject_type": "character",
             "shot_size": "MS",
@@ -265,6 +270,7 @@
           "use_out": 7.584,
           "use_len": 7.584,
           "motion_budget": 7.584,
+          "gen_len": 8,
           "source_file": "shots/part06.mp4",
           "ingredient_image": null,
           "characters": [
@@ -277,7 +283,7 @@
             "the bright cave mouth"
           ],
           "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a tall Titan woman in middle age, thick dark hair bound up under a veil that falls down her back, a strong grave wide-cheekboned face, a long saffron peplos pinned at both shoulders and belted high, bare feet, kneeling with a newborn held against her chest and her free hand folding a swaddling blanket over a smooth river-worn grey boulder the size of the child.\nSCALE: Rhea is a Titan and reads far larger than a mortal woman; the boulder she is wrapping is exactly the size of the swaddled child at her chest; her forearm alone is as long as it.\nACTION: she folds the blanket across the stone, the child still at her chest.\nSETTING: a limestone cave on Crete, dry sand and fallen rock.\nCAMERA: camera kneels on the cave floor a few paces off, eye level, medium.\nFRAME LAYOUT: center and left third — Rhea, near-camera and large, cropped at the knee; lower-right — the stone and the folding cloth; right third — the bright cave mouth, far.\nFACING: we see her face and chest three-quarter on; she looks down at the stone, not the child.\nSCREEN DIRECTION: her free hand draws the cloth toward screen-left; her veil lifts once.\nLIGHT: hard daylight from the cave mouth at screen-right, deep shadow on her far side.\nPALETTE: saffron, limestone pale, cave brown.\nDETAIL: woven nap of the peplos, river-worn pitting on the stone, sand on the cave floor.\nNOT IN FRAME: Cronus, the cave path, any other figure.",
-          "animation_prompt": "MOTION BUDGET: key motion completes within 7.584s.\n0–1s: her free hand draws the blanket across the stone.\n1–5s: the cloth folds over and she tucks the corner under it while the newborn at her chest turns its head.\n5–7.6s: her hand stops on the wrapped bundle and her shoulders drop.\nCAMERA: one slow push toward her hands.\nENVIRONMENT: dust turns in the shaft of light from the cave mouth; her veil lifts once.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 7.584s; hold to the end of an 8s generation.\n0–1s: her free hand draws the blanket across the stone.\n1–5s: the cloth folds over and she tucks the corner under it while the newborn at her chest turns its head.\n5–7.5s: her hand stops on the wrapped bundle and her shoulders drop.\nCAMERA: one slow push toward her hands.\nENVIRONMENT: dust turns in the shaft of light from the cave mouth; her veil lifts once.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
           "tags": {
             "subject_type": "character",
             "shot_size": "MS",
@@ -299,6 +305,7 @@
           "use_out": 4.916,
           "use_len": 4.916,
           "motion_budget": null,
+          "gen_len": null,
           "source_file": "shots/shot07.jpeg",
           "ingredient_image": null,
           "characters": [
@@ -335,7 +342,7 @@
       "dur": 4.16,
       "device": null,
       "narration_says": "Grown, he came back and forced his father to bring up everything he had eaten.",
-      "viewer_sees": "a grown god near-camera with one hand raised, the Titan doubled over enormous above him",
+      "viewer_sees": "a grown god near-camera lowering a drained cup, the Titan bowed enormous above him with one hand at his own throat",
       "shots": [
         {
           "shot_id": "08",
@@ -347,6 +354,7 @@
           "use_out": 4.167,
           "use_len": 4.167,
           "motion_budget": 4.167,
+          "gen_len": 6,
           "source_file": "shots/part08.mp4",
           "ingredient_image": null,
           "characters": [
@@ -354,13 +362,13 @@
             "cronus"
           ],
           "visual_priority": [
-            "Zeus near-camera with one hand raised",
-            "Cronus doubled over enormous above him",
+            "Zeus near-camera holding the drained cup",
+            "Cronus bowed enormous above him with a hand at his throat",
             "the size gap between the two",
             "the torchlit hall around them"
           ],
-          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a broad powerfully built Greek god in his prime, thick dark hair swept back from a high brow, a full curled beard, deep-set grey eyes under heavy brows, a purple-red himation over one shoulder, bare chest and bare feet, grown, braced, one hand raised flat toward the Titan above him.\nSCALE: Cronus is colossal beside him; his bowed head alone is larger than the whole standing god; Zeus reaches no higher than the Titan's shin.\nSUBJECT 2: a gaunt ageing Titan with long grey-white hair and a heavy matted grey beard, a hollowed lined face, corded veined arms and big knuckled hands, a coarse dark ochre himation over one shoulder, bare chest and bare feet, doubled over above him, head coming down, one arm across his stomach.\nACTION: he holds the raised hand steady as the Titan buckles over him.\nSETTING: the soot-blackened basalt hall, torches low.\nCAMERA: camera stands on the floor at the young god's level, low, medium.\nFRAME LAYOUT: lower-left — Zeus, near-camera and large, cropped at the calf; center and right third — Cronus, vast, bent across the upper frame; far — the colonnade, small and hazy.\nFACING: we see Zeus front on, face up toward screen-right; the Titan's face comes down toward screen-left.\nSCREEN DIRECTION: the Titan's head swings down toward screen-left; the raised hand holds still.\nLIGHT: hard torchlight from the lower-left, the Titan mostly shadow mass.\nPALETTE: purple-red, soot black, torch amber.\nDETAIL: woven nap of the himation, corded veins on the Titan's forearm, standing water underfoot.\nNOT IN FRAME: the throne, the doorway, any other figure.",
-          "animation_prompt": "MOTION BUDGET: key motion completes within 4.167s.\n0–1s: the Titan heaves and his head drops toward the raised hand.\n1–2.9s: he buckles further with one arm clamped across his stomach, shaking dust loose from the hall above.\n2.9–4.2s: he holds there, bent, and the raised hand never moves.\nCAMERA: one short push in on the standing god.\nENVIRONMENT: torch flames flatten; grit skitters across the flagstones.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a broad powerfully built Greek god in his prime, thick dark hair swept back from a high brow, a full curled beard, deep-set grey eyes under heavy brows, a purple-red himation over one shoulder, bare chest and bare feet, grown, a drained bronze kylix low in one hand.\nSCALE: Cronus is colossal beside him; his bowed head alone is larger than the whole standing god; Zeus reaches no higher than the Titan's shin.\nSUBJECT 2: a gaunt ageing Titan with long grey-white hair and a heavy matted grey beard, a hollowed lined face, corded veined arms and big knuckled hands, a coarse dark ochre himation over one shoulder, bare chest and bare feet, above him, head down, a hand at his throat.\nACTION: the drink takes hold in the Titan.\nSETTING: the soot-blackened basalt hall, torches low, a tipped wine jug.\nCAMERA: camera stands on the floor at the young god's level, low, medium.\nFRAME LAYOUT: lower-left — Zeus and the cup, near-camera and large, cropped at the calf; center and right third — Cronus, vast, bowed across the upper frame; far — the colonnade, hazy.\nFACING: we see Zeus front on, face up toward screen-right; the Titan's face comes down toward screen-left.\nSCREEN DIRECTION: the Titan's head sinks toward screen-left; spilled wine runs toward screen-right.\nLIGHT: hard torchlight from the lower-left, the Titan in shadow.\nPALETTE: purple-red, soot black, torch amber.\nDETAIL: woven nap of the himation, wine on the cup rim.\nNOT IN FRAME: any woman, a raised hand, a blow, falling rock, the throne.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 4.167s; hold to the end of a 6s generation.\n0–1s: the Titan's hand goes to his own throat and his head sinks forward.\n1–2.9s: his shoulders draw in and his jaw opens as the drink works.\n2.9–4.1s: he holds there, head down, and the god lowers the empty cup to his side.\nCAMERA: one short push in on the standing god.\nENVIRONMENT: torch flames flatten; spilled wine creeps along the flagstones.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts, any blow struck, falling debris.",
           "tags": {
             "subject_type": "character",
             "shot_size": "MS",
@@ -385,7 +393,7 @@
       "dur": 6.4,
       "device": null,
       "narration_says": "The stone came first. Then his brothers and sisters, one at a time, undamaged.",
-      "viewer_sees": "six newly grown gods standing wet and unmarked on the flagstones, and at their feet the grey stone that came up first",
+      "viewer_sees": "five newly grown gods standing wet and unmarked on the flagstones with the grey stone that came up first at their feet, and the dry brother who freed them watching from one side",
       "shots": [
         {
           "shot_id": "09",
@@ -397,20 +405,22 @@
           "use_out": 6.417,
           "use_len": 6.417,
           "motion_budget": 6.417,
+          "gen_len": 8,
           "source_file": "shots/part09.mp4",
           "ingredient_image": null,
           "characters": [
-            "the-six-siblings",
-            "the-stone"
+            "the-five-siblings",
+            "the-stone",
+            "zeus"
           ],
           "visual_priority": [
-            "The Six Children of Cronus standing wet and unmarked in a line",
+            "The Five Swallowed Children standing wet and unmarked in a line",
             "the grey stone lying at their feet",
-            "the wet flagstones",
-            "the hall receding to one side"
+            "Zeus dry and apart at the right",
+            "the wet flagstones"
           ],
-          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: six newly grown Greek gods, three bearded men and three women of the same tall strong build, plain undyed himatia and peploi without ornament, wet hair, pale skin, no crowns, no jewellery and no weapons, standing in an uneven line on wet flagstones, water still running off them, none of them marked.\nSCALE: the stone is the size of a swaddled newborn; it reaches only to the ankles of the figures standing over it.\nSUBJECT 2: a smooth oval boulder of grey limestone about the size of a swaddled newborn, worn round by a river, the surface faintly veined and pitted, one end slightly narrower than the other, lying on the wet stone at their feet.\nACTION: the six stand where they came up and look at the stone between their feet.\nSETTING: the basalt hall floor, water spreading across the flagstones.\nCAMERA: camera stands a few paces off at their level, eye level, medium.\nFRAME LAYOUT: left third through right third — the line of six, near-camera and large, cropped at the shoulder; lower-center — the grey stone on wet flagstone; upper-right — the colonnade, far.\nFACING: we see their faces and chests; every one of them looks down at lower-center.\nSCREEN DIRECTION: the line runs from the left edge toward screen-right; water runs off their hems.\nLIGHT: low torchlight from screen-right, wet sheen along every shoulder.\nPALETTE: undyed wool, wet black stone, torch amber.\nDETAIL: wet wool clinging in heavy folds, river-worn pitting on the stone, standing water underfoot.\nNOT IN FRAME: Cronus, the throne, weapons.",
-          "animation_prompt": "MOTION BUDGET: key motion completes within 6.417s.\n0–1s: water sheets off their shoulders and hits the flagstones.\n1–4.3s: one after another their heads come down toward the stone between their feet as the spreading water reaches it.\n4.3–6.4s: the last head drops and the six stand still.\nCAMERA: one slow pan right along the line.\nENVIRONMENT: torchlight wavers on the wet stone; steam lifts off their skin.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: five newly grown Greek gods, two bearded men and three women of the same tall strong build, plain undyed himatia and peploi, pale skin, no crowns, no jewellery and no weapons, in a wet uneven line, water running off them.\nSCALE: a smooth oval boulder of grey limestone about the size of a swaddled newborn, worn round by a river, the surface faintly veined and pitted, one end slightly narrower than the other, at their feet; it reaches only to their ankles; any one of them could lift it alone.\nSUBJECT 2: a broad powerfully built Greek god in his prime, thick dark hair swept back from a high brow, a full curled beard, deep-set grey eyes under heavy brows, a purple-red himation over one shoulder, bare chest and bare feet, dry, apart from the line.\nACTION: the five look down at the stone, unmarked.\nSETTING: the basalt hall floor, wet.\nCAMERA: camera stands a few paces off at their level, eye level, medium.\nFRAME LAYOUT: left third through center — the line of five, near-camera and large, cropped at the shoulder; lower-center — the stone on wet flagstone; right third — Zeus; upper-right — the colonnade, far.\nFACING: we see their faces and chests; all five look down at lower-center; Zeus faces them.\nSCREEN DIRECTION: the line runs toward screen-right; water spreads toward the stone.\nLIGHT: low torchlight from screen-right, wet sheen along every shoulder.\nPALETTE: undyed wool, wet stone, purple-red, torch amber.\nDETAIL: wet wool in heavy folds, pitting on the stone.\nNOT IN FRAME: Cronus, the throne, weapons, a sixth wet figure.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 6.417s; hold to the end of an 8s generation.\n0–1s: water sheets off their shoulders and hits the flagstones.\n1–4.3s: one after another their heads come down toward the stone between their feet as the spreading water reaches it.\n4.3–6.4s: the last head drops, the five stand still, and the dry god watches from the right.\nCAMERA: one slow pan right along the line.\nENVIRONMENT: torchlight wavers on the wet stone; steam lifts off their skin.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
           "tags": {
             "subject_type": "group",
             "shot_size": "MS",
@@ -446,6 +456,7 @@
           "use_out": 6.5,
           "use_len": 6.5,
           "motion_budget": 6.5,
+          "gen_len": 8,
           "source_file": "shots/part10.mp4",
           "ingredient_image": null,
           "characters": [
@@ -458,7 +469,7 @@
             "smoke drifting over both"
           ],
           "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a scorched plain of cracked rock between two mountain ranges, the ground split into deep fissures, shattered boulders the size of houses, burning craters, smoke and ash blowing low across everything under a dark sky, seen from far overhead with two vast armies packed across it as two interlocking fields of texture.\nACTION: the two armies press against each other along one unmoving seam.\nSETTING: a scorched plain in the tenth year of a war, ground churned to grey.\nCAMERA: camera hangs far above the plain looking straight down, overhead, wide.\nFRAME LAYOUT: left half — one army as a dense dark grain of bodies; right half — the other army as a coarser, paler grain; center — the seam between them, a dead straight line down the frame; upper edge and lower edge — burning craters, small.\nFACING: we see only the tops of shoulders and helmets; no face is legible anywhere in the frame.\nSCREEN DIRECTION: smoke drags across the whole frame from the lower-right toward screen-left; the seam itself does not move.\nLIGHT: flat dark daylight through smoke, no cast shadows.\nPALETTE: ash grey, dried blood brown, ember orange.\nDETAIL: pattern and packing of the two grains, figures as marks only, no facial or material detail anywhere.\nNOT IN FRAME: individual faces, named figures, banners.",
-          "animation_prompt": "MOTION BUDGET: key motion completes within 6.5s.\n0–1s: both grains of bodies surge against the seam at once.\n1–4.3s: the two textures grind and churn along the line with shields rolling through it, and the seam holds exactly where it is.\n4.3–6.5s: the surge slackens and the seam sits in the same place.\nCAMERA: locked, no camera movement at all.\nENVIRONMENT: smoke drags across the whole frame; craters pulse orange.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 6.5s; hold to the end of an 8s generation.\n0–1s: both grains of bodies surge against the seam at once.\n1–4.3s: the two textures grind and churn along the line with shields rolling through it, and the seam holds exactly where it is.\n4.3–6.5s: the surge slackens and the seam sits in the same place.\nCAMERA: locked, no camera movement at all.\nENVIRONMENT: smoke drags across the whole frame; craters pulse orange.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
           "tags": {
             "subject_type": "crowd",
             "shot_size": "aerial",
@@ -494,6 +505,7 @@
           "use_out": 5.166,
           "use_len": 5.166,
           "motion_budget": 5.166,
+          "gen_len": 6,
           "source_file": "shots/part11.mp4",
           "ingredient_image": null,
           "characters": [
@@ -506,7 +518,7 @@
             "huge shapes stirring in the mist below"
           ],
           "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a black pit far below the underworld, sheer walls of dark iron-veined rock falling out of sight, a bronze gate set in a bronze threshold, coiling mist, no floor visible anywhere down the shaft, with the gate swung wide open and one grown god in a purple-red himation standing alone and small on the bronze lip of the threshold.\nACTION: he stands on the open threshold and looks down into the shaft.\nSETTING: the floor of the world, bronze set into black iron-veined rock.\nCAMERA: camera stands on the rock above and to one side of the gate, high, wide.\nFRAME LAYOUT: left third — the lone figure on the bronze threshold, small and clear; center and right third — the open shaft, near-camera at the upper edge and falling away into mist; lower edge — vague massive shapes stirring in the mist, far and hazy.\nFACING: we see his back and one shoulder; he looks down and toward screen-right, into the shaft.\nSCREEN DIRECTION: mist rolls up out of the shaft toward screen-left; his himation drags toward the drop.\nLIGHT: cold grey light from above the gate, everything below it unlit.\nPALETTE: dark bronze, iron black, mist grey.\nDETAIL: layered rock shelves falling out of sight, the figure readable by outline, three layers of mist fading into black.\nNOT IN FRAME: the faces of the prisoners, the floor of the pit, any sky.",
-          "animation_prompt": "MOTION BUDGET: key motion completes within 5.166s.\n0–1s: he steps forward onto the bronze lip and looks down.\n1–3.5s: mist boils up out of the shaft past him and massive shapes shift inside it.\n3.5–5.2s: the mist thins for a moment and the shapes settle out of sight.\nCAMERA: one slow pull back and up from the gate.\nENVIRONMENT: the bronze gate swings a hand's width; grit falls into the dark.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 5.166s; hold to the end of a 6s generation.\n0–1s: he steps forward onto the bronze lip and looks down.\n1–3.5s: mist boils up out of the shaft past him and massive shapes shift inside it.\n3.5–5.1s: the mist thins for a moment and the shapes settle out of sight.\nCAMERA: one slow pull back and up from the gate.\nENVIRONMENT: the bronze gate swings a hand's width; grit falls into the dark.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
           "tags": {
             "subject_type": "environment",
             "shot_size": "LS",
@@ -530,35 +542,74 @@
       "dur": 9.2,
       "device": null,
       "narration_says": "Three one-eyed smiths made the weapons: a thunderbolt for Zeus, a trident for Poseidon, and for Hades a cap that made its wearer invisible.",
-      "viewer_sees": "the forge — three one-eyed smiths hammering over one anvil, a spindle of white-gold light taking shape under the blows and steadying into a finished weapon",
+      "viewer_sees": "the forge — three one-eyed smiths at three anvils, a spindle of white-gold light steadying under the blows; the three finished weapons laid out together on the stone afterwards",
       "shots": [
         {
           "shot_id": "12",
           "beat_id": "B10",
           "link_group": null,
           "t_in": 71.458,
-          "t_out": 80.667,
+          "t_out": 76.667,
           "use_in": 0,
-          "use_out": 9.209,
-          "use_len": 9.209,
-          "motion_budget": null,
+          "use_out": 5.209,
+          "use_len": 5.209,
+          "motion_budget": 5.209,
+          "gen_len": 6,
           "source_file": "shots/part12.mp4",
           "ingredient_image": null,
           "characters": [
-            "the-cyclopes"
+            "the-cyclopes",
+            "thunderbolt"
           ],
           "visual_priority": [
-            "The Cyclopes at the anvil, all three hammering at once",
-            "the spindle of white-gold light taking shape under the hammers",
+            "The Cyclopes at three anvils, all three hammering at once",
+            "The Thunderbolt taking shape on the near anvil",
             "the forge fire filling one side",
-            "sparks off the anvil face"
+            "sparks off the anvil faces"
           ],
-          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: three giant one-eyed smiths with broad slab-muscled shoulders, one large eye set under a heavy single brow, shaggy black hair and beards, soot-blackened skin, rough leather aprons over bare torsos, scarred forearms and thick burned hands, standing shoulder to shoulder over a single black anvil, hammers up and down out of time with each other.\nSCALE: the Cyclopes are giants and the anvil comes only to their thigh; the work taking shape on it is a hand long and reads tiny under hammers the size of a man's torso.\nACTION: the three drive their hammers down onto a short spindle of white-gold light that is still soft and shedding sparks with every blow.\nSETTING: a cave forge under the world, slag heaps and quench troughs.\nCAMERA: camera stands at the foot of the anvil looking up, low, medium.\nFRAME LAYOUT: center and right third — the three smiths, near-camera and large, cropped at the shoulder; lower-center — the anvil face and the spindle of light; left third — the forge mouth, an orange blaze, far.\nFACING: we see all three from the front, single eyes down on the work.\nSCREEN DIRECTION: the hammers come down toward screen-left; sparks throw out toward camera.\nLIGHT: white-gold light off the work from below, orange forge fire from screen-left.\nPALETTE: soot black, forge orange, white-gold.\nDETAIL: hammer marks in the anvil face, soot caked in the skin creases, burn scarring on the forearms.\nNOT IN FRAME: the gods, the cave roof, any hand but the smiths'.",
-          "animation_prompt": "MOTION BUDGET: key motion completes within 9.209s.\n0–1s: three hammers come down on the spindle at once.\n1–5.9s: the hammers rise and fall out of time, the soft light flattening and stretching under every blow, sparks thrown at camera.\n5.9–9.2s: the blows stop and the finished weapon lies steady and white on the anvil.\nCAMERA: one slow push toward the anvil face.\nENVIRONMENT: forge fire breathes at the edge; slag glows in the trough.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: three giant one-eyed smiths with broad slab-muscled shoulders, one large eye set under a heavy single brow, shaggy black hair and beards, soot-blackened skin, rough leather aprons over bare torsos, scarred forearms and thick burned hands, one at each of three black anvils, hammers out of time with each other.\nSCALE: the Cyclopes are giants and the anvils come only to their thigh; the work on the near anvil is a hand long under hammers the size of a man's torso.\nSUBJECT 2: a hand-length weapon of solid white-gold light shaped like a spindle, tapering to sharp points at both ends, bound at the middle by a band of bronze, thin forks of lightning standing out from each end, still soft on the near anvil, shedding sparks.\nACTION: each drives his hammer down.\nSETTING: a cave forge under the world.\nCAMERA: camera stands at the foot of the near anvil looking up, low, medium.\nFRAME LAYOUT: center — the near smith and his anvil, near-camera and large, cropped at the shoulder; lower-center — the bolt on the anvil face; left third and right third — the other two smiths at their anvils; far — the forge mouth, an orange blaze.\nFACING: we see all three from the front, single eyes down on the work.\nSCREEN DIRECTION: the hammers come down toward screen-left; sparks throw out toward camera.\nLIGHT: white-gold off the near anvil, orange forge fire from screen-left.\nPALETTE: soot black, forge orange, white-gold.\nDETAIL: hammer marks in the anvil faces.\nNOT IN FRAME: the gods, the cave roof, any blade or sword shape.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 5.209s; hold to the end of a 6s generation.\n0–1s: three hammers come down on three anvils at once.\n1–3.6s: the hammers rise and fall out of time, the soft bolt flattening under every blow, sparks thrown at camera.\n3.6–5.1s: the blows stop and the finished bolt lies white on the near anvil.\nCAMERA: one slow push toward the near anvil.\nENVIRONMENT: forge fire breathes; slag glows in the trough.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts, any blade or sword shape.",
           "tags": {
             "subject_type": "group",
             "shot_size": "MS",
             "angle": "low",
+            "location": "cyclops-forge",
+            "time_light": "forge-fire-orange",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        },
+        {
+          "shot_id": "13",
+          "beat_id": "B10",
+          "link_group": null,
+          "t_in": 76.667,
+          "t_out": 80.667,
+          "use_in": 0.0,
+          "use_out": 4.0,
+          "use_len": 4.0,
+          "motion_budget": 4.0,
+          "gen_len": 4,
+          "source_file": "shots/part13.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "thunderbolt",
+            "trident",
+            "cap-of-darkness"
+          ],
+          "visual_priority": [
+            "The Thunderbolt lying finished at the center of the slab",
+            "The Trident laid out behind it",
+            "The Cap of Darkness at the near end",
+            "the cooling forge around them"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a hand-length weapon of solid white-gold light shaped like a spindle, tapering to sharp points at both ends, bound at the middle by a band of bronze, thin forks of lightning standing out from each end, on a flat stone slab.\nSCALE: the bolt is hand-length; the trident is the height of a man; the cap covers one head.\nSUBJECT 2: a bronze fishing spear the height of a man, a worn dark wooden shaft bound with cord below the head, three barbed prongs on a socketed head, the bronze dark and polished from long use, laid down the slab behind it.\nSUBJECT 3: a close-fitting cap of dark dog-skin leather with a rough furred surface, plain and unornamented, seams stitched in dark thread, a short neck flap at the back, a surface that drinks light instead of reflecting it, set at the near end.\nACTION: the three lie together, cooling.\nSETTING: the forge, fire low behind.\nCAMERA: camera looks straight down on the slab, high, close.\nFRAME LAYOUT: center — the bolt, near-camera and large; upper edge — the trident shaft running across, cropped at the prongs; lower-left — the cap, matte; right third — the forge mouth, dim.\nFACING: we see all three from directly above, laid flat.\nSCREEN DIRECTION: heat shimmer lifts off the bolt toward the upper edge; the forge glow pulses.\nLIGHT: white-gold from the bolt itself, dull orange from screen-right.\nPALETTE: white-gold, dark bronze, soot black.\nDETAIL: cord under the trident head, matte leather nap.\nNOT IN FRAME: hands, the smiths, the gods, any blade or sword shape.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 4s; hold to the end of a 4s generation.\n0–1s: the white-gold bolt brightens and its forks steady.\n1–2.8s: heat shimmer rises off the bronze band while the trident prongs cool from orange down to dark.\n2.8–4s: the glow settles and all three lie still on the stone.\nCAMERA: one slow push toward the slab.\nENVIRONMENT: forge fire breathes low at the edge; a thread of smoke crosses.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts, any blade or sword shape.",
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "CU",
+            "angle": "high",
             "location": "cyclops-forge",
             "time_light": "forge-fire-orange",
             "camera_motion": "push"
@@ -581,7 +632,7 @@
       "viewer_sees": "a hundred-armed giant filling the frame edge to edge, rank after rank of arms whipping forward, whole boulders leaving the hands like gravel",
       "shots": [
         {
-          "shot_id": "13",
+          "shot_id": "14",
           "beat_id": "B11",
           "link_group": null,
           "t_in": 80.667,
@@ -590,7 +641,8 @@
           "use_out": 6.125,
           "use_len": 6.125,
           "motion_budget": 6.125,
-          "source_file": "shots/part13.mp4",
+          "gen_len": 8,
+          "source_file": "shots/part14.mp4",
           "ingredient_image": null,
           "characters": [
             "the-hundred-handers"
@@ -602,7 +654,7 @@
             "the churned plain far below"
           ],
           "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: three vast grey giants, each with fifty heads crowded together on massive shoulders and a hundred arms in overlapping ranks down both sides of the body, coarse matted hair, skin like weathered stone, one of them filling the frame from edge to edge, every rank of arms mid-throw at once.\nSCALE: the giant is a landform, not a figure; the boulders leaving its hands are the size of houses and read as gravel against its ribs; the mountain range along the lower edge comes only to its waist.\nACTION: rank after rank of arms whips forward and lets the boulders go.\nSETTING: the scorched war plain, mountains on both sides, ash in the air.\nCAMERA: camera stands on the plain far below it, low, wide.\nFRAME LAYOUT: full frame — the giant, near-camera and cropped on every edge; left third and right third — overlapping ranks of arms, mid-throw; upper-right — boulders already thrown, small and hazy; lower edge — the plain, far.\nFACING: we see its chest and the massed heads three-quarter on; every head is turned toward screen-right.\nSCREEN DIRECTION: the arms whip forward toward screen-right and the boulders leave the frame at the upper-right.\nLIGHT: flat dark war light, dust glare from the right edge.\nPALETTE: weathered stone grey, ash white, ember orange.\nDETAIL: layered ranks of arms readable by outline, coarse matted hair mass, stone-grain skin texture.\nNOT IN FRAME: the Titans, the gods, any face in close detail.",
-          "animation_prompt": "MOTION BUDGET: key motion completes within 6.125s.\n0–1s: the nearest rank of arms whips forward and lets go.\n1–4.1s: rank after rank fires behind it down both sides of the body and boulders leave in a continuous stream toward the upper-right.\n4.1–6.1s: the last arms follow through and the ranks reset.\nCAMERA: one slow pan right across the giant.\nENVIRONMENT: ash blows across the plain; dust bursts where the boulders land.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 6.125s; hold to the end of an 8s generation.\n0–1s: the nearest rank of arms whips forward and lets go.\n1–4.1s: rank after rank fires behind it down both sides of the body and boulders leave in a continuous stream toward the upper-right.\n4.1–6.1s: the last arms follow through and the ranks reset.\nCAMERA: one slow pan right across the giant.\nENVIRONMENT: ash blows across the plain; dust bursts where the boulders land.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
           "tags": {
             "subject_type": "character",
             "shot_size": "LS",
@@ -630,7 +682,7 @@
       "viewer_sees": "ANIMATED MAP — the whole cosmos engraved on a bronze disc, sky, sea and underworld, the light travelling across every cut line and finding no division anywhere",
       "shots": [
         {
-          "shot_id": "14",
+          "shot_id": "15",
           "beat_id": "B12",
           "link_group": null,
           "t_in": 86.792,
@@ -639,7 +691,8 @@
           "use_out": 7.041,
           "use_len": 7.041,
           "motion_budget": 7.041,
-          "source_file": "shots/part14.mp4",
+          "gen_len": 8,
+          "source_file": "shots/part15.mp4",
           "ingredient_image": null,
           "characters": [],
           "visual_priority": [
@@ -649,7 +702,7 @@
             "the punch marks of the engraver"
           ],
           "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a broad hammered bronze disc with the whole cosmos engraved across it — a band of sky at the top of the plate, a band of open sea across its middle, a band of caverns and dark below, all cut in one continuous engraved line with no boundary or division marked anywhere on it.\nACTION: the engraved lines run unbroken from one edge of the plate to the other.\nSETTING: a hammered bronze plate, engraved and unpolished.\nCAMERA: camera looks straight down at the plate, overhead, close.\nFRAME LAYOUT: center — the disc, near-camera and filling the frame; upper edge — the engraved sky band; mid-frame — the sea band; lower edge — the cavern band; right third — the plate rim, cropped.\nFACING: we see the engraved face flat on; no figure appears anywhere on the plate.\nSCREEN DIRECTION: a slow band of reflected light travels down the plate from the upper edge toward screen-right.\nLIGHT: one low raking light across the engraving, every cut line throwing its own shadow.\nPALETTE: dark bronze, verdigris, pale reflected gold.\nDETAIL: individual punch marks along every engraved line, hammer planishing across the plate, verdigris caught in the cuts.\nNOT IN FRAME: borders, boundary lines, names, any figure.",
-          "animation_prompt": "MOTION BUDGET: key motion completes within 7.041s.\n0–1s: light begins to travel along the engraved sky band.\n1–4.6s: the line runs down through the sea band into the caverns, picking out every cut and crossing band to band unbroken.\n4.6–7s: it reaches the lower rim and the plate settles back to dull bronze.\nCAMERA: one slow push toward the centre of the disc.\nENVIRONMENT: verdigris sits in the cuts; a reflection swings across the rim.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 7.041s; hold to the end of an 8s generation.\n0–1s: light begins to travel along the engraved sky band.\n1–4.6s: the line runs down through the sea band into the caverns, picking out every cut and crossing band to band unbroken.\n4.6–7s: it reaches the lower rim and the plate settles back to dull bronze.\nCAMERA: one slow push toward the centre of the disc.\nENVIRONMENT: verdigris sits in the cuts; a reflection swings across the rim.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
           "tags": {
             "subject_type": "map-diagram",
             "shot_size": "CU",
@@ -677,7 +730,7 @@
       "viewer_sees": "three brothers in a tight ring, the battered helmet held out between them, one hand going into the bowl",
       "shots": [
         {
-          "shot_id": "15",
+          "shot_id": "16",
           "beat_id": "B13",
           "link_group": null,
           "t_in": 93.833,
@@ -686,7 +739,8 @@
           "use_out": 4.167,
           "use_len": 4.167,
           "motion_budget": 4.167,
-          "source_file": "shots/part15.mp4",
+          "gen_len": 6,
+          "source_file": "shots/part16.mp4",
           "ingredient_image": null,
           "characters": [
             "the-three-brothers",
@@ -699,7 +753,7 @@
             "the ash floor under their feet"
           ],
           "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: three powerfully built bearded Greek gods in their prime, one in a purple-red himation with dark waving hair, one salt-weathered in sea-green with hair in heavy ropes, one pale in black-violet covering both shoulders, standing close in a tight ring, shoulders almost touching, all three looking down at one point.\nSCALE: the helmet is an ordinary war helmet and looks small between three grown gods; the pebbles in it are thumb-sized.\nSUBJECT 2: a battered bronze war helmet serving as a lot-urn, and three lots for it, each a flat river pebble scratched with a single mark, the bronze dented and dull, its horsehair crest torn short, held out flat at the centre of the ring, three pebbles settled in the bowl.\nACTION: one hand hangs open just above the rim, not yet in.\nSETTING: the burnt war plain, ash over everything.\nCAMERA: camera looks down into the ring from above, high, medium.\nFRAME LAYOUT: left third — the god in purple-red; center — the god in sea-green from above; right third — the god in black-violet; mid-frame — the helmet held flat between them, one open hand stopped above it.\nFACING: we see the tops of their heads and shoulders, all three faces angled down.\nSCREEN DIRECTION: ash drifts down through the ring toward screen-right; the open hand holds still.\nLIGHT: dim red afterglow from burning ground, faces half in shadow.\nPALETTE: ash grey, purple-red, sea-green, black-violet.\nDETAIL: woven nap on all three himatia, ash in the cloth folds, dents in the bronze rim.\nNOT IN FRAME: the drawn lot, Olympus, weapons.",
-          "animation_prompt": "MOTION BUDGET: key motion completes within 4.167s.\n0–1s: the open hand drops into the bowl of the helmet.\n1–2.9s: it closes around one pebble and lifts clear while the other two shift in the bottom of the bronze.\n2.9–4.2s: the fist stops above the rim, shut, and the three heads stay down.\nCAMERA: locked directly above the ring.\nENVIRONMENT: ash drifts through the ring; ember light pulses on the bronze.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 4.167s; hold to the end of a 6s generation.\n0–1s: the open hand drops into the bowl of the helmet.\n1–2.9s: it closes around one pebble and lifts clear while the other two shift in the bottom of the bronze.\n2.9–4.1s: the fist stops above the rim, shut, and the three heads stay down.\nCAMERA: locked directly above the ring.\nENVIRONMENT: ash drifts through the ring; ember light pulses on the bronze.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
           "tags": {
             "subject_type": "group",
             "shot_size": "MS",
@@ -728,7 +782,7 @@
       "viewer_sees": "PROCESS CUTAWAY — the universe in three stacked tiers in one frame: open sky at the top, the sea cut open in the middle, the grey underworld beneath, one brother small in each and a different motion in every band",
       "shots": [
         {
-          "shot_id": "16",
+          "shot_id": "17",
           "beat_id": "B14",
           "link_group": null,
           "t_in": 98,
@@ -737,7 +791,8 @@
           "use_out": 6.292,
           "use_len": 6.292,
           "motion_budget": 6.292,
-          "source_file": "shots/part16.mp4",
+          "gen_len": 8,
+          "source_file": "shots/part17.mp4",
           "ingredient_image": null,
           "characters": [
             "the-three-brothers"
@@ -749,7 +804,7 @@
             "the grey underworld along the bottom"
           ],
           "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: three powerfully built bearded Greek gods in their prime, one in a purple-red himation with dark waving hair, one salt-weathered in sea-green with hair in heavy ropes, one pale in black-violet covering both shoulders, drawn one to each of three stacked bands of a cut-open universe, each of them small in his own band.\nACTION: each of the three stands alone in the band he has drawn.\nSETTING: a cross-section of the whole world, cut top to bottom in one continuous face.\nCAMERA: camera holds square on the cut face, eye level, wide.\nFRAME LAYOUT: upper band, left of center — open sky and cloud, the god in purple-red, small; middle band, center — the sea cut open to show the water column and the pale floor, the god in sea-green; lower band, right of center — grey cavern and a black river, the god in black-violet; left edge and right edge — the cut rock face.\nFACING: we see each of the three front on and small, each looking out across his own band.\nSCREEN DIRECTION: the descent runs from upper-left to lower-right; cloud drifts, swell rolls, mist creeps.\nLIGHT: hard daylight in the top band, filtered green in the middle, no light source at all in the bottom.\nPALETTE: sky white, sea green, cavern grey.\nDETAIL: three layers fading into haze in each band, figures readable by outline and colour, cut rock edge sharp between bands.\nNOT IN FRAME: the helmet, the lots, Olympus.",
-          "animation_prompt": "MOTION BUDGET: key motion completes within 6.292s.\n0–1s: the three bands start moving at once, each at its own speed.\n1–4.2s: cloud races the top, the swell rolls through the cut water column, mist creeps the cavern floor, the three figures planted.\n4.2–6.3s: the three motions ease and the cut edges between bands stay hard.\nCAMERA: one slow pull back from the cut face.\nENVIRONMENT: light shifts band to band; grit falls down the cut.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 6.292s; hold to the end of an 8s generation.\n0–1s: the three bands start moving at once, each at its own speed.\n1–4.2s: cloud races the top, the swell rolls through the cut water column, mist creeps the cavern floor, the three figures planted.\n4.2–6.2s: the three motions ease and the cut edges between bands stay hard.\nCAMERA: one slow pull back from the cut face.\nENVIRONMENT: light shifts band to band; grit falls down the cut.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
           "tags": {
             "subject_type": "map-diagram",
             "shot_size": "XLS",
@@ -777,7 +832,7 @@
       "viewer_sees": "ordinary green country — fields, a road, a village — with Olympus standing right in the middle of it, and not one boundary stone or marker anywhere in the frame",
       "shots": [
         {
-          "shot_id": "17",
+          "shot_id": "18",
           "beat_id": "B15",
           "link_group": null,
           "t_in": 104.292,
@@ -786,7 +841,8 @@
           "use_out": 7.041,
           "use_len": 7.041,
           "motion_budget": 7.041,
-          "source_file": "shots/part17.mp4",
+          "gen_len": 8,
+          "source_file": "shots/part18.mp4",
           "ingredient_image": null,
           "characters": [
             "olympus"
@@ -798,7 +854,7 @@
             "the cloud line partway up the mountain"
           ],
           "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: the summit of Mount Olympus above the cloud line, broad terraces of pale marble and bare rock, tall plain columns, wide open sky, snowfields and lower peaks showing far below through breaks in the cloud, rising straight out of ordinary worked country that runs right up to its foot.\nACTION: the country lies open around the mountain with nothing marked on it.\nSETTING: Greek farmland in late summer — barley, olive terraces, a dirt road, a village of low roofs.\nCAMERA: camera stands on the road out among the fields, eye level, wide.\nFRAME LAYOUT: center and upper edge — the mountain, far and hazy above the cloud line; lower edge and left third — barley and olive terraces, near-camera and large; right third — the village and the road running toward the foot of the mountain.\nFACING: we see the mountain flat on across the fields; the few figures among the houses are marks only, none turned toward camera.\nSCREEN DIRECTION: wind crosses the barley from the left edge toward screen-right; cloud moves the same way across the peak.\nLIGHT: clean high daylight, hard shadow under the olive trees.\nPALETTE: barley gold, olive grey-green, cold mountain blue.\nDETAIL: three layers of terrace and ridge fading into haze, roof lines and cart ruts readable, scale carried by silhouette.\nNOT IN FRAME: boundary stones, fences, altars, gods.",
-          "animation_prompt": "MOTION BUDGET: key motion completes within 7.041s.\n0–1s: wind runs across the near barley and bends the whole crop.\n1–4.6s: the wave of wind carries on over the road and the village while cloud crosses the peak above them.\n4.6–7s: the crop settles and the country lies open with nothing marked on it.\nCAMERA: one slow push along the road toward the mountain.\nENVIRONMENT: smoke rises from the village roofs; cart ruts catch the light.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 7.041s; hold to the end of an 8s generation.\n0–1s: wind runs across the near barley and bends the whole crop.\n1–4.6s: the wave of wind carries on over the road and the village while cloud crosses the peak above them.\n4.6–7s: the crop settles and the country lies open with nothing marked on it.\nCAMERA: one slow push along the road toward the mountain.\nENVIRONMENT: smoke rises from the village roofs; cart ruts catch the light.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
           "tags": {
             "subject_type": "environment",
             "shot_size": "XLS",
@@ -825,7 +881,7 @@
       "viewer_sees": "the three brothers from behind, far apart along the same terrace edge, each looking at something different",
       "shots": [
         {
-          "shot_id": "18",
+          "shot_id": "19",
           "beat_id": "B16",
           "link_group": null,
           "t_in": 111.333,
@@ -834,7 +890,8 @@
           "use_out": 5.042,
           "use_len": 5.042,
           "motion_budget": null,
-          "source_file": "shots/shot18.jpeg",
+          "gen_len": null,
+          "source_file": "shots/shot19.jpeg",
           "ingredient_image": null,
           "characters": [
             "the-three-brothers",
@@ -874,7 +931,7 @@
       "viewer_sees": "Zeus alone against open sky, the thunderbolt hanging forgotten at his side, his attention somewhere else",
       "shots": [
         {
-          "shot_id": "19",
+          "shot_id": "20",
           "beat_id": "B17",
           "link_group": null,
           "t_in": 116.375,
@@ -883,7 +940,8 @@
           "use_out": 4.625,
           "use_len": 4.625,
           "motion_budget": 4.625,
-          "source_file": "shots/part19.mp4",
+          "gen_len": 6,
+          "source_file": "shots/part20.mp4",
           "ingredient_image": null,
           "characters": [
             "zeus"
@@ -895,7 +953,7 @@
             "the empty marble under him"
           ],
           "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a broad powerfully built Greek god in his prime, thick dark hair swept back from a high brow, a full curled beard, deep-set grey eyes under heavy brows, a purple-red himation over one shoulder, bare chest and bare feet, standing alone and squared to camera at the centre of the frame, weight on one leg, one arm hanging slack with a short spindle of white-gold light held forgotten in that hand and pointed at the ground.\nACTION: he stands still with the weapon hanging and looks off past the frame.\nSETTING: the bare summit terrace above the cloud line, open sky on every side.\nCAMERA: camera stands on the terrace slightly below him, low, medium.\nFRAME LAYOUT: center — Zeus, near-camera and large, cropped at the knee, with clear open space held on both sides of him; left third and right third — open sky, empty; lower edge — bare marble; upper edge — thin cloud, far.\nFACING: his face and chest are square to camera, but his eyes go off toward screen-right.\nSCREEN DIRECTION: the himation edge lifts and falls toward screen-right; one fork of light crawls along the weapon.\nLIGHT: clean high daylight from screen-right, hard shadow down his left side.\nPALETTE: purple-red, cloud white, cold blue.\nDETAIL: woven nap of the himation, bronze band and light-forks on the weapon, weathered marble underfoot.\nNOT IN FRAME: the other two brothers, thrones, the colonnade.",
-          "animation_prompt": "MOTION BUDGET: key motion completes within 4.625s.\n0–1s: his slack hand turns and the weapon swings against his thigh.\n1–3.2s: the himation lifts off his shoulder and falls back while his eyes stay off toward screen-right.\n3.2–4.6s: the cloth settles and he does not move.\nCAMERA: one slow push toward him.\nENVIRONMENT: cloud drifts below the terrace; a fork of light crawls along the weapon.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 4.625s; hold to the end of a 6s generation.\n0–1s: his slack hand turns and the weapon swings against his thigh.\n1–3.2s: the himation lifts off his shoulder and falls back while his eyes stay off toward screen-right.\n3.2–4.6s: the cloth settles and he does not move.\nCAMERA: one slow push toward him.\nENVIRONMENT: cloud drifts below the terrace; a fork of light crawls along the weapon.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
           "tags": {
             "subject_type": "character",
             "shot_size": "MS",
@@ -917,12 +975,12 @@
       "start": 120.98,
       "end": 128.6,
       "dur": 7.62,
-      "device": "macro-object",
+      "device": null,
       "narration_says": "He became the god of the oath and of the stranger at the door — the rules that let strangers deal with each other at all.",
-      "viewer_sees": "MACRO OBJECT — two strangers' right hands gripped at the wrist across a worn stone threshold, road dust on one of them",
+      "viewer_sees": "a god the size of the storm standing over a hill town at dusk, and on the doorstep below him two halves of a broken clay token being fitted back together",
       "shots": [
         {
-          "shot_id": "20",
+          "shot_id": "21",
           "beat_id": "B18",
           "link_group": null,
           "t_in": 121,
@@ -931,23 +989,26 @@
           "use_out": 7.583,
           "use_len": 7.583,
           "motion_budget": null,
-          "source_file": "shots/shot20.jpeg",
+          "gen_len": null,
+          "source_file": "shots/shot21.jpeg",
           "ingredient_image": null,
-          "characters": [],
-          "visual_priority": [
-            "two strangers' right hands gripped hard at the wrist",
-            "the worn stone doorstep they are gripping across",
-            "road dust on one forearm only",
-            "the dark of the house at one edge"
+          "characters": [
+            "zeus"
           ],
-          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: two men's right hands gripped hard around each other's wrists above a worn stone doorstep, one forearm sunburnt and grey with road dust to the elbow, the other pale and clean with a woollen cuff at the wrist, neither hand belonging to anyone we can see.\nACTION: the two hands take hold at the wrist and hold.\nSETTING: a house doorstep in a Greek town, the sill worn hollow by use.\nCAMERA: camera sits level with the doorstep a hand's width away, eye level, close.\nFRAME LAYOUT: center — the two gripped wrists, near-camera and filling the frame; lower edge — the hollowed stone sill; left third — bright road glare, far and out of focus; right third — the dark of the doorway, far.\nFACING: we see the backs of both hands and the inside of both wrists; neither face is in the frame.\nSCREEN DIRECTION: road dust drifts off the sunburnt forearm toward screen-right; the grip tightens once.\nLIGHT: low afternoon sun raking from screen-left, hard shadow of both arms across the sill.\nPALETTE: sun-darkened skin, undyed wool, warm grey stone.\nDETAIL: road dust caught in the arm hair, cracked knuckle skin, the worn hollow polished into the sill stone.\nNOT IN FRAME: faces, bodies, the interior of the house.",
+          "visual_priority": [
+            "Zeus colossal in the thunderhead over the town",
+            "the two halves of the tally token closing on the sill",
+            "the size gap between the god and the rooftops",
+            "the one lit doorway below"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a broad powerfully built Greek god in his prime, thick dark hair swept back from a high brow, a full curled beard, deep-set grey eyes under heavy brows, a purple-red himation over one shoulder, bare chest and bare feet, colossal, standing inside a towering thunderhead above the rooftops, looking down, both hands empty.\nSCALE: the god fills the whole sky and the town under him is the size of his foot; the thunderhead stands taller than the mountain behind it; the token on the sill is a thumb wide.\nSUBJECT 2: two halves of a broken clay tally token, the fracture matched edge to edge, held together by two weathered hands over a hollowed threshold stone.\nACTION: the halves are fitted together on the sill.\nSETTING: a Greek hill town at dusk, one lit doorway.\nCAMERA: camera sits low at the doorstep looking up past the token, low, wide.\nFRAME LAYOUT: lower-center — the token halves and the two hands, near-camera and large, cropped at the wrist; center and upper edge — Zeus in the thunderhead, vast; left third and right third — rooftops, small and far.\nFACING: we see the token face on; the god faces down toward lower-center.\nSCREEN DIRECTION: lightning crawls across the cloud toward screen-right; the halves close the last finger's width.\nLIGHT: storm light from above, one warm doorway glow from screen-left.\nPALETTE: storm blue-black, lightning white, doorway amber.\nDETAIL: the matched fracture line across the clay, cloud boiling at his shoulders.\nNOT IN FRAME: the thunderbolt, faces, any other god.",
           "animation_prompt": null,
           "tags": {
-            "subject_type": "object",
-            "shot_size": "ECU",
-            "angle": "eye",
-            "location": "house-threshold",
-            "time_light": "low-afternoon-side-light",
+            "subject_type": "character",
+            "shot_size": "WS",
+            "angle": "low",
+            "location": "hill-town-doorstep",
+            "time_light": "storm-dusk",
             "camera_motion": "push"
           },
           "render_mode": "still",
@@ -966,10 +1027,10 @@
       "dur": 6.98,
       "device": null,
       "narration_says": "His weapon had been a gift from prisoners. His real power was the arrangement itself.",
-      "viewer_sees": "the thunderbolt lying alone on bare marble, a soot handprint from the forge still on it, nobody holding it",
+      "viewer_sees": "the thunderbolt lying alone on bare marble, burning bright enough to wash the columns white, the storm answering it overhead, nobody holding it",
       "shots": [
         {
-          "shot_id": "21",
+          "shot_id": "22",
           "beat_id": "B19",
           "link_group": null,
           "t_in": 128.583,
@@ -977,30 +1038,31 @@
           "use_in": 0,
           "use_out": 7,
           "use_len": 7,
-          "motion_budget": null,
-          "source_file": "shots/shot21.jpeg",
+          "motion_budget": 7,
+          "gen_len": 8,
+          "source_file": "shots/part22.mp4",
           "ingredient_image": null,
           "characters": [
             "thunderbolt"
           ],
           "visual_priority": [
-            "The Thunderbolt lying alone on bare marble",
+            "The Thunderbolt lying alone and burning on bare marble",
             "a soot handprint from the forge still across it",
-            "nobody holding it",
-            "the empty terrace running away from it"
+            "the storm sky answering it above the terrace",
+            "nobody holding it"
           ],
-          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a hand-length weapon of solid white-gold light shaped like a spindle, tapering to sharp points at both ends, bound at the middle by a band of bronze, thin forks of lightning standing out from each end, lying alone on a bare marble floor with a soot handprint from the forge still smeared across its bronze band.\nSCALE: the weapon is only a hand long and looks smaller than it should on the open floor; the marble slab under it is four times its length; nothing else in the frame gives it any size.\nACTION: the weapon lies where it was set down and nothing touches it.\nSETTING: the bare summit terrace, swept marble, full daylight.\nCAMERA: camera looks down at the floor from standing height, high, close.\nFRAME LAYOUT: center — the weapon, near-camera and large on the bare slab; left third and right third — empty marble, near-camera; upper edge — the terrace running to open sky, far and hazy.\nFACING: we see it from directly above, both points reading clear; no hand and no figure is in the frame.\nSCREEN DIRECTION: a thin fork of light crawls out from one point toward screen-right; dust moves across the slab.\nLIGHT: flat high daylight, a hard black shadow of the weapon cast toward screen-left.\nPALETTE: pale marble, white-gold, soot black.\nDETAIL: individual soot ridges of the handprint, bronze band tooling, weathered pitting in the marble.\nNOT IN FRAME: hands, gods, thrones.",
-          "animation_prompt": null,
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a hand-length weapon of solid white-gold light shaped like a spindle, tapering to sharp points at both ends, bound at the middle by a band of bronze, thin forks of lightning standing out from each end, lying alone on bare marble with a soot handprint from the forge still smeared across its bronze band, burning white and untouched.\nSCALE: the weapon is only a hand long, and the light off it reaches the far end of the terrace; its glare washes the columns behind it; the storm it answers fills the whole sky above.\nACTION: the weapon lies where it was set down and nothing goes near it.\nSETTING: the bare summit terrace, a thunderhead stacked over it.\nCAMERA: camera lies on the marble a hand's width away, low, close.\nFRAME LAYOUT: center — the weapon, near-camera and large along the slab; left third and right third — swept marble washed white by its glare; upper edge — the terrace running to a stacked thunderhead, far.\nFACING: we see it side on at floor level, both points reading clear; no hand and no figure is in the frame.\nSCREEN DIRECTION: forks of light crawl out from both points toward screen-right; the cloud above answers toward screen-left.\nLIGHT: the weapon is the brightest thing in frame and lights everything from below; the sky behind is dark and charged.\nPALETTE: white-gold, storm black, pale marble.\nDETAIL: soot ridges of the handprint, bronze band tooling, marble scorched pale under the light.\nNOT IN FRAME: hands, gods, thrones.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 7s; hold to the end of an 8s generation.\n0–2s: the bolt brightens and forks of light crawl out from both points.\n2–5s: the glare climbs until the columns wash white and the thunderhead answers with lightning.\n5–7s: the light settles back and it lies still, burning.\nCAMERA: one slow push along the marble.\nENVIRONMENT: the storm flickers without pause.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts, any hand or figure in frame.",
           "tags": {
             "subject_type": "object",
             "shot_size": "CU",
-            "angle": "high",
+            "angle": "low",
             "location": "olympus",
-            "time_light": "high-clear-daylight",
+            "time_light": "storm-daylight",
             "camera_motion": "push"
           },
-          "render_mode": "still",
-          "still_motion": "push"
+          "render_mode": "clip",
+          "still_motion": null
         }
       ]
     },
@@ -1017,7 +1079,7 @@
       "viewer_sees": "Poseidon waist-deep in open sea, the whole horizon his, and his face set wrong for a man who won",
       "shots": [
         {
-          "shot_id": "22",
+          "shot_id": "23",
           "beat_id": "B20",
           "link_group": null,
           "t_in": 135.583,
@@ -1026,7 +1088,8 @@
           "use_out": 5.709,
           "use_len": 5.709,
           "motion_budget": 5.709,
-          "source_file": "shots/part22.mp4",
+          "gen_len": 6,
+          "source_file": "shots/part23.mp4",
           "ingredient_image": null,
           "characters": [
             "poseidon",
@@ -1039,7 +1102,7 @@
             "The Sea running to every edge"
           ],
           "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a heavily muscled Greek god in his prime, long dark hair in heavy salt-stiffened ropes, a thick pointed beard, sun-darkened weathered skin, pale sea-green eyes, a deep sea-green himation knotted low at the waist, bare feet, standing waist-deep and squared to camera at the centre of the frame, arms loose, chin down.\nSUBJECT 2: the open Aegean under a wide sky, deep blue-green water in long swells, white spray tearing off the crests, bare rocky islands low on the horizon, the pale sandy floor visible far down through clear water, running unbroken to every edge of the frame around him.\nACTION: he stands in the swell without moving and does not look pleased.\nSETTING: open water far from any coast, midday overcast.\nCAMERA: camera sits at water level a few paces off, eye level, medium.\nFRAME LAYOUT: center — Poseidon, near-camera and large, cropped at the waterline, clear open water held on both sides of him; left third and right third — open swell; upper edge — a flat grey horizon, far.\nFACING: chest and face front on to camera, eyes down and cut toward screen-left.\nSCREEN DIRECTION: the swell rolls through the frame toward screen-left; water runs off his shoulders.\nLIGHT: flat grey overcast, no cast shadow, wet sheen along the shoulders.\nPALETTE: sea-green, storm grey, foam white.\nDETAIL: salt-stiffened hair ropes separating at the shoulder, wet sheen on skin, torn spray off the nearest crest.\nNOT IN FRAME: the trident, land, any other figure.",
-          "animation_prompt": "MOTION BUDGET: key motion completes within 5.709s.\n0–1s: a swell lifts him and water pours off his shoulders.\n1–3.8s: the swell passes through and his hair ropes swing heavy and slap back against him, his chin staying down.\n3.8–5.7s: the water flattens around his waist and he holds the same look.\nCAMERA: one slow pull back across the water.\nENVIRONMENT: spray tears off the nearest crest; grey light moves on the surface.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 5.709s; hold to the end of a 6s generation.\n0–1s: a swell lifts him and water pours off his shoulders.\n1–3.8s: the swell passes through and his hair ropes swing heavy and slap back against him, his chin staying down.\n3.8–5.7s: the water flattens around his waist and he holds the same look.\nCAMERA: one slow pull back across the water.\nENVIRONMENT: spray tears off the nearest crest; grey light moves on the surface.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
           "tags": {
             "subject_type": "character",
             "shot_size": "MS",
@@ -1067,7 +1130,7 @@
       "viewer_sees": "Poseidon rounding on a small winged messenger at his shoulder with the trident coming up across his chest; then the same water with the trident let down into it and the messenger already leaving",
       "shots": [
         {
-          "shot_id": "23",
+          "shot_id": "24",
           "beat_id": "B21",
           "link_group": null,
           "t_in": 141.292,
@@ -1076,7 +1139,8 @@
           "use_out": 7.833,
           "use_len": 7.833,
           "motion_budget": 7.833,
-          "source_file": "shots/part23.mp4",
+          "gen_len": 8,
+          "source_file": "shots/part24.mp4",
           "ingredient_image": null,
           "characters": [
             "poseidon",
@@ -1089,7 +1153,7 @@
             "the swell breaking against his chest"
           ],
           "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a heavily muscled Greek god in his prime, long dark hair in heavy salt-stiffened ropes, a thick pointed beard, sun-darkened weathered skin, pale sea-green eyes, a deep sea-green himation knotted low at the waist, bare feet, turned hard toward one shoulder, mouth open mid-sentence, one arm bringing the weapon up.\nSCALE: the weapon stands the full height of a man across his chest; the barbed head comes level with his eye; the messenger is no taller than that head.\nSUBJECT 2: a bronze fishing spear the height of a man, a worn dark wooden shaft bound with cord below the head, three barbed prongs on a socketed head, the bronze dark and polished from long use, brought up across his chest, both hands on the shaft.\nACTION: he brings the weapon up and speaks at the messenger.\nSETTING: open water under overcast, heavy swell running.\nCAMERA: camera sits low at water level, low, medium.\nFRAME LAYOUT: center and right third — Poseidon, near-camera and large, cropped at the waterline; left third — a small winged messenger, far and small at his shoulder height; lower edge — a breaking crest.\nFACING: we see his chest and face three-quarter on, eyes hard toward screen-left at the messenger, who faces him.\nSCREEN DIRECTION: the weapon comes up toward the upper-left; spray throws off the crest toward camera.\nLIGHT: flat grey overcast, one pale break on the wet shaft.\nPALETTE: sea-green, dark bronze, storm grey.\nDETAIL: cord binding under the barbed head, salt crust on the hair ropes.\nNOT IN FRAME: Zeus, Olympus, land.",
-          "animation_prompt": "MOTION BUDGET: key motion completes within 7.833s.\n0–1s: he rounds on the messenger and the trident comes up across his chest.\n1–5.1s: he drives the shaft higher and speaks, shoulders forward, the barbed head rising level with his eye while the messenger holds position.\n5.1–7.8s: he stops mid-word with the weapon still up.\nCAMERA: one slow push in from low on the water.\nENVIRONMENT: a crest breaks against his chest; spray throws toward camera.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 7.833s; hold to the end of an 8s generation.\n0–1s: he rounds on the messenger and the trident comes up across his chest.\n1–5.1s: he drives the shaft higher and speaks, shoulders forward, the barbed head rising level with his eye while the messenger holds position.\n5.1–7.8s: he stops mid-word with the weapon still up.\nCAMERA: one slow push in from low on the water.\nENVIRONMENT: a crest breaks against his chest; spray throws toward camera.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
           "tags": {
             "subject_type": "character",
             "shot_size": "MS",
@@ -1102,7 +1166,7 @@
           "still_motion": null
         },
         {
-          "shot_id": "24",
+          "shot_id": "25",
           "beat_id": "B21",
           "link_group": null,
           "t_in": 149.125,
@@ -1111,7 +1175,8 @@
           "use_out": 4.208,
           "use_len": 4.208,
           "motion_budget": 4.208,
-          "source_file": "shots/part24.mp4",
+          "gen_len": 6,
+          "source_file": "shots/part25.mp4",
           "ingredient_image": null,
           "characters": [
             "poseidon",
@@ -1124,7 +1189,7 @@
             "the swell closing over the lowered head"
           ],
           "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a heavily muscled Greek god in his prime, long dark hair in heavy salt-stiffened ropes, a thick pointed beard, sun-darkened weathered skin, pale sea-green eyes, a deep sea-green himation knotted low at the waist, bare feet, half turned away, shoulders dropped, both arms down.\nSCALE: the weapon stands as tall as he does and a third of it is now under water; the messenger leaving at the frame edge is smaller than the head that has gone under.\nSUBJECT 2: a bronze fishing spear the height of a man, a worn dark wooden shaft bound with cord below the head, three barbed prongs on a socketed head, the bronze dark and polished from long use, lowered point-down into the water beside him, the head already under.\nACTION: he lets the weapon down into the water and turns away.\nSETTING: the same stretch of open water, the swell flattening.\nCAMERA: camera sits at water level well back from him, eye level, wide.\nFRAME LAYOUT: center and right third — Poseidon, mid-frame, cropped at the waterline; left edge — the messenger, very small and far; upper edge — flat grey horizon, far and hazy.\nFACING: we see his back and one shoulder; his face is turned away toward screen-right.\nSCREEN DIRECTION: the messenger crosses out through the left edge; the swell runs after it.\nLIGHT: flat grey overcast, the water dull and unbroken.\nPALETTE: sea-green, storm grey, dull bronze.\nDETAIL: three layers of swell fading into haze, figures readable by outline, water closing over the sunken head.\nNOT IN FRAME: his face, Zeus, land.",
-          "animation_prompt": "MOTION BUDGET: key motion completes within 4.208s.\n0–1s: he lets the trident down and the barbed head goes under the surface.\n1–2.9s: his shoulder turns away from the messenger, which is already small and leaving through the left edge.\n2.9–4.2s: the water closes over the sunken head and he stands with his back half to us.\nCAMERA: one slow pull back across the flattening swell.\nENVIRONMENT: the swell eases; grey light spreads on the water.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 4.208s; hold to the end of a 6s generation.\n0–1s: he lets the trident down and the barbed head goes under the surface.\n1–2.9s: his shoulder turns away from the messenger, which is already small and leaving through the left edge.\n2.9–4.2s: the water closes over the sunken head and he stands with his back half to us.\nCAMERA: one slow pull back across the flattening swell.\nENVIRONMENT: the swell eases; grey light spreads on the water.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
           "tags": {
             "subject_type": "character",
             "shot_size": "LS",
@@ -1153,7 +1218,7 @@
       "viewer_sees": "MACRO OBJECT — two open papyrus rolls side by side, the same six figures drawn in each, the order of them reversed from one roll to the other",
       "shots": [
         {
-          "shot_id": "25",
+          "shot_id": "26",
           "beat_id": "B22",
           "link_group": null,
           "t_in": 153.333,
@@ -1162,7 +1227,8 @@
           "use_out": 7.667,
           "use_len": 7.667,
           "motion_budget": null,
-          "source_file": "shots/shot25.jpeg",
+          "gen_len": null,
+          "source_file": "shots/shot26.jpeg",
           "ingredient_image": null,
           "characters": [],
           "visual_priority": [
@@ -1200,7 +1266,7 @@
       "viewer_sees": "Hades alone on the bank of the black river, grey asphodel around him, solid rock where a sky should be",
       "shots": [
         {
-          "shot_id": "26",
+          "shot_id": "27",
           "beat_id": "B23",
           "link_group": null,
           "t_in": 161,
@@ -1209,7 +1275,8 @@
           "use_out": 5.25,
           "use_len": 5.25,
           "motion_budget": 5.25,
-          "source_file": "shots/part26.mp4",
+          "gen_len": 6,
+          "source_file": "shots/part27.mp4",
           "ingredient_image": null,
           "characters": [
             "hades",
@@ -1222,7 +1289,7 @@
             "the colourless asphodel at his feet"
           ],
           "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a lean severe Greek god in his prime, long black hair and a full black beard, pale bloodless skin, dark hooded eyes, a heavy black-violet himation covering both shoulders and falling to the ankles, bare feet, standing alone and squared to camera at the centre of the frame, arms at his sides.\nSUBJECT 2: a vast grey cavern world under the earth, a slow black river in a wide bed, colourless asphodel meadows stretching into darkness, distant walls of dark rock, no sun and no horizon, a dim even greyness everywhere, running flat and grey to every edge.\nACTION: he stands on the bank and looks at nothing moving.\nSETTING: the near bank of the slow black river, asphodel to the ankle.\nCAMERA: camera stands on the bank a few paces off, eye level, medium.\nFRAME LAYOUT: center — Hades, near-camera and large, cropped at the knee, clear open ground held on both sides of him; upper edge — a solid rock ceiling where a sky would be, far; lower edge — the black river, near-camera.\nFACING: he faces camera full on, eyes level and carried toward screen-left.\nSCREEN DIRECTION: the black river slides through the lower frame toward screen-left; asphodel heads tip once.\nLIGHT: no source anywhere, a dim even greyness with no cast shadow.\nPALETTE: ash grey, black-violet, river black.\nDETAIL: woven nap of the heavy himation, colourless asphodel heads, dull river surface.\nNOT IN FRAME: the sun, any sky, the dead.",
-          "animation_prompt": "MOTION BUDGET: key motion completes within 5.25s.\n0–1s: his head turns a few degrees along the far bank.\n1–3.6s: the black river slides past below him carrying no reflection, and the asphodel tips and rights itself around his feet.\n3.6–5.3s: he stops turning and looks at nothing moving.\nCAMERA: one slow push toward him.\nENVIRONMENT: the rock ceiling hangs dead still; grey air holds without a breath.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 5.25s; hold to the end of a 6s generation.\n0–1s: his head turns a few degrees along the far bank.\n1–3.6s: the black river slides past below him carrying no reflection, and the asphodel tips and rights itself around his feet.\n3.6–5.2s: he stops turning and looks at nothing moving.\nCAMERA: one slow push toward him.\nENVIRONMENT: the rock ceiling hangs dead still; grey air holds without a breath.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
           "tags": {
             "subject_type": "character",
             "shot_size": "MS",
@@ -1249,7 +1316,7 @@
       "viewer_sees": "EMPTY AFTERMATH — twelve stone seats in a ring, all twelve taken, and beyond the last one only open cloud where a thirteenth was never cut",
       "shots": [
         {
-          "shot_id": "27",
+          "shot_id": "28",
           "beat_id": "B24",
           "link_group": null,
           "t_in": 166.25,
@@ -1258,7 +1325,8 @@
           "use_out": 4.75,
           "use_len": 4.75,
           "motion_budget": null,
-          "source_file": "shots/shot27.jpeg",
+          "gen_len": null,
+          "source_file": "shots/shot28.jpeg",
           "ingredient_image": null,
           "characters": [
             "olympus"
@@ -1297,7 +1365,7 @@
       "viewer_sees": "a shut sanctuary overgrown to the doorstep with no name cut anywhere on it; then the inside — one priest alone in an empty cell, the door a bright slot of daylight",
       "shots": [
         {
-          "shot_id": "28",
+          "shot_id": "29",
           "beat_id": "B25",
           "link_group": null,
           "t_in": 171,
@@ -1306,7 +1374,8 @@
           "use_out": 6.667,
           "use_len": 6.667,
           "motion_budget": null,
-          "source_file": "shots/shot28.jpeg",
+          "gen_len": null,
+          "source_file": "shots/shot29.jpeg",
           "ingredient_image": null,
           "characters": [],
           "visual_priority": [
@@ -1329,7 +1398,7 @@
           "still_motion": "push"
         },
         {
-          "shot_id": "29",
+          "shot_id": "30",
           "beat_id": "B25",
           "link_group": null,
           "t_in": 177.667,
@@ -1338,7 +1407,8 @@
           "use_out": 7.708,
           "use_len": 7.708,
           "motion_budget": 7.708,
-          "source_file": "shots/part29.mp4",
+          "gen_len": 8,
+          "source_file": "shots/part30.mp4",
           "ingredient_image": null,
           "characters": [],
           "visual_priority": [
@@ -1348,7 +1418,7 @@
             "nothing on the plinth at the far end"
           ],
           "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: one narrow stone cell, completely bare, with a single priest in an undyed himation standing alone near the middle of the floor, a plinth at the far end with nothing set on it, and the opened door reading as one narrow slot of hard daylight cut into the dark.\nACTION: the priest stands in the middle of the empty floor and does not move.\nSETTING: the inside of the shut sanctuary, one day in the year.\nCAMERA: camera stands at the far end of the cell looking back toward the door, eye level, wide.\nFRAME LAYOUT: center — the priest, mid-frame and small on the open floor; right third — the door slot, a hard bright vertical, far; left third and lower edge — bare wall and bare floor, near-camera; upper edge — the dark ceiling.\nFACING: we see the priest three-quarter on, his face toward screen-right and the light.\nSCREEN DIRECTION: dust turns through the door slot from the right edge toward screen-left; his hem settles.\nLIGHT: one hard slot of daylight from screen-right, the rest of the cell unlit.\nPALETTE: cell black, undyed wool, hard daylight white.\nDETAIL: figure readable by outline against the slot, dust suspended in the light, bare tool marks on the plinth.\nNOT IN FRAME: a cult statue, offerings, any second person.",
-          "animation_prompt": "MOTION BUDGET: key motion completes within 7.708s.\n0–1s: the priest turns his head toward the open door.\n1–5s: he takes two steps across the bare floor toward the slot of daylight and dust rolls through the beam around him.\n5–7.7s: he stops short of it and the cell holds still around him.\nCAMERA: one slow pull back toward the far wall.\nENVIRONMENT: the door slot flares and steadies; dust turns in the light.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 7.708s; hold to the end of an 8s generation.\n0–1s: the priest turns his head toward the open door.\n1–5s: he takes two steps across the bare floor toward the slot of daylight and dust rolls through the beam around him.\n5–7.7s: he stops short of it and the cell holds still around him.\nCAMERA: one slow pull back toward the far wall.\nENVIRONMENT: the door slot flares and steadies; dust turns in the light.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
           "tags": {
             "subject_type": "environment",
             "shot_size": "LS",
@@ -1376,7 +1446,7 @@
       "viewer_sees": "the same god in the same stance, but the light comes up warm from the ground under him and the grey turns to gold on him",
       "shots": [
         {
-          "shot_id": "30",
+          "shot_id": "31",
           "beat_id": "B26",
           "link_group": null,
           "t_in": 185.375,
@@ -1385,7 +1455,8 @@
           "use_out": 4.917,
           "use_len": 4.917,
           "motion_budget": 4.917,
-          "source_file": "shots/part30.mp4",
+          "gen_len": 6,
+          "source_file": "shots/part31.mp4",
           "ingredient_image": null,
           "characters": [
             "hades"
@@ -1397,7 +1468,7 @@
             "the cavern floor glowing under him"
           ],
           "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a lean severe Greek god in his prime, long black hair and a full black beard, pale bloodless skin, dark hooded eyes, a heavy black-violet himation covering both shoulders and falling to the ankles, bare feet, standing squared to camera in the same stance as before, arms at his sides, nothing about him changed but the light on him.\nACTION: he stands exactly as he stood and the light comes up under him.\nSETTING: the same riverbank, the ground now throwing light back up.\nCAMERA: camera holds the same position on the bank, eye level, medium.\nFRAME LAYOUT: center — Hades, near-camera and large, cropped at the knee, the same framing as before; lower edge — the ground, glowing warm, near-camera; left third and right third — the meadow, mid-frame, catching the same warm light; upper edge — rock ceiling, far and hazy.\nFACING: we see his face and chest square to camera; his eyes are level and turned toward screen-left.\nSCREEN DIRECTION: the warm light strengthens up the frame from the lower edge; one hem edge lifts toward screen-left.\nLIGHT: warm gold from below at ground level, hard uplit shadow under the brow and jaw.\nPALETTE: warm gold, black-violet, ember amber.\nDETAIL: woven nap of the heavy himation folds lit from underneath, warm light caught in the beard, gold sheen on pale skin.\nNOT IN FRAME: the sun, any sky, the dead.",
-          "animation_prompt": "MOTION BUDGET: key motion completes within 4.917s.\n0–1s: warm light starts up from the ground at his feet.\n1–3.4s: the glow climbs his robe to his chest and jaw, turning the grey to gold, and the meadow around him picks up the same warmth.\n3.4–4.9s: the warm light holds at full strength and he stands exactly as before.\nCAMERA: locked, holding the same framing.\nENVIRONMENT: the asphodel catches the gold; the rock ceiling stays black.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 4.917s; hold to the end of a 6s generation.\n0–1s: warm light starts up from the ground at his feet.\n1–3.4s: the glow climbs his robe to his chest and jaw, turning the grey to gold, and the meadow around him picks up the same warmth.\n3.4–4.9s: the warm light holds at full strength and he stands exactly as before.\nCAMERA: locked, holding the same framing.\nENVIRONMENT: the asphodel catches the gold; the rock ceiling stays black.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
           "tags": {
             "subject_type": "character",
             "shot_size": "MS",
@@ -1425,7 +1496,7 @@
       "viewer_sees": "LEDGER — an open palm holding a silver nugget, a lump of gold and one grain of barley; then the ground itself cut open, silver and gold seams running down into the dark while a seed at the top sends one shoot up into daylight",
       "shots": [
         {
-          "shot_id": "31",
+          "shot_id": "32",
           "beat_id": "B27",
           "link_group": null,
           "t_in": 190.292,
@@ -1434,7 +1505,8 @@
           "use_out": 6.583,
           "use_len": 6.583,
           "motion_budget": null,
-          "source_file": "shots/shot31.jpeg",
+          "gen_len": null,
+          "source_file": "shots/shot32.jpeg",
           "ingredient_image": null,
           "characters": [],
           "visual_priority": [
@@ -1457,7 +1529,7 @@
           "still_motion": "push"
         },
         {
-          "shot_id": "32",
+          "shot_id": "33",
           "beat_id": "B27",
           "link_group": null,
           "t_in": 196.875,
@@ -1466,7 +1538,8 @@
           "use_out": 6.75,
           "use_len": 6.75,
           "motion_budget": 6.75,
-          "source_file": "shots/part32.mp4",
+          "gen_len": 8,
+          "source_file": "shots/part33.mp4",
           "ingredient_image": null,
           "characters": [],
           "visual_priority": [
@@ -1476,7 +1549,7 @@
             "the same cut holding both at once"
           ],
           "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a tall vertical cut through the ground laid open like a wall — a thin strip of field and daylight along the very top edge, one swollen seed in the soil a hand below it with a pale shoot breaking up through the crust, and under both of them a branching system of bright silver seams and dull gold seams running down through the rock and carrying on past the bottom of the frame into unlit dark.\nACTION: the seams run down through the rock while the shoot climbs out of the soil above them.\nSETTING: a cross-section of the ground under an ordinary field.\nCAMERA: camera holds square on the open cut, eye level, medium.\nFRAME LAYOUT: upper edge — the field strip and open daylight, cropped; upper-center — the seed and its shoot, near-camera; center and lower edge — the branching seams, running off the bottom of the frame; left third and right third — layered rock strata.\nFACING: the cut face is presented square to camera; no figure is in the frame.\nSCREEN DIRECTION: the shoot climbs toward the upper edge while the seams travel down toward the lower edge.\nLIGHT: hard daylight along the top strip, the seams throwing their own cold light further down.\nPALETTE: soil brown, cold silver, dull gold.\nDETAIL: rock strata layered across the cut, crystal grain in the exposed seams, root hairs and soil crumbs on the seed coat.\nNOT IN FRAME: miners, tools, shafts, a whole plant, any figure.",
-          "animation_prompt": "MOTION BUDGET: key motion completes within 6.75s.\n0–1s: a silver seam lights at the cut and runs downward.\n1–4.4s: silver and gold seams branch down the rock and thicken, while above them a shoot climbs from the seed and breaks into daylight.\n4.4–6.8s: the seams run past the lower edge as the shoot opens a leaf.\nCAMERA: locked on the cut face.\nENVIRONMENT: grit trickles down the ledges; daylight steadies along the top strip.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 6.75s; hold to the end of an 8s generation.\n0–1s: a silver seam lights at the cut and runs downward.\n1–4.4s: silver and gold seams branch down the rock and thicken, while above them a shoot climbs from the seed and breaks into daylight.\n4.4–6.7s: the seams run past the lower edge as the shoot opens a leaf.\nCAMERA: locked on the cut face.\nENVIRONMENT: grit trickles down the ledges; daylight steadies along the top strip.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
           "tags": {
             "subject_type": "map-diagram",
             "shot_size": "MS",
@@ -1503,7 +1576,7 @@
       "viewer_sees": "Hades on a plain dark throne, the whole cavern behind him faintly glittering with metal in the rock",
       "shots": [
         {
-          "shot_id": "33",
+          "shot_id": "34",
           "beat_id": "B28",
           "link_group": null,
           "t_in": 203.625,
@@ -1512,7 +1585,8 @@
           "use_out": 3.833,
           "use_len": 3.833,
           "motion_budget": null,
-          "source_file": "shots/shot33.jpeg",
+          "gen_len": null,
+          "source_file": "shots/shot34.jpeg",
           "ingredient_image": null,
           "characters": [
             "hades",
@@ -1552,7 +1626,7 @@
       "viewer_sees": "CROWD AS TEXTURE — a column of faceless grey figures moving from the near edge of frame into the far dark, no end to it in either direction",
       "shots": [
         {
-          "shot_id": "34",
+          "shot_id": "35",
           "beat_id": "B29",
           "link_group": null,
           "t_in": 207.458,
@@ -1561,7 +1635,8 @@
           "use_out": 6,
           "use_len": 6,
           "motion_budget": 6,
-          "source_file": "shots/part34.mp4",
+          "gen_len": 6,
+          "source_file": "shots/part35.mp4",
           "ingredient_image": null,
           "characters": [
             "the-underworld"
@@ -1573,7 +1648,7 @@
             "the flat grey with no horizon"
           ],
           "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a vast grey cavern world under the earth, a slow black river in a wide bed, colourless asphodel meadows stretching into darkness, distant walls of dark rock, no sun and no horizon, a dim even greyness everywhere, with one column of grey figures crossing it, packed shoulder to shoulder, entering at the near edge of the frame and running back until the column is lost in the far dark.\nACTION: the column moves steadily and neither end of it is in the frame.\nSETTING: the asphodel meadows, no landmark anywhere in them.\nCAMERA: camera stands above the column on a low rise, high, wide.\nFRAME LAYOUT: lower-left — the head of the column, near-camera and large, faces turned away; center — the column narrowing as it goes; upper-right — the far dark the column runs into, hazy; left third and right third — flat grey meadow, empty.\nFACING: we see the figures from above and from the near side; not one face is legible anywhere in the frame.\nSCREEN DIRECTION: the whole column moves from the lower-left toward screen-right and into the far dark.\nLIGHT: a dim even greyness with no source and no cast shadow.\nPALETTE: ash grey, asphodel white, far black.\nDETAIL: pattern and packing of the column, figures as marks with no material or facial detail, three layers fading into haze.\nNOT IN FRAME: faces, Hades, any light source.",
-          "animation_prompt": "MOTION BUDGET: key motion completes within 6s.\n0–1s: the whole column steps off together toward the far dark.\n1–4s: it moves at one steady pace with rank feeding into rank, the near figures large and the far ones dissolving into haze.\n4–6s: the head of the column leaves the near edge and more takes its place.\nCAMERA: one slow pan right, following the column.\nENVIRONMENT: grey air holds still; no shadow moves anywhere.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 6s; hold to the end of a 6s generation.\n0–1s: the whole column steps off together toward the far dark.\n1–4s: it moves at one steady pace with rank feeding into rank, the near figures large and the far ones dissolving into haze.\n4–6s: the head of the column leaves the near edge and more takes its place.\nCAMERA: one slow pan right, following the column.\nENVIRONMENT: grey air holds still; no shadow moves anywhere.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
           "tags": {
             "subject_type": "crowd",
             "shot_size": "LS",
@@ -1600,7 +1675,7 @@
       "viewer_sees": "the three tiers one more time, wide, with the green band of common earth bright in the middle of them",
       "shots": [
         {
-          "shot_id": "35",
+          "shot_id": "36",
           "beat_id": "B30",
           "link_group": null,
           "t_in": 213.458,
@@ -1609,7 +1684,8 @@
           "use_out": 6.334,
           "use_len": 6.334,
           "motion_budget": 6.334,
-          "source_file": "shots/part35.mp4",
+          "gen_len": 8,
+          "source_file": "shots/part36.mp4",
           "ingredient_image": null,
           "characters": [],
           "visual_priority": [
@@ -1619,7 +1695,7 @@
             "no dividing line drawn anywhere across the earth band"
           ],
           "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a wide cross-section of the whole world cut top to bottom — an open sky band across the upper frame, a band of green worked earth with fields, a road and a village running across the middle, and a grey cavern band with a black river across the bottom — the middle band lit bright and the two outer bands left dim.\nACTION: the three bands run unbroken across the whole width of the frame.\nSETTING: the same cut face as before, seen at its full width.\nCAMERA: camera sits back and takes in the full width of the cut, eye level, wide.\nFRAME LAYOUT: upper edge — the sky band, dim; center — the green earth band, near-camera and bright, running off both edges; lower edge — the cavern band, dim; left edge and right edge — the cut rock face, cropped.\nFACING: we see the cut face flat on; figures in the middle band are marks only, none of them legible.\nSCREEN DIRECTION: cloud crosses the upper band toward screen-right; the black river runs the lower band toward screen-left.\nLIGHT: hard daylight on the middle band only, the outer two bands falling into shade.\nPALETTE: field green, sky pale, cavern grey.\nDETAIL: field boundaries and roof lines readable in the middle band, three layers of cloud fading into haze above, layered rock below.\nNOT IN FRAME: the three brothers, boundary markers, names.",
-          "animation_prompt": "MOTION BUDGET: key motion completes within 6.334s.\n0–1s: cloud crosses the upper band and the black river starts below.\n1–4.2s: the outer bands stay dim while the green middle band holds its light and a cart moves along its road.\n4.2–6.3s: the cloud clears and the middle band is still the only lit thing.\nCAMERA: one slow pull back to the full width.\nENVIRONMENT: haze layers in the sky band; mist creeps in the cavern.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 6.334s; hold to the end of an 8s generation.\n0–1s: cloud crosses the upper band and the black river starts below.\n1–4.2s: the outer bands stay dim while the green middle band holds its light and a cart moves along its road.\n4.2–6.3s: the cloud clears and the middle band is still the only lit thing.\nCAMERA: one slow pull back to the full width.\nENVIRONMENT: haze layers in the sky band; mist creeps in the cavern.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
           "tags": {
             "subject_type": "map-diagram",
             "shot_size": "XLS",
@@ -1646,7 +1722,7 @@
       "viewer_sees": "EMPTY AFTERMATH — three long shadows thrown across bare Olympian marble by figures standing outside the frame, the stone in front of them unworn and unclaimed",
       "shots": [
         {
-          "shot_id": "36",
+          "shot_id": "37",
           "beat_id": "B31",
           "link_group": null,
           "t_in": 219.792,
@@ -1655,7 +1731,8 @@
           "use_out": 8.375,
           "use_len": 8.375,
           "motion_budget": null,
-          "source_file": "shots/shot36.jpeg",
+          "gen_len": null,
+          "source_file": "shots/shot37.jpeg",
           "ingredient_image": null,
           "characters": [
             "olympus"
@@ -1694,7 +1771,7 @@
       "viewer_sees": "the battered helmet from the opening, upside down and empty, three pebbles lying apart from it on the ash",
       "shots": [
         {
-          "shot_id": "37",
+          "shot_id": "38",
           "beat_id": "B32",
           "link_group": null,
           "t_in": 228.167,
@@ -1703,7 +1780,8 @@
           "use_out": 5.416,
           "use_len": 5.416,
           "motion_budget": null,
-          "source_file": "shots/shot37.jpeg",
+          "gen_len": null,
+          "source_file": "shots/shot38.jpeg",
           "ingredient_image": null,
           "characters": [
             "lot-helmet"
@@ -1744,7 +1822,7 @@
       "viewer_sees": "END CARD — the three brothers in one frame against deep sky, sea and dark",
       "shots": [
         {
-          "shot_id": "38",
+          "shot_id": "39",
           "beat_id": "B33",
           "link_group": null,
           "t_in": 233.583,
@@ -1753,7 +1831,8 @@
           "use_out": 7.834,
           "use_len": 7.834,
           "motion_budget": null,
-          "source_file": "shots/shot38.jpeg",
+          "gen_len": null,
+          "source_file": "shots/shot39.jpeg",
           "ingredient_image": null,
           "characters": [
             "the-three-brothers"

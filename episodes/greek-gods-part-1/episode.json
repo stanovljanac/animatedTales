@@ -42,9 +42,9 @@
       "scale_critical": true
     },
     {
-      "id": "the-six-siblings",
-      "name": "The Six Children of Cronus",
-      "locked_description": "six newly grown Greek gods, three bearded men and three women of the same tall strong build, plain undyed himatia and peploi without ornament, wet hair, pale skin, no crowns, no jewellery and no weapons"
+      "id": "the-five-siblings",
+      "name": "The Five Swallowed Children",
+      "locked_description": "five newly grown Greek gods, two bearded men and three women of the same tall strong build, plain undyed himatia and peploi, pale skin, no crowns, no jewellery and no weapons"
     },
     {
       "id": "the-cyclopes",
@@ -122,5 +122,5 @@
       "scale_critical": true
     }
   ],
-  "notes": "Part 1 od 4 u seriji Greek Gods. Serijska biblija je docs/series/greek-gods.md i ona je izvor istine za svaki locked_description ciji id nosi oznaku REGISTRY (zeus, poseidon, hades, the-three-brothers, cronus, the-six-siblings, the-cyclopes, olympus, the-sea, the-underworld, the-war-plain, thunderbolt, trident) - taj tekst se kopira doslovno, nikad se ne prepravlja po epizodi. Lokalni za Part 1: rhea, the-hundred-handers, tartarus, crete-cave, cap-of-darkness, lot-helmet, the-stone. Kicma je zreb iz Ilijade 15.187-193. Outro imenuje Part 2 - lanac je zakljucan u biblji. Materijal namerno ostavljen Part 3: nadmetanje za Atinu, Metida i proricanje. Research u research.md, skripta u script.md."
+  "notes": "Part 1 od 4 u seriji Greek Gods. Serijska biblija je docs/series/greek-gods.md i ona je izvor istine za svaki locked_description ciji id nosi oznaku REGISTRY (zeus, poseidon, hades, the-three-brothers, cronus, the-five-siblings, the-cyclopes, olympus, the-sea, the-underworld, the-war-plain, thunderbolt, trident) - taj tekst se kopira doslovno, nikad se ne prepravlja po epizodi. Lokalni za Part 1: rhea, the-hundred-handers, tartarus, crete-cave, cap-of-darkness, lot-helmet, the-stone. Kicma je zreb iz Ilijade 15.187-193. Outro imenuje Part 2 - lanac je zakljucan u biblji. Materijal namerno ostavljen Part 3: nadmetanje za Atinu, Metida i proricanje. Research u research.md, skripta u script.md."
 }

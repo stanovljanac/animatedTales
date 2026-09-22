@@ -72,8 +72,11 @@ and what is modern reconstruction.
 4. She hands Cronus a stone wrapped in swaddling clothes; he swallows it without knowing.
    [TRADITION — *Theogony* 485–491]
 5. Grown, Zeus forces his father to bring the children back up. The stone comes up first, then the
-   five siblings, unharmed. [TRADITION — *Theogony* 492–500. The emetic administered by Metis is a
-   later addition — Apollodorus 1.2.1 — and is **not used**: Metis belongs to Part 3.]
+   five siblings, unharmed. [TRADITION — *Theogony* 492–500. The emetic is a later addition —
+   Apollodorus 1.2.1 — and is used **only as an object**: Zeus holds a drained cup, and Metis, who
+   administers it in Apollodorus, is neither shown nor named. Odluka promenjena 2026-09-20: Hesiod
+   ne imenuje sredstvo, pa je „forced" bez rekvizita Flow doslovno renderovao kao udarac u stomak.
+   Pehar daje istoj rečenici uzrok koji se vidi, a Metida ostaje netaknuta za Part 3.]
 6. The Titan war lasts ten full years with neither side able to finish it.
    [TRADITION — *Theogony* 629–638]
 7. Zeus frees the Cyclopes from the pit; in gratitude they forge weapons. In Hesiod they give the

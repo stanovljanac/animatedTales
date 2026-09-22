@@ -55,6 +55,25 @@ epizode u akademsko predavanje: jedna kratka ograda, ne fusnota.
 Isto važi i za sliku: rekviziti, odeća, arhitektura i oružje prate stvarni period i kulturu priče.
 Ne pozajmljuju se dizajni iz nepovezanih epoha zato što „bolje izgledaju".
 
+### Mitski registar
+
+Na beatu koji je **TRADITION / MYTH / LEGEND** svet se crta na natprirodnoj skali. Bog nije čovek
+u ogrtaču: on je veći od građevine, oluja mu je telo, oružje gori i nebo mu odgovara. Kadar u kome
+bog stoji u pejzažu kao običan čovek je **promašen registar**, čak i kad je svaki rekvizit tačan.
+
+Praktično, na takvom kadru se traži bar jedno od:
+
+- **razmera** — `SCALE` blok koji tvrdi da je lik ili predmet nesrazmeran okolini
+- **sila** — svetlo, oluja, vatra ili voda koja reaguje na prisustvo, umesto mrtvog ambijenta
+- **ugao** — donji rakurs ili odnos blizu/daleko koji subjekt čini ogromnim
+
+Ovo **ne ukida** pravilo iznad. Rekviziti, odeća i arhitektura i dalje prate period; natprirodno je
+u **razmeri, svetlu i sili**, nikad u anahronom dizajnu. Munja ostaje bronzom povezano vreteno iz
+`key_props` — ali baca svetlo preko cele terase.
+
+Merljiv kontraprimer iz Part 1: `SCALE` blok koji je glasio „the weapon … looks smaller than it
+should" doslovno je naručio nemoćan kadar, i model ga je tako i nacrtao.
+
 ---
 
 ## 4. Hard reset — trajno pravilo

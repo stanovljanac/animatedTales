@@ -98,7 +98,7 @@ Ovo je **jedini izvor istine za izgled** svakog entiteta koji se ponavlja kroz s
 | `hades` | Hades | 1, 2, comp | mrak; jedini pokriven |
 | `the-three-brothers` | The Three Brothers | 1, comp | grupni opis za kadar sa sva tri |
 | `cronus` | Cronus | 1, 3 | otac koji guta; Part 3 ga citira |
-| `the-six-siblings` | The Six Children of Cronus | 1, 2 | grupni opis, bogovi pre svojih simbola |
+| `the-five-siblings` | The Five Swallowed Children | 1, 2 | grupni opis, bogovi pre svojih simbola |
 | `the-cyclopes` | The Cyclopes | 1, 4 | kovači triju oružja |
 
 ```json
@@ -130,9 +130,9 @@ Ovo je **jedini izvor istine za izgled** svakog entiteta koji se ponavlja kroz s
     "scale_critical": true
   },
   {
-    "id": "the-six-siblings",
-    "name": "The Six Children of Cronus",
-    "locked_description": "six newly grown Greek gods, three bearded men and three women of the same tall strong build, plain undyed himatia and peploi without ornament, wet hair, pale skin, no crowns, no jewellery and no weapons"
+    "id": "the-five-siblings",
+    "name": "The Five Swallowed Children",
+    "locked_description": "five newly grown Greek gods, two bearded men and three women of the same tall strong build, plain undyed himatia and peploi, pale skin, no crowns, no jewellery and no weapons"
   },
   {
     "id": "the-cyclopes",
@@ -254,7 +254,7 @@ taj budžet lepe doslovno.
 `SCALE` i `NOT IN FRAME` ostaje ~70. To je tesno ali radi. Tri entiteta (~110 + 16 = 126)
 ostavljaju 34 reči za devet blokova — ne radi, i to nije stvar veštine pisanja.
 
-**2. Zato postoje grupni entiteti.** `the-three-brothers` i `the-six-siblings` su **jedan**
+**2. Zato postoje grupni entiteti.** `the-three-brothers` i `the-five-siblings` su **jedan**
 zaključani opis za kadar u kome se svi vide zajedno. Kadar tada navodi grupu, ne pojedince.
 
 | Kadar pokazuje | `shot.characters` | Zašto |
@@ -262,14 +262,22 @@ zaključani opis za kadar u kome se svi vide zajedno. Kadar tada navodi grupu, n
 | jednog brata | `zeus` \| `poseidon` \| `hades` | pun identitet, ima mesta za sve blokove |
 | dva brata | dva pojedinačna `id`-a | 72 reči, prolazi |
 | sva tri brata | `the-three-brothers` | tri pojedinačna ne staju u P1 |
-| izbacivanje dece iz Krona | `the-six-siblings` (+ `cronus`) | šest pojedinačnih je ~210 reči |
+| izbacivanje dece iz Krona | `the-five-siblings` (+ `the-stone`, `zeus`) | pet pojedinačnih je ~175 reči |
 
 Grupni opisi su **kompresija pojedinačnih, a ne nova verzija lika** — nose iste raspoznatljive
 tokene (purpurno-crveno / morsko-zeleno / crno-ljubičasto pokriveno). Kad se menja pojedinačni
 opis, mora da se proveri i grupni.
 
-`the-six-siblings` namerno nema krune, nakit ni oružje: to su bogovi **pre** nego što su postali
+`the-five-siblings` namerno nema krune, nakit ni oružje: to su bogovi **pre** nego što su postali
 ono po čemu ih znamo. Kadar izbacivanja iz Krona je jedino mesto u celoj seriji gde se tako vide.
+
+**Petoro, ne šestoro.** Kron je progutao petoro — Hestiju, Demetru, Heru, Hada i Posejdona, dakle
+tri žene i dva muškarca. Zevs je šesto dete, ali nikad nije bio progutan, pa u kadru izbacivanja
+stoji **suv i u purpurno-crvenom**, odvojen od linije. Šestoro dece Kronove jeste tačan skup, ali
+nije tačan opis onoga što izlazi iz njega. Raniji lock je to spajao i greška je u Part 1 prošla
+kroz ceo BLOCKING sloj, zato što C1 proverava da je opis **doslovno prepisan**, a ne da je tačan.
+Zbog toga kadar nosi tri locka i sedi na ~278 reči, tik ispod P1 plafona: to je cena koja se
+plaća svesno, jer je jedini kadar u seriji u kome se petoro i Zevs vide zajedno.
 
 ---
 
@@ -340,10 +348,10 @@ prvi stigne.**
 | Žreb tri brata (Ilijada 15.187–193) | **1** | sve |
 | Kiklopi i sto-ruki, tri oružja | **1** | **tri oružja da, rat ne** — rat je jedan sažet pasus, detalji idu u Titan video |
 | Uran i srp, Otris, Atlas, mera Tartara, Kureti | **Titan video** | ne pominje se |
-| Metida progutana, Atina iz Zevsove glave | **3** | **ne pominje se** — Part 3 je nosi kao vraćanje na Part 1 |
+| Metida progutana, Atina iz Zevsove glave | **3** | **ne pominje se** — Part 3 je nosi kao vraćanje na Part 1. Part 1 sme da pokaže **ispijen pehar** u kadru izbacivanja: emetik kao predmet, bez toga ko ga je spravio. Metida se niti vidi niti imenuje, pa callback ostaje netaknut |
 | Nadmetanje za Atinu (maslina vs. slani izvor) | **3** | **ne imenuje ni Atinu ni Atenu**; Posejdonova ozlojeđenost ide kroz Ilijadu i kroz „gubio je gradove", bez imena |
 | Had i Persefona | **2** | sme da kaže da svi jednom stižu kod njega; otmicu **ne** |
-| Hera kao Zevsova žena | **2** | Hera se vidi u kadru sa šestoro dece, ali priča o braku je Part 2 |
+| Hera kao Zevsova žena | **2** | Hera se vidi u kadru izbacivanja, među petoro progutanih, ali priča o braku je Part 2 |
 | Hera baca Hefesta s Olimpa | **4** | ne |
 | Hestija i ognjište, Hestija ustupa presto | **2** | ne |
 
