@@ -1,0 +1,2237 @@
+{
+  "schema_version": 2,
+  "episode": "greek-gods-part-2",
+  "generated_at": "2026-09-23T22:29:43Z",
+  "narration_duration": 278.491,
+  "fps": 24,
+  "beats": [
+    {
+      "beat_id": "B01",
+      "sentences": [
+        "S01",
+        "S02"
+      ],
+      "start": 0,
+      "end": 6.76,
+      "dur": 6.76,
+      "device": null,
+      "narration_says": "Three brothers drew lots for the universe. Their three sisters were never given a lot.",
+      "viewer_sees": "the three brothers in a tight ring on the ash plain, the battered helmet held out between them; the camera slides left past the ring to three women standing outside it with empty hands",
+      "shots": [
+        {
+          "shot_id": "01",
+          "beat_id": "B01",
+          "link_group": null,
+          "t_in": 0,
+          "t_out": 6.75,
+          "use_in": 0,
+          "use_out": 6.75,
+          "use_len": 6.75,
+          "motion_budget": 6.75,
+          "gen_len": 8,
+          "source_file": "shots/part01.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "the-three-brothers",
+            "the-three-sisters"
+          ],
+          "visual_priority": [
+            "The Three Brothers in a tight ring around the battered bronze helmet",
+            "The Three Sisters standing apart outside the ring with empty hands",
+            "one hand going down into the helmet, the lots unseen inside it",
+            "ash drifting across the dark war plain"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: three powerfully built bearded Greek gods in their prime, one in a purple-red himation with dark waving hair, one salt-weathered in sea-green with hair in heavy ropes, one pale in black-violet covering both shoulders, in a tight ring around a battered bronze war helmet held out between them — purple-red at the left of the ring, sea-green at its centre, black-violet at its right.\nSCALE: the brothers are drawn huge, their heads level with the low smoke; the three women outside the ring read smaller, at the very edge of the light.\nSUBJECT 2: three tall Greek goddesses in their prime, one with a low golden crown in white and dark red, one wheat-haired in ochre under a dark brown mantle, one fully veiled in undyed wool and grey, all barefoot, standing apart from the ring, their hands empty at their sides.\nACTION: the brother in purple-red reaches into the helmet while the three women watch from outside the ring.\nSETTING: the scorched plain after the Titan war, embers in the cracks, ash still falling.\nCAMERA: camera stands a few paces outside the ring at chest height, eye level, wide.\nFRAME LAYOUT: center and right third — the ring of brothers, near-camera and large, the helmet at mid-frame, the lots unseen inside it; left third — the three sisters side by side, full figure, smaller; lower edge — cracked black rock.\nFACING: we see the brothers three-quarter on, looking down into the helmet; the sisters face screen-right toward the ring, and no brother looks at them.\nSCREEN DIRECTION: ash drifts from the upper-right toward the lower-left; the reaching hand moves down into the bowl.\nLIGHT: dull red afterglow from the craters on the brothers; the sisters lit only by grey ash-light.\nPALETTE: ash grey, ember red, dull bronze, cold white.\nDETAIL: figures readable by outline and costume colour, dents in the bronze helmet, ash settling on shoulders and hair.\nNOT IN FRAME: pebbles in view, thrones, weapons, any Titan, a fourth woman.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 6.75s; hold to the end of an 8s generation.\n0–1s: the purple-red brother's hand dips into the helmet as the other two lean in.\n1–4s: the camera slides left past the ring until the three sisters stand in full view.\n4–6.75s: it settles on the sisters, still, hands empty, ash drifting across them.\nCAMERA: one slow continuous track toward screen-left.\nENVIRONMENT: ash falls steadily; embers pulse in the cracks.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "the-war-plain",
+            "time_light": "ash-dark-afterglow",
+            "camera_motion": "track"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B02",
+      "sentences": [
+        "S03",
+        "S04"
+      ],
+      "start": 6.76,
+      "end": 19.22,
+      "dur": 12.46,
+      "device": "process-cutaway",
+      "narration_says": "All six had the same father. Cronus had been warned that one of his children would overthrow him, so he swallowed each of them at birth — the daughters first: Hestia, Demeter and Hera.",
+      "viewer_sees": "the colossal Titan from the floor of his hall, looking down; then his torso opened like a chamber, and three women lit one after another from the bottom up — first, second, third",
+      "shots": [
+        {
+          "shot_id": "02",
+          "beat_id": "B02",
+          "link_group": null,
+          "t_in": 6.75,
+          "t_out": 10,
+          "use_in": 0,
+          "use_out": 3.25,
+          "use_len": 3.25,
+          "motion_budget": null,
+          "gen_len": null,
+          "source_file": "shots/shot02.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "cronus"
+          ],
+          "visual_priority": [
+            "Cronus enthroned and colossal, seen from the floor of his hall",
+            "his face looking down toward screen-left",
+            "the hall doors reaching only to his knee",
+            "torchlight from below"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a gaunt ageing Titan with long grey-white hair and a heavy matted grey beard, a hollowed lined face, corded veined arms and big knuckled hands, a coarse dark ochre himation over one shoulder, bare chest and bare feet, seated on a throne of black basalt with both hands on its arms, head bent to look down at the floor of his hall.\nSCALE: Cronus is colossal: his knee rises as high as the hall doors; a man standing at his foot would reach his ankle; the wall torches look like sparks beside his shins; his head nearly touches the smoke-blackened roof.\nACTION: he sits motionless and looks down.\nSETTING: a soot-blackened basalt hall lit by wall torches, empty flagstones.\nCAMERA: camera lies on the flagstones near his feet, low, wide.\nFRAME LAYOUT: center and right third — Cronus on his throne, near-camera and towering, the top of his head cropped at the upper edge; left third — the empty floor of the hall and a far doorway, small and hazy; lower edge — the flagstones and his bare toes, huge.\nFACING: we see his face from below, three-quarter on, eyes lowered toward screen-left.\nSCREEN DIRECTION: torch smoke climbs the right edge; his grey beard hangs toward the lower-left.\nLIGHT: low torchlight from below, deep shadow under the brow.\nPALETTE: basalt black, torch amber, dark ochre, ash grey.\nDETAIL: coarse folds of the ochre himation, veins across the knuckles, cracks in the flagstones.\nNOT IN FRAME: children, bundles, blood, any other figure.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "LS",
+            "angle": "low",
+            "location": "cronus-hall",
+            "time_light": "torchlit-gloom",
+            "camera_motion": "push"
+          },
+          "render_mode": "still",
+          "still_motion": "push"
+        },
+        {
+          "shot_id": "03",
+          "beat_id": "B02",
+          "link_group": null,
+          "t_in": 10,
+          "t_out": 19.208,
+          "use_in": 0,
+          "use_out": 9.208,
+          "use_len": 9.208,
+          "motion_budget": null,
+          "gen_len": 10,
+          "source_file": "shots/part03.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "the-five-siblings",
+            "cronus"
+          ],
+          "visual_priority": [
+            "The Five Swallowed Children standing on five ledges inside the opened torso",
+            "the three women lit one after another from the lowest ledge upward",
+            "the two bearded men on the highest ledges left in the dark",
+            "the cut chest wall of the Titan framing the chamber"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: five newly grown Greek gods, two bearded men and three women of the same tall strong build, plain undyed himatia and peploi, pale skin, no crowns, no jewellery and no weapons, on five separate ledges at five heights inside a dark chamber, the three women on the three lowest ledges and the two men above them.\nSCALE: the chamber is the Titan's opened torso; each god inside stands no taller than one of his ribs; his jaw at the upper edge is wider than the whole chamber.\nSUBJECT 2: a gaunt ageing Titan with long grey-white hair and a heavy matted grey beard, a hollowed lined face, corded veined arms and big knuckled hands, a coarse dark ochre himation over one shoulder, bare chest and bare feet, drawn as a cross-section, the near wall of his torso cut away and the chest open like a dark chamber.\nACTION: a faint cold glow has woken on the woman on the lowest ledge; every ledge above her is still dark.\nSETTING: ribbed dark walls inside the Titan.\nCAMERA: camera holds square on the cut face of the torso, eye level, medium.\nFRAME LAYOUT: center — the opened chamber, near-camera and filling the frame, five small figures stacked from the lower edge upward, the lowest one lit; upper edge — his jaw and beard, cropped; left third and right third — the cut chest wall.\nFACING: we see all five front on, looking out past the camera; his jaw turns toward screen-left.\nSCREEN DIRECTION: the faint glow climbs from the lowest ledge toward the upper edge; dust drifts down through the chamber.\nLIGHT: no outside light; only the lowest woman lit, by a faint cold glow of her own.\nPALETTE: chamber black, bone grey, pale cold glow.\nDETAIL: ribbed wall texture and the cut edge of bone, plain undyed cloth, small readable faces.\nNOT IN FRAME: blood, organs, the hall outside, a sixth figure.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 9.208s; hold to the end of a 10s generation.\n0–1s: a cold glow wakes on the lowest woman and she lifts her head.\n1–5.5s: the glow climbs to the second woman and on to the third, each lifting her head in turn.\n5.5–9.208s: the three women stand lit in one column; the two men above stay dark.\nCAMERA: one slow tilt up from the lowest ledge to the third.\nENVIRONMENT: dust sifts down through the glow.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "inside-cronus",
+            "time_light": "inner-dark-glow",
+            "camera_motion": "reveal"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B03",
+      "sentences": [
+        "S05"
+      ],
+      "start": 19.22,
+      "end": 22.38,
+      "dur": 3.16,
+      "device": null,
+      "narration_says": "Only the youngest, Zeus, was hidden from him.",
+      "viewer_sees": "the Cretan cave — an infant alone on the sand floor, sunlit slopes far past the cave mouth",
+      "shots": [
+        {
+          "shot_id": "04",
+          "beat_id": "B03",
+          "link_group": null,
+          "t_in": 19.208,
+          "t_out": 22.375,
+          "use_in": 0,
+          "use_out": 3.167,
+          "use_len": 3.167,
+          "motion_budget": null,
+          "gen_len": null,
+          "source_file": "shots/shot04.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "a newborn boy alone in a hollow of straw on the cave floor",
+            "the bright cave mouth opening onto sunlit slopes",
+            "pale stalactites hanging over him",
+            "no adult anywhere in the cave"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a newborn boy with a shock of dark hair, loosely wrapped in coarse undyed wool, lying awake in a small hollow of straw on the floor of a high limestone cave.\nACTION: the infant lies alone with one small fist raised toward the light.\nSETTING: a high limestone cave on a Cretan mountainside, pale stalactites hanging from a ribbed roof, a dry floor of sand and fallen stone, a bright opening onto sunlit slopes of scrub and grazing goats.\nCAMERA: camera sits low on the cave floor a few paces from the straw, eye level, wide.\nFRAME LAYOUT: left third — the straw hollow and the infant, near-camera; right third — the cave mouth, a tall bright opening with sunlit scrub slopes and two goats, far and washed out; upper edge — stalactites, cropped.\nFACING: we see the infant from the side, face turned toward screen-right and the light.\nSCREEN DIRECTION: dust turns slowly in the shaft of light from the right edge; one straw stalk stirs.\nLIGHT: one hard shaft of daylight from the cave mouth, the rest of the cave in cool shadow.\nPALETTE: limestone grey, straw gold, sun-bleached green.\nDETAIL: straw stalks and wool weave, layered stalactite ribs, haze in the light shaft.\nNOT IN FRAME: any adult, Cronus, a wrapped stone.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "crete-cave",
+            "time_light": "cave-mouth-daylight",
+            "camera_motion": "locked"
+          },
+          "render_mode": "still",
+          "still_motion": "hold"
+        }
+      ]
+    },
+    {
+      "beat_id": "B04",
+      "sentences": [
+        "S06",
+        "S07"
+      ],
+      "start": 22.38,
+      "end": 28.02,
+      "dur": 5.64,
+      "device": null,
+      "narration_says": "Grown, he forced his father to bring them all back up, alive. Together they beat the Titans.",
+      "viewer_sees": "six gods standing together on the war plain, the one in purple-red a step ahead with white-gold light in his fist; a Titan-sized shape topples in the smoke on the far side",
+      "shots": [
+        {
+          "shot_id": "05",
+          "beat_id": "B04",
+          "link_group": null,
+          "t_in": 22.375,
+          "t_out": 28,
+          "use_in": 0,
+          "use_out": 5.625,
+          "use_len": 5.625,
+          "motion_budget": 5.625,
+          "gen_len": 6,
+          "source_file": "shots/part05.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "zeus",
+            "the-five-siblings"
+          ],
+          "visual_priority": [
+            "Zeus a step ahead of the line with white-gold light blazing in his raised fist",
+            "the five freed gods alive in one line at his shoulder",
+            "a Titan-sized shape toppling in the smoke at screen-right",
+            "the cracked war plain under a dark sky"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a broad powerfully built Greek god in his prime, thick dark hair swept back from a high brow, a full curled beard, deep-set grey eyes under heavy brows, a purple-red himation over one shoulder, bare chest and bare feet, a step ahead of the others with his right arm raised and a spindle of white-gold light blazing in his fist.\nSCALE: the gods stand as tall as the shattered boulders; the light in his fist throws six shadows the length of the plain; the falling Titan is the height of a hill.\nSUBJECT 2: five newly grown Greek gods, two bearded men and three women of the same tall strong build, plain undyed himatia and peploi, pale skin, no crowns, no jewellery and no weapons, standing in one line at his shoulder, alive and unmarked.\nACTION: the six advance together as a Titan-sized shape topples in the smoke.\nSETTING: the scorched war plain, burning craters, smoke blowing low.\nCAMERA: camera stands low on the cracked rock a few paces ahead of them, low, wide.\nFRAME LAYOUT: left third and center — Zeus, near-camera and large, the five in a line at his shoulder, cropped at the knee; right third — a colossal falling shape in the smoke, far and hazy; lower edge — split rock.\nFACING: we see all six three-quarter on, looking toward screen-right at the falling shape.\nSCREEN DIRECTION: the line moves toward screen-right; smoke tears toward screen-left past them.\nLIGHT: the white-gold light in his fist is the brightest thing in frame, hard shadows falling toward the left edge.\nPALETTE: storm black, white-gold, undyed wool, purple-red.\nDETAIL: wind-torn cloth edges, figures readable by outline and posture, cracks glowing in the rock.\nNOT IN FRAME: crowns, armour, blood, any god from the later tales.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 5.625s; hold to the end of a 6s generation.\n0–1s: the light in Zeus's fist flares and the six take one step forward together.\n1–3.8s: a bolt of white-gold leaves his hand and strikes the shape in the smoke, which sways and starts to fall.\n3.8–5.625s: the shape collapses into the smoke at the right edge and the six stand their ground.\nCAMERA: one slow push toward the line.\nENVIRONMENT: smoke tears past; embers lift from the cracks.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "low",
+            "location": "the-war-plain",
+            "time_light": "smoke-dark-daylight",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B05",
+      "sentences": [
+        "S08"
+      ],
+      "start": 28.02,
+      "end": 34.6,
+      "dur": 6.58,
+      "device": "animated-map",
+      "narration_says": "Then the brothers divided the prize: the sky to Zeus, the sea to Poseidon, the dead to Hades.",
+      "viewer_sees": "ANIMATED MAP — the bronze disc of the cosmos from Part 1 splitting into three sectors that light one by one: sky, sea, the dead; no fourth sector anywhere",
+      "shots": [
+        {
+          "shot_id": "06",
+          "beat_id": "B05",
+          "link_group": null,
+          "t_in": 28,
+          "t_out": 34.583,
+          "use_in": 0,
+          "use_out": 6.583,
+          "use_len": 6.583,
+          "motion_budget": 6.583,
+          "gen_len": 8,
+          "source_file": "shots/part06.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "the bronze disc of the cosmos now cut into exactly three bands",
+            "the sky band lighting first, the sea band second, the band of the dead last",
+            "two fresh boundary cuts shining raw",
+            "no fourth band anywhere on the plate"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a broad hammered bronze disc with the whole cosmos engraved across it — a band of sky at the top of the plate, a band of open sea across its middle, a band of caverns and dark below — and two fresh deep-cut boundary lines now dividing it into exactly three bands.\nACTION: the sky band glows first while the sea band and the cavern band wait dark.\nSETTING: a hammered bronze plate, engraved and unpolished.\nCAMERA: camera looks straight down at the plate, overhead, close.\nFRAME LAYOUT: center — the disc, near-camera and filling the frame; upper third — the engraved sky band, lit; mid-frame — the sea band, dark; lower third — the cavern band, dark; left edge and right edge — the plate rim, cropped.\nFACING: we see the engraved face flat on; no figure appears anywhere on the plate.\nSCREEN DIRECTION: light spreads across the sky band from screen-left toward screen-right.\nLIGHT: one low raking light across the engraving; the two new boundary cuts shine bright raw bronze.\nPALETTE: dark bronze, verdigris, pale reflected gold.\nDETAIL: fresh bright burrs along the two new boundary cuts, old verdigris in the original engraving, hammer planishing.\nNOT IN FRAME: names, letters, any figure, a fourth band.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 6.583s; hold to the end of an 8s generation.\n0–1s: the two boundary cuts flash bright and the sky band starts to glow.\n1–4s: the glow passes down into the sea band, which lights from rim to rim.\n4–6.583s: the cavern band lights last, dark red, and all three hold separate.\nCAMERA: one slow push toward the centre of the disc.\nENVIRONMENT: bronze dust lifts from the fresh cuts.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "map-diagram",
+            "shot_size": "CU",
+            "angle": "overhead",
+            "location": "bronze-cosmos-map",
+            "time_light": "flat-bronze-glow",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B06",
+      "sentences": [
+        "S09",
+        "S10"
+      ],
+      "start": 34.6,
+      "end": 39.5,
+      "dur": 4.9,
+      "device": "empty-aftermath",
+      "narration_says": "The full story of that draw is in the previous part. The sisters got no kingdom.",
+      "viewer_sees": "EMPTY AFTERMATH — the battered helmet lying on its side in the ash, the lots gone, and three long shadows of women falling across it",
+      "shots": [
+        {
+          "shot_id": "07",
+          "beat_id": "B06",
+          "link_group": null,
+          "t_in": 34.583,
+          "t_out": 39.5,
+          "use_in": 0,
+          "use_out": 4.917,
+          "use_len": 4.917,
+          "motion_budget": null,
+          "gen_len": null,
+          "source_file": "shots/shot07.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "the battered bronze helmet lying empty on its side in the ash",
+            "three long shadows of women falling across it from the left edge",
+            "the bowl empty, the lots gone",
+            "the ash plain gold in the low sun"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a battered bronze war helmet lying on its side in grey ash, dented and dull, its horsehair crest torn short, the bowl empty with the lots gone.\nACTION: three long shadows of women lie across the helmet and the ash around it.\nSETTING: the scorched war plain in the last low sun, ash settled, embers dying in the cracks.\nCAMERA: camera looks down at the helmet from standing height, high, medium.\nFRAME LAYOUT: center — the helmet, near-camera, the mouth of the bowl turned toward camera; left third — the three shadows entering from the left edge and reaching across the helmet toward the right edge; right third — cracked rock and ash, far.\nFACING: we see into the empty bowl; the three women who cast the shadows stand outside the frame at the left.\nSCREEN DIRECTION: the three shadows run from the left edge toward screen-right; ash drifts slowly the same way.\nLIGHT: low hard sun from screen-left, very long hard-edged shadows.\nPALETTE: ash grey, dull bronze, low gold, shadow violet.\nDETAIL: dents and scratches in the bronze, torn horsehair stubs, fine ash lying in the dents.\nNOT IN FRAME: the women themselves, the brothers, pebbles, thrones.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "MS",
+            "angle": "high",
+            "location": "the-war-plain",
+            "time_light": "low-sun-afterglow",
+            "camera_motion": "pull"
+          },
+          "render_mode": "still",
+          "still_motion": "pull"
+        }
+      ]
+    },
+    {
+      "beat_id": "B07",
+      "sentences": [
+        "S11"
+      ],
+      "start": 39.5,
+      "end": 47.44,
+      "dur": 7.94,
+      "device": "process-cutaway",
+      "narration_says": "They got something smaller, and closer to home: a marriage, a harvest, and a fire in the middle of the house.",
+      "viewer_sees": "PROCESS CUTAWAY — a Greek house with its near wall cut away: a bridal room with a loom, a storeroom of grain jars, and the round hearth in the middle; light lands on each in turn and settles on the fire",
+      "shots": [
+        {
+          "shot_id": "08",
+          "beat_id": "B07",
+          "link_group": null,
+          "t_in": 39.5,
+          "t_out": 47.458,
+          "use_in": 0,
+          "use_out": 7.958,
+          "use_len": 7.958,
+          "motion_budget": 7.958,
+          "gen_len": 8,
+          "source_file": "shots/part08.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "greek-house"
+          ],
+          "visual_priority": [
+            "The Greek House drawn as a cutaway with three spaces side by side",
+            "the bridal chamber with a loom and a wedding wreath",
+            "the storeroom of tall grain jars",
+            "the round hearth in the middle where the light settles"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: the main room of an ancient Greek farmhouse, whitewashed mudbrick walls and a beaten-earth floor, a round stone hearth in the middle of the room, a smoke hole in the roof beams, wooden benches, clay jars and hanging pots, drawn as a cutaway with its near wall removed so three spaces show side by side: a bridal chamber with a loom and a myrtle wedding wreath at the left, the main room with the hearth in the middle, and a storeroom of tall grain jars at the right.\nACTION: lamplight falls first on the bridal chamber while the rest of the house waits in shadow.\nSETTING: a Greek farmhouse at evening, whitewashed mudbrick, wooden roof beams.\nCAMERA: camera holds square on the cut face of the house, eye level, wide.\nFRAME LAYOUT: left third — the bridal chamber with the loom and the wreath; center — the round hearth and its low fire, near-camera and largest; right third — the storeroom, its grain jars in a row; upper edge — roof beams and the smoke hole, cropped.\nFACING: we see the three rooms flat on like a stage; no person stands in any of them.\nSCREEN DIRECTION: a warm light travels across the rooms from the left third toward the center; smoke rises from the hearth through the smoke hole.\nLIGHT: evening lamplight, one warm pool at a time, the hearth glow at the center.\nPALETTE: whitewash, hearth amber, wheat gold, loom red.\nDETAIL: warp threads on the loom, rough mudbrick, grain spilling from one jar lip, soot on the beams.\nNOT IN FRAME: people, gods, text, a second hearth.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 7.958s; hold to the end of an 8s generation.\n0–1s: a warm pool of light lands on the loom and the wreath in the bridal chamber.\n1–4.5s: the light crosses to the storeroom and runs along the grain jars, which glow gold.\n4.5–7.958s: it gathers on the central hearth and the fire rises, warming the whole house.\nCAMERA: one slow push toward the hearth.\nENVIRONMENT: smoke curls up through the roof hole.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "architecture",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "greek-house",
+            "time_light": "lamplit-evening",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B08",
+      "sentences": [
+        "S12",
+        "S13"
+      ],
+      "start": 47.44,
+      "end": 56.02,
+      "dur": 8.58,
+      "device": null,
+      "narration_says": "Hera married the winner. She became queen of the gods and goddess of marriage — married to the least faithful husband in Greek myth.",
+      "viewer_sees": "Hera enthroned and crowned beside Zeus above the clouds; she sits straight, he turns his head away and looks down through a break in the cloud",
+      "shots": [
+        {
+          "shot_id": "09",
+          "beat_id": "B08",
+          "link_group": null,
+          "t_in": 47.458,
+          "t_out": 56,
+          "use_in": 0,
+          "use_out": 8.542,
+          "use_len": 8.542,
+          "motion_budget": 8.542,
+          "gen_len": 10,
+          "source_file": "shots/part09.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "hera",
+            "zeus"
+          ],
+          "visual_priority": [
+            "Hera enthroned and crowned, sitting straight",
+            "Zeus on the larger throne beside her, turning his head away",
+            "his gaze going down through a break in the cloud",
+            "the two thrones on the terrace above the clouds"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a tall stately Greek goddess in her prime, dark hair drawn back under a low golden crown, large steady eyes and a full mouth, a white peplos under a dark red mantle pinned at both shoulders, bare feet, seated upright on a marble throne with her hands on its arms and a sceptre across her knees, looking straight ahead.\nSCALE: the thrones stand far above the cloud floor, their backs as tall as the columns around them.\nSUBJECT 2: a broad powerfully built Greek god in his prime, thick dark hair swept back from a high brow, a full curled beard, deep-set grey eyes under heavy brows, a purple-red himation over one shoulder, bare chest and bare feet, seated on the larger throne beside her, his body toward her but his head turned away over his far shoulder, looking down through a break in the cloud.\nACTION: she holds her pose while he looks away from her.\nSETTING: the summit terrace above the cloud line, pale marble, plain columns.\nCAMERA: camera stands on the terrace facing both thrones, eye level, medium.\nFRAME LAYOUT: left third — Hera, near-camera and large, crowned; right third — Zeus on the larger throne; center — the gap between the thrones; lower-right — a break in the cloud floor, far.\nFACING: we see Hera front on, eyes level and steady; we see Zeus three-quarter on, face turned toward screen-right and down.\nSCREEN DIRECTION: cloud drifts toward screen-right under the terrace; his gaze runs down toward the lower-right.\nLIGHT: high clear daylight, hard and even, a cold glint on the golden crown.\nPALETTE: pale marble, dark red, purple-red, cloud white.\nDETAIL: woven nap on both mantles, the tooled edge of the crown, weathered marble joints.\nNOT IN FRAME: other gods, mortals, text.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 8.542s; hold to the end of a 10s generation.\n0–1s: Zeus's head turns away from Hera toward the break in the cloud.\n1–5s: he leans toward the break, one hand leaving the arm of his throne, while Hera stays upright and still.\n5–8.542s: Hera's eyes slide toward him once and return to the front; her hands tighten on the throne.\nCAMERA: one slow push toward Hera.\nENVIRONMENT: cloud drifts under the terrace; wind lifts the edge of her mantle.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "olympus",
+            "time_light": "high-clear-daylight",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B09",
+      "sentences": [
+        "S14"
+      ],
+      "start": 56.02,
+      "end": 62,
+      "dur": 5.98,
+      "device": null,
+      "narration_says": "She could not punish Zeus, so she went after the women he loved, and their children.",
+      "viewer_sees": "Hera colossal in a bank of storm cloud, her gaze falling on a mortal woman running across a hillside with a small child in her arms",
+      "shots": [
+        {
+          "shot_id": "10",
+          "beat_id": "B09",
+          "link_group": null,
+          "t_in": 56,
+          "t_out": 62,
+          "use_in": 0,
+          "use_out": 6,
+          "use_len": 6,
+          "motion_budget": 6,
+          "gen_len": 6,
+          "source_file": "shots/part10.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "hera"
+          ],
+          "visual_priority": [
+            "Hera colossal in the storm cloud, looking down",
+            "a mortal woman running across the hillside with a child in her arms",
+            "the storm shadow sweeping down the hill after her",
+            "the woman's small size against the sky"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a tall stately Greek goddess in her prime, dark hair drawn back under a low golden crown, large steady eyes and a full mouth, a white peplos under a dark red mantle pinned at both shoulders, bare feet, formed out of a towering bank of storm cloud above the hills, her head, shoulders and crowned face distinct, her eyes turned down.\nSCALE: Hera fills the whole left half of the sky; her crowned head is larger than the hill below; the running woman is a small figure no taller than one of her eyes; the storm shadow she casts covers the whole hillside.\nACTION: a mortal woman runs across the hillside with a small child held to her chest while the goddess watches her.\nSETTING: a rocky Greek hillside at dusk, dry grass, a single olive tree, a storm breaking.\nCAMERA: camera stands low on the hillside, low, wide.\nFRAME LAYOUT: left third and upper half — Hera in the cloud, huge; right third — the running woman and child, small, near the right edge; lower edge — dry grass, near-camera.\nFACING: we see Hera's face three-quarter on, looking toward screen-right and down; we see the woman from the side, looking back over her shoulder at the sky.\nSCREEN DIRECTION: the woman runs toward the right edge; the storm shadow sweeps after her from screen-left.\nLIGHT: bruised dusk light, a hard pale rim on the cloud face, the hillside falling into shadow.\nPALETTE: storm slate, dark red, dry-grass gold, cold white.\nDETAIL: cloud mass readable as face and shoulders, wind-torn grass across the middle ground, figures readable by outline.\nNOT IN FRAME: Zeus, soldiers, a second woman.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 6s; hold to the end of a 6s generation.\n0–1s: the woman breaks into a run with the child clutched to her chest.\n1–3.8s: the storm shadow sweeps down the hill after her as the face in the cloud turns to follow.\n3.8–6s: rain begins to lash the grass and the woman reaches the olive tree, still running.\nCAMERA: locked off on the hillside.\nENVIRONMENT: the grass flattens in gusts; lightning flickers inside the cloud.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "XLS",
+            "angle": "low",
+            "location": "mortal-hillside",
+            "time_light": "storm-dusk",
+            "camera_motion": "locked"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B10",
+      "sentences": [
+        "S15",
+        "S16"
+      ],
+      "start": 62,
+      "end": 68.6,
+      "dur": 6.6,
+      "device": null,
+      "narration_says": "Once she had Zeus put to sleep and sent a storm after his son Heracles. Zeus woke in a rage.",
+      "viewer_sees": "Hera standing at the left edge over Zeus asleep on the terrace, her arm pointing down through the clouds at a black storm tearing at one small ship; his eyes snap open",
+      "shots": [
+        {
+          "shot_id": "11",
+          "beat_id": "B10",
+          "link_group": null,
+          "t_in": 62,
+          "t_out": 68.583,
+          "use_in": 0,
+          "use_out": 6.583,
+          "use_len": 6.583,
+          "motion_budget": 6.583,
+          "gen_len": 8,
+          "source_file": "shots/part11.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "zeus",
+            "hera"
+          ],
+          "visual_priority": [
+            "Zeus asleep on a couch at the terrace edge",
+            "Hera standing over him at the left edge, pointing down",
+            "a black storm far below tearing at one small ship",
+            "his eyes snapping open"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a broad powerfully built Greek god in his prime, thick dark hair swept back from a high brow, a full curled beard, deep-set grey eyes under heavy brows, a purple-red himation over one shoulder, bare chest and bare feet, lying asleep on a couch at the terrace edge, one arm hanging off it, his head turned toward the sky.\nSUBJECT 2: a tall stately Greek goddess in her prime, dark hair drawn back under a low golden crown, large steady eyes and a full mouth, a white peplos under a dark red mantle pinned at both shoulders, bare feet, standing over him, one arm stretched out and pointing down through the clouds.\nACTION: she points down at the storm she has sent while he sleeps.\nSETTING: the terrace of Olympus at night, pale marble under the moon; far below through a wide break in the cloud floor, a black storm over the sea and one small ship.\nCAMERA: camera stands on the terrace a few paces from the couch, eye level, wide.\nFRAME LAYOUT: left third — Hera standing, near-camera and large; center — Zeus asleep on the couch; right third and lower edge — the break in the cloud floor, the storm and the small ship far below, tiny.\nFACING: we see Hera in profile facing screen-right, arm out; we see Zeus's sleeping face three-quarter on, eyes closed.\nSCREEN DIRECTION: the storm far below churns toward the right edge; her pointing arm leads the eye down toward the lower-right.\nLIGHT: cold moonlight on the terrace, lightning flickering up from the storm below.\nPALETTE: moon silver, storm black, dark red, purple-red.\nDETAIL: marble joints under moonlight, wind lifting her mantle, the ship readable only by its sail.\nNOT IN FRAME: the face of Heracles, other gods, text.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 6.583s; hold to the end of an 8s generation.\n0–1s: lightning flashes up from the storm below across Zeus's sleeping face.\n1–4s: the storm around the small ship swells and Hera lowers her pointing arm.\n4–6.583s: Zeus's eyes snap open and he rises on one elbow toward the edge, his face darkening.\nCAMERA: one slow push toward Zeus.\nENVIRONMENT: cloud churns in the break; wind tugs at both mantles.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "olympus",
+            "time_light": "night-storm-below",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B11",
+      "sentences": [
+        "S17"
+      ],
+      "start": 68.6,
+      "end": 74.78,
+      "dur": 6.18,
+      "device": null,
+      "narration_says": "He hung her from the sky, a golden chain on her wrists and two anvils tied to her feet.",
+      "viewer_sees": "Hera hanging in mid-sky, wrists bound in a golden chain that runs up out of frame, two iron anvils swinging from her feet, the earth far below",
+      "shots": [
+        {
+          "shot_id": "12",
+          "beat_id": "B11",
+          "link_group": null,
+          "t_in": 68.583,
+          "t_out": 74.792,
+          "use_in": 0,
+          "use_out": 6.209,
+          "use_len": 6.209,
+          "motion_budget": 6.209,
+          "gen_len": 8,
+          "source_file": "shots/part12.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "hera"
+          ],
+          "visual_priority": [
+            "Hera hanging in mid-sky from a golden chain on her wrists",
+            "two iron anvils tied to her feet",
+            "the chain running up out of frame into the cloud",
+            "the whole earth far below"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a tall stately Greek goddess in her prime, dark hair drawn back under a low golden crown, large steady eyes and a full mouth, a white peplos under a dark red mantle pinned at both shoulders, bare feet, hanging in mid-air with her arms stretched above her head, both wrists bound in a heavy golden chain, two black iron anvils tied to her ankles with cords, her crown still on and her head held up.\nSCALE: the chain rises from her wrists out of the upper edge into the cloud with no end in sight; each anvil is as big as her torso; below her feet the whole earth lies far down, mountains and sea as small as a map; she hangs between the cloud and the world.\nACTION: she hangs still and turns her face into the wind.\nSETTING: open sky between the cloud ceiling and the earth, grey storm light.\nCAMERA: camera floats level with her in the open air a few paces off, eye level, wide.\nFRAME LAYOUT: center — Hera, near-camera and large, the chain running straight up to the upper edge; lower-center — the two anvils; lower edge — the earth far below, mountains and sea, small and hazy; left third and right third — empty grey sky.\nFACING: we see her three-quarter on, face turned toward screen-right, eyes open and hard.\nSCREEN DIRECTION: wind drives cloud from screen-left toward screen-right past her; her mantle streams the same way.\nLIGHT: grey storm daylight from above, a hard gleam along the golden chain.\nPALETTE: storm grey, gold, dark red, iron black.\nDETAIL: heavy chain links, rough-cast iron of the anvils, wind-whipped mantle folds.\nNOT IN FRAME: Zeus, other gods, blood, wounds.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 6.209s; hold to the end of an 8s generation.\n0–1s: a gust hits and her body swings slowly on the chain.\n1–4s: the two anvils swing under her feet and the chain creaks taut while her mantle streams out toward screen-right.\n4–6.209s: the swing slows and she lifts her head higher, still.\nCAMERA: one slow push toward her face.\nENVIRONMENT: cloud tears past; far below the earth lies still.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "open-sky",
+            "time_light": "storm-grey-daylight",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B12",
+      "sentences": [
+        "S18",
+        "S19"
+      ],
+      "start": 74.78,
+      "end": 83.64,
+      "dur": 8.86,
+      "device": "timeline-seasons",
+      "narration_says": "And yet the Greeks never treated her as the loser. At Olympia, Zeus's own sanctuary, her temple stood for more than a century before his.",
+      "viewer_sees": "TIMELINE — the Temple of Hera at Olympia in a locked view, offerings carried up its steps while seasons cycle; beside it bare ground where the temple of Zeus has not been built",
+      "shots": [
+        {
+          "shot_id": "13",
+          "beat_id": "B12",
+          "link_group": null,
+          "t_in": 74.792,
+          "t_out": 83.625,
+          "use_in": 0,
+          "use_out": 8.833,
+          "use_len": 8.833,
+          "motion_budget": 8.833,
+          "gen_len": 10,
+          "source_file": "shots/part13.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "heraion-olympia"
+          ],
+          "visual_priority": [
+            "The Temple of Hera at Olympia standing whole and in use",
+            "women carrying offerings up its steps",
+            "the bare ground beside it where no temple of Zeus stands yet",
+            "the seasons turning over the locked view"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: the Temple of Hera at Olympia, a low Doric temple of shell-limestone, thick early columns in a single ring, a pitched roof of red terracotta tiles, a stone altar before the east front, olive trees and a wooded hill, standing whole and in use, a line of women carrying a folded woven robe and baskets of offerings up its steps.\nACTION: the women climb the steps while the ground beside the temple lies empty.\nSETTING: the sanctuary of Olympia on a flat plain at the foot of the wooded hill, early summer morning; beside the temple, bare level ground marked only by a few wooden survey stakes.\nCAMERA: camera stands across the sanctuary ground, locked, eye level, wide.\nFRAME LAYOUT: left third and center — the Temple of Hera, near-camera and large, the altar at its front; right third — the bare level ground with a few wooden stakes, empty, far; upper edge — the wooded hill.\nFACING: we see the temple three-quarter on from its east front; the women climb with their backs to camera.\nSCREEN DIRECTION: the women climb toward the temple doors; olive leaves stir toward screen-right.\nLIGHT: soft early summer morning light, long soft shadows.\nPALETTE: shell-limestone cream, terracotta red, olive green, sky blue.\nDETAIL: column drums and roof tiles readable, figures readable by outline and posture, grass on the empty ground.\nNOT IN FRAME: the Temple of Zeus, statues of Zeus, text, crowds.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 8.833s; hold to the end of a 10s generation.\n0–1s: the women reach the top step and pass in between the columns.\n1–5s: the light cycles through summer, autumn, winter and back while new processions climb and the olive trees grow taller.\n5–8.833s: the temple stands unchanged; the ground beside it stays bare.\nCAMERA: locked; the view never moves.\nENVIRONMENT: shadows swing around the temple with the passing seasons; leaves fall and return.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "architecture",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "heraion-olympia",
+            "time_light": "cycling-seasons",
+            "camera_motion": "locked"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B13",
+      "sentences": [
+        "S20"
+      ],
+      "start": 83.64,
+      "end": 96.4,
+      "dur": 12.76,
+      "device": null,
+      "narration_says": "And in one town in Arcadia she had three shrines: to Hera the Girl, Hera the Wife, and Hera the Widow — from the time she quarrelled with Zeus and went home.",
+      "viewer_sees": "three small shrines in a row in an Arcadian valley; then Hera alone, veiled, walking down the hill road toward the town",
+      "shots": [
+        {
+          "shot_id": "14",
+          "beat_id": "B13",
+          "link_group": null,
+          "t_in": 83.625,
+          "t_out": 90.042,
+          "use_in": 0,
+          "use_out": 6.417,
+          "use_len": 6.417,
+          "motion_budget": null,
+          "gen_len": null,
+          "source_file": "shots/shot14.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "exactly three small shrines in a row along the lake shore",
+            "the first hung with spring flowers, the second with a bridal wreath, the third bare with a dark veil across its door",
+            "the still Arcadian lake under grey mountains",
+            "one path joining all three"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: exactly three small stone shrines standing in a row along a path by a mountain lake in Arcadia, alike in size: the first hung with spring flowers and a girl's ribbon, the second with a bridal wreath of myrtle over its door, the third bare, a dark veil hanging across its doorway — three shrines and no fourth.\nACTION: the three shrines stand in the afternoon quiet, the path running from one to the next.\nSETTING: the valley of Stymphalos in Arcadia, a still lake under steep grey mountains, reeds and scrub oak.\nCAMERA: camera stands on the path at the first shrine, eye level, wide.\nFRAME LAYOUT: left third — the first shrine with the flowers, near-camera and large; center — the second shrine with the wreath; right third — the third shrine with the dark veil, smallest and farthest; upper edge — the grey mountains.\nFACING: we see the three doorways three-quarter on, each turned slightly toward camera.\nSCREEN DIRECTION: the path leads from the left edge toward the right edge past all three; the reeds lean toward screen-right in the wind.\nLIGHT: soft late afternoon light from screen-left, the third shrine already in the shadow of the mountain.\nPALETTE: grey limestone, myrtle green, spring pink, black veil.\nDETAIL: rough-dressed stone of the shrines, petals and myrtle leaves, reed beds along the water.\nNOT IN FRAME: people, statues, text, a fourth shrine.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "architecture",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "stymphalos",
+            "time_light": "soft-afternoon",
+            "camera_motion": "pan"
+          },
+          "render_mode": "still",
+          "still_motion": "pan-right"
+        },
+        {
+          "shot_id": "15",
+          "beat_id": "B13",
+          "link_group": null,
+          "t_in": 90.042,
+          "t_out": 96.417,
+          "use_in": 0,
+          "use_out": 6.375,
+          "use_len": 6.375,
+          "motion_budget": 6.375,
+          "gen_len": 8,
+          "source_file": "shots/part15.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "hera"
+          ],
+          "visual_priority": [
+            "Hera walking alone down the hill road under a dark veil",
+            "the golden crown just showing at the edge of the veil",
+            "the lake town of Stymphalos below",
+            "the empty road climbing to the mountain pass"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a tall stately Greek goddess in her prime, dark hair drawn back under a low golden crown, large steady eyes and a full mouth, a white peplos under a dark red mantle pinned at both shoulders, bare feet, a dark travelling veil drawn over her head with the golden crown just showing at its edge, walking alone down a stony hill road with one hand holding the veil closed at her throat.\nACTION: she walks steadily down toward the town without looking back.\nSETTING: a stony road descending into the valley of Stymphalos, the lake and a small walled town of mudbrick houses below, grey mountains.\nCAMERA: camera walks backward down the road a few paces ahead of her, eye level, wide.\nFRAME LAYOUT: center — Hera, near-camera and large, full figure; right third — the lake and the small town below, far and hazy; left third and upper edge — the empty road climbing to the mountain pass.\nFACING: we see her face and chest front on under the veil; her eyes are fixed ahead, past the camera.\nSCREEN DIRECTION: she walks toward camera, growing larger; dust from her steps drifts toward screen-left.\nLIGHT: late afternoon sun from screen-left, her face half shaded by the veil.\nPALETTE: dust ochre, dark red, lake grey-blue, white.\nDETAIL: woven nap of the veil and mantle, stones of the road, reeds along the distant shore.\nNOT IN FRAME: Zeus, other gods, attendants, a chariot.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 6.375s; hold to the end of an 8s generation.\n0–1s: Hera takes a long stride down the road, the veil swinging at her shoulder.\n1–4s: she keeps walking toward camera, dust lifting at her heels.\n4–6.375s: she draws the veil tighter at her throat and walks on, eyes ahead.\nCAMERA: one slow continuous track backward ahead of her.\nENVIRONMENT: wind moves the reeds by the lake; the hem of the veil lifts.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "stymphalos",
+            "time_light": "soft-afternoon",
+            "camera_motion": "track"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B14",
+      "sentences": [
+        "S21"
+      ],
+      "start": 96.4,
+      "end": 100.68,
+      "dur": 4.28,
+      "device": null,
+      "narration_says": "A widow, with a husband who could never die.",
+      "viewer_sees": "Hera in a dark widow's veil at the third shrine at dusk; on the horizon a white fork of lightning, very much alive",
+      "shots": [
+        {
+          "shot_id": "16",
+          "beat_id": "B14",
+          "link_group": null,
+          "t_in": 96.417,
+          "t_out": 100.667,
+          "use_in": 0,
+          "use_out": 4.25,
+          "use_len": 4.25,
+          "motion_budget": null,
+          "gen_len": null,
+          "source_file": "shots/shot16.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "hera"
+          ],
+          "visual_priority": [
+            "Hera in a dark widow's veil at the Widow shrine",
+            "a single white fork of lightning on the far horizon",
+            "her face dry-eyed and level",
+            "dusk falling over the lake"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a tall stately Greek goddess in her prime, dark hair drawn back under a low golden crown, large steady eyes and a full mouth, a white peplos under a dark red mantle pinned at both shoulders, bare feet, a dark widow's veil drawn over her head and falling to her shoulders, the golden crown just showing at its edge, standing at the doorway of a small bare shrine.\nACTION: she stands without mourning and looks out at the lightning.\nSETTING: the third shrine at Stymphalos at dusk, a black veil hanging across its door, the lake grey and still.\nCAMERA: camera stands a few paces off at her level, eye level, medium.\nFRAME LAYOUT: center — Hera, near-camera, cropped at the waist, open space at both sides for a centred crop; right third — the lake and the far horizon with a single white fork of lightning, far; left third — the shrine doorway and its veil.\nFACING: we see her face three-quarter on, turned toward screen-right and the lightning; her eyes are dry and level.\nSCREEN DIRECTION: the edge of the veil lifts toward screen-right in the wind; the lightning fork splits down toward the far water.\nLIGHT: blue dusk with a cold white flash from the lightning on the right side of her face.\nPALETTE: dusk blue, black veil, dark red, white lightning.\nDETAIL: fine weave of the veil, the gold edge of the crown under it, the lake surface catching the flash.\nNOT IN FRAME: Zeus, tears, a grave, other people.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "stymphalos",
+            "time_light": "dusk-distant-lightning",
+            "camera_motion": "push"
+          },
+          "render_mode": "still",
+          "still_motion": "push"
+        }
+      ]
+    },
+    {
+      "beat_id": "B15",
+      "sentences": [
+        "S22",
+        "S23"
+      ],
+      "start": 100.68,
+      "end": 104.9,
+      "dur": 4.22,
+      "device": null,
+      "narration_says": "Demeter got the grain. With Zeus she had a daughter, Persephone.",
+      "viewer_sees": "Demeter standing in ripe wheat to the horizon, a sheaf in her arm; her young daughter runs through the grain beside her",
+      "shots": [
+        {
+          "shot_id": "17",
+          "beat_id": "B15",
+          "link_group": null,
+          "t_in": 100.667,
+          "t_out": 104.917,
+          "use_in": 0,
+          "use_out": 4.25,
+          "use_len": 4.25,
+          "motion_budget": 4.25,
+          "gen_len": 6,
+          "source_file": "shots/part17.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "demeter",
+            "persephone"
+          ],
+          "visual_priority": [
+            "Demeter standing tall in ripe wheat with a sheaf in her arm",
+            "Persephone running through the grain beside her",
+            "wheat running unbroken to the horizon",
+            "warm midsummer light"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a mature Greek goddess with heavy wheat-gold hair loosely bound, a broad calm sun-warmed face, strong working hands, a plain ochre peplos under a dark brown mantle drawn up over the head, bare feet, standing waist-deep in ripe wheat with a sheaf held in the crook of one arm, watching her daughter.\nSCALE: Demeter stands head and shoulders above the wheat, larger than any mortal woman; the grain around her runs unbroken to the horizon; the whole field leans toward her as if to a wind.\nSUBJECT 2: a slender Greek goddess on the edge of womanhood, long loose dark-honey hair falling to the waist, a fresh open face with wide dark eyes, a pale saffron-yellow peplos belted with a plain cord, bare feet, running through the wheat at her side with her arms out, laughing.\nACTION: the daughter runs a circle around her mother through the grain.\nSETTING: wide ripe wheat fields in a Greek valley, dry limestone hills, midsummer.\nCAMERA: camera stands in the wheat a few paces off, eye level, medium.\nFRAME LAYOUT: center — Demeter, near-camera and large, composed for a centred crop; right third — Persephone running, smaller; left third and upper edge — wheat to the horizon and the dry hills, far.\nFACING: we see Demeter front on, her eyes following her daughter toward screen-right; we see Persephone in profile running toward screen-right.\nSCREEN DIRECTION: Persephone runs toward the right edge; the wheat bends in waves toward screen-right.\nLIGHT: warm midsummer afternoon sun, soft haze over the far hills.\nPALETTE: wheat gold, ochre, dark brown, saffron yellow.\nDETAIL: individual wheat ears and awns, the twist binding the sheaf, sun-warmed skin.\nNOT IN FRAME: Zeus, Hades, reapers, a chasm.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 4.25s; hold to the end of a 6s generation.\n0–1s: Persephone bursts through the wheat at a run, arms out.\n1–3s: she circles past her mother, the wheat parting and closing where she runs, and Demeter turns her head to follow.\n3–4.25s: Demeter smiles and settles the sheaf on her arm.\nCAMERA: one slow push toward Demeter.\nENVIRONMENT: wind sends waves through the wheat; chaff drifts in the light.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "the-fields",
+            "time_light": "golden-summer",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B16",
+      "sentences": [
+        "S24"
+      ],
+      "start": 104.9,
+      "end": 113.96,
+      "dur": 9.06,
+      "device": null,
+      "narration_says": "One day the girl was picking flowers when the ground split open, and Hades drove up in a golden chariot and carried her down to the dead.",
+      "viewer_sees": "a flower meadow splitting open; a golden chariot and black horses burst up out of the chasm and the god in black-violet seizes the girl, flowers flying",
+      "shots": [
+        {
+          "shot_id": "18",
+          "beat_id": "B16",
+          "link_group": null,
+          "t_in": 104.917,
+          "t_out": 113.958,
+          "use_in": 0,
+          "use_out": 9.041,
+          "use_len": 9.041,
+          "motion_budget": null,
+          "gen_len": 10,
+          "source_file": "shots/part18.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "hades",
+            "persephone"
+          ],
+          "visual_priority": [
+            "Hades rising out of the chasm in a golden chariot drawn by black horses",
+            "Persephone among the flowers, turning in shock",
+            "the flower meadow split open by the chasm",
+            "flowers flying from her arms"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a lean severe Greek god in his prime, long black hair and a full black beard, pale bloodless skin, dark hooded eyes, a heavy black-violet himation covering both shoulders and falling to the ankles, bare feet, rising out of a split in the earth in a golden chariot drawn by four black horses, one arm reaching out.\nSCALE: the chasm is as wide as a river; the black horses tower over the flowers; Hades in the chariot stands far above the girl.\nSUBJECT 2: a slender Greek goddess on the edge of womanhood, long loose dark-honey hair falling to the waist, a fresh open face with wide dark eyes, a pale saffron-yellow peplos belted with a plain cord, bare feet, turning among the flowers with an armful of blossoms, one narcissus in her hand.\nACTION: the chariot surges up out of the ground toward the girl.\nSETTING: a wide flower meadow split by a jagged chasm, the noon sky darkening.\nCAMERA: camera stands low in the flowers a few paces from her, low, wide.\nFRAME LAYOUT: left third — Persephone, near-camera and large; center and right third — the chasm and the chariot bursting out of it, the horses rearing toward screen-left; lower edge — flowers, near-camera; upper edge — darkening sky.\nFACING: we see Persephone three-quarter on, turning toward screen-right in shock; we see Hades front on, eyes fixed on her.\nSCREEN DIRECTION: the horses and the chariot surge from the right toward screen-left; petals blow out of her arms toward the upper-left.\nLIGHT: bright noon failing to a cold shadow over the chasm, gold flashing off the chariot.\nPALETTE: flower pink and violet, chariot gold, black, saffron.\nDETAIL: petals in the air, horse manes and bronze harness, crumbling earth at the edges of the chasm.\nNOT IN FRAME: Demeter, other girls, blood, text.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 9.041s; hold to the end of a 10s generation.\n0–1s: the black horses heave up out of the chasm, clods of earth and petals bursting upward.\n1–5s: the chariot surges at Persephone and Hades sweeps her up with one arm, flowers scattering.\n5–9.041s: the horses wheel and plunge back into the chasm as the ground closes.\nCAMERA: one slow push toward the chasm.\nENVIRONMENT: petals fall through the air; the sky darkens over the meadow.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "LS",
+            "angle": "low",
+            "location": "flower-meadow",
+            "time_light": "bright-noon-darkening",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B17",
+      "sentences": [
+        "S25"
+      ],
+      "start": 113.96,
+      "end": 119.02,
+      "dur": 5.06,
+      "device": null,
+      "narration_says": "Zeus, her own father, had promised her to him — without a word to her mother.",
+      "viewer_sees": "Zeus and Hades gripping forearms on a crag above the clouds; far below, Demeter small in the golden fields with her back to them",
+      "shots": [
+        {
+          "shot_id": "19",
+          "beat_id": "B17",
+          "link_group": null,
+          "t_in": 113.958,
+          "t_out": 119,
+          "use_in": 0,
+          "use_out": 5.042,
+          "use_len": 5.042,
+          "motion_budget": null,
+          "gen_len": null,
+          "source_file": "shots/shot19.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "zeus",
+            "hades"
+          ],
+          "visual_priority": [
+            "Zeus and Hades gripping forearms on a crag above the clouds",
+            "a tiny figure in ochre far below in the golden fields, her back to them",
+            "the two brothers leaning close",
+            "cold overcast light"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a broad powerfully built Greek god in his prime, thick dark hair swept back from a high brow, a full curled beard, deep-set grey eyes under heavy brows, a purple-red himation over one shoulder, bare chest and bare feet, gripping his brother's forearm on a bare crag above the cloud line, leaning in close.\nSUBJECT 2: a lean severe Greek god in his prime, long black hair and a full black beard, pale bloodless skin, dark hooded eyes, a heavy black-violet himation covering both shoulders and falling to the ankles, bare feet, gripping Zeus's forearm in return, his pale face close to his brother's.\nACTION: the two brothers seal the bargain in silence.\nSETTING: a bare rock crag above the clouds; far below through a break, a valley of golden wheat.\nCAMERA: camera stands on the crag a few paces off, eye level, wide.\nFRAME LAYOUT: center and right third — the two brothers, near-camera and large, forearms locked between them; lower-left — a break in the cloud and, far below, a tiny figure in ochre standing in golden fields; upper edge — cold sky.\nFACING: we see both in profile facing each other, Zeus at screen-left of the pair and Hades at screen-right; the tiny figure far below stands with her back to them.\nSCREEN DIRECTION: cloud drifts across the break toward screen-left, closing over the fields.\nLIGHT: flat cold overcast light, no warmth on either face.\nPALETTE: cold grey, purple-red, black-violet, wheat gold.\nDETAIL: woven nap on both himatia, veins on the gripping forearms, the far fields readable only as a patch of gold.\nNOT IN FRAME: Persephone, a written contract, other gods.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "olympus",
+            "time_light": "cold-overcast",
+            "camera_motion": "locked"
+          },
+          "render_mode": "still",
+          "still_motion": "hold"
+        }
+      ]
+    },
+    {
+      "beat_id": "B18",
+      "sentences": [
+        "S26"
+      ],
+      "start": 119.02,
+      "end": 125.7,
+      "dur": 6.68,
+      "device": null,
+      "narration_says": "For nine days Demeter searched the earth with a torch in each hand, without eating or washing.",
+      "viewer_sees": "Demeter walking through a dark land by night with a torch in each hand, mantle torn and hair unbound; nine burnt-out torches in a line along the road",
+      "shots": [
+        {
+          "shot_id": "20",
+          "beat_id": "B18",
+          "link_group": null,
+          "t_in": 119,
+          "t_out": 125.708,
+          "use_in": 0,
+          "use_out": 6.708,
+          "use_len": 6.708,
+          "motion_budget": 6.708,
+          "gen_len": 8,
+          "source_file": "shots/part20.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "demeter"
+          ],
+          "visual_priority": [
+            "Demeter walking through the night with a blazing torch in each hand",
+            "nine burnt-out torches lying in a line along the road",
+            "her torn and dusty mantle",
+            "the dark land lit only by her torches"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a mature Greek goddess with heavy wheat-gold hair loosely bound, a broad calm sun-warmed face, strong working hands, a plain ochre peplos under a dark brown mantle drawn up over the head, bare feet, walking through the night with a blazing torch held high in each hand, her mantle torn at the hem and grey with dust, strands of hair loose at her face, her bare feet cut and dusty.\nSCALE: the fire of her torches leaps taller than she is and throws light across the whole valley; she is a goddess walking the width of the land; the nine spent torches along the road mark a line that runs out of sight.\nACTION: she walks on without stopping, searching the dark on both sides.\nSETTING: a dark rocky land at night, a dirt road across it, no village light anywhere.\nCAMERA: camera tracks beside her at her level, eye level, wide.\nFRAME LAYOUT: center — Demeter, near-camera and large, full figure; lower edge — the road; left third — nine burnt-out torch stubs lying in a line along the road edge, spaced and countable, the farthest small at the left edge; right third — the dark land ahead, far.\nFACING: we see her three-quarter on, facing screen-right, eyes searching the dark ahead.\nSCREEN DIRECTION: she walks toward the right edge; sparks from both torches stream toward screen-left.\nLIGHT: two blazing torches the only light, hard orange on her face, black all around.\nPALETTE: torch orange, night black, ochre, dust grey.\nDETAIL: the frayed mantle hem, ash on the torch stubs, grit and stones on the road.\nNOT IN FRAME: food, water, a village, other people, a moon.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 6.708s; hold to the end of an 8s generation.\n0–1s: Demeter strides forward, both torches swinging high and throwing sparks.\n1–4.5s: she keeps walking toward screen-right, turning her head to search the dark on each side as the light sweeps over bare rock.\n4.5–6.708s: she lifts both torches higher and walks on into the dark.\nCAMERA: one continuous track alongside her toward screen-right.\nENVIRONMENT: sparks stream from the torches; the spent stubs smoke faintly along the road.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "night-road",
+            "time_light": "torchlit-night",
+            "camera_motion": "track"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B19",
+      "sentences": [
+        "S27",
+        "S28"
+      ],
+      "start": 125.7,
+      "end": 136.86,
+      "dur": 11.16,
+      "device": null,
+      "narration_says": "Then the Sun, who sees everything, told her the truth. Hades was her own brother, he said, a fitting husband — lord of the third share he drew when the world was divided.",
+      "viewer_sees": "the sun god huge in the sky in a chariot of fire, Demeter small below with her torches, looking up; then the grey underworld, Hades enthroned with the girl pale on a throne beside him",
+      "shots": [
+        {
+          "shot_id": "21",
+          "beat_id": "B19",
+          "link_group": null,
+          "t_in": 125.708,
+          "t_out": 129.792,
+          "use_in": 0,
+          "use_out": 4.084,
+          "use_len": 4.084,
+          "motion_budget": 4.084,
+          "gen_len": 6,
+          "source_file": "shots/part21.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "helios",
+            "demeter"
+          ],
+          "visual_priority": [
+            "Helios colossal in the dawn sky in his chariot of fire, leaning down",
+            "Demeter small on the hilltop with her two torches, looking up",
+            "the sun god's light flooding the land",
+            "the flame-maned horses reined in"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a radiant beardless Greek god of the sun, a crown of long golden rays standing out from his curls, eyes of white fire, a gold-white chiton, a chariot of beaten gold drawn by four horses with manes of flame, reining in his chariot high in the dawn sky and leaning out over its rail to look down.\nSCALE: Helios fills the upper right of the sky, larger than the mountains; Demeter below is no taller than one hoof of his horses.\nSUBJECT 2: a mature Greek goddess with heavy wheat-gold hair loosely bound, a broad calm sun-warmed face, strong working hands, a plain ochre peplos under a dark brown mantle drawn up over the head, bare feet, standing small on a hilltop below with a torch in each hand, face lifted to the sky.\nACTION: the sun god halts his chariot and leans down to speak to her.\nSETTING: a bare hilltop at dawn, the land below still dark, the eastern sky ablaze.\nCAMERA: camera stands low on the hillside, low, wide.\nFRAME LAYOUT: upper-right and center — Helios and his chariot, huge and blazing; lower-left — Demeter on the hilltop, small, torches raised; lower edge — the dark land.\nFACING: we see Helios front on, leaning toward screen-left and down; we see Demeter from the side, face turned up toward screen-right.\nSCREEN DIRECTION: the horses rear and hold toward screen-left; rays pour down toward the lower-left over Demeter.\nLIGHT: blazing gold-white sunlight from the upper-right, her torches small and pale against it.\nPALETTE: sun gold, fire white, dawn violet, ochre.\nDETAIL: flame manes and the fire-edged chariot, rays readable as long bars of light, figures readable by outline.\nNOT IN FRAME: Hades, Persephone, cloud hiding the sun, text.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 4.084s; hold to the end of a 6s generation.\n0–1s: the flame-maned horses rear and the chariot halts in the sky.\n1–2.8s: Helios leans down over the rail and his light pours over the hilltop.\n2.8–4.084s: Demeter's torches dip as she looks up into the light.\nCAMERA: one slow push toward Demeter on the hilltop.\nENVIRONMENT: the dark land brightens; rays shift across the ground.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "XLS",
+            "angle": "low",
+            "location": "sun-road-sky",
+            "time_light": "blazing-dawn",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        },
+        {
+          "shot_id": "22",
+          "beat_id": "B19",
+          "link_group": null,
+          "t_in": 129.792,
+          "t_out": 136.875,
+          "use_in": 0,
+          "use_out": 7.083,
+          "use_len": 7.083,
+          "motion_budget": null,
+          "gen_len": null,
+          "source_file": "shots/shot22.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "hades",
+            "persephone",
+            "the-underworld"
+          ],
+          "visual_priority": [
+            "Hades enthroned in the grey underworld",
+            "Persephone pale and silent on a smaller throne beside him",
+            "the black river and the asphodel meadows",
+            "no sun anywhere"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a lean severe Greek god in his prime, long black hair and a full black beard, pale bloodless skin, dark hooded eyes, a heavy black-violet himation covering both shoulders and falling to the ankles, bare feet, seated upright and still on a throne of black stone, one hand resting on its arm.\nSUBJECT 2: a slender Greek goddess on the edge of womanhood, long loose dark-honey hair falling to the waist, a fresh open face with wide dark eyes, a pale saffron-yellow peplos belted with a plain cord, bare feet, seated pale and silent on a smaller throne beside him, crushed flowers still in her hair.\nSUBJECT 3: a vast grey cavern world under the earth, a slow black river in a wide bed, colourless asphodel meadows stretching into darkness, distant walls of dark rock, no sun and no horizon, a dim even greyness everywhere, around the dais.\nACTION: the two sit side by side without touching.\nSETTING: a dais of black rock by the river.\nCAMERA: camera stands in the asphodel below the dais, eye level, wide.\nFRAME LAYOUT: left third — Persephone on the smaller throne; center and right third — Hades on the larger throne, near-camera and large; lower edge — asphodel and the black river, near-camera; upper edge — cavern dark.\nFACING: we see both front on; Hades looks straight out past the camera; Persephone looks down at her hands.\nSCREEN DIRECTION: the black river slides toward screen-left along the lower edge; pale mist creeps the same way.\nLIGHT: dim even greyness with no source, a faint cold rim on both faces.\nPALETTE: ash grey, black-violet, saffron, bone white.\nDETAIL: polished black stone of the thrones, crushed petals in her hair, grey asphodel stalks.\nNOT IN FRAME: Demeter, the sun, a three-headed dog, other souls.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "the-underworld",
+            "time_light": "dim-grey",
+            "camera_motion": "push"
+          },
+          "render_mode": "still",
+          "still_motion": "push"
+        }
+      ]
+    },
+    {
+      "beat_id": "B20",
+      "sentences": [
+        "S29",
+        "S30"
+      ],
+      "start": 136.86,
+      "end": 144.3,
+      "dur": 7.44,
+      "device": null,
+      "narration_says": "She did not accept it. She left Olympus, sat down in her temple at Eleusis, and stopped the grain.",
+      "viewer_sees": "Demeter sitting down in her dim temple at Eleusis, mantle over her head; through the doorway the gold of the fields drains to grey",
+      "shots": [
+        {
+          "shot_id": "23",
+          "beat_id": "B20",
+          "link_group": null,
+          "t_in": 136.875,
+          "t_out": 144.292,
+          "use_in": 0,
+          "use_out": 7.417,
+          "use_len": 7.417,
+          "motion_budget": 7.417,
+          "gen_len": 8,
+          "source_file": "shots/part23.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "demeter",
+            "eleusis-temple"
+          ],
+          "visual_priority": [
+            "Demeter sitting down on the stone seat with her mantle pulled low",
+            "the fields through the doorway draining from gold to grey",
+            "her face set and still",
+            "the dim interior of Demeter's temple at Eleusis"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a mature Greek goddess with heavy wheat-gold hair loosely bound, a broad calm sun-warmed face, strong working hands, a plain ochre peplos under a dark brown mantle drawn up over the head, bare feet, lowering herself onto the stone seat with her mantle pulled down over her brow, her hands falling still in her lap.\nSUBJECT 2: a small temple at Eleusis on a low rocky hill above the bay, plain limestone walls and a porch of two columns, a dim interior with a stone seat, the flat plain and the grey sea beyond, seen from inside, its doorway open onto the fields.\nACTION: she sits down and the fields outside begin to lose their colour.\nSETTING: inside the temple, bare limestone, the doorway bright.\nCAMERA: camera stands inside the temple near the wall, eye level, medium.\nFRAME LAYOUT: center — Demeter on the stone seat, near-camera and large, composed for a centred crop; right third — the open doorway and the wheat plain beyond it, gold, far; left third — the bare limestone wall in shadow.\nFACING: we see her face three-quarter on, turned toward screen-right and the doorway, eyes hard.\nSCREEN DIRECTION: dust settles through the doorway light toward the lower-left; the colour drains from the fields beyond the door.\nLIGHT: dim interior, one slab of daylight through the doorway falling across her knees.\nPALETTE: limestone grey, ochre, dark brown, wheat gold.\nDETAIL: dust on the stone floor, the weave of the mantle, wheat ears visible through the door.\nNOT IN FRAME: Persephone, other gods, priests, offerings.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 7.417s; hold to the end of an 8s generation.\n0–1s: Demeter sits down heavily on the stone seat and pulls the mantle lower over her brow.\n1–4.5s: through the doorway the plain drains from gold to dull grey, field after field.\n4.5–7.417s: she sits motionless as the doorway light goes cold.\nCAMERA: one slow push toward her face.\nENVIRONMENT: dust hangs in the doorway light; the wheat outside stops moving.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "eleusis-temple",
+            "time_light": "dim-grey-day",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B21",
+      "sentences": [
+        "S31"
+      ],
+      "start": 144.3,
+      "end": 150.88,
+      "dur": 6.58,
+      "device": "timeline-seasons",
+      "narration_says": "For a whole year nothing grew; oxen dragged ploughs through the fields for nothing.",
+      "viewer_sees": "TIMELINE — the same fields in a locked view, oxen dragging a plough through dust while the seasons turn over them and nothing comes up",
+      "shots": [
+        {
+          "shot_id": "24",
+          "beat_id": "B21",
+          "link_group": null,
+          "t_in": 144.292,
+          "t_out": 150.875,
+          "use_in": 0,
+          "use_out": 6.583,
+          "use_len": 6.583,
+          "motion_budget": 6.583,
+          "gen_len": 8,
+          "source_file": "shots/part24.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "the-fields"
+          ],
+          "visual_priority": [
+            "The Grain Fields bare and cracked in a locked view",
+            "a pair of oxen dragging a plough through the dust",
+            "the seasons turning over the pear tree while nothing sprouts",
+            "the farmstead and its empty threshing floor"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: wide Greek grain fields in a valley between dry limestone hills, long strips of ploughed earth divided by low stone walls, a lone wild pear tree, a small mudbrick farmstead with a round threshing floor, every strip bare and cracked, not one green shoot anywhere.\nACTION: a farmer drives a pair of thin oxen and a wooden plough through the dust of a bare strip.\nSETTING: a Greek valley in a year of famine, the threshing floor empty.\nCAMERA: camera stands on a low stone wall at the field edge, locked, eye level, wide.\nFRAME LAYOUT: center — the ploughing oxen and the farmer, mid-frame; left third — the lone wild pear tree, near-camera; right third — the farmstead and the empty threshing floor, far; upper edge — the dry hills.\nFACING: we see the oxen and the farmer from the side, heads down, moving toward screen-right.\nSCREEN DIRECTION: the plough team moves toward screen-right; dust trails from the share toward screen-left.\nLIGHT: hard pale sun, a washed-out sky.\nPALETTE: dust brown, bleached ochre, pale sky, pear-leaf green.\nDETAIL: cracked clods turning over, the ribs of the thin oxen, furrows with no seedlings.\nNOT IN FRAME: green shoots, rain, gods, a harvest.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 6.583s; hold to the end of an 8s generation.\n0–1s: the oxen strain forward and the plough bites into the dry earth.\n1–4.5s: the seasons cycle over the valley while the team keeps crossing; the pear tree flowers, leafs and goes bare.\n4.5–6.583s: the furrows lie open and empty; not one shoot has come up.\nCAMERA: locked; the view never moves.\nENVIRONMENT: dust drifts off the furrows; cloud shadows race across the valley.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "the-fields",
+            "time_light": "cycling-seasons-barren",
+            "camera_motion": "locked"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B22",
+      "sentences": [
+        "S32"
+      ],
+      "start": 150.88,
+      "end": 156.06,
+      "dur": 5.18,
+      "device": "empty-aftermath",
+      "narration_says": "Mankind was starving, and the gods were about to lose their sacrifices.",
+      "viewer_sees": "EMPTY AFTERMATH — a cold village altar with empty offering bowls and no smoke; far above the clouds the terraces of Olympus, dim",
+      "shots": [
+        {
+          "shot_id": "25",
+          "beat_id": "B22",
+          "link_group": null,
+          "t_in": 150.875,
+          "t_out": 156.042,
+          "use_in": 0,
+          "use_out": 5.167,
+          "use_len": 5.167,
+          "motion_budget": null,
+          "gen_len": null,
+          "source_file": "shots/shot25.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "a cold village altar with three empty offering bowls and no smoke",
+            "the terraces of Olympus far above the clouds, dim",
+            "a thin starving dog at the foot of the altar",
+            "grey famine light"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a village stone altar standing cold and bare, its top swept clean of ash, three empty clay offering bowls on it, no fire and no smoke rising.\nACTION: a thin starving dog lies at the foot of the altar and nothing else moves in the square.\nSETTING: a poor Greek village square in a year of famine, shuttered houses, cracked earth.\nCAMERA: camera stands low near the base of the altar, low, medium.\nFRAME LAYOUT: center — the altar, near-camera and large; lower-left — the thin dog; upper-right — far above a thin break in the grey cloud, the pale terraces of Olympus, small, dim and hazy; left third — shuttered house fronts, far.\nFACING: we see the face of the altar and the empty bowls from below; the dog lies with its head on its paws facing screen-right.\nSCREEN DIRECTION: a few dry leaves blow across the square toward screen-right; no smoke rises anywhere.\nLIGHT: flat grey famine light, no warmth and no shadows.\nPALETTE: cold stone grey, dry clay, faded ochre, pale sky.\nDETAIL: cracks in the altar stone, dust in the empty bowls, the ribs of the dog.\nNOT IN FRAME: fire, smoke, meat, gods, people eating.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "MS",
+            "angle": "low",
+            "location": "village-altar",
+            "time_light": "grey-famine-day",
+            "camera_motion": "push"
+          },
+          "render_mode": "still",
+          "still_motion": "push"
+        }
+      ]
+    },
+    {
+      "beat_id": "B23",
+      "sentences": [
+        "S33"
+      ],
+      "start": 156.06,
+      "end": 161.04,
+      "dur": 4.98,
+      "device": null,
+      "narration_says": "Zeus sent a messenger, then every god on Olympus, one after another, bearing gifts.",
+      "viewer_sees": "a line of gods seen from behind and against the light, climbing to the temple door one after another, each known only by the gift in their hands; Demeter seated inside the doorway, not rising",
+      "shots": [
+        {
+          "shot_id": "26",
+          "beat_id": "B23",
+          "link_group": null,
+          "t_in": 156.042,
+          "t_out": 161.042,
+          "use_in": 0,
+          "use_out": 5,
+          "use_len": 5,
+          "motion_budget": 5,
+          "gen_len": 6,
+          "source_file": "shots/part26.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "eleusis-temple",
+            "demeter"
+          ],
+          "visual_priority": [
+            "Demeter's Temple at Eleusis with a line of gods climbing its steps one after another",
+            "each god seen from behind and against the light, known only by the gift carried",
+            "Demeter seated in the doorway, not rising",
+            "a faint rainbow fading over the roof"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a small temple at Eleusis on a low rocky hill above the bay, plain limestone walls and a porch of two columns, a dim interior with a stone seat, the flat plain and the grey sea beyond, a long line of tall gods climbing its steps one after another, each carrying a gift — a golden bowl, a folded robe, a small chest, a jar of oil — all dark against the grey light.\nSUBJECT 2: a mature Greek goddess with heavy wheat-gold hair loosely bound, a broad calm sun-warmed face, strong working hands, a plain ochre peplos under a dark brown mantle drawn up over the head, bare feet, seated on the stone seat just inside the doorway, not rising.\nACTION: the first god in the line holds out a gift at the door and she does not move.\nSETTING: the rocky hill of Eleusis under a grey sky, the plain below bare, a faint rainbow fading over the roof.\nCAMERA: camera stands on the slope below the steps, eye level, wide.\nFRAME LAYOUT: left third — the porch and doorway, Demeter seated inside; center — the first gods on the steps; right third — the line running down the hill and off the right edge, smaller with distance; upper edge — the fading rainbow.\nFACING: we see the gods from behind and in silhouette, no face visible; we see Demeter front on in the doorway.\nSCREEN DIRECTION: the line climbs from the right edge toward the doorway at screen-left.\nLIGHT: flat grey daylight behind the procession, the gods dark against it; dim interior around Demeter.\nPALETTE: grey sky, limestone, gift gold, ochre.\nDETAIL: glints on the gifts, figures readable by outline and posture only, bare grey fields below.\nNOT IN FRAME: faces of the gods, Zeus, thrones, crowds of mortals.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 5s; hold to the end of a 6s generation.\n0–1s: the first god in the line reaches the top step and holds out a golden bowl toward the doorway.\n1–3.5s: the line shuffles up a step as the next god offers a folded robe.\n3.5–5s: Demeter does not rise or reach out, and the gifts stay held out in the air.\nCAMERA: locked on the slope.\nENVIRONMENT: the rainbow fades; wind stirs the gods' cloaks.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "eleusis-temple",
+            "time_light": "grey-daylight",
+            "camera_motion": "locked"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B24",
+      "sentences": [
+        "S34",
+        "S35"
+      ],
+      "start": 161.04,
+      "end": 165.76,
+      "dur": 4.72,
+      "device": null,
+      "narration_says": "She refused them all. Nothing would grow until she saw her daughter.",
+      "viewer_sees": "Demeter close, face turned away from a heap of untouched gifts at her feet",
+      "shots": [
+        {
+          "shot_id": "27",
+          "beat_id": "B24",
+          "link_group": null,
+          "t_in": 161.042,
+          "t_out": 165.75,
+          "use_in": 0,
+          "use_out": 4.708,
+          "use_len": 4.708,
+          "motion_budget": null,
+          "gen_len": null,
+          "source_file": "shots/shot27.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "demeter"
+          ],
+          "visual_priority": [
+            "Demeter close, her face turned sharply away from the gifts",
+            "the heap of untouched gifts at the lower-left",
+            "her set jaw and dry eyes",
+            "the cold slab of doorway light"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a mature Greek goddess with heavy wheat-gold hair loosely bound, a broad calm sun-warmed face, strong working hands, a plain ochre peplos under a dark brown mantle drawn up over the head, bare feet, seated, seen close, her face turned sharply away from the gifts heaped at her feet, her jaw set and her eyes dry.\nACTION: she keeps her face turned away.\nSETTING: the dim temple at Eleusis, bare limestone; on the floor a golden bowl, a folded purple robe, a small chest and a wreath of gold leaves, piled and untouched.\nCAMERA: camera stands close at her shoulder height, eye level, close.\nFRAME LAYOUT: center and right third — her head and shoulders, near-camera and large; lower-left — the heap of gifts glinting, cropped at the lower edge; left third — dark wall.\nFACING: we see her face three-quarter on, turned toward screen-right, away from the gifts at the lower-left.\nSCREEN DIRECTION: a thread of dust drifts down through the doorway light at the right edge; the mantle hangs heavy.\nLIGHT: one cold slab of doorway light across her face from screen-right, the gifts glinting in shadow.\nPALETTE: ochre, dark brown, dull gold, limestone grey.\nDETAIL: the weave of the mantle, fine lines at her eyes, the gold edges of the untouched gifts.\nNOT IN FRAME: the gods, Persephone, tears.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "CU",
+            "angle": "eye",
+            "location": "eleusis-temple",
+            "time_light": "dim-interior",
+            "camera_motion": "locked"
+          },
+          "render_mode": "still",
+          "still_motion": "hold"
+        }
+      ]
+    },
+    {
+      "beat_id": "B25",
+      "sentences": [
+        "S36"
+      ],
+      "start": 165.76,
+      "end": 168.98,
+      "dur": 3.22,
+      "device": null,
+      "narration_says": "And the king of the sky gave in.",
+      "viewer_sees": "Zeus on his throne letting the thunderbolt sink to his knee, its light dimming, his head bowing",
+      "shots": [
+        {
+          "shot_id": "28",
+          "beat_id": "B25",
+          "link_group": null,
+          "t_in": 165.75,
+          "t_out": 169,
+          "use_in": 0,
+          "use_out": 3.25,
+          "use_len": 3.25,
+          "motion_budget": 3.25,
+          "gen_len": 4,
+          "source_file": "shots/part28.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "zeus",
+            "thunderbolt"
+          ],
+          "visual_priority": [
+            "Zeus on his throne lowering the thunderbolt to his knee",
+            "the thunderbolt dimming in his hand",
+            "his head bowing",
+            "the grey terrace under a slack sky"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a broad powerfully built Greek god in his prime, thick dark hair swept back from a high brow, a full curled beard, deep-set grey eyes under heavy brows, a purple-red himation over one shoulder, bare chest and bare feet, seated on his throne, the arm holding the thunderbolt coming down to rest on his knee, his head beginning to bow.\nSCALE: the thunderbolt is only a hand long and its dimmed light still reaches the columns at the terrace edge; the throne is twice a man's height and he fills it; the clouds around the summit have gone slack and grey.\nSUBJECT 2: a hand-length weapon of solid white-gold light shaped like a spindle, tapering to sharp points at both ends, bound at the middle by a band of bronze, thin forks of lightning standing out from each end, its forks of lightning shrinking back into the white-gold.\nACTION: he lowers the weapon and bows his head.\nSETTING: the summit terrace of Olympus under a dull overcast sky.\nCAMERA: camera stands square to the throne a few paces off, eye level, medium.\nFRAME LAYOUT: center and right third — Zeus on the throne, near-camera and large; center — the thunderbolt coming down onto his knee; left third — the empty terrace and grey sky, far.\nFACING: we see him three-quarter on, eyes lowering toward screen-left.\nSCREEN DIRECTION: the dimming light draws in toward the weapon; grey cloud drifts toward screen-left.\nLIGHT: dull overcast light, the thunderbolt's glow fading on his chest.\nPALETTE: overcast grey, purple-red, white-gold, pale marble.\nDETAIL: the tooling of the bronze band, the woven nap of the himation, veins on the lowering forearm.\nNOT IN FRAME: Demeter, other gods, a storm.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 3.25s; hold to the end of a 4s generation.\n0–1s: the thunderbolt's forks shrink and its light dims in his hand.\n1–2.2s: his arm lowers the weapon to rest on his knee.\n2.2–3.25s: his head bows and he stays still.\nCAMERA: locked on the throne.\nENVIRONMENT: slack grey cloud drifts past the columns.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "olympus",
+            "time_light": "dim-overcast",
+            "camera_motion": "locked"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B26",
+      "sentences": [
+        "S37"
+      ],
+      "start": 168.98,
+      "end": 176.2,
+      "dur": 7.22,
+      "device": null,
+      "narration_says": "He sent Hermes to bring Persephone back, and Hades let her go — but first he slipped her a single pomegranate seed.",
+      "viewer_sees": "in the grey underworld Hades holds out a split pomegranate and the girl takes a single red seed; a winged-hat herald waits at the far gate",
+      "shots": [
+        {
+          "shot_id": "29",
+          "beat_id": "B26",
+          "link_group": null,
+          "t_in": 169,
+          "t_out": 176.208,
+          "use_in": 0,
+          "use_out": 7.208,
+          "use_len": 7.208,
+          "motion_budget": 7.208,
+          "gen_len": 8,
+          "source_file": "shots/part29.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "persephone",
+            "hades",
+            "hermes"
+          ],
+          "visual_priority": [
+            "Persephone lifting a single red pomegranate seed toward her lips",
+            "Hades holding out the split pomegranate, watching her",
+            "Hermes waiting by the gate at the right edge",
+            "the grey hall of the underworld"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a slender Greek goddess on the edge of womanhood, long loose dark-honey hair falling to the waist, a fresh open face with wide dark eyes, a pale saffron-yellow peplos belted with a plain cord, bare feet, standing close to the god in black-violet with one hand lifted, a single red pomegranate seed held between finger and thumb.\nSUBJECT 2: a lean severe Greek god in his prime, long black hair and a full black beard, pale bloodless skin, dark hooded eyes, a heavy black-violet himation covering both shoulders and falling to the ankles, bare feet, holding out a split pomegranate in one pale hand, the red seeds glistening inside.\nSUBJECT 3: a lithe beardless young Greek god, short dark curls under a low round travelling hat with small wings at its sides, a short dark-blue cloak pinned at one shoulder, winged sandals, a slim golden herald's staff, waiting by a tall bronze gate at the far side of the hall, leaning on his staff.\nACTION: she lifts the one seed toward her mouth while Hades watches her.\nSETTING: a hall of black rock in the underworld, grey asphodel, the black river through the gate.\nCAMERA: camera stands at their shoulder height, eye level, medium.\nFRAME LAYOUT: left third — Persephone, near-camera and large; center — the pomegranate in his hand and the one seed in hers, sharp; right third — Hades, with Hermes small and hazy by the gate at the right edge.\nFACING: we see Persephone three-quarter on, facing screen-right, eyes on the seed; Hades and Hermes face screen-left.\nSCREEN DIRECTION: her hand lifts the seed upward toward her mouth; grey mist drifts toward screen-left along the floor.\nLIGHT: dim grey light, one cold glint on the wet red seed.\nPALETTE: ash grey, pomegranate red, saffron, black-violet.\nDETAIL: glistening seed pulp, the split rind's pale pith, the gold of the herald's staff.\nNOT IN FRAME: Demeter, falling seeds, a throne, a three-headed dog.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 7.208s; hold to the end of an 8s generation.\n0–1s: Persephone's hand lifts the single red seed toward her lips.\n1–4.5s: she takes it into her mouth as Hades draws the pomegranate back to his chest.\n4.5–7.208s: Hermes straightens at the gate and lifts his staff, and she turns her head toward him.\nCAMERA: one slow push toward the seed and her face.\nENVIRONMENT: mist slides along the floor.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "the-underworld",
+            "time_light": "dim-grey",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B27",
+      "sentences": [
+        "S38"
+      ],
+      "start": 176.2,
+      "end": 182.42,
+      "dur": 6.22,
+      "device": "animated-map",
+      "narration_says": "She had eaten in the land of the dead, so for a third of every year she would return below.",
+      "viewer_sees": "ANIMATED MAP — a bronze disc of the year cut into three equal parts; shadow sweeps over one third and a small engraved girl walks down into it",
+      "shots": [
+        {
+          "shot_id": "30",
+          "beat_id": "B27",
+          "link_group": null,
+          "t_in": 176.208,
+          "t_out": 182.417,
+          "use_in": 0,
+          "use_out": 6.209,
+          "use_len": 6.209,
+          "motion_budget": 6.209,
+          "gen_len": 8,
+          "source_file": "shots/part30.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "a bronze disc of the year cut into exactly three equal parts",
+            "a shadow covering exactly one third",
+            "a small engraved girl walking into the dark third",
+            "the two lit thirds engraved with flowers and grain"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a round hammered bronze plate engraved with the ring of the year — spring flowers, summer grain, autumn vines, bare winter branches — cut by three deep radial lines into exactly three equal parts, with one small engraved figure of a girl walking along the ring.\nACTION: the engraved girl stands at the edge of one third as a shadow begins to cover it.\nSETTING: a round bronze plate, hammered and engraved.\nCAMERA: camera hangs directly over the plate, overhead, close.\nFRAME LAYOUT: center — the plate, near-camera and filling the frame; lower-right — the one sector falling into shadow; upper-left and left third — the two lit sectors with engraved grain and flowers; mid-frame — the small engraved girl at the boundary line.\nFACING: we see the engraved face flat on; the girl is engraved in profile, walking toward the shadowed sector.\nSCREEN DIRECTION: the shadow sweeps clockwise across one third of the plate; the engraved girl walks with it.\nLIGHT: one low raking light across the engraving; the shadowed third goes dark bronze-black.\nPALETTE: bronze gold, verdigris, deep shadow brown.\nDETAIL: punch marks along every engraved line, hammer planishing, verdigris in the cuts.\nNOT IN FRAME: names, letters, numbers, a fourth division.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 6.209s; hold to the end of an 8s generation.\n0–1s: a shadow starts to slide over one third of the plate from its rim.\n1–4s: the engraved girl walks into the shadowed third and its grain dims.\n4–6.209s: the shadow covers exactly one third and holds while the other two thirds stay lit.\nCAMERA: one slow push toward the centre of the plate.\nENVIRONMENT: a reflection moves across the rim.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "map-diagram",
+            "shot_size": "CU",
+            "angle": "overhead",
+            "location": "bronze-year-disc",
+            "time_light": "flat-bronze-glow",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B28",
+      "sentences": [
+        "S39"
+      ],
+      "start": 182.42,
+      "end": 186.12,
+      "dur": 3.7,
+      "device": null,
+      "narration_says": "Only then did Demeter let the fields grow again.",
+      "viewer_sees": "the same fields as the famine shot, green shoots bursting up along every furrow at once",
+      "shots": [
+        {
+          "shot_id": "31",
+          "beat_id": "B28",
+          "link_group": null,
+          "t_in": 182.417,
+          "t_out": 186.125,
+          "use_in": 0,
+          "use_out": 3.708,
+          "use_len": 3.708,
+          "motion_budget": 3.708,
+          "gen_len": 4,
+          "source_file": "shots/part31.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "the-fields"
+          ],
+          "visual_priority": [
+            "The Grain Fields bursting green along every furrow",
+            "the same pear tree and farmstead as in the famine",
+            "the pear tree in white blossom",
+            "fresh morning light and dew"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: wide Greek grain fields in a valley between dry limestone hills, long strips of ploughed earth divided by low stone walls, a lone wild pear tree, a small mudbrick farmstead with a round threshing floor, the bare furrows just breaking green along their whole length.\nACTION: green shoots push up out of every furrow at once.\nSETTING: the same Greek valley as in the famine, a spring morning, dew on the earth.\nCAMERA: camera on the same field wall as in the famine, locked, eye level, wide.\nFRAME LAYOUT: center — the furrowed strips, mid-frame; left third — the lone wild pear tree in white blossom, near-camera; right third — the farmstead and the threshing floor, far; upper edge — the limestone hills softening green.\nFACING: we see the fields flat on in the same framing as the famine view; no person is in frame.\nSCREEN DIRECTION: the green spreads along the furrows from screen-left toward screen-right.\nLIGHT: fresh low morning sun from screen-left, long soft shadows, dew catching light.\nPALETTE: fresh green, earth brown, blossom white, soft sky blue.\nDETAIL: tiny shoots breaking the clods, dew beads, fallen blossom petals.\nNOT IN FRAME: people, gods, oxen, dust.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 3.708s; hold to the end of a 4s generation.\n0–1s: the first shoots break the earth along the nearest furrow.\n1–2.6s: green runs down every furrow toward the right edge at once.\n2.6–3.708s: the whole valley stands green and still.\nCAMERA: locked; the view never moves.\nENVIRONMENT: pear blossom drifts; dew glints.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "the-fields",
+            "time_light": "fresh-spring-morning",
+            "camera_motion": "locked"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B29",
+      "sentences": [
+        "S40"
+      ],
+      "start": 186.12,
+      "end": 194.22,
+      "dur": 8.1,
+      "device": null,
+      "narration_says": "The sister with no kingdom had made the king of the sky back down, and the king of the dead give back what he had taken.",
+      "viewer_sees": "Demeter kneeling in risen wheat with her daughter held against her, the grain to the horizon bowed toward them",
+      "shots": [
+        {
+          "shot_id": "32",
+          "beat_id": "B29",
+          "link_group": null,
+          "t_in": 186.125,
+          "t_out": 194.208,
+          "use_in": 0,
+          "use_out": 8.083,
+          "use_len": 8.083,
+          "motion_budget": null,
+          "gen_len": null,
+          "source_file": "shots/shot32.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "demeter",
+            "persephone"
+          ],
+          "visual_priority": [
+            "Demeter kneeling in the risen wheat, holding Persephone against her",
+            "the wheat to the horizon bowed in toward the two of them",
+            "Persephone's face hidden in her mother's shoulder",
+            "warm golden late light"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a mature Greek goddess with heavy wheat-gold hair loosely bound, a broad calm sun-warmed face, strong working hands, a plain ochre peplos under a dark brown mantle drawn up over the head, bare feet, kneeling in tall green-gold wheat with her daughter held hard against her, one hand cradling the girl's head, her eyes closed.\nSCALE: every stalk to the horizon leans in toward the two of them, as if the whole field bows.\nSUBJECT 2: a slender Greek goddess on the edge of womanhood, long loose dark-honey hair falling to the waist, a fresh open face with wide dark eyes, a pale saffron-yellow peplos belted with a plain cord, bare feet, kneeling in her mother's arms with her face pressed into her shoulder.\nACTION: mother and daughter hold each other without moving.\nSETTING: the valley fields in full new growth at the end of the day.\nCAMERA: camera kneels low among the stalks close by, eye level, medium.\nFRAME LAYOUT: center — the two figures, near-camera, composed for a centred crop; left third and right third — the wheat bending in toward them; upper edge — the low sun over the hills, far.\nFACING: we see Demeter's face three-quarter on, turned toward screen-right, eyes closed; we see Persephone's back and hair, her face hidden in her mother's shoulder.\nSCREEN DIRECTION: the wheat leans inward from both edges toward the centre; a few seed heads drift toward screen-right in the light.\nLIGHT: warm low golden light from screen-right, rim light on both heads.\nPALETTE: wheat gold, fresh green, ochre, saffron.\nDETAIL: individual wheat ears and awns, the weave of both garments, loose strands of hair catching the light.\nNOT IN FRAME: Zeus, Hades, Hermes, other people.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "the-fields",
+            "time_light": "golden-late-light",
+            "camera_motion": "push"
+          },
+          "render_mode": "still",
+          "still_motion": "push"
+        }
+      ]
+    },
+    {
+      "beat_id": "B30",
+      "sentences": [
+        "S41",
+        "S42"
+      ],
+      "start": 194.22,
+      "end": 201.52,
+      "dur": 7.3,
+      "device": null,
+      "narration_says": "Hestia got the fire. She was the first child Cronus swallowed, and the last to come back up.",
+      "viewer_sees": "Hestia seated at a great round hearth on Olympus, veiled, the fire lighting her face as she feeds it",
+      "shots": [
+        {
+          "shot_id": "33",
+          "beat_id": "B30",
+          "link_group": null,
+          "t_in": 194.208,
+          "t_out": 201.5,
+          "use_in": 0,
+          "use_out": 7.292,
+          "use_len": 7.292,
+          "motion_budget": 7.292,
+          "gen_len": 8,
+          "source_file": "shots/part33.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "hestia",
+            "olympus"
+          ],
+          "visual_priority": [
+            "Hestia seated at the great round hearth, veiled",
+            "the fire rising to meet her hand",
+            "the firelight on her face and veil",
+            "the evening terrace of Olympus around the blaze"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a quiet Greek goddess in her prime, light brown hair fully covered by a plain veil, a still even face, pale grey eyes, an undyed woollen peplos belted at the waist, a grey mantle over both arms, bare feet, seated on a low stone bench at a great round hearth, leaning forward to lay a branch of olive wood into the flames.\nSCALE: the hearth is as wide as a threshing floor and its fire rises twice her height; the columns stand small and dark around the blaze.\nSUBJECT 2: the summit of Mount Olympus above the cloud line, broad terraces of pale marble and bare rock, tall plain columns, wide open sky, snowfields and lower peaks showing far below through breaks in the cloud, at evening, the great round hearth of fitted stones burning on its broadest terrace.\nACTION: she feeds the fire and it rises to meet her hand.\nSETTING: the hearth of the gods at dusk.\nCAMERA: camera stands at the far side of the hearth at her level, eye level, medium.\nFRAME LAYOUT: center — Hestia, near-camera and large, composed for a centred crop; lower edge — the rim of the hearth and the flames, near-camera; left third and right third — dark columns and violet dusk, far.\nFACING: we see her face front on, lit from below, her pale grey eyes on the fire.\nSCREEN DIRECTION: sparks rise from the fire toward the upper edge; the branch goes down into the flames.\nLIGHT: the fire is the only warm light, gold on her face and veil, cool violet dusk around.\nPALETTE: fire gold, undyed wool, grey, dusk violet.\nDETAIL: the weave of the veil and the woollen peplos, olive leaves curling in the heat, soot on the hearthstones.\nNOT IN FRAME: other gods, suitors, Cronus, a crown.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 7.292s; hold to the end of an 8s generation.\n0–1s: Hestia lays the olive branch into the fire and the flames leap up around it.\n1–4.5s: the fire rises tall and steady, and the light swells on her face and veil.\n4.5–7.292s: she sits back with her hands folded, watching the flames settle into a strong even blaze.\nCAMERA: one slow push toward her face.\nENVIRONMENT: sparks lift into the dusk; the columns flicker with firelight.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "olympus",
+            "time_light": "firelit-evening",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B31",
+      "sentences": [
+        "S43"
+      ],
+      "start": 201.52,
+      "end": 204.8,
+      "dur": 3.28,
+      "device": "macro-object",
+      "narration_says": "Poseidon and Apollo both asked to marry her.",
+      "viewer_sees": "MACRO OBJECT — two courting gifts left on the hearthstone, a bronze trident and a golden lyre, and the hem of a grey mantle turning away from them",
+      "shots": [
+        {
+          "shot_id": "34",
+          "beat_id": "B31",
+          "link_group": null,
+          "t_in": 201.5,
+          "t_out": 204.792,
+          "use_in": 0,
+          "use_out": 3.292,
+          "use_len": 3.292,
+          "motion_budget": null,
+          "gen_len": null,
+          "source_file": "shots/shot34.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "trident"
+          ],
+          "visual_priority": [
+            "The Trident laid across the hearth rim as a courting gift",
+            "a golden lyre beside it",
+            "the hem of a grey mantle and a bare heel turning away from both",
+            "the warm glow of the hearth"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a bronze fishing spear the height of a man, a worn dark wooden shaft bound with cord below the head, three barbed prongs on a socketed head, the bronze dark and polished from long use, laid across the stone rim of the hearth as a courting gift.\nSCALE: the trident is the height of a man and runs across the whole width of the hearth rim; the lyre beside it is small enough to hold in one arm; the gifts lie at the feet of a goddess who does not bend to them.\nACTION: the two gifts lie untouched while the hem of a grey mantle sweeps away from them.\nSETTING: the rim of the great round hearth on Olympus, firelight on the stones.\nCAMERA: camera looks down at the hearth rim from standing height, high, close.\nFRAME LAYOUT: center — the trident laid on the diagonal, near-camera and large; left third — a golden lyre with gut strings; right third and upper-right — the hem of a grey mantle and one bare heel turning away, cropped at the right edge; lower edge — the hearthstones glowing.\nFACING: we see the gifts from above; only the hem and one bare heel of the goddess are in frame, turning away toward the right edge.\nSCREEN DIRECTION: the mantle hem sweeps toward the right edge; firelight flickers across the bronze.\nLIGHT: warm hearth glow from below, darkness around.\nPALETTE: bronze, lyre gold, undyed grey, ember orange.\nDETAIL: barbs on the prongs, the cord binding on the shaft, lyre strings catching light, soot on the hearthstones.\nNOT IN FRAME: Poseidon, Apollo, any face, the fire itself.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "CU",
+            "angle": "high",
+            "location": "olympus",
+            "time_light": "firelit-evening",
+            "camera_motion": "locked"
+          },
+          "render_mode": "still",
+          "still_motion": "hold"
+        }
+      ]
+    },
+    {
+      "beat_id": "B32",
+      "sentences": [
+        "S44"
+      ],
+      "start": 204.8,
+      "end": 209.14,
+      "dur": 4.34,
+      "device": null,
+      "narration_says": "She laid her hand on Zeus's head and swore never to marry at all.",
+      "viewer_sees": "Hestia laying her hand on Zeus's head as he sits; the hearth fire leaps up at the oath",
+      "shots": [
+        {
+          "shot_id": "35",
+          "beat_id": "B32",
+          "link_group": null,
+          "t_in": 204.792,
+          "t_out": 209.125,
+          "use_in": 0,
+          "use_out": 4.333,
+          "use_len": 4.333,
+          "motion_budget": 4.333,
+          "gen_len": 6,
+          "source_file": "shots/part35.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "hestia",
+            "zeus"
+          ],
+          "visual_priority": [
+            "Hestia laying her hand on Zeus's head to swear her oath",
+            "Zeus seated with his head bowed under her hand",
+            "the hearth fire leaping up at the oath",
+            "the firelit hall"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a quiet Greek goddess in her prime, light brown hair fully covered by a plain veil, a still even face, pale grey eyes, an undyed woollen peplos belted at the waist, a grey mantle over both arms, bare feet, standing tall with her right hand laid flat on the crown of Zeus's head and her other hand raised, swearing.\nSUBJECT 2: a broad powerfully built Greek god in his prime, thick dark hair swept back from a high brow, a full curled beard, deep-set grey eyes under heavy brows, a purple-red himation over one shoulder, bare chest and bare feet, seated on his throne with his head bowed under her hand.\nACTION: she speaks the oath and the fire in the hearth beside them leaps up.\nSETTING: the hall of Olympus at night, a great round hearth burning beside the throne.\nCAMERA: camera stands a few paces off at her shoulder height, eye level, medium.\nFRAME LAYOUT: left third — Hestia, near-camera and large; right third — Zeus seated, head bowed; center — her hand on his head; lower-left — the hearth fire, near-camera.\nFACING: we see Hestia in profile facing screen-right, eyes on the fire; we see Zeus three-quarter on, eyes lowered.\nSCREEN DIRECTION: the flames climb toward the upper edge; her veil stirs toward screen-right.\nLIGHT: hearth fire from the lower-left, hard gold on both faces, deep shadow at the right edge.\nPALETTE: fire gold, undyed wool, purple-red, hall black.\nDETAIL: the weave of the veil, the curls of his beard, sparks in the air.\nNOT IN FRAME: suitors, other gods, a crown on her, text.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 4.333s; hold to the end of a 6s generation.\n0–1s: Hestia's hand settles on Zeus's head as she lifts her other hand.\n1–3s: the hearth fire leaps up high beside them as she speaks the oath, and light floods both faces.\n3–4.333s: the flames settle and her hand stays where it is.\nCAMERA: one slow push toward her hand on his head.\nENVIRONMENT: sparks fly up from the hearth; the hall flickers.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "olympus",
+            "time_light": "firelit-hall",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B33",
+      "sentences": [
+        "S45"
+      ],
+      "start": 209.14,
+      "end": 214.16,
+      "dur": 5.02,
+      "device": null,
+      "narration_says": "So instead of a husband, Zeus gave her a place: the middle of every house.",
+      "viewer_sees": "a Greek town from above at dusk, a hearth glowing in the middle of every house, the glows lighting one after another",
+      "shots": [
+        {
+          "shot_id": "36",
+          "beat_id": "B33",
+          "link_group": null,
+          "t_in": 209.125,
+          "t_out": 214.167,
+          "use_in": 0,
+          "use_out": 5.042,
+          "use_len": 5.042,
+          "motion_budget": 5.042,
+          "gen_len": 6,
+          "source_file": "shots/part36.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "a Greek town from above at dusk",
+            "a hearth glowing through the roof at the middle of every house",
+            "the glows catching one after another",
+            "smoke rising from every roof hole"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a small ancient Greek town seen from above at dusk, dozens of flat-roofed mudbrick houses around their courtyards, and at the middle of every house a round hearth glowing up through its roof hole.\nACTION: the hearth fires light one after another across the town until every house glows at its centre.\nSETTING: a hill town of whitewashed mudbrick and tiled roofs, lanes between the houses, dusk.\nCAMERA: camera hangs high over the town, high, wide.\nFRAME LAYOUT: full frame — the roofs of the town, a glowing point at the middle of each house; center — the densest houses, near-camera; upper edge — the dark hills and the first stars, far.\nFACING: we see the roofs from above; no person is readable.\nSCREEN DIRECTION: the lights spread from the center outward toward every edge; threads of smoke rise and lean toward screen-right.\nLIGHT: deep blue dusk, each hearth a warm point of gold.\nPALETTE: dusk blue, ember gold, whitewash, roof-tile brown.\nDETAIL: the pattern of roofs and lanes, glowing roof holes as points, figures as marks only.\nNOT IN FRAME: temples, gods, city walls, ships.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 5.042s; hold to the end of a 6s generation.\n0–1s: one hearth glows up through a roof hole at the centre of the town.\n1–3.5s: more hearths catch one after another, spreading outward across the roofs.\n3.5–5.042s: every house glows at its middle and threads of smoke rise together.\nCAMERA: one slow pull upward and back over the town.\nENVIRONMENT: smoke threads drift; the first stars appear.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "architecture",
+            "shot_size": "aerial",
+            "angle": "high",
+            "location": "greek-town",
+            "time_light": "blue-dusk",
+            "camera_motion": "pull"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B34",
+      "sentences": [
+        "S46"
+      ],
+      "start": 214.16,
+      "end": 219.78,
+      "dur": 5.62,
+      "device": null,
+      "narration_says": "The first offering at every feast went to her, and the last.",
+      "viewer_sees": "a man at a house feast pouring the first cup of wine into the hearth fire, the flame leaping up",
+      "shots": [
+        {
+          "shot_id": "37",
+          "beat_id": "B34",
+          "link_group": null,
+          "t_in": 214.167,
+          "t_out": 219.792,
+          "use_in": 0,
+          "use_out": 5.625,
+          "use_len": 5.625,
+          "motion_budget": 5.625,
+          "gen_len": 6,
+          "source_file": "shots/part37.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "greek-house"
+          ],
+          "visual_priority": [
+            "The Greek House's hearth receiving the first cup of wine",
+            "the host pouring from a shallow black cup into the flames",
+            "the flame leaping up at the offering",
+            "the feast laid out on the benches around"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: the main room of an ancient Greek farmhouse, whitewashed mudbrick walls and a beaten-earth floor, a round stone hearth in the middle of the room, a smoke hole in the roof beams, wooden benches, clay jars and hanging pots, a feast laid out on the benches around it, and the host standing at the hearth pouring wine from a shallow black-glazed cup into the fire.\nACTION: the first wine of the feast splashes into the flames and the fire leaps up.\nSETTING: evening, family and guests seated with bread, olives and fish on low tables.\nCAMERA: camera stands near the hearth at the host's shoulder height, eye level, medium.\nFRAME LAYOUT: center — the hearth and the pouring cup, near-camera and large; left third — the host, a bearded man in a white chiton; right third — the seated guests, smaller, looking on; upper edge — the smoke hole and roof beams.\nFACING: we see the host three-quarter on, eyes on the fire; the guests face the hearth.\nSCREEN DIRECTION: the wine arcs down from the cup into the flames; the flame jumps toward the upper edge.\nLIGHT: the hearth fire flaring gold across every face, oil lamps glowing on the walls.\nPALETTE: fire gold, wine red, whitewash, black glaze.\nDETAIL: the black gloss of the cup, the red stream of wine, bread and olives on the tables, soot on the beams.\nNOT IN FRAME: gods, statues, text.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 5.625s; hold to the end of a 6s generation.\n0–1s: the host tips the cup and a stream of red wine falls into the hearth.\n1–3.5s: the fire hisses and leaps up tall, lighting every face around the room.\n3.5–5.625s: the flame settles, the host lowers the cup, and the guests reach for their bread.\nCAMERA: one slow push toward the hearth.\nENVIRONMENT: steam and smoke rise through the roof hole; lamp flames waver.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "greek-house",
+            "time_light": "lamplit-evening",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B35",
+      "sentences": [
+        "S47"
+      ],
+      "start": 219.78,
+      "end": 227.76,
+      "dur": 7.98,
+      "device": null,
+      "narration_says": "Greek cities kept a public hearth, and when colonists sailed off to found a new city, they carried its fire with them.",
+      "viewer_sees": "a colonists' ship leaving harbour at dusk, a clay fire-pot of embers held at the prow",
+      "shots": [
+        {
+          "shot_id": "38",
+          "beat_id": "B35",
+          "link_group": null,
+          "t_in": 219.792,
+          "t_out": 227.75,
+          "use_in": 0,
+          "use_out": 7.958,
+          "use_len": 7.958,
+          "motion_budget": 7.958,
+          "gen_len": 8,
+          "source_file": "shots/part38.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "a colonists' ship leaving harbour at dusk",
+            "a covered clay fire-pot of live embers held at the prow",
+            "the mother city on its hill with its public hearth glowing",
+            "the open sea ahead"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a Greek colonists' ship under one square sail pulling out of harbour at dusk, crowded with families, tools and seed jars, and at the prow a woman holding a covered clay fire-pot with live embers glowing through its vents.\nACTION: the ship clears the harbour mouth with the fire carried at its prow.\nSETTING: the harbour of a Greek city at dusk, stone moles, the city on its hill with a fire burning at its public hearth, the open sea beyond.\nCAMERA: camera sits low on the water just off the ship's bow, eye level, wide.\nFRAME LAYOUT: center — the prow and the woman with the fire-pot, near-camera and large; left third — the harbour mole and the city on its hill with a single fire glowing at its heart, far and hazy; right third — the open sea, amber and empty.\nFACING: we see the woman three-quarter on, facing screen-right, the fire-pot held in both hands against her chest, her eyes on the open sea.\nSCREEN DIRECTION: the ship moves toward screen-right; sparks from the pot stream toward screen-left.\nLIGHT: low amber dusk from the right, the embers a hot orange point at the prow.\nPALETTE: amber, sea blue-green, ember orange, sail cream.\nDETAIL: oars dipping, rope and planking, the ember glow through the pot's vents.\nNOT IN FRAME: gods, warships, a storm.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 7.958s; hold to the end of an 8s generation.\n0–1s: the oars dip and the ship surges forward out of the harbour mouth.\n1–4.5s: the woman at the prow lifts the fire-pot higher as the ship clears the mole.\n4.5–7.958s: the ship heads into the open sea, the ember glow steady at its prow.\nCAMERA: one slow track alongside the prow toward screen-right.\nENVIRONMENT: the sail fills; spray lifts off the bow.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "the-sea",
+            "time_light": "amber-dusk",
+            "camera_motion": "track"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B36",
+      "sentences": [
+        "S48",
+        "S49"
+      ],
+      "start": 227.76,
+      "end": 236.18,
+      "dur": 8.42,
+      "device": null,
+      "narration_says": "She has almost no myths of her own. In Plato, when the gods ride out across heaven, Hestia alone stays home.",
+      "viewer_sees": "the gods' winged chariots streaming away across the evening sky, the drivers small and faceless against the light; Hestia alone at the hearth on Olympus, not looking up",
+      "shots": [
+        {
+          "shot_id": "39",
+          "beat_id": "B36",
+          "link_group": null,
+          "t_in": 227.75,
+          "t_out": 236.167,
+          "use_in": 0,
+          "use_out": 8.417,
+          "use_len": 8.417,
+          "motion_budget": 8.417,
+          "gen_len": 10,
+          "source_file": "shots/part39.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "hestia",
+            "olympus"
+          ],
+          "visual_priority": [
+            "Hestia alone at the hearth on Olympus, not looking up",
+            "a long file of winged chariots streaming away across the evening sky",
+            "the drivers dark and faceless against the light",
+            "the empty terrace around her"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a quiet Greek goddess in her prime, light brown hair fully covered by a plain veil, a still even face, pale grey eyes, an undyed woollen peplos belted at the waist, a grey mantle over both arms, bare feet, seated alone at the great round hearth, tending the fire with her back to the sky.\nSCALE: the file of chariots spans the whole sky, each one small against the gold cloud.\nSUBJECT 2: the summit of Mount Olympus above the cloud line, broad terraces of pale marble and bare rock, tall plain columns, wide open sky, snowfields and lower peaks showing far below through breaks in the cloud, at evening, gold cloud around the peaks.\nACTION: the gods ride out across the heavens while she stays by the fire and does not look up.\nSETTING: the summit terrace at evening, the hearth burning.\nCAMERA: camera stands at the terrace edge a few paces off, eye level, wide.\nFRAME LAYOUT: left third — Hestia at the hearth, near-camera and large; center and right third — a long file of winged chariots rising away across the gold sky, smaller and smaller toward the right edge; lower edge — pale marble.\nFACING: we see Hestia three-quarter on, facing screen-right toward the fire, eyes down on the flames; the charioteers are dark shapes against the light with no face visible.\nSCREEN DIRECTION: the chariots stream away toward the upper-right; sparks from the hearth rise straight up.\nLIGHT: gold evening sky backlighting the chariots, warm firelight on Hestia.\nPALETTE: sky gold, fire orange, undyed wool, cloud violet.\nDETAIL: the wings of the horses readable as outline, figures in silhouette only, hearthstones and embers.\nNOT IN FRAME: faces of the gods, text, a crowd on the terrace.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 8.417s; hold to the end of a 10s generation.\n0–1s: the first winged chariots lift off the terrace edge and wheel up into the sky.\n1–5s: the long file streams away across the gold clouds toward the upper-right, growing smaller.\n5–8.417s: the last chariot vanishes into the light while Hestia, still at the fire, lays another branch on it.\nCAMERA: one slow pull back along the terrace.\nENVIRONMENT: gold cloud drifts; sparks rise from the hearth.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "XLS",
+            "angle": "eye",
+            "location": "olympus",
+            "time_light": "gold-evening-sky",
+            "camera_motion": "pull"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B37",
+      "sentences": [
+        "S50"
+      ],
+      "start": 236.18,
+      "end": 240.3,
+      "dur": 4.12,
+      "device": null,
+      "narration_says": "The brothers drew three places where no living person can stay.",
+      "viewer_sees": "Cape Tainaron — a storm sky, a wild sea breaking on the cliffs and the dark mouth of the way down to the dead cut into the rock; not one living thing anywhere in the three",
+      "shots": [
+        {
+          "shot_id": "40",
+          "beat_id": "B37",
+          "link_group": null,
+          "t_in": 236.167,
+          "t_out": 240.292,
+          "use_in": 0,
+          "use_out": 4.125,
+          "use_len": 4.125,
+          "motion_budget": null,
+          "gen_len": null,
+          "source_file": "shots/shot40.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "the storm sky over the bare cape",
+            "the wild sea breaking white on the cliffs",
+            "the black cave mouth of the way down to the dead, breathing grey mist",
+            "not one living thing anywhere"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: the tip of Cape Tainaron at the southern end of Greece, a bare headland of dark rock between a storm-torn sky and a wild sea, and at the foot of its cliff the black mouth of a cave that goes down to the dead, grey mist breathing out of it.\nACTION: waves break on the cliffs while the cave mouth breathes out cold mist.\nSETTING: a bare southern cape at storm dusk, no path, no shrine, no boat.\nCAMERA: camera stands on the rocks across a narrow cove, eye level, wide.\nFRAME LAYOUT: upper third — the storm sky, lightning inside the cloud; center — the open sea breaking white on the headland; lower-right — the cave mouth, black, grey mist spilling out; left third — the bare cliff, near-camera and large.\nFACING: we see the cave mouth straight on; no figure faces anywhere.\nSCREEN DIRECTION: spray blows off the waves toward screen-left; the grey mist from the cave creeps out across the water toward screen-left.\nLIGHT: cold storm dusk, lightning flickering inside the cloud, the cave a black hole with no light.\nPALETTE: storm slate, sea green-black, spray white, mist grey.\nDETAIL: three layers of cliff, sea and cloud, spray torn off the crests, scale carried by the size of the breakers against the rock.\nNOT IN FRAME: people, boats, birds, animals, houses, gods.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "XLS",
+            "angle": "eye",
+            "location": "cape-tainaron",
+            "time_light": "storm-cold-dusk",
+            "camera_motion": "push"
+          },
+          "render_mode": "still",
+          "still_motion": "push"
+        }
+      ]
+    },
+    {
+      "beat_id": "B38",
+      "sentences": [
+        "S51"
+      ],
+      "start": 240.3,
+      "end": 243.9,
+      "dur": 3.6,
+      "device": null,
+      "narration_says": "The sisters got the places where people live.",
+      "viewer_sees": "a valley village at evening — fields, roofs, hearth smoke from every house, a wedding procession with torches on the road",
+      "shots": [
+        {
+          "shot_id": "41",
+          "beat_id": "B38",
+          "link_group": null,
+          "t_in": 240.292,
+          "t_out": 243.917,
+          "use_in": 0,
+          "use_out": 3.625,
+          "use_len": 3.625,
+          "motion_budget": 3.625,
+          "gen_len": 4,
+          "source_file": "shots/part41.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "a valley village at evening full of people",
+            "hearth smoke rising from every house",
+            "a wedding procession with torches on the road",
+            "threshing floors heaped with grain"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a Greek farming village in a green valley at evening, whitewashed houses with smoke rising from every roof, threshing floors heaped with grain, and on the road into the village a wedding procession with torches, flute players and a cart carrying the bride.\nACTION: the wedding procession winds into the village while families watch from their doorways.\nSETTING: a fertile valley at the end of harvest, fields cut and stacked, vines on the slopes.\nCAMERA: camera stands on a slope above the road, high, wide.\nFRAME LAYOUT: center — the village and its smoking roofs; lower-left — the torch procession on the road, near-camera; right third — threshing floors and stacked sheaves, far; upper edge — the hills in evening haze.\nFACING: we see the procession from the side, torches held high, faces turned toward the village; figures in the doorways face the road.\nSCREEN DIRECTION: the procession moves along the road toward screen-right into the village; the smoke leans toward screen-right.\nLIGHT: warm evening sun low from screen-left, torchlight beginning to show.\nPALETTE: warm gold, whitewash, torch orange, field green.\nDETAIL: figures readable by outline and posture, sheaves and threshing floors, a thread of smoke from every roof.\nNOT IN FRAME: gods, temples, soldiers, ruins.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 3.625s; hold to the end of a 4s generation.\n0–1s: the procession moves along the road, torches swinging.\n1–2.5s: children run ahead into the village and a door opens on the firelight inside.\n2.5–3.625s: the procession reaches the first houses and smoke keeps rising from every roof.\nCAMERA: locked on the slope.\nENVIRONMENT: smoke threads lean in the breeze; torches flicker.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "LS",
+            "angle": "high",
+            "location": "greek-village",
+            "time_light": "warm-evening",
+            "camera_motion": "locked"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B39",
+      "sentences": [
+        "S52",
+        "S53"
+      ],
+      "start": 243.9,
+      "end": 248.86,
+      "dur": 4.96,
+      "device": null,
+      "narration_says": "Every human life ends in Hades' kingdom. It is lived in theirs.",
+      "viewer_sees": "a family at their hearth at night — a bridal wreath on the wall, a sheaf of grain hung to dry, the fire in the middle",
+      "shots": [
+        {
+          "shot_id": "42",
+          "beat_id": "B39",
+          "link_group": null,
+          "t_in": 243.917,
+          "t_out": 248.875,
+          "use_in": 0,
+          "use_out": 4.958,
+          "use_len": 4.958,
+          "motion_budget": 4.958,
+          "gen_len": 6,
+          "source_file": "shots/part42.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "greek-house"
+          ],
+          "visual_priority": [
+            "The Greek House at night with three generations around the hearth",
+            "a bridal wreath of dried myrtle on the wall",
+            "a sheaf of wheat hung from a beam to dry",
+            "the child asleep in its mother's lap"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: the main room of an ancient Greek farmhouse, whitewashed mudbrick walls and a beaten-earth floor, a round stone hearth in the middle of the room, a smoke hole in the roof beams, wooden benches, clay jars and hanging pots, at night, a family of three generations sitting close around its fire — a grandmother, a young couple, a small child asleep in a lap.\nACTION: the young mother draws the sleeping child closer as the fire settles.\nSETTING: a bridal wreath of dried myrtle hanging on the wall, a sheaf of wheat hung from a roof beam to dry.\nCAMERA: camera sits on the bench across the hearth, eye level, medium.\nFRAME LAYOUT: center — the hearth fire, near-camera; left third — the grandmother and the wreath on the wall; right third — the young couple and the child; upper edge — the wheat sheaf hanging from the beam, cropped.\nFACING: we see all their faces three-quarter on, lit by the fire, eyes on the flames or the child.\nSCREEN DIRECTION: smoke rises toward the smoke hole at the upper edge; firelight flickers across the faces.\nLIGHT: warm hearth fire as the only light, deep shadow in the corners.\nPALETTE: fire gold, whitewash, myrtle green, wheat gold.\nDETAIL: woven blankets, dried myrtle leaves, wheat ears in the sheaf, soot on the beam.\nNOT IN FRAME: gods, the underworld, death imagery, text.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 4.958s; hold to the end of a 6s generation.\n0–1s: the young mother draws the sleeping child closer against her.\n1–3.4s: the grandmother leans in and lays a stick on the fire, and the flames rise.\n3.4–4.958s: the fire settles to a steady glow over the whole family.\nCAMERA: one slow push toward the fire.\nENVIRONMENT: smoke drifts up to the roof hole; the wheat sheaf sways slightly.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "greek-house",
+            "time_light": "firelit-night",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B40",
+      "sentences": [
+        "S54"
+      ],
+      "start": 248.86,
+      "end": 257.74,
+      "dur": 8.88,
+      "device": null,
+      "narration_says": "The sisters were given no kingdom — only the marriage, the harvest and the hearth that every home is built around.",
+      "viewer_sees": "the three sisters seen from behind at the threshold of a human house at dusk, looking in at a family around the hearth",
+      "shots": [
+        {
+          "shot_id": "43",
+          "beat_id": "B40",
+          "link_group": null,
+          "t_in": 248.875,
+          "t_out": 257.75,
+          "use_in": 0,
+          "use_out": 8.875,
+          "use_len": 8.875,
+          "motion_budget": null,
+          "gen_len": null,
+          "source_file": "shots/shot43.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "the-three-sisters"
+          ],
+          "visual_priority": [
+            "The Three Sisters seen from behind at the threshold of a human house",
+            "the family inside around the hearth, small in the doorway light",
+            "the warm light from the door rimming the three",
+            "their long shadows across the yard"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: three tall Greek goddesses in their prime, one with a low golden crown in white and dark red, one wheat-haired in ochre under a dark brown mantle, one fully veiled in undyed wool and grey, all barefoot, standing together at the open door of a small farmhouse at dusk, seen from behind, taller than the doorway, looking in.\nSCALE: the three goddesses stand taller than the lintel and must stoop to look in; the house and the family inside it are small in the light of the door; their three shadows reach back across the whole yard toward camera.\nACTION: they stand together and watch the family inside without going in.\nSETTING: a farmyard at dusk, a threshing floor with the harvest heaped, the house door open onto a firelit room where a family sits around the hearth.\nCAMERA: camera stands in the yard a few paces from them, eye level, wide.\nFRAME LAYOUT: center — the open doorway glowing, the family around the hearth small inside it; left third — the crowned sister in white and dark red and the wheat-haired sister in ochre and brown; right third — the veiled sister in undyed wool and grey; lower edge — their three long shadows running toward camera.\nFACING: we see all three from behind, their faces turned to the firelit room; the family inside does not see them.\nSCREEN DIRECTION: warm light spills out of the door toward camera; the veil of the sister at the right stirs toward screen-left.\nLIGHT: warm hearth glow from the doorway rimming the three, cool blue dusk everywhere else.\nPALETTE: hearth gold, dusk blue, dark red, ochre.\nDETAIL: figures readable by outline and costume colour, straw on the threshing floor, rough whitewash around the door.\nNOT IN FRAME: the brothers, thrones, their faces, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "house-threshold",
+            "time_light": "warm-dusk",
+            "camera_motion": "push"
+          },
+          "render_mode": "still",
+          "still_motion": "push"
+        }
+      ]
+    },
+    {
+      "beat_id": "B41",
+      "sentences": [
+        "S55"
+      ],
+      "start": 257.74,
+      "end": 266.08,
+      "dur": 8.34,
+      "device": null,
+      "narration_says": "In the next part, three gods who were never supposed to be born — one of them straight out of her father's head.",
+      "viewer_sees": "Zeus alone on a storm-dark summit, one hand pressed to his temple, a white-gold light gathering behind his brow and lighting his face from within; the source never seen, nothing emerging",
+      "shots": [
+        {
+          "shot_id": "44",
+          "beat_id": "B41",
+          "link_group": null,
+          "t_in": 257.75,
+          "t_out": 266.083,
+          "use_in": 0,
+          "use_out": 8.333,
+          "use_len": 8.333,
+          "motion_budget": 8.333,
+          "gen_len": 10,
+          "source_file": "shots/part44.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "zeus",
+            "olympus"
+          ],
+          "visual_priority": [
+            "Zeus alone on the storm-dark summit with one hand pressed to his temple",
+            "a white-gold light gathering behind his brow and lighting his face from within",
+            "the storm cloud recoiling from the light",
+            "the source of the light never seen"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a broad powerfully built Greek god in his prime, thick dark hair swept back from a high brow, a full curled beard, deep-set grey eyes under heavy brows, a purple-red himation over one shoulder, bare chest and bare feet, standing alone with one hand pressed hard to his temple and his eyes narrowed, a white-gold light gathering somewhere inside his head and glowing through the skin of his brow.\nSCALE: he stands taller than the summit columns; the small glow in his head lights the storm cloud for a mile around.\nSUBJECT 2: the summit of Mount Olympus above the cloud line, broad terraces of pale marble and bare rock, tall plain columns, wide open sky, snowfields and lower peaks showing far below through breaks in the cloud, under a storm-black sky, its columns dark.\nACTION: he presses his temple as the light inside him grows.\nSETTING: the summit terrace in a storm, no other figure anywhere.\nCAMERA: camera stands below the terrace step, low, medium.\nFRAME LAYOUT: center and right third — Zeus, near-camera and large, cropped at the chest; left third — black storm cloud; upper edge — cloud lit pale by the glow.\nFACING: we see his face three-quarter on, turned toward screen-left, jaw clenched, the glow showing only through the skin of his brow.\nSCREEN DIRECTION: the storm cloud curls back from his head toward the left edge; the glow pulses outward from his brow.\nLIGHT: the only light comes from inside his brow, white-gold, lighting his face from within; the storm around him black.\nPALETTE: storm black, white-gold, purple-red, cold grey.\nDETAIL: fingers pressed into the hair at his temple, the curled beard, cloud edges lit pale.\nNOT IN FRAME: a crack, a wound, blood, an axe, a figure emerging, a helmet, a spear, any goddess.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 8.333s; hold to the end of a 10s generation.\n0–1s: Zeus presses his hand harder to his temple and the glow inside his brow brightens.\n1–5s: the light pulses stronger in slow waves and the storm cloud around the summit recoils from it.\n5–8.333s: he lifts his head, jaw clenched, the source of the glow still hidden.\nCAMERA: one slow push toward his face.\nENVIRONMENT: lightning shrinks back into the cloud.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts, any crack or figure emerging.",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "low",
+            "location": "olympus",
+            "time_light": "storm-dark",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B42",
+      "sentences": [
+        "S56",
+        "S57"
+      ],
+      "start": 266.08,
+      "end": 272.98,
+      "dur": 6.9,
+      "device": "macro-object",
+      "narration_says": "Marriage, harvest or hearth — which sister held the real power? Tell us in the comments.",
+      "viewer_sees": "MACRO OBJECT — a low golden crown, a sheaf of wheat and a small fire in a clay bowl, side by side on one stone ledge",
+      "shots": [
+        {
+          "shot_id": "45",
+          "beat_id": "B42",
+          "link_group": null,
+          "t_in": 266.083,
+          "t_out": 273,
+          "use_in": 0,
+          "use_out": 6.917,
+          "use_len": 6.917,
+          "motion_budget": null,
+          "gen_len": null,
+          "source_file": "shots/shot45.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "a low golden crown, a sheaf of wheat and a small fire in a clay bowl, side by side",
+            "the three evenly spaced on one stone ledge",
+            "warm light on all three at once",
+            "dark empty space above"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: three objects standing side by side on one long stone ledge, evenly spaced: a low golden crown at the left, a bound sheaf of ripe wheat in the centre, and a small fire burning in a round clay bowl at the right.\nACTION: the three stand in a row and the small fire flickers.\nSETTING: a plain stone ledge against a dark wall.\nCAMERA: camera faces the ledge straight on at its height, eye level, close.\nFRAME LAYOUT: left third — the golden crown; center — the wheat sheaf; right third — the fire in the clay bowl; upper edge — dark empty space; lower edge — the stone ledge.\nFACING: we see all three objects square on and equally lit, none closer to camera than the others.\nSCREEN DIRECTION: the small flame leans toward screen-left and its light plays across the crown.\nLIGHT: warm light from the fire at the right, a soft gold glint on the crown, the wheat lit between them.\nPALETTE: gold, wheat, ember orange, stone grey.\nDETAIL: the tooled edge of the crown, individual wheat ears and awns, ember glow in the bowl.\nNOT IN FRAME: people, hands, text, a fourth object.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "CU",
+            "angle": "eye",
+            "location": "stone-ledge",
+            "time_light": "warm-firelight",
+            "camera_motion": "locked"
+          },
+          "render_mode": "still",
+          "still_motion": "hold"
+        }
+      ]
+    },
+    {
+      "beat_id": "B43",
+      "sentences": [
+        "S58",
+        "S59"
+      ],
+      "start": 272.98,
+      "end": 278.491,
+      "dur": 5.511,
+      "device": null,
+      "narration_says": "If you like stories like this one, leave a like and subscribe to Animated Tales. Until next time.",
+      "viewer_sees": "END CARD — the three sisters squared to camera, each with her gift, open space above for the title; the answer to the Part 1 end card of the three brothers",
+      "shots": [
+        {
+          "shot_id": "46",
+          "beat_id": "B43",
+          "link_group": null,
+          "t_in": 273,
+          "t_out": 278.5,
+          "use_in": 0,
+          "use_out": 5.5,
+          "use_len": 5.5,
+          "motion_budget": null,
+          "gen_len": null,
+          "source_file": "shots/shot46.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "the-three-sisters"
+          ],
+          "visual_priority": [
+            "The Three Sisters standing together, squared to camera",
+            "the crowned sister at screen-left holding a myrtle wedding wreath",
+            "the wheat-haired sister at the centre with a sheaf of wheat",
+            "the veiled sister at screen-right with a small fire in a clay bowl",
+            "clear space across the upper edge for a title"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: three tall Greek goddesses in their prime, one with a low golden crown in white and dark red, one wheat-haired in ochre under a dark brown mantle, one fully veiled in undyed wool and grey, all barefoot, standing evenly spaced across the frame and squared to camera, the crowned one holding a myrtle wedding wreath, the wheat-haired one a sheaf of wheat, the veiled one a small fire in a clay bowl, all three still and composed.\nACTION: the three stand together and look straight out at the viewer.\nSETTING: a single warm composite field — a lit doorway at the left, ripe wheat across the centre, hearth embers at the right.\nCAMERA: camera holds square on all three at their level, eye level, medium.\nFRAME LAYOUT: left third — the crowned sister with the wreath and the lit doorway at her shoulder; center — the wheat-haired sister with the sheaf and ripe wheat at hers; right third — the veiled sister with the fire bowl and hearth embers at hers; upper edge — clear empty space held across the full width for a title.\nFACING: we see all three front on, all three looking straight out past the camera at the viewer.\nSCREEN DIRECTION: the small flame at the right leans toward screen-left; wheat awns stir at the centre.\nLIGHT: clean even warm light on all three faces, each one carrying the colour of her own gift.\nPALETTE: dark red, ochre, undyed grey, ember gold.\nDETAIL: woven nap on all three garments, myrtle leaves, wheat ears, embers in the bowl, faces readable and calm.\nNOT IN FRAME: weapons, thrones, the brothers, text, logos.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "end-card",
+            "time_light": "warm-firelight",
+            "camera_motion": "locked"
+          },
+          "render_mode": "still",
+          "still_motion": "hold"
+        }
+      ]
+    }
+  ]
+}

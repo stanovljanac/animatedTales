@@ -1,6 +1,6 @@
 # Serija — Greek Gods
 
-**Status:** mapa potvrđena, Part 1 u izradi. Ovaj fajl je **izvor istine za celu seriju** i piše se
+**Status:** mapa potvrđena, Part 1 gotov, Part 2 ima research i skriptu (`episodes/greek-gods-part-2`). Ovaj fajl je **izvor istine za celu seriju** i piše se
 pre nego što ijedan `episode.json` u seriji dobije sadržaj.
 
 **Čita ga:** svako ko počinje bilo koji part ili compilation. **Menja ga:** samo eksplicitna odluka
@@ -318,7 +318,7 @@ sme da se ponovi u pripadajućim Shorts-ovima; to je namerno, jer povezuje mrež
 | Part | Ključna imenica mosta | Najava vodi na | Pitanje za komentare |
 |---|---|---|---|
 | 1 | *podela* — sve je podeljeno osim zemlje i Olimpa | tri sestre bez kraljevstva | koji od tri žreba bi uzeo |
-| 2 | *ognjište / žetva* — ono u čemu ljudi stvarno žive | deca rođena uprkos | — piše se uz Part 2 |
+| 2 | *ognjište / žetva* — ono u čemu ljudi stvarno žive | deca rođena uprkos | brak, žetva ili ognjište — koja sestra je imala pravu moć |
 | 3 | *proročanstvo* — Zevs je uradio ono zbog čega je mrzeo oca | mreža | — piše se uz Part 3 |
 | 4 | *mreža* — najslabiji bog je uhvatio najjače | compilation, ili Part 5 ako se radi | — piše se uz Part 4 |
 
@@ -329,6 +329,17 @@ sme da se ponovi u pripadajućim Shorts-ovima; to je namerno, jer povezuje mrež
 > given no kingdom at all. Sky, sea, or the dead — which lot would you have wanted? Tell us in the
 > comments. If you like stories like this one, leave a like and subscribe to Animated Tales. Until
 > next time.
+
+**Part 2, zaključan tekst** (75 reči, stoji u `episodes/greek-gods-part-2/script.md`):
+
+> The sisters were given no kingdom — only the marriage, the harvest and the hearth that every home
+> is built around. In the next part, three gods who were never supposed to be born — one of them
+> straight out of her father's head. Marriage, harvest or hearth — which sister held the real power?
+> Tell us in the comments. If you like stories like this one, leave a like and subscribe to Animated
+> Tales. Until next time.
+
+Najava Part 3 nosi kičmu („rođeni uprkos") i jedan zadirkujući detalj (glava), a Metidu i Letu ne
+imenuje — oba ostaju Part 3 da ih otkrije.
 
 Formatiranje i dalje poštuje sva četiri parser-pravila iz `04-script.md`: naslov je tačno
 `## OUTRO`, poslednji je u fajlu, nijedan drugi naslov ne počinje rečju „outro", a dve rezervne
@@ -353,7 +364,16 @@ prvi stigne.**
 | Had i Persefona | **2** | sme da kaže da svi jednom stižu kod njega; otmicu **ne** |
 | Hera kao Zevsova žena | **2** | Hera se vidi u kadru izbacivanja, među petoro progutanih, ali priča o braku je Part 2 |
 | Hera baca Hefesta s Olimpa | **4** | ne |
-| Hestija i ognjište, Hestija ustupa presto | **2** | ne |
+| Hestija i ognjište | **2** | ne |
+
+**„Hestija ustupa presto Dionisu" nije antički mit** — potiče od Roberta Grejvsa (*The Greek Myths*,
+1955). Antičko je samo to da se spiskovi dvanaestorice razlikuju (oltar dvanaest bogova u Atini ima
+Hestiju, istočni friz Partenona se obično čita sa Dionisom). Ranija verzija ove tabele vodila je
+ustupanje prestola kao materijal za Part 2; skinuto je, i Part 2 ga ne koristi ni kao rečenicu.
+
+**Part 2 i žreb.** *Homerska himna Demetri* (75–87) sama se poziva na podelu: Helios teši Demetru da je
+Had „tvoj rođeni brat" i gospodar „trećine koju je dobio kad je podela napravljena". Most između Part 1
+i Part 2 je u izvoru, ne izmišljen — i zato ga skripta izgovara.
 
 Za Part 1 to praktično znači: **Posejdonova ozlojeđenost se priča kroz Ilijadu 15 i kroz to da je
 gubio gradove i odgovarao poplavom i sušom — bez imenovanja Atine.** Tako Part 3 dobija netaknuto

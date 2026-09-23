@@ -1,0 +1,122 @@
+{
+  "slug": "greek-gods-part-2",
+  "title": "Hera, Demeter, Hestia: The Sisters Who Got No Kingdom (Greek Gods, Part 2)",
+  "status": "draft",
+  "voice": null,
+  "narration_file": "narration.mp3",
+  "final_file": "final.mp4",
+  "endcard_file": "shots/endKartica.jpeg",
+  "intro_file": null,
+  "intro_volume": 0.2,
+  "characters": [
+    {
+      "id": "hera",
+      "name": "Hera",
+      "locked_description": "a tall stately Greek goddess in her prime, dark hair drawn back under a low golden crown, large steady eyes and a full mouth, a white peplos under a dark red mantle pinned at both shoulders, bare feet"
+    },
+    {
+      "id": "demeter",
+      "name": "Demeter",
+      "locked_description": "a mature Greek goddess with heavy wheat-gold hair loosely bound, a broad calm sun-warmed face, strong working hands, a plain ochre peplos under a dark brown mantle drawn up over the head, bare feet"
+    },
+    {
+      "id": "hestia",
+      "name": "Hestia",
+      "locked_description": "a quiet Greek goddess in her prime, light brown hair fully covered by a plain veil, a still even face, pale grey eyes, an undyed woollen peplos belted at the waist, a grey mantle over both arms, bare feet"
+    },
+    {
+      "id": "the-three-sisters",
+      "name": "The Three Sisters",
+      "locked_description": "three tall Greek goddesses in their prime, one with a low golden crown in white and dark red, one wheat-haired in ochre under a dark brown mantle, one fully veiled in undyed wool and grey, all barefoot"
+    },
+    {
+      "id": "zeus",
+      "name": "Zeus",
+      "locked_description": "a broad powerfully built Greek god in his prime, thick dark hair swept back from a high brow, a full curled beard, deep-set grey eyes under heavy brows, a purple-red himation over one shoulder, bare chest and bare feet"
+    },
+    {
+      "id": "hades",
+      "name": "Hades",
+      "locked_description": "a lean severe Greek god in his prime, long black hair and a full black beard, pale bloodless skin, dark hooded eyes, a heavy black-violet himation covering both shoulders and falling to the ankles, bare feet"
+    },
+    {
+      "id": "the-three-brothers",
+      "name": "The Three Brothers",
+      "locked_description": "three powerfully built bearded Greek gods in their prime, one in a purple-red himation with dark waving hair, one salt-weathered in sea-green with hair in heavy ropes, one pale in black-violet covering both shoulders"
+    },
+    {
+      "id": "cronus",
+      "name": "Cronus",
+      "locked_description": "a gaunt ageing Titan with long grey-white hair and a heavy matted grey beard, a hollowed lined face, corded veined arms and big knuckled hands, a coarse dark ochre himation over one shoulder, bare chest and bare feet",
+      "scale_critical": true
+    },
+    {
+      "id": "the-five-siblings",
+      "name": "The Five Swallowed Children",
+      "locked_description": "five newly grown Greek gods, two bearded men and three women of the same tall strong build, plain undyed himatia and peploi, pale skin, no crowns, no jewellery and no weapons"
+    },
+    {
+      "id": "persephone",
+      "name": "Persephone",
+      "locked_description": "a slender Greek goddess on the edge of womanhood, long loose dark-honey hair falling to the waist, a fresh open face with wide dark eyes, a pale saffron-yellow peplos belted with a plain cord, bare feet"
+    },
+    {
+      "id": "hermes",
+      "name": "Hermes",
+      "locked_description": "a lithe beardless young Greek god, short dark curls under a low round travelling hat with small wings at its sides, a short dark-blue cloak pinned at one shoulder, winged sandals, a slim golden herald's staff"
+    },
+    {
+      "id": "helios",
+      "name": "Helios",
+      "locked_description": "a radiant beardless Greek god of the sun, a crown of long golden rays standing out from his curls, eyes of white fire, a gold-white chiton, a chariot of beaten gold drawn by four horses with manes of flame",
+      "scale_critical": true
+    }
+  ],
+  "locations": [
+    {
+      "id": "olympus",
+      "name": "Mount Olympus",
+      "locked_description": "the summit of Mount Olympus above the cloud line, broad terraces of pale marble and bare rock, tall plain columns, wide open sky, snowfields and lower peaks showing far below through breaks in the cloud"
+    },
+    {
+      "id": "the-underworld",
+      "name": "The Underworld",
+      "locked_description": "a vast grey cavern world under the earth, a slow black river in a wide bed, colourless asphodel meadows stretching into darkness, distant walls of dark rock, no sun and no horizon, a dim even greyness everywhere"
+    },
+    {
+      "id": "greek-house",
+      "name": "The Greek House",
+      "locked_description": "the main room of an ancient Greek farmhouse, whitewashed mudbrick walls and a beaten-earth floor, a round stone hearth in the middle of the room, a smoke hole in the roof beams, wooden benches, clay jars and hanging pots"
+    },
+    {
+      "id": "the-fields",
+      "name": "The Grain Fields",
+      "locked_description": "wide Greek grain fields in a valley between dry limestone hills, long strips of ploughed earth divided by low stone walls, a lone wild pear tree, a small mudbrick farmstead with a round threshing floor"
+    },
+    {
+      "id": "eleusis-temple",
+      "name": "Demeter's Temple at Eleusis",
+      "locked_description": "a small temple at Eleusis on a low rocky hill above the bay, plain limestone walls and a porch of two columns, a dim interior with a stone seat, the flat plain and the grey sea beyond"
+    },
+    {
+      "id": "heraion-olympia",
+      "name": "The Temple of Hera at Olympia",
+      "locked_description": "the Temple of Hera at Olympia, a low Doric temple of shell-limestone, thick early columns in a single ring, a pitched roof of red terracotta tiles, a stone altar before the east front, olive trees and a wooded hill"
+    }
+  ],
+  "key_props": [
+    {
+      "id": "thunderbolt",
+      "name": "The Thunderbolt",
+      "locked_description": "a hand-length weapon of solid white-gold light shaped like a spindle, tapering to sharp points at both ends, bound at the middle by a band of bronze, thin forks of lightning standing out from each end",
+      "scale_critical": true
+    },
+    {
+      "id": "trident",
+      "name": "The Trident",
+      "locked_description": "a bronze fishing spear the height of a man, a worn dark wooden shaft bound with cord below the head, three barbed prongs on a socketed head, the bronze dark and polished from long use",
+      "scale_critical": true
+    }
+  ],
+  "notes": "Part 2 od 4 u seriji Greek Gods. Serijska biblija je docs/series/greek-gods.md i ona je izvor istine za svaki locked_description iz registra (hera, demeter, hestia, zeus, hades, the-three-brothers, cronus, the-five-siblings, olympus, the-underworld, thunderbolt, trident) - taj tekst se kopira doslovno, nikad se ne prepravlja po epizodi. Lokalni za Part 2: the-three-sisters (grupni opis, kompresija pojedinacnih - nosi iste tokene: zlatna kruna u belom i tamnocrvenom / zitna kosa u oker i smedjem / potpuno pokrivena u nebojenoj vuni i sivom), persephone, hermes, helios, greek-house, the-fields, eleusis-temple, heraion-olympia. Apolon se ne vidi (Part 3 ga zakljucava); Hestijini prosci se nose amblemima. Kicma: tri sestre bez kraljevstva. Outro imenuje Part 3 - lanac je zakljucan u biblji."
+}
