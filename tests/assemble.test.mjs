@@ -19,7 +19,8 @@ import os from 'node:os';
 import path from 'node:path';
 
 import {
-  ENCODE, INTRO_VOLUME, RES, STILL_SUPERSAMPLE, STILL_ZOOM, TAIL, assertAssemblable, build, canWrite,
+  AUDIO_RATE, CLIP_VOLUME, ENCODE, INTRO_VOLUME, RES, STILL_SUPERSAMPLE, STILL_ZOOM, TAIL, ambientArgs,
+  assertAssemblable, build, canWrite, clipVolume,
   concatArgs, concatText, endcardArgs, endcardStart, introClip, mediaNames, muxArgs, parseArgs, planCuts, qcReport,
   readOutroStart, recipe, shotArgs, stillArgs, stillFilter, timeProblems, validate, videoFilter,
 } from '../tools/assemble.mjs';
@@ -826,15 +827,96 @@ test('introClip: intro_file iz manifesta, jačina podrazumevano INTRO_VOLUME', (
   rm(bez);
 });
 
-test('muxArgs sa uvodom: zvuk klipa ispod narracije samo tokom uvoda, sa fade-om', () => {
-  const args = muxArgs('v.mp4', 'n.mp3', 'f.mp4', { file: 'i.mp4', volume: 0.2, len: 3.917 });
-  const graph = args[idx(args, '-filter_complex') + 1];
-  assert.match(graph, /atrim=0:3\.917000/);
-  assert.match(graph, /volume=0\.2/);
-  assert.match(graph, /afade=t=out:st=3\.617000:d=0\.3/);
-  assert.match(graph, /normalize=0/);
+// ---------------------------------------------------------------- zvuk klipova (ambijent)
+
+const graphOf = (args) => args[idx(args, '-filter_complex') + 1];
+const endSamples = (graph) => [...graph.matchAll(/atrim=end_sample=(\d+)/g)].map((m) => Number(m[1]));
+
+test('muxArgs sa ambijentom: zvuk klipova ispod narracije, amix bez normalizacije, bez -shortest', () => {
+  const args = muxArgs('v.mp4', 'n.mp3', 'f.mp4', 'amb.wav');
+  assert.deepEqual(args.filter((a, i) => args[i - 1] === '-i'), ['v.mp4', 'n.mp3', 'amb.wav']);
+  assert.match(graphOf(args), /pan=stereo\|c0=c0\|c1=c0/);
+  // normalize=0: amix bi inače prepolovio narraciju; longest: trag traje koliko i video
+  assert.match(graphOf(args), /amix=inputs=2:duration=longest:normalize=0/);
   assert.deepEqual(args.filter((a, i) => args[i - 1] === '-map'), ['0:v:0', '[a]']);
+  assert.equal(args[idx(args, '-c:v') + 1], 'copy');
   assert.ok(!args.includes('-shortest'));
+});
+
+test('CLIP_VOLUME: odluka korisnika — klipovi se ne mutiraju, ambijent ide na 15%', () => {
+  assert.equal(CLIP_VOLUME, 0.15);
+});
+
+test('ambientArgs: klip od use_in na zadatoj jačini, end card tišina, komad po komad tačan u semplovima', () => {
+  const sb = storyboardOf([5, 3]);
+  Object.assign(sb.beats[0].shots[1], { use_in: 1.5, use_out: 4.5 });
+  const plan = planCuts(sb, { outroStart: null });   // dva shota + end card
+  const args = ambientArgs(plan, { dir: 'ep', fps: FPS, volume: CLIP_VOLUME, out: 'amb.wav' });
+  const parts = graphOf(args).split(';');
+
+  assert.equal(args.filter((a) => a === '-i').length, 2, 'end card nema ulaz, on je tišina');
+  assert.match(parts[0], /^\[0:a\].*atrim=start=0\.000000.*volume=0\.15.*atrim=end_sample=240000/);
+  assert.match(parts[1], /^\[1:a\].*atrim=start=1\.500000.*atrim=end_sample=144000/);
+  assert.match(parts[2], /^anullsrc=r=48000:cl=stereo,atrim=end_sample=\d+\[p2\]$/);
+  assert.equal(parts.at(-1), '[p0][p1][p2]concat=n=3:v=0:a=1[amb]');
+  // Zbir komada je tačno dužina slike: trag i video ne mogu da se raziđu.
+  assert.equal(endSamples(graphOf(args)).reduce((a, b) => a + b, 0), plan.totalFrames * (AUDIO_RATE / FPS));
+  assert.equal(args[idx(args, '-ar') + 1], String(AUDIO_RATE));
+});
+
+test('ambientArgs: still kadar i klip bez audio streama daju tišinu, ne ulaz', () => {
+  const sb = storyboardOf([5, 5]);
+  sb.beats[0].shots[0] = stillShot(1, 0, 5, 'push');
+  const plan = planCuts(sb, { outroStart: null, endcard: null });
+  const sources = new Map([['shots/part02.mp4', { exists: true, hasAudio: false }]]);
+  const args = ambientArgs(plan, { dir: 'ep', fps: FPS, volume: 0.15, sources, out: 'amb.wav' });
+  assert.ok(!args.includes('-i'));
+  assert.equal(graphOf(args).match(/anullsrc/g).length, 2);
+});
+
+test('ambientArgs: uvodni klip nosi svoju jačinu i fade od 0.3s pred rez', () => {
+  const plan = planCuts(storyboardOf([3.917]), { outroStart: null, endcard: null });
+  Object.assign(plan.segments[0], { source: 'shots/video1.mp4', use_in: 0, intro: true });
+  const args = ambientArgs(plan, { dir: 'ep', fps: FPS, volume: 0.15, intro: { volume: 0.2 }, out: 'amb.wav' });
+  assert.equal(args[idx(args, '-i') + 1], path.join('ep', 'shots/video1.mp4'));
+  assert.match(graphOf(args), /volume=0\.2,/);
+  // 3.917s je 94 frejma = 3.916667s; fade počinje 0.3s pre reza
+  assert.match(graphOf(args), /afade=t=out:st=3\.616667:d=0\.3/);
+});
+
+test('ambientArgs: lanac spaja delove acrossfade-om od tačno D frejmova, izraženo u semplovima', () => {
+  const sb = storyboardOf([4, 4]);
+  for (const s of sb.beats[0].shots) s.link_group = 'g1';
+  const plan = planCuts(sb, { outroStart: null, endcard: null, dissolveFrames: 8 });
+  assert.equal(plan.segments[0].kind, 'chain');
+  const graph = graphOf(ambientArgs(plan, { dir: 'ep', fps: FPS, volume: 0.15, out: 'amb.wav' }));
+  assert.match(graph, /acrossfade=ns=16000:c1=tri:c2=tri/);
+  // levi deo nosi rezervu od 8 frejmova za prelaz: (96 + 8) × 2000
+  assert.deepEqual(endSamples(graph), [208000, 192000]);
+});
+
+test('clipVolume: podrazumevano CLIP_VOLUME, episode.json nadjačava, nula je nemi režim, negativno pada', () => {
+  const cases = [[{}, CLIP_VOLUME], [{ clip_volume: 0 }, 0], [{ clip_volume: 0.3 }, 0.3]];
+  for (const [manifest, want] of cases) {
+    const dir = tmpEpisode({ 'episode.json': JSON.stringify(manifest) });
+    assert.equal(clipVolume(dir), want, JSON.stringify(manifest));
+    rm(dir);
+  }
+  const lose = tmpEpisode({ 'episode.json': JSON.stringify({ clip_volume: -1 }) });
+  assert.throws(() => clipVolume(lose), /clip_volume/);
+  rm(lose);
+});
+
+test('build: sa clipVolume pravi ambijentalni trag pre mux-a, a mux ga meša ispod narracije', async () => {
+  const dir = episodeWithClips(2);
+  const calls = [];
+  const plan = planCuts(storyboardOf([5, 5]), { outroStart: null });
+  await build(plan, dir, buildOpts({ run: fakeRun(calls), clipVolume: 0.15 }));
+  assert.equal(calls.length, 6);       // 2 shota + end card + concat + ambijent + mux
+  const ambient = calls.at(-2).at(-1);
+  assert.ok(ambient.endsWith('ambient.wav'));
+  assert.ok(calls.at(-1).includes(ambient), 'mux mora da uzme ambijentalni trag');
+  rm(dir);
 });
 
 test('stillFilter: nepoznat pokret pada, ne renderuje se tiho kao hold', () => {

@@ -6,9 +6,10 @@
 //
 // Pet koraka iz docs/plan/C09-assemble-jezgro.md:
 //   1. validacija — svaki shot ima svoj klip i izvor traje bar do `use_out`; pada pre rendera
-//   2. po shotu — `-ss use_in -t use_len`, `-an` (Veo audio ide u đubre), scale+fps
+//   2. po shotu — `-ss use_in -t use_len`, `-an` (segment je samo slika), scale+fps
 //   3. konkatenacija — hard cut svuda osim unutar `link_group`-a (C10)
-//   4. narracija — jedini audio stream, od `t=0`
+//   4. narracija od `t=0`, a ispod nje zvuk klipova na `CLIP_VOLUME` (15%) — ambijentalni trag
+//      se slaže odvojeno od segmenata, na sempl tačno uz frejmove (`ambientArgs`)
 //   5. end card — drži outro deo narracije + 1.5s repa
 //
 // Still kadrovi (schemas.md §3.3.2): shot sa `render_mode: "still"` nije klip nego jedna slika
@@ -93,6 +94,24 @@ export const INTRO_VOLUME = 0.2;
 
 /** Fade zvuka uvodnog klipa pred rez, u sekundama. */
 export const INTRO_FADE = 0.3;
+
+/**
+ * Jačina zvuka klipova ispod narracije kad `episode.json` ne kaže drugačije (`clip_volume`).
+ *
+ * Odluka korisnika (greek-gods-part-1, 2026-09-23): klipovi se **ne mutiraju skroz** — ambijent
+ * iz same scene (vetar, vatra, voda, kamen) ide ispod narracije na 15%. `clip_volume: 0` vraća
+ * nemi režim, u kome je narracija jedini zvuk. Still kadrovi i end card nemaju zvuk i daju tišinu.
+ */
+export const CLIP_VOLUME = 0.15;
+
+/**
+ * Sample rate ambijentalnog traga i izlaza. Na 24 fps je to tačno 2000 semplova po frejmu, pa
+ * se trag slaže na sempl uz frejmove i ne može da se raziđe sa slikom, ma koliko rezova imao.
+ */
+export const AUDIO_RATE = 48000;
+
+/** Fade zvuka klipa na svakom rezu, u sekundama — tvrd rez talasnog oblika klikne. */
+export const AUDIO_DECLICK = 0.02;
 
 /** Trajanje cross-dissolve-a iz C10, u frejmovima. Zastava je podrazumevano isključena. */
 export const DEFAULT_DISSOLVE = 8;
@@ -250,6 +269,23 @@ export function introClip(dir) {
   if (typeof manifest.intro_file !== 'string' || !manifest.intro_file.trim()) return null;
   const volume = num(manifest.intro_volume) ? manifest.intro_volume : INTRO_VOLUME;
   return { file: manifest.intro_file, volume };
+}
+
+/**
+ * Jačina zvuka klipova ispod narracije: `clip_volume` iz `episode.json`, inače `CLIP_VOLUME`.
+ * Nula je legitimna vrednost i znači nemi režim; negativna ili nebrojna vrednost je greška u
+ * manifestu i pada, umesto da tiho postane podrazumevana.
+ * @returns {number}
+ */
+export function clipVolume(dir) {
+  const file = path.join(dir, 'episode.json');
+  if (!fs.existsSync(file)) return CLIP_VOLUME;
+  const manifest = JSON.parse(fs.readFileSync(file, 'utf8'));
+  if (manifest.clip_volume === undefined || manifest.clip_volume === null) return CLIP_VOLUME;
+  if (!num(manifest.clip_volume) || manifest.clip_volume < 0) {
+    throw new Error(`${file}: clip_volume mora da bude broj ≥ 0, a ne ${JSON.stringify(manifest.clip_volume)}`);
+  }
+  return manifest.clip_volume;
 }
 
 /**
@@ -589,7 +625,7 @@ export async function validate(plan, dir, media, { probe: probeFn = probe, sourc
  * @param {string[]} files putanje relativne u odnosu na folder epizode; ponavljanja se skupljaju
  * @returns {Promise<Map<string, {source: string, file: string, exists: boolean,
  *   duration: number|null, start: number|null, available: number|null, width: number|null,
- *   height: number|null, error: string|null}>>}
+ *   height: number|null, hasAudio: boolean|null, error: string|null}>>}
  */
 export async function inspectSources(files, dir, { probe: probeFn = probe } = {}) {
   const map = new Map();
@@ -597,7 +633,7 @@ export async function inspectSources(files, dir, { probe: probeFn = probe } = {}
     if (map.has(source)) continue;
     const file = path.join(dir, source);
     const row = { source, file, exists: false, duration: null, start: null, available: null,
-      width: null, height: null, error: null };
+      width: null, height: null, hasAudio: null, error: null };
     if (!fs.existsSync(file)) {
       map.set(source, row);
       continue;
@@ -610,6 +646,8 @@ export async function inspectSources(files, dir, { probe: probeFn = probe } = {}
       // Dimenzije su tu zbog still kadrova: slika se ne meri trajanjem nego rezolucijom.
       row.width = p.width ?? null;
       row.height = p.height ?? null;
+      // Ambijentalni trag uzima zvuk samo iz klipa koji ga ima; ostali daju tišinu.
+      row.hasAudio = typeof p.hasAudio === 'boolean' ? p.hasAudio : null;
       // Dostupno se meri na osi prvog dekodiranog sempla, isto kao F1 i C05 (§5.4 tačka 1).
       row.available = row.duration === null ? null : round3(row.duration - row.start);
     } catch (err) {
@@ -858,14 +896,100 @@ export function concatArgs(listFile, out) {
   ];
 }
 
+/** Broj semplova za N frejmova na `AUDIO_RATE`; na 24/25/30 fps uvek ceo broj. */
+const samplesOf = (frames, fps) => Math.round((frames * AUDIO_RATE) / fps);
+
 /**
- * Korak 4: narracija kao jedini audio stream, od `t=0`.
+ * Korak 4a: ambijentalni trag — zvuk klipova ispod narracije, jedan WAV za ceo video.
+ *
+ * Segmenti ostaju bez zvuka (`-an` u `shotArgs`), pa se ni keš ni konkatenacija ne menjaju.
+ * Trag se slaže jednim pozivom, u redosledu i sa brojem frejmova iz istog plana kao slika:
+ * svaki komad je **tačno** `samplesOf(frames)` semplova (`apad` + `atrim=end_sample`), pa se
+ * zvuk i slika ne razilaze ni za sempl, ma koliko rezova bilo. Otud i jedan concat filter, a
+ * ne concat demuxer nad AAC-om — AAC paketi od 1024 sempla bi po rezu dodali po delić, a 40
+ * rezova se sabere u pomeraj koji se čuje.
+ *
+ * - klip sa zvukom: `use_in` isti kao na slici, `volume`, kratak fade na oba reza
+ * - still kadar, end card, klip bez audio streama: tišina iste dužine
+ * - uvodni klip (`intro`): svoja jačina i fade od `INTRO_FADE` pred rez, kao i ranije
+ * - lanac (dissolve): delovi se spajaju `acrossfade`-om od tačno onoliko semplova koliko
+ *   `xfade` uzme frejmova, pa je i lanac iste dužine kao njegov video
+ *
+ * @param {object} plan iz `planCuts`
+ * @param {{dir: string, fps: number, volume: number, sources?: Map|null,
+ *          intro?: {volume: number}|null, out: string}} opts
+ */
+export function ambientArgs(plan, { dir, fps, volume, sources = null, intro = null, out }) {
+  const inputs = [];
+  const filters = [];
+  let n = 0;
+
+  const piece = (seg) => {
+    const label = `p${n}`;
+    n += 1;
+    const samples = samplesOf(seg.frames, fps);
+    const vol = seg.intro && intro ? intro.volume : volume;
+    const isClip = seg.kind !== 'endcard' && seg.mode !== 'still';
+    // Bez mape izvora pretpostavlja se da klip ima zvuk; sa mapom se veruje probe-u.
+    const info = sources ? sources.get(seg.source) : null;
+    const audible = isClip && vol > 0 && (!sources || info?.hasAudio === true);
+    if (!audible) {
+      filters.push(`anullsrc=r=${AUDIO_RATE}:cl=stereo,atrim=end_sample=${samples}[${label}]`);
+      return label;
+    }
+    inputs.push('-i', path.join(dir, seg.source));
+    const k = inputs.length / 2 - 1;
+    const fadeOut = seg.intro && intro ? INTRO_FADE : AUDIO_DECLICK;
+    const fadeAt = fmt6(Math.max(0, samples / AUDIO_RATE - fadeOut));
+    filters.push(`[${k}:a]aresample=${AUDIO_RATE},aformat=sample_fmts=fltp:channel_layouts=stereo,` +
+      `asetpts=PTS-STARTPTS,atrim=start=${fmt6(seg.use_in)},asetpts=PTS-STARTPTS,volume=${vol},` +
+      `apad=whole_len=${samples},atrim=end_sample=${samples},` +
+      `afade=t=in:d=${AUDIO_DECLICK},afade=t=out:st=${fadeAt}:d=${fadeOut}[${label}]`);
+    return label;
+  };
+
+  const labels = [];
+  for (const seg of plan.segments) {
+    if (seg.kind !== 'chain') {
+      labels.push(piece(seg));
+      continue;
+    }
+    let cur = piece(seg.parts[0]);
+    for (let i = 1; i < seg.parts.length; i += 1) {
+      const next = piece(seg.parts[i]);
+      const joined = `x${n}`;
+      n += 1;
+      filters.push(`[${cur}][${next}]acrossfade=ns=${samplesOf(seg.dissolve, fps)}:c1=tri:c2=tri[${joined}]`);
+      cur = joined;
+    }
+    labels.push(cur);
+  }
+  filters.push(`${labels.map((l) => `[${l}]`).join('')}concat=n=${labels.length}:v=0:a=1[amb]`);
+
+  return [
+    '-hide_banner', '-nostdin', '-loglevel', 'error', '-y',
+    ...inputs,
+    '-filter_complex', filters.join(';'),
+    '-map', '[amb]',
+    '-c:a', 'pcm_s16le', '-ar', String(AUDIO_RATE),
+    out,
+  ];
+}
+
+/**
+ * Korak 4b: narracija od `t=0`, sa ambijentalnim tragom ispod nje kad ga ima.
  *
  * Nigde `-copyts` ni `-itsoffset` (schemas.md §5.4 tačka 1). Nema ni `-shortest`: video je za
  * rep end carda duži od narracije i `-shortest` bi baš taj rep odsekao.
+ *
+ * Sa tragom: narracija je mono, pa se razvlači na oba kanala; `normalize=0` jer bi `amix`
+ * inače prepolovio narraciju. `duration=longest` — trag traje koliko i video, rep end carda
+ * uključen, pa je zvuk tačno dug kao slika.
+ *
+ * @param {string|null} ambient WAV iz `ambientArgs`, ili `null` za nemi režim
  */
-export function muxArgs(video, audio, out, intro = null) {
-  if (!intro) {
+export function muxArgs(video, audio, out, ambient = null) {
+  if (!ambient) {
     return [
       '-hide_banner', '-nostdin', '-loglevel', 'error', '-y',
       '-i', video, '-i', audio,
@@ -875,23 +999,17 @@ export function muxArgs(video, audio, out, intro = null) {
       out,
     ];
   }
-  // Uvodni klip: njegov zvuk ide ispod narracije samo dok je klip na ekranu, tiho i sa fade-om
-  // pred rez. Narracija je mono, pa se razvlači na oba kanala; `normalize=0` jer bi `amix`
-  // inače prepolovio i narraciju.
-  const cut = fmt6(intro.len);
-  const fadeAt = fmt6(Math.max(0, intro.len - INTRO_FADE));
   const graph = [
-    '[1:a]aresample=44100,pan=stereo|c0=c0|c1=c0[nar]',
-    `[2:a]aresample=44100,atrim=0:${cut},asetpts=PTS-STARTPTS,volume=${intro.volume},` +
-      `afade=t=out:st=${fadeAt}:d=${INTRO_FADE}[sfx]`,
-    '[nar][sfx]amix=inputs=2:duration=first:normalize=0[a]',
+    `[1:a]aresample=${AUDIO_RATE},pan=stereo|c0=c0|c1=c0[nar]`,
+    `[2:a]aresample=${AUDIO_RATE}[amb]`,
+    '[nar][amb]amix=inputs=2:duration=longest:normalize=0[a]',
   ].join(';');
   return [
     '-hide_banner', '-nostdin', '-loglevel', 'error', '-y',
-    '-i', video, '-i', audio, '-i', intro.file,
+    '-i', video, '-i', audio, '-i', ambient,
     '-filter_complex', graph,
     '-map', '0:v:0', '-map', '[a]',
-    '-c:v', 'copy', '-c:a', 'aac', '-b:a', ENCODE.audioBitrate,
+    '-c:v', 'copy', '-c:a', 'aac', '-b:a', ENCODE.audioBitrate, '-ar', String(AUDIO_RATE),
     '-movflags', '+faststart',
     out,
   ];
@@ -1086,12 +1204,21 @@ export async function build(plan, dir, opts) {
   onProgress({ state: 'concat' });
   await runner(concatArgs(listFile, videoFile));
 
+  // Zvuk klipova ispod narracije. `clipVolume` izostavljen znači nemi režim — tako ga zovu
+  // stari pozivi i testovi; CLI uvek prosleđuje vrednost iz `episode.json` ili `CLIP_VOLUME`.
+  const volume = opts.clipVolume ?? 0;
+  let ambientFile = null;
+  if (volume > 0 || opts.intro) {
+    ambientFile = path.join(cacheDir, 'ambient.wav');
+    onProgress({ state: 'ambient' });
+    await runner(ambientArgs(plan, {
+      dir, fps, volume, sources: opts.sources ?? null, intro: opts.intro ?? null, out: ambientFile,
+    }));
+  }
+
   const outFile = path.join(dir, out);
   onProgress({ state: 'mux' });
-  const intro = opts.intro
-    ? { file: path.join(dir, opts.intro.file), volume: opts.intro.volume, len: plan.segments[0].len }
-    : null;
-  await runner(muxArgs(videoFile, path.join(dir, narration), outFile, intro));
+  await runner(muxArgs(videoFile, path.join(dir, narration), outFile, ambientFile));
 
   return {
     out: outFile, built, cached, dissolves,
@@ -1128,7 +1255,7 @@ const frameWord = (n) => plural(Math.abs(n), 'frejm', 'frejma', 'frejmova');
 export function qcReport(ctx) {
   const {
     plan, sources, episode = '(bez imena)', res = '1080p', width = 0, height = 0,
-    out = 'final.mp4', measured = null, at = new Date(),
+    out = 'final.mp4', measured = null, at = new Date(), clipVolume = null,
   } = ctx;
   const fps = plan.fps;
   const tol = 1 / fps;
@@ -1197,6 +1324,15 @@ export function qcReport(ctx) {
       `${stills.length} od ${units.length}, ${smallStills.length} ispod ${needWidth} px širine |`);
   }
   L.push(`| Primenjeni prelazi | ${d.skipped.length ? 'WARN' : '—'} | ${d.applied.length} primenjeno, ${d.skipped.length} preskočeno |`);
+  if (clipVolume !== null) {
+    // Klip bez audio streama daje tišinu; to nije greška, ali se ne prećutkuje.
+    const silent = clips.filter((u) => info(u)?.exists && info(u).hasAudio === false);
+    const found = clipVolume > 0
+      ? `${Math.round(clipVolume * 100)}% ispod narracije · ${clips.length - silent.length} od ${clips.length} klipova ima zvuk` +
+        (silent.length ? ` (bez zvuka: ${silent.map((u) => u.id).join(', ')})` : '')
+      : 'isključen (`clip_volume: 0`)';
+    L.push(`| Zvuk klipova | — | ${found} |`);
+  }
   L.push('');
 
   L.push('## Nedostajući partovi', '');
@@ -1410,6 +1546,7 @@ export async function main(argv) {
 
   const media = mediaNames(dir);
   const intro = introClip(dir);
+  const volume = clipVolume(dir);
   const outro = args.outroStart === null && media.endcard !== null
     ? { value: endcardStart(storyboard), source: 'poslednji shot' }
     : readOutroStart(dir, storyboard, args.outroStart);
@@ -1436,6 +1573,7 @@ export async function main(argv) {
   console.log(`narracija ${slash(media.narration)} ${fmt(plan.narration)}s · ` +
     `outro_start ${outro.value === null ? '—' : fmt(outro.value)} (${outro.source}) · ` +
     `end card ${media.endcard === null ? '—' : slash(media.endcard)}`);
+  console.log(`zvuk klipova ${volume > 0 ? `${Math.round(volume * 100)}% ispod narracije` : 'isključen (clip_volume: 0)'}`);
   for (const t of plan.trimmed) {
     console.log(`  ! shot ${t.shot_id} skraćen ${fmt(t.from)}s -> ${fmt(t.to)}s (upada u outro)`);
   }
@@ -1452,6 +1590,7 @@ export async function main(argv) {
 
   const qc = {
     plan, sources, episode: storyboard.episode, res: args.res, width, height, out: args.out,
+    clipVolume: volume,
   };
 
   const problems = await validate(plan, dir, media, { sources });
@@ -1478,11 +1617,13 @@ export async function main(argv) {
 
   const report = await build(plan, dir, {
     width, height, fps: plan.fps, narration: media.narration, out: args.out, intro,
+    clipVolume: volume, sources,
     onProgress: ({ seg, state, ms }) => {
       if (state === 'built') console.log(`  ${seg.id} · ${seg.frames} frejmova · ${(ms / 1000).toFixed(1)}s`);
       else if (state === 'dissolve') console.log(`  lanac ${seg.id} · ${seg.parts.length} dela · ${(ms / 1000).toFixed(1)}s`);
       else if (state === 'cached') console.log(`  ${seg.id} · iz keša`);
       else if (state === 'concat') console.log('  concat…');
+      else if (state === 'ambient') console.log('  zvuk klipova…');
       else if (state === 'mux') console.log('  narracija…');
     },
   });

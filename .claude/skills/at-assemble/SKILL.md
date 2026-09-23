@@ -7,7 +7,43 @@ description: Use when cutting a finished Animated Tales episode into final.mp4 -
 
 `storyboard.json` + klipovi + narracija + end card → `final.mp4` + `qc-report.md`.
 
+## Pravilo broj jedan: nema montaže bez svih delova
+
+> **Video se ne renderuje dok ne postoji svaki deo u obliku koji storyboard traži.** Kad nešto
+> fali, jedini izlaz ovog skila je **obaveštenje** šta nije urađeno — nikakav video.
+
+Odluka korisnika (greek-gods-part-1, 2026-09-23), posle montaže u kojoj je rupa premošćena
+slate-om: „nikada ne pravi video ukoliko nemaš sve delove, već mi daj samo obaveštenje šta nije
+urađeno".
+
+Šta se računa kao deo koji fali — svaki od ovih slučajeva zaustavlja montažu:
+
+- **fajla nema** — ni pod storyboard imenom ni u korenu epizode
+- **pogrešan sadržaj** — fajl nosi broj shota, a na kontakt-listu se vidi drugi kadar (brojevi
+  u imenima kližu; vidi korak 0)
+- **pogrešan oblik** — slika tamo gde storyboard traži klip
+- **prekratak izvor** — klip kraći od `use_len` (sekcija „Prekratki izvori" u `qc-report.md`)
+
+Zabranjeno bez izričitog odobrenja korisnika **za taj shot**: slate i placeholder, still pokret
+umesto klipa, usporavanje ili zamrznut frejm da se dobije trajanje, i pozajmljivanje susednog
+kadra.
+
+Obaveštenje je tabela, po shotu: broj · vreme u videu (m:ss–m:ss) · šta fali · dužina
+generisanja (4/6/8/10s) · komanda `node tools/shotlist.mjs episodes/<slug> --only NN`.
+`--dry-run` i kontakt-list smeju da se puste. Render ne sme.
+
 ## Tok
+
+### 0. Predaja materijala i kontakt-list
+
+Korisnik predaje materijal u **koren epizode** kao `shotNN.mp4` / `shotNN.jpeg`, a storyboard
+traži `shots/partNN.mp4` / `shots/shotNN.jpeg`. Kopiraj u `shots/` pod storyboard imenima,
+originale ne diraj. `shotNN.jpeg` pored `shotNN.mp4` je početni frejm klipa, ne still. Poslednja
+numerisana slika je subscribe end kartica i ide u `endcard_file`.
+
+Pre montaže napravi kontakt-list (frejm iz sredine svakog shota) i uporedi ga sa `SUBJECT`
+blokom svakog `image_prompt`-a. Tako je u greek-gods-part-1 otkriveno da je `shot13.mp4` bio
+kadar 14.
 
 ### 1. Montaža
 
@@ -83,7 +119,8 @@ isto — ispisuje image prompt i dva koraka umesto tri.
 
 ### 4. Finalni render
 
-Kad su kandidati regenerisani (ili svesno prihvaćeni), pusti montažu bez `--dry-run`.
+Tek kad pravilo broj jedan prolazi (svaki deo postoji, u pravom obliku i sadržaju) i kad su
+kandidati regenerisani (ili svesno prihvaćeni), pusti montažu bez `--dry-run`.
 
 ### Template (antikythera-mechanism, prihvaćen 2026-09-15)
 
@@ -94,6 +131,11 @@ Ovako izgleda svaki video, a ne slideshow:
   pikselima i slika trza/treperi (to je bila greška prve verzije, zum 1.15 linearno).
 - **Uvod je animiran.** `episode.json` → `intro_file` (npr. `shots/video1.mp4`) zamenjuje prvi
   shot; zvuk klipa ide ispod narracije na `intro_volume` (0.2) sa fade-om 0.3s pred rez.
+- **Zvuk klipova se čuje (od 2026-09-23).** Klipovi se ne mutiraju skroz: ambijent iz scene ide
+  ispod narracije na **15%** (`CLIP_VOLUME`). `episode.json` → `clip_volume` nadjačava, a `0` je
+  stari nemi režim. Still kadrovi i end card daju tišinu. Trag se slaže na sempl tačno uz
+  frejmove (`ambientArgs`), pa ne može da se raziđe sa slikom. `qc-report.md` ima red
+  „Zvuk klipova" sa brojem klipova koji uopšte imaju zvuk.
 - **End kartica je poslednji shot.** `endcard_file` (npr. `shots/endKartica.jpeg`) preuzima
   sliku na `t_in` poslednjeg shota i drži do kraja narracije + 1.5s. `--outro-start` nadjačava.
 
@@ -116,4 +158,6 @@ Kad je video spreman za objavu:
 - **Ne piše `storyboard.md`** — to radi isključivo `render.mjs`, i taj fajl se nikad ne menja
   ručno.
 - **Ne generiše klipove.** Izlistava ih i upućuje na `shotlist.mjs`.
+- **Ne premošćuje rupe.** Nema slate-a, still-a umesto klipa, usporavanja ni zamrznutog frejma
+  bez izričitog odobrenja za taj shot — vidi pravilo broj jedan.
 - **Ne prećutkuje skraćene shotove**, ni kad je skraćenje ispravno.
