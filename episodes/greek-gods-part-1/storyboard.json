@@ -16,7 +16,7 @@
       "dur": 6.6,
       "device": null,
       "narration_says": "Three brothers shook three lots in a helmet. Whatever each of them drew, he would rule it forever.",
-      "viewer_sees": "three enormous hands closed around the rim of a battered bronze war helmet, three flat river pebbles tumbling in the bowl of it, ash still drifting past",
+      "viewer_sees": "one pair of big scarred hands shaking a battered bronze war helmet held upside down as a bowl, exactly three river pebbles jumping inside it, lightning breaking over the burnt plain",
       "shots": [
         {
           "shot_id": "01",
@@ -35,20 +35,20 @@
             "lot-helmet"
           ],
           "visual_priority": [
-            "The Helmet and the Lots — the bronze bowl tipped toward camera",
-            "three enormous hands closed on the rim",
-            "the pebbles rolling in the bowl",
-            "drifting ash"
+            "The Helmet and the Lots — held upside down in one pair of hands",
+            "exactly three pebbles in the bowl, white, grey and black",
+            "the two big scarred hands that shake it",
+            "lightning and ash beyond"
           ],
-          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a battered bronze war helmet serving as a lot-urn, and three lots for it, each a flat river pebble scratched with a single mark, the bronze dented and dull, its horsehair crest torn short, tipped toward camera with the three pebbles loose in the bowl of it.\nSCALE: the helmet reads as an ordinary man-sized war helmet; each of the three hands closed on its rim is wide enough to cover it whole; the pebbles are thumb-sized against those knuckles.\nACTION: three enormous hands tilt the helmet and the pebbles roll across the bronze.\nSETTING: a scorched plain at the end of a ten-year war, bronze dulled by ash.\nCAMERA: camera looks down into the bowl from just above it, high, close.\nFRAME LAYOUT: center — the helmet mouth and three pebbles, near-camera and very large; left third and right third — knuckles and forearms, cropped at the wrist; lower edge — cracked ground, far and hazy.\nFACING: we see the inside of the bowl and the backs of all three hands; no faces.\nSCREEN DIRECTION: the pebbles roll from the left of the bowl toward screen-right; ash drifts down across the upper-left.\nLIGHT: dim red afterglow from burning ground, raking from the right edge.\nPALETTE: dull bronze, ash grey, ember red.\nDETAIL: dents and hammer scars in the bronze, torn crest stubble, grit in the scratched pebbles.\nNOT IN FRAME: faces, bodies, sky.",
-          "animation_prompt": "MOTION BUDGET: key motion completes within 6.583s; hold to the end of an 8s generation.\n0–1s: the three hands tilt the helmet and the pebbles start rolling.\n1–4.3s: the pebbles circle the bowl and knock against the dented bronze, one riding up the rim and dropping back.\n4.3–6.5s: they settle into the bottom of the bowl and the hands steady.\nCAMERA: one slow push toward the mouth of the helmet.\nENVIRONMENT: ash drifts down through the frame; ember light pulses on the bronze.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a battered bronze war helmet serving as a lot-urn, and three lots for it, each a flat river pebble scratched with a single mark, the bronze dented and dull, its horsehair crest torn short, held upside down as a bowl in one pair of big scarred hands, exactly three pebbles lying in it: one chalk-white, one sea-grey, one black.\nSCALE: the helmet is an ordinary man-sized war helmet; the two hands gripping it are a god's hands, each palm covering a whole side of the bronze; each pebble is the size of a thumb joint; three pebbles, and only three, anywhere in the frame.\nACTION: both hands grip the helmet by its cheek-guards, braced to shake it.\nSETTING: a scorched plain at the end of a ten-year war, ash in the air, a storm breaking overhead.\nCAMERA: camera faces the figure a little above the helmet, high, close.\nFRAME LAYOUT: center — the open bowl and the three pebbles, near-camera and large; lower-left and lower-right — the two forearms, both rising to one broad bare chest cropped at the upper edge; upper-left — storm cloud and lightning, far.\nFACING: we see into the bowl tilted toward camera and the front of one chest; no face.\nSCREEN DIRECTION: ash drifts from the upper-left toward screen-right; a lightning fork runs down the upper-left.\nLIGHT: white lightning from the upper-left flares on the bronze rim; dull red afterglow from the burning ground under the knuckles.\nPALETTE: dull bronze, ash grey, ember red, lightning white.\nDETAIL: hammer dents in the bronze, torn crest stubble, one scratched mark on each pebble, scars across the knuckles.\nNOT IN FRAME: faces, any second figure, weapons.",
+          "animation_prompt": "MOTION BUDGET: key motion completes within 6.583s; hold to the end of an 8s generation.\n0–1s: the hands jerk the helmet left and back; the three pebbles jump.\n1–4.3s: the hands shake it side to side in sharp jolts; each jolt knocks the same three pebbles against the bronze.\n4.3–6.5s: the hands stop and hold it level; the three pebbles settle in the bottom.\nCAMERA: locked on the helmet.\nENVIRONMENT: ash blows across the frame; lightning flickers upper-left.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts, a fourth pebble, a third hand.",
           "tags": {
             "subject_type": "object",
             "shot_size": "CU",
             "angle": "high",
             "location": "the-war-plain",
-            "time_light": "ash-dark-afterglow",
-            "camera_motion": "push"
+            "time_light": "storm-lightning-afterglow",
+            "camera_motion": "locked"
           },
           "render_mode": "clip",
           "still_motion": null
@@ -76,9 +76,9 @@
           "t_in": 6.583,
           "t_out": 12.583,
           "use_in": 0,
-          "use_out": 6.0,
-          "use_len": 6.0,
-          "motion_budget": 6.0,
+          "use_out": 6,
+          "use_len": 6,
+          "motion_budget": 6,
           "gen_len": 6,
           "source_file": "shots/part02.mp4",
           "ingredient_image": null,
@@ -586,10 +586,10 @@
           "link_group": null,
           "t_in": 76.667,
           "t_out": 80.667,
-          "use_in": 0.0,
-          "use_out": 4.0,
-          "use_len": 4.0,
-          "motion_budget": 4.0,
+          "use_in": 0,
+          "use_out": 4,
+          "use_len": 4,
+          "motion_budget": 4,
           "gen_len": 4,
           "source_file": "shots/part13.mp4",
           "ingredient_image": null,
@@ -1332,12 +1332,12 @@
             "olympus"
           ],
           "visual_priority": [
-            "Mount Olympus — twelve stone seats set in a wide ring on the terrace",
-            "all twelve of them occupied",
-            "open cloud beyond the last seat",
-            "the unbroken marble where a thirteenth would stand"
+            "Mount Olympus — exactly twelve stone thrones in one wide ring on the terrace, six on the far arc and six on the near arc",
+            "one god seated in every one of the twelve, each with the emblem that names them",
+            "open cloud past the last throne",
+            "the unbroken marble where a thirteenth throne was never cut"
           ],
-          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: the summit of Mount Olympus above the cloud line, broad terraces of pale marble and bare rock, tall plain columns, wide open sky, snowfields and lower peaks showing far below through breaks in the cloud, with twelve stone seats set in a wide open ring on the summit terrace, all twelve taken by seated figures, the ring closing on itself with no gap and no thirteenth seat cut anywhere in the marble.\nACTION: the ring of twelve sits closed and complete and nothing stands beyond it.\nSETTING: the summit terrace above the cloud line, midday.\nCAMERA: camera stands above the ring on the upper terrace, high, wide.\nFRAME LAYOUT: center — the ring of twelve seats, mid-frame, every seat occupied; left third and right third — the ring curving away, near-camera and cropped at both edges; upper-right — open cloud past the last seat, far and empty; lower edge — unbroken swept marble.\nFACING: we see the seated figures from above and from the near arc; no single face is legible.\nSCREEN DIRECTION: cloud drifts past the open upper-right toward screen-right; one seated hem lifts.\nLIGHT: flat high daylight, twelve hard shadows thrown inward across the ring.\nPALETTE: pale marble, cloud white, cold blue.\nDETAIL: seated figures readable by outline and posture only, tool marks in the seat stone, weathered marble joints.\nNOT IN FRAME: faces, names, an empty seat, Hades.",
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: the summit of Mount Olympus above the cloud line, broad terraces of pale marble and bare rock, tall plain columns, wide open sky, snowfields and lower peaks showing far below through breaks in the cloud, with exactly twelve stone thrones in one wide ring on the terrace — six on the far arc, six on the near arc, twelve in all — a god seated in every one, each holding the emblem that names them: thunderbolt of white-gold light, sceptre, barbed trident, sheaf of wheat, spear and shield, lyre, hunting bow, war helm, mirror, smith's hammer, herald's staff, vine cup — twelve emblems for twelve thrones, the ring closing on itself with no gap and no thirteenth throne cut anywhere in the marble.\nACTION: the ring of twelve sits closed and complete, each emblem in hand or across the knees.\nSETTING: the summit terrace, midday.\nCAMERA: camera stands above the ring on the upper terrace, high, wide.\nFRAME LAYOUT: center — the whole ring, mid-frame, every throne taken and countable; left third and right third — the ring curving away, near-camera and cropped at both edges, six thrones legible to each side; upper-right — open cloud past the last throne, far and empty; lower edge — unbroken swept marble.\nFACING: we see the seated gods from above and from the near arc, backs and shoulders to camera on the near side; no single face is legible.\nSCREEN DIRECTION: cloud drifts past the open upper-right toward screen-right; one seated hem lifts.\nLIGHT: flat high daylight, twelve hard shadows thrown inward across the ring, one for each seated god.\nPALETTE: pale marble, cloud white, cold blue.\nDETAIL: emblems readable to the forked light and the barbed prongs, figures readable by outline and posture only, tool marks in the throne stone.\nNOT IN FRAME: a thirteenth throne, an empty throne, any standing figure, any crowd, faces, names, Hades.",
           "animation_prompt": null,
           "tags": {
             "subject_type": "architecture",
@@ -1379,12 +1379,12 @@
           "ingredient_image": null,
           "characters": [],
           "visual_priority": [
-            "a small shut sanctuary grown over to the doorstep",
-            "the door barred and the bar itself weathered grey",
-            "no name and no dedication cut anywhere on the stone",
-            "the bare lintel where an inscription would go"
+            "the shut sanctuary of the god of the dead — barred door, black-wound posts, a downturned torch cut into the lintel",
+            "the sunken offering pit before the threshold instead of a raised altar",
+            "offerings left outside on the doorstep by people who may not go in",
+            "no name, no dedication and no lettering cut anywhere on the stone"
           ],
-          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a small plain stone sanctuary, one room, one barred door, the bar weathered grey and unshifted, grass and thistle grown right up over the doorstep and into the door joint, and the lintel above the door left completely bare — no name, no dedication, no carving of any kind cut anywhere on the building.\nACTION: the door stands barred and the grass holds it shut.\nSETTING: a walled precinct in Elis, late summer, nothing tended.\nCAMERA: camera stands on the path a few paces from the door, eye level, medium.\nFRAME LAYOUT: center — the door and the bare lintel, near-camera and large; lower edge — thistle and grass over the doorstep; left third and right third — plain rendered wall, near-camera; upper-right — the precinct wall, far and hazy.\nFACING: we see the door face square on; no figure is in the frame.\nSCREEN DIRECTION: thistle heads move across the doorstep from the left edge toward screen-right.\nLIGHT: flat overcast daylight, no shadow anywhere on the wall.\nPALETTE: sun-bleached stone, dry thistle grey, dead grass gold.\nDETAIL: seed heads and stem joints readable on every weed, render cracked off the wall in patches, dry rot in the door bar.\nNOT IN FRAME: worshippers, offerings, an inscription, a statue.",
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a small plain stone sanctuary of the god of the dead, one room, one heavy timber door barred shut, the bar grey and unshifted, black wool wound round both doorposts, a great iron key hanging from a nail beside the door, and one worn relief cut into the lintel — a torch turned point-down — with no name, no dedication and no lettering anywhere on the building.\nSUBJECT 2: a sunken offering pit cut into the ground before the threshold instead of a raised altar, black fleece and burnt bone charring in it, wine and honey poured into the earth at its rim, split pomegranates left on the doorstep by people not allowed inside.\nACTION: the offerings lie at the shut door and the door stays barred over them.\nSETTING: a walled precinct at Elis under black poplars, late summer.\nCAMERA: camera stands on the path a few paces from the door, eye level, medium.\nFRAME LAYOUT: center — the barred door, the black-wound posts and the downturned torch on the lintel, near-camera and large; lower edge — the sunken pit and the split pomegranates on the doorstep, near-camera; left third — the iron key on its nail; right third — plain rendered wall and dry thistle; upper-right — black poplars over the precinct wall, far and hazy.\nFACING: we see the door face square on; no figure is in the frame.\nSCREEN DIRECTION: smoke creeps out of the pit from the lower edge toward screen-right; thistle heads move across the doorstep.\nLIGHT: flat overcast daylight, no shadow anywhere on the wall, the mouth of the pit dark.\nPALETTE: sun-bleached stone, wine-dark stain, dead grass gold, black wool.\nDETAIL: wool fibres and knots readable on the posts, seed heads on every weed, render cracked off the wall in patches, dry rot in the door bar.\nNOT IN FRAME: worshippers, a priest, a raised altar, a cult statue, any inscription or lettering, Hades himself.",
           "animation_prompt": null,
           "tags": {
             "subject_type": "architecture",

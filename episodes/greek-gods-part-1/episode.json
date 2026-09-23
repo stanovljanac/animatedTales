@@ -4,8 +4,8 @@
   "status": "draft",
   "voice": null,
   "narration_file": "narration.mp3",
-  "final_file": null,
-  "endcard_file": null,
+  "final_file": "final.mp4",
+  "endcard_file": "shots/endKartica.jpeg",
   "intro_file": null,
   "intro_volume": 0.2,
   "characters": [
