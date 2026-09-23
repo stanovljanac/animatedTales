@@ -160,7 +160,7 @@ Ponovni upis traži `--force`, jer gazi promptove.
 ### 5. Promptovi
 
 Po paru na shot, po šablonima iz `docs/reference/prompt-templates.md`, **odeljak „Shema 2"**.
-**Ne prepisuj taj fajl ovde** — otvori ga i radi po njemu. Ukratko: P1 = 90–280 reči (meki cilj
+**Ne prepisuj taj fajl ovde** — otvori ga i radi po njemu. Ukratko: P1 = 90–360 reči (meki cilj
 180–260, R5), P2 = 60–100 reči, kanonskim brojačem iz `schemas.md` §0.6, koji broji i nazive
 blokova.
 
@@ -187,7 +187,7 @@ veličini na kojoj mu se opis vidi; ostali idu u `SUBJECT 2` i dalje.
 
 Budžet: 16 reči na `STYLE` + 25–40 po `locked_description`-u + 30–40 na `SCALE` kad je entitet
 `scale_critical`. Izmereno na prvoj epizodi: **dva locka su stvarna granica**, ne tri koliko
-dozvoljava `LIMITS.maxLocks` — kadar sa tri probija 280. Kadar kome trebaju tri se rasformira na
+dozvoljava `LIMITS.maxLocks` — kadar sa tri probija i 360. Kadar kome trebaju tri se rasformira na
 dva shota; opis se ne skraćuje (skraćivanje ruši C1).
 
 **Promptove ne kucaj lock po lock.** `locked_description`-e i `STYLE` čitaj iz `episode.json` i

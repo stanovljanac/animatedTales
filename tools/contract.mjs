@@ -121,7 +121,7 @@ export const LIMITS = {
   // od 27 klipova prve epizode je vec stajalo na 96-100, pa bi plafon od 100 naterao
   // rezijsko skracivanje zbog knjigovodstva. Pomera se plafon, ne proza.
   animWords: { min: 60, max: 110 },
-  imageWordsV2: { min: 90, max: 280 },  // P1, shema 2 — tvrd plafon
+  imageWordsV2: { min: 90, max: 360 },  // P1, shema 2 — tvrd plafon
   imageSoft: { min: 180, max: 260 },    // R5, shema 2 — meki ciljni opseg (ADVISORY)
   maxLocks: 3,                          // S5 — PRIMARY + najviše dva SECONDARY
   t1Drift: 0.2,                      // T1

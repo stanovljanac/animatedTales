@@ -124,7 +124,7 @@ po trinaestak svaki.
 > pravila po tom broju, pa postojeće epizode ostaju validne bez prepravke. Nove epizode se pišu
 > po ovom odeljku. Obrazloženje promene je u `schemas.md` §3.3.1.
 
-Tri stvari se menjaju: plafon je **90–280 reči** (meki cilj 180–260, R5), uvode se blokovi
+Tri stvari se menjaju: plafon je **90–360 reči** (meki cilj 180–260, R5), uvode se blokovi
 `SCALE` i `DETAIL`, i redosled blokova prestaje da bude preporuka — **`SUBJECT` i `SCALE` idu pre
 kamera-blokova**, jer je to jedino mesto na kome front-loading nešto znači.
 
@@ -196,7 +196,7 @@ i vuk — `center, near-camera and large` — dobijao je četiri reči.
 
 ## Kontrolna lista pre upisa (shema 2)
 
-1. Prebroj obe dužine kanonskim brojačem: **90–280** i 60–100. Cilj je pokrivenost, ne broj.
+1. Prebroj obe dužine kanonskim brojačem: **90–360** i 60–100. Cilj je pokrivenost, ne broj.
 2. Sedam naziva blokova stoji u image promptu, plus `SCALE` kad je entitet `scale_critical`.
 3. `characters[0]` je vizuelni subjekt kadra i njegov lock stoji **u `SUBJECT` bloku**.
 4. `visual_priority` ima 3–5 stavki i `[0]` imenuje PRIMARY lock.

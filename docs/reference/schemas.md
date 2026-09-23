@@ -322,7 +322,7 @@ Izvorni plan ovaj fajl nigde ne definiše iako ga pet alata čita — zato je ov
 
 | Polje | Tip | Obavezno | Opis |
 |---|---|---|---|
-| `schema_version` | number | da | `1` ili `2`. Raste kad se ugovor probije nekompatibilno. **Shema 2** uvodi `SCALE`/`DETAIL` blokove, PRIMARY/SECONDARY lockove, `visual_priority` i plafon P1 od 280 reči (3.3.1). Linter bira pravila po ovom broju, pa epizode na shemi 1 ostaju validne bez prepravke. |
+| `schema_version` | number | da | `1` ili `2`. Raste kad se ugovor probije nekompatibilno. **Shema 2** uvodi `SCALE`/`DETAIL` blokove, PRIMARY/SECONDARY lockove, `visual_priority` i plafon P1 od 360 reči (3.3.1). Linter bira pravila po ovom broju, pa epizode na shemi 1 ostaju validne bez prepravke. |
 | `episode` | string (kebab) | da | Slug; mora da odgovara `episode.json.slug`. |
 | `generated_at` | string | da | ISO 8601 UTC, npr. `"2026-09-04T15:22:31Z"`. |
 | `narration_duration` | number | da | Prepisano iz `timing.json.duration`. Referenca za T1. |
@@ -368,7 +368,7 @@ prikazuje upravo ovaj nivo.
 | `ingredient_image` | string \| null | da | `"images/shot07.jpeg"` — slika koja u Flow ide kao *ingredient*. `null` kad se shot generiše bez nje. |
 | `characters` | array\<string\> | da | `id`-jevi iz `episode.json` (bilo kog od tri niza) koji se u shotu vide. Ulaz za C1. Prazan niz je legitiman. **Shema 2: redosled nosi značenje** — `characters[0]` je PRIMARY lock i mora doslovno da stoji u bloku `SUBJECT`; ostali su SECONDARY. Najviše `LIMITS.maxLocks` (3). Proverava S5. |
 | `visual_priority` | array\<string\> | shema 2 | Rangirana lista od **3 do 5** stavki: šta model sme da promaši poslednje. Stavka `[0]` mora da imenuje PRIMARY lock. **Ne ulazi u prompt** — vidi 3.3.1. Proverava S5. |
-| `image_prompt` | string | da | Shema 1: 90–160 reči. **Shema 2: 90–280 reči** po `countWords` (P1), sa mekim ciljnim opsegom 180–260 (R5, ADVISORY). Sadrži blokove iz S2. |
+| `image_prompt` | string | da | Shema 1: 90–160 reči. **Shema 2: 90–360 reči** po `countWords` (P1), sa mekim ciljnim opsegom 180–260 (R5, ADVISORY). Sadrži blokove iz S2. |
 | `animation_prompt` | string \| null | da | 60–110 reči po `countWords` (P2). **`null` na still shotu** — nema šta da se animira (3.3.2). |
 | `tags` | Tags | da | Šest osa, vidi 3.5. |
 | `render_mode` | `"clip"` \| `"still"` | ne | Odsutno ili `null` znači `"clip"`. `"still"` znači: shot nije klip nego jedna slika kojoj montaža daje pokret. Vidi 3.3.2. |
@@ -382,7 +382,7 @@ proveri, jer bi linter morao da rekonstruiše poziciju sabiranjem — a onda gap
 
 ### 3.3.1 Hijerarhija vizuelne težine (shema 2)
 
-**Zašto je plafon podignut sa 160 na 280.** Broj 90–160 je postavljen pre nego što je ijedna
+**Zašto je plafon podignut sa 160 na 280, pa na 360.** Broj 90–160 je postavljen pre nego što je ijedna
 epizoda postojala i nikad nije bio ograničenje modela. Prva merena epizoda pokazala je šta je
 stvarno kupio: 16 reči `STYLE` + 30–35 reči `locked_description` + pet kamera-blokova (~66) troše
 ~112 reči pre nego što se napiše išta o radnji, svetlu i boji, a **17 od 27 shotova sedelo je na
@@ -405,10 +405,19 @@ stvarno kupio: 16 reči `STYLE` + 30–35 reči `locked_description` + pet kamer
    lockom — kad `visual_priority[0]` kaže „Fenrirova veličina", a `characters[0]` je `laeding`,
    S5 to prijavi. Isti nesklad je u prvoj epizodi prošao neprimećen kroz ceo BLOCKING sloj.
 
-**Meki opseg umesto novog tvrdog.** P1 blokira samo na 90 i 280. Ciljni opseg 180–260 je ADVISORY
+**Meki opseg umesto novog tvrdog.** P1 blokira samo na 90 i 360. Ciljni opseg 180–260 je ADVISORY
 (R5), zato što se generator prema tvrdom pragu ponaša isto kao ranije — puni prompt do plafona.
 Cilj nije popuniti broj reči nego pokriti vizuelne prioritete; kadar kome je dovoljno 170 reči
 ne treba da se razvlači, a R5 čuva da to bude odluka, a ne previd.
+
+**Drugo podizanje, 280 → 360.** Plafon od 280 je pao na kadru koji mora da **prebroji** nešto
+što narracija izgovara kao broj — dvanaest olimpijaca, svaki sa svojim amblemom (`greek-gods-part-1`,
+shot 28). Lock od 40 reči plus pet kamera-blokova plus dvanaest imenovanih amblema ne staju u 280,
+a jedino što se tu moglo skratiti bila je baš lista koja sliku čini tačnom: model koji ne dobije
+dvanaest kotvi nacrta „krug bogova", to jest petnaest ili osamnaest figura. Pravilo je isto kao kod
+`SCALE`-a — preciznost se modelu saopštava učestalošću i nabrajanjem, ne elegancijom. Plafon zato
+prati sadržaj, a ne obrnuto. Meki opseg 180–260 ostaje nepromenjen: kadar preko njega i dalje pali
+R5, i to je dobro — takav kadar treba da bude odluka koja se vidi u izveštaju.
 
 ### 3.3.2 Still kadrovi — epizoda od slika
 
@@ -591,7 +600,7 @@ Tabela je prođena red po red.
 | **S3** | reči koje impliciraju rez unutar klipa (`then`, `later`, `afterwards`, `cuts to`, `meanwhile`); na still shotu se ne meri | — | `shot.animation_prompt` | da |
 | **S4** | blok `SCALE` kad shot nosi `scale_critical` entitet (shema 2) | — | `shot.characters[]` → `episode.json.*.scale_critical`, `shot.image_prompt` | da |
 | **S5** | hijerarhija lockova (shema 2): PRIMARY u `SUBJECT`, najviše 3 locka, `visual_priority` 3–5 stavki sa PRIMARY na vrhu | — | `shot.characters[]`, `shot.visual_priority`, `shot.image_prompt` | da |
-| **P1** | dužina image prompta | shema 1: 90–160; **shema 2: 90–280** reči | `shot.image_prompt` + `countWords` (0.6) | da |
+| **P1** | dužina image prompta | shema 1: 90–160; **shema 2: 90–360** reči | `shot.image_prompt` + `countWords` (0.6) | da |
 | **P2** | dužina animation prompta; **na still shotu prompta ne sme biti** | 60–110 reči | `shot.animation_prompt` + `countWords` (0.6), `shot.render_mode` | da |
 | **T4** | `gen_len` je najmanji član `GEN_TIERS` koji pokriva `use_len`; **na still shotu `null`**; `MOTION BUDGET` linija imenuje istu brojku | 4 · 6 · 8 · 10s | `shot.gen_len`, `shot.use_len`, `shot.render_mode`, `shot.animation_prompt` | da |
 | **C1** | `locked_description` doslovno u svakom shotu gde lik učestvuje | — | `shot.characters[]` → `episode.json.{characters,locations,key_props}[].locked_description`, traži se u `shot.image_prompt` po `normalize` (0.7) | da |

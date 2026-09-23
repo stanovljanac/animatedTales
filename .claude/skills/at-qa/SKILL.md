@@ -46,7 +46,7 @@ Popravke po vrsti nalaza:
 | **T1** | zbir `use_len` ne prati narraciju | **ne diraj promptove** — beat mapa je pogrešna, vrati se na `at-storyboard` |
 | **T2** | `use_len` van 3–10s | isto: beat mapa, ne prompt |
 | **T3** | nema `MOTION BUDGET` linije sa brojem | dopiši je; broj mora da bude jednak `use_len` |
-| **P1/P2** | broj reči van 90–280 / 60–100 (shema 1: 90–160) | skrati `SETTING` i `ACTION`, **nikad kamera-blokove**, nikad `locked_description` i nikad `SCALE` |
+| **P1/P2** | broj reči van 90–360 / 60–100 (shema 1: 90–160) | skrati `SETTING` i `ACTION`, **nikad kamera-blokove**, nikad `locked_description` i nikad `SCALE` |
 | **S1** | zabranjena prostorna fraza | zameni je screen-position klauzulom po `docs/reference/camera-language.md` |
 | **S2** | fali jedan od obaveznih blokova (pet kamera-blokova, na shemi 2 i `SUBJECT` i `DETAIL`) | dopiši blok verzalom sa dvotačkom |
 | **S4** | shot nosi `scale_critical` lock bez `SCALE` bloka | dopiši `SCALE` sa 3–4 tvrdnje o veličini; ponavljanje je tu namerno |
