@@ -1,0 +1,2424 @@
+{
+  "schema_version": 2,
+  "episode": "heavenly-horses",
+  "generated_at": "2026-09-23T22:29:43Z",
+  "narration_duration": 279.745,
+  "fps": 24,
+  "beats": [
+    {
+      "beat_id": "B01",
+      "sentences": [
+        "S01"
+      ],
+      "start": 0,
+      "end": 4.3,
+      "dur": 4.3,
+      "device": "macro-object",
+      "narration_says": "One of China's biggest military problems wasn't weapons.",
+      "viewer_sees": "MACRO OBJECT — a Han arsenal rack packed with crossbows, ji halberds and iron swords, more weapons than hands to hold them",
+      "shots": [
+        {
+          "shot_id": "01",
+          "beat_id": "B01",
+          "link_group": null,
+          "t_in": 0,
+          "t_out": 4.292,
+          "use_in": 0,
+          "use_out": 4.292,
+          "use_len": 4.292,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot01.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "a Han arsenal packed floor to rafters with crossbows, ji halberds and iron swords",
+            "far more weapons than hands to hold them",
+            "hard shafts of dusty light across the racks",
+            "no soldier anywhere in the hall"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a Han dynasty arsenal packed floor to rafters with weapons — racks of bronze-triggered crossbows, long ji halberds standing in rows like a forest, straight iron swords hung in their scabbards, bundles of arrows — far more weapons than any hands to hold them.\nACTION: the racks stand full and untouched.\nSETTING: a long rammed-earth storehouse with timber racks, dust hanging in the air.\nCAMERA: camera stands at the end of the central aisle, eye level, medium.\nFRAME LAYOUT: left third — crossbows racked by the dozen, near-camera and large; center — the aisle running away between rows of halberds, far and hazy; right third — swords hung in rows, near-camera; upper edge — halberd blades crowding the rafters.\nFACING: we see the racks from the aisle; no person is in the hall.\nSCREEN DIRECTION: dust drifts slowly through the light shafts toward screen-left.\nLIGHT: hard shafts of daylight from high windows cutting across the aisle, the rest in shadow.\nPALETTE: dark lacquer, iron grey, bronze, dusty gold light.\nDETAIL: bronze crossbow trigger mechanisms, halberd hooks and blades, bamboo arrow shafts.\nNOT IN FRAME: soldiers, horses, text, later weapons.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "han-arsenal",
+            "time_light": "shafted-dust-light",
+            "camera_motion": "push"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B02",
+      "sentences": [
+        "S02"
+      ],
+      "start": 4.3,
+      "end": 8.34,
+      "dur": 4.04,
+      "device": null,
+      "narration_says": "It was finding horses strong enough to use them.",
+      "viewer_sees": "a Han rider in full lamellar armour on a small shaggy steppe horse whose head hangs low under the weight",
+      "shots": [
+        {
+          "shot_id": "02",
+          "beat_id": "B02",
+          "link_group": null,
+          "t_in": 4.292,
+          "t_out": 8.333,
+          "use_in": 0,
+          "use_out": 4.041,
+          "use_len": 4.041,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "hold",
+          "source_file": "shots/shot02.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "steppe-horse"
+          ],
+          "visual_priority": [
+            "The Steppe Horse sagging under a fully armoured rider",
+            "its head hanging low under the weight",
+            "the rider's heavy lamellar armour and upright ji",
+            "the rider's feet dangling free, no stirrups"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a small stocky steppe horse with short thick legs, a big heavy head on a short thick neck, a shaggy dun coat with a dark stripe along the spine, a stiff upright black mane, standing with its head hung low and its short legs braced under the weight on its back.\nSCALE: the horse is barely taller than a man's chest; the armoured rider's feet dangle almost to its knees; rider and armour look nearly as heavy as the horse.\nACTION: a Han cavalryman in heavy black lamellar armour laced in red, a long ji held upright, sits the small horse as it lowers its head and blows.\nSETTING: a Han parade ground of beaten earth under a flat grey sky, a rammed-earth wall.\nCAMERA: camera stands side-on a few paces off, eye level, medium.\nFRAME LAYOUT: center — horse and rider, near-camera and large, full figure; left third — open parade ground; right third — the rammed-earth wall, far.\nFACING: we see horse and rider in profile facing screen-left; the rider looks down at the lowered head.\nSCREEN DIRECTION: the horse's breath steams toward screen-left; the rider's red lacing stirs in the wind.\nLIGHT: flat overcast daylight, soft shadows.\nPALETTE: dun, black lacquer, faded red, overcast grey.\nDETAIL: the shaggy winter coat, lacquered plates and red lacing of the armour, dust on the horse's legs.\nNOT IN FRAME: stirrups, saddle horns, other horses, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "han-parade-ground",
+            "time_light": "flat-overcast",
+            "camera_motion": "locked"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B03",
+      "sentences": [
+        "S03"
+      ],
+      "start": 8.34,
+      "end": 19.4,
+      "dur": 11.06,
+      "device": "crowd-as-texture",
+      "narration_says": "In the second century BCE, the most dangerous enemy of the Han dynasty lived on horseback: the Xiongnu, nomads of the northern steppe.",
+      "viewer_sees": "CROWD AS TEXTURE — Xiongnu horsemen pouring across the open steppe as one dark moving grain; then one rider close at full gallop, turned in the saddle to loose an arrow backward, no stirrups",
+      "shots": [
+        {
+          "shot_id": "03",
+          "beat_id": "B03",
+          "link_group": null,
+          "t_in": 8.333,
+          "t_out": 13.458,
+          "use_in": 0,
+          "use_out": 5.125,
+          "use_len": 5.125,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pan-right",
+          "source_file": "shots/shot03.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "xiongnu-riders"
+          ],
+          "visual_priority": [
+            "Xiongnu Riders pouring across the open steppe as one dark mass",
+            "the whole mass moving toward the right edge",
+            "dust torn off the mass by the wind",
+            "grassland to every horizon"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Xiongnu steppe horsemen in heavy sheepskin coats and fur-trimmed felt caps, loose trousers and soft felt boots, short recurved composite bows and birch-bark quivers at the hip, riding without stirrups on felt saddle pads, thousands of them pouring across the open grassland as one dark moving grain.\nACTION: the horde sweeps across the steppe toward the south-east.\nSETTING: the northern steppe, rolling short grass to every horizon, a wide sky.\nCAMERA: camera hangs high over the steppe, high, wide.\nFRAME LAYOUT: full frame — the mass of riders as a dark grain crossing the grass from the left edge toward the right; lower-right — the leading edge, sharpest; upper edge — the horizon and a wide pale sky.\nFACING: we see the riders from above and from the side, all heading toward screen-right; no single face is readable.\nSCREEN DIRECTION: the whole mass moves toward the right edge; dust streams off it toward screen-left.\nLIGHT: hard windy daylight, cloud shadows racing over the grass.\nPALETTE: steppe green-gold, sheepskin brown, dust grey, pale sky.\nDETAIL: riders and horses as marks, the grain of the mass, wind lines in the grass, no facial detail.\nNOT IN FRAME: stirrups, Han soldiers, walls, cities.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "crowd",
+            "shot_size": "aerial",
+            "angle": "high",
+            "location": "northern-steppe",
+            "time_light": "wind-hard-daylight",
+            "camera_motion": "pan"
+          }
+        },
+        {
+          "shot_id": "04",
+          "beat_id": "B03",
+          "link_group": null,
+          "t_in": 13.458,
+          "t_out": 19.417,
+          "use_in": 0,
+          "use_out": 5.959,
+          "use_len": 5.959,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pan-left",
+          "source_file": "shots/shot04.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "xiongnu-riders",
+            "steppe-horse"
+          ],
+          "visual_priority": [
+            "Xiongnu Riders — one horseman close at full gallop, twisted round in the saddle",
+            "his bow drawn to loose an arrow back toward screen-right",
+            "the small steppe horse at full stretch",
+            "his legs gripping the horse, no stirrups"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Xiongnu steppe horsemen in heavy sheepskin coats and fur-trimmed felt caps, loose trousers and soft felt boots, short recurved composite bows and birch-bark quivers at the hip, riding without stirrups on felt saddle pads, one of them close at full gallop, twisted round in the saddle with his bow drawn to loose an arrow back the way he came.\nSCALE: horse and rider together are no taller than a standing man with his arm raised, yet the horse is at full stretch, faster than anything that could follow it.\nSUBJECT 2: a small stocky steppe horse with short thick legs, a big heavy head on a short thick neck, a shaggy dun coat with a dark stripe along the spine, a stiff upright black mane, at full stretch under him, mane flying.\nACTION: he looses the arrow backward at full gallop, gripping the horse with his knees alone.\nSETTING: open steppe grass, wind, a wide sky.\nCAMERA: camera races alongside at the horse's shoulder height, eye level, medium.\nFRAME LAYOUT: center — horse and rider, near-camera and large; right third — open grass the way he came, the line of the arrow running to the right edge; left third — the grass ahead, far.\nFACING: we see the horse in profile galloping toward screen-left; the rider turns his chest to camera and looks back toward screen-right along the arrow.\nSCREEN DIRECTION: the horse gallops toward the left edge; the arrow flies toward the right edge.\nLIGHT: hard windy daylight from above, sharp shadows under the horse.\nPALETTE: dun, sheepskin brown, steppe gold, sky blue.\nDETAIL: sheepskin fleece, the birch-bark quiver, the flying mane, grass torn up by the hooves.\nNOT IN FRAME: stirrups, saddle horns, Han soldiers, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "northern-steppe",
+            "time_light": "wind-hard-daylight",
+            "camera_motion": "pan"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B04",
+      "sentences": [
+        "S04"
+      ],
+      "start": 19.4,
+      "end": 25.74,
+      "dur": 6.34,
+      "device": null,
+      "narration_says": "Emperor Wu had been fighting them for decades, and to catch riders, he needed better horses than his own.",
+      "viewer_sees": "Emperor Wu on the palace terrace watching his cavalry drill below on small stocky horses, his face hard",
+      "shots": [
+        {
+          "shot_id": "05",
+          "beat_id": "B04",
+          "link_group": null,
+          "t_in": 19.417,
+          "t_out": 25.75,
+          "use_in": 0,
+          "use_out": 6.333,
+          "use_len": 6.333,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot05.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "emperor-wu",
+            "han-palace"
+          ],
+          "visual_priority": [
+            "Emperor Wu on the palace terrace, his face hard",
+            "his cavalry wheeling below on small stocky horses",
+            "the grey-tiled eave and a red column over him",
+            "long late-afternoon shadows"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a Han emperor in his fifties, a long narrow face, a thin drooping moustache and short pointed beard, hard narrowed eyes, a flat black crown board hung with jade bead strings, a wide-sleeved dark yellow silk robe bordered in black, standing at the balustrade of the palace terrace with his hands clasped at his back, looking down hard at the drill ground below.\nSUBJECT 2: a Han palace hall at Chang'an raised on a high rammed-earth terrace, red lacquered wooden columns, a broad hipped roof of grey tiles, tall bronze lamps, reed mats and low black lacquered tables on a polished dark floor, seen from the edge of its terrace.\nACTION: he watches his horsemen wheel below and does not like what he sees.\nSETTING: the drill ground under the palace terrace at Chang'an, rows of Han cavalry on small stocky horses turning in the dust.\nCAMERA: camera stands on the terrace a few paces from him, eye level, medium.\nFRAME LAYOUT: right third — Emperor Wu, near-camera and large, cropped at the waist; left third and lower-left — the drill ground below, riders on small stocky horses, small and dusty; upper edge — the eave of the roof and a red column.\nFACING: we see his face three-quarter on, turned toward screen-left and down, eyes narrowed.\nSCREEN DIRECTION: the cavalry wheels below in a wide arc toward screen-left; dust drifts the same way.\nLIGHT: low late-afternoon sun from screen-left, long shadows from the columns.\nPALETTE: dark yellow silk, red lacquer, grey tile, dust gold.\nDETAIL: the jade bead strings of the crown, the silk weave of the robe, riders readable by outline far below.\nNOT IN FRAME: stirrups, tall horses, text, foreign envoys.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "han-palace-terrace",
+            "time_light": "late-afternoon",
+            "camera_motion": "push"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B05",
+      "sentences": [
+        "S05"
+      ],
+      "start": 25.74,
+      "end": 28.84,
+      "dur": 3.1,
+      "device": null,
+      "narration_says": "Then word came from the far west.",
+      "viewer_sees": "a lone dust-caked traveller walking out of the western desert toward a Han beacon tower, the sentries on its top turning to look",
+      "shots": [
+        {
+          "shot_id": "06",
+          "beat_id": "B05",
+          "link_group": null,
+          "t_in": 25.75,
+          "t_out": 28.833,
+          "use_in": 0,
+          "use_out": 3.083,
+          "use_len": 3.083,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "hold",
+          "source_file": "shots/shot06.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "a lone dust-caked traveller walking out of the western desert",
+            "a Han beacon tower at the right, two sentries turning to look",
+            "his long shadow in the evening light",
+            "empty desert to the horizon at the left"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a lone traveller on foot, gaunt and caked with dust, a ragged felt coat over a faded Han robe, a worn staff in one hand, walking out of the desert after years away.\nACTION: he walks toward the beacon tower while the sentries on its top turn to look.\nSETTING: the Han frontier at evening, a single square beacon tower of rammed earth with kindling stacked on its top, gravel desert.\nCAMERA: camera stands on the gravel near the tower's foot, eye level, wide.\nFRAME LAYOUT: left third and center — the traveller, mid-frame, full figure, his long shadow stretching toward camera; right third — the beacon tower, near-camera and large, two sentries small on its top; left edge — empty desert and far mountains, hazy.\nFACING: we see the traveller three-quarter on, walking toward screen-right; the sentries look down toward screen-left at him.\nSCREEN DIRECTION: he walks from the left toward the right edge; dust lifts from his feet and drifts toward screen-left.\nLIGHT: low dusty evening sun from the left, the tower's shadow long across the gravel.\nPALETTE: dust ochre, rammed-earth tan, evening gold, faded blue.\nDETAIL: tamping lines in the tower wall, the frayed felt coat, grit on the ground.\nNOT IN FRAME: horses, camels, a city, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "frontier-beacon",
+            "time_light": "dusty-evening",
+            "camera_motion": "locked"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B06",
+      "sentences": [
+        "S06"
+      ],
+      "start": 28.84,
+      "end": 37.14,
+      "dur": 8.3,
+      "device": "animated-map",
+      "narration_says": "More than two thousand miles away, in the Ferghana Valley, lay a kingdom the Chinese called Dayuan.",
+      "viewer_sees": "ANIMATED MAP — a silk map unrolled right to left across a lacquered table, the way a Chinese scroll is read: the walls of Chang'an painted at the right end, a thin caravan trail winding west through ink-wash desert and mountain ridges, a green valley ringed by snow peaks at the far left; no writing and no arrows",
+      "shots": [
+        {
+          "shot_id": "07",
+          "beat_id": "B06",
+          "link_group": null,
+          "t_in": 28.833,
+          "t_out": 37.125,
+          "use_in": 0,
+          "use_out": 8.292,
+          "use_len": 8.292,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pan-left",
+          "source_file": "shots/shot07.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "a painted silk map unrolled right to left across a lacquered table",
+            "the walls of Chang'an painted at the right end",
+            "a thin red caravan trail winding west through desert and mountain ridges",
+            "the green valley ringed by snow peaks at the far left, where the silk runs off the table"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a long painted silk map unrolled across a black lacquered table from right to left, the way a scroll is read, painted like a landscape: the walled city of Chang'an with its gates at the right end, a thin red caravan trail winding west through pale ink-wash desert, dunes, salt flats and dark mountain ridges, tiny painted caravans along it, and at the far left end a small green valley ringed by white snow peaks — a road so long the silk runs off both ends of the table.\nACTION: the scroll lies open, still unrolling off the left edge of the table.\nSETTING: a lamplit room of the Han palace, the silk laid on black lacquer.\nCAMERA: camera looks down across the table at an angle, high, medium.\nFRAME LAYOUT: right third — Chang'an's painted walls and the rolled end of the scroll, near-camera; center — the trail across desert and mountains, long and thin; left third — the green valley ringed by snow peaks, where the silk hangs off the table edge; upper edge — the table top and a lamp, far.\nFACING: we see the painted silk flat on at an angle; no person is in the frame.\nSCREEN DIRECTION: the trail leads from the right end toward the left edge; lamplight glides along the silk toward screen-left.\nLIGHT: warm lamplight from the right, the silk's sheen catching it, soft shadows in its folds.\nPALETTE: silk cream, ink black, cinnabar red, valley green.\nDETAIL: ink brush strokes of the ridges, the silk weave, tiny painted caravans, gentle folds in the silk.\nNOT IN FRAME: writing, labels, arrows, a compass rose, hands, modern map symbols.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "map-diagram",
+            "shot_size": "MS",
+            "angle": "high",
+            "location": "silk-map",
+            "time_light": "lamplit-silk",
+            "camera_motion": "pan"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B07",
+      "sentences": [
+        "S07"
+      ],
+      "start": 37.14,
+      "end": 43.46,
+      "dur": 6.32,
+      "device": null,
+      "narration_says": "Its horses, people said, sweated blood, and were descended from horses of heaven.",
+      "viewer_sees": "one magnificent tall red-bay horse on a high mountain pasture from a low angle, a reddish sheen of sweat on the neck and shoulder; long streamers of cloud torn off the ridge above it, only ambiguously like manes",
+      "shots": [
+        {
+          "shot_id": "08",
+          "beat_id": "B07",
+          "link_group": null,
+          "t_in": 37.125,
+          "t_out": 43.458,
+          "use_in": 0,
+          "use_out": 6.333,
+          "use_len": 6.333,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot08.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "ferghana-horse"
+          ],
+          "visual_priority": [
+            "The Heavenly Horse alone on a high pasture, seen from below",
+            "a reddish sheen of sweat on its neck and shoulder",
+            "long streamers of cloud torn off the ridge, running the same way as its mane",
+            "snow peaks around the valley"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a tall slender Ferghana horse with long fine legs, a small refined head on a long arched neck, a deep chest, a thin glossy red-bay coat glistening like wet copper where it sweats, a short upright mane, standing alone on a high mountain pasture with its head raised into the wind, a reddish sheen of sweat beading on its neck and shoulder.\nSCALE: the horse stands tall against the sky, its withers above a man's head; seen from below it rises higher than the snow ridge at the upper edge.\nACTION: the horse stands still and scents the wind, its mane lifting.\nSETTING: a high summer pasture in the Ferghana Valley, short grass and wildflowers, snow peaks all round.\nCAMERA: camera lies low in the grass a few paces off, low, wide.\nFRAME LAYOUT: left third and center — the horse, near-camera and large, full figure against the sky; right third — the valley falling away far below, hazy; upper edge — long streamers of white cloud torn off the snow ridge.\nFACING: we see the horse three-quarter on in profile, facing screen-right, head high, one eye catching the light.\nSCREEN DIRECTION: the mane and the cloud streamers both stream toward screen-right in the wind.\nLIGHT: clear high morning sun from screen-left, a rim of light along the back, a red-gold glint where the sweat beads.\nPALETTE: red bay, snow white, sky blue, pasture green.\nDETAIL: the fine glossy coat, sweat beads catching red light, single mane hairs, wildflowers in the grass.\nNOT IN FRAME: wings, ghost horses, horses in the sky, riders, saddles, stirrups, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "LS",
+            "angle": "low",
+            "location": "ferghana-pasture",
+            "time_light": "high-clear-morning",
+            "camera_motion": "push"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B08",
+      "sentences": [
+        "S08"
+      ],
+      "start": 43.46,
+      "end": 51.3,
+      "dur": 7.84,
+      "device": null,
+      "narration_says": "The emperor sent an envoy with a thousand pieces of gold and a horse made of gold, to buy the best of them.",
+      "viewer_sees": "the envoy leading a caravan out of the palace gate toward the west, a golden horse riding on a litter and chests of gold on the carts",
+      "shots": [
+        {
+          "shot_id": "09",
+          "beat_id": "B08",
+          "link_group": null,
+          "t_in": 43.458,
+          "t_out": 51.292,
+          "use_in": 0,
+          "use_out": 7.834,
+          "use_len": 7.834,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pan-left",
+          "source_file": "shots/shot09.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "han-envoy",
+            "golden-horse"
+          ],
+          "visual_priority": [
+            "The Han Envoy leading the caravan west out of the palace gate",
+            "the golden horse carried high on a draped litter",
+            "a thousand round cakes of gold in ten open chests on the carts",
+            "the palace gate at the right"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a Han envoy in his thirties, a lean hard face, a black moustache, a black lacquered official's cap tied under the chin, a dark blue wide-sleeved robe, a bamboo staff of office hung with three yak-tail tufts, walking at the head of a caravan out through the palace gate, his staff of office held upright.\nSCALE: the golden horse is only as long as a forearm, yet four bearers carry it and every eye is on it; each of the ten chests of gold needs two men to lift.\nSUBJECT 2: a statue of a horse cast in solid gold, as long as a man's forearm, standing four-square on a flat gold base, head raised, the mane and tail finely chased, a soft heavy lustre with no gems and no colour, carried high on a draped litter by four bearers just after him.\nACTION: the caravan sets out west with the gold.\nSETTING: the main gate of the Han palace at Chang'an at dawn, rammed-earth walls, a paved road running west; ox carts with ten open chests holding a thousand round cakes of gold.\nCAMERA: camera stands on the road a little ahead of the caravan, eye level, wide.\nFRAME LAYOUT: left third — the envoy, near-camera and large, striding toward the left edge; center — the litter with the golden horse catching the light; right third — the ox carts with the open chests and the palace gate, far.\nFACING: we see the envoy's face and chest three-quarter on, eyes ahead toward screen-left; the bearers face the same way.\nSCREEN DIRECTION: the whole caravan moves toward the left edge; banners flap toward screen-right.\nLIGHT: low early sun from screen-left, the gold blazing.\nPALETTE: gold, dark blue, rammed-earth tan, dawn rose.\nDETAIL: the yak-tail tufts on the staff, gold cakes stacked in the chests, the chased mane of the golden horse.\nNOT IN FRAME: the emperor, battle, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "han-palace-gate",
+            "time_light": "early-morning",
+            "camera_motion": "pan"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B09",
+      "sentences": [
+        "S09"
+      ],
+      "start": 51.3,
+      "end": 54.14,
+      "dur": 2.84,
+      "device": null,
+      "narration_says": "Dayuan's nobles refused.",
+      "viewer_sees": "the nobles of Dayuan in their hall, one raising his palm to refuse, the golden horse standing untouched on the carpet",
+      "shots": [
+        {
+          "shot_id": "10",
+          "beat_id": "B09",
+          "link_group": null,
+          "t_in": 51.292,
+          "t_out": 54.125,
+          "use_in": 0,
+          "use_out": 2.833,
+          "use_len": 2.833,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "hold",
+          "source_file": "shots/shot10.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "dayuan-nobles",
+            "golden-horse"
+          ],
+          "visual_priority": [
+            "The Nobles of Dayuan refusing, the eldest raising his palm",
+            "the golden horse set down untouched on the carpet",
+            "the envoy's staff at the right edge",
+            "shafts of light from the high windows"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Ferghana nobles with deep-set eyes, long straight noses and full dark curled beards, shoulder-length hair under tall felt caps, knee-length belted kaftans of patterned wool in madder red and indigo, trousers tucked into soft boots, gold plaques at the belt, seated in a row on cushions along their hall, the eldest raising one open palm in refusal.\nSCALE: the golden horse sits small on the wide carpet; not one noble leans toward it; the envoy's staff at the edge stands taller than any seated man.\nSUBJECT 2: a statue of a horse cast in solid gold, as long as a man's forearm, standing four-square on a flat gold base, head raised, the mane and tail finely chased, a soft heavy lustre with no gems and no colour, set down on the carpet before them, untouched.\nACTION: the eldest noble raises his palm and turns his face aside.\nSETTING: the audience hall of the Ferghana court, mudbrick walls hung with felt, patterned carpets, carved wooden columns.\nCAMERA: camera stands on the carpet at the envoy's place, eye level, medium.\nFRAME LAYOUT: left third and center — the row of nobles, near-camera and large, the raised palm at center; lower-center — the golden horse on the carpet; right edge — the envoy's staff with its yak-tail tufts, cropped.\nFACING: we see the nobles front on, facing screen-right toward the envoy; the eldest's face is turned slightly away.\nSCREEN DIRECTION: dust turns in the window light from the upper-left toward screen-right.\nLIGHT: shafts of daylight from high windows, the hall in warm shadow.\nPALETTE: madder red, indigo, gold, mudbrick tan.\nDETAIL: patterned wool kaftans, gold belt plaques, carpet knots, the chased mane of the golden horse.\nNOT IN FRAME: drawn weapons, the king, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "dayuan-hall",
+            "time_light": "window-shafts",
+            "camera_motion": "locked"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B10",
+      "sentences": [
+        "S10"
+      ],
+      "start": 54.14,
+      "end": 58.44,
+      "dur": 4.3,
+      "device": null,
+      "narration_says": "According to the court historian Sima Qian, they had done the arithmetic.",
+      "viewer_sees": "Sima Qian at a low table by lamplight, brushing columns onto bamboo slips",
+      "shots": [
+        {
+          "shot_id": "11",
+          "beat_id": "B10",
+          "link_group": null,
+          "t_in": 54.125,
+          "t_out": 58.458,
+          "use_in": 0,
+          "use_out": 4.333,
+          "use_len": 4.333,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot11.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "sima-qian"
+          ],
+          "visual_priority": [
+            "Sima Qian writing at a low table by lamplight",
+            "columns of brush marks on bamboo slips",
+            "the brush in his hand",
+            "bundles of bound slips on the shelves"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a Han court historian in his forties, a gaunt lined beardless face, tired watchful eyes, a black gauze scholar's cap, a plain dark grey robe with wide sleeves, ink-stained fingers, kneeling at a low lacquered table and brushing a column of characters down a bamboo slip.\nACTION: he writes steadily, eyes on the slip.\nSETTING: a small study at night, bundles of bound bamboo slips stacked on shelves, an ink stone, one bronze oil lamp.\nCAMERA: camera kneels across the table from him, eye level, medium.\nFRAME LAYOUT: center — Sima Qian, near-camera, cropped at the waist; lower edge — the unrolled bamboo slips and the ink stone; left third — the bronze lamp; right third — shelves of bound slips, far and dim.\nFACING: we see his face three-quarter on, eyes down on the slip, the brush hand raised.\nSCREEN DIRECTION: the lamp flame leans toward screen-right; the brush moves down the slip.\nLIGHT: warm oil-lamp light from screen-left, deep shadow on the far wall.\nPALETTE: lamp amber, bamboo yellow, ink black, dark grey.\nDETAIL: characters as brush marks too small to read, split bamboo strips bound with cord, ink sheen on the stone.\nNOT IN FRAME: paper, a chair, readable text, other people.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "historian-study",
+            "time_light": "night-lamplight",
+            "camera_motion": "push"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B11",
+      "sentences": [
+        "S11"
+      ],
+      "start": 58.44,
+      "end": 63.14,
+      "dur": 4.7,
+      "device": null,
+      "narration_says": "China's envoys lost half their men just crossing the deserts.",
+      "viewer_sees": "an envoy caravan strung out across a salt flat in heat haze, every second camel carrying an empty saddle, fresh stone cairns along the track toward the right edge",
+      "shots": [
+        {
+          "shot_id": "12",
+          "beat_id": "B11",
+          "link_group": null,
+          "t_in": 58.458,
+          "t_out": 63.125,
+          "use_in": 0,
+          "use_out": 4.667,
+          "use_len": 4.667,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pan-left",
+          "source_file": "shots/shot12.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "western-desert"
+          ],
+          "visual_priority": [
+            "The Desert Road with an envoy caravan strung out across a salt flat",
+            "every second camel carrying an empty saddle — half the party gone",
+            "fresh stone cairns along the track toward the right edge",
+            "heat haze over the salt"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: the desert road west of the Jade Gate, a vast plain of grey gravel and pale dunes, white salt crust and dry riverbeds, a far line of snow mountains along the horizon, no tree and no water anywhere, an envoy caravan strung out across a white salt flat in the heat, men on foot leading a line of camels, every second camel carrying an empty saddle — half the party gone.\nACTION: the survivors plod west with their heads down.\nSETTING: noon on the salt flats, heat shimmer on the horizon.\nCAMERA: camera stands on the salt a little off the track, eye level, wide.\nFRAME LAYOUT: left third and center — the caravan moving toward the left edge, the empty saddles plain among the laden ones; right third — the track they came by, lined with fresh stone cairns at intervals, the nearest one near-camera and large; upper edge — the far snow mountains wavering in haze.\nFACING: we see the men in profile facing screen-left, heads bowed against the glare.\nSCREEN DIRECTION: the caravan moves toward the left edge; heat shimmer rises off the salt.\nLIGHT: harsh white noon light, almost no shadow.\nPALETTE: salt white, camel tan, faded blue, stone grey.\nDETAIL: cracks in the salt crust, stones piled on the cairns, sagging empty saddle straps.\nNOT IN FRAME: bodies, bones, blood, an oasis, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "western-desert",
+            "time_light": "harsh-noon",
+            "camera_motion": "pan"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B12",
+      "sentences": [
+        "S12"
+      ],
+      "start": 63.14,
+      "end": 65.98,
+      "dur": 2.84,
+      "device": null,
+      "narration_says": "How could it ever send an army?",
+      "viewer_sees": "a Dayuan noble on the city wall looking east over endless desert and mountains, at ease",
+      "shots": [
+        {
+          "shot_id": "13",
+          "beat_id": "B12",
+          "link_group": null,
+          "t_in": 63.125,
+          "t_out": 66,
+          "use_in": 0,
+          "use_out": 2.875,
+          "use_len": 2.875,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "hold",
+          "source_file": "shots/shot13.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "dayuan-nobles",
+            "dayuan-capital"
+          ],
+          "visual_priority": [
+            "one of the Nobles of Dayuan at ease on the city wall",
+            "looking east over range after range of mountains and desert",
+            "a cup in his hand and a confident smile",
+            "the golden afternoon"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Ferghana nobles with deep-set eyes, long straight noses and full dark curled beards, shoulder-length hair under tall felt caps, knee-length belted kaftans of patterned wool in madder red and indigo, trousers tucked into soft boots, gold plaques at the belt, one of them leaning at ease on the battlement of the city wall, a cup in his hand, smiling out at the east.\nSUBJECT 2: the walled capital of Dayuan in the Ferghana Valley, thick sloping walls of mudbrick and rammed earth with square towers, flat-roofed houses and a citadel inside, a river channel along the foot of the walls, snow mountains all around, its wall top under him.\nACTION: he looks out over the distance and smiles.\nSETTING: the wall top in golden afternoon, the green valley below, mountain ranges and pale desert beyond to the east.\nCAMERA: camera stands on the wall walk beside him, eye level, medium.\nFRAME LAYOUT: left third — the noble, near-camera and large, cropped at the waist; center and right third — the view east: the green valley, range after range of mountains and pale desert beyond, fading into haze.\nFACING: we see his face three-quarter on in profile, turned toward screen-right, relaxed, a slight smile.\nSCREEN DIRECTION: a hawk glides toward the right edge over the valley; the wind lifts the hem of his kaftan toward screen-right.\nLIGHT: warm golden afternoon light from screen-left.\nPALETTE: madder red, mudbrick gold, valley green, haze blue.\nDETAIL: patterned kaftan wool, gold belt plaques, three layers of ridges fading into haze.\nNOT IN FRAME: soldiers, armies, the envoy, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "dayuan-capital",
+            "time_light": "golden-afternoon",
+            "camera_motion": "locked"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B13",
+      "sentences": [
+        "S13"
+      ],
+      "start": 65.98,
+      "end": 70.54,
+      "dur": 4.56,
+      "device": null,
+      "narration_says": "The envoy lost his temper, smashed the golden horse, and left.",
+      "viewer_sees": "the envoy bringing a hammer down on the golden horse, its head breaking from the neck, gold splinters in the air",
+      "shots": [
+        {
+          "shot_id": "14",
+          "beat_id": "B13",
+          "link_group": null,
+          "t_in": 66,
+          "t_out": 70.542,
+          "use_in": 0,
+          "use_out": 4.542,
+          "use_len": 4.542,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot14.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "han-envoy",
+            "golden-horse"
+          ],
+          "visual_priority": [
+            "The Han Envoy bringing a hammer down on the golden horse",
+            "the golden horse's head breaking from its neck",
+            "gold splinters flying",
+            "the nobles recoiling at the left"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a Han envoy in his thirties, a lean hard face, a black moustache, a black lacquered official's cap tied under the chin, a dark blue wide-sleeved robe, a bamboo staff of office hung with three yak-tail tufts, his face twisted in fury, bringing a heavy iron hammer down on the golden horse with both hands.\nSCALE: the hammer head is half the size of the golden horse; the envoy looms over it like a giant; shards of gold fly higher than the heads of the seated nobles.\nSUBJECT 2: a statue of a horse cast in solid gold, as long as a man's forearm, standing four-square on a flat gold base, head raised, the mane and tail finely chased, a soft heavy lustre with no gems and no colour, on the carpet at the instant of the blow, its head breaking away from the neck.\nACTION: the hammer strikes and the golden head cracks away.\nSETTING: the audience hall of Dayuan, patterned carpets, shafts of light.\nCAMERA: camera kneels low on the carpet near the golden horse, low, medium.\nFRAME LAYOUT: center — the golden horse and the hammer at the moment of impact, near-camera and large; right third — the envoy, looming, his staff dropped at his feet; left third — the nobles recoiling on their cushions, smaller.\nFACING: we see the envoy front on from below, eyes blazing down at the horse; the nobles lean back toward screen-left.\nSCREEN DIRECTION: the hammer drives down; gold shards burst outward toward the left edge.\nLIGHT: a shaft of window light striking the gold, a flash at the point of impact.\nPALETTE: gold, dark blue, madder red, shadow brown.\nDETAIL: the crack across the gold neck, flying gold splinters, the envoy's clenched knuckles.\nNOT IN FRAME: blood, drawn weapons, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "low",
+            "location": "dayuan-hall",
+            "time_light": "window-shafts",
+            "camera_motion": "push"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B14",
+      "sentences": [
+        "S14"
+      ],
+      "start": 70.54,
+      "end": 74.22,
+      "dur": 3.68,
+      "device": "silhouette",
+      "narration_says": "At Dayuan's border, he was ambushed and killed.",
+      "viewer_sees": "SILHOUETTE — a small caravan in a mountain pass at dusk, arrows coming down on it from the ridge, the envoy's staff falling",
+      "shots": [
+        {
+          "shot_id": "15",
+          "beat_id": "B14",
+          "link_group": null,
+          "t_in": 70.542,
+          "t_out": 74.208,
+          "use_in": 0,
+          "use_out": 3.666,
+          "use_len": 3.666,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "hold",
+          "source_file": "shots/shot15.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "the caravan as black silhouettes caught in the pass",
+            "arrows falling on it from the ridge at the left",
+            "the envoy's staff toppling, its three yak-tail tufts outlined",
+            "the deep red dusk sky"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a small caravan of men and camels caught in a narrow mountain pass at dusk, all drawn as flat black silhouettes, and a tall staff of office with three yak-tail tufts toppling from a falling man's hand.\nACTION: arrows rain down from the ridge onto the caravan.\nSETTING: a narrow pass between steep ridges, the sky red.\nCAMERA: camera stands low in the pass, low, wide.\nFRAME LAYOUT: lower third — the caravan silhouettes crossing toward the right edge; upper-left — archers on the ridge, tiny black shapes; center — the falling staff outlined against the red sky; upper two thirds — flat red dusk sky crossed by arrow lines.\nFACING: we see the caravan in profile heading toward screen-right; the archers face down toward screen-right.\nSCREEN DIRECTION: arrows streak from the upper-left toward the lower-right; the staff falls toward the ground.\nLIGHT: hard red backlight from the dusk sky, no fill.\nPALETTE: flat black, deep red, rust orange.\nDETAIL: silhouettes read entirely by outline — camel humps, the staff's three tufts, arrow shafts.\nNOT IN FRAME: blood, faces, wounds, bodies on the ground.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "low",
+            "location": "border-pass",
+            "time_light": "red-dusk",
+            "camera_motion": "locked"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B15",
+      "sentences": [
+        "S15"
+      ],
+      "start": 74.22,
+      "end": 82.32,
+      "dur": 8.1,
+      "device": null,
+      "narration_says": "In 104 BCE, the emperor sent an army under Li Guangli, the brother of his favourite consort.",
+      "viewer_sees": "Li Guangli kneeling before the emperor to take the half of a bronze tiger tally, the throne hall quiet",
+      "shots": [
+        {
+          "shot_id": "16",
+          "beat_id": "B15",
+          "link_group": null,
+          "t_in": 74.208,
+          "t_out": 82.333,
+          "use_in": 0,
+          "use_out": 8.125,
+          "use_len": 8.125,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot16.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "li-guangli",
+            "emperor-wu"
+          ],
+          "visual_priority": [
+            "Li Guangli kneeling to receive half of the bronze tiger tally",
+            "Emperor Wu leaning from the throne to lay it in his palms",
+            "the quiet throne hall",
+            "lamplight on the bronze"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a Han general in his thirties, a broad smooth face, a thin black moustache, a topknot under a red cloth wrap, black lacquered lamellar armour laced in red over a knee-length red robe, a long iron sword, kneeling on one knee before the throne with both hands raised, palms up, to receive half of a bronze tiger tally.\nSUBJECT 2: a Han emperor in his fifties, a long narrow face, a thin drooping moustache and short pointed beard, hard narrowed eyes, a flat black crown board hung with jade bead strings, a wide-sleeved dark yellow silk robe bordered in black, seated on the throne and leaning forward to lay the half tally in the general's hands.\nACTION: the emperor lays the half tally into the general's palms.\nSETTING: the throne hall of the Han palace, red lacquered columns, bronze lamps, a raised dais.\nCAMERA: camera stands at the side of the dais at the general's level, eye level, medium.\nFRAME LAYOUT: left third — Li Guangli kneeling, near-camera and large; right third — Emperor Wu on the raised throne; center — the small bronze tiger tally passing between their hands; upper edge — lamps and red columns.\nFACING: we see Li Guangli in profile facing screen-right, eyes lowered; the emperor three-quarter on, looking down at him.\nSCREEN DIRECTION: the tally moves from the emperor's hand toward the general's palms, toward screen-left; lamp smoke rises.\nLIGHT: warm lamplight from both sides, the polished floor gleaming.\nPALETTE: dark yellow silk, red lacquer, black armour, bronze.\nDETAIL: the tiger tally's inlaid stripes, lacquered armour plates, the jade bead strings.\nNOT IN FRAME: women, soldiers, text, drawn weapons.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "han-palace",
+            "time_light": "lamplit-hall",
+            "camera_motion": "push"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B16",
+      "sentences": [
+        "S16"
+      ],
+      "start": 82.32,
+      "end": 90.7,
+      "dur": 8.38,
+      "device": null,
+      "narration_says": "His title was also his order: General of Ershi — the city where the best horses were kept.",
+      "viewer_sees": "the city of Ershi seen from the valley rim, horse pens packed with tall red horses around its walls",
+      "shots": [
+        {
+          "shot_id": "17",
+          "beat_id": "B16",
+          "link_group": null,
+          "t_in": 82.333,
+          "t_out": 90.708,
+          "use_in": 0,
+          "use_out": 8.375,
+          "use_len": 8.375,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pan-left",
+          "source_file": "shots/shot17.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "the walled city of Ershi seen from the valley rim",
+            "horse pens packed with tall red horses around its walls",
+            "the green valley ringed by snow peaks",
+            "a thin road descending to it from the right edge"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: the walled city of Ershi seen from the rim of its valley, a mudbrick town with square towers, surrounded by wide wooden-fenced horse pens packed with tall red-bay horses — hundreds of them, glossy in the sun.\nACTION: the herds move slowly inside the pens around the walls.\nSETTING: a green valley in the Ferghana mountains, irrigated fields, lines of poplars, snow peaks all round.\nCAMERA: camera stands on the valley rim, high, wide.\nFRAME LAYOUT: left third and center — the city and its horse pens, mid-frame; right third — the valley rim and a thin road descending from the right edge, near-camera; upper edge — snow peaks.\nFACING: we see the city three-quarter on from above; the horses read as tall red shapes, heads up.\nSCREEN DIRECTION: the road leads from the right edge toward the city at screen-left; a herd drifts across a pen toward screen-left.\nLIGHT: clear high morning light, crisp shadows.\nPALETTE: red bay, mudbrick tan, poplar green, snow white.\nDETAIL: fence rails and pen gates, horses readable by outline and colour, irrigation channels.\nNOT IN FRAME: Han soldiers, text, banners with writing.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "architecture",
+            "shot_size": "XLS",
+            "angle": "high",
+            "location": "ershi",
+            "time_light": "high-clear-morning",
+            "camera_motion": "pan"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B17",
+      "sentences": [
+        "S17"
+      ],
+      "start": 90.7,
+      "end": 96.52,
+      "dur": 5.82,
+      "device": null,
+      "narration_says": "The oasis kingdoms along the road shut their gates and refused to feed his men.",
+      "viewer_sees": "an oasis town with its gate barred and archers on the wall, hungry Han soldiers standing outside it in the dust",
+      "shots": [
+        {
+          "shot_id": "18",
+          "beat_id": "B17",
+          "link_group": null,
+          "t_in": 90.708,
+          "t_out": 96.5,
+          "use_in": 0,
+          "use_out": 5.792,
+          "use_len": 5.792,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pull",
+          "source_file": "shots/shot18.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "han-soldiers"
+          ],
+          "visual_priority": [
+            "Han Soldiers halted hungry outside a barred oasis gate",
+            "the gate shut and archers on the wall",
+            "green treetops showing over the wall",
+            "dust and hard noon heat"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Han dynasty soldiers in knee-length red-brown robes under black lacquered lamellar vests, hair in topknots under dark cloth caps, leg wrappings and cloth shoes, armed with crossbows, long ji halberds and straight iron swords, a hungry column halted in the dust outside a walled oasis, gaunt, some sitting, one hammering on the gate with his fist.\nACTION: the gate stays barred while archers on the wall watch them.\nSETTING: a small oasis town of mudbrick walls, green poplar tops over the wall, desert all round.\nCAMERA: camera stands among the soldiers, eye level, wide.\nFRAME LAYOUT: left third — the barred wooden gate and the wall with archers on top, far and small; center and right third — the Han soldiers, near-camera and large, cropped at the knee; upper-left — green treetops over the wall.\nFACING: we see the soldiers from the side and three-quarter from the rear, facing screen-left toward the gate; the archers face screen-right down at them.\nSCREEN DIRECTION: dust blows from the right edge toward the gate; one fist beats on the gate.\nLIGHT: harsh noon sun, short black shadows.\nPALETTE: mudbrick tan, faded red-brown, poplar green, dust white.\nDETAIL: cracked lips and hollow cheeks, dusty lamellar vests, rammed-earth texture.\nNOT IN FRAME: food, an open gate, horses, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "oasis-town",
+            "time_light": "harsh-noon",
+            "camera_motion": "pull"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B18",
+      "sentences": [
+        "S18"
+      ],
+      "start": 96.52,
+      "end": 106.6,
+      "dur": 10.08,
+      "device": null,
+      "narration_says": "By the time the army reached Dayuan, it was a few thousand starving soldiers, and it was beaten at the same border town where the envoy had died.",
+      "viewer_sees": "a thin column of starving soldiers dragging into a green valley; then the same men broken under arrows at the foot of a border town",
+      "shots": [
+        {
+          "shot_id": "19",
+          "beat_id": "B18",
+          "link_group": null,
+          "t_in": 96.5,
+          "t_out": 101.5,
+          "use_in": 0,
+          "use_out": 5,
+          "use_len": 5,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pan-left",
+          "source_file": "shots/shot19.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "han-soldiers"
+          ],
+          "visual_priority": [
+            "Han Soldiers reduced to a thin starving column dragging into a green valley",
+            "wide gaps between the ragged groups",
+            "the green valley and a small walled town ahead",
+            "bent, limping figures"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Han dynasty soldiers in knee-length red-brown robes under black lacquered lamellar vests, hair in topknots under dark cloth caps, leg wrappings and cloth shoes, armed with crossbows, long ji halberds and straight iron swords, only a thin ragged column now, a few thousand men dragging themselves down into a green valley, bent and limping, leaning on their halberds, wide gaps between the groups.\nACTION: the column staggers on toward the valley floor.\nSETTING: the rim of a green Ferghana valley after the desert, grass and poplars below, a small walled border town far ahead.\nCAMERA: camera stands on the slope above the track, high, wide.\nFRAME LAYOUT: right third — the column's tail coming over the rise, near-camera; center — the long thin line of men, mid-frame, gaps between the groups; left third — the green valley and the small walled town, far and hazy.\nFACING: we see the soldiers from the side and from above, heads down, facing screen-left.\nSCREEN DIRECTION: the column moves toward the left edge; dust hangs over it.\nLIGHT: hazy dusty daylight, the green valley brighter than the brown slope.\nPALETTE: dust brown, faded red-brown, valley green, haze.\nDETAIL: figures readable by outline and posture, the gaps in the column, ragged banners.\nNOT IN FRAME: well-fed horses, enemy soldiers, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "crowd",
+            "shot_size": "LS",
+            "angle": "high",
+            "location": "yucheng",
+            "time_light": "dust-hazed-day",
+            "camera_motion": "pan"
+          }
+        },
+        {
+          "shot_id": "20",
+          "beat_id": "B18",
+          "link_group": null,
+          "t_in": 101.5,
+          "t_out": 106.583,
+          "use_in": 0,
+          "use_out": 5.083,
+          "use_len": 5.083,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot20.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "han-soldiers"
+          ],
+          "visual_priority": [
+            "Han Soldiers broken under arrows at the foot of the border town wall",
+            "shields raised against the falling arrows",
+            "the mudbrick wall with archers above",
+            "dust hanging in the air"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Han dynasty soldiers in knee-length red-brown robes under black lacquered lamellar vests, hair in topknots under dark cloth caps, leg wrappings and cloth shoes, armed with crossbows, long ji halberds and straight iron swords, broken and falling back at the foot of a mudbrick town wall, shields raised over their heads as arrows fall on them.\nACTION: the attack collapses and the men stumble back from the wall.\nSETTING: the walls of a small border town of Dayuan, dust in the air.\nCAMERA: camera crouches among the retreating men, low, medium.\nFRAME LAYOUT: left third — the mudbrick wall with archers on top, far and looming; center and right third — the Han soldiers falling back toward camera, near-camera and large, cropped at the waist; upper edge — arrows against the dusty sky.\nFACING: we see the soldiers' faces front on as they fall back toward camera, eyes wide; the archers face screen-right.\nSCREEN DIRECTION: arrows streak down from the upper-left; the soldiers stumble toward the right edge.\nLIGHT: dust-hazed daylight, flat and brown.\nPALETTE: dust brown, faded red-brown, black lacquer, wall tan.\nDETAIL: arrows stuck in shields, torn lacing on the armour, dust on the faces.\nNOT IN FRAME: gore, severed limbs, pools of blood, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "low",
+            "location": "yucheng",
+            "time_light": "dust-hazed-day",
+            "camera_motion": "push"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B19",
+      "sentences": [
+        "S19",
+        "S20"
+      ],
+      "start": 106.6,
+      "end": 114,
+      "dur": 7.4,
+      "device": "ledger-accumulation",
+      "narration_says": "Two years after setting out, Li Guangli was back at the frontier with one or two men in ten. He asked to bring them home.",
+      "viewer_sees": "LEDGER — a frontier parade ground marked out for rows of ten, only one or two men standing in each row, Li Guangli in front of them",
+      "shots": [
+        {
+          "shot_id": "21",
+          "beat_id": "B19",
+          "link_group": null,
+          "t_in": 106.583,
+          "t_out": 114,
+          "use_in": 0,
+          "use_out": 7.417,
+          "use_len": 7.417,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pull",
+          "source_file": "shots/shot21.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "li-guangli",
+            "han-soldiers"
+          ],
+          "visual_priority": [
+            "Li Guangli standing before what is left of his army",
+            "rows marked for ten men each with only one or two standing in every row",
+            "the empty marked places between them",
+            "cold wind over the frontier"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a Han general in his thirties, a broad smooth face, a thin black moustache, a topknot under a red cloth wrap, black lacquered lamellar armour laced in red over a knee-length red robe, a long iron sword, his armour dented and dusty, standing before what is left of his army.\nSUBJECT 2: Han dynasty soldiers in knee-length red-brown robes under black lacquered lamellar vests, hair in topknots under dark cloth caps, leg wrappings and cloth shoes, armed with crossbows, long ji halberds and straight iron swords, standing in ranks marked out on the ground for ten men each, only one or two men left in every rank of ten, the rest of each rank empty marked places.\nACTION: the general looks along the empty rows.\nSETTING: a frontier parade ground at Dunhuang, rows of ten wooden stakes marking the ranks, a rammed-earth wall, grey wind.\nCAMERA: camera stands on the wall above the ground, high, wide.\nFRAME LAYOUT: left third and center — the marked rows, ten stakes to a row, one or two soldiers standing in each, countable; right third — Li Guangli, near-camera and large; upper edge — the rammed-earth wall and grey sky.\nFACING: we see Li Guangli three-quarter on from above, facing screen-left toward the rows; the soldiers face him.\nSCREEN DIRECTION: grit blows across the empty places toward screen-left; a torn banner snaps.\nLIGHT: cold grey wind light, a weak sun.\nPALETTE: grey dust, faded red, black lacquer, pale sky.\nDETAIL: rows of wooden stakes, the empty places in each rank, dust on the armour.\nNOT IN FRAME: horses, the emperor, text, written numbers.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "high",
+            "location": "dunhuang",
+            "time_light": "cold-wind-day",
+            "camera_motion": "pull"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B20",
+      "sentences": [
+        "S21"
+      ],
+      "start": 114,
+      "end": 122.76,
+      "dur": 8.76,
+      "device": null,
+      "narration_says": "The emperor shut the Jade Gate, the pass into China, with an order: any soldier who tried to come through would be beheaded.",
+      "viewer_sees": "the Jade Gate shut, the emperor's officers on its wall with drawn swords, the ragged army stopped on the desert side",
+      "shots": [
+        {
+          "shot_id": "22",
+          "beat_id": "B20",
+          "link_group": null,
+          "t_in": 114,
+          "t_out": 122.75,
+          "use_in": 0,
+          "use_out": 8.75,
+          "use_len": 8.75,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot22.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "jade-gate",
+            "han-soldiers"
+          ],
+          "visual_priority": [
+            "The Jade Gate shut and barred against its own army",
+            "the emperor's officers along the wall top with drawn swords",
+            "the ragged army halted on the desert side",
+            "cold evening light"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: the Jade Gate pass on the desert frontier, a square fort of rammed earth with walls in pale tamped layers, one heavy wooden gate, a watchtower and signal beacons along a low earthen wall, flat grey gravel desert all around, its heavy wooden gate shut and barred, the emperor's officers standing along the wall top with drawn swords.\nSUBJECT 2: Han dynasty soldiers in knee-length red-brown robes under black lacquered lamellar vests, hair in topknots under dark cloth caps, leg wrappings and cloth shoes, armed with crossbows, long ji halberds and straight iron swords, ragged and halted on the desert side of the gate.\nACTION: the officers hold their swords out over the wall toward their own men.\nSETTING: the frontier at evening, the gravel desert empty in every direction.\nCAMERA: camera stands on the desert gravel near the halted army, eye level, wide.\nFRAME LAYOUT: right third and center — the fort and its shut gate, near-camera and large, the officers along the wall top; left third — the ragged soldiers halted on the gravel, smaller; upper edge — a cold evening sky.\nFACING: we see the officers front on, facing screen-left down at the army; we see the soldiers from the side, facing screen-right toward the gate.\nSCREEN DIRECTION: a cold wind blows grit toward the left edge; the officers' swords point toward screen-left.\nLIGHT: cold evening light from screen-left, the gate in shadow.\nPALETTE: rammed-earth tan, steel grey, faded red, cold violet sky.\nDETAIL: tamped layers of the wall, iron bands on the gate, drawn blades catching the light.\nNOT IN FRAME: executions, blood, severed heads, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "architecture",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "jade-gate",
+            "time_light": "cold-evening",
+            "camera_motion": "push"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B21",
+      "sentences": [
+        "S22",
+        "S23"
+      ],
+      "start": 122.76,
+      "end": 126.82,
+      "dur": 4.06,
+      "device": null,
+      "narration_says": "His ministers begged him to give up. He refused.",
+      "viewer_sees": "ministers kneeling with foreheads to the floor, the emperor standing over them, turned away",
+      "shots": [
+        {
+          "shot_id": "23",
+          "beat_id": "B21",
+          "link_group": null,
+          "t_in": 122.75,
+          "t_out": 126.833,
+          "use_in": 0,
+          "use_out": 4.083,
+          "use_len": 4.083,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "hold",
+          "source_file": "shots/shot23.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "emperor-wu",
+            "han-palace"
+          ],
+          "visual_priority": [
+            "Emperor Wu standing turned away from his kneeling ministers",
+            "two rows of ministers with their foreheads to the floor",
+            "the lamplit throne hall",
+            "his rigid back"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a Han emperor in his fifties, a long narrow face, a thin drooping moustache and short pointed beard, hard narrowed eyes, a flat black crown board hung with jade bead strings, a wide-sleeved dark yellow silk robe bordered in black, standing at the edge of the dais with his back turned to the room, hands clasped behind him.\nSUBJECT 2: a Han palace hall at Chang'an raised on a high rammed-earth terrace, red lacquered wooden columns, a broad hipped roof of grey tiles, tall bronze lamps, reed mats and low black lacquered tables on a polished dark floor, its whole floor seen from above.\nACTION: two rows of ministers kneel with their foreheads to the floor and he does not turn.\nSETTING: the throne hall at night, officials in black robes and caps prostrate on the polished floor.\nCAMERA: camera looks down from high in the hall, high, wide.\nFRAME LAYOUT: left third and center — two rows of ministers prostrate on the polished floor, small; right third — the emperor on the dais, near-camera and larger, turned away; upper edge — red columns and lamps.\nFACING: we see the ministers from above, backs and caps; we see the emperor three-quarter from the rear, face turned toward screen-right, away from them.\nSCREEN DIRECTION: lamp smoke drifts toward the right edge; the emperor's sleeve hangs still.\nLIGHT: warm lamplight pooled on the floor, the corners dark.\nPALETTE: black robes, red lacquer, dark yellow silk, lamp amber.\nDETAIL: reflections in the polished floor, the silk of the robes, the jade bead strings.\nNOT IN FRAME: soldiers, weapons, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "LS",
+            "angle": "high",
+            "location": "han-palace",
+            "time_light": "lamplit-hall",
+            "camera_motion": "locked"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B22",
+      "sentences": [
+        "S24"
+      ],
+      "start": 126.82,
+      "end": 133.66,
+      "dur": 6.84,
+      "device": null,
+      "narration_says": "If China could not beat one small kingdom, he reasoned, it would be the laughing stock of every foreign land.",
+      "viewer_sees": "foreign envoys on the palace steps in daylight, each in the dress of his own country, glancing at one another with thin smiles",
+      "shots": [
+        {
+          "shot_id": "24",
+          "beat_id": "B22",
+          "link_group": null,
+          "t_in": 126.833,
+          "t_out": 133.667,
+          "use_in": 0,
+          "use_out": 6.834,
+          "use_len": 6.834,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot24.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "foreign envoys on the palace steps trading thin smiles",
+            "each in the dress of his own land",
+            "glances sliding up toward the throne hall",
+            "bright midday light on the stone steps"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a cluster of foreign envoys waiting on the broad stone steps of the Han palace, each in the dress of his own land — a Wusun noble in a tall felt hat, a Bactrian in a pleated cloak and broad hat, a Parthian in trousers and a belted tunic, a man of the oasis states in a striped robe — leaning together and trading thin smiles behind their sleeves.\nACTION: they whisper and glance up toward the throne hall.\nSETTING: the stone steps of the palace terrace at midday, red columns above.\nCAMERA: camera stands a few steps below them, eye level, medium.\nFRAME LAYOUT: left third and center — the envoys in a close group, near-camera and large; right third — the steps rising toward the red columns and the hall doors, far.\nFACING: we see their faces three-quarter on, eyes sliding toward one another and up toward screen-right at the hall.\nSCREEN DIRECTION: a fan flutters; banners on the terrace ripple toward screen-left.\nLIGHT: bright hard midday sun, short shadows on the steps.\nPALETTE: stone white, red lacquer, felt brown, indigo.\nDETAIL: varied fabrics and hats, embroidered hems, polished stone steps.\nNOT IN FRAME: the emperor, soldiers, text, open-mouthed laughter.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "han-palace-steps",
+            "time_light": "bright-midday",
+            "camera_motion": "push"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B23",
+      "sentences": [
+        "S25"
+      ],
+      "start": 133.66,
+      "end": 138.56,
+      "dur": 4.9,
+      "device": null,
+      "narration_says": "He had the loudest critics prosecuted, and started again.",
+      "viewer_sees": "two ministers in chains led down the palace terrace between guards, while at the foot of the steps new recruits are already forming ranks",
+      "shots": [
+        {
+          "shot_id": "25",
+          "beat_id": "B23",
+          "link_group": null,
+          "t_in": 133.667,
+          "t_out": 138.542,
+          "use_in": 0,
+          "use_out": 4.875,
+          "use_len": 4.875,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pull",
+          "source_file": "shots/shot25.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "two ministers in chains led down the palace terrace between guards",
+            "new recruits already forming ranks at the foot of the steps",
+            "the ministers' bowed heads",
+            "grey morning over the palace"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: two ministers in black court robes, caps gone and wrists chained, led down the long steps of the palace terrace between armed guards, and at the foot of the steps new recruits already forming ranks.\nACTION: the ministers go down in chains as officers shout the recruits into line.\nSETTING: the palace terrace at Chang'an on a grey morning, long rammed-earth steps, the courtyard below.\nCAMERA: camera stands at the top of the steps, high, wide.\nFRAME LAYOUT: center — the two ministers and their guards on the steps, near-camera and large; lower edge and left third — the courtyard below with rows of new recruits, small, forming ranks; right third — the red columns of the hall.\nFACING: we see the ministers from above and from the rear, heads bowed; the recruits face screen-right toward their officers.\nSCREEN DIRECTION: the ministers move down the steps toward the lower edge; the recruits' ranks straighten toward screen-left.\nLIGHT: flat grey morning light.\nPALETTE: grey, black robes, faded red, iron.\nDETAIL: iron chains, lacquered guard armour, recruits readable by outline and posture.\nNOT IN FRAME: wooden cangues, executions, blood, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "high",
+            "location": "han-palace-terrace",
+            "time_light": "grey-morning",
+            "camera_motion": "pull"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B24",
+      "sentences": [
+        "S26"
+      ],
+      "start": 138.56,
+      "end": 152.04,
+      "dur": 13.48,
+      "device": "crowd-as-texture",
+      "narration_says": "In 102 BCE, sixty thousand soldiers marched west, with a hundred thousand oxen, more than thirty thousand horses, and donkeys and camels by the tens of thousands.",
+      "viewer_sees": "CROWD AS TEXTURE — the second army from above as a river of helmets and banners flowing west; then the widest frame of the episode: the whole baggage column of ox carts, horse herds, donkey strings and camel lines as bands of colour running to the horizon under its own dust",
+      "shots": [
+        {
+          "shot_id": "26",
+          "beat_id": "B24",
+          "link_group": null,
+          "t_in": 138.542,
+          "t_out": 145,
+          "use_in": 0,
+          "use_out": 6.458,
+          "use_len": 6.458,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pan-left",
+          "source_file": "shots/shot26.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "han-soldiers"
+          ],
+          "visual_priority": [
+            "Han Soldiers seen from high above as one river of sixty thousand flowing west",
+            "red banners strung along the column",
+            "the column running out of frame at both corners",
+            "the gold morning dust"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Han dynasty soldiers in knee-length red-brown robes under black lacquered lamellar vests, hair in topknots under dark cloth caps, leg wrappings and cloth shoes, armed with crossbows, long ji halberds and straight iron swords, sixty thousand of them seen from high above as one river of helmets, halberd points and red banners flowing west across the desert.\nACTION: the column marches west without end.\nSETTING: the desert road beyond the frontier at morning, gravel and dune, the dust of the column lit gold.\nCAMERA: camera hangs high above the column, overhead, wide.\nFRAME LAYOUT: full frame — the column running diagonally from the lower-right corner to the upper-left, filling the width; lower-right — the nearest ranks, sharpest; upper-left — the head of the column lost in its own dust.\nFACING: we see the soldiers from directly above, all heading toward screen-left; no face is readable.\nSCREEN DIRECTION: the whole column flows toward the upper-left; dust drifts toward the right edge.\nLIGHT: low gold morning sun from the right, a long shadow beside every rank.\nPALETTE: banner red, black lacquer, gravel grey, dust gold.\nDETAIL: the pattern of helmets and halberd points, banners as red marks, no facial or material detail.\nNOT IN FRAME: animals, text, a city.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "crowd",
+            "shot_size": "aerial",
+            "angle": "overhead",
+            "location": "western-desert",
+            "time_light": "dust-gold-morning",
+            "camera_motion": "pan"
+          }
+        },
+        {
+          "shot_id": "27",
+          "beat_id": "B24",
+          "link_group": null,
+          "t_in": 145,
+          "t_out": 152.042,
+          "use_in": 0,
+          "use_out": 7.042,
+          "use_len": 7.042,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pull",
+          "source_file": "shots/shot27.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "the whole baggage column running from the foreground to the horizon",
+            "ox carts, horse herds, donkey strings and camel lines as bands of colour",
+            "the column's dust rising to the sky",
+            "no single animal readable"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: the whole baggage train of the army seen from a high ridge, running from the foreground to the horizon and out of sight — a hundred thousand oxen drawing carts, more than thirty thousand horses in loose herds, donkeys and camels by the tens of thousands — each kind moving as its own band: dark brown ox carts, lighter horse herds, grey donkey strings, tall camel lines with long shadows.\nACTION: the endless column crawls west under its own dust.\nSETTING: a wide desert basin between mountain ranges at morning.\nCAMERA: camera stands on a high ridge above the basin, high, wide.\nFRAME LAYOUT: lower-right — the nearest bands of the column, near-camera; center — the bands winding across the whole basin; upper-left — the column vanishing over the horizon into a wall of gold dust; upper edge — the far mountains, faint.\nFACING: we see the column from above along its flank, all of it heading toward the upper-left; no single animal is readable.\nSCREEN DIRECTION: the column flows toward the upper-left; its dust rises and leans toward the right edge.\nLIGHT: low gold morning light, the dust cloud glowing.\nPALETTE: dust gold, ox brown, camel tan, donkey grey.\nDETAIL: three layers of column, basin and mountain fading into haze, animals as marks and bands, scale carried by the dust.\nNOT IN FRAME: close animals, single faces, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "crowd",
+            "shot_size": "XLS",
+            "angle": "high",
+            "location": "western-desert",
+            "time_light": "dust-gold-morning",
+            "camera_motion": "pull"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B25",
+      "sentences": [
+        "S27"
+      ],
+      "start": 152.04,
+      "end": 155.4,
+      "dur": 3.36,
+      "device": null,
+      "narration_says": "The whole empire, Sima Qian wrote, was in upheaval.",
+      "viewer_sees": "a Han village stripped for the war — officials leading away oxen and carts, families watching from their doors",
+      "shots": [
+        {
+          "shot_id": "28",
+          "beat_id": "B25",
+          "link_group": null,
+          "t_in": 152.042,
+          "t_out": 155.417,
+          "use_in": 0,
+          "use_out": 3.375,
+          "use_len": 3.375,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "hold",
+          "source_file": "shots/shot28.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "a Han village stripped for the war",
+            "officials leading away its last oxen and carts",
+            "conscripts roped in a line",
+            "families watching from their doorways"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a Han farming village stripped for the war — officials in black caps leading away its last oxen and carts, young conscripts roped in a line, families standing in their doorways watching them go.\nACTION: the village's oxen and young men are led away up the road.\nSETTING: a village of rammed-earth walls and thatched roofs on a yellow loess plain, a dirt road.\nCAMERA: camera stands at the edge of the village on the road, eye level, wide.\nFRAME LAYOUT: left third — the road with oxen, carts and roped conscripts moving away, mid-frame; center and right third — doorways with women, children and old men watching, near-camera; upper edge — grey sky.\nFACING: we see the families front on, faces drawn; the column is seen from the rear as it goes toward screen-left.\nSCREEN DIRECTION: the column moves toward the left edge; dust drifts after it.\nLIGHT: flat grey morning light.\nPALETTE: loess yellow, thatch brown, grey, faded blue.\nDETAIL: thatch and rammed-earth texture, rope, cart wheels, figures readable by posture.\nNOT IN FRAME: fighting, text, rich houses.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "han-village",
+            "time_light": "grey-morning",
+            "camera_motion": "locked"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B26",
+      "sentences": [
+        "S28"
+      ],
+      "start": 155.4,
+      "end": 161.48,
+      "dur": 6.08,
+      "device": null,
+      "narration_says": "The army even brought two experts in judging horses, to choose the best ones when the city fell.",
+      "viewer_sees": "two old horse judges in the army camp, one lifting a horse's hoof, the other running a hand down its leg",
+      "shots": [
+        {
+          "shot_id": "29",
+          "beat_id": "B26",
+          "link_group": null,
+          "t_in": 155.417,
+          "t_out": 161.5,
+          "use_in": 0,
+          "use_out": 6.083,
+          "use_len": 6.083,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot29.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "horse-judges",
+            "steppe-horse"
+          ],
+          "visual_priority": [
+            "The Horse Judges bent over a horse in the army camp",
+            "the lean one lifting a hoof, the stout one running a hand down the foreleg",
+            "the small steppe horse standing patiently between them",
+            "tents and cook smoke of the camp"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: two elderly Han horse judges, one lean with a long white beard, one stout and clean-shaven under a black cloth cap, both in plain dark brown robes with the sleeves tied back, leather pouches at the belt, bent over a horse in the army camp, the lean one lifting a hoof to study it, the stout one running his hand down the back of its foreleg.\nSCALE: the horse is so small that the lean judge must stoop to its hoof; its back reaches only the stout judge's shoulder.\nSUBJECT 2: a small stocky steppe horse with short thick legs, a big heavy head on a short thick neck, a shaggy dun coat with a dark stripe along the spine, a stiff upright black mane, standing patiently between them.\nACTION: the two judges study the legs and hooves in silence.\nSETTING: a Han army camp at morning, tents and picket lines, cook smoke.\nCAMERA: camera stands a few paces off at the horse's shoulder height, eye level, medium.\nFRAME LAYOUT: center — the horse, near-camera and large; left third — the stout judge at its foreleg; right third — the lean judge bent to the lifted hoof; upper edge — tents and smoke, far.\nFACING: we see both judges three-quarter on, eyes on the horse's legs; the horse faces screen-left.\nSCREEN DIRECTION: cook smoke drifts toward screen-left across the tents.\nLIGHT: soft early morning light from screen-right.\nPALETTE: dun, dark brown, tent canvas, morning gold.\nDETAIL: the lifted hoof's worn edge, wrinkled old hands, the coarse weave of the robes.\nNOT IN FRAME: stirrups, saddles, text, weapons.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "army-camp",
+            "time_light": "early-morning",
+            "camera_motion": "push"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B27",
+      "sentences": [
+        "S29",
+        "S30"
+      ],
+      "start": 161.48,
+      "end": 167.22,
+      "dur": 5.74,
+      "device": null,
+      "narration_says": "Thirty thousand men reached the capital of Dayuan. The city had no wells.",
+      "viewer_sees": "the Han army's camps ringing the walls of the Dayuan capital from above, the river running along outside the walls, no well anywhere in the city",
+      "shots": [
+        {
+          "shot_id": "30",
+          "beat_id": "B27",
+          "link_group": null,
+          "t_in": 161.5,
+          "t_out": 167.208,
+          "use_in": 0,
+          "use_out": 5.708,
+          "use_len": 5.708,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pull",
+          "source_file": "shots/shot30.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "dayuan-capital",
+            "han-soldiers"
+          ],
+          "visual_priority": [
+            "The Capital of Dayuan ringed on every side by Han camps",
+            "the river running along the outside of the walls",
+            "not a single well anywhere inside the city",
+            "thirty thousand men in the camps"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: the walled capital of Dayuan in the Ferghana Valley, thick sloping walls of mudbrick and rammed earth with square towers, flat-roofed houses and a citadel inside, a river channel along the foot of the walls, snow mountains all around, seen from high above and ringed on every side by the camps of thirty thousand Han soldiers, not a single well anywhere inside its walls.\nSUBJECT 2: Han dynasty soldiers in knee-length red-brown robes under black lacquered lamellar vests, hair in topknots under dark cloth caps, leg wrappings and cloth shoes, armed with crossbows, long ji halberds and straight iron swords, as rows of tents, red banners and dark figures in the camps.\nACTION: the camps close the ring while the city draws its water from the river outside.\nSETTING: the Ferghana valley at midday, trampled fields, snow mountains.\nCAMERA: camera hangs high over the valley, high, wide.\nFRAME LAYOUT: center — the walled city, flat roofs and citadel; lower edge and right third — the river running along the foot of the walls, water carriers at its bank; all around the walls — the ring of Han camps with red banners; upper edge — the snow mountains.\nFACING: we see the city and the camps from above; no face is readable.\nSCREEN DIRECTION: the river runs along the walls toward the left edge; smoke from the camps drifts toward screen-right.\nLIGHT: clear high daylight, crisp shadows under the walls.\nPALETTE: mudbrick tan, river blue, banner red, snow white.\nDETAIL: roofs and courtyards with no well among them, rows of tents, water carriers with jars at the river.\nNOT IN FRAME: battle, fire, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "architecture",
+            "shot_size": "aerial",
+            "angle": "high",
+            "location": "dayuan-capital",
+            "time_light": "high-clear-day",
+            "camera_motion": "pull"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B28",
+      "sentences": [
+        "S31"
+      ],
+      "start": 167.22,
+      "end": 174.46,
+      "dur": 7.24,
+      "device": null,
+      "narration_says": "It drew its water from a river outside the walls, so the Han brought in engineers, and moved the river.",
+      "viewer_sees": "from a rise above the city: the wall, the old riverbed along it drying to cracked mud, an earth-and-brushwood dam across it, diggers with baskets, and the river swinging away into a new cut",
+      "shots": [
+        {
+          "shot_id": "31",
+          "beat_id": "B28",
+          "link_group": null,
+          "t_in": 167.208,
+          "t_out": 174.458,
+          "use_in": 0,
+          "use_out": 7.25,
+          "use_len": 7.25,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot31.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "dayuan-capital"
+          ],
+          "visual_priority": [
+            "The Capital of Dayuan's wall rising over an old riverbed drying to cracked mud",
+            "an earth-and-brushwood dam across the old channel",
+            "lines of diggers carrying earth in baskets on shoulder poles",
+            "the river swinging away into a fresh-cut channel"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: the walled capital of Dayuan in the Ferghana Valley, thick sloping walls of mudbrick and rammed earth with square towers, flat-roofed houses and a citadel inside, a river channel along the foot of the walls, snow mountains all around, its wall rising over a riverbed that is drying to cracked mud.\nACTION: Han diggers heap earth and brushwood into a dam across the old channel while the river turns away into a fresh-cut channel.\nSETTING: the riverbank outside the city on a hot afternoon, heaps of dug earth.\nCAMERA: camera stands on a rise across the river, high, wide.\nFRAME LAYOUT: left third — the city wall, far and high; center — the old riverbed along the wall, its water shrinking to pools on cracked mud; center-right — the dam of earth and brushwood across the channel, lines of diggers on it; right third — the river swinging away into a new raw channel, near-camera.\nFACING: we see the diggers from the side, bent under their loads; the wall faces camera.\nSCREEN DIRECTION: the diverted water runs away toward the right edge; the diggers carry earth toward screen-left onto the dam.\nLIGHT: hot afternoon sun, hard shadows.\nPALETTE: cracked-mud grey, river blue, raw earth ochre, mudbrick tan.\nDETAIL: cracks in the drying mud, bundles of brushwood, baskets swinging from poles, water swirling at the mouth of the new channel.\nNOT IN FRAME: labels, arrows, cross-sections, diagrams, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "LS",
+            "angle": "high",
+            "location": "dayuan-capital",
+            "time_light": "hot-afternoon",
+            "camera_motion": "push"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B29",
+      "sentences": [
+        "S32"
+      ],
+      "start": 174.46,
+      "end": 178.72,
+      "dur": 4.26,
+      "device": null,
+      "narration_says": "After more than forty days, the outer wall fell.",
+      "viewer_sees": "a breach torn in the outer wall, dust pouring out, Han soldiers climbing the rubble; forty notches cut into a camp post",
+      "shots": [
+        {
+          "shot_id": "32",
+          "beat_id": "B29",
+          "link_group": null,
+          "t_in": 174.458,
+          "t_out": 178.708,
+          "use_in": 0,
+          "use_out": 4.25,
+          "use_len": 4.25,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "hold",
+          "source_file": "shots/shot32.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "han-soldiers",
+            "dayuan-capital"
+          ],
+          "visual_priority": [
+            "Han Soldiers swarming up the rubble into the breach in the outer wall",
+            "dust pouring out of the breach",
+            "a camp post near-camera cut with more than forty tally notches",
+            "banners going up the rubble"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Han dynasty soldiers in knee-length red-brown robes under black lacquered lamellar vests, hair in topknots under dark cloth caps, leg wrappings and cloth shoes, armed with crossbows, long ji halberds and straight iron swords, swarming up a slope of rubble into a great breach torn in the outer wall.\nSUBJECT 2: the walled capital of Dayuan in the Ferghana Valley, thick sloping walls of mudbrick and rammed earth with square towers, flat-roofed houses and a citadel inside, a river channel along the foot of the walls, snow mountains all around, its outer wall broken open.\nACTION: the soldiers climb into the breach as dust pours out of it.\nSETTING: the siege lines at the capital after more than forty days, trampled ground.\nCAMERA: camera stands low at the edge of the Han siege line, low, wide.\nFRAME LAYOUT: right third — a wooden camp post, near-camera and large, cut with more than forty tally notches in rows; center and left third — the breach in the wall, far, dust billowing, soldiers climbing the rubble; upper edge — dust against the sky.\nFACING: we see the soldiers from the rear and the side as they climb toward screen-left; the notched post faces camera.\nSCREEN DIRECTION: the soldiers surge toward the breach at screen-left; dust rolls out toward the right edge.\nLIGHT: dust-hazed daylight, the sun a pale disc.\nPALETTE: dust brown, mudbrick tan, banner red, black lacquer.\nDETAIL: knife-cut notches in the post, broken mudbrick, figures readable by outline.\nNOT IN FRAME: gore, burning bodies, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "low",
+            "location": "dayuan-capital",
+            "time_light": "dust-hazed-day",
+            "camera_motion": "locked"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B30",
+      "sentences": [
+        "S33"
+      ],
+      "start": 178.72,
+      "end": 187.52,
+      "dur": 8.8,
+      "device": null,
+      "narration_says": "Inside, the nobles decided who was to blame: their own king, who had hidden the horses and killed the envoy.",
+      "viewer_sees": "the nobles in their council hall all turning to look at their king on his throne",
+      "shots": [
+        {
+          "shot_id": "33",
+          "beat_id": "B30",
+          "link_group": null,
+          "t_in": 178.708,
+          "t_out": 187.5,
+          "use_in": 0,
+          "use_out": 8.792,
+          "use_len": 8.792,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot33.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "dayuan-nobles"
+          ],
+          "visual_priority": [
+            "The Nobles of Dayuan all turning to look at their king",
+            "the king alone on his throne, gripping its arms",
+            "the council hall in low lamplight",
+            "no one standing near the king"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Ferghana nobles with deep-set eyes, long straight noses and full dark curled beards, shoulder-length hair under tall felt caps, knee-length belted kaftans of patterned wool in madder red and indigo, trousers tucked into soft boots, gold plaques at the belt, standing in a half-ring in the council hall, every head turned toward the throne.\nACTION: the nobles fall silent and look at their king.\nSETTING: the same audience hall at night during the siege, lamps lit, dust sifting from the ceiling.\nCAMERA: camera stands among the nobles, eye level, wide.\nFRAME LAYOUT: left third and center — the nobles, near-camera and large, seen three-quarter from the rear; right third — the king alone on a carved throne, a thin man in a gold-trimmed kaftan and tall hat, gripping its arms; upper edge — dark beams.\nFACING: we see the nobles' faces in profile, all turned toward screen-right at the throne; the king's face front on, eyes darting.\nSCREEN DIRECTION: dust sifts down from the beams; the lamp flames lean toward screen-right.\nLIGHT: low lamplight, hard shadows on the faces, the throne in a pool of light.\nPALETTE: madder red, indigo, lamp amber, shadow brown.\nDETAIL: patterned kaftans, gold belt plaques, the carved throne, dust in the lamplight.\nNOT IN FRAME: drawn weapons, blood, Han soldiers, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "dayuan-hall",
+            "time_light": "lamplit-council",
+            "camera_motion": "push"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B31",
+      "sentences": [
+        "S34"
+      ],
+      "start": 187.52,
+      "end": 191.22,
+      "dur": 3.7,
+      "device": null,
+      "narration_says": "They killed him, and sent his head out with an offer.",
+      "viewer_sees": "seen from the Han siege line: a single noble carrying a closed wooden chest across the open ground from the city gate, Han spear points lowered near the camera",
+      "shots": [
+        {
+          "shot_id": "34",
+          "beat_id": "B31",
+          "link_group": null,
+          "t_in": 187.5,
+          "t_out": 191.208,
+          "use_in": 0,
+          "use_out": 3.708,
+          "use_len": 3.708,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pull",
+          "source_file": "shots/shot34.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "dayuan-nobles"
+          ],
+          "visual_priority": [
+            "one of the Nobles of Dayuan carrying a closed wooden chest across the open ground",
+            "Han spear points lowered near-camera",
+            "the city gate open a crack at the left",
+            "grey dawn mist"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Ferghana nobles with deep-set eyes, long straight noses and full dark curled beards, shoulder-length hair under tall felt caps, knee-length belted kaftans of patterned wool in madder red and indigo, trousers tucked into soft boots, gold plaques at the belt, one of them walking alone across the open ground from the city gate, holding a small closed wooden chest out before him with both hands.\nACTION: he walks slowly toward the Han lines with the chest.\nSETTING: the open ground before the city at grey dawn, trampled earth, the gate open a crack.\nCAMERA: camera stands on the Han siege line, eye level, wide.\nFRAME LAYOUT: lower edge and right third — Han spear points and halberd blades, near-camera and large, cropped, lowered toward the ground; center — the noble with the chest, mid-frame; left third — the city wall and the gate open a crack, far.\nFACING: we see the noble front on, walking toward screen-right, eyes fixed on the Han lines.\nSCREEN DIRECTION: he walks toward the right edge; mist drifts low across the ground toward screen-left.\nLIGHT: grey dawn, no shadows, low mist.\nPALETTE: dawn grey, mudbrick tan, madder red, iron.\nDETAIL: the plain wooden chest, iron spear points, dew on the trampled ground.\nNOT IN FRAME: a head, blood, the inside of the chest, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "dayuan-capital",
+            "time_light": "grey-dawn",
+            "camera_motion": "pull"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B32",
+      "sentences": [
+        "S35"
+      ],
+      "start": 191.22,
+      "end": 194.58,
+      "dur": 3.36,
+      "device": null,
+      "narration_says": "Stop the attack, and take your pick of our horses.",
+      "viewer_sees": "from inside the gateway: tall red horses led out through the open gate toward the Han camp by Dayuan grooms",
+      "shots": [
+        {
+          "shot_id": "35",
+          "beat_id": "B32",
+          "link_group": null,
+          "t_in": 191.208,
+          "t_out": 194.583,
+          "use_in": 0,
+          "use_out": 3.375,
+          "use_len": 3.375,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pan-right",
+          "source_file": "shots/shot35.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "ferghana-horse"
+          ],
+          "visual_priority": [
+            "The Heavenly Horse led out through the open city gate",
+            "a line of tall red horses following it out of the passage",
+            "Dayuan grooms at their heads",
+            "the Han camp on the plain beyond the gateway"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a tall slender Ferghana horse with long fine legs, a small refined head on a long arched neck, a deep chest, a thin glossy red-bay coat glistening like wet copper where it sweats, a short upright mane, the first of a line of them, led out through the open city gate by a groom, head high.\nSCALE: the horse is taller than the groom leading it, its head level with the lintel beams; the gateway barely clears the ears of the horses.\nACTION: the grooms lead the horses out of the gate one after another toward the Han camp.\nSETTING: the city gateway in the morning, mudbrick walls, the Han camp on the plain outside.\nCAMERA: camera stands low inside the gateway passage, low, medium.\nFRAME LAYOUT: center — the first tall horse and its groom passing out through the gate, near-camera and large; left third — the next horses in line inside the passage, darker; right third — the bright opening onto the plain with the Han camp, far.\nFACING: we see the horse three-quarter on in profile, facing screen-right; the groom walks at its head facing the same way.\nSCREEN DIRECTION: the line of horses moves out toward the right edge; dust lifts from their hooves.\nLIGHT: bright morning light through the gate, the passage in shadow, rim light on the horses.\nPALETTE: red bay, mudbrick tan, morning gold, shadow brown.\nDETAIL: glossy coats and fine legs, rope halters, worn gate timbers.\nNOT IN FRAME: saddles, stirrups, dead horses, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "low",
+            "location": "dayuan-capital",
+            "time_light": "grey-dawn",
+            "camera_motion": "pan"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B33",
+      "sentences": [
+        "S36"
+      ],
+      "start": 194.58,
+      "end": 200.74,
+      "dur": 6.16,
+      "device": null,
+      "narration_says": "Refuse, and we kill every good horse in the city — and an allied army is on its way.",
+      "viewer_sees": "high over the horse pens inside the walls: a noble with a drawn blade among the tethered horses; far on the horizon the dust of an army coming",
+      "shots": [
+        {
+          "shot_id": "36",
+          "beat_id": "B33",
+          "link_group": null,
+          "t_in": 194.583,
+          "t_out": 200.75,
+          "use_in": 0,
+          "use_out": 6.167,
+          "use_len": 6.167,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "hold",
+          "source_file": "shots/shot36.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "dayuan-nobles"
+          ],
+          "visual_priority": [
+            "one of the Nobles of Dayuan standing among the tethered horses with a drawn blade",
+            "rows of tall red horses tied in the pens",
+            "the dust of an allied army on the far horizon",
+            "the city walls around the pens"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Ferghana nobles with deep-set eyes, long straight noses and full dark curled beards, shoulder-length hair under tall felt caps, knee-length belted kaftans of patterned wool in madder red and indigo, trousers tucked into soft boots, gold plaques at the belt, one of them standing among rows of tethered horses inside the city with a long knife drawn, the blade held low.\nACTION: he waits among the horses, blade ready, while dust rises on the horizon.\nSETTING: horse pens inside the city walls, rows of tall red horses tied to rails, the wall, and the valley beyond it.\nCAMERA: camera looks down from the wall top over the pens, high, wide.\nFRAME LAYOUT: center — the noble with the drawn blade, mid-frame, among rows of tethered horses; lower edge — horse backs, near-camera; upper-left — past the wall, a brown dust cloud on the far horizon where an army is coming, far and hazy.\nFACING: we see the noble from above, face turned up toward screen-right at the Han lines; the horses shift uneasily.\nSCREEN DIRECTION: the far dust cloud rolls toward screen-right along the horizon; a horse tosses its head.\nLIGHT: overcast morning light, no shadows, a dull gleam on the blade.\nPALETTE: red bay, mudbrick tan, steel grey, dust brown.\nDETAIL: tether ropes and rails, horses readable by outline and colour, the edge of the blade.\nNOT IN FRAME: killing, blood, dead horses, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "LS",
+            "angle": "high",
+            "location": "dayuan-capital",
+            "time_light": "overcast-morning",
+            "camera_motion": "locked"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B34",
+      "sentences": [
+        "S37"
+      ],
+      "start": 200.74,
+      "end": 203.48,
+      "dur": 2.74,
+      "device": null,
+      "narration_says": "Li Guangli took it.",
+      "viewer_sees": "Li Guangli in his tent lowering his head once, accepting",
+      "shots": [
+        {
+          "shot_id": "37",
+          "beat_id": "B34",
+          "link_group": null,
+          "t_in": 200.75,
+          "t_out": 203.5,
+          "use_in": 0,
+          "use_out": 2.75,
+          "use_len": 2.75,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot37.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "li-guangli"
+          ],
+          "visual_priority": [
+            "Li Guangli lowering his head once in his tent",
+            "lamplight on his tired face",
+            "the closed wooden chest on the table before him",
+            "the dark tent around him"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a Han general in his thirties, a broad smooth face, a thin black moustache, a topknot under a red cloth wrap, black lacquered lamellar armour laced in red over a knee-length red robe, a long iron sword, seated at a camp table in his tent, lowering his head once in a slow nod, eyes closed.\nACTION: he nods his acceptance.\nSETTING: a Han general's tent at night, a lamp, a map, the closed wooden chest on the table.\nCAMERA: camera sits across the camp table, eye level, close.\nFRAME LAYOUT: center — his face and shoulders, near-camera and large; lower-left — the closed wooden chest on the table, cropped; right third — the tent wall glowing with lamplight.\nFACING: we see his face three-quarter on, turned toward screen-left, eyelids lowered.\nSCREEN DIRECTION: the lamp flame flickers toward screen-left; his shoulders sink.\nLIGHT: warm lamplight from screen-right, the rest of the tent dark.\nPALETTE: lamp amber, black lacquer, red cord, canvas tan.\nDETAIL: the red lacing of the armour plates, stubble and tired lines, the grain of the chest.\nNOT IN FRAME: the head, blood, the inside of the chest, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "CU",
+            "angle": "eye",
+            "location": "army-camp",
+            "time_light": "tent-lamplight",
+            "camera_motion": "push"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B35",
+      "sentences": [
+        "S38"
+      ],
+      "start": 203.48,
+      "end": 212.56,
+      "dur": 9.08,
+      "device": null,
+      "narration_says": "His experts chose several dozen of the finest horses and more than three thousand ordinary ones, and the army turned for home.",
+      "viewer_sees": "the two horse judges picking out the finest red horses from the herd; then the army and three thousand ordinary horses turning east for home",
+      "shots": [
+        {
+          "shot_id": "38",
+          "beat_id": "B35",
+          "link_group": null,
+          "t_in": 203.5,
+          "t_out": 208.25,
+          "use_in": 0,
+          "use_out": 4.75,
+          "use_len": 4.75,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot38.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "horse-judges",
+            "ferghana-horse"
+          ],
+          "visual_priority": [
+            "The Horse Judges choosing among the tall red horses",
+            "one chosen horse towering over them",
+            "several dozen chosen horses standing apart behind a rope line",
+            "the great herd of more than three thousand beyond"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: two elderly Han horse judges, one lean with a long white beard, one stout and clean-shaven under a black cloth cap, both in plain dark brown robes with the sleeves tied back, leather pouches at the belt, standing in the herd on the pasture, the lean one pointing at a tall horse, the stout one holding its halter rope.\nSCALE: the chosen horse towers over both old men, its withers above their heads; the stout judge reaches up to hold its halter.\nSUBJECT 2: a tall slender Ferghana horse with long fine legs, a small refined head on a long arched neck, a deep chest, a thin glossy red-bay coat glistening like wet copper where it sweats, a short upright mane, chosen and standing between them, head high.\nACTION: the judges pick the horse and lead it toward the chosen few.\nSETTING: a wide pasture outside the capital in morning haze, thousands of horses.\nCAMERA: camera stands in the herd a few paces off, eye level, medium.\nFRAME LAYOUT: center — the tall chosen horse and the two judges, near-camera and large; right third — several dozen chosen horses standing apart behind a rope line, mid-frame; left third and upper edge — the great herd of more than three thousand filling the pasture, far and hazy.\nFACING: we see the judges three-quarter on, eyes on the horse; the horse faces screen-right.\nSCREEN DIRECTION: the judges lead the horse toward the chosen group at screen-right; haze drifts over the herd.\nLIGHT: soft morning haze, the chosen horse's coat catching the sun.\nPALETTE: red bay, pasture green, dark brown, haze white.\nDETAIL: the glossy coat, rope halters, wrinkled hands on the rope, the herd as a textured mass.\nNOT IN FRAME: stirrups, saddles, fighting, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "ferghana-pasture",
+            "time_light": "morning-haze",
+            "camera_motion": "push"
+          }
+        },
+        {
+          "shot_id": "39",
+          "beat_id": "B35",
+          "link_group": null,
+          "t_in": 208.25,
+          "t_out": 212.542,
+          "use_in": 0,
+          "use_out": 4.292,
+          "use_len": 4.292,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pan-right",
+          "source_file": "shots/shot39.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "han-soldiers"
+          ],
+          "visual_priority": [
+            "Han Soldiers turning for home down the valley with the herd",
+            "more than three thousand ordinary horses driven among the ranks",
+            "the column heading toward the right edge",
+            "the snow passes they must cross"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Han dynasty soldiers in knee-length red-brown robes under black lacquered lamellar vests, hair in topknots under dark cloth caps, leg wrappings and cloth shoes, armed with crossbows, long ji halberds and straight iron swords, the whole army turning for home down the valley, driving a herd of more than three thousand ordinary horses among its ranks.\nACTION: the column wheels east and sets off for home.\nSETTING: the Ferghana valley road leading east toward the mountain passes, morning haze.\nCAMERA: camera stands on a slope above the road, high, wide.\nFRAME LAYOUT: left third — the city, small and hazy; center — the column and the herd turning onto the road; right third — the road climbing toward the pass, near-camera; upper edge — the snow peaks they must cross.\nFACING: we see the column from above and from the side, all heading toward screen-right.\nSCREEN DIRECTION: the column and the herd move toward the right edge; dust trails toward screen-left.\nLIGHT: hazy morning light from the right, the peaks bright.\nPALETTE: dust gold, red-brown, horse bay, snow white.\nDETAIL: figures and horses as marks and bands, banners, the long road into the mountains.\nNOT IN FRAME: stirrups, battle, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "crowd",
+            "shot_size": "LS",
+            "angle": "high",
+            "location": "valley-road",
+            "time_light": "morning-haze",
+            "camera_motion": "pan"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B36",
+      "sentences": [
+        "S39"
+      ],
+      "start": 212.56,
+      "end": 223.16,
+      "dur": 10.6,
+      "device": "ledger-accumulation",
+      "narration_says": "Of the sixty thousand who had marched out, just over ten thousand came back through the Jade Gate, with just over a thousand horses.",
+      "viewer_sees": "LEDGER — the Jade Gate from above with a thin column coming in through it, the wide road outside empty where sixty thousand had marched out; then the horses coming through behind them",
+      "shots": [
+        {
+          "shot_id": "40",
+          "beat_id": "B36",
+          "link_group": null,
+          "t_in": 212.542,
+          "t_out": 217.917,
+          "use_in": 0,
+          "use_out": 5.375,
+          "use_len": 5.375,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pull",
+          "source_file": "shots/shot40.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "jade-gate",
+            "han-soldiers"
+          ],
+          "visual_priority": [
+            "The Jade Gate from above with a thin column filing in",
+            "the road outside worn six times wider than the column now on it",
+            "just over ten thousand men of the sixty thousand",
+            "the empty desert to the west"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: the Jade Gate pass on the desert frontier, a square fort of rammed earth with walls in pale tamped layers, one heavy wooden gate, a watchtower and signal beacons along a low earthen wall, flat grey gravel desert all around, seen from high above, its gate open, a thin column of just over ten thousand men filing in from the west.\nSUBJECT 2: Han dynasty soldiers in knee-length red-brown robes under black lacquered lamellar vests, hair in topknots under dark cloth caps, leg wrappings and cloth shoes, armed with crossbows, long ji halberds and straight iron swords, ragged and few in the column.\nACTION: the column files in through the gate, filling only a narrow strip of the road.\nSETTING: the frontier in pale winter light, the desert road running west to the horizon, worn wide by the sixty thousand who marched out on it.\nCAMERA: camera hangs high over the pass, high, wide.\nFRAME LAYOUT: right third — the fort and the open gate, near-camera; center and left third — the broad road running west to the horizon, worn six times wider than the thin column now on it; left edge — empty desert.\nFACING: we see the soldiers from above, all heading toward screen-right into the gate; no face is readable.\nSCREEN DIRECTION: the column moves toward the right edge into the gate; cold dust drifts toward screen-left.\nLIGHT: pale thin winter sun, long faint shadows.\nPALETTE: pale gravel, rammed-earth tan, faded red, winter sky blue.\nDETAIL: the pattern of the wide worn road and the thin line of men, figures as marks, the tamped layers of the fort.\nNOT IN FRAME: celebrations, victory banners, text, written numbers.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "architecture",
+            "shot_size": "aerial",
+            "angle": "high",
+            "location": "jade-gate",
+            "time_light": "pale-winter-day",
+            "camera_motion": "pull"
+          }
+        },
+        {
+          "shot_id": "41",
+          "beat_id": "B36",
+          "link_group": null,
+          "t_in": 217.917,
+          "t_out": 223.167,
+          "use_in": 0,
+          "use_out": 5.25,
+          "use_len": 5.25,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pan-right",
+          "source_file": "shots/shot41.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "ferghana-horse"
+          ],
+          "visual_priority": [
+            "The Heavenly Horse walking in through the Jade Gate at the head of the string",
+            "the tired army horses strung out along the road",
+            "a ragged soldier at its halter",
+            "the gate passage in pale winter light"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a tall slender Ferghana horse with long fine legs, a small refined head on a long arched neck, a deep chest, a thin glossy red-bay coat glistening like wet copper where it sweats, a short upright mane, one of the few that survived, walking in through the Jade Gate at the head of a long string of tired army horses.\nSCALE: the red horse stands a full head taller than the army horses around it; the ragged soldier at its halter walks at its shoulder.\nACTION: the horses walk in through the gate, heads low with fatigue, all but the tall red one.\nSETTING: the gate passage of the Jade Gate fort in pale winter light.\nCAMERA: camera stands inside the gateway, eye level, medium.\nFRAME LAYOUT: center — the tall red horse and its soldier coming through the gate, near-camera and large; left third — the string of horses stretching out of the gate onto the desert road, smaller and hazy; right third — the rammed-earth wall of the passage.\nFACING: we see the red horse three-quarter on, facing screen-right; the soldier at its halter looks at the ground.\nSCREEN DIRECTION: the horses walk toward the right edge; cold dust drifts toward screen-left.\nLIGHT: pale winter light through the gate, the passage in shade.\nPALETTE: red bay, dun, rammed-earth tan, pale blue.\nDETAIL: frost-dulled coats, rope halters, the soldier's torn armour lacing.\nNOT IN FRAME: stirrups, saddles, celebrations, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "jade-gate",
+            "time_light": "pale-winter-day",
+            "camera_motion": "pan"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B37",
+      "sentences": [
+        "S40"
+      ],
+      "start": 223.16,
+      "end": 227,
+      "dur": 3.84,
+      "device": null,
+      "narration_says": "Sima Qian was blunt about why so many had died.",
+      "viewer_sees": "close on Sima Qian's hand and brush pressing one hard stroke onto a bamboo slip, the lamp low",
+      "shots": [
+        {
+          "shot_id": "42",
+          "beat_id": "B37",
+          "link_group": null,
+          "t_in": 223.167,
+          "t_out": 227,
+          "use_in": 0,
+          "use_out": 3.833,
+          "use_len": 3.833,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot42.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "sima-qian"
+          ],
+          "visual_priority": [
+            "Sima Qian's hand pressing one hard brush stroke onto a bamboo slip",
+            "the ink-stained fingers gripping the brush",
+            "the lamp burned low",
+            "his face cropped at the upper edge, eyes down"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a Han court historian in his forties, a gaunt lined beardless face, tired watchful eyes, a black gauze scholar's cap, a plain dark grey robe with wide sleeves, ink-stained fingers, seen close — his ink-stained hand gripping the brush and pressing one hard stroke down a bamboo slip, his face only partly in frame at the upper-right, eyes lowered.\nACTION: he presses the stroke down hard and the brush bends.\nSETTING: the low table at night, the ink stone, a single lamp burned low.\nCAMERA: camera looks down over the table at his hand, high, close.\nFRAME LAYOUT: center — the hand, the brush and the slip, near-camera and large; upper-right — his face, cropped at the edge; left third — the lamp flame, low and small.\nFACING: we see the back of his hand and the brush from above; his eyes look down at the stroke.\nSCREEN DIRECTION: the brush drags down the slip toward the lower edge; the low flame leans toward screen-right.\nLIGHT: dim warm lamplight from the left, deep shadow.\nPALETTE: ink black, bamboo yellow, lamp amber, dark grey.\nDETAIL: the brush hairs splaying under pressure, wet ink, bamboo grain, ink in the creases of the knuckles.\nNOT IN FRAME: readable characters, paper, other people.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "CU",
+            "angle": "high",
+            "location": "historian-study",
+            "time_light": "night-lamplight",
+            "camera_motion": "push"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B38",
+      "sentences": [
+        "S41",
+        "S42"
+      ],
+      "start": 227,
+      "end": 231.68,
+      "dur": 4.68,
+      "device": null,
+      "narration_says": "Not hunger, and not battle. Officers who stole from their own men.",
+      "viewer_sees": "an officer's tent stacked with grain sacks while thin soldiers sit outside with empty bowls",
+      "shots": [
+        {
+          "shot_id": "43",
+          "beat_id": "B38",
+          "link_group": null,
+          "t_in": 227,
+          "t_out": 231.667,
+          "use_in": 0,
+          "use_out": 4.667,
+          "use_len": 4.667,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pull",
+          "source_file": "shots/shot43.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "han-soldiers"
+          ],
+          "visual_priority": [
+            "Han Soldiers sitting thin and hungry with empty bowls",
+            "an officer's tent stacked to the roof with grain sacks",
+            "the plump officer eating by lamplight inside",
+            "the cold dusk outside"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Han dynasty soldiers in knee-length red-brown robes under black lacquered lamellar vests, hair in topknots under dark cloth caps, leg wrappings and cloth shoes, armed with crossbows, long ji halberds and straight iron swords, thin and hollow-cheeked, sitting on the cold ground outside a tent with empty bowls in their laps.\nACTION: the soldiers stare at the tent while the officer inside eats.\nSETTING: a Han army camp at dusk; the officer's tent flap open, grain sacks stacked to its roof, a plump officer eating at a table of food by lamplight.\nCAMERA: camera stands among the seated soldiers, eye level, wide.\nFRAME LAYOUT: left third — the soldiers with empty bowls, near-camera and large; center and right third — the open tent glowing, sacks piled high, the officer at his table inside, mid-frame; upper edge — cold dusk sky.\nFACING: we see the seated soldiers side-on, all of them looking toward screen-right at the tent; the officer faces his plate.\nSCREEN DIRECTION: a cold wind blows grit toward screen-left; lamplight spills out of the tent toward camera.\nLIGHT: cold blue dusk on the soldiers, warm gold lamplight in the tent.\nPALETTE: cold blue, lamp gold, sack tan, faded red-brown.\nDETAIL: empty clay bowls, stitched grain sacks, hollow cheeks, torn armour lacing.\nNOT IN FRAME: battle, enemies, corpses, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "army-camp",
+            "time_light": "cold-dusk",
+            "camera_motion": "pull"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B39",
+      "sentences": [
+        "S43"
+      ],
+      "start": 231.68,
+      "end": 237.52,
+      "dur": 5.84,
+      "device": "empty-aftermath",
+      "narration_says": "A year later, Dayuan's nobles killed the king the Chinese had put on their throne.",
+      "viewer_sees": "EMPTY AFTERMATH — the throne of Dayuan empty, a cup overturned beside it, a torn Han-silk cushion on the step",
+      "shots": [
+        {
+          "shot_id": "44",
+          "beat_id": "B39",
+          "link_group": null,
+          "t_in": 231.667,
+          "t_out": 237.5,
+          "use_in": 0,
+          "use_out": 5.833,
+          "use_len": 5.833,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "hold",
+          "source_file": "shots/shot44.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "the carved throne of Dayuan standing empty",
+            "a gold cup overturned on the step, its wine spilled",
+            "a torn cushion of patterned Han silk on the step below",
+            "one shaft of window light across the seat"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: the carved throne of Dayuan standing empty in its hall, a gold cup lying overturned on the step with its wine spilled, and a torn cushion of patterned Han silk slumped on the step below.\nACTION: the hall stands silent around the empty throne.\nSETTING: the audience hall of Dayuan, felt hangings, carpets, high windows.\nCAMERA: camera stands on the carpet facing the throne, eye level, medium.\nFRAME LAYOUT: center — the empty throne, near-camera and large; lower-left — the overturned cup and the dark spill; lower-right — the torn silk cushion; upper edge — a shaft of window light falling across the seat.\nFACING: we see the throne front on, the seat empty.\nSCREEN DIRECTION: dust drifts through the shaft of light toward screen-right; the spill creeps down the step.\nLIGHT: one hard shaft of daylight across the seat, the rest in shadow.\nPALETTE: madder red, gold, shadow brown, silk jade-green.\nDETAIL: the carving on the throne arms, the torn silk's woven cloud pattern, the dark wine spill.\nNOT IN FRAME: people, bodies, blood, weapons, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "dayuan-hall",
+            "time_light": "window-shafts",
+            "camera_motion": "locked"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B40",
+      "sentences": [
+        "S44"
+      ],
+      "start": 237.52,
+      "end": 244.6,
+      "dur": 7.08,
+      "device": null,
+      "narration_says": "The new king sent his son to the Han court as a hostage, and agreed to send two heavenly horses east every year.",
+      "viewer_sees": "a young Dayuan prince arriving at the Han court, two tall red horses led in after him",
+      "shots": [
+        {
+          "shot_id": "45",
+          "beat_id": "B40",
+          "link_group": null,
+          "t_in": 237.5,
+          "t_out": 244.583,
+          "use_in": 0,
+          "use_out": 7.083,
+          "use_len": 7.083,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pan-right",
+          "source_file": "shots/shot45.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "ferghana-horse",
+            "han-palace"
+          ],
+          "visual_priority": [
+            "The Heavenly Horse — exactly two of them — led into the Han court after the young prince",
+            "the boy prince of Dayuan walking in as a hostage",
+            "Han officials lining the way",
+            "the palace terrace and red columns ahead"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a tall slender Ferghana horse with long fine legs, a small refined head on a long arched neck, a deep chest, a thin glossy red-bay coat glistening like wet copper where it sweats, a short upright mane, two of them — exactly two — led on halters across the palace courtyard by grooms, following a boy.\nSCALE: each horse stands taller than the groom leading it; the boy walking ahead reaches only to their shoulders; the palace terrace rises high over all of them.\nSUBJECT 2: a Han palace hall at Chang'an raised on a high rammed-earth terrace, red lacquered wooden columns, a broad hipped roof of grey tiles, tall bronze lamps, reed mats and low black lacquered tables on a polished dark floor, its terrace and steps rising at the end of the courtyard.\nACTION: a young Dayuan prince in a small tall felt cap walks into the Han court as a hostage, the two horses led in after him.\nSETTING: the palace courtyard at Chang'an on a bright spring day, Han officials lining the way.\nCAMERA: camera stands at the side of the courtyard path, eye level, wide.\nFRAME LAYOUT: left third — the two tall red horses and their grooms; center — the boy prince walking, mid-frame; right third — the palace terrace steps and red columns, near-camera; upper edge — the grey-tiled roof.\nFACING: we see the prince and the horses in profile, facing screen-right; the officials face them.\nSCREEN DIRECTION: the prince and the horses move toward the right edge; blossom petals drift toward screen-left.\nLIGHT: bright clear spring sun, crisp shadows.\nPALETTE: red bay, red lacquer, madder red, blossom white.\nDETAIL: glossy coats, the boy's patterned kaftan, the officials' black caps, blossom petals.\nNOT IN FRAME: a third horse, soldiers, chains, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "han-palace-courtyard",
+            "time_light": "bright-spring-day",
+            "camera_motion": "pan"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B41",
+      "sentences": [
+        "S45"
+      ],
+      "start": 244.6,
+      "end": 249.86,
+      "dur": 5.26,
+      "device": "macro-object",
+      "narration_says": "It had begun with a golden horse, offered to a kingdom that would not sell.",
+      "viewer_sees": "MACRO OBJECT — the golden horse alone on dark cloth, raking light separating it from the black, in profile, composed like the two living horses of the next shot",
+      "shots": [
+        {
+          "shot_id": "46",
+          "beat_id": "B41",
+          "link_group": null,
+          "t_in": 244.583,
+          "t_out": 249.875,
+          "use_in": 0,
+          "use_out": 5.292,
+          "use_len": 5.292,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot46.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "golden-horse"
+          ],
+          "visual_priority": [
+            "The Golden Horse alone on dark cloth in pure side profile",
+            "one raking light carving the gold out of the black",
+            "its raised head facing screen-right",
+            "nothing else in frame"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a statue of a horse cast in solid gold, as long as a man's forearm, standing four-square on a flat gold base, head raised, the mane and tail finely chased, a soft heavy lustre with no gems and no colour, whole and unbroken, standing alone on a fold of dark cloth in exact side profile, facing screen-right.\nSCALE: the golden horse is only as long as a forearm and fills the frame because nothing else is in it; small, heavy and perfect.\nACTION: it stands alone in the light.\nSETTING: a fold of dark cloth against a black ground.\nCAMERA: camera faces it square on at its own height, eye level, close.\nFRAME LAYOUT: center — the golden horse in side profile, near-camera, its back at the middle of the frame; left third and right third — empty black; lower edge — the dark cloth.\nFACING: we see its left side in pure profile, head raised toward screen-right.\nSCREEN DIRECTION: a slow gleam of light slides along its back toward screen-right.\nLIGHT: one hard raking light from screen-left carving the gold out of the black, no other light.\nPALETTE: gold, black, deep brown.\nDETAIL: the chased lines of mane and tail, the soft heavy lustre, the fine nap of the cloth.\nNOT IN FRAME: hands, people, cracks or damage, a second horse, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "CU",
+            "angle": "eye",
+            "location": "dark-cloth",
+            "time_light": "raking-light",
+            "camera_motion": "push"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B42",
+      "sentences": [
+        "S46"
+      ],
+      "start": 249.86,
+      "end": 253.96,
+      "dur": 4.1,
+      "device": null,
+      "narration_says": "It ended with two living horses a year.",
+      "viewer_sees": "two living red horses side by side in a Han stable, in the same profile and at the same height in frame as the golden horse before them, breath in the cold air",
+      "shots": [
+        {
+          "shot_id": "47",
+          "beat_id": "B42",
+          "link_group": null,
+          "t_in": 249.875,
+          "t_out": 253.958,
+          "use_in": 0,
+          "use_out": 4.083,
+          "use_len": 4.083,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot47.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "ferghana-horse"
+          ],
+          "visual_priority": [
+            "The Heavenly Horse — two living ones side by side in pure profile",
+            "their breath steaming in the cold air",
+            "their backs at the middle of the frame, as the golden horse stood",
+            "the dim Han stable"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a tall slender Ferghana horse with long fine legs, a small refined head on a long arched neck, a deep chest, a thin glossy red-bay coat glistening like wet copper where it sweats, a short upright mane, two of them — exactly two — standing side by side in pure side profile, facing screen-right, their breath steaming.\nSCALE: their backs span most of the frame; their heads rise high above the stall rail; they are tall, living and warm.\nACTION: the two horses stand in the stable and breathe out steam.\nSETTING: a Han imperial stable on a cold morning, timber stalls, straw, a dark back wall.\nCAMERA: camera stands square to their flank at their height, eye level, medium.\nFRAME LAYOUT: center — the two horses side by side in profile, the nearer one overlapping the farther, their backs at the middle of the frame; left third and right third — dark stable timber; lower edge — straw.\nFACING: we see their left sides in pure profile, heads raised toward screen-right.\nSCREEN DIRECTION: their breath steams out toward the right edge; a mane stirs.\nLIGHT: one hard raking light from screen-left through a stable door, the rest of the stable dark.\nPALETTE: red bay, dark timber, straw gold, breath white.\nDETAIL: fine glossy coats, veins on the legs, steam of breath, straw on the hooves.\nNOT IN FRAME: people, saddles, gold, a third horse, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "imperial-stable",
+            "time_light": "cold-morning",
+            "camera_motion": "push"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B43",
+      "sentences": [
+        "S47"
+      ],
+      "start": 253.96,
+      "end": 264.38,
+      "dur": 10.42,
+      "device": null,
+      "narration_says": "And around the emperor's palaces, as far as the eye could see, grew fields of alfalfa from Ferghana seed: fodder, for the horses of heaven.",
+      "viewer_sees": "the palace roofs rising out of purple-flowering alfalfa that runs to the horizon; then the heavenly horses grazing in it",
+      "shots": [
+        {
+          "shot_id": "48",
+          "beat_id": "B43",
+          "link_group": null,
+          "t_in": 253.958,
+          "t_out": 259.25,
+          "use_in": 0,
+          "use_out": 5.292,
+          "use_len": 5.292,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pan-right",
+          "source_file": "shots/shot48.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "the emperor's palaces rising out of alfalfa fields",
+            "purple-flowering alfalfa running on every side to the horizon",
+            "grey-tiled roofs on high earth terraces",
+            "golden summer light"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: the detached palaces of the Han emperor, grey-tiled roofs on high rammed-earth terraces, rising out of fields of purple-flowering alfalfa that run on every side as far as the eye can see.\nACTION: the alfalfa ripples in waves around the palaces.\nSETTING: the plain around Chang'an in summer, no other crop in sight.\nCAMERA: camera stands on a rise over the plain, high, wide.\nFRAME LAYOUT: center — the palace roofs, mid-frame; lower edge — purple alfalfa flowers, near-camera; left third and right third — alfalfa to the horizon; upper edge — summer sky.\nFACING: we see the palaces three-quarter on across the fields.\nSCREEN DIRECTION: wind sends waves across the alfalfa toward the right edge.\nLIGHT: warm golden summer light, soft haze.\nPALETTE: alfalfa purple, leaf green, roof grey, gold light.\nDETAIL: three layers of field, palace and haze, single alfalfa blossoms near-camera, wind lines in the crop.\nNOT IN FRAME: people, soldiers, text, rice paddies.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "XLS",
+            "angle": "high",
+            "location": "alfalfa-fields",
+            "time_light": "golden-summer",
+            "camera_motion": "pan"
+          }
+        },
+        {
+          "shot_id": "49",
+          "beat_id": "B43",
+          "link_group": null,
+          "t_in": 259.25,
+          "t_out": 264.375,
+          "use_in": 0,
+          "use_out": 5.125,
+          "use_len": 5.125,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "hold",
+          "source_file": "shots/shot49.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "ferghana-horse"
+          ],
+          "visual_priority": [
+            "The Heavenly Horse grazing deep in purple-flowering alfalfa",
+            "a small herd of its kind around it",
+            "the palace roofs far on the horizon",
+            "golden evening light"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a tall slender Ferghana horse with long fine legs, a small refined head on a long arched neck, a deep chest, a thin glossy red-bay coat glistening like wet copper where it sweats, a short upright mane, grazing deep in purple-flowering alfalfa with a small herd of its kind around it.\nSCALE: the tall horses stand chest-deep in the alfalfa; the palace roofs on the horizon look small beside them.\nACTION: the horses graze, the nearest one lifting its head with alfalfa in its mouth.\nSETTING: the alfalfa fields by the palaces in golden evening.\nCAMERA: camera stands in the alfalfa at their height, eye level, medium.\nFRAME LAYOUT: center — the nearest horse, near-camera and large, head up; left third and right third — more horses grazing, smaller; upper edge — palace roofs on the horizon, far and hazy.\nFACING: we see the near horse three-quarter on in profile, facing screen-right, chewing.\nSCREEN DIRECTION: the alfalfa sways toward the right edge; a tail swishes.\nLIGHT: low golden evening light from screen-left, rim light on the coats.\nPALETTE: red bay, alfalfa purple, green, gold.\nDETAIL: glossy coats catching the light, alfalfa flowers and leaves, a sweat sheen on the neck.\nNOT IN FRAME: riders, saddles, stirrups, soldiers, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "alfalfa-fields",
+            "time_light": "golden-summer",
+            "camera_motion": "locked"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B44",
+      "sentences": [
+        "S48"
+      ],
+      "start": 264.38,
+      "end": 271.56,
+      "dur": 7.18,
+      "device": null,
+      "narration_says": "Empires have gone to war for gold, for land and for revenge — and at least once, for horses.",
+      "viewer_sees": "one heavenly horse alone on a frontier ridge at sunset, a beacon tower far along the wall",
+      "shots": [
+        {
+          "shot_id": "50",
+          "beat_id": "B44",
+          "link_group": null,
+          "t_in": 264.375,
+          "t_out": 271.542,
+          "use_in": 0,
+          "use_out": 7.167,
+          "use_len": 7.167,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot50.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "ferghana-horse"
+          ],
+          "visual_priority": [
+            "The Heavenly Horse alone on a frontier ridge at sunset",
+            "facing west toward the setting sun",
+            "the frontier wall running to a far beacon tower",
+            "its mane lifting in the wind"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a tall slender Ferghana horse with long fine legs, a small refined head on a long arched neck, a deep chest, a thin glossy red-bay coat glistening like wet copper where it sweats, a short upright mane, standing alone on a bare frontier ridge at sunset, head high, facing the west.\nSCALE: the horse stands against the whole sky, as tall as the far beacon tower; it is the only living thing in sight.\nACTION: it stands and looks west as the sun goes down.\nSETTING: a ridge along the Han frontier wall of rammed earth, a beacon tower far along it, the desert beyond.\nCAMERA: camera lies low on the ridge, low, wide.\nFRAME LAYOUT: center — the horse in profile, rim-lit, near-camera and large; right third — the frontier wall running along the ridge to a beacon tower, far and small; left third — the red sunset and the desert, far.\nFACING: we see the horse in profile facing screen-left toward the setting sun.\nSCREEN DIRECTION: its mane and tail blow toward the right edge; dust drifts the same way.\nLIGHT: red setting sun from screen-left, a hot rim of light along the horse.\nPALETTE: sunset red, horse bay, rammed-earth tan, dusk violet.\nDETAIL: rim light on the fine coat, single mane hairs lifting, the wall's tamped layers.\nNOT IN FRAME: riders, saddles, stirrups, soldiers, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "LS",
+            "angle": "low",
+            "location": "frontier-ridge",
+            "time_light": "red-sunset",
+            "camera_motion": "push"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B45",
+      "sentences": [
+        "S49",
+        "S50"
+      ],
+      "start": 271.56,
+      "end": 279.745,
+      "dur": 8.185,
+      "device": null,
+      "narration_says": "If you want more forgotten wars and strange turning points like this, leave a like and subscribe to Animated Tales. Until next time.",
+      "viewer_sees": "END CARD — a heavenly horse and a Han soldier at the Jade Gate at sunset, open sky above for the title",
+      "shots": [
+        {
+          "shot_id": "51",
+          "beat_id": "B45",
+          "link_group": null,
+          "t_in": 271.542,
+          "t_out": 279.75,
+          "use_in": 0,
+          "use_out": 8.208,
+          "use_len": 8.208,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "hold",
+          "source_file": "shots/shot51.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "ferghana-horse",
+            "jade-gate"
+          ],
+          "visual_priority": [
+            "The Heavenly Horse standing calm at the open Jade Gate at sunset",
+            "a Han soldier holding its halter, looking out at the viewer",
+            "clear open sky across the upper third for a title",
+            "the gate and wall in warm light"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a tall slender Ferghana horse with long fine legs, a small refined head on a long arched neck, a deep chest, a thin glossy red-bay coat glistening like wet copper where it sweats, a short upright mane, standing calm at the open Jade Gate at sunset, a Han soldier in a lacquered vest holding its halter.\nSCALE: the horse stands a head taller than the soldier; the gate timbers frame them both; the sky above is wide and empty.\nSUBJECT 2: the Jade Gate pass on the desert frontier, a square fort of rammed earth with walls in pale tamped layers, one heavy wooden gate, a watchtower and signal beacons along a low earthen wall, flat grey gravel desert all around, its gate standing open.\nACTION: the soldier and the horse stand together and look out at the viewer.\nSETTING: the frontier at sunset, the desert glowing.\nCAMERA: camera holds square on them at their level, eye level, medium.\nFRAME LAYOUT: center — the horse and the soldier, near-camera; left third and right third — the gate towers and the wall; upper third — clear empty sky held across the full width for a title.\nFACING: we see the soldier front on, looking straight out past the camera; the horse three-quarter on, head turned toward camera.\nSCREEN DIRECTION: the horse's mane lifts toward screen-right; dust glows in the low light.\nLIGHT: warm low sunset light, even on both faces.\nPALETTE: sunset gold, red bay, rammed-earth tan, deep blue sky.\nDETAIL: the soldier's lacquered vest, the horse's glossy coat, the iron bands of the gate.\nNOT IN FRAME: stirrups, text, logos, raised weapons.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "end-card",
+            "time_light": "red-sunset",
+            "camera_motion": "locked"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "slug": "heavenly-horses",
+  "title": "The War of the Heavenly Horses",
+  "status": "draft",
+  "voice": null,
+  "narration_file": "narration.mp3",
+  "final_file": "final.mp4",
+  "endcard_file": "shots/endKartica.jpeg",
+  "intro_file": null,
+  "intro_volume": 0.2,
+  "characters": [
+    {
+      "id": "emperor-wu",
+      "name": "Emperor Wu of Han",
+      "locked_description": "a Han emperor in his fifties, a long narrow face, a thin drooping moustache and short pointed beard, hard narrowed eyes, a flat black crown board hung with jade bead strings, a wide-sleeved dark yellow silk robe bordered in black"
+    },
+    {
+      "id": "li-guangli",
+      "name": "Li Guangli",
+      "locked_description": "a Han general in his thirties, a broad smooth face, a thin black moustache, a topknot under a red cloth wrap, black lacquered lamellar armour laced in red over a knee-length red robe, a long iron sword"
+    },
+    {
+      "id": "han-envoy",
+      "name": "The Han Envoy",
+      "locked_description": "a Han envoy in his thirties, a lean hard face, a black moustache, a black lacquered official's cap tied under the chin, a dark blue wide-sleeved robe, a bamboo staff of office hung with three yak-tail tufts"
+    },
+    {
+      "id": "sima-qian",
+      "name": "Sima Qian",
+      "locked_description": "a Han court historian in his forties, a gaunt lined beardless face, tired watchful eyes, a black gauze scholar's cap, a plain dark grey robe with wide sleeves, ink-stained fingers"
+    },
+    {
+      "id": "han-soldiers",
+      "name": "Han Soldiers",
+      "locked_description": "Han dynasty soldiers in knee-length red-brown robes under black lacquered lamellar vests, hair in topknots under dark cloth caps, leg wrappings and cloth shoes, armed with crossbows, long ji halberds and straight iron swords"
+    },
+    {
+      "id": "xiongnu-riders",
+      "name": "Xiongnu Riders",
+      "locked_description": "Xiongnu steppe horsemen in heavy sheepskin coats and fur-trimmed felt caps, loose trousers and soft felt boots, short recurved composite bows and birch-bark quivers at the hip, riding without stirrups on felt saddle pads"
+    },
+    {
+      "id": "dayuan-nobles",
+      "name": "The Nobles of Dayuan",
+      "locked_description": "Ferghana nobles with deep-set eyes, long straight noses and full dark curled beards, shoulder-length hair under tall felt caps, knee-length belted kaftans of patterned wool in madder red and indigo, trousers tucked into soft boots, gold plaques at the belt"
+    },
+    {
+      "id": "horse-judges",
+      "name": "The Horse Judges",
+      "locked_description": "two elderly Han horse judges, one lean with a long white beard, one stout and clean-shaven under a black cloth cap, both in plain dark brown robes with the sleeves tied back, leather pouches at the belt"
+    },
+    {
+      "id": "ferghana-horse",
+      "name": "The Heavenly Horse",
+      "locked_description": "a tall slender Ferghana horse with long fine legs, a small refined head on a long arched neck, a deep chest, a thin glossy red-bay coat glistening like wet copper where it sweats, a short upright mane",
+      "scale_critical": true
+    },
+    {
+      "id": "steppe-horse",
+      "name": "The Steppe Horse",
+      "locked_description": "a small stocky steppe horse with short thick legs, a big heavy head on a short thick neck, a shaggy dun coat with a dark stripe along the spine, a stiff upright black mane",
+      "scale_critical": true
+    }
+  ],
+  "locations": [
+    {
+      "id": "han-palace",
+      "name": "The Han Palace at Chang'an",
+      "locked_description": "a Han palace hall at Chang'an raised on a high rammed-earth terrace, red lacquered wooden columns, a broad hipped roof of grey tiles, tall bronze lamps, reed mats and low black lacquered tables on a polished dark floor"
+    },
+    {
+      "id": "western-desert",
+      "name": "The Desert Road",
+      "locked_description": "the desert road west of the Jade Gate, a vast plain of grey gravel and pale dunes, white salt crust and dry riverbeds, a far line of snow mountains along the horizon, no tree and no water anywhere"
+    },
+    {
+      "id": "jade-gate",
+      "name": "The Jade Gate",
+      "locked_description": "the Jade Gate pass on the desert frontier, a square fort of rammed earth with walls in pale tamped layers, one heavy wooden gate, a watchtower and signal beacons along a low earthen wall, flat grey gravel desert all around"
+    },
+    {
+      "id": "dayuan-capital",
+      "name": "The Capital of Dayuan",
+      "locked_description": "the walled capital of Dayuan in the Ferghana Valley, thick sloping walls of mudbrick and rammed earth with square towers, flat-roofed houses and a citadel inside, a river channel along the foot of the walls, snow mountains all around"
+    }
+  ],
+  "key_props": [
+    {
+      "id": "golden-horse",
+      "name": "The Golden Horse",
+      "locked_description": "a statue of a horse cast in solid gold, as long as a man's forearm, standing four-square on a flat gold base, head raised, the mane and tail finely chased, a soft heavy lustre with no gems and no colour",
+      "scale_critical": true
+    }
+  ],
+  "notes": "Samostalna epizoda, ideja #20 u docs/ideas.md preusmerena na rat za nebeske konje (104-101 p.n.e.). Cela epizoda je od slika (render_mode still, korisnikova odluka). Tacnost perioda: bez uzengija, Han lamelarni oklop i samostrel, Dajuan od nepecene cigle i nabijene zemlje, Fergana konj visok i vitak naspram niskog stepskog. Carev ogrtac je tamnozut jer je reforma Taichu (104. p.n.e.) prebacila dinastiju na boju zemlje. Sima Qian je bez brade jer je Shiji pisao posle kastracije (98. p.n.e.). Glava kralja i pokolj se ne prikazuju. Research u research.md, skripta u script.md."
+}

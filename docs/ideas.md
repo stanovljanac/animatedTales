@@ -65,7 +65,7 @@ Legenda kolona: **M1** snaga hooka (×3) · **M2** naslov + tambnejl (×3) · **
 | 2 | The Battle Won by a Dead Man's Army | 4 | 4 | 4 | 3 | 4 | 4 | 2 | 4 | 4 | 1 | **71.6** | oštriji ugao | `done` |
 | 12 | The Invention That Made Civilization Count Everything | 4 | 3 | 4 | 4 | 2 | 3 | 4 | 4 | 4 | 5 | **71.6** | oštriji ugao | `scored` |
 | 24 | The Punishment of Tantalus: Food He Could Never Eat | 4 | 4 | 4 | 3 | 3 | 2 | 3 | 4 | 3 | 5 | **70.0** | oštriji ugao | `scored` |
-| 20 | The Horses That Helped Decide China's History | 4 | 3 | 4 | 4 | 2 | 3 | 5 | 3 | 4 | 3 | **69.5** | oštriji ugao | `scored` |
+| 20 | The Horses That Helped Decide China's History | 4 | 3 | 4 | 4 | 2 | 3 | 5 | 3 | 4 | 3 | **69.5** | oštriji ugao | `done` |
 | 5 | The General Who Won by Making His Army Look Bigger | 4 | 4 | 4 | 3 | 3 | 4 | 2 | 4 | 4 | 0 | **68.4** | oštriji ugao | `scored` |
 | 18 | The Civilization That Turned Water Into Power | 3 | 3 | 4 | 3 | 3 | 4 | 3 | 3 | 4 | 3 | **65.3** | oštriji ugao | `scored` |
 | 14 | Why Did the Bronze Age World Collapse? | 4 | 4 | 3 | 3 | 3 | 4 | 3 | 2 | 3 | 1 | **64.7** | parkiraj | `scored` |
@@ -320,7 +320,7 @@ Zašto ovaj skor: Najviši emotivni ulog i najčvršći izvori u kategoriji, uz 
 
 #### #20 — The Horses That Helped Decide China's History
 
-`status: scored` · **69.5** · oštriji ugao · izvorna oznaka: kat. 2 #10
+`status: done` · **69.5** · oštriji ugao · izvorna oznaka: kat. 2 #10 · `episodes/heavenly-horses`
 
 Ocene M1–M10: 4 / 3 / 4 / 4 / 2 / 3 / 5 / 3 / 4 / 3 — sirovo 66 / 95.
 
@@ -329,6 +329,14 @@ Story: Chinese dynasties repeatedly struggled to obtain strong warhorses from st
 Hook: “One of China's biggest military problems wasn't weapons. It was finding horses strong enough to use them.”
 
 Zašto ovaj skor: Najoriginalniji ugao u kategoriji i pravi obrt (carstvo zavisi od suseda za konje), ali nema lica, nema uloga i tambnejl je samo konj.
+
+**Izoštrena u produkciji (2026-09-23):** opšta tema („carstvo zavisi od suseda za konje") suzena je
+na jedan rat koji ima lice, ulog i kraj — **Rat za nebeske konje, 104–101. p.n.e.** Car Wu nudi zlatnog
+konja, Dajuan odbija i ubija poslanika, prva vojska umire u pustinji i car joj zatvara Žadnu kapiju,
+druga vojska od 60.000 skreće reku i dobija ~3.000 konja, a kroz kapiju se vraća nešto više od
+10.000 ljudi. Na kraju: dva konja godišnje. Izvor je *Shiji* 123, pisan od savremenika. Tri kazne iz
+obrazloženja (lice, ulog, tambnejl) ovaj ugao skida; skor 69.5 je zatečen i opisuje staru, opštu
+verziju. Hook je prenet doslovno. Epizoda je planirana **samo od slika** (`render_mode: "still"`).
 
 ### Kategorija 3 — mitologija, bogovi, religije i legende
 
