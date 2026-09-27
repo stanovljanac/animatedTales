@@ -419,6 +419,13 @@ dvanaest kotvi nacrta „krug bogova", to jest petnaest ili osamnaest figura. Pr
 prati sadržaj, a ne obrnuto. Meki opseg 180–260 ostaje nepromenjen: kadar preko njega i dalje pali
 R5, i to je dobro — takav kadar treba da bude odluka koja se vidi u izveštaju.
 
+**End kartica: poseban plafon 600.** Poslednji shot je end kartica (`prompt-templates.md`, „End
+kartica") — poster koji rekapitulira celu priču: tri locka, `TITLE` i `BUTTON` blok, i cela
+geografija priče po trećinama. To je ~560 reči sadržaja koji ne može da se skrati a da kartica
+ne postane poslednja scena umesto priče (`heavenly-horses`, 2026-09-27). P1 na poslednjem shotu
+sheme 2 zato meri `LIMITS.endCardWords` (90–600), a R5 ga preskače. Pravilo je isto kao gore:
+plafon prati sadržaj.
+
 ### 3.3.2 Still kadrovi — epizoda od slika
 
 Slika je u Flow-u besplatna, klip nije, pa video budžet — ne pisanje i ne montaža — određuje
@@ -600,7 +607,7 @@ Tabela je prođena red po red.
 | **S3** | reči koje impliciraju rez unutar klipa (`then`, `later`, `afterwards`, `cuts to`, `meanwhile`); na still shotu se ne meri | — | `shot.animation_prompt` | da |
 | **S4** | blok `SCALE` kad shot nosi `scale_critical` entitet (shema 2) | — | `shot.characters[]` → `episode.json.*.scale_critical`, `shot.image_prompt` | da |
 | **S5** | hijerarhija lockova (shema 2): PRIMARY u `SUBJECT`, najviše 3 locka, `visual_priority` 3–5 stavki sa PRIMARY na vrhu | — | `shot.characters[]`, `shot.visual_priority`, `shot.image_prompt` | da |
-| **P1** | dužina image prompta | shema 1: 90–160; **shema 2: 90–360** reči | `shot.image_prompt` + `countWords` (0.6) | da |
+| **P1** | dužina image prompta | shema 1: 90–160; **shema 2: 90–360** reči, poslednji shot (end kartica) 90–600 | `shot.image_prompt` + `countWords` (0.6) | da |
 | **P2** | dužina animation prompta; **na still shotu prompta ne sme biti** | 60–110 reči | `shot.animation_prompt` + `countWords` (0.6), `shot.render_mode` | da |
 | **T4** | `gen_len` je najmanji član `GEN_TIERS` koji pokriva `use_len`; **na still shotu `null`**; `MOTION BUDGET` linija imenuje istu brojku | 4 · 6 · 8 · 10s | `shot.gen_len`, `shot.use_len`, `shot.render_mode`, `shot.animation_prompt` | da |
 | **C1** | `locked_description` doslovno u svakom shotu gde lik učestvuje | — | `shot.characters[]` → `episode.json.{characters,locations,key_props}[].locked_description`, traži se u `shot.image_prompt` po `normalize` (0.7) | da |

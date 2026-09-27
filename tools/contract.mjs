@@ -122,7 +122,12 @@ export const LIMITS = {
   // rezijsko skracivanje zbog knjigovodstva. Pomera se plafon, ne proza.
   animWords: { min: 60, max: 110 },
   imageWordsV2: { min: 90, max: 360 },  // P1, shema 2 — tvrd plafon
-  imageSoft: { min: 180, max: 260 },    // R5, shema 2 — meki ciljni opseg (ADVISORY)
+  // P1, shema 2, poslednji shot. End kartica je rekapitulacija cele priče na jednom posteru:
+  // tri locka (~130 reči) + `TITLE` + `BUTTON` (~70) + raspored po trećinama. U 360 staje samo
+  // kao poslednji kadar priče, a to je upravo greška koju je korisnik vratio (heavenly-horses).
+  // Pomera se plafon, ne proza.
+  endCardWords: { min: 90, max: 600 },
+  imageSoft: { min: 180, max: 260 },    // R5, shema 2 — meki ciljni opseg (ADVISORY), bez end kartice
   maxLocks: 3,                          // S5 — PRIMARY + najviše dva SECONDARY
   t1Drift: 0.2,                      // T1
 };

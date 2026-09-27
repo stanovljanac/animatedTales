@@ -245,7 +245,7 @@ const MOTION_LINE = /MOTION BUDGET:[^\n]*?(\d+(?:\.\d+)?)\s*s\b/i;
  */
 const GEN_LINE = /(\d+(?:\.\d+)?)\s*s generation\b/i;
 
-function checkShot(shot, { lists, entities, v = 1 }) {
+function checkShot(shot, { lists, entities, v = 1, endCard = false }) {
   const out = [];
   const where = `shot ${shot.shot_id}`;
   const still = isStill(shot);
@@ -393,8 +393,9 @@ function checkShot(shot, { lists, entities, v = 1 }) {
     }
   }
 
-  // P1 — dužina image prompta; isto u oba režima, jer se slika piše isto.
-  const lim = v >= 2 ? LIMITS.imageWordsV2 : LIMITS.imageWords;
+  // P1 — dužina image prompta; isto u oba režima, jer se slika piše isto. Poslednji shot na
+  // shemi 2 je end kartica i ima svoj plafon (`LIMITS.endCardWords`).
+  const lim = v < 2 ? LIMITS.imageWords : endCard ? LIMITS.endCardWords : LIMITS.imageWordsV2;
   const n = countWords(shot.image_prompt);
   if (n < lim.min || n > lim.max) {
     out.push(finding('P1', where,
@@ -843,7 +844,9 @@ export const sortSignals = (signals) => signals.slice()
 function checkR5(storyboard) {
   if ((storyboard.schema_version || 1) < 2) return [];
   const { min, max } = LIMITS.imageSoft;
-  return flatShots(storyboard)
+  // End kartica (poslednji shot) nosi svoj plafon u P1 — meki opseg običnog kadra za nju ne
+  // znači ništa.
+  return flatShots(storyboard).slice(0, -1)
     .map((sh) => [sh, countWords(sh.image_prompt)])
     .filter(([, n]) => n < min || n > max)
     .map(([sh, n]) => signal('R5', `shot ${sh.shot_id}`,
@@ -935,10 +938,11 @@ export function lintStatic(storyboard, episode, { lists = loadCameraLanguage() }
   assertShape(storyboard, episode);
   const entities = entityIndex(episode);
   const out = [...checkT1(storyboard)];
-  for (const b of storyboard.beats) {
-    const v = storyboard.schema_version || 1;
-    for (const s of b.shots) out.push(...checkShot(s, { lists, entities, v }));
-  }
+  const v = storyboard.schema_version || 1;
+  const shots = flatShots(storyboard);
+  shots.forEach((s, i) => {
+    out.push(...checkShot(s, { lists, entities, v, endCard: i === shots.length - 1 }));
+  });
   return sortFindings(out);
 }
 

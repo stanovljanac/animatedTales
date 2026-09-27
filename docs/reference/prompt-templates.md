@@ -194,6 +194,58 @@ NOT IN FRAME: the far mountains, the ribbon.
 Isti kadar je na shemi 1 bio nemoguć: lock je morao da bira između vuka i lanca, izabrao je lanac,
 i vuk — `center, near-camera and large` — dobijao je četiri reči.
 
+## End kartica — poslednji shot, nad `## OUTRO`
+
+Shot koji stoji nad outro delom narracije („…leave a like and subscribe to Animated Tales. Until
+next time.") **nije običan kadar nego end kartica**: slika sa naslovom epizode i SUBSCRIBE
+dugmetom, koja postaje `endcard_file` u montaži. Prompt koji tu napiše `NOT IN FRAME: text`
+daje lep kadar bez naslova i dugmeta, i kartica mora da se radi ponovo.
+
+Uzor su postojeće kartice (`greek-gods-part-1`, `antikythera-mechanism`,
+`night-when-rome-almost-fell`, `tyr-and-fenrir` — `endKartica.*`). Izgled je isti na svima.
+
+**Kartica je rekapitulacija cele priče, ne poslednja scena.** Piše se iz cele `script.md`, ne
+iz outro rečenice ni iz poslednjeg beata. Prva verzija za `heavenly-horses` je nacrtala samo kraj
+(konj galopira kući) i korisnik ju je vratio: dobra slika, ali ne priča. Pre pisanja izvuci iz
+skripte po jedno za svaku ulogu:
+
+| Uloga | heavenly-horses |
+|---|---|
+| ko pokreće priču | car Wu |
+| šta je predmet želje ili sukoba | nebeski konj |
+| ključni rekvizit ili početak | zlatni konj i zlato koje je ponuđeno |
+| druga strana / cilj na karti | Dajuan pod planinama, reka uz zidine |
+| put ili sukob između njih | vojska sa volovima i kamilama kroz pustinju, od Žadne kapije |
+
+Kompozicija je filmski poster:
+
+- **dva velika lika na ivicama**, near-camera i sečena grudima ili ivicom kadra, po osi ekrana
+  epizode (strane sukoba ostaju gde su bile ceo film);
+- **cela geografija priče u sredini**, daleko i sitno — polazište na jednoj strani, cilj na
+  drugoj, put i vojska između;
+- **simboli priče u prvom planu** uz donju ivicu (zlatnici, oružje, mapa, polomljeni predmet);
+- `SHOT:` linija na početku jednom rečenicom kaže da je ovo poster cele priče i nabroji uloge.
+Uz to:
+
+- **`TITLE:` blok** — naslov iz `episode.json` → `title`, verzalom i pod navodnicima, preko
+  gornje trećine, u slovima koja nose materijal priče (bronza, drvo sa runama, kamen, lak);
+  ispod njega tanka ornamentna linija i **jedna kraća linija o priči**, 3–6 reči, iz skripte.
+- **`BUTTON:` blok** — uvek isto dugme: `at the exact center of the frame, a red rounded
+  pill-shaped button with a thin gold rim, "SUBSCRIBE" in bold cream capitals, a small gold
+  diamond on each side.`
+- `FRAME LAYOUT` imenuje `upper third` za naslov, `center` za dugme, i po jednu trećinu za
+  svaki veliki lik, tako da im glave ostaju slobodne od naslova i dugmeta.
+- `DETAIL` traži čitka slova (`crisp lettering with every letter spelled right`), a
+  `NOT IN FRAME` zabranjuje **ostali** tekst (`logos, any other words or letters`), ne tekst
+  uopšte.
+- `still_motion: hold`, `tags.camera_motion: locked`, `tags.location: end-card`.
+
+**Plafon je 600, ne 360** (`LIMITS.endCardWords`, P1 na poslednjem shotu; R5 ga ne meri). Tri
+locka (~130 reči) + `TITLE` + `BUTTON` (~70) + raspored po trećinama ne staju u 360, a skraćivanje
+bi izbacilo baš uloge koje karticu čine rekapitulacijom. Glavni likovi i ključni rekvizit idu kao
+lockovi (najviše tri); mesta u dubini idu kratkim opisom u `FRAME LAYOUT`. Primer:
+`heavenly-horses`, shot 51 (562 reči).
+
 ## Kontrolna lista pre upisa (shema 2)
 
 1. Prebroj obe dužine kanonskim brojačem: **90–360** i 60–100. Cilj je pokrivenost, ne broj.

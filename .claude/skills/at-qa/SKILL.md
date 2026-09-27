@@ -71,6 +71,10 @@ Linter meri oblik. Ovo meri smisao, i radi se **na svakom prolazu**, i kad je BL
   namerno miran ni refleksivan. Merljivo: pročitaj `0–1s:` liniju i pitaj se da li se u njoj
   nešto **dešava**.
 - **still montage na pogrešnom mestu** — niz statičnih slika tamo gde je narracija aktivna
+- **end kartica koja nije kartica** — poslednji shot (nad `## OUTRO`) mora da ima `TITLE:` i
+  `BUTTON:` blok po odeljku „End kartica" u `prompt-templates.md`, i da rekapitulira **celu**
+  priču, ne samo kraj. Ako piše `NOT IN FRAME: text`, nema SUBSCRIBE dugmeta, ili pozadina
+  prikazuje samo poslednju scenu, prompt se prepisuje iz cele skripte.
 
 Na **still epizodi** (`render_mode: "still"`, `schemas.md` §3.3.2) tri stavke iznad menjaju
 oblik, jer animation prompta nema:

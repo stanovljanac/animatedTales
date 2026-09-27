@@ -345,6 +345,31 @@ Formatiranje i dalje poštuje sva četiri parser-pravila iz `04-script.md`: nasl
 `## OUTRO`, poslednji je u fajlu, nijedan drugi naslov ne počinje rečju „outro", a dve rezervne
 varijante stoje u HTML komentaru.
 
+### 6.1 End kartica svakog parta
+
+Poslednji shot svakog parta je end kartica po odeljku „End kartica" u
+`docs/reference/prompt-templates.md` — poster koji rekapitulira **ceo** part, sa naslovom i
+SUBSCRIBE dugmetom. U seriji važi još i ovo, da bi četiri kartice izgledale kao jedan komplet:
+
+- **trojka parta stoji preko celog kadra**, near-camera i front on, svako na svojoj trećini,
+  pogled u gledaoca — kao braća na kartici Part 1;
+- **oko svakog boga, sitno i daleko, scene njegove priče iz tog parta**, a u prvom planu uz donju
+  ivicu po jedan simbol njegove priče;
+- **naslov u tri reda**: veliki red sa trojkom, srednji sa kičmom parta, tanki razmaknuti red sa
+  tri domena (Part 1: `THE THREE BROTHERS` / `AND THE DIVISION OF THE UNIVERSE` /
+  `SKY · SEA · THE DEAD`; Part 2: `THE THREE SISTERS` / `WHO GOT NO KINGDOM` /
+  `MARRIAGE · HARVEST · HEARTH`);
+- slova ista na sve četiri: klesana bronzano-zlatna serifna velika slova sa tamnim obrisom;
+- tri pojedinačna locka iz registra (§4), ne grupni lock — likovi su dovoljno veliki da se opis
+  vidi.
+
+| Part | Trojka, sleva nadesno | Kičma u srednjem redu | Tri domena |
+|---|---|---|---|
+| 1 | Zeus, Poseidon, Hades | `AND THE DIVISION OF THE UNIVERSE` | `SKY · SEA · THE DEAD` |
+| 2 | Hera, Demeter, Hestia | `WHO GOT NO KINGDOM` | `MARRIAGE · HARVEST · HEARTH` |
+| 3 | — piše se uz Part 3 | | |
+| 4 | — piše se uz Part 4 | | |
+
 ---
 
 ## 7. Razgraničenje materijala

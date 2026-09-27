@@ -425,6 +425,17 @@ test('P1: 89 pada, 90 i 160 prolaze, 161 pada', () => {
   assert.equal(only(run({ image_prompt: imagePrompt(161) }), 'P1').length, 1);
 });
 
+test('P1, shema 2: poslednji shot je end kartica — plafon 600 umesto 360', () => {
+  const pair = (a, b) => lintStatic(mkSb([
+    mkShot({ image_prompt: imagePrompt(a) }),
+    mkShot({ shot_id: '02', t_in: 6, t_out: 12, image_prompt: imagePrompt(b) }),
+  ], { schema_version: 2 }), mkEp(), { lists: LISTS });
+  const p1 = (findings) => only(findings, 'P1').map((f) => f.where);
+  assert.deepEqual(p1(pair(360, 600)), []);
+  assert.deepEqual(p1(pair(361, 600)), ['shot 01']);
+  assert.deepEqual(p1(pair(360, 601)), ['shot 02']);
+});
+
 test('P2: 59 pada, 60 i 110 prolaze, 111 pada', () => {
   assert.equal(only(run({ animation_prompt: animPrompt(59) }), 'P2').length, 1);
   assert.deepEqual(only(run({ animation_prompt: animPrompt(60) }), 'P2'), []);

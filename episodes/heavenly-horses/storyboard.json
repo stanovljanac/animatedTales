@@ -2380,7 +2380,7 @@
       "dur": 8.185,
       "device": null,
       "narration_says": "If you want more forgotten wars and strange turning points like this, leave a like and subscribe to Animated Tales. Until next time.",
-      "viewer_sees": "END CARD — a heavenly horse and a Han soldier at the Jade Gate at sunset, open sky above for the title",
+      "viewer_sees": "END CARD — the whole war on one poster: the heavenly horse at the left with Dayuan behind it, Emperor Wu and the golden horse at the right, the army crossing the desert between them, title and SUBSCRIBE",
       "shots": [
         {
           "shot_id": "51",
@@ -2399,19 +2399,21 @@
           "ingredient_image": null,
           "characters": [
             "ferghana-horse",
-            "jade-gate"
+            "emperor-wu",
+            "golden-horse"
           ],
           "visual_priority": [
-            "The Heavenly Horse standing calm at the open Jade Gate at sunset",
-            "a Han soldier holding its halter, looking out at the viewer",
-            "clear open sky across the upper third for a title",
-            "the gate and wall in warm light"
+            "The Heavenly Horse at the left third, near-camera and large",
+            "Emperor Wu at the right edge gazing west, the golden horse at his side",
+            "the SUBSCRIBE button at the exact center over the army column on the desert road",
+            "the title THE WAR OF THE HEAVENLY HORSES across the upper third",
+            "Dayuan under the snow mountains far at the left, the Jade Gate far at the right"
           ],
-          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a tall slender Ferghana horse with long fine legs, a small refined head on a long arched neck, a deep chest, a thin glossy red-bay coat glistening like wet copper where it sweats, a short upright mane, standing calm at the open Jade Gate at sunset, a Han soldier in a lacquered vest holding its halter.\nSCALE: the horse stands a head taller than the soldier; the gate timbers frame them both; the sky above is wide and empty.\nSUBJECT 2: the Jade Gate pass on the desert frontier, a square fort of rammed earth with walls in pale tamped layers, one heavy wooden gate, a watchtower and signal beacons along a low earthen wall, flat grey gravel desert all around, its gate standing open.\nACTION: the soldier and the horse stand together and look out at the viewer.\nSETTING: the frontier at sunset, the desert glowing.\nCAMERA: camera holds square on them at their level, eye level, medium.\nFRAME LAYOUT: center — the horse and the soldier, near-camera; left third and right third — the gate towers and the wall; upper third — clear empty sky held across the full width for a title.\nFACING: we see the soldier front on, looking straight out past the camera; the horse three-quarter on, head turned toward camera.\nSCREEN DIRECTION: the horse's mane lifts toward screen-right; dust glows in the low light.\nLIGHT: warm low sunset light, even on both faces.\nPALETTE: sunset gold, red bay, rammed-earth tan, deep blue sky.\nDETAIL: the soldier's lacquered vest, the horse's glossy coat, the iron bands of the gate.\nNOT IN FRAME: stirrups, text, logos, raised weapons.",
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSHOT: one epic poster of the whole war at sunset — the emperor who wanted the horses, the gold he offered, the army he sent across the desert, the city that would not sell, the horse it was all for.\nSUBJECT: a tall slender Ferghana horse with long fine legs, a small refined head on a long arched neck, a deep chest, a thin glossy red-bay coat glistening like wet copper where it sweats, a short upright mane, standing proud on a rock at the left third, head high, mane lifting in the wind.\nSUBJECT 2: a Han emperor in his fifties, a long narrow face, a thin drooping moustache and short pointed beard, hard narrowed eyes, a flat black crown board hung with jade bead strings, a wide-sleeved dark yellow silk robe bordered in black, cropped at the chest at the right edge, gazing west across the whole road.\nSUBJECT 3: a statue of a horse cast in solid gold, as long as a man's forearm, standing four-square on a flat gold base, head raised, the mane and tail finely chased, a soft heavy lustre with no gems and no colour, on a black lacquered table at the emperor's side among scattered gold pieces.\nSCALE: the heavenly horse and the emperor are the two largest figures, near-camera, one at each edge; the city, the army and the gate between them read small and far; the golden horse is no longer than the emperor's forearm.\nTITLE: across the top, \"THE WAR OF THE\" in smaller gold capitals above \"HEAVENLY HORSES\" in large carved gold-bronze capitals with a dark red outline; under them a thin gold rule with a diamond at its center, and the line \"THE HORSES THAT SWEATED BLOOD\".\nBUTTON: at the exact center of the frame, a red rounded pill-shaped button with a thin gold rim, \"SUBSCRIBE\" in bold cream capitals, a small gold diamond on each side.\nACTION: a long Han army column with red banners, oxen and camels winds west from the Jade Gate across the desert toward Dayuan.\nCAMERA: camera stands on a high ridge over the road, eye level with the two figures, wide.\nFRAME LAYOUT: upper third — the title across the sky; left third — the heavenly horse, near-camera and large, and far at the left edge the walled mudbrick city of Dayuan with a river along its walls under snow mountains; right third — the emperor, near-camera and large, the golden horse at the lower-right, and the rammed-earth Jade Gate with lit beacons far at his shoulder; center — the SUBSCRIBE button over the army column, far and small; lower edge — scattered gold pieces, a Han crossbow and an unrolled map, near-camera.\nFACING: we see the emperor three-quarter on, facing screen-left toward the far city; the horse three-quarter on, facing screen-right toward him.\nSCREEN DIRECTION: the army column marches toward screen-left, west to Dayuan; its banners and dust stream toward screen-left.\nLIGHT: low red-gold sun setting at screen-left over Dayuan, rim light along the horse, warm light on the emperor's face.\nPALETTE: sunset gold, red bay, imperial dark yellow, rammed-earth tan.\nDETAIL: the glossy coat, jade bead strings on the crown, the chased gold mane, crisp lettering with every letter spelled right.\nNOT IN FRAME: stirrups, logos, any other words or letters.",
           "animation_prompt": null,
           "tags": {
-            "subject_type": "character",
-            "shot_size": "MS",
+            "subject_type": "group",
+            "shot_size": "LS",
             "angle": "eye",
             "location": "end-card",
             "time_light": "red-sunset",

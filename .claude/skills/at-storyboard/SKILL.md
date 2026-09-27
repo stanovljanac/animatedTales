@@ -190,6 +190,13 @@ Budžet: 16 reči na `STYLE` + 25–40 po `locked_description`-u + 30–40 na `S
 dozvoljava `LIMITS.maxLocks` — kadar sa tri probija i 360. Kadar kome trebaju tri se rasformira na
 dva shota; opis se ne skraćuje (skraćivanje ruši C1).
 
+**Poslednji shot je end kartica — uvek.** Shot nad `## OUTRO` delom narracije dobija prompt po
+odeljku „End kartica" u `prompt-templates.md`: `TITLE:` sa naslovom epizode i kratkom linijom o
+priči, `BUTTON:` sa SUBSCRIBE dugmetom na sredini kadra, i poster koji **rekapitulira celu
+priču** — piše se iz cele skripte (ko pokreće priču, predmet želje, ključni rekvizit, druga
+strana, put između), ne iz poslednjeg beata. Plafon je 600 reči i do tri locka. Nikad
+`NOT IN FRAME: text` na tom shotu — tako je nastala kartica bez naslova i dugmeta.
+
 **Promptove ne kucaj lock po lock.** `locked_description`-e i `STYLE` čitaj iz `episode.json` i
 `style-string.md` programski i ubacuj doslovno — ručno prepisivanje istog opisa u 9 kadrova je
 tačno ono što C1 i S5 hvataju, i najskuplje je da se otkrije na kraju.
