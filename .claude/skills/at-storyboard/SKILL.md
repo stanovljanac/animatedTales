@@ -159,10 +159,13 @@ Ponovni upis traži `--force`, jer gazi promptove.
 
 ### 5. Promptovi
 
-Po paru na shot, po šablonima iz `docs/reference/prompt-templates.md`, **odeljak „Shema 2"**.
-**Ne prepisuj taj fajl ovde** — otvori ga i radi po njemu. Ukratko: P1 = 90–360 reči (meki cilj
-180–260, R5), P2 = 60–100 reči, kanonskim brojačem iz `schemas.md` §0.6, koji broji i nazive
-blokova.
+Po paru na shot, po šablonima iz `docs/reference/prompt-templates.md`: image prompt po
+**odeljku „Shema 2"**, animation prompt po **odeljku „Animation template"** (zajednički za obe
+sheme, sa „Pravilima proreza").
+**Ne prepisuj taj fajl ovde** — otvori ga i radi po njemu. Ukratko: P1 = 90–720 reči (meki cilj
+360–520, R5), P2 = 60–220 reči (meki cilj 150–210), kanonskim brojačem iz `schemas.md` §0.6, koji
+broji i nazive blokova. Plafoni su 2026-10-10 udvostručeni zato da bi promptovi bili **opisniji**:
+image prompt troši višak na `ACTION`, `SETTING`, `LIGHT` i `DETAIL`, animation prompt na proreze.
 
 **Pre prvog prompta odluči osu ekrana** (`camera-language.md`, „Osa ekrana — jedna po epizodi") i
 upiši je u `notes.md`. Osa ulazi u `FRAME LAYOUT`, `FACING`, `SCREEN DIRECTION`, `CAMERA` i
@@ -186,15 +189,16 @@ promptu (to bi prošlo C1, ali pada na S5). PRIMARY je entitet koji je vizuelni 
 veličini na kojoj mu se opis vidi; ostali idu u `SUBJECT 2` i dalje.
 
 Budžet: 16 reči na `STYLE` + 25–40 po `locked_description`-u + 30–40 na `SCALE` kad je entitet
-`scale_critical`. Izmereno na prvoj epizodi: **dva locka su stvarna granica**, ne tri koliko
-dozvoljava `LIMITS.maxLocks` — kadar sa tri probija i 360. Kadar kome trebaju tri se rasformira na
-dva shota; opis se ne skraćuje (skraćivanje ruši C1).
+`scale_critical`. Izmereno na prvoj epizodi, dok je plafon bio 360: **dva locka su bila stvarna
+granica**, ne tri koliko dozvoljava `LIMITS.maxLocks`. Na 720 tri locka staju, ali svaki pojede
+25–40 reči koje bi išle na opis kadra, pa su dva i dalje podrazumevana. Opis se nikad ne skraćuje
+(skraćivanje ruši C1).
 
 **Poslednji shot je end kartica — uvek.** Shot nad `## OUTRO` delom narracije dobija prompt po
 odeljku „End kartica" u `prompt-templates.md`: `TITLE:` sa naslovom epizode i kratkom linijom o
 priči, `BUTTON:` sa SUBSCRIBE dugmetom na sredini kadra, i poster koji **rekapitulira celu
 priču** — piše se iz cele skripte (ko pokreće priču, predmet želje, ključni rekvizit, druga
-strana, put između), ne iz poslednjeg beata. Plafon je 600 reči i do tri locka. Nikad
+strana, put između), ne iz poslednjeg beata. Plafon je 1200 reči i do tri locka. Nikad
 `NOT IN FRAME: text` na tom shotu — tako je nastala kartica bez naslova i dugmeta.
 
 **Promptove ne kucaj lock po lock.** `locked_description`-e i `STYLE` čitaj iz `episode.json` i
@@ -274,6 +278,23 @@ ambijentalnim pomeranjem. Pokret sme da dođe od lika, objekta, sredine, kamere,
 
 Praktično: prvi vremenski prorez animation prompta (`0–1s:`) mora da nosi stvarnu radnju, ne
 atmosferu. `at-qa` ovo meri.
+
+## Pokret do kraja generisanja
+
+**Važi za clip shotove.** Early motion kaže kad pokret počinje; ovo pravilo kaže da ne sme da
+stane. Pune odredbe su u `prompt-templates.md`, „Pravila proreza" — ovde je samo ono što se
+najlakše zaboravi:
+
+- **Prorezi idu do `gen_len`, ne do `use_len`.** Na 8s generisanju poslednji prorez se završava
+  na `8s`, i kad je rez na 6.5s.
+- **Nijedan prorez nije duži od 2.5s** i svaki ima dve rečenice: glavna radnja (ko, čime, kuda,
+  kojom brzinom) i šta se u istom trenutku još pomera.
+- **Poslednji prorez nastavlja radnju istim ritmom.** Nikad `hold`, `holds still`, `goes still`,
+  `settles`, `comes to rest`, `freezes`, `nothing moves`, `the scene stays the same` — model to
+  čita bukvalno i zamrzne klip pre kraja naracije. Isto važi za `MOTION BUDGET` liniju: šablon
+  kaže `everything keeps moving … through the end of the <gen_len>s generation`.
+- **Tih kadar se piše usporenim pokretom**, ne odsustvom pokreta: dah, plamen, prašina u svetlu,
+  spor push kamere.
 
 ## Šta ovaj skil ne radi
 

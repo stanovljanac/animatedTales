@@ -82,8 +82,8 @@ razlikuju „nema ključa" od „ključ je prazan". Jedini izuzetak su nizovi: p
 
 ### 0.6 Kanonsko brojanje reči — **odluka C01**
 
-Tri provere zavise od brojanja reči: **P1** (image prompt 90–160), **P2** (animation prompt 60–110)
-i pravilo da `locked_description` ima 25–40 reči. Bez jedne definicije te provere nikad ne bi bile
+Tri provere zavise od brojanja reči: **P1** (image prompt; shema 1: 90–160, shema 2: 90–720),
+**P2** (animation prompt 60–220) i pravilo da `locked_description` ima 25–40 reči. Bez jedne definicije te provere nikad ne bi bile
 stabilne, pa je ovde zakucana.
 
 ```js
@@ -134,7 +134,8 @@ promenjena reč, dodat zarez ili izbačena crtica ruše proveru. To je i namera:
 
 **C1 se proverava nad `image_prompt`, ne nad `animation_prompt`.** Identitet lika se uspostavlja
 u slici; animation prompt umesto opisa nosi `PRESERVE` liniju (šablon 2c iz izvornog plana).
-Ponavljanje 25–40 reči i tamo bi probilo P2 (60–110 reči) na svakom shotu sa dva lika.
+Ponavljanje 25–40 reči i tamo bi na svakom shotu sa dva lika pojelo trećinu P2 budžeta (60–220
+reči) — reči koje pripadaju opisu pokreta.
 
 ---
 
@@ -322,7 +323,7 @@ Izvorni plan ovaj fajl nigde ne definiše iako ga pet alata čita — zato je ov
 
 | Polje | Tip | Obavezno | Opis |
 |---|---|---|---|
-| `schema_version` | number | da | `1` ili `2`. Raste kad se ugovor probije nekompatibilno. **Shema 2** uvodi `SCALE`/`DETAIL` blokove, PRIMARY/SECONDARY lockove, `visual_priority` i plafon P1 od 360 reči (3.3.1). Linter bira pravila po ovom broju, pa epizode na shemi 1 ostaju validne bez prepravke. |
+| `schema_version` | number | da | `1` ili `2`. Raste kad se ugovor probije nekompatibilno. **Shema 2** uvodi `SCALE`/`DETAIL` blokove, PRIMARY/SECONDARY lockove, `visual_priority` i viši plafon P1 (danas 720 reči, 3.3.1). Linter bira pravila po ovom broju, pa epizode na shemi 1 ostaju validne bez prepravke. |
 | `episode` | string (kebab) | da | Slug; mora da odgovara `episode.json.slug`. |
 | `generated_at` | string | da | ISO 8601 UTC, npr. `"2026-09-04T15:22:31Z"`. |
 | `narration_duration` | number | da | Prepisano iz `timing.json.duration`. Referenca za T1. |
@@ -362,14 +363,14 @@ prikazuje upravo ovaj nivo.
 | `use_in` | number | da | Pozicija **unutar generisanog klipa** (`source_file`), sekunde. Frejm-poravnato. |
 | `use_out` | number | da | `= use_in + use_len`. Frejm-poravnato. |
 | `use_len` | number | da | Trajanje reza, 3.0–10.0s (T2). Frejm-poravnato. |
-| `motion_budget` | number \| null | da | Sekunde u koje pokret mora da stane; ide u `MOTION BUDGET:` liniju animation prompta. Obavezan (`!== null`) kad `use_len < 9.0` (T3); tada `= use_len`. |
-| `gen_len` | number \| null | da | **Dužina koja se stvarno generiše u Flow-u**, iz `GEN_TIERS` (4 · 6 · 8 · 10s): najmanja koja pokriva `use_len`. `null` na still shotu. Proverava T4. |
+| `motion_budget` | number \| null | da | Sekunda do koje ključna radnja mora da se vidi; ide u `MOTION BUDGET:` liniju animation prompta. **Nije kraj pokreta** — posle nje scena se kreće istim ritmom do kraja `gen_len`-a. Obavezan (`!== null`) kad `use_len < 9.0` (T3); tada `= use_len`. |
+| `gen_len` | number \| null | da | **Dužina koja se stvarno generiše u Flow-u**, iz `GEN_TIERS` (4 · 6 · 8 · 10s): najmanja koja pokriva `use_len`. `null` na still shotu. Proverava T4. Animation prompt opisuje svih `gen_len` sekundi; višak preko `use_len` je nastavak pokreta koji montaža odseca, nikad zadržan kadar (`prompt-templates.md`, „Pravila proreza"). |
 | `source_file` | string | da | `"shots/part07.mp4"` — klip iz Flow-a. F1 traži da postoji i da traje ≥ `use_out`. |
 | `ingredient_image` | string \| null | da | `"images/shot07.jpeg"` — slika koja u Flow ide kao *ingredient*. `null` kad se shot generiše bez nje. |
 | `characters` | array\<string\> | da | `id`-jevi iz `episode.json` (bilo kog od tri niza) koji se u shotu vide. Ulaz za C1. Prazan niz je legitiman. **Shema 2: redosled nosi značenje** — `characters[0]` je PRIMARY lock i mora doslovno da stoji u bloku `SUBJECT`; ostali su SECONDARY. Najviše `LIMITS.maxLocks` (3). Proverava S5. |
 | `visual_priority` | array\<string\> | shema 2 | Rangirana lista od **3 do 5** stavki: šta model sme da promaši poslednje. Stavka `[0]` mora da imenuje PRIMARY lock. **Ne ulazi u prompt** — vidi 3.3.1. Proverava S5. |
-| `image_prompt` | string | da | Shema 1: 90–160 reči. **Shema 2: 90–360 reči** po `countWords` (P1), sa mekim ciljnim opsegom 180–260 (R5, ADVISORY). Sadrži blokove iz S2. |
-| `animation_prompt` | string \| null | da | 60–110 reči po `countWords` (P2). **`null` na still shotu** — nema šta da se animira (3.3.2). |
+| `image_prompt` | string | da | Shema 1: 90–160 reči. **Shema 2: 90–720 reči** po `countWords` (P1), sa mekim ciljnim opsegom 360–520 (R5, ADVISORY). Sadrži blokove iz S2. |
+| `animation_prompt` | string \| null | da | 60–220 reči po `countWords` (P2); na shemi 2 meki ciljni opseg 150–210 (R5, ADVISORY). Prorezi pokrivaju ceo `gen_len` i nijedan ne propisuje mirovanje (`prompt-templates.md`, „Pravila proreza"). **`null` na still shotu** — nema šta da se animira (3.3.2). |
 | `tags` | Tags | da | Šest osa, vidi 3.5. |
 | `render_mode` | `"clip"` \| `"still"` | ne | Odsutno ili `null` znači `"clip"`. `"still"` znači: shot nije klip nego jedna slika kojoj montaža daje pokret. Vidi 3.3.2. |
 | `still_motion` | string | still | `push` · `pull` · `pan-left` · `pan-right` · `hold`. Obavezan na still shotu, odsutan ili `null` na clip shotu. Vidi 3.3.2. |
@@ -382,8 +383,8 @@ proveri, jer bi linter morao da rekonstruiše poziciju sabiranjem — a onda gap
 
 ### 3.3.1 Hijerarhija vizuelne težine (shema 2)
 
-**Zašto je plafon podignut sa 160 na 280, pa na 360.** Broj 90–160 je postavljen pre nego što je ijedna
-epizoda postojala i nikad nije bio ograničenje modela. Prva merena epizoda pokazala je šta je
+**Zašto je plafon podignut sa 160 na 280, pa na 360, pa na 720.** Broj 90–160 je postavljen pre
+nego što je ijedna epizoda postojala i nikad nije bio ograničenje modela. Prva merena epizoda pokazala je šta je
 stvarno kupio: 16 reči `STYLE` + 30–35 reči `locked_description` + pet kamera-blokova (~66) troše
 ~112 reči pre nego što se napiše išta o radnji, svetlu i boji, a **17 od 27 shotova sedelo je na
 ≤5 reči od plafona**. Posledica nije bila sažetost nego gubitak sadržaja: iz plafona je izvedeno
@@ -405,10 +406,10 @@ stvarno kupio: 16 reči `STYLE` + 30–35 reči `locked_description` + pet kamer
    lockom — kad `visual_priority[0]` kaže „Fenrirova veličina", a `characters[0]` je `laeding`,
    S5 to prijavi. Isti nesklad je u prvoj epizodi prošao neprimećen kroz ceo BLOCKING sloj.
 
-**Meki opseg umesto novog tvrdog.** P1 blokira samo na 90 i 360. Ciljni opseg 180–260 je ADVISORY
-(R5), zato što se generator prema tvrdom pragu ponaša isto kao ranije — puni prompt do plafona.
-Cilj nije popuniti broj reči nego pokriti vizuelne prioritete; kadar kome je dovoljno 170 reči
-ne treba da se razvlači, a R5 čuva da to bude odluka, a ne previd.
+**Meki opseg umesto novog tvrdog.** P1 blokira samo na donjoj i gornjoj granici, a ciljni opseg
+(R5) je ADVISORY, zato što se generator prema tvrdom pragu ponaša isto kao ranije — puni prompt do
+plafona. Cilj nije popuniti broj reči nego pokriti vizuelne prioritete; kadar kome je dovoljno
+nešto ispod mekog opsega ne treba da se razvlači, a R5 čuva da to bude odluka, a ne previd.
 
 **Drugo podizanje, 280 → 360.** Plafon od 280 je pao na kadru koji mora da **prebroji** nešto
 što narracija izgovara kao broj — dvanaest olimpijaca, svaki sa svojim amblemom (`greek-gods-part-1`,
@@ -419,11 +420,20 @@ dvanaest kotvi nacrta „krug bogova", to jest petnaest ili osamnaest figura. Pr
 prati sadržaj, a ne obrnuto. Meki opseg 180–260 ostaje nepromenjen: kadar preko njega i dalje pali
 R5, i to je dobro — takav kadar treba da bude odluka koja se vidi u izveštaju.
 
-**End kartica: poseban plafon 600.** Poslednji shot je end kartica (`prompt-templates.md`, „End
-kartica") — poster koji rekapitulira celu priču: tri locka, `TITLE` i `BUTTON` blok, i cela
+**Treće podizanje, 360 → 720, zajedno sa P2 110 → 220 (2026-10-10).** Korisnik je tražio da
+promptovi budu znatno opisniji i da se plafoni udvostruče. Povod je bio animation prompt: prorezi
+od četiri do deset reči („the crowd moves") i poslednji prorez koji propisuje mirovanje dali su
+klip koji se zamrzne posle pete sekunde, dok naracija nad njim još traje. Novi oblik animation
+prompta (`prompt-templates.md`, „Pravila proreza") opisuje svaki prorez sa dve rečenice do kraja
+`gen_len`-a i ne staje u 110; image prompt dobija isti odnos. Udvostručeni su i meki opsezi —
+180–260 → **360–520** za image — a animation prompt dobija svoj, **150–210**, jer bez donje
+granice ništa ne meri telegrafski prompt. End kartica ide 600 → **1200**.
+
+**End kartica: poseban plafon, uveden kao 600, od 2026-10-10 1200.** Poslednji shot je end
+kartica (`prompt-templates.md`, „End kartica") — poster koji rekapitulira celu priču: tri locka, `TITLE` i `BUTTON` blok, i cela
 geografija priče po trećinama. To je ~560 reči sadržaja koji ne može da se skrati a da kartica
 ne postane poslednja scena umesto priče (`heavenly-horses`, 2026-09-27). P1 na poslednjem shotu
-sheme 2 zato meri `LIMITS.endCardWords` (90–600), a R5 ga preskače. Pravilo je isto kao gore:
+sheme 2 zato meri `LIMITS.endCardWords` (90–1200), a R5 ga preskače. Pravilo je isto kao gore:
 plafon prati sadržaj.
 
 ### 3.3.2 Still kadrovi — epizoda od slika
@@ -607,8 +617,8 @@ Tabela je prođena red po red.
 | **S3** | reči koje impliciraju rez unutar klipa (`then`, `later`, `afterwards`, `cuts to`, `meanwhile`); na still shotu se ne meri | — | `shot.animation_prompt` | da |
 | **S4** | blok `SCALE` kad shot nosi `scale_critical` entitet (shema 2) | — | `shot.characters[]` → `episode.json.*.scale_critical`, `shot.image_prompt` | da |
 | **S5** | hijerarhija lockova (shema 2): PRIMARY u `SUBJECT`, najviše 3 locka, `visual_priority` 3–5 stavki sa PRIMARY na vrhu | — | `shot.characters[]`, `shot.visual_priority`, `shot.image_prompt` | da |
-| **P1** | dužina image prompta | shema 1: 90–160; **shema 2: 90–360** reči, poslednji shot (end kartica) 90–600 | `shot.image_prompt` + `countWords` (0.6) | da |
-| **P2** | dužina animation prompta; **na still shotu prompta ne sme biti** | 60–110 reči | `shot.animation_prompt` + `countWords` (0.6), `shot.render_mode` | da |
+| **P1** | dužina image prompta | shema 1: 90–160; **shema 2: 90–720** reči, poslednji shot (end kartica) 90–1200 | `shot.image_prompt` + `countWords` (0.6) | da |
+| **P2** | dužina animation prompta; **na still shotu prompta ne sme biti** | 60–220 reči | `shot.animation_prompt` + `countWords` (0.6), `shot.render_mode` | da |
 | **T4** | `gen_len` je najmanji član `GEN_TIERS` koji pokriva `use_len`; **na still shotu `null`**; `MOTION BUDGET` linija imenuje istu brojku | 4 · 6 · 8 · 10s | `shot.gen_len`, `shot.use_len`, `shot.render_mode`, `shot.animation_prompt` | da |
 | **C1** | `locked_description` doslovno u svakom shotu gde lik učestvuje | — | `shot.characters[]` → `episode.json.{characters,locations,key_props}[].locked_description`, traži se u `shot.image_prompt` po `normalize` (0.7) | da |
 | **F1** | svaki shot ima svoj `shots/partNN.mp4`, izvor ≥ `use_out`; **na still shotu: `shots/shotNN.jpeg` postoji i čita se** | — | `shot.source_file`, `shot.use_out`, `shot.render_mode` (+ `probe()` iz `ffmpeg.mjs`) | da |
@@ -642,7 +652,7 @@ Ne blokira montažu, ali čita iste podatke.
 | R2 | miks tipova shotova | `shot.tags.subject_type` |
 | R3 | korišćeni vizuelni uređaji | `beat.device` |
 | R4 | ponavljanje n-grama > 12 reči | `shot.image_prompt`, `shot.animation_prompt`, **minus** svi `locked_description` iz `episode.json`, kanonski style string iz `docs/reference/style-string.md` i fiksne `PRESERVE`/`FORBID` linije iz `docs/reference/prompt-templates.md` |
-| R5 | dužina image prompta izvan mekog opsega 180–260 (shema 2) | `shot.image_prompt` + `countWords` |
+| R5 | dužina prompta izvan mekog opsega: image 360–520 (bez end kartice), animation 150–210 (bez still shotova); shema 2 | `shot.image_prompt`, `shot.animation_prompt` + `countWords` |
 | R6 | `SCREEN DIRECTION` popunjen negacijom (shema 2) | `shot.image_prompt`, lista D iz `docs/reference/camera-language.md` |
 | R7 | `still_motion` se ne slaže sa `tags.camera_motion` (samo still shotovi) | `shot.still_motion`, `shot.tags.camera_motion` |
 | C2 | broj multi-visual klipova; **imenilac su samo klipovi** | **nema polje**; meri se iz `shot.animation_prompt` — vidi 5.6 tačka 11 |

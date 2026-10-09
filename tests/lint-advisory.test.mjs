@@ -456,6 +456,48 @@ test('C2: nijedan postojeći fixture nije multi-visual', () => {
   }
 });
 
+// ---------------------------------------------------------------- R5
+
+/** `n` različitih reči; prefiks drži shotove različitim, da R4 ne meša svoje u merenje. */
+const words = (n, prefix) => Array.from({ length: n }, (_, i) => `${prefix}${i}`).join(' ');
+const runV2 = (shots) => {
+  const sb = mkSb(shots);
+  sb.schema_version = 2;
+  return advise(sb, mkEp(), BARE);
+};
+
+test('R5: image i animation prompt se mere svaki po svom mekom opsegu (shema 2)', () => {
+  const s = runV2([
+    mkShot('01', { image_prompt: words(300, 'a'), animation_prompt: words(100, 'b') }),
+    mkShot('02', { image_prompt: words(400, 'c'), animation_prompt: words(180, 'd') }),
+    mkShot('03', { image_prompt: words(380, 'e'), animation_prompt: words(215, 'f') }),
+  ]);
+  assert.deepEqual(msgs(s, 'R5'), [
+    'shot 01: image prompt 300 reči — izvan mekog opsega 360–520',
+    'shot 01: animation prompt 100 reči — izvan mekog opsega 150–210',
+    'shot 03: animation prompt 215 reči — izvan mekog opsega 150–210',
+  ]);
+});
+
+test('R5: end kartica preskače image opseg, still shot nema animation prompt koji bi se merio', () => {
+  const s = runV2([
+    mkShot('01', {
+      image_prompt: words(400, 'a'), animation_prompt: null,
+      render_mode: 'still', still_motion: 'hold', motion_budget: null,
+    }),
+    mkShot('02', {
+      image_prompt: words(900, 'b'), animation_prompt: null,
+      render_mode: 'still', still_motion: 'hold', motion_budget: null,
+    }),
+  ]);
+  assert.deepEqual(of(s, 'R5'), []);
+});
+
+test('R5: shema 1 se ne meri', () => {
+  const s = run([mkShot('01', { image_prompt: words(50, 'a'), animation_prompt: words(20, 'b') })]);
+  assert.deepEqual(of(s, 'R5'), []);
+});
+
 // ---------------------------------------------------------------- izveštaj i oblik
 
 test('advise: signali su sortirani redosledom ADVISORY tabele', () => {

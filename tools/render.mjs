@@ -201,7 +201,7 @@ export function renderStoryboard(storyboard) {
             // Jedina brojka na ovoj listi koja je uputstvo operateru, a ne opis fajla: Flow
             // prima samo 4/6/8/10s, pa se bira gen_len, a montaža krati na use_len.
             `- **generiši: ${s.gen_len === null ? '—' : `${s.gen_len}s`}** · koristi se ` +
-              `${fmt(s.use_len)}s, ostatak je zadržan kadar`,
+              `${fmt(s.use_len)}s, ostatak je nastavak pokreta koji montaža odseca`,
             `- ingredient: ${s.ingredient_image === null ? '—' : `\`${s.ingredient_image}\``}`,
           ];
 

@@ -46,7 +46,7 @@ Popravke po vrsti nalaza:
 | **T1** | zbir `use_len` ne prati narraciju | **ne diraj promptove** — beat mapa je pogrešna, vrati se na `at-storyboard` |
 | **T2** | `use_len` van 3–10s | isto: beat mapa, ne prompt |
 | **T3** | nema `MOTION BUDGET` linije sa brojem | dopiši je; broj mora da bude jednak `use_len` |
-| **P1/P2** | broj reči van 90–360 / 60–100 (shema 1: 90–160) | skrati `SETTING` i `ACTION`, **nikad kamera-blokove**, nikad `locked_description` i nikad `SCALE` |
+| **P1/P2** | broj reči van 90–720 / 60–220 (shema 1: 90–160; end kartica 90–1200) | image: skrati `SETTING` i `ACTION`, **nikad kamera-blokove**, nikad `locked_description` i nikad `SCALE`; animation: skrati `ENVIRONMENT`, nikad proreze |
 | **S1** | zabranjena prostorna fraza | zameni je screen-position klauzulom po `docs/reference/camera-language.md` |
 | **S2** | fali jedan od obaveznih blokova (pet kamera-blokova, na shemi 2 i `SUBJECT` i `DETAIL`) | dopiši blok verzalom sa dvotačkom |
 | **S4** | shot nosi `scale_critical` lock bez `SCALE` bloka | dopiši `SCALE` sa 3–4 tvrdnje o veličini; ponavljanje je tu namerno |
@@ -70,6 +70,13 @@ Linter meri oblik. Ovo meri smisao, i radi se **na svakom prolazu**, i kad je BL
 - **early motion** — prvi prorez (`0–1s:`) nosi atmosferu umesto radnje, a kadar nije
   namerno miran ni refleksivan. Merljivo: pročitaj `0–1s:` liniju i pitaj se da li se u njoj
   nešto **dešava**.
+- **zamrznut kraj** — poslednji prorez se ne završava na `gen_len`, ili propisuje mirovanje
+  (`hold`, `holds still`, `goes still`, `settles`, `comes to rest`, `freezes`, `nothing moves`,
+  `stays the same`), ili `MOTION BUDGET` linija kaže `hold to the end`. Model takav klip zamrzne
+  pre kraja naracije. Prepiši po „Pravilima proreza" u `prompt-templates.md`: prorezi do
+  `gen_len`, poslednji nastavlja radnju istim ritmom. **Ovo je nalaz i kad BLOCKING prolazi.**
+- **telegrafski prorezi** — prorez od jedne kratke rečenice („the crowd moves") ne kaže ko se
+  kreće, kako ni kuda. Svaki prorez su dve rečenice: glavna radnja i šta se još pomera.
 - **still montage na pogrešnom mestu** — niz statičnih slika tamo gde je narracija aktivna
 - **end kartica koja nije kartica** — poslednji shot (nad `## OUTRO`) mora da ima `TITLE:` i
   `BUTTON:` blok po odeljku „End kartica" u `prompt-templates.md`, i da rekapitulira **celu**
@@ -99,7 +106,7 @@ ne mehanički.
 | **R2** — miks tipova shotova | **nema prag.** Epizoda o jednoj bici legitimno je puna `crowd` i `group` kadrova. |
 | **R3** — upotrebljeni uređaji | **nema prag.** Samo izlistava. Epizoda bez ijednog uređaja je signal da je pogledaš, ne nalaz. |
 | **R4** — ponavljanje n-grama | `locked_description`, style string i fiksne `PRESERVE`/`FORBID` linije su već izuzeti. Ono što ostane je stvarno ponavljanje i vredi ga pogledati. |
-| **R5** — P1 van mekog opsega 180–260 | **nije nalaz.** Kadar kome je dovoljno 170 reči ne razvlačiš; signal čuva da to bude odluka, a ne previd. Preko 260 je po pravilu kadar sa dva locka i `SCALE`-om — proveri da li mu oba locka stvarno trebaju. |
+| **R5** — prompt van mekog opsega (image 360–520, animation 150–210) | **image: nije nalaz.** Kadar kome je dovoljno nešto manje ne razvlačiš; signal čuva da to bude odluka, a ne previd. **Animation ispod 150 jeste razlog da pogledaš proreze** — kratak animation prompt je skoro uvek telegrafski prorez ili prorez koji ne stiže do `gen_len`. |
 | **R6** — prazna `SCREEN DIRECTION` | blok popunjen negacijom („nothing crosses the frame") je potrošen blok. Zaključan kadar je u redu — imenuj najsitniji živi element (pramen dlake, para daha, senka oblaka). |
 | **R7** — `still_motion` protiv `camera_motion` | pokret koji montaža izvodi ne slaže se sa tim šta tag kaže da kamera radi. **Nije nalaz**: `reveal` izveden kao spor zum je legitiman. Ali proveri i smer — `pan-left` uz `SCREEN DIRECTION` koji vodi udesno je greška koju niko drugi neće videti. |
 | **C2** — multi-visual klipovi | meri deklaraciju u `animation_prompt`-u (`OPENING VISUAL`, …), ne posebno polje. Imenilac su **samo klipovi** — still kadar nema animation prompt. |

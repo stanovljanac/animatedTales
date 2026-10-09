@@ -120,14 +120,21 @@ export const LIMITS = {
   // obavezu — uz budzet pokreta imenuje i `gen_len` (T4). Klauzula kosta ~5 reci, a 22
   // od 27 klipova prve epizode je vec stajalo na 96-100, pa bi plafon od 100 naterao
   // rezijsko skracivanje zbog knjigovodstva. Pomera se plafon, ne proza.
-  animWords: { min: 60, max: 110 },
-  imageWordsV2: { min: 90, max: 360 },  // P1, shema 2 — tvrd plafon
+  //
+  // 2026-10-10 udvostruceno, 110 -> 220, zajedno sa sva tri plafona ispod. Prorezi od 8-12
+  // reci („0-2s: the crowd moves") ostavljali su modelu da sam izmisli sta se desava, a
+  // poslednji prorez je propisivao mirovanje, pa je klip stao pre kraja naracije. Novi
+  // oblik (prompt-templates.md, „Animation template") opisuje svaki prorez do kraja
+  // `gen_len`-a sa dve recenice, i to ne staje u 110.
+  animWords: { min: 60, max: 220 },
+  imageWordsV2: { min: 90, max: 720 },  // P1, shema 2 — tvrd plafon
   // P1, shema 2, poslednji shot. End kartica je rekapitulacija cele priče na jednom posteru:
-  // tri locka (~130 reči) + `TITLE` + `BUTTON` (~70) + raspored po trećinama. U 360 staje samo
-  // kao poslednji kadar priče, a to je upravo greška koju je korisnik vratio (heavenly-horses).
+  // tri locka (~130 reči) + `TITLE` + `BUTTON` (~70) + raspored po trećinama. Uvedena je na
+  // 600 kad je obican plafon bio 360 (heavenly-horses); od 2026-10-10 je i ona udvostrucena.
   // Pomera se plafon, ne proza.
-  endCardWords: { min: 90, max: 600 },
-  imageSoft: { min: 180, max: 260 },    // R5, shema 2 — meki ciljni opseg (ADVISORY), bez end kartice
+  endCardWords: { min: 90, max: 1200 },
+  imageSoft: { min: 360, max: 520 },    // R5, shema 2 — meki ciljni opseg (ADVISORY), bez end kartice
+  animSoft: { min: 150, max: 210 },     // R5, shema 2 — meki ciljni opseg animation prompta (ADVISORY)
   maxLocks: 3,                          // S5 — PRIMARY + najviše dva SECONDARY
   t1Drift: 0.2,                      // T1
 };
@@ -139,7 +146,8 @@ export const LIMITS = {
  * a generator prima samo ove cetiri vrednosti. Bez ovog polja rezija pise `MOTION BUDGET`
  * prema `use_len`, generator rasporedi pokret na svoju duzinu, i kljucni pokret zavrsi posle
  * reza — ili ga model stisne i stane ranije. Otud `gen_len`: prompt se pise prema duzini koja
- * se stvarno generise, a visak preko `use_len` je izricito zadrzan kadar.
+ * se stvarno generise. Visak preko `use_len` je **nastavak istog pokreta**, ne zadrzan kadar:
+ * prompt koji poslednje sekunde opise kao mirovanje dobija klip koji se zamrzne pre reza.
  */
 export const GEN_TIERS = [4, 6, 8, 10];
 

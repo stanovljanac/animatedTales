@@ -18,8 +18,8 @@
 //   S1  zabranjene prostorne fraze bez screen-position klauzule
 //   S2  pet obaveznih blokova u image promptu
 //   S3  reči koje impliciraju rez unutar klipa, u animation promptu (still: ne meri se)
-//   P1  image prompt 90–160 reči
-//   P2  animation prompt 60–110 reči (still: mora da bude null)
+//   P1  image prompt 90–160 reči (shema 2: 90–720, end kartica 90–1200)
+//   P2  animation prompt 60–220 reči (still: mora da bude null)
 //   T4  gen_len je najmanje Flow generisanje koje pokriva use_len; prompt ga imenuje
 //   C1  locked_description doslovno u image promptu svakog shota gde entitet učestvuje
 //   F1  svaki shot ima svoj klip, izvor ≥ use_out (still: slika postoji i čita se)
@@ -34,7 +34,7 @@
 //   R2  miks tipova shotova — samo mera, bez praga
 //   R3  upotrebljeni vizuelni uređaji — samo lista
 //   R4  ponavljanje n-grama između promptova, >12 uzastopnih identičnih reči
-//   R5  dužina image prompta izvan mekog opsega (shema 2)
+//   R5  dužina image i animation prompta izvan mekog opsega (shema 2)
 //   R6  SCREEN DIRECTION bez imenovanog pokreta (shema 2)
 //   R7  still_motion se ne slaže sa tags.camera_motion
 //   C2  broj multi-visual klipova
@@ -348,7 +348,7 @@ function checkShot(shot, { lists, entities, v = 1, endCard = false }) {
       if (!g) {
         out.push(finding('T4', where,
           'MOTION BUDGET linija ne imenuje dužinu generisanja',
-          'nema brojke', `… to the end of a ${want}s generation`));
+          'nema brojke', `… through the end of the ${want}s generation`));
       } else if (!near(Number(g[1]), want)) {
         out.push(finding('T4', where,
           `MOTION BUDGET kaže ${g[1]}s generation, a gen_len je ${want}s`,
@@ -838,19 +838,30 @@ export const sortSignals = (signals) => signals.slice()
 // ---------------------------------------------------------------- R5
 
 /**
- * Meki ciljni opseg P1. Tvrd plafon nosi P1 (BLOCKING); ovo meri samo raspodelu, da
- * generator ne bi ponovo počeo da puni prompt do plafona. Isključivo shema 2.
+ * Meki ciljni opseg P1 i P2. Tvrd plafon nosi P1/P2 (BLOCKING); ovo meri samo raspodelu, da
+ * generator ne bi ponovo počeo da puni prompt do plafona — ili, kod animation prompta, da ne
+ * piše telegrafske proreze koje model popuni mirovanjem. Isključivo shema 2.
  */
 function checkR5(storyboard) {
   if ((storyboard.schema_version || 1) < 2) return [];
-  const { min, max } = LIMITS.imageSoft;
-  // End kartica (poslednji shot) nosi svoj plafon u P1 — meki opseg običnog kadra za nju ne
-  // znači ništa.
-  return flatShots(storyboard).slice(0, -1)
-    .map((sh) => [sh, countWords(sh.image_prompt)])
-    .filter(([, n]) => n < min || n > max)
-    .map(([sh, n]) => signal('R5', `shot ${sh.shot_id}`,
-      `image prompt ${n} reči — izvan mekog opsega ${min}–${max}`, `${n} reči`));
+  const shots = flatShots(storyboard);
+  const out = [];
+  shots.forEach((sh, i) => {
+    const fields = [];
+    // End kartica (poslednji shot) nosi svoj plafon u P1 — meki opseg običnog kadra za nju ne
+    // znači ništa.
+    if (i < shots.length - 1) fields.push(['image', sh.image_prompt, LIMITS.imageSoft]);
+    // Still shot nema animation prompt; `null` bi se brojao kao prompt od jedne reči.
+    if (!isStill(sh)) fields.push(['animation', sh.animation_prompt, LIMITS.animSoft]);
+    for (const [field, text, { min, max }] of fields) {
+      const n = countWords(text);
+      if (n < min || n > max) {
+        out.push(signal('R5', `shot ${sh.shot_id}`,
+          `${field} prompt ${n} reči — izvan mekog opsega ${min}–${max}`, `${n} reči`));
+      }
+    }
+  });
+  return out;
 }
 
 // ---------------------------------------------------------------- R6
@@ -985,7 +996,7 @@ const ADVISORY_TITLES = {
   R2: 'miks tipova shotova',
   R3: 'upotrebljeni vizuelni uređaji',
   R4: 'ponavljanje n-grama između promptova',
-  R5: 'dužina image prompta izvan mekog opsega',
+  R5: 'dužina image i animation prompta izvan mekog opsega',
   R6: 'SCREEN DIRECTION bez imenovanog pokreta',
   R7: 'still_motion se ne slaže sa camera_motion',
   C2: 'multi-visual klipovi',
