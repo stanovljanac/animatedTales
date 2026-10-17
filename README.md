@@ -91,3 +91,18 @@ validna i linter bira pravila po `schema_version`-u. Obrazloženje je u `schemas
 
 `storyboard.md` i `qa-report.md` su **generisani** — nose DO-NOT-EDIT zaglavlje, ne komituju se
 i ne diraju rukom. Izvor istine je uvek `storyboard.json`.
+
+## JSON i njegovi `.md` parnjaci
+
+Svaki `.md` koji ponavlja podatke iz JSON-a osvežava se **u istoj sesiji** u kojoj je JSON
+promenjen. Pravilo važi za svaku izmenu, i za ručnu ispravku jednog prompta van skila. Sesija
+se ne završava sa JSON-om novijim od njegovog parnjaka.
+
+| Kad se menja | Osveži | Kako |
+|---|---|---|
+| `storyboard.json`, bilo koje polje | `storyboard.md`, `qa-report.md` | `node tools/lint.mjs episodes/<slug>` pa `node tools/render.mjs episodes/<slug>` |
+| `storyboard.json`: broj beatova ili shotova, `render_mode`, `gen_len` | `notes.md` | ručno: brojevi i spisak still kadrova moraju da se slažu sa zaglavljem `storyboard.md`-a |
+| `timing.json` (novi `align.mjs` run) | `subtitles.srt`, chapteri u `publish.md` | `node tools/publish.mjs episodes/<slug>`, chapteri ručno po novoj listi rečenica, pa ponovo `publish.mjs` dok ne javi da prolaze |
+
+Provera pre kraja sesije: `storyboard.md` ne sme biti stariji od `storyboard.json`-a
+(`ls -l --time-style=full-iso episodes/<slug>/storyboard.*`).

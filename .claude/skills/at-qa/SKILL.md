@@ -127,7 +127,12 @@ node tools/render.mjs episodes/<slug>
 > **`storyboard.md` se nikad ne piše ni menja ručno.** Nastaje isključivo kroz `render.mjs` i
 > nosi `DO-NOT-EDIT` zaglavlje. Menjaš `storyboard.json`, pa renderuješ.
 
-Gotovo je kad `lint.mjs` vrati exit 0.
+**Svaka izmena `storyboard.json`-a ide sa svojim `.md` parnjacima, u istoj sesiji.** Ovo važi i
+kad se jedan prompt ispravlja ručno, bez ovog skila. Ako je izmena promenila broj beatova ili
+shotova, `render_mode` ili `gen_len`, ručno ispravi i `notes.md`: brojeve i spisak still
+kadrova. Cela tabela parova je u `README.md` → „JSON i njegovi `.md` parnjaci".
+
+Gotovo je kad `lint.mjs` vrati exit 0 i kad `storyboard.md` nije stariji od `storyboard.json`-a.
 
 ## Šta ovaj skil ne radi
 

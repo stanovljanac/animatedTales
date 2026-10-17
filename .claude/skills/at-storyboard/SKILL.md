@@ -51,6 +51,9 @@ Pročitaj taj red pre nego što nastaviš:
 Opcije: `--model <small.en|medium.en>` · `--force` (ignoriši keš) · `--asr-only` ·
 `--asr-script` (legacy epizode bez `script.md`).
 
+Ako epizoda već ima `publish.md` ili `subtitles.srt`, novi `timing.json` ih čini zastarelim.
+Pusti `node tools/publish.mjs episodes/<slug>` i prepravi chaptere po novoj listi rečenica.
+
 ### 2. Beat plan
 
 Grupiši rečenice iz `timing.json`-a u beatove. Beat je **jedinica kreativne odluke**: jedna
@@ -216,6 +219,11 @@ node tools/render.mjs episodes/<slug>
 
 > **`storyboard.md` se nikad ne piše ni menja ručno.** Nastaje isključivo kroz `render.mjs` i
 > nosi `DO-NOT-EDIT` zaglavlje. Jedini source of truth je `storyboard.json`.
+
+**Svaka izmena `storyboard.json`-a ide sa svojim `.md` parnjacima, u istoj sesiji:** `lint.mjs`
+i `render.mjs` posle svake izmene, ne samo na kraju skila. Kad se promeni broj beatova ili
+shotova, `render_mode` ili `gen_len`, ručno se ispravlja i `notes.md`. Cela tabela parova je u
+`README.md` → „JSON i njegovi `.md` parnjaci".
 
 Kad BLOCKING padne na nulu, produkciona čeklista za Flow:
 
