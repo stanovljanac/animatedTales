@@ -19,8 +19,8 @@ import os from 'node:os';
 import path from 'node:path';
 
 import {
-  AUDIO_RATE, CLIP_VOLUME, ENCODE, INTRO_VOLUME, RES, STILL_SUPERSAMPLE, STILL_ZOOM, TAIL, ambientArgs,
-  assertAssemblable, build, canWrite, clipVolume,
+  AUDIO_RATE, CLIP_VOLUME, ENCODE, INTRO_VOLUME, RES, STILL_SUPERSAMPLE, STILL_ZOOM, TAIL, ambientArgs, applyFreeze,
+  assertAssemblable, build, canWrite, clipVolume, freezeTail,
   concatArgs, concatText, endcardArgs, endcardStart, introClip, mediaNames, muxArgs, parseArgs, planCuts, qcReport,
   readOutroStart, recipe, shotArgs, stillArgs, stillFilter, timeProblems, validate, videoFilter,
 } from '../tools/assemble.mjs';
@@ -995,4 +995,92 @@ test('qcReport: preuska slika za zum je WARN, ne ERROR', () => {
   const md = qcReport({ plan, sources: stillSource(64, 36), width: 1920, height: 1080 });
   assert.match(md, /Still kadrovi \| WARN/);
   assert.match(md, /64×36/);
+});
+
+// ---------------------------------------------------------------- zamrznut poslednji frejm
+
+/** Mapa izvora kakvu vraća `inspectSources`, sa jednim klipom zadatog trajanja. */
+const clipSource = (available, source = 'shots/part01.mp4') => new Map([[source, {
+  source, file: source, exists: true, duration: available, start: 0, available,
+  width: 1280, height: 720, hasAudio: true, error: null,
+}]]);
+
+test('freezeTail: bez polja prazno, niz shot_id-ova se poravnava na dve cifre, pogrešan tip pada', () => {
+  const none = tmpEpisode({ 'episode.json': JSON.stringify({}) });
+  assert.deepEqual([...freezeTail(none)], []);
+  const some = tmpEpisode({ 'episode.json': JSON.stringify({ freeze_tail: ['09', '7'] }) });
+  assert.deepEqual([...freezeTail(some)], ['09', '07']);
+  const bad = tmpEpisode({ 'episode.json': JSON.stringify({ freeze_tail: [9] }) });
+  assert.throws(() => freezeTail(bad), /freeze_tail/);
+  [none, some, bad].forEach(rm);
+});
+
+test('applyFreeze: zamrzava samo odobren shot kome izvor ne traje dovoljno', () => {
+  const plan = planCuts(storyboardOf([6.25]), { outroStart: null });
+  assert.deepEqual(applyFreeze(plan, clipSource(6), new Set()), [], 'bez odobrenja nema zamrzavanja');
+  assert.equal(plan.segments[0].freeze, undefined);
+
+  const frozen = applyFreeze(plan, clipSource(6), new Set(['01']));
+  assert.equal(frozen.length, 1);
+  assert.equal(plan.segments[0].freeze, 0.25);
+
+  const long = planCuts(storyboardOf([6.25]), { outroStart: null });
+  assert.deepEqual(applyFreeze(long, clipSource(8), new Set(['01'])), [], 'odobrenje nije naredba');
+  assert.equal(long.segments[0].freeze, undefined);
+});
+
+test('validate: odobren zamrznut rep pokriva manjak, neodobren i dalje zaustavlja montažu', async () => {
+  const dir = tmpEpisode({ 'narration.mp3': 'x', 'endcard.jpeg': 'x', 'shots/part01.mp4': 'x' });
+  const media = { narration: 'narration.mp3', endcard: 'endcard.jpeg' };
+  const plain = planCuts(storyboardOf([6.25]), { outroStart: null });
+  assert.equal((await validate(plain, dir, media, { sources: clipSource(6) })).length, 1);
+
+  const frozen = planCuts(storyboardOf([6.25]), { outroStart: null });
+  applyFreeze(frozen, clipSource(6), new Set(['01']));
+  assert.deepEqual(await validate(frozen, dir, media, { sources: clipSource(6) }), []);
+  rm(dir);
+});
+
+test('shotArgs: zamrznut rep je tpad koji klonira poslednji frejm, posle videoFilter-a', () => {
+  const opt = { dir: 'ep', width: 1920, height: 1080, fps: FPS, out: 'o.mp4' };
+  const seg = planCuts(storyboardOf([6.25]), { outroStart: null }).segments[0];
+  const plain = shotArgs(seg, opt);
+  assert.ok(!plain[idx(plain, '-vf') + 1].includes('tpad'));
+
+  const args = shotArgs({ ...seg, freeze: 0.25 }, opt);
+  const vf = args[idx(args, '-vf') + 1];
+  assert.ok(vf.startsWith(videoFilter(1920, 1080, FPS)), vf);
+  assert.match(vf, /,tpad=stop_mode=clone:stop_duration=0\.33333\d$/);
+  assert.equal(args[idx(args, '-frames:v') + 1], String(seg.frames), 'broj frejmova i dalje zakucan');
+});
+
+test('recipe: zamrznut rep ulazi u recept, a segment bez njega ga ne nosi (stari keš ostaje važeći)', () => {
+  const opt = { dir: 'ep', width: 1920, height: 1080, fps: FPS };
+  const seg = planCuts(storyboardOf([6.25]), { outroStart: null }).segments[0];
+  assert.ok(!('freeze' in recipe(seg, opt)));
+  assert.equal(recipe({ ...seg, freeze: 0.25 }, opt).freeze, 0.25);
+});
+
+test('ambientArgs: zvuk zamrznutog shota se gasi na kraju stvarnog zvuka, ne na rezu', () => {
+  const plan = planCuts(storyboardOf([6.25]), { outroStart: null, endcard: null });
+  plan.segments[0].freeze = 0.25;
+  const graph = graphOf(ambientArgs(plan, { dir: 'ep', fps: FPS, volume: CLIP_VOLUME, out: 'amb.wav' }));
+  assert.match(graph, /afade=t=out:st=5\.980000:d=0\.02/);
+  assert.match(graph, /atrim=end_sample=300000/, 'komad i dalje traje ceo rez');
+});
+
+test('qcReport: zamrznut shot nije prekratak izvor, ima svoju sekciju i red u rezimeu', () => {
+  const plan = planCuts(storyboardOf([6.25]), { outroStart: null, endcard: null });
+  applyFreeze(plan, clipSource(6), new Set(['01']));
+  const md = qcReport({ plan, sources: clipSource(6), width: 1920, height: 1080 });
+  assert.match(md, /Prekratki izvori \| OK/);
+  assert.match(md, /Zamrznut poslednji frejm \| — \| 1 od 1, odobreno u `freeze_tail`/);
+  assert.match(md, /## Zamrznut poslednji frejm/);
+  assert.match(md, /\| 01 \| `shots\/part01\.mp4` \| 6s \| 6\.25s \| 0\.25s \|/);
+});
+
+test('qcReport: bez zamrznutih shotova nema ni sekcije ni reda', () => {
+  const plan = planCuts(storyboardOf([6]), { outroStart: null, endcard: null });
+  const md = qcReport({ plan, sources: clipSource(8), width: 1920, height: 1080 });
+  assert.ok(!md.includes('Zamrznut poslednji frejm'));
 });

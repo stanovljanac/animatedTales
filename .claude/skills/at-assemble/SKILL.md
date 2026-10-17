@@ -28,6 +28,14 @@ Zabranjeno bez izričitog odobrenja korisnika **za taj shot**: slate i placehold
 umesto klipa, usporavanje ili zamrznut frejm da se dobije trajanje, i pozajmljivanje susednog
 kadra.
 
+**Zamrznut poslednji frejm, kad ga korisnik odobri.** Odobrenje za prekratak klip upisuje se
+u `episode.json` → `"freeze_tail": ["09", "12"]` (samo shotovi koje je korisnik imenovao). Tada
+`assemble.mjs` drži poslednji frejm do reza (`tpad`), zvuk tog repa je tišina, a `qc-report.md`
+ima sekciju „Zamrznut poslednji frejm". Shot koji nije na spisku i dalje zaustavlja montažu.
+U greek-gods-part-2 (2026-10-16) korisnik je ovo odobrio za manjkove od 0.2 do 0.55s, jer duže
+generisanje troši kredite. Zato u obaveštenju uz kratak manjak ponudi i ovu opciju, ali nikad
+je ne primeni bez odobrenja.
+
 Obaveštenje je tabela, po shotu: broj · vreme u videu (m:ss–m:ss) · šta fali · dužina
 generisanja (4/6/8/10s) · komanda `node tools/shotlist.mjs episodes/<slug> --only NN`.
 `--dry-run` i kontakt-list smeju da se puste. Render ne sme.

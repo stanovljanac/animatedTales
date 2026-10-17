@@ -8,6 +8,7 @@
   "endcard_file": "shots/endKartica.jpeg",
   "intro_file": null,
   "intro_volume": 0.2,
+  "freeze_tail": ["09", "12", "15", "30", "35", "39", "44"],
   "characters": [
     {
       "id": "hera",
