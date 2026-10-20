@@ -3,11 +3,11 @@
 Video: `final.mp4` · thumbnail: `thumb.jpg` ili `thumb2.jpg` · titlovi: `subtitles.srt` · napravljeno po `docs/publish.md`.
 
 TITLE OPTIONS:
-1. The Trial Record Never Said How the Pharaoh Died. His Mummy Did — the silent record
-2. Why Does This Mummy Still Have No Name After 3,000 Years? — Unknown Man E
-3. The Royal Trial Where Even the Judges Lost Their Noses — the judges on trial
-4. One Wife, One Son and a Plot Inside the Pharaoh's Own House — the harem plot
-5. The Pharaoh's Own Magic, Turned Against Him — the wax figures
+1. The Harem Conspiracy That Killed Ramesses III — the central event
+2. Ramesses III Was Murdered — His Mummy Proved It — the forensic proof
+3. The Prince Who Tried to Steal Egypt's Throne — Pentawer
+4. Unknown Man E: The Mummy Linked to a Pharaoh's Murder — the nameless body
+5. The Pharaoh's Murder Plot That Ended in a Royal Trial — the trial
 
 DESCRIPTION:
 Three thousand years ago, an Egyptian court sentenced more than thirty people for a plot against their pharaoh. The record of their trial survives, and it never says what happened to the king.

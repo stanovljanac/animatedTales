@@ -133,23 +133,62 @@ The title should feel like the beginning of a story, not the name of a school le
 
 ---
 
+## CONCRETE TITLES — NAME WHO AND WHAT HAPPENED
+
+This is the most important title rule. Curiosity comes from a concrete event, not from hiding what the video is about.
+
+Every title must let a stranger who has not seen the video answer two questions from the title alone:
+
+1. WHO or WHAT is this about? — a named person, civilization, place or object.
+2. WHAT HAPPENED? — the central event in plain, strong words: killed, murdered, conspiracy, stole the throne, trial, war, found, sank.
+
+If the honest answer is "some pharaoh" or "something happened at some trial", the title is too vague. Rewrite it.
+
+NAME THE KEY FIGURES:
+
+- When the story has a famous figure, or a figure the story is built around, put the NAME in the title: Ramesses III, Zeus, Hannibal, Emperor Wu. Option 1 must contain it, and so should most of the other options.
+- A famous name plus an unexpected event is the strongest hook there is, because the viewer's own knowledge does half the work: "Ramesses III — wasn't he one of Egypt's greatest pharaohs? Murdered by his own harem?"
+- Never replace a name the narration gives with a generic role or a pronoun. These are placeholders, not hooks: "the Pharaoh", "the King", "the Emperor", "the Goddess", "a Kingdom", "One Wife", "This Mummy", "She", "He", "Something Stranger".
+- When a key figure is obscure (the name means nothing to a newcomer), use the role and anchor it to a civilization or place: "The Prince Who Tried to Steal Egypt's Throne", not "Pentawer's Plot" and not "The Prince's Plot".
+- A role is fine in a title that is already concrete through the event and the setting ("The Pharaoh's Murder Plot That Ended in a Royal Trial"), but not as the only anchor of a title that hides the event.
+
+SAY WHAT HAPPENED:
+
+- Name the central event directly. Naming who it is about and what happened is NOT a spoiler: "The Harem Conspiracy That Killed Ramesses III" gives away the murder and still makes people click, because the pull is in HOW and WHY.
+- Pick one key part of the story per title (the murder, the forensic proof, the prince, the nameless mummy, the trial) and hit it dead center. Do not circle around it with riddles.
+- A clever, oblique phrasing that only makes sense after watching is a failure, even if it is well written.
+
+WEAK vs STRONG (from harem-conspiracy):
+
+Weak: "The Trial Record Never Said How the Pharaoh Died. His Mummy Did" — which pharaoh? which trial?
+Strong: "Ramesses III Was Murdered — His Mummy Proved It"
+
+Weak: "One Wife, One Son and a Plot Inside the Pharaoh's Own House" — whose house? what plot?
+Strong: "The Harem Conspiracy That Killed Ramesses III"
+
+Weak: "Why Does This Mummy Still Have No Name After 3,000 Years?" — which mummy? why should I care?
+Strong: "Unknown Man E: The Mummy Linked to a Pharaoh's Murder"
+
+---
+
 ## TITLE RULES
 
 Generate 5 title options and output ALL 5.
 
-The user picks the final title, so the 5 options must be genuinely DIFFERENT — not the same sentence reworded. Each option uses a different angle, for example:
+The user picks the final title, so the 5 options must be genuinely DIFFERENT — not the same sentence reworded. Each option focuses on a different key part of the story, and stays concrete about it, for example:
 
-- the discovery moment ("Divers found...")
-- the central question ("How did...")
-- the mystery / contradiction ("The machine that shouldn't exist")
-- the most astonishing concrete detail from the narration
-- the open question the story ends on ("Why...")
+- the central event, with the key figure's name ("The Harem Conspiracy That Killed Ramesses III")
+- the discovery or proof ("Ramesses III Was Murdered — His Mummy Proved It")
+- a key secondary figure and what they did ("The Prince Who Tried to Steal Egypt's Throne")
+- the most astonishing concrete detail or object, named ("Unknown Man E: The Mummy Linked to a Pharaoh's Murder")
+- the consequence or the open question, still naming the event ("The Pharaoh's Murder Plot That Ended in a Royal Trial")
 
-No two options may share the same structure or the same hook.
+No two options may share the same structure or the same hook. Every option must pass CONCRETE TITLES above.
 
 Evaluate every option against:
 
-1. Curiosity
+1. Concreteness — who and what happened, from the title alone
+2. Curiosity
 2. Story potential
 3. Emotional or dramatic pull
 4. Clarity
@@ -199,7 +238,7 @@ YOU WON'T BELIEVE THIS!!!
 
 Do not use misleading clickbait.
 
-Do not reveal the entire payoff in the title if doing so destroys the curiosity of the story.
+Naming the central event and its key figure is never "revealing the payoff". Hold back only a final twist whose surprise is the whole point of the video, and when in doubt, be concrete.
 
 ---
 
@@ -554,6 +593,8 @@ Before returning the answer verify:
 TITLE OPTIONS:
 
 - Are there exactly 5, ranked, with option 1 as the recommendation?
+- From each title alone, can a stranger tell who it is about and what happened?
+- Does option 1 (and most others) name the famous or central figure, instead of "the Pharaoh", "the Emperor", "She", "This Mummy"?
 - Does each use a different angle and structure?
 - Is every single one publishable on its own?
 - Is each genuinely interesting and curiosity-driven?

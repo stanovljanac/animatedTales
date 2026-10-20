@@ -154,7 +154,8 @@ Kad je video spreman za objavu:
 1. `node tools/publish.mjs episodes/<slug>` — piše `subtitles.srt` (YouTube ne prima JSON) i
    štampa rečenice sa m:ss vremenima.
 2. Napravi `episodes/<slug>/publish.md` po `docs/publish.md`: 5 različitih TITLE OPTIONS
-   (rangirano, 1 = preporuka), DESCRIPTION sa Chapters blokom (prvi 0:00, najmanje 3, svaki
+   (rangirano, 1 = preporuka; konkretni — ime glavne/poznate ličnosti i događaj koji se desio,
+   nikad „the Pharaoh" / „the Emperor" umesto imena), DESCRIPTION sa Chapters blokom (prvi 0:00, najmanje 3, svaki
    ≥10s, vremena samo iz liste rečenica), HASHTAGS i PINNED COMMENT. Naslov dopunjuje
    thumbnail, ne ponavlja njegov tekst.
 3. Ponovo `node tools/publish.mjs episodes/<slug>` — mora da javi da chapteri prolaze.
