@@ -1,0 +1,2322 @@
+{
+  "schema_version": 2,
+  "episode": "harem-conspiracy",
+  "generated_at": "2026-10-18T17:32:44Z",
+  "narration_duration": 273.006,
+  "fps": 24,
+  "beats": [
+    {
+      "beat_id": "B01",
+      "sentences": [
+        "S01"
+      ],
+      "start": 0,
+      "end": 7.28,
+      "dur": 7.28,
+      "device": null,
+      "narration_says": "Three thousand years ago, an Egyptian court sentenced more than thirty people for a plot against their pharaoh.",
+      "viewer_sees": "the court of examination in a pillared hall: a raised bench of judges in white linen on the left, a scribe writing at their feet; across the right two thirds a long line of more than thirty accused men and women kneeling, wrists bound, heads bowed",
+      "shots": [
+        {
+          "shot_id": "01",
+          "beat_id": "B01",
+          "link_group": null,
+          "t_in": 0,
+          "t_out": 7.292,
+          "use_in": 0,
+          "use_out": 7.292,
+          "use_len": 7.292,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot01.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "court-judges",
+            "court-of-examination"
+          ],
+          "visual_priority": [
+            "The Judges on their raised bench at the left",
+            "more than thirty accused kneeling in one long line across the right two thirds",
+            "the scribe writing the verdicts at the judges' feet",
+            "shafts of daylight striping the hall"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Egyptian court judges, grave older officials with shaved heads or short black wigs, long pleated white linen robes, broad collars of faience beads, reed pens and papyrus rolls at their sides, six of them seated in a row on the raised bench, upright and unmoving, looking down along the line of the accused.\nACTION: the court of examination sits in judgement: more than thirty accused men and women kneel in one long curving line before the bench, wrists tied at their backs with rope, heads bowed, while a scribe sitting cross-legged at the foot of the bench writes the verdicts onto a papyrus sheet stretched across his knees.\nSETTING: a pillared hall of judgement of plastered mudbrick, squat columns painted with red and yellow bands, a long raised wooden bench for the judges along one wall, reed mats on a beaten earth floor, the reign of Ramesses III, around 1155 BCE; guards with bronze-tipped spears and oval cowhide shields stand at both ends of the line; the accused are palace officials, royal butlers, scribes and women of the harem, some in fine pleated linen with rich collars, some in plain kilts.\nCAMERA: camera stands high in a corner of the hall above the line, looking along it, high angle, wide.\nFRAME LAYOUT: left third — the raised bench with the six seated judges, the scribe small at its foot; center and right third — the long line of more than thirty kneeling accused curving from mid-frame toward the right edge, the nearest of them near-camera and large in the lower-right, the farthest small at the far end of the hall; upper edge — the squat banded columns and the high slit windows.\nFACING: we see the judges' faces from the front, eyes lowered toward the line; we see the accused in three-quarter view from above, heads bowed toward screen-left, toward the bench.\nSCREEN DIRECTION: two guards pace along the line toward screen-left, toward the bench; dust drifts toward screen-right through the light shafts.\nLIGHT: hard daylight falling from the high slit windows in narrow slanting shafts that stripe the kneeling figures; the bench of judges in cooler shade.\nPALETTE: linen white, mudbrick ochre, red and yellow column bands, dusty shadow brown.\nDETAIL: rope at every pair of wrists, figures readable by outline and posture all down the line, pleats and bead collars on the nearest accused.\nNOT IN FRAME: blood, executions, drawn weapons, modern objects, Latin letters, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "high",
+            "location": "court-of-examination",
+            "time_light": "shafted-daylight",
+            "camera_motion": "push"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B02",
+      "sentences": [
+        "S02"
+      ],
+      "start": 7.28,
+      "end": 12.96,
+      "dur": 5.68,
+      "device": null,
+      "narration_says": "The record of their trial survives — and it never says what happened to the king.",
+      "viewer_sees": "the trial papyrus today, under museum glass: a long brown sheet with columns of black hieratic and red-ink headings, its first column broken to fragments, a dim gallery reflection on the glass",
+      "shots": [
+        {
+          "shot_id": "02",
+          "beat_id": "B02",
+          "link_group": null,
+          "t_in": 7.292,
+          "t_out": 12.958,
+          "use_in": 0,
+          "use_out": 5.666,
+          "use_len": 5.666,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pan-right",
+          "source_file": "shots/shot02.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "trial-papyrus"
+          ],
+          "visual_priority": [
+            "The Trial Papyrus lying under museum glass",
+            "its broken first column at the left",
+            "the red-ink headings over the dark columns",
+            "the faint reflection of the gallery on the glass"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a long sheet of papyrus covered in columns of small black hieratic script, a red-ink heading at the top of each column, the oval cartouche of the king inked at its head, three thousand years old now, brown, cracked and mended, laid flat under museum glass, its first column at the left broken into loose fragments.\nACTION: the record of the trial lies open in a dim display case, column after column of dense black writing running across the sheet toward the right; the words survive, and they are silent about the one thing they leave out.\nSETTING: a quiet museum gallery today; a long low glass case on a dark wooden plinth, the papyrus resting on a bed of soft grey fabric, faint reflections of other cases and a dark doorway sliding over the glass; a slim brass rail runs along the front of the case; the gallery floor beyond is dark polished stone, and the next case holds other papyri, dim and out of focus.\nCAMERA: camera stands over the case and looks down at a slant, high angle, close.\nFRAME LAYOUT: left third — the broken first column, its fragments near-camera and large; center — the best-preserved columns with their red-ink headings; right third — the sheet running on toward the right edge, a little softer; upper edge — a pale reflection of a gallery window on the glass.\nFACING: the sheet faces camera flat; the writing runs in vertical columns; no reader in frame.\nSCREEN DIRECTION: the dim reflection of a passing visitor's shape slides across the glass toward screen-right; a single mote of dust drifts down onto the case.\nLIGHT: cool, low conservation light from above, even and soft, a sheen on the glass; the papyrus fibres glow warm brown against the grey.\nPALETTE: papyrus brown, black ink, red ochre ink, cool gallery grey.\nDETAIL: crossing fibres of the papyrus, cracks along old folds, the thick and thin of each brush stroke, flecks of red ink, the pale paper mounting strips that hold the broken fragments in place.\nNOT IN FRAME: people's faces, readable modern text, Latin letters, museum signs, labels.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "CU",
+            "angle": "high",
+            "location": "museum-gallery",
+            "time_light": "cool-gallery-light",
+            "camera_motion": "pan"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B03",
+      "sentences": [
+        "S03"
+      ],
+      "start": 12.96,
+      "end": 18.52,
+      "dur": 5.56,
+      "device": null,
+      "narration_says": "The answer stayed hidden for three thousand years, on the king himself.",
+      "viewer_sees": "the mummy of Ramesses III lying in the dark in its coffin; one thin shaft of light across the dark face and the thick collar of linen wound around the neck",
+      "shots": [
+        {
+          "shot_id": "03",
+          "beat_id": "B03",
+          "link_group": null,
+          "t_in": 12.958,
+          "t_out": 18.5,
+          "use_in": 0,
+          "use_out": 5.542,
+          "use_len": 5.542,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot03.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "ramesses-iii-mummy"
+          ],
+          "visual_priority": [
+            "The Mummy of Ramesses III lying in its coffin in the dark",
+            "the thick linen collar around the neck",
+            "one thin shaft of light across face and collar",
+            "the faded coffin rim"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: the mummy of an old Egyptian king, a shrunken dark-brown face with a high hooked nose, sunken closed eyes and thin hard lips, the head bare, a thick collar of layered brown linen wound high around the neck, lying on its back in an open wooden coffin, the face turned a little toward camera, untouched for three thousand years.\nACTION: the dead king lies in the dark where he has lain since his burial, and one thin shaft of light falls across his face and across the thick linen at his throat, as if pointing at it; the wrappings of the body are dark with old resin, and the linen at the neck is wound thicker than anywhere else, a stiff high collar that hides the whole throat.\nSETTING: the total darkness of a sealed tomb; only the rim of the coffin, painted in faded yellow and black bands, and the brown wrappings over the chest are visible; dust lies on everything; a fold of rotted linen shroud has slipped from the chest onto the coffin floor; the inside of the coffin lid, propped at the edge of the frame, is painted with a faint winged goddess.\nCAMERA: camera stands at the head end of the coffin looking down along the body, high angle, close.\nFRAME LAYOUT: center — the face and the thick linen collar, near-camera and large; left third — the painted coffin rim, cropped at the left edge; right third — the wrapped chest falling away into darkness; upper and lower edges — black.\nFACING: we see the face from above and slightly to one side, eyes closed, chin lifted.\nSCREEN DIRECTION: dust motes drift slowly through the shaft of light toward screen-right.\nLIGHT: one narrow, hard shaft of pale light from the upper-left cutting across the brow, the nose and the linen collar; everything else in deep shadow; the shaft is cold and narrow, as if it came through a crack in the rock overhead.\nPALETTE: resin black-brown, old linen umber, pale shaft gold, deep black.\nDETAIL: cracked skin over the cheekbones, the layered folds of the linen collar, single threads catching the light.\nNOT IN FRAME: wounds, blood, people, modern objects, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "CU",
+            "angle": "high",
+            "location": "royal-cache",
+            "time_light": "single-shaft-dark",
+            "camera_motion": "push"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B04",
+      "sentences": [
+        "S04"
+      ],
+      "start": 18.52,
+      "end": 25.88,
+      "dur": 7.36,
+      "device": null,
+      "narration_says": "His name was Ramesses the Third, and the danger that reached him came from inside his own house.",
+      "viewer_sees": "Ramesses III alive, enthroned on the left of his columned hall, crook and flail crossed, facing right; at the right edge a curtained doorway into the women's quarters, where two figures lean together in the shadow",
+      "shots": [
+        {
+          "shot_id": "04",
+          "beat_id": "B04",
+          "link_group": null,
+          "t_in": 18.5,
+          "t_out": 25.875,
+          "use_in": 0,
+          "use_out": 7.375,
+          "use_len": 7.375,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pan-right",
+          "source_file": "shots/shot04.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "ramesses-iii",
+            "palace-throne-hall"
+          ],
+          "visual_priority": [
+            "Ramesses III enthroned at the left",
+            "the curtained doorway into the women's quarters at the right edge",
+            "two figures whispering in its shadow",
+            "the painted columns of the hall"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: an old Egyptian king in his sixties, a long lean face, a high hooked nose, heavy-lidded dark eyes, clean-shaven, a blue khepresh crown with a gold cobra at the brow, a pleated white linen kilt, a broad gold-and-lapis collar, alive and in his power, seated upright on the gilded throne on the dais, crook and flail crossed over his chest, gazing out across the hall toward screen-right.\nACTION: the king sits in state through a long afternoon audience, sure of his own house, while at the far side of the hall, half hidden by a hanging curtain, two figures lean their heads together and whisper.\nSETTING: a columned throne hall of a Ramesside palace, papyrus-bundle columns painted blue, green and red, a raised dais with a gilded throne under a canopy, plastered walls painted with bound foreign captives, high slit windows, his palace beside his great temple at Medinet Habu in western Thebes; fan-bearers with tall ostrich-feather fans flank the throne; the curtained doorway at the far right leads into the women's quarters.\nCAMERA: camera stands low on the floor of the hall beside the dais, low angle, wide.\nFRAME LAYOUT: left third — the king on his throne, near-camera and large, the canopy over him; center — the long floor of the hall and two rows of painted columns receding; right edge — a tall doorway hung with a striped linen curtain, two small whispering figures in its shadow, far.\nFACING: we see the king's face and chest three-quarter on, looking toward screen-right; the two figures in the doorway turn toward each other, in profile, their faces in shadow.\nSCREEN DIRECTION: a fan-bearer's ostrich fan sweeps toward screen-right; the striped curtain stirs toward screen-left.\nLIGHT: low late-afternoon sun through the slit windows in long gold bars across the floor; the king lit warm and full, the far doorway sunk in shadow.\nPALETTE: royal blue, burnished gold, column green and red, shadow umber.\nDETAIL: pleats of the kilt, lapis beads in the collar, painted captives on the walls readable by outline, the weave of the striped curtain.\nNOT IN FRAME: weapons, violence, Latin letters, modern objects, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "LS",
+            "angle": "low",
+            "location": "palace-throne-hall",
+            "time_light": "afternoon-shafts",
+            "camera_motion": "pan"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B05",
+      "sentences": [
+        "S05"
+      ],
+      "start": 25.88,
+      "end": 32.56,
+      "dur": 6.68,
+      "device": null,
+      "narration_says": "A pharaoh's harem was not a pleasure garden but a household of its own, with officials and guards.",
+      "viewer_sees": "the royal harem as a household, not a pleasure garden: a sunlit walled courtyard with women at upright looms, children with a ball, a steward checking jars against a tally board, and two spear guards at the gate",
+      "shots": [
+        {
+          "shot_id": "05",
+          "beat_id": "B05",
+          "link_group": null,
+          "t_in": 25.875,
+          "t_out": 32.542,
+          "use_in": 0,
+          "use_out": 6.667,
+          "use_len": 6.667,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pan-left",
+          "source_file": "shots/shot05.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "harem-women",
+            "harem-court"
+          ],
+          "visual_priority": [
+            "The Women of the Harem working at upright looms",
+            "children chasing a ball by the lotus pool",
+            "a steward checking sealed jars against a tally board",
+            "two spear guards at the gate"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Egyptian women of the royal harem, heavy black braided wigs, kohl-lined eyes, sheer pleated white linen gowns, broad collars of blue faience beads, gold bangles on the wrists, at work, two of them weaving at tall upright looms, one spinning flax thread on a drop spindle, one carrying a basket of folded linen on her hip.\nACTION: the harem goes about its day like a small town: women weave and spin, children chase a leather ball around the lotus pool, a steward in a short wig checks a row of sealed jars against notches on a wooden tally board, and two guards with spears stand at the gate.\nSETTING: the walled courtyard of the royal harem, whitewashed mudbrick walls, a shaded colonnade of slim painted columns, a rectangular pool with lotus flowers, upright looms along one wall, a guarded wooden gate, inside the royal palace; baskets of raw flax, folded linen stacked on a bench, a nurse with a baby in the shade of the colonnade.\nCAMERA: camera stands on the roof of the colonnade looking down into the courtyard, high angle, wide.\nFRAME LAYOUT: left third — the steward and his jars, near-camera and large, the tally board in his hands; center — the lotus pool with the running children; right third — the looms and the weaving women along the wall, and the guarded wooden gate at the right edge, small.\nFACING: we see the women in three-quarter view bent to their work; the steward faces his jars; the two guards face the gate.\nSCREEN DIRECTION: a child runs toward screen-left after the rolling ball; a woman carries her basket toward screen-right.\nLIGHT: bright, clean morning sun falling into the courtyard, sharp column shadows across the paving, the pool flashing; the shade under the colonnade cool and blue.\nPALETTE: whitewash white, linen cream, lotus blue-green, mudbrick ochre.\nDETAIL: threads stretched on the looms, notches in the tally board, lotus pads on the water, figures readable by outline and gesture, the steward's reed pen tucked behind his ear, a child's sidelock swinging as he runs.\nNOT IN FRAME: couches, lounging, nudity, feasting, Latin letters, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "high",
+            "location": "harem-court",
+            "time_light": "bright-morning",
+            "camera_motion": "pan"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B06",
+      "sentences": [
+        "S06"
+      ],
+      "start": 32.56,
+      "end": 38.04,
+      "dur": 5.48,
+      "device": null,
+      "narration_says": "One of the king's wives, Tiye, had a son, whom the record calls Pentawer.",
+      "viewer_sees": "Tiye in her painted chamber on the right half of the frame, one hand on the shoulder of her son Pentawer, a slim youth; both look toward the left edge",
+      "shots": [
+        {
+          "shot_id": "06",
+          "beat_id": "B06",
+          "link_group": null,
+          "t_in": 32.542,
+          "t_out": 38.042,
+          "use_in": 0,
+          "use_out": 5.5,
+          "use_len": 5.5,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot06.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "tiye",
+            "pentawer"
+          ],
+          "visual_priority": [
+            "Tiye at the right with her hand on her son's shoulder",
+            "Pentawer the slim youth beside her",
+            "both gazes turned toward the left edge",
+            "the painted chamber walls"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: an Egyptian royal wife in her forties, a proud narrow face, kohl-lined almond eyes, a heavy black braided wig bound with a thin gold circlet, a sheer pleated white linen gown, a broad collar of carnelian and gold beads, standing tall, one ringed hand resting on her son's shoulder, her chin raised.\nSUBJECT 2: an Egyptian prince of about eighteen, slim and long-limbed, a smooth oval face with kohl-lined almond eyes like his mother's, a shaved head with the long braided sidelock of a royal son, a pleated white linen kilt, standing at her side a half step forward, eager and unsure.\nACTION: mother and son stand together in the evening, both looking the same way, out of the chamber toward the part of the palace where the king and his chosen heir live; Tiye's fingers press a little harder on his shoulder than a mother's would; the prince's hand rests on the edge of the cosmetic chest as if he does not know what to do with it.\nSETTING: her private chamber in the harem, walls painted with marsh birds and papyrus thickets, a carved chair with lion feet, a cosmetic chest with alabaster jars, an oil lamp on a tall stand.\nCAMERA: camera stands a few paces from them inside the chamber, eye level, medium.\nFRAME LAYOUT: right half — Tiye and Pentawer, near-camera and large, Tiye at the right third and the prince just left of her near mid-frame; left third — the open doorway of the chamber and a slice of dark palace corridor, far; upper edge — the painted frieze of birds.\nFACING: we see both faces three-quarter on, eyes turned toward screen-left, toward the doorway.\nSCREEN DIRECTION: the lamp flame leans toward screen-left in the draught from the door; Tiye's sheer sleeve lifts toward screen-left.\nLIGHT: warm oil-lamp light from the lower-right, the doorway deep in shadow, the kohl around their eyes glinting.\nPALETTE: lamplight gold, linen white, carnelian red, marsh-green frieze.\nDETAIL: pleats of the gown, carnelian beads, the braided sidelock, kohl lines, painted birds on the plaster, the carved lion feet of the chair.\nNOT IN FRAME: the king, weapons, Latin letters, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "tiye-chamber",
+            "time_light": "lamplit-evening",
+            "camera_motion": "push"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B07",
+      "sentences": [
+        "S07",
+        "S08"
+      ],
+      "start": 38.04,
+      "end": 43.8,
+      "dur": 5.76,
+      "device": null,
+      "narration_says": "But the throne had been promised to another son. Tiye set out to change that.",
+      "viewer_sees": "from the shadow of a harem window at the right, Tiye watches across a courtyard: on the left, in sunlight, the king stands at a balcony with his chosen heir, a grown prince, beside him; her face hard",
+      "shots": [
+        {
+          "shot_id": "07",
+          "beat_id": "B07",
+          "link_group": null,
+          "t_in": 38.042,
+          "t_out": 43.792,
+          "use_in": 0,
+          "use_out": 5.75,
+          "use_len": 5.75,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "hold",
+          "source_file": "shots/shot07.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "tiye",
+            "ramesses-iv",
+            "ramesses-iii"
+          ],
+          "visual_priority": [
+            "Tiye watching from the shadow of the harem window at the right",
+            "Ramesses IV the chosen son on the sunlit balcony at the left",
+            "Ramesses III with his hand on the heir's shoulder",
+            "the bright courtyard between them"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: an Egyptian royal wife in her forties, a proud narrow face, kohl-lined almond eyes, a heavy black braided wig bound with a thin gold circlet, a sheer pleated white linen gown, a broad collar of carnelian and gold beads, half hidden in the shadow of a latticed window, one hand gripping the sill, her face hard and still.\nSUBJECT 2: an Egyptian prince in his late thirties, a broad strong face, a high hooked nose like his father's, a calm level gaze, clean-shaven, a pleated white linen kilt, a gold armband on each upper arm, wearing a short round wig, standing at the king's side on a sunlit balcony far across the courtyard.\nSUBJECT 3: an old Egyptian king in his sixties, a long lean face, a high hooked nose, heavy-lidded dark eyes, clean-shaven, a blue khepresh crown with a gold cobra at the brow, a pleated white linen kilt, a broad gold-and-lapis collar, at the balcony rail, one hand on his chosen son's shoulder, showing him to the courtiers below.\nACTION: across the courtyard the king presents the son he has chosen to rule after him, while from the dark window of the women's quarters Tiye watches them without moving.\nSETTING: the inner courtyard of the palace at Medinet Habu; the balcony is a window of appearances in a painted frame; courtiers bow below it; date palms in the yard.\nCAMERA: camera stands inside the harem room just past Tiye's shoulder, eye level, medium.\nFRAME LAYOUT: right third — Tiye, near-camera and large, in shadow, the lattice across her; center — the bright courtyard with palms and bowing courtiers, small; left third — the balcony with the king and the chosen son, far and small but clearly lit.\nFACING: we see Tiye's face in three-quarter profile, eyes toward screen-left; the king and the heir face the courtyard and camera.\nSCREEN DIRECTION: the courtiers bow and shuffle toward screen-left, toward the balcony; a palm frond sways.\nLIGHT: hot golden afternoon sun on the balcony and the courtyard; Tiye in cool shadow, one stripe of light through the lattice across her eyes.\nPALETTE: shadow blue, sunlit gold, linen white, carnelian red.\nDETAIL: the wooden lattice, her ringed fingers on the sill, folds of her gown, courtiers readable by outline.\nNOT IN FRAME: Pentawer, weapons, Latin letters, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "palace-courtyard",
+            "time_light": "golden-afternoon",
+            "camera_motion": "locked"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B08",
+      "sentences": [
+        "S09"
+      ],
+      "start": 43.8,
+      "end": 52.98,
+      "dur": 9.18,
+      "device": null,
+      "narration_says": "She found allies close to the king: the chief of his chamber, royal butlers, harem officials, a commander of the army.",
+      "viewer_sees": "a night meeting around one lamp in Tiye's chamber: the chief of the chamber bows low before Tiye at the right, two royal butlers kneeling beside him → the circle widens: a harem official with his staff of office and an army commander in a leather corselet lean in toward Tiye",
+      "shots": [
+        {
+          "shot_id": "08",
+          "beat_id": "B08",
+          "link_group": "B08",
+          "t_in": 43.792,
+          "t_out": 48.208,
+          "use_in": 0,
+          "use_out": 4.416,
+          "use_len": 4.416,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pan-right",
+          "source_file": "shots/shot08.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "chief-of-chamber",
+            "tiye"
+          ],
+          "visual_priority": [
+            "The Chief of the Chamber bowing low before Tiye",
+            "Tiye seated at the right, receiving him",
+            "two royal butlers kneeling beside him",
+            "the single oil lamp between them"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: an Egyptian palace chamberlain in his fifties, a heavy jowled face, a shaved head, narrow watchful eyes, a long pleated white linen robe with a red sash, a gilded staff of office, bowing low from the waist, his staff of office tucked under one arm, leaning toward the queen.\nSUBJECT 2: an Egyptian royal wife in her forties, a proud narrow face, kohl-lined almond eyes, a heavy black braided wig bound with a thin gold circlet, a sheer pleated white linen gown, a broad collar of carnelian and gold beads, seated in her carved chair at the right, one hand lifted to receive him.\nACTION: the man who keeps the king's private rooms bows to the queen and joins her plot, while two royal butlers kneel on the mat beside him, their bronze cups of office set down on the floor; the butlers keep their eyes on the floor, one with his palms pressed together, and the chamberlain's face is so close to the lamp that it shines with sweat.\nSETTING: Tiye's chamber late at night, the shutters closed, a single lamp on a low stand, the painted walls lost in darkness; a closed cedar chest, a folded shawl over the arm of the chair, a small figure of the household god Bes on a shelf.\nCAMERA: camera stands low by the wall, eye level, medium.\nFRAME LAYOUT: left third — the chamberlain bowing, near-camera and large, the two kneeling butlers just below him in the lower-left; center — the lamp on its stand; right third — Tiye in her chair, lit, facing them.\nFACING: we see the chamberlain in profile, face toward screen-right; the butlers three-quarter on, looking right; Tiye three-quarter on, looking toward screen-left at them.\nSCREEN DIRECTION: the chamberlain's bow carries toward screen-right; lamp smoke curls toward the ceiling.\nLIGHT: one oil lamp at center throwing warm light on the faces and long shadows climbing the walls.\nPALETTE: lamplight amber, night brown, linen white, red sash.\nDETAIL: the red sash and gilded staff, folds of the robes, bronze cups on the mat, deep shadow edges.\nNOT IN FRAME: the king, guards, weapons, Latin letters, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "tiye-chamber",
+            "time_light": "night-single-lamp",
+            "camera_motion": "pan"
+          }
+        },
+        {
+          "shot_id": "09",
+          "beat_id": "B08",
+          "link_group": "B08",
+          "t_in": 48.208,
+          "t_out": 53,
+          "use_in": 0,
+          "use_out": 4.792,
+          "use_len": 4.792,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pull",
+          "source_file": "shots/shot09.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "army-commander",
+            "chief-of-chamber",
+            "tiye"
+          ],
+          "visual_priority": [
+            "The Army Commander crouched at the lamp, leaning in",
+            "a harem official holding a tall staff of office",
+            "Tiye at the right edge, the center of the circle",
+            "The Chief of the Chamber standing over the group"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: an Egyptian army commander in his forties, a hard square face with a scar across the left cheek, a short black wig, a leather scale corselet over a white kilt, a bronze sickle sword at the belt, crouched at the lamp, one hand on the hilt of his sword, leaning in to listen.\nSUBJECT 2: an Egyptian palace chamberlain in his fifties, a heavy jowled face, a shaved head, narrow watchful eyes, a long pleated white linen robe with a red sash, a gilded staff of office, standing over the group and speaking low.\nSUBJECT 3: an Egyptian royal wife in her forties, a proud narrow face, kohl-lined almond eyes, a heavy black braided wig bound with a thin gold circlet, a sheer pleated white linen gown, a broad collar of carnelian and gold beads, seated at the right edge, the center of the circle.\nACTION: the plot grows around one lamp: an army commander and a harem official with a tall staff of office have joined the chamberlain and the royal butlers, and all of them lean in toward the queen.\nSETTING: the same chamber at night, reed mats on the floor, a jar of beer and cups standing untouched.\nCAMERA: camera stands above the group on a low ledge, high angle, medium.\nFRAME LAYOUT: center — the lamp and the ring of heads around it; left third — the army commander, near-camera and large, crouched; center-left — the harem official with his staff; right third — Tiye in her chair, lit from below; upper edge — the dark painted wall.\nFACING: we see the faces from above, three-quarter on, all turned toward screen-right toward Tiye; Tiye looks toward screen-left at them.\nSCREEN DIRECTION: hands and heads lean toward screen-right; lamp smoke drifts upward.\nLIGHT: the single lamp lights the faces from below; deep black all around the circle.\nPALETTE: lamp amber, night black, linen white, bronze.\nDETAIL: the leather scales of the corselet, the carved head of the official's staff, the scar on the commander's cheek, bead collars.\nNOT IN FRAME: the king, guards, Latin letters, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "high",
+            "location": "tiye-chamber",
+            "time_light": "night-single-lamp",
+            "camera_motion": "pull"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B09",
+      "sentences": [
+        "S10"
+      ],
+      "start": 52.98,
+      "end": 56.52,
+      "dur": 3.54,
+      "device": null,
+      "narration_says": "Messages went out to their families: \"Stir up the people!",
+      "viewer_sees": "at the harem gate at night, the wife of a gate officer passes a folded papyrus letter through the half-open gate to a man waiting outside",
+      "shots": [
+        {
+          "shot_id": "10",
+          "beat_id": "B09",
+          "link_group": null,
+          "t_in": 53,
+          "t_out": 56.5,
+          "use_in": 0,
+          "use_out": 3.5,
+          "use_len": 3.5,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pan-left",
+          "source_file": "shots/shot10.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "the wife of a harem-gate officer passing a folded letter through the gate",
+            "the half-open studded gate",
+            "a man's hand reaching in from the dark",
+            "the torch on the wall"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: the wife of a harem-gate officer, a woman in her thirties in a plain belted linen dress and a short dark wig, a shawl over her head, glancing back over her shoulder as she passes a folded papyrus letter through the gap of the gate.\nACTION: at night she slips a folded, sealed letter out of the harem through the half-open door into the hand of a man waiting outside in the dark street; a message from the women inside to their families; her other hand holds the gate steady so that it will not creak, and her eyes search the dark courtyard where the guards should be.\nSETTING: the heavy wooden harem gate with bronze studs and a wooden bar, set in a whitewashed mudbrick wall; a torch burning in a bronze bracket on the wall; the courtyard pool is a black mirror and the colonnade lies in shadow; the man outside is wrapped in a dark cloak so that only his hand shows in the gap.\nCAMERA: camera stands inside the courtyard close to the gate, eye level, medium.\nFRAME LAYOUT: right third — the woman, near-camera and large, half turned; center — the narrow gap of the half-open gate and the folded letter passing through it; left third — the man's hand and dark forearm reaching in from outside, cropped at the left edge, the night street far and dark.\nFACING: we see her face three-quarter on, eyes cutting back toward screen-right over her shoulder; the man outside is only a hand and a shadow.\nSCREEN DIRECTION: the letter passes toward screen-left out through the gap; torch smoke streams toward screen-left.\nLIGHT: one torch on the wall at the right throwing flickering orange light; blue-black night outside the gate; the torchlight catches the clay seal of the letter and the bronze of her bangle.\nPALETTE: torch orange, night blue, whitewash grey, papyrus cream.\nDETAIL: the cord and clay seal on the folded letter, bronze studs on the gate, the coarse weave of the shawl, the worn wood along the edge of the gate, her bare feet on the threshold stone.\nNOT IN FRAME: soldiers, guards awake, the king, Latin letters, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "harem-gate",
+            "time_light": "night-torch",
+            "camera_motion": "pan"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B10",
+      "sentences": [
+        "S11"
+      ],
+      "start": 56.52,
+      "end": 60.06,
+      "dur": 3.54,
+      "device": null,
+      "narration_says": "Incite enemies to hostility against their lord.\"",
+      "viewer_sees": "in a dark lane of mudbrick houses outside the palace, a man reads the letter aloud to a knot of angry men, faces lit by one torch",
+      "shots": [
+        {
+          "shot_id": "11",
+          "beat_id": "B10",
+          "link_group": null,
+          "t_in": 56.5,
+          "t_out": 60.042,
+          "use_in": 0,
+          "use_out": 3.542,
+          "use_len": 3.542,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot11.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "a man reading the smuggled letter aloud by torchlight",
+            "the knot of angry men crowding him",
+            "one man turning toward the palace wall",
+            "the dark lane of mudbrick houses"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a man in his thirties, the brother of one of the harem women, in a rough kilt and a short wig, holding the opened letter up to the torch and reading it aloud with fierce eyes.\nACTION: in a lane outside the palace walls he reads out the words smuggled from the harem, telling them to stir up the people and turn enemies against their lord, while a knot of men crowds close; some clench their fists, one has already turned to look toward the palace; the reader holds the letter flat against his chest between lines and speaks over the top of it; a young man spits on the ground, an older man grips a doorpost, and a woman watches from a roof edge with a small lamp.\nSETTING: a narrow lane of Theban mudbrick houses at night, flat roofs, wooden doors, a water jar by a doorstep; the dark top of the palace wall at the far left end of the lane; a donkey tied at a doorway, a basket of bread on a step, a narrow strip of night sky between the roofs full of stars.\nCAMERA: camera stands low among the men, low angle, medium.\nFRAME LAYOUT: center — the reader with the letter, near-camera and large; left third and right third — the listening men, faces lit; left edge — the palace wall, far and dark, at the end of the lane.\nFACING: we see the reader's face and chest from the front, eyes on the letter; the men three-quarter on, turned toward him.\nSCREEN DIRECTION: one man starts off toward screen-left, toward the palace; torch sparks rise toward the upper edge.\nLIGHT: a single torch held by one of the men, hard orange light from below, black night above the roofs; the light swings as the torch-bearer shifts, throwing big shadows of the men up the house walls.\nPALETTE: torch orange, mudbrick brown, night black, linen cream.\nDETAIL: creases in the letter, sweat on the faces, rough linen, sparks in the air.\nNOT IN FRAME: soldiers, drawn weapons, the king, readable writing, Latin letters, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "low",
+            "location": "theban-lane",
+            "time_light": "night-torch",
+            "camera_motion": "push"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B11",
+      "sentences": [
+        "S12"
+      ],
+      "start": 60.06,
+      "end": 70.72,
+      "dur": 10.66,
+      "device": null,
+      "narration_says": "They had magic, too: wax figures, made with a magic roll that belonged to Ramesses the Third himself, and smuggled into the harem to bewitch the guards.",
+      "viewer_sees": "in the palace archive, a keeper of rolls hands the overseer of the royal herds a papyrus roll marked with the cartouche of Ramesses III → at the harem gate at night, a covered basket of small wax figures carried past two drowsing guards",
+      "shots": [
+        {
+          "shot_id": "12",
+          "beat_id": "B11",
+          "link_group": null,
+          "t_in": 60.042,
+          "t_out": 65.208,
+          "use_in": 0,
+          "use_out": 5.166,
+          "use_len": 5.166,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "hold",
+          "source_file": "shots/shot12.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "magic-roll"
+          ],
+          "visual_priority": [
+            "The King's Magic Roll passing between two pairs of hands",
+            "the cartouche of Ramesses III on its margin",
+            "the overseer of the royal herds reaching for it",
+            "shelves of roll jars in the archive"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a papyrus roll of magic spells tied with a red cord, the oval cartouche of Ramesses III inked in red and black on its outer margin, its edges dark with handling, held out across a reed table by the old keeper of the king's rolls into the eager hands of the overseer of the royal herds.\nACTION: the overseer of the herds, a broad weathered man in a plain kilt, has asked for a book to give him strength and might, and he is handed a roll of magic from the king's own collection; the keeper hesitates with the roll still in his grip, like a man who has been told to hand over something that is not his to give, while the overseer's fingers are already closing on it.\nSETTING: the palace archive, rows of wooden shelves and niches holding papyrus rolls in tall clay jars and cedar boxes, a lamp and a scribe's palette on the table; the roll jars are marked only with painted signs; a ladder leans against the top shelf; a second lamp burns in a wall niche; a clay seal stamp lies on the table.\nCAMERA: camera stands at the end of the table between them, eye level, medium.\nFRAME LAYOUT: center — the roll passing between the two pairs of hands, near-camera and large; left third — the keeper of rolls, an old thin man in white linen, holding it out; right third — the overseer of herds reaching for it; upper edge — the shelves of roll jars, far.\nFACING: we see the keeper in three-quarter view facing screen-right; the overseer three-quarter on facing screen-left, eyes fixed on the roll.\nSCREEN DIRECTION: the roll moves toward screen-right into the overseer's hands; lamp smoke drifts upward.\nLIGHT: warm lamplight pooled on the table, the shelves fading into shadow.\nPALETTE: papyrus cream, red cord, lamp amber, cedar brown.\nDETAIL: the knot of the red cord, the red-and-black cartouche, the overseer's calloused fingers, clay stoppers on the jars, dust on the shoulders of the jars.\nNOT IN FRAME: wax figures, the king, Latin letters, any writing other than the cartouche.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "palace-archive",
+            "time_light": "lamplit-archive",
+            "camera_motion": "locked"
+          }
+        },
+        {
+          "shot_id": "13",
+          "beat_id": "B11",
+          "link_group": null,
+          "t_in": 65.208,
+          "t_out": 70.708,
+          "use_in": 0,
+          "use_out": 5.5,
+          "use_len": 5.5,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pan-right",
+          "source_file": "shots/shot13.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "wax-figures",
+            "harem-court"
+          ],
+          "visual_priority": [
+            "The Wax Figures showing in a covered basket",
+            "the servant carrying the basket in through the gate",
+            "two guards slumped asleep against the wall",
+            "the dark harem courtyard"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: small figures of gods and men moulded from yellowish beeswax, crude limbs and pinched faces, their bodies scratched with fine lines of written signs, some bound with linen thread, a dozen of them packed in straw inside a covered reed basket, the cloth over it slipping to show a few pale wax faces.\nSCALE: each wax figure is no longer than a finger; the whole basket rests on one forearm; beside the guards' long spears the figures look tiny; their smallness is the whole trick.\nACTION: a harem servant carries the basket in through the gate at night, past two guards who sit slumped against the wall, heavy-eyed, as if the figures were already working on them; the servant walks without hurrying so as not to look guilty; one guard's spear has slid down the wall and lies across his knees; the other guard's mouth hangs open in sleep.\nSETTING: the walled courtyard of the royal harem, whitewashed mudbrick walls, a shaded colonnade of slim painted columns, a rectangular pool with lotus flowers, upright looms along one wall, a guarded wooden gate, at night, the courtyard dark and the pool black; the gate stands half open on the black street; a lamp burns low in a niche of the colonnade at the far right.\nCAMERA: camera stands just inside the gate, eye level, medium.\nFRAME LAYOUT: center — the basket on the servant's forearm, near-camera and large, the cloth slipping; left third — the two drowsing guards slumped against the wall by the gate, their spears leaning; right third — the dark courtyard and colonnade, far.\nFACING: we see the servant from the side, walking, eyes down; the guards three-quarter on, eyes half shut.\nSCREEN DIRECTION: the servant walks toward screen-right into the harem; one guard's head nods forward.\nLIGHT: a guttering torch by the gate, low orange light; the courtyard beyond in blue darkness.\nPALETTE: beeswax yellow, torch orange, night blue, reed tan.\nDETAIL: scratched signs on the wax bodies, loose straw, the slack hands of the guards, bronze spearheads.\nNOT IN FRAME: magic glow, spirits, Latin letters, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "harem-gate",
+            "time_light": "night-torch",
+            "camera_motion": "pan"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B12",
+      "sentences": [
+        "S13"
+      ],
+      "start": 70.72,
+      "end": 74.34,
+      "dur": 3.62,
+      "device": "macro-object",
+      "narration_says": "The king's own magic, turned against him.",
+      "viewer_sees": "MACRO OBJECT — a small wax figure of a man, limbs bound with linen thread, lying across the open magic roll whose margin bears the king's own cartouche; a lamp flame reflected in the wax",
+      "shots": [
+        {
+          "shot_id": "14",
+          "beat_id": "B12",
+          "link_group": null,
+          "t_in": 70.708,
+          "t_out": 74.333,
+          "use_in": 0,
+          "use_out": 3.625,
+          "use_len": 3.625,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot14.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "wax-figures",
+            "magic-roll"
+          ],
+          "visual_priority": [
+            "The Wax Figures — one small wax man lying across the roll",
+            "the king's own cartouche on the roll beside it",
+            "the linen thread binding its limbs",
+            "the lamp flame mirrored in the wax"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: small figures of gods and men moulded from yellowish beeswax, crude limbs and pinched faces, their bodies scratched with fine lines of written signs, some bound with linen thread, just one of them, a little man of wax lying across the open roll, his arms and legs bound tight with linen thread.\nSCALE: the wax man is the length of a finger; the cartouche on the roll is as long as his whole body; the frame is so close that single papyrus fibres show; the figure fills the center.\nSUBJECT 2: a papyrus roll of magic spells tied with a red cord, the oval cartouche of Ramesses III inked in red and black on its outer margin, its edges dark with handling, unrolled flat on a reed mat, the king's own cartouche on its margin right beside the wax figure.\nACTION: the king's own spells lie under the figure made to weaken his guards: his name and the plotters' magic touching on the same sheet.\nSETTING: a hidden corner of the harem at night, a reed mat, a small clay lamp at the edge; a few grains of spilled natron and a curl of loose linen thread lie on the mat next to the papyrus.\nCAMERA: camera directly above the mat, overhead, extreme close.\nFRAME LAYOUT: center — the wax figure across the papyrus, near-camera and large; right third — the red-and-black cartouche of Ramesses III on the margin; left third — the clay lamp, its flame soft and out of focus; edges — dark reed mat.\nFACING: the figure lies face up, its pinched face toward camera; the cartouche faces camera.\nSCREEN DIRECTION: a single drop of warm wax runs toward the lower-left from the figure's heel; the lamp flame leans toward screen-right.\nLIGHT: one lamp flame from the left, its reflection a bright point in the wax, deep shadow around the mat.\nPALETTE: beeswax yellow, papyrus cream, cartouche red, lamp black.\nDETAIL: fingerprints pressed in the wax, the twist of the linen thread, papyrus fibres, the crisp oval of the cartouche.\nNOT IN FRAME: hands, people, magic glow, Latin letters.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "ECU",
+            "angle": "overhead",
+            "location": "harem-hiding-place",
+            "time_light": "night-single-lamp",
+            "camera_motion": "push"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B13",
+      "sentences": [
+        "S14",
+        "S15"
+      ],
+      "start": 74.34,
+      "end": 85.4,
+      "dur": 11.06,
+      "device": "empty-aftermath",
+      "narration_says": "What happened in the palace, the record never says. We know only the end: the king dead, his chosen son on the throne, the plotters on trial.",
+      "viewer_sees": "EMPTY AFTERMATH — a palace corridor at grey dawn: an overturned oil lamp, a door standing open, a dropped ostrich-feather fan, no people → the plotters dragged bound across the palace court by soldiers, while on a dais at the left the chosen son sits enthroned and watches",
+      "shots": [
+        {
+          "shot_id": "15",
+          "beat_id": "B13",
+          "link_group": null,
+          "t_in": 74.333,
+          "t_out": 77.667,
+          "use_in": 0,
+          "use_out": 3.334,
+          "use_len": 3.334,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "hold",
+          "source_file": "shots/shot15.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "an empty palace corridor at grey dawn",
+            "the overturned oil lamp near camera",
+            "the fallen ostrich-feather fan",
+            "the open door at the far end"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: an empty palace corridor at grey dawn, its painted columns and plastered walls cold in the first light.\nACTION: whatever happened here in the night is over and nobody is left; only the things that were dropped remain: an overturned oil lamp with its spilled oil dark on the floor, a tall ostrich-feather fan lying across the paving, a door standing open on darkness; a single sandal lies on its side near the open door; a curtain torn from its pole hangs half down across a side doorway; a small low table has been pushed crooked across the corridor.\nSETTING: the inner corridor of the king's palace at Medinet Habu, painted papyrus columns, a doorway at the far end, reed mats kicked askew; the columns are painted with papyrus umbels in faded green and blue, a frieze of cobras runs along the top of the walls, and a dark stain of spilled lamp oil spreads across the reed mats toward camera.\nCAMERA: camera stands at one end of the corridor, eye level, wide.\nFRAME LAYOUT: center — the long empty corridor running away, the open door at its far end, small and dark; lower-left — the overturned lamp, near-camera and large; lower-right — the fallen fan across the floor; left third and right third — the columns.\nFACING: no figures; the open door faces camera at the far end.\nSCREEN DIRECTION: a draught from the open door drags the fan's feathers toward screen-left; a thread of smoke from the lamp wick leans the same way.\nLIGHT: flat grey-blue dawn light from the slit windows, no sun yet, cold and even; the light is the colour of ash, and the open door at the far end is a rectangle of solid black.\nPALETTE: dawn grey-blue, faded column green, linen white, dark oil stain.\nDETAIL: the sheen of spilled oil, the barbs of the ostrich feathers, scuffed reed mats, cracks in the plaster, the frayed leather strap of the lost sandal, the bronze hinge of the open door, a shallow scuff in the floor where the table was dragged.\nNOT IN FRAME: people, bodies, blood, weapons, Latin letters, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "palace-corridor",
+            "time_light": "grey-dawn",
+            "camera_motion": "locked"
+          }
+        },
+        {
+          "shot_id": "16",
+          "beat_id": "B13",
+          "link_group": null,
+          "t_in": 77.667,
+          "t_out": 85.417,
+          "use_in": 0,
+          "use_out": 7.75,
+          "use_len": 7.75,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pan-left",
+          "source_file": "shots/shot16.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "ramesses-iv",
+            "palace-throne-hall"
+          ],
+          "visual_priority": [
+            "Ramesses IV, the chosen son, enthroned on the dais at the left",
+            "soldiers dragging the bound plotters across the hall toward him",
+            "the chamberlain and harem officials among the prisoners",
+            "a noblewoman with her wig askew in the line"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: an Egyptian prince in his late thirties, a broad strong face, a high hooked nose like his father's, a calm level gaze, clean-shaven, a pleated white linen kilt, a gold armband on each upper arm, now wearing the blue khepresh crown of a king, seated on the gilded throne, crook and flail in his hands, watching without expression.\nACTION: the plot has not won the throne: soldiers drag the plotters bound at the elbows across the hall toward the dais — the chamberlain with his red sash torn, harem officials, butlers, a woman in fine linen with her wig askew — while the new king looks down on them; one soldier hauls a struggling butler by the rope; a harem official stumbles to his knees and is pulled up again; nobody in the line dares to look up at the throne.\nSETTING: a columned throne hall of a Ramesside palace, papyrus-bundle columns painted blue, green and red, a raised dais with a gilded throne under a canopy, plastered walls painted with bound foreign captives, high slit windows, the morning after; soldiers in white kilts and leather caps carrying short spears and oval cowhide shields; fan-bearers flank the new king; the floor is strewn with fresh rushes.\nCAMERA: camera stands low near the prisoners, low angle, wide.\nFRAME LAYOUT: left third — the new king on the dais, far but raised high and clearly lit; center — the soldiers and the stumbling prisoners crossing the floor; right third — more prisoners pushed in through a doorway, near-camera and large.\nFACING: we see the new king from the front, looking toward screen-right at them; the prisoners three-quarter on, faces toward screen-left, heads low.\nSCREEN DIRECTION: the whole line of prisoners and soldiers moves toward screen-left, toward the throne.\nLIGHT: hard bright morning light through the slit windows, sharp bars across the floor, the dais in full sun.\nPALETTE: royal blue, gold, linen white, column red.\nDETAIL: rope at the elbows, the torn red sash, cowhide shields, dust kicked up from the floor.\nNOT IN FRAME: the old king, blood, executions, Latin letters, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "low",
+            "location": "palace-throne-hall",
+            "time_light": "hard-morning",
+            "camera_motion": "pan"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B14",
+      "sentences": [
+        "S16"
+      ],
+      "start": 85.4,
+      "end": 88.84,
+      "dur": 3.44,
+      "device": null,
+      "narration_says": "And the record opens in the king's own voice.",
+      "viewer_sees": "a court scribe at a low table writing the first column of the trial papyrus, the king's cartouche at its head in fresh red and black ink",
+      "shots": [
+        {
+          "shot_id": "17",
+          "beat_id": "B14",
+          "link_group": null,
+          "t_in": 85.417,
+          "t_out": 88.833,
+          "use_in": 0,
+          "use_out": 3.416,
+          "use_len": 3.416,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot17.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "trial-papyrus"
+          ],
+          "visual_priority": [
+            "The Trial Papyrus being written at its first column",
+            "the king's cartouche at its head in fresh red and black ink",
+            "the scribe's reed brush lifting",
+            "the ink palette and water pot"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a long sheet of papyrus covered in columns of small black hieratic script, a red-ink heading at the top of each column, the oval cartouche of the king inked at its head, freshly cut and pale, only its first column written so far, the ink still wet and glossy.\nACTION: a court scribe writes the opening words of the record — the words of the king himself — and his reed brush is just lifting from the red ink of the cartouche; the scribe's left hand holds the sheet flat with two fingers, and the column so far is short: the king's names, and the first lines of his commission to the judges.\nSETTING: a scribe's office in the palace, a low table, a wooden palette with cakes of red and black ink, a water pot, rolls of blank papyrus; a second reed brush lies across the palette, the water pot is half full and clouded black, a small wooden burnisher for smoothing papyrus lies at the table edge, and a bronze lamp stands at the left.\nCAMERA: camera stands over the scribe's shoulder, high angle, close.\nFRAME LAYOUT: center — the head of the papyrus with the cartouche, near-camera and large; right third — the scribe's hand and reed brush, cropped at the wrist; left third — the palette and the water pot; upper edge — the blank papyrus still to be filled, rolled.\nFACING: the sheet faces camera; we see only the scribe's hand and forearm.\nSCREEN DIRECTION: the brush lifts toward the upper-right; a bead of red ink trembles on its tip.\nLIGHT: warm lamplight from the left, the wet ink shining; the lamplight turns the fresh papyrus almost white and makes the wet red ink of the cartouche glitter; the far side of the table falls away into soft brown shade.\nPALETTE: pale papyrus gold, red ochre, carbon black, lamp amber.\nDETAIL: the split tip of the reed brush, the wet sheen of the ink, papyrus fibres, the crisp oval of the cartouche, the slight ridge where two sheets of papyrus were pasted together.\nNOT IN FRAME: faces, Latin letters, modern objects.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "CU",
+            "angle": "high",
+            "location": "scribe-office",
+            "time_light": "lamplit-archive",
+            "camera_motion": "push"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B15",
+      "sentences": [
+        "S17"
+      ],
+      "start": 88.84,
+      "end": 101.44,
+      "dur": 12.6,
+      "device": null,
+      "narration_says": "Let all they have done fall upon their own heads, he says, \"while I am among the just kings who are before Amun-Ra, king of gods, and before Osiris, ruler of eternity.\"",
+      "viewer_sees": "twelve judges standing in a row before an empty throne on which lie the king's crook and flail, while a herald reads the commission → the dead Ramesses III walking among a line of earlier kings into the hall of the gods, toward a colossal enthroned Osiris and Amun-Ra with tall plumes, light pouring from them",
+      "shots": [
+        {
+          "shot_id": "18",
+          "beat_id": "B15",
+          "link_group": null,
+          "t_in": 88.833,
+          "t_out": 95.208,
+          "use_in": 0,
+          "use_out": 6.375,
+          "use_len": 6.375,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pull",
+          "source_file": "shots/shot18.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "court-judges",
+            "palace-throne-hall"
+          ],
+          "visual_priority": [
+            "The Judges, twelve of them, standing in a row before the empty throne",
+            "the king's crook and flail lying on the empty seat",
+            "the herald reading the commission from a papyrus",
+            "one shaft of light on the throne"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Egyptian court judges, grave older officials with shaved heads or short black wigs, long pleated white linen robes, broad collars of faience beads, reed pens and papyrus rolls at their sides, twelve of them, six and six, standing in one long row facing the empty throne, hands folded, heads slightly bowed.\nACTION: the king's commission is read to his twelve judges: a herald holds up a papyrus and reads in the king's own name, but the throne he speaks for is empty, with only the crook and flail laid across its seat; the herald's voice fills the hall but no one looks at him; every judge looks at the crook and flail on the empty seat.\nSETTING: a columned throne hall of a Ramesside palace, papyrus-bundle columns painted blue, green and red, a raised dais with a gilded throne under a canopy, plastered walls painted with bound foreign captives, high slit windows, the hall is quiet and half-dark, the fan-bearers gone; the painted captives on the walls stand bound in rows all along the hall, as if they too were waiting for a verdict.\nCAMERA: camera stands at floor level to the side of the row, eye level, wide.\nFRAME LAYOUT: left third — the dais and the empty gilded throne under its canopy, the crook and flail across its seat, far and raised; center — the herald with his papyrus between throne and judges; right two thirds — the row of twelve judges, the nearest near-camera and large at the right edge, the farthest small.\nFACING: we see the judges in profile, faces toward screen-left toward the throne; the herald three-quarter on, facing them.\nSCREEN DIRECTION: the herald's papyrus unrolls downward; dust drifts toward screen-left through the shaft of light.\nLIGHT: one long shaft of afternoon light falls on the empty throne alone; the twelve judges stand in shade.\nPALETTE: gold, linen white, shadow umber, royal blue.\nDETAIL: the banded gold and blue of the crook and flail, pleats of twelve robes, faience collars, reed pens at the belts, the cushion of the throne still pressed down by the man who used to sit there.\nNOT IN FRAME: the king, anyone on the throne, Latin letters, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "palace-throne-hall",
+            "time_light": "afternoon-shafts",
+            "camera_motion": "pull"
+          }
+        },
+        {
+          "shot_id": "19",
+          "beat_id": "B15",
+          "link_group": null,
+          "t_in": 95.208,
+          "t_out": 101.458,
+          "use_in": 0,
+          "use_out": 6.25,
+          "use_len": 6.25,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot19.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "ramesses-iii"
+          ],
+          "visual_priority": [
+            "Ramesses III walking among the just kings",
+            "colossal enthroned Osiris in his white crown",
+            "Amun-Ra with his tall double plumes",
+            "the long line of earlier crowned kings",
+            "golden light pouring from the gods"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: an old Egyptian king in his sixties, a long lean face, a high hooked nose, heavy-lidded dark eyes, clean-shaven, a blue khepresh crown with a gold cobra at the brow, a pleated white linen kilt, a broad gold-and-lapis collar, walking slowly forward in a line of the dead, calm, his crook and flail held to his chest.\nSCALE: Amun-Ra and Osiris are colossal, seated taller than temple pylons; the kings walking toward them come only up to their feet; Ramesses III is a small figure beside the gods' knees; the gods fill the frame from the floor to the upper edge.\nACTION: in the hall of the gods the dead king goes to join the just kings who came before him: a long line of crowned kings walks toward the thrones of Amun-Ra, king of gods, and Osiris, ruler of eternity, and light pours down from the two gods over every one of them.\nSETTING: the hall of the gods beyond death, a floor of gold-veined stone, colonnades of impossible height, a deep starry sky; Osiris green-skinned and wrapped, in the tall white crown with plumes, holding crook and flail; Amun-Ra blue-skinned, in a crown of two tall plumes, holding a long sceptre.\nCAMERA: camera stands low among the line of kings, low angle, wide.\nFRAME LAYOUT: left third — the line of kings walking toward screen-right, Ramesses III near-camera and large among them; right two thirds — the two colossal gods enthroned side by side, rising to the upper edge; center — the river of light streaming from them across the floor.\nFACING: we see Ramesses III in three-quarter profile, face lifted toward screen-right; the gods face forward and look down on the kings.\nSCREEN DIRECTION: the line of kings moves toward screen-right; the light streams toward screen-left over them.\nLIGHT: golden light pouring from the two gods, rim-lighting every king; deep blue starry dark overhead.\nPALETTE: divine gold, Osiris green, Amun blue, lapis night.\nDETAIL: three layers of colonnade fading into the gods' light, kings readable by the outlines of their crowns, the plumes of Amun-Ra.\nNOT IN FRAME: the living court, the papyrus, monsters, Latin letters, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "XLS",
+            "angle": "low",
+            "location": "hall-of-the-gods",
+            "time_light": "divine-radiance",
+            "camera_motion": "push"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B16",
+      "sentences": [
+        "S18"
+      ],
+      "start": 101.44,
+      "end": 104.94,
+      "dur": 3.5,
+      "device": null,
+      "narration_says": "He speaks like a man already among the dead.",
+      "viewer_sees": "the gilded coffin face of Ramesses III, eyes painted wide open, in the darkness of his tomb, lit by one torch, as if listening",
+      "shots": [
+        {
+          "shot_id": "20",
+          "beat_id": "B16",
+          "link_group": null,
+          "t_in": 101.458,
+          "t_out": 104.958,
+          "use_in": 0,
+          "use_out": 3.5,
+          "use_len": 3.5,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "hold",
+          "source_file": "shots/shot20.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "the gilded coffin face of Ramesses III with eyes painted open",
+            "the single torch flame",
+            "the granite edge of the sarcophagus",
+            "the painted stars on the ceiling"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: the gilded face of the king's inner coffin, a smooth golden mask with large eyes painted wide open in black and white, a striped headdress of blue and gold, lying in the dark of his tomb.\nACTION: the coffin rests inside its stone sarcophagus with its painted eyes open in the dark, as if it is still listening to what is said in its name; the coffin's crossed arms hold a gilded crook and flail on its chest; the lid of the stone sarcophagus has not yet been lowered and leans in shadow at the right; a few blue lotus flowers and a garland of leaves lie across the gilded breast.\nSETTING: the burial chamber of the king's tomb in the Valley of the Kings, walls painted with gods and texts lost in shadow, the red granite box of the sarcophagus around the coffin; the walls of the burial chamber show the gods of the dead with the king painted again and again before them; the ceiling is dark blue with rows of yellow stars; a wooden model boat and sealed jars of oil stand along the chamber wall, and a small gilded shrine waits with its doors open.\nCAMERA: camera stands close at the head of the coffin, eye level, close.\nFRAME LAYOUT: center — the golden face, near-camera and large; right third — the torch flame, far and soft; left third — the granite edge of the sarcophagus, cropped; upper edge — painted ceiling stars, dim.\nFACING: the coffin face looks straight up and slightly toward screen-right.\nSCREEN DIRECTION: the torch flame flickers toward screen-left; smoke drifts across the upper-right.\nLIGHT: one torch from the right, gold flaring on cheek and brow, the rest in black; the gold throws the torchlight back so strongly that the painted eyes seem wet.\nPALETTE: gold, lapis blue, granite red-grey, black.\nDETAIL: brush strokes of the painted eye, beaten gold texture, the stripes of the headdress, dry lotus petals, inlaid blue glass in the stripes of the headdress, the curled gold beard at the chin of the coffin.\nNOT IN FRAME: people, the real face of the mummy, Latin letters, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "CU",
+            "angle": "eye",
+            "location": "royal-tomb",
+            "time_light": "torchlight-dark",
+            "camera_motion": "locked"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B17",
+      "sentences": [
+        "S19",
+        "S20",
+        "S21"
+      ],
+      "start": 104.94,
+      "end": 118.64,
+      "dur": 13.7,
+      "device": "macro-object",
+      "narration_says": "The accused lost even their names. One butler went into the record as \"Ra hates him\", another as \"Wicked in Thebes\". To an Egyptian, a name was part of the soul.",
+      "viewer_sees": "MACRO OBJECT — a scribe's reed brush writing a new name in red ink into the record → a kneeling royal butler under a blazing sun disc, and beside him a kneeling archer captain, both heads bowed → a human-headed ba bird lifting away from an oval name-ring being chiselled blank on a stone",
+      "shots": [
+        {
+          "shot_id": "21",
+          "beat_id": "B17",
+          "link_group": null,
+          "t_in": 104.958,
+          "t_out": 108,
+          "use_in": 0,
+          "use_out": 3.042,
+          "use_len": 3.042,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pan-right",
+          "source_file": "shots/shot21.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "trial-papyrus"
+          ],
+          "visual_priority": [
+            "The Trial Papyrus with a new name being written in red",
+            "the reed brush mid-stroke",
+            "the column of black writing above",
+            "the scribe's knuckles at the edge"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a long sheet of papyrus covered in columns of small black hieratic script, a red-ink heading at the top of each column, the oval cartouche of the king inked at its head, a fresh entry being written on it, the brush mid-stroke in red ink.\nACTION: the scribe writes a new name into the record for one of the accused, a name chosen as a curse, in red ink, the colour the scribes kept for headings and for danger; the brush has just written the first sign of the new name; above it, in black, runs the account of the man's crimes; the red is so wet that it stands up from the sheet in a bead, and the scribe's thumb holds the sheet still.\nSETTING: the scribe's low table at night, his ink palette and water pot; beside the sheet lie a small knife for cutting papyrus, a water pot clouded red and black, a palette with two wells worn deep, and an older roll tied with string; a basket of rolled blank sheets stands by the table leg, and the lamp is a plain clay saucer with a twisted linen wick.\nCAMERA: camera directly above the table, overhead, extreme close.\nFRAME LAYOUT: center — the brush tip on the sheet, near-camera and large; left third — the column of black writing; right third — the scribe's hand, cropped at the knuckles.\nFACING: the sheet faces camera; only fingers and brush are seen.\nSCREEN DIRECTION: the brush drags toward screen-right finishing the stroke; red ink spreads into the fibres.\nLIGHT: one lamp from the upper-left, the wet red ink gleaming; the lamplight comes in low across the sheet so that every fibre throws a tiny shadow and the wet red ink shines.\nPALETTE: red ochre, carbon black, papyrus cream, lamp amber.\nDETAIL: single fibres taking the ink, the split brush tip, a tiny drop of red, the two crossed layers of papyrus fibres, the frayed end of the reed brush where it has been chewed soft.\nNOT IN FRAME: faces, Latin letters, readable modern text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "ECU",
+            "angle": "overhead",
+            "location": "scribe-office",
+            "time_light": "night-single-lamp",
+            "camera_motion": "pan"
+          }
+        },
+        {
+          "shot_id": "22",
+          "beat_id": "B17",
+          "link_group": null,
+          "t_in": 108,
+          "t_out": 114.708,
+          "use_in": 0,
+          "use_out": 6.708,
+          "use_len": 6.708,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pull",
+          "source_file": "shots/shot22.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "a royal butler and an archer captain kneeling bound under the sun",
+            "the enormous white-hot sun disc above them",
+            "the temples of Thebes far at the right",
+            "their short black shadows"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: two accused men kneeling side by side on bare ground, a royal butler in torn fine linen and an archer captain from the Nubian garrison in a leather kilt with an empty quiver strap, both with wrists bound and heads bowed.\nSCALE: the sun disc is enormous and white-hot, filling the upper half of the sky; the two kneeling men are small beneath it; their shadows are short black pools; the sky itself seems to press down on them.\nACTION: the record has given the two men new names, one a man the sun god hates, the other a man wicked in Thebes, and the sun disc of Ra glares down on them as if the names were true; the butler's fine pleated robe is torn at the shoulder and his collar is gone; the archer still wears his leather arm guard; neither man looks up at the sky, and a guard's shadow falls across the ground at the edge of the frame.\nSETTING: an open court beside the hall of judgement, beaten earth, a low mudbrick wall, the temple pylons of Thebes far at the right across the river; a dead tree stands at the corner of the wall; the river shines white far at the right; the distant pylons look flat and bleached in the heat.\nCAMERA: camera stands low on the ground facing the two men, low angle, wide.\nFRAME LAYOUT: center — the two kneeling men, near-camera and large; upper half — the blazing sun disc; right third — Thebes, far and hazy; left third — the low mudbrick wall.\nFACING: we see both men in profile facing screen-left, heads bowed.\nSCREEN DIRECTION: heat shimmer rises off the ground; a torn strip of the butler's linen flutters toward screen-left.\nLIGHT: blazing white noon light from directly overhead, almost no shadow, heat haze over everything; the heat bleaches the colour out of everything except the two men's bowed brown backs.\nPALETTE: white-hot sun, bleached ochre, linen white, black shadow.\nDETAIL: sweat on bowed necks, rope fibres, cracked dry earth, the leather quiver strap, the frayed rope at their wrists, a single bead from the butler's lost collar lying in the dust.\nNOT IN FRAME: executioners, blood, writing, Latin letters, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "low",
+            "location": "court-yard",
+            "time_light": "blazing-noon",
+            "camera_motion": "pull"
+          }
+        },
+        {
+          "shot_id": "23",
+          "beat_id": "B17",
+          "link_group": null,
+          "t_in": 114.708,
+          "t_out": 118.625,
+          "use_in": 0,
+          "use_out": 3.917,
+          "use_len": 3.917,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot23.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "a human-headed ba bird lifting away from the stone",
+            "the oval name-ring being chiselled blank",
+            "the mason's copper chisel and mallet",
+            "flying limestone chips"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a ba bird, a falcon with a small human head and a solemn face, spreading its wings and rising from a carved oval name-ring on a limestone block as a copper chisel cuts the signs out of it.\nACTION: to an Egyptian a name was part of the soul: a mason's hand drives a copper chisel into the signs inside the oval, chips of limestone fly, and as the name vanishes the soul-bird lifts off the stone and away; the bird hovers for a moment above the stone, its human face looking back at the name it is losing; the mallet strikes, a puff of white dust bursts from the oval, and half of the signs are already gone.\nSETTING: a limestone block in a stonemason's yard, chips and white dust, a wooden mallet; other blocks lie around the yard, some carved with figures, some still rough; copper chisels of several sizes lie on a leather apron; a water jar stands in the shade; the yard opens onto the bright river plain, and a half-finished statue of a seated official lies on its back nearby.\nCAMERA: camera stands at the side of the block, eye level, close.\nFRAME LAYOUT: center — the name-ring and the chisel, near-camera and large; right third — the mason's hand and mallet, cropped at the wrist; upper-left — the ba bird rising, wings spread.\nFACING: the ba bird's small human face looks back down at the stone.\nSCREEN DIRECTION: the ba bird rises toward the upper-left; stone chips fly toward screen-left.\nLIGHT: low warm evening light from the right raking across the carving, every cut edge sharp; the low light turns the dust gold and throws a long shadow from every chisel cut.\nPALETTE: limestone cream, copper, dusk gold, bronze-brown feathers.\nDETAIL: chisel marks, flying chips, feathers of the ba bird, dust hanging in the light, bronze-brown feathers with pale edges, the tiny solemn human face of the bird with a short beard, raw white stone showing where the signs have been cut away.\nNOT IN FRAME: readable signs, the mason's face, Latin letters, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "CU",
+            "angle": "eye",
+            "location": "mason-yard",
+            "time_light": "low-evening",
+            "camera_motion": "push"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B18",
+      "sentences": [
+        "S22",
+        "S23"
+      ],
+      "start": 118.64,
+      "end": 125.22,
+      "dur": 6.58,
+      "device": null,
+      "narration_says": "Twenty-two were condemned in the first trial. Six more were left to take their own lives in the court.",
+      "viewer_sees": "in the court of examination, guards lead twenty-two bound condemned out through a bright doorway at the right, while six men sit alone on the floor of the emptied hall below the empty judges' bench",
+      "shots": [
+        {
+          "shot_id": "24",
+          "beat_id": "B18",
+          "link_group": null,
+          "t_in": 118.625,
+          "t_out": 125.208,
+          "use_in": 0,
+          "use_out": 6.583,
+          "use_len": 6.583,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pan-right",
+          "source_file": "shots/shot24.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "court-of-examination"
+          ],
+          "visual_priority": [
+            "The Court of Examination emptied after the verdicts",
+            "twenty-two bound condemned led out through the bright doorway at the right",
+            "six men left sitting alone on the floor",
+            "the empty judges' bench"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a pillared hall of judgement of plastered mudbrick, squat columns painted with red and yellow bands, a long raised wooden bench for the judges along one wall, reed mats on a beaten earth floor, emptied after the first verdicts, the judges' bench now bare.\nACTION: guards lead the twenty-two condemned of the first trial out through a bright doorway in one roped line, twenty-two figures with the six wives of the harem-gate men among them, while six more men are left behind, sitting apart on the mats of the empty hall, left in their own hands; the women among the twenty-two walk with their heads covered; of the six seated men one has his face in his hands, another stares at the doorway, a third sits very straight with his eyes closed.\nSETTING: the hall of judgement after the verdicts, a water jar, scattered reed mats, the guards in white kilts; a guard waits by the doorway with a staff, turned away from the seated men; the judges' cushions still lie on the empty bench.\nCAMERA: camera stands high in a corner of the hall, high angle, wide.\nFRAME LAYOUT: right third — the bright doorway and the line of twenty-two condemned filing out through it, the last of them near-camera and large at the right edge; center — the six seated men, spaced apart on the floor, small and still; left third — the empty raised bench.\nFACING: we see the condemned from the side, heads bowed, walking toward screen-right; the six seated men in three-quarter view, staring at the floor.\nSCREEN DIRECTION: the roped line moves out toward screen-right through the doorway; dust drifts in the light.\nLIGHT: blinding white daylight in the doorway, the hall in brown shade, shafts across the empty bench.\nPALETTE: doorway white, shade brown, linen white, red and yellow bands.\nDETAIL: the rope from wrist to wrist, twenty-two figures readable by outline, six separate seated figures, scattered mats, the guard's staff with its copper cap, the long rectangle of light thrown across the floor from the doorway.\nNOT IN FRAME: poison, cups, weapons, bodies, blood, Latin letters, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "high",
+            "location": "court-of-examination",
+            "time_light": "shafted-daylight",
+            "camera_motion": "pan"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B19",
+      "sentences": [
+        "S24"
+      ],
+      "start": 125.22,
+      "end": 130,
+      "dur": 4.78,
+      "device": null,
+      "narration_says": "Then came the prince: \"Pentawer, who bore that other name.\"",
+      "viewer_sees": "Prince Pentawer brought before three seated butlers acting as judges, standing straight in white linen with bound wrists, facing left",
+      "shots": [
+        {
+          "shot_id": "25",
+          "beat_id": "B19",
+          "link_group": null,
+          "t_in": 125.208,
+          "t_out": 130,
+          "use_in": 0,
+          "use_out": 4.792,
+          "use_len": 4.792,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot25.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "pentawer",
+            "court-judges",
+            "court-of-examination"
+          ],
+          "visual_priority": [
+            "Pentawer standing before the judges with bound wrists",
+            "three seated butlers acting as judges at the left",
+            "the guard at his shoulder",
+            "lamps on stands beside the bench"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: an Egyptian prince of about eighteen, slim and long-limbed, a smooth oval face with kohl-lined almond eyes like his mother's, a shaved head with the long braided sidelock of a royal son, a pleated white linen kilt, standing straight with his wrists bound together at his waist, chin up, refusing to bow.\nSUBJECT 2: Egyptian court judges, grave older officials with shaved heads or short black wigs, long pleated white linen robes, broad collars of faience beads, reed pens and papyrus rolls at their sides, only three of them here, royal butlers, seated on the raised bench to judge the prince.\nACTION: the king's son is brought in for judgement; the record will name him only as Pentawer, who bore that other name; a guard has just let go of his arm; the three butlers lean together on the bench, one holding a papyrus with the charges, one with his reed pen ready.\nSETTING: a pillared hall of judgement of plastered mudbrick, squat columns painted with red and yellow bands, a long raised wooden bench for the judges along one wall, reed mats on a beaten earth floor, at evening, lamps lit on tall stands.\nCAMERA: camera stands on the floor of the hall, eye level, medium.\nFRAME LAYOUT: right third — Pentawer, near-camera and large, a guard's spear just at his shoulder; left third — the three judges on the bench, far, lamps beside them; center — the open floor between them.\nFACING: we see Pentawer in three-quarter profile facing screen-left toward the judges; the judges face screen-right toward him.\nSCREEN DIRECTION: the guard steps back toward screen-right; the lamp flames lean toward screen-left.\nLIGHT: lamplight from the stands by the bench, warm on the judges; Pentawer lit from the side, half his face in shadow.\nPALETTE: lamp amber, linen white, deep brown shadow, red and yellow bands.\nDETAIL: the braided sidelock, rope on his wrists, faience collars of the judges, reed pens, a red mark on the prince's wrist under the rope, the tall bronze lamp stands with their shallow oil cups.\nNOT IN FRAME: Tiye, the king, Latin letters, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "court-of-examination",
+            "time_light": "lamplit-evening",
+            "camera_motion": "push"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B20",
+      "sentences": [
+        "S25"
+      ],
+      "start": 130,
+      "end": 132.86,
+      "dur": 2.86,
+      "device": null,
+      "narration_says": "Even Pentawer was not his real name.",
+      "viewer_sees": "close on Pentawer's face in lamplight, half in shadow, eyes lowered — a face without its own name",
+      "shots": [
+        {
+          "shot_id": "26",
+          "beat_id": "B20",
+          "link_group": null,
+          "t_in": 130,
+          "t_out": 132.875,
+          "use_in": 0,
+          "use_out": 2.875,
+          "use_len": 2.875,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "hold",
+          "source_file": "shots/shot26.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "pentawer"
+          ],
+          "visual_priority": [
+            "Pentawer's face close, half in shadow",
+            "his lowered eyes",
+            "the braided sidelock",
+            "the edge of lamplight"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: an Egyptian prince of about eighteen, slim and long-limbed, a smooth oval face with kohl-lined almond eyes like his mother's, a shaved head with the long braided sidelock of a royal son, a pleated white linen kilt, his face close, eyes lowered for the first time, jaw tight.\nACTION: the prince hears the court speak of him by a name that is not his own, and he does not answer; his lips are pressed together, a vein stands out at his temple, and he does not look up at the judges; his bound hands, just visible at the lower edge, are clenched.\nSETTING: the court of examination at night, only lamp glow and dark columns; a lamp glows on a stand at the right; at the left, past his shoulder, dark columns and the empty floor of the hall vanish into blackness; the pleated shoulder of a guard is just visible at the right edge, cut off by the frame.\nCAMERA: camera stands close to him, eye level, close.\nFRAME LAYOUT: center-right — the face, near-camera and large; left third — a dark column, far; right edge — the glow of a lamp.\nFACING: we see his face three-quarter on, turned toward screen-left, eyes down.\nSCREEN DIRECTION: lamplight flickers across his cheek; the sidelock sways slightly toward screen-left.\nLIGHT: hard side light from a lamp at the right, half the face in black shadow; the lamplight is hot and orange on his near cheek and cuts off sharply across the bridge of the nose, leaving the far half of his face in deep shadow; a tiny point of lamplight shines in his near eye.\nPALETTE: lamp amber, black, bronze skin, linen white.\nDETAIL: kohl lines, a bead of sweat at the temple, the weave of the braid, texture of the skin, the fine pleats of linen at his shoulder, a small gold stud in his ear, rope fibres at his clenched hands, a faint smudge of kohl at the corner of one eye, the dark linen thread binding the end of the sidelock.\nNOT IN FRAME: other people, Latin letters, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "CU",
+            "angle": "eye",
+            "location": "court-of-examination",
+            "time_light": "lamplit-evening",
+            "camera_motion": "locked"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B21",
+      "sentences": [
+        "S26",
+        "S27",
+        "S28"
+      ],
+      "start": 132.86,
+      "end": 138.7,
+      "dur": 5.84,
+      "device": "silhouette",
+      "narration_says": "\"They found him guilty. They left him in his place. He took his own life.\"",
+      "viewer_sees": "SILHOUETTE — the prince alone in a small shut room, seated on a bench, a black silhouette against a lamplit wall; no body, no weapon",
+      "shots": [
+        {
+          "shot_id": "27",
+          "beat_id": "B21",
+          "link_group": null,
+          "t_in": 132.875,
+          "t_out": 138.708,
+          "use_in": 0,
+          "use_out": 5.833,
+          "use_len": 5.833,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pull",
+          "source_file": "shots/shot27.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "the prince as a black silhouette seated alone on a bench",
+            "the lamplit wall glowing orange",
+            "the shut wooden door",
+            "the lamp on the floor"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: the silhouette of a slim young prince with a shaved head and a long braided sidelock, seated alone on a low bench, shoulders bowed, a flat black shape against a lamplit wall.\nACTION: the court has left him in his place; he sits alone in a shut room with what he has been told to do, and the record will say only that he took his own life; his hands rest on his knees and his head is bowed so low that the sidelock hangs straight down; his shadow on the wall is twice his size and bends where the wall meets the ceiling.\nSETTING: a small bare room off the court, plastered walls glowing orange from one lamp on the floor, a shut wooden door, a water jar; the room has no window; a reed mat on the floor, a folded linen shawl at the end of the bench, a shut door of three rough planks; a stool stands empty at the far end of the room, the only other piece of furniture.\nCAMERA: camera stands in the corner of the room, eye level, medium.\nFRAME LAYOUT: center — the black silhouette on the bench against the glowing wall, near-camera and large; right third — the shut door, dark; lower-left — the lamp on the floor, its flame the brightest point.\nFACING: the silhouette is in profile facing screen-left, head bowed; no features visible.\nSCREEN DIRECTION: the lamp flame flickers and his long shadow sways across the wall toward screen-right.\nLIGHT: one low lamp on the floor lighting the wall orange; the figure itself pure black; the plaster glows from bright orange near the flame to dark brown in the corners; the edge of the silhouette is rimmed with a hair-thin line of orange where the light curls around it.\nPALETTE: glowing orange plaster, pure black, deep brown, lamp gold.\nDETAIL: the crisp outline of the sidelock and shoulders against the wall, grain of the plaster, the rim of the jar, the rough planks of the door with light leaking at their seams.\nNOT IN FRAME: a body, a weapon, poison, blood, rope, Latin letters, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "small-cell",
+            "time_light": "night-single-lamp",
+            "camera_motion": "pull"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B22",
+      "sentences": [
+        "S29",
+        "S30"
+      ],
+      "start": 138.7,
+      "end": 149.5,
+      "dur": 10.8,
+      "device": null,
+      "narration_says": "Then the court itself went on trial. Some of the accused women had visited two of the judges at home and, the papyrus says, \"made a beer-hall\" with them.",
+      "viewer_sees": "two well-fed judges in fine pleated robes, wrists now bound, standing before a new tribunal → the beer-hall: at night in a judge's house, the two judges reclining among harem women and an army commander, beer jars, a harpist, lamps, laughter",
+      "shots": [
+        {
+          "shot_id": "28",
+          "beat_id": "B22",
+          "link_group": null,
+          "t_in": 138.708,
+          "t_out": 141.458,
+          "use_in": 0,
+          "use_out": 2.75,
+          "use_len": 2.75,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pan-left",
+          "source_file": "shots/shot28.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "two-judges",
+            "court-of-examination"
+          ],
+          "visual_priority": [
+            "The Two Corrupt Judges standing bound before a new tribunal",
+            "their fine robes and collars",
+            "the new officials on the bench at the left",
+            "the guard pushing them forward"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: two Egyptian judges, one a stout royal butler with a round shaved head and a double chin, the other a thin scribe with a long neck and a short black wig, both in fine pleated linen robes, now standing with their wrists bound before the bench where they once sat, the stout one sweating, the thin one staring straight ahead.\nACTION: the court itself is on trial: two of its own judges are brought before a new tribunal, still dressed in the fine robes and collars of their office; the stout judge's collar sits crooked and his face shines with sweat; the thin judge holds his chin high as if this were a mistake; a scribe at the foot of the bench is ready to write.\nSETTING: a pillared hall of judgement of plastered mudbrick, squat columns painted with red and yellow bands, a long raised wooden bench for the judges along one wall, reed mats on a beaten earth floor, other officials sit on the bench in their place; a guard with a staff at their backs; the new tribunal is three grave officials in plain linen with a scribe at their feet and a fresh sheet of papyrus.\nCAMERA: camera stands level with the two accused men among the reed mats, eye level, medium.\nFRAME LAYOUT: right third — the two judges, near-camera and large; left third — the bench with the new officials, far; center — the guard with his staff.\nFACING: we see both judges three-quarter on, facing screen-left toward the bench.\nSCREEN DIRECTION: the guard pushes them a step toward screen-left; dust lifts from the mats.\nLIGHT: daylight shafts from the slit windows across the floor, the judges caught in one of them; dust glitters in the shafts.\nPALETTE: linen white, mudbrick ochre, red and yellow bands, shadow brown.\nDETAIL: sweat on the stout judge's scalp, rope at the wrists, pleats and bead collars, gold rings still on their bound fingers, the pleats of their robes crushed and creased from a night in custody.\nNOT IN FRAME: Latin letters, text, modern objects.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "court-of-examination",
+            "time_light": "shafted-daylight",
+            "camera_motion": "pan"
+          }
+        },
+        {
+          "shot_id": "29",
+          "beat_id": "B22",
+          "link_group": null,
+          "t_in": 141.458,
+          "t_out": 149.5,
+          "use_in": 0,
+          "use_out": 8.042,
+          "use_len": 8.042,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pan-right",
+          "source_file": "shots/shot29.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "two-judges",
+            "harem-women",
+            "army-commander"
+          ],
+          "visual_priority": [
+            "The Two Corrupt Judges reclining at the party",
+            "the accused harem women pouring them beer",
+            "the army commander raising his cup",
+            "the harpist and the lamps",
+            "tall beer jars with reed drinking straws"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: two Egyptian judges, one a stout royal butler with a round shaved head and a double chin, the other a thin scribe with a long neck and a short black wig, both in fine pleated linen robes, sprawled on cushions and low stools, cups in hand, laughing, their collars askew.\nSUBJECT 2: Egyptian women of the royal harem, heavy black braided wigs, kohl-lined eyes, sheer pleated white linen gowns, broad collars of blue faience beads, gold bangles on the wrists, three of them, prisoners of the court, pouring beer for the judges and leaning close to them.\nSUBJECT 3: an Egyptian army commander in his forties, a hard square face with a scar across the left cheek, a short black wig, a leather scale corselet over a white kilt, a bronze sickle sword at the belt, seated among them with a cup raised high, at ease, as if he were not on trial.\nACTION: the papyrus calls it making a beer-hall: in the house of the judges, in the middle of the trial, the accused women and the army commander share jars of beer with the two judges who are meant to sentence them, while a harpist plays.\nSETTING: a well-off Theban house at night, plastered walls with painted lotus friezes, reed mats, tall beer jars with long reed drinking straws in a wooden rack, bowls of figs and loaves of bread, oil lamps on stands.\nCAMERA: camera stands at the edge of the room, eye level, wide.\nFRAME LAYOUT: right two thirds — the party: the two judges near-camera and large at center-right, the women around them, the commander at the right edge; left third — the harpist and the dark doorway, far; lamps all through the room.\nFACING: we see the faces three-quarter on, laughing toward each other; the women look at the judges.\nSCREEN DIRECTION: a woman tips a jar and the beer pours toward screen-left into a judge's cup; the harpist's hand sweeps across the strings.\nLIGHT: warm lamplight from several stands, golden faces, deep shadows in the corners.\nPALETTE: lamp gold, beer amber, lotus blue, linen white.\nDETAIL: froth on the beer, wet cups, bead collars, harp strings, figs in a bowl.\nNOT IN FRAME: nudity, the king, guards, Latin letters, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "judges-house",
+            "time_light": "night-lamplit-party",
+            "camera_motion": "pan"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B23",
+      "sentences": [
+        "S31",
+        "S32"
+      ],
+      "start": 149.5,
+      "end": 155.15,
+      "dur": 5.65,
+      "device": null,
+      "narration_says": "Both judges lost their noses and ears. One of them then took his own life.",
+      "viewer_sees": "the two judges sitting against a mudbrick wall, the middles of their faces bound in linen over nose and ears, heads bowed; one has turned toward a dark doorway",
+      "shots": [
+        {
+          "shot_id": "30",
+          "beat_id": "B23",
+          "link_group": null,
+          "t_in": 149.5,
+          "t_out": 155.167,
+          "use_in": 0,
+          "use_out": 5.667,
+          "use_len": 5.667,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot30.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "two-judges"
+          ],
+          "visual_priority": [
+            "The Two Corrupt Judges slumped against a wall with bandaged faces",
+            "the dark doorway the stout judge has turned toward",
+            "the bare prison yard",
+            "their stained robes"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: two Egyptian judges, one a stout royal butler with a round shaved head and a double chin, the other a thin scribe with a long neck and a short black wig, both in fine pleated linen robes, sitting slumped against a wall, the middles of their faces wrapped in clean linen bandages where noses and ears were cut away, their fine robes stained and dusty.\nACTION: the sentence has been carried out and both judges sit in disgrace; the stout one has turned his face toward a dark open doorway, as if he has already decided; the thin judge sits with his knees drawn up and his hands hanging; the stout judge has pushed himself half up from the wall with one hand, his body already leaning toward the doorway; their collars are gone, and pale bands of skin show where they used to lie.\nSETTING: a bare prison yard, a mudbrick wall, a dark doorway, a water jar, grey dawn; the yard is bare beaten earth with a drain channel, a broken jar, and an empty guard's stool by the gate; a strip of grey sky shows over the wall, and a crow sits on its top.\nCAMERA: camera stands a few paces above them, high angle, medium.\nFRAME LAYOUT: center — the two judges against the wall, near-camera and large; right third — the dark doorway; left third — the bare cracked wall.\nFACING: the thin judge faces camera, eyes down above the bandage; the stout judge has turned in profile toward screen-right, toward the doorway.\nSCREEN DIRECTION: a fly crosses toward screen-right; the dawn wind lifts dust toward the doorway.\nLIGHT: flat grey dawn, no sun, cold and even; the grey light makes the clean white bandages the brightest thing in the yard.\nPALETTE: dawn grey, stained linen white, mudbrick brown, black doorway.\nDETAIL: neatly wound bandages around the heads, dust on the robes, cracks in the wall, dust settled in the creases of their robes, the thin judge's bare feet, the frayed hems of the once-fine robes.\nNOT IN FRAME: blood, open wounds, knives, Latin letters, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "high",
+            "location": "prison-yard",
+            "time_light": "grey-dawn",
+            "camera_motion": "push"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B24",
+      "sentences": [
+        "S33",
+        "S34"
+      ],
+      "start": 155.15,
+      "end": 160.66,
+      "dur": 5.51,
+      "device": "silhouette",
+      "narration_says": "Of Tiye's own trial, nothing survives. Her fate is unknown.",
+      "viewer_sees": "SILHOUETTE — Tiye as a dark figure in a doorway at the end of a long empty corridor, light behind her, turned away",
+      "shots": [
+        {
+          "shot_id": "31",
+          "beat_id": "B24",
+          "link_group": null,
+          "t_in": 155.167,
+          "t_out": 160.667,
+          "use_in": 0,
+          "use_out": 5.5,
+          "use_len": 5.5,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "hold",
+          "source_file": "shots/shot31.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "Tiye as a dark silhouette in the far doorway",
+            "the long empty corridor of columns",
+            "the bright light pouring through the door",
+            "an empty stool near camera"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: the silhouette of a tall woman in a long gown and a heavy braided wig with a thin circlet, standing in a doorway at the far end of a long empty corridor, turned away from camera, a flat dark shape against bright light.\nACTION: Tiye stands on the threshold, about to step where no surviving record follows her; she has one hand on the door frame, as if about to push off from it; her gown and wig are only a shape, but the circlet on her head catches a thin line of light.\nSETTING: the long corridor of the harem, painted columns on both sides, reed mats, cold lamps on their stands; the corridor is lined with the doors of the harem rooms, all shut; unlit lamps hang on the near columns; a stool and a dropped shawl lie near camera; the far doorway opens onto blinding white daylight with no detail at all; the paint on the near columns is faded and flaking, blue lotus flowers on a cream ground.\nCAMERA: camera stands at the near end of the corridor, eye level, wide.\nFRAME LAYOUT: center — the far doorway with the silhouette, small; left third and right third — the columns receding toward her; lower-left — an empty stool, near-camera.\nFACING: we see her back; she faces into the light, her face hidden.\nSCREEN DIRECTION: her long sheer sleeve lifts toward screen-left in a draught; dust drifts in the light of the door.\nLIGHT: bright white light pouring through the far doorway, the corridor in deep shadow, the figure pure black; the light from the far door spills along the floor toward camera in a long pale strip that ends just short of the stool.\nPALETTE: white light, blue-black shadow, faded column green, linen grey.\nDETAIL: the crisp outline of the wig and circlet, dust in the light, the grain of the mats, the folds of the dropped shawl near camera, painted papyrus columns fading into the dark, a thin bright edge of light along her shoulders.\nNOT IN FRAME: her face, guards, Latin letters, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "harem-corridor",
+            "time_light": "backlit-doorway",
+            "camera_motion": "locked"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B25",
+      "sentences": [
+        "S35"
+      ],
+      "start": 160.66,
+      "end": 166.06,
+      "dur": 5.4,
+      "device": null,
+      "narration_says": "For more than a century, historians argued over whether the king had been murdered at all.",
+      "viewer_sees": "two Egyptologists of the 1890s arguing across a desk piled with books, a facsimile of the papyrus spread between them and a photograph of the mummy's face pinned to the wall",
+      "shots": [
+        {
+          "shot_id": "32",
+          "beat_id": "B25",
+          "link_group": null,
+          "t_in": 160.667,
+          "t_out": 166.042,
+          "use_in": 0,
+          "use_out": 5.375,
+          "use_len": 5.375,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot32.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "two Egyptologists of the 1890s arguing across a desk",
+            "the facsimile of the trial papyrus spread between them",
+            "a sepia picture of the mummy's face pinned to the wall",
+            "gaslight and piled books"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: two Egyptologists of the 1890s, one a heavy bearded man in a dark frock coat, the other a lean clean-shaven man with spectacles and a waistcoat, arguing across a desk.\nACTION: for more than a century the argument goes on: the bearded man stabs a finger at a facsimile of the trial papyrus, which never mentions a murder, while the lean one points up at a sepia picture of the king's mummy pinned to the wall, its neck hidden in linen; neither can prove his case; the bearded man has pushed his chair back and half risen; the lean man has taken off his spectacles and holds them up like a pointer; between them a magnifying glass lies on the facsimile and an inkwell has tipped over onto a stack of letters.\nSETTING: a cluttered study, shelves of leather-bound books, a large facsimile sheet of hieratic columns spread on the desk, a gas lamp, a plaster cast of a pharaoh's head on a shelf; a window shows a grey city street at dusk; a framed print of a temple relief hangs crooked; a small case of Egyptian amulets stands on a shelf.\nCAMERA: camera stands at the end of the desk, eye level, medium.\nFRAME LAYOUT: left third — the bearded scholar, near-camera and large; right third — the spectacled scholar; center — the desk with the facsimile; upper-right — the sepia picture of the mummy on the wall.\nFACING: we see the two men in profile, facing each other across the desk.\nSCREEN DIRECTION: a loose page of notes slides off the desk toward screen-right; pipe smoke curls upward.\nLIGHT: yellow gaslight from a lamp on the desk, warm on the faces, the shelves in brown shadow; the glass of the framed picture on the wall reflects the gas flame.\nPALETTE: gaslight yellow, leather brown, sepia, dark wool.\nDETAIL: spectacles catching the light, cracked leather spines, the hieratic columns on the facsimile, the spilled ink soaking into the letters, the lean man's watch chain catching the light, the bearded man's ink-stained cuff.\nNOT IN FRAME: readable writing, Latin letters, modern objects.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "egyptologist-study",
+            "time_light": "gaslit-study",
+            "camera_motion": "push"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B26",
+      "sentences": [
+        "S36",
+        "S37"
+      ],
+      "start": 166.06,
+      "end": 175.26,
+      "dur": 9.2,
+      "device": null,
+      "narration_says": "His mummy, found in 1881 in a hidden tomb of royal mummies, showed no wound. Only a thick collar of linen around the neck.",
+      "viewer_sees": "1881, the hidden royal tomb: a narrow rock-cut corridor crammed with stacked coffins, workmen with candles hauling one coffin toward the shaft → close on the mummy's neck: a thick collar of layered brown linen, tight under the chin",
+      "shots": [
+        {
+          "shot_id": "33",
+          "beat_id": "B26",
+          "link_group": null,
+          "t_in": 166.042,
+          "t_out": 172.208,
+          "use_in": 0,
+          "use_out": 6.166,
+          "use_len": 6.166,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pan-right",
+          "source_file": "shots/shot33.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "royal-cache"
+          ],
+          "visual_priority": [
+            "The Royal Cache at Deir el-Bahari crammed with coffins in 1881",
+            "workmen with candles hauling one coffin toward the shaft",
+            "the official in a fez supervising",
+            "dust in the candlelight"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a narrow rough-cut tomb corridor deep in the Theban cliffs, pale limestone walls and a low ceiling, painted wooden coffins of kings and queens stacked along both walls, thick dust on the floor, in July 1881, the summer it was emptied, every wall stacked with the coffins of the dead kings.\nACTION: workmen in long galabiyas and turbans, lit by candles, haul a painted coffin along the corridor toward the shaft on ropes and poles, while dozens more coffins of kings and queens wait stacked along the walls; two men hold the poles at the front and two at the back while a fifth guides the coffin past the stacked ones; the painted face on its lid stares up at the low ceiling; another man kneels with a candle to light the floor for them.\nSETTING: the hidden tomb at Deir el-Bahari in the Theban cliffs, 1881; an official in a dark suit and a red fez holds up a candle and supervises; coffins lie two and three deep, some yellow-painted, some gilded, some with broken lids; wrapped bodies lie on the floor between them; boxes of small funerary figures are piled at a bend in the corridor.\nCAMERA: camera stands inside the corridor among the coffins, eye level, wide.\nFRAME LAYOUT: left third — stacked painted coffins, near-camera and large; center — the workmen carrying a coffin; right third — the corridor turning toward the shaft, a faint shaft of daylight, far.\nFACING: we see the workmen three-quarter on, straining toward screen-right; the official faces them.\nSCREEN DIRECTION: the coffin and the workmen move toward screen-right; the candle flames bend toward screen-left.\nLIGHT: warm, unsteady candlelight on faces and coffins, a thin cold daylight at the far end; candle smoke hangs under the low ceiling.\nPALETTE: candle gold, limestone grey, coffin yellow and black, dust brown.\nDETAIL: painted faces on the coffin lids, rope burns on the poles, dust hanging in the air, the official's red fez, the workmen's bare feet in the dust, gold leaf flaking from one lid.\nNOT IN FRAME: modern machines, Latin letters, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "royal-cache",
+            "time_light": "candlelight",
+            "camera_motion": "pan"
+          }
+        },
+        {
+          "shot_id": "34",
+          "beat_id": "B26",
+          "link_group": null,
+          "t_in": 172.208,
+          "t_out": 175.25,
+          "use_in": 0,
+          "use_out": 3.042,
+          "use_len": 3.042,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "hold",
+          "source_file": "shots/shot34.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "ramesses-iii-mummy"
+          ],
+          "visual_priority": [
+            "The Mummy of Ramesses III — the thick linen collar filling the frame",
+            "the hard chin above it",
+            "layer upon layer of bandage",
+            "no visible wound"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: the mummy of an old Egyptian king, a shrunken dark-brown face with a high hooked nose, sunken closed eyes and thin hard lips, the head bare, a thick collar of layered brown linen wound high around the neck, seen only from the chin to the shoulders, the thick linen collar filling the frame.\nACTION: nothing shows: no wound anywhere, only the collar, layer upon layer of linen bandage wound tight around the neck and hardened with resin, never taken off; the collar is not one bandage but dozens, wound round and round and stiffened with resin, so thick that the neck looks like a column; it sits snug under the jaw and down onto the shoulders, and there is no way to see the skin under it without cutting it away.\nSETTING: an examination table in a museum in the 1880s, a white sheet under the mummy; the white sheet is creased; at the edge of the frame lie an old brass ruler and a sheet of notes turned face down; a tall window of small panes lights the table from the left.\nCAMERA: camera stands at the side of the table, eye level, extreme close.\nFRAME LAYOUT: center — the linen collar, near-camera and large; upper third — the chin and hard lips, cropped at the nose; lower edge — the wrapped chest.\nFACING: we see the neck and chin from the side, the face turned up.\nSCREEN DIRECTION: a single loose thread of linen lifts toward screen-right in a draught.\nLIGHT: flat, even daylight from a tall window, no drama, every layer of the collar visible; the window light shows every frayed edge and every brown stain of the linen and nothing more.\nPALETTE: linen umber, resin brown, sheet white, skin black-brown.\nDETAIL: the individual turns of the bandage, resin stains, frayed edges, the weave of the linen, tiny cracks in the hardened resin, a narrow gap where the collar meets the jaw, too tight to see into, the coarse weave of the outermost layer, darker where hands have touched it over the years.\nNOT IN FRAME: wounds, blood, people, Latin letters, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "ECU",
+            "angle": "eye",
+            "location": "museum-hall-1880s",
+            "time_light": "flat-daylight",
+            "camera_motion": "locked"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B27",
+      "sentences": [
+        "S38"
+      ],
+      "start": 175.26,
+      "end": 179.18,
+      "dur": 3.92,
+      "device": null,
+      "narration_says": "In 2012, researchers put him through a CT scanner.",
+      "viewer_sees": "2012, a CT room: the mummy of Ramesses III on the scanner table, half inside the white ring of the gantry; two researchers at the console screens",
+      "shots": [
+        {
+          "shot_id": "35",
+          "beat_id": "B27",
+          "link_group": null,
+          "t_in": 175.25,
+          "t_out": 179.167,
+          "use_in": 0,
+          "use_out": 3.917,
+          "use_len": 3.917,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot35.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "ramesses-iii-mummy",
+            "ct-room",
+            "researchers"
+          ],
+          "visual_priority": [
+            "The Mummy of Ramesses III sliding into the CT scanner",
+            "the white ring of the gantry",
+            "the researchers at the console",
+            "the cool blue light of 2012"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: the mummy of an old Egyptian king, a shrunken dark-brown face with a high hooked nose, sunken closed eyes and thin hard lips, the head bare, a thick collar of layered brown linen wound high around the neck, lying in a padded tray on the scanner table, sliding halfway into the white ring.\nSUBJECT 2: two modern researchers, a dark-haired woman in her forties with glasses and her hair pulled back, an older grey-haired man, both in white lab coats with blue surgical gloves, at the glass-walled console, the woman leaning toward a monitor, the man standing with arms folded.\nACTION: in 2012 the king is put through a CT scanner, three thousand years after his burial, so that the machine can see under the linen without unwrapping it; the woman points at her screen with a pen; the man has stepped closer to the glass; on the screen a first grey image of the head and neck is forming.\nSETTING: a modern CT scanning room, a white scanner with a large ring gantry and a narrow padded table sliding into it, a glass-walled console with two flat monitors glowing grey, cool blue light, 2012.\nCAMERA: camera stands at the foot of the scanner table, eye level, wide.\nFRAME LAYOUT: left third — the mummy on the table, near-camera and large, head toward the ring; center — the white ring of the gantry; right third — the console and the two researchers, far, the grey monitors glowing.\nFACING: we see the mummy from the side, face up; the researchers three-quarter on, watching the screens.\nSCREEN DIRECTION: the table slides toward screen-right into the ring; a red laser line crosses the linen collar.\nLIGHT: cool blue-white clinical light, the monitors glowing grey, a soft sheen on the white plastic.\nPALETTE: clinical white, cool blue, monitor grey, resin brown.\nDETAIL: the padded tray, the laser line on the linen, cables, the researchers' blue gloves, the reflection of the gantry ring in the console glass, white padded cushions packed around the mummy's head.\nNOT IN FRAME: readable writing on screens, Latin letters, numbers, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "ct-room",
+            "time_light": "cool-clinical",
+            "camera_motion": "push"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B28",
+      "sentences": [
+        "S39"
+      ],
+      "start": 179.18,
+      "end": 188,
+      "dur": 8.82,
+      "device": "process-cutaway",
+      "narration_says": "Under the linen, his throat had been cut, nearly three inches wide, through the windpipe and down to the bones of the spine.",
+      "viewer_sees": "PROCESS / CUTAWAY — the CT slice on the monitor: a grey section of the neck where, under the pale ring of linen, a black gap cuts straight back through the windpipe to the white bones of the spine; a researcher's fingertip traces it",
+      "shots": [
+        {
+          "shot_id": "36",
+          "beat_id": "B28",
+          "link_group": null,
+          "t_in": 179.167,
+          "t_out": 188,
+          "use_in": 0,
+          "use_out": 8.833,
+          "use_len": 8.833,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pan-right",
+          "source_file": "shots/shot36.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "ct-room"
+          ],
+          "visual_priority": [
+            "The CT Room monitor showing the grey slice of the neck",
+            "the black gap of the cut reaching back to the spine",
+            "the pale ring of linen around the neck in the image",
+            "a gloved fingertip tracing the cut",
+            "a thin measuring line across the gap"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a modern CT scanning room, a white scanner with a large ring gantry and a narrow padded table sliding into it, a glass-walled console with two flat monitors glowing grey, cool blue light, its right-hand monitor close and filling most of the frame, showing one grey slice through the king's neck.\nACTION: under the linen the scan shows what no one had seen in three thousand years: the throat cut nearly three inches wide, a black gap running from the front of the neck straight back through the windpipe to the white bones of the spine, and a gloved fingertip traces it while a thin measuring line spans the gap.\nSETTING: the scan in black, grey and white: the round slice of the neck ringed by pale bands of linen, the darker ring of skin, the black wedge of the cut, the bright white block of a neck bone at the back.\nCAMERA: camera stands close to the monitor and faces it squarely, eye level, close.\nFRAME LAYOUT: center — the round grey slice of the neck on the monitor, near-camera and large; within it at the front — the black wedge of the cut; at the back — the white bone of the spine; right edge — the gloved fingertip touching the screen; edges — the dark bezel of the monitor.\nFACING: the monitor faces camera; only the fingertip of the researcher is seen.\nSCREEN DIRECTION: the fingertip slides toward screen-right along the cut toward the bone; a faint scan line rolls down the monitor.\nLIGHT: the cold glow of the monitor in a dark room, grey light on the glove; the blue glove holds a faint grey reflection of the scan.\nPALETTE: scan black, bone white, linen grey, glove blue.\nDETAIL: the layered bands of linen in the scan, a thin measuring line with small tick marks, the soft grain of the scan, the round outline of the windpipe split open in the image, a small bright point inside the cut where something hard lies.\nNOT IN FRAME: blood, red colour, gore, numbers, readable labels, Latin letters, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "CU",
+            "angle": "eye",
+            "location": "ct-room",
+            "time_light": "monitor-glow",
+            "camera_motion": "pan"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B29",
+      "sentences": [
+        "S40"
+      ],
+      "start": 188,
+      "end": 196.24,
+      "dur": 8.24,
+      "device": null,
+      "narration_says": "Inside the wound sat an Eye of Horus amulet, most likely placed there by the embalmers, to heal him for the next life.",
+      "viewer_sees": "three thousand years earlier, in the embalming tent: an embalmer in a jackal mask presses a small blue Eye of Horus amulet into the king's throat while another winds linen around the neck",
+      "shots": [
+        {
+          "shot_id": "37",
+          "beat_id": "B29",
+          "link_group": null,
+          "t_in": 188,
+          "t_out": 196.25,
+          "use_in": 0,
+          "use_out": 8.25,
+          "use_len": 8.25,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pull",
+          "source_file": "shots/shot37.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "eye-of-horus"
+          ],
+          "visual_priority": [
+            "The Eye of Horus Amulet pressed into the king's throat",
+            "the embalmer in a black jackal mask",
+            "a second embalmer winding linen around the neck",
+            "natron bowls and resin pots"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a small Eye of Horus amulet of glazed blue faience, an outlined eye with a curled falcon marking and a teardrop line beneath it, polished smooth, held between the fingertips of an embalmer and pressed into the king's throat at the cut, its blue glaze shining.\nSCALE: the amulet is no bigger than a fingertip; the embalmer's hand is many times larger; on the king's neck it is a single small blue point; it is the smallest and brightest thing in the frame.\nACTION: three thousand years before the scanner the embalmers close the wound for eternity: one, wearing the black jackal mask of Anubis, sets the Eye of Horus into the throat to heal it in the next life, while another begins winding the first strips of linen around the neck; the cut is already dark and sealed with resin.\nSETTING: the embalming tent, its linen walls glowing, bowls of natron, pots of resin, rolls of linen; the dead king, an old man with a high hooked nose and closed eyes, lying on a lion-headed embalming table, his face calm.\nCAMERA: camera stands at the head of the table, eye level, close.\nFRAME LAYOUT: center — the king's neck and the amulet, near-camera and large; left third — the embalmer in the jackal mask, bent over him; right third — the second embalmer holding a roll of linen; upper edge — the glowing tent wall.\nFACING: we see the jackal-masked embalmer in three-quarter view looking down at the amulet; the king's face is in profile, eyes closed, toward screen-right.\nSCREEN DIRECTION: the strip of linen unwinds toward screen-right from the second embalmer's hands; incense smoke drifts across the upper-left.\nLIGHT: warm lamplight inside the tent and daylight glowing through its linen walls; the blue amulet catching a highlight.\nPALETTE: faience blue, linen cream, resin black-brown, jackal black.\nDETAIL: the glaze of the amulet, the weave of the first linen strip, the painted jackal mask, grains of natron, the lion head carved at the end of the embalming table.\nNOT IN FRAME: blood, gore, open flesh, Latin letters, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "CU",
+            "angle": "eye",
+            "location": "embalming-tent",
+            "time_light": "lamplit-tent",
+            "camera_motion": "pull"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B30",
+      "sentences": [
+        "S41",
+        "S42",
+        "S43",
+        "S44"
+      ],
+      "start": 196.24,
+      "end": 205.66,
+      "dur": 9.42,
+      "device": null,
+      "narration_says": "So the plot had worked. The king was dead. And it had failed. The son it was meant to crown never ruled.",
+      "viewer_sees": "the king's coffin dragged on a sledge into the dark mouth of his tomb, mourners with raised arms → priests lowering the blue crown onto the head of the chosen son on the throne",
+      "shots": [
+        {
+          "shot_id": "38",
+          "beat_id": "B30",
+          "link_group": null,
+          "t_in": 196.25,
+          "t_out": 200.375,
+          "use_in": 0,
+          "use_out": 4.125,
+          "use_len": 4.125,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pan-right",
+          "source_file": "shots/shot38.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "the king's gilded coffin dragged on a sledge to his tomb",
+            "teams of men hauling on the ropes",
+            "mourning women with raised arms",
+            "the dark mouth of the tomb in the cliff"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: the king's great gilded coffin on a wooden sledge, dragged by teams of men on ropes toward the dark mouth of his tomb cut into the cliff.\nACTION: the plot has worked and the king is dead: he is drawn to his tomb, mourning women with loose hair raise their arms and throw dust on their heads, and priests in leopard skins walk ahead burning incense; four teams of men lean hard into the ropes; the sledge runners leave two straight furrows in the dust; a priest pours water on the ground ahead of the runners; a line of servants carries chests, boxes and jars of grave goods after the coffin.\nSETTING: the Valley of the Kings, bare cliffs of pale limestone, the square-cut entrance of the tomb, the dusty road; the cliffs rise on both sides into a hard blue sky; other tomb entrances show as small dark squares along the valley wall; the procession winds up from the left out of the valley floor; dust raised by the sledge hangs over the road in a long yellow cloud.\nCAMERA: camera stands on a rise of rock above the road, high angle, wide.\nFRAME LAYOUT: center — the coffin on its sledge and the men hauling it; right third — the dark square mouth of the tomb in the cliff, its doorway waiting; left third — the mourning women, near-camera and large.\nFACING: we see the hauling men from the side, leaning toward screen-right; the women face the coffin, arms raised.\nSCREEN DIRECTION: the sledge and the whole procession move toward screen-right, toward the tomb; incense smoke trails toward screen-left.\nLIGHT: harsh white noon sun, short shadows, the gilded coffin blazing; the gilded coffin throws off light so bright that the nearest mourners shade their eyes.\nPALETTE: gold, limestone white, mourning blue-grey, dust ochre.\nDETAIL: ropes taut on the shoulders, dust from the sledge runners, the women's loose hair, figures readable by outline, the leopard skins of the priests, smoke from their bronze incense arms, the painted eyes on the coffin lid catching the sun.\nNOT IN FRAME: Latin letters, text, modern objects.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "crowd",
+            "shot_size": "LS",
+            "angle": "high",
+            "location": "valley-of-the-kings",
+            "time_light": "harsh-noon",
+            "camera_motion": "pan"
+          }
+        },
+        {
+          "shot_id": "39",
+          "beat_id": "B30",
+          "link_group": null,
+          "t_in": 200.375,
+          "t_out": 205.667,
+          "use_in": 0,
+          "use_out": 5.292,
+          "use_len": 5.292,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot39.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "ramesses-iv",
+            "palace-throne-hall"
+          ],
+          "visual_priority": [
+            "Ramesses IV on the throne as the blue crown is lowered onto his head",
+            "two priests holding the crown",
+            "the court bowing",
+            "an empty patch of floor at the right edge"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: an Egyptian prince in his late thirties, a broad strong face, a high hooked nose like his father's, a calm level gaze, clean-shaven, a pleated white linen kilt, a gold armband on each upper arm, seated on the gilded throne, head bowed slightly as the blue khepresh crown is lowered onto it.\nACTION: and the plot has failed: two priests lower the blue crown onto the chosen son, not onto the son the plotters wanted; the court bows; the son it was meant to crown never rules; the new king's hands rest flat on his knees; the two priests in leopard skins hold the crown by its edges with great care; a third priest reads from a roll; the courtiers bow so low that their wigs nearly touch the floor.\nSETTING: a columned throne hall of a Ramesside palace, papyrus-bundle columns painted blue, green and red, a raised dais with a gilded throne under a canopy, plastered walls painted with bound foreign captives, high slit windows, the coronation morning, incense, the court in its finest linen; the dais is strewn with lotus flowers, incense smokes from bronze stands, and the canopy over the throne is hung with gold.\nCAMERA: camera stands low at the foot of the dais, low angle, medium.\nFRAME LAYOUT: left third — the new king on the throne, near-camera and large; center — the two priests lowering the crown; right third — the bowing courtiers, and at the right edge an empty patch of floor where no one stands.\nFACING: we see the new king three-quarter on, eyes lowered; the priests in profile facing him.\nSCREEN DIRECTION: the crown descends; the bowing courtiers lean toward screen-left toward the throne.\nLIGHT: warm morning gold through the slit windows, the crown glinting blue; one shaft of light falls exactly on the crown as it comes down.\nPALETTE: royal blue, gold, linen white, incense grey.\nDETAIL: the beaded surface of the blue crown, the priests' leopard skins, the pleats of the court's linen, the golden cobra rising at the front of the crown.\nNOT IN FRAME: Pentawer, Latin letters, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "low",
+            "location": "palace-throne-hall",
+            "time_light": "morning-gold",
+            "camera_motion": "push"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B31",
+      "sentences": [
+        "S45"
+      ],
+      "start": 205.66,
+      "end": 213.56,
+      "dur": 7.9,
+      "device": null,
+      "narration_says": "In the same hidden tomb lay another body: a young man, eighteen to twenty, in a coffin with no name.",
+      "viewer_sees": "back in the 1881 royal cache: set apart from the painted royal coffins, one plain undecorated coffin with its lid shifted aside, a wrapped body inside, a candle held over it",
+      "shots": [
+        {
+          "shot_id": "40",
+          "beat_id": "B31",
+          "link_group": null,
+          "t_in": 205.667,
+          "t_out": 213.542,
+          "use_in": 0,
+          "use_out": 7.875,
+          "use_len": 7.875,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pull",
+          "source_file": "shots/shot40.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "plain-coffin",
+            "royal-cache"
+          ],
+          "visual_priority": [
+            "The Plain Coffin set apart from the painted royal coffins",
+            "its lid shifted aside on a wrapped body",
+            "a candle held over it",
+            "the gilded coffins of kings stacked at the left"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a plain undecorated wooden coffin of pale grey-brown wood, no paint, no name and no carved face on its lid, the boards roughly fitted and scraped, lying on the dusty floor apart from the others, its lid shifted aside to show a body wrapped in a rough hide, a young man of eighteen to twenty.\nACTION: among the gilded and painted coffins of kings and queens lies one coffin with no name and no face, and a hand holds a candle over it; the plain coffin lies crooked, as if it was put down in a hurry and never moved again; its lid lies askew with a crack along it; the hand with the candle hesitates over the opening; under the hide only the shape of a head and shoulders shows.\nSETTING: a narrow rough-cut tomb corridor deep in the Theban cliffs, pale limestone walls and a low ceiling, painted wooden coffins of kings and queens stacked along both walls, thick dust on the floor, in 1881; dust lies thicker on the plain lid than on the royal coffins; a broken pot lies beside it; the painted coffins of the kings look up at the ceiling with their golden faces.\nCAMERA: camera stands over the coffin, high angle, medium.\nFRAME LAYOUT: right third — the plain coffin, near-camera and large, lid aside; left third — the painted royal coffins stacked against the wall; upper-right — the hand with the candle, cropped at the wrist.\nFACING: the coffin lies along the floor toward camera; the wrapped body inside faces up.\nSCREEN DIRECTION: the candle flame leans toward screen-left; dust settles slowly in the light.\nLIGHT: one candle from the upper-right, warm light on the bare wood, the royal coffins in shadow; the circle of candlelight is small, and the corridor fades to black past its edge.\nPALETTE: candle gold, pale grey wood, rough hide brown, painted coffin yellow.\nDETAIL: raw grain of the plain wood, the hair of the hide, gold leaf on the royal coffins, dust, the crack running along the lid.\nNOT IN FRAME: Latin letters, text, modern objects.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "MS",
+            "angle": "high",
+            "location": "royal-cache",
+            "time_light": "candlelight",
+            "camera_motion": "pull"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B32",
+      "sentences": [
+        "S46"
+      ],
+      "start": 213.56,
+      "end": 220.62,
+      "dur": 7.06,
+      "device": null,
+      "narration_says": "He was wrapped in a goatskin, unclean to Egyptians, his mouth hanging open as if he were screaming.",
+      "viewer_sees": "the young man's head and shoulders, wrapped in a rough goatskin, the face contorted, mouth wide open as if screaming",
+      "shots": [
+        {
+          "shot_id": "41",
+          "beat_id": "B32",
+          "link_group": null,
+          "t_in": 213.542,
+          "t_out": 220.625,
+          "use_in": 0,
+          "use_out": 7.083,
+          "use_len": 7.083,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot41.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "unknown-man-e"
+          ],
+          "visual_priority": [
+            "Unknown Man E with his mouth gaping open as if screaming",
+            "the rough goatskin around his body",
+            "the narrow young face",
+            "the harsh lamp light"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: the mummy of a young Egyptian man, a narrow young face drawn tight over the bones, the jaw dropped and the mouth gaping wide open, the body wrapped in a rough brown-and-white goatskin, lying on his back, head tipped back, the face contorted.\nACTION: the young man's face is twisted and his mouth hangs wide open as if he were screaming; the goatskin, unclean to Egyptians, is wrapped around his body up to the shoulders; the hide has been tied around the body with cord and pulled up under the chin; deep folds of skin show at the neck; the face has no wrappings at all, the eyes sunken, the teeth showing in the open mouth.\nSETTING: an examination table in 1886, a white sheet, the goatskin pushed back from the head; cut strips of old linen and the cords that were taken off lie on the table beside him; a brass tray of instruments sits at the edge of the frame; the sheet under him is stained brown; the room's shutters are closed against the daylight.\nCAMERA: camera stands over the table at his head, high angle, close.\nFRAME LAYOUT: center — the gaping face, near-camera and large; lower third — the goatskin over the shoulders; edges — the white sheet.\nFACING: we see his face from above, turned up and slightly toward screen-left.\nSCREEN DIRECTION: a tuft of goat hair stirs toward screen-left in a draught.\nLIGHT: a harsh hanging lamp directly above, hard shadows in the open mouth and eye sockets; the lamp is hard and white and leaves the inside of the open mouth in total darkness; the white sheet throws a little light up under the jaw.\nPALETTE: dark resin brown, goat hair brown and white, sheet white, black shadow.\nDETAIL: skin drawn tight over the cheekbones, the coarse hair of the goatskin, the dropped jaw, the deep folds of skin at the neck, the coarse cord tied around the hide, flecks of resin on the skin, the dry cracked lips drawn back from the teeth, a few strands of dark hair on the scalp.\nNOT IN FRAME: blood, gore, people, Latin letters, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "CU",
+            "angle": "high",
+            "location": "unwrapping-room",
+            "time_light": "harsh-lamp",
+            "camera_motion": "push"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B33",
+      "sentences": [
+        "S47"
+      ],
+      "start": 220.62,
+      "end": 224.36,
+      "dur": 3.74,
+      "device": null,
+      "narration_says": "He was catalogued as Unknown Man E.",
+      "viewer_sees": "1886: a pen writing a single large letter E on a paper tag tied with string to the plain coffin",
+      "shots": [
+        {
+          "shot_id": "42",
+          "beat_id": "B33",
+          "link_group": null,
+          "t_in": 220.625,
+          "t_out": 224.375,
+          "use_in": 0,
+          "use_out": 3.75,
+          "use_len": 3.75,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "hold",
+          "source_file": "shots/shot42.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "plain-coffin"
+          ],
+          "visual_priority": [
+            "The Plain Coffin with a paper tag tied to it",
+            "the single large letter E being written on the tag",
+            "a pen in a hand of 1886",
+            "the string around the coffin handle"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a plain undecorated wooden coffin of pale grey-brown wood, no paint, no name and no carved face on its lid, the boards roughly fitted and scraped, its edge filling the lower half of the frame, a paper tag tied to its handle with string.\nACTION: a hand in a dark sleeve and a white cuff writes one large capital letter E on the tag with a steel-nibbed pen: the young man has no name, only a letter; the nib is just lifting off the finished letter and the ink of the E is still wet and glossy; the tag is a plain card label with a reinforced hole, its string looped through the coffin's rough rope handle.\nSETTING: a work table in 1886, an ink bottle; the table also holds an open ledger with its pages turned away from camera, an ink bottle and a blotter; the coffin wood shows tool marks and a split where two boards meet; a pair of steel spectacles lies folded beside the ink bottle.\nCAMERA: camera stands close to the tag, eye level, extreme close.\nFRAME LAYOUT: center — the paper tag with the letter E, near-camera and large; right third — the hand and pen, cropped at the cuff; lower half — the plain wood of the coffin.\nFACING: the tag faces camera; the letter reads clearly.\nSCREEN DIRECTION: the pen finishes the last stroke of the E toward screen-right; the tag swings slightly on its string.\nLIGHT: harsh lamp from above, wet ink shining; the lamplight lies flat on the tag and makes the card glow cream against the grey wood; the shadow of the pen and hand falls across the lower corner of the tag.\nPALETTE: paper cream, ink black, pale grey wood, cuff white.\nDETAIL: one crisp capital letter E, the fibres of the string, the grain of the wood, a drop of ink on the nib, the reinforced hole in the tag, the steel nib split at its tip with a bead of ink caught in the split, the knot in the string.\nNOT IN FRAME: any other letters, words or numbers.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "ECU",
+            "angle": "eye",
+            "location": "unwrapping-room",
+            "time_light": "harsh-lamp",
+            "camera_motion": "locked"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B34",
+      "sentences": [
+        "S48",
+        "S49"
+      ],
+      "start": 224.36,
+      "end": 233.72,
+      "dur": 9.36,
+      "device": null,
+      "narration_says": "DNA showed he shared the king's male line, most likely as a son. The researchers named him a possible candidate for Pentawer.",
+      "viewer_sees": "two mummies on lab tables side by side, the king on the left and the young man on the right, profiles turned toward each other, a researcher holding a sample tube up between them → Pentawer alive again in the lamplit court, looking toward the left",
+      "shots": [
+        {
+          "shot_id": "43",
+          "beat_id": "B34",
+          "link_group": null,
+          "t_in": 224.375,
+          "t_out": 229.583,
+          "use_in": 0,
+          "use_out": 5.208,
+          "use_len": 5.208,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot43.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "ramesses-iii-mummy",
+            "unknown-man-e",
+            "researchers"
+          ],
+          "visual_priority": [
+            "The Mummy of Ramesses III on the left table",
+            "Unknown Man E on the right table",
+            "their profiles turned toward each other",
+            "a researcher holding up a sample tube between them"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: the mummy of an old Egyptian king, a shrunken dark-brown face with a high hooked nose, sunken closed eyes and thin hard lips, the head bare, a thick collar of layered brown linen wound high around the neck, on the left-hand lab table, its face in profile toward screen-right.\nSUBJECT 2: the mummy of a young Egyptian man, a narrow young face drawn tight over the bones, the jaw dropped and the mouth gaping wide open, the body wrapped in a rough brown-and-white goatskin, on the right-hand lab table, his gaping face in profile toward screen-left.\nSUBJECT 3: two modern researchers, a dark-haired woman in her forties with glasses and her hair pulled back, an older grey-haired man, both in white lab coats with blue surgical gloves, standing between the two tables, the woman holding a small sample tube up to the light, the man writing on a clipboard.\nACTION: in 2012 the two bodies from the same hidden tomb lie side by side, father and son by their DNA, most likely, and they face each other across a small tube of sample.\nSETTING: a museum laboratory, white walls, steel tables, a lamp on an arm.\nCAMERA: camera stands at the foot of the two tables, eye level, medium.\nFRAME LAYOUT: left third — the king's mummy, near-camera and large; right third — the young man, near-camera and large; center — the researcher with the sample tube held up.\nFACING: the two faces are in profile toward each other across the center; the researcher faces camera, eyes on the tube.\nSCREEN DIRECTION: the tube catches the light as the researcher turns it; a thread of the goatskin stirs toward screen-left.\nLIGHT: cool clinical light from overhead, the tube glinting.\nPALETTE: clinical white, steel grey, resin brown, glove blue.\nDETAIL: the label-less sample tube, the linen collar and the goatskin, the steel table edges, the thick linen collar on the king and the coarse goatskin on the young man, the two textures side by side, a small rack of empty sample tubes at the end of the left table.\nNOT IN FRAME: readable writing, numbers, Latin letters, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "museum-lab",
+            "time_light": "cool-clinical",
+            "camera_motion": "push"
+          }
+        },
+        {
+          "shot_id": "44",
+          "beat_id": "B34",
+          "link_group": null,
+          "t_in": 229.583,
+          "t_out": 233.708,
+          "use_in": 0,
+          "use_out": 4.125,
+          "use_len": 4.125,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pull",
+          "source_file": "shots/shot44.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "pentawer",
+            "court-of-examination"
+          ],
+          "visual_priority": [
+            "Pentawer alive again, alone in the lamplit court",
+            "his face turned toward the left",
+            "the dark columns",
+            "the empty judges' bench"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: an Egyptian prince of about eighteen, slim and long-limbed, a smooth oval face with kohl-lined almond eyes like his mother's, a shaved head with the long braided sidelock of a royal son, a pleated white linen kilt, alive again as he once was, standing alone in the empty court at night, his face turned toward the left.\nACTION: the researchers named him a possible candidate for Pentawer: the prince, alone and unbound now, looks across the empty hall toward the left, toward the side where his father ruled; he stands straight, unbound now, his arms at his sides, as he must have looked at his trial, young, proud and lost; his gaze crosses the whole empty hall toward the left, as if someone were standing at the bench in the dark.\nSETTING: a pillared hall of judgement of plastered mudbrick, squat columns painted with red and yellow bands, a long raised wooden bench for the judges along one wall, reed mats on a beaten earth floor, night, a single lamp, the bench empty; the same court of examination, empty, the bench far at the left in deep shadow, the mats rolled away, one lamp on a stand at the right; the painted bands on the columns show only where the lamp reaches them.\nCAMERA: camera stands low on the floor, low angle, medium.\nFRAME LAYOUT: right third — Pentawer, near-camera and large; left third — the empty bench, far; center — dark columns and lamp glow.\nFACING: we see his face three-quarter on, turned toward screen-left.\nSCREEN DIRECTION: the lamp flame leans toward screen-left; his sidelock lifts slightly.\nLIGHT: one lamp at the right, his face half lit, deep shadow everywhere else; the low warm lamp throws his long shadow toward the left across the floor; the rest of the hall is lost in black.\nPALETTE: lamp amber, deep black, linen white, bronze skin.\nDETAIL: the braided sidelock, kohl lines, pleats of the kilt, the small gold stud in his ear, his bare feet on the beaten floor.\nNOT IN FRAME: the mummy, other people, Latin letters, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "low",
+            "location": "court-of-examination",
+            "time_light": "lamplit-night",
+            "camera_motion": "pull"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B35",
+      "sentences": [
+        "S50"
+      ],
+      "start": 233.72,
+      "end": 241.28,
+      "dur": 7.56,
+      "device": null,
+      "narration_says": "In 2021, Egypt moved its royal mummies to a new museum, in a golden parade through Cairo.",
+      "viewer_sees": "night in Cairo: a line of golden carriages shaped like ancient boats rolling toward the right past the obelisk in Tahrir Square, crowds and lights along the road",
+      "shots": [
+        {
+          "shot_id": "45",
+          "beat_id": "B35",
+          "link_group": null,
+          "t_in": 233.708,
+          "t_out": 241.292,
+          "use_in": 0,
+          "use_out": 7.584,
+          "use_len": 7.584,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pull",
+          "source_file": "shots/shot45.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "tahrir-square",
+            "golden-carriage"
+          ],
+          "visual_priority": [
+            "Tahrir Square at Night with the golden parade passing",
+            "the long line of golden carriages rolling toward the right",
+            "the obelisk and ram-headed sphinxes",
+            "crowds, floodlights and motorcycle escorts"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Tahrir Square in Cairo at night, a tall pink granite obelisk ringed by four ram-headed sphinxes, modern buildings with lit windows, a broad avenue lined with floodlights and crowds behind barriers, on the night of 3 April 2021.\nSUBJECT 2: a golden parade carriage built like an ancient Egyptian boat on wheels, a gilded hull with a high curved prow and stern, a glass-sided cabin, the royal name in a cartouche on its side, one of twenty-two in a long slow line, each carrying one royal mummy, rolling past the obelisk toward the right.\nACTION: Egypt moves its royal mummies to a new museum in a golden parade through Cairo: twenty-two carriages glide past in order, escorted by police motorcycles and riders in ancient-style costume, while crowds watch behind barriers and fireworks open over the rooftops; each carriage carries one royal name in its cartouche and rolls in the order of the reigns; drummers and torch-bearers walk ahead of the first; spotlights rake the sky over the obelisk.\nSETTING: the route from the old Egyptian Museum toward the new museum in Fustat; the broad avenue is laid with a red-gold surface, and the barriers are lined with raised phones glittering like small lights; far at the right the line bends away down the avenue toward the river.\nCAMERA: camera stands high on a rooftop over the square, high angle, wide.\nFRAME LAYOUT: center — the obelisk and its four sphinxes; lower third — the line of golden carriages crossing from the left edge toward the right edge; edges — the crowds and the lit buildings; upper edge — fireworks, small.\nFACING: we see the carriages from the side, prows toward screen-right.\nSCREEN DIRECTION: the line of carriages moves toward screen-right; floodlight beams sweep across the square.\nLIGHT: golden floodlights on the carriages, deep blue night sky, sparkle of fireworks.\nPALETTE: carriage gold, night blue, obelisk pink, floodlight white.\nDETAIL: figures readable as small outlines, the gleam of each gilded hull, the sphinx silhouettes, the gilded skirts that hide the wheels, the line of motorcycle headlights.\nNOT IN FRAME: readable signs, Latin letters, text, logos.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "crowd",
+            "shot_size": "XLS",
+            "angle": "high",
+            "location": "tahrir-square",
+            "time_light": "night-golden-floodlight",
+            "camera_motion": "pull"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B36",
+      "sentences": [
+        "S51",
+        "S52"
+      ],
+      "start": 241.28,
+      "end": 249.56,
+      "dur": 8.28,
+      "device": null,
+      "narration_says": "Ramesses the Third rode in it. Right behind him came Ramesses the Fourth, the son the plotters had tried to push aside.",
+      "viewer_sees": "two golden carriages close: the leading one at the right carries the cartouche of Ramesses III on its side; directly behind it at the left rolls the carriage of his son",
+      "shots": [
+        {
+          "shot_id": "46",
+          "beat_id": "B36",
+          "link_group": null,
+          "t_in": 241.292,
+          "t_out": 249.542,
+          "use_in": 0,
+          "use_out": 8.25,
+          "use_len": 8.25,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pan-right",
+          "source_file": "shots/shot46.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "golden-carriage",
+            "tahrir-square"
+          ],
+          "visual_priority": [
+            "The Golden Carriage of Ramesses III leading at the right",
+            "the carriage of his son Ramesses IV directly following at the left",
+            "the cartouche on the side of each carriage",
+            "floodlights and the watching crowd"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a golden parade carriage built like an ancient Egyptian boat on wheels, a gilded hull with a high curved prow and stern, a glass-sided cabin, the royal name in a cartouche on its side, two of them close together, the leading one at the right carrying Ramesses the Third, the second right after it at the left carrying his son Ramesses the Fourth.\nACTION: Ramesses the Third rides in the parade, and right after him comes Ramesses the Fourth, the son the plotters tried to push aside, father and son in order, the way they reigned; the leading carriage is a little nearer camera, its gilded prow lit hard, and through its glass cabin the long shape of a sealed case is just visible; the second carriage follows a few paces off, the same shape and the same gold, with a different name in its cartouche.\nSETTING: Tahrir Square in Cairo at night, a tall pink granite obelisk ringed by four ram-headed sphinxes, modern buildings with lit windows, a broad avenue lined with floodlights and crowds behind barriers, at night; the road under the wheels shines gold in the floodlights; riders on horseback in ancient-style costume escort them at the right edge.\nCAMERA: camera stands at the roadside by the barriers, eye level, medium.\nFRAME LAYOUT: right third — the leading carriage of Ramesses III, near-camera and large, its prow toward the right edge; left third — the carriage of Ramesses IV following close; upper edge — floodlights and the obelisk, far.\nFACING: we see both carriages from the side, prows toward screen-right; the gilded cartouches face camera.\nSCREEN DIRECTION: both carriages roll toward screen-right; the crowd's phone lights and flags wave toward screen-left.\nLIGHT: gold floodlight on the hulls, cool night beyond, reflections sliding over the glass cabins; the gold of the two hulls burns brighter where the floodlight beams cross.\nPALETTE: burnished gold, night blue, floodlight white, glass reflection.\nDETAIL: the cartouche on each hull, the curve of each prow, reflections in the glass, the fine gold rope along the rim of each hull, the polished brass of the wheel hubs.\nNOT IN FRAME: readable writing, Latin letters, logos, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "tahrir-square",
+            "time_light": "night-golden-floodlight",
+            "camera_motion": "pan"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B37",
+      "sentences": [
+        "S53",
+        "S54",
+        "S55"
+      ],
+      "start": 249.56,
+      "end": 258.72,
+      "dur": 9.16,
+      "device": null,
+      "narration_says": "The young man in the goatskin was not among them. He still has no name. Only a label: Unknown Man E.",
+      "viewer_sees": "the plain coffin of the young man alone in a dark museum storeroom, a high window at the left lit gold by the parade passing outside → the screaming face in a glass case, a small blank-looking label card at its lower edge",
+      "shots": [
+        {
+          "shot_id": "47",
+          "beat_id": "B37",
+          "link_group": null,
+          "t_in": 249.542,
+          "t_out": 254.958,
+          "use_in": 0,
+          "use_out": 5.416,
+          "use_len": 5.416,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot47.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "plain-coffin"
+          ],
+          "visual_priority": [
+            "The Plain Coffin alone in a dark museum storeroom",
+            "the high window at the left lit gold by the passing parade",
+            "shelves of crates in the dark",
+            "dust in the window light"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a plain undecorated wooden coffin of pale grey-brown wood, no paint, no name and no carved face on its lid, the boards roughly fitted and scraped, resting alone on a trestle in a dark museum storeroom, its lid closed.\nACTION: the young man in the goatskin is not among the kings: while the golden parade passes outside, his coffin stays behind in the dark, and only the glow of the parade comes in through a high window; the lid is closed and dusty and nothing is written on the trestle; the gold light comes and goes in waves as each carriage passes outside, sliding across the floor, touching the end of the coffin and moving on.\nSETTING: a museum storeroom at night, shelves of wooden crates, a bare floor; the walls are lined with wooden crates and shelves of pottery under dust sheets; an empty museum trolley stands near the door; the concrete floor is bare and cold; the storeroom door stands open a hand's width, and a strip of corridor light lies across the threshold; a single wooden chair with a folded dust sheet on its seat stands by the door, turned toward the coffin.\nCAMERA: camera stands at the door of the storeroom, eye level, wide.\nFRAME LAYOUT: right third — the plain coffin on its trestle, near-camera and large; left third — the high barred window, glowing gold; center — the dark floor with a slanting band of gold light across it.\nFACING: the coffin lies side-on to camera.\nSCREEN DIRECTION: the gold glow from the window slides slowly toward screen-right across the floor as the parade passes outside; dust drifts in the beam.\nLIGHT: dark storeroom, warm moving gold light through the window from the parade outside; the window glow pulses gold, then dims, then pulses again.\nPALETTE: storeroom black, parade gold, pale grey wood, dust.\nDETAIL: the grain of the coffin lid, crate stencils unreadable in shadow, dust in the beam, the dust sheets draped over the shelves, a faint gold sheen on the cold concrete where the light passes, the dry crack along the edge of the lid, a thin film of dust over everything.\nNOT IN FRAME: people, Latin letters, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "museum-storeroom",
+            "time_light": "dark-with-gold-window",
+            "camera_motion": "push"
+          }
+        },
+        {
+          "shot_id": "48",
+          "beat_id": "B37",
+          "link_group": null,
+          "t_in": 254.958,
+          "t_out": 258.708,
+          "use_in": 0,
+          "use_out": 3.75,
+          "use_len": 3.75,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "hold",
+          "source_file": "shots/shot48.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "unknown-man-e"
+          ],
+          "visual_priority": [
+            "Unknown Man E lying in a glass display case",
+            "the small white label card with the letter E",
+            "reflections on the glass",
+            "the dim gallery"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: the mummy of a young Egyptian man, a narrow young face drawn tight over the bones, the jaw dropped and the mouth gaping wide open, the body wrapped in a rough brown-and-white goatskin, lying in a glass display case in a dim gallery, the gaping face turned up.\nACTION: he still has no name: only a small white label card at the edge of the case, with a single letter E; the case is low and long and the goatskin still covers him to the shoulders; the white label card stands on a small slanted holder at the lower-right corner of the case, and on it there is a single bold letter E and nothing else.\nSETTING: a museum gallery today, a low glass case on a dark plinth; the gallery is dark between the cases; far at the left another case holds a gilded royal coffin, lit warmly, while his own case is lit with cold light; a museum bench stands empty in the middle of the dark floor.\nCAMERA: camera stands at the end of the case, high angle, medium.\nFRAME LAYOUT: center — the mummy in the case, near-camera and large; lower-right — the small white label card with the letter E; upper edge — reflections of gallery lights on the glass.\nFACING: we see the face from above and the side, mouth open, eyes empty.\nSCREEN DIRECTION: a reflection of a passing visitor slides across the glass toward screen-right.\nLIGHT: cool, low gallery light, a sheen on the glass, the face half in shadow; the glass throws back a faint double image of the face, as if there were two of him; a small spotlight over the case picks out only the face.\nPALETTE: gallery grey, goat hair brown and white, resin brown, label white.\nDETAIL: one crisp letter E on the card, the coarse goatskin, the glass edge, the slanted holder of the card, the dark eye sockets, the teeth showing in the open mouth, the coarse goat hair around the shoulders.\nNOT IN FRAME: any other letters, words or numbers, people.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "high",
+            "location": "museum-display",
+            "time_light": "cool-gallery-light",
+            "camera_motion": "locked"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B38",
+      "sentences": [
+        "S56",
+        "S57",
+        "S58"
+      ],
+      "start": 258.72,
+      "end": 273.006,
+      "dur": 14.286,
+      "device": "empty-aftermath",
+      "narration_says": "A court tried to erase a prince by taking his name, and three thousand years later, it is still missing. For more forgotten crimes like this, leave a like and subscribe to Animated Tales. Until next time.",
+      "viewer_sees": "EMPTY AFTERMATH — an oval name-ring carved in stone, its inside chiselled empty, sand drifting into it → END CARD: poster of the whole story with title and SUBSCRIBE",
+      "shots": [
+        {
+          "shot_id": "49",
+          "beat_id": "B38",
+          "link_group": null,
+          "t_in": 258.708,
+          "t_out": 266.625,
+          "use_in": 0,
+          "use_out": 7.917,
+          "use_len": 7.917,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot49.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "an oval name-ring carved in weathered stone, chiselled empty",
+            "sand drifting into the empty oval",
+            "the half-buried block",
+            "the low evening sun"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: an oval name-ring carved into a weathered sandstone block half buried in desert sand, its inside chiselled completely empty.\nACTION: three thousand years later the name is still missing: the wind blows a thin stream of sand into the empty oval and out again; the oval has the rounded shape of a cartouche, with the carved rope tied at its base, but its inside has been hacked away to rough stone and not one sign of the name is left; the sand runs into the hollow, fills its lowest corner and blows out again over the rim.\nSETTING: the open desert west of Thebes at the end of the day, the block alone in the sand, the cliffs far; the block lies tilted, half sunk in a slope of fine sand; wind ripples cross the dune; a few dry thorn twigs stick up; the western cliffs of Thebes stand far and hazy at the upper-left under the evening sky; the faint carved outline of a falcon and a sun disc can still be traced on the block over the oval, but the name itself is gone.\nCAMERA: camera stands low beside the block, low angle, close.\nFRAME LAYOUT: center — the empty oval, near-camera and large; right third — drifting sand; upper-left — the low sun and the cliffs, far and hazy.\nFACING: the carved face of the block turns toward camera.\nSCREEN DIRECTION: a thin stream of sand blows toward screen-left across the empty oval.\nLIGHT: low evening sun raking across the stone, every chisel mark in sharp shadow; the sun is so low that it lights only the raised edges of the oval and leaves the hacked hollow in violet shadow.\nPALETTE: sandstone rose, shadow violet, desert gold, sky amber.\nDETAIL: chisel scars inside the oval, grains of sand in the air, cracks in the stone, the carved rope knot at the base of the oval, ripples in the sand, a single small lizard track crossing the sand by the block, the hacked chisel marks running in every direction across the hollow.\nNOT IN FRAME: readable signs, people, Latin letters, text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "CU",
+            "angle": "low",
+            "location": "desert-stone",
+            "time_light": "low-evening",
+            "camera_motion": "push"
+          }
+        },
+        {
+          "shot_id": "50",
+          "beat_id": "B38",
+          "link_group": null,
+          "t_in": 266.625,
+          "t_out": 273,
+          "use_in": 0,
+          "use_out": 6.375,
+          "use_len": 6.375,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "hold",
+          "source_file": "shots/shot50.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "ramesses-iii",
+            "tiye",
+            "pentawer"
+          ],
+          "visual_priority": [
+            "Ramesses III at the left edge, crowned, near-camera and large",
+            "Tiye at the right edge with Pentawer at her shoulder",
+            "the SUBSCRIBE button at the exact center over the palace and the line of the condemned",
+            "the title THE HAREM CONSPIRACY across the upper third",
+            "the wax figures, the magic roll, the trial papyrus, the Eye of Horus and the empty blue crown along the lower edge"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSHOT: one epic poster of the whole story at dusk — the king who was murdered, the wife who plotted, the son she wanted on the throne, the magic, the trial, and the record that never said what happened.\nSUBJECT: an old Egyptian king in his sixties, a long lean face, a high hooked nose, heavy-lidded dark eyes, clean-shaven, a blue khepresh crown with a gold cobra at the brow, a pleated white linen kilt, a broad gold-and-lapis collar, at the left third, near-camera and large, cropped at the chest, gazing toward screen-right across the whole frame.\nSCALE: the king and Tiye are the two largest figures, one at each edge; the palace and the line of the condemned between them read small and far; the wax figures along the lower edge are no longer than a finger.\nSUBJECT 2: an Egyptian royal wife in her forties, a proud narrow face, kohl-lined almond eyes, a heavy black braided wig bound with a thin gold circlet, a sheer pleated white linen gown, a broad collar of carnelian and gold beads, at the right third, near-camera and large, cropped at the chest, gazing toward screen-left at the king.\nSUBJECT 3: an Egyptian prince of about eighteen, slim and long-limbed, a smooth oval face with kohl-lined almond eyes like his mother's, a shaved head with the long braided sidelock of a royal son, a pleated white linen kilt, just at his mother's shoulder, smaller, his face half in shadow.\nTITLE: across the top, \"THE HAREM CONSPIRACY\" in large carved gold capitals with a dark red outline, like letters cut into a temple wall; under them a thin gold rule with a small cartouche-shaped oval at its center, and the line \"WHAT THE RECORD NEVER SAYS\".\nBUTTON: at the exact center of the frame, a red rounded pill-shaped button with a thin gold rim, \"SUBSCRIBE\" in bold cream capitals, a small gold diamond on each side.\nACTION: between the king and the plotters, far and small, the palace and temple of Medinet Habu stand under a dusk sky, and a long roped line of condemned prisoners files out of its gate toward a hall of judgement.\nSETTING: western Thebes at dusk, the river and the cliffs far.\nCAMERA: camera stands on a terrace above the palace, eye level with the two large figures, wide.\nFRAME LAYOUT: upper third — the title across the sky; left third — Ramesses III, near-camera and large; right third — Tiye, near-camera and large, Pentawer at her shoulder; center — the SUBSCRIBE button over the palace of Medinet Habu and the line of the condemned, far and small; lower edge — small wax figures, the red-corded magic roll with the king's cartouche, the open trial papyrus, a blue Eye of Horus amulet and an empty blue khepresh crown lying on a cushion, the crown the plot was for, near-camera.\nFACING: we see the king three-quarter on, facing screen-right toward Tiye; Tiye three-quarter on, facing screen-left toward him; Pentawer looks down.\nSCREEN DIRECTION: the line of the condemned files toward screen-right out of the palace gate; dusk clouds stream toward screen-left.\nLIGHT: low red-gold dusk light from the left on the king, cooler violet light on Tiye, the title catching gold.\nPALETTE: dusk gold, royal blue, carnelian red, shadow violet.\nDETAIL: the cobra on the blue crown, carnelian beads, the scratched signs on the wax figures, crisp lettering with every letter spelled right.\nNOT IN FRAME: logos, any other words or letters, blood.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "end-card",
+            "time_light": "dusk-gold",
+            "camera_motion": "locked"
+          }
+        }
+      ]
+    }
+  ]
+}

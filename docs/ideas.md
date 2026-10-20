@@ -46,6 +46,7 @@ Legenda kolona: **M1** snaga hooka (×3) · **M2** naslov + tambnejl (×3) · **
 | 8 | The Corpse Put on Trial | 5 | 5 | 5 | 5 | 3 | 4 | 5 | 3 | 4 | 5 | **89.5** | radi odmah | `scored` |
 | 28 | The Egyptian God Who Was Cut Into Pieces | 5 | 5 | 4 | 4 | 5 | 5 | 4 | 3 | 4 | 4 | **88.9** | radi odmah | `scored` |
 | 9 | The City That Danced Until People Collapsed | 5 | 5 | 5 | 5 | 4 | 4 | 4 | 5 | 3 | 2 | **88.9** | radi odmah | `scored` |
+| 31 | The Pharaoh Whose Murder the Court Never Mentioned | 5 | 4 | 5 | 4 | 5 | 5 | 3 | 4 | 5 | 3 | **87.9** | radi odmah | `done` |
 | 6 | The Emperor Who Was Killed by His Own Guards | 5 | 5 | 5 | 4 | 4 | 4 | 3 | 4 | 4 | 4 | **86.8** | radi odmah | `scored` |
 | 3 | The King Who Accidentally Started a War by Losing His Sandals | 5 | 4 | 5 | 5 | 4 | 4 | 4 | 4 | 3 | 3 | **85.3** | radi odmah | `done` |
 | 25 | Medusa Wasn't Always a Monster | 5 | 5 | 4 | 5 | 4 | 4 | 2 | 4 | 3 | 4 | **84.2** | radi odmah | `scored` |
@@ -207,6 +208,20 @@ Story: In 1932, Australia launched a military operation against emus damaging cr
 Hook: “Australia sent soldiers with machine guns to defeat a bird. The birds won.”
 
 Zašto ovaj skor: Premisa i poenta („ptice su pobedile“) rade bez ikakvog konteksta, ali tema je internet-mem sa desetinama postojećih videa i vizuelno je zaključana u isti pejzaž bez emotivnog uloga.
+
+#### #31 — The Pharaoh Whose Murder the Court Never Mentioned
+
+`status: done` · **87.9** · radi odmah · izvorna oznaka: dodata 2026-10-18, van originalnih 30 · `episodes/harem-conspiracy`
+
+Ocene M1–M10: 5 / 4 / 5 / 4 / 5 / 5 / 3 / 4 / 5 / 3 — sirovo 83.5 / 95.
+
+Story: Around 1155 BCE, Tiye, one of the wives of Ramesses III, organized a plot inside the royal harem to kill the king and crown her son instead of the chosen heir. The surviving court records list the conspirators, their punishments and even two judges mutilated for partying with the accused women — but never say what happened to the king. In 2012 a CT scan found his throat cut under the linen, and DNA tied a nameless, goatskin-wrapped mummy from the same tomb to him as a likely son.
+
+Hook: “Three thousand years ago, an Egyptian court sentenced more than thirty people for a plot against their pharaoh. The record of their trial survives — and it never says what happened to the king.”
+
+Zašto ovaj skor: Zapis suda koji ćuti baš o onome što gledalac hoće da zna nosi hook, a CT snimak i bezimena mumija u kozjoj koži daju dva obrta koja se ne mogu pogoditi; spuštaju ga to što je „mumija koja vrišti“ već poznata na YouTube-u i sudske scene sa više figura.
+
+Dodata van C03 liste, u sesiji u kojoj je izabrana: epizoda od slika (`render_mode: "still"`), tema se birala slobodno, van top 5 i van Greek Gods serije. Bodovano po istoj rubrici; M10 meri animaciju kao i za ostale, iako epizoda od slika ne troši kredite.
 
 ### Kategorija 2 — civilizacije i istorijske transformacije
 

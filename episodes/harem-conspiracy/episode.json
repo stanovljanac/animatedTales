@@ -1,0 +1,140 @@
+{
+  "slug": "harem-conspiracy",
+  "title": "The Harem Conspiracy",
+  "status": "done",
+  "voice": null,
+  "narration_file": "narration.mp3",
+  "final_file": "final.mp4",
+  "endcard_file": "shots/endKartica.jpeg",
+  "intro_file": null,
+  "intro_volume": 0.2,
+  "characters": [
+    {
+      "id": "ramesses-iii",
+      "name": "Ramesses III",
+      "locked_description": "an old Egyptian king in his sixties, a long lean face, a high hooked nose, heavy-lidded dark eyes, clean-shaven, a blue khepresh crown with a gold cobra at the brow, a pleated white linen kilt, a broad gold-and-lapis collar"
+    },
+    {
+      "id": "ramesses-iii-mummy",
+      "name": "The Mummy of Ramesses III",
+      "locked_description": "the mummy of an old Egyptian king, a shrunken dark-brown face with a high hooked nose, sunken closed eyes and thin hard lips, the head bare, a thick collar of layered brown linen wound high around the neck"
+    },
+    {
+      "id": "tiye",
+      "name": "Tiye",
+      "locked_description": "an Egyptian royal wife in her forties, a proud narrow face, kohl-lined almond eyes, a heavy black braided wig bound with a thin gold circlet, a sheer pleated white linen gown, a broad collar of carnelian and gold beads"
+    },
+    {
+      "id": "pentawer",
+      "name": "Pentawer",
+      "locked_description": "an Egyptian prince of about eighteen, slim and long-limbed, a smooth oval face with kohl-lined almond eyes like his mother's, a shaved head with the long braided sidelock of a royal son, a pleated white linen kilt"
+    },
+    {
+      "id": "ramesses-iv",
+      "name": "Ramesses IV, the Chosen Son",
+      "locked_description": "an Egyptian prince in his late thirties, a broad strong face, a high hooked nose like his father's, a calm level gaze, clean-shaven, a pleated white linen kilt, a gold armband on each upper arm"
+    },
+    {
+      "id": "chief-of-chamber",
+      "name": "The Chief of the Chamber",
+      "locked_description": "an Egyptian palace chamberlain in his fifties, a heavy jowled face, a shaved head, narrow watchful eyes, a long pleated white linen robe with a red sash, a gilded staff of office"
+    },
+    {
+      "id": "army-commander",
+      "name": "The Army Commander",
+      "locked_description": "an Egyptian army commander in his forties, a hard square face with a scar across the left cheek, a short black wig, a leather scale corselet over a white kilt, a bronze sickle sword at the belt"
+    },
+    {
+      "id": "court-judges",
+      "name": "The Judges",
+      "locked_description": "Egyptian court judges, grave older officials with shaved heads or short black wigs, long pleated white linen robes, broad collars of faience beads, reed pens and papyrus rolls at their sides"
+    },
+    {
+      "id": "two-judges",
+      "name": "The Two Corrupt Judges",
+      "locked_description": "two Egyptian judges, one a stout royal butler with a round shaved head and a double chin, the other a thin scribe with a long neck and a short black wig, both in fine pleated linen robes"
+    },
+    {
+      "id": "harem-women",
+      "name": "The Women of the Harem",
+      "locked_description": "Egyptian women of the royal harem, heavy black braided wigs, kohl-lined eyes, sheer pleated white linen gowns, broad collars of blue faience beads, gold bangles on the wrists"
+    },
+    {
+      "id": "unknown-man-e",
+      "name": "Unknown Man E",
+      "locked_description": "the mummy of a young Egyptian man, a narrow young face drawn tight over the bones, the jaw dropped and the mouth gaping wide open, the body wrapped in a rough brown-and-white goatskin"
+    },
+    {
+      "id": "researchers",
+      "name": "The Researchers",
+      "locked_description": "two modern researchers, a dark-haired woman in her forties with glasses and her hair pulled back, an older grey-haired man, both in white lab coats with blue surgical gloves"
+    }
+  ],
+  "locations": [
+    {
+      "id": "palace-throne-hall",
+      "name": "The Throne Hall at Medinet Habu",
+      "locked_description": "a columned throne hall of a Ramesside palace, papyrus-bundle columns painted blue, green and red, a raised dais with a gilded throne under a canopy, plastered walls painted with bound foreign captives, high slit windows"
+    },
+    {
+      "id": "harem-court",
+      "name": "The Harem Courtyard",
+      "locked_description": "the walled courtyard of the royal harem, whitewashed mudbrick walls, a shaded colonnade of slim painted columns, a rectangular pool with lotus flowers, upright looms along one wall, a guarded wooden gate"
+    },
+    {
+      "id": "court-of-examination",
+      "name": "The Court of Examination",
+      "locked_description": "a pillared hall of judgement of plastered mudbrick, squat columns painted with red and yellow bands, a long raised wooden bench for the judges along one wall, reed mats on a beaten earth floor"
+    },
+    {
+      "id": "royal-cache",
+      "name": "The Royal Cache at Deir el-Bahari",
+      "locked_description": "a narrow rough-cut tomb corridor deep in the Theban cliffs, pale limestone walls and a low ceiling, painted wooden coffins of kings and queens stacked along both walls, thick dust on the floor"
+    },
+    {
+      "id": "ct-room",
+      "name": "The CT Room",
+      "locked_description": "a modern CT scanning room, a white scanner with a large ring gantry and a narrow padded table sliding into it, a glass-walled console with two flat monitors glowing grey, cool blue light"
+    },
+    {
+      "id": "tahrir-square",
+      "name": "Tahrir Square at Night",
+      "locked_description": "Tahrir Square in Cairo at night, a tall pink granite obelisk ringed by four ram-headed sphinxes, modern buildings with lit windows, a broad avenue lined with floodlights and crowds behind barriers"
+    }
+  ],
+  "key_props": [
+    {
+      "id": "trial-papyrus",
+      "name": "The Trial Papyrus",
+      "locked_description": "a long sheet of papyrus covered in columns of small black hieratic script, a red-ink heading at the top of each column, the oval cartouche of the king inked at its head"
+    },
+    {
+      "id": "magic-roll",
+      "name": "The King's Magic Roll",
+      "locked_description": "a papyrus roll of magic spells tied with a red cord, the oval cartouche of Ramesses III inked in red and black on its outer margin, its edges dark with handling"
+    },
+    {
+      "id": "wax-figures",
+      "name": "The Wax Figures",
+      "scale_critical": true,
+      "locked_description": "small figures of gods and men moulded from yellowish beeswax, crude limbs and pinched faces, their bodies scratched with fine lines of written signs, some bound with linen thread"
+    },
+    {
+      "id": "eye-of-horus",
+      "name": "The Eye of Horus Amulet",
+      "scale_critical": true,
+      "locked_description": "a small Eye of Horus amulet of glazed blue faience, an outlined eye with a curled falcon marking and a teardrop line beneath it, polished smooth"
+    },
+    {
+      "id": "plain-coffin",
+      "name": "The Plain Coffin",
+      "locked_description": "a plain undecorated wooden coffin of pale grey-brown wood, no paint, no name and no carved face on its lid, the boards roughly fitted and scraped"
+    },
+    {
+      "id": "golden-carriage",
+      "name": "The Golden Carriage",
+      "locked_description": "a golden parade carriage built like an ancient Egyptian boat on wheels, a gilded hull with a high curved prow and stern, a glass-sided cabin, the royal name in a cartouche on its side"
+    }
+  ],
+  "notes": "Samostalna epizoda, ideja #31 u docs/ideas.md: zavera u haremu protiv Ramzesa III (oko 1155. p.n.e.), sudjenje i CT/DNK studija iz 2012. Cela epizoda je od slika (render_mode still, korisnikova odluka). Osa: kralj i njegova strana levo, zaverenici desno; jedini namerni prelazak su sudije u shotovima 28-30. Zivi Ramzes III i njegova mumija su dva entiteta; Pentaver i Unknown Man E takodje (mumija je samo mogući kandidat). Tacnost perioda: Novo kraljevstvo, 20. dinastija, bronza a ne gvozdje; moderne scene (1881, 1886, 1890-e, 2012, 2021) su moderne. Napad, samoubistva i sakacenje se ne prikazuju doslovno. Detalji u notes.md, research u research.md, skripta u script.md."
+}

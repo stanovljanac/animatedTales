@@ -1,0 +1,77 @@
+[
+  {"beat_id":"B01","sentences":["S01"],"device":null,"viewer_sees":"the court of examination in a pillared hall: a raised bench of judges in white linen on the left, a scribe writing at their feet; across the right two thirds a long line of more than thirty accused men and women kneeling, wrists bound, heads bowed","tags":{"location":"court-of-examination","time_light":"shafted-daylight"}},
+
+  {"beat_id":"B02","sentences":["S02"],"device":null,"viewer_sees":"the trial papyrus today, under museum glass: a long brown sheet with columns of black hieratic and red-ink headings, its first column broken to fragments, a dim gallery reflection on the glass","tags":{"location":"museum-gallery","time_light":"cool-gallery-light"}},
+
+  {"beat_id":"B03","sentences":["S03"],"device":null,"viewer_sees":"the mummy of Ramesses III lying in the dark in its coffin; one thin shaft of light across the dark face and the thick collar of linen wound around the neck","tags":{"location":"royal-cache","time_light":"single-shaft-dark"}},
+
+  {"beat_id":"B04","sentences":["S04"],"device":null,"viewer_sees":"Ramesses III alive, enthroned on the left of his columned hall, crook and flail crossed, facing right; at the right edge a curtained doorway into the women's quarters, where two figures lean together in the shadow","tags":{"location":"palace-throne-hall","time_light":"afternoon-shafts"}},
+
+  {"beat_id":"B05","sentences":["S05"],"device":null,"viewer_sees":"the royal harem as a household, not a pleasure garden: a sunlit walled courtyard with women at upright looms, children with a ball, a steward checking jars against a tally board, and two spear guards at the gate","tags":{"location":"harem-court","time_light":"bright-morning"}},
+
+  {"beat_id":"B06","sentences":["S06"],"device":null,"viewer_sees":"Tiye in her painted chamber on the right half of the frame, one hand on the shoulder of her son Pentawer, a slim youth; both look toward the left edge","tags":{"location":"tiye-chamber","time_light":"lamplit-evening"}},
+
+  {"beat_id":"B07","sentences":["S07","S08"],"device":null,"viewer_sees":"from the shadow of a harem window at the right, Tiye watches across a courtyard: on the left, in sunlight, the king stands at a balcony with his chosen heir, a grown prince, beside him; her face hard","tags":{"location":"palace-courtyard","time_light":"golden-afternoon"}},
+
+  {"beat_id":"B08","sentences":["S09"],"device":null,"viewer_sees":"a night meeting around one lamp in Tiye's chamber: the chief of the chamber bows low before Tiye at the right, two royal butlers kneeling beside him → the circle widens: a harem official with his staff of office and an army commander in a leather corselet lean in toward Tiye","tags":{"location":"tiye-chamber","time_light":"night-single-lamp"}},
+
+  {"beat_id":"B09","sentences":["S10"],"device":null,"viewer_sees":"at the harem gate at night, the wife of a gate officer passes a folded papyrus letter through the half-open gate to a man waiting outside","tags":{"location":"harem-gate","time_light":"night-torch"}},
+
+  {"beat_id":"B10","sentences":["S11"],"device":null,"viewer_sees":"in a dark lane of mudbrick houses outside the palace, a man reads the letter aloud to a knot of angry men, faces lit by one torch","tags":{"location":"theban-lane","time_light":"night-torch"}},
+
+  {"beat_id":"B11","sentences":["S12"],"device":null,"viewer_sees":"in the palace archive, a keeper of rolls hands the overseer of the royal herds a papyrus roll marked with the cartouche of Ramesses III → at the harem gate at night, a covered basket of small wax figures carried past two drowsing guards","tags":{"location":"palace-archive","time_light":"lamplit-archive"}},
+
+  {"beat_id":"B12","sentences":["S13"],"device":"macro-object","viewer_sees":"MACRO OBJECT — a small wax figure of a man, limbs bound with linen thread, lying across the open magic roll whose margin bears the king's own cartouche; a lamp flame reflected in the wax","tags":{"location":"harem-hiding-place","time_light":"night-single-lamp"}},
+
+  {"beat_id":"B13","sentences":["S14","S15"],"device":"empty-aftermath","viewer_sees":"EMPTY AFTERMATH — a palace corridor at grey dawn: an overturned oil lamp, a door standing open, a dropped ostrich-feather fan, no people → the plotters dragged bound across the palace court by soldiers, while on a dais at the left the chosen son sits enthroned and watches","tags":{"location":"palace-corridor","time_light":"grey-dawn"}},
+
+  {"beat_id":"B14","sentences":["S16"],"device":null,"viewer_sees":"a court scribe at a low table writing the first column of the trial papyrus, the king's cartouche at its head in fresh red and black ink","tags":{"location":"scribe-office","time_light":"lamplit-archive"}},
+
+  {"beat_id":"B15","sentences":["S17"],"device":null,"viewer_sees":"twelve judges standing in a row before an empty throne on which lie the king's crook and flail, while a herald reads the commission → the dead Ramesses III walking among a line of earlier kings into the hall of the gods, toward a colossal enthroned Osiris and Amun-Ra with tall plumes, light pouring from them","tags":{"location":"palace-throne-hall","time_light":"afternoon-shafts"}},
+
+  {"beat_id":"B16","sentences":["S18"],"device":null,"viewer_sees":"the gilded coffin face of Ramesses III, eyes painted wide open, in the darkness of his tomb, lit by one torch, as if listening","tags":{"location":"royal-tomb","time_light":"torchlight-dark"}},
+
+  {"beat_id":"B17","sentences":["S19","S20","S21"],"device":"macro-object","viewer_sees":"MACRO OBJECT — a scribe's reed brush writing a new name in red ink into the record → a kneeling royal butler under a blazing sun disc, and beside him a kneeling archer captain, both heads bowed → a human-headed ba bird lifting away from an oval name-ring being chiselled blank on a stone","tags":{"location":"scribe-office","time_light":"lamplit-archive"}},
+
+  {"beat_id":"B18","sentences":["S22","S23"],"device":null,"viewer_sees":"in the court of examination, guards lead twenty-two bound condemned out through a bright doorway at the right, while six men sit alone on the floor of the emptied hall below the empty judges' bench","tags":{"location":"court-of-examination","time_light":"shafted-daylight"}},
+
+  {"beat_id":"B19","sentences":["S24"],"device":null,"viewer_sees":"Prince Pentawer brought before three seated butlers acting as judges, standing straight in white linen with bound wrists, facing left","tags":{"location":"court-of-examination","time_light":"lamplit-evening"}},
+
+  {"beat_id":"B20","sentences":["S25"],"device":null,"viewer_sees":"close on Pentawer's face in lamplight, half in shadow, eyes lowered — a face without its own name","tags":{"location":"court-of-examination","time_light":"lamplit-evening"}},
+
+  {"beat_id":"B21","sentences":["S26","S27","S28"],"device":"silhouette","viewer_sees":"SILHOUETTE — the prince alone in a small shut room, seated on a bench, a black silhouette against a lamplit wall; no body, no weapon","tags":{"location":"small-cell","time_light":"night-single-lamp"}},
+
+  {"beat_id":"B22","sentences":["S29","S30"],"device":null,"viewer_sees":"two well-fed judges in fine pleated robes, wrists now bound, standing before a new tribunal → the beer-hall: at night in a judge's house, the two judges reclining among harem women and an army commander, beer jars, a harpist, lamps, laughter","tags":{"location":"court-of-examination","time_light":"shafted-daylight"}},
+
+  {"beat_id":"B23","sentences":["S31","S32"],"device":null,"viewer_sees":"the two judges sitting against a mudbrick wall, the middles of their faces bound in linen over nose and ears, heads bowed; one has turned toward a dark doorway","tags":{"location":"prison-yard","time_light":"grey-dawn"}},
+
+  {"beat_id":"B24","sentences":["S33","S34"],"device":"silhouette","viewer_sees":"SILHOUETTE — Tiye as a dark figure in a doorway at the end of a long empty corridor, light behind her, turned away","tags":{"location":"harem-corridor","time_light":"backlit-doorway"}},
+
+  {"beat_id":"B25","sentences":["S35"],"device":null,"viewer_sees":"two Egyptologists of the 1890s arguing across a desk piled with books, a facsimile of the papyrus spread between them and a photograph of the mummy's face pinned to the wall","tags":{"location":"egyptologist-study","time_light":"gaslit-study"}},
+
+  {"beat_id":"B26","sentences":["S36","S37"],"device":null,"viewer_sees":"1881, the hidden royal tomb: a narrow rock-cut corridor crammed with stacked coffins, workmen with candles hauling one coffin toward the shaft → close on the mummy's neck: a thick collar of layered brown linen, tight under the chin","tags":{"location":"royal-cache","time_light":"candlelight"}},
+
+  {"beat_id":"B27","sentences":["S38"],"device":null,"viewer_sees":"2012, a CT room: the mummy of Ramesses III on the scanner table, half inside the white ring of the gantry; two researchers at the console screens","tags":{"location":"ct-room","time_light":"cool-clinical"}},
+
+  {"beat_id":"B28","sentences":["S39"],"device":"process-cutaway","viewer_sees":"PROCESS / CUTAWAY — the CT slice on the monitor: a grey section of the neck where, under the pale ring of linen, a black gap cuts straight back through the windpipe to the white bones of the spine; a researcher's fingertip traces it","tags":{"location":"ct-room","time_light":"monitor-glow"}},
+
+  {"beat_id":"B29","sentences":["S40"],"device":null,"viewer_sees":"three thousand years earlier, in the embalming tent: an embalmer in a jackal mask presses a small blue Eye of Horus amulet into the king's throat while another winds linen around the neck","tags":{"location":"embalming-tent","time_light":"lamplit-tent"}},
+
+  {"beat_id":"B30","sentences":["S41","S42","S43","S44"],"device":null,"viewer_sees":"the king's coffin dragged on a sledge into the dark mouth of his tomb, mourners with raised arms → priests lowering the blue crown onto the head of the chosen son on the throne","tags":{"location":"valley-of-the-kings","time_light":"harsh-noon"}},
+
+  {"beat_id":"B31","sentences":["S45"],"device":null,"viewer_sees":"back in the 1881 royal cache: set apart from the painted royal coffins, one plain undecorated coffin with its lid shifted aside, a wrapped body inside, a candle held over it","tags":{"location":"royal-cache","time_light":"candlelight"}},
+
+  {"beat_id":"B32","sentences":["S46"],"device":null,"viewer_sees":"the young man's head and shoulders, wrapped in a rough goatskin, the face contorted, mouth wide open as if screaming","tags":{"location":"unwrapping-room","time_light":"harsh-lamp"}},
+
+  {"beat_id":"B33","sentences":["S47"],"device":null,"viewer_sees":"1886: a pen writing a single large letter E on a paper tag tied with string to the plain coffin","tags":{"location":"unwrapping-room","time_light":"harsh-lamp"}},
+
+  {"beat_id":"B34","sentences":["S48","S49"],"device":null,"viewer_sees":"two mummies on lab tables side by side, the king on the left and the young man on the right, profiles turned toward each other, a researcher holding a sample tube up between them → Pentawer alive again in the lamplit court, looking toward the left","tags":{"location":"museum-lab","time_light":"cool-clinical"}},
+
+  {"beat_id":"B35","sentences":["S50"],"device":null,"viewer_sees":"night in Cairo: a line of golden carriages shaped like ancient boats rolling toward the right past the obelisk in Tahrir Square, crowds and lights along the road","tags":{"location":"cairo-parade","time_light":"night-golden-floodlight"}},
+
+  {"beat_id":"B36","sentences":["S51","S52"],"device":null,"viewer_sees":"two golden carriages close: the leading one at the right carries the cartouche of Ramesses III on its side; directly behind it at the left rolls the carriage of his son","tags":{"location":"cairo-parade","time_light":"night-golden-floodlight"}},
+
+  {"beat_id":"B37","sentences":["S53","S54","S55"],"device":null,"viewer_sees":"the plain coffin of the young man alone in a dark museum storeroom, a high window at the left lit gold by the parade passing outside → the screaming face in a glass case, a small blank-looking label card at its lower edge","tags":{"location":"museum-storeroom","time_light":"dark-with-gold-window"}},
+
+  {"beat_id":"B38","sentences":["S56","S57","S58"],"device":"empty-aftermath","viewer_sees":"EMPTY AFTERMATH — an oval name-ring carved in stone, its inside chiselled empty, sand drifting into it → END CARD: poster of the whole story with title and SUBSCRIBE","tags":{"location":"desert-stone","time_light":"low-evening"}}
+]
