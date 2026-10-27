@@ -75,6 +75,15 @@ Where several facts say the same thing, keep the strongest. Dates, names and sta
 only when they help the viewer follow the story. Give exactly the context the story needs,
 integrated into the narrative rather than delivered as a lecture up front.
 
+**Recap of earlier parts (series only).** When the episode continues a series, the reminder of
+what earlier parts told stays at **2–4 sentences, at most ~50 words (15–20 seconds)**. It exists
+only so this episode can be followed on its own; the full story already lives in the earlier
+part, and a long recap spends the viewer's first minute on a video they did not click. Restate
+only events an earlier part actually narrated, one event per sentence, in plain terms close to
+how that part told them — the visual stage carries the recap with shots that already exist
+instead of generating them again. The series file (`docs/series/<series>.md`) says which earlier
+shots the recap can lean on.
+
 **Pacing.** Write for the ear, not the page. Vary sentence length, rhythm and intensity — short
 sentences for impact, longer ones where explanation demands it. Avoid a run of identical
 constructions unless the repetition is deliberate. Do not make every sentence cinematic; strength
@@ -184,8 +193,8 @@ Before returning, check the script yourself: it is still the approved story; the
 is answered and the conflict is clear; the opening creates curiosity and the viewer keeps gaining
 understanding; someone new to the subject can follow it; nothing unsupported, invented or
 mis-framed has crept in; it reads naturally aloud with varied rhythm; it sits safely inside five
-minutes; the payoff lands and the final sentence is earned; and the outro obeys all four
-formatting rules.
+minutes; any recap of earlier parts stays within 2–4 sentences and ~50 words; the payoff lands
+and the final sentence is earned; and the outro obeys all four formatting rules.
 
 The hierarchy, when these pull against each other:
 **story → clarity → engagement → historical integrity → detail.**
