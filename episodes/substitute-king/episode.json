@@ -1,0 +1,15 @@
+{
+  "slug": "substitute-king",
+  "title": "The Substitute King",
+  "status": "draft",
+  "voice": null,
+  "narration_file": "narration.mp3",
+  "final_file": null,
+  "endcard_file": null,
+  "intro_file": null,
+  "intro_volume": 0.2,
+  "characters": [],
+  "locations": [],
+  "key_props": [],
+  "notes": "Samostalna epizoda, ideja #32 u docs/ideas.md: mesopotamski ritual zamenskog kralja (sar puhi) — Asarhadonova pisma ucenjaka (SAA 10), Damqi 671. p.n.e., Asarhadonova smrt 669. i najstarija prica, bastovan Enlil-bani u Isinu. Cela epizoda je od slika (render_mode still, korisnikova odluka). Faza 04 zavrsena: research.md i script.md; lockovi, timing i storyboard cekaju narraciju. Tacnost perioda: novoasirsko doba, 7. vek p.n.e. (Niniva, Akad u Vaviloniji) i starovavilonski Isin oko 1860. p.n.e. — dva razlicita sveta, ne mesati odecu ni arhitekturu. Smrt zamenika se ne prikazuje doslovno; izvori je i ne opisuju."
+}

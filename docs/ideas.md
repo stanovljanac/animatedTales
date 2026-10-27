@@ -51,6 +51,7 @@ Legenda kolona: **M1** snaga hooka (×3) · **M2** naslov + tambnejl (×3) · **
 | 3 | The King Who Accidentally Started a War by Losing His Sandals | 5 | 4 | 5 | 5 | 4 | 4 | 4 | 4 | 3 | 3 | **85.3** | radi odmah | `done` |
 | 25 | Medusa Wasn't Always a Monster | 5 | 5 | 4 | 5 | 4 | 4 | 2 | 4 | 3 | 4 | **84.2** | radi odmah | `scored` |
 | 21 | ~~Why Zeus Was Terrified of His Own Children~~ → Titanomahija (preusmerena) | 5 | 5 | 5 | 4 | 4 | 4 | 2 | 3 | 4 | 4 | **83.7** | — | `re-aim` |
+| 32 | The Man Crowned to Die in the King's Place | 5 | 4 | 4 | 5 | 4 | 4 | 4 | 3 | 4 | 4 | **83.7** | radi odmah | `done` |
 | 30 | The Giant Who Tried to Steal the Sun | 5 | 5 | 4 | 4 | 3 | 4 | 5 | 3 | 3 | 4 | **83.2** | radi odmah | `scored` |
 | 10 | The War Against Birds | 5 | 5 | 5 | 5 | 2 | 3 | 2 | 5 | 4 | 3 | **81.6** | radi odmah | `scored` |
 | 11 | How Humans Learned to Cross Entire Oceans Without a Compass | 5 | 4 | 4 | 4 | 3 | 4 | 4 | 4 | 4 | 4 | **81.1** | radi odmah | `done` |
@@ -352,6 +353,20 @@ druga vojska od 60.000 skreće reku i dobija ~3.000 konja, a kroz kapiju se vra�
 10.000 ljudi. Na kraju: dva konja godišnje. Izvor je *Shiji* 123, pisan od savremenika. Tri kazne iz
 obrazloženja (lice, ulog, tambnejl) ovaj ugao skida; skor 69.5 je zatečen i opisuje staru, opštu
 verziju. Hook je prenet doslovno. Epizoda je planirana **samo od slika** (`render_mode: "still"`).
+
+#### #32 — The Man Crowned to Die in the King's Place
+
+`status: done` · **83.7** · radi odmah · izvorna oznaka: dodata 2026-10-27, van originalnih 30 · `episodes/substitute-king`
+
+Ocene M1–M10: 5 / 4 / 4 / 5 / 4 / 4 / 4 / 3 / 4 / 4 — sirovo 79.5 / 95.
+
+Story: When an eclipse foretold the death of the Assyrian king, his scholars enthroned a substitute, dressed him in the royal robes, read the omens over him before the sun god, and after up to a hundred days let him "go to his fate". In 671 BCE the substitute was Damqi, son of a temple official of Akkad — buried and mourned as a king, after a prophetess had told him he would take over the kingship. Two years later Esarhaddon, the king it all protected, died on the road to Egypt; and the oldest story of the ritual, from a Babylonian chronicle, ends the other way round: the king of Isin died sipping hot soup in his palace, and his gardener-substitute kept the throne for twenty-four years.
+
+Hook: “When the moon went dark over ancient Assyria, the king's scholars had a way to save his life. They put another man on his throne — and when the danger had passed, they let that man die in the king's place.”
+
+Zašto ovaj skor: Premisa zvuči nemoguće a zapisana je u pismima samih učenjaka („To the farmer, my lord"), a baštovan koji preživi kralja prevrće ceo ritual u poslednjem minutu; spuštaju je sedam imena iz dva sveta udaljena hiljadu godina i to što je najlepši deo priče kasna hronika, ne zapis.
+
+Dodata van C03 liste, u sesiji u kojoj je izabrana: epizoda od slika (`render_mode: "still"`), tema se birala slobodno, van top 5 i van Greek Gods serije — korisnik je pomenuo Mesopotamiju i „kako su živeli drevni ljudi". Kategorija 2 jer je priča o praksi jedne civilizacije, ne o mitu: sve iz Asirije je savremeni zapis (SAA 10). Bodovano po istoj rubrici; M10 meri animaciju kao i za ostale, iako epizoda od slika ne troši kredite.
 
 ### Kategorija 3 — mitologija, bogovi, religije i legende
 
