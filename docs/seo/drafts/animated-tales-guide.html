@@ -1,0 +1,423 @@
+<title>Animated Tales Episode Guide</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="A guide to Animated Tales (@AnimatedTales-r4r): short animated history and mythology stories from ancient Greece, Rome, Egypt, China and the Norse world, and which episode to watch first.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Short Animated History and Mythology Stories: Where to Start">
+<meta property="og:description" content="One story from history or myth in three to five minutes. What Animated Tales covers, how the episodes are made, and where to start.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@500;700&family=Alegreya:ital,wght@0,400;0,700;1,400&family=Marcellus&display=swap">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Short Animated History and Mythology Stories: Where to Start",
+  "description": "A guide to the Animated Tales YouTube channel: animated history and mythology episodes, how they are made, and which one to watch first.",
+  "dateModified": "2026-10-28",
+  "inLanguage": "en",
+  "author": { "@type": "Organization", "name": "Animated Tales", "url": "https://www.youtube.com/@AnimatedTales-r4r" },
+  "about": {
+    "@type": "Organization",
+    "name": "Animated Tales",
+    "alternateName": "@AnimatedTales-r4r",
+    "sameAs": ["https://www.youtube.com/@AnimatedTales-r4r", "https://www.youtube.com/channel/UCAd2G0YVuAuTTxGFsaYIsLw"]
+  }
+}
+</script>
+<style>
+/* Layout: one reading column (~66ch) for the essay, widening to a card grid for the episode guide. Verdigris + bronze come from the Antikythera fragment; ink navy from night-sea scenes. */
+:root {
+  --bg: #edf1f0;
+  --surface: #f8faf9;
+  --ink: #16212b;
+  --muted: #4c5a62;
+  --line: #c9d3d1;
+  --accent: #1d6b61;
+  --accent-ink: #f8faf9;
+  --bronze: #85561f;
+  --chip: #e1e8e6;
+  --font-display: "Marcellus", "Trajan Pro", Georgia, serif;
+  --font-body: "Alegreya", Georgia, "Times New Roman", serif;
+  --font-ui: "Alegreya Sans", "Gill Sans", "Segoe UI", system-ui, sans-serif;
+  --step-0: 1.125rem;
+  --step--1: 0.9rem;
+  --step-1: 1.35rem;
+  --step-2: 1.75rem;
+  --step-3: clamp(2.1rem, 1.4rem + 3vw, 3.4rem);
+  --measure: 66ch;
+  --wide: 68rem;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0e151c; --surface: #15202a; --ink: #e2e8e6; --muted: #a2adb2; --line: #273641;
+    --accent: #6cc3b4; --accent-ink: #0e151c; --bronze: #d3a565; --chip: #1c2a35;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0e151c; --surface: #15202a; --ink: #e2e8e6; --muted: #a2adb2; --line: #273641;
+  --accent: #6cc3b4; --accent-ink: #0e151c; --bronze: #d3a565; --chip: #1c2a35;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: var(--step-0);
+  line-height: 1.6;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 0 4rem;
+}
+a { color: var(--accent); text-underline-offset: 0.18em; text-decoration-thickness: 1px; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 3px; }
+
+.column { max-width: var(--measure); margin-inline: auto; }
+.wide { max-width: var(--wide); margin-inline: auto; }
+
+h1, h2, h3 { font-family: var(--font-display); font-weight: 400; text-wrap: balance; line-height: 1.15; margin: 0; }
+h1 { font-size: var(--step-3); letter-spacing: 0.005em; }
+h2 { font-size: var(--step-2); }
+h3 { font-size: var(--step-1); }
+p { margin: 0; }
+.label {
+  font-family: var(--font-ui); font-weight: 700; font-size: var(--step--1);
+  letter-spacing: 0.08em; text-transform: uppercase; color: var(--bronze);
+}
+
+/* Hero */
+.hero { padding-block: 3.5rem 2.5rem; display: grid; gap: 1.25rem; border-bottom: 1px solid var(--line); }
+.dek { font-size: var(--step-1); line-height: 1.45; color: var(--muted); max-width: 58ch; }
+.byline { font-family: var(--font-ui); font-weight: 500; font-size: var(--step--1); color: var(--muted); }
+.actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 0.5rem; }
+.btn {
+  font-family: var(--font-ui); font-weight: 700; font-size: 1rem; letter-spacing: 0.02em;
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  padding: 0.7rem 1.15rem; border-radius: 4px; text-decoration: none;
+  border: 1.5px solid var(--accent);
+}
+.btn-primary { background: var(--accent); color: var(--accent-ink); }
+.btn-secondary { color: var(--accent); background: transparent; }
+.btn:hover { text-decoration: none; filter: brightness(1.08); }
+
+/* Contents */
+.toc { padding-block: 2rem; display: grid; gap: 0.75rem; }
+.toc ol { margin: 0; padding-left: 1.4rem; display: grid; gap: 0.25rem; font-family: var(--font-ui); font-weight: 500; }
+
+/* Essay */
+article { display: grid; gap: 3.25rem; padding-top: 1rem; }
+section.part { display: grid; gap: 1.1rem; scroll-margin-top: 1.5rem; }
+section.part > header { display: grid; gap: 0.4rem; }
+.ep {
+  display: grid; gap: 0.35rem; padding: 1rem 1.1rem; background: var(--surface);
+  border: 1px solid var(--line); border-radius: 4px;
+}
+.ep-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 0.25rem 1rem; }
+.ep-head a { font-family: var(--font-display); font-size: 1.15rem; line-height: 1.3; }
+.dur { font-family: var(--font-ui); font-weight: 500; font-size: var(--step--1); color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.ep p { color: var(--muted); font-size: 1.02rem; }
+
+/* Evidence box: the channel's three claim categories, with real lines from the Antikythera research notes */
+.evidence { display: grid; gap: 0; border: 1px solid var(--line); border-radius: 4px; background: var(--surface); overflow: hidden; }
+.evidence > div { display: grid; grid-template-columns: 9.5rem 1fr; gap: 1rem; padding: 0.9rem 1.1rem; border-top: 1px solid var(--line); }
+.evidence > div:first-child { border-top: 0; }
+.evidence dt { font-family: var(--font-ui); font-weight: 700; font-size: var(--step--1); letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); }
+.evidence dd { margin: 0; min-width: 0; }
+.evidence dd small { display: block; color: var(--muted); font-size: 0.95rem; }
+@media (max-width: 34rem) { .evidence > div { grid-template-columns: 1fr; gap: 0.25rem; } }
+
+ul.plain { margin: 0; padding-left: 1.2rem; display: grid; gap: 0.5rem; }
+
+/* Episode finder */
+.finder { padding-top: 3.5rem; display: grid; gap: 1.25rem; }
+.finder-intro { max-width: var(--measure); display: grid; gap: 0.6rem; }
+.chips { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.chip {
+  font-family: var(--font-ui); font-weight: 700; font-size: 0.95rem;
+  padding: 0.45rem 0.9rem; border-radius: 999px; cursor: pointer;
+  border: 1px solid var(--line); background: var(--chip); color: var(--ink);
+}
+.chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 19rem), 1fr)); gap: 1rem; }
+.card {
+  display: grid; grid-template-rows: auto 1fr auto; gap: 0.6rem; min-width: 0;
+  padding: 1.1rem 1.15rem; background: var(--surface); border: 1px solid var(--line); border-radius: 4px;
+}
+.card .meta { display: flex; justify-content: space-between; gap: 0.75rem; }
+.card h3 { font-size: 1.2rem; line-height: 1.3; }
+.card h3 a { color: var(--ink); text-decoration: none; }
+.card h3 a:hover { color: var(--accent); text-decoration: underline; }
+.card p { color: var(--muted); font-size: 1rem; line-height: 1.5; }
+.card .go { font-family: var(--font-ui); font-weight: 700; font-size: 0.95rem; }
+.playlists { display: flex; flex-wrap: wrap; gap: 0.5rem 1.25rem; font-family: var(--font-ui); font-weight: 500; padding: 0; margin: 0; list-style: none; }
+
+/* FAQ + closing */
+.faq { display: grid; gap: 0; border-top: 1px solid var(--line); }
+.faq details { border-bottom: 1px solid var(--line); padding-block: 0.9rem; }
+.faq summary { cursor: pointer; font-family: var(--font-display); font-size: 1.15rem; }
+.faq details p { margin-top: 0.6rem; color: var(--muted); }
+.closing { margin-top: 3.5rem; padding: 2rem 1.5rem; border: 1px solid var(--line); border-radius: 4px; background: var(--surface); display: grid; gap: 0.9rem; }
+.note { font-family: var(--font-ui); font-weight: 500; font-size: var(--step--1); color: var(--muted); margin-top: 2.5rem; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .card { transition: border-color 0.15s ease; }
+  .card:hover { border-color: var(--accent); }
+}
+</style>
+
+<header class="hero column">
+  <p class="label">Animated Tales · History &amp; myths on YouTube</p>
+  <h1>Short Animated History and Mythology Stories: Where to Start</h1>
+  <p class="dek"><a href="https://www.youtube.com/@AnimatedTales-r4r" target="_blank" rel="noopener">Animated Tales (@AnimatedTales-r4r)</a> tells one story from history or myth in three to five minutes. This guide covers what the channel is about, how each episode is made, and which video to watch first, depending on what you like.</p>
+  <p class="byline">From the creator of Animated Tales · Updated 28 October 2026 · 10 episodes, 10 Shorts</p>
+  <div class="actions">
+    <a class="btn btn-primary" href="https://www.youtube.com/@AnimatedTales-r4r/videos" target="_blank" rel="noopener">Watch the episodes</a>
+    <a class="btn btn-secondary" href="https://www.youtube.com/@AnimatedTales-r4r?sub_confirmation=1" target="_blank" rel="noopener">Subscribe on YouTube</a>
+  </div>
+</header>
+
+<nav class="toc column" aria-label="Contents">
+  <p class="label">In this guide</p>
+  <ol>
+    <li><a href="#why">Why short animated stories work</a></li>
+    <li><a href="#battles">Ancient battles</a></li>
+    <li><a href="#myths">Greek and Norse myths</a></li>
+    <li><a href="#mysteries">Mysteries and discoveries</a></li>
+    <li><a href="#kingdoms">Egypt, China and Lydia</a></li>
+    <li><a href="#made">How each episode is made</a></li>
+    <li><a href="#start">Where to start</a></li>
+    <li><a href="#faq">Questions</a></li>
+  </ol>
+</nav>
+
+<article class="column">
+
+  <section class="part" id="why">
+    <header><p class="label">01 · The format</p><h2>Why short animated stories work</h2></header>
+    <p>Most of us remember history as names and dates. Stories stick when something is at stake: a king who reads an oracle too quickly, a god who puts his hand in a wolf's mouth, divers who pull a lump of bronze from the sea and ignore it for two years.</p>
+    <p>That is the idea behind <a href="https://www.youtube.com/@AnimatedTales-r4r" target="_blank" rel="noopener">Animated Tales</a>. Each episode picks the strongest story inside a subject and tells only that. The hard limit is five minutes, and filler is not allowed. If a story is finished at three minutes, the video ends at three minutes.</p>
+    <p>Animation does work that narration alone cannot do quickly. It shows how thin the ribbon Gleipnir looked next to the iron chains Fenrir had already broken. It shows how small the Antikythera fragment is in a hand, and what a Greek sponge boat looked like in 1900. Every character, place and key object has one fixed written description that is used in every shot. So Týr, Fenrir or a diver in a copper helmet looks the same from the first scene to the last.</p>
+    <p>What makes a great animated history series? One story at a time, a few minutes long, with a clear line between what happened and what people later told about it. The rest of this guide shows what that looks like in practice.</p>
+  </section>
+
+  <section class="part" id="battles">
+    <header><p class="label">02 · War</p><h2>Ancient battles</h2></header>
+    <p>The battle episodes are animated history in its plainest form: armies, decisions and what they cost.</p>
+    <div class="ep">
+      <div class="ep-head"><a href="https://www.youtube.com/watch?v=nUQkW9Umv8M" target="_blank" rel="noopener">The Battle of Marathon: The Battle Won by a Dead Man's Army</a><span class="dur">5:08</span></div>
+      <p>Athens against the Persian army that landed at Marathon in 490 BC, one of the most retold battles of the ancient world.</p>
+    </div>
+    <div class="ep">
+      <div class="ep-head"><a href="https://www.youtube.com/watch?v=_1h_EAjb_wk" target="_blank" rel="noopener">The Gallic Sack of Rome after the Battle of the Allia in 390 BC</a><span class="dur">3:38</span></div>
+      <p>The Gauls broke a Roman army at the river Allia and walked into Rome itself. The traditional date is 390 BC. The Greek historian Polybius gives a date that works out to about 387 BC, a small example of why the channel marks what is certain and what is debated.</p>
+    </div>
+    <div class="ep">
+      <div class="ep-head"><a href="https://www.youtube.com/watch?v=NHMGOOVNNk0" target="_blank" rel="noopener">A Kingdom Refused to Sell Its Horses. So China Sent an Army</a><span class="dur">4:42</span></div>
+      <p>Han China wanted the horses of Dayuan, in the Ferghana valley, and Dayuan would not sell them. The war that followed is often called the War of the Heavenly Horses. When the first expedition failed, the emperor refused to let its survivors back through the Jade Gate.</p>
+    </div>
+  </section>
+
+  <section class="part" id="myths">
+    <header><p class="label">03 · Myth</p><h2>Greek and Norse myths</h2></header>
+    <p>An animated myth works best when it is told as a myth. The episodes keep phrases like "according to Norse tradition" in the narration instead of turning legend into fact.</p>
+    <div class="ep">
+      <div class="ep-head"><a href="https://www.youtube.com/watch?v=aE1EFPZLo3E" target="_blank" rel="noopener">Zeus, Poseidon and Hades Drew Lots for the Universe (Greek Gods, Part 1)</a><span class="dur">4:03</span></div>
+      <p>Three brothers divide everything: the sky, the sea and the underworld. The first part of a Greek gods series that is meant to be watched in order.</p>
+    </div>
+    <div class="ep">
+      <div class="ep-head"><a href="https://www.youtube.com/watch?v=asH-WNx94kA" target="_blank" rel="noopener">The Goddess Who Starved the World Until Zeus Gave In (Greek Gods, Part 2)</a><span class="dur">4:41</span></div>
+      <p>Demeter loses her daughter to the underworld and stops the harvest, and the king of the gods has to bargain. Shorts in the <a href="https://www.youtube.com/playlist?list=PLCYDtXyl-EcU" target="_blank" rel="noopener">Greek Mythology playlist</a> follow single moments around both parts, including Hestia and Hera.</p>
+    </div>
+    <div class="ep">
+      <div class="ep-head"><a href="https://www.youtube.com/watch?v=MZ5I5s2hapA" target="_blank" rel="noopener">The God Who Sacrificed His Hand to Save the World</a><span class="dur">3:31</span></div>
+      <p>The gods fear what the wolf Fenrir will become. He breaks the chains Læding and Drómi, so the dwarfs make Gleipnir from six impossible things, among them the sound of a cat's footsteps and the roots of mountains. Fenrir agrees to be bound only if one god puts a hand in his mouth. Týr steps forward.</p>
+    </div>
+  </section>
+
+  <section class="part" id="mysteries">
+    <header><p class="label">04 · Discovery</p><h2>Mysteries and discoveries</h2></header>
+    <p>Some episodes start with an object or an achievement that seems impossible for its time, then ask what is really known.</p>
+    <div class="ep">
+      <div class="ep-head"><a href="https://www.youtube.com/watch?v=_eKElXW9Hk4" target="_blank" rel="noopener">Divers Found a 2,000-Year-Old Greek Computer in a Shipwreck</a><span class="dur">4:06</span></div>
+      <p>In 1900, Greek sponge divers sheltering from a storm off Antikythera found an ancient wreck. Among the statues they raised was a lump of corroded bronze. In 1902 an archaeologist saw a gear wheel inside it. X-ray scans in 2005 revealed about thirty surviving gears and thousands of tiny letters. Turn its handle and it tracked the Sun and the Moon and predicted eclipses years ahead.</p>
+    </div>
+    <div class="ep">
+      <div class="ep-head"><a href="https://www.youtube.com/watch?v=Mrai30wItZI" target="_blank" rel="noopener">How Humans Learned to Cross Entire Oceans Without a Compass</a><span class="dur">3:49</span></div>
+      <p>Polynesian navigators found islands across the open Pacific by reading stars, ocean swells, birds and clouds, without instruments.</p>
+    </div>
+    <p>Both sit in the <a href="https://www.youtube.com/playlist?list=PLCJ0-2X4_lHM" target="_blank" rel="noopener">Ancient Mysteries &amp; Discoveries playlist</a>.</p>
+  </section>
+
+  <section class="part" id="kingdoms">
+    <header><p class="label">05 · Power</p><h2>Egypt, China and Lydia</h2></header>
+    <p>Palace plots and proud kings: stories where the danger comes from inside.</p>
+    <div class="ep">
+      <div class="ep-head"><a href="https://www.youtube.com/watch?v=DBGWroAot-4" target="_blank" rel="noopener">The Harem Conspiracy That Killed Ramesses III</a><span class="dur">4:35</span></div>
+      <p>A plot against the pharaoh from inside his own palace. It is one of the few royal murder plots from ancient Egypt known from actual trial records.</p>
+    </div>
+    <div class="ep">
+      <div class="ep-head"><a href="https://www.youtube.com/watch?v=hsGI3xlJ-SY" target="_blank" rel="noopener">The Last Lydian King: The Prophecy That Destroyed His Kingdom</a><span class="dur">3:09</span></div>
+      <p>Croesus of Lydia, the richest king of his age, asks the oracle at Delphi whether he should go to war with Persia. The story comes to us mainly through Herodotus, so it sits between historical record and tradition, and the episode treats it that way.</p>
+    </div>
+    <p>The China episode on the war for horses is under <a href="#battles">ancient battles</a>. Regional playlists: <a href="https://www.youtube.com/playlist?list=PLMwghrro-9SQ" target="_blank" rel="noopener">Egypt Stories</a> and <a href="https://www.youtube.com/playlist?list=PLckjrsCMM-LY" target="_blank" rel="noopener">China History</a>.</p>
+  </section>
+
+  <section class="part" id="made">
+    <header><p class="label">06 · Method</p><h2>How each episode is made</h2></header>
+    <p>A guide written by the channel should say how the work is done rather than ask you to take its quality on trust. This is the process behind every new episode.</p>
+    <ul class="plain">
+      <li><strong>A person picks the story.</strong> Ideas are scored from 0 to 5 on ten points, including the strength of the hook, whether the story has a real arc in five minutes, how surprising it is, and how solid the history is. A person chooses which one gets made.</li>
+      <li><strong>Every claim gets sorted.</strong> The research separates three kinds of statement, and the script keeps them separate.</li>
+      <li><strong>The narration comes first.</strong> The narration is produced and measured first, and the pictures are cut to it, never the other way around.</li>
+      <li><strong>The visuals follow the period.</strong> Clothing, weapons and buildings follow the real time and culture of the story. Designs are not borrowed from other eras because they look better.</li>
+      <li><strong>Subtitles come from the script.</strong> They are generated from the narration text itself instead of YouTube's automatic captions, and newer episodes include chapters.</li>
+    </ul>
+    <p>Here are the three categories, with real lines from the research notes for the Antikythera episode:</p>
+    <dl class="evidence">
+      <div><dt>Historical record</dt><dd>On 17 May 1902, Valerios Stais noticed a gear wheel in one of the fragments.<small>Backed by records or physical evidence. Told as fact.</small></dd></div>
+      <div><dt>Tradition</dt><dd>A diver surfaced claiming the seabed was covered with corpses and horses.<small>A crew anecdote. The script says "according to the story the crew told".</small></dd></div>
+      <div><dt>Debate</dt><dd>When was the mechanism built? Estimates run from about 205 to 87 BC.<small>Uncertain or disputed. The script keeps one short hedge.</small></dd></div>
+    </dl>
+    <p><strong>About AI.</strong> AI tools are part of the production: they help with research and script drafts, they voice the narrator, and they create the hand-drawn-style illustrations and animation. Every story is chosen and reviewed by a person before it is published, and the channel is made by one person. The same disclosure is on the YouTube channel.</p>
+    <p><strong>What you can learn here.</strong> Each episode gives you the true story behind one event or myth, told clearly, with legend and fact marked. It is a good first look, not an academic source. If a story grabs you, the next step is the original texts: Herodotus for Croesus and Marathon, the Prose Edda for Týr and Fenrir.</p>
+  </section>
+
+</article>
+
+<section class="finder wide" id="start" aria-labelledby="start-title">
+  <div class="finder-intro">
+    <p class="label">07 · Where to start</p>
+    <h2 id="start-title">Pick by what you like</h2>
+    <p>Every episode stands on its own. Choose a topic, or browse <a href="https://www.youtube.com/@AnimatedTales-r4r/videos" target="_blank" rel="noopener">all animated history and myth episodes</a> on the channel.</p>
+  </div>
+  <div class="chips" role="group" aria-label="Filter episodes">
+    <button class="chip" type="button" id="f-all" data-filter="all" aria-pressed="true">All</button>
+    <button class="chip" type="button" id="f-battles" data-filter="battles" aria-pressed="false">Battles</button>
+    <button class="chip" type="button" id="f-myths" data-filter="myths" aria-pressed="false">Myths</button>
+    <button class="chip" type="button" id="f-mysteries" data-filter="mysteries" aria-pressed="false">Mysteries</button>
+    <button class="chip" type="button" id="f-kingdoms" data-filter="kingdoms" aria-pressed="false">Kingdoms &amp; plots</button>
+  </div>
+  <div class="grid" id="cards">
+    <div class="card" data-tags="myths">
+      <div class="meta"><span class="label">Greek myth · start here</span><span class="dur">4:03</span></div>
+      <div><h3><a href="https://www.youtube.com/watch?v=aE1EFPZLo3E" target="_blank" rel="noopener">Zeus, Poseidon and Hades Drew Lots for the Universe</a></h3><p>If you like origin stories. Then watch Part 2.</p></div>
+      <a class="go" href="https://www.youtube.com/watch?v=aE1EFPZLo3E" target="_blank" rel="noopener">Watch Part 1</a>
+    </div>
+    <div class="card" data-tags="myths">
+      <div class="meta"><span class="label">Greek myth</span><span class="dur">4:41</span></div>
+      <div><h3><a href="https://www.youtube.com/watch?v=asH-WNx94kA" target="_blank" rel="noopener">The Goddess Who Starved the World Until Zeus Gave In</a></h3><p>If you like stories where a mother takes on the gods.</p></div>
+      <a class="go" href="https://www.youtube.com/watch?v=asH-WNx94kA" target="_blank" rel="noopener">Watch Part 2</a>
+    </div>
+    <div class="card" data-tags="myths">
+      <div class="meta"><span class="label">Norse myth</span><span class="dur">3:31</span></div>
+      <div><h3><a href="https://www.youtube.com/watch?v=MZ5I5s2hapA" target="_blank" rel="noopener">The God Who Sacrificed His Hand to Save the World</a></h3><p>If you like trust, trickery and a price that has to be paid.</p></div>
+      <a class="go" href="https://www.youtube.com/watch?v=MZ5I5s2hapA" target="_blank" rel="noopener">Watch Týr and Fenrir</a>
+    </div>
+    <div class="card" data-tags="battles">
+      <div class="meta"><span class="label">Greece · 490 BC</span><span class="dur">5:08</span></div>
+      <div><h3><a href="https://www.youtube.com/watch?v=nUQkW9Umv8M" target="_blank" rel="noopener">The Battle of Marathon: The Battle Won by a Dead Man's Army</a></h3><p>If you like famous battles told from an unexpected angle.</p></div>
+      <a class="go" href="https://www.youtube.com/watch?v=nUQkW9Umv8M" target="_blank" rel="noopener">Watch Marathon</a>
+    </div>
+    <div class="card" data-tags="battles">
+      <div class="meta"><span class="label">Rome · 390 BC</span><span class="dur">3:38</span></div>
+      <div><h3><a href="https://www.youtube.com/watch?v=_1h_EAjb_wk" target="_blank" rel="noopener">The Gallic Sack of Rome after the Battle of the Allia</a></h3><p>If you like the moments when an empire almost never happened.</p></div>
+      <a class="go" href="https://www.youtube.com/watch?v=_1h_EAjb_wk" target="_blank" rel="noopener">Watch the sack of Rome</a>
+    </div>
+    <div class="card" data-tags="battles kingdoms">
+      <div class="meta"><span class="label">Han China</span><span class="dur">4:42</span></div>
+      <div><h3><a href="https://www.youtube.com/watch?v=NHMGOOVNNk0" target="_blank" rel="noopener">A Kingdom Refused to Sell Its Horses. So China Sent an Army</a></h3><p>If you like wars started for reasons that sound small.</p></div>
+      <a class="go" href="https://www.youtube.com/watch?v=NHMGOOVNNk0" target="_blank" rel="noopener">Watch the horse war</a>
+    </div>
+    <div class="card" data-tags="mysteries">
+      <div class="meta"><span class="label">Greece · shipwreck</span><span class="dur">4:06</span></div>
+      <div><h3><a href="https://www.youtube.com/watch?v=_eKElXW9Hk4" target="_blank" rel="noopener">Divers Found a 2,000-Year-Old Greek Computer in a Shipwreck</a></h3><p>If you like objects that change what we think ancient people could build.</p></div>
+      <a class="go" href="https://www.youtube.com/watch?v=_eKElXW9Hk4" target="_blank" rel="noopener">Watch Antikythera</a>
+    </div>
+    <div class="card" data-tags="mysteries">
+      <div class="meta"><span class="label">Pacific</span><span class="dur">3:49</span></div>
+      <div><h3><a href="https://www.youtube.com/watch?v=Mrai30wItZI" target="_blank" rel="noopener">How Humans Learned to Cross Entire Oceans Without a Compass</a></h3><p>If you like exploration and knowledge passed down without writing.</p></div>
+      <a class="go" href="https://www.youtube.com/watch?v=Mrai30wItZI" target="_blank" rel="noopener">Watch Polynesian navigation</a>
+    </div>
+    <div class="card" data-tags="kingdoms">
+      <div class="meta"><span class="label">Egypt</span><span class="dur">4:35</span></div>
+      <div><h3><a href="https://www.youtube.com/watch?v=DBGWroAot-4" target="_blank" rel="noopener">The Harem Conspiracy That Killed Ramesses III</a></h3><p>If you like true crime from 3,000 years ago.</p></div>
+      <a class="go" href="https://www.youtube.com/watch?v=DBGWroAot-4" target="_blank" rel="noopener">Watch Ramesses III</a>
+    </div>
+    <div class="card" data-tags="kingdoms">
+      <div class="meta"><span class="label">Lydia</span><span class="dur">3:09</span></div>
+      <div><h3><a href="https://www.youtube.com/watch?v=hsGI3xlJ-SY" target="_blank" rel="noopener">The Last Lydian King: The Prophecy That Destroyed His Kingdom</a></h3><p>If you like prophecies with a twist. The shortest episode.</p></div>
+      <a class="go" href="https://www.youtube.com/watch?v=hsGI3xlJ-SY" target="_blank" rel="noopener">Watch Croesus</a>
+    </div>
+  </div>
+  <div class="finder-intro">
+    <p>Prefer to binge by topic? The playlists:</p>
+    <ul class="playlists">
+      <li><a href="https://www.youtube.com/playlist?list=PLCYDtXyl-EcU" target="_blank" rel="noopener">Greek Mythology</a></li>
+      <li><a href="https://www.youtube.com/playlist?list=PLfVGPcCCcFU8" target="_blank" rel="noopener">Norse Mythology</a></li>
+      <li><a href="https://www.youtube.com/playlist?list=PLBQAMHoMK26c" target="_blank" rel="noopener">Greek History</a></li>
+      <li><a href="https://www.youtube.com/playlist?list=PLc1nD6MP3I24" target="_blank" rel="noopener">Rome History</a></li>
+      <li><a href="https://www.youtube.com/playlist?list=PLMwghrro-9SQ" target="_blank" rel="noopener">Egypt Stories</a></li>
+      <li><a href="https://www.youtube.com/playlist?list=PLckjrsCMM-LY" target="_blank" rel="noopener">China History</a></li>
+      <li><a href="https://www.youtube.com/playlist?list=PLCJ0-2X4_lHM" target="_blank" rel="noopener">Ancient Mysteries &amp; Discoveries</a></li>
+      <li><a href="https://www.youtube.com/playlist?list=PLJV7xQyHhydw" target="_blank" rel="noopener">History Battles</a></li>
+    </ul>
+    <p>Short on time? The <a href="https://www.youtube.com/@AnimatedTales-r4r/shorts" target="_blank" rel="noopener">Shorts</a> are under a minute, and each one links to a full episode.</p>
+  </div>
+</section>
+
+<section class="column" id="faq" aria-labelledby="faq-title" style="padding-top:3.5rem; display:grid; gap:1rem;">
+  <p class="label">08 · Questions</p>
+  <h2 id="faq-title">Questions</h2>
+  <div class="faq">
+    <details open>
+      <summary>Is this the only "Animated Tales" on YouTube?</summary>
+      <p>No. Several channels and older TV series use the name. This one is <a href="https://www.youtube.com/@AnimatedTales-r4r" target="_blank" rel="noopener">@AnimatedTales-r4r</a>, the channel for animated history and mythology.</p>
+    </details>
+    <details>
+      <summary>How long are the episodes?</summary>
+      <p>Between 3:09 and 5:08. Five minutes is the hard limit. The Shorts run under a minute.</p>
+    </details>
+    <details>
+      <summary>How accurate are they?</summary>
+      <p>Every claim is sorted into historical record, tradition or debate, and the narration keeps that line visible. The episodes are stories, not lectures. Treat them as a clear starting point and go to the original sources if you want more.</p>
+    </details>
+    <details>
+      <summary>Is AI used to make the videos?</summary>
+      <p>Yes. AI tools help with research and script drafts, voice the narrator, and create the hand-drawn-style illustrations and animation. A person chooses every story and reviews every episode before it is published.</p>
+    </details>
+    <details>
+      <summary>Which episode should I watch first?</summary>
+      <p>For myths, Greek Gods Part 1. For history, the Antikythera mechanism or the Battle of Marathon. Or use the <a href="#start">topic filter</a> above.</p>
+    </details>
+  </div>
+
+  <div class="closing">
+    <h2>One story, a few minutes</h2>
+    <p>Ten episodes so far, each one a complete story from ancient history or mythology. If you liked one, the next is waiting on the channel.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="https://www.youtube.com/@AnimatedTales-r4r?sub_confirmation=1" target="_blank" rel="noopener">Subscribe to Animated Tales</a>
+      <a class="btn btn-secondary" href="https://www.youtube.com/@AnimatedTales-r4r/playlists" target="_blank" rel="noopener">Browse the playlists</a>
+    </div>
+  </div>
+  <p class="note">Written by the creator of Animated Tales. Episode lengths and playlists as of 28 October 2026.</p>
+</section>
+
+<script>
+(function () {
+  var chips = document.querySelectorAll('.chip');
+  var cards = document.querySelectorAll('#cards .card');
+  chips.forEach(function (chip) {
+    chip.addEventListener('click', function () {
+      var f = chip.getAttribute('data-filter');
+      chips.forEach(function (c) { c.setAttribute('aria-pressed', c === chip ? 'true' : 'false'); });
+      cards.forEach(function (card) {
+        var tags = card.getAttribute('data-tags').split(' ');
+        card.hidden = !(f === 'all' || tags.indexOf(f) !== -1);
+      });
+    });
+  });
+})();
+</script>
