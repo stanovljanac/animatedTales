@@ -230,6 +230,10 @@ Google.
 
 Ako nijedno ne odgovara, članak ostaje prototip.
 
+Gotovi tekstovi: **`docs/seo/medium.md`** (Medium post, sa uputstvom za objavu u komentaru na
+vrhu) i **`docs/seo/social-posts.md`** (2 Facebook, 2 Instagram i 3 X objave, raspored i
+dnevnik merenja).
+
 **Članci po epizodi** (Krez, Ramzes III, Antikythera) kreću tek kad YouTube Analytics → Research
 i Google Trends pokažu da ljudi traže temu. Mala konkurencija u pretrazi nije dokaz potražnje.
 
