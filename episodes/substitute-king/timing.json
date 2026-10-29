@@ -1,0 +1,4987 @@
+{
+  "duration": 255.713,
+  "model": "small.en",
+  "sentences": [
+    {
+      "id": "S01",
+      "start": 0,
+      "end": 5.72,
+      "dur": 5.72,
+      "text": "When the moon went dark over ancient Assyria, the king's scholars had a way to save his life.",
+      "confidence": 0.987
+    },
+    {
+      "id": "S02",
+      "start": 6.38,
+      "end": 12.88,
+      "dur": 6.5,
+      "text": "They put another man on his throne — and when the danger had passed, they let that man die in the king's place.",
+      "confidence": 0.996
+    },
+    {
+      "id": "S03",
+      "start": 13.86,
+      "end": 21.32,
+      "dur": 7.46,
+      "text": "To the people of Mesopotamia, the stars were the writing of heaven, and the scholars of the palace spent their nights reading it.",
+      "confidence": 0.993
+    },
+    {
+      "id": "S04",
+      "start": 21.92,
+      "end": 24.5,
+      "dur": 2.58,
+      "text": "An eclipse was the darkest message of all.",
+      "confidence": 0.997
+    },
+    {
+      "id": "S05",
+      "start": 25.06,
+      "end": 30.22,
+      "dur": 5.16,
+      "text": "They watched which part of the moon the shadow covered, because each part stood for a land.",
+      "confidence": 0.933
+    },
+    {
+      "id": "S06",
+      "start": 30.78,
+      "end": 34.28,
+      "dur": 3.5,
+      "text": "If the shadow fell on the king's land, the king would die.",
+      "confidence": 0.965
+    },
+    {
+      "id": "S07",
+      "start": 35.8,
+      "end": 38.5,
+      "dur": 2.7,
+      "text": "But an omen was a warning, not a verdict.",
+      "confidence": 0.98
+    },
+    {
+      "id": "S08",
+      "start": 39.06,
+      "end": 40.98,
+      "dur": 1.92,
+      "text": "And a warning could be redirected.",
+      "confidence": 0.996
+    },
+    {
+      "id": "S09",
+      "start": 41.86,
+      "end": 46.06,
+      "dur": 4.2,
+      "text": "In the seventh century BCE, Assyria was ruled by Esarhaddon.",
+      "confidence": 0.923
+    },
+    {
+      "id": "S10",
+      "start": 46.86,
+      "end": 50.7,
+      "dur": 3.84,
+      "text": "Hundreds of letters from his scholars survive, and they show how it was done.",
+      "confidence": 0.99
+    },
+    {
+      "id": "S11",
+      "start": 51.34,
+      "end": 54.98,
+      "dur": 3.64,
+      "text": "When the shadow fell on his lands, Esarhaddon left his throne.",
+      "confidence": 0.995
+    },
+    {
+      "id": "S12",
+      "start": 54.98,
+      "end": 62.56,
+      "dur": 7.58,
+      "text": "Another man sat on it, washed, anointed and dressed in the king's robes, with a young woman beside him as his queen.",
+      "confidence": 0.95
+    },
+    {
+      "id": "S13",
+      "start": 63.32,
+      "end": 69.98,
+      "dur": 6.66,
+      "text": "One scholar wrote: \"I wrote down whatever signs there were, and had them recited in front of Shamash,\" the sun god.",
+      "confidence": 0.901
+    },
+    {
+      "id": "S14",
+      "start": 70.6,
+      "end": 73.24,
+      "dur": 2.64,
+      "text": "\"The substitute king took the signs on himself.\"",
+      "confidence": 0.989
+    },
+    {
+      "id": "S15",
+      "start": 74.08,
+      "end": 77.12,
+      "dur": 3.04,
+      "text": "Another bound the written omens into the hem of his robe.",
+      "confidence": 0.991
+    },
+    {
+      "id": "S16",
+      "start": 77.64,
+      "end": 79.86,
+      "dur": 2.22,
+      "text": "The real king stayed hidden in his palace.",
+      "confidence": 0.994
+    },
+    {
+      "id": "S17",
+      "start": 80.58,
+      "end": 83.82,
+      "dur": 3.24,
+      "text": "His scholars kept writing to him, but no longer as king.",
+      "confidence": 0.948
+    },
+    {
+      "id": "S18",
+      "start": 84.4,
+      "end": 86.98,
+      "dur": 2.58,
+      "text": "Their letters begin: \"To the farmer, my lord.\"",
+      "confidence": 0.819
+    },
+    {
+      "id": "S19",
+      "start": 87.6,
+      "end": 90.92,
+      "dur": 3.32,
+      "text": "The substitute could sit on the throne for up to a hundred days.",
+      "confidence": 0.985
+    },
+    {
+      "id": "S20",
+      "start": 91.38,
+      "end": 94.94,
+      "dur": 3.56,
+      "text": "Then, in the words of the letters, he \"went to his fate.\"",
+      "confidence": 0.934
+    },
+    {
+      "id": "S21",
+      "start": 95.58,
+      "end": 101.8,
+      "dur": 6.22,
+      "text": "The scholars preferred a man whose death would trouble no one: a condemned criminal, a prisoner, a laborer.",
+      "confidence": 0.989
+    },
+    {
+      "id": "S22",
+      "start": 102.22,
+      "end": 106.78,
+      "dur": 4.56,
+      "text": "But in 671 BCE, the substitute was someone who mattered.",
+      "confidence": 0.975
+    },
+    {
+      "id": "S23",
+      "start": 107.42,
+      "end": 111.98,
+      "dur": 4.56,
+      "text": "Damqi was the son of a high temple official in the Babylonian city of Akkad.",
+      "confidence": 0.882
+    },
+    {
+      "id": "S24",
+      "start": 112.54,
+      "end": 115.34,
+      "dur": 2.8,
+      "text": "The king's agent in Babylonia reported his end.",
+      "confidence": 0.983
+    },
+    {
+      "id": "S25",
+      "start": 116.02,
+      "end": 123.38,
+      "dur": 7.36,
+      "text": "Damqi, \"who had ruled Assyria, Babylonia and all the countries, died with his queen,\" as a substitute for the king.",
+      "confidence": 0.929
+    },
+    {
+      "id": "S26",
+      "start": 124,
+      "end": 129.14,
+      "dur": 5.14,
+      "text": "\"He and his queen were decorated, treated, displayed, buried and wailed over.\"",
+      "confidence": 0.994
+    },
+    {
+      "id": "S27",
+      "start": 129.64,
+      "end": 131.4,
+      "dur": 1.76,
+      "text": "Then the report adds something else.",
+      "confidence": 0.983
+    },
+    {
+      "id": "S28",
+      "start": 131.98,
+      "end": 137.18,
+      "dur": 5.2,
+      "text": "Before the ritual, a prophetess had told Damqi: \"You will take over the kingship!\"",
+      "confidence": 0.853
+    },
+    {
+      "id": "S29",
+      "start": 137.64,
+      "end": 138.38,
+      "dur": 0.74,
+      "text": "She was right.",
+      "confidence": 0.977
+    },
+    {
+      "id": "S30",
+      "start": 138.96,
+      "end": 142.56,
+      "dur": 3.6,
+      "text": "Whether that prophecy is why he was chosen, the letter does not say.",
+      "confidence": 0.976
+    },
+    {
+      "id": "S31",
+      "start": 143.02,
+      "end": 149.52,
+      "dur": 6.5,
+      "text": "It says only that the rituals \"succeeded well indeed,\" and that \"the king, my lord, can be glad.\"",
+      "confidence": 0.896
+    },
+    {
+      "id": "S32",
+      "start": 150.12,
+      "end": 154.5,
+      "dur": 4.38,
+      "text": "The scholars carried on, as they wrote, \"as our fathers did for their lords.\"",
+      "confidence": 0.938
+    },
+    {
+      "id": "S33",
+      "start": 155.44,
+      "end": 161.48,
+      "dur": 6.04,
+      "text": "In the summer of 669 BCE, they set the day for another substitute to go to his fate.",
+      "confidence": 0.987
+    },
+    {
+      "id": "S34",
+      "start": 161.48,
+      "end": 166.86,
+      "dur": 5.38,
+      "text": "That autumn, on the march to Egypt, Esarhaddon fell ill, and died.",
+      "confidence": 0.895
+    },
+    {
+      "id": "S35",
+      "start": 167.74,
+      "end": 170.02,
+      "dur": 2.28,
+      "text": "The ritual was far older than him.",
+      "confidence": 0.998
+    },
+    {
+      "id": "S36",
+      "start": 170.66,
+      "end": 179.3,
+      "dur": 8.64,
+      "text": "Its earliest story comes from a Babylonian chronicle, and it is set more than a thousand years before Esarhaddon, in the city of Isin.",
+      "confidence": 0.925
+    },
+    {
+      "id": "S37",
+      "start": 179.94,
+      "end": 189.36,
+      "dur": 9.42,
+      "text": "There, the chronicle says, King Erra-imitti made his gardener, Enlil-bani, substitute king, and placed the royal tiara on his head.",
+      "confidence": 0.809
+    },
+    {
+      "id": "S38",
+      "start": 190.2,
+      "end": 194.34,
+      "dur": 4.14,
+      "text": "Then Erra-imitti died in his own palace, sipping a hot soup.",
+      "confidence": 0.906
+    },
+    {
+      "id": "S39",
+      "start": 194.96,
+      "end": 198.34,
+      "dur": 3.38,
+      "text": "The gardener, sitting on the throne, did not give it up.",
+      "confidence": 0.992
+    },
+    {
+      "id": "S40",
+      "start": 199.14,
+      "end": 204.16,
+      "dur": 5.02,
+      "text": "Enlil-bani ruled Isin for twenty-four years, and his own inscriptions survive.",
+      "confidence": 0.786
+    },
+    {
+      "id": "S41",
+      "start": 204.94,
+      "end": 210.44,
+      "dur": 5.5,
+      "text": "He rebuilt the city wall and named it \"Enlil-bani is firm as to foundation.\"",
+      "confidence": 0.852
+    },
+    {
+      "id": "S42",
+      "start": 211.1,
+      "end": 214.14,
+      "dur": 3.04,
+      "text": "He cut the barley tax from a fifth to a tenth.",
+      "confidence": 0.878
+    },
+    {
+      "id": "S43",
+      "start": 215,
+      "end": 220.88,
+      "dur": 5.88,
+      "text": "Historians suspect the tale is a legend, perhaps one that dressed up an ordinary seizure of the throne.",
+      "confidence": 0.996
+    },
+    {
+      "id": "S44",
+      "start": 221.58,
+      "end": 230.46,
+      "dur": 8.88,
+      "text": "But in every letter from Nineveh, the ritual ends the same way: the stand-in dies, and the king lives, for a while.",
+      "confidence": 0.987
+    },
+    {
+      "id": "S45",
+      "start": 231.2,
+      "end": 233.78,
+      "dur": 2.58,
+      "text": "Only the oldest story ends the other way.",
+      "confidence": 0.998
+    },
+    {
+      "id": "S46",
+      "start": 234.26,
+      "end": 235.76,
+      "dur": 1.5,
+      "text": "The gods took the king.",
+      "confidence": 0.99
+    },
+    {
+      "id": "S47",
+      "start": 236.34,
+      "end": 239.4,
+      "dur": 3.06,
+      "text": "And the man crowned to die kept the crown.",
+      "confidence": 0.92
+    },
+    {
+      "id": "S48",
+      "start": 240.32,
+      "end": 247.06,
+      "dur": 6.74,
+      "text": "A borrowed crown could buy a king a hundred days — and once, it bought a gardener a kingdom.",
+      "confidence": 0.965
+    },
+    {
+      "id": "S49",
+      "start": 247.98,
+      "end": 254.04,
+      "dur": 6.06,
+      "text": "For more strange rituals and forgotten lives like this, leave a like and subscribe to Animated Tales.",
+      "confidence": 0.979
+    },
+    {
+      "id": "S50",
+      "start": 254.7,
+      "end": 255.5,
+      "dur": 0.8,
+      "text": "Until next time.",
+      "confidence": 0.997
+    }
+  ],
+  "words": [
+    {
+      "sentence_id": "S01",
+      "word": "When",
+      "start": 0,
+      "end": 0.24,
+      "confidence": 0.981
+    },
+    {
+      "sentence_id": "S01",
+      "word": "the",
+      "start": 0.24,
+      "end": 0.42,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S01",
+      "word": "moon",
+      "start": 0.42,
+      "end": 0.62,
+      "confidence": 0.953
+    },
+    {
+      "sentence_id": "S01",
+      "word": "went",
+      "start": 0.62,
+      "end": 0.9,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S01",
+      "word": "dark",
+      "start": 0.9,
+      "end": 1.34,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S01",
+      "word": "over",
+      "start": 1.34,
+      "end": 1.64,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S01",
+      "word": "ancient",
+      "start": 1.64,
+      "end": 2.06,
+      "confidence": 0.944
+    },
+    {
+      "sentence_id": "S01",
+      "word": "Assyria",
+      "start": 2.06,
+      "end": 2.7,
+      "confidence": 0.993
+    },
+    {
+      "sentence_id": "S01",
+      "word": "the",
+      "start": 3.22,
+      "end": 3.36,
+      "confidence": 0.994
+    },
+    {
+      "sentence_id": "S01",
+      "word": "king's",
+      "start": 3.36,
+      "end": 3.74,
+      "confidence": 0.92
+    },
+    {
+      "sentence_id": "S01",
+      "word": "scholars",
+      "start": 3.74,
+      "end": 4.02,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S01",
+      "word": "had",
+      "start": 4.02,
+      "end": 4.34,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S01",
+      "word": "a",
+      "start": 4.34,
+      "end": 4.48,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S01",
+      "word": "way",
+      "start": 4.48,
+      "end": 4.68,
+      "confidence": 1
+    },
+    {
+      "sentence_id": "S01",
+      "word": "to",
+      "start": 4.68,
+      "end": 4.94,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S01",
+      "word": "save",
+      "start": 4.94,
+      "end": 5.18,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S01",
+      "word": "his",
+      "start": 5.18,
+      "end": 5.38,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S01",
+      "word": "life",
+      "start": 5.38,
+      "end": 5.72,
+      "confidence": 1
+    },
+    {
+      "sentence_id": "S02",
+      "word": "They",
+      "start": 6.38,
+      "end": 6.52,
+      "confidence": 0.996
+    },
+    {
+      "sentence_id": "S02",
+      "word": "put",
+      "start": 6.52,
+      "end": 6.7,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S02",
+      "word": "another",
+      "start": 6.7,
+      "end": 7.1,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S02",
+      "word": "man",
+      "start": 7.1,
+      "end": 7.36,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S02",
+      "word": "on",
+      "start": 7.36,
+      "end": 7.54,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S02",
+      "word": "his",
+      "start": 7.54,
+      "end": 7.74,
+      "confidence": 0.996
+    },
+    {
+      "sentence_id": "S02",
+      "word": "throne",
+      "start": 7.74,
+      "end": 8.08,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S02",
+      "word": "and",
+      "start": 8.6,
+      "end": 8.82,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S02",
+      "word": "when",
+      "start": 8.82,
+      "end": 8.96,
+      "confidence": 0.993
+    },
+    {
+      "sentence_id": "S02",
+      "word": "the",
+      "start": 8.96,
+      "end": 9.08,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S02",
+      "word": "danger",
+      "start": 9.08,
+      "end": 9.32,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S02",
+      "word": "had",
+      "start": 9.32,
+      "end": 9.56,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S02",
+      "word": "passed",
+      "start": 9.56,
+      "end": 10.06,
+      "confidence": 0.993
+    },
+    {
+      "sentence_id": "S02",
+      "word": "they",
+      "start": 10.5,
+      "end": 10.68,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S02",
+      "word": "let",
+      "start": 10.68,
+      "end": 10.86,
+      "confidence": 0.982
+    },
+    {
+      "sentence_id": "S02",
+      "word": "that",
+      "start": 10.86,
+      "end": 11.08,
+      "confidence": 0.995
+    },
+    {
+      "sentence_id": "S02",
+      "word": "man",
+      "start": 11.08,
+      "end": 11.38,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S02",
+      "word": "die",
+      "start": 11.38,
+      "end": 11.74,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S02",
+      "word": "in",
+      "start": 11.74,
+      "end": 12.1,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S02",
+      "word": "the",
+      "start": 12.1,
+      "end": 12.24,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S02",
+      "word": "king's",
+      "start": 12.24,
+      "end": 12.58,
+      "confidence": 0.988
+    },
+    {
+      "sentence_id": "S02",
+      "word": "place",
+      "start": 12.58,
+      "end": 12.88,
+      "confidence": 1
+    },
+    {
+      "sentence_id": "S03",
+      "word": "To",
+      "start": 13.86,
+      "end": 14.06,
+      "confidence": 0.991
+    },
+    {
+      "sentence_id": "S03",
+      "word": "the",
+      "start": 14.06,
+      "end": 14.2,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S03",
+      "word": "people",
+      "start": 14.2,
+      "end": 14.46,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S03",
+      "word": "of",
+      "start": 14.46,
+      "end": 14.68,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S03",
+      "word": "Mesopotamia",
+      "start": 14.68,
+      "end": 15.46,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S03",
+      "word": "the",
+      "start": 15.92,
+      "end": 15.96,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S03",
+      "word": "stars",
+      "start": 15.96,
+      "end": 16.34,
+      "confidence": 0.996
+    },
+    {
+      "sentence_id": "S03",
+      "word": "were",
+      "start": 16.34,
+      "end": 16.68,
+      "confidence": 0.995
+    },
+    {
+      "sentence_id": "S03",
+      "word": "the",
+      "start": 16.68,
+      "end": 16.84,
+      "confidence": 0.992
+    },
+    {
+      "sentence_id": "S03",
+      "word": "writing",
+      "start": 16.84,
+      "end": 17.12,
+      "confidence": 0.987
+    },
+    {
+      "sentence_id": "S03",
+      "word": "of",
+      "start": 17.12,
+      "end": 17.42,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S03",
+      "word": "heaven",
+      "start": 17.42,
+      "end": 17.74,
+      "confidence": 0.924
+    },
+    {
+      "sentence_id": "S03",
+      "word": "and",
+      "start": 17.94,
+      "end": 18.36,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S03",
+      "word": "the",
+      "start": 18.36,
+      "end": 18.52,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S03",
+      "word": "scholars",
+      "start": 18.52,
+      "end": 18.8,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S03",
+      "word": "of",
+      "start": 18.8,
+      "end": 19.02,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S03",
+      "word": "the",
+      "start": 19.02,
+      "end": 19.16,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S03",
+      "word": "palace",
+      "start": 19.16,
+      "end": 19.56,
+      "confidence": 0.996
+    },
+    {
+      "sentence_id": "S03",
+      "word": "spent",
+      "start": 19.56,
+      "end": 19.98,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S03",
+      "word": "their",
+      "start": 19.98,
+      "end": 20.2,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S03",
+      "word": "nights",
+      "start": 20.2,
+      "end": 20.54,
+      "confidence": 0.981
+    },
+    {
+      "sentence_id": "S03",
+      "word": "reading",
+      "start": 20.54,
+      "end": 20.94,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S03",
+      "word": "it",
+      "start": 20.94,
+      "end": 21.32,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S04",
+      "word": "An",
+      "start": 21.92,
+      "end": 22.06,
+      "confidence": 0.986
+    },
+    {
+      "sentence_id": "S04",
+      "word": "eclipse",
+      "start": 22.06,
+      "end": 22.5,
+      "confidence": 0.993
+    },
+    {
+      "sentence_id": "S04",
+      "word": "was",
+      "start": 22.5,
+      "end": 22.98,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S04",
+      "word": "the",
+      "start": 22.98,
+      "end": 23.2,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S04",
+      "word": "darkest",
+      "start": 23.2,
+      "end": 23.6,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S04",
+      "word": "message",
+      "start": 23.6,
+      "end": 24.04,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S04",
+      "word": "of",
+      "start": 24.04,
+      "end": 24.24,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S04",
+      "word": "all",
+      "start": 24.24,
+      "end": 24.5,
+      "confidence": 1
+    },
+    {
+      "sentence_id": "S05",
+      "word": "They",
+      "start": 25.06,
+      "end": 25.34,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S05",
+      "word": "watched",
+      "start": 25.34,
+      "end": 25.6,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S05",
+      "word": "which",
+      "start": 25.6,
+      "end": 25.94,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S05",
+      "word": "part",
+      "start": 25.94,
+      "end": 26.22,
+      "confidence": 1
+    },
+    {
+      "sentence_id": "S05",
+      "word": "of",
+      "start": 26.22,
+      "end": 26.42,
+      "confidence": 1
+    },
+    {
+      "sentence_id": "S05",
+      "word": "the",
+      "start": 26.42,
+      "end": 26.5,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S05",
+      "word": "moon",
+      "start": 26.5,
+      "end": 26.78,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S05",
+      "word": "the",
+      "start": 26.78,
+      "end": 27,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S05",
+      "word": "shadow",
+      "start": 27,
+      "end": 27.28,
+      "confidence": 0.996
+    },
+    {
+      "sentence_id": "S05",
+      "word": "covered",
+      "start": 27.28,
+      "end": 27.7,
+      "confidence": 0.055
+    },
+    {
+      "sentence_id": "S05",
+      "word": "because",
+      "start": 27.7,
+      "end": 28.32,
+      "confidence": 0.85
+    },
+    {
+      "sentence_id": "S05",
+      "word": "each",
+      "start": 28.32,
+      "end": 28.62,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S05",
+      "word": "part",
+      "start": 28.62,
+      "end": 29.1,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S05",
+      "word": "stood",
+      "start": 29.1,
+      "end": 29.44,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S05",
+      "word": "for",
+      "start": 29.44,
+      "end": 29.68,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S05",
+      "word": "a",
+      "start": 29.68,
+      "end": 29.84,
+      "confidence": 0.991
+    },
+    {
+      "sentence_id": "S05",
+      "word": "land",
+      "start": 29.84,
+      "end": 30.22,
+      "confidence": 0.996
+    },
+    {
+      "sentence_id": "S06",
+      "word": "If",
+      "start": 30.78,
+      "end": 31,
+      "confidence": 0.99
+    },
+    {
+      "sentence_id": "S06",
+      "word": "the",
+      "start": 31,
+      "end": 31.2,
+      "confidence": 0.995
+    },
+    {
+      "sentence_id": "S06",
+      "word": "shadow",
+      "start": 31.2,
+      "end": 31.4,
+      "confidence": 0.944
+    },
+    {
+      "sentence_id": "S06",
+      "word": "fell",
+      "start": 31.4,
+      "end": 31.68,
+      "confidence": 0.994
+    },
+    {
+      "sentence_id": "S06",
+      "word": "on",
+      "start": 31.68,
+      "end": 31.86,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S06",
+      "word": "the",
+      "start": 31.86,
+      "end": 32,
+      "confidence": 0.993
+    },
+    {
+      "sentence_id": "S06",
+      "word": "king's",
+      "start": 32,
+      "end": 32.4,
+      "confidence": 0.713
+    },
+    {
+      "sentence_id": "S06",
+      "word": "land",
+      "start": 32.4,
+      "end": 32.74,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S06",
+      "word": "the",
+      "start": 33.26,
+      "end": 33.36,
+      "confidence": 0.99
+    },
+    {
+      "sentence_id": "S06",
+      "word": "king",
+      "start": 33.36,
+      "end": 33.6,
+      "confidence": 0.966
+    },
+    {
+      "sentence_id": "S06",
+      "word": "would",
+      "start": 33.6,
+      "end": 33.92,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S06",
+      "word": "die",
+      "start": 33.92,
+      "end": 34.28,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S07",
+      "word": "But",
+      "start": 35.8,
+      "end": 35.9,
+      "confidence": 0.886
+    },
+    {
+      "sentence_id": "S07",
+      "word": "an",
+      "start": 35.9,
+      "end": 36.06,
+      "confidence": 0.976
+    },
+    {
+      "sentence_id": "S07",
+      "word": "omen",
+      "start": 36.06,
+      "end": 36.5,
+      "confidence": 0.975
+    },
+    {
+      "sentence_id": "S07",
+      "word": "was",
+      "start": 36.5,
+      "end": 36.76,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S07",
+      "word": "a",
+      "start": 36.76,
+      "end": 36.94,
+      "confidence": 0.996
+    },
+    {
+      "sentence_id": "S07",
+      "word": "warning",
+      "start": 36.94,
+      "end": 37.38,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S07",
+      "word": "not",
+      "start": 37.76,
+      "end": 37.96,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S07",
+      "word": "a",
+      "start": 37.96,
+      "end": 38.1,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S07",
+      "word": "verdict",
+      "start": 38.1,
+      "end": 38.5,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S08",
+      "word": "And",
+      "start": 39.06,
+      "end": 39.32,
+      "confidence": 0.995
+    },
+    {
+      "sentence_id": "S08",
+      "word": "a",
+      "start": 39.32,
+      "end": 39.44,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S08",
+      "word": "warning",
+      "start": 39.44,
+      "end": 39.84,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S08",
+      "word": "could",
+      "start": 39.84,
+      "end": 40.2,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S08",
+      "word": "be",
+      "start": 40.2,
+      "end": 40.44,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S08",
+      "word": "redirected",
+      "start": 40.44,
+      "end": 40.98,
+      "confidence": 0.99
+    },
+    {
+      "sentence_id": "S09",
+      "word": "In",
+      "start": 41.86,
+      "end": 42.04,
+      "confidence": 0.975
+    },
+    {
+      "sentence_id": "S09",
+      "word": "the",
+      "start": 42.04,
+      "end": 42.2,
+      "confidence": 0.994
+    },
+    {
+      "sentence_id": "S09",
+      "word": "seventh",
+      "start": 42.2,
+      "end": 42.98,
+      "confidence": 0.791
+    },
+    {
+      "sentence_id": "S09",
+      "word": "century",
+      "start": 42.98,
+      "end": 42.981,
+      "confidence": 0.928
+    },
+    {
+      "sentence_id": "S09",
+      "word": "BCE",
+      "start": 42.981,
+      "end": 43.7,
+      "confidence": 0.979
+    },
+    {
+      "sentence_id": "S09",
+      "word": "Assyria",
+      "start": 44.24,
+      "end": 44.66,
+      "confidence": 0.978
+    },
+    {
+      "sentence_id": "S09",
+      "word": "was",
+      "start": 44.66,
+      "end": 44.82,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S09",
+      "word": "ruled",
+      "start": 44.82,
+      "end": 45.16,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S09",
+      "word": "by",
+      "start": 45.16,
+      "end": 45.44,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S09",
+      "word": "Esarhaddon",
+      "start": 45.44,
+      "end": 46.06,
+      "confidence": 0.591
+    },
+    {
+      "sentence_id": "S10",
+      "word": "Hundreds",
+      "start": 46.86,
+      "end": 47.06,
+      "confidence": 0.995
+    },
+    {
+      "sentence_id": "S10",
+      "word": "of",
+      "start": 47.06,
+      "end": 47.36,
+      "confidence": 1
+    },
+    {
+      "sentence_id": "S10",
+      "word": "letters",
+      "start": 47.36,
+      "end": 47.64,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S10",
+      "word": "from",
+      "start": 47.64,
+      "end": 47.88,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S10",
+      "word": "his",
+      "start": 47.88,
+      "end": 48.04,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S10",
+      "word": "scholars",
+      "start": 48.04,
+      "end": 48.38,
+      "confidence": 0.982
+    },
+    {
+      "sentence_id": "S10",
+      "word": "survive",
+      "start": 48.38,
+      "end": 48.86,
+      "confidence": 0.898
+    },
+    {
+      "sentence_id": "S10",
+      "word": "and",
+      "start": 49.1,
+      "end": 49.46,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S10",
+      "word": "they",
+      "start": 49.46,
+      "end": 49.6,
+      "confidence": 0.996
+    },
+    {
+      "sentence_id": "S10",
+      "word": "show",
+      "start": 49.6,
+      "end": 49.86,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S10",
+      "word": "how",
+      "start": 49.86,
+      "end": 50.14,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S10",
+      "word": "it",
+      "start": 50.14,
+      "end": 50.28,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S10",
+      "word": "was",
+      "start": 50.28,
+      "end": 50.42,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S10",
+      "word": "done",
+      "start": 50.42,
+      "end": 50.7,
+      "confidence": 1
+    },
+    {
+      "sentence_id": "S11",
+      "word": "When",
+      "start": 51.34,
+      "end": 51.5,
+      "confidence": 0.995
+    },
+    {
+      "sentence_id": "S11",
+      "word": "the",
+      "start": 51.5,
+      "end": 51.68,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S11",
+      "word": "shadow",
+      "start": 51.68,
+      "end": 51.92,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S11",
+      "word": "fell",
+      "start": 51.92,
+      "end": 52.2,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S11",
+      "word": "on",
+      "start": 52.2,
+      "end": 52.36,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S11",
+      "word": "his",
+      "start": 52.36,
+      "end": 52.62,
+      "confidence": 0.988
+    },
+    {
+      "sentence_id": "S11",
+      "word": "lands",
+      "start": 52.62,
+      "end": 53.04,
+      "confidence": 0.992
+    },
+    {
+      "sentence_id": "S11",
+      "word": "Esarhaddon",
+      "start": 53.52,
+      "end": 53.96,
+      "confidence": 0.984
+    },
+    {
+      "sentence_id": "S11",
+      "word": "left",
+      "start": 53.96,
+      "end": 54.34,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S11",
+      "word": "his",
+      "start": 54.34,
+      "end": 54.66,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S11",
+      "word": "throne",
+      "start": 54.66,
+      "end": 54.98,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S12",
+      "word": "Another",
+      "start": 54.98,
+      "end": 55.74,
+      "confidence": 0.106
+    },
+    {
+      "sentence_id": "S12",
+      "word": "man",
+      "start": 55.74,
+      "end": 56.04,
+      "confidence": 0.99
+    },
+    {
+      "sentence_id": "S12",
+      "word": "sat",
+      "start": 56.04,
+      "end": 56.32,
+      "confidence": 0.985
+    },
+    {
+      "sentence_id": "S12",
+      "word": "on",
+      "start": 56.32,
+      "end": 56.54,
+      "confidence": 0.996
+    },
+    {
+      "sentence_id": "S12",
+      "word": "it",
+      "start": 56.54,
+      "end": 56.86,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S12",
+      "word": "washed",
+      "start": 57.2,
+      "end": 57.38,
+      "confidence": 0.986
+    },
+    {
+      "sentence_id": "S12",
+      "word": "anointed",
+      "start": 57.7,
+      "end": 58.16,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S12",
+      "word": "and",
+      "start": 58.38,
+      "end": 58.52,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S12",
+      "word": "dressed",
+      "start": 58.52,
+      "end": 58.82,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S12",
+      "word": "in",
+      "start": 58.82,
+      "end": 59.04,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S12",
+      "word": "the",
+      "start": 59.04,
+      "end": 59.18,
+      "confidence": 0.994
+    },
+    {
+      "sentence_id": "S12",
+      "word": "king's",
+      "start": 59.18,
+      "end": 59.52,
+      "confidence": 0.924
+    },
+    {
+      "sentence_id": "S12",
+      "word": "robes",
+      "start": 59.52,
+      "end": 59.78,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S12",
+      "word": "with",
+      "start": 60.26,
+      "end": 60.4,
+      "confidence": 0.984
+    },
+    {
+      "sentence_id": "S12",
+      "word": "a",
+      "start": 60.4,
+      "end": 60.56,
+      "confidence": 0.993
+    },
+    {
+      "sentence_id": "S12",
+      "word": "young",
+      "start": 60.56,
+      "end": 60.78,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S12",
+      "word": "woman",
+      "start": 60.78,
+      "end": 61.1,
+      "confidence": 0.993
+    },
+    {
+      "sentence_id": "S12",
+      "word": "beside",
+      "start": 61.1,
+      "end": 61.5,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S12",
+      "word": "him",
+      "start": 61.5,
+      "end": 61.82,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S12",
+      "word": "as",
+      "start": 61.82,
+      "end": 62.06,
+      "confidence": 0.986
+    },
+    {
+      "sentence_id": "S12",
+      "word": "his",
+      "start": 62.06,
+      "end": 62.2,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S12",
+      "word": "queen",
+      "start": 62.2,
+      "end": 62.56,
+      "confidence": 0.977
+    },
+    {
+      "sentence_id": "S13",
+      "word": "One",
+      "start": 63.32,
+      "end": 63.5,
+      "confidence": 0.988
+    },
+    {
+      "sentence_id": "S13",
+      "word": "scholar",
+      "start": 63.5,
+      "end": 63.8,
+      "confidence": 0.995
+    },
+    {
+      "sentence_id": "S13",
+      "word": "wrote",
+      "start": 63.8,
+      "end": 64.16,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S13",
+      "word": "I",
+      "start": 64.76,
+      "end": 64.78,
+      "confidence": 0.021
+    },
+    {
+      "sentence_id": "S13",
+      "word": "wrote",
+      "start": 64.78,
+      "end": 65,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S13",
+      "word": "down",
+      "start": 65,
+      "end": 65.32,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S13",
+      "word": "whatever",
+      "start": 65.32,
+      "end": 65.64,
+      "confidence": 0.991
+    },
+    {
+      "sentence_id": "S13",
+      "word": "signs",
+      "start": 65.64,
+      "end": 66.02,
+      "confidence": 0.996
+    },
+    {
+      "sentence_id": "S13",
+      "word": "there",
+      "start": 66.02,
+      "end": 66.3,
+      "confidence": 0.993
+    },
+    {
+      "sentence_id": "S13",
+      "word": "were",
+      "start": 66.3,
+      "end": 66.72,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S13",
+      "word": "and",
+      "start": 66.72,
+      "end": 67.08,
+      "confidence": 0.37
+    },
+    {
+      "sentence_id": "S13",
+      "word": "had",
+      "start": 67.08,
+      "end": 67.28,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S13",
+      "word": "them",
+      "start": 67.28,
+      "end": 67.48,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S13",
+      "word": "recited",
+      "start": 67.48,
+      "end": 67.94,
+      "confidence": 0.992
+    },
+    {
+      "sentence_id": "S13",
+      "word": "in",
+      "start": 67.94,
+      "end": 68.18,
+      "confidence": 0.994
+    },
+    {
+      "sentence_id": "S13",
+      "word": "front",
+      "start": 68.18,
+      "end": 68.34,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S13",
+      "word": "of",
+      "start": 68.34,
+      "end": 68.66,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S13",
+      "word": "Shamash",
+      "start": 68.66,
+      "end": 69.04,
+      "confidence": 0.94
+    },
+    {
+      "sentence_id": "S13",
+      "word": "the",
+      "start": 69.42,
+      "end": 69.54,
+      "confidence": 0.992
+    },
+    {
+      "sentence_id": "S13",
+      "word": "sun",
+      "start": 69.54,
+      "end": 69.76,
+      "confidence": 0.865
+    },
+    {
+      "sentence_id": "S13",
+      "word": "god",
+      "start": 69.76,
+      "end": 69.98,
+      "confidence": 0.796
+    },
+    {
+      "sentence_id": "S14",
+      "word": "The",
+      "start": 70.6,
+      "end": 70.74,
+      "confidence": 0.996
+    },
+    {
+      "sentence_id": "S14",
+      "word": "substitute",
+      "start": 70.74,
+      "end": 71.26,
+      "confidence": 0.971
+    },
+    {
+      "sentence_id": "S14",
+      "word": "king",
+      "start": 71.26,
+      "end": 71.64,
+      "confidence": 0.959
+    },
+    {
+      "sentence_id": "S14",
+      "word": "took",
+      "start": 71.64,
+      "end": 72,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S14",
+      "word": "the",
+      "start": 72,
+      "end": 72.22,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S14",
+      "word": "signs",
+      "start": 72.22,
+      "end": 72.52,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S14",
+      "word": "on",
+      "start": 72.52,
+      "end": 72.74,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S14",
+      "word": "himself",
+      "start": 72.74,
+      "end": 73.24,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S15",
+      "word": "Another",
+      "start": 74.08,
+      "end": 74.36,
+      "confidence": 0.99
+    },
+    {
+      "sentence_id": "S15",
+      "word": "bound",
+      "start": 74.36,
+      "end": 74.82,
+      "confidence": 0.984
+    },
+    {
+      "sentence_id": "S15",
+      "word": "the",
+      "start": 74.82,
+      "end": 75.06,
+      "confidence": 0.996
+    },
+    {
+      "sentence_id": "S15",
+      "word": "written",
+      "start": 75.06,
+      "end": 75.28,
+      "confidence": 0.977
+    },
+    {
+      "sentence_id": "S15",
+      "word": "omens",
+      "start": 75.28,
+      "end": 75.68,
+      "confidence": 0.989
+    },
+    {
+      "sentence_id": "S15",
+      "word": "into",
+      "start": 75.68,
+      "end": 75.98,
+      "confidence": 0.996
+    },
+    {
+      "sentence_id": "S15",
+      "word": "the",
+      "start": 75.98,
+      "end": 76.18,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S15",
+      "word": "hem",
+      "start": 76.18,
+      "end": 76.4,
+      "confidence": 0.977
+    },
+    {
+      "sentence_id": "S15",
+      "word": "of",
+      "start": 76.4,
+      "end": 76.58,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S15",
+      "word": "his",
+      "start": 76.58,
+      "end": 76.72,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S15",
+      "word": "robe",
+      "start": 76.72,
+      "end": 77.12,
+      "confidence": 1
+    },
+    {
+      "sentence_id": "S16",
+      "word": "The",
+      "start": 77.64,
+      "end": 77.78,
+      "confidence": 0.996
+    },
+    {
+      "sentence_id": "S16",
+      "word": "real",
+      "start": 77.78,
+      "end": 78.08,
+      "confidence": 0.993
+    },
+    {
+      "sentence_id": "S16",
+      "word": "king",
+      "start": 78.08,
+      "end": 78.36,
+      "confidence": 0.966
+    },
+    {
+      "sentence_id": "S16",
+      "word": "stayed",
+      "start": 78.36,
+      "end": 78.76,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S16",
+      "word": "hidden",
+      "start": 78.76,
+      "end": 79.16,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S16",
+      "word": "in",
+      "start": 79.16,
+      "end": 79.34,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S16",
+      "word": "his",
+      "start": 79.34,
+      "end": 79.52,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S16",
+      "word": "palace",
+      "start": 79.52,
+      "end": 79.86,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S17",
+      "word": "His",
+      "start": 80.58,
+      "end": 80.68,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S17",
+      "word": "scholars",
+      "start": 80.68,
+      "end": 81.06,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S17",
+      "word": "kept",
+      "start": 81.06,
+      "end": 81.36,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S17",
+      "word": "writing",
+      "start": 81.36,
+      "end": 81.72,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S17",
+      "word": "to",
+      "start": 81.72,
+      "end": 82,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S17",
+      "word": "him",
+      "start": 82,
+      "end": 82.28,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S17",
+      "word": "but",
+      "start": 82.28,
+      "end": 82.66,
+      "confidence": 0.586
+    },
+    {
+      "sentence_id": "S17",
+      "word": "no",
+      "start": 82.66,
+      "end": 82.88,
+      "confidence": 0.993
+    },
+    {
+      "sentence_id": "S17",
+      "word": "longer",
+      "start": 82.88,
+      "end": 83.2,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S17",
+      "word": "as",
+      "start": 83.2,
+      "end": 83.5,
+      "confidence": 0.992
+    },
+    {
+      "sentence_id": "S17",
+      "word": "king",
+      "start": 83.5,
+      "end": 83.82,
+      "confidence": 0.865
+    },
+    {
+      "sentence_id": "S18",
+      "word": "Their",
+      "start": 84.4,
+      "end": 84.48,
+      "confidence": 0.95
+    },
+    {
+      "sentence_id": "S18",
+      "word": "letters",
+      "start": 84.48,
+      "end": 84.76,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S18",
+      "word": "begin",
+      "start": 84.76,
+      "end": 85.18,
+      "confidence": 0.987
+    },
+    {
+      "sentence_id": "S18",
+      "word": "To",
+      "start": 85.66,
+      "end": 85.82,
+      "confidence": 0.004
+    },
+    {
+      "sentence_id": "S18",
+      "word": "the",
+      "start": 85.82,
+      "end": 86.02,
+      "confidence": 0.927
+    },
+    {
+      "sentence_id": "S18",
+      "word": "farmer",
+      "start": 86.02,
+      "end": 86.34,
+      "confidence": 0.961
+    },
+    {
+      "sentence_id": "S18",
+      "word": "my",
+      "start": 86.64,
+      "end": 86.74,
+      "confidence": 0.968
+    },
+    {
+      "sentence_id": "S18",
+      "word": "lord",
+      "start": 86.74,
+      "end": 86.98,
+      "confidence": 0.755
+    },
+    {
+      "sentence_id": "S19",
+      "word": "The",
+      "start": 87.6,
+      "end": 87.82,
+      "confidence": 0.987
+    },
+    {
+      "sentence_id": "S19",
+      "word": "substitute",
+      "start": 87.82,
+      "end": 88.36,
+      "confidence": 0.932
+    },
+    {
+      "sentence_id": "S19",
+      "word": "could",
+      "start": 88.36,
+      "end": 88.62,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S19",
+      "word": "sit",
+      "start": 88.62,
+      "end": 88.84,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S19",
+      "word": "on",
+      "start": 88.84,
+      "end": 89,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S19",
+      "word": "the",
+      "start": 89,
+      "end": 89.16,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S19",
+      "word": "throne",
+      "start": 89.16,
+      "end": 89.38,
+      "confidence": 0.996
+    },
+    {
+      "sentence_id": "S19",
+      "word": "for",
+      "start": 89.38,
+      "end": 89.62,
+      "confidence": 0.996
+    },
+    {
+      "sentence_id": "S19",
+      "word": "up",
+      "start": 89.62,
+      "end": 89.78,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S19",
+      "word": "to",
+      "start": 89.78,
+      "end": 89.96,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S19",
+      "word": "a",
+      "start": 89.96,
+      "end": 90.06,
+      "confidence": 0.919
+    },
+    {
+      "sentence_id": "S19",
+      "word": "hundred",
+      "start": 90.06,
+      "end": 90.44,
+      "confidence": 0.99
+    },
+    {
+      "sentence_id": "S19",
+      "word": "days",
+      "start": 90.44,
+      "end": 90.92,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S20",
+      "word": "Then",
+      "start": 91.38,
+      "end": 91.66,
+      "confidence": 0.995
+    },
+    {
+      "sentence_id": "S20",
+      "word": "in",
+      "start": 91.84,
+      "end": 92.04,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S20",
+      "word": "the",
+      "start": 92.04,
+      "end": 92.16,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S20",
+      "word": "words",
+      "start": 92.16,
+      "end": 92.34,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S20",
+      "word": "of",
+      "start": 92.34,
+      "end": 92.52,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S20",
+      "word": "the",
+      "start": 92.52,
+      "end": 92.66,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S20",
+      "word": "letters",
+      "start": 92.66,
+      "end": 92.98,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S20",
+      "word": "he",
+      "start": 93.4,
+      "end": 93.64,
+      "confidence": 0.864
+    },
+    {
+      "sentence_id": "S20",
+      "word": "went",
+      "start": 93.64,
+      "end": 94.1,
+      "confidence": 0.375
+    },
+    {
+      "sentence_id": "S20",
+      "word": "to",
+      "start": 94.1,
+      "end": 94.4,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S20",
+      "word": "his",
+      "start": 94.4,
+      "end": 94.6,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S20",
+      "word": "fate",
+      "start": 94.6,
+      "end": 94.94,
+      "confidence": 0.995
+    },
+    {
+      "sentence_id": "S21",
+      "word": "The",
+      "start": 95.58,
+      "end": 95.82,
+      "confidence": 0.992
+    },
+    {
+      "sentence_id": "S21",
+      "word": "scholars",
+      "start": 95.82,
+      "end": 96.1,
+      "confidence": 0.993
+    },
+    {
+      "sentence_id": "S21",
+      "word": "preferred",
+      "start": 96.1,
+      "end": 96.58,
+      "confidence": 0.994
+    },
+    {
+      "sentence_id": "S21",
+      "word": "a",
+      "start": 96.58,
+      "end": 96.8,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S21",
+      "word": "man",
+      "start": 96.8,
+      "end": 96.96,
+      "confidence": 1
+    },
+    {
+      "sentence_id": "S21",
+      "word": "whose",
+      "start": 96.96,
+      "end": 97.22,
+      "confidence": 0.964
+    },
+    {
+      "sentence_id": "S21",
+      "word": "death",
+      "start": 97.22,
+      "end": 97.52,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S21",
+      "word": "would",
+      "start": 97.52,
+      "end": 97.76,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S21",
+      "word": "trouble",
+      "start": 97.76,
+      "end": 98.12,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S21",
+      "word": "no",
+      "start": 98.12,
+      "end": 98.44,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S21",
+      "word": "one",
+      "start": 98.44,
+      "end": 98.74,
+      "confidence": 0.99
+    },
+    {
+      "sentence_id": "S21",
+      "word": "a",
+      "start": 99.08,
+      "end": 99.22,
+      "confidence": 0.996
+    },
+    {
+      "sentence_id": "S21",
+      "word": "condemned",
+      "start": 99.22,
+      "end": 99.54,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S21",
+      "word": "criminal",
+      "start": 99.54,
+      "end": 100.08,
+      "confidence": 1
+    },
+    {
+      "sentence_id": "S21",
+      "word": "a",
+      "start": 100.44,
+      "end": 100.54,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S21",
+      "word": "prisoner",
+      "start": 100.54,
+      "end": 100.88,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S21",
+      "word": "a",
+      "start": 101.28,
+      "end": 101.4,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S21",
+      "word": "laborer",
+      "start": 101.4,
+      "end": 101.8,
+      "confidence": 0.886
+    },
+    {
+      "sentence_id": "S22",
+      "word": "But",
+      "start": 102.22,
+      "end": 102.42,
+      "confidence": 0.995
+    },
+    {
+      "sentence_id": "S22",
+      "word": "in",
+      "start": 102.42,
+      "end": 102.54,
+      "confidence": 0.964
+    },
+    {
+      "sentence_id": "S22",
+      "word": "671",
+      "start": 102.54,
+      "end": 103.46,
+      "confidence": 0.995
+    },
+    {
+      "sentence_id": "S22",
+      "word": "BCE",
+      "start": 103.46,
+      "end": 103.98,
+      "confidence": 0.811
+    },
+    {
+      "sentence_id": "S22",
+      "word": "the",
+      "start": 104.66,
+      "end": 104.82,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S22",
+      "word": "substitute",
+      "start": 104.82,
+      "end": 105.42,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S22",
+      "word": "was",
+      "start": 105.42,
+      "end": 105.76,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S22",
+      "word": "someone",
+      "start": 105.76,
+      "end": 106.16,
+      "confidence": 0.996
+    },
+    {
+      "sentence_id": "S22",
+      "word": "who",
+      "start": 106.16,
+      "end": 106.42,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S22",
+      "word": "mattered",
+      "start": 106.42,
+      "end": 106.78,
+      "confidence": 0.994
+    },
+    {
+      "sentence_id": "S23",
+      "word": "Damqi",
+      "start": 107.42,
+      "end": 108,
+      "confidence": 0
+    },
+    {
+      "sentence_id": "S23",
+      "word": "was",
+      "start": 108,
+      "end": 108.22,
+      "confidence": 0.99
+    },
+    {
+      "sentence_id": "S23",
+      "word": "the",
+      "start": 108.22,
+      "end": 108.44,
+      "confidence": 0.994
+    },
+    {
+      "sentence_id": "S23",
+      "word": "son",
+      "start": 108.44,
+      "end": 108.64,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S23",
+      "word": "of",
+      "start": 108.64,
+      "end": 108.8,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S23",
+      "word": "a",
+      "start": 108.8,
+      "end": 108.9,
+      "confidence": 0.983
+    },
+    {
+      "sentence_id": "S23",
+      "word": "high",
+      "start": 108.9,
+      "end": 109.16,
+      "confidence": 0.751
+    },
+    {
+      "sentence_id": "S23",
+      "word": "temple",
+      "start": 109.16,
+      "end": 109.44,
+      "confidence": 0.672
+    },
+    {
+      "sentence_id": "S23",
+      "word": "official",
+      "start": 109.44,
+      "end": 109.88,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S23",
+      "word": "in",
+      "start": 109.88,
+      "end": 110.2,
+      "confidence": 0.991
+    },
+    {
+      "sentence_id": "S23",
+      "word": "the",
+      "start": 110.2,
+      "end": 110.32,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S23",
+      "word": "Babylonian",
+      "start": 110.32,
+      "end": 110.96,
+      "confidence": 0.987
+    },
+    {
+      "sentence_id": "S23",
+      "word": "city",
+      "start": 110.96,
+      "end": 111.18,
+      "confidence": 0.992
+    },
+    {
+      "sentence_id": "S23",
+      "word": "of",
+      "start": 111.18,
+      "end": 111.46,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S23",
+      "word": "Akkad",
+      "start": 111.46,
+      "end": 111.98,
+      "confidence": 0.883
+    },
+    {
+      "sentence_id": "S24",
+      "word": "The",
+      "start": 112.54,
+      "end": 112.6,
+      "confidence": 0.992
+    },
+    {
+      "sentence_id": "S24",
+      "word": "king's",
+      "start": 112.6,
+      "end": 112.98,
+      "confidence": 0.914
+    },
+    {
+      "sentence_id": "S24",
+      "word": "agent",
+      "start": 112.98,
+      "end": 113.26,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S24",
+      "word": "in",
+      "start": 113.26,
+      "end": 113.46,
+      "confidence": 0.995
+    },
+    {
+      "sentence_id": "S24",
+      "word": "Babylonia",
+      "start": 113.46,
+      "end": 114.06,
+      "confidence": 0.99
+    },
+    {
+      "sentence_id": "S24",
+      "word": "reported",
+      "start": 114.06,
+      "end": 114.56,
+      "confidence": 0.982
+    },
+    {
+      "sentence_id": "S24",
+      "word": "his",
+      "start": 114.56,
+      "end": 114.88,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S24",
+      "word": "end",
+      "start": 114.88,
+      "end": 115.34,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S25",
+      "word": "Damqi",
+      "start": 116.02,
+      "end": 116.42,
+      "confidence": 0
+    },
+    {
+      "sentence_id": "S25",
+      "word": "who",
+      "start": 116.66,
+      "end": 116.86,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S25",
+      "word": "had",
+      "start": 116.86,
+      "end": 117.02,
+      "confidence": 0.994
+    },
+    {
+      "sentence_id": "S25",
+      "word": "ruled",
+      "start": 117.02,
+      "end": 117.38,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S25",
+      "word": "Assyria",
+      "start": 117.38,
+      "end": 118.04,
+      "confidence": 0.993
+    },
+    {
+      "sentence_id": "S25",
+      "word": "Babylonia",
+      "start": 118.24,
+      "end": 118.76,
+      "confidence": 0.996
+    },
+    {
+      "sentence_id": "S25",
+      "word": "and",
+      "start": 119,
+      "end": 119.02,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S25",
+      "word": "all",
+      "start": 119.02,
+      "end": 119.34,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S25",
+      "word": "the",
+      "start": 119.34,
+      "end": 119.5,
+      "confidence": 0.996
+    },
+    {
+      "sentence_id": "S25",
+      "word": "countries",
+      "start": 119.5,
+      "end": 119.94,
+      "confidence": 0.983
+    },
+    {
+      "sentence_id": "S25",
+      "word": "died",
+      "start": 120.5,
+      "end": 120.62,
+      "confidence": 0.993
+    },
+    {
+      "sentence_id": "S25",
+      "word": "with",
+      "start": 120.62,
+      "end": 120.94,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S25",
+      "word": "his",
+      "start": 120.94,
+      "end": 121.16,
+      "confidence": 0.994
+    },
+    {
+      "sentence_id": "S25",
+      "word": "queen",
+      "start": 121.16,
+      "end": 121.48,
+      "confidence": 0.967
+    },
+    {
+      "sentence_id": "S25",
+      "word": "as",
+      "start": 121.48,
+      "end": 122.08,
+      "confidence": 0.714
+    },
+    {
+      "sentence_id": "S25",
+      "word": "a",
+      "start": 122.08,
+      "end": 122.26,
+      "confidence": 0.995
+    },
+    {
+      "sentence_id": "S25",
+      "word": "substitute",
+      "start": 122.26,
+      "end": 122.62,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S25",
+      "word": "for",
+      "start": 122.62,
+      "end": 123,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S25",
+      "word": "the",
+      "start": 123,
+      "end": 123.12,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S25",
+      "word": "king",
+      "start": 123.12,
+      "end": 123.38,
+      "confidence": 0.97
+    },
+    {
+      "sentence_id": "S26",
+      "word": "He",
+      "start": 124,
+      "end": 124.22,
+      "confidence": 0.993
+    },
+    {
+      "sentence_id": "S26",
+      "word": "and",
+      "start": 124.22,
+      "end": 124.42,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S26",
+      "word": "his",
+      "start": 124.42,
+      "end": 124.62,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S26",
+      "word": "queen",
+      "start": 124.62,
+      "end": 124.92,
+      "confidence": 0.988
+    },
+    {
+      "sentence_id": "S26",
+      "word": "were",
+      "start": 124.92,
+      "end": 125.16,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S26",
+      "word": "decorated",
+      "start": 125.16,
+      "end": 125.7,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S26",
+      "word": "treated",
+      "start": 126.06,
+      "end": 126.4,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S26",
+      "word": "displayed",
+      "start": 126.78,
+      "end": 127.26,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S26",
+      "word": "buried",
+      "start": 127.74,
+      "end": 127.92,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S26",
+      "word": "and",
+      "start": 128.26,
+      "end": 128.54,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S26",
+      "word": "wailed",
+      "start": 128.54,
+      "end": 128.82,
+      "confidence": 0.964
+    },
+    {
+      "sentence_id": "S26",
+      "word": "over",
+      "start": 128.82,
+      "end": 129.14,
+      "confidence": 0.995
+    },
+    {
+      "sentence_id": "S27",
+      "word": "Then",
+      "start": 129.64,
+      "end": 129.88,
+      "confidence": 0.992
+    },
+    {
+      "sentence_id": "S27",
+      "word": "the",
+      "start": 129.88,
+      "end": 130.04,
+      "confidence": 0.955
+    },
+    {
+      "sentence_id": "S27",
+      "word": "report",
+      "start": 130.04,
+      "end": 130.4,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S27",
+      "word": "adds",
+      "start": 130.4,
+      "end": 130.66,
+      "confidence": 0.959
+    },
+    {
+      "sentence_id": "S27",
+      "word": "something",
+      "start": 130.66,
+      "end": 131.04,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S27",
+      "word": "else",
+      "start": 131.04,
+      "end": 131.4,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S28",
+      "word": "Before",
+      "start": 131.98,
+      "end": 132.26,
+      "confidence": 0.995
+    },
+    {
+      "sentence_id": "S28",
+      "word": "the",
+      "start": 132.26,
+      "end": 132.46,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S28",
+      "word": "ritual",
+      "start": 132.46,
+      "end": 132.84,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S28",
+      "word": "a",
+      "start": 133.1,
+      "end": 133.3,
+      "confidence": 0.99
+    },
+    {
+      "sentence_id": "S28",
+      "word": "prophetess",
+      "start": 133.3,
+      "end": 133.9,
+      "confidence": 0.989
+    },
+    {
+      "sentence_id": "S28",
+      "word": "had",
+      "start": 133.9,
+      "end": 134.08,
+      "confidence": 0.992
+    },
+    {
+      "sentence_id": "S28",
+      "word": "told",
+      "start": 134.08,
+      "end": 134.34,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S28",
+      "word": "Damqi",
+      "start": 134.34,
+      "end": 134.88,
+      "confidence": 0
+    },
+    {
+      "sentence_id": "S28",
+      "word": "You",
+      "start": 134.88,
+      "end": 135.5,
+      "confidence": 0.005
+    },
+    {
+      "sentence_id": "S28",
+      "word": "will",
+      "start": 135.5,
+      "end": 135.76,
+      "confidence": 0.996
+    },
+    {
+      "sentence_id": "S28",
+      "word": "take",
+      "start": 135.76,
+      "end": 136.02,
+      "confidence": 0.996
+    },
+    {
+      "sentence_id": "S28",
+      "word": "over",
+      "start": 136.02,
+      "end": 136.42,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S28",
+      "word": "the",
+      "start": 136.42,
+      "end": 136.62,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S28",
+      "word": "kingship",
+      "start": 136.62,
+      "end": 137.18,
+      "confidence": 0.99
+    },
+    {
+      "sentence_id": "S29",
+      "word": "She",
+      "start": 137.64,
+      "end": 137.88,
+      "confidence": 0.932
+    },
+    {
+      "sentence_id": "S29",
+      "word": "was",
+      "start": 137.88,
+      "end": 138.04,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S29",
+      "word": "right",
+      "start": 138.04,
+      "end": 138.38,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S30",
+      "word": "Whether",
+      "start": 138.96,
+      "end": 139.1,
+      "confidence": 0.991
+    },
+    {
+      "sentence_id": "S30",
+      "word": "that",
+      "start": 139.1,
+      "end": 139.42,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S30",
+      "word": "prophecy",
+      "start": 139.42,
+      "end": 139.74,
+      "confidence": 0.993
+    },
+    {
+      "sentence_id": "S30",
+      "word": "is",
+      "start": 139.74,
+      "end": 140.02,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S30",
+      "word": "why",
+      "start": 140.02,
+      "end": 140.34,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S30",
+      "word": "he",
+      "start": 140.34,
+      "end": 140.54,
+      "confidence": 0.751
+    },
+    {
+      "sentence_id": "S30",
+      "word": "was",
+      "start": 140.54,
+      "end": 140.68,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S30",
+      "word": "chosen",
+      "start": 140.68,
+      "end": 141.08,
+      "confidence": 1
+    },
+    {
+      "sentence_id": "S30",
+      "word": "the",
+      "start": 141.4,
+      "end": 141.52,
+      "confidence": 0.995
+    },
+    {
+      "sentence_id": "S30",
+      "word": "letter",
+      "start": 141.52,
+      "end": 141.74,
+      "confidence": 0.969
+    },
+    {
+      "sentence_id": "S30",
+      "word": "does",
+      "start": 141.74,
+      "end": 141.98,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S30",
+      "word": "not",
+      "start": 141.98,
+      "end": 142.2,
+      "confidence": 1
+    },
+    {
+      "sentence_id": "S30",
+      "word": "say",
+      "start": 142.2,
+      "end": 142.56,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S31",
+      "word": "It",
+      "start": 143.02,
+      "end": 143.2,
+      "confidence": 0.992
+    },
+    {
+      "sentence_id": "S31",
+      "word": "says",
+      "start": 143.2,
+      "end": 143.4,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S31",
+      "word": "only",
+      "start": 143.4,
+      "end": 143.78,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S31",
+      "word": "that",
+      "start": 143.78,
+      "end": 144.04,
+      "confidence": 0.993
+    },
+    {
+      "sentence_id": "S31",
+      "word": "the",
+      "start": 144.04,
+      "end": 144.2,
+      "confidence": 0.983
+    },
+    {
+      "sentence_id": "S31",
+      "word": "rituals",
+      "start": 144.2,
+      "end": 144.6,
+      "confidence": 0.991
+    },
+    {
+      "sentence_id": "S31",
+      "word": "succeeded",
+      "start": 144.6,
+      "end": 145.48,
+      "confidence": 0.94
+    },
+    {
+      "sentence_id": "S31",
+      "word": "well",
+      "start": 145.48,
+      "end": 145.9,
+      "confidence": 0.996
+    },
+    {
+      "sentence_id": "S31",
+      "word": "indeed",
+      "start": 145.9,
+      "end": 146.32,
+      "confidence": 0.955
+    },
+    {
+      "sentence_id": "S31",
+      "word": "and",
+      "start": 146.86,
+      "end": 147,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S31",
+      "word": "that",
+      "start": 147,
+      "end": 147.24,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S31",
+      "word": "the",
+      "start": 147.24,
+      "end": 147.56,
+      "confidence": 0.275
+    },
+    {
+      "sentence_id": "S31",
+      "word": "king",
+      "start": 147.56,
+      "end": 147.88,
+      "confidence": 0.513
+    },
+    {
+      "sentence_id": "S31",
+      "word": "my",
+      "start": 148.18,
+      "end": 148.28,
+      "confidence": 0.95
+    },
+    {
+      "sentence_id": "S31",
+      "word": "lord",
+      "start": 148.28,
+      "end": 148.52,
+      "confidence": 0.559
+    },
+    {
+      "sentence_id": "S31",
+      "word": "can",
+      "start": 148.82,
+      "end": 148.98,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S31",
+      "word": "be",
+      "start": 148.98,
+      "end": 149.14,
+      "confidence": 1
+    },
+    {
+      "sentence_id": "S31",
+      "word": "glad",
+      "start": 149.14,
+      "end": 149.52,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S32",
+      "word": "The",
+      "start": 150.12,
+      "end": 150.28,
+      "confidence": 0.994
+    },
+    {
+      "sentence_id": "S32",
+      "word": "scholars",
+      "start": 150.28,
+      "end": 150.62,
+      "confidence": 0.996
+    },
+    {
+      "sentence_id": "S32",
+      "word": "carried",
+      "start": 150.62,
+      "end": 151.06,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S32",
+      "word": "on",
+      "start": 151.06,
+      "end": 151.4,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S32",
+      "word": "as",
+      "start": 151.64,
+      "end": 151.8,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S32",
+      "word": "they",
+      "start": 151.8,
+      "end": 151.96,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S32",
+      "word": "wrote",
+      "start": 151.96,
+      "end": 152.2,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S32",
+      "word": "as",
+      "start": 152.68,
+      "end": 152.78,
+      "confidence": 0.196
+    },
+    {
+      "sentence_id": "S32",
+      "word": "our",
+      "start": 152.78,
+      "end": 153,
+      "confidence": 0.991
+    },
+    {
+      "sentence_id": "S32",
+      "word": "fathers",
+      "start": 153,
+      "end": 153.36,
+      "confidence": 0.975
+    },
+    {
+      "sentence_id": "S32",
+      "word": "did",
+      "start": 153.36,
+      "end": 153.66,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S32",
+      "word": "for",
+      "start": 153.66,
+      "end": 153.92,
+      "confidence": 0.995
+    },
+    {
+      "sentence_id": "S32",
+      "word": "their",
+      "start": 153.92,
+      "end": 154.2,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S32",
+      "word": "lords",
+      "start": 154.2,
+      "end": 154.5,
+      "confidence": 0.995
+    },
+    {
+      "sentence_id": "S33",
+      "word": "In",
+      "start": 155.44,
+      "end": 155.6,
+      "confidence": 0.988
+    },
+    {
+      "sentence_id": "S33",
+      "word": "the",
+      "start": 155.6,
+      "end": 155.74,
+      "confidence": 0.995
+    },
+    {
+      "sentence_id": "S33",
+      "word": "summer",
+      "start": 155.74,
+      "end": 155.96,
+      "confidence": 0.988
+    },
+    {
+      "sentence_id": "S33",
+      "word": "of",
+      "start": 155.96,
+      "end": 156.18,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S33",
+      "word": "669",
+      "start": 156.18,
+      "end": 157.1,
+      "confidence": 0.986
+    },
+    {
+      "sentence_id": "S33",
+      "word": "BCE",
+      "start": 157.1,
+      "end": 157.68,
+      "confidence": 0.863
+    },
+    {
+      "sentence_id": "S33",
+      "word": "they",
+      "start": 158.26,
+      "end": 158.44,
+      "confidence": 0.996
+    },
+    {
+      "sentence_id": "S33",
+      "word": "set",
+      "start": 158.44,
+      "end": 158.68,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S33",
+      "word": "the",
+      "start": 158.68,
+      "end": 158.86,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S33",
+      "word": "day",
+      "start": 158.86,
+      "end": 159.06,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S33",
+      "word": "for",
+      "start": 159.06,
+      "end": 159.3,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S33",
+      "word": "another",
+      "start": 159.3,
+      "end": 159.6,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S33",
+      "word": "substitute",
+      "start": 159.6,
+      "end": 160.08,
+      "confidence": 0.996
+    },
+    {
+      "sentence_id": "S33",
+      "word": "to",
+      "start": 160.08,
+      "end": 160.58,
+      "confidence": 0.99
+    },
+    {
+      "sentence_id": "S33",
+      "word": "go",
+      "start": 160.58,
+      "end": 160.78,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S33",
+      "word": "to",
+      "start": 160.78,
+      "end": 160.98,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S33",
+      "word": "his",
+      "start": 160.98,
+      "end": 161.14,
+      "confidence": 0.989
+    },
+    {
+      "sentence_id": "S33",
+      "word": "fate",
+      "start": 161.14,
+      "end": 161.48,
+      "confidence": 0.982
+    },
+    {
+      "sentence_id": "S34",
+      "word": "That",
+      "start": 161.48,
+      "end": 162.12,
+      "confidence": 0.552
+    },
+    {
+      "sentence_id": "S34",
+      "word": "autumn",
+      "start": 162.12,
+      "end": 162.62,
+      "confidence": 0.973
+    },
+    {
+      "sentence_id": "S34",
+      "word": "on",
+      "start": 162.98,
+      "end": 163.06,
+      "confidence": 0.992
+    },
+    {
+      "sentence_id": "S34",
+      "word": "the",
+      "start": 163.06,
+      "end": 163.18,
+      "confidence": 0.993
+    },
+    {
+      "sentence_id": "S34",
+      "word": "march",
+      "start": 163.18,
+      "end": 163.38,
+      "confidence": 0.722
+    },
+    {
+      "sentence_id": "S34",
+      "word": "to",
+      "start": 163.38,
+      "end": 163.68,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S34",
+      "word": "Egypt",
+      "start": 163.68,
+      "end": 164.14,
+      "confidence": 0.996
+    },
+    {
+      "sentence_id": "S34",
+      "word": "Esarhaddon",
+      "start": 164.68,
+      "end": 165.2,
+      "confidence": 0.622
+    },
+    {
+      "sentence_id": "S34",
+      "word": "fell",
+      "start": 165.2,
+      "end": 165.54,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S34",
+      "word": "ill",
+      "start": 165.54,
+      "end": 165.92,
+      "confidence": 1
+    },
+    {
+      "sentence_id": "S34",
+      "word": "and",
+      "start": 165.92,
+      "end": 166.54,
+      "confidence": 0.896
+    },
+    {
+      "sentence_id": "S34",
+      "word": "died",
+      "start": 166.54,
+      "end": 166.86,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S35",
+      "word": "The",
+      "start": 167.74,
+      "end": 167.84,
+      "confidence": 0.992
+    },
+    {
+      "sentence_id": "S35",
+      "word": "ritual",
+      "start": 167.84,
+      "end": 168.24,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S35",
+      "word": "was",
+      "start": 168.24,
+      "end": 168.66,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S35",
+      "word": "far",
+      "start": 168.66,
+      "end": 169.1,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S35",
+      "word": "older",
+      "start": 169.1,
+      "end": 169.5,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S35",
+      "word": "than",
+      "start": 169.5,
+      "end": 169.72,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S35",
+      "word": "him",
+      "start": 169.72,
+      "end": 170.02,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S36",
+      "word": "Its",
+      "start": 170.66,
+      "end": 170.82,
+      "confidence": 0.914
+    },
+    {
+      "sentence_id": "S36",
+      "word": "earliest",
+      "start": 170.82,
+      "end": 171.28,
+      "confidence": 0.995
+    },
+    {
+      "sentence_id": "S36",
+      "word": "story",
+      "start": 171.28,
+      "end": 171.84,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S36",
+      "word": "comes",
+      "start": 171.84,
+      "end": 172.16,
+      "confidence": 0.996
+    },
+    {
+      "sentence_id": "S36",
+      "word": "from",
+      "start": 172.16,
+      "end": 172.44,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S36",
+      "word": "a",
+      "start": 172.44,
+      "end": 172.6,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S36",
+      "word": "Babylonian",
+      "start": 172.6,
+      "end": 173.34,
+      "confidence": 0.993
+    },
+    {
+      "sentence_id": "S36",
+      "word": "chronicle",
+      "start": 173.34,
+      "end": 173.88,
+      "confidence": 0.867
+    },
+    {
+      "sentence_id": "S36",
+      "word": "and",
+      "start": 174.32,
+      "end": 174.36,
+      "confidence": 0.993
+    },
+    {
+      "sentence_id": "S36",
+      "word": "it",
+      "start": 174.36,
+      "end": 174.46,
+      "confidence": 0.986
+    },
+    {
+      "sentence_id": "S36",
+      "word": "is",
+      "start": 174.46,
+      "end": 174.6,
+      "confidence": 0.996
+    },
+    {
+      "sentence_id": "S36",
+      "word": "set",
+      "start": 174.6,
+      "end": 174.82,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S36",
+      "word": "more",
+      "start": 174.82,
+      "end": 175.08,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S36",
+      "word": "than",
+      "start": 175.08,
+      "end": 175.26,
+      "confidence": 0.996
+    },
+    {
+      "sentence_id": "S36",
+      "word": "a",
+      "start": 175.26,
+      "end": 175.36,
+      "confidence": 0.902
+    },
+    {
+      "sentence_id": "S36",
+      "word": "thousand",
+      "start": 175.36,
+      "end": 175.8,
+      "confidence": 0.994
+    },
+    {
+      "sentence_id": "S36",
+      "word": "years",
+      "start": 175.8,
+      "end": 176.28,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S36",
+      "word": "before",
+      "start": 176.28,
+      "end": 176.84,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S36",
+      "word": "Esarhaddon",
+      "start": 176.84,
+      "end": 177.58,
+      "confidence": 0.988
+    },
+    {
+      "sentence_id": "S36",
+      "word": "in",
+      "start": 177.58,
+      "end": 178.08,
+      "confidence": 0.604
+    },
+    {
+      "sentence_id": "S36",
+      "word": "the",
+      "start": 178.08,
+      "end": 178.18,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S36",
+      "word": "city",
+      "start": 178.18,
+      "end": 178.48,
+      "confidence": 0.98
+    },
+    {
+      "sentence_id": "S36",
+      "word": "of",
+      "start": 178.48,
+      "end": 178.78,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S36",
+      "word": "Isin",
+      "start": 178.78,
+      "end": 179.3,
+      "confidence": 0
+    },
+    {
+      "sentence_id": "S37",
+      "word": "There",
+      "start": 179.94,
+      "end": 180.26,
+      "confidence": 0.805
+    },
+    {
+      "sentence_id": "S37",
+      "word": "the",
+      "start": 180.6,
+      "end": 180.62,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S37",
+      "word": "chronicle",
+      "start": 180.62,
+      "end": 180.98,
+      "confidence": 0.989
+    },
+    {
+      "sentence_id": "S37",
+      "word": "says",
+      "start": 180.98,
+      "end": 181.36,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S37",
+      "word": "King",
+      "start": 182.02,
+      "end": 182.08,
+      "confidence": 0.495
+    },
+    {
+      "sentence_id": "S37",
+      "word": "Erra-imitti",
+      "start": 182.08,
+      "end": 183.06,
+      "confidence": 0
+    },
+    {
+      "sentence_id": "S37",
+      "word": "made",
+      "start": 183.06,
+      "end": 183.42,
+      "confidence": 0.988
+    },
+    {
+      "sentence_id": "S37",
+      "word": "his",
+      "start": 183.42,
+      "end": 183.68,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S37",
+      "word": "gardener",
+      "start": 183.68,
+      "end": 184.22,
+      "confidence": 0.953
+    },
+    {
+      "sentence_id": "S37",
+      "word": "Enlil-bani",
+      "start": 184.22,
+      "end": 185.2,
+      "confidence": 0
+    },
+    {
+      "sentence_id": "S37",
+      "word": "substitute",
+      "start": 185.2,
+      "end": 186.16,
+      "confidence": 0.973
+    },
+    {
+      "sentence_id": "S37",
+      "word": "king",
+      "start": 186.16,
+      "end": 186.54,
+      "confidence": 0.844
+    },
+    {
+      "sentence_id": "S37",
+      "word": "and",
+      "start": 186.54,
+      "end": 187.06,
+      "confidence": 0.346
+    },
+    {
+      "sentence_id": "S37",
+      "word": "placed",
+      "start": 187.06,
+      "end": 187.34,
+      "confidence": 0.951
+    },
+    {
+      "sentence_id": "S37",
+      "word": "the",
+      "start": 187.34,
+      "end": 187.6,
+      "confidence": 0.994
+    },
+    {
+      "sentence_id": "S37",
+      "word": "royal",
+      "start": 187.6,
+      "end": 187.88,
+      "confidence": 0.87
+    },
+    {
+      "sentence_id": "S37",
+      "word": "tiara",
+      "start": 187.88,
+      "end": 188.34,
+      "confidence": 0.991
+    },
+    {
+      "sentence_id": "S37",
+      "word": "on",
+      "start": 188.34,
+      "end": 188.7,
+      "confidence": 0.995
+    },
+    {
+      "sentence_id": "S37",
+      "word": "his",
+      "start": 188.7,
+      "end": 189,
+      "confidence": 0.985
+    },
+    {
+      "sentence_id": "S37",
+      "word": "head",
+      "start": 189,
+      "end": 189.36,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S38",
+      "word": "Then",
+      "start": 190.2,
+      "end": 190.32,
+      "confidence": 0.991
+    },
+    {
+      "sentence_id": "S38",
+      "word": "Erra-imitti",
+      "start": 190.32,
+      "end": 191.36,
+      "confidence": 0
+    },
+    {
+      "sentence_id": "S38",
+      "word": "died",
+      "start": 191.36,
+      "end": 191.68,
+      "confidence": 0.996
+    },
+    {
+      "sentence_id": "S38",
+      "word": "in",
+      "start": 191.68,
+      "end": 191.98,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S38",
+      "word": "his",
+      "start": 191.98,
+      "end": 192.12,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S38",
+      "word": "own",
+      "start": 192.12,
+      "end": 192.44,
+      "confidence": 0.996
+    },
+    {
+      "sentence_id": "S38",
+      "word": "palace",
+      "start": 192.44,
+      "end": 192.92,
+      "confidence": 0.996
+    },
+    {
+      "sentence_id": "S38",
+      "word": "sipping",
+      "start": 193.22,
+      "end": 193.52,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S38",
+      "word": "a",
+      "start": 193.52,
+      "end": 193.74,
+      "confidence": 0.996
+    },
+    {
+      "sentence_id": "S38",
+      "word": "hot",
+      "start": 193.74,
+      "end": 193.92,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S38",
+      "word": "soup",
+      "start": 193.92,
+      "end": 194.34,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S39",
+      "word": "The",
+      "start": 194.96,
+      "end": 195.12,
+      "confidence": 0.994
+    },
+    {
+      "sentence_id": "S39",
+      "word": "gardener",
+      "start": 195.12,
+      "end": 195.56,
+      "confidence": 0.932
+    },
+    {
+      "sentence_id": "S39",
+      "word": "sitting",
+      "start": 195.84,
+      "end": 196.04,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S39",
+      "word": "on",
+      "start": 196.04,
+      "end": 196.28,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S39",
+      "word": "the",
+      "start": 196.28,
+      "end": 196.42,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S39",
+      "word": "throne",
+      "start": 196.42,
+      "end": 196.72,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S39",
+      "word": "did",
+      "start": 197.18,
+      "end": 197.28,
+      "confidence": 0.996
+    },
+    {
+      "sentence_id": "S39",
+      "word": "not",
+      "start": 197.28,
+      "end": 197.64,
+      "confidence": 0.995
+    },
+    {
+      "sentence_id": "S39",
+      "word": "give",
+      "start": 197.64,
+      "end": 197.88,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S39",
+      "word": "it",
+      "start": 197.88,
+      "end": 198.02,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S39",
+      "word": "up",
+      "start": 198.02,
+      "end": 198.34,
+      "confidence": 1
+    },
+    {
+      "sentence_id": "S40",
+      "word": "Enlil-bani",
+      "start": 199.14,
+      "end": 199.74,
+      "confidence": 0
+    },
+    {
+      "sentence_id": "S40",
+      "word": "ruled",
+      "start": 199.74,
+      "end": 200.26,
+      "confidence": 0.995
+    },
+    {
+      "sentence_id": "S40",
+      "word": "Isin",
+      "start": 200.26,
+      "end": 200.78,
+      "confidence": 0
+    },
+    {
+      "sentence_id": "S40",
+      "word": "for",
+      "start": 200.78,
+      "end": 200.98,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S40",
+      "word": "twenty-four",
+      "start": 200.98,
+      "end": 201.78,
+      "confidence": 0.7
+    },
+    {
+      "sentence_id": "S40",
+      "word": "years",
+      "start": 201.78,
+      "end": 202.24,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S40",
+      "word": "and",
+      "start": 202.42,
+      "end": 202.74,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S40",
+      "word": "his",
+      "start": 202.74,
+      "end": 202.86,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S40",
+      "word": "own",
+      "start": 202.86,
+      "end": 203.06,
+      "confidence": 1
+    },
+    {
+      "sentence_id": "S40",
+      "word": "inscriptions",
+      "start": 203.06,
+      "end": 203.6,
+      "confidence": 0.969
+    },
+    {
+      "sentence_id": "S40",
+      "word": "survive",
+      "start": 203.6,
+      "end": 204.16,
+      "confidence": 0.991
+    },
+    {
+      "sentence_id": "S41",
+      "word": "He",
+      "start": 204.94,
+      "end": 205.08,
+      "confidence": 0.994
+    },
+    {
+      "sentence_id": "S41",
+      "word": "rebuilt",
+      "start": 205.08,
+      "end": 205.52,
+      "confidence": 0.991
+    },
+    {
+      "sentence_id": "S41",
+      "word": "the",
+      "start": 205.52,
+      "end": 205.8,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S41",
+      "word": "city",
+      "start": 205.8,
+      "end": 206.02,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S41",
+      "word": "wall",
+      "start": 206.02,
+      "end": 206.4,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S41",
+      "word": "and",
+      "start": 206.4,
+      "end": 206.82,
+      "confidence": 0.613
+    },
+    {
+      "sentence_id": "S41",
+      "word": "named",
+      "start": 206.82,
+      "end": 207.08,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S41",
+      "word": "it",
+      "start": 207.08,
+      "end": 207.4,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S41",
+      "word": "Enlil-bani",
+      "start": 207.4,
+      "end": 208.6,
+      "confidence": 0
+    },
+    {
+      "sentence_id": "S41",
+      "word": "is",
+      "start": 208.6,
+      "end": 208.9,
+      "confidence": 0.81
+    },
+    {
+      "sentence_id": "S41",
+      "word": "firm",
+      "start": 208.9,
+      "end": 209.34,
+      "confidence": 0.584
+    },
+    {
+      "sentence_id": "S41",
+      "word": "as",
+      "start": 209.34,
+      "end": 209.72,
+      "confidence": 0.995
+    },
+    {
+      "sentence_id": "S41",
+      "word": "to",
+      "start": 209.72,
+      "end": 209.92,
+      "confidence": 0.994
+    },
+    {
+      "sentence_id": "S41",
+      "word": "foundation",
+      "start": 209.92,
+      "end": 210.44,
+      "confidence": 0.954
+    },
+    {
+      "sentence_id": "S42",
+      "word": "He",
+      "start": 211.1,
+      "end": 211.42,
+      "confidence": 0.819
+    },
+    {
+      "sentence_id": "S42",
+      "word": "cut",
+      "start": 211.42,
+      "end": 211.64,
+      "confidence": 0.995
+    },
+    {
+      "sentence_id": "S42",
+      "word": "the",
+      "start": 211.64,
+      "end": 211.86,
+      "confidence": 0.996
+    },
+    {
+      "sentence_id": "S42",
+      "word": "barley",
+      "start": 211.86,
+      "end": 212.14,
+      "confidence": 0.945
+    },
+    {
+      "sentence_id": "S42",
+      "word": "tax",
+      "start": 212.14,
+      "end": 212.52,
+      "confidence": 0
+    },
+    {
+      "sentence_id": "S42",
+      "word": "from",
+      "start": 212.52,
+      "end": 212.74,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S42",
+      "word": "a",
+      "start": 212.74,
+      "end": 212.92,
+      "confidence": 0.974
+    },
+    {
+      "sentence_id": "S42",
+      "word": "fifth",
+      "start": 212.92,
+      "end": 213.16,
+      "confidence": 0.985
+    },
+    {
+      "sentence_id": "S42",
+      "word": "to",
+      "start": 213.16,
+      "end": 213.62,
+      "confidence": 0.991
+    },
+    {
+      "sentence_id": "S42",
+      "word": "a",
+      "start": 213.62,
+      "end": 213.78,
+      "confidence": 0.995
+    },
+    {
+      "sentence_id": "S42",
+      "word": "tenth",
+      "start": 213.78,
+      "end": 214.14,
+      "confidence": 0.964
+    },
+    {
+      "sentence_id": "S43",
+      "word": "Historians",
+      "start": 215,
+      "end": 215.44,
+      "confidence": 0.991
+    },
+    {
+      "sentence_id": "S43",
+      "word": "suspect",
+      "start": 215.44,
+      "end": 216.02,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S43",
+      "word": "the",
+      "start": 216.02,
+      "end": 216.24,
+      "confidence": 0.994
+    },
+    {
+      "sentence_id": "S43",
+      "word": "tale",
+      "start": 216.24,
+      "end": 216.52,
+      "confidence": 0.993
+    },
+    {
+      "sentence_id": "S43",
+      "word": "is",
+      "start": 216.52,
+      "end": 216.78,
+      "confidence": 0.994
+    },
+    {
+      "sentence_id": "S43",
+      "word": "a",
+      "start": 216.78,
+      "end": 216.94,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S43",
+      "word": "legend",
+      "start": 216.94,
+      "end": 217.32,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S43",
+      "word": "perhaps",
+      "start": 217.78,
+      "end": 218.06,
+      "confidence": 0.996
+    },
+    {
+      "sentence_id": "S43",
+      "word": "one",
+      "start": 218.06,
+      "end": 218.38,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S43",
+      "word": "that",
+      "start": 218.38,
+      "end": 218.6,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S43",
+      "word": "dressed",
+      "start": 218.6,
+      "end": 218.84,
+      "confidence": 0.996
+    },
+    {
+      "sentence_id": "S43",
+      "word": "up",
+      "start": 218.84,
+      "end": 219.08,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S43",
+      "word": "an",
+      "start": 219.08,
+      "end": 219.24,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S43",
+      "word": "ordinary",
+      "start": 219.24,
+      "end": 219.68,
+      "confidence": 1
+    },
+    {
+      "sentence_id": "S43",
+      "word": "seizure",
+      "start": 219.68,
+      "end": 220.12,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S43",
+      "word": "of",
+      "start": 220.12,
+      "end": 220.42,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S43",
+      "word": "the",
+      "start": 220.42,
+      "end": 220.58,
+      "confidence": 0.996
+    },
+    {
+      "sentence_id": "S43",
+      "word": "throne",
+      "start": 220.58,
+      "end": 220.88,
+      "confidence": 0.985
+    },
+    {
+      "sentence_id": "S44",
+      "word": "But",
+      "start": 221.58,
+      "end": 221.8,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S44",
+      "word": "in",
+      "start": 221.8,
+      "end": 221.96,
+      "confidence": 0.985
+    },
+    {
+      "sentence_id": "S44",
+      "word": "every",
+      "start": 221.96,
+      "end": 222.38,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S44",
+      "word": "letter",
+      "start": 222.38,
+      "end": 222.72,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S44",
+      "word": "from",
+      "start": 222.72,
+      "end": 223.04,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S44",
+      "word": "Nineveh",
+      "start": 223.04,
+      "end": 223.44,
+      "confidence": 0.957
+    },
+    {
+      "sentence_id": "S44",
+      "word": "the",
+      "start": 223.86,
+      "end": 223.96,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S44",
+      "word": "ritual",
+      "start": 223.96,
+      "end": 224.32,
+      "confidence": 1
+    },
+    {
+      "sentence_id": "S44",
+      "word": "ends",
+      "start": 224.32,
+      "end": 224.8,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S44",
+      "word": "the",
+      "start": 224.8,
+      "end": 225.04,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S44",
+      "word": "same",
+      "start": 225.04,
+      "end": 225.38,
+      "confidence": 1
+    },
+    {
+      "sentence_id": "S44",
+      "word": "way",
+      "start": 225.38,
+      "end": 225.78,
+      "confidence": 1
+    },
+    {
+      "sentence_id": "S44",
+      "word": "the",
+      "start": 226.4,
+      "end": 226.6,
+      "confidence": 0.985
+    },
+    {
+      "sentence_id": "S44",
+      "word": "stand-in",
+      "start": 226.6,
+      "end": 227.12,
+      "confidence": 0.95
+    },
+    {
+      "sentence_id": "S44",
+      "word": "dies",
+      "start": 227.12,
+      "end": 227.56,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S44",
+      "word": "and",
+      "start": 227.92,
+      "end": 228.14,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S44",
+      "word": "the",
+      "start": 228.14,
+      "end": 228.32,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S44",
+      "word": "king",
+      "start": 228.32,
+      "end": 228.54,
+      "confidence": 0.899
+    },
+    {
+      "sentence_id": "S44",
+      "word": "lives",
+      "start": 228.54,
+      "end": 229.14,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S44",
+      "word": "for",
+      "start": 229.76,
+      "end": 230,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S44",
+      "word": "a",
+      "start": 230,
+      "end": 230.12,
+      "confidence": 0.949
+    },
+    {
+      "sentence_id": "S44",
+      "word": "while",
+      "start": 230.12,
+      "end": 230.46,
+      "confidence": 1
+    },
+    {
+      "sentence_id": "S45",
+      "word": "Only",
+      "start": 231.2,
+      "end": 231.5,
+      "confidence": 0.996
+    },
+    {
+      "sentence_id": "S45",
+      "word": "the",
+      "start": 231.5,
+      "end": 231.72,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S45",
+      "word": "oldest",
+      "start": 231.72,
+      "end": 232.14,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S45",
+      "word": "story",
+      "start": 232.14,
+      "end": 232.7,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S45",
+      "word": "ends",
+      "start": 232.7,
+      "end": 233.06,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S45",
+      "word": "the",
+      "start": 233.06,
+      "end": 233.26,
+      "confidence": 1
+    },
+    {
+      "sentence_id": "S45",
+      "word": "other",
+      "start": 233.26,
+      "end": 233.42,
+      "confidence": 1
+    },
+    {
+      "sentence_id": "S45",
+      "word": "way",
+      "start": 233.42,
+      "end": 233.78,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S46",
+      "word": "The",
+      "start": 234.26,
+      "end": 234.5,
+      "confidence": 0.996
+    },
+    {
+      "sentence_id": "S46",
+      "word": "gods",
+      "start": 234.5,
+      "end": 234.86,
+      "confidence": 0.977
+    },
+    {
+      "sentence_id": "S46",
+      "word": "took",
+      "start": 234.86,
+      "end": 235.24,
+      "confidence": 1
+    },
+    {
+      "sentence_id": "S46",
+      "word": "the",
+      "start": 235.24,
+      "end": 235.48,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S46",
+      "word": "king",
+      "start": 235.48,
+      "end": 235.76,
+      "confidence": 0.978
+    },
+    {
+      "sentence_id": "S47",
+      "word": "And",
+      "start": 236.34,
+      "end": 236.56,
+      "confidence": 0.995
+    },
+    {
+      "sentence_id": "S47",
+      "word": "the",
+      "start": 236.56,
+      "end": 236.7,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S47",
+      "word": "man",
+      "start": 236.7,
+      "end": 237.02,
+      "confidence": 0.989
+    },
+    {
+      "sentence_id": "S47",
+      "word": "crowned",
+      "start": 237.02,
+      "end": 237.4,
+      "confidence": 0.951
+    },
+    {
+      "sentence_id": "S47",
+      "word": "to",
+      "start": 237.4,
+      "end": 237.7,
+      "confidence": 0.995
+    },
+    {
+      "sentence_id": "S47",
+      "word": "die",
+      "start": 237.7,
+      "end": 238.1,
+      "confidence": 0.988
+    },
+    {
+      "sentence_id": "S47",
+      "word": "kept",
+      "start": 238.1,
+      "end": 238.78,
+      "confidence": 0.443
+    },
+    {
+      "sentence_id": "S47",
+      "word": "the",
+      "start": 238.78,
+      "end": 239.08,
+      "confidence": 0.992
+    },
+    {
+      "sentence_id": "S47",
+      "word": "crown",
+      "start": 239.08,
+      "end": 239.4,
+      "confidence": 0.928
+    },
+    {
+      "sentence_id": "S48",
+      "word": "A",
+      "start": 240.32,
+      "end": 240.58,
+      "confidence": 0.992
+    },
+    {
+      "sentence_id": "S48",
+      "word": "borrowed",
+      "start": 240.58,
+      "end": 240.98,
+      "confidence": 0.99
+    },
+    {
+      "sentence_id": "S48",
+      "word": "crown",
+      "start": 240.98,
+      "end": 241.38,
+      "confidence": 0.989
+    },
+    {
+      "sentence_id": "S48",
+      "word": "could",
+      "start": 241.38,
+      "end": 241.7,
+      "confidence": 0.996
+    },
+    {
+      "sentence_id": "S48",
+      "word": "buy",
+      "start": 241.7,
+      "end": 241.94,
+      "confidence": 0.992
+    },
+    {
+      "sentence_id": "S48",
+      "word": "a",
+      "start": 241.94,
+      "end": 242.16,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S48",
+      "word": "king",
+      "start": 242.16,
+      "end": 242.34,
+      "confidence": 0.961
+    },
+    {
+      "sentence_id": "S48",
+      "word": "a",
+      "start": 242.34,
+      "end": 242.68,
+      "confidence": 0.911
+    },
+    {
+      "sentence_id": "S48",
+      "word": "hundred",
+      "start": 242.68,
+      "end": 243.06,
+      "confidence": 0.981
+    },
+    {
+      "sentence_id": "S48",
+      "word": "days",
+      "start": 243.06,
+      "end": 243.5,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S48",
+      "word": "and",
+      "start": 243.92,
+      "end": 244.36,
+      "confidence": 0.994
+    },
+    {
+      "sentence_id": "S48",
+      "word": "once",
+      "start": 244.36,
+      "end": 244.74,
+      "confidence": 0.988
+    },
+    {
+      "sentence_id": "S48",
+      "word": "it",
+      "start": 244.74,
+      "end": 245.32,
+      "confidence": 0.734
+    },
+    {
+      "sentence_id": "S48",
+      "word": "bought",
+      "start": 245.32,
+      "end": 245.52,
+      "confidence": 0.981
+    },
+    {
+      "sentence_id": "S48",
+      "word": "a",
+      "start": 245.52,
+      "end": 245.74,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S48",
+      "word": "gardener",
+      "start": 245.74,
+      "end": 246.22,
+      "confidence": 0.968
+    },
+    {
+      "sentence_id": "S48",
+      "word": "a",
+      "start": 246.22,
+      "end": 246.72,
+      "confidence": 0.924
+    },
+    {
+      "sentence_id": "S48",
+      "word": "kingdom",
+      "start": 246.72,
+      "end": 247.06,
+      "confidence": 0.978
+    },
+    {
+      "sentence_id": "S49",
+      "word": "For",
+      "start": 247.98,
+      "end": 248.2,
+      "confidence": 0.972
+    },
+    {
+      "sentence_id": "S49",
+      "word": "more",
+      "start": 248.2,
+      "end": 248.48,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S49",
+      "word": "strange",
+      "start": 248.48,
+      "end": 249,
+      "confidence": 0.996
+    },
+    {
+      "sentence_id": "S49",
+      "word": "rituals",
+      "start": 249,
+      "end": 249.48,
+      "confidence": 0.998
+    },
+    {
+      "sentence_id": "S49",
+      "word": "and",
+      "start": 249.48,
+      "end": 249.74,
+      "confidence": 0.984
+    },
+    {
+      "sentence_id": "S49",
+      "word": "forgotten",
+      "start": 249.74,
+      "end": 250.12,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S49",
+      "word": "lives",
+      "start": 250.12,
+      "end": 250.56,
+      "confidence": 0.99
+    },
+    {
+      "sentence_id": "S49",
+      "word": "like",
+      "start": 250.56,
+      "end": 250.8,
+      "confidence": 0.995
+    },
+    {
+      "sentence_id": "S49",
+      "word": "this",
+      "start": 250.8,
+      "end": 251.18,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S49",
+      "word": "leave",
+      "start": 251.56,
+      "end": 251.66,
+      "confidence": 0.987
+    },
+    {
+      "sentence_id": "S49",
+      "word": "a",
+      "start": 251.66,
+      "end": 251.78,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S49",
+      "word": "like",
+      "start": 251.78,
+      "end": 252,
+      "confidence": 0.955
+    },
+    {
+      "sentence_id": "S49",
+      "word": "and",
+      "start": 252,
+      "end": 252.32,
+      "confidence": 0.974
+    },
+    {
+      "sentence_id": "S49",
+      "word": "subscribe",
+      "start": 252.32,
+      "end": 252.82,
+      "confidence": 0.994
+    },
+    {
+      "sentence_id": "S49",
+      "word": "to",
+      "start": 252.82,
+      "end": 253.1,
+      "confidence": 0.999
+    },
+    {
+      "sentence_id": "S49",
+      "word": "Animated",
+      "start": 253.1,
+      "end": 253.52,
+      "confidence": 0.835
+    },
+    {
+      "sentence_id": "S49",
+      "word": "Tales",
+      "start": 253.52,
+      "end": 254.04,
+      "confidence": 0.967
+    },
+    {
+      "sentence_id": "S50",
+      "word": "Until",
+      "start": 254.7,
+      "end": 254.96,
+      "confidence": 0.996
+    },
+    {
+      "sentence_id": "S50",
+      "word": "next",
+      "start": 254.96,
+      "end": 255.22,
+      "confidence": 0.997
+    },
+    {
+      "sentence_id": "S50",
+      "word": "time",
+      "start": 255.22,
+      "end": 255.5,
+      "confidence": 0.999
+    }
+  ],
+  "outro_start": 240.32
+}

@@ -1,0 +1,79 @@
+[
+  {"beat_id":"B01","sentences":["S01"],"device":null,"viewer_sees":"a blood-red eclipsed moon above the walls and palace terraces of Nineveh at night; on the palace roof two scholars in long fringed robes look up, one clutching a clay tablet","tags":{"location":"nineveh-palace-roof","time_light":"eclipse-night-red"}},
+
+  {"beat_id":"B02","sentences":["S02"],"device":null,"viewer_sees":"the Nineveh throne room: a rough-handed commoner sits stiffly on the king's throne in the royal robe and crown while courtiers bow; from a dark doorway at the left edge the real king watches","tags":{"location":"nineveh-throne-room","time_light":"torchlit-night"}},
+
+  {"beat_id":"B03","sentences":["S03"],"device":null,"viewer_sees":"the palace roof under a dense field of stars: three scholars with clay tablets and styluses copy what they see in the sky, a low brazier glowing between them","tags":{"location":"nineveh-palace-roof","time_light":"starlit-night"}},
+
+  {"beat_id":"B04","sentences":["S04"],"device":null,"viewer_sees":"the moon close and huge: the dark shadow has bitten deep into its disc, the rest glowing blood-red, a thin ring of light at its edge","tags":{"location":"night-sky","time_light":"eclipse-night-red"}},
+
+  {"beat_id":"B05","sentences":["S05"],"device":"process-cutaway","viewer_sees":"PROCESS / CUTAWAY — the moon disc drawn as a scholar's diagram on clay: four quarters, each tied by a thin line to a land at the frame edge (Akkad south, Elam east, Amurru west, Subartu north); the eclipse shadow creeps across one quarter","tags":{"location":"omen-diagram","time_light":"eclipse-night-red"}},
+
+  {"beat_id":"B06","sentences":["S06"],"device":null,"viewer_sees":"the king of Assyria on his throne lifts his eyes to a high window where the eclipsed moon hangs dark red; the window's red light falls across him like a shadow","tags":{"location":"nineveh-throne-room","time_light":"eclipse-night-red"}},
+
+  {"beat_id":"B07","sentences":["S07","S08"],"device":"macro-object","viewer_sees":"MACRO OBJECT — a scholar's hands turn a clay omen tablet away from the king's cylinder seal toward an empty second stool; the red eclipse moon trembles small in a bowl of water beside it","tags":{"location":"scholar-workroom","time_light":"single-lamp"}},
+
+  {"beat_id":"B08","sentences":["S09"],"device":null,"viewer_sees":"Esarhaddon, king of Assyria, stands between the carved winged human-headed bulls of his palace gate: curled beard, tall royal cap, fringed robe, a mace in hand","tags":{"location":"nineveh-palace-gate","time_light":"hard-noon"}},
+
+  {"beat_id":"B09","sentences":["S10"],"device":"ledger-accumulation","viewer_sees":"LEDGER — the royal archive at Nineveh: hundreds of small clay letter-tablets packed in shelves and reed baskets, a scribe adding still more until a basket spills over","tags":{"location":"nineveh-archive","time_light":"single-lamp"}},
+
+  {"beat_id":"B10","sentences":["S11"],"device":null,"viewer_sees":"Esarhaddon steps down from his throne and walks out through a dark doorway at the left; the throne stands empty behind him, the red moon in the high window","tags":{"location":"nineveh-throne-room","time_light":"eclipse-night-red"}},
+
+  {"beat_id":"B11","sentences":["S12"],"device":null,"viewer_sees":"the stand-in is prepared — washed with water, anointed with oil from a horn, dressed by attendants in the king's robe → enthroned, a young veiled woman seated beside him as his queen","tags":{"location":"nineveh-throne-room","time_light":"torchlit-night"}},
+
+  {"beat_id":"B12","sentences":["S13","S14"],"device":null,"viewer_sees":"before the winged sun-disc of Shamash on an altar at dawn, a scholar recites from a clay tablet; the substitute king on his throne bows his head as if taking a weight onto his shoulders","tags":{"location":"shamash-shrine","time_light":"first-dawn"}},
+
+  {"beat_id":"B13","sentences":["S15"],"device":null,"viewer_sees":"a scholar kneels and ties a small inscribed clay tablet with cord into the fringed hem of the substitute's robe","tags":{"location":"shamash-shrine","time_light":"first-dawn"}},
+
+  {"beat_id":"B14","sentences":["S16","S17"],"device":null,"viewer_sees":"the real king hidden in a small inner chamber of the palace, in a plain wool tunic with no crown, reading a clay letter by one lamp while a messenger kneels at the door","tags":{"location":"palace-inner-chamber","time_light":"single-lamp"}},
+
+  {"beat_id":"B15","sentences":["S18"],"device":null,"viewer_sees":"close on wet clay: a scribe's stylus presses the first wedges of a letter's opening line, finished lines above it","tags":{"location":"scholar-workroom","time_light":"single-lamp"}},
+
+  {"beat_id":"B16","sentences":["S19"],"device":"timeline-seasons","viewer_sees":"TIMELINE — the substitute on the throne seen through the same high window night after night, the moon passing through its phases, a tally of strokes on a clay tablet in the foreground growing toward a hundred","tags":{"location":"nineveh-throne-room","time_light":"moon-phases-night"}},
+
+  {"beat_id":"B17","sentences":["S20"],"device":"empty-aftermath","viewer_sees":"EMPTY AFTERMATH — the throne empty in grey dawn light, the royal robe folded on its seat, a single cup on the step; no person anywhere","tags":{"location":"nineveh-throne-room","time_light":"grey-dawn"}},
+
+  {"beat_id":"B18","sentences":["S21"],"device":null,"viewer_sees":"three men stand in a palace courtyard before the chief exorcist: a chained condemned criminal, a foreign prisoner of war, a laborer with a basket of bricks; the exorcist's hand lifts to choose","tags":{"location":"palace-courtyard","time_light":"harsh-daylight"}},
+
+  {"beat_id":"B19","sentences":["S22","S23"],"device":null,"viewer_sees":"Akkad in Babylonia: at the steps of a mud-brick temple, young Damqi in a fine fringed Babylonian robe stands beside his father, the temple's high official in white linen","tags":{"location":"akkad-temple","time_light":"warm-morning"}},
+
+  {"beat_id":"B20","sentences":["S24"],"device":null,"viewer_sees":"the king's agent in Babylonia, a grey-bearded Assyrian official, writes his report into a clay tablet by lamplight, a clay envelope waiting beside it","tags":{"location":"agent-office","time_light":"single-lamp"}},
+
+  {"beat_id":"B21","sentences":["S25"],"device":null,"viewer_sees":"Damqi enthroned in Akkad in the king's robe and crown, his young queen beside him, both solemn and very still; scholars and guards at the edges of the hall","tags":{"location":"akkad-throne-hall","time_light":"torchlit-night"}},
+
+  {"beat_id":"B22","sentences":["S26"],"device":null,"viewer_sees":"a royal burial chamber: two shrouded figures lie in state on biers under embroidered cloths with gold ornaments, lamps around them, mourning women with raised arms and loosened hair","tags":{"location":"akkad-burial-chamber","time_light":"lamplit-dark"}},
+
+  {"beat_id":"B23","sentences":["S27","S28"],"device":null,"viewer_sees":"before the ritual: a prophetess with loose hair at a temple doorway grips young Damqi's wrist and points past him toward the palace","tags":{"location":"akkad-temple","time_light":"dusk"}},
+
+  {"beat_id":"B24","sentences":["S29","S30"],"device":"macro-object","viewer_sees":"MACRO OBJECT — the crown Damqi wore, resting on a folded royal robe at the edge of the bier, one lamp flame beside it","tags":{"location":"akkad-burial-chamber","time_light":"lamplit-dark"}},
+
+  {"beat_id":"B25","sentences":["S31"],"device":null,"viewer_sees":"Esarhaddon, back in his throne room, holds the report tablet while his scholars bow low before him; his face unreadable","tags":{"location":"nineveh-throne-room","time_light":"daylight-shafts"}},
+
+  {"beat_id":"B26","sentences":["S32"],"device":null,"viewer_sees":"an old scholar guides a boy apprentice copying an eclipse omen from a worn, ancient tablet onto fresh clay; shelves of old tablets behind them","tags":{"location":"nineveh-archive","time_light":"daylight-shafts"}},
+
+  {"beat_id":"B27","sentences":["S33"],"device":null,"viewer_sees":"summer heat: a scholar marks a day on a clay calendar tablet; through the doorway behind him guards lead a new stand-in, a laborer, toward the throne room","tags":{"location":"scholar-workroom","time_light":"summer-glare"}},
+
+  {"beat_id":"B28","sentences":["S34"],"device":"animated-map","viewer_sees":"ANIMATED MAP — an old map in clay tones: the Assyrian army column marches from Nineveh toward Egypt; partway there the king's banner tilts and falls","tags":{"location":"route-to-egypt-map","time_light":"autumn-dust"}},
+
+  {"beat_id":"B29","sentences":["S35","S36"],"device":null,"viewer_sees":"a Babylonian chronicle tablet close, dense cuneiform columns → the walled city of Isin on its plain a thousand years earlier, temple tower, palm groves and canals","tags":{"location":"isin-city","time_light":"golden-afternoon"}},
+
+  {"beat_id":"B30","sentences":["S37"],"device":null,"viewer_sees":"Isin: King Erra-imitti leads his gardener Enlil-bani, a weathered man with a pruning knife at his belt, in from the palace garden → places the royal tiara on the gardener's head as he sits on the throne","tags":{"location":"isin-palace","time_light":"golden-afternoon"}},
+
+  {"beat_id":"B31","sentences":["S38"],"device":null,"viewer_sees":"Erra-imitti in his own palace chamber raises a steaming bowl of hot soup to his lips with both hands, a servant behind him with the jug","tags":{"location":"isin-palace-chamber","time_light":"warm-afternoon"}},
+
+  {"beat_id":"B32","sentences":["S39"],"device":null,"viewer_sees":"Enlil-bani on the throne with the tiara on his head, gardener's hands gripping the throne arms; courtiers hesitate at the edges of the hall","tags":{"location":"isin-palace","time_light":"daylight-shafts"}},
+
+  {"beat_id":"B33","sentences":["S40"],"device":null,"viewer_sees":"one of Enlil-bani's own inscriptions: a clay foundation cone covered in cuneiform, half-buried in the earth of a ruined wall","tags":{"location":"isin-ruins","time_light":"low-sun"}},
+
+  {"beat_id":"B34","sentences":["S41"],"device":null,"viewer_sees":"the city wall of Isin being rebuilt: workers carry mud bricks up ladders, Enlil-bani in the tiara watching from the rampart","tags":{"location":"isin-wall","time_light":"bright-morning"}},
+
+  {"beat_id":"B35","sentences":["S42"],"device":"ledger-accumulation","viewer_sees":"LEDGER — a threshing floor: of five heaps of barley one used to go to the tax scribe; now ten heaps stand and only one is carried off, the farmer keeping the rest","tags":{"location":"isin-threshing-floor","time_light":"harvest-sun"}},
+
+  {"beat_id":"B36","sentences":["S43"],"device":"silhouette","viewer_sees":"SILHOUETTE — black against a dusk sky, a figure in a tiara stands on the palace wall, spear silhouettes of armed men gathering around him","tags":{"location":"isin-wall","time_light":"dusk"}},
+
+  {"beat_id":"B37","sentences":["S44"],"device":"empty-aftermath","viewer_sees":"EMPTY AFTERMATH — in Nineveh, the substitute's royal robe lies folded on a bare bench in the corner; deep behind it the real king sits on his throne again, small and far","tags":{"location":"nineveh-throne-room","time_light":"grey-dawn"}},
+
+  {"beat_id":"B38","sentences":["S45","S46","S47"],"device":null,"viewer_sees":"Isin: the shrouded bier of Erra-imitti carried out at the left; on the right the gardener sits crowned on the throne and the whole court kneels to him","tags":{"location":"isin-palace","time_light":"daylight-shafts"}},
+
+  {"beat_id":"B39","sentences":["S48","S49","S50"],"device":null,"viewer_sees":"two crowns side by side: the Assyrian royal cap on a folded robe in shadow, the Isin tiara in light beside a gardener's pruning knife → END CARD: poster of the whole story with title and SUBSCRIBE","tags":{"location":"end-card","time_light":"lamplit-gold"}}
+]
