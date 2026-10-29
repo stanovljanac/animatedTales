@@ -1,6 +1,6 @@
 # Serija — Greek Gods
 
-**Status:** mapa potvrđena, Part 1 gotov, Part 2 ima research i skriptu (`episodes/greek-gods-part-2`). Ovaj fajl je **izvor istine za celu seriju** i piše se
+**Status:** mapa potvrđena, Part 1 i Part 2 gotovi, Part 3 ima research, skriptu, lockove i storyboard (`episodes/greek-gods-part-3`). Ovaj fajl je **izvor istine za celu seriju** i piše se
 pre nego što ijedan `episode.json` u seriji dobije sadržaj.
 
 **Čita ga:** svako ko počinje bilo koji part ili compilation. **Menja ga:** samo eksplicitna odluka
@@ -241,6 +241,57 @@ Kopiraju se u `greek-gods-part-2/episode.json` kad tom partu dođe red.
 ]
 ```
 
+### 4.6 Zaključano u Part 3
+
+Atina, Apolon i Artemida dobijaju lock u Part 3 i od tada su registar: nose ih end kartica Part 3,
+compilation i svaki kasniji kadar u kome se pojave. Helios (Part 2) i kamen (Part 1) bili su lokalni,
+ali ih Part 3 ponavlja, pa po pravilu 4.1 tačka 5 prelaze u registar — tekst je doslovno onaj iz
+parta u kome su nastali.
+
+| `id` | `name` | Koristi ga | Uloga |
+|---|---|---|---|
+| `athena` | Athena | 3, comp | rođena iz Zevsove glave; zlatni šlem zabačen, egida preko maslinastozelenog |
+| `apollo` | Apollo | 3, comp | rođen na Delosu; zlatokos, belo i zlato, lovor |
+| `artemis` | Artemis | 3, comp | rođena prva, babica bratu; kratki šafran hiton, zlatne strele |
+| `helios` | Helios | 2, 3 | sunce koje sve vidi (Part 2), staje na Atinino rođenje (Part 3) |
+| `the-stone` | The Stone | 1, 3 | kamen u povoju (Part 1), u Delfima (Part 3) |
+
+**Vizuelna gramatika trojke, namerna:** Atina je jedina u oklopu (zlato i maslinastozeleno), Apolon
+jedini otkrivenih grudi u belom i zlatu, Artemida jedina u kratkom hitonu i čizmama. Grupni lock
+`the-three-children` je lokalan za Part 3 i nosi iste tokene.
+
+```json
+[
+  {
+    "id": "athena",
+    "name": "Athena",
+    "locked_description": "a tall strong Greek goddess in her prime, dark hair bound at the nape, clear grey eyes, a crested golden Corinthian helmet worn pushed back on her head, a scaled golden aegis over a long olive-green peplos, bare feet"
+  },
+  {
+    "id": "apollo",
+    "name": "Apollo",
+    "locked_description": "a tall beardless young Greek god, long golden hair with loose curls at the neck, a laurel wreath, a calm radiant face, clear blue eyes, a white himation edged in gold over one shoulder, bare chest and bare feet"
+  },
+  {
+    "id": "artemis",
+    "name": "Artemis",
+    "locked_description": "a lithe young Greek huntress goddess, auburn hair tied up in a knot, a sharp sun-browned face with green-brown eyes, a knee-length pale saffron hunting chiton with a red border, a quiver of golden arrows, laced hunting boots"
+  },
+  {
+    "id": "helios",
+    "name": "Helios",
+    "locked_description": "a radiant beardless Greek god of the sun, a crown of long golden rays standing out from his curls, eyes of white fire, a gold-white chiton, a chariot of beaten gold drawn by four horses with manes of flame",
+    "scale_critical": true
+  },
+  {
+    "id": "the-stone",
+    "name": "The Stone",
+    "locked_description": "a smooth oval boulder of grey limestone about the size of a swaddled newborn, worn round by a river, the surface faintly veined and pitted, one end slightly narrower than the other",
+    "scale_critical": true
+  }
+]
+```
+
 ---
 
 ## 5. Dva pravila kadra koja registar nameće
@@ -319,7 +370,7 @@ sme da se ponovi u pripadajućim Shorts-ovima; to je namerno, jer povezuje mrež
 |---|---|---|---|
 | 1 | *podela* — sve je podeljeno osim zemlje i Olimpa | tri sestre bez kraljevstva | koji od tri žreba bi uzeo |
 | 2 | *ognjište / žetva* — ono u čemu ljudi stvarno žive | deca rođena uprkos | brak, žetva ili ognjište — koja sestra je imala pravu moć |
-| 3 | *proročanstvo* — Zevs je uradio ono zbog čega je mrzeo oca | mreža | — piše se uz Part 3 |
+| 3 | *proročanstvo* — Zevs je uradio ono zbog čega je mrzeo oca | mreža | Atina, Apolon ili Artemida — koga bi svetu najviše falilo da se nije rodio |
 | 4 | *mreža* — najslabiji bog je uhvatio najjače | compilation, ili Part 5 ako se radi | — piše se uz Part 4 |
 
 **Part 1, zaključan tekst** (75 reči, stoji u `episodes/greek-gods-part-1/script.md`):
@@ -340,6 +391,18 @@ sme da se ponovi u pripadajućim Shorts-ovima; to je namerno, jer povezuje mrež
 
 Najava Part 3 nosi kičmu („rođeni uprkos") i jedan zadirkujući detalj (glava), a Metidu i Letu ne
 imenuje — oba ostaju Part 3 da ih otkrije.
+
+**Part 3, zaključan tekst** (80 reči po `countWords`, stoji u `episodes/greek-gods-part-3/script.md`):
+
+> Cronus swallowed his children to escape a prophecy. His son swallowed a wife to escape the same
+> one. In the next part, the god his mother threw off Olympus marries the most beautiful goddess —
+> and catches her in a net. Athena, Apollo or Artemis — which one would the world miss most if they
+> had never been born? Tell us in the comments. If you like stories like this one, leave a like and
+> subscribe to Animated Tales. Until next time.
+
+Najava Part 4 nosi kičmu (majka ga je bacila s Olimpa, oženio je najlepšu, mreža) i ne imenuje ni
+Hefesta, ni Afroditu, ni Aresa — sva tri imena ostaju Part 4. Pitanje za komentare je izvučeno iz
+kičme „rođeni uprkos": šta bi svetu falilo da nisu rođeni.
 
 Formatiranje i dalje poštuje sva četiri parser-pravila iz `04-script.md`: naslov je tačno
 `## OUTRO`, poslednji je u fajlu, nijedan drugi naslov ne počinje rečju „outro", a dve rezervne
@@ -367,8 +430,40 @@ SUBSCRIBE dugmetom. U seriji važi još i ovo, da bi četiri kartice izgledale k
 |---|---|---|---|
 | 1 | Zeus, Poseidon, Hades | `AND THE DIVISION OF THE UNIVERSE` | `SKY · SEA · THE DEAD` |
 | 2 | Hera, Demeter, Hestia | `WHO GOT NO KINGDOM` | `MARRIAGE · HARVEST · HEARTH` |
-| 3 | — piše se uz Part 3 | | |
+| 3 | Athena, Apollo, Artemis | `WHO WERE NEVER SUPPOSED TO BE BORN` (veliki red: `THE THREE CHILDREN`) | `WISDOM · PROPHECY · THE HUNT` |
 | 4 | — piše se uz Part 4 | | |
+
+### 6.2 Rekap na početku parta
+
+Outro gleda unapred, rekap unazad. Rekap je **najviše 2–3 kadra, 15–20s, 2–4 rečenice (~50 reči)**
+i služi samo tome da se part prati bez prethodnog. Prethodni part je već na kanalu; rekap koji ga
+prepričava troši prvi minut na video koji gledalac nije kliknuo, a pravi se kao da je nov.
+
+> *Zašto:* Part 2 je otvorio rekapom od ~31s (S03–S09, sedam rečenica) sa tri nova klipa — shot03,
+> shot05 i shot06, 37 kredita — a sve što pokazuju Part 1 je već imao: Kron guta decu, izbacuje ih,
+> braća dele svet. Part 3 otvara jednom rečenicom i odmah ulazi u Metidu.
+
+1. **Rekap se piše prema kadrovima koji već postoje.** Svaka rečenica prepričava jedan događaj koji
+   je raniji part ispričao i pokazao, a njen shot se **ne generiše nego kopira**. Zbog registra (§4)
+   i istog style stringa kopiran klip izgleda kao da je pravljen za novi part — isti mehanizam
+   koristi compilation (§8). Kad nijedan postojeći kadar ne nosi rečenicu, prvo se traži druga
+   formulacija istog događaja, pa tek onda nov kadar.
+2. **Kopija, ne putanja.** `episodes/<raniji-part>/shots/partNN.mp4` se kopira u `shots/partMM.mp4`
+   novog parta. `source_file` koji pokazuje na `../greek-gods-part-N/…` lint i montaža bi pročitali,
+   ali ga `tools/timeline.mjs` vraća na `shots/partMM.mp4` pri svakom ponovnom sečenju, a puca i kad
+   se folder pomeri.
+3. **Prozor sme da se pomeri.** Klip se uzima i od sredine kroz `use_in` / `use_out`
+   (`use_out = use_in + use_len`), dok god prozor staje u trajanje starog klipa — to meri F1. Still
+   ostaje na `use_in = 0`, pa se slika kopira cela.
+4. **Storyboard opisuje ono što je u kadru.** `image_prompt`, `animation_prompt` i `characters` se
+   prepisuju iz izvornog shota, a svaki lock koji se u kadru vidi ulazi u `episode.json` novog parta,
+   doslovno iz §4 — inače C1 pada (`characters` navodi entitet koji ne postoji u `episode.json`).
+5. **Poreklo ide u `notes.md`**, npr. `shot01 ← greek-gods-part-2 shot05, use 1.0–5.3s — ne
+   generiše se`. Taj red je ono što kaže da se shot preskače u Flow-u.
+
+**Part 4:** most unazad je Hera koja iz besa zbog Atine rađa Hefesta sama (§7). Atinino rođenje
+već nosi Part 3 — kadar u kome iskače iz Zevsove glave — pa se rekap piše prema njemu i prema
+kadru Here na Olimpu iz Part 3; nov kadar dobija tek Hefest.
 
 ---
 
@@ -389,6 +484,9 @@ prvi stigne.**
 | Had i Persefona | **2** | sme da kaže da svi jednom stižu kod njega; otmicu **ne** |
 | Hera kao Zevsova žena | **2** | Hera se vidi u kadru izbacivanja, među petoro progutanih, ali priča o braku je Part 2 |
 | Hera baca Hefesta s Olimpa | **4** | ne |
+| Sekira koja otvara Zevsovu glavu (Pindar: Hefest; Apolodor: Prometej ili Hefest) | **3** za sekiru, **4** za Hefesta | Part 3 sme sekiru **bez nosioca** („later poets say it took an axe"); Hefest se u Part 3 ne imenuje i ne vidi |
+| Hera iz besa zbog Atine rađa Hefesta sama (*Teogonija* 927–929) | **4** | Part 3 ne pominje — to je Part 4 most na Part 3 |
+| Hera rađa Tifaona i daje ga zmaju u Delfima (*Himna Apolonu* 305–355) | nije u planu | Part 3 ga ne koristi (vuče Hefesta); kandidat za Short |
 | Hestija i ognjište | **2** | ne |
 
 **„Hestija ustupa presto Dionisu" nije antički mit** — potiče od Roberta Grejvsa (*The Greek Myths*,

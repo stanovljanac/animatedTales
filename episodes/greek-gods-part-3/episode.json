@@ -1,0 +1,134 @@
+{
+  "slug": "greek-gods-part-3",
+  "title": "Athena, Apollo, Artemis: The Gods Who Were Never Supposed to Be Born (Greek Gods, Part 3)",
+  "status": "draft",
+  "voice": null,
+  "narration_file": "narration.mp3",
+  "final_file": "final.mp4",
+  "endcard_file": "shots/endKartica.jpeg",
+  "intro_file": null,
+  "intro_volume": 0.2,
+  "freeze_tail": [],
+  "characters": [
+    {
+      "id": "athena",
+      "name": "Athena",
+      "locked_description": "a tall strong Greek goddess in her prime, dark hair bound at the nape, clear grey eyes, a crested golden Corinthian helmet worn pushed back on her head, a scaled golden aegis over a long olive-green peplos, bare feet"
+    },
+    {
+      "id": "apollo",
+      "name": "Apollo",
+      "locked_description": "a tall beardless young Greek god, long golden hair with loose curls at the neck, a laurel wreath, a calm radiant face, clear blue eyes, a white himation edged in gold over one shoulder, bare chest and bare feet"
+    },
+    {
+      "id": "artemis",
+      "name": "Artemis",
+      "locked_description": "a lithe young Greek huntress goddess, auburn hair tied up in a knot, a sharp sun-browned face with green-brown eyes, a knee-length pale saffron hunting chiton with a red border, a quiver of golden arrows, laced hunting boots"
+    },
+    {
+      "id": "the-three-children",
+      "name": "The Three Children",
+      "locked_description": "three young Greek gods, a grey-eyed goddess in a golden helmet pushed back and a golden aegis over olive-green, a golden-haired beardless god in white and gold with a laurel wreath, an auburn huntress in a short saffron chiton"
+    },
+    {
+      "id": "zeus",
+      "name": "Zeus",
+      "locked_description": "a broad powerfully built Greek god in his prime, thick dark hair swept back from a high brow, a full curled beard, deep-set grey eyes under heavy brows, a purple-red himation over one shoulder, bare chest and bare feet"
+    },
+    {
+      "id": "hera",
+      "name": "Hera",
+      "locked_description": "a tall stately Greek goddess in her prime, dark hair drawn back under a low golden crown, large steady eyes and a full mouth, a white peplos under a dark red mantle pinned at both shoulders, bare feet"
+    },
+    {
+      "id": "poseidon",
+      "name": "Poseidon",
+      "locked_description": "a heavily muscled Greek god in his prime, long dark hair in heavy salt-stiffened ropes, a thick pointed beard, sun-darkened weathered skin, pale sea-green eyes, a deep sea-green himation knotted low at the waist, bare feet"
+    },
+    {
+      "id": "cronus",
+      "name": "Cronus",
+      "locked_description": "a gaunt ageing Titan with long grey-white hair and a heavy matted grey beard, a hollowed lined face, corded veined arms and big knuckled hands, a coarse dark ochre himation over one shoulder, bare chest and bare feet",
+      "scale_critical": true
+    },
+    {
+      "id": "metis",
+      "name": "Metis",
+      "locked_description": "a tall serene Greek goddess of the sea-born Titans, long loose silver-black hair, a calm knowing face with sea-grey eyes, a thin silver band across the brow, a flowing peplos of sea-grey shot with deep blue-green, bare feet"
+    },
+    {
+      "id": "leto",
+      "name": "Leto",
+      "locked_description": "a gentle Titan woman in her prime, long black hair under a dark blue veil, a soft pale face with large dark eyes and a wide mouth, a long dark-blue peplos and mantle, bare feet"
+    },
+    {
+      "id": "eileithyia",
+      "name": "Eileithyia",
+      "locked_description": "a young Greek goddess of childbirth with a round gentle face, chestnut hair bound in a plain white fillet, a simple crimson peplos belted high, a short burning pine torch in one hand, bare feet"
+    },
+    {
+      "id": "iris",
+      "name": "Iris",
+      "locked_description": "a slender young Greek goddess, the messenger of the gods, long rippling pale-gold hair, a fine sheer chiton that shimmers through every colour, two great wings of rainbow light rising from her shoulders, bare feet"
+    },
+    {
+      "id": "helios",
+      "name": "Helios",
+      "locked_description": "a radiant beardless Greek god of the sun, a crown of long golden rays standing out from his curls, eyes of white fire, a gold-white chiton, a chariot of beaten gold drawn by four horses with manes of flame",
+      "scale_critical": true
+    }
+  ],
+  "locations": [
+    {
+      "id": "olympus",
+      "name": "Mount Olympus",
+      "locked_description": "the summit of Mount Olympus above the cloud line, broad terraces of pale marble and bare rock, tall plain columns, wide open sky, snowfields and lower peaks showing far below through breaks in the cloud"
+    },
+    {
+      "id": "the-sea",
+      "name": "The Sea",
+      "locked_description": "the open Aegean under a wide sky, deep blue-green water in long swells, white spray tearing off the crests, bare rocky islands low on the horizon, the pale sandy floor visible far down through clear water"
+    },
+    {
+      "id": "acropolis",
+      "name": "The Acropolis",
+      "locked_description": "the bare limestone rock of the Acropolis in the earliest times, a steep flat-topped crag rising sheer above a small town of low mudbrick houses, the plain of Attica running out to the sea and the mountains"
+    },
+    {
+      "id": "delos",
+      "name": "Delos",
+      "locked_description": "Delos, a small bare island of grey granite and dry scrub in the open Aegean, one low rocky hill, a single tall date palm beside a round still pool, no houses and no other trees, surf on every side"
+    },
+    {
+      "id": "delphi",
+      "name": "Delphi",
+      "locked_description": "the slopes of Delphi under Mount Parnassus, two towering grey-pink cliffs above a steep terraced mountainside, a spring running out of a cleft in the rock, olive groves falling away into a deep valley"
+    }
+  ],
+  "key_props": [
+    {
+      "id": "thunderbolt",
+      "name": "The Thunderbolt",
+      "locked_description": "a hand-length weapon of solid white-gold light shaped like a spindle, tapering to sharp points at both ends, bound at the middle by a band of bronze, thin forks of lightning standing out from each end",
+      "scale_critical": true
+    },
+    {
+      "id": "trident",
+      "name": "The Trident",
+      "locked_description": "a bronze fishing spear the height of a man, a worn dark wooden shaft bound with cord below the head, three barbed prongs on a socketed head, the bronze dark and polished from long use",
+      "scale_critical": true
+    },
+    {
+      "id": "the-stone",
+      "name": "The Stone",
+      "locked_description": "a smooth oval boulder of grey limestone about the size of a swaddled newborn, worn round by a river, the surface faintly veined and pitted, one end slightly narrower than the other",
+      "scale_critical": true
+    },
+    {
+      "id": "thunderbolt-key",
+      "name": "The Key to the Thunderbolt",
+      "locked_description": "a long bronze temple key, a heavy rod bent twice into a hooked end, a plain ring at the handle, the bronze dark and worn smooth by handling, hung on a braided cord of purple wool"
+    }
+  ],
+  "notes": "Part 3 od 4 u seriji Greek Gods. Serijska biblija je docs/series/greek-gods.md i ona je izvor istine za svaki locked_description iz registra (zeus, hera, poseidon, cronus, olympus, the-sea, thunderbolt, trident, i od Part 3 athena, apollo, artemis) - taj tekst se kopira doslovno, nikad se ne prepravlja po epizodi. Doslovno iz ranijih partova: helios (Part 2), the-stone (Part 1). Lokalni za Part 3: the-three-children (grupni opis, kompresija pojedinacnih - zlatni sles zabacen i egida preko maslinastozelenog / zlatokosi bez brade u belom i zlatu sa lovorom / kestenjasta lovkinja u kratkom safran hitonu), metis, leto, eileithyia, iris, thunderbolt-key, acropolis, delos, delphi. Hefest se ne vidi i ne imenuje (Part 4). Kicma: rodjeni uprkos - Zevs ponavlja Kronov zlocin. Outro imenuje Part 4 - lanac je zakljucan u biblji. Research u research.md, skripta u script.md."
+}
