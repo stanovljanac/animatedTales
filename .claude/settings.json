@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.youtube.com)",
+      "Bash(python -c ' *)",
+      "Bash(awk '{print $5, $NF}')",
+      "Bash(python -c \"import imageio_ffmpeg;print\\(imageio_ffmpeg.get_ffmpeg_exe\\(\\)\\)\")",
+      "Bash(curl -s -A \"Mozilla/5.0\" -H \"Accept-Language: en\" \"https://www.youtube.com/playlist?list=PLJV7xQyHhydw\" -o /dev/stdout)",
+      "Bash(curl -s -A \"Mozilla/5.0\" -H \"Accept-Language: en\" \"https://www.youtube.com/@AnimatedTales-r4r/about\")",
+      "Bash(grep -oE '\"\\(subscriberCount|videoCount|viewCount\\)[A-Za-z]*\":\"[^\"]{0,60}\"|[0-9,.]+K? subscribers|[0-9,]+ videos|[0-9,]+ views')"
+    ]
+  }
+}
