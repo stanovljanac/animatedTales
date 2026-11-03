@@ -1,0 +1,544 @@
+[
+  {
+    "beat_id": "B01",
+    "sentences": [
+      "S01"
+    ],
+    "device": null,
+    "viewer_sees": "Athena leaping full-grown out of a blaze of white-gold light, spear shaken high, Zeus astonished on his throne at her back (recap, copied from Part 3)",
+    "tags": {
+      "location": "olympus",
+      "time_light": "blazing-white-gold"
+    }
+  },
+  {
+    "beat_id": "B02",
+    "sentences": [
+      "S02"
+    ],
+    "device": null,
+    "viewer_sees": "Hera turning her back on the bright throne hall and looking down through a break in the cloud (recap, copied from Part 3)",
+    "tags": {
+      "location": "olympus",
+      "time_light": "cold-overcast"
+    }
+  },
+  {
+    "beat_id": "B03",
+    "sentences": [
+      "S03"
+    ],
+    "device": null,
+    "viewer_sees": "Hera alone in a dark chamber of the palace, fists clenched, a storm of rage breaking over her",
+    "tags": {
+      "location": "olympus",
+      "time_light": "storm-dark-flashes"
+    }
+  },
+  {
+    "beat_id": "B04",
+    "sentences": [
+      "S04"
+    ],
+    "device": null,
+    "viewer_sees": "Hera on the terrace with a swaddled newborn in her arms, an empty throne beside her",
+    "tags": {
+      "location": "olympus",
+      "time_light": "pale-dawn"
+    }
+  },
+  {
+    "beat_id": "B05",
+    "sentences": [
+      "S05",
+      "S06"
+    ],
+    "device": null,
+    "viewer_sees": "Hera draws back the blanket, sees the child's crooked foot, turns her face away and hurls the bundle off the terrace edge into the clouds",
+    "tags": {
+      "location": "olympus",
+      "time_light": "cold-grey-dawn"
+    }
+  },
+  {
+    "beat_id": "B06",
+    "sentences": [
+      "S07"
+    ],
+    "device": null,
+    "viewer_sees": "Two sea goddesses rise out of the surf with their arms stretched up to catch the falling baby",
+    "tags": {
+      "location": "the-sea",
+      "time_light": "grey-dawn-spray"
+    }
+  },
+  {
+    "beat_id": "B07",
+    "sentences": [
+      "S08"
+    ],
+    "device": "timeline-seasons",
+    "viewer_sees": "A small crooked-legged boy hammering tiny bronze brooches in a sea cave while the pile of jewellery grows year after year and two sea goddesses watch",
+    "tags": {
+      "location": "sea-cave",
+      "time_light": "green-wave-light"
+    }
+  },
+  {
+    "beat_id": "B08",
+    "sentences": [
+      "S09"
+    ],
+    "device": null,
+    "viewer_sees": "Hephaestus grown, soot-streaked and grim, looking up from the anvil as if a decision has just been made",
+    "tags": {
+      "location": "the-forge",
+      "time_light": "ember-orange"
+    }
+  },
+  {
+    "beat_id": "B09",
+    "sentences": [
+      "S10"
+    ],
+    "device": null,
+    "viewer_sees": "The golden throne, finished and gleaming, carried toward Olympus by golden handmaidens",
+    "tags": {
+      "location": "olympus",
+      "time_light": "hard-noon-gold"
+    }
+  },
+  {
+    "beat_id": "B10",
+    "sentences": [
+      "S11",
+      "S12"
+    ],
+    "device": null,
+    "viewer_sees": "Hera sits on the golden throne and threads of light snap around her arms and waist; she strains and cannot rise",
+    "tags": {
+      "location": "olympus",
+      "time_light": "hard-noon-gold"
+    }
+  },
+  {
+    "beat_id": "B11",
+    "sentences": [
+      "S13"
+    ],
+    "device": null,
+    "viewer_sees": "Hephaestus keeps hammering with his back turned on a line of pleading gods at the forge door",
+    "tags": {
+      "location": "the-forge",
+      "time_light": "ember-orange"
+    }
+  },
+  {
+    "beat_id": "B12",
+    "sentences": [
+      "S14",
+      "S15"
+    ],
+    "device": null,
+    "viewer_sees": "A laughing god of wine leads a swaying, drunk Hephaestus up the mountain path toward the glowing summit, where a tiny figure rises free from a golden throne",
+    "tags": {
+      "location": "mountain-path",
+      "time_light": "dusk-violet"
+    }
+  },
+  {
+    "beat_id": "B13",
+    "sentences": [
+      "S16",
+      "S17"
+    ],
+    "device": null,
+    "viewer_sees": "The forge of Olympus: golden maidens working the bellows and furnaces, new marble houses of the gods rising beyond the arch",
+    "tags": {
+      "location": "the-forge",
+      "time_light": "ember-orange-gold"
+    }
+  },
+  {
+    "beat_id": "B14",
+    "sentences": [
+      "S18"
+    ],
+    "device": null,
+    "viewer_sees": "Aphrodite, luminous and pearl-white, in a portrait on a sea-bright terrace",
+    "tags": {
+      "location": "olympus",
+      "time_light": "soft-pearl-morning"
+    }
+  },
+  {
+    "beat_id": "B15",
+    "sentences": [
+      "S19"
+    ],
+    "device": null,
+    "viewer_sees": "A blind poet singing to a lyre in a torchlit king's hall full of listening guests",
+    "tags": {
+      "location": "feast-hall",
+      "time_light": "torchlit-amber"
+    }
+  },
+  {
+    "beat_id": "B16",
+    "sentences": [
+      "S20"
+    ],
+    "device": null,
+    "viewer_sees": "Ares the god of war, armoured and defiant, a portrait on the terrace",
+    "tags": {
+      "location": "olympus",
+      "time_light": "hard-clear-daylight"
+    }
+  },
+  {
+    "beat_id": "B17",
+    "sentences": [
+      "S21"
+    ],
+    "device": null,
+    "viewer_sees": "Ares sprinting along the colonnade faster than any other god while Zeus on his throne turns his head away with a scowl",
+    "tags": {
+      "location": "olympus",
+      "time_light": "hard-clear-daylight"
+    }
+  },
+  {
+    "beat_id": "B18",
+    "sentences": [
+      "S22"
+    ],
+    "device": null,
+    "viewer_sees": "A giant bronze jar lashed with chains on a bleak hillside, two giants dozing on the lid; Hermes lifts the lid and hauls Ares out",
+    "tags": {
+      "location": "giants-hillside",
+      "time_light": "cold-overcast"
+    }
+  },
+  {
+    "beat_id": "B19",
+    "sentences": [
+      "S23",
+      "S24",
+      "S25"
+    ],
+    "device": null,
+    "viewer_sees": "Helios's golden chariot blazing across the sky, tilting down toward Olympus, then dropping to the forge door where Hephaestus looks up, turns and strides in",
+    "tags": {
+      "location": "olympus",
+      "time_light": "blazing-noon-gold"
+    }
+  },
+  {
+    "beat_id": "B20",
+    "sentences": [
+      "S26"
+    ],
+    "device": "process-cutaway",
+    "viewer_sees": "At the anvil, glowing wire drawn finer and finer into chains too thin to see, coiling on the floor",
+    "tags": {
+      "location": "the-forge",
+      "time_light": "ember-orange"
+    }
+  },
+  {
+    "beat_id": "B21",
+    "sentences": [
+      "S27"
+    ],
+    "device": null,
+    "viewer_sees": "Hephaestus lifting hair-fine chains onto the bedposts and roof beams of the bedchamber, gold glints catching the light",
+    "tags": {
+      "location": "bedchamber",
+      "time_light": "late-afternoon-gold"
+    }
+  },
+  {
+    "beat_id": "B22",
+    "sentences": [
+      "S28"
+    ],
+    "device": null,
+    "viewer_sees": "Hephaestus at the house door with a travelling cloak, announcing he is off to Lemnos",
+    "tags": {
+      "location": "house-door",
+      "time_light": "late-afternoon-gold"
+    }
+  },
+  {
+    "beat_id": "B23",
+    "sentences": [
+      "S29",
+      "S30"
+    ],
+    "device": null,
+    "viewer_sees": "Ares sprinting up the path to the house, eyes on the doorway, the moment he sees it is empty",
+    "tags": {
+      "location": "house-path",
+      "time_light": "late-afternoon-gold"
+    }
+  },
+  {
+    "beat_id": "B24",
+    "sentences": [
+      "S31"
+    ],
+    "device": null,
+    "viewer_sees": "Aphrodite and Ares in the bed under a heavy coverlet, only their heads showing, as the net drops over them and pins them",
+    "tags": {
+      "location": "bedchamber",
+      "time_light": "dim-golden-dusk"
+    }
+  },
+  {
+    "beat_id": "B25",
+    "sentences": [
+      "S32",
+      "S33"
+    ],
+    "device": null,
+    "viewer_sees": "Hephaestus turning round on the road, hurrying back to his doorway, flinging up an arm to call every god",
+    "tags": {
+      "location": "house-door",
+      "time_light": "dusk-gold"
+    }
+  },
+  {
+    "beat_id": "B26",
+    "sentences": [
+      "S34"
+    ],
+    "device": null,
+    "viewer_sees": "Hephaestus low-angle at his doorway, the crooked foot turned inward, hand on his chest, looking toward the bed",
+    "tags": {
+      "location": "house-door",
+      "time_light": "dusk-gold"
+    }
+  },
+  {
+    "beat_id": "B27",
+    "sentences": [
+      "S35"
+    ],
+    "device": null,
+    "viewer_sees": "Zeus enthroned, Hephaestus small before him with an open hand demanding back the heaped bride-gifts",
+    "tags": {
+      "location": "olympus",
+      "time_light": "high-clear-daylight"
+    }
+  },
+  {
+    "beat_id": "B28",
+    "sentences": [
+      "S36"
+    ],
+    "device": null,
+    "viewer_sees": "A goddess behind her shutters at dusk, shutting the window and turning away from the sight",
+    "tags": {
+      "location": "olympus",
+      "time_light": "dusk-grey"
+    }
+  },
+  {
+    "beat_id": "B29",
+    "sentences": [
+      "S37"
+    ],
+    "device": null,
+    "viewer_sees": "Poseidon, Apollo and Hermes striding up the path to the doorway",
+    "tags": {
+      "location": "house-path",
+      "time_light": "dusk-gold"
+    }
+  },
+  {
+    "beat_id": "B30",
+    "sentences": [
+      "S38"
+    ],
+    "device": null,
+    "viewer_sees": "Apollo leaning toward Hermes with a smirk, nodding at the bed where two heads show under the net",
+    "tags": {
+      "location": "bedchamber",
+      "time_light": "torchlit-dusk"
+    }
+  },
+  {
+    "beat_id": "B31",
+    "sentences": [
+      "S39"
+    ],
+    "device": null,
+    "viewer_sees": "Hermes grinning, spreading both arms wide as if to take on three times the chains",
+    "tags": {
+      "location": "bedchamber",
+      "time_light": "torchlit-dusk"
+    }
+  },
+  {
+    "beat_id": "B32",
+    "sentences": [
+      "S40",
+      "S41"
+    ],
+    "device": null,
+    "viewer_sees": "The doorway crowded with gods roaring with laughter, doubled over, one turning to his neighbour to speak",
+    "tags": {
+      "location": "bedchamber",
+      "time_light": "torchlit-dusk"
+    }
+  },
+  {
+    "beat_id": "B33",
+    "sentences": [
+      "S42",
+      "S43"
+    ],
+    "device": null,
+    "viewer_sees": "Hephaestus standing by the bed holding the net's chain-end, the whole company laughing around him, Ares red with shame in the bed",
+    "tags": {
+      "location": "bedchamber",
+      "time_light": "torchlit-dusk"
+    }
+  },
+  {
+    "beat_id": "B34",
+    "sentences": [
+      "S44"
+    ],
+    "device": null,
+    "viewer_sees": "Poseidon alone, grave, the only one not laughing, among the blurred laughing gods",
+    "tags": {
+      "location": "bedchamber",
+      "time_light": "torchlit-dusk"
+    }
+  },
+  {
+    "beat_id": "B35",
+    "sentences": [
+      "S45"
+    ],
+    "device": null,
+    "viewer_sees": "Poseidon leaning to Hephaestus with a hand on his shoulder, pleading; Hephaestus unmoved at the net's edge",
+    "tags": {
+      "location": "bedchamber",
+      "time_light": "torchlit-dusk"
+    }
+  },
+  {
+    "beat_id": "B36",
+    "sentences": [
+      "S46"
+    ],
+    "device": null,
+    "viewer_sees": "Hephaestus lifting the net away with both hands and the chains sliding off the lovers",
+    "tags": {
+      "location": "bedchamber",
+      "time_light": "torchlit-dusk"
+    }
+  },
+  {
+    "beat_id": "B37",
+    "sentences": [
+      "S47",
+      "S48"
+    ],
+    "device": "animated-map",
+    "viewer_sees": "Parchment map of the Aegean: one red line racing north-east to Thrace, one pearl line sailing south-east to Cyprus",
+    "tags": {
+      "location": "aegean-map",
+      "time_light": "parchment-warm"
+    }
+  },
+  {
+    "beat_id": "B38",
+    "sentences": [
+      "S49"
+    ],
+    "device": "macro-object",
+    "viewer_sees": "A stone altar with a crested bronze helmet and a golden girdle, and between them three small bronze figures: a cowering child, a running child, a girl with a lyre",
+    "tags": {
+      "location": "olympus",
+      "time_light": "warm-lamp"
+    }
+  },
+  {
+    "beat_id": "B39",
+    "sentences": [
+      "S50"
+    ],
+    "device": null,
+    "viewer_sees": "Camera pulling back from Hephaestus's crooked foot taking a limping step, revealing the golden throne and the net, both traps hung in his forge",
+    "tags": {
+      "location": "the-forge",
+      "time_light": "ember-orange"
+    }
+  },
+  {
+    "beat_id": "B40",
+    "sentences": [
+      "S51",
+      "S52"
+    ],
+    "device": null,
+    "viewer_sees": "Hephaestus alone at his doorway, his big hands opening, glowing chains slipping out of them and drifting away",
+    "tags": {
+      "location": "house-door",
+      "time_light": "dusk-grey"
+    }
+  },
+  {
+    "beat_id": "B41",
+    "sentences": [
+      "S53"
+    ],
+    "device": "empty-aftermath",
+    "viewer_sees": "The empty bed in the grey morning, the net lying loose over it, glints of gold running along its links",
+    "tags": {
+      "location": "bedchamber",
+      "time_light": "cold-pale-morning"
+    }
+  },
+  {
+    "beat_id": "B42",
+    "sentences": [
+      "S54"
+    ],
+    "device": "ledger-accumulation",
+    "viewer_sees": "The council ring of Olympus with twelve empty thrones, each lighting up in turn with its god's emblem",
+    "tags": {
+      "location": "olympus",
+      "time_light": "white-gold"
+    }
+  },
+  {
+    "beat_id": "B43",
+    "sentences": [
+      "S55"
+    ],
+    "device": "macro-object",
+    "viewer_sees": "Three pedestals: a smith's hammer and tongs, a golden girdle, a crested bronze helmet, with the net draped above",
+    "tags": {
+      "location": "olympus",
+      "time_light": "ember-warm"
+    }
+  },
+  {
+    "beat_id": "B44",
+    "sentences": [
+      "S56",
+      "S57",
+      "S58"
+    ],
+    "device": null,
+    "viewer_sees": "End card: poster of the whole story with Hephaestus, Aphrodite and Ares across the frame, title and SUBSCRIBE button",
+    "tags": {
+      "location": "end-card",
+      "time_light": "warm-gold"
+    }
+  }
+]

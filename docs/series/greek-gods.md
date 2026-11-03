@@ -1,6 +1,6 @@
 # Serija — Greek Gods
 
-**Status:** mapa potvrđena, Part 1 i Part 2 gotovi, Part 3 ima research, skriptu, lockove i storyboard (`episodes/greek-gods-part-3`). Ovaj fajl je **izvor istine za celu seriju** i piše se
+**Status:** mapa potvrđena, Part 1 i Part 2 gotovi, Part 3 ima research, skriptu, lockove i storyboard (`episodes/greek-gods-part-3`), Part 4 ima research, skriptu i lockove (`episodes/greek-gods-part-4`). Ovaj fajl je **izvor istine za celu seriju** i piše se
 pre nego što ijedan `episode.json` u seriji dobije sadržaj.
 
 **Čita ga:** svako ko počinje bilo koji part ili compilation. **Menja ga:** samo eksplicitna odluka
@@ -33,7 +33,7 @@ u `episodes/<slug>/research.md` po `docs/prompts/03-research.md`. Ovde su kičma
 | 1 | `greek-gods-part-1` | Zeus, Poseidon, Hades | **Žreb.** Tri brata su bacila kocku za svemir. Had je dobio ono što niko nije hteo — i ispao najbogatiji. |
 | 2 | `greek-gods-part-2` | Hera, Demeter, Hestia | **Tri sestre.** Isti otac ih je progutao, isti brat ih je oslobodio — a kraljevstvo nisu dobile. Dobile su ono u čemu ljudi stvarno žive: brak, žetvu, ognjište. |
 | 3 | `greek-gods-part-3` | Athena, Apollo, Artemis | **Rođeni uprkos.** Hera je gonila Letu po svetu da ne rodi; Atina je izašla Zevsu iz glave jer je progutao Metidu — isto proročanstvo koje je nateralo Krona da guta decu. Part 3 se vraća na Part 1. |
-| 4 | `greek-gods-part-4` | Hephaestus, Aphrodite, Ares | **Mreža.** Majka ga je bacila s Olimpa jer je bio ružan, oženio je najlepšu boginju, uhvatio je u krevetu s Aresom — i pozvao ceo Olimp da gleda. Jedna priča drži svo troje. |
+| 4 | `greek-gods-part-4` | Hephaestus, Aphrodite, Ares | **Mreža.** Majka ga je bacila s Olimpa jer je bio hrom, oženio je najlepšu boginju, uhvatio je u krevetu s Aresom — i pozvao ceo Olimp da gleda. Jedna priča drži svo troje. |
 
 **Part 5 (Hermes, Dionysus) nije planiran.** Radi se samo ako serija bude radila — kao „poslednja
 dva trona", i tada ne ulazi u compilation od 12, nego dobija svoj.
@@ -292,6 +292,59 @@ jedini otkrivenih grudi u belom i zlatu, Artemida jedina u kratkom hitonu i čiz
 ]
 ```
 
+### 4.7 Zaključano u Part 4
+
+Hefest, Afrodita i Ares dobijaju lock u Part 4 i od tada su registar: nose ih end kartica Part 4,
+compilation i svaki kasniji kadar u kome se pojave. Ostalo što Part 4 zaključava je lokalno za taj
+part i ostaje u `episodes/greek-gods-part-4/episode.json` (`hermes`, `the-sea-goddesses`,
+`sea-cave`, `the-forge`, `the-bedchamber`, `the-net`, `the-golden-throne`); `hermes` prelazi u
+registar tek ako se napravi Part 5.
+
+| `id` | `name` | Koristi ga | Uloga |
+|---|---|---|---|
+| `hephaestus` | Hephaestus | 4, comp | bačen s Olimpa jer je hrom; čađ, kožna kecelja, kriva leva noga |
+| `aphrodite` | Aphrodite | 4, comp | najlepša boginja; biserno-bela, zlatni pojas |
+| `ares` | Ares | 4, comp | bog rata, Herin drugi sin; tamna bronza i grimizno |
+
+```json
+[
+  {
+    "id": "hephaestus",
+    "name": "Hephaestus",
+    "locked_description": "a thickset heavily muscled bearded Greek smith-god, soot-streaked skin and a thick dark beard, a thin crooked left leg with the foot turned inward, a scorched leather apron over one bare shoulder, a plain pointed workman's cap"
+  },
+  {
+    "id": "aphrodite",
+    "name": "Aphrodite",
+    "locked_description": "an astonishingly beautiful Greek goddess in her prime, long honey-gold hair braided with pearls, a luminous rose-pale face with large dark eyes, a sheer pearl-white peplos under a gold-stitched girdle, gold bracelets, bare feet"
+  },
+  {
+    "id": "ares",
+    "name": "Ares",
+    "locked_description": "a tall hard-muscled beardless Greek war god in his prime, cropped black hair, a scarred cheek and cold grey eyes, a dark bronze muscle cuirass over a crimson tunic, bronze greaves, a short crimson cloak over one shoulder"
+  }
+]
+```
+
+**Vizuelna gramatika trojke, namerna:** Hefest je jedini radnik (koža, čađ, kapa, kriva noga),
+Afrodita jedina u prozirnom biserno-belom sa zlatom, Ares jedini u punoj tamnoj bronzi i grimizu.
+Silueta govori ko je ko pre lica: smeđe-crni radnik, svetla boginja, crveno-bronzani ratnik.
+
+**„Hrom", ne „ružan".** Mapa serije (§2) je prvobitno govorila „ružan"; ispravljeno po izvorima.
+Nijedan antički tekst ne kaže da je bio ružan: Ilijada 18 kaže da ga je Hera htela da sakrije jer je
+hrom, a Himna Apolonu da je bio slab i sa osušenom nogom. Skripta, lock i mapa prate izvore. Smisao
+kičme je isti — sramota majke — ali reč je *lame*, i tako je i u kadru (kriva noga, a ne ružno lice).
+Opšte pravilo: kad se formulacija biblije i izvor razlikuju, važi izvor i biblija se ispravlja.
+
+**Dionis i Hermes nisu zaključani u registru.** Dionis je u skripti samo „the god of wine" i dobija
+jedan do dva kadra, opisan slobodno u `ACTION`. Hermes je u Part 4 lokalan (net-scena i ćup).
+
+**Afrodita i Ares leže pod pokrivačem, vide im se samo glave.** Odiseja ih stavlja u krevet; pripovedanje
+kaže samo „lay down together". Svaki kadar sa njima u krevetu ima pokrivač navučen do ramena, glave i
+lica iznad njega, a mreža pada preko pokrivača. Nijedan kadar ne pokazuje golo telo, pa nije potrebna
+odeća u tom kadru. Kad stoje van kreveta (svečani kadri, end kartica), odeveni su po lockovima. To je
+ograničenje za storyboard i ne menja skriptu.
+
 ---
 
 ## 5. Dva pravila kadra koja registar nameće
@@ -371,7 +424,7 @@ sme da se ponovi u pripadajućim Shorts-ovima; to je namerno, jer povezuje mrež
 | 1 | *podela* — sve je podeljeno osim zemlje i Olimpa | tri sestre bez kraljevstva | koji od tri žreba bi uzeo |
 | 2 | *ognjište / žetva* — ono u čemu ljudi stvarno žive | deca rođena uprkos | brak, žetva ili ognjište — koja sestra je imala pravu moć |
 | 3 | *proročanstvo* — Zevs je uradio ono zbog čega je mrzeo oca | mreža | Atina, Apolon ili Artemida — koga bi svetu najviše falilo da se nije rodio |
-| 4 | *mreža* — najslabiji bog je uhvatio najjače | compilation, ili Part 5 ako se radi | — piše se uz Part 4 |
+| 4 | *mreža* — najslabiji bog je uhvatio najjače | compilation (Part 5 nije planiran) | Hephaestus, Aphrodite ili Ares — ko je te noći izgubio najviše |
 
 **Part 1, zaključan tekst** (75 reči, stoji u `episodes/greek-gods-part-1/script.md`):
 
@@ -404,6 +457,24 @@ Najava Part 4 nosi kičmu (majka ga je bacila s Olimpa, oženio je najlepšu, mr
 Hefesta, ni Afroditu, ni Aresa — sva tri imena ostaju Part 4. Pitanje za komentare je izvučeno iz
 kičme „rođeni uprkos": šta bi svetu falilo da nisu rođeni.
 
+**Part 4, zaključan tekst** (74 reči po `countWords`, stoji u `episodes/greek-gods-part-4/script.md`):
+
+> A net no one could see caught the swiftest god on Olympus, and it was made by the god his mother
+> threw away. Next on the channel: all twelve gods of this series, from Zeus to Hephaestus, together
+> in one story. Hephaestus, Aphrodite or Ares — who lost the most that night? Tell us in the
+> comments. If you like stories like this one, leave a like and subscribe to Animated Tales. Until
+> next time.
+
+Most je na ključnoj imenici *net* i na epizodinoj ironiji (najsporiji uhvatio najbržeg). Part 4 je
+kraj numerisanog lanca, pa **ne počinje sa „In the next part"**: najava vodi na compilation i
+počinje sa „Next on the channel". Pitanje je izbor od tri, izvučeno iz kičme epizode.
+
+**Najava je obaveza, ne uslov.** Compilation se radi bez obzira na preglede partova (§8): ako bi se
+čekalo na gledanost, možda se nikad ne bi objavio, a izgovoreno obećanje ne može da se povuče iz
+objavljenog videa. Lanac outroa je dosledan — Part 1 vodi na Part 2, Part 2 na Part 3, Part 3 na
+Part 4, Part 4 na compilation. ALT 1 u `script.md` (zatvara seriju bez obećanja) ostaje samo kao
+rezerva.
+
 Formatiranje i dalje poštuje sva četiri parser-pravila iz `04-script.md`: naslov je tačno
 `## OUTRO`, poslednji je u fajlu, nijedan drugi naslov ne počinje rečju „outro", a dve rezervne
 varijante stoje u HTML komentaru.
@@ -431,7 +502,14 @@ SUBSCRIBE dugmetom. U seriji važi još i ovo, da bi četiri kartice izgledale k
 | 1 | Zeus, Poseidon, Hades | `AND THE DIVISION OF THE UNIVERSE` | `SKY · SEA · THE DEAD` |
 | 2 | Hera, Demeter, Hestia | `WHO GOT NO KINGDOM` | `MARRIAGE · HARVEST · HEARTH` |
 | 3 | Athena, Apollo, Artemis | `WHO WERE NEVER SUPPOSED TO BE BORN` (veliki red: `THE THREE CHILDREN`) | `WISDOM · PROPHECY · THE HUNT` |
-| 4 | — piše se uz Part 4 | | |
+| 4 | Hephaestus, Aphrodite, Ares | `AND THE NET THAT CAUGHT THEM` (veliki red: `THE SMITH, HIS WIFE AND HIS BROTHER`) | `FORGE · LOVE · WAR` |
+
+Part 4: Afrodita stoji **u sredini, između muža i ljubavnika** — raspored sleva nadesno je i
+poenta kartice. Simboli uz donju ivicu: nakovanj i čekić (Hefest), pehar sa biserima i zlatni pojas
+(Afrodita), bronzani šlem sa grimiznim perjem (Ares). Sitne scene oko svakog: Hefest bačen s Olimpa
+i zlatni presto, Afrodita i zlatna mreža, Ares u bronzanom ćupu. Mreža se vidi samo kao tanak sjaj
+lanaca, nikad kao kadar sa golim telom: u krevetu su Afrodita i Ares pod pokrivačem, vide im se samo
+glave (vidi §4.7).
 
 ### 6.2 Rekap na početku parta
 
@@ -463,7 +541,9 @@ prepričava troši prvi minut na video koji gledalac nije kliknuo, a pravi se ka
 
 **Part 4:** most unazad je Hera koja iz besa zbog Atine rađa Hefesta sama (§7). Atinino rođenje
 već nosi Part 3 — kadar u kome iskače iz Zevsove glave — pa se rekap piše prema njemu i prema
-kadru Here na Olimpu iz Part 3; nov kadar dobija tek Hefest.
+kadru Here na Olimpu iz Part 3; nov kadar dobija tek Hefest. U `greek-gods-part-4/script.md` to su
+S01 ← Part 3 shot 12 (`athena`, `zeus`, `olympus`) i S02 ← Part 3 shot 20 (`hera`, `olympus`);
+prvi nov kadar je S03. Oba locka stoje u `episode.json` Part 4 zbog C1.
 
 ---
 
@@ -488,6 +568,10 @@ prvi stigne.**
 | Hera iz besa zbog Atine rađa Hefesta sama (*Teogonija* 927–929) | **4** | Part 3 ne pominje — to je Part 4 most na Part 3 |
 | Hera rađa Tifaona i daje ga zmaju u Delfima (*Himna Apolonu* 305–355) | nije u planu | Part 3 ga ne koristi (vuče Hefesta); kandidat za Short |
 | Hestija i ognjište | **2** | ne |
+| Hefest bačen s Olimpa, pećina Tetide i Eurinome, zlatni presto | **4** | Part 3 ga ne imenuje; sekira bez nosioca ostaje jedini dodir |
+| Mreža (*Odiseja* 8.266–366), Helios kao doušnik, Posejdonova garancija | **4** | Helios je u Part 2 „sunce koje sve vidi" (§4.6); Part 4 ga ponavlja u istoj ulozi |
+| Ares u bronzanom ćupu (*Ilijada* 5.385–391) | **4** | ne |
+| Afroditino rođenje iz pene, Uran i srp | **Titan video** | Part 4 ga ne priča: Afrodita je u Odiseji Zevsova ćerka i skripta ne navodi poreklo |
 
 **„Hestija ustupa presto Dionisu" nije antički mit** — potiče od Roberta Grejvsa (*The Greek Myths*,
 1955). Antičko je samo to da se spiskovi dvanaestorice razlikuju (oltar dvanaest bogova u Atini ima
@@ -513,8 +597,8 @@ nijedna nova slika ni klip. Jedan dan posla.
 
 - ~25s po bogu × 12 = ~300s, plus uvod i outro → seče se do 5 minuta, tvrdog plafona iz
   `channel-bible.md` §2.
-- Piše se **tek kad sva četiri parta postoje**, i objavljuje se kad partovi već imaju gledanost
-  koju compilation može da preuzme.
+- Piše se **tek kad sva četiri parta postoje**, i objavljuje se bez čekanja na preglede: Part 4
+  outro ga obećava, pa je compilation obaveza serije, a ne nagrada za gledanost.
 - Lanac je isti kao za epizodu (`align` → `beatplan` → `lint` → `assemble`), ali se `shots/` folder
   puni **kopijama i isečcima iz partova**, ne novim generisanjem. `episode.json` compilationa
   kopira registar iz ovog fajla u celini.

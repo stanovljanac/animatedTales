@@ -1,0 +1,117 @@
+{
+  "slug": "greek-gods-part-4",
+  "title": "Hephaestus, Aphrodite, Ares: The Net That Caught the God of War (Greek Gods, Part 4)",
+  "protagonists": [
+    "Hephaestus",
+    "Aphrodite",
+    "Ares"
+  ],
+  "status": "draft",
+  "voice": null,
+  "narration_file": "narration.mp3",
+  "final_file": "final.mp4",
+  "endcard_file": "shots/endKartica.jpeg",
+  "intro_file": null,
+  "intro_volume": 0.2,
+  "freeze_tail": [
+    "01"
+  ],
+  "characters": [
+    {
+      "id": "zeus",
+      "name": "Zeus",
+      "locked_description": "a broad powerfully built Greek god in his prime, thick dark hair swept back from a high brow, a full curled beard, deep-set grey eyes under heavy brows, a purple-red himation over one shoulder, bare chest and bare feet"
+    },
+    {
+      "id": "hera",
+      "name": "Hera",
+      "locked_description": "a tall stately Greek goddess in her prime, dark hair drawn back under a low golden crown, large steady eyes and a full mouth, a white peplos under a dark red mantle pinned at both shoulders, bare feet"
+    },
+    {
+      "id": "athena",
+      "name": "Athena",
+      "locked_description": "a tall strong Greek goddess in her prime, dark hair bound at the nape, clear grey eyes, a crested golden Corinthian helmet worn pushed back on her head, a scaled golden aegis over a long olive-green peplos, bare feet"
+    },
+    {
+      "id": "poseidon",
+      "name": "Poseidon",
+      "locked_description": "a heavily muscled Greek god in his prime, long dark hair in heavy salt-stiffened ropes, a thick pointed beard, sun-darkened weathered skin, pale sea-green eyes, a deep sea-green himation knotted low at the waist, bare feet"
+    },
+    {
+      "id": "apollo",
+      "name": "Apollo",
+      "locked_description": "a tall beardless young Greek god, long golden hair with loose curls at the neck, a laurel wreath, a calm radiant face, clear blue eyes, a white himation edged in gold over one shoulder, bare chest and bare feet"
+    },
+    {
+      "id": "helios",
+      "name": "Helios",
+      "locked_description": "a radiant beardless Greek god of the sun, a crown of long golden rays standing out from his curls, eyes of white fire, a gold-white chiton, a chariot of beaten gold drawn by four horses with manes of flame",
+      "scale_critical": true
+    },
+    {
+      "id": "hephaestus",
+      "name": "Hephaestus",
+      "locked_description": "a thickset heavily muscled bearded Greek smith-god, soot-streaked skin and a thick dark beard, a thin crooked left leg with the foot turned inward, a scorched leather apron over one bare shoulder, a plain pointed workman's cap"
+    },
+    {
+      "id": "aphrodite",
+      "name": "Aphrodite",
+      "locked_description": "an astonishingly beautiful Greek goddess in her prime, long honey-gold hair braided with pearls, a luminous rose-pale face with large dark eyes, a sheer pearl-white peplos under a gold-stitched girdle, gold bracelets, bare feet"
+    },
+    {
+      "id": "ares",
+      "name": "Ares",
+      "locked_description": "a tall hard-muscled beardless Greek war god in his prime, cropped black hair, a scarred cheek and cold grey eyes, a dark bronze muscle cuirass over a crimson tunic, bronze greaves, a short crimson cloak over one shoulder"
+    },
+    {
+      "id": "hermes",
+      "name": "Hermes",
+      "locked_description": "a lean quick young Greek god, tousled brown hair under a broad travelling hat, a sharp cheerful face with a crooked grin, a short ochre chiton and small travelling cloak, winged sandals, a slim golden herald's staff"
+    },
+    {
+      "id": "the-sea-goddesses",
+      "name": "The Sea Goddesses",
+      "locked_description": "two sea goddesses, one tall with long silver-grey hair in a pearl-white peplos, the other dark-haired with a broad kind face in a deep blue-green mantle, both barefoot, hems dark with seawater, strands of kelp at their wrists"
+    }
+  ],
+  "locations": [
+    {
+      "id": "olympus",
+      "name": "Mount Olympus",
+      "locked_description": "the summit of Mount Olympus above the cloud line, broad terraces of pale marble and bare rock, tall plain columns, wide open sky, snowfields and lower peaks showing far below through breaks in the cloud"
+    },
+    {
+      "id": "the-sea",
+      "name": "The Sea",
+      "locked_description": "the open Aegean under a wide sky, deep blue-green water in long swells, white spray tearing off the crests, bare rocky islands low on the horizon, the pale sandy floor visible far down through clear water"
+    },
+    {
+      "id": "sea-cave",
+      "name": "The Sea Cave",
+      "locked_description": "a deep cave in a sea cliff, wet black rock and a floor of pale sand, a small stone anvil and a driftwood fire, rows of tiny bronze brooches on a ledge, green wave-light moving across the roof"
+    },
+    {
+      "id": "the-forge",
+      "name": "The Forge of Hephaestus",
+      "locked_description": "the bronze forge of Hephaestus on Olympus, a vaulted hall of dark stone, a huge anvil, twenty great bellows and glowing furnaces, racks of tongs and hammers, golden maidens moving between the fires, orange firelight on every wall"
+    },
+    {
+      "id": "the-bedchamber",
+      "name": "The Bedchamber",
+      "locked_description": "a long stone bedchamber in the house of Hephaestus, a broad carved wooden bed between four tall posts, heavy dark roof beams overhead, open shutters onto the sea, a bronze brazier, plain walls painted ochre and blue"
+    }
+  ],
+  "key_props": [
+    {
+      "id": "the-net",
+      "name": "The Net",
+      "locked_description": "a vast curtain of hair-fine bronze chains, thousands of tiny links too thin to see except where the light catches them, shimmering gold-white, hung from the roof beams and bed posts in loose folds"
+    },
+    {
+      "id": "the-golden-throne",
+      "name": "The Golden Throne",
+      "locked_description": "a heavy high-backed throne of beaten gold, lion-paw feet, carved arms ending in lions' heads, a gold footstool, glittering under a hard light, with fine threads of chain glinting around the seat"
+    }
+  ],
+  "notes": "Part 4 od 4 u seriji Greek Gods. Serijska biblija je docs/series/greek-gods.md i ona je izvor istine za svaki locked_description iz registra (zeus, hera, poseidon, athena, apollo, helios, olympus, the-sea, i od Part 4 hephaestus, aphrodite, ares) - taj tekst se kopira doslovno, nikad se ne prepravlja po epizodi. Lokalni za Part 4: hermes (ulazi u registar samo ako se napravi Part 5), the-sea-goddesses (Tetida i Eurinoma, grupni opis, bez imena u skripti), sea-cave, the-forge, the-bedchamber, the-net, the-golden-throne. Dionis se ne zakljucava: u skripti je samo 'bog vina', jedan do dva kadra, opisuje se slobodno u ACTION. Deca nisu zakljucana (biblija 4.2): novorodjeni i bacani Hefest je opisan slobodno u ACTION, bez hephaestus u characters. Rekap (S01-S02) se ne generise nego kopira: S01 iz Part 3 shot 12 (athena, zeus, olympus), S02 iz Part 3 shot 20 (hera, olympus) - prvi nov kadar je Hefest u S03. Kicma: sporog boga koji ne moze nikoga da stigne zamke - presto za majku, mreza za zenu; oba puta je uhvatio i oba puta pustio. Afrodita i Ares u krevetu leze pod pokrivacem navucenim do ramena, vide im se samo glave, a mreza pada preko pokrivaca - nikad golo telo (research.md, BRAND-SAFETY; biblija 4.7). Pravila ose ekrana se zakljucavaju pre pisanja promptova. Outro vodi na compilation, koji je obaveza serije a ne nagrada za preglede (biblija 6 i 8), ne na Part 5. Research u research.md, skripta u script.md."
+}
