@@ -21,6 +21,7 @@ Zato nijedan kadar ne može da „pojede" tuđe vreme, a zbir se poklapa sa narr
 | 06 | beat mapa i skelet storyboard-a | `tools/beatplan.mjs` → `storyboard.json` |
 | 07 | promptovi, QA i čitljiv prikaz | `tools/lint.mjs`, `tools/render.mjs`, `tools/shotlist.mjs` |
 | 08 | montaža u `final.mp4` | `tools/assemble.mjs` |
+| 09 | Shortovi (9:16) iz gotovog videa, u `episodes/<slug>/short/` | `tools/short.mjs`, [`docs/shorts.md`](docs/shorts.md) |
 
 Slike i klipovi se generišu ručno u Google Flow-u — `shotlist.mjs` ispisuje čeklistu kojom se
 to radi. Ista čeklista u zaglavlju nosi i **budžet kredita**: slika je u Flow-u besplatna, klip
@@ -53,6 +54,7 @@ node tools/render.mjs    episodes/<slug>
 node tools/shotlist.mjs  episodes/<slug>
 node tools/shotlist.mjs  episodes/<slug> --board | Set-Clipboard
 node tools/assemble.mjs  episodes/<slug>
+node tools/short.mjs     episodes/<slug> short1 --sheet
 ```
 
 Svaki alat ima `--help`. Provere:
