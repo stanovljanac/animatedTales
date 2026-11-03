@@ -133,29 +133,65 @@ The title should feel like the beginning of a story, not the name of a school le
 
 ---
 
+## WHOLE VIDEO, WHOLE CAST
+
+This is the first title rule, and it comes before every other one.
+
+A long video's title sells the WHOLE video: who the whole story is about and what happens to them across it. It never sells one part of it.
+
+A title about one part of the story (one god's birth, one chase, one contest, one twist from the middle) is a title for a Short cut from that part. It belongs in `short/shorts.md`, where the Short points back to the long video through Related video. It never goes into TITLE OPTIONS.
+
+THE SHORT TEST: "If I cut one part of this video into a Short, would this title fit that Short?" If yes, it is not a title for the long video. Rewrite it.
+
+PROTAGONISTS — who the whole video is about:
+
+- The protagonists are the figures the story's spine is about: the ones the premise and the closing lines of the narration are about. Read the script, find the sentence that sums up the whole story, and take everyone it is about.
+- When the story is about two or three figures together, ALL of them are protagonists: Athena, Apollo and Artemis (Greek Gods, Part 3); Hera, Demeter and Hestia (Part 2); Zeus, Poseidon and Hades (Part 1).
+- Figures who drive the events but are not what the story is about are NOT protagonists: Zeus, Hera and Leto in Part 3. They may appear in a title as context, never instead of the protagonists.
+- Before writing titles, write the protagonists into `episode.json` as `"protagonists"`, spelled exactly as the titles will spell them: `"protagonists": ["Athena", "Apollo", "Artemis"]`. For an obscure figure the titles name by role (see CONCRETE TITLES), the entry is a list of interchangeable forms, any one of which counts: `"protagonists": [["Erra-imitti", "Gardener"]]`.
+
+EVERY TITLE NAMES ALL OF THEM, OR NONE:
+
+- Every title names ALL the protagonists, or names none of them and refers to all of them together as a group ("Three Gods Who Were Never Supposed to Be Born", "Three Sisters Who Got No Kingdom").
+- Never name only some of them. "Athena + some text" is a title for Athena's Short; "Hera Hunted Apollo's Mother…" is a title for the Leto chase. One protagonist plus a detail is exactly the part-title this section forbids.
+- Option 1 names all of them, and so do at least 3 of the 5 options. The group form without names may be used for at most 2 options.
+
+WEAK vs STRONG (from greek-gods-part-3, whose story is three gods who were never supposed to be born):
+
+Weak: "Zeus Swallowed His Pregnant Wife, and Athena Burst Out of His Head" — only Athena's birth, the first third of the video
+Weak: "Hera Hunted Apollo's Mother Across the Earth Until Delos Took Her In" — only the Leto chase; Artemis is nowhere
+Weak: "How Athena Beat Poseidon for Athens With a Single Olive Tree" — one episode from the middle
+Strong: "Athena, Apollo & Artemis: The Gods Who Were Never Supposed to Be Born"
+Strong: "Zeus Swallowed One Mother, Hera Hunted the Other: Athena, Apollo & Artemis"
+Strong (group form): "Three Gods Who Were Never Supposed to Be Born"
+
+MECHANICAL CHECK: `node tools/publish.mjs episodes/<slug>` reads `protagonists` from `episode.json` and fails when it is missing, when a title names only some of the protagonists, when option 1 does not name all of them, when fewer than 3 options name all of them, when there are not exactly 5 options, or when a title is longer than 100 characters. It cannot tell whether a no-name title really refers to the whole group; that part is yours.
+
+---
+
 ## CONCRETE TITLES — NAME WHO AND WHAT HAPPENED
 
-This is the most important title rule. Curiosity comes from a concrete event, not from hiding what the video is about.
+Curiosity comes from a concrete event, not from hiding what the video is about.
 
 Every title must let a stranger who has not seen the video answer two questions from the title alone:
 
-1. WHO or WHAT is this about? — a named person, civilization, place or object.
-2. WHAT HAPPENED? — the central event in plain, strong words: killed, murdered, conspiracy, stole the throne, trial, war, found, sank.
+1. WHO or WHAT is this about? — the protagonists (see WHOLE VIDEO, WHOLE CAST): named people, a civilization, a place or an object.
+2. WHAT HAPPENED? — the central event of the whole video in plain, strong words: killed, murdered, conspiracy, stole the throne, trial, war, found, sank, born.
 
-If the honest answer is "some pharaoh" or "something happened at some trial", the title is too vague. Rewrite it.
+If the honest answer is "some pharaoh", "something happened at some trial" or "one of the gods in the video", the title is too vague. Rewrite it.
 
 NAME THE KEY FIGURES:
 
-- When the story has a famous figure, or a figure the story is built around, put the NAME in the title: Ramesses III, Zeus, Hannibal, Emperor Wu. Option 1 must contain it, and so should most of the other options.
+- When the story has famous protagonists, put their NAMES in the title: Ramesses III, Zeus, Hannibal, Emperor Wu; Athena, Apollo & Artemis. Option 1 must contain all of them, and so must at least 3 of the 5 options.
 - A famous name plus an unexpected event is the strongest hook there is, because the viewer's own knowledge does half the work: "Ramesses III — wasn't he one of Egypt's greatest pharaohs? Murdered by his own harem?"
 - Never replace a name the narration gives with a generic role or a pronoun. These are placeholders, not hooks: "the Pharaoh", "the King", "the Emperor", "the Goddess", "a Kingdom", "One Wife", "This Mummy", "She", "He", "Something Stranger".
-- When a key figure is obscure (the name means nothing to a newcomer), use the role and anchor it to a civilization or place: "The Prince Who Tried to Steal Egypt's Throne", not "Pentawer's Plot" and not "The Prince's Plot".
+- When a protagonist is obscure (the name means nothing to a newcomer), use the role and anchor it to a civilization or place. In a video about Pentawer himself: "The Prince Who Tried to Steal Egypt's Throne", not "Pentawer's Plot" and not "The Prince's Plot". List both forms in `protagonists`: `[["Pentawer", "Prince"]]`.
 - A role is fine in a title that is already concrete through the event and the setting ("The Pharaoh's Murder Plot That Ended in a Royal Trial"), but not as the only anchor of a title that hides the event.
 
 SAY WHAT HAPPENED:
 
 - Name the central event directly. Naming who it is about and what happened is NOT a spoiler: "The Harem Conspiracy That Killed Ramesses III" gives away the murder and still makes people click, because the pull is in HOW and WHY.
-- Pick one key part of the story per title (the murder, the forensic proof, the prince, the nameless mummy, the trial) and hit it dead center. Do not circle around it with riddles.
+- The event is the one the WHOLE video is about, not the event of one section. Hit it dead center. Do not circle around it with riddles.
 - A clever, oblique phrasing that only makes sense after watching is a failure, even if it is well written.
 
 WEAK vs STRONG (from harem-conspiracy):
@@ -166,36 +202,36 @@ Strong: "Ramesses III Was Murdered — His Mummy Proved It"
 Weak: "One Wife, One Son and a Plot Inside the Pharaoh's Own House" — whose house? what plot?
 Strong: "The Harem Conspiracy That Killed Ramesses III"
 
-Weak: "Why Does This Mummy Still Have No Name After 3,000 Years?" — which mummy? why should I care?
-Strong: "Unknown Man E: The Mummy Linked to a Pharaoh's Murder"
-
 ---
 
 ## TITLE RULES
 
 Generate 5 title options and output ALL 5.
 
-The user picks the final title, so the 5 options must be genuinely DIFFERENT — not the same sentence reworded. Each option focuses on a different key part of the story, and stays concrete about it, for example:
+The user picks the final title, so the 5 options must be genuinely DIFFERENT — not the same sentence reworded. All 5 sell the SAME whole video with all its protagonists; they differ in the way in, never in which part of the story they cover. For example (greek-gods-part-3):
 
-- the central event, with the key figure's name ("The Harem Conspiracy That Killed Ramesses III")
-- the discovery or proof ("Ramesses III Was Murdered — His Mummy Proved It")
-- a key secondary figure and what they did ("The Prince Who Tried to Steal Egypt's Throne")
-- the most astonishing concrete detail or object, named ("Unknown Man E: The Mummy Linked to a Pharaoh's Murder")
-- the consequence or the open question, still naming the event ("The Pharaoh's Murder Plot That Ended in a Royal Trial")
+- the protagonists' names + the premise ("Athena, Apollo & Artemis: The Gods Who Were Never Supposed to Be Born")
+- what stood against them, across the whole story ("Zeus Swallowed One Mother, Hera Hunted the Other: Athena, Apollo & Artemis")
+- the premise as a question ("Why Were Athena, Apollo and Artemis Never Supposed to Be Born?")
+- how they all came into the world, one striking image per protagonist ("One Born From Zeus's Head, Two on a Floating Island: Athena, Apollo & Artemis")
+- the group form, without names ("Three Gods Who Were Never Supposed to Be Born")
 
-No two options may share the same structure or the same hook. Every option must pass CONCRETE TITLES above.
+A secondary figure, a single object or a single scene (the prince, the nameless mummy, the olive tree, the Leto chase) is never the angle of a whole option: those are Short titles (see WHOLE VIDEO, WHOLE CAST).
+
+No two options may share the same structure. Every option must pass WHOLE VIDEO, WHOLE CAST and CONCRETE TITLES above.
 
 Evaluate every option against:
 
-1. Concreteness — who and what happened, from the title alone
-2. Curiosity
-2. Story potential
-3. Emotional or dramatic pull
-4. Clarity
-5. Accuracy
-6. Natural YouTube phrasing
-7. Match with the actual narration
-8. No unnecessary keyword stuffing
+1. Whole video — the whole story and all its protagonists, not one part
+2. Concreteness — who and what happened, from the title alone
+3. Curiosity
+4. Story potential
+5. Emotional or dramatic pull
+6. Clarity
+7. Accuracy
+8. Natural YouTube phrasing
+9. Match with the actual narration
+10. No unnecessary keyword stuffing
 
 Rank the 5 options from strongest to weakest. Option 1 is your recommendation.
 
@@ -253,6 +289,8 @@ Do not force the title into an exact character limit.
 Clarity and curiosity are more important than mathematical length.
 
 If a slightly longer title is substantially stronger, use it.
+
+YouTube's hard limit is 100 characters. In a series, every option ends with the series tag, for example `(Greek Gods, Part 3)`, and the tag counts toward the 100. Put the protagonists' names at the front, never after the tag: search results cut long titles from the end.
 
 ---
 
@@ -593,9 +631,11 @@ Before returning the answer verify:
 TITLE OPTIONS:
 
 - Are there exactly 5, ranked, with option 1 as the recommendation?
+- Does every title sell the WHOLE video? Would any of them fit a Short cut from one part of it? If so, move it to `short/shorts.md` and write a new one.
+- Does every title name ALL the protagonists, or none of them as a group, and never only some?
+- Does option 1 (and at least 3 of the 5) name all the protagonists, instead of "the Pharaoh", "the Emperor", "She", "This Mummy"?
 - From each title alone, can a stranger tell who it is about and what happened?
-- Does option 1 (and most others) name the famous or central figure, instead of "the Pharaoh", "the Emperor", "She", "This Mummy"?
-- Does each use a different angle and structure?
+- Does each use a different structure?
 - Is every single one publishable on its own?
 - Is each genuinely interesting and curiosity-driven?
 - Does each accurately represent the story?
@@ -609,7 +649,7 @@ CHAPTERS:
 - Are timestamps ascending and every chapter at least 10 seconds long?
 - Is every timestamp taken from SENTENCE TIMESTAMPS?
 - Does every name tell the viewer what that part is about, without spoiling the ending?
-- Did `node tools/publish.mjs episodes/<slug>` pass?
+- Did `node tools/publish.mjs episodes/<slug>` pass, for both the chapters and the titles?
 
 DESCRIPTION:
 

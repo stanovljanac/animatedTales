@@ -154,6 +154,7 @@ redizajnira između shotova.
 |---|---|---|---|
 | `slug` | string (kebab) | da | Mora da se poklapa sa imenom foldera. |
 | `title` | string | da | Ljudski naslov epizode. |
+| `protagonists` | array\<string \| array\<string\>\> | pre `publish.md` | Likovi o kojima je **ceo** video (svi, kad ih je dvoje-troje), tačno kako ih naslovi pišu; nepoznat lik je niz ravnopravnih oblika (`["Erra-imitti", "Gardener"]`). Iz njega `tools/publish.mjs` proverava naslove — `docs/publish.md` → WHOLE VIDEO, WHOLE CAST. |
 | `status` | enum | da | `draft` \| `in-progress` \| `done` |
 | `voice` | string \| null | da | ElevenLabs glas, npr. `"Nathaniel - Engaging, British and Calm"`. `null` kad nije zabeležen. |
 | `narration_file` | string \| null | da | Relativna putanja, obično `"narration.mp3"`. |

@@ -1,12 +1,13 @@
 // tools/publish.mjs
 //
-// Mehanički deo publish kompleta: titlovi iz `timing.json` i provera chaptera u `publish.md`.
+// Mehanički deo publish kompleta: titlovi iz `timing.json` i provera chaptera i naslova u `publish.md`.
 // Tekstualni deo (naslovi, description, hashtagovi) piše se po docs/publish.md.
 //
 //   node tools/publish.mjs episodes/<slug>
 //     -> piše episodes/<slug>/subtitles.srt
 //     -> štampa listu rečenica sa m:ss vremenima (materijal za chaptere)
-//     -> ako publish.md postoji, proverava njegove chaptere (izlaz 1 kad ne prolaze)
+//     -> ako publish.md postoji, proverava njegove chaptere i naslove prema
+//        episode.json.protagonists (izlaz 1 kad ne prolaze)
 //
 // Zašto SRT a ne JSON: YouTube Studio prima SRT, VTT, SBV i slične formate, JSON ne. SRT je
 // najjednostavniji i najmanje problematičan. Naracija u final.mp4 kreće od 0:00 (uvodni klip
@@ -152,6 +153,65 @@ export function validateChapters(chapters, duration) {
   return errors;
 }
 
+export const TITLE_RULES = { count: 5, maxChars: 100, minFullCast: 3 };
+
+/** TITLE OPTIONS iz publish.md -> [{ n, title, raw }]. Ugao posle poslednjeg „ — " nije deo naslova. */
+export function parseTitles(text) {
+  const lines = text.split(/\r?\n/);
+  const start = lines.findIndex((l) => l.trim() === 'TITLE OPTIONS:');
+  if (start < 0) return [];
+  const out = [];
+  for (const line of lines.slice(start + 1)) {
+    const m = line.trim().match(/^(\d+)\.\s+(.+)$/);
+    if (!m) {
+      if (out.length) break;
+      continue;
+    }
+    const cut = m[2].lastIndexOf(' — ');
+    out.push({ n: +m[1], title: (cut > 0 ? m[2].slice(0, cut) : m[2]).trim(), raw: line.trim() });
+  }
+  return out;
+}
+
+/** Ime kao cela reč, bez obzira na velika slova („Zeus's" da, „Zeusian" ne). */
+const nameRe = (name) =>
+  new RegExp(`(?<![\\p{L}\\p{N}])${name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}(?![\\p{L}\\p{N}])`, 'iu');
+
+/** Lik je ime ili niz ravnopravnih oblika (nepoznat lik: ime ili uloga koju naslovi koriste). */
+const forms = (p) => (Array.isArray(p) ? p : [p]);
+const label = (p) => forms(p).join(' / ');
+
+/**
+ * Naslov long videa prodaje ceo video: imenuje sve glavne likove (`episode.json.protagonists`)
+ * ili nijednog (grupno, „Three Gods Who…"), nikad samo neke — to je naslov za Short o delu priče.
+ * Prvi naslov i bar `minFullCast` od pet imenuju sve. Vraća listu grešaka.
+ */
+export function validateTitles(titles, protagonists, rules = TITLE_RULES) {
+  if (!protagonists?.length) {
+    return ['episode.json nema "protagonists" — upiši imena likova o kojima je ceo video (docs/publish.md → WHOLE VIDEO, WHOLE CAST)'];
+  }
+  const errors = [];
+  if (titles.length !== rules.count) errors.push(`naslova ima ${titles.length}, treba ${rules.count}`);
+  let full = 0;
+  for (const t of titles) {
+    if (t.title.length > rules.maxChars) {
+      errors.push(`naslov ${t.n} ima ${t.title.length} znakova, YouTube prima najviše ${rules.maxChars}`);
+    }
+    const named = protagonists.filter((p) => forms(p).some((f) => nameRe(f).test(t.title)));
+    const missing = protagonists.filter((p) => !named.includes(p)).map(label);
+    if (!missing.length) full++;
+    else if (t.n === 1) errors.push(`naslov 1 mora da imenuje sve glavne likove, fali: ${missing.join(', ')}`);
+    else if (named.length) {
+      errors.push(`naslov ${t.n} imenuje samo ${named.map(label).join(', ')} — to je naslov dela priče (Short), ne celog videa; fali: ${missing.join(', ')}`);
+    }
+  }
+  const need = Math.min(rules.minFullCast, rules.count);
+  if (full < need) {
+    errors.push(`samo ${full} od ${titles.length} naslova imenuje sve glavne likove (${protagonists.map(label).join(', ')}), treba bar ${need}`);
+  }
+  return errors;
+}
+
 function main(argv) {
   const dir = argv[0];
   if (!dir) {
@@ -168,12 +228,21 @@ function main(argv) {
 
   const pub = path.join(dir, 'publish.md');
   if (!fs.existsSync(pub)) return 0;
-  const chapters = parseChapters(fs.readFileSync(pub, 'utf8'));
+  const text = fs.readFileSync(pub, 'utf8');
+  const chapters = parseChapters(text);
   const errors = validateChapters(chapters, timing.duration);
   console.log(`\npublish.md · ${chapters.length} chaptera`);
   for (const e of errors) console.log(`  GREŠKA ${e}`);
   if (!errors.length) console.log('  chapteri prolaze YouTube pravila');
-  return errors.length ? 1 : 0;
+
+  const epFile = path.join(dir, 'episode.json');
+  const protagonists = fs.existsSync(epFile) ? JSON.parse(fs.readFileSync(epFile, 'utf8')).protagonists : undefined;
+  const titles = parseTitles(text);
+  const titleErrors = validateTitles(titles, protagonists);
+  console.log(`\npublish.md · ${titles.length} naslova · glavni likovi: ${protagonists?.map(label).join(', ') || '—'}`);
+  for (const e of titleErrors) console.log(`  GREŠKA ${e}`);
+  if (!titleErrors.length) console.log('  naslovi prodaju ceo video (svi glavni likovi ili nijedan)');
+  return errors.length || titleErrors.length ? 1 : 0;
 }
 
 if (process.argv[1]

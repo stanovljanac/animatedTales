@@ -8,6 +8,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import {
   buildCues, chunkTokens, wrapLines, srtTime, toSrt, parseChapters, validateChapters, clock, SUB_DEFAULTS,
+  parseTitles, validateTitles,
 } from '../tools/publish.mjs';
 
 /** Rečenica sa rečima od po 0.3s. */
@@ -85,6 +86,66 @@ test('chapteri: YouTube pravila', () => {
   assert.match(validateChapters(parseChapters('0:00 A\n0:05 B\n2:00 C'), 244).join(), /najmanje 10s/);
   assert.match(validateChapters(parseChapters('0:00 A\n2:00 B\n1:00 C'), 244).join(), /nije posle/);
   assert.match(validateChapters(parseChapters('0:00 A\n1:00 B\n4:00 C'), 244).join(), /najmanje 10s/);
+});
+
+const TRIO = ['Athena', 'Apollo', 'Artemis'];
+const titlesOf = (...ts) => parseTitles(`TITLE OPTIONS:\n${ts.map((t, i) => `${i + 1}. ${t} — ugao`).join('\n')}\n\nDESCRIPTION:\n1. nije naslov`);
+
+test('naslovi: parser odseca ugao posle poslednje crte i staje na kraju bloka', () => {
+  const ts = parseTitles('# x\n\nTITLE OPTIONS:\n1. Ramesses III Was Murdered — His Mummy Proved It — the forensic proof\n2. B — b\n\nDESCRIPTION:\n3. C — c');
+  assert.deepEqual(ts.map((t) => t.title), ['Ramesses III Was Murdered — His Mummy Proved It', 'B']);
+});
+
+test('naslovi: svi glavni likovi ili nijedan prolazi', () => {
+  const ts = titlesOf(
+    'Athena, Apollo & Artemis: The Gods Who Were Never Supposed to Be Born',
+    "Zeus Swallowed One Mother, Hera Hunted the Other: Athena, Apollo & Artemis",
+    'Why Were Athena, Apollo and Artemis Never Supposed to Be Born?',
+    "One Born From Zeus's Head, Two on a Floating Island: Athena, Apollo & Artemis",
+    'Three Gods Who Were Never Supposed to Be Born',
+  );
+  assert.deepEqual(validateTitles(ts, TRIO), []);
+});
+
+test('naslovi: naslov o jednom od glavnih likova je naslov za Short', () => {
+  const ts = titlesOf(
+    'Athena, Apollo & Artemis: The Gods Who Were Never Supposed to Be Born',
+    'Hera Hunted Apollo\'s Mother Across the Earth Until Delos Took Her In',
+    'Why Were Athena, Apollo and Artemis Never Supposed to Be Born?',
+    'Athena, Apollo and Artemis Again',
+    'Three Gods Who Were Never Supposed to Be Born',
+  );
+  const errors = validateTitles(ts, TRIO).join('\n');
+  assert.match(errors, /naslov 2 imenuje samo Apollo/);
+  assert.match(errors, /fali: Athena, Artemis/);
+});
+
+test('naslovi: prvi imenuje sve, većina imenuje sve, tačno 5, najviše 100 znakova', () => {
+  const partial = titlesOf('Three Gods', 'Three Gods 2', 'Three Gods 3', 'Athena, Apollo, Artemis', 'Athena, Apollo, Artemis 2');
+  const e1 = validateTitles(partial, TRIO).join('\n');
+  assert.match(e1, /naslov 1 mora da imenuje sve/);
+  assert.match(e1, /samo 2 od 5/);
+  assert.match(validateTitles(titlesOf('Athena Apollo Artemis'), TRIO).join(), /treba 5/);
+  const long = titlesOf(`Athena, Apollo & Artemis ${'x'.repeat(80)}`, 'Athena Apollo Artemis', 'Athena Apollo Artemis', 'x', 'y');
+  assert.match(validateTitles(long, TRIO).join(), /najviše 100/);
+});
+
+test('naslovi: ime se traži kao cela reč, bez obzira na velika slova i posesiv', () => {
+  const ts = titlesOf("Zeus's Daughter", 'ZEUS Again', 'Zeusian', 'x', 'y');
+  assert.match(validateTitles(ts, ['Zeus']).join(), /samo 2 od 5/);
+  assert.deepEqual(validateTitles(titlesOf('Ramesses III Was Murdered', 'Ramesses III', 'ramesses iii', 'x', 'y'), ['Ramesses III']), []);
+});
+
+test('naslovi: nepoznat lik prolazi pod imenom ili pod ulogom koju naslovi koriste', () => {
+  const sub = [['Erra-imitti', 'Gardener']];
+  const ok = titlesOf('The Gardener Who Became King', 'Erra-imitti, King for a Day', 'A Gardener on the Throne', 'x', 'y');
+  assert.deepEqual(validateTitles(ok, sub), []);
+  assert.match(validateTitles(titlesOf('x', 'y', 'z', 'w', 'v'), sub).join(), /naslov 1 mora .*fali: Erra-imitti \/ Gardener/);
+});
+
+test('naslovi: bez protagonists u episode.json nema provere', () => {
+  assert.match(validateTitles(titlesOf('a', 'b', 'c', 'd', 'e'), undefined).join(), /protagonists/);
+  assert.match(validateTitles(titlesOf('a', 'b', 'c', 'd', 'e'), []).join(), /protagonists/);
 });
 
 test('clock', () => {
