@@ -1,0 +1,2193 @@
+{
+  "schema_version": 2,
+  "episode": "substitute-king",
+  "generated_at": "2026-10-30T23:09:59Z",
+  "narration_duration": 255.713,
+  "fps": 24,
+  "beats": [
+    {
+      "beat_id": "B01",
+      "sentences": [
+        "S01"
+      ],
+      "start": 0,
+      "end": 6.38,
+      "dur": 6.38,
+      "device": null,
+      "narration_says": "When the moon went dark over ancient Assyria, the king's scholars had a way to save his life.",
+      "viewer_sees": "a blood-red eclipsed moon above the walls and palace terraces of Nineveh at night; on the palace roof two scholars in long fringed robes look up, one clutching a clay tablet",
+      "shots": [
+        {
+          "shot_id": "01",
+          "beat_id": "B01",
+          "link_group": null,
+          "t_in": 0,
+          "t_out": 6.375,
+          "use_in": 0,
+          "use_out": 6.375,
+          "use_len": 6.375,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot01.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "scholar",
+            "nineveh-palace-roof"
+          ],
+          "visual_priority": [
+            "two palace scholars on the roof looking up",
+            "the blood-red eclipsed moon at the upper-right",
+            "Nineveh and the Tigris below the parapet",
+            "the clay tablet clutched to the chest"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: two palace scholars on the roof at night, each one an Assyrian palace scholar, a grave bearded older man with a pale indoor face, a long grey-black beard curled in rows, an ankle-length fringed robe of undyed wool with a blue border, a plain white headband, clay-stained fingertips; the nearer one clutches a small clay tablet against his chest, the farther one lifts an open hand toward the sky.\nSCALE: the eclipsed moon hangs huge and low over the city, wider than any palace tower under it; the two scholars are small against the sky; the moon rules the upper-right of the frame.\nACTION: both men stand stopped at the parapet with their heads tipped back, watching the full moon turn the colour of blood over Assyria; the nearer one has halted mid-step with his tablet pressed to his chest, the farther one points up at the darkened disc as if counting where the shadow lies.\nSETTING: the flat roof terrace of the Assyrian palace at Nineveh, a parapet of stepped mud-brick crenellations, a floor of packed clay, the walled city and the river Tigris spread below; the seventh century BCE, the Assyrian capital asleep under the eclipse, flat mud-brick roofs and the white walls of the citadel stepping down toward the water, small fires glowing in courtyards, the dark ribbon of the Tigris catching the red light, a bronze lamp left burning on the parapet.\nCAMERA: camera stands low on the roof terrace a few paces from the scholars, low angle, wide.\nFRAME LAYOUT: left third — the two scholars at the parapet, near-camera and large, the nearer one cropped at the knee; center — the stepped crenellations and the roofs of Nineveh dropping away toward the river, far and hazy; upper-right — the huge blood-red eclipsed moon over the city.\nFACING: we see both scholars' faces and chests three-quarter on, tilted up toward the upper-right; their eyes are fixed on the moon, mouths slightly open.\nSCREEN DIRECTION: a thin wisp of cloud slides across the face of the moon toward screen-left; the hem of the nearer scholar's robe lifts toward screen-left in the night wind.\nLIGHT: deep copper-red moonlight from the upper-right washes over the roof and the men's faces; one thin silver sliver still burns on the moon's lower-left edge; small orange fires far below in the city; long soft red shadows fall toward screen-left.\nPALETTE: blood red, night indigo, mud-brick umber, bone white.\nDETAIL: woven wool and fringed hems of the robes, ringlets of the beards, chipped edges of the crenellations, roofs and walls of the city readable by outline.\nNOT IN FRAME: the king, soldiers, Latin letters, text, modern objects.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "low",
+            "location": "nineveh-palace-roof",
+            "time_light": "eclipse-night-red",
+            "camera_motion": "push"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B02",
+      "sentences": [
+        "S02"
+      ],
+      "start": 6.38,
+      "end": 13.86,
+      "dur": 7.48,
+      "device": null,
+      "narration_says": "They put another man on his throne — and when the danger had passed, they let that man die in the king's place.",
+      "viewer_sees": "the Nineveh throne room: a rough-handed commoner sits stiffly on the king's throne in the royal robe and crown while courtiers bow; from a dark doorway at the left edge the real king watches",
+      "shots": [
+        {
+          "shot_id": "02",
+          "beat_id": "B02",
+          "link_group": null,
+          "t_in": 6.375,
+          "t_out": 13.875,
+          "use_in": 0,
+          "use_out": 7.5,
+          "use_len": 7.5,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pan-right",
+          "source_file": "shots/shot02.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "substitute",
+            "assyrian-crown",
+            "nineveh-throne-room"
+          ],
+          "visual_priority": [
+            "the substitute sitting stiffly on the throne in royal robes",
+            "the Assyrian crown on his head",
+            "the real king watching from the dark doorway at the left edge",
+            "two bowing courtiers"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: an Assyrian commoner of about thirty, a broad sun-darkened face, a short rough black beard, cropped black hair, wide-set dark eyes, a thick neck and big calloused labourer's hands, the man put in the king's place, sitting stiffly upright on the king's throne in the king's own clothes — deep blue wool fringed at the hem and worked all over with gold rosettes, a red shawl wound across his chest — his big rough hands flat on the carved armrests, his eyes not daring to move.\nSUBJECT 2: the Assyrian royal crown, a tall truncated cone of white felt wrapped with gold bands of rosettes, a small pointed peak on top, two long red ribbons hanging down the back, sitting a little too large on his cropped head.\nACTION: two courtiers in fringed robes bow low toward the new king on the dais, while from a dark doorway at the far left of the hall the real king of Assyria watches in silence, wrapped in a plain dark cloak, bareheaded, his long squared beard in ringlets catching a thread of light.\nSETTING: a long Assyrian throne room at Nineveh, walls lined with carved grey gypsum relief slabs of winged spirits, a stepped stone dais with a carved ivory-and-bronze throne and footstool, cedar ceiling beams, high square windows under the roof; night, torches burning in bronze holders along the relief slabs, a brazier smoking on the dais steps, a hush over the hall.\nCAMERA: camera stands on the stone floor of the hall, eye level, wide enough to hold both the doorway and the throne.\nFRAME LAYOUT: left edge — a dark doorway with the real king half-lit in it, medium and shadowed; center — the two bowing courtiers, mid-frame; right third — the dais and the throne with the stand-in, near-camera and large.\nFACING: we see the stand-in's face and chest three-quarter on, turned toward screen-left; the courtiers are bowed in profile toward screen-right; the real king in the doorway faces screen-right, his eyes on the throne.\nSCREEN DIRECTION: the courtiers bend toward screen-right; torch smoke drifts toward screen-right along the reliefs, toward the throne.\nLIGHT: warm torchlight from bronze holders on the walls, strongest on the throne and the stand-in's robe; the left doorway sunk in deep shadow with only a rim of light on the real king's beard and cheekbone.\nPALETTE: torch gold, royal blue, gypsum grey, shadow black.\nDETAIL: gold rosettes on the robe, carved feathers of the winged spirits on the slabs, cracked skin on the stand-in's knuckles, beard ringlets of the real king catching a thin edge of light.\nNOT IN FRAME: drawn weapons, blood, Latin letters, text, modern objects.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "nineveh-throne-room",
+            "time_light": "torchlit-night",
+            "camera_motion": "pan"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B03",
+      "sentences": [
+        "S03"
+      ],
+      "start": 13.86,
+      "end": 21.92,
+      "dur": 8.06,
+      "device": null,
+      "narration_says": "To the people of Mesopotamia, the stars were the writing of heaven, and the scholars of the palace spent their nights reading it.",
+      "viewer_sees": "the palace roof under a dense field of stars: three scholars with clay tablets and styluses copy what they see in the sky, a low brazier glowing between them",
+      "shots": [
+        {
+          "shot_id": "03",
+          "beat_id": "B03",
+          "link_group": null,
+          "t_in": 13.875,
+          "t_out": 21.917,
+          "use_in": 0,
+          "use_out": 8.042,
+          "use_len": 8.042,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pull",
+          "source_file": "shots/shot03.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "scholar",
+            "nineveh-palace-roof"
+          ],
+          "visual_priority": [
+            "three palace scholars copying the sky onto clay",
+            "the dense field of stars and the Milky Way",
+            "the low glowing brazier between them",
+            "wet clay tablets on their knees"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: three palace scholars at work on the roof, each one an Assyrian palace scholar, a grave bearded older man with a pale indoor face, a long grey-black beard curled in rows, an ankle-length fringed robe of undyed wool with a blue border, a plain white headband, clay-stained fingertips; they sit cross-legged on reed mats with damp clay tablets on their knees and reed styluses in their hands.\nSCALE: the sky takes the upper two thirds of the frame, vast over the three small men; the star field is dense, thousands of stars and the pale band of the Milky Way arching from edge to edge.\nACTION: the oldest scholar points up at a bright cluster of stars and calls out what he sees, while the other two press the wedge-shaped signs of his words into their clay, copying the writing of heaven line by line.\nSETTING: the flat roof terrace of the Assyrian palace at Nineveh, a parapet of stepped mud-brick crenellations, a floor of packed clay, the walled city and the river Tigris spread below; a clear moonless night, a low bronze brazier glowing between the men, a water jar for wetting the clay, a row of finished tablets drying on a plank, the dark roofs of Nineveh below the parapet.\nCAMERA: camera stands on the roof a few paces from the scholars, eye level, wide.\nFRAME LAYOUT: lower third — the three scholars and the brazier, left of center, near-camera and medium; upper two thirds — the night sky crowded with stars, the bright cluster at the upper-right; right edge — the crenellated parapet, cropped.\nFACING: we see the scholars' faces three-quarter on; the oldest looks up toward the upper-right, the two younger look down at their tablets.\nSCREEN DIRECTION: a shooting star streaks toward screen-left across the upper third; ember sparks from the brazier rise toward the upper edge.\nLIGHT: cold starlight over everything; the brazier's small orange glow lights the men's hands, beards and the wet clay from below.\nPALETTE: star white, deep indigo, ember orange, clay ochre.\nDETAIL: wedge marks shining wet in the clay, robe fringes, the weave of the reed mats, individual stars sharp and countless.\nNOT IN FRAME: the moon, the king, Latin letters, text, modern objects.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "nineveh-palace-roof",
+            "time_light": "starlit-night",
+            "camera_motion": "pull"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B04",
+      "sentences": [
+        "S04"
+      ],
+      "start": 21.92,
+      "end": 25.06,
+      "dur": 3.14,
+      "device": null,
+      "narration_says": "An eclipse was the darkest message of all.",
+      "viewer_sees": "the moon close and huge: the dark shadow has bitten deep into its disc, the rest glowing blood-red, a thin ring of light at its edge",
+      "shots": [
+        {
+          "shot_id": "04",
+          "beat_id": "B04",
+          "link_group": null,
+          "t_in": 21.917,
+          "t_out": 25.042,
+          "use_in": 0,
+          "use_out": 3.125,
+          "use_len": 3.125,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot04.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "the eclipsed moon filling the frame",
+            "the copper-red shadow swallowing the disc",
+            "the last thin silver sliver at the lower-left edge",
+            "red-edged clouds"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: the moon in eclipse, close and enormous: nearly its whole disc darkened to a deep copper-red by the shadow sweeping across it from the upper-right, one thin crescent of bright silver light still clinging to its lower-left edge.\nSCALE: the moon fills most of the frame, far larger than it ever looks in a night sky; the faint stars around it are tiny pinpricks; the dark red disc presses down on the viewer.\nACTION: the last bright sliver of the moon is being eaten away as the red shadow spreads over the disc, the darkest message the sky can send; the red is deepest at the upper-right, where the shadow has lain longest, and warms to copper and smoky orange where it meets the silver edge.\nSETTING: the night sky over Assyria, black and empty around the moon, no ground and no horizon anywhere in the frame; a few thin bands of high cloud, fine as smoke, lit red along their edges where they pass the disc; the stars close to the moon drowned in its dull glow, the ones farther out sharp and cold.\nCAMERA: camera looks straight up at the moon, low angle, close.\nFRAME LAYOUT: center and right third — the eclipsed moon, filling most of the frame; lower-left — the bright silver sliver; left edge — two red-edged clouds, cropped.\nFACING: the moon's face is seen full on, its dark lunar seas visible through the red glow.\nSCREEN DIRECTION: thin clouds slide toward screen-left across the lower edge of the disc; the edge of the shadow creeps toward the lower-left; a faint star near the rim winks out as the shadow passes it.\nLIGHT: dim copper-red glow from the darkened disc, the silver sliver bright and cold, the sky around it pure black; the clouds lit from inside with red.\nPALETTE: blood red, copper, black, silver.\nDETAIL: craters and dark lunar seas visible through the red, the soft blurred edge of the shadow, a faint ring of light hugging the rim.\nNOT IN FRAME: people, buildings, the horizon, Latin letters, text, modern objects.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "CU",
+            "angle": "low",
+            "location": "night-sky",
+            "time_light": "eclipse-night-red",
+            "camera_motion": "push"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B05",
+      "sentences": [
+        "S05"
+      ],
+      "start": 25.06,
+      "end": 30.78,
+      "dur": 5.72,
+      "device": "process-cutaway",
+      "narration_says": "They watched which part of the moon the shadow covered, because each part stood for a land.",
+      "viewer_sees": "PROCESS / CUTAWAY — the moon disc drawn as a scholar's diagram on clay: four quarters, each tied by a thin line to a land at the frame edge (Akkad south, Elam east, Amurru west, Subartu north); the eclipse shadow creeps across one quarter",
+      "shots": [
+        {
+          "shot_id": "05",
+          "beat_id": "B05",
+          "link_group": null,
+          "t_in": 25.042,
+          "t_out": 30.792,
+          "use_in": 0,
+          "use_out": 5.75,
+          "use_len": 5.75,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "hold",
+          "source_file": "shots/shot05.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "the incised moon disc split into four quarters",
+            "the shadow covering the upper quarter of Subartu",
+            "four small pictured lands at the tablet edges",
+            "red eclipse light on the clay"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a large flat clay tablet seen from straight above, a scholar's diagram of the eclipsed moon incised into it: a big circle for the moon's disc, split by two crossing lines into four equal quarters, each quarter standing for one land.\nACTION: a dark red-brown shadow creeps across the upper quarter of the incised moon and fills it, while the other three quarters stay pale bare clay.\nSETTING: the tablet lies on a scholar's worktable; from each quarter of the disc a thin incised line runs out to a small picture of a land at the tablet's edge — at the upper edge, Subartu in the north, the king's own land of Assyria, drawn as a little walled city on a mound with a winged-bull gate; at the right edge, Elam in the east, a row of snowy mountain peaks; at the left edge, Amurru in the west, black tents and cedar trees by a sea; at the lower edge, Akkad in the south, palm trees and a stepped temple tower beside a river.\nCAMERA: camera looks straight down at the tablet, overhead, close.\nFRAME LAYOUT: center — the incised moon disc and its four quarters, near-camera and large; upper edge — the little walled city of Subartu under the shadowed quarter; right edge — the mountains of Elam; left edge — the tents and cedars of Amurru; lower edge — the palms and temple tower of Akkad.\nFACING: the diagram is seen flat and square-on; the four little lands face outward from the disc toward the edges of the tablet.\nSCREEN DIRECTION: the dark shadow spreads downward from the upper edge across the top quarter of the disc, toward the center.\nLIGHT: red light of the eclipse falling across the tablet from the upper-right, a small lamp flame at the lower-right corner warming the clay; deep shadow in every incised line.\nPALETTE: raw clay ochre, blood red, lamp gold, shadow brown.\nDETAIL: crisp incised lines in the clay, thumbprints along the rounded edges of the tablet, tiny walls, peaks, tents and palms readable by outline, the grainy edge of the creeping shadow.\nNOT IN FRAME: hands, people, Latin letters, readable text, modern objects.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "map-diagram",
+            "shot_size": "CU",
+            "angle": "overhead",
+            "location": "omen-diagram",
+            "time_light": "eclipse-night-red",
+            "camera_motion": "locked"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B06",
+      "sentences": [
+        "S06"
+      ],
+      "start": 30.78,
+      "end": 35.8,
+      "dur": 5.02,
+      "device": null,
+      "narration_says": "If the shadow fell on the king's land, the king would die.",
+      "viewer_sees": "the king of Assyria on his throne lifts his eyes to a high window where the eclipsed moon hangs dark red; the window's red light falls across him like a shadow",
+      "shots": [
+        {
+          "shot_id": "06",
+          "beat_id": "B06",
+          "link_group": null,
+          "t_in": 30.792,
+          "t_out": 35.792,
+          "use_in": 0,
+          "use_out": 5,
+          "use_len": 5,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot06.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "esarhaddon",
+            "assyrian-crown",
+            "nineveh-throne-room"
+          ],
+          "visual_priority": [
+            "Esarhaddon on his throne looking up",
+            "the eclipsed moon in the high window at the upper-right",
+            "the bar of red light falling across him",
+            "the Assyrian crown"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a gaunt Assyrian king in his forties, a long squared black beard set in tight rows of ringlets, shoulder-length black hair curled at the nape, heavy-lidded dark eyes under thick brows, a strong hooked nose, heavy gold crescent earrings, seated on his throne in full royal dress — an ankle-length blue robe heavy with embroidered rosettes, a red shawl with a deep tasselled fringe over one shoulder, gold rosette bracelets on both wrists — gripping the armrests as he lifts his eyes.\nSUBJECT 2: the Assyrian royal crown, a tall truncated cone of white felt wrapped with gold bands of rosettes, a small pointed peak on top, two long red ribbons hanging down the back, on his head.\nACTION: the king raises his face toward a high window where the eclipsed moon hangs dark red, and the bar of red light from that window falls across his chest and lap like a shadow laid on him.\nSETTING: a long Assyrian throne room at Nineveh, walls lined with carved grey gypsum relief slabs of winged spirits, a stepped stone dais with a carved ivory-and-bronze throne and footstool, cedar ceiling beams, high square windows under the roof; late at night, the hall empty of courtiers, braziers burning low on the dais steps, the carved spirits on the walls dim.\nCAMERA: camera stands low on the floor below the dais, low angle, medium.\nFRAME LAYOUT: left third — the king on his throne, near-camera and large, cropped at the knee; upper-right — one high square window with the blood-red moon framed in it; center — the bar of red light slanting from the window down across the king.\nFACING: we see the king's face and chest three-quarter on, tipped up toward the upper-right; his eyes are on the moon.\nSCREEN DIRECTION: the bar of red light reaches from the upper-right toward the king at screen-left; brazier smoke curls up toward the upper-right.\nLIGHT: a single slanting shaft of dim red moonlight from the high window falls across the king like a band of shadow; the rest of the hall is dark; a low orange glow of braziers from below catches his beard.\nPALETTE: blood red, royal blue, gold, shadow black.\nDETAIL: ringlets of the beard catching red light, gold rosettes on the robe, carved feathers on the relief slabs, knuckles tight on the armrest.\nNOT IN FRAME: courtiers, scholars, the stand-in, Latin letters, text, modern objects.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "low",
+            "location": "nineveh-throne-room",
+            "time_light": "eclipse-night-red",
+            "camera_motion": "push"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B07",
+      "sentences": [
+        "S07",
+        "S08"
+      ],
+      "start": 35.8,
+      "end": 41.86,
+      "dur": 6.06,
+      "device": "macro-object",
+      "narration_says": "But an omen was a warning, not a verdict. And a warning could be redirected.",
+      "viewer_sees": "MACRO OBJECT — a scholar's hands turn a clay omen tablet away from the king's cylinder seal toward an empty second stool; the red eclipse moon trembles small in a bowl of water beside it",
+      "shots": [
+        {
+          "shot_id": "07",
+          "beat_id": "B07",
+          "link_group": null,
+          "t_in": 35.792,
+          "t_out": 41.875,
+          "use_in": 0,
+          "use_out": 6.083,
+          "use_len": 6.083,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pan-right",
+          "source_file": "shots/shot07.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "the scholar's hands turning the omen tablet toward the empty stool",
+            "the king's lapis cylinder seal at the left",
+            "the red moon trembling in the bowl of water",
+            "the empty stool with the folded red cloth"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a palace scholar's clay-stained hands, cropped at the wrists, gripping a small clay omen tablet covered in fine cuneiform and turning it on the tabletop.\nACTION: the hands swing the tablet round, away from the king's cylinder seal at the left and toward an empty wooden stool at the right, as if handing its message on to someone else: the left hand steadies the far edge of the tablet, the right thumb pushes its near corner round, and the omen that was meant for the king now faces the empty seat.\nSETTING: a scholar's worktable of dark cedar in a lamp-lit room of the palace at Nineveh: at the left, the king's cylinder seal of blue lapis on a gold pin beside a clay sealing rolled with a royal lion hunt; at the right edge, a small empty wooden stool with a folded fringed red cloth on it, waiting for someone not yet chosen; at the lower-left, a shallow bronze bowl of water in which the red eclipsed moon shines small and trembling; a reed stylus and a lump of wet clay wrapped in a damp cloth near the hands.\nCAMERA: camera stands over the worktable, high angle, close.\nFRAME LAYOUT: left third — the lapis cylinder seal and its clay sealing, near-camera; center — the hands and the turning tablet, near-camera and large; right third — the empty stool with the folded red cloth; lower-left — the bronze bowl with the moon's reflection.\nFACING: the written face of the tablet is turning from screen-left toward screen-right, toward the empty stool.\nSCREEN DIRECTION: the tablet swings toward screen-right; a ripple crosses the water in the bowl toward screen-left.\nLIGHT: one oil lamp at the upper-left throws warm light across the table; a cold red point of light glows from the moon in the bowl; long finger shadows fall toward screen-right.\nPALETTE: clay ochre, lapis blue, lamp gold, blood red.\nDETAIL: wedge-shaped signs pressed into the tablet, clay dried in the creases of the knuckles, tiny carved lions on the seal, the red reflection breaking on the ripple.\nNOT IN FRAME: faces, the king, Latin letters, readable text, modern objects.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "CU",
+            "angle": "high",
+            "location": "scholar-workroom",
+            "time_light": "single-lamp",
+            "camera_motion": "pan"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B08",
+      "sentences": [
+        "S09"
+      ],
+      "start": 41.86,
+      "end": 46.86,
+      "dur": 5,
+      "device": null,
+      "narration_says": "In the seventh century BCE, Assyria was ruled by Esarhaddon.",
+      "viewer_sees": "Esarhaddon, king of Assyria, stands between the carved winged human-headed bulls of his palace gate: curled beard, tall royal cap, fringed robe, a mace in hand",
+      "shots": [
+        {
+          "shot_id": "08",
+          "beat_id": "B08",
+          "link_group": null,
+          "t_in": 41.875,
+          "t_out": 46.875,
+          "use_in": 0,
+          "use_out": 5,
+          "use_len": 5,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pull",
+          "source_file": "shots/shot08.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "esarhaddon",
+            "assyrian-crown"
+          ],
+          "visual_priority": [
+            "Esarhaddon in full royal dress at his palace gate",
+            "the two colossal winged bulls towering over him",
+            "the Assyrian crown",
+            "the royal parasol held over him"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a gaunt Assyrian king in his forties, a long squared black beard set in tight rows of ringlets, shoulder-length black hair curled at the nape, heavy-lidded dark eyes under thick brows, a strong hooked nose, heavy gold crescent earrings, standing at the gate of his palace in the dress of a king of Assyria: a blue robe to the ankles sewn with rows of golden rosettes, a crimson shawl edged with tassels, gold bracelets, a gold-headed mace held upright in his right hand.\nSUBJECT 2: the Assyrian royal crown, a tall truncated cone of white felt wrapped with gold bands of rosettes, a small pointed peak on top, two long red ribbons hanging down the back, on his head, its ribbons lifting in the hot wind.\nSCALE: the two winged bulls of the gate tower over the king, each three times his height; their crowned human heads are far above his; he reads small between them yet stands at the very center of the frame.\nACTION: Esarhaddon, king of Assyria in the seventh century BCE, steps out between the colossal winged bulls into the noon sun while a beardless attendant holds a fringed royal parasol over his head.\nSETTING: the great gate of the palace at Nineveh, two colossal human-headed winged bulls carved from pale stone flanking the doorway, bands of glazed brick in blue and yellow above the arch, a paved forecourt, guards with tall spears at the edges.\nCAMERA: camera stands low in the forecourt facing the gate, low angle, wide.\nFRAME LAYOUT: left third — one winged bull, cropped at the upper edge; center — the king and the parasol bearer in the doorway, near-camera and large; right third — the second winged bull, cropped at the upper edge.\nFACING: we see the king's face and chest three-quarter on, turned toward screen-right; the bulls face the camera with their carved stone eyes.\nSCREEN DIRECTION: the fringe of the king's red shawl and the parasol tassels stir toward screen-right in the hot wind.\nLIGHT: hard noon sun from straight above, short black shadows under the bulls' wings and at the king's feet, the glazed bricks glinting.\nPALETTE: pale limestone, royal blue, gold, glazed yellow.\nDETAIL: carved feathers on the bulls' wings, curled stone beards, gold rosettes, parasol fringe, the ringlets of the king's beard sharp.\nNOT IN FRAME: the stand-in, scholars, the moon, Latin letters, text, modern objects.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "LS",
+            "angle": "low",
+            "location": "nineveh-palace-gate",
+            "time_light": "hard-noon",
+            "camera_motion": "pull"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B09",
+      "sentences": [
+        "S10"
+      ],
+      "start": 46.86,
+      "end": 51.34,
+      "dur": 4.48,
+      "device": "ledger-accumulation",
+      "narration_says": "Hundreds of letters from his scholars survive, and they show how it was done.",
+      "viewer_sees": "LEDGER — the royal archive at Nineveh: hundreds of small clay letter-tablets packed in shelves and reed baskets, a scribe adding still more until a basket spills over",
+      "shots": [
+        {
+          "shot_id": "09",
+          "beat_id": "B09",
+          "link_group": null,
+          "t_in": 46.875,
+          "t_out": 51.333,
+          "use_in": 0,
+          "use_out": 4.458,
+          "use_len": 4.458,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot09.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "nineveh-archive"
+          ],
+          "visual_priority": [
+            "the royal archive at Nineveh packed with hundreds of letters",
+            "the overflowing reed basket",
+            "the young scribe adding one more letter",
+            "shelves to the ceiling"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: the royal tablet archive of the palace at Nineveh, narrow brick rooms lined floor to ceiling with wooden shelves of small clay tablets, reed baskets and clay jars of tablets stacked on the floor, crammed with the letters of the king's scholars.\nSCALE: hundreds upon hundreds of small clay tablets fill every shelf from the floor to the ceiling, each no bigger than a palm; the scribe is small among them; the rows of tablets run out of the frame on both sides.\nACTION: a young scribe in a fringed wool robe drops one more small clay letter onto the top of a full reed basket, and the basket overflows, tablets sliding over its rim onto the floor; in his other arm he still holds a whole stack of letters waiting for a place.\nSETTING: the archive of the citadel of Nineveh, where these letters would lie buried for more than two thousand years; the shelves are rough cedar planks on brick supports, the tablets standing on their edges in long rows like closed books; clay tags tied to the baskets, a wooden ladder leaning against the highest shelf, more baskets stacked three high along the wall, broken clay envelopes swept into a corner.\nCAMERA: camera stands at the end of the archive room, eye level, medium.\nFRAME LAYOUT: left third — the young scribe and the overflowing basket, near-camera and large; center — tall shelves packed with tablets, mid-frame; right third — more shelves and clay jars, far and dim.\nFACING: we see the scribe's face three-quarter on, looking down at the spilling basket, turned toward screen-right.\nSCREEN DIRECTION: the spilling tablets slide off the basket toward the lower-right corner; dust drifts up toward the upper-left.\nLIGHT: one oil lamp in a wall niche, gold on the edges of the clay, deep shadow between the shelves.\nPALETTE: clay ochre, lamp gold, shadow umber, reed tan.\nDETAIL: hundreds of separate tablets with tiny wedge-shaped signs, small clay envelopes, the weave of the reed baskets, clay tags hanging from the shelves.\nNOT IN FRAME: the king, the moon, windows, Latin letters, readable text, modern objects.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "nineveh-archive",
+            "time_light": "single-lamp",
+            "camera_motion": "push"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B10",
+      "sentences": [
+        "S11"
+      ],
+      "start": 51.34,
+      "end": 54.98,
+      "dur": 3.64,
+      "device": null,
+      "narration_says": "When the shadow fell on his lands, Esarhaddon left his throne.",
+      "viewer_sees": "Esarhaddon steps down from his throne and walks out through a dark doorway at the left; the throne stands empty behind him, the red moon in the high window",
+      "shots": [
+        {
+          "shot_id": "10",
+          "beat_id": "B10",
+          "link_group": null,
+          "t_in": 51.333,
+          "t_out": 55,
+          "use_in": 0,
+          "use_out": 3.667,
+          "use_len": 3.667,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pan-left",
+          "source_file": "shots/shot10.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "esarhaddon",
+            "assyrian-crown",
+            "nineveh-throne-room"
+          ],
+          "visual_priority": [
+            "Esarhaddon walking away from his throne toward the dark doorway at the left",
+            "the empty throne with the Assyrian crown on its seat",
+            "the red moon in the high window",
+            "the dais steps"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a gaunt Assyrian king in his forties, a long squared black beard set in tight rows of ringlets, shoulder-length black hair curled at the nape, heavy-lidded dark eyes under thick brows, a strong hooked nose, heavy gold crescent earrings, bareheaded now, in his long fringed blue robe, his royal shawl left behind, walking away from his throne with his eyes cast down.\nSUBJECT 2: the Assyrian royal crown, a tall truncated cone of white felt wrapped with gold bands of rosettes, a small pointed peak on top, two long red ribbons hanging down the back, left behind, resting alone on the seat of the empty throne.\nACTION: the king steps down off the last stair of the dais and walks toward a dark doorway at the left, leaving the empty throne and his crown to the red light of the eclipse.\nSETTING: a long Assyrian throne room at Nineveh, walls lined with carved grey gypsum relief slabs of winged spirits, a stepped stone dais with a carved ivory-and-bronze throne and footstool, cedar ceiling beams, high square windows under the roof; the night of the eclipse, the hall emptied, two guards at the far wall with their heads turned away, a small hand lamp waiting in the doorway.\nCAMERA: camera stands on the floor of the hall near the foot of the dais, eye level, wide.\nFRAME LAYOUT: left third — the king walking toward a dark doorway at the left edge, near-camera and large; center — the steps of the dais; right third — the empty throne with the crown on its seat, medium; upper-right — a high window with the blood-red eclipsed moon.\nFACING: we see the king's face and chest three-quarter on as he walks toward screen-left, glancing back over his shoulder at the throne.\nSCREEN DIRECTION: the king walks toward screen-left, his robe trailing; the red light from the window slants toward screen-left across the empty throne.\nLIGHT: dim red moonlight from the high window falls on the throne and the crown; the king is half lit by the small hand lamp at the doorway; the left edge is dark.\nPALETTE: blood red, royal blue, gold, shadow black.\nDETAIL: fringed hem dragging on the stone, gold rosettes of the crown catching red light, small carved figures on the throne's armrests.\nNOT IN FRAME: the stand-in, courtiers, Latin letters, text, modern objects.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "nineveh-throne-room",
+            "time_light": "eclipse-night-red",
+            "camera_motion": "pan"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B11",
+      "sentences": [
+        "S12"
+      ],
+      "start": 54.98,
+      "end": 63.32,
+      "dur": 8.34,
+      "device": null,
+      "narration_says": "Another man sat on it, washed, anointed and dressed in the king's robes, with a young woman beside him as his queen.",
+      "viewer_sees": "the stand-in is prepared — washed with water, anointed with oil from a horn, dressed by attendants in the king's robe → enthroned, a young veiled woman seated beside him as his queen",
+      "shots": [
+        {
+          "shot_id": "11",
+          "beat_id": "B11",
+          "link_group": null,
+          "t_in": 55,
+          "t_out": 63.333,
+          "use_in": 0,
+          "use_out": 8.333,
+          "use_len": 8.333,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pull",
+          "source_file": "shots/shot11.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "substitute",
+            "assyrian-crown",
+            "nineveh-throne-room"
+          ],
+          "visual_priority": [
+            "the substitute on the throne being washed, anointed and dressed",
+            "the veiled young queen beside him",
+            "oil poured from a horn over his head",
+            "the Assyrian crown held ready on a cushion"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: an Assyrian commoner of about thirty, a broad sun-darkened face, a short rough black beard, cropped black hair, wide-set dark eyes, a thick neck and big calloused labourer's hands, seated on the king's throne, his hair and beard still wet from washing, the king's long fringed robe of deep blue wool embroidered with gold rosettes being fastened on him, his hands stiff on his knees.\nSUBJECT 2: the Assyrian royal crown, a tall truncated cone of white felt wrapped with gold bands of rosettes, a small pointed peak on top, two long red ribbons hanging down the back, held ready on a red cushion by a kneeling attendant beside the throne.\nACTION: around the stand-in the making of a king happens all at once: one attendant pours oil from a polished horn over his head, another kneels with a bronze basin of water at his feet, a third pulls the fringed red royal shawl over his shoulder, and a young woman veiled in fine pale linen sits on a lower chair at his side as his queen.\nSETTING: a long Assyrian throne room at Nineveh, walls lined with carved grey gypsum relief slabs of winged spirits, a stepped stone dais with a carved ivory-and-bronze throne and footstool, cedar ceiling beams, high square windows under the roof; night, torches lit along the relief slabs, a censer smoking on the dais, two scholars watching from the edge of the hall.\nCAMERA: camera stands on the floor of the hall facing the dais, eye level, medium.\nFRAME LAYOUT: right third — the stand-in on the throne, near-camera and large, oil running down his face; right edge — the veiled young queen, cropped at the shoulder; center — the attendants with the oil horn, the basin and the shawl; lower-center — the kneeling attendant holding the crown on its cushion; left edge — two scholars, far and dim.\nFACING: we see the stand-in's face three-quarter on, turned toward screen-left, his eyes shut against the oil; the queen looks down at her hands; the attendants and scholars face screen-right toward him.\nSCREEN DIRECTION: oil runs down from the horn over his head and beard; the attendants lean toward screen-right; censer smoke drifts toward screen-left.\nLIGHT: warm torchlight from both walls, oil shining gold on his hair and face, the scholars at the left edge in shadow.\nPALETTE: torch gold, royal blue, linen white, shadow brown.\nDETAIL: glistening oil on the wet beard, gold rosettes, fine weave of the veil, the bronze rim of the basin, cracked skin on his hands.\nNOT IN FRAME: the real king, weapons, Latin letters, text, modern objects.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "nineveh-throne-room",
+            "time_light": "torchlit-night",
+            "camera_motion": "pull"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B12",
+      "sentences": [
+        "S13",
+        "S14"
+      ],
+      "start": 63.32,
+      "end": 74.08,
+      "dur": 10.76,
+      "device": null,
+      "narration_says": "One scholar wrote: \"I wrote down whatever signs there were, and had them recited in front of Shamash,\" the sun god. \"The substitute king took the signs on himself.\"",
+      "viewer_sees": "before the winged sun-disc of Shamash on an altar at dawn, a scholar recites from a clay tablet; the substitute king on his throne bows his head as if taking a weight onto his shoulders",
+      "shots": [
+        {
+          "shot_id": "12",
+          "beat_id": "B12",
+          "link_group": "B12",
+          "t_in": 63.333,
+          "t_out": 70.583,
+          "use_in": 0,
+          "use_out": 7.25,
+          "use_len": 7.25,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pan-right",
+          "source_file": "shots/shot12.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "scholar",
+            "substitute",
+            "shamash-shrine"
+          ],
+          "visual_priority": [
+            "the palace scholar reciting the omens from a tablet",
+            "the bronze sun-disc of Shamash with the rising sun over it",
+            "the substitute on his portable throne at the right",
+            "incense smoke drifting toward the throne"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: an Assyrian palace scholar, a grave bearded older man with a pale indoor face, a long grey-black beard curled in rows, an ankle-length fringed robe of undyed wool with a blue border, a plain white headband, clay-stained fingertips, standing before the altar of the sun god, holding up a long clay tablet in both hands and reciting from it aloud, his mouth open on the words.\nSUBJECT 2: an Assyrian commoner of about thirty, a broad sun-darkened face, a short rough black beard, cropped black hair, wide-set dark eyes, a thick neck and big calloused labourer's hands, small and seated on a portable throne at the right of the courtyard in the king's blue robe and crown, listening with his head lowered.\nACTION: the scholar reads out, one after another, every evil sign that has appeared — in the sky, on the earth, in malformed births — so that the sun god hears them spoken over the man on the throne.\nSETTING: an open temple courtyard at Nineveh, a stepped mud-brick altar crowned by a bronze sun-disc of Shamash with a four-pointed star and wavy rays, tall bronze incense stands, reed mats on a brick pavement; first dawn, the rim of the rising sun just showing over the courtyard wall directly above the bronze sun-disc, as if the god himself were looking down; two other scholars waiting with more tablets.\nCAMERA: camera stands on the brick pavement of the courtyard, eye level, wide.\nFRAME LAYOUT: left third — the reciting scholar, near-camera and large; center — the stepped altar and its bronze sun-disc, the rising sun at the upper edge; right third — the stand-in on the portable throne, medium.\nFACING: we see the scholar's face and chest three-quarter on, turned toward screen-right toward the altar and the throne; the stand-in faces screen-left, his face lowered.\nSCREEN DIRECTION: incense smoke streams toward screen-right, toward the throne; the first sunbeams fan down from the upper edge.\nLIGHT: first dawn, a pale gold glow from the sun rising over the wall at the top of the frame, cool blue shadow still over the pavement, the bronze disc flashing.\nPALETTE: dawn gold, cool slate blue, bronze, clay ochre.\nDETAIL: wavy rays and four-pointed star on the sun-disc, wedge signs on the tablet, robe fringes, curling incense smoke.\nNOT IN FRAME: the real king, weapons, Latin letters, readable text, modern objects.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "shamash-shrine",
+            "time_light": "first-dawn",
+            "camera_motion": "pan"
+          }
+        },
+        {
+          "shot_id": "13",
+          "beat_id": "B12",
+          "link_group": "B12",
+          "t_in": 70.583,
+          "t_out": 74.083,
+          "use_in": 0,
+          "use_out": 3.5,
+          "use_len": 3.5,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot13.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "substitute",
+            "assyrian-crown",
+            "shamash-shrine"
+          ],
+          "visual_priority": [
+            "the substitute bowed under the signs, palms up on his knees",
+            "the hard shaft of dawn light on his shoulders",
+            "the Assyrian crown on his bowed head",
+            "the scholar's tablet held up at the left edge"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: an Assyrian commoner of about thirty, a broad sun-darkened face, a short rough black beard, cropped black hair, wide-set dark eyes, a thick neck and big calloused labourer's hands, seated on a portable throne in the king's long fringed blue robe with gold rosettes and the fringed red royal shawl, his head bowed and his shoulders pressed down as if a heavy weight has been laid on them, both open hands resting palm-up on his knees.\nSUBJECT 2: the Assyrian royal crown, a tall truncated cone of white felt wrapped with gold bands of rosettes, a small pointed peak on top, two long red ribbons hanging down the back, on his bowed head.\nACTION: the substitute king takes the signs on himself: he sinks under the words read over him, while the edge of a scholar's clay tablet is held up toward him from the left of the frame.\nSETTING: an open temple courtyard at Nineveh, a stepped mud-brick altar crowned by a bronze sun-disc of Shamash with a four-pointed star and wavy rays, tall bronze incense stands, reed mats on a brick pavement; first dawn, the bronze sun-disc flashing above him, incense smoke low over the mats.\nCAMERA: camera stands on the altar steps above him, high angle, medium.\nFRAME LAYOUT: center and right third — the stand-in on the throne, near-camera and large; left edge — the scholar's hands and the tablet, cropped at the wrist; upper-right — the bronze sun-disc catching the first light.\nFACING: we see the top of the crown and his face from above, three-quarter on, turned toward screen-left; his eyes are closed.\nSCREEN DIRECTION: the first sunbeam slides down from the upper-right across his shoulders toward screen-left; incense smoke drifts toward screen-right.\nLIGHT: a hard narrow shaft of first dawn light falls on his bowed head and shoulders like a weight, the rest of him in cool shadow.\nPALETTE: dawn gold, royal blue, cool slate, bronze.\nDETAIL: sweat on the back of his neck, gold rosettes, the crown's ribbons, rough hands palm-up.\nNOT IN FRAME: the real king, the queen, Latin letters, text, modern objects.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "high",
+            "location": "shamash-shrine",
+            "time_light": "first-dawn",
+            "camera_motion": "push"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B13",
+      "sentences": [
+        "S15"
+      ],
+      "start": 74.08,
+      "end": 77.64,
+      "dur": 3.56,
+      "device": null,
+      "narration_says": "Another bound the written omens into the hem of his robe.",
+      "viewer_sees": "a scholar kneels and ties a small inscribed clay tablet with cord into the fringed hem of the substitute's robe",
+      "shots": [
+        {
+          "shot_id": "14",
+          "beat_id": "B13",
+          "link_group": null,
+          "t_in": 74.083,
+          "t_out": 77.625,
+          "use_in": 0,
+          "use_out": 3.542,
+          "use_len": 3.542,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "hold",
+          "source_file": "shots/shot14.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "scholar"
+          ],
+          "visual_priority": [
+            "the kneeling palace scholar tying the omen tablet into the hem",
+            "the small inscribed clay tablet bound with cord",
+            "the fringed hem of the royal robe",
+            "the stand-in's bare feet on the footstool"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: an Assyrian palace scholar, a grave bearded older man with a pale indoor face, a long grey-black beard curled in rows, an ankle-length fringed robe of undyed wool with a blue border, a plain white headband, clay-stained fingertips, kneeling on the brick pavement at the foot of the portable throne, bent low over the hem of the stand-in's robe.\nACTION: the kneeling scholar binds a small inscribed clay tablet of written omens into the fringed hem of the royal robe, winding a red-and-white cord round it and through the fringe and pulling the knot tight with both hands, so that the signs will go wherever the stand-in goes; his beard brushes the bricks as he bends.\nSETTING: the courtyard of the sun god at Nineveh at first dawn, the brick pavement and reed mats around the carved feet of the portable throne, incense smoke low over the ground; at the scholar's knee a leather tablet case lies open with two more small tablets and a coil of the same red-and-white cord.\nCAMERA: camera stands low beside the throne, eye level with the hem, close.\nFRAME LAYOUT: left third — the kneeling scholar's face and beard in profile, near-camera; center — his hands knotting the cord around the little tablet in the hem, near-camera and large; right third — the stand-in's bare feet on the footstool and the long blue robe falling, cropped at the knee.\nFACING: we see the scholar's face in profile toward screen-right, his eyes on the knot, his white headband slipping forward on his brow; the stand-in's feet face the camera.\nSCREEN DIRECTION: the cord is pulled taut toward screen-left; the robe fringe sways toward screen-right.\nLIGHT: low dawn light from the right rakes across the pavement, gold on the tablet and the fringe, the scholar's face half in shadow.\nPALETTE: dawn gold, royal blue, clay ochre, cord red.\nDETAIL: tiny wedge-shaped signs on the little tablet, twisted fibres of the cord, gold thread in the fringe, cracked skin on the stand-in's toes.\nNOT IN FRAME: the stand-in's face, the real king, Latin letters, readable text, modern objects.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "CU",
+            "angle": "eye",
+            "location": "shamash-shrine",
+            "time_light": "first-dawn",
+            "camera_motion": "locked"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B14",
+      "sentences": [
+        "S16",
+        "S17"
+      ],
+      "start": 77.64,
+      "end": 84.4,
+      "dur": 6.76,
+      "device": null,
+      "narration_says": "The real king stayed hidden in his palace. His scholars kept writing to him, but no longer as king.",
+      "viewer_sees": "the real king hidden in a small inner chamber of the palace, in a plain wool tunic with no crown, reading a clay letter by one lamp while a messenger kneels at the door",
+      "shots": [
+        {
+          "shot_id": "15",
+          "beat_id": "B14",
+          "link_group": null,
+          "t_in": 77.625,
+          "t_out": 84.417,
+          "use_in": 0,
+          "use_out": 6.792,
+          "use_len": 6.792,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot15.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "esarhaddon"
+          ],
+          "visual_priority": [
+            "Esarhaddon hidden in a plain tunic reading a clay letter by one lamp",
+            "the kneeling messenger in the doorway",
+            "the stack of letters and broken envelopes",
+            "no crown anywhere"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a gaunt Assyrian king in his forties, a long squared black beard set in tight rows of ringlets, shoulder-length black hair curled at the nape, heavy-lidded dark eyes under thick brows, a strong hooked nose, heavy gold crescent earrings, hiding in his own palace: no crown and no rosettes, only a plain undyed wool tunic and a dark cloak over his shoulders, sitting on a low stool with a clay letter in his hands.\nACTION: the hidden king reads a small clay letter held close to the lamp, his lips moving over its opening line, while a messenger kneels in the doorway holding out another letter in both hands.\nSETTING: a small windowless inner chamber of the palace at Nineveh, bare plastered mud-brick walls, a reed mat, a low table with a stack of clay letters and their broken clay envelopes, a single clay oil lamp, a clay jug of water and a dish of plain bread, a farmer's supper; the door half open on a dark corridor.\nCAMERA: camera stands inside the chamber near the wall, eye level, medium.\nFRAME LAYOUT: left third — the king on his stool, near-camera and large; center — the low table with the lamp and the stack of letters; right third — the doorway with the kneeling messenger, medium and dim.\nFACING: we see the king's face three-quarter on, bent over the letter, turned toward screen-right; the messenger kneels facing screen-left, head bowed.\nSCREEN DIRECTION: the lamp flame leans toward screen-right in the draught from the door; the messenger's hands reach out toward screen-left.\nLIGHT: a single clay oil lamp on the table, warm and low, lights the king's face and the letter from below; the walls and the doorway are sunk in brown dark.\nPALETTE: lamp gold, undyed wool cream, shadow brown, clay ochre.\nDETAIL: tight ringlets of the beard, coarse weave of the plain tunic, the frayed hem of the dark cloak, wedge signs on the letter, broken clay envelopes with seal impressions.\nNOT IN FRAME: the throne, the crown, the stand-in, Latin letters, readable text, modern objects.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "palace-inner-chamber",
+            "time_light": "single-lamp",
+            "camera_motion": "push"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B15",
+      "sentences": [
+        "S18"
+      ],
+      "start": 84.4,
+      "end": 87.6,
+      "dur": 3.2,
+      "device": null,
+      "narration_says": "Their letters begin: \"To the farmer, my lord.\"",
+      "viewer_sees": "close on wet clay: a scribe's stylus presses the first wedges of a letter's opening line, finished lines above it",
+      "shots": [
+        {
+          "shot_id": "16",
+          "beat_id": "B15",
+          "link_group": null,
+          "t_in": 84.417,
+          "t_out": 87.583,
+          "use_in": 0,
+          "use_out": 3.166,
+          "use_len": 3.166,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "hold",
+          "source_file": "shots/shot16.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "the stylus pressing the first wedges of the letter into wet clay",
+            "the three ears of barley at the tablet edge",
+            "finished lines of signs above",
+            "the raking lamplight"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a scribe's reed stylus pressing the first wedge-shaped signs of a letter's opening line into a small pillow-shaped tablet of wet clay — a letter to the king, who must now be addressed as the farmer.\nACTION: the stylus pushes a fresh wedge into the soft clay at the start of a new line, the row of signs growing toward screen-right; the scribe's thumb and two fingers grip the three-sided reed close to its tip, and small ridges of displaced clay rise around each new mark.\nSETTING: a scribe's worktable in the palace at Nineveh by lamplight; the little tablet sits on a damp cloth to keep it soft; at its edge lie three ripe ears of barley, a farmer's thing beside a letter to a king; an empty clay envelope and a cylinder seal wait at the corner.\nCAMERA: camera is right over the tablet, overhead, extreme close.\nFRAME LAYOUT: center — the wet clay and the newest wedge, near-camera and large; left third — the scribe's fingertips and the stylus, cropped at the knuckle; upper edge — finished lines of signs, slightly soft; lower-right — the three ears of barley; upper-right corner — the empty envelope and the seal.\nFACING: the face of the clay is seen flat and square-on; the barley lies diagonally, its ears pointing toward the upper-right.\nSCREEN DIRECTION: the line of wedges grows toward screen-right; a crumb of clay rolls off the stylus tip toward screen-right.\nLIGHT: warm lamplight from the upper-left rakes across the clay so every wedge throws a small sharp shadow; the wet surface shines where the light hits it; the barley glows pale gold at the lower-right; everything beyond the tablet falls away into soft brown dark.\nPALETTE: wet clay ochre, lamp gold, barley straw, shadow umber.\nDETAIL: glistening wet clay, crisp triangular wedge heads with their thin tails, the split three-sided tip of the reed stylus, the whorl of a fingerprint pressed into the tablet's edge, fine awns and plump grains on the barley.\nNOT IN FRAME: faces, the king, Latin letters, readable words in any modern script, modern objects.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "ECU",
+            "angle": "overhead",
+            "location": "scholar-workroom",
+            "time_light": "single-lamp",
+            "camera_motion": "locked"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B16",
+      "sentences": [
+        "S19"
+      ],
+      "start": 87.6,
+      "end": 91.38,
+      "dur": 3.78,
+      "device": "timeline-seasons",
+      "narration_says": "The substitute could sit on the throne for up to a hundred days.",
+      "viewer_sees": "TIMELINE — the substitute on the throne seen through the same high window night after night, the moon passing through its phases, a tally of strokes on a clay tablet in the foreground growing toward a hundred",
+      "shots": [
+        {
+          "shot_id": "17",
+          "beat_id": "B16",
+          "link_group": null,
+          "t_in": 87.583,
+          "t_out": 91.375,
+          "use_in": 0,
+          "use_out": 3.792,
+          "use_len": 3.792,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pan-right",
+          "source_file": "shots/shot17.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "nineveh-throne-room",
+            "substitute"
+          ],
+          "visual_priority": [
+            "the Nineveh throne room through a hundred nights",
+            "the clay tablet with a hundred tally strokes in ten rows of ten",
+            "the row of windows with the moon in different phases",
+            "the substitute alone on the throne"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a long Assyrian throne room at Nineveh, walls lined with carved grey gypsum relief slabs of winged spirits, a stepped stone dais with a carved ivory-and-bronze throne and footstool, cedar ceiling beams, high square windows under the roof, at night, long after the ritual began.\nSUBJECT 2: an Assyrian commoner of about thirty, a broad sun-darkened face, a short rough black beard, cropped black hair, wide-set dark eyes, a thick neck and big calloused labourer's hands, sitting alone on the throne in the king's blue robe and tall crown, slumped and smaller now in the empty hall.\nACTION: night after night has passed: along the top of the wall a row of seven high square windows shows the moon in a different phase in each one, from a thin crescent through full and back to a thin crescent, while near the camera a clay tablet is covered with tally strokes counting the days, up to a hundred.\nSETTING: on a low table near the camera lies a clay tablet scored with tally strokes in ten rows of ten, a hundred strokes in all, the last row nearly finished; one unlit lamp beside it; dust on the dais steps; no courtiers left.\nCAMERA: camera stands near the floor of the hall beside the low table, eye level, wide.\nFRAME LAYOUT: lower-left — the tally tablet, near-camera and large; right third — the stand-in on the throne, medium and small; upper edge — the row of seven high windows, each with the moon in a different phase.\nFACING: the stand-in is seen three-quarter on, his tired face angled toward screen-left and his gaze resting on the tally tablet.\nSCREEN DIRECTION: the moon's phases run from screen-left to screen-right across the windows; a thin wisp of lamp smoke drifts toward screen-right.\nLIGHT: pale cold moonlight falling in seven separate shafts from the windows across the dark hall, one shaft lighting the stand-in.\nPALETTE: moon silver, night indigo, royal blue, clay ochre.\nDETAIL: every tally stroke a separate wedge in the clay, the moon phases drawn clearly, dust motes floating in the moon shafts.\nNOT IN FRAME: the real king, scholars, Latin letters, readable text, modern objects.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "nineveh-throne-room",
+            "time_light": "moon-phases-night",
+            "camera_motion": "pan"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B17",
+      "sentences": [
+        "S20"
+      ],
+      "start": 91.38,
+      "end": 95.58,
+      "dur": 4.2,
+      "device": "empty-aftermath",
+      "narration_says": "Then, in the words of the letters, he \"went to his fate.\"",
+      "viewer_sees": "EMPTY AFTERMATH — the throne empty in grey dawn light, the royal robe folded on its seat, a single cup on the step; no person anywhere",
+      "shots": [
+        {
+          "shot_id": "18",
+          "beat_id": "B17",
+          "link_group": null,
+          "t_in": 91.375,
+          "t_out": 95.583,
+          "use_in": 0,
+          "use_out": 4.208,
+          "use_len": 4.208,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot18.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "nineveh-throne-room",
+            "assyrian-crown"
+          ],
+          "visual_priority": [
+            "the empty Nineveh throne room in grey dawn",
+            "the Assyrian crown on the folded robe on the throne seat",
+            "the single empty cup on the step",
+            "burnt-out torches"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a long Assyrian throne room at Nineveh, walls lined with carved grey gypsum relief slabs of winged spirits, a stepped stone dais with a carved ivory-and-bronze throne and footstool, cedar ceiling beams, high square windows under the roof, empty in the grey light of dawn.\nSUBJECT 2: the Assyrian royal crown, a tall truncated cone of white felt wrapped with gold bands of rosettes, a small pointed peak on top, two long red ribbons hanging down the back, resting on a neatly folded royal robe of deep blue wool with gold rosettes laid on the seat of the empty throne.\nACTION: no one is left: the stand-in has gone to his fate, and only the folded robe, the crown and a single empty drinking cup on the lowest step of the dais remain.\nSETTING: torches burnt down to black stubs in their bronze holders, cold ash in the braziers, the relief slabs grey and silent, a red fringed shawl trailing over the edge of the dais; the courtiers' stools pushed back against the wall, a forgotten fly-whisk of white horsehair lying on the floor, the queen's lower chair empty beside the throne.\nCAMERA: camera stands on the floor of the hall at the foot of the dais, eye level, medium.\nFRAME LAYOUT: center — the empty throne with the folded robe and the crown, near-camera and large; lower-center — the single cup on the step; left and right edges — relief slabs of winged spirits, cropped.\nFACING: the throne faces the camera square-on; the carved spirits on the slabs face toward it in profile.\nSCREEN DIRECTION: a thin thread of smoke from a dead torch drifts toward screen-left; dust sinks slowly through the grey light.\nLIGHT: flat grey dawn light from the high windows, no warmth anywhere, soft shadows, dust in the air turning the light milky over the throne.\nPALETTE: ash grey, faded blue, dull gold, stone.\nDETAIL: crisp folds of the robe, gold rosettes dulled in the grey light, the plain clay cup, soot on the bronze holders.\nNOT IN FRAME: people, bodies, blood, Latin letters, text, modern objects.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "nineveh-throne-room",
+            "time_light": "grey-dawn",
+            "camera_motion": "push"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B18",
+      "sentences": [
+        "S21"
+      ],
+      "start": 95.58,
+      "end": 102.22,
+      "dur": 6.64,
+      "device": null,
+      "narration_says": "The scholars preferred a man whose death would trouble no one: a condemned criminal, a prisoner, a laborer.",
+      "viewer_sees": "three men stand in a palace courtyard before the chief exorcist: a chained condemned criminal, a foreign prisoner of war, a laborer with a basket of bricks; the exorcist's hand lifts to choose",
+      "shots": [
+        {
+          "shot_id": "19",
+          "beat_id": "B18",
+          "link_group": null,
+          "t_in": 95.583,
+          "t_out": 102.208,
+          "use_in": 0,
+          "use_out": 6.625,
+          "use_len": 6.625,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pan-right",
+          "source_file": "shots/shot19.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "scholar"
+          ],
+          "visual_priority": [
+            "the palace scholar as chief exorcist about to choose",
+            "the three men in a line: criminal, prisoner, laborer",
+            "the shackles, the rope and the brick basket",
+            "the harsh courtyard light"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: an Assyrian palace scholar, a grave bearded older man with a pale indoor face, a long grey-black beard curled in rows, an ankle-length fringed robe of undyed wool with a blue border, a plain white headband, clay-stained fingertips, the king's chief exorcist, standing at the left of a palace courtyard with a clay tablet in one hand and the other hand lifted, about to choose.\nACTION: the chief exorcist weighs three men brought before him, one after another, looking for a man whose death would trouble no one: the criminal stares at the ground, the prisoner of war stares straight back at him, and the laborer still has his brick basket on his shoulder, as if he had been pulled off the work a moment ago.\nSETTING: an inner courtyard of the palace at Nineveh in harsh daylight, plastered mud-brick walls, a guard with a spear at the gate; the three men stand in a line — first, a condemned criminal in a torn tunic with bronze shackles on his wrists and ankles; second, a foreign prisoner of war, a bearded man with an unfamiliar cut of hair and a ragged foreign cloak, his hands roped; third, a laborer in a dusty loincloth with a basket of mud bricks on his shoulder.\nCAMERA: camera stands in the courtyard, eye level, wide.\nFRAME LAYOUT: left third — the chief exorcist, near-camera and large; center — the condemned criminal in shackles, nearest to him; right third — the prisoner of war and the laborer with his brick basket, a little smaller.\nFACING: we see the exorcist's face three-quarter on, looking toward screen-right along the line; the three men face screen-left toward him, eyes lowered.\nSCREEN DIRECTION: the exorcist's lifted hand moves toward screen-right along the line of the three men; dust blows across the courtyard toward screen-right.\nLIGHT: harsh midday sun, short hard shadows, the whitewashed walls glaring.\nPALETTE: glaring whitewash, dust ochre, bronze, faded blue.\nDETAIL: rivets on the shackles, the rope on the prisoner's wrists, bricks in the basket, the fringe on the exorcist's robe.\nNOT IN FRAME: the king, blood, Latin letters, text, modern objects.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "palace-courtyard",
+            "time_light": "harsh-daylight",
+            "camera_motion": "pan"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B19",
+      "sentences": [
+        "S22",
+        "S23"
+      ],
+      "start": 102.22,
+      "end": 112.54,
+      "dur": 10.32,
+      "device": null,
+      "narration_says": "But in 671 BCE, the substitute was someone who mattered. Damqi was the son of a high temple official in the Babylonian city of Akkad.",
+      "viewer_sees": "Akkad in Babylonia: at the steps of a mud-brick temple, young Damqi in a fine fringed Babylonian robe stands beside his father, the temple's high official in white linen",
+      "shots": [
+        {
+          "shot_id": "20",
+          "beat_id": "B19",
+          "link_group": "B19",
+          "t_in": 102.208,
+          "t_out": 107.417,
+          "use_in": 0,
+          "use_out": 5.209,
+          "use_len": 5.209,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot20.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "damqi",
+            "akkad-temple"
+          ],
+          "visual_priority": [
+            "Damqi on the temple steps as a man who matters",
+            "servants bowing to him",
+            "his fine red robe and gold necklace",
+            "the whitewashed temple facade of Akkad"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a young Babylonian nobleman of about twenty, a smooth narrow face, a short soft black beard, large dark eyes, a gentle full mouth, long black hair tied back with a white band, small gold ring earrings, the son of a great house, in a fine fringed Babylonian robe of deep red wool with a gold-embroidered border and a heavy gold necklace, standing straight on the temple steps.\nACTION: young Damqi pauses on the temple steps of Akkad while servants and temple attendants bow to him as he passes — in 671 BCE, a man who matters; he lifts one ringed hand to accept their bows, easy and used to it.\nSETTING: a Babylonian temple of sun-baked mud brick in the city of Akkad, its whitewashed facade cut by deep vertical recesses, a stepped crenellated parapet, a tall cedar doorway at the top of broad brick steps; warm morning, palm trees at the edge of the temple court, a servant holding a woven sunshade over him, a temple attendant offering him a bowl of dates; a priest with a shaven head carrying a jar of oil up the steps, an offering table with loaves and fruit by the doorway.\nCAMERA: camera stands on the steps a little below him, eye level, medium.\nFRAME LAYOUT: right third — Damqi, near-camera and large; center — two bowing servants and the attendant with the bowl, medium; left third — the recessed whitewashed temple facade and its cedar doorway, far.\nFACING: Damqi is seen chest-up and three-quarter on, his face angled toward screen-left with a faint easy smile; the servants bow toward screen-right.\nSCREEN DIRECTION: the sunshade's fringe swings toward screen-left; doves lift off the temple parapet toward the upper-left.\nLIGHT: warm low morning sun from the right, gold on his face and necklace, cool shade in the recesses of the facade.\nPALETTE: deep red, warm gold, whitewash, palm green.\nDETAIL: gold embroidery, fine wool nap of the robe, beads of the necklace, cracks in the whitewash, grain of the cedar doors.\nNOT IN FRAME: the king, crowns, Latin letters, text, modern objects.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "akkad-temple",
+            "time_light": "warm-morning",
+            "camera_motion": "push"
+          }
+        },
+        {
+          "shot_id": "21",
+          "beat_id": "B19",
+          "link_group": "B19",
+          "t_in": 107.417,
+          "t_out": 112.542,
+          "use_in": 0,
+          "use_out": 5.125,
+          "use_len": 5.125,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pull",
+          "source_file": "shots/shot21.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "damqi",
+            "akkad-temple"
+          ],
+          "visual_priority": [
+            "Damqi beside his father the temple official on the steps",
+            "the temple of Akkad and its cedar doorway",
+            "worshippers climbing with offerings",
+            "the city of Akkad in Babylonia"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a young Babylonian nobleman of about twenty, a smooth narrow face, a short soft black beard, large dark eyes, a gentle full mouth, long black hair tied back with a white band, small gold ring earrings, in his deep red fringed robe with the gold-embroidered border, standing at his father's side at the top of the broad temple steps.\nSUBJECT 2: his father, the high official of the temple of Akkad, an old Babylonian with a long white beard, a robe of white linen, a tall rounded white cap and a gold-topped staff of office.\nACTION: father and son stand together at the top of the steps as the temple's high official greets the morning worshippers of the Babylonian city of Akkad, one hand raised in blessing and the other resting proudly on his son's shoulder.\nSETTING: a Babylonian temple of sun-baked mud brick in the city of Akkad, its whitewashed facade cut by deep vertical recesses, a stepped crenellated parapet, a tall cedar doorway at the top of broad brick steps; around the temple the flat roofs and palms of Akkad, a canal shining; worshippers climbing the steps with offerings of bread and lambs.\nCAMERA: camera stands at the foot of the steps, low angle, wide.\nFRAME LAYOUT: center — the temple facade and its tall cedar doorway, large; right third — Damqi and his father on the top step, medium; left third — worshippers climbing with offerings, near-camera, cropped at the waist; upper-left — palms and roofs of Akkad, far and hazy.\nFACING: we see father and son three-quarter on, facing screen-left toward the worshippers; the worshippers climb half turned from the camera, facing screen-right.\nSCREEN DIRECTION: the worshippers climb toward screen-right; a lamb on a rope tugs toward screen-left.\nLIGHT: warm morning sun, long shadows down the steps, the whitewash glowing.\nPALETTE: whitewash, deep red, linen white, palm green.\nDETAIL: recesses of the facade, the gold top of the staff, wool robes of the worshippers, bread in baskets, the lamb's curly fleece, the father's white beard combed long.\nNOT IN FRAME: crowns, the king, Latin letters, text, modern objects.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "low",
+            "location": "akkad-temple",
+            "time_light": "warm-morning",
+            "camera_motion": "pull"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B20",
+      "sentences": [
+        "S24"
+      ],
+      "start": 112.54,
+      "end": 116.02,
+      "dur": 3.48,
+      "device": null,
+      "narration_says": "The king's agent in Babylonia reported his end.",
+      "viewer_sees": "the king's agent in Babylonia, a grey-bearded Assyrian official, writes his report into a clay tablet by lamplight, a clay envelope waiting beside it",
+      "shots": [
+        {
+          "shot_id": "22",
+          "beat_id": "B20",
+          "link_group": null,
+          "t_in": 112.542,
+          "t_out": 116,
+          "use_in": 0,
+          "use_out": 3.458,
+          "use_len": 3.458,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "hold",
+          "source_file": "shots/shot22.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "the king's agent pressing his report into clay",
+            "the waiting clay envelope and cylinder seal",
+            "one oil lamp",
+            "the courier's bag on its peg"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: the king's agent in Babylonia, a grey-bearded Assyrian official of about sixty with a lined, tired, careful face, his beard curled in rows, a fringed robe of brown wool, a bronze bracelet of office on his writing wrist, seated cross-legged at a low writing table.\nACTION: the agent presses the last lines of his report on Damqi's end, for the king far away in Nineveh, into a fresh clay tablet with quick firm strokes of a reed stylus, his left hand turning the tablet a little to reach the next line, his lips pressed tight.\nSETTING: a plain office of baked brick in Babylonia at night, a single clay lamp, the clay envelope waiting beside the tablet, a cylinder seal of dark stone ready to roll the envelope shut, a courier's leather bag hanging on a peg by the door; a basket of earlier letters from the king at his knee, a bowl of water for wetting the clay, a reed mat worn through at the edges.\nCAMERA: camera stands across the low table from him, eye level, medium.\nFRAME LAYOUT: left third — the agent bent over the tablet, near-camera and large; lower-left — the basket of the king's letters, cropped; center — the lamp and the tablet; right third — the waiting clay envelope and the courier's bag on its peg, dim.\nFACING: we see his face three-quarter on, looking down at the tablet, turned toward screen-right.\nSCREEN DIRECTION: his stylus hand moves toward screen-right along the line; the lamp flame leans toward screen-right in a draught from the door; a moth circles the flame toward screen-left.\nLIGHT: one oil lamp, hard warm light on his face, hands and the wet clay, deep shadow in the folds of his robe, the far wall and the door lost in black.\nPALETTE: lamp gold, clay ochre, brown wool, black.\nDETAIL: crisp fresh wedge signs, grey beard ringlets, the carved surface of the cylinder seal, clay dust on his fingers, the stitching on the leather bag.\nNOT IN FRAME: Damqi, the king, Latin letters, readable text, modern objects.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "agent-office",
+            "time_light": "single-lamp",
+            "camera_motion": "locked"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B21",
+      "sentences": [
+        "S25"
+      ],
+      "start": 116.02,
+      "end": 124,
+      "dur": 7.98,
+      "device": null,
+      "narration_says": "Damqi, \"who had ruled Assyria, Babylonia and all the countries, died with his queen,\" as a substitute for the king.",
+      "viewer_sees": "Damqi enthroned in Akkad in the king's robe and crown, his young queen beside him, both solemn and very still; scholars and guards at the edges of the hall",
+      "shots": [
+        {
+          "shot_id": "23",
+          "beat_id": "B21",
+          "link_group": null,
+          "t_in": 116,
+          "t_out": 124,
+          "use_in": 0,
+          "use_out": 8,
+          "use_len": 8,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot23.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "damqi",
+            "assyrian-crown"
+          ],
+          "visual_priority": [
+            "Damqi enthroned in the royal robe",
+            "the Assyrian crown on his head",
+            "his veiled young queen beside him",
+            "scholars and guards at the edge of the hall"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a young Babylonian nobleman of about twenty, a smooth narrow face, a short soft black beard, large dark eyes, a gentle full mouth, long black hair tied back with a white band, small gold ring earrings, enthroned as king over Assyria, Babylonia and all the countries, in the royal robe of deep blue wool with gold rosettes and the fringed red shawl, sitting very straight and very still.\nSUBJECT 2: the Assyrian royal crown, a tall truncated cone of white felt wrapped with gold bands of rosettes, a small pointed peak on top, two long red ribbons hanging down the back, on his head.\nACTION: Damqi and his young queen sit side by side in solemn state, receiving the bows of the hall, neither of them moving.\nSETTING: a palace hall at Akkad by torchlight, walls of baked brick hung with dyed wool hangings, a dais of baked brick, bronze torch holders; his queen, a young Babylonian woman veiled in fine linen with a thin gold diadem, on a lower throne at his side; bowls of gold tribute at the foot of the dais; scholars and guards with spears along the edges of the hall.\nCAMERA: camera stands in the hall facing the dais, eye level, medium.\nFRAME LAYOUT: right third — Damqi on the throne, near-camera and large; right edge — the veiled queen, cropped at the shoulder; center — the dais steps and the tribute bowls; left third — two scholars and a guard, far and dim.\nFACING: Damqi sits facing toward screen-left, his solemn young face three-quarter on to the camera; the queen faces screen-left too; the scholars at the left face screen-right toward the throne.\nSCREEN DIRECTION: torch flames stream toward screen-left in a draught; the edge of the queen's veil lifts toward screen-left.\nLIGHT: warm torchlight from both walls, gold on the crown and on his face, the corners of the hall deep in shadow.\nPALETTE: torch gold, royal blue, linen white, brick red.\nDETAIL: gold rosettes on the robe, the crown's ribbons, fine weave of the veil, gold bowls.\nNOT IN FRAME: the real king, blood, Latin letters, text, modern objects.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "akkad-throne-hall",
+            "time_light": "torchlit-night",
+            "camera_motion": "push"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B22",
+      "sentences": [
+        "S26"
+      ],
+      "start": 124,
+      "end": 129.64,
+      "dur": 5.64,
+      "device": null,
+      "narration_says": "\"He and his queen were decorated, treated, displayed, buried and wailed over.\"",
+      "viewer_sees": "a royal burial chamber: two shrouded figures lie in state on biers under embroidered cloths with gold ornaments, lamps around them, mourning women with raised arms and loosened hair",
+      "shots": [
+        {
+          "shot_id": "24",
+          "beat_id": "B22",
+          "link_group": null,
+          "t_in": 124,
+          "t_out": 129.625,
+          "use_in": 0,
+          "use_out": 5.625,
+          "use_len": 5.625,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pan-left",
+          "source_file": "shots/shot24.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "akkad-burial-chamber"
+          ],
+          "visual_priority": [
+            "the Akkad burial chamber with two shrouded biers",
+            "the four mourning women with raised arms",
+            "gold-sewn cloths and jars of oil",
+            "the two open stone sarcophagi"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a vaulted burial chamber of baked brick beneath the palace at Akkad, a low barrel-vaulted ceiling, niches for clay lamps along the walls, a floor strewn with reed mats, prepared for a king and a queen.\nACTION: Damqi and his queen lie in state side by side on two biers, wrapped in shrouds, while mourning women wail over them with raised arms.\nSETTING: the burial follows the report word by word — decorated: both shrouded figures are covered with embroidered cloths sewn with gold rosettes and gold beads; treated: jars of scented oil and ointment stand at the foot of each bier; displayed: they lie on high biers among rows of lamps; buried: two open stone sarcophagi wait at the far end of the vault, their lids leaning on the wall; wailed over: four mourning women with loosened hair raise their arms and cry out.\nCAMERA: camera stands high in the doorway of the vault, high angle, wide.\nFRAME LAYOUT: right third — the two shrouded figures on their biers, near-camera and large; left third — the four mourning women with raised arms, medium; center — rows of clay lamps on the floor; upper-right — the two open stone sarcophagi at the end of the vault, far and dim.\nFACING: the shrouded figures lie with their heads toward screen-left, faces fully covered; the mourning women face screen-right toward the biers, faces lifted, mouths open.\nSCREEN DIRECTION: lamp smoke curls up into the vault and drifts toward screen-left; the women's loosened hair swings toward screen-left.\nLIGHT: dozens of small clay oil lamps on the floor and in the wall niches, warm and low, the shadows of the biers and the raised arms climbing the curve of the vault, the gold on the cloths glittering, the far sarcophagi only half lit.\nPALETTE: lamp gold, shroud white, brick brown, black.\nDETAIL: gold rosettes and beads stitched in rows, glaze on the oil jars, curved bricks of the vault, the women's raised hands and the ash smeared on their foreheads.\nNOT IN FRAME: faces of the dead, blood, wounds, Latin letters, text, modern objects.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "LS",
+            "angle": "high",
+            "location": "akkad-burial-chamber",
+            "time_light": "lamplit-dark",
+            "camera_motion": "pan"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B23",
+      "sentences": [
+        "S27",
+        "S28"
+      ],
+      "start": 129.64,
+      "end": 137.64,
+      "dur": 8,
+      "device": null,
+      "narration_says": "Then the report adds something else. Before the ritual, a prophetess had told Damqi: \"You will take over the kingship!\"",
+      "viewer_sees": "before the ritual: a prophetess with loose hair at a temple doorway grips young Damqi's wrist and points past him toward the palace",
+      "shots": [
+        {
+          "shot_id": "25",
+          "beat_id": "B23",
+          "link_group": null,
+          "t_in": 129.625,
+          "t_out": 137.625,
+          "use_in": 0,
+          "use_out": 8,
+          "use_len": 8,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot25.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "damqi",
+            "akkad-temple"
+          ],
+          "visual_priority": [
+            "the prophetess gripping Damqi's wrist",
+            "her arm pointing toward the palace at the upper-right",
+            "Damqi's startled face",
+            "the temple doorway at dusk"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a young Babylonian nobleman of about twenty, a smooth narrow face, a short soft black beard, large dark eyes, a gentle full mouth, long black hair tied back with a white band, small gold ring earrings, in his deep red fringed robe with the gold-embroidered border, before the ritual, startled and half-turned in the temple doorway with one wrist caught.\nSUBJECT 2: a prophetess, a gaunt woman with wild loose black hair to her waist, kohl-rimmed burning eyes, a plain dark wool shawl, bronze bangles, standing barefoot.\nACTION: the prophetess grips Damqi's wrist with one hand and with the other arm points hard past him toward the palace, crying out that he will take over the kingship.\nSETTING: a Babylonian temple of sun-baked mud brick in the city of Akkad, its whitewashed facade cut by deep vertical recesses, a stepped crenellated parapet, a tall cedar doorway at the top of broad brick steps; dusk, the cedar doorway open on a dim interior with lamps; at the upper-right of the frame the palace of Akkad on its high mound, small, the first torches lit on its walls.\nCAMERA: camera stands on the temple steps beside them, eye level, medium.\nFRAME LAYOUT: left third — the prophetess, near-camera and large, her arm stretched toward screen-right; center — Damqi, near-camera and large, his wrist held; upper-right — the palace on its mound, far and hazy.\nFACING: we see the prophetess's face three-quarter on, eyes blazing, turned toward screen-right; Damqi's face is three-quarter on, turned back toward her at screen-left, eyes wide.\nSCREEN DIRECTION: her pointing arm and her loose hair stream toward screen-right, toward the palace; dusk swallows fly toward the upper-right.\nLIGHT: deep orange dusk from the right, the temple doorway glowing with lamplight, long violet shadows on the steps.\nPALETTE: dusk orange, deep red, whitewash, violet shadow.\nDETAIL: her bronze bangles, the frayed edge of her shawl, her fingers pressing into his wrist, gold embroidery, the palace torches as tiny points of light, dust on her bare feet.\nNOT IN FRAME: crowns, the king, Latin letters, text, modern objects.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "akkad-temple",
+            "time_light": "dusk",
+            "camera_motion": "push"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B24",
+      "sentences": [
+        "S29",
+        "S30"
+      ],
+      "start": 137.64,
+      "end": 143.02,
+      "dur": 5.38,
+      "device": "macro-object",
+      "narration_says": "She was right. Whether that prophecy is why he was chosen, the letter does not say.",
+      "viewer_sees": "MACRO OBJECT — the crown Damqi wore, resting on a folded royal robe at the edge of the bier, one lamp flame beside it",
+      "shots": [
+        {
+          "shot_id": "26",
+          "beat_id": "B24",
+          "link_group": null,
+          "t_in": 137.625,
+          "t_out": 143,
+          "use_in": 0,
+          "use_out": 5.375,
+          "use_len": 5.375,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "hold",
+          "source_file": "shots/shot26.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "assyrian-crown",
+            "akkad-burial-chamber"
+          ],
+          "visual_priority": [
+            "the Assyrian crown Damqi wore on the folded robe",
+            "the single lamp flame beside it",
+            "the corner of the shroud on the bier",
+            "darkness of the vault"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: the Assyrian royal crown, a tall truncated cone of white felt wrapped with gold bands of rosettes, a small pointed peak on top, two long red ribbons hanging down the back, the crown Damqi wore, resting on a folded royal robe of deep blue wool with gold rosettes at the edge of a bier.\nACTION: the crown sits alone on the folded robe while a single lamp flame bends beside it — the kingship the prophetess promised, taken over and given back in a burial chamber.\nSETTING: a vaulted burial chamber of baked brick beneath the palace at Akkad, a low barrel-vaulted ceiling, niches for clay lamps along the walls, a floor strewn with reed mats; the bier is carved wood with bronze lion feet; the corner of a white shroud and a gold-embroidered cloth sewn with tiny gold rosettes drape over its edge at the right; a pair of small gold ring earrings lies on the cloth beside the robe; the rest of the vault is dark.\nCAMERA: camera stands close to the bier at the height of the crown, eye level, close.\nFRAME LAYOUT: center and right third — the crown on the folded robe, near-camera and large; left third — one clay oil lamp and its flame; right edge — the corner of the shroud, cropped.\nFACING: the crown is seen three-quarter on, its two red ribbons trailing toward screen-right over the folds.\nSCREEN DIRECTION: the lamp flame leans toward screen-right; a thread of lamp smoke rises toward the upper-left.\nLIGHT: one lamp flame from the left, a tiny bright point of it reflected in every gold rosette of the crown, the white felt glowing warm on the lit side and turning grey on the far side, the folds of the blue robe sinking into black, everything beyond the bier in deep shadow.\nPALETTE: lamp gold, royal blue, shroud white, black.\nDETAIL: the nap of the white felt, hammered gold rosettes, the weave in the folds of the robe, the small pointed peak catching light, fine dust settling on the cloth.\nNOT IN FRAME: bodies, faces, people, blood, Latin letters, text, modern objects.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "CU",
+            "angle": "eye",
+            "location": "akkad-burial-chamber",
+            "time_light": "lamplit-dark",
+            "camera_motion": "locked"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B25",
+      "sentences": [
+        "S31"
+      ],
+      "start": 143.02,
+      "end": 150.12,
+      "dur": 7.1,
+      "device": null,
+      "narration_says": "It says only that the rituals \"succeeded well indeed,\" and that \"the king, my lord, can be glad.\"",
+      "viewer_sees": "Esarhaddon, back in his throne room, holds the report tablet while his scholars bow low before him; his face unreadable",
+      "shots": [
+        {
+          "shot_id": "27",
+          "beat_id": "B25",
+          "link_group": null,
+          "t_in": 143,
+          "t_out": 150.125,
+          "use_in": 0,
+          "use_out": 7.125,
+          "use_len": 7.125,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pan-left",
+          "source_file": "shots/shot27.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "esarhaddon",
+            "assyrian-crown",
+            "nineveh-throne-room"
+          ],
+          "visual_priority": [
+            "Esarhaddon back on his throne holding the report",
+            "three scholars bowing low",
+            "his unreadable face",
+            "daylight shafts in the hall"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a gaunt Assyrian king in his forties, a long squared black beard set in tight rows of ringlets, shoulder-length black hair curled at the nape, heavy-lidded dark eyes under thick brows, a strong hooked nose, heavy gold crescent earrings, king again, his blue rosette robe and crimson shawl back on his shoulders, holding the agent's clay report in one hand, his face unreadable.\nSUBJECT 2: the Assyrian royal crown, a tall truncated cone of white felt wrapped with gold bands of rosettes, a small pointed peak on top, two long red ribbons hanging down the back, on his head again.\nACTION: the king sits upright with the report in his hand while his scholars bow low before him, telling him the rituals succeeded well indeed and that the king, their lord, can be glad; he neither smiles nor frowns, his thumb resting on the clay where the stand-in's name is written.\nSETTING: a long Assyrian throne room at Nineveh, walls lined with carved grey gypsum relief slabs of winged spirits, a stepped stone dais with a carved ivory-and-bronze throne and footstool, cedar ceiling beams, high square windows under the roof; daytime, shafts of sun from the high windows, courtiers back along the walls; the broken clay envelope of the report lying on the footstool.\nCAMERA: camera stands on the hall floor to one side of the dais, low angle, medium.\nFRAME LAYOUT: left third — the enthroned king and the throne's carved armrest, near-camera and large; center and right third — three scholars in fringed undyed robes with white headbands bowing low, medium; upper-right — a high window with a shaft of sunlight.\nFACING: we see the king's face full on, unsmiling, his eyes on the bowed scholars at screen-right; the scholars bow toward screen-left.\nSCREEN DIRECTION: the scholars bow toward screen-left; dust drifts in the sun shafts toward screen-left.\nLIGHT: bright daylight in long slanted shafts, the king's face in clear light, no red anywhere.\nPALETTE: daylight gold, royal blue, gypsum grey, linen white.\nDETAIL: wedge signs on the report, the broken envelope, beard ringlets, gold rosettes.\nNOT IN FRAME: the moon, Damqi, Latin letters, text, modern objects.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "low",
+            "location": "nineveh-throne-room",
+            "time_light": "daylight-shafts",
+            "camera_motion": "pan"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B26",
+      "sentences": [
+        "S32"
+      ],
+      "start": 150.12,
+      "end": 155.44,
+      "dur": 5.32,
+      "device": null,
+      "narration_says": "The scholars carried on, as they wrote, \"as our fathers did for their lords.\"",
+      "viewer_sees": "an old scholar guides a boy apprentice copying an eclipse omen from a worn, ancient tablet onto fresh clay; shelves of old tablets behind them",
+      "shots": [
+        {
+          "shot_id": "28",
+          "beat_id": "B26",
+          "link_group": null,
+          "t_in": 150.125,
+          "t_out": 155.458,
+          "use_in": 0,
+          "use_out": 5.333,
+          "use_len": 5.333,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot28.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "scholar",
+            "nineveh-archive"
+          ],
+          "visual_priority": [
+            "the old palace scholar guiding the apprentice",
+            "the worn ancient tablet beside the fresh one",
+            "the boy's careful hand on the stylus",
+            "shelves of old tablets"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: an Assyrian palace scholar, a grave bearded older man with a pale indoor face, a long grey-black beard curled in rows, an ankle-length fringed robe of undyed wool with a blue border, a plain white headband, clay-stained fingertips, old and stooped now, leaning over a boy apprentice and guiding his small hand on the stylus.\nSUBJECT 2: the apprentice, a boy of about twelve with cropped hair in a plain undyed tunic, kneeling at a low table and copying with great care.\nACTION: the old scholar steadies the boy's hand as he copies an eclipse omen sign by sign from an ancient, worn, cracked tablet onto a fresh smooth tablet of wet clay — as their fathers did for their lords.\nSETTING: the royal tablet archive of the palace at Nineveh, narrow brick rooms lined floor to ceiling with wooden shelves of small clay tablets, reed baskets and clay jars of tablets stacked on the floor; a shaft of daylight from a high slit; the ancient tablet dark brown, chipped and worn smooth at the corners by centuries of hands, the fresh one pale and damp on a cloth; a row of other old omen tablets waiting their turn to be copied, a bowl of water, a spare reed stylus.\nCAMERA: camera stands across the low table, eye level, medium.\nFRAME LAYOUT: left third — the old scholar, near-camera and large; center — the boy and the two tablets side by side; right third — tall shelves of old tablets, far and dim.\nFACING: we see both faces three-quarter on, looking down at the tablets, turned toward screen-right.\nSCREEN DIRECTION: the boy's stylus moves toward screen-right along the new line; dust drifts in the light shaft toward the lower-right.\nLIGHT: a single shaft of daylight from a high slit falls across the table and the two tablets, the shelves in shadow.\nPALETTE: daylight gold, old clay brown, fresh clay ochre, shadow umber.\nDETAIL: worn and chipped signs on the old tablet beside crisp fresh wedges, the old man's veined hand over the boy's.\nNOT IN FRAME: the king, Latin letters, readable text, modern objects.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "nineveh-archive",
+            "time_light": "daylight-shafts",
+            "camera_motion": "push"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B27",
+      "sentences": [
+        "S33"
+      ],
+      "start": 155.44,
+      "end": 161.48,
+      "dur": 6.04,
+      "device": null,
+      "narration_says": "In the summer of 669 BCE, they set the day for another substitute to go to his fate.",
+      "viewer_sees": "summer heat: a scholar marks a day on a clay calendar tablet; through the doorway behind him guards lead a new stand-in, a laborer, toward the throne room",
+      "shots": [
+        {
+          "shot_id": "29",
+          "beat_id": "B27",
+          "link_group": null,
+          "t_in": 155.458,
+          "t_out": 161.5,
+          "use_in": 0,
+          "use_out": 6.042,
+          "use_len": 6.042,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pan-right",
+          "source_file": "shots/shot29.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "scholar"
+          ],
+          "visual_priority": [
+            "the palace scholar marking the day on the calendar tablet",
+            "the new stand-in led by two guards across the doorway",
+            "the white summer glare",
+            "the grid of days in the clay"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: an Assyrian palace scholar, a grave bearded older man with a pale indoor face, a long grey-black beard curled in rows, an ankle-length fringed robe of undyed wool with a blue border, a plain white headband, clay-stained fingertips, in a hot summer workroom, his robe loosened at the neck, pressing a single mark into a clay calendar tablet ruled into rows of days.\nACTION: the scholar sets the day: he marks one square of the calendar with a firm wedge, the day another substitute will go to his fate, while across the sunlit court two guards lead a new stand-in toward the throne room; the scholar does not look up at them.\nSETTING: a scholar's workroom of plastered mud brick in the palace at Nineveh, the summer of 669 BCE, white glare outside, a water jar sweating in the corner, a reed fan on the table, shelves of omen tablets on the wall; through the open doorway, across a blazing courtyard, a thin grey-haired laborer in a plain loincloth walks between two guards with spears, barefoot on the hot bricks, a different man from any stand-in before him.\nCAMERA: camera stands inside the workroom, eye level, medium.\nFRAME LAYOUT: left third — the scholar at his table, near-camera and large; center — the calendar tablet; right third — the open doorway full of white glare, the guards and the new stand-in small and far, crossing it.\nFACING: we see the scholar's face three-quarter on, looking down at the tablet, turned toward screen-right; the new stand-in is seen in profile, head down.\nSCREEN DIRECTION: the guards and the new stand-in walk toward screen-right across the doorway; heat shimmer rises from the courtyard.\nLIGHT: blinding white summer glare through the doorway, the room in hot shade, sweat shining on the scholar's brow.\nPALETTE: glare white, clay ochre, hot shadow brown, faded blue.\nDETAIL: the grid of day squares in the clay, beads of sweat, the guards' spear points, the split edge of the reed fan, wet rings under the jar.\nNOT IN FRAME: the king, the moon, night, Latin letters, readable text, modern objects.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "scholar-workroom",
+            "time_light": "summer-glare",
+            "camera_motion": "pan"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B28",
+      "sentences": [
+        "S34"
+      ],
+      "start": 161.48,
+      "end": 167.74,
+      "dur": 6.26,
+      "device": "animated-map",
+      "narration_says": "That autumn, on the march to Egypt, Esarhaddon fell ill, and died.",
+      "viewer_sees": "ANIMATED MAP — an old map in clay tones: the Assyrian army column marches from Nineveh toward Egypt; partway there the king's banner tilts and falls",
+      "shots": [
+        {
+          "shot_id": "30",
+          "beat_id": "B28",
+          "link_group": null,
+          "t_in": 161.5,
+          "t_out": 167.75,
+          "use_in": 0,
+          "use_out": 6.25,
+          "use_len": 6.25,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pan-left",
+          "source_file": "shots/shot30.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "the fallen royal standard halfway along the road",
+            "the army column marching from Nineveh toward Egypt",
+            "Nineveh at the upper-right and Egypt at the lower-left",
+            "the autumn dust cloud"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: an old map of the ancient Near East drawn in clay tones on a wide tablet, seen from above like a painted board.\nACTION: that autumn the Assyrian army marches across the map from Nineveh toward Egypt, and partway along the road the king's standard has tipped over and fallen, the column bunching to a stop around it; the soldiers nearest the fallen pole are drawn kneeling, the chariots that followed them halted wheel to wheel, and the road beyond the standard toward Egypt lies empty.\nSETTING: on the map — at the upper-right, Nineveh as a small walled city on the river Tigris; the Tigris and the Euphrates as two blue lines; along the left edge the coast of the Mediterranean; at the lower-left, Egypt as the green Nile with its delta and tiny pyramids; the army as a long column of tiny marching soldiers and chariots following a dotted road from the upper-right toward the lower-left; at a point halfway along the road, the royal standard, a tall pole crowned with a bronze winged disc, lies fallen with tiny figures crowding round it.\nCAMERA: camera looks straight down on the map, overhead, wide.\nFRAME LAYOUT: upper-right — Nineveh, small; lower-left — Egypt and the Nile, small; center — the fallen standard and the halted column, the largest marks on the map; the road running diagonally through the frame.\nFACING: the map is seen flat and square-on; the tiny soldiers face toward the lower-left.\nSCREEN DIRECTION: the army column marches from the upper-right toward the lower-left; a small dust cloud drifts toward screen-left.\nLIGHT: soft even autumn light over the map, warm on the clay, a darker shadow pooled over the spot where the standard has fallen, as if a cloud had stopped over it.\nPALETTE: clay ochre, river blue, Nile green, dust brown.\nDETAIL: tiny chariots and spears as marks, tiny banners on the column, the dotted road, rippled river lines, small ships along the coast, the desert stippled as sand, mountains along the upper edge drawn as small triangles.\nNOT IN FRAME: Latin letters, labels, text, the king's body, modern objects.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "map-diagram",
+            "shot_size": "aerial",
+            "angle": "overhead",
+            "location": "route-to-egypt-map",
+            "time_light": "autumn-dust",
+            "camera_motion": "pan"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B29",
+      "sentences": [
+        "S35",
+        "S36"
+      ],
+      "start": 167.74,
+      "end": 179.94,
+      "dur": 12.2,
+      "device": null,
+      "narration_says": "The ritual was far older than him. Its earliest story comes from a Babylonian chronicle, and it is set more than a thousand years before Esarhaddon, in the city of Isin.",
+      "viewer_sees": "a Babylonian chronicle tablet close, dense cuneiform columns → the walled city of Isin on its plain a thousand years earlier, temple tower, palm groves and canals",
+      "shots": [
+        {
+          "shot_id": "31",
+          "beat_id": "B29",
+          "link_group": "B29",
+          "t_in": 167.75,
+          "t_out": 174.333,
+          "use_in": 0,
+          "use_out": 6.583,
+          "use_len": 6.583,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot31.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "the Babylonian chronicle tablet with dense cuneiform columns",
+            "the cracked corner and loose fragments",
+            "raking golden afternoon light",
+            "the reed mat"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a Babylonian chronicle tablet, a large old clay tablet the colour of dark honey, as long as a forearm, cracked across one corner, its face packed with dense columns of tiny cuneiform signs, its edges rounded and worn — the earliest story of the substitute king, written down long after the events it tells.\nACTION: the old tablet lies tilted on a reed mat, its rows of signs catching the low sun, as if waiting to be read; a thin crack runs through the corner, and the signs on both sides of the crack still line up, row after row, telling a story already more than a thousand years old when it was written down.\nSETTING: a scribe's reed mat in a Babylonian archive room in warm late-afternoon light, other chronicle tablets standing on edge on a low shelf, a few broken fragments of tablets beside it, a reed stylus, a small clay lamp unlit, a strip of linen that once wrapped the tablet folded back.\nCAMERA: camera stands low beside the tablet, eye level with its edge, close.\nFRAME LAYOUT: center — the tablet, near-camera and large, its columns of signs running across it; right edge — the cracked corner and loose fragments; upper-left — the low shelf of other tablets in warm hazy light, far; lower edge — the weave of the reed mat and the stylus, near-camera, softly blurred.\nFACING: the written face of the tablet tilts toward the camera, its columns upright.\nSCREEN DIRECTION: the low sunlight creeps across the columns toward screen-right; fine clay dust drifts toward screen-left; a moth crosses the light toward the upper-left.\nLIGHT: golden late-afternoon sun raking low across the signs from the left, every wedge throwing a long shadow, the edges of the tablet glowing like dark honey, the room around it falling into warm brown shade.\nPALETTE: honey clay, golden light, reed tan, shadow brown.\nDETAIL: dense wedge signs, chips along the edges, the crack across the corner, ruled lines between the columns, a fingerprint fired into the clay.\nNOT IN FRAME: people, Latin letters, readable modern text, modern objects.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "CU",
+            "angle": "eye",
+            "location": "chronicle-tablet",
+            "time_light": "golden-afternoon",
+            "camera_motion": "push"
+          }
+        },
+        {
+          "shot_id": "32",
+          "beat_id": "B29",
+          "link_group": "B29",
+          "t_in": 174.333,
+          "t_out": 179.958,
+          "use_in": 0,
+          "use_out": 5.625,
+          "use_len": 5.625,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pull",
+          "source_file": "shots/shot32.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "the walled city of Isin on its plain",
+            "the stepped temple terrace",
+            "palm groves and canals",
+            "reed boats and golden light"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: the walled city of Isin on the flat plain of southern Mesopotamia, more than a thousand years before Esarhaddon.\nSCALE: the whole city fits in the frame, small under a vast sky; the stepped temple terrace rises highest of all its buildings; the plain runs flat to every edge.\nACTION: the city lies peaceful in the late afternoon, reed boats moving along its canals, farmers walking home through the palm groves with hoes on their shoulders, a herd of sheep raising dust on the road to the main gate.\nSETTING: southern Mesopotamia around 1860 BCE, a different world from Assyria: thick mud-brick walls with rounded towers, the stepped temple terrace of Gula, the city's healing goddess, rising at its heart, flat-roofed houses packed close, the palace by the walls with a walled garden of date palms, canals shining between barley fields, irrigation ditches cutting the fields into neat strips, no stone anywhere, only brick, reed and palm.\nCAMERA: camera stands high on a rise outside the city, high angle, very wide.\nFRAME LAYOUT: center — the city of Isin with its walls and temple terrace, mid-frame; lower third — palm groves and canals, near-camera; upper third — wide golden sky; left edge — a reed boat on a canal, near-camera; right third — the palace and its walled garden of palms against the city wall.\nFACING: the city wall and its main gate face the camera at a three-quarter angle; the farmers on the road are seen from the side, walking toward the gate.\nSCREEN DIRECTION: reed boats glide along the canal toward screen-right; the farmers and the sheep walk toward screen-right toward the gate; a flight of birds crosses toward screen-left.\nLIGHT: golden late-afternoon sun from the left, long palm shadows across the fields, the walls glowing warm, the canals flashing where they catch the sun, a soft haze over the far plain.\nPALETTE: golden mud brick, palm green, canal blue, barley gold.\nDETAIL: wall towers and roofs readable by outline, layered palm groves, glints on the canals.\nNOT IN FRAME: Assyrian soldiers, Latin letters, text, modern objects.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "XLS",
+            "angle": "high",
+            "location": "isin-city",
+            "time_light": "golden-afternoon",
+            "camera_motion": "pull"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B30",
+      "sentences": [
+        "S37"
+      ],
+      "start": 179.94,
+      "end": 190.2,
+      "dur": 10.26,
+      "device": null,
+      "narration_says": "There, the chronicle says, King Erra-imitti made his gardener, Enlil-bani, substitute king, and placed the royal tiara on his head.",
+      "viewer_sees": "Isin: King Erra-imitti leads his gardener Enlil-bani, a weathered man with a pruning knife at his belt, in from the palace garden → places the royal tiara on the gardener's head as he sits on the throne",
+      "shots": [
+        {
+          "shot_id": "33",
+          "beat_id": "B30",
+          "link_group": "B30",
+          "t_in": 179.958,
+          "t_out": 185.208,
+          "use_in": 0,
+          "use_out": 5.25,
+          "use_len": 5.25,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pan-right",
+          "source_file": "shots/shot33.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "erra-imitti",
+            "enlil-bani",
+            "isin-palace"
+          ],
+          "visual_priority": [
+            "Erra-imitti drawing his gardener toward the throne",
+            "Enlil-bani fresh from the garden, looking back in disbelief",
+            "the empty throne at the right",
+            "the garden doorway with palms"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: an old Babylonian king of Isin, heavy-bodied and soft-handed, a fleshy proud face, a long rounded grey beard falling in waves, heavy-lidded eyes, a long fringed robe wrapped over the left shoulder, the right shoulder bare, the royal tiara of Isin still on his head, beckoning with one heavy ringed hand.\nSUBJECT 2: a lean Babylonian gardener in his thirties, a long narrow sun-dark face creased from squinting, a short curly black beard, thick black brows, sinewy arms, big work-hardened hands, a curved bronze pruning knife at his belt, fresh from the palace garden, barefoot and dusty, a palm frond still in his hand, looking at his king in disbelief.\nACTION: King Erra-imitti draws his gardener in from the garden and toward the throne, one hand on the gardener's shoulder and the other pointing at the empty throne.\nSETTING: the throne hall of the palace of Isin, thick mud-brick walls plastered white and painted with red and black bands, palm-trunk ceiling beams, a raised mud-brick dais with a carved wooden throne; a wide doorway at the left opening onto the palace garden of date palms and water channels; the empty throne on its dais at the right; two courtiers staring.\nCAMERA: camera stands in the hall near the garden doorway, eye level, medium.\nFRAME LAYOUT: left third — Erra-imitti, near-camera and large; center — Enlil-bani, near-camera and large, being drawn toward screen-right; right third — the empty throne on its dais, medium; left edge — the bright garden doorway with palms.\nFACING: we see Erra-imitti's face three-quarter on, turned toward screen-right; Enlil-bani's face is three-quarter on, looking back toward screen-left at the king, eyes wide.\nSCREEN DIRECTION: the gardener is led toward screen-right, toward the throne; garden light spills toward screen-right across the floor.\nLIGHT: golden afternoon light floods in from the garden doorway at the left, the throne at the right in warm shade.\nPALETTE: golden light, whitewash, palm green, dark blue.\nDETAIL: dust on the gardener's feet, the ring on the king's hand, painted bands on the walls, the ribs of the palm frond.\nNOT IN FRAME: Assyrians, the moon, Latin letters, text, modern objects.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "isin-palace",
+            "time_light": "golden-afternoon",
+            "camera_motion": "pan"
+          }
+        },
+        {
+          "shot_id": "34",
+          "beat_id": "B30",
+          "link_group": "B30",
+          "t_in": 185.208,
+          "t_out": 190.208,
+          "use_in": 0,
+          "use_out": 5,
+          "use_len": 5,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot34.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "enlil-bani",
+            "isin-tiara",
+            "erra-imitti"
+          ],
+          "visual_priority": [
+            "Enlil-bani on the throne receiving the crown",
+            "the tiara of Isin being lowered onto his head",
+            "Erra-imitti bareheaded, holding the tiara",
+            "the painted throne hall"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a lean Babylonian gardener in his thirties, a long narrow sun-dark face creased from squinting, a short curly black beard, thick black brows, sinewy arms, big work-hardened hands, a curved bronze pruning knife at his belt, seated stiffly on the carved wooden throne of Isin, still in his plain undyed gardener's kilt, his big hands on his knees, his head bowed to receive the crown.\nSUBJECT 2: the royal tiara of Isin, a round cap of dark blue felt with a thick rolled brim, a band of hammered gold around the brim set with carnelian beads, being lowered onto the gardener's head.\nSUBJECT 3: an old Babylonian king of Isin, heavy-bodied and soft-handed, a fleshy proud face, a long rounded grey beard falling in waves, heavy-lidded eyes, a long fringed robe wrapped over the left shoulder, the right shoulder bare, bareheaded now, standing beside the throne and holding the tiara in both hands as he sets it down.\nACTION: King Erra-imitti places the royal tiara on the gardener's head, making Enlil-bani substitute king.\nSETTING: the throne hall of Isin, white-plastered mud-brick walls painted with red and black bands, palm-trunk beams, a raised mud-brick dais; a scholar holding an omen tablet and two courtiers watching in silence.\nCAMERA: camera stands low near the dais, low angle, medium.\nFRAME LAYOUT: right third — Enlil-bani on the throne, near-camera and large; center — the tiara in Erra-imitti's hands above the gardener's head; left third — Erra-imitti, near-camera and large, cropped at the hip.\nFACING: we see the gardener's face three-quarter on, turned up toward screen-left at the king; Erra-imitti faces screen-right, looking down at him.\nSCREEN DIRECTION: the tiara descends from Erra-imitti's hands toward the gardener's head; a hanging cloth on the wall stirs toward screen-left.\nLIGHT: golden afternoon shafts from a doorway at the left, the gold band of the tiara flashing.\nPALETTE: golden light, whitewash, dark blue, carnelian red.\nDETAIL: carnelian beads, the rolled felt brim, calloused hands with earth still under the nails, painted bands on the walls.\nNOT IN FRAME: Assyrians, the moon, Latin letters, text, modern objects.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "low",
+            "location": "isin-palace",
+            "time_light": "golden-afternoon",
+            "camera_motion": "push"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B31",
+      "sentences": [
+        "S38"
+      ],
+      "start": 190.2,
+      "end": 194.96,
+      "dur": 4.76,
+      "device": null,
+      "narration_says": "Then Erra-imitti died in his own palace, sipping a hot soup.",
+      "viewer_sees": "Erra-imitti in his own palace chamber raises a steaming bowl of hot soup to his lips with both hands, a servant behind him with the jug",
+      "shots": [
+        {
+          "shot_id": "35",
+          "beat_id": "B31",
+          "link_group": null,
+          "t_in": 190.208,
+          "t_out": 194.958,
+          "use_in": 0,
+          "use_out": 4.75,
+          "use_len": 4.75,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "hold",
+          "source_file": "shots/shot35.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "erra-imitti"
+          ],
+          "visual_priority": [
+            "Erra-imitti sipping hot soup from a steaming bowl",
+            "the steam curling around his beard",
+            "the servant with the jug at the right",
+            "his bare head without the tiara"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: an old Babylonian king of Isin, heavy-bodied and soft-handed, a fleshy proud face, a long rounded grey beard falling in waves, heavy-lidded eyes, a long fringed robe wrapped over the left shoulder, the right shoulder bare, bareheaded without his tiara, in his own palace chamber, sitting on a cushioned chair and raising a steaming bowl of hot soup to his lips with both hands.\nACTION: the old king takes a careful little sip of the hot soup, eyes half-closed with pleasure, steam curling up around his beard, at ease in his own palace while another man sits on his throne.\nSETTING: a private chamber of the palace of Isin, white-plastered walls with a painted red band, a low table with a bowl of dates, flatbread, a dish of onions and a clay jug, a window opening onto palms, embroidered cushions on a bench along the wall; a young servant at the right holds a clay jug ready to fill the bowl again; a small brown dog sleeps under the table.\nCAMERA: camera stands across the low table, eye level, close.\nFRAME LAYOUT: left third — Erra-imitti with the bowl at his lips, near-camera and large; center — the steam rising; right third — the servant with the jug, medium; lower edge — the low table with dates and flatbread, near-camera.\nFACING: we see the king's face three-quarter on, turned toward screen-right, eyes half-closed over the bowl; the servant faces screen-left.\nSCREEN DIRECTION: the steam from the bowl curls up toward the upper-right; the servant's jug tips toward screen-left.\nLIGHT: warm afternoon light through the window at the right, catching the steam and turning it gold, the king's face lit softly from the side, the corners of the room in warm shade.\nPALETTE: warm ochre, whitewash, soup brown, palm green.\nDETAIL: wisps of steam, a drop of soup on the beard, the glazed rim of the bowl, flecks of herbs floating in the soup, rings on his soft fingers, the embroidered edge of his robe.\nNOT IN FRAME: the tiara, the gardener, death, poison, Latin letters, text, modern objects.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "CU",
+            "angle": "eye",
+            "location": "isin-palace-chamber",
+            "time_light": "warm-afternoon",
+            "camera_motion": "locked"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B32",
+      "sentences": [
+        "S39"
+      ],
+      "start": 194.96,
+      "end": 199.14,
+      "dur": 4.18,
+      "device": null,
+      "narration_says": "The gardener, sitting on the throne, did not give it up.",
+      "viewer_sees": "Enlil-bani on the throne with the tiara on his head, gardener's hands gripping the throne arms; courtiers hesitate at the edges of the hall",
+      "shots": [
+        {
+          "shot_id": "36",
+          "beat_id": "B32",
+          "link_group": null,
+          "t_in": 194.958,
+          "t_out": 199.125,
+          "use_in": 0,
+          "use_out": 4.167,
+          "use_len": 4.167,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot36.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "enlil-bani",
+            "isin-tiara",
+            "isin-palace"
+          ],
+          "visual_priority": [
+            "Enlil-bani gripping the throne, not giving it up",
+            "the tiara of Isin firmly on his head",
+            "courtiers hesitating at the left",
+            "his gardener's hands on the armrests"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a lean Babylonian gardener in his thirties, a long narrow sun-dark face creased from squinting, a short curly black beard, thick black brows, sinewy arms, big work-hardened hands, a curved bronze pruning knife at his belt, on the throne of Isin, the king's own fringed robe now wound around him and pinned at the left shoulder, his gardener's hands gripping the armrests hard, his jaw set.\nSUBJECT 2: the royal tiara of Isin, a round cap of dark blue felt with a thick rolled brim, a band of hammered gold around the brim set with carnelian beads, firmly on his head.\nACTION: the gardener sits on the throne and does not get up, gripping it, while courtiers hesitate at the edge of the hall, unsure whether to bow; one of them holds out an open hand as if asking for the crown back, and the gardener does not move toward it.\nSETTING: the throne hall of the palace of Isin, thick mud-brick walls plastered white and painted with red and black bands, palm-trunk ceiling beams, a raised mud-brick dais with a carved wooden throne; daylight shafts from high openings, the hall half empty, the courtiers murmuring to each other, a mourning drum lying silent by the door, an overturned stool on the dais steps.\nCAMERA: camera stands on the floor just below the dais steps, looking up, low angle, medium.\nFRAME LAYOUT: right third — the gardener-king and his throne, near-camera and large; left third — three hesitating courtiers, medium and half in shadow; center — the steps of the dais and the overturned stool.\nFACING: we see Enlil-bani's face and chest full on, eyes fixed toward screen-left at the courtiers; the courtiers face screen-right toward him, glancing at each other.\nSCREEN DIRECTION: one courtier takes a hesitant half-step toward screen-right; dust drifts down through the light shafts.\nLIGHT: daylight in shafts from high openings, the gardener in a bright shaft, the courtiers in shade.\nPALETTE: whitewash, dark blue, gold, shadow umber.\nDETAIL: white knuckles on the carved armrests, the pruning knife still at his belt, the robe fringe, carnelian beads.\nNOT IN FRAME: Erra-imitti, Assyrians, Latin letters, text, modern objects.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "low",
+            "location": "isin-palace",
+            "time_light": "daylight-shafts",
+            "camera_motion": "push"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B33",
+      "sentences": [
+        "S40"
+      ],
+      "start": 199.14,
+      "end": 204.94,
+      "dur": 5.8,
+      "device": null,
+      "narration_says": "Enlil-bani ruled Isin for twenty-four years, and his own inscriptions survive.",
+      "viewer_sees": "one of Enlil-bani's own inscriptions: a clay foundation cone covered in cuneiform, half-buried in the earth of a ruined wall",
+      "shots": [
+        {
+          "shot_id": "37",
+          "beat_id": "B33",
+          "link_group": null,
+          "t_in": 199.125,
+          "t_out": 204.958,
+          "use_in": 0,
+          "use_out": 5.833,
+          "use_len": 5.833,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pan-right",
+          "source_file": "shots/shot37.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "Enlil-bani's clay foundation cone half-buried in the ruin",
+            "the king-list fragment with the cuneiform numeral twenty-four",
+            "the eroded mounds of Isin",
+            "low raking sun"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: one of Enlil-bani's own inscriptions that survive: a clay foundation cone, shaped like a long blunt nail with a broad round head, its shaft wrapped in neat bands of cuneiform signs, half-buried in the crumbling earth of a ruined mud-brick wall.\nACTION: the cone sticks out of the ruin at an angle, its inscription catching the low sun, and beside it lies a broken clay fragment of the king list with one line ending in the cuneiform numeral for his twenty-four years of rule: two corner-shaped wedges for twenty and four upright wedges for four.\nSETTING: the ruins of Isin, eroded mounds of mud brick on a dry plain, the old wall showing as a low ridge of crumbling courses, potsherds scattered in the dust, a few tufts of dry grass, a second cone broken at the head lying a little farther along the ruin.\nCAMERA: camera stands low on the ground beside the ruined wall, eye level with the cone, close.\nFRAME LAYOUT: center and left third — the foundation cone, near-camera and large; right third — the king-list fragment with the numeral twenty-four, near-camera; upper edge — the eroded mounds of Isin, far and hazy; left edge — the broken second cone, small.\nFACING: the inscribed shaft of the cone faces the camera, its bands of signs running round it like rings; the fragment lies face-up, tilted toward the camera, the line with the numeral nearest the lens.\nSCREEN DIRECTION: dry dust blows across the ground toward screen-right; tufts of grass bend toward screen-right; a small lizard darts across the bricks toward screen-left, lifting dust.\nLIGHT: low golden sun from the left raking across the inscription, each wedge throwing a sharp shadow, the clay glowing warm against the cool blue shade of the mound.\nPALETTE: sun-baked clay, dust ochre, low-sun gold, dry grass.\nDETAIL: crisp wedge signs on the cone, the two corner wedges and four uprights of the numeral, cracks in the bricks, straw imprints in the old mud brick, potsherds.\nNOT IN FRAME: people, excavation tools, Latin letters, Arabic numerals, text, modern objects.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "CU",
+            "angle": "eye",
+            "location": "isin-ruins",
+            "time_light": "low-sun",
+            "camera_motion": "pan"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B34",
+      "sentences": [
+        "S41"
+      ],
+      "start": 204.94,
+      "end": 211.1,
+      "dur": 6.16,
+      "device": null,
+      "narration_says": "He rebuilt the city wall and named it \"Enlil-bani is firm as to foundation.\"",
+      "viewer_sees": "the city wall of Isin being rebuilt: workers carry mud bricks up ladders, Enlil-bani in the tiara watching from the rampart",
+      "shots": [
+        {
+          "shot_id": "38",
+          "beat_id": "B34",
+          "link_group": null,
+          "t_in": 204.958,
+          "t_out": 211.083,
+          "use_in": 0,
+          "use_out": 6.125,
+          "use_len": 6.125,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pull",
+          "source_file": "shots/shot38.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "enlil-bani",
+            "isin-tiara"
+          ],
+          "visual_priority": [
+            "Enlil-bani on the rampart watching his wall rise",
+            "workers carrying mud bricks up ladders",
+            "the inscribed cone set into the new brickwork",
+            "old crumbled wall beside fresh brick"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a lean Babylonian gardener in his thirties, a long narrow sun-dark face creased from squinting, a short curly black beard, thick black brows, sinewy arms, big work-hardened hands, a curved bronze pruning knife at his belt, king of Isin now, his royal robe hitched up at the belt like a working man's, standing on the rampart with his arms folded, watching his wall rise.\nSUBJECT 2: the royal tiara of Isin, a round cap of dark blue felt with a thick rolled brim, a band of hammered gold around the brim set with carnelian beads, on his head.\nACTION: the gardener-king oversees the rebuilding of the city wall of Isin as workers carry mud bricks up ladders and lay them in courses, and a builder sets an inscribed clay foundation cone bearing the wall's name into the new brickwork.\nSETTING: the city wall of Isin, a thick mud-brick wall with rounded towers, half of it crumbled and half newly built with fresh pale bricks; brick moulds and rows of drying bricks on the ground below, baskets, ropes, wooden ladders, a canal at its foot.\nCAMERA: camera stands on the ground outside the wall, low angle, wide.\nFRAME LAYOUT: right third — Enlil-bani on the rampart, medium, against the sky; center — the wall face with ladders and climbing workers, mid-frame; left third — the crumbled old section, far; lower edge — rows of drying bricks, near-camera.\nFACING: we see the king's face three-quarter on, looking down toward screen-left at the work; the workers climb facing the wall, half turned from the camera; a boy with a water jar looks up at the king.\nSCREEN DIRECTION: workers carry bricks up the ladders toward the upper-right; a basket on a rope rises toward the upper edge.\nLIGHT: bright clear morning sun from the left, crisp shadows of the ladders on the wall.\nPALETTE: fresh brick tan, old brick brown, sky blue, dark blue.\nDETAIL: brick courses, straw in the fresh bricks, ladder rungs, the clay cone set in the wall, mud dripping from the workers' baskets.\nNOT IN FRAME: Assyrians, Latin letters, text, modern objects.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "low",
+            "location": "isin-wall",
+            "time_light": "bright-morning",
+            "camera_motion": "pull"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B35",
+      "sentences": [
+        "S42"
+      ],
+      "start": 211.1,
+      "end": 215,
+      "dur": 3.9,
+      "device": "ledger-accumulation",
+      "narration_says": "He cut the barley tax from a fifth to a tenth.",
+      "viewer_sees": "LEDGER — a threshing floor: of five heaps of barley one used to go to the tax scribe; now ten heaps stand and only one is carried off, the farmer keeping the rest",
+      "shots": [
+        {
+          "shot_id": "39",
+          "beat_id": "B35",
+          "link_group": null,
+          "t_in": 211.083,
+          "t_out": 215,
+          "use_in": 0,
+          "use_out": 3.917,
+          "use_len": 3.917,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pan-right",
+          "source_file": "shots/shot39.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "the two threshing floors: five heaps and ten heaps",
+            "one heap of five carried off, one heap of ten carried off",
+            "the tax scribe at the right edge",
+            "the farmer keeping nine heaps"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: two threshing floors of beaten earth side by side outside Isin, heaped with threshed golden barley.\nACTION: on the left floor, the old tax: five heaps of barley stand in a row and one of the five is being carried off in baskets by the tax collector's men, a fifth; on the right floor, the tax under Enlil-bani: ten heaps stand in a row and only one of the ten is being carried off, a tenth, while the farmer and his family keep the other nine.\nSETTING: the harvest plain of Isin, barley stubble, donkeys with panniers, palms at the edge of the fields, wooden winnowing forks stuck upright in the heaps, a threshing sledge leaning on a palm; at the right edge a tax scribe seated on a mat with a clay tablet, counting the baskets as they come.\nCAMERA: camera stands on a low rise above the floors, high angle, wide.\nFRAME LAYOUT: left third — the first floor with five heaps, one of them half gone, medium and in shade; center and right third — the second floor with ten heaps in a row, one being carried off, near-camera and large; right edge — the tax scribe on his mat.\nFACING: the tax men are seen from the side, walking toward screen-right with their baskets; the farmer on the right floor faces the camera, standing among his nine heaps; the tax scribe faces screen-left, his stylus raised over his tablet.\nSCREEN DIRECTION: the tax collector's men carry their baskets toward screen-right, toward the scribe; chaff blows toward screen-right.\nLIGHT: hard harvest sun, gold on the barley, short shadows, the old floor at the left under the shade of a palm, the new floor at the right in full bright sun.\nPALETTE: barley gold, earth brown, pale sky blue, linen white.\nDETAIL: each heap separate and countable, five on the left and ten on the right, chaff in the air, basket weave, the scribe's tablet, the farmer's children sitting on top of the nearest heap.\nNOT IN FRAME: Assyrians, Latin letters, numerals, text, modern objects.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "LS",
+            "angle": "high",
+            "location": "isin-threshing-floor",
+            "time_light": "harvest-sun",
+            "camera_motion": "pan"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B36",
+      "sentences": [
+        "S43"
+      ],
+      "start": 215,
+      "end": 221.58,
+      "dur": 6.58,
+      "device": "silhouette",
+      "narration_says": "Historians suspect the tale is a legend, perhaps one that dressed up an ordinary seizure of the throne.",
+      "viewer_sees": "SILHOUETTE — black against a dusk sky, a figure in a tiara stands on the palace wall, spear silhouettes of armed men gathering around him",
+      "shots": [
+        {
+          "shot_id": "40",
+          "beat_id": "B36",
+          "link_group": null,
+          "t_in": 215,
+          "t_out": 221.583,
+          "use_in": 0,
+          "use_out": 6.583,
+          "use_len": 6.583,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "hold",
+          "source_file": "shots/shot40.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "the black silhouette of the figure in the tiara on the wall",
+            "the spearmen gathering around him",
+            "the burning dusk sky",
+            "the wall top as a black line"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a figure in a round royal tiara with a thick rolled brim, seen only as a black silhouette, standing on top of the palace wall of Isin.\nACTION: armed men gather around the crowned figure on the wall, the black shapes of their spears rising one after another against the sky, as if the throne were being taken by force; the crowned figure stands with one arm raised, holding a mace high, like a man who has just claimed something and dares anyone to take it back.\nSETTING: the top of a mud-brick wall with rounded crenellations, its edge a hard black line; a square gate tower at the right, a single pennant on a pole whipping from its top; the whole upper two thirds of the frame a flat burning dusk sky of orange and red, with long thin bars of cloud.\nCAMERA: camera stands on the ground below the wall, low angle, wide.\nFRAME LAYOUT: lower third — the wall top as a black line; right of center — the crowned figure, black, the tallest shape; left third and center — eight spearmen in black silhouette, spears raised, evenly spaced; upper two thirds — flat orange and red dusk sky.\nFACING: all figures are seen in profile; the crowned figure faces screen-left; the spearmen face screen-right toward him.\nSCREEN DIRECTION: the spearmen close in toward the crowned figure from screen-left; long thin clouds stream toward screen-left; the pennant snaps toward screen-left.\nLIGHT: the sun just set below the wall, the sky burning orange low down and deepening to red and then violet higher up, a thin bright rim of light along the top of the wall, everything standing on it pure black; a single early star shows high at the upper-left.\nPALETTE: black, burning orange, deep red, dusk violet.\nDETAIL: crisp silhouettes, sharp leaf-shaped spear points, the round tiara and its rolled brim readable in outline, the mace head, the flutter of the pennant, the fringe of a robe hanging from the crowned figure's shoulder, no inner detail on any figure.\nNOT IN FRAME: faces, blood, fighting, Latin letters, text, modern objects.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "low",
+            "location": "isin-wall",
+            "time_light": "dusk",
+            "camera_motion": "locked"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B37",
+      "sentences": [
+        "S44"
+      ],
+      "start": 221.58,
+      "end": 231.2,
+      "dur": 9.62,
+      "device": "empty-aftermath",
+      "narration_says": "But in every letter from Nineveh, the ritual ends the same way: the stand-in dies, and the king lives, for a while.",
+      "viewer_sees": "EMPTY AFTERMATH — in Nineveh, the substitute's royal robe lies folded on a bare bench in the corner; deep behind it the real king sits on his throne again, small and far",
+      "shots": [
+        {
+          "shot_id": "41",
+          "beat_id": "B37",
+          "link_group": null,
+          "t_in": 221.583,
+          "t_out": 226.417,
+          "use_in": 0,
+          "use_out": 4.834,
+          "use_len": 4.834,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pan-left",
+          "source_file": "shots/shot41.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "Nineveh at grey dawn across the Tigris",
+            "the citadel mound and palace terraces",
+            "two couriers riding out with satchels of letters",
+            "mist on the river"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: the city of Nineveh at grey dawn seen from across the Tigris: its long walls and towered gates, the palace terraces high on the citadel mound, the river grey below — the city where every one of these letters was written and read.\nACTION: the Assyrian capital wakes, two royal couriers riding out of a gate with satchels of clay letters, reed boats moving on the grey river, the first smoke of cooking fires rising straight up from the roofs in the still air.\nSETTING: the seventh century BCE; the citadel mound crowned by palaces with stepped crenellations and pale relief-lined walls, mud-brick city walls with towered gates running along the river, the stone piers of a bridge over a side stream, fields and palms on the near bank, a reed shelter and a moored boat at the water's edge.\nCAMERA: camera stands on the far bank of the Tigris, eye level, very wide.\nFRAME LAYOUT: center and right third — the citadel mound and its palaces, mid-frame; left third — a city gate with the two couriers riding out, near-camera; lower third — the grey river with a reed boat; upper third — pale grey sky; right edge — the river bending away north, hazy.\nFACING: the palace walls face the camera at a three-quarter angle; the couriers are seen in profile, leaning forward over their horses' necks, their satchels bouncing at their hips.\nSCREEN DIRECTION: the two couriers ride out of the gate toward screen-left; a reed boat drifts toward screen-left on the river; a heron lifts off the near bank toward the upper-left.\nLIGHT: flat grey dawn, no sun yet, mist lying on the water and in the low streets, cold soft light, a few lamps still burning as small warm points in the palace windows.\nPALETTE: ash grey, mist white, mud-brick brown, river slate.\nDETAIL: wall towers and palace terraces readable by outline, the winged-bull gates as small pale shapes, layers of mist, ripples on the river, the couriers' horses and satchels sharp in the near ground.\nNOT IN FRAME: the moon, Isin, Latin letters, text, modern objects.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "XLS",
+            "angle": "eye",
+            "location": "nineveh-city",
+            "time_light": "grey-dawn",
+            "camera_motion": "pan"
+          }
+        },
+        {
+          "shot_id": "42",
+          "beat_id": "B37",
+          "link_group": null,
+          "t_in": 226.417,
+          "t_out": 231.208,
+          "use_in": 0,
+          "use_out": 4.791,
+          "use_len": 4.791,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot42.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "nineveh-throne-room",
+            "esarhaddon"
+          ],
+          "visual_priority": [
+            "the Nineveh throne room at grey dawn with the stand-in's robe on a bench",
+            "Esarhaddon on his throne again, small and far",
+            "the little omen tablet still tied in the hem",
+            "a pale fading moon in a high window"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a long Assyrian throne room at Nineveh, walls lined with carved grey gypsum relief slabs of winged spirits, a stepped stone dais with a carved ivory-and-bronze throne and footstool, cedar ceiling beams, high square windows under the roof, in grey dawn light, after another stand-in has gone to his fate.\nSUBJECT 2: a gaunt Assyrian king in his forties, a long squared black beard set in tight rows of ringlets, shoulder-length black hair curled at the nape, heavy-lidded dark eyes under thick brows, a strong hooked nose, heavy gold crescent earrings, small and far, seated on his throne again in his long fringed blue robe with the tall white-and-gold crown on his head, alive.\nACTION: near the camera the stand-in's royal robe lies folded on a bare wooden bench in the corner of the hall, empty, while far across the hall the real king sits on his throne once more — for a while.\nSETTING: the bench is plain wood; on the folded robe the little omen tablet is still tied into the hem with its red-and-white cord; in one of the high windows a pale moon is fading into the dawn.\nCAMERA: camera stands in the corner of the hall beside the bench, eye level, wide.\nFRAME LAYOUT: right third — the bench and the folded robe, near-camera and large; left of center — the dais and the throne with the king, far and small; upper edge — the high windows, a pale fading moon in one.\nFACING: we see the king seated facing toward screen-right, small; the hem with its tied tablet faces the camera.\nSCREEN DIRECTION: grey dawn light slides across the floor toward screen-right; a thread of smoke from a dead torch drifts toward screen-left.\nLIGHT: cold grey dawn from the high windows, the bench in soft grey light, the king in a pale shaft.\nPALETTE: ash grey, faded blue, dull gold, stone.\nDETAIL: crisp folds in the robe, the little tied tablet, dulled gold rosettes, the king's crown small and bright.\nNOT IN FRAME: bodies, blood, the stand-in, Latin letters, text, modern objects.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "nineveh-throne-room",
+            "time_light": "grey-dawn",
+            "camera_motion": "push"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B38",
+      "sentences": [
+        "S45",
+        "S46",
+        "S47"
+      ],
+      "start": 231.2,
+      "end": 240.32,
+      "dur": 9.12,
+      "device": null,
+      "narration_says": "Only the oldest story ends the other way. The gods took the king. And the man crowned to die kept the crown.",
+      "viewer_sees": "Isin: the shrouded bier of Erra-imitti carried out at the left; on the right the gardener sits crowned on the throne and the whole court kneels to him",
+      "shots": [
+        {
+          "shot_id": "43",
+          "beat_id": "B38",
+          "link_group": "B38",
+          "t_in": 231.208,
+          "t_out": 236.333,
+          "use_in": 0,
+          "use_out": 5.125,
+          "use_len": 5.125,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pan-left",
+          "source_file": "shots/shot43.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "isin-palace",
+            "enlil-bani",
+            "isin-tiara"
+          ],
+          "visual_priority": [
+            "the Isin palace hall as the bier is carried into the blazing doorway",
+            "Enlil-bani crowned on the throne, watching",
+            "Erra-imitti's shrouded bier and its bearers",
+            "the white-gold light pouring in"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: the throne hall of the palace of Isin, thick mud-brick walls plastered white and painted with red and black bands, palm-trunk ceiling beams, a raised mud-brick dais with a carved wooden throne, on the day the gods took the king.\nSCALE: the doorway at the left is enormous and blazing with white-gold light, taller than four men; the bearers and the bier look small as they pass into it; the light pours across the whole floor of the hall.\nSUBJECT 2: a lean Babylonian gardener in his thirties, a long narrow sun-dark face creased from squinting, a short curly black beard, thick black brows, sinewy arms, big work-hardened hands, a curved bronze pruning knife at his belt, seated on the throne in a long fringed royal robe, watching in silence.\nSUBJECT 3: the royal tiara of Isin, a round cap of dark blue felt with a thick rolled brim, a band of hammered gold around the brim set with carnelian beads, on his head.\nACTION: six bearers carry the shrouded bier of King Erra-imitti out of the hall through a doorway blazing with light, as if the gods themselves were taking him, mourners with loosened hair following the bier.\nCAMERA: camera stands on the floor of the hall, low angle, wide.\nFRAME LAYOUT: left third — the blazing doorway and the bier passing into it, medium; center — the beam of light across the floor; right third — Enlil-bani on the throne, near-camera and large.\nFACING: the bearers are seen from the side, walking toward screen-left; Enlil-bani faces screen-left, watching the bier go.\nSCREEN DIRECTION: the bier and its bearers move toward screen-left into the light; dust and incense smoke swirl toward the doorway.\nLIGHT: overwhelming white-gold light pouring in through the left doorway, rays cutting through incense smoke; the rest of the hall dim, the gardener lit along one side.\nPALETTE: white gold, whitewash, shroud white, deep shadow.\nDETAIL: rays in the smoke, folds of the shroud, the gold band of the tiara.\nNOT IN FRAME: the dead king's face, blood, Assyrians, Latin letters, text, modern objects.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "low",
+            "location": "isin-palace",
+            "time_light": "daylight-shafts",
+            "camera_motion": "pan"
+          }
+        },
+        {
+          "shot_id": "44",
+          "beat_id": "B38",
+          "link_group": "B38",
+          "t_in": 236.333,
+          "t_out": 240.333,
+          "use_in": 0,
+          "use_out": 4,
+          "use_len": 4,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/shot44.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "enlil-bani",
+            "isin-tiara",
+            "isin-palace"
+          ],
+          "visual_priority": [
+            "Enlil-bani crowned and calm on the throne",
+            "the whole court of Isin kneeling to him",
+            "the tiara of Isin shining",
+            "light falling full on the throne"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a lean Babylonian gardener in his thirties, a long narrow sun-dark face creased from squinting, a short curly black beard, thick black brows, sinewy arms, big work-hardened hands, a curved bronze pruning knife at his belt, the man crowned to die, sitting upright and calm on the throne of Isin, the royal robe settled on him as if it had always been his, his gardener's hands resting easy on the armrests.\nSUBJECT 2: the royal tiara of Isin, a round cap of dark blue felt with a thick rolled brim, a band of hammered gold around the brim set with carnelian beads, on his head, its gold band shining.\nACTION: the whole court of Isin kneels before the gardener-king who kept the crown, rows of courtiers, scholars and guards bowing their foreheads to the floor, the same courtiers who hesitated now pressing lowest of all.\nSETTING: the throne hall of the palace of Isin, thick mud-brick walls plastered white and painted with red and black bands, palm-trunk ceiling beams, a raised mud-brick dais with a carved wooden throne; the light from the great doorway now falling full on the throne.\nCAMERA: camera stands on the floor at the back of the hall, low angle, wide.\nFRAME LAYOUT: right third — Enlil-bani on the throne, medium-large and lit; left third and center — rows of kneeling courtiers, near-camera, cropped at the shoulder; upper edge — the palm-trunk beams.\nFACING: we see the gardener's face and chest three-quarter on, looking toward screen-left over the kneeling court; the courtiers are seen from the side and back, bowed toward screen-right; a guard at the left edge kneels last, his spear laid flat.\nSCREEN DIRECTION: the last row of courtiers drops to its knees toward screen-right; dust floats down through the light onto the throne.\nLIGHT: warm daylight in broad shafts, the throne in full gold light.\nPALETTE: warm gold, whitewash, dark blue, carnelian red.\nDETAIL: carnelian beads, the robe fringe, rows of bowed heads and the soles of kneeling feet, the pruning knife still at his belt.\nNOT IN FRAME: Erra-imitti, Assyrians, blood, Latin letters, text, modern objects.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "low",
+            "location": "isin-palace",
+            "time_light": "daylight-shafts",
+            "camera_motion": "push"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B39",
+      "sentences": [
+        "S48",
+        "S49",
+        "S50"
+      ],
+      "start": 240.32,
+      "end": 255.713,
+      "dur": 15.393,
+      "device": null,
+      "narration_says": "A borrowed crown could buy a king a hundred days — and once, it bought a gardener a kingdom. For more strange rituals and forgotten lives like this, leave a like and subscribe to Animated Tales. Until next time.",
+      "viewer_sees": "two crowns side by side: the Assyrian royal cap on a folded robe in shadow, the Isin tiara in light beside a gardener's pruning knife → END CARD: poster of the whole story with title and SUBSCRIBE",
+      "shots": [
+        {
+          "shot_id": "45",
+          "beat_id": "B39",
+          "link_group": null,
+          "t_in": 240.333,
+          "t_out": 248,
+          "use_in": 0,
+          "use_out": 7.667,
+          "use_len": 7.667,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pan-right",
+          "source_file": "shots/shot45.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "assyrian-crown",
+            "isin-tiara"
+          ],
+          "visual_priority": [
+            "the Assyrian crown in shadow on the folded robe",
+            "the tiara of Isin in light beside the pruning knife",
+            "the tally tablet with a hundred strokes",
+            "the lamp between them"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: the Assyrian royal crown, a tall truncated cone of white felt wrapped with gold bands of rosettes, a small pointed peak on top, two long red ribbons hanging down the back, the borrowed crown, lying on a folded royal robe of deep blue wool in shadow, beside a small clay tablet scored with a hundred tally strokes in ten rows of ten — a hundred days.\nSUBJECT 2: the royal tiara of Isin, a round cap of dark blue felt with a thick rolled brim, a band of hammered gold around the brim set with carnelian beads, resting in warm light on a plain undyed wool cloth beside a curved bronze pruning knife and a few ears of barley — the crown that bought a gardener a kingdom.\nACTION: the two crowns rest side by side on one table, the borrowed crown of Assyria in the dark and the tiara of Isin in the light.\nSETTING: a dark wooden table, one clay oil lamp burning between the two crowns.\nCAMERA: camera stands at the edge of the table, eye level, close.\nFRAME LAYOUT: left third — the Assyrian crown on the folded blue robe, near-camera and large, half in shadow, the tally tablet at its foot; right third — the tiara of Isin on the undyed cloth, near-camera and large, in full light, the pruning knife and barley at its foot; center — the oil lamp flame.\nFACING: both crowns are seen three-quarter on, the Assyrian crown turned toward screen-right, the tiara toward screen-left.\nSCREEN DIRECTION: the lamp flame leans toward screen-right, toward the tiara; a thread of smoke drifts toward the upper-left over the Assyrian crown.\nLIGHT: one oil lamp at the center, its light falling warm and full on the tiara at the right, the Assyrian crown at the left sunk in shadow with only its gold rosettes glinting.\nPALETTE: lamp gold, royal blue, carnelian red, shadow black.\nDETAIL: every tally stroke countable, the nap of both felts, hammered gold, the edge of the pruning knife, barley awns.\nNOT IN FRAME: people, hands, Latin letters, text, modern objects.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "CU",
+            "angle": "eye",
+            "location": "two-crowns",
+            "time_light": "lamplit-gold",
+            "camera_motion": "pan"
+          }
+        },
+        {
+          "shot_id": "46",
+          "beat_id": "B39",
+          "link_group": null,
+          "t_in": 248,
+          "t_out": 255.708,
+          "use_in": 0,
+          "use_out": 7.708,
+          "use_len": 7.708,
+          "motion_budget": null,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "hold",
+          "source_file": "shots/shot46.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "esarhaddon",
+            "enlil-bani",
+            "damqi"
+          ],
+          "visual_priority": [
+            "Esarhaddon large at the left edge",
+            "Enlil-bani crowned large at the right edge",
+            "title THE SUBSTITUTE KING and the SUBSCRIBE button",
+            "the empty throne under the eclipsed moon between Nineveh and Isin",
+            "Damqi and his queen at the gardener's shoulder"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSHOT: one epic poster of the whole story under the eclipse — the king who hid from the sky, his scholars and their clay letters, the stand-ins crowned to die in his place, Damqi and his queen, and the gardener of Isin who was crowned to die and kept the crown.\nSUBJECT: a gaunt Assyrian king in his forties, a long squared black beard set in tight rows of ringlets, shoulder-length black hair curled at the nape, heavy-lidded dark eyes under thick brows, a strong hooked nose, heavy gold crescent earrings, robed as king of Assyria in rosette-sewn blue and crowned with the tall white-and-gold Assyrian crown with its peak and red ribbons, at the left third, near-camera and large, cropped at the chest, gazing toward screen-right across the whole frame, his face lit red by the eclipse.\nSCALE: Esarhaddon and Enlil-bani are the two largest figures, one at each edge; Damqi is smaller, at the gardener's shoulder; the cities, the throne and the moon between them read small and far; the clay tablets along the lower edge are no bigger than a palm.\nSUBJECT 2: a lean Babylonian gardener in his thirties, a long narrow sun-dark face creased from squinting, a short curly black beard, thick black brows, sinewy arms, big work-hardened hands, a curved bronze pruning knife at his belt, crowned with the royal tiara of Isin, a round dark-blue cap with a thick rolled gold-banded brim, in a long fringed royal robe over one shoulder, at the right third, near-camera and large, cropped at the chest, gazing toward screen-left at the king, calm and unafraid.\nSUBJECT 3: a young Babylonian nobleman of about twenty, a smooth narrow face, a short soft black beard, large dark eyes, a gentle full mouth, long black hair tied back with a white band, small gold ring earrings, in the king's blue robe and the tall Assyrian crown, just at the gardener's shoulder, smaller and pale, his eyes lowered, his young veiled queen half hidden beside him, both half in shadow like a memory.\nTITLE: across the top, \"THE SUBSTITUTE KING\" in large capitals shaped like pressed clay wedges and edged in gold, like letters pressed into a royal tablet; under them a thin gold rule with a small blood-red moon disc at its center, and the line \"CROWNED TO DIE\".\nBUTTON: at the exact center of the frame, a red rounded pill-shaped button with a thin gold rim, \"SUBSCRIBE\" in bold cream capitals, a small gold diamond on each side.\nACTION: between the king and the men crowned in his place, far and small, an empty throne stands on a stepped dais under a huge blood-red eclipsed moon, a folded royal robe on its seat; at its left the walls of Nineveh with a winged-bull gate, at its right the walls and temple terrace of Isin among palm groves.\nSETTING: Mesopotamia at night under the eclipse, the Tigris shining red between the two cities.\nCAMERA: camera stands at the height of the two large figures' shoulders, eye level, wide.\nFRAME LAYOUT: upper third — the title across the sky, the eclipsed moon just under it at center; left third — Esarhaddon, near-camera and large; right third — Enlil-bani, near-camera and large, Damqi and his queen at his shoulder; center — the SUBSCRIBE button over the empty throne on its dais, far and small, Nineveh at the left of it and Isin at the right, small and hazy; lower edge — clay letter tablets, a small omen tablet tied with red-and-white cord, a clay tablet with a hundred tally strokes, a steaming bowl of soup, a curved bronze pruning knife and a few ears of barley, near-camera.\nFACING: we see the king three-quarter on, facing screen-right toward the gardener; the gardener three-quarter on, facing screen-left toward the king; Damqi looks down.\nSCREEN DIRECTION: thin clouds stream toward screen-left across the red moon; steam from the bowl of soup rises toward the title.\nLIGHT: blood-red eclipse light from the moon at the center, warm gold lamplight from below on the two large figures, the king lit redder, the gardener lit gold, the title catching gold.\nPALETTE: blood red, royal blue, lamp gold, night indigo.\nDETAIL: ringlets of the king's beard, gold rosettes, carnelian beads on the tiara, wedge signs on the tablets readable as signs, crisp lettering with every letter spelled right.\nNOT IN FRAME: logos, any other words or letters, blood.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "end-card",
+            "time_light": "lamplit-gold",
+            "camera_motion": "locked"
+          }
+        }
+      ]
+    }
+  ]
+}

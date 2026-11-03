@@ -1,15 +1,94 @@
 {
   "slug": "substitute-king",
   "title": "The Substitute King",
-  "status": "draft",
+  "protagonists": ["Esarhaddon", ["Substitute King", "Substitute Kings", "Substitute", "Stand-In"]],
+  "status": "in-progress",
   "voice": null,
   "narration_file": "narration.mp3",
-  "final_file": null,
-  "endcard_file": null,
+  "final_file": "final.mp4",
+  "endcard_file": "shots/shot46.jpeg",
   "intro_file": null,
   "intro_volume": 0.2,
-  "characters": [],
-  "locations": [],
-  "key_props": [],
-  "notes": "Samostalna epizoda, ideja #32 u docs/ideas.md: mesopotamski ritual zamenskog kralja (sar puhi) — Asarhadonova pisma ucenjaka (SAA 10), Damqi 671. p.n.e., Asarhadonova smrt 669. i najstarija prica, bastovan Enlil-bani u Isinu. Cela epizoda je od slika (render_mode still, korisnikova odluka). Faza 04 zavrsena: research.md i script.md; lockovi, timing i storyboard cekaju narraciju. Tacnost perioda: novoasirsko doba, 7. vek p.n.e. (Niniva, Akad u Vaviloniji) i starovavilonski Isin oko 1860. p.n.e. — dva razlicita sveta, ne mesati odecu ni arhitekturu. Smrt zamenika se ne prikazuje doslovno; izvori je i ne opisuju."
+  "characters": [
+    {
+      "id": "esarhaddon",
+      "name": "Esarhaddon",
+      "locked_description": "a gaunt Assyrian king in his forties, a long squared black beard set in tight rows of ringlets, shoulder-length black hair curled at the nape, heavy-lidded dark eyes under thick brows, a strong hooked nose, heavy gold crescent earrings"
+    },
+    {
+      "id": "substitute",
+      "name": "The Substitute",
+      "locked_description": "an Assyrian commoner of about thirty, a broad sun-darkened face, a short rough black beard, cropped black hair, wide-set dark eyes, a thick neck and big calloused labourer's hands"
+    },
+    {
+      "id": "scholar",
+      "name": "Palace Scholar",
+      "locked_description": "an Assyrian palace scholar, a grave bearded older man with a pale indoor face, a long grey-black beard curled in rows, an ankle-length fringed robe of undyed wool with a blue border, a plain white headband, clay-stained fingertips"
+    },
+    {
+      "id": "damqi",
+      "name": "Damqi",
+      "locked_description": "a young Babylonian nobleman of about twenty, a smooth narrow face, a short soft black beard, large dark eyes, a gentle full mouth, long black hair tied back with a white band, small gold ring earrings"
+    },
+    {
+      "id": "erra-imitti",
+      "name": "Erra-imitti",
+      "locked_description": "an old Babylonian king of Isin, heavy-bodied and soft-handed, a fleshy proud face, a long rounded grey beard falling in waves, heavy-lidded eyes, a long fringed robe wrapped over the left shoulder, the right shoulder bare"
+    },
+    {
+      "id": "enlil-bani",
+      "name": "Enlil-bani",
+      "locked_description": "a lean Babylonian gardener in his thirties, a long narrow sun-dark face creased from squinting, a short curly black beard, thick black brows, sinewy arms, big work-hardened hands, a curved bronze pruning knife at his belt"
+    }
+  ],
+  "locations": [
+    {
+      "id": "nineveh-throne-room",
+      "name": "The Throne Room at Nineveh",
+      "locked_description": "a long Assyrian throne room at Nineveh, walls lined with carved grey gypsum relief slabs of winged spirits, a stepped stone dais with a carved ivory-and-bronze throne and footstool, cedar ceiling beams, high square windows under the roof"
+    },
+    {
+      "id": "nineveh-palace-roof",
+      "name": "The Palace Roof at Nineveh",
+      "locked_description": "the flat roof terrace of the Assyrian palace at Nineveh, a parapet of stepped mud-brick crenellations, a floor of packed clay, the walled city and the river Tigris spread below"
+    },
+    {
+      "id": "shamash-shrine",
+      "name": "The Courtyard of Shamash",
+      "locked_description": "an open temple courtyard at Nineveh, a stepped mud-brick altar crowned by a bronze sun-disc of Shamash with a four-pointed star and wavy rays, tall bronze incense stands, reed mats on a brick pavement"
+    },
+    {
+      "id": "nineveh-archive",
+      "name": "The Royal Archive at Nineveh",
+      "locked_description": "the royal tablet archive of the palace at Nineveh, narrow brick rooms lined floor to ceiling with wooden shelves of small clay tablets, reed baskets and clay jars of tablets stacked on the floor"
+    },
+    {
+      "id": "akkad-temple",
+      "name": "The Temple at Akkad",
+      "locked_description": "a Babylonian temple of sun-baked mud brick in the city of Akkad, its whitewashed facade cut by deep vertical recesses, a stepped crenellated parapet, a tall cedar doorway at the top of broad brick steps"
+    },
+    {
+      "id": "akkad-burial-chamber",
+      "name": "The Burial Chamber at Akkad",
+      "locked_description": "a vaulted burial chamber of baked brick beneath the palace at Akkad, a low barrel-vaulted ceiling, niches for clay lamps along the walls, a floor strewn with reed mats"
+    },
+    {
+      "id": "isin-palace",
+      "name": "The Palace of Isin",
+      "locked_description": "the throne hall of the palace of Isin, thick mud-brick walls plastered white and painted with red and black bands, palm-trunk ceiling beams, a raised mud-brick dais with a carved wooden throne"
+    }
+  ],
+  "key_props": [
+    {
+      "id": "assyrian-crown",
+      "name": "The Assyrian Crown",
+      "locked_description": "the Assyrian royal crown, a tall truncated cone of white felt wrapped with gold bands of rosettes, a small pointed peak on top, two long red ribbons hanging down the back"
+    },
+    {
+      "id": "isin-tiara",
+      "name": "The Tiara of Isin",
+      "locked_description": "the royal tiara of Isin, a round cap of dark blue felt with a thick rolled brim, a band of hammered gold around the brim set with carnelian beads"
+    }
+  ],
+  "notes": "Samostalna epizoda, ideja #32 u docs/ideas.md: mesopotamski ritual zamenskog kralja (sar puhi) — Asarhadonova pisma ucenjaka (SAA 10), Damqi 671. p.n.e., Asarhadonova smrt 669. i najstarija prica, bastovan Enlil-bani u Isinu. Cela epizoda je od slika (render_mode still, korisnikova odluka). Osa: kralj i ucenjaci levo, ko sedne na presto umesto njega desno, znamenje gore desno; namernog prelaska nema. Tacnost perioda: novoasirsko doba, 7. vek p.n.e. (Niniva, Akad u Vaviloniji) i starovavilonski Isin oko 1860. p.n.e. — dva razlicita sveta, ne mesati odecu ni arhitekturu. Smrt zamenika se ne prikazuje doslovno; izvori je i ne opisuju. Detalji u notes.md."
 }
