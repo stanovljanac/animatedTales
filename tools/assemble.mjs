@@ -504,7 +504,8 @@ function applyDissolve(segs, shots, { fps, frames: D, sources }) {
 
     // Granica preživljava samo kad oba dela imaju bar D frejmova i kad izvor levog dela
     // ima D frejmova rezerve iza svog reza. Bez mape izvora rezerva se ne proverava —
-    // `planCuts` ostaje čista funkcija kad je pozvana bez nje.
+    // `planCuts` ostaje čista funkcija kad je pozvana bez nje. Still je izuzet: njegovo
+    // trajanje pravi `-loop 1` (kao u `validate`), pa slika od 0.04s može da se produži.
     const keep = [];
     for (let i = 0; i + 1 < parts.length; i += 1) {
       const [a, b] = [parts[i], parts[i + 1]];
@@ -515,7 +516,7 @@ function applyDissolve(segs, shots, { fps, frames: D, sources }) {
         skipped.push({ ...edge, reason: `deo ${tooShort.id} je kraći od prelaza (${tooShort.frames} ≤ ${D} frejmova)` });
         continue;
       }
-      if (sources) {
+      if (sources && a.mode !== 'still') {
         const src = sources.get(a.source);
         const need = round3(a.use_in + (a.frames + D) / fps);
         const have = src && src.exists ? src.available : null;

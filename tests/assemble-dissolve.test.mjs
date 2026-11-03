@@ -225,6 +225,19 @@ test('izvor bez rezerve na kraju: prelaz otpada, plan to zapisuje', () => {
   assert.deepEqual(plan.segments.map((s) => s.kind), ['shot', 'shot', 'endcard']);
 });
 
+test('still ne traži rezervu u izvoru: slika od 0.04s dobija prelaz', () => {
+  const sb = linked([5, 5]);
+  sb.beats[0].shots.forEach((s, i) => {
+    s.render_mode = 'still';
+    s.still_motion = 'push';
+    s.source_file = `shots/shot0${i + 1}.jpeg`;
+  });
+  const plan = planCuts(sb, { outroStart: null, dissolveFrames: D, sources: sourcesOf(sb, 0.04) });
+  assert.equal(plan.dissolve.applied.length, 1);
+  assert.deepEqual(plan.dissolve.skipped, []);
+  assert.deepEqual(plan.segments.map((s) => s.kind), ['chain', 'endcard']);
+});
+
 test('izvor kojeg nema ne dobija prelaz (bez pada, uz zapis)', () => {
   const sb = linked([5, 5]);
   const sources = sourcesOf(sb);
