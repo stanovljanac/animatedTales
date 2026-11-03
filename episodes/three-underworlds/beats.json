@@ -1,0 +1,508 @@
+[
+  {
+    "beat_id": "B01",
+    "sentences": [
+      "S01"
+    ],
+    "device": null,
+    "viewer_sees": "A Greek musician, a Japanese god and a file of seven Cherokee men walk one behind the other across a grey dusk plain, left to right, toward one vast black gap in a cliff at the right edge",
+    "tags": {
+      "location": "threshold-plain",
+      "time_light": "dusk-grey"
+    }
+  },
+  {
+    "beat_id": "B02",
+    "sentences": [
+      "S02",
+      "S03"
+    ],
+    "device": null,
+    "viewer_sees": "The musician, now close, walks on alone toward the black opening as the god and the file of men fall back out of frame",
+    "tags": {
+      "location": "threshold-plain",
+      "time_light": "dusk-grey"
+    }
+  },
+  {
+    "beat_id": "B03",
+    "sentences": [
+      "S04"
+    ],
+    "device": null,
+    "viewer_sees": "Orpheus plays the lyre in a sunlit meadow, boulders and oaks leaning toward the sound; Eurydice stops mid-dance and looks down as a snake slips away through the grass",
+    "tags": {
+      "location": "greek-meadow",
+      "time_light": "bright-morning"
+    }
+  },
+  {
+    "beat_id": "B04",
+    "sentences": [
+      "S05"
+    ],
+    "device": null,
+    "viewer_sees": "Orpheus plays before the thrones of the king and queen of the dead in a black cavern hall; their stern faces soften as the shades lean toward him",
+    "tags": {
+      "location": "hades-hall",
+      "time_light": "grey-green-dim"
+    }
+  },
+  {
+    "beat_id": "B05",
+    "sentences": [
+      "S06"
+    ],
+    "device": null,
+    "viewer_sees": "Orpheus climbs a rising path of loose black stone toward a small disc of daylight at the left, Eurydice's pale shade following several steps behind him",
+    "tags": {
+      "location": "path-to-daylight",
+      "time_light": "grey-green-dim"
+    }
+  },
+  {
+    "beat_id": "B06",
+    "sentences": [
+      "S07",
+      "S08"
+    ],
+    "device": null,
+    "viewer_sees": "At the cave mouth, bright daylight beyond, Orpheus turns his head; Eurydice's reaching hand loses its colour and she is drawn back into the grey mist",
+    "tags": {
+      "location": "path-to-daylight",
+      "time_light": "daylight-edge"
+    }
+  },
+  {
+    "beat_id": "B07",
+    "sentences": [
+      "S09"
+    ],
+    "device": null,
+    "viewer_sees": "An open scroll of old paper and a brush on a low dark desk beside a small paper lamp, brush strokes of script, no readable text",
+    "tags": {
+      "location": "scribe-desk",
+      "time_light": "lamp-warm"
+    }
+  },
+  {
+    "beat_id": "B08",
+    "sentences": [
+      "S10"
+    ],
+    "device": null,
+    "viewer_sees": "Izanagi walks down a dark earthen passage toward a heavy timber door with a red-black glow leaking from under it",
+    "tags": {
+      "location": "yomi-door",
+      "time_light": "red-black-glow"
+    }
+  },
+  {
+    "beat_id": "B09",
+    "sentences": [
+      "S11",
+      "S12",
+      "S13",
+      "S14"
+    ],
+    "device": null,
+    "viewer_sees": "At the door, Izanagi reaches toward a tall dark figure in the doorway whose face is lost in shadow; she shakes her head slowly and lifts a bowl from the hearth beside her",
+    "tags": {
+      "location": "yomi-door",
+      "time_light": "red-black-glow"
+    }
+  },
+  {
+    "beat_id": "B10",
+    "sentences": [
+      "S15",
+      "S16"
+    ],
+    "device": null,
+    "viewer_sees": "She raises a hand to warn him off, turns and walks back into the dark hall, the heavy door swinging shut on her; Izanagi stands alone at the threshold",
+    "tags": {
+      "location": "yomi-door",
+      "time_light": "red-black-glow"
+    }
+  },
+  {
+    "beat_id": "B11",
+    "sentences": [
+      "S17",
+      "S18"
+    ],
+    "device": null,
+    "viewer_sees": "Izanagi waits at the shut door, then breaks a tooth from the comb in his hair, lights it, and pushes the door open with the small flame held up",
+    "tags": {
+      "location": "yomi-door",
+      "time_light": "torchlight"
+    }
+  },
+  {
+    "beat_id": "B12",
+    "sentences": [
+      "S19"
+    ],
+    "device": null,
+    "viewer_sees": "Torchlight falls on Izanami in the dark hall: her wasted grey form half in shadow, pale specks crawling over her robe, eight small coiling shapes of storm cloud and lightning gathered about her",
+    "tags": {
+      "location": "yomi-hall",
+      "time_light": "torchlight"
+    }
+  },
+  {
+    "beat_id": "B13",
+    "sentences": [
+      "S20",
+      "S21"
+    ],
+    "device": null,
+    "viewer_sees": "Izanagi runs out through the hall toward the light at the left; behind him a dark host of the dead with pale faces pours after him",
+    "tags": {
+      "location": "yomi-hall",
+      "time_light": "torchlight"
+    }
+  },
+  {
+    "beat_id": "B14",
+    "sentences": [
+      "S22",
+      "S23"
+    ],
+    "device": null,
+    "viewer_sees": "Running up the passage, Izanagi flings his black headdress behind him and grapes burst across the floor; he flings his comb and bamboo shoots spring up; the pursuers stop to eat",
+    "tags": {
+      "location": "even-pass",
+      "time_light": "grey-dim"
+    }
+  },
+  {
+    "beat_id": "B15",
+    "sentences": [
+      "S24",
+      "S25"
+    ],
+    "device": null,
+    "viewer_sees": "At the foot of the pass Izanagi throws three peaches and the host of the dead scatters; Izanami's great dark form rises out of the gloom at the right",
+    "tags": {
+      "location": "even-pass",
+      "time_light": "grey-dim"
+    }
+  },
+  {
+    "beat_id": "B16",
+    "sentences": [
+      "S26"
+    ],
+    "device": null,
+    "viewer_sees": "Izanagi heaves a rock the size of a house into the narrow pass until it seals the way; dust and grit pour down the banks",
+    "tags": {
+      "location": "even-pass",
+      "time_light": "grey-dim"
+    }
+  },
+  {
+    "beat_id": "B17",
+    "sentences": [
+      "S27"
+    ],
+    "device": "ledger-accumulation",
+    "viewer_sees": "LEDGER/ACCUMULATION: Izanami at the right side of the sealed rock speaks across it; far below at the left a field of a thousand small lamps goes out row by row",
+    "tags": {
+      "location": "even-pass",
+      "time_light": "grey-dim"
+    }
+  },
+  {
+    "beat_id": "B18",
+    "sentences": [
+      "S28"
+    ],
+    "device": "ledger-accumulation",
+    "viewer_sees": "LEDGER/ACCUMULATION: Izanagi at the left side of the rock answers across it; far below at the left rows of new thatched huts rise and light up warm one after another",
+    "tags": {
+      "location": "even-pass",
+      "time_light": "grey-dim"
+    }
+  },
+  {
+    "beat_id": "B19",
+    "sentences": [
+      "S29",
+      "S30"
+    ],
+    "device": "timeline-seasons",
+    "viewer_sees": "TIMELINE: one fixed view of a Japanese village from dusk to dawn; a quiet funeral line with lanterns leaves at the left while a birth-hut door opens warm and gold at the right and the sun rises",
+    "tags": {
+      "location": "japanese-village",
+      "time_light": "dusk-to-dawn"
+    }
+  },
+  {
+    "beat_id": "B20",
+    "sentences": [
+      "S31",
+      "S32"
+    ],
+    "device": null,
+    "viewer_sees": "Dawn over a southern Appalachian valley: blue ridges, mist on the river, smoke rising from a Cherokee town of round bark houses and a domed council house",
+    "tags": {
+      "location": "cherokee-valley",
+      "time_light": "dawn-mist"
+    }
+  },
+  {
+    "beat_id": "B21",
+    "sentences": [
+      "S33",
+      "S34"
+    ],
+    "device": null,
+    "viewer_sees": "The Sun, a vast woman of burning light, pours heat down toward the tiny wilting earth; at the right her daughter stands in the doorway of a house in the sky and a rattlesnake strikes",
+    "tags": {
+      "location": "sun-house",
+      "time_light": "burning-white-gold"
+    }
+  },
+  {
+    "beat_id": "B22",
+    "sentences": [
+      "S35"
+    ],
+    "device": null,
+    "viewer_sees": "The Sun covers her face and weeps; her light drains out of the sky and the valley below goes dark",
+    "tags": {
+      "location": "sun-house",
+      "time_light": "light-draining"
+    }
+  },
+  {
+    "beat_id": "B23",
+    "sentences": [
+      "S36",
+      "S37"
+    ],
+    "device": null,
+    "viewer_sees": "In the dark valley, seven Cherokee men with long sourwood rods set out single file along a ridge trail toward the west, carrying a box between them",
+    "tags": {
+      "location": "cherokee-road",
+      "time_light": "dusk-dark"
+    }
+  },
+  {
+    "beat_id": "B24",
+    "sentences": [
+      "S38"
+    ],
+    "device": null,
+    "viewer_sees": "In the Ghost country the dead dance in a ring round a low fire; as the Sun's daughter passes the nearest man he touches her with his rod and she sinks to the ground beside the open box",
+    "tags": {
+      "location": "ghost-country",
+      "time_light": "fire-glow-dark"
+    }
+  },
+  {
+    "beat_id": "B25",
+    "sentences": [
+      "S39",
+      "S40"
+    ],
+    "device": null,
+    "viewer_sees": "The seven men carry the closed box east along the ridge trail at first light; a man presses his hand flat on the lid and warns the others; the lid shivers from inside",
+    "tags": {
+      "location": "cherokee-road",
+      "time_light": "first-light"
+    }
+  },
+  {
+    "beat_id": "B26",
+    "sentences": [
+      "S41",
+      "S42",
+      "S43",
+      "S44"
+    ],
+    "device": null,
+    "viewer_sees": "The men halt in the thicket; the box knocks and a man leans his ear to it; at last he lifts the lid a hand's breadth",
+    "tags": {
+      "location": "cherokee-road",
+      "time_light": "morning-dapple"
+    }
+  },
+  {
+    "beat_id": "B27",
+    "sentences": [
+      "S45",
+      "S46"
+    ],
+    "device": null,
+    "viewer_sees": "A small red bird bursts out of the lifted lid past the men's faces and darts into the thicket",
+    "tags": {
+      "location": "cherokee-road",
+      "time_light": "morning-dapple"
+    }
+  },
+  {
+    "beat_id": "B28",
+    "sentences": [
+      "S47"
+    ],
+    "device": null,
+    "viewer_sees": "In the town the men open the box before the council house and find it empty; they stand with the rods hanging from their hands",
+    "tags": {
+      "location": "cherokee-valley",
+      "time_light": "afternoon-low"
+    }
+  },
+  {
+    "beat_id": "B29",
+    "sentences": [
+      "S48"
+    ],
+    "device": "macro-object",
+    "viewer_sees": "MACRO OBJECT: on one worn black slab by firelight lie a broken comb, a tortoise-shell lyre and a cane-splint box, left to right in the order of the three rules",
+    "tags": {
+      "location": "firelit-slab",
+      "time_light": "firelight"
+    }
+  },
+  {
+    "beat_id": "B30",
+    "sentences": [
+      "S49",
+      "S50"
+    ],
+    "device": null,
+    "viewer_sees": "Close on the comb at the left of the slab: one tooth has been broken off and its tip burns with a small flame that leans and flares",
+    "tags": {
+      "location": "firelit-slab",
+      "time_light": "firelight"
+    }
+  },
+  {
+    "beat_id": "B31",
+    "sentences": [
+      "S51",
+      "S52"
+    ],
+    "device": null,
+    "viewer_sees": "The view drifts right across the lyre, its strings trembling, to the box, whose lid lifts a finger's width and lets out a thin line of light",
+    "tags": {
+      "location": "firelit-slab",
+      "time_light": "firelight"
+    }
+  },
+  {
+    "beat_id": "B32",
+    "sentences": [
+      "S53",
+      "S54",
+      "S55"
+    ],
+    "device": "animated-map",
+    "viewer_sees": "ANIMATED MAP: an old parchment map of the northern world, small lights flickering on across North America, and a question mark of mist over the whole",
+    "tags": {
+      "location": "parchment-map",
+      "time_light": "lamp-warm"
+    }
+  },
+  {
+    "beat_id": "B33",
+    "sentences": [
+      "S56"
+    ],
+    "device": null,
+    "viewer_sees": "A line of small figures in furs crosses a vast pale ice-age plain at dawn, left to right, mist blowing across their path",
+    "tags": {
+      "location": "ice-age-plain",
+      "time_light": "pale-dawn"
+    }
+  },
+  {
+    "beat_id": "B34",
+    "sentences": [
+      "S57"
+    ],
+    "device": null,
+    "viewer_sees": "A medicine man sits in a dim bark lodge drumming by a low fire, eyes closed; the smoke rises and draws out into a pale path leading away into the dark",
+    "tags": {
+      "location": "bark-lodge",
+      "time_light": "firelight-dim"
+    }
+  },
+  {
+    "beat_id": "B35",
+    "sentences": [
+      "S58",
+      "S59"
+    ],
+    "device": "silhouette",
+    "viewer_sees": "SILHOUETTE: a dark night land with three small fires far apart, each with one dark figure beside it, under the same turning stars",
+    "tags": {
+      "location": "night-earth",
+      "time_light": "starlight"
+    }
+  },
+  {
+    "beat_id": "B36",
+    "sentences": [
+      "S60"
+    ],
+    "device": null,
+    "viewer_sees": "Close on one cloaked mourner at the edge of a small fire, face lifted to the night sky, breath rising pale in the cold",
+    "tags": {
+      "location": "night-earth",
+      "time_light": "starlight"
+    }
+  },
+  {
+    "beat_id": "B37",
+    "sentences": [
+      "S61",
+      "S62"
+    ],
+    "device": null,
+    "viewer_sees": "The seven men sit in the dusk before the council house around the empty box; one of them slowly closes the lid, and a redbird watches from a branch above",
+    "tags": {
+      "location": "cherokee-valley",
+      "time_light": "dusk-warm"
+    }
+  },
+  {
+    "beat_id": "B38",
+    "sentences": [
+      "S63"
+    ],
+    "device": "empty-aftermath",
+    "viewer_sees": "EMPTY AFTERMATH: the empty box on the packed earth at the edge of the town, lid open, ash of a cold fire beside it, the redbird gone from the branch",
+    "tags": {
+      "location": "cherokee-valley",
+      "time_light": "dusk-grey"
+    }
+  },
+  {
+    "beat_id": "B39",
+    "sentences": [
+      "S64"
+    ],
+    "device": null,
+    "viewer_sees": "The same plain at pale dawn: three small figures walk back out of the black gap, right to left toward the light, each empty-handed: a limp lyre, a burnt-out comb stub, an open empty box",
+    "tags": {
+      "location": "threshold-plain",
+      "time_light": "pale-dawn"
+    }
+  },
+  {
+    "beat_id": "B40",
+    "sentences": [
+      "S65",
+      "S66"
+    ],
+    "device": null,
+    "viewer_sees": "End card: a poster of the whole story with the title, the three travellers and the SUBSCRIBE button",
+    "tags": {
+      "location": "end-card",
+      "time_light": "firelight"
+    }
+  }
+]

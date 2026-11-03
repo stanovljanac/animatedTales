@@ -59,6 +59,7 @@ Legenda kolona: **M1** snaga hooka (×3) · **M2** naslov + tambnejl (×3) · **
 | 22 | The Man Who Stole Fire From the Gods | 4 | 4 | 5 | 3 | 5 | 4 | 1 | 5 | 4 | 5 | **80.0** | radi odmah | `scored` |
 | 1 | The Emperor Who Fought a War Against the Ocean | 5 | 5 | 4 | 3 | 3 | 5 | 3 | 4 | 3 | 1 | **78.4** | oštriji ugao | `scored` |
 | 19 | The Disease That Changed Medieval Europe | 4 | 4 | 4 | 4 | 5 | 4 | 2 | 4 | 5 | 2 | **77.9** | oštriji ugao | `scored` |
+| 33 | The Rule Nobody Could Keep in the Land of the Dead | 4 | 4 | 4 | 4 | 4 | 4 | 3 | 3 | 4 | 3 | **75.8** | oštriji ugao | `done` |
 | 27 | How Odin Traded an Eye for Knowledge | 4 | 4 | 4 | 3 | 4 | 3 | 3 | 4 | 4 | 5 | **75.3** | oštriji ugao | `scored` |
 | 29 | The God Who Became a Cow to Escape | 4 | 4 | 4 | 3 | 3 | 4 | 5 | 3 | 3 | 4 | **74.7** | oštriji ugao | `scored` |
 | 13 | The Civilization That Built a City Before Farming? | 4 | 5 | 3 | 4 | 2 | 4 | 3 | 4 | 3 | 4 | **74.2** | oštriji ugao | `scored` |
@@ -512,6 +513,22 @@ Story: Across world mythologies, supernatural beings attempt to capture or consu
 Hook: “Ancient India had a terrifying explanation for an eclipse: something in the sky was trying to swallow the Sun.”
 
 Zašto ovaj skor: Pomračenje kao napad na nebo daje sliku koju niko u niši ne koristi i naslov koji se sam prodaje; spuštaju je potreba da se objasni hinduistički panteon i to što obrt živi u tradiciji, ne u zapisu.
+
+#### #33 — The Rule Nobody Could Keep in the Land of the Dead
+
+`status: done` · **75.8** · oštriji ugao · izvorna oznaka: dodata 2026-11-03, van originalnih 30 · `episodes/three-underworlds`
+
+Ocene M1–M10: 4 / 4 / 4 / 4 / 4 / 4 / 3 / 3 / 4 / 3 — sirovo 72 / 95.
+
+Story: Three peoples tell of a rescue from the land of the dead that fails at the last step. In the Greek tellings of Virgil and Ovid, Orpheus may lead his dead wife Eurydice out on one condition — he must not look back — and turns within sight of daylight. In Japan's *Kojiki* (712 CE), the god Izanagi follows his wife Izanami into the Land of Hades; she tells him "Look not at me!", he lights a torch from his comb and finds her rotting, flees past grapes, bamboo shoots and three peaches, seals the pass with a boulder, and the two part with a threat of a thousand deaths a day against fifteen hundred birth huts. In a Cherokee tale recorded by James Mooney (1900) under the heading "Origin of death", seven men bring the Sun's daughter back from the Ghost country in a box they must not open until home — and lift the lid a little to give her air, and a redbird flies out. The rule changes each time (look, look back, open); the reason it is broken never does, and Mooney's tale says outright what the failure explains: the dead cannot be brought back. Why a story of this shape exists on three continents is open (a very old common source, shamans' journeys, shared experience of loss).
+
+Hook: “A Greek musician, a Japanese god and seven Cherokee men all went into the land of the dead to bring someone back. Each was given a rule — and each of them broke it.”
+
+Zašto ovaj skor: Pravilo koje se menja dok razlog za njegovo kršenje ostaje isti (nije mogao da čeka, nije mogao da ne vidi, plašili su se da umire) prevrće Orfeja iz priče o ljubavi u priču o tome zašto mrtvi ne dolaze nazad, a tri sveta — Had, Jomi sa crvima i breskvama, čerokijska zemlja duhova — nose vizuelni ritam; spuštaju je to što su Orfej i Izanagi pojedinačno među najispričanijim pričama niše i što „zašto ista priča" ostaje bez odgovora.
+
+Dodata van C03 liste, u sesiji u kojoj je izabrana: korisnik je tražio temu koja je već popularna, a ulazi u postojeće ili potencijalne plejliste — nacije i mitove koje kanal još nije radio (Japan, severnoamerički narodi) i **priče koje su slične u različitim kulturama**, uz pitanje kako su ljudi na krajevima sveta došli do istih mitova. Ovo je prva epizoda te potencijalne plejliste („Same Story, Different World"). Kategorija 3 jer je jezgro mit; sve tri verzije čitane su u izvoru (Chamberlain, *Kojiki* 1919 izd.; Mooney, *Myths of the Cherokee*, Gutenberg), a Orfej preko Plata, Vergilija i Ovidija. **Popularnost nije izmerena brojkama** — alat za pretragu ne daje gledanost — pa se oslanja na to što su i Orfej i Izanagi/Izanami među najpoznatijim silascima u zemlju mrtvih, a poređenje paralelnih mitova je ustaljen format niše.
+
+**Izoštrena u produkciji (2026-11-03):** opšta tema („tri mita su slična") suzena je na jednu stvar koja ima lice, ulog i kraj — **pravilo na pragu zemlje mrtvih**. Skor 75.8 opisuje ovu izoštrenu verziju i ispod je 80 jer M7 i M8 ostaju na 3 (dve najpoznatije priče niše i tri nova imena). Orfej je zato pet rečenica koje gledalac već zna i služe kao postavka; težište nose Izanagi i čerokijska kutija. Hook je prenet doslovno u skriptu. Zaključak o poreklu nije izmišljen: skripta navodi tri tumačenja i kaže da se ne zna.
 
 ---
 
