@@ -5,11 +5,109 @@
   "voice": null,
   "narration_file": "narration.mp3",
   "final_file": null,
-  "endcard_file": null,
+  "endcard_file": "shots/shot40.jpeg",
   "intro_file": null,
   "intro_volume": 0.2,
-  "characters": [],
-  "locations": [],
-  "key_props": [],
-  "notes": "Samostalna epizoda, ideja #33 u docs/ideas.md, prva u potencijalnoj plejlisti 'Same Story, Different World': isti mit na tri kontinenta. Orfej (grcki, Vergilije/Ovidije), Izanagi i Izanami (Kojiki 712, Chamberlain) i cerokijska 'Daughter of the Sun' (Mooney 1900, naslov 'Origin of death'). Pravilo se menja (ne gledaj, ne okreci se, ne otvaraj kutiju), razlog krsenja ne: nije mogao da ceka, nije mogao da ne vidi, plasili su se da umire. Faza 04 zavrsena: research.md i script.md (648 reci tela + 33 outro, ~4:46-4:54 pri 143-139 wpm); lockovi, timing i storyboard cekaju narraciju. Rezim shota (still, klip ili mesano) bira se tek iz slike, ne iz kredita. Tacnost perioda: tri razlicita sveta, ne mesati odecu ni arhitekturu — grcka bronza i hiton, japansko dvorsko ruho oko 700. n.e. (Kojiki), cerokijska odeca i kolibe iz vremena pre kontakta, ne iz 1900. Sva tri su MIT: bogovi i duhovi su veci od pejzaza (mitski registar). Truljenje Izanami prikazati ostro ali bez telesnog horora (crvi, sumrak, osam gromovnika kao senke i svetlost). Tacnost: Kojiki daje ugly-female (jedan progonitelj), ne vise veštica; 'zemlja Jomi' se u Chamberlainovom tekstu zove 'Land of Hades'. Brojke 1000 mrtvih / 1500 porodilista su stabilne, 'rodi se 1000' nije. Protagonists za publish.md se upisuju pre naslova: naslov imenuje sve (Orpheus, Izanagi, Cherokee men) ili nijednog, grupno."
+  "characters": [
+    {
+      "id": "orpheus",
+      "name": "Orpheus",
+      "locked_description": "a lean young Thracian musician, tousled dark curls under a soft red Phrygian cap, a clean-shaven gentle face with dark thoughtful eyes, a saffron chiton under a dark travelling cloak pinned at one shoulder, leather sandals"
+    },
+    {
+      "id": "eurydice",
+      "name": "Eurydice",
+      "locked_description": "a slender young Greek woman, long dark hair bound with a pale ribbon, a delicate oval face with large dark eyes, a long white chiton pinned at both shoulders, bare feet"
+    },
+    {
+      "id": "hades",
+      "name": "Hades",
+      "locked_description": "a stern Greek king of the dead, a heavy black beard, deep-set hooded eyes, a tall crown of black iron, a dark purple himation over a black chiton"
+    },
+    {
+      "id": "persephone",
+      "name": "Persephone",
+      "locked_description": "a pale austere Greek queen of the dead, dark hair under a crown of black iron and pomegranate blossom, a grave still face, a long deep-green peplos"
+    },
+    {
+      "id": "izanagi",
+      "name": "Izanagi",
+      "locked_description": "a tall Japanese god of the Yamato age, a severe face with a thin moustache, black hair bound in two loops at the sides, a white hemp jacket and wide trousers gathered below the knee"
+    },
+    {
+      "id": "izanami",
+      "name": "Izanami",
+      "locked_description": "a tall Japanese goddess of the Yamato age, long straight black hair falling loose to her waist, a narrow pale face with large dark eyes, a long layered robe of deep violet with wide sleeves and a pleated skirt"
+    },
+    {
+      "id": "cherokee-men",
+      "name": "The Seven Cherokee Men",
+      "locked_description": "seven Cherokee men of the old Appalachians, tall and lean, straight black hair tied at the nape, bare chests, deerskin breechcloths and fringed leggings, soft moccasins, each carrying a long pale sourwood rod"
+    },
+    {
+      "id": "the-sun",
+      "name": "The Sun",
+      "locked_description": "the Sun, a vast Cherokee woman made of living gold light, long hair streaming out as straight rays, a calm face of burning gold, a gown of white-hot flame",
+      "scale_critical": true
+    },
+    {
+      "id": "sun-daughter",
+      "name": "The Sun's Daughter",
+      "locked_description": "the Sun's daughter, a young Cherokee woman with long black hair, a bright open face, a pale deerskin dress hung with red quillwork, a small red feather behind one ear"
+    }
+  ],
+  "locations": [
+    {
+      "id": "threshold-plain",
+      "name": "The Threshold Plain",
+      "locked_description": "a bleak grey plain under a low overcast sky, bare stony ground and dead grass, a tall unbroken cliff wall with one vast black gap in its foot"
+    },
+    {
+      "id": "yomi-passage",
+      "name": "The Land of Yomi",
+      "locked_description": "the Japanese land of the dead, a passage of packed black earth hung with bare roots, a heavy plank door bound in black ironwork, a dark hall of thick bare timber pillars beyond the door"
+    },
+    {
+      "id": "even-pass",
+      "name": "The Even Pass of Yomi",
+      "locked_description": "the Even Pass of the land of the dead, a steep narrow cleft between two banks of black earth and broken rock, a sloping gravel floor, a thin strip of grey sky far above"
+    },
+    {
+      "id": "cherokee-town",
+      "name": "The Cherokee Town",
+      "locked_description": "a Cherokee town of the old southern Appalachians, round houses of woven cane and clay-plastered bark with domed roofs, a large seven-sided council house on a low earth mound, cornfields and a river beyond"
+    }
+  ],
+  "key_props": [
+    {
+      "id": "orpheus-lyre",
+      "name": "Orpheus's Lyre",
+      "locked_description": "a Greek lyre with a rounded tortoise-shell body covered in pale hide, two curved horns joined by a crossbar, seven taut gut strings, a worn red leather strap"
+    },
+    {
+      "id": "izanagi-comb",
+      "name": "Izanagi's Comb",
+      "locked_description": "a long-toothed boxwood comb of the Yamato age, a thick curved spine carved with a row of notches, about a dozen long even teeth, the wood dark with oil and age"
+    },
+    {
+      "id": "cane-box",
+      "name": "The Cane Box",
+      "locked_description": "a lidded box of woven river-cane splints, black and red diamond patterns, a snug rim-fitted lid, two plaited carrying cords, about the size of a small chest"
+    },
+    {
+      "id": "redbird",
+      "name": "The Redbird",
+      "locked_description": "a small songbird of pure scarlet, a pointed crest, a black mask around a thick coral-red beak, black eyes, bright red wings and a long red tail"
+    }
+  ],
+  "notes": "Samostalna epizoda, ideja #33 u docs/ideas.md, prva u potencijalnoj plejlisti 'Same Story, Different World': isti mit na tri kontinenta. Orfej (grcki, Vergilije/Ovidije), Izanagi i Izanami (Kojiki 712, Chamberlain) i cerokijska 'Daughter of the Sun' (Mooney 1900, naslov 'Origin of death'). Pravilo se menja (ne gledaj, ne okreci se, ne otvaraj kutiju), razlog krsenja ne: nije mogao da ceka, nije mogao da ne vidi, plasili su se da umire. Faza 04 zavrsena: research.md i script.md (648 reci tela + 33 outro, ~4:46-4:54 pri 143-139 wpm); lockovi, timing i storyboard cekaju narraciju. Rezim shota (still, klip ili mesano) bira se tek iz slike, ne iz kredita. Tacnost perioda: tri razlicita sveta, ne mesati odecu ni arhitekturu — grcka bronza i hiton, japansko dvorsko ruho oko 700. n.e. (Kojiki), cerokijska odeca i kolibe iz vremena pre kontakta, ne iz 1900. Sva tri su MIT: bogovi i duhovi su veci od pejzaza (mitski registar). Truljenje Izanami prikazati ostro ali bez telesnog horora (crvi, sumrak, osam gromovnika kao senke i svetlost). Tacnost: Kojiki daje ugly-female (jedan progonitelj), ne vise veštica; 'zemlja Jomi' se u Chamberlainovom tekstu zove 'Land of Hades'. Brojke 1000 mrtvih / 1500 porodilista su stabilne, 'rodi se 1000' nije. Protagonists za publish.md se upisuju pre naslova: naslov imenuje sve (Orpheus, Izanagi, Cherokee men) ili nijednog, grupno. Faza storyboard: lockovi upisani, mesoviti rezim (klipovi + 4 slike), storyboard iz beats.json.",
+  "protagonists": [
+    "Orpheus",
+    "Izanagi",
+    [
+      "Cherokee men",
+      "Seven Cherokee Men",
+      "Cherokee Men"
+    ]
+  ]
 }
