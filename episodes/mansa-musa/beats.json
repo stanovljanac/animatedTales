@@ -1,0 +1,411 @@
+[
+  {
+    "beat_id": "B01",
+    "sentences": [
+      "S01"
+    ],
+    "device": null,
+    "viewer_sees": "A king in white and indigo rides in through a gate of Mamluk Cairo; in the market inside, merchants hold up gold in both hands",
+    "tags": {
+      "location": "cairo-1324",
+      "time_light": "midday-hard-sun"
+    }
+  },
+  {
+    "beat_id": "B02",
+    "sentences": [
+      "S02"
+    ],
+    "device": null,
+    "viewer_sees": "Mansa Musa rides at the head of a caravan across the dunes toward Mecca, camels behind him",
+    "tags": {
+      "location": "sahara-road",
+      "time_light": "golden-hour"
+    }
+  },
+  {
+    "beat_id": "B03",
+    "sentences": [
+      "S03"
+    ],
+    "device": "animated-map",
+    "viewer_sees": "ANIMATED MAP: West Africa at the left, the Mediterranean at the upper right; gold routes and salt routes draw themselves across the Sahara",
+    "tags": {
+      "location": "trade-map",
+      "time_light": "parchment-lamp"
+    }
+  },
+  {
+    "beat_id": "B04",
+    "sentences": [
+      "S04"
+    ],
+    "device": null,
+    "viewer_sees": "A camp of cotton tents beside the pyramids, caravan smoke rising, camels kneeling, the Nile a green strip far off",
+    "tags": {
+      "location": "giza-camp",
+      "time_light": "sunset-warm"
+    }
+  },
+  {
+    "beat_id": "B05",
+    "sentences": [
+      "S05"
+    ],
+    "device": null,
+    "viewer_sees": "The sultan’s emir rides out with a small guard to meet the Mali caravan at the edge of the camp",
+    "tags": {
+      "location": "giza-camp",
+      "time_light": "late-afternoon"
+    }
+  },
+  {
+    "beat_id": "B06",
+    "sentences": [
+      "S06"
+    ],
+    "device": null,
+    "viewer_sees": "Later, the emir tells al-Umari what he saw while the historian writes",
+    "tags": {
+      "location": "emir-study",
+      "time_light": "lamp-warm"
+    }
+  },
+  {
+    "beat_id": "B07",
+    "sentences": [
+      "S07"
+    ],
+    "device": null,
+    "viewer_sees": "Musa answers through an interpreter who stands between him and the emir",
+    "tags": {
+      "location": "musa-tent",
+      "time_light": "interior-warm"
+    }
+  },
+  {
+    "beat_id": "B08",
+    "sentences": [
+      "S08"
+    ],
+    "device": null,
+    "viewer_sees": "Camels laden with leather sacks of raw gold pass through the citadel gate, one sack spilling nuggets and dust",
+    "tags": {
+      "location": "cairo-citadel-gate",
+      "time_light": "late-afternoon"
+    }
+  },
+  {
+    "beat_id": "B09",
+    "sentences": [
+      "S09",
+      "S10"
+    ],
+    "device": null,
+    "viewer_sees": "The emir urges Musa toward the citadel at the right; Musa shakes his head and refuses",
+    "tags": {
+      "location": "giza-camp",
+      "time_light": "late-afternoon"
+    }
+  },
+  {
+    "beat_id": "B10",
+    "sentences": [
+      "S11",
+      "S12"
+    ],
+    "device": null,
+    "viewer_sees": "Rows of courtiers kiss the marble floor before the throne; the camera pushes toward the throne",
+    "tags": {
+      "location": "sultan-hall",
+      "time_light": "interior-gold"
+    }
+  },
+  {
+    "beat_id": "B11",
+    "sentences": [
+      "S13",
+      "S14"
+    ],
+    "device": null,
+    "viewer_sees": "Musa enters the hall; chamberlains point down at the floor",
+    "tags": {
+      "location": "sultan-hall",
+      "time_light": "interior-gold"
+    }
+  },
+  {
+    "beat_id": "B12",
+    "sentences": [
+      "S15",
+      "S16"
+    ],
+    "device": null,
+    "viewer_sees": "Musa frowns at the floor; the interpreter leans in and whispers in his ear",
+    "tags": {
+      "location": "sultan-hall",
+      "time_light": "interior-gold"
+    }
+  },
+  {
+    "beat_id": "B13",
+    "sentences": [
+      "S17",
+      "S18"
+    ],
+    "device": null,
+    "viewer_sees": "Musa bows to God, forehead to the floor; the sultan half rises and gestures to a seat at his side",
+    "tags": {
+      "location": "sultan-hall",
+      "time_light": "interior-gold"
+    }
+  },
+  {
+    "beat_id": "B14",
+    "sentences": [
+      "S19",
+      "S20"
+    ],
+    "device": null,
+    "viewer_sees": "Musa pours gold into the open hands of a crowd in a Cairo street",
+    "tags": {
+      "location": "cairo-street",
+      "time_light": "midday-hard-sun"
+    }
+  },
+  {
+    "beat_id": "B15",
+    "sentences": [
+      "S21"
+    ],
+    "device": null,
+    "viewer_sees": "A row of emirs and officials each receive a sack of gold hoisted onto mules by Mali servants",
+    "tags": {
+      "location": "sultan-court",
+      "time_light": "bright-courtyard"
+    }
+  },
+  {
+    "beat_id": "B16",
+    "sentences": [
+      "S22"
+    ],
+    "device": null,
+    "viewer_sees": "Cairo merchants and Mali men bargain and smile in a vaulted bazaar",
+    "tags": {
+      "location": "cairo-bazaar",
+      "time_light": "lantern-warm"
+    }
+  },
+  {
+    "beat_id": "B17",
+    "sentences": [
+      "S23"
+    ],
+    "device": null,
+    "viewer_sees": "A money-changer pours gold dust into a balance while the price tilts down",
+    "tags": {
+      "location": "money-changer",
+      "time_light": "lantern-warm"
+    }
+  },
+  {
+    "beat_id": "B18",
+    "sentences": [
+      "S24",
+      "S25"
+    ],
+    "device": "ledger-accumulation",
+    "viewer_sees": "Al-Umari at his desk with a balance: one gold mithqal on a pan and exactly twenty-five silver dirhams in five stacks of five",
+    "tags": {
+      "location": "umari-desk",
+      "time_light": "lamp-warm"
+    }
+  },
+  {
+    "beat_id": "B19",
+    "sentences": [
+      "S26",
+      "S27"
+    ],
+    "device": "macro-object",
+    "viewer_sees": "The same balance after: one gold mithqal against exactly twenty-two silver dirhams, a scratched line showing where twenty-five stood",
+    "tags": {
+      "location": "umari-desk",
+      "time_light": "lamp-warm"
+    }
+  },
+  {
+    "beat_id": "B20",
+    "sentences": [
+      "S28",
+      "S29"
+    ],
+    "device": null,
+    "viewer_sees": "A long empty reading hall with only al-Umari at one table under one lamp",
+    "tags": {
+      "location": "reading-hall",
+      "time_light": "night-single-lamp"
+    }
+  },
+  {
+    "beat_id": "B21",
+    "sentences": [
+      "S30"
+    ],
+    "device": null,
+    "viewer_sees": "Al-Maqrizi writes at his desk beside a gold dinar and six silver dirhams",
+    "tags": {
+      "location": "maqrizi-study",
+      "time_light": "lamp-cool"
+    }
+  },
+  {
+    "beat_id": "B22",
+    "sentences": [
+      "S31"
+    ],
+    "device": null,
+    "viewer_sees": "A modern historian bends over photocopied ledgers and a wavering hand-drawn line chart",
+    "tags": {
+      "location": "modern-study",
+      "time_light": "desk-lamp-modern"
+    }
+  },
+  {
+    "beat_id": "B23",
+    "sentences": [
+      "S32"
+    ],
+    "device": null,
+    "viewer_sees": "Musa alone in close-up, tired, at dusk",
+    "tags": {
+      "location": "musa-tent",
+      "time_light": "dusk-cool"
+    }
+  },
+  {
+    "beat_id": "B24",
+    "sentences": [
+      "S33"
+    ],
+    "device": null,
+    "viewer_sees": "The pilgrim caravan struggles through a cold desert pass; baggage left behind, riders watching from a ridge",
+    "tags": {
+      "location": "cold-pass",
+      "time_light": "dawn-frost"
+    }
+  },
+  {
+    "beat_id": "B25",
+    "sentences": [
+      "S34"
+    ],
+    "device": null,
+    "viewer_sees": "Musa humbled before Cairo merchants with a ledger, a Mali man selling a bolt of cloth",
+    "tags": {
+      "location": "cairo-courtyard",
+      "time_light": "afternoon-hard"
+    }
+  },
+  {
+    "beat_id": "B26",
+    "sentences": [
+      "S35"
+    ],
+    "device": null,
+    "viewer_sees": "A merchant at his counting table watches the caravan leave at the far end of the street, an empty strongbox open",
+    "tags": {
+      "location": "cairo-bazaar",
+      "time_light": "dusk-warm"
+    }
+  },
+  {
+    "beat_id": "B27",
+    "sentences": [
+      "S36",
+      "S37"
+    ],
+    "device": null,
+    "viewer_sees": "A mapmaker in Majorca paints a crowned king holding a gold nugget onto a vellum map",
+    "tags": {
+      "location": "majorca-workshop",
+      "time_light": "window-light"
+    }
+  },
+  {
+    "beat_id": "B28",
+    "sentences": [
+      "S38"
+    ],
+    "device": "macro-object",
+    "viewer_sees": "Macro of the atlas panel: the crowned king, the gold nugget and the Catalan caption, gold leaf catching the light",
+    "tags": {
+      "location": "catalan-atlas",
+      "time_light": "lamp-warm"
+    }
+  },
+  {
+    "beat_id": "B29",
+    "sentences": [
+      "S39",
+      "S40"
+    ],
+    "device": "animated-map",
+    "viewer_sees": "A world map: gold glow floods the whole map, then shrinks to the Sahel patch",
+    "tags": {
+      "location": "world-map",
+      "time_light": "parchment-lamp"
+    }
+  },
+  {
+    "beat_id": "B30",
+    "sentences": [
+      "S41",
+      "S42"
+    ],
+    "device": null,
+    "viewer_sees": "A money-changer’s balance with gold on one pan and silver on the other, the pans swaying slowly and never settling",
+    "tags": {
+      "location": "money-changer",
+      "time_light": "lantern-warm"
+    }
+  },
+  {
+    "beat_id": "B31",
+    "sentences": [
+      "S43"
+    ],
+    "device": null,
+    "viewer_sees": "Al-Umari arrives in Cairo, then stands in a bazaar crowd where Cairenes eagerly tell him about the king",
+    "tags": {
+      "location": "cairo-bazaar",
+      "time_light": "afternoon-warm"
+    }
+  },
+  {
+    "beat_id": "B32",
+    "sentences": [
+      "S44"
+    ],
+    "device": null,
+    "viewer_sees": "Gold dust blows from an open bag across the dunes as Mansa Musa rides toward the horizon",
+    "tags": {
+      "location": "sahara-road",
+      "time_light": "golden-dusk"
+    }
+  },
+  {
+    "beat_id": "B33",
+    "sentences": [
+      "S45",
+      "S46"
+    ],
+    "device": null,
+    "viewer_sees": "End card: poster of the whole story with the title, Musa, the sultan and the SUBSCRIBE button",
+    "tags": {
+      "location": "end-card",
+      "time_light": "warm-gold"
+    }
+  }
+]

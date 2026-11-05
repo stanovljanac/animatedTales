@@ -1,0 +1,1719 @@
+{
+  "schema_version": 2,
+  "episode": "mansa-musa",
+  "generated_at": "2026-11-05T21:48:24Z",
+  "narration_duration": 218.671,
+  "fps": 24,
+  "beats": [
+    {
+      "beat_id": "B01",
+      "sentences": [
+        "S01"
+      ],
+      "start": 0,
+      "end": 11.76,
+      "dur": 11.76,
+      "device": null,
+      "narration_says": "In 1324 a king from West Africa rode into Cairo and gave away so much gold that, one chronicler says, the price of gold stayed low for twelve years.",
+      "viewer_sees": "A king in white and indigo rides in through a gate of Mamluk Cairo; in the market inside, merchants hold up gold in both hands",
+      "shots": [
+        {
+          "shot_id": "01",
+          "beat_id": "B01",
+          "link_group": null,
+          "t_in": 0,
+          "t_out": 5.708,
+          "use_in": 0,
+          "use_out": 5.708,
+          "use_len": 5.708,
+          "motion_budget": 5.708,
+          "gen_len": 6,
+          "source_file": "shots/part01.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "mansa-musa",
+            "mali-pilgrims"
+          ],
+          "visual_priority": [
+            "Mansa Musa riding into Cairo",
+            "the column of Mali pilgrims",
+            "the gate towers and minarets of Cairo",
+            "the onlookers lining the street"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Mansa Musa, a dignified West African king in his thirties, dark skin, a short neat black beard, calm watchful eyes, a tall gold-banded white turban, heavy gold earrings, layered white and indigo cotton robes, riding a white horse at the left third through a tall pointed stone gate, upright and dignified, one hand raised in greeting, his face turned toward screen-right\nSUBJECT 2: West African pilgrims of Mali, dark-skinned men in white and indigo cotton robes and wrapped turbans, some on camels and some on foot, leather water skins and long staffs, a column of pilgrims on camels and on foot following him in from the left edge\nACTION: in 1324 a king from West Africa rides into Cairo through a great stone gate at the head of his column\nSETTING: a monumental gate of Mamluk Cairo in strong midday sun, two round towers of cut limestone with a pointed arch, minarets and domes rising beyond the wall, a street of beaten earth lined with onlookers in turbans and long robes, a banner of striped cloth\nCAMERA: camera stands at the gate arch, eye level, long shot, tracking beside the king.\nFRAME LAYOUT: left third — Musa on his white horse, near-camera and large, cropped at the knee; center — the pilgrim column filling the street, medium; right third — the gate towers and the minarets of Cairo, large, with onlookers at the edge; upper edge — blue sky.\nFACING: we see Musa three-quarter from the front and left, his face toward screen-right and the gate; the pilgrims face toward screen-right; the onlookers at the right look back toward screen-left.\nSCREEN DIRECTION: the column moves from the left edge toward the right through the gate; dust lifts and drifts toward the right; banners ripple toward the right.\nLIGHT: hard midday sun from the upper left, deep short shadows under the gate arch, bright white limestone.\nPALETTE: limestone cream, indigo, white cotton, gold\nDETAIL: the indigo and white weave of the robes, gold bands on the turban, horse tack with brass studs, the carved stone of the gate.\nNOT IN FRAME: Ottoman domes, modern buildings, any text, caricature.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 5.708s; everything keeps moving at the same natural pace through the end of the 6s generation.\n0–1s: Musa rides forward on his white horse toward the right and lifts a hand in greeting; the column follows from the left edge.\n1–3s: the horse steps under the gate’s arch and the shadow slides over Musa’s turban; onlookers at the right edge lean forward and point.\n3–4.5s: the pilgrims on camels sway through the street, dust drifting; Musa turns his head toward the crowd and nods.\n4.5–6s: sunlight strikes the gold band of his turban as he rides out of the shadow into the light; banners ripple.\nCAMERA: one continuous slow track beside the king for the full 6 seconds.\nENVIRONMENT: dust drifts right; banners ripple; camels sway; sunlight slides over the street.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "cairo-1324",
+            "time_light": "midday-hard-sun",
+            "camera_motion": "track"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        },
+        {
+          "shot_id": "02",
+          "beat_id": "B01",
+          "link_group": null,
+          "t_in": 5.708,
+          "t_out": 11.75,
+          "use_in": 0,
+          "use_out": 6.042,
+          "use_len": 6.042,
+          "motion_budget": 6.042,
+          "gen_len": 8,
+          "source_file": "shots/part02.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "cairo-bazaar",
+            "gold-sacks"
+          ],
+          "visual_priority": [
+            "the Cairo bazaar full of raw gold",
+            "the merchants holding up gold in both hands",
+            "the sacks passing along the aisle",
+            "the shafts of sun through the vault"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a vaulted covered bazaar of Mamluk Cairo, pointed stone arches, striped awnings, hanging brass lanterns, stalls of cloth and spices and metalwork, packed beaten earth floor, bright shafts of sun falling through the vaulted roof onto a crowded aisle, merchants at their stalls each holding up a handful of raw gold in both hands with wide eyes\nSUBJECT 2: heavy leather sacks tied at the neck, each bulging with raw unworked gold, nuggets and gold dust spilling from the mouth of one sack, loaded in pairs on camels, heavy sacks passed along the aisle from the left edge by Mali men in white and indigo, one sack open on a stall\nACTION: in the Cairo bazaar merchants hold up raw gold in both hands, gold suddenly plentiful at every stall\nSETTING: a bazaar aisle in strong midday light, spice sacks, bolts of cloth and brass trays on the stalls, brass scale pans, shafts of sun from openings in the vault, glittering dust in the air\nCAMERA: camera stands in the bazaar aisle, eye level, medium shot.\nFRAME LAYOUT: left third — a Mali man handing a sack across a stall, medium; center — a merchant holding up two handfuls of raw gold, near-camera and large, cropped at the waist; right third — more merchants holding up gold along the stalls, medium; upper edge — hanging lanterns and vault arches.\nFACING: we see the Mali man in profile facing screen-right; the merchants from the front and slightly right, their faces lit and amazed, their palms toward camera.\nSCREEN DIRECTION: sacks pass from the left toward the right along the aisle; gold dust trickles from the merchant’s hands toward the lower right; glints flash across the stalls.\nLIGHT: shafts of warm sunlight from the vault’s openings, lantern glow, bright glints on the gold.\nPALETTE: gold, indigo, spice red, white\nDETAIL: raw nuggets with rough edges, gold dust in palms, brass scale pans, striped awning, silver threads in a merchant’s beard, a brass weight glinting beside a scale, loose gold flecks on the counter.\nNOT IN FRAME: minted coins, any text, soldiers.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 6.042s; everything keeps moving at the same natural pace through the end of the 8s generation.\n0–1s: a Mali man hands a heavy sack across a stall toward the right and a merchant opens it, eyes widening.\n1–3s: the merchant raises handfuls of raw gold into the light, dust trickling between his fingers; neighbors lean in from the right.\n3–5s: more merchants lift gold in both hands along the aisle, calling to one another; lantern glints dance on the nuggets.\n5–7s: the Mali man passes another sack along the row and the stalls fill with glitter as the crowd presses in.\n7–8s: the camera pushes along the aisle while hands lift gold higher and dust drifts down through the shafts of sun.\nCAMERA: one continuous slow push along the aisle for the full 8 seconds.\nENVIRONMENT: gold dust drifts in sun shafts; lanterns sway; awnings flutter; glints dance.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "crowd",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "cairo-1324",
+            "time_light": "midday-hard-sun",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B02",
+      "sentences": [
+        "S02"
+      ],
+      "start": 11.76,
+      "end": 16.5,
+      "dur": 4.74,
+      "device": null,
+      "narration_says": "He was Mansa Musa, the ruler of Mali, on his way to Mecca.",
+      "viewer_sees": "Mansa Musa rides at the head of a caravan across the dunes toward Mecca, camels behind him",
+      "shots": [
+        {
+          "shot_id": "03",
+          "beat_id": "B02",
+          "link_group": null,
+          "t_in": 11.75,
+          "t_out": 16.5,
+          "use_in": 0,
+          "use_out": 4.75,
+          "use_len": 4.75,
+          "motion_budget": 4.75,
+          "gen_len": 6,
+          "source_file": "shots/part03.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "mansa-musa",
+            "mali-pilgrims"
+          ],
+          "visual_priority": [
+            "Mansa Musa riding at the head of the caravan",
+            "the long line of camels across the dunes",
+            "the golden Saharan dunes",
+            "the pale warm sky"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Mansa Musa, a dignified West African king in his thirties, dark skin, a short neat black beard, calm watchful eyes, a tall gold-banded white turban, heavy gold earrings, layered white and indigo cotton robes, riding at the left third at the head of the caravan on a white horse, his turban cloth streaming, his face turned toward screen-right and the horizon, dignified\nSUBJECT 2: West African pilgrims of Mali, dark-skinned men in white and indigo cotton robes and wrapped turbans, some on camels and some on foot, leather water skins and long staffs, a long line of camels and walkers strung out from the left edge across the dunes\nACTION: Mansa Musa rides at the head of a long caravan across the dunes toward Mecca\nSETTING: a sea of golden Saharan dunes in the late afternoon, wind-rippled sand, a long line of camels and walkers crossing from the left edge, a pale warm sky\nCAMERA: camera runs beside the lead rider on the dune crest, low angle, long shot.\nFRAME LAYOUT: left third — Musa on his horse, near-camera and large, cropped at the knee; center — the caravan strung across the dunes, medium to small; right third — the open dunes and the horizon, far and hazy; upper two thirds — pale warm sky.\nFACING: we see Musa in profile from his right side, his face toward screen-right; the caravan walks toward screen-right.\nSCREEN DIRECTION: the caravan moves from the left edge toward the right across the dunes; sand streams off the crests toward the right; his turban cloth flies toward the left.\nLIGHT: low gold afternoon sun from the left, long blue shadows in the dune hollows.\nPALETTE: dune gold, indigo, white, blue shadow\nDETAIL: wind ripples in the sand, camel packs with leather water skins, flying turban cloth, tiny walking figure, the plume of dust kicked up by the camels’ feet, a rope of cowrie shells on the lead camel’s bridle, a water skin darkened with wet, the long fringe of the riders’ turbans snapping in the wind.\nNOT IN FRAME: tents, a city, any text.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 4.75s; everything keeps moving at the same natural pace through the end of the 6s generation.\n0–1s: Musa’s horse strides along the crest and sand streams off the dune toward the right; the first camels lurch into the frame at the left edge.\n1–3s: the camera runs beside him as the caravan winds over the dunes; his turban cloth whips in the wind.\n3–4.5s: a gust lifts a veil of sand across the hollow and the camels’ long shadows swing over the dune.\n4.5–6s: Musa turns his head toward the horizon and urges the horse on; the line of walkers keeps stretching toward the right.\nCAMERA: one continuous slow track beside the lead rider for the full 6 seconds.\nENVIRONMENT: sand streams; turban cloth whips; heat shimmer rises; camel shadows swing.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "low",
+            "location": "sahara-road",
+            "time_light": "golden-hour",
+            "camera_motion": "track"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B03",
+      "sentences": [
+        "S03"
+      ],
+      "start": 16.5,
+      "end": 23.36,
+      "dur": 6.86,
+      "device": "animated-map",
+      "narration_says": "His kingdom taxed the trade in gold and salt, and West Africa supplied much of the gold that reached the Mediterranean.",
+      "viewer_sees": "ANIMATED MAP: West Africa at the left, the Mediterranean at the upper right; gold routes and salt routes draw themselves across the Sahara",
+      "shots": [
+        {
+          "shot_id": "04",
+          "beat_id": "B03",
+          "link_group": null,
+          "t_in": 16.5,
+          "t_out": 23.375,
+          "use_in": 0,
+          "use_out": 6.875,
+          "use_len": 6.875,
+          "motion_budget": 6.875,
+          "gen_len": 8,
+          "source_file": "shots/part04.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "the hand-drawn map of West Africa and the Mediterranean",
+            "the gold fields at the left",
+            "the gold routes drawing themselves across the Sahara",
+            "the ports at the upper right"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a hand-drawn medieval-style map of North and West Africa and the Mediterranean on aged vellum, the Sahara a wide band of dune hatching, West Africa at the left with golden fields marked by little gold nuggets beside a long river, white salt blocks marking the salt mines in the desert, Mediterranean ports with small ships at the upper right\nACTION: gold routes and salt routes draw themselves across the Sahara: gold flowing north from the West African gold fields at the left toward the Mediterranean ports at the upper right, salt flowing south\nSETTING: a sheet of aged cream vellum with brown ink, a decorative border, pale blue sea at the top, tan dune hatching across the middle, green river lines in the west. Tiny hand-drawn camels cross the desert along faint dotted trails, a small walled town stands at the end of each route, and a pale blue river meanders from the gold fields to the sea; the vellum is warmed by a lamp and slightly wrinkled by age.\nCAMERA: camera hangs directly over the map, overhead, wide shot moving in.\nFRAME LAYOUT: center — the Sahara as a band of dune hatching crossing the map; left third — the West African gold fields with golden nuggets beside a long river; upper right — the Mediterranean coast with small ports and ships; lower center — white salt blocks marking the desert salt mines; lower right — a small compass rose.\nFACING: we see the map from straight above, north toward the upper edge; the ships face the coast.\nSCREEN DIRECTION: golden lines draw themselves from the gold fields at the left across the desert toward the ports at the upper right; white lines draw back from the salt mines toward the lower left.\nLIGHT: warm soft lamp light from the upper left, a gold glow on the routes, soft shadow in the vellum creases.\nPALETTE: vellum cream, gold, sea blue, ink brown\nDETAIL: fine ink hatching of dunes, tiny gold nuggets, white salt blocks, small ships and ports, no readable lettering.\nNOT IN FRAME: readable text, modern borders, people.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 6.875s; everything keeps moving at the same natural pace through the end of the 8s generation.\n0–1s: golden nuggets glint beside the river at the left; the vellum glows under the lamp.\n1–3s: a gold line starts to draw itself from the gold fields toward the right across the dune hatching, a little camel icon sliding along it.\n3–5s: a second gold line follows a different path north and white salt lines draw back from the salt mines toward the lower left.\n5–7s: the gold lines reach the ports at the upper right, which flare gold; a small ship sails along the coast.\n7–8s: all the routes pulse in turn as the camera pushes toward the gold fields and the lamp light flickers.\nCAMERA: one continuous slow push over the map from the gold fields toward the ports for the full 8 seconds.\nENVIRONMENT: lamp light flickers; ink lines draw; nuggets glint; the ship drifts.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "map-diagram",
+            "shot_size": "aerial",
+            "angle": "overhead",
+            "location": "trade-map",
+            "time_light": "parchment-lamp",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B04",
+      "sentences": [
+        "S04"
+      ],
+      "start": 23.36,
+      "end": 29.9,
+      "dur": 6.54,
+      "device": null,
+      "narration_says": "He arrived in July, camped for three days beside the pyramids, and stayed in Cairo three months.",
+      "viewer_sees": "A camp of cotton tents beside the pyramids, caravan smoke rising, camels kneeling, the Nile a green strip far off",
+      "shots": [
+        {
+          "shot_id": "05",
+          "beat_id": "B04",
+          "link_group": null,
+          "t_in": 23.375,
+          "t_out": 29.917,
+          "use_in": 0,
+          "use_out": 6.542,
+          "use_len": 6.542,
+          "motion_budget": 6.542,
+          "gen_len": 8,
+          "source_file": "shots/part05.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "mali-pilgrims"
+          ],
+          "visual_priority": [
+            "the Mali pilgrims camped beside the pyramids",
+            "the kneeling camels and cotton tents",
+            "the pyramids in sunset light",
+            "the green strip of the Nile far off"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: West African pilgrims of Mali, dark-skinned men in white and indigo cotton robes and wrapped turbans, some on camels and some on foot, leather water skins and long staffs, camped at the left and center in a camp of cotton tents, tending cooking fires, camels kneeling in rows, men unloading packs\nACTION: the caravan makes camp beside the pyramids: cotton tents, kneeling camels, cooking smoke, the Nile a green strip in the distance\nSETTING: the desert plateau at Giza at sunset, the great pyramids rising in warm light at the right, a pale sky, a green strip of Nile fields far below on the left. Scattered cooking fires glow like small stars across the camp, laundry hangs on a rope between two tent poles, a few goats are tethered near a water trough, and a long line of pilgrims’ shadows stretches across the sand toward the pyramids; the far Nile haze is violet-gold.\nCAMERA: camera stands at the camp’s edge, eye level, long shot.\nFRAME LAYOUT: left third — the tents and cooking fires with pilgrims, near-camera, cropped at the knee; center — kneeling camels in rows, medium; right third — the pyramids large in warm light, far and hazy; far left — the green strip of the Nile, tiny; upper edge — a gold-orange sky.\nFACING: we see the pilgrims from the front and side, some looking toward the pyramids at screen-right; the camels face toward screen-right.\nSCREEN DIRECTION: cooking smoke drifts from the left toward the right; pilgrims walk from the left edge toward the camels; the sunset light slides across the pyramids from the left.\nLIGHT: low sunset gold from the left grazing the pyramids’ faces, warm fire glow on the tents, long violet shadows.\nPALETTE: sunset gold, limestone cream, indigo, nile green\nDETAIL: woven cotton of the tents, cooking pots, the stepped courses of the pyramids, kneeling camels’ folded leg, bundles of firewood, the sheen of dark skin lit orange by the cooking fires, indigo turbans wound in fine pleats, the carved stone courses at the corner of the great pyramid.\nNOT IN FRAME: tourists, modern buildings, any text, a city.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 6.542s; everything keeps moving at the same natural pace through the end of the 8s generation.\n0–1s: cooking smoke drifts from the fires toward the pyramids and a pilgrim stirs a pot; camels chew and shift on the sand.\n1–3s: men unload packs from a standing camel and carry them into a tent, their robes swaying; the sunset glows on the pyramids.\n3–5s: two pilgrims spread a mat and sit to share bread; a camel stretches its neck toward them.\n5–7s: the camera pushes forward along the camp as the sunset deepens and the pyramids turn deep orange; fire sparks rise.\n7–8s: pilgrims gather around a fire with raised hands while the light slides down the pyramids’ faces and smoke rises.\nCAMERA: one continuous slow push through the camp toward the pyramids for the full 8 seconds.\nENVIRONMENT: smoke drifts; sparks rise; sunset light slides down the pyramids; camels shift.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "giza-camp",
+            "time_light": "sunset-warm",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B05",
+      "sentences": [
+        "S05"
+      ],
+      "start": 29.9,
+      "end": 33.48,
+      "dur": 3.58,
+      "device": null,
+      "narration_says": "The sultan, al-Nasir, sent an emir to meet him.",
+      "viewer_sees": "The sultan’s emir rides out with a small guard to meet the Mali caravan at the edge of the camp",
+      "shots": [
+        {
+          "shot_id": "06",
+          "beat_id": "B05",
+          "link_group": null,
+          "t_in": 29.917,
+          "t_out": 33.5,
+          "use_in": 0,
+          "use_out": 3.583,
+          "use_len": 3.583,
+          "motion_budget": null,
+          "gen_len": null,
+          "source_file": "shots/shot06.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "mamluk-emir"
+          ],
+          "visual_priority": [
+            "the Mamluk emir riding out to meet the caravan",
+            "the small mounted guard",
+            "the dusty track",
+            "the tents of the camp at the left"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a Mamluk emir in his fifties, a stern lined face, a short grey beard, a high red and white turban, a long green silk robe with an embroidered sash, a curved sword at the hip, riding a grey horse at the right third at the head of a small mounted guard, his face turned toward screen-left and the camp, one hand raised in greeting\nACTION: the sultan’s emir rides out with a small mounted guard to meet the Mali caravan at the edge of the camp\nSETTING: a desert track at the edge of the pyramids camp, late afternoon light, dust rising from hooves, the white tents of the camp at the left, the pyramids small and hazy at the far left. The guards wear mail shirts under short coats and tall conical caps, their lances lean against their shoulders, a green and white pennant flutters from one lance, and a small cloud of dust and gnats hangs in the low sun; far to the left a few pilgrims walk out to meet them.\nCAMERA: camera crouches on the track at the camp’s edge, low angle, medium shot.\nFRAME LAYOUT: right third — the emir on his grey horse, near-camera and large, cropped at the waist; right edge — four guards on horseback, medium; center — the dusty track; left third — the tents of the camp and the first Mali pilgrims stepping forward, small and hazy; far left — the pyramids.\nFACING: we see the emir three-quarter from the front and right, his face toward screen-left and the camp, his hand raised toward screen-left; the guards face toward screen-left.\nSCREEN DIRECTION: the riders move from the right edge toward the left along the track; dust drifts toward the left.\nLIGHT: warm late-afternoon sun from the right, long shadows toward the left, a gold rim on the emir’s turban.\nPALETTE: dust gold, silk green, red and white, tent cream\nDETAIL: silk sash embroidery, the emir’s red and white turban, horse tack, dust grains in the light, a brass bit on the grey horse’s bridle, the sheen of the emir’s beard, the pale crescent of a stitched seam on his turban cloth.\nNOT IN FRAME: any text, modern vehicles.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "low",
+            "location": "giza-camp",
+            "time_light": "late-afternoon",
+            "camera_motion": "push"
+          },
+          "render_mode": "still",
+          "still_motion": "push"
+        }
+      ]
+    },
+    {
+      "beat_id": "B06",
+      "sentences": [
+        "S06"
+      ],
+      "start": 33.48,
+      "end": 38.2,
+      "dur": 4.72,
+      "device": null,
+      "narration_says": "That emir later told what he saw to a historian named al-Umari.",
+      "viewer_sees": "Later, the emir tells al-Umari what he saw while the historian writes",
+      "shots": [
+        {
+          "shot_id": "07",
+          "beat_id": "B06",
+          "link_group": null,
+          "t_in": 33.5,
+          "t_out": 38.208,
+          "use_in": 0,
+          "use_out": 4.708,
+          "use_len": 4.708,
+          "motion_budget": 4.708,
+          "gen_len": 6,
+          "source_file": "shots/part07.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "mamluk-emir",
+            "al-umari"
+          ],
+          "visual_priority": [
+            "the Mamluk emir telling what he saw",
+            "al-Umari writing it down",
+            "the brass lamp",
+            "the carved screen with striped light"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a Mamluk emir in his fifties, a stern lined face, a short grey beard, a high red and white turban, a long green silk robe with an embroidered sash, a curved sword at the hip, seated on a cushion at the center, one hand raised as he tells what he saw, his face turned toward screen-left\nSUBJECT 2: a scholarly Arab historian in his forties, a round thoughtful face, a neat black beard, a white turban, a long grey-brown robe with wide sleeves, ink-stained fingers, seated on a low stool at the right third, writing on a roll of paper balanced on his knee, his eyes on the emir at screen-left\nACTION: later, the emir tells al-Umari what he saw at the camp while the historian writes it down\nSETTING: a quiet study in Cairo with a low carpet, a brass lamp, a stack of paper rolls and an inkpot, a carved wooden window screen letting in striped light, cushions\nCAMERA: camera stands at the lamp’s side, eye level, medium shot.\nFRAME LAYOUT: center — the emir seated on a cushion, near-camera and large, cropped at the waist, one hand raised; right third — al-Umari on a low stool writing on a paper roll, near-camera; left third — a brass lamp on the carpet and the carved screen with striped light; lower edge — paper rolls and an inkpot.\nFACING: the emir is seen from the front and right, speaking toward screen-left; al-Umari from the front and right, his eyes down on the roll and toward the emir at screen-left.\nSCREEN DIRECTION: the emir’s raised hand moves from the right toward the left in a sweeping arc as he describes; al-Umari’s pen moves along the line from the right toward the left; the lamp flame leans leftward.\nLIGHT: warm lamp light from the left, striped sun through the screen on the carpet, deep brown shadow.\nPALETTE: lamp gold, carpet red, ink black, silk green\nDETAIL: the carved lattice screen, brass lamp engraving, silk sheen of the emir’s robe, a paper roll curling, a pen nib.\nNOT IN FRAME: any readable writing, other people, Musa.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 4.708s; everything keeps moving at the same natural pace through the end of the 6s generation.\n0–1s: the emir lifts his raised hand and begins to speak, describing an arc in the air; al-Umari dips his pen and starts to write.\n1–3s: the emir’s hand sweeps wide as if showing a great caravan and he shakes his head in wonder; al-Umari’s pen moves along the line from right to left.\n3–4.5s: the emir counts on his fingers and leans forward; al-Umari glances up with raised brows and writes faster.\n4.5–6s: the emir sits back and spreads both hands; the lamp flame sways and striped light slides across the carpet.\nCAMERA: one continuous slow push toward the two men for the full 6 seconds.\nENVIRONMENT: lamp flame sways; striped light slides; paper rolls stir; dust floats in the light.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "emir-study",
+            "time_light": "lamp-warm",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B07",
+      "sentences": [
+        "S07"
+      ],
+      "start": 38.2,
+      "end": 42.58,
+      "dur": 4.38,
+      "device": null,
+      "narration_says": "Musa spoke to him only through an interpreter, though his Arabic was perfect.",
+      "viewer_sees": "Musa answers through an interpreter who stands between him and the emir",
+      "shots": [
+        {
+          "shot_id": "08",
+          "beat_id": "B07",
+          "link_group": null,
+          "t_in": 38.208,
+          "t_out": 42.583,
+          "use_in": 0,
+          "use_out": 4.375,
+          "use_len": 4.375,
+          "motion_budget": 4.375,
+          "gen_len": 6,
+          "source_file": "shots/part08.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "mansa-musa",
+            "interpreter",
+            "mamluk-emir"
+          ],
+          "visual_priority": [
+            "Mansa Musa speaking through the interpreter",
+            "the interpreter standing between them",
+            "the Mamluk emir listening",
+            "the open tent flap with a pyramid"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Mansa Musa, a dignified West African king in his thirties, dark skin, a short neat black beard, calm watchful eyes, a tall gold-banded white turban, heavy gold earrings, layered white and indigo cotton robes, seated on cushions at the left third, upright and calm, speaking to the interpreter and not to the emir, his eyes on the interpreter\nSUBJECT 2: a lean Arab interpreter in his forties, a trimmed black beard, an alert narrow face, a plain white turban, a long ochre robe, ink on his fingertips, a small leather satchel, standing at the center between them, one hand open toward each, translating, his head turning\nSUBJECT 3: a Mamluk emir in his fifties, a stern lined face, a short grey beard, a high red and white turban, a long green silk robe with an embroidered sash, a curved sword at the hip, seated at the right third, listening, his eyes on the interpreter, politely attentive\nACTION: Musa answers through an interpreter who stands between him and the emir, though Musa’s own Arabic is perfect\nSETTING: the interior of a large cotton tent at the Giza camp, rich woven carpets, brass pots, cushions, a lamp, the tent wall glowing with late sun, a glimpse of a pyramid through the open flap\nCAMERA: camera stands at the tent’s edge, eye level, medium shot.\nFRAME LAYOUT: left third — Musa seated on cushions, near-camera and large, cropped at the waist; center — the interpreter standing, medium, hands open toward both; right third — the emir seated, near-camera and large, cropped at the waist; upper edge — tent cloth and the open flap with a pyramid.\nFACING: Musa is seen from the front and left, speaking toward the interpreter at screen-right; the emir from the front and right, listening toward screen-left; the interpreter in profile between them, his head turning.\nSCREEN DIRECTION: the interpreter’s open hands move from the left toward the right as he relays the words; the lamp flame leans toward the right; a flap of tent cloth stirs toward the right.\nLIGHT: warm lamp light from the center, late gold light through the tent cloth and the open flap, soft shadow.\nPALETTE: tent cream, carpet red, brass gold, indigo\nDETAIL: woven carpet patterns, brass pot engravings, the gold band on Musa’s turban, ink-stained fingertips of the interpreter.\nNOT IN FRAME: any text, other people, Musa looking at the emir.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 4.375s; everything keeps moving at the same natural pace through the end of the 6s generation.\n0–1s: Musa speaks a short sentence to the interpreter, his eyes on him; the interpreter nods and turns toward the emir.\n1–3s: the interpreter relays the words to the emir with open hands; the emir listens and gives a slow nod.\n3–4.5s: the emir answers and the interpreter turns back to Musa and repeats it; Musa lifts one hand slightly in reply.\n4.5–6s: Musa answers again to the interpreter alone, calm and unhurried, while the lamp flame sways and the tent cloth ripples.\nCAMERA: one continuous slow push toward the interpreter between them for the full 6 seconds.\nENVIRONMENT: lamp flame sways; tent cloth ripples; light slides through the open flap.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "musa-tent",
+            "time_light": "interior-warm",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B08",
+      "sentences": [
+        "S08"
+      ],
+      "start": 42.58,
+      "end": 46.18,
+      "dur": 3.6,
+      "device": null,
+      "narration_says": "He sent many loads of raw gold to the sultan's treasury.",
+      "viewer_sees": "Camels laden with leather sacks of raw gold pass through the citadel gate, one sack spilling nuggets and dust",
+      "shots": [
+        {
+          "shot_id": "09",
+          "beat_id": "B08",
+          "link_group": null,
+          "t_in": 42.583,
+          "t_out": 46.167,
+          "use_in": 0,
+          "use_out": 3.584,
+          "use_len": 3.584,
+          "motion_budget": null,
+          "gen_len": null,
+          "source_file": "shots/shot09.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "gold-sacks"
+          ],
+          "visual_priority": [
+            "the sacks of raw gold on the camels",
+            "the sack spilling nuggets and dust",
+            "the great gate of the citadel",
+            "the line of camels"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: heavy leather sacks tied at the neck, each bulging with raw unworked gold, nuggets and gold dust spilling from the mouth of one sack, loaded in pairs on camels, loaded in pairs on a line of camels entering a gate from the left edge, one sack at the center spilling raw nuggets and dust from its torn mouth onto the stones\nACTION: camels laden with leather sacks of raw gold file through the gate of the citadel, one sack spilling nuggets and dust onto the stones\nSETTING: the great stone gate of the Cairo citadel in late afternoon, two heavy round towers of limestone, a pointed arch with a dark passage beyond, pale paving, drivers in white turbans, dust. Drivers in white turbans walk beside the camels and a guard in mail watches from the gate’s parapet; dust swirls in the evening sun and a few pigeons wheel overhead; the paving between the towers is worn into shallow grooves by centuries of carts.\nCAMERA: camera crouches beside the gate arch, low angle, medium shot.\nFRAME LAYOUT: center — the nearest camel with the spilling sack, near-camera and large; left third — more camels in line from the left edge, medium; right third — the gate arch and dark passage, large; lower edge — spilled nuggets and gold dust on the stones, near-camera.\nFACING: we see the camels from the side and slightly front, their heads toward screen-right and the gate; the spilling sack faces camera.\nSCREEN DIRECTION: the line of camels moves from the left edge toward the right into the gate; gold dust trickles from the torn sack toward the lower right; dust drifts toward the right.\nLIGHT: warm late afternoon sun from the left, long shadows toward the right, bright gold glints on the nuggets.\nPALETTE: limestone cream, leather brown, raw gold, shadow blue\nDETAIL: rough raw nuggets with quartz flecks, torn leather mouth of the sack, camel hair, worn paving stone, the bright yellow of raw gold against dark leather, a torn patch of the sack’s stitching, quartz grains glittering among the nuggets, a camel’s blinking eye with long lashes.\nNOT IN FRAME: minted coins, any text, soldiers close up.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "MS",
+            "angle": "low",
+            "location": "cairo-citadel-gate",
+            "time_light": "late-afternoon",
+            "camera_motion": "push"
+          },
+          "render_mode": "still",
+          "still_motion": "push"
+        }
+      ]
+    },
+    {
+      "beat_id": "B09",
+      "sentences": [
+        "S09",
+        "S10"
+      ],
+      "start": 46.18,
+      "end": 54.48,
+      "dur": 8.3,
+      "device": null,
+      "narration_says": "But when the emir urged him to visit the sultan himself, he refused. \"I came for the pilgrimage and nothing else,\" he said.",
+      "viewer_sees": "The emir urges Musa toward the citadel at the right; Musa shakes his head and refuses",
+      "shots": [
+        {
+          "shot_id": "10",
+          "beat_id": "B09",
+          "link_group": null,
+          "t_in": 46.167,
+          "t_out": 54.5,
+          "use_in": 0,
+          "use_out": 8.333,
+          "use_len": 8.333,
+          "motion_budget": 8.333,
+          "gen_len": 10,
+          "source_file": "shots/part10.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "mansa-musa",
+            "mamluk-emir"
+          ],
+          "visual_priority": [
+            "Mansa Musa refusing politely",
+            "the Mamluk emir pointing toward the citadel",
+            "the dusty track to Cairo",
+            "the citadel on its hill in haze"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Mansa Musa, a dignified West African king in his thirties, dark skin, a short neat black beard, calm watchful eyes, a tall gold-banded white turban, heavy gold earrings, layered white and indigo cotton robes, standing at the left third at the edge of his camp, shaking his head, one hand raised palm out in polite refusal, his face turned toward screen-right\nSUBJECT 2: a Mamluk emir in his fifties, a stern lined face, a short grey beard, a high red and white turban, a long green silk robe with an embroidered sash, a curved sword at the hip, standing at the right third, one arm pointing toward the citadel on its hill at the far right, urging, his face turned toward screen-left\nACTION: the emir urges Musa to visit the sultan at the citadel; Musa shakes his head and refuses, saying he came only for the pilgrimage\nSETTING: the edge of the pilgrim camp at Giza in late afternoon, tents and a kneeling camel at the left, a dusty track leading to Cairo’s citadel on a rocky hill far at the right, minarets and domes in haze\nCAMERA: camera stands between them on the track, eye level, medium shot.\nFRAME LAYOUT: left third — Musa at the camp’s edge, near-camera and large, cropped at the waist; right third — the emir, near-camera and large, cropped at the waist, pointing; center — the dusty track toward the citadel; far right — the citadel on its hill with minarets and domes, small and hazy; left edge — a tent.\nFACING: Musa is seen from the front and left, facing the emir at screen-right; the emir from the front and right, facing Musa toward screen-left.\nSCREEN DIRECTION: the emir’s pointing arm extends from the right toward the left; Musa’s head turns from side to side and his raised hand sweeps toward the right; dust drifts toward the left.\nLIGHT: warm late-afternoon sun from the left, long soft shadows toward the right, haze over the citadel.\nPALETTE: dust gold, indigo, white, silk green\nDETAIL: the gold bands of Musa’s turban, the emir’s embroidered sash, tent cloth weave, hazy domes and minarets.\nNOT IN FRAME: the sultan, any text, soldiers close up.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 8.333s; everything keeps moving at the same natural pace through the end of the 10s generation.\n0–1s: the emir points toward the citadel at the right and speaks, urging; Musa listens with a calm, level gaze.\n1–3s: Musa shakes his head slowly and lifts one hand palm out; the emir spreads his hands in appeal and steps a half pace nearer.\n3–5s: the emir presses his point with a stronger gesture toward the citadel; Musa answers firmly, his hand moving to his chest.\n5–7.5s: Musa lifts his chin and gestures toward the east, the road to Mecca, and the emir’s shoulders drop.\n7.5–10s: the emir bows his head in understanding while Musa nods once; dust drifts across the track and haze moves over the citadel.\nCAMERA: one continuous slow push between the two men for the full 10 seconds.\nENVIRONMENT: dust drifts left; haze moves over the citadel; tent cloth ripples; cloaks stir.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "giza-camp",
+            "time_light": "late-afternoon",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B10",
+      "sentences": [
+        "S11",
+        "S12"
+      ],
+      "start": 54.48,
+      "end": 59.3,
+      "dur": 4.82,
+      "device": null,
+      "narration_says": "The emir understood. At court, Musa would have to kiss the ground.",
+      "viewer_sees": "Rows of courtiers kiss the marble floor before the throne; the camera pushes toward the throne",
+      "shots": [
+        {
+          "shot_id": "11",
+          "beat_id": "B10",
+          "link_group": null,
+          "t_in": 54.5,
+          "t_out": 59.292,
+          "use_in": 0,
+          "use_out": 4.792,
+          "use_len": 4.792,
+          "motion_budget": 4.792,
+          "gen_len": 6,
+          "source_file": "shots/part11.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "al-nasir",
+            "sultan-hall"
+          ],
+          "visual_priority": [
+            "Sultan al-Nasir on his throne",
+            "the courtiers kissing the marble floor in rows",
+            "the long marble aisle",
+            "the gilded lamps and bars of light"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: the Mamluk sultan al-Nasir, a thin man in his late thirties, a dark moustache and a heavy-lidded watchful face, a tall white turban with a gold band, a long dark blue silk robe with a wide embroidered armband, seated on the carved stone throne at the right third, one hand resting on his knee, watching with heavy-lidded calm, his face turned toward screen-left\nSUBJECT 2: the audience hall of the Mamluk sultan in the Cairo citadel, a floor of polished marble in black and white, a high ceiling of painted wood and a carved stone throne on a low dais, seen from the hall’s entrance, with late gold light from high windows on the left laying bars across the marble, gilded lamps hanging from the ceiling and guards in mail along the walls\nACTION: rows of courtiers in turbans and long robes bow to the floor and kiss the marble before the sultan’s throne, one after another\nSETTING: the sultan’s audience hall in the Cairo citadel in the late afternoon, black and white marble, painted ceiling beams, gilded lamps on long chains\nCAMERA: camera stands at the hall’s entrance, slightly high angle, long shot.\nFRAME LAYOUT: right third — the sultan on his throne, medium; center — rows of courtiers going down to the marble one after another, medium; left third — the empty central aisle of black and white marble, near-camera, leading toward the throne; upper edge — painted ceiling and hanging lamps.\nFACING: we see the sultan from the front and slightly left, his face toward screen-left and the aisle; the courtiers show their backs and bowed heads toward the throne.\nSCREEN DIRECTION: the courtiers bow in turn from the left edge toward the throne at the right; the light bars slide across the marble; lamp chains sway.\nLIGHT: bars of late gold light from high windows on the left, a warm glow on the gilded lamps, deep shade in the corners.\nPALETTE: marble black and white, gold, silk blue, cream\nDETAIL: marble veining, gilded lamp filigree, folds of long robes, the carved throne’s stone ornament.\nNOT IN FRAME: Musa, any text, modern objects.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 4.792s; everything keeps moving at the same natural pace through the end of the 6s generation.\n0–1s: the first rank of courtiers bows low and presses their foreheads and lips to the marble; the sultan watches calmly.\n1–3s: the next rank sinks down in turn, robes pooling around them; bars of gold light slide across the marble.\n3–4.5s: the camera pushes along the aisle toward the throne as another rank bows and rises; lamp chains sway.\n4.5–6s: a chamberlain strides along the aisle with a staff as the final rank kisses the floor; the sultan lifts two fingers in acknowledgement.\nCAMERA: one continuous slow push along the aisle toward the throne for the full 6 seconds.\nENVIRONMENT: light bars slide; lamps sway; robes pool; dust floats in the light.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "crowd",
+            "shot_size": "LS",
+            "angle": "high",
+            "location": "sultan-hall",
+            "time_light": "interior-gold",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B11",
+      "sentences": [
+        "S13",
+        "S14"
+      ],
+      "start": 59.3,
+      "end": 66.94,
+      "dur": 7.64,
+      "device": null,
+      "narration_says": "The emir kept pressing, and at last Musa agreed. In the sultan's presence they told him: kiss the ground.",
+      "viewer_sees": "Musa enters the hall; chamberlains point down at the floor",
+      "shots": [
+        {
+          "shot_id": "12",
+          "beat_id": "B11",
+          "link_group": null,
+          "t_in": 59.292,
+          "t_out": 66.958,
+          "use_in": 0,
+          "use_out": 7.666,
+          "use_len": 7.666,
+          "motion_budget": 7.666,
+          "gen_len": 8,
+          "source_file": "shots/part12.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "mansa-musa",
+            "al-nasir",
+            "sultan-hall"
+          ],
+          "visual_priority": [
+            "Mansa Musa entering the hall",
+            "the two chamberlains pointing down at the floor",
+            "the sultan on his throne at the end of the aisle",
+            "the bars of gold light on the marble"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Mansa Musa, a dignified West African king in his thirties, dark skin, a short neat black beard, calm watchful eyes, a tall gold-banded white turban, heavy gold earrings, layered white and indigo cotton robes, walking at the left third with two chamberlains at his side, upright and calm, his gold-banded turban bright, his eyes on the floor and then on the throne\nSUBJECT 2: the Mamluk sultan al-Nasir, a thin man in his late thirties, a dark moustache and a heavy-lidded watchful face, a tall white turban with a gold band, a long dark blue silk robe with a wide embroidered armband, seated far at the end of the aisle on his throne at the right, watching, his face turned toward screen-left\nSUBJECT 3: the audience hall of the Mamluk sultan in the Cairo citadel, a floor of polished marble in black and white, a high ceiling of painted wood and a carved stone throne on a low dais, the long aisle of black and white marble with bars of late gold light from high windows\nACTION: Musa enters the sultan’s hall; two chamberlains at his side point down at the marble floor and tell him to kiss the ground\nSETTING: the sultan’s audience hall in the Cairo citadel, painted ceiling beams, gilded lamps on long chains, courtiers lining the walls\nCAMERA: camera walks beside Musa along the aisle, eye level, long shot.\nFRAME LAYOUT: left third — Musa and the two chamberlains, near-camera and large, cropped at the thigh; center — the long marble aisle; right third — the sultan on his throne at the end, small and far; upper edge — painted ceiling.\nFACING: Musa is seen from the front and left, walking with his gaze on the throne at screen-right; the chamberlains in profile, pointing down at the floor; the sultan faces toward screen-left.\nSCREEN DIRECTION: Musa walks from the left toward the right along the aisle; the chamberlains’ pointing hands press toward the floor; light bars slide across the marble.\nLIGHT: bars of late gold from the high windows on the left slide over the aisle, warm glints on the gilded lamps, deep shade at the walls.\nPALETTE: marble black and white, gold, indigo, cream\nDETAIL: marble veining, the gold band of Musa’s turban, chamberlains’ staffs, lamp filigree.\nNOT IN FRAME: a crowd close up, any text, modern objects.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 7.666s; everything keeps moving at the same natural pace through the end of the 8s generation.\n0–1s: Musa walks along the marble aisle toward the throne, head high; two chamberlains keep pace at his side.\n1–3s: the chamberlains lean in and point down at the floor, speaking in low voices; Musa slows and looks at the marble.\n3–5s: the chamberlains point again, more insistently, and gesture to the floor before the throne; Musa lifts his eyes to the sultan at the far end.\n5–7s: Musa takes one measured step forward and the chamberlains step with him; light bars slide over his robes.\n7–8s: the camera keeps walking beside him as the throne grows larger at the right and the chamberlains’ hands press toward the floor.\nCAMERA: one continuous slow track beside Musa along the aisle for the full 8 seconds.\nENVIRONMENT: light bars slide; lamp chains sway; robes swing; dust floats in the light.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "sultan-hall",
+            "time_light": "interior-gold",
+            "camera_motion": "track"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B12",
+      "sentences": [
+        "S15",
+        "S16"
+      ],
+      "start": 66.94,
+      "end": 72.02,
+      "dur": 5.08,
+      "device": null,
+      "narration_says": "\"How may this be?\" said Musa. A man beside him whispered something.",
+      "viewer_sees": "Musa frowns at the floor; the interpreter leans in and whispers in his ear",
+      "shots": [
+        {
+          "shot_id": "13",
+          "beat_id": "B12",
+          "link_group": null,
+          "t_in": 66.958,
+          "t_out": 72,
+          "use_in": 0,
+          "use_out": 5.042,
+          "use_len": 5.042,
+          "motion_budget": 5.042,
+          "gen_len": 6,
+          "source_file": "shots/part13.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "mansa-musa",
+            "interpreter"
+          ],
+          "visual_priority": [
+            "Mansa Musa frowning at the floor",
+            "the interpreter whispering in his ear",
+            "the bar of gold light on the marble",
+            "the throne’s carved edge at the far right"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Mansa Musa, a dignified West African king in his thirties, dark skin, a short neat black beard, calm watchful eyes, a tall gold-banded white turban, heavy gold earrings, layered white and indigo cotton robes, at the left third, standing upright, frowning down at the marble, his lips parting to ask how this can be\nSUBJECT 2: a lean Arab interpreter in his forties, a trimmed black beard, an alert narrow face, a plain white turban, a long ochre robe, ink on his fingertips, a small leather satchel, at his shoulder, leaning in from the right to whisper in his ear, one hand cupped\nACTION: Musa frowns at the marble floor and asks how this may be; a man beside him leans in and whispers something\nSETTING: the marble floor of the sultan’s hall, black and white diamonds, a bar of gold light across the stone, the throne’s dark edge at the far right, courtiers’ robes at the wall\nCAMERA: camera stands an arm’s length from Musa, eye level, medium shot.\nFRAME LAYOUT: left third — Musa, near-camera and large, cropped at the chest, frowning; center — the interpreter’s face close to his ear; lower edge — the marble floor with the bar of light; right edge — the throne’s carved edge, far and hazy.\nFACING: we see Musa from the front and slightly left, his gaze down toward the floor; the interpreter in profile from the right, his face toward screen-left.\nSCREEN DIRECTION: the interpreter leans in from the right toward the left; Musa’s head turns slightly toward the right; a bar of light slides across the floor.\nLIGHT: a bar of late gold light from the left across the marble, warm on their faces, deep shade at the right.\nPALETTE: marble black and white, gold, ochre, indigo\nDETAIL: the weave of Musa’s indigo robe, the interpreter’s ink-stained fingers, marble veining, the gold band of the turban, a droplet of sweat at his temple, the interpreter’s ink-blackened thumb pressing his sleeve, the faint sheen of marble under his sandals, a pleat of the interpreter’s turban.\nNOT IN FRAME: the sultan’s face, any text, a crowd close up.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 5.042s; everything keeps moving at the same natural pace through the end of the 6s generation.\n0–1s: Musa looks down at the marble and a frown crosses his face; his lips part as if to speak, his brow tight.\n1–3s: he lifts his eyes a little and murmurs a question; the interpreter steps in at his shoulder from the right.\n3–4.5s: the interpreter cups a hand and whispers in his ear; Musa’s eyes narrow and he listens closely.\n4.5–6s: Musa gives a slow nod, his gaze lifting toward the throne; a bar of light slides across the floor.\nCAMERA: one continuous slow push toward Musa’s face for the full 6 seconds.\nENVIRONMENT: light bars slide; lamp chains sway; robe cloth stirs; dust floats in the light.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "sultan-hall",
+            "time_light": "interior-gold",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B13",
+      "sentences": [
+        "S17",
+        "S18"
+      ],
+      "start": 72.02,
+      "end": 80.34,
+      "dur": 8.32,
+      "device": null,
+      "narration_says": "\"I make obeisance to God who created me,\" he said, and bowed. The sultan half rose and sat him by his own side.",
+      "viewer_sees": "Musa bows to God, forehead to the floor; the sultan half rises and gestures to a seat at his side",
+      "shots": [
+        {
+          "shot_id": "14",
+          "beat_id": "B13",
+          "link_group": null,
+          "t_in": 72,
+          "t_out": 80.333,
+          "use_in": 0,
+          "use_out": 8.333,
+          "use_len": 8.333,
+          "motion_budget": 8.333,
+          "gen_len": 10,
+          "source_file": "shots/part14.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "mansa-musa",
+            "al-nasir",
+            "sultan-hall"
+          ],
+          "visual_priority": [
+            "Mansa Musa bowing to God",
+            "the sultan half rising from his throne",
+            "the empty seat at the sultan’s side",
+            "the courtiers watching"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Mansa Musa, a dignified West African king in his thirties, dark skin, a short neat black beard, calm watchful eyes, a tall gold-banded white turban, heavy gold earrings, layered white and indigo cotton robes, at the left third, kneeling and lowering his forehead to the marble in prayer toward Mecca, both palms flat on the floor, to God and not to the sultan\nSUBJECT 2: the Mamluk sultan al-Nasir, a thin man in his late thirties, a dark moustache and a heavy-lidded watchful face, a tall white turban with a gold band, a long dark blue silk robe with a wide embroidered armband, at the right third, half rising from the throne, one hand extended toward the empty seat at his side, astonished and respectful\nSUBJECT 3: the audience hall of the Mamluk sultan in the Cairo citadel, a floor of polished marble in black and white, a high ceiling of painted wood and a carved stone throne on a low dais, the marble aisle between them with courtiers lining the walls and bars of late gold light\nACTION: Musa kneels and bows his forehead to the floor in prayer to God, not to the sultan; the sultan half rises and gestures to a seat at his own side\nSETTING: the sultan’s audience hall in the Cairo citadel, a cushioned seat set beside the throne, painted ceiling beams, gilded lamps on chains\nCAMERA: camera stands at floor level in the aisle, low angle, long shot.\nFRAME LAYOUT: left third — Musa kneeling in prayer, near-camera and large, cropped at the thigh; right third — the sultan half risen from the throne, medium, with a cushioned seat beside him; center — the marble aisle; upper edge — painted ceiling.\nFACING: we see Musa in profile from his right side, bowing toward screen-right; the sultan three-quarter from the front and slightly left, his face toward screen-left and Musa; the courtiers at the walls turn their faces toward Musa.\nSCREEN DIRECTION: Musa lowers from kneeling toward the floor from the left; the sultan rises from the throne from the right toward the center; the courtiers’ heads turn toward the center.\nLIGHT: late gold bars from the high windows on the left fall warm on Musa’s turban, deep shade at the right wall.\nPALETTE: marble black and white, gold, indigo, silk blue\nDETAIL: folds of Musa’s robe pooling on the marble, the sultan’s embroidered armband, the cushion’s tassels, polished stone reflections.\nNOT IN FRAME: any text, Musa bowing to the sultan, modern objects.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 8.333s; everything keeps moving at the same natural pace through the end of the 10s generation.\n0–1s: Musa sinks to his knees on the marble and places both palms flat on the floor; murmurs ripple along the courtiers at the walls.\n1–3s: he lowers his forehead to the floor in prayer, his robes pooling around him; the sultan leans forward on the throne.\n3–5s: the sultan rises halfway from his throne with a look of surprise; courtiers at the walls exchange glances.\n5–7.5s: Musa lifts his head and rises to his knees; the sultan gestures to the cushioned seat at his side and Musa stands.\n7.5–10s: Musa walks slowly toward the throne and the sultan lowers himself back into place at its edge, making room; light bars slide over them.\nCAMERA: one continuous slow push toward Musa and the throne for the full 10 seconds.\nENVIRONMENT: light bars slide; lamp chains sway; robes pool and swing; dust floats.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "low",
+            "location": "sultan-hall",
+            "time_light": "interior-gold",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B14",
+      "sentences": [
+        "S19",
+        "S20"
+      ],
+      "start": 80.34,
+      "end": 86.4,
+      "dur": 6.06,
+      "device": null,
+      "narration_says": "Then he began to give. \"He flooded Cairo with his benefactions,\" the emir said.",
+      "viewer_sees": "Musa pours gold into the open hands of a crowd in a Cairo street",
+      "shots": [
+        {
+          "shot_id": "15",
+          "beat_id": "B14",
+          "link_group": null,
+          "t_in": 80.333,
+          "t_out": 86.417,
+          "use_in": 0,
+          "use_out": 6.084,
+          "use_len": 6.084,
+          "motion_budget": 6.084,
+          "gen_len": 8,
+          "source_file": "shots/part15.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "mansa-musa"
+          ],
+          "visual_priority": [
+            "Mansa Musa pouring gold into open hands",
+            "the stream of raw gold",
+            "the crowd of Cairenes with outstretched hands",
+            "the carved window screens and minaret"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Mansa Musa, a dignified West African king in his thirties, dark skin, a short neat black beard, calm watchful eyes, a tall gold-banded white turban, heavy gold earrings, layered white and indigo cotton robes, standing at the left third on a raised step in a Cairo street, pouring raw gold dust and nuggets from an open sack into the outstretched hands of the crowd, his face calm and generous, turned toward screen-right\nACTION: Musa begins to give: standing on a step in a Cairo street he pours raw gold from an open sack into the outstretched hands of a crowd\nSETTING: a busy street of Mamluk Cairo in strong midday sun, tall stone houses with carved wooden window screens, striped awnings, a minaret in the haze, a beaten earth street. Pigeons flap off a window ledge as the crowd surges, a cat darts away between the legs of the onlookers, and a water-carrier with a goatskin on his back stops to watch. The light is hot and white, with long blue shadows under every awning.\nCAMERA: camera stands at the crowd’s edge, eye level, medium shot.\nFRAME LAYOUT: left third — Musa on his step, near-camera and large, cropped at the waist, the open sack in his hands; center — raw gold pouring in a bright stream; right third — the crowd of Cairenes with outstretched hands, near-camera, cropped at the shoulder; upper edge — carved window screens and a minaret.\nFACING: Musa is seen from the front and left, looking out toward the crowd at screen-right; the crowd shows upturned faces from the right, turned toward screen-left and amazed.\nSCREEN DIRECTION: the stream of gold pours from the sack at the left toward the hands at the right; the crowd surges from the right toward the left; gold dust drifts toward the right.\nLIGHT: hard midday sun from the upper left, bright glints on the pouring gold, deep shade under the awnings.\nPALETTE: gold, indigo, stone cream, awning red\nDETAIL: raw nuggets and fine gold dust in the stream, veils and turbans of the crowd, carved wooden lattice, sun-bleached stone.\nNOT IN FRAME: minted coins, any text, soldiers.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 6.084s; everything keeps moving at the same natural pace through the end of the 8s generation.\n0–1s: Musa tips the open sack and a bright stream of raw gold pours into the outstretched hands at the right.\n1–3s: the crowd surges forward with open palms; a woman lifts a fold of her veil to catch the gold; Musa keeps pouring with a calm smile.\n3–5s: a young man receives a handful and raises it to the sun, amazed; more hands reach in.\n5–7s: Musa hands the empty sack to a servant who passes another and the stream resumes; the crowd’s cheering rises.\n7–8s: gold dust floats in the light above the hands as Musa keeps giving and the crowd presses closer.\nCAMERA: one continuous slow push toward the stream of gold for the full 8 seconds.\nENVIRONMENT: gold dust floats; veils flutter; awnings sway; sunlight flashes on the gold.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "cairo-street",
+            "time_light": "midday-hard-sun",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B15",
+      "sentences": [
+        "S21"
+      ],
+      "start": 86.4,
+      "end": 92.4,
+      "dur": 6,
+      "device": null,
+      "narration_says": "\"He left no court emir, nor holder of a royal office, without the gift of a load of gold.\"",
+      "viewer_sees": "A row of emirs and officials each receive a sack of gold hoisted onto mules by Mali servants",
+      "shots": [
+        {
+          "shot_id": "16",
+          "beat_id": "B15",
+          "link_group": null,
+          "t_in": 86.417,
+          "t_out": 92.417,
+          "use_in": 0,
+          "use_out": 6,
+          "use_len": 6,
+          "motion_budget": 6,
+          "gen_len": 6,
+          "source_file": "shots/part16.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "mamluk-emir",
+            "gold-sacks"
+          ],
+          "visual_priority": [
+            "the Mamluk emirs receiving a sack of gold each",
+            "the Mali servants hoisting sacks onto mules",
+            "the line of mules",
+            "the arcade and the tiled fountain"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a Mamluk emir in his fifties, a stern lined face, a short grey beard, a high red and white turban, a long green silk robe with an embroidered sash, a curved sword at the hip, standing at the right third in a line of emirs and officials in turbans and long robes in a courtyard, accepting a sack, his face turned toward screen-left\nSUBJECT 2: heavy leather sacks tied at the neck, each bulging with raw unworked gold, nuggets and gold dust spilling from the mouth of one sack, loaded in pairs on camels, heavy sacks being hoisted by Mali servants onto mules, one sack per emir\nACTION: a row of emirs and officials each receive a sack of gold, hoisted onto mules by Mali servants\nSETTING: a sunlit courtyard of a Mamluk palace, an arcade of pointed arches, a tiled fountain, mules lined up on a stone pavement, bright sky. A groom waits beside each mule with a coiled rope, the courtyard pavement is patterned in black and white stones, a few pigeons peck near the rim of the fountain, and the arcade throws deep blue shadow across the lower left corner. A few drifting feathers catch the light.\nCAMERA: camera walks along the line, eye level, medium shot.\nFRAME LAYOUT: right half — the line of emirs and officials, the nearest near-camera and large; center — a Mali servant hoisting a sack onto a mule; left third — more servants carrying sacks in from the left edge; upper edge — the arcade arches.\nFACING: we see the emirs from the front and slightly left, their faces turned toward screen-left toward the servants; the servants in profile, heading toward screen-right.\nSCREEN DIRECTION: servants carry sacks from the left edge toward the right; the camera tracks along the line from the left toward the right; fountain water falls at the center.\nLIGHT: bright morning sun through the arches, sharp shadows, glints on the sacks and tile.\nPALETTE: tile blue, white, gold, silk green\nDETAIL: tied leather sacks, emirs’ embroidered sashes, tiled fountain, mule harness.\nNOT IN FRAME: Musa, any text, coins.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 6s; everything keeps moving at the same natural pace through the end of the 6s generation.\n0–1s: two Mali servants heave a heavy sack onto a mule’s back; the first emir watches with raised brows.\n1–3s: the camera tracks along the line as each emir receives a sack in turn and servants loop ropes over the mules; fountain water splashes.\n3–4.5s: an emir bows his thanks with a hand to his chest; a servant leads his mule away toward the arch at the right.\n4.5–6s: the next sack is lifted and the line shuffles forward; the camera keeps sliding along as robes swing.\nCAMERA: one continuous slow track along the line of emirs for the full 6 seconds.\nENVIRONMENT: fountain water splashes; robes swing; mules shake their heads; sunlight glints on tiles.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "sultan-court",
+            "time_light": "bright-courtyard",
+            "camera_motion": "track"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B16",
+      "sentences": [
+        "S22"
+      ],
+      "start": 92.4,
+      "end": 98.22,
+      "dur": 5.82,
+      "device": null,
+      "narration_says": "The people of Cairo bought and sold with Musa and his men, and made incalculable profits.",
+      "viewer_sees": "Cairo merchants and Mali men bargain and smile in a vaulted bazaar",
+      "shots": [
+        {
+          "shot_id": "17",
+          "beat_id": "B16",
+          "link_group": null,
+          "t_in": 92.417,
+          "t_out": 98.208,
+          "use_in": 0,
+          "use_out": 5.791,
+          "use_len": 5.791,
+          "motion_budget": 5.791,
+          "gen_len": 6,
+          "source_file": "shots/part17.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "mali-pilgrims",
+            "cairo-bazaar"
+          ],
+          "visual_priority": [
+            "the Mali pilgrims bargaining with Cairo merchants",
+            "the bags of gold passing hand to hand",
+            "the stalls of cloth and spice",
+            "the vaulted bazaar from above"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: West African pilgrims of Mali, dark-skinned men in white and indigo cotton robes and wrapped turbans, some on camels and some on foot, leather water skins and long staffs, Mali men in white and indigo at the left half, bargaining and laughing with Cairo merchants, passing small bags of raw gold from hand to hand\nSUBJECT 2: a vaulted covered bazaar of Mamluk Cairo, pointed stone arches, striped awnings, hanging brass lanterns, stalls of cloth and spices and metalwork, packed beaten earth floor, seen from a gallery above the aisle, stalls of cloth, spices and brass below, the crowd thick\nACTION: the people of Cairo buy and sell with Musa and his men and make great profits: merchants and Mali men bargain and smile along the aisle\nSETTING: a long bazaar aisle with unrolled bolts of cloth, open sacks of spices in red and yellow, hanging brass lanterns and a vault of pointed arches\nCAMERA: camera stands on a gallery above the aisle, high angle, long shot, panning right.\nFRAME LAYOUT: left half — the Mali men and the first stalls, medium; center — the aisle crowded with bargaining pairs; right third — more stalls and merchants smiling, medium and hazy; lower edge — cloth bolts and spice sacks, near-camera; upper edge — vault arches and lanterns.\nFACING: we look down on the crowd from the gallery, faces turned up and toward each other; the Mali men face toward screen-right, the merchants toward screen-left.\nSCREEN DIRECTION: the camera pans along the aisle from the left toward the right; bags pass from the Mali men toward the merchants; lantern light sways.\nLIGHT: warm lantern light with shafts of sun through the vault, rich colour on the spices and cloth.\nPALETTE: spice red, saffron yellow, indigo, brass gold\nDETAIL: unrolled cloth bolts with woven stripes, heaps of spices, brass lantern filigree, turban fold, a bolt of crimson silk unrolled across a counter, a shopper’s raised finger, a stack of copper trays winking at the corner, motes of spice dust hanging in the sun shafts.\nNOT IN FRAME: minted coins, any text, soldiers.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 5.791s; everything keeps moving at the same natural pace through the end of the 6s generation.\n0–1s: along the aisle Mali men and merchants clasp hands over a stall and a merchant weighs a small bag of gold in his palm.\n1–3s: the camera pans right along the stalls as bargaining erupts in laughter; cloth bolts are unrolled and spices scooped into bags.\n3–4.5s: a merchant counts out his goods with quick gestures while a Mali man nods and pours gold into his hand; lantern light sways.\n4.5–6s: more buyers push in and hands shoot out across the stalls as the camera keeps panning over the crowd.\nCAMERA: one continuous slow pan along the aisle from a gallery for the full 6 seconds.\nENVIRONMENT: lantern light sways; spices are scooped; cloth unrolls; dust floats in the sun shafts.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "crowd",
+            "shot_size": "LS",
+            "angle": "high",
+            "location": "cairo-bazaar",
+            "time_light": "lantern-warm",
+            "camera_motion": "pan"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B17",
+      "sentences": [
+        "S23"
+      ],
+      "start": 98.22,
+      "end": 103.2,
+      "dur": 4.98,
+      "device": null,
+      "narration_says": "They exchanged gold, the emir said, until its value in Egypt fell.",
+      "viewer_sees": "A money-changer pours gold dust into a balance while the price tilts down",
+      "shots": [
+        {
+          "shot_id": "18",
+          "beat_id": "B17",
+          "link_group": null,
+          "t_in": 98.208,
+          "t_out": 103.208,
+          "use_in": 0,
+          "use_out": 5,
+          "use_len": 5,
+          "motion_budget": 5,
+          "gen_len": 6,
+          "source_file": "shots/part18.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "balance-scale"
+          ],
+          "visual_priority": [
+            "the balance scale with gold dust pouring into one pan",
+            "the silver coins in the other pan",
+            "the tipping beam",
+            "the lantern light on the table"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a small bronze balance with two shallow dished pans hanging on fine chains from a short crossbeam held up by a small bent bronze stand, the metal worn and darkened with age, standing on a money-changer’s table at the center, one pan heaped with gold dust poured from a small horn spoon, the other pan holding a few silver coins, the beam tipping as the gold pan sinks\nACTION: a money-changer pours gold dust into one pan of a balance; the pan sinks and he must add silver to the other pan again and again\nSETTING: a money-changer’s stall in the Cairo bazaar, a worn wooden table, a leather pouch of gold dust, a small horn spoon, a stack of silver dirhams, lantern light. A wooden stool stands at the table’s far side, a sand-filled tray holds a little pile of silver coins for sorting, a brass lamp hangs from a hook above, and beyond the stall the next aisle is a warm blur of lantern light and moving shapes.\nCAMERA: camera stands at the table edge, eye level, close shot.\nFRAME LAYOUT: center — the balance, near-camera and large; left third — the pan with gold dust and the horn spoon above it; right third — the pan with silver coins and a hand adding more; lower edge — the table with a leather pouch.\nFACING: we see the balance from the front, both pans toward camera; the money-changer’s hands enter from the upper left and right.\nSCREEN DIRECTION: gold dust pours from the spoon at the upper left into the left pan; the beam tilts down toward the left; silver coins are set into the right pan from the right.\nLIGHT: warm lantern light from above, a bright glint on the gold dust and the silver, soft shadow on the table.\nPALETTE: gold, silver, wood brown, lantern amber\nDETAIL: fine gold dust grains, milled silver edges, worn bronze chains, grain of the table, the polished curve of the beam, fine chain links with tiny flaws, a thumbprint on one pan, tiny glints within the gold dust.\nNOT IN FRAME: a face, any text, minted gold coins.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 5s; everything keeps moving at the same natural pace through the end of the 6s generation.\n0–1s: the horn spoon tips and a thread of gold dust pours into the left pan; the beam swings slowly down toward the left.\n1–3s: a hand from the right adds silver coins to the right pan and the beam sways back toward the center.\n3–4.5s: more gold dust falls into the left pan and the beam tips again; the pans swing on their chains.\n4.5–6s: the money-changer adds a last silver coin and the beam rocks; lantern light glints on the gold dust.\nCAMERA: one continuous slow push toward the balance for the full 6 seconds.\nENVIRONMENT: gold dust falls; chains sway; lantern light flickers; the beam rocks.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "CU",
+            "angle": "eye",
+            "location": "money-changer",
+            "time_light": "lantern-warm",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B18",
+      "sentences": [
+        "S24",
+        "S25"
+      ],
+      "start": 103.2,
+      "end": 112.16,
+      "dur": 8.96,
+      "device": "ledger-accumulation",
+      "narration_says": "Al-Umari had numbers. Before Musa, a mithqal of gold, a standard weight, was never worth less than twenty-five silver dirhams.",
+      "viewer_sees": "Al-Umari at his desk with a balance: one gold mithqal on a pan and exactly twenty-five silver dirhams in five stacks of five",
+      "shots": [
+        {
+          "shot_id": "19",
+          "beat_id": "B18",
+          "link_group": null,
+          "t_in": 103.208,
+          "t_out": 112.167,
+          "use_in": 0,
+          "use_out": 8.959,
+          "use_len": 8.959,
+          "motion_budget": 8.959,
+          "gen_len": 10,
+          "source_file": "shots/part19.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "al-umari",
+            "balance-scale"
+          ],
+          "visual_priority": [
+            "Al-Umari at his desk with his ledger",
+            "the balance with exactly twenty-five silver dirhams",
+            "the single gold mithqal",
+            "the open ledger with columns of numbers"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a scholarly Arab historian in his forties, a round thoughtful face, a neat black beard, a white turban, a long grey-brown robe with wide sleeves, ink-stained fingers, seated at the left third at a low carved desk, a ledger open before him, one hand resting on the page, his eyes on the balance\nSUBJECT 2: a small bronze balance with two shallow dished pans hanging on fine chains from a short crossbeam held up by a small bent bronze stand, the metal worn and darkened with age, standing on the desk at the right third, one pan holding a single gold mithqal and the other holding exactly twenty-five silver dirhams in five neat stacks of five, the beam level\nACTION: al-Umari sits at his desk with numbers: a balance with one gold mithqal in one pan and exactly twenty-five silver dirhams in the other, in five stacks of five\nSETTING: a scholar’s study in Cairo, a low carved wooden desk, an open ledger with columns of numbers, an inkpot and reed pens, a brass lamp, shelves of paper rolls, a patterned rug\nCAMERA: camera stands at the desk’s corner, eye level, medium shot.\nFRAME LAYOUT: left third — al-Umari seated, near-camera and large, cropped at the waist; center — the open ledger with columns of numbers; right third — the balance with the gold mithqal on one pan and five stacks of five silver dirhams on the other; upper edge — the lamp and shelves.\nFACING: we see al-Umari three-quarter from the front and left, his eyes on the balance at screen-right; the balance faces camera.\nSCREEN DIRECTION: the pen moves along a ledger line from the right toward the left; the balance beam sways gently; the lamp flame leans toward the left.\nLIGHT: lamp light from the upper left warms the page, a bright gleam on the silver stacks and the gold mithqal, deep shadow in the shelves.\nPALETTE: lamp gold, silver, ink black, rug red\nDETAIL: milled edges of the silver coins, the engraved mithqal weight, ledger columns of illegible numbers, brass lamp filigree.\nNOT IN FRAME: readable numbers, any text, other people.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 8.959s; everything keeps moving at the same natural pace through the end of the 10s generation.\n0–1s: al-Umari dips a reed pen and runs it down a column of numbers in the ledger; the lamp flame sways.\n1–3s: he lifts his eyes to the balance at the right and nods slowly; the beam rocks gently on its stand.\n3–5s: he turns a page of the ledger and writes a line from right to left, lips moving as he counts under his breath.\n5–7.5s: he reaches out and touches the edge of one pan, making the balance sway, and watches the five stacks of silver glint.\n7.5–10s: he returns his hand to the ledger and writes on while the beam sways slowly and the camera drifts closer.\nCAMERA: one continuous slow push toward al-Umari and the balance for the full 10 seconds.\nENVIRONMENT: lamp flame sways; the balance rocks; silver glints; dust floats.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "umari-desk",
+            "time_light": "lamp-warm",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B19",
+      "sentences": [
+        "S26",
+        "S27"
+      ],
+      "start": 112.16,
+      "end": 119.88,
+      "dur": 7.72,
+      "device": "macro-object",
+      "narration_says": "Afterward, never more than twenty-two. That had been so, he wrote, \"for about twelve years until this day.\"",
+      "viewer_sees": "The same balance after: one gold mithqal against exactly twenty-two silver dirhams, a scratched line showing where twenty-five stood",
+      "shots": [
+        {
+          "shot_id": "20",
+          "beat_id": "B19",
+          "link_group": null,
+          "t_in": 112.167,
+          "t_out": 119.875,
+          "use_in": 0,
+          "use_out": 7.708,
+          "use_len": 7.708,
+          "motion_budget": null,
+          "gen_len": null,
+          "source_file": "shots/shot20.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "balance-scale"
+          ],
+          "visual_priority": [
+            "the balance scale with exactly twenty-two dirhams",
+            "the single gold mithqal",
+            "the scratched line showing the old height of twenty-five",
+            "the lamp-lit desk"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a small bronze balance with two shallow dished pans hanging on fine chains from a short crossbeam held up by a small bent bronze stand, the metal worn and darkened with age, seen close, one pan holding a single gold mithqal and the other holding exactly twenty-two silver dirhams in four stacks of five and one stack of two, a thin scratched line on a small wooden post showing the height where twenty-five once stood\nACTION: the same balance after Musa: one gold mithqal against exactly twenty-two silver dirhams, a thin scratched line on the post showing where twenty-five once stood\nSETTING: the low carved wooden desk of al-Umari in lamplight, the edge of the open ledger at the left, an inkpot, soft dark beyond. A dark inkstand with two reed pens, a rolled sheet of paper and a brass candlestick stand at the edge of the lamp’s pool of light; beyond it the room is warm dark, and the carved edge of the desk shows a line of tiny leaves chiselled by an old craftsman.\nCAMERA: camera stands level with the pans, eye level, close shot.\nFRAME LAYOUT: center — the balance, near-camera and large; right pan — twenty-two silver dirhams in four stacks of five and one stack of two; left pan — the single gold mithqal; right edge — a thin scratched line on a small wooden post at the old height of twenty-five; lower edge — the wooden desk.\nFACING: we see the balance from the front, the stacks facing camera; the post stands at the right edge.\nSCREEN DIRECTION: a faint thread of lamp smoke rises at the left; a mote of dust drifts across the beam toward the right; the beam sways slightly toward the right.\nLIGHT: warm lamp light from the upper left, a silver gleam on the stacks, deep shadow in the desk’s far edge.\nPALETTE: silver, gold, wood brown, lamp amber\nDETAIL: milled edges of the silver coins, the engraved mithqal weight, grain of the desk, a thin scratched mark on the post.\nNOT IN FRAME: hands, people, any text, a different count of coins.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "CU",
+            "angle": "eye",
+            "location": "umari-desk",
+            "time_light": "lamp-warm",
+            "camera_motion": "push"
+          },
+          "render_mode": "still",
+          "still_motion": "push"
+        }
+      ]
+    },
+    {
+      "beat_id": "B20",
+      "sentences": [
+        "S28",
+        "S29"
+      ],
+      "start": 119.88,
+      "end": 125.16,
+      "dur": 5.28,
+      "device": null,
+      "narration_says": "Whether it is true is another matter. The twelve years come from al-Umari alone.",
+      "viewer_sees": "A long empty reading hall with only al-Umari at one table under one lamp",
+      "shots": [
+        {
+          "shot_id": "21",
+          "beat_id": "B20",
+          "link_group": null,
+          "t_in": 119.875,
+          "t_out": 125.167,
+          "use_in": 0,
+          "use_out": 5.292,
+          "use_len": 5.292,
+          "motion_budget": 5.292,
+          "gen_len": 6,
+          "source_file": "shots/part21.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "al-umari"
+          ],
+          "visual_priority": [
+            "Al-Umari alone at one lit table",
+            "the rows of empty tables and stands",
+            "the single warm lamp",
+            "the vaulted reading hall in the dark"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a scholarly Arab historian in his forties, a round thoughtful face, a neat black beard, a white turban, a long grey-brown robe with wide sleeves, ink-stained fingers, seated at the far left third at a single table in the vast hall, small, writing under one lamp, the only person in the room\nACTION: al-Umari sits alone at one table under one lamp in a long empty reading hall, the only source of the twelve years\nSETTING: a long vaulted reading hall of a madrasa at night, rows of empty tables and reading stands receding into the dark, a carved wooden screen at the far end, shelves of bound volumes, one lamp. Arches repeat in diminishing rows down both sides of the hall, each with a hanging brass lamp unlit and tarnished, a long carpet runs between the tables in a faded red path, and a wooden screen of carved geometric lattice closes the far end; a pale slice of moonlight falls through a high round window onto the empty floor.\nCAMERA: camera hangs high near the vault, high angle, long shot, pulling back.\nFRAME LAYOUT: left third — al-Umari at his single lit table, small; center and right — rows of empty tables and stands receding into the dark; far right — the carved screen and shelves, hazy; upper edge — the vault with lamp chains.\nFACING: we look down on the hall from above; al-Umari shows his head and shoulders from above, bent to the page, turned toward screen-right.\nSCREEN DIRECTION: the camera pulls back from the table toward the right; the lamp flame leans toward the right; dust motes drift down.\nLIGHT: a single warm lamp pooling light on al-Umari and his table, deep blue-black dark everywhere else.\nPALETTE: lamp gold, night blue, wood brown, cream\nDETAIL: rows of empty reading stands, bound volumes on shelves, the lamp chain, a small figure bent over a page, tiny glints in the engraving of the lamp above him, rows of neatly stacked books, the slope of the reading stands, a single sheet of paper pale on the nearest table, his turban’s white folds picking up the lamp glow.\nNOT IN FRAME: other people, any text, daylight.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 5.292s; everything keeps moving at the same natural pace through the end of the 6s generation.\n0–1s: al-Umari dips his pen and writes at his single table; the lamp flame sways and dust motes drift down through its light.\n1–3s: the camera begins to pull back and up from the table, widening over the empty tables and stands.\n3–4.5s: a lamp chain swings slowly high in the vault; al-Umari raises his head to look into the empty dark and lowers it again.\n4.5–6s: the camera keeps rising and pulling back until the lone lamp is a small glow in the vast hall.\nCAMERA: one continuous slow pull back and up from the table for the full 6 seconds.\nENVIRONMENT: lamp flame sways; dust motes drift; lamp chains swing; shadows shift.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "LS",
+            "angle": "high",
+            "location": "reading-hall",
+            "time_light": "night-single-lamp",
+            "camera_motion": "pull"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B21",
+      "sentences": [
+        "S30"
+      ],
+      "start": 125.16,
+      "end": 130,
+      "dur": 4.84,
+      "device": null,
+      "narration_says": "Another chronicler, al-Maqrizi, says the gold dinar lost six dirhams.",
+      "viewer_sees": "Al-Maqrizi writes at his desk beside a gold dinar and six silver dirhams",
+      "shots": [
+        {
+          "shot_id": "22",
+          "beat_id": "B21",
+          "link_group": null,
+          "t_in": 125.167,
+          "t_out": 130,
+          "use_in": 0,
+          "use_out": 4.833,
+          "use_len": 4.833,
+          "motion_budget": 4.833,
+          "gen_len": 6,
+          "source_file": "shots/part22.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "al-Maqrizi writing",
+            "the single gold dinar",
+            "the row of six silver dirhams",
+            "the cool window light"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: al-Maqrizi, a Cairene historian of the 1400s, a long grave face with a grey beard, a large white turban and a dark green robe, writing at a desk beside a single gold dinar and six silver dirhams in a row\nACTION: al-Maqrizi writes at his desk beside a gold dinar and a row of six silver dirhams, setting down the number six\nSETTING: a historian’s study in fifteenth-century Cairo, a heavy desk, an open volume, an inkpot, reed pens, a brass lamp, shelves of bound manuscripts, cool grey light from a high window. On the shelf above the window sits a celestial globe, a brass astrolabe and a row of fat leather volumes with gilded spines; a small potted plant stands on the sill, a slice of cold light cuts across the page and the lamp glow is a small warm island on the left; an old cat sleeps on a cushion at the corner of the desk.\nCAMERA: camera stands at the desk’s end, eye level, medium shot.\nFRAME LAYOUT: left third — al-Maqrizi, near-camera and large, cropped at the waist; center — the page with his moving pen; right third — the single gold dinar and the row of six silver dirhams, near-camera; upper edge — the high window and shelves.\nFACING: we see al-Maqrizi three-quarter from the front and left, his eyes down on the page; the coins face camera.\nSCREEN DIRECTION: his pen moves from the right toward the left along each line; the flame bends leftward; cool window light slides across the desk.\nLIGHT: cool grey light from the high window on the left, a warm lamp glow on the page, a bright glint on the coins.\nPALETTE: slate grey, lamp gold, ink black, robe green\nDETAIL: the dinar’s engraved face, six silver coin edges in a row, grain of the desk, bound manuscript spine, the fine tremor of the reed pen, the dinar’s thin worn rim, a tiny scratch across the face of one dirham, the grain of his beard against the dark robe, flecks of ink on his cuff, the glossy lacquer of the inkpot.\nNOT IN FRAME: any readable writing, other people.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 4.833s; everything keeps moving at the same natural pace through the end of the 6s generation.\n0–1s: al-Maqrizi dips his pen and writes a short line; the lamp flame sways and the nib scratches the page.\n1–3s: he lifts the gold dinar between finger and thumb, turns it to the light and sets it back beside the six silver dirhams.\n3–4.5s: he touches the row of six dirhams with the tip of his pen, counting under his breath, his brow furrowed.\n4.5–6s: he writes the number on the page; cool window light slides across the desk as the camera pushes in.\nCAMERA: one continuous slow push toward the desk for the full 6 seconds.\nENVIRONMENT: lamp flame sways; window light slides; dust floats in the beam; pages stir.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "maqrizi-study",
+            "time_light": "lamp-cool",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B22",
+      "sentences": [
+        "S31"
+      ],
+      "start": 130,
+      "end": 138.78,
+      "dur": 8.78,
+      "device": null,
+      "narration_says": "And the modern historian Warren Schultz, comparing recorded exchange rates, found changes well within the normal swings of Mamluk Egypt.",
+      "viewer_sees": "A modern historian bends over photocopied ledgers and a wavering hand-drawn line chart",
+      "shots": [
+        {
+          "shot_id": "23",
+          "beat_id": "B22",
+          "link_group": null,
+          "t_in": 130,
+          "t_out": 138.792,
+          "use_in": 0,
+          "use_out": 8.792,
+          "use_len": 8.792,
+          "motion_budget": 8.792,
+          "gen_len": 10,
+          "source_file": "shots/part23.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "the modern historian comparing records",
+            "the stacks of copied ledger pages",
+            "the wavering hand-drawn line chart",
+            "the green desk lamp"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a modern historian in his fifties in round glasses, a grey cardigan and rolled shirt sleeves, bending over a desk covered with stacks of copied ledger pages, beside a hand-drawn line chart with a wavering line pinned to a corkboard\nACTION: a modern historian bends over copied ledger pages of exchange rates, tracing the wavering line of a hand-drawn chart and finding changes well within the normal swings of Mamluk Egypt\nSETTING: a modern university office at night, a cluttered desk with stacks of copied ledger pages, a green desk lamp, a mug, a corkboard with a hand-drawn line chart, bookshelves, a dark window. A window shows a dark street with a single lamp; a coffee mug with a faded crest sits next to a stack of paperbacks and a box of index cards; the radiator clicks softly and the room smells of old paper and pencil shavings.\nCAMERA: camera stands above the desk’s corner, high angle, medium shot.\nFRAME LAYOUT: left third — the historian bending over the desk, near-camera and large, cropped at the waist; center — the stacks of copied ledger pages and his tracing finger; right third — the corkboard with the hand-drawn wavering line chart, medium; upper edge — shelves and the dark window.\nFACING: we see the historian three-quarter from the front and left, his eyes on the pages and toward the chart at screen-right.\nSCREEN DIRECTION: his finger traces the wavering chart line from the left toward the right; the lamp light slides across the pages; pages turn from the right toward the left.\nLIGHT: a warm green-shaded desk lamp from the upper right, cool night in the window, soft shadow in the shelves.\nPALETTE: lamp green, paper cream, cardigan grey, night blue\nDETAIL: columns of illegible numbers on copied pages, pencil marks, the wavering ink line of the chart, reflections in round glasse, yellowed edges of the copied pages, a coffee ring on one sheet, a ruler laid under a line, the green glass of the lamp shade casting a pale tint on the paper.\nNOT IN FRAME: readable numbers, computer screens, any text.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 8.792s; everything keeps moving at the same natural pace through the end of the 10s generation.\n0–1s: the historian runs a finger down a column of figures on the top page and glances at the chart on the corkboard.\n1–3s: he turns to the next copied page and compares two lines, lips moving as he counts; the lamp light flickers.\n3–5s: he stands and traces the wavering chart line with his finger from left to right, nodding slowly as he follows it.\n5–7.5s: he returns to the desk and makes a small pencil mark on a page, a faint smile crossing his face.\n7.5–10s: he turns another page and keeps comparing while the camera drifts closer and the lamp light pulses.\nCAMERA: one continuous slow push toward the historian and the pages for the full 10 seconds.\nENVIRONMENT: lamp light pulses; pages turn; dust floats in the lamp beam; shadows sway.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "high",
+            "location": "modern-study",
+            "time_light": "desk-lamp-modern",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B23",
+      "sentences": [
+        "S32"
+      ],
+      "start": 138.78,
+      "end": 142.14,
+      "dur": 3.36,
+      "device": null,
+      "narration_says": "What the gold did cost was Musa himself.",
+      "viewer_sees": "Musa alone in close-up, tired, at dusk",
+      "shots": [
+        {
+          "shot_id": "24",
+          "beat_id": "B23",
+          "link_group": null,
+          "t_in": 138.792,
+          "t_out": 142.125,
+          "use_in": 0,
+          "use_out": 3.333,
+          "use_len": 3.333,
+          "motion_budget": null,
+          "gen_len": null,
+          "source_file": "shots/shot24.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "mansa-musa"
+          ],
+          "visual_priority": [
+            "Mansa Musa weary at dusk",
+            "the dust on his turban and cheek",
+            "the dim fire at the lower right",
+            "the cold violet sky with a first star"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Mansa Musa, a dignified West African king in his thirties, dark skin, a short neat black beard, calm watchful eyes, a tall gold-banded white turban, heavy gold earrings, layered white and indigo cotton robes, close on his face and shoulders at the center, tired, his eyes lowered and weary, dust on his cheek and turban, the gold band dulled, his jaw set with dignity\nACTION: Musa alone, tired, at dusk on the road, the gold of his journey gone\nSETTING: a darkening desert camp at dusk, a dim fire at the lower right, a tent edge at the left, the sky a cold violet, a few star. Beside him the tent’s rough cloth glows faintly with the last dull ember of the fire, while far across the plain a thin line of camels and walkers is only a darker strip against a darker land; the cold of the night is already arriving and the wind carries the smell of smoke and dust, with a faint blue-white star above the horizon.\nCAMERA: camera stands a pace from him, eye level, close shot.\nFRAME LAYOUT: center — Musa’s face and shoulders, near-camera and large, cropped at the chest; lower right — a dim fire; left edge — tent cloth; upper edge — cold violet sky with a first star.\nFACING: we see Musa from the front and slightly left, his gaze lowered and toward screen-right.\nSCREEN DIRECTION: a thread of fire smoke rises at the lower right and leans toward the right; a strand of his turban cloth lifts toward the right in the wind.\nLIGHT: cold violet dusk from above, a small warm orange glow from the fire on the right side of his face, deep shadow elsewhere.\nPALETTE: dusk violet, indigo, fire orange, dull gold\nDETAIL: dust on the turban and cheek, a worn gold band, fine lines at the eyes, cotton weave, a line of grime along his jaw, a small tear in the turban cloth, the dull gold of the band, the glint of one eye, a tired droop of the shoulders, the first thin frost on his sleeve.\nNOT IN FRAME: other people, any text, treasure.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "CU",
+            "angle": "eye",
+            "location": "musa-tent",
+            "time_light": "dusk-cool",
+            "camera_motion": "push"
+          },
+          "render_mode": "still",
+          "still_motion": "push"
+        }
+      ]
+    },
+    {
+      "beat_id": "B24",
+      "sentences": [
+        "S33"
+      ],
+      "start": 142.14,
+      "end": 149.64,
+      "dur": 7.5,
+      "device": null,
+      "narration_says": "On the road back from Mecca, many of his pilgrims died of cold, hunger and bandits, and much of his baggage was lost.",
+      "viewer_sees": "The pilgrim caravan struggles through a cold desert pass; baggage left behind, riders watching from a ridge",
+      "shots": [
+        {
+          "shot_id": "25",
+          "beat_id": "B24",
+          "link_group": null,
+          "t_in": 142.125,
+          "t_out": 149.625,
+          "use_in": 0,
+          "use_out": 7.5,
+          "use_len": 7.5,
+          "motion_budget": 7.5,
+          "gen_len": 8,
+          "source_file": "shots/part25.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "mali-pilgrims"
+          ],
+          "visual_priority": [
+            "the Mali pilgrims struggling through the cold pass",
+            "the abandoned chests and packs along the track",
+            "the dark riders watching from the ridge",
+            "the frost on the rocks"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: West African pilgrims of Mali, dark-skinned men in white and indigo cotton robes and wrapped turbans, some on camels and some on foot, leather water skins and long staffs, a long ragged column struggling through a narrow cold desert pass from the right edge toward the left, wrapped in blankets, some sitting down exhausted beside chests, camels stumbling\nACTION: on the road back from Mecca the pilgrims struggle through a cold desert pass; baggage lies abandoned along the track and riders watch from a ridge\nSETTING: a narrow stony desert pass at cold dawn, frost on the rocks, ridges of dark stone on both sides, abandoned chests and packs strewn along the track, a few dark riders on the high ridge at the left. The pass narrows to a gate of leaning stones, a dry streambed cuts the track, tracks of other caravans are frozen into the mud, and a thin stream of sunlight lights the far ridge in gold; thin snow collects in the cracks of the rock.\nCAMERA: camera stands on a rocky shelf above the pass, high angle, long shot.\nFRAME LAYOUT: center and right — the column of pilgrims and camels struggling along the pass, medium; lower edge — abandoned chests and packs, near-camera; left third — a ridge with three small dark riders watching, far and hazy; upper edge — pale cold sky.\nFACING: we see the pilgrims from above and slightly front, their bowed heads and faces toward screen-left; the riders face toward screen-right.\nSCREEN DIRECTION: the column moves from the right edge toward the left along the pass; breath mist and blown frost drift toward the left; the riders’ cloaks stir toward the right.\nLIGHT: cold blue dawn light from the left, a pale gold edge on the ridge, long blue shadows.\nPALETTE: frost blue, stone grey, indigo, pale gold\nDETAIL: frost crystals on the rocks, blankets over bowed shoulders, a split chest with spilled cloth, camel breath cloud, patches of torn cloth caught on thorns, an overturned water skin, frost on camel eyelashes, a pilgrim’s cracked lips and wrapped hands.\nNOT IN FRAME: bodies, blood, any text, tents.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 7.5s; everything keeps moving at the same natural pace through the end of the 8s generation.\n0–1s: the column trudges along the pass from the right toward the left, blankets pulled tight; frost blows off the rocks.\n1–3s: a camel stumbles and a pilgrim tugs its rope; another pilgrim sinks down beside a chest, exhausted, his head bowed.\n3–5s: the camera pushes along the pass as more pilgrims bend into the wind and a pack slides off a camel and drops to the stones.\n5–7s: three dark riders on the ridge at the left turn their heads to watch; the column keeps moving, leaving the abandoned pack.\n7–8s: the camera keeps pushing along the pass as breath mist and frost blow toward the left and the pilgrims press on.\nCAMERA: one continuous slow push along the pass for the full 8 seconds.\nENVIRONMENT: frost blows; breath mists; blankets flap; the riders’ cloaks stir.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "high",
+            "location": "cold-pass",
+            "time_light": "dawn-frost",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B25",
+      "sentences": [
+        "S34"
+      ],
+      "start": 149.64,
+      "end": 154.62,
+      "dur": 4.98,
+      "device": null,
+      "narration_says": "With his money gone, he borrowed from Cairo's merchants and sold what he had bought there.",
+      "viewer_sees": "Musa humbled before Cairo merchants with a ledger, a Mali man selling a bolt of cloth",
+      "shots": [
+        {
+          "shot_id": "26",
+          "beat_id": "B25",
+          "link_group": null,
+          "t_in": 149.625,
+          "t_out": 154.625,
+          "use_in": 0,
+          "use_out": 5,
+          "use_len": 5,
+          "motion_budget": 5,
+          "gen_len": 6,
+          "source_file": "shots/part26.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "mansa-musa"
+          ],
+          "visual_priority": [
+            "Mansa Musa humbled before the Cairo merchants",
+            "the merchant’s ledger",
+            "the Mali man selling a bolt of indigo cloth",
+            "the sunlit arcade"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Mansa Musa, a dignified West African king in his thirties, dark skin, a short neat black beard, calm watchful eyes, a tall gold-banded white turban, heavy gold earrings, layered white and indigo cotton robes, standing at the left third in plainer robes, his gold-banded turban dulled, listening gravely as a merchant reads from a ledger of debts, his face level and dignified, turned toward screen-right\nACTION: with his money gone Musa borrows from Cairo’s merchants and sells what he bought there: he stands before them while a Mali man sells a bolt of cloth\nSETTING: a courtyard of a merchant house in Cairo in hard afternoon light, an arcade of pointed arches, a low table with an open ledger, bolts of cloth stacked against a pillar. A fountain bubbles in the courtyard’s center, two clerks sit on cushions with reed pens ready to note repayments, a brass coin scale stands on the table, and a servant waits with a tray of tea that no one touches; the stone is warm and bleached under a high sky. A faint breeze moves the corner of the ledger page.\nCAMERA: camera stands at the courtyard’s edge, eye level, medium shot.\nFRAME LAYOUT: left third — Musa in plain robes, near-camera and large, cropped at the waist; center — a Mali man unrolling a bolt of indigo cloth for a merchant, medium; right third — two Cairo merchants at the low table with the ledger, near-camera, cropped at the waist; upper edge — arcade arches.\nFACING: Musa is seen from the front and left, gravely facing the merchants at screen-right; the merchants face back toward screen-left.\nSCREEN DIRECTION: the Mali man unrolls the cloth from the left toward the right; the merchant’s finger moves down the ledger; arcade shadows slide across the paving from the left.\nLIGHT: hard afternoon sun from the left, deep shadows in the arcade, a bright patch on the indigo cloth.\nPALETTE: indigo, sandstone, ledger cream, dull gold\nDETAIL: the weave of the indigo cloth, the merchants’ rings, ledger columns of illegible script, worn paving.\nNOT IN FRAME: minted coins, any text, Musa kneeling.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 5s; everything keeps moving at the same natural pace through the end of the 6s generation.\n0–1s: a merchant opens the ledger and runs a finger down a column; Musa stands level and listens.\n1–3s: at the center a Mali man unrolls a bolt of indigo cloth and a second merchant examines it, rubbing the weave.\n3–4.5s: the ledger merchant taps a line and spreads his hands; Musa gives a slow, dignified nod.\n4.5–6s: the second merchant counts out money into the Mali man’s hand while the camera pushes toward Musa’s face and the afternoon light slides across the arcade.\nCAMERA: one continuous slow push toward Musa for the full 6 seconds.\nENVIRONMENT: arcade shadows slide; cloth ripples; dust floats in the sun; pages rustle.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "cairo-courtyard",
+            "time_light": "afternoon-hard",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B26",
+      "sentences": [
+        "S35"
+      ],
+      "start": 154.62,
+      "end": 163.26,
+      "dur": 8.64,
+      "device": null,
+      "narration_says": "Al-Umari and Ibn Khaldun both say the lenders were never repaid, or only in part, though other sources disagree.",
+      "viewer_sees": "A merchant at his counting table watches the caravan leave at the far end of the street, an empty strongbox open",
+      "shots": [
+        {
+          "shot_id": "27",
+          "beat_id": "B26",
+          "link_group": null,
+          "t_in": 154.625,
+          "t_out": 163.25,
+          "use_in": 0,
+          "use_out": 8.625,
+          "use_len": 8.625,
+          "motion_budget": 8.625,
+          "gen_len": 10,
+          "source_file": "shots/part27.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "the merchant at his counting table",
+            "the open empty strongbox",
+            "the caravan leaving at the far left end of the street",
+            "the lanterns being lit at dusk"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a Cairo merchant in his fifties in a plain turban and a brown robe, sitting at a counting table at dusk, an open empty iron-bound strongbox and an open ledger before him, looking down the street at a caravan leaving\nACTION: a merchant sits at his counting table at dusk, his strongbox open and empty, and watches the caravan leave at the far end of the street, the money never repaid\nSETTING: a street of the Cairo bazaar at dusk, stalls pulling down their awnings, hanging lanterns being lit, a long street of beaten earth running to a distant gate at the left. Stallkeepers chain their shutters, a water seller trudges with his brass cup clinking, a stray dog trots along the gutter, and the last copper light catches the minaret tips while the sky above the lanterns turns from rose to violet.\nCAMERA: camera stands at the table’s side, eye level, medium shot.\nFRAME LAYOUT: right third — the merchant seated at his counting table, near-camera and large, cropped at the waist, with the empty strongbox and ledger; center — the long street of stalls and lanterns; left third — a line of camels and pilgrims leaving toward the distant gate, small and hazy; upper edge — a violet dusk sky and lantern strings.\nFACING: we see the merchant three-quarter from the front and right, his face and eyes turned toward the caravan at screen-left; the empty strongbox faces camera.\nSCREEN DIRECTION: the caravan moves away from the center toward the left end of the street; dust drifts after it toward the left; lanterns sway.\nLIGHT: violet dusk light, warm orange lantern glow on the merchant’s face and the strongbox, deep shadow in the street.\nPALETTE: dusk violet, lantern orange, brown, iron black\nDETAIL: iron bands on the strongbox, the open ledger’s columns, sagging awnings, the long line of camels in silhouette, the merchant’s tired eyes with dark circles, the cracked leather of the strongbox lid, tiny scratches on the iron lock, a pen laid across the open ledger.\nNOT IN FRAME: Musa close up, any text, coins in the box.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 8.625s; everything keeps moving at the same natural pace through the end of the 10s generation.\n0–1s: the merchant sits with his hand on the open ledger, his eyes on the far end of the street; lanterns sway above him.\n1–3s: down the street at the left a line of camels and pilgrims walks away toward the west, small against the dusk; dust drifts after them.\n3–5s: the merchant lifts the lid of the empty strongbox, looks inside and lets it fall; the iron fittings clink.\n5–7.5s: he presses his forehead to his hand and sighs; the shadows lengthen as stall owners pull down their awnings.\n7.5–10s: the caravan shrinks to a thin line at the left end of the street while the merchant keeps watching and a lantern is lit above him.\nCAMERA: one continuous slow push toward the merchant for the full 10 seconds.\nENVIRONMENT: lanterns sway; dust drifts; awnings fall; shadows lengthen.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "cairo-bazaar",
+            "time_light": "dusk-warm",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B27",
+      "sentences": [
+        "S36",
+        "S37"
+      ],
+      "start": 163.26,
+      "end": 172.8,
+      "dur": 9.54,
+      "device": null,
+      "narration_says": "The story kept traveling. Around 1375, a mapmaker on Majorca drew him in the Catalan Atlas, with gold in his hand.",
+      "viewer_sees": "A mapmaker in Majorca paints a crowned king holding a gold nugget onto a vellum map",
+      "shots": [
+        {
+          "shot_id": "28",
+          "beat_id": "B27",
+          "link_group": null,
+          "t_in": 163.25,
+          "t_out": 172.792,
+          "use_in": 0,
+          "use_out": 9.542,
+          "use_len": 9.542,
+          "motion_budget": null,
+          "gen_len": 10,
+          "source_file": "shots/part28.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "catalan-atlas"
+          ],
+          "visual_priority": [
+            "the Catalan Atlas panel being painted",
+            "the crowned king with the gold nugget",
+            "the mapmaker’s brush",
+            "the Mediterranean light from the window"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a panel of a medieval Catalan atlas on vellum, a crowned black king on a throne holding a gold nugget, a camel and a caravan below, bright red, blue and gold, fine ink coastlines, laid flat on a slanted worktable, still unfinished, a crowned black king on a throne being painted in bright red, blue and gold, his hand holding a gold nugget, the vellum around him already inked with coastlines\nACTION: in about 1375 a bearded mapmaker on Majorca in a dark cap and a long green robe paints a crowned king holding a gold nugget onto a vellum map\nSETTING: a mapmaker’s workshop on Majorca in the 1300s, a slanted wooden table by an arched window with Mediterranean light, small clay pots of red, blue and gold pigment, brushes, rulers and compasses, rolls of vellum\nCAMERA: camera stands over the table’s edge, high angle, medium shot.\nFRAME LAYOUT: center — the vellum panel with the half-painted crowned king, near-camera and large; left third — the mapmaker’s hand with a fine brush and his bent head; right third — the pigment pots and compasses; upper edge — the arched window with sea light.\nFACING: we look down on the panel from above and the right; the king faces the viewer on his throne; the mapmaker bends over it from the left, his face turned down toward screen-right.\nSCREEN DIRECTION: the brush moves from the left toward the right across the gold nugget; light from the window slides across the vellum from the left.\nLIGHT: bright Mediterranean light from the arched window at the upper left, a soft glow on the vellum and a bright gleam on fresh gold paint.\nPALETTE: vellum cream, red, blue, gold\nDETAIL: fine ink coastlines, wet gold paint on the nugget, brush bristles, small clay pigment pots with powder stain, a smudge of red pigment on the mapmaker’s cuff, the tilt of the slanted table, tiny flecks of gold dust glittering on the vellum edge, a small pot of water clouded with colour.\nNOT IN FRAME: readable text, other people, a finished map on the wall.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 9.542s; everything keeps moving at the same natural pace through the end of the 10s generation.\n0–1s: the mapmaker dips a fine brush into a pot of gold paint and touches the crowned king’s raised hand.\n1–3s: the brush paints a rounded gold nugget in the king’s hand; the paint gleams wet in the light.\n3–5s: the mapmaker draws the brush along the king’s crown in careful strokes, adding a line of red to the throne.\n5–7.5s: he leans back to look, tilting his head, and sets the brush into the blue pot; light slides across the vellum.\n7.5–10s: he leans in again and adds a thin ink line of coast beside the king while the camera drifts closer.\nCAMERA: one continuous slow push toward the painted king for the full 10 seconds.\nENVIRONMENT: window light slides; paint gleams; dust floats; brush bristles flex.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "MS",
+            "angle": "high",
+            "location": "majorca-workshop",
+            "time_light": "window-light",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B28",
+      "sentences": [
+        "S38"
+      ],
+      "start": 172.8,
+      "end": 178.12,
+      "dur": 5.32,
+      "device": "macro-object",
+      "narration_says": "The caption calls him \"the richest and noblest of all these lands.\"",
+      "viewer_sees": "Macro of the atlas panel: the crowned king, the gold nugget and the Catalan caption, gold leaf catching the light",
+      "shots": [
+        {
+          "shot_id": "29",
+          "beat_id": "B28",
+          "link_group": null,
+          "t_in": 172.792,
+          "t_out": 178.125,
+          "use_in": 0,
+          "use_out": 5.333,
+          "use_len": 5.333,
+          "motion_budget": 5.333,
+          "gen_len": 6,
+          "source_file": "shots/part29.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "catalan-atlas"
+          ],
+          "visual_priority": [
+            "the Catalan Atlas panel in close-up",
+            "the gold nugget in the king’s hand",
+            "the gold leaf crown",
+            "the band of fine script below"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a panel of a medieval Catalan atlas on vellum, a crowned black king on a throne holding a gold nugget, a camel and a caravan below, bright red, blue and gold, fine ink coastlines, seen in extreme close-up, the crowned king’s face and the gold nugget in his hand at the center, gold leaf in the crown and the nugget catching the light, a band of illegible Catalan script in fine ink beneath, a camel and caravan at the lower edge\nACTION: a macro view of the atlas panel: the crowned king, the gold nugget in his hand and the caption beneath him, gold leaf catching the light\nSETTING: a medieval atlas panel on vellum in lamplight, fine ink coastlines at the edges, rich red, blue and gold pigments, soft vellum texture with faint ruling line. The vellum’s surface shows its fine pores and faint ruling lines in the lamp’s raking light; the red of the king’s robe is a deep carmine, the blue of his cushion is crushed lapis, and the gold is laid so thickly that the brush strokes stand up in tiny ridges.\nCAMERA: camera stands a hand’s breadth from the vellum, eye level, extreme close shot.\nFRAME LAYOUT: center — the king’s face and the gold nugget, near-camera and large; upper edge — the gold leaf crown; lower third — a band of illegible Catalan script and a small camel caravan; left and right edges — fine coastline ink.\nFACING: we see the panel from the front; the king’s eyes look toward screen-right; the nugget faces camera.\nSCREEN DIRECTION: a band of lamp light slides across the gold leaf from the left toward the right; a faint thread of dust drifts toward the right.\nLIGHT: warm lamp light from the upper left, bright flashes on the gold leaf, soft shadow in the vellum grain.\nPALETTE: vellum cream, red, blue, gold\nDETAIL: beaten gold leaf with tiny cracks, fine ink lines of the script, the vellum grain, the camel’s painted pack, a thin ink border and a tiny repair stitched across one corner.\nNOT IN FRAME: readable text, people, a modern frame.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 5.333s; everything keeps moving at the same natural pace through the end of the 6s generation.\n0–1s: a band of warm lamp light begins sliding across the vellum from the left and the gold leaf in the crown ignites.\n1–3s: the light passes over the king’s face and the nugget in his hand, which flashes bright gold.\n3–4.5s: the light reaches the band of fine script and the small camel caravan beneath, picking out each ink line.\n4.5–6s: the camera pushes closer to the nugget while a second band of light sweeps over the crown; dust motes sparkle.\nCAMERA: one continuous slow push toward the king’s gold nugget for the full 6 seconds.\nENVIRONMENT: lamp light slides; gold leaf glints; dust motes sparkle; vellum grain catches the light.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "ECU",
+            "angle": "eye",
+            "location": "catalan-atlas",
+            "time_light": "lamp-warm",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B29",
+      "sentences": [
+        "S39",
+        "S40"
+      ],
+      "start": 178.12,
+      "end": 187.1,
+      "dur": 8.98,
+      "device": "animated-map",
+      "narration_says": "Today he is called the richest man who ever lived. The mapmaker said something smaller: richest of those lands.",
+      "viewer_sees": "A world map: gold glow floods the whole map, then shrinks to the Sahel patch",
+      "shots": [
+        {
+          "shot_id": "30",
+          "beat_id": "B29",
+          "link_group": null,
+          "t_in": 178.125,
+          "t_out": 187.083,
+          "use_in": 0,
+          "use_out": 8.958,
+          "use_len": 8.958,
+          "motion_budget": 8.958,
+          "gen_len": 10,
+          "source_file": "shots/part30.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "the world map on vellum",
+            "the gold glow flooding the whole map",
+            "the small Sahel patch at the left",
+            "the compass rose"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a medieval-style world map on aged vellum, three continents drawn in fine ink with a ring of blue ocean, West Africa at the left with its Sahel band marked as a small patch, a compass rose and sea monsters in the margins, ornamental flourishes in place of lettering\nACTION: a gold glow floods the whole world map and shrinks back to one patch of the Sahel: the richest man in the world, and the mapmaker’s smaller claim\nSETTING: a sheet of aged cream vellum with brown ink and soft ocean washes of blue, a border of rope, creases lit by lamp light. Faint rhumb lines radiate from the compass rose across the whole sheet in a web of thin red and green, small drawn ships sail the blue ocean, mountain ranges are rows of little brown peaks, and a handful of tiny walled cities dot Europe and the Levant; the vellum is wrinkled and warm.\nCAMERA: camera hovers straight above the map, overhead, wide shot drifting closer.\nFRAME LAYOUT: center — the world map filling the frame; left third — West Africa with a small Sahel patch outlined in gold; right third — Asia drawn large; lower right — the compass rose; upper edge — ocean and sea monsters, small.\nFACING: we look straight down on the whole sheet with north at the top edge; the sea monsters in the margins face the coastlines.\nSCREEN DIRECTION: a gold glow spreads outward from the Sahel patch at the left toward the right across the whole map and contracts back toward the left.\nLIGHT: a low lamp at the upper left warms the vellum, the spreading gold glow brightens each ink line, the creases cast soft shadows.\nPALETTE: vellum cream, gold, ocean blue, ink brown\nDETAIL: fine ink coastlines, tiny sea monsters, the small gold-outlined Sahel patch, no readable lettering, tiny turrets, wave patterns drawn as scalloped lines, a sea monster’s coiled tail, thin green rivers feeding the sea, the soft gold glow turning each ink line to a thread of light.\nNOT IN FRAME: readable text, modern borders, people.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 8.958s; everything keeps moving at the same natural pace through the end of the 10s generation.\n0–1s: the Sahel patch at the left begins to glow soft gold on the vellum.\n1–3s: the glow spreads outward across Africa and over the sea, brightening the ink lines as it goes.\n3–5s: the gold floods the whole map from left to right, lighting Europe and Asia; sea monsters glint in the margins.\n5–7.5s: the glow slows and begins to draw back, receding across the continents toward the left.\n7.5–10s: it contracts to a small bright patch at the Sahel, leaving the remaining vellum in warm lamplight, as the camera pushes toward it.\nCAMERA: one continuous slow push toward the Sahel patch for the full 10 seconds.\nENVIRONMENT: gold glow spreads and recedes; lamp light flickers; ink lines catch light; sea monsters glint.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "map-diagram",
+            "shot_size": "aerial",
+            "angle": "overhead",
+            "location": "world-map",
+            "time_light": "parchment-lamp",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B30",
+      "sentences": [
+        "S41",
+        "S42"
+      ],
+      "start": 187.1,
+      "end": 194.78,
+      "dur": 7.68,
+      "device": null,
+      "narration_says": "So nobody can say for certain what happened to the price of gold. But al-Umari tells us how his story began.",
+      "viewer_sees": "A money-changer’s balance with gold on one pan and silver on the other, the pans swaying slowly and never settling",
+      "shots": [
+        {
+          "shot_id": "31",
+          "beat_id": "B30",
+          "link_group": null,
+          "t_in": 187.083,
+          "t_out": 194.792,
+          "use_in": 0,
+          "use_out": 7.709,
+          "use_len": 7.709,
+          "motion_budget": 7.709,
+          "gen_len": 8,
+          "source_file": "shots/part31.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "balance-scale"
+          ],
+          "visual_priority": [
+            "the balance scale swaying",
+            "the heap of gold dust",
+            "the heap of silver",
+            "the hanging lanterns of the bazaar"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a small bronze balance with two shallow dished pans hanging on fine chains from a short crossbeam held up by a small bent bronze stand, the metal worn and darkened with age, standing on a money-changer’s table in the Cairo bazaar, a heap of gold dust in one pan and a heap of silver in the other, the pans swaying slowly and never coming level\nACTION: a money-changer’s balance in the bazaar with gold on one pan and silver on the other, the pans swaying slowly and never settling, so nobody can say for certain\nSETTING: the Cairo bazaar late in the afternoon, a worn wooden table with a leather pouch, hanging brass lanterns and pointed arches fading into haze, shafts of dusty light. The money-changer’s wooden table is stained with ink rings and old wax, a small brass bell and a leather pouch sit at one corner, and the bazaar arches recede beyond the balance into amber haze with the dim silhouettes of shoppers; a lantern hangs low enough to glint on both heaps.\nCAMERA: camera crouches at the table edge, low angle, medium shot, pulling back.\nFRAME LAYOUT: center — the balance, near-camera and large; left pan — heaped gold dust; right pan — heaped silver; upper edge — hanging lanterns and arches, hazy; lower edge — the table edge and a leather pouch.\nFACING: we see the balance from the front and slightly below, both pans facing camera.\nSCREEN DIRECTION: the pans swing on their chains from the left toward the right and back; a thread of gold dust lifts off the left pan toward the right; dust drifts in the light shafts.\nLIGHT: warm hazy afternoon light with shafts from the vault, glints on both heaps, soft shadow under the table.\nPALETTE: gold, silver, lantern amber, haze brown\nDETAIL: fine gold grains, bright silver heap, worn bronze chains, brass lantern filigree, the grain of the old wood, a bent link in one chain, the soft powdery look of gold dust against the hard glitter of silver, a single drifting mote lit by the lantern.\nNOT IN FRAME: a face, any text, a level beam.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 7.709s; everything keeps moving at the same natural pace through the end of the 8s generation.\n0–1s: the pans sway on their chains, the left one dipping a little lower and rising again; lantern light glints on both heaps.\n1–3s: a draft lifts a thread of gold dust off the left pan; the beam tilts toward the right and swings back.\n3–5s: a stall owner’s hand sets a lantern swinging above and the light sweeps across the pans, making the heaps glitter.\n5–7s: the beam rocks again, left low, right low, never level; the camera pulls back from the table.\n7–8s: the camera keeps pulling back over the bazaar aisle as the pans keep swaying and the lanterns sway.\nCAMERA: one continuous slow pull back from the balance for the full 8 seconds.\nENVIRONMENT: lanterns sway; dust drifts; chains swing; light glints on the pans.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "MS",
+            "angle": "low",
+            "location": "money-changer",
+            "time_light": "lantern-warm",
+            "camera_motion": "pull"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B31",
+      "sentences": [
+        "S43"
+      ],
+      "start": 194.78,
+      "end": 205.34,
+      "dur": 10.56,
+      "device": null,
+      "narration_says": "From the day he came to live in Egypt, he writes, he heard talk of the arrival of the sultan Musa, and found the people of Cairo eager to tell him what they had seen.",
+      "viewer_sees": "Al-Umari arrives in Cairo, then stands in a bazaar crowd where Cairenes eagerly tell him about the king",
+      "shots": [
+        {
+          "shot_id": "32",
+          "beat_id": "B31",
+          "link_group": null,
+          "t_in": 194.792,
+          "t_out": 199.917,
+          "use_in": 0,
+          "use_out": 5.125,
+          "use_len": 5.125,
+          "motion_budget": 5.125,
+          "gen_len": 6,
+          "source_file": "shots/part32.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "al-umari"
+          ],
+          "visual_priority": [
+            "Al-Umari arriving in Cairo",
+            "the minarets and domes rising",
+            "the gate arch",
+            "the street with travelers and carts"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a scholarly Arab historian in his forties, a round thoughtful face, a neat black beard, a white turban, a long grey-brown robe with wide sleeves, ink-stained fingers, at the left third, arriving on foot through a city gate with a small bundle on his shoulder, looking up at the minarets, his face turned toward screen-right\nACTION: from the day he came to live in Egypt, al-Umari walks into Cairo through a gate with his bundle, hearing talk of the sultan Musa\nSETTING: a gate of Mamluk Cairo in warm afternoon light, a street of beaten earth lined with stalls, minarets and domes rising, travelers with donkeys and carts, a stone arch. A camel driver urges a laden camel through the gate, a scribe with a reed case at his belt hurries past, a flock of pigeons rises off a minaret’s balcony, and the calls of vendors rise from the stalls. Stalls of oranges and pomegranates glow along the street.\nCAMERA: camera walks beside him, low angle, medium shot.\nFRAME LAYOUT: left third — al-Umari, near-camera and large, cropped at the thigh; center — the street with travelers and stalls; right third — the gate arch and the minarets of Cairo rising, large and hazy; upper edge — blue sky.\nFACING: we see al-Umari three-quarter from the front and left, his face lifted toward the minarets at screen-right; the travelers walk toward screen-right.\nSCREEN DIRECTION: al-Umari walks from the left edge toward the right through the street; dust drifts toward the right; travelers pass in both directions.\nLIGHT: warm afternoon sun from the left, long soft shadows toward the right, a gold rim on the minaret tops.\nPALETTE: limestone cream, dust gold, sky blue, robe brown\nDETAIL: the weave of his grey-brown robe, a bundle strap, donkey harness, carved stone of the gate, the pale weave of his bundle cloth, a scuffed leather satchel strap, the dust on his sandals, sunlight glinting on the brass finial of a minaret, the faces of the passers-by turned toward the citadel, the gleam of a copper bowl at a stall.\nNOT IN FRAME: Ottoman domes, modern buildings, any text.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 5.125s; everything keeps moving at the same natural pace through the end of the 6s generation.\n0–1s: al-Umari steps out from under the gate arch and shifts the bundle on his shoulder, looking up at the minarets.\n1–3s: he walks on toward the right through the street, the camera tracking beside him; a donkey cart rattles past in the other direction.\n3–4.5s: two passers-by lean together and glance toward the citadel in excited talk; he slows to listen and tilts his head.\n4.5–6s: he walks on with a curious smile while stall awnings flutter and dust drifts in the sun.\nCAMERA: one continuous slow track beside al-Umari for the full 6 seconds.\nENVIRONMENT: dust drifts; awnings flutter; a cart rattles; sunlight glints on minaret tops.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "low",
+            "location": "cairo-bazaar",
+            "time_light": "afternoon-warm",
+            "camera_motion": "track"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        },
+        {
+          "shot_id": "33",
+          "beat_id": "B31",
+          "link_group": null,
+          "t_in": 199.917,
+          "t_out": 205.333,
+          "use_in": 0,
+          "use_out": 5.416,
+          "use_len": 5.416,
+          "motion_budget": 5.416,
+          "gen_len": 6,
+          "source_file": "shots/part33.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "al-umari",
+            "cairo-bazaar"
+          ],
+          "visual_priority": [
+            "Al-Umari listening to the Cairenes",
+            "the circle of eager Cairenes telling their story",
+            "the gestures sweeping toward him",
+            "the lantern-lit bazaar"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a scholarly Arab historian in his forties, a round thoughtful face, a neat black beard, a white turban, a long grey-brown robe with wide sleeves, ink-stained fingers, standing at the left third in the bazaar crowd, listening with a smile and a raised hand, a small notebook open in the other hand\nSUBJECT 2: a vaulted covered bazaar of Mamluk Cairo, pointed stone arches, striped awnings, hanging brass lanterns, stalls of cloth and spices and metalwork, packed beaten earth floor, a circle of Cairo merchants and shoppers pressing in from the right, all talking at once, gesturing as they tell what they saw\nACTION: the people of Cairo crowd around al-Umari, eager to tell him what they saw of the king who gave away gold\nSETTING: a busy aisle in the afternoon with hanging lanterns, awnings and stalls of cloth and spice, warm light through the vault, the crowd thick around the scholar. A spice seller leans across his stall, a stack of copper trays rings softly as someone brushes past, a hanging lantern swings and throws a moving gold light across the faces, and the air is full of the smell of cumin, cinnamon and hot bread.\nCAMERA: camera stands in the aisle, eye level, medium shot.\nFRAME LAYOUT: left third — al-Umari in the crowd, near-camera and large, cropped at the waist; center and right — the circle of Cairenes gesturing, medium; upper edge — arches and lanterns.\nFACING: al-Umari is seen from the front and left, facing the crowd at screen-right; the Cairenes turn toward screen-left to him.\nSCREEN DIRECTION: the Cairenes’ gestures sweep from the right toward the left toward al-Umari; the crowd presses in from the right edge; lantern light sways.\nLIGHT: warm afternoon light through the vault, a gold glow on the faces, soft shadow in the arches.\nPALETTE: lantern amber, spice red, indigo, brass gold\nDETAIL: animated hands and faces, a small open notebook, turban folds, brass lantern, a tiny silver bracelet on a woman’s wrist, pointing fingers, wide gestures, a pinch of saffron on a palm.\nNOT IN FRAME: Musa, any text, minted coins.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 5.416s; everything keeps moving at the same natural pace through the end of the 6s generation.\n0–1s: a merchant starts telling his story with wide arms and others join in; al-Umari raises a hand and smiles.\n1–3s: voices overlap as a woman mimics pouring gold with a tilting hand and a man laughs and slaps his knee.\n3–4.5s: al-Umari opens his notebook and writes quickly while the circle tightens and a hand points toward the citadel.\n4.5–6s: the crowd presses closer with more gestures and al-Umari nods and writes on while lantern light sways.\nCAMERA: one continuous slow push toward al-Umari in the crowd for the full 6 seconds.\nENVIRONMENT: lantern light sways; robes swing; hands ripple with gestures; dust floats in the light.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "cairo-bazaar",
+            "time_light": "afternoon-warm",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B32",
+      "sentences": [
+        "S44"
+      ],
+      "start": 205.34,
+      "end": 210.14,
+      "dur": 4.8,
+      "device": null,
+      "narration_says": "Gold comes and goes, but the story of the king who gave it away stayed.",
+      "viewer_sees": "Gold dust blows from an open bag across the dunes as Mansa Musa rides toward the horizon",
+      "shots": [
+        {
+          "shot_id": "34",
+          "beat_id": "B32",
+          "link_group": null,
+          "t_in": 205.333,
+          "t_out": 210.125,
+          "use_in": 0,
+          "use_out": 4.792,
+          "use_len": 4.792,
+          "motion_budget": 4.792,
+          "gen_len": 6,
+          "source_file": "shots/part34.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "mansa-musa"
+          ],
+          "visual_priority": [
+            "Mansa Musa riding toward the horizon",
+            "the glittering ribbon of gold dust in the wind",
+            "the dune sea in long shadow",
+            "the violet-gold dusk sky"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Mansa Musa, a dignified West African king in his thirties, dark skin, a short neat black beard, calm watchful eyes, a tall gold-banded white turban, heavy gold earrings, layered white and indigo cotton robes, at the left third riding a white horse away along a dune crest toward the horizon, seen from the right side and slightly behind, his turban cloth streaming, an open leather bag at his saddle spilling gold dust into the wind\nACTION: gold dust blows from an open bag across the dunes as Mansa Musa rides toward the horizon, the gold gone and the story staying\nSETTING: a vast golden dune sea at dusk, long shadows, a horizon of soft violet, wind lifting a veil of sand and a glittering ribbon of gold dust. The dunes run to the horizon in long soft curves like waves, the wind scours fine sand off every crest in thin smokes, a lone raptor circles high in the violet sky and the first star pricks out above the dark edge of the world.\nCAMERA: camera stands on a dune crest, low angle, long shot, pulling back.\nFRAME LAYOUT: left third — Musa on his horse riding away toward the horizon, medium; center — the glittering trail of gold dust streaming on the wind; right third — the dune sea in long shadow, near-camera; upper edge — a violet-gold sky.\nFACING: we see Musa from the right and slightly behind, his face turned slightly toward screen-left and the horizon; the open bag faces camera.\nSCREEN DIRECTION: Musa rides from the right toward the left along the dune crest; gold dust streams from the bag toward the right and glitters in the wind; sand streams off the crest toward the right.\nLIGHT: low gold dusk sun from the left, long violet shadows, glitter in the gold dust.\nPALETTE: dune gold, dusk violet, white, glitter gold\nDETAIL: wind ripples on the dunes, fine gold flecks in the air, the rider’s streaming cloth, the horse’s tail, the horse’s tail streaming, the bag’s strap tight over its saddle, fine tracks of the horse’s hooves leading back along the crest.\nNOT IN FRAME: other people, tents, any text.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 4.792s; everything keeps moving at the same natural pace through the end of the 6s generation.\n0–1s: Musa rides along the dune crest toward the left, his turban cloth streaming; gold dust spills from the open bag at his saddle.\n1–3s: the wind catches the dust and carries a glittering ribbon toward the right across the dunes; sand smokes off the crest.\n3–4.5s: the camera pulls back as the rider grows smaller and the gold ribbon thins and sparkles in the last sun.\n4.5–6s: the gold dust fades into the violet air while Musa keeps riding toward the horizon, a small figure on the long crest.\nCAMERA: one continuous slow pull back from the rider for the full 6 seconds.\nENVIRONMENT: sand smokes; gold dust glitters; turban cloth streams; dusk light deepens.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "LS",
+            "angle": "low",
+            "location": "sahara-road",
+            "time_light": "golden-dusk",
+            "camera_motion": "pull"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B33",
+      "sentences": [
+        "S45",
+        "S46"
+      ],
+      "start": 210.14,
+      "end": 218.671,
+      "dur": 8.531,
+      "device": null,
+      "narration_says": "If you like forgotten stories from across the medieval world, leave a like and subscribe to Animated Tales. Until next time.",
+      "viewer_sees": "End card: poster of the whole story with the title, Musa, the sultan and the SUBSCRIBE button",
+      "shots": [
+        {
+          "shot_id": "35",
+          "beat_id": "B33",
+          "link_group": null,
+          "t_in": 210.125,
+          "t_out": 218.667,
+          "use_in": 0,
+          "use_out": 8.542,
+          "use_len": 8.542,
+          "motion_budget": null,
+          "gen_len": null,
+          "source_file": "shots/shot35.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "mansa-musa",
+            "al-nasir",
+            "gold-sacks"
+          ],
+          "visual_priority": [
+            "Mansa Musa at the far left third",
+            "Sultan al-Nasir at the right third",
+            "the title across the upper third",
+            "the SUBSCRIBE button at the exact center",
+            "the sacks of raw gold spilling at the lower edge"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSHOT: one epic poster of the whole story — the king of Mali who rode to Mecca and gave away gold in Cairo, the sultan who half rose to seat him, the sacks of raw gold, the long caravan, the city of Cairo with the pyramids, and the old map that remembered him.\nSUBJECT: Mansa Musa, a dignified West African king in his thirties, dark skin, a short neat black beard, calm watchful eyes, a tall gold-banded white turban, heavy gold earrings, layered white and indigo cotton robes, at the far left third, near-camera and large, cropped at the chest, a gold nugget held up in one hand, his face calm and level and turned toward the sultan at the right\nSUBJECT 2: the Mamluk sultan al-Nasir, a thin man in his late thirties, a dark moustache and a heavy-lidded watchful face, a tall white turban with a gold band, a long dark blue silk robe with a wide embroidered armband, at the right third, near-camera and large, cropped at the chest, one hand half extended in welcome, his face turned toward the king at the left\nSUBJECT 3: heavy leather sacks tied at the neck, each bulging with raw unworked gold, nuggets and gold dust spilling from the mouth of one sack, loaded in pairs on camels, spilling across the lower edge near-camera, two of them split open with raw nuggets and gold dust pouring out\nTITLE: across the top, \"A KING GAVE AWAY SO MUCH GOLD THAT CAIRO’S PRICE FELL\" in large carved dark-bronze capitals with a bright gold edge; under it, a thin ornamental line and the words \"THE GOLD WENT, THE STORY STAYED\".\nBUTTON: at the exact center of the frame, a red rounded pill-shaped button with a thin gold rim, \"SUBSCRIBE\" in bold cream capitals, a small gold diamond on each side.\nACTION: the king and the sultan face each other across the center; between them, far and small, a caravan of camels crosses the dunes from the left toward the minarets and domes of Cairo at the right, with the pyramids small on the horizon and a bronze balance scale tipping at the lower center.\nSETTING: an epic painted poster backdrop of golden Saharan dunes at the left running into the walled city of Mamluk Cairo at the right under a warm dusk sky, the pyramids of Giza tiny on the horizon, the sun low and gold.\nCAMERA: camera holds square on the two figures at their level, eye level, medium wide.\nFRAME LAYOUT: upper third — the title across the dusk sky; far left third — Musa, near-camera and large, cropped at the chest; right third — the sultan, near-camera and large, cropped at the chest; center — the SUBSCRIBE button with the dunes and the caravan around it at the left and the minarets of Cairo at the right, far and small; lower edge — near-camera, the split gold sacks spilling nuggets, a bronze balance scale and a panel of the Catalan atlas.\nFACING: we see Musa three-quarter from the front and right, his face turned toward screen-right and the sultan; the sultan three-quarter from the front and left, his face turned toward screen-left and the king; the camels walk toward screen-right.\nSCREEN DIRECTION: the caravan crosses the dunes from the left edge toward the right; gold dust drifts from the sacks toward the right; the dusk light slides across the minarets from the left.\nLIGHT: warm gold dusk light from the left on both faces, bright flashes on the spilling gold, a glint on the lettering.\nPALETTE: gold, indigo, dune sand, dusk violet\nDETAIL: faces readable and calm, the gold band of Musa’s turban, the embroidered armband of the sultan, raw nuggets with rough edges, crisp lettering with every letter spelled right.\nNOT IN FRAME: any bare body, logos, any other words or letters.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "end-card",
+            "time_light": "warm-gold",
+            "camera_motion": "locked"
+          },
+          "render_mode": "still",
+          "still_motion": "hold"
+        }
+      ]
+    }
+  ]
+}

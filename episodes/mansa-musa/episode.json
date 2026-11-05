@@ -1,0 +1,73 @@
+{
+  "slug": "mansa-musa",
+  "title": "A King Gave Away So Much Gold That Cairo's Price Fell",
+  "status": "in-progress",
+  "voice": null,
+  "narration_file": "narration.mp3",
+  "final_file": null,
+  "endcard_file": "shots/shot35.jpeg",
+  "intro_file": null,
+  "intro_volume": 0.2,
+  "characters": [
+    {
+      "id": "mansa-musa",
+      "name": "Mansa Musa",
+      "locked_description": "Mansa Musa, a dignified West African king in his thirties, dark skin, a short neat black beard, calm watchful eyes, a tall gold-banded white turban, heavy gold earrings, layered white and indigo cotton robes"
+    },
+    {
+      "id": "al-nasir",
+      "name": "Sultan al-Nasir",
+      "locked_description": "the Mamluk sultan al-Nasir, a thin man in his late thirties, a dark moustache and a heavy-lidded watchful face, a tall white turban with a gold band, a long dark blue silk robe with a wide embroidered armband"
+    },
+    {
+      "id": "mamluk-emir",
+      "name": "The Mamluk emir",
+      "locked_description": "a Mamluk emir in his fifties, a stern lined face, a short grey beard, a high red and white turban, a long green silk robe with an embroidered sash, a curved sword at the hip"
+    },
+    {
+      "id": "interpreter",
+      "name": "The interpreter",
+      "locked_description": "a lean Arab interpreter in his forties, a trimmed black beard, an alert narrow face, a plain white turban, a long ochre robe, ink on his fingertips, a small leather satchel"
+    },
+    {
+      "id": "al-umari",
+      "name": "Al-Umari",
+      "locked_description": "a scholarly Arab historian in his forties, a round thoughtful face, a neat black beard, a white turban, a long grey-brown robe with wide sleeves, ink-stained fingers"
+    },
+    {
+      "id": "mali-pilgrims",
+      "name": "The Mali pilgrims",
+      "locked_description": "West African pilgrims of Mali, dark-skinned men in white and indigo cotton robes and wrapped turbans, some on camels and some on foot, leather water skins and long staffs"
+    }
+  ],
+  "locations": [
+    {
+      "id": "cairo-bazaar",
+      "name": "The Cairo bazaar",
+      "locked_description": "a vaulted covered bazaar of Mamluk Cairo, pointed stone arches, striped awnings, hanging brass lanterns, stalls of cloth and spices and metalwork, packed beaten earth floor"
+    },
+    {
+      "id": "sultan-hall",
+      "name": "The sultan's hall",
+      "locked_description": "the audience hall of the Mamluk sultan in the Cairo citadel, a floor of polished marble in black and white, a high ceiling of painted wood and a carved stone throne on a low dais"
+    }
+  ],
+  "key_props": [
+    {
+      "id": "balance-scale",
+      "name": "The balance scale",
+      "locked_description": "a small bronze balance with two shallow dished pans hanging on fine chains from a short crossbeam held up by a small bent bronze stand, the metal worn and darkened with age"
+    },
+    {
+      "id": "gold-sacks",
+      "name": "The sacks of raw gold",
+      "locked_description": "heavy leather sacks tied at the neck, each bulging with raw unworked gold, nuggets and gold dust spilling from the mouth of one sack, loaded in pairs on camels"
+    },
+    {
+      "id": "catalan-atlas",
+      "name": "The Catalan Atlas panel",
+      "locked_description": "a panel of a medieval Catalan atlas on vellum, a crowned black king on a throne holding a gold nugget, a camel and a caravan below, bright red, blue and gold, fine ink coastlines"
+    }
+  ],
+  "notes": "Samostalna epizoda, ideja #35 u docs/ideas.md, prva africka na kanalu (region Africa, epoha Middle Ages, dogadjaj 1324). Mansa Musa (Mali), Kairo pod sultanom al-Nasirom. Primarni izvor je al-Umari u prevodu Levtziona i Hopkinsa (isecak, citiran u skripti doslovno); sve ostalo je Wikipedia. Narracija snimljena i poravnata (timing.json). 35 shotova (30 klipova + 5 slika), beat mapa odobrena, lockovi i storyboard upisani; vidi notes.md (osa ekrana, režim, šta ostaje). Rezim shota je mesan, birano iz kadra, ne iz kredita. Tacnost perioda: Mali iz 14. veka, sahelska odeca (pamuk, turbani, zlatni nakit), kraljevski pratioci na kamilama i konjima; Kairo 1324. je mamelucki grad: citadela, minareti, bazari, piramide u Gizi u daljini; nikakav kasniji osmanski izgled. Musa je crnoafricki kralj, dostojanstven, bez karikature i bez 'egzoticnog' kica. Scena na dvoru: sultan sedi, Musa se klanja Bogu, ne sultanu; mali covek mu sapuce. Zlato: sirovi 'nepreradjeni' komadi i prasina u vrecama, ne kovanice. Katalonski atlas c. 1375 je predmet za krupni plan (kralj sa zlatom u ruci, natpis na katalonskom); prikazati kao mapu, ne kao fotografiju. Zasto ovo nije mit: nema natprirodne razmere; ali veliki kadrovi (karavan, pustinja, grad). Ne crtati broj pratilaca iz hronika (12.000 robova, 80 kamila): to su knjizevni brojevi, skripta ih ne koristi. Dvanaest godina niske cene je al-Umarijeva tvrdnja i ne prikazuje se kao cinjenica. 'Najbogatiji covek ikad' i '400 milijardi' ne idu u naslov ni opis. Protagonists za publish.md se upisuju pre naslova: naslov ne imenuje nikog (kralj) ili imenuje sve glavne (Mansa Musa, al-Nasir), nikad jednog + deo."
+}
