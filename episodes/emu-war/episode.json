@@ -1,0 +1,15 @@
+{
+  "slug": "emu-war",
+  "title": "The War Against Birds",
+  "status": "draft",
+  "voice": null,
+  "narration_file": "narration.mp3",
+  "final_file": null,
+  "endcard_file": null,
+  "intro_file": null,
+  "intro_volume": 0.2,
+  "characters": [],
+  "locations": [],
+  "key_props": [],
+  "notes": "Samostalna epizoda, ideja #10 u docs/ideas.md (bila 'scored', sad 'done'), prva australijska na kanalu (region Australia, epoha Modern Era, 1932). Zapadna Australija, pojas psenice, Campion. Izvori su iskljucivo sekundarni (Wikipedia Emu War i tri lokalne/popularne strane); Trove, Hansard i Meredithov izvestaj nisu otvoreni, ovo je zapisano u research.md i ideas.md. Faza 04 zavrsena: research.md i script.md (497 reci tela + 30 outro, ~3:34-3:47 pri 148-139 wpm; kratka epizoda, bez punjenja); lockovi, timing i storyboard cekaju narraciju. Rezim shota (still, klip ili mesano) bira se tek iz slike, ne iz kredita. Tacnost perioda: 1932, vojni Lewis mitraljezi iz Prvog svetskog rata (kruzni sarzer na vrhu), australijske uniforme 1930-ih (kaki, siroki sesir), kamion sa otvorenim sanducima, farmeri u radnim kosuljama i sesirima, pejzaz: suva zlatna psenica, ograde, grmlje (mallee), crvena zemlja. Emui: realna velicina i izgled (do 1.9 m visine), nikako crtani; humor ide iz kompozicije, ne iz karikature. Ne crtati krv i lesine; ubijeni emui samo kao daleka naznaka. Ne prikazivati istorijske osobe kao poznata lica osim opisanih (Meredith, Pearce, Beyer kao 'glas istoriografije' ne mora u kadar). Meredithov citat ('military division with the bullet-carrying capacity') potice iz novina iz 1953, skripta kaze 'is quoted as saying'. Brojke se ne slazu (50 do 500 ubijenih do 8. novembra; 986 tvrdi Meredith) i prikazuju se kao raspon, ne kao cinjenica. 'Birds won' je kuka iz ideas.md prenesena doslovno; skripta joj odgovara pitanjem 'So who won?'. Protagonists za publish.md se upisuju pre naslova: naslov ne imenuje nikog (emui i vojnici grupno) ili imenuje sve glavne (Meredith, Pearce), nikad jednog + deo."
+}
