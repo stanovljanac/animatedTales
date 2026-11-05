@@ -1,0 +1,1864 @@
+{
+  "schema_version": 2,
+  "episode": "hero-twins",
+  "generated_at": "2026-11-05T21:48:24Z",
+  "narration_duration": 248.607,
+  "fps": 24,
+  "beats": [
+    {
+      "beat_id": "B01",
+      "sentences": [
+        "S01",
+        "S02",
+        "S03"
+      ],
+      "start": 0,
+      "end": 9.84,
+      "dur": 9.84,
+      "device": null,
+      "narration_says": "The lords of the Maya underworld invited two brothers to a ball game. It was a trap, and the brothers knew it. It was how their father had died.",
+      "viewer_sees": "The twin brothers stand side by side on a ballcourt at dusk, ball in hand, facing a black cleft in the ground at the right from which owls spill into the air",
+      "shots": [
+        {
+          "shot_id": "01",
+          "beat_id": "B01",
+          "link_group": null,
+          "t_in": 0,
+          "t_out": 9.833,
+          "use_in": 0,
+          "use_out": 9.833,
+          "use_len": 9.833,
+          "motion_budget": null,
+          "gen_len": 10,
+          "source_file": "shots/part01.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "hunahpu",
+            "xbalanque"
+          ],
+          "visual_priority": [
+            "Hunahpu and Xbalanque side by side",
+            "the black cleft in the ground with owls spilling out",
+            "the dark rubber ball in Xbalanque’s hand",
+            "the ballcourt at dusk"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Hunahpu, a lean Maya ballplayer of about twenty, a smooth oval face with a small beard-less chin, black spots painted on both cheeks, long black hair under a jade-green headband, a heavy jade ear spool, standing at the far left third, arms loose at his sides, his whole body turned toward the black cleft at the right\nSUBJECT 2: Xbalanque, a lean Maya ballplayer of about twenty, a smooth oval face like his brother, patches of jaguar pelt on both cheeks and forearms, long black hair under a dark blue headband, a heavy jade ear spool, standing beside him, the dark rubber ball held against his hip, his face turned toward the cleft\nACTION: two brothers stand side by side on a ballcourt at dusk, one holding a ball, and face a black cleft in the ground from which owls spill into the air\nSETTING: a Maya ballcourt in the jungle at dusk, a long plastered alley between sloping limestone walls, a carved stone ring high in each wall, the floor split by a black cleft at the right end with dark red light below, canopy and a first star above\nCAMERA: camera stands at the court’s left end, low angle, long shot.\nFRAME LAYOUT: left third — the two brothers, near-camera and large, cropped at the thigh, standing side by side; center — the plastered court floor running to the right; right third — the black cleft with red light and owls rising, large and dark, its edge reaching the lower right corner; upper edge — dusk sky with the first star and canopy, far.\nFACING: we see the brothers from behind and the left, their backs and shoulders toward camera, both heads turned toward screen-right and the cleft; the owls show their faces toward the brothers.\nSCREEN DIRECTION: owls pour out of the cleft from the right edge and sweep toward the left over the court; ground mist drifts from the right toward the left.\nLIGHT: deep red glow from the cleft at the right, cool blue dusk over the court, rim light on the brothers’ shoulders.\nPALETTE: dusk blue, ember red, limestone cream, black\nDETAIL: jade ear spools, spots and pelt patches on the brothers’ skin, feather barring on the owls, chalk-white plaster cracks, drifting ground mist.\nNOT IN FRAME: the lords of Xibalba, any text, other people, blood.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 9.833s; everything keeps moving at the same natural pace through the end of the 10s generation.\n0–1s: owls burst from the black cleft and fly toward the left; the two brothers lift their heads together.\n1–3s: the camera starts pushing in over the court floor as more owls pour out, wings beating and the red glow pulsing; Xbalanque shifts the ball against his hip.\n3–5s: the owls wheel overhead in a widening ring, feathers flashing red; Hunahpu takes one slow step toward the cleft.\n5–7.5s: dust lifts from the plaster as the ground gives a low shudder; both brothers set their jaws and Xbalanque’s grip tightens on the ball.\n7.5–10s: the owls keep streaming out over the court as the camera pushes toward the brothers’ shoulders and the red light climbs the stone walls.\nCAMERA: one continuous slow push toward the brothers for the full 10 seconds.\nENVIRONMENT: owls pour out; ground mist drifts left; red light pulses on the walls; dust lifts.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "low",
+            "location": "xibalba-mouth",
+            "time_light": "dusk-red",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B02",
+      "sentences": [
+        "S04"
+      ],
+      "start": 9.84,
+      "end": 15,
+      "dur": 5.16,
+      "device": null,
+      "narration_says": "The story is told in the Popol Vuh, the book of the K'iche' Maya of Guatemala.",
+      "viewer_sees": "The Guatemalan highlands of the K’iche’ Maya: volcano, lake, mist, a village of thatched houses around a ceiba tree",
+      "shots": [
+        {
+          "shot_id": "02",
+          "beat_id": "B02",
+          "link_group": null,
+          "t_in": 9.833,
+          "t_out": 15,
+          "use_in": 0,
+          "use_out": 5.167,
+          "use_len": 5.167,
+          "motion_budget": 5.167,
+          "gen_len": 6,
+          "source_file": "shots/part02.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "the K’iche’ Maya highlands with the great ceiba",
+            "the volcano over the blue lake",
+            "the village of thatched houses",
+            "the mist lifting from the valley"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: the highlands of Guatemala at morning, a green volcano rising over a blue mountain lake, a K’iche’ Maya village of oval thatched houses around one great ceiba tree, smoke from cooking fires\nACTION: mist lifts from the Guatemalan highlands where the K’iche’ Maya live: a volcano, a lake, a village of thatched houses around a ceiba tree\nSETTING: high green mountains of Guatemala at early morning, a conical volcano over a blue lake, terraced maize fields, a village of oval thatched houses with smoke rising, one great ceiba with spreading branches at the village center. Terraces climb the green slopes in neat steps of maize and beans, narrow paths of beaten earth thread between the houses, and a few turkeys pick along a stone wall; the lake below is a deep blue mirror with a thin ring of reeds, and the volcano’s peak wears a scarf of thin cloud that catches the first sun. Women in white and red huipiles carry water jars along a path at the edge of the village.\nCAMERA: camera hovers above the village slopes, high angle, extreme wide shot, moving forward.\nFRAME LAYOUT: center — the village with the great ceiba, medium; right third — the volcano rising above the blue lake, large and hazy; left third — terraced maize fields on a green slope, near-camera; lower edge — thatched roofs, cropped; upper edge — pale sky and drifting mist.\nFACING: we look down toward the village from the hillside, the ceiba’s crown toward camera.\nSCREEN DIRECTION: mist drifts across the valley from the left toward the right; cooking smoke rises and leans toward the right; tiny figures walk a path from left to right.\nLIGHT: soft low morning light from the left, gold on the ceiba, cool blue haze on the lake and volcano.\nPALETTE: highland green, lake blue, thatch gold, mist white\nDETAIL: layers of ridge and haze, terrace lines, tiny figures on the path, thatch texture, smoke thread, oval thatched roofs with ridge poles crossed at the ends, curls of cooking smoke leaning in one direction, the stripes of woven cloth drying on a line, a dozen tiny figures on the paths.\nNOT IN FRAME: Spanish buildings, a church, any text, close faces.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 5.167s; everything keeps moving at the same natural pace through the end of the 6s generation.\n0–1s: mist lifts off the lake and drifts across the valley toward the right; cooking smoke rises from the thatched houses.\n1–3s: the camera glides forward over the terraced fields as tiny figures walk a path toward the village; the ceiba’s crown sways.\n3–4.5s: gold morning light slides across the roofs and the volcano’s slopes brighten above the blue lake.\n4.5–6s: the camera keeps gliding toward the great ceiba while mist thins and birds cross the sky from left to right.\nCAMERA: one continuous slow glide forward over the village for the full 6 seconds.\nENVIRONMENT: mist drifts; smoke rises; the ceiba sways; birds cross the sky.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "XLS",
+            "angle": "high",
+            "location": "k-iche-highlands",
+            "time_light": "misty-morning",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B03",
+      "sentences": [
+        "S05"
+      ],
+      "start": 15,
+      "end": 23.32,
+      "dur": 8.32,
+      "device": null,
+      "narration_says": "It was written down in the 1550s, after the Spanish conquest, and copied by a priest around 1701.",
+      "viewer_sees": "In 1701 a friar copies the old text by candlelight in a stone cell, the worn older pages beside him",
+      "shots": [
+        {
+          "shot_id": "03",
+          "beat_id": "B03",
+          "link_group": null,
+          "t_in": 15,
+          "t_out": 23.333,
+          "use_in": 0,
+          "use_out": 8.333,
+          "use_len": 8.333,
+          "motion_budget": 8.333,
+          "gen_len": 10,
+          "source_file": "shots/part03.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "the friar copying the old text",
+            "the worn older pages beside him",
+            "the candle flame",
+            "the stone cell"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a Dominican friar of the early 1700s in a white habit and black scapular, a tonsured head and a plain lined face, seated at a rough wooden table copying from a bundle of old worn paper pages\nACTION: in 1701 a friar copies the old text by candlelight in a stone cell, writing line after line while the worn older pages lie open beside him\nSETTING: a bare stone cell in a colonial Guatemalan convent, rough whitewashed walls, a small arched window with night beyond, a wooden table with an inkwell and a candle, a crucifix on the wall, a clay floor. Rain stains run down the whitewashed wall, a small shelf holds a clay jug and a battered book, the arched window’s iron bars throw thin shadows across the table, and the candle has burned low in a pewter stick. A rolled blanket lies on a narrow cot at the edge of the light.\nCAMERA: camera stands at the table’s end, eye level, medium shot.\nFRAME LAYOUT: left third — the friar seated, near-camera and large, cropped at the waist; center — the page he writes on and the worn older pages open beside it; right third — the candle and inkwell with a pool of light; upper right — the arched window, small and dark.\nFACING: we see the friar three-quarter from the front and left, his eyes down on the page; his writing hand is toward camera.\nSCREEN DIRECTION: his pen moves from the left toward the right along each line; the candle flame leans toward the right; a worn page is turned from the right toward the left.\nLIGHT: warm candle light from the right on his face and the pages, deep blue night in the window, shadow in the vaulted corner.\nPALETTE: habit white, candle orange, stone grey, parchment tan\nDETAIL: worn brown edges on the older pages, quill barbs, wool texture of the habit, wax dripping, no legible writing, a faint tremble of the quill, tiny blots of ink at the ends of paragraphs, the rope belt of the habit with three knots.\nNOT IN FRAME: readable text, other people, Maya imagery on the walls.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 8.333s; everything keeps moving at the same natural pace through the end of the 10s generation.\n0–1s: the friar dips his pen and draws it across the page, glancing at the worn pages at his right; the candle flame sways.\n1–3s: he copies line after line from left to right, his lips moving; ink glistens as it dries on the fresh strokes.\n3–5s: he turns one of the worn pages with two careful fingers and bends close to read it, squinting in the candle glow.\n5–7.5s: he returns to his own page and writes on at a steady pace; a moth circles the candle and shadows sway on the vault.\n7.5–10s: the camera drifts closer to his hand and the pages as he keeps writing and the flame pulses.\nCAMERA: one continuous slow push toward the friar’s pen hand for the full 10 seconds.\nENVIRONMENT: candle flame flickers; shadows sway; a moth circles; a faint draft stirs the page edges.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "friar-cell",
+            "time_light": "candle-night",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B04",
+      "sentences": [
+        "S06"
+      ],
+      "start": 23.32,
+      "end": 32.18,
+      "dur": 8.86,
+      "device": "process-cutaway",
+      "narration_says": "The father, Hun Hunahpu, and his brother played ball so loudly that the lords of Xibalba, the underworld, heard it overhead.",
+      "viewer_sees": "PROCESS CUTAWAY: a cross-section of the earth: two brothers play ball on a sunlit court above; below, in a dark hall under the same court, the lords of Xibalba look up as dust trickles from the ceiling",
+      "shots": [
+        {
+          "shot_id": "04",
+          "beat_id": "B04",
+          "link_group": null,
+          "t_in": 23.333,
+          "t_out": 32.167,
+          "use_in": 0,
+          "use_out": 8.834,
+          "use_len": 8.834,
+          "motion_budget": 8.834,
+          "gen_len": 10,
+          "source_file": "shots/part04.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "hun-hunahpu",
+            "vucub-hunahpu",
+            "xibalba-lords"
+          ],
+          "visual_priority": [
+            "Hun Hunahpu and Vucub Hunahpu playing ball above",
+            "the lords of Xibalba looking up from the dark hall below",
+            "the cross-section of the earth between them",
+            "dust trickling from the ceiling of the hall"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Hun Hunahpu, a Maya ballplayer of about forty, a long calm face with a thin moustache, hair in a topknot tied with jade beads, a broad leather hip yoke, knee pads and a feathered headband, playing ball on the sunlit court in the upper half of the frame at the left, striking the ball with his hip yoke, laughing\nSCALE: the underworld hall below is vast, its black columns many times the height of the ballplayers above; the lords seated in it are huge and dark; strong size contrast between the small bright players above and the monumental hall below.\nSUBJECT 2: Vucub Hunahpu, a younger Maya ballplayer, a rounder cheerful face, hair in a topknot with a red cotton band, a broad leather hip yoke, knee pads, a heavy shell ear spool, playing beside him at the left, leaping for the ball, laughing\nSUBJECT 3: tall stern lords of the Maya underworld, pale ash-grey painted faces with sunken black eyes, towering headdresses of owl feathers and bone, long mantles woven in black and ash grey, necklaces of carved bone, seated on their dais in the dark hall in the lower half of the frame at the right, all looking up toward the court, dust trickling onto their headdresses\nACTION: a cross-section of the earth: two brothers play ball loudly on a sunlit court above while below, in a vast dark hall under the same court, the lords of Xibalba look up as dust trickles from the ceiling\nSETTING: a cutaway of the earth in cross-section, a bright limestone ballcourt in jungle sunlight above with a stone ring in each wall, a vast black underworld hall below with tall carved columns and a long dais under a ceiling of packed earth and roots\nCAMERA: camera faces the cross-section straight on, eye level, long shot, locked.\nFRAME LAYOUT: upper half left — the two brothers on the sunlit court, medium; upper half right — the stone ring and the court walls; lower half right — the lords of Xibalba on their dais, large and dark, looking up; lower half left — black columns and a hearth glow; middle band — packed earth and roots with a thin crack running down from the court.\nFACING: we see the cross-section from the front; the brothers show their sides, faces toward screen-right; the lords show their faces tipped upward toward the court, toward screen-left and up.\nSCREEN DIRECTION: the ball flies between the brothers from the left toward the right along the court; dust trickles from the ceiling of the hall downward onto the lords; the crack widens downward.\nLIGHT: bright warm sun on the court above, deep black-red hearth glow in the hall below, a cold grey band in the earth between.\nPALETTE: sun gold, limestone cream, underworld black, ember red\nDETAIL: pattern of roots and soil layers in the cross-section, carved owl and bone motifs on the columns, dust grains falling, the pale scuff of the ball.\nNOT IN FRAME: any text, the twins, blood, a modern diagram label.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 8.834s; everything keeps moving at the same natural pace through the end of the 10s generation.\n0–1s: above, the brothers strike the ball back and forth and it bounces off the sloping wall; dust sifts from the hall’s ceiling onto the lords below.\n1–3s: the ball hits the stone ring and the court floor shakes; a crack runs down through the earth band as the lords lift their heads together.\n3–5s: the brothers laugh and leap for the ball, hip yokes swinging; below, the lords’ headdress feathers tremble as more dust falls.\n5–7.5s: the crack widens and a thin line of red light glows along it; the lords rise a little in their seats, their eyes fixed upward.\n7.5–10s: the game above goes on at full pace and the noise rattles the columns; dust pours steadily over the dais and the hearth fires flicker.\nCAMERA: camera locked on the cross-section for the full 10 seconds while play above shakes the hall below.\nENVIRONMENT: dust trickles; hearth fires flicker; roots tremble; sunlight flashes on the court.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "earth-cross-section",
+            "time_light": "two-light",
+            "camera_motion": "locked"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B05",
+      "sentences": [
+        "S07",
+        "S08"
+      ],
+      "start": 32.18,
+      "end": 38.4,
+      "dur": 6.22,
+      "device": null,
+      "narration_says": "They sent owls with an invitation. The brothers crossed the rivers of blood and went down.",
+      "viewer_sees": "Owls lead two brothers down a steep stair toward a river of red water that they cross",
+      "shots": [
+        {
+          "shot_id": "05",
+          "beat_id": "B05",
+          "link_group": null,
+          "t_in": 32.167,
+          "t_out": 38.417,
+          "use_in": 0,
+          "use_out": 6.25,
+          "use_len": 6.25,
+          "motion_budget": 6.25,
+          "gen_len": 8,
+          "source_file": "shots/part05.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "hun-hunahpu",
+            "vucub-hunahpu"
+          ],
+          "visual_priority": [
+            "Hun Hunahpu and Vucub Hunahpu going down the stair",
+            "the owls leading the way",
+            "the river of dark red water below",
+            "the black underworld ahead"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Hun Hunahpu, a Maya ballplayer of about forty, a long calm face with a thin moustache, hair in a topknot tied with jade beads, a broad leather hip yoke, knee pads and a feathered headband, descending a steep stone stair at the left third, one hand on the rough wall, his face turned down toward screen-right\nSUBJECT 2: Vucub Hunahpu, a younger Maya ballplayer, a rounder cheerful face, hair in a topknot with a red cotton band, a broad leather hip yoke, knee pads, a heavy shell ear spool, descending beside him a step lower, glancing at the owl ahead\nACTION: owls lead the two brothers down a steep stair toward a river of dark red water, and the brothers wade across it\nSETTING: a steep rough stone stair cut into a cleft in the earth, dim red light below, a wide river of dark red water flowing across the foot of the stair, the far bank lost in smoke, roots hanging from the walls\nCAMERA: camera stands on the stair ahead of them, high angle, long shot, backing down.\nFRAME LAYOUT: left third — the two brothers on the stair, medium, descending toward the right; center — two owls flying ahead of them over the stair; right third — the river of dark red water, wide, with the far bank lost in smoke; lower edge — worn steps, cropped; upper edge — rough rock roof.\nFACING: we see the brothers from the front and slightly left, their faces turned toward screen-right and down; the owls show their sides, heading toward screen-right.\nSCREEN DIRECTION: the brothers descend from the upper left toward the lower right; the owls glide ahead from the left toward the right; the red river flows from the right toward the left.\nLIGHT: dim ember-red glow rising from the river, faint warm light on their faces, deep black rock.\nPALETTE: ember red, rock black, owl brown, jade green\nDETAIL: rough hewn steps, hanging roots, ripples on the red water, owl feather barring, smoke curls over the far bank.\nNOT IN FRAME: the lords, any text, gore, bodies.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 6.25s; everything keeps moving at the same natural pace through the end of the 8s generation.\n0–1s: two owls glide down ahead of the brothers and flick their wings; the brothers start down the steps, hands on the rough walls.\n1–3s: the camera backs down the stair with them as roots sway overhead and red light pulses on their faces; the owls wheel toward the river.\n3–5s: the brothers reach the foot of the stair and step into the dark red water, lifting their knees as it flows around their legs.\n5–7s: they wade across with arms raised for balance and the owls circle above; ripples spread in rings from each step.\n7–8s: they keep wading toward the smoky far bank as the red current tugs and the camera backs along ahead of them.\nCAMERA: one continuous slow track backing away ahead of the brothers for the full 8 seconds.\nENVIRONMENT: red water flows left; smoke curls over the far bank; roots sway; owls circle.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "high",
+            "location": "blood-river",
+            "time_light": "dim-red",
+            "camera_motion": "track"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B06",
+      "sentences": [
+        "S09"
+      ],
+      "start": 38.4,
+      "end": 43.22,
+      "dur": 4.82,
+      "device": null,
+      "narration_says": "The lords had set wooden figures in the seats of honor, and the brothers greeted them.",
+      "viewer_sees": "In the dim hall two brothers bow to two carved wooden figures seated in the seats of honor while the real lords watch from the shadows",
+      "shots": [
+        {
+          "shot_id": "06",
+          "beat_id": "B06",
+          "link_group": null,
+          "t_in": 38.417,
+          "t_out": 43.208,
+          "use_in": 0,
+          "use_out": 4.791,
+          "use_len": 4.791,
+          "motion_budget": 4.791,
+          "gen_len": 6,
+          "source_file": "shots/part06.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "hun-hunahpu",
+            "vucub-hunahpu",
+            "xibalba-lords"
+          ],
+          "visual_priority": [
+            "Hun Hunahpu and Vucub Hunahpu bowing to the wooden figures",
+            "the two carved wooden figures in the seats of honor",
+            "the real lords watching from the shadows",
+            "the dim hall"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Hun Hunahpu, a Maya ballplayer of about forty, a long calm face with a thin moustache, hair in a topknot tied with jade beads, a broad leather hip yoke, knee pads and a feathered headband, at the left third, bowing politely toward the nearest seated figure\nSUBJECT 2: Vucub Hunahpu, a younger Maya ballplayer, a rounder cheerful face, hair in a topknot with a red cotton band, a broad leather hip yoke, knee pads, a heavy shell ear spool, at the left beside him, bowing low\nSUBJECT 3: tall stern lords of the Maya underworld, pale ash-grey painted faces with sunken black eyes, towering headdresses of owl feathers and bone, long mantles woven in black and ash grey, necklaces of carved bone, half-seen in the shadows at the far right, pale faces and towering headdresses, watching and waiting to laugh\nACTION: the two brothers bow politely to two carved wooden figures set in the seats of honor while the real lords watch from the shadows\nSETTING: the council hall of Xibalba, black stone columns carved with owls and bones, a long dais with seats, two carved wooden figures painted like lords sitting in the first two seats, ember-red hearth light, the corners dark\nCAMERA: camera stands at the dais edge, eye level, medium shot.\nFRAME LAYOUT: left third — the two brothers bowing, near-camera and large, cropped at the waist; center — the two carved wooden figures in the seats of honor, medium; right third — the real lords in deep shadow, far and hazy, only pale faces and headdresses; upper edge — dark carved columns.\nFACING: we see the brothers from the left and slightly from the front, their heads bowed toward screen-right; the wooden figures face camera; the lords face toward screen-left.\nSCREEN DIRECTION: the brothers bow from upright toward the right; hearth sparks drift toward the right; the lords’ headdress feathers sway toward the left.\nLIGHT: dim ember-red hearth light from the right, rim light on the brothers’ shoulders, the lords’ faces ghost-pale in the dark.\nPALETTE: ember red, black stone, jade green, bone white\nDETAIL: chipped paint on the wooden faces, carved owl motifs, fibres of the brothers’ hip yokes, drifting ash.\nNOT IN FRAME: laughing mouths, any text, gore.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 4.791s; everything keeps moving at the same natural pace through the end of the 6s generation.\n0–1s: the brothers step toward the wooden figures and bow low in greeting; hearth sparks drift past.\n1–3s: Hun Hunahpu speaks a greeting and extends one open hand toward the nearer figure; the wooden face does not move while the shadows at the right shift.\n3–4.5s: Vucub Hunahpu bows to the second figure, his hip yoke creaking; in the dark, pale faces lean forward a little and feathers tremble.\n4.5–6s: the brothers rise from their bows with polite smiles while the shadowed lords at the right lean closer; the hearth fire flares.\nCAMERA: one continuous slow push toward the brothers and the figures for the full 6 seconds.\nENVIRONMENT: hearth sparks drift; shadows shift; feathers tremble; ash falls.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "xibalba-hall",
+            "time_light": "dim-lamp",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B07",
+      "sentences": [
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "start": 43.22,
+      "end": 50.74,
+      "dur": 7.52,
+      "device": null,
+      "narration_says": "Then the lords laughed. They offered the brothers a bench to sit on. It was a burning stone.",
+      "viewer_sees": "The lords laugh, then point to a stone bench that is glowing red like coals; the two brothers hesitate",
+      "shots": [
+        {
+          "shot_id": "07",
+          "beat_id": "B07",
+          "link_group": null,
+          "t_in": 43.208,
+          "t_out": 50.75,
+          "use_in": 0,
+          "use_out": 7.542,
+          "use_len": 7.542,
+          "motion_budget": 7.542,
+          "gen_len": 8,
+          "source_file": "shots/part07.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "xibalba-lords",
+            "hun-hunahpu",
+            "vucub-hunahpu"
+          ],
+          "visual_priority": [
+            "the lords of Xibalba laughing",
+            "the stone bench glowing red like coals",
+            "the two brothers hesitating",
+            "the black carved columns"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: tall stern lords of the Maya underworld, pale ash-grey painted faces with sunken black eyes, towering headdresses of owl feathers and bone, long mantles woven in black and ash grey, necklaces of carved bone, at the right half on their dais, pale painted faces thrown back, laughing aloud, one pointing at the bench with a long finger, headdress feathers shaking\nSCALE: the lords tower over the brothers in a hall many times the height of a man; the lords read as huge dark figures and the brothers as small and uncertain.\nSUBJECT 2: Hun Hunahpu, a Maya ballplayer of about forty, a long calm face with a thin moustache, hair in a topknot tied with jade beads, a broad leather hip yoke, knee pads and a feathered headband, at the left third, uncertain, his eyes on the glowing bench\nSUBJECT 3: Vucub Hunahpu, a younger Maya ballplayer, a rounder cheerful face, hair in a topknot with a red cotton band, a broad leather hip yoke, knee pads, a heavy shell ear spool, at the left beside him, his hand on his brother’s arm\nACTION: the lords burst out laughing and point to a stone bench glowing red like coals, offering it to the brothers as a seat\nSETTING: the council hall of Xibalba, black columns carved with owls and bones, a long dais, a rough stone bench at the center of the floor heated until it glows dull red and shimmers, hearth fires low\nCAMERA: camera crouches on the floor several paces from the bench, low angle, long shot.\nFRAME LAYOUT: right half — the lords on their dais, large and dark, laughing; center — the stone bench glowing red, near-camera and large; left third — the two brothers standing small and uncertain; upper edge — black columns.\nFACING: we see the lords from the front and slightly below, their faces toward screen-left; the brothers three-quarter from the front and right, their eyes on the bench.\nSCREEN DIRECTION: heat shimmer rises from the bench; the lords’ headdress feathers shake from the right toward the left; the brothers step back toward the left edge.\nLIGHT: red glow from the bench lighting the lords’ faces from below, black shadow elsewhere.\nPALETTE: coal red, black, bone white, ash grey\nDETAIL: glowing cracks in the stone bench, heat shimmer lines, painted faces with sunken black eyes, feathers on the headdresses.\nNOT IN FRAME: the brothers sitting, burns, gore, any text.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 7.542s; everything keeps moving at the same natural pace through the end of the 8s generation.\n0–1s: the lords throw back their heads and laugh, headdress feathers shaking; heat shimmers up from the glowing bench.\n1–3s: the nearest lord extends a long arm toward the bench in a sweeping invitation; the red glow pulses on his face.\n3–5s: the brothers glance at one another and take a half step back; the lords’ laughter swells and shoulders shake along the dais.\n5–7s: a lord pats the air toward the bench again, beckoning; sparks lift from the glowing stone and drift up toward the right.\n7–8s: the laughter keeps rolling along the dais and the glow on the bench brightens while the brothers keep their ground and watch.\nCAMERA: one continuous slow push toward the bench for the full 8 seconds.\nENVIRONMENT: heat shimmer rises; sparks drift; feathers shake; red glow pulses.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "low",
+            "location": "xibalba-hall",
+            "time_light": "dim-lamp",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B08",
+      "sentences": [
+        "S13"
+      ],
+      "start": 50.74,
+      "end": 57.18,
+      "dur": 6.44,
+      "device": null,
+      "narration_says": "They locked them in the House of Darkness with a torch and a cigar each, and demanded them back unburned.",
+      "viewer_sees": "Two brothers sit back to back in a pitch-black chamber, each with a lit torch and a lit cigar, as a stone door closes",
+      "shots": [
+        {
+          "shot_id": "08",
+          "beat_id": "B08",
+          "link_group": null,
+          "t_in": 50.75,
+          "t_out": 57.167,
+          "use_in": 0,
+          "use_out": 6.417,
+          "use_len": 6.417,
+          "motion_budget": 6.417,
+          "gen_len": 8,
+          "source_file": "shots/part08.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "hun-hunahpu",
+            "vucub-hunahpu",
+            "house-of-darkness"
+          ],
+          "visual_priority": [
+            "Hun Hunahpu and Vucub Hunahpu sitting back to back",
+            "one lit torch and one lit cigar each",
+            "the stone slab door closing",
+            "the pitch-black chamber"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Hun Hunahpu, a Maya ballplayer of about forty, a long calm face with a thin moustache, hair in a topknot tied with jade beads, a broad leather hip yoke, knee pads and a feathered headband, sitting on the stone floor at the left of the chamber, back to his brother’s back, a lit pine torch in his raised right hand and a lit cigar in his left, his face lit orange\nSUBJECT 2: Vucub Hunahpu, a younger Maya ballplayer, a rounder cheerful face, hair in a topknot with a red cotton band, a broad leather hip yoke, knee pads, a heavy shell ear spool, sitting back to back with him, a second lit pine torch and a second lit cigar, his face turned toward screen-right\nSUBJECT 3: a pitch-black square stone chamber with rough fitted walls, a low stone doorway sealed by a heavy slab, a bare stone floor, no window and no furniture, the chamber lit only by the two torches, the heavy stone slab of the doorway sliding shut at the right, black beyond\nACTION: the two brothers sit back to back in a pitch-black chamber, each holding a lit torch and a lit cigar, as a heavy stone slab closes the doorway\nSETTING: a square stone chamber in Xibalba with rough fitted walls, a bare stone floor, black darkness beyond the reach of the torches, a heavy slab sliding across the low doorway at the right\nCAMERA: camera stands three paces from them, eye level, medium shot.\nFRAME LAYOUT: left third — the two brothers seated back to back, near-camera and large, a torch raised in each; center — the circle of orange torchlight on the stone floor; right third — the low doorway with the heavy slab half closed, medium; upper edge — black.\nFACING: we see the brothers in profile, one facing screen-right and one facing screen-left, their faces lit from the torches; the slab shows its rough face toward camera.\nSCREEN DIRECTION: the slab slides across the doorway from the right toward the left; smoke from the torches rises and leans toward the right.\nLIGHT: only two warm torch flames, strong orange on their faces and the stone, absolute black beyond.\nPALETTE: torch orange, black, stone grey, skin bronze\nDETAIL: pine pitch glistening on the torch heads, glowing cigar tips, soot on the walls, a narrow line of light shrinking at the doorway.\nNOT IN FRAME: the lords, any text, flames spreading, burns.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 6.417s; everything keeps moving at the same natural pace through the end of the 8s generation.\n0–1s: the heavy stone slab begins to slide across the low doorway at the right; the brothers lift their torches and cigars and look toward it.\n1–3s: the slab grinds shut and the last line of daylight narrows to nothing; torch flames lean and smoke curls up.\n3–5s: the brothers draw slowly on their cigars, the tips glowing; each raises his torch high.\n5–7s: the torch flames burn lower and the ring of light on the floor shrinks; they glance at the burning heads and at one another.\n7–8s: the flames keep guttering and dancing as the dark presses in at the edges of the frame.\nCAMERA: one continuous slow push toward the two brothers for the full 8 seconds.\nENVIRONMENT: torch flames gutter; smoke curls; the ring of light shrinks; soot drifts.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "house-of-darkness",
+            "time_light": "torch-only",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B09",
+      "sentences": [
+        "S14",
+        "S15"
+      ],
+      "start": 57.18,
+      "end": 63.9,
+      "dur": 6.72,
+      "device": "empty-aftermath",
+      "narration_says": "By morning, both had burned down. The brothers were sacrificed, and buried in the ballcourt.",
+      "viewer_sees": "EMPTY AFTERMATH: two burnt-out stubs of torch and cigar on a stone floor at dawn; the camera rises out through the door to a ballcourt where a last paving stone is set over a grave",
+      "shots": [
+        {
+          "shot_id": "09",
+          "beat_id": "B09",
+          "link_group": null,
+          "t_in": 57.167,
+          "t_out": 63.917,
+          "use_in": 0,
+          "use_out": 6.75,
+          "use_len": 6.75,
+          "motion_budget": 6.75,
+          "gen_len": 8,
+          "source_file": "shots/part09.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "house-of-darkness",
+            "ballcourt"
+          ],
+          "visual_priority": [
+            "the House of Darkness with two burnt-out stubs in grey ash",
+            "the bar of dawn light through the open door",
+            "the new paving stone on the ballcourt floor",
+            "the three tall lords at work"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a pitch-black square stone chamber with rough fitted walls, a low stone doorway sealed by a heavy slab, a bare stone floor, no window and no furniture, seen at dawn from just above the floor, two burnt-out stubs, one of a pine torch and one of a cigar, lying in grey ash, the slab door slid open at the right with a bar of grey dawn light\nSUBJECT 2: a Maya ballcourt, a long narrow I-shaped playing alley between two sloping stone walls of fitted limestone, a carved stone ring set high in each wall, plastered white floor, the court beyond the door in cold morning light, a rectangle of fresh pale paving at the center of its floor, three tall lords setting the last stone\nACTION: the camera looks down at two burnt-out stubs of torch and cigar in grey ash on the chamber floor at dawn and rises out through the doorway to a ballcourt where lords set a last paving stone over a grave\nSETTING: the House of Darkness at dawn, the slab door slid open, a bar of grey light across the floor, ash and two burnt stubs; beyond the door a ballcourt in cold morning light with a rectangular patch of fresh pale paving at its center and three tall lords bent over a last stone\nCAMERA: camera stands above the stubs, high angle, medium shot, rising.\nFRAME LAYOUT: lower left — the two burnt-out stubs in grey ash, near-camera and large; center — the bar of grey dawn light across the floor toward the doorway; right third — the doorway with the ballcourt beyond, far and hazy, three tall lords setting a pale paving stone; upper edge — dark rough wall.\nFACING: we look down on the stubs from above; the lords at the far right show their backs and bent shoulders, hands on the paving stone, faces turned away.\nSCREEN DIRECTION: the camera rises from the stubs toward the doorway at the right; ash drifts across the floor toward the right; dust lifts from the paving stone.\nLIGHT: cold grey dawn through the open door, a thin pale shaft across the ash, deep shadow in the chamber.\nPALETTE: ash grey, dawn pale blue, stone cream, black\nDETAIL: burnt fibre ends of the torch and cigar, fine grey ash grains, cracks in the plastered court, the lords’ feathered headdresses.\nNOT IN FRAME: bodies, blood, the brothers, any text.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 6.75s; everything keeps moving at the same natural pace through the end of the 8s generation.\n0–1s: a faint breath of air stirs the grey ash around the two burnt stubs; the camera begins to rise from the floor.\n1–3s: the camera drifts up and toward the right along the bar of dawn light; ash curls across the floor.\n3–5s: the doorway opens up ahead and the ballcourt appears beyond it in cold light; three tall lords bend over a rectangle of pale paving.\n5–7s: two lords lower the last paving stone into place and the third presses it down; dust puffs up from the joints.\n7–8s: the camera keeps rising and gliding toward the court as the lords straighten and the cold light spreads over the new paving.\nCAMERA: one continuous slow rise from the ash toward the ballcourt for the full 8 seconds.\nENVIRONMENT: ash drifts; dust puffs; cold light spreads; a faint wind stirs the feathers.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "MS",
+            "angle": "high",
+            "location": "house-of-darkness",
+            "time_light": "grey-dawn",
+            "camera_motion": "reveal"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B10",
+      "sentences": [
+        "S16"
+      ],
+      "start": 63.9,
+      "end": 68.68,
+      "dur": 4.78,
+      "device": null,
+      "narration_says": "Hun Hunahpu's head was hung in a tree, and the tree began to bear fruit.",
+      "viewer_sees": "A bare calabash tree with one calm pale head resting in its fork, new round fruit swelling on every branch",
+      "shots": [
+        {
+          "shot_id": "10",
+          "beat_id": "B10",
+          "link_group": null,
+          "t_in": 63.917,
+          "t_out": 68.667,
+          "use_in": 0,
+          "use_out": 4.75,
+          "use_len": 4.75,
+          "motion_budget": 4.75,
+          "gen_len": 6,
+          "source_file": "shots/part10.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "hun-hunahpu",
+            "calabash-tree"
+          ],
+          "visual_priority": [
+            "the calm pale head of Hun Hunahpu in the fork",
+            "the calabash tree putting out fruit",
+            "the swelling gourds",
+            "the red dusk sky"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Hun Hunahpu, a Maya ballplayer of about forty, a long calm face with a thin moustache, hair in a topknot tied with jade beads, a broad leather hip yoke, knee pads and a feathered headband, only his head, calm and pale with closed eyes, resting in the fork of the tree like a fruit among the gourds, no body and no blood\nSUBJECT 2: a tall calabash tree with a gnarled pale trunk, spreading bare branches and a fork at head height, round green and gold gourd fruits hanging from the limbs, in the lower half of the frame, its bare limbs sprouting round green and gold gourds in every fork, the gourds swelling\nACTION: the calm pale head of Hun Hunahpu rests in the fork of a bare calabash tree and the tree begins to bear fruit, round gourds swelling on every branch\nSETTING: a lonely hill at red dusk, a gnarled pale calabash tree standing alone, the ground beneath it grey and bare, the sky glowing red-orange around the branches\nCAMERA: camera stands at the foot of the tree, low angle, close shot.\nFRAME LAYOUT: center — the fork of the tree with the calm pale head, near-camera and large; left third — a long bare limb with new gourds swelling; right third — a second limb with gourds, hazy; upper edge — red-orange sky; lower edge — grey ground, cropped.\nFACING: we see the head from the front and slightly below, eyes closed, the face serene, turned slightly toward screen-right.\nSCREEN DIRECTION: gourds swell on the limbs and the limbs grow outward from the trunk toward the left and right; a thread of mist drifts toward the right.\nLIGHT: low red dusk light from the right across the branches, a soft pale glow on the head.\nPALETTE: dusk red, bark grey, gourd gold and green\nDETAIL: bark ridges and knots, jade beads in the topknot, waxy gourd skin, veins on new leave, tiny glossy leaves just opening on the twigs, a thread of dust lifting from the dry earth under the tree.\nNOT IN FRAME: a body, blood, any text, a skull.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 4.75s; everything keeps moving at the same natural pace through the end of the 6s generation.\n0–1s: new buds split on the bare limbs and the first small gourds appear in the forks; the head’s jade beads sway in a breeze.\n1–3s: the gourds swell steadily on every branch and green leaves unfurl; the calm face catches the red dusk light.\n3–4.5s: more limbs push outward from the trunk, heavy with round fruit, the gourds turning from green to gold.\n4.5–6s: the whole tree fills with swelling fruit around the serene head while the red sky deepens and leaves tremble.\nCAMERA: one continuous slow push toward the head in the fork for the full 6 seconds.\nENVIRONMENT: leaves unfurl; gourds swell; mist drifts; dusk light deepens.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "CU",
+            "angle": "low",
+            "location": "calabash-tree",
+            "time_light": "red-dusk",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B11",
+      "sentences": [
+        "S17",
+        "S18"
+      ],
+      "start": 68.68,
+      "end": 76.78,
+      "dur": 8.1,
+      "device": null,
+      "narration_says": "A young woman came to look. The head spat into her hand, and she conceived twins: Hunahpu and Xbalanque.",
+      "viewer_sees": "A young woman reaches up toward the head in the tree; a glowing drop lands in her open palm",
+      "shots": [
+        {
+          "shot_id": "11",
+          "beat_id": "B11",
+          "link_group": null,
+          "t_in": 68.667,
+          "t_out": 76.792,
+          "use_in": 0,
+          "use_out": 8.125,
+          "use_len": 8.125,
+          "motion_budget": 8.125,
+          "gen_len": 10,
+          "source_file": "shots/part11.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "young-woman",
+            "calabash-tree"
+          ],
+          "visual_priority": [
+            "the young woman reaching up",
+            "the glowing drop falling into her palm",
+            "the calm pale head in the fork",
+            "the red dusk sky"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a young Maya woman of about twenty, a calm oval face, long black hair in a single braid, a white cotton huipil with a woven red neckline, a plain jade bead necklace, standing at the left third at the foot of the tree, reaching up with her open right hand toward the head in the fork, her face tipped up, awed and curious\nSUBJECT 2: a tall calabash tree with a gnarled pale trunk, spreading bare branches and a fork at head height, round green and gold gourd fruits hanging from the limbs, rising at the right of her, a calm pale head resting in its fork, gourds on every limb\nACTION: a young woman comes to look at the tree and reaches up toward the head in its fork; a glowing drop falls into her open palm\nSETTING: a lonely hill at red dusk, bare grey ground beneath the tree, gourds heavy on the branches, the sky red-orange with one faint star\nCAMERA: camera stands beside her, low angle, medium shot.\nFRAME LAYOUT: left third — the young woman, near-camera and large, cropped at the waist, her hand reaching up; center — the glowing drop falling between the head and her palm; right third — the tree’s fork with the calm pale head, medium; upper edge — red-orange sky.\nFACING: we see the young woman three-quarter from the front and left, her face tipped up toward screen-right and the head; her open palm is toward camera.\nSCREEN DIRECTION: the drop falls from the fork at the right toward her palm at the left; her braid swings toward the right as she reaches up.\nLIGHT: red dusk light from the right, a small warm white-gold glow from the falling drop lighting her palm and chin.\nPALETTE: dusk red, bark grey, white-gold glow, huipil white\nDETAIL: the weave of the huipil neckline, her braid, the bright drop with a trailing thread of light, waxy gourd skin, the soft curl of loose hairs at her temple, bright dust motes in the rising glow, her fingertips trembling with expectation.\nNOT IN FRAME: any other person, blood, any text.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 8.125s; everything keeps moving at the same natural pace through the end of the 10s generation.\n0–1s: the young woman steps up to the foot of the tree and tips her face toward the head in the fork; her braid swings.\n1–3s: she lifts her right hand slowly toward the branches, fingers open; gourds sway above her in the dusk breeze.\n3–5s: a glowing white-gold drop gathers at the lips of the pale head and begins to fall in a thin thread of light.\n5–7.5s: the drop lands in her open palm and a soft glow spreads up her wrist; she draws a quick breath and her eyes widen.\n7.5–10s: she lowers her glowing hand toward her chest while the gourds sway and the red sky darkens around the tree.\nCAMERA: one continuous slow push toward her raised hand for the full 10 seconds.\nENVIRONMENT: gourds sway; leaves tremble; dusk light deepens; the glow pulses.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "low",
+            "location": "calabash-tree",
+            "time_light": "red-dusk",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B12",
+      "sentences": [
+        "S19",
+        "S20"
+      ],
+      "start": 76.78,
+      "end": 86.5,
+      "dur": 9.72,
+      "device": null,
+      "narration_says": "They grew up playing ball, and one day they too made the underworld shake. The same lords sent the same message: come, and bring your ball.",
+      "viewer_sees": "The twins play ball in the court; the ground shakes, dust sifts, owls burst out of cracks in the stone",
+      "shots": [
+        {
+          "shot_id": "12",
+          "beat_id": "B12",
+          "link_group": null,
+          "t_in": 76.792,
+          "t_out": 86.5,
+          "use_in": 0,
+          "use_out": 9.708,
+          "use_len": 9.708,
+          "motion_budget": null,
+          "gen_len": 10,
+          "source_file": "shots/part12.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "hunahpu",
+            "xbalanque",
+            "ballcourt"
+          ],
+          "visual_priority": [
+            "Hunahpu and Xbalanque playing ball",
+            "the cracks in the court wall with owls bursting out",
+            "the ball in the air",
+            "the dust lifting from the floor"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Hunahpu, a lean Maya ballplayer of about twenty, a smooth oval face with a small beard-less chin, black spots painted on both cheeks, long black hair under a jade-green headband, a heavy jade ear spool, leaping at the left third to strike the ball with his hip, his body arched, his face bright with effort\nSUBJECT 2: Xbalanque, a lean Maya ballplayer of about twenty, a smooth oval face like his brother, patches of jaguar pelt on both cheeks and forearms, long black hair under a dark blue headband, a heavy jade ear spool, running beside him, one arm raised for the pass, laughing\nSUBJECT 3: a Maya ballcourt, a long narrow I-shaped playing alley between two sloping stone walls of fitted limestone, a carved stone ring set high in each wall, plastered white floor, seen as a long plastered alley with sloping walls and carved rings, dust lifting from the floor as the ground shakes\nACTION: the twins play ball in the court; the ground shakes, dust sifts down from the walls and owls burst out of cracks in the stone\nSETTING: a Maya ballcourt at bright afternoon, white plaster floor, sloping limestone walls with carved rings, dust lifting, cracks opening along the base of the right wall with dark red light and owls bursting out\nCAMERA: camera runs alongside the players at floor level, eye level, long shot.\nFRAME LAYOUT: left third — the twins, near-camera and large, cropped at the thigh, mid-leap; center — the ball in the air, medium; right third — the cracked court wall with owls bursting from the cracks and red light, large and dark; upper edge — a bright strip of sky.\nFACING: we see the twins side-on from their right, both facing screen-right toward the ball and the wall; the owls show their faces toward the left.\nSCREEN DIRECTION: the ball flies from the twins at the left toward the right wall; dust rolls from the cracks toward the left; owls burst out and sweep toward the left.\nLIGHT: hard bright afternoon sun from the upper left, dark red glow in the cracks at the right, long shadows toward the right.\nPALETTE: limestone white, sun gold, ember red, jade green\nDETAIL: plaster cracks, flying dust grains, jade ear spools, owl feather barring, the ball’s chalky scuff.\nNOT IN FRAME: the lords, any text, blood.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 9.708s; everything keeps moving at the same natural pace through the end of the 10s generation.\n0–1s: Hunahpu strikes the ball with his hip and sends it flying toward the right wall; Xbalanque runs after it.\n1–3s: the ball hits the sloping wall and rebounds; the whole court shudders and dust sifts down from the stone.\n3–5s: cracks open along the base of the right wall and owls burst out in a swirl of wings, red light pulsing in the gaps.\n5–7.5s: the twins keep playing through the tremor, passing the ball from hip to hip; the owls sweep toward the left over their heads.\n7.5–10s: dust rolls across the court and the walls rumble; the twins laugh and lunge for the ball as the camera runs alongside.\nCAMERA: one continuous fast track alongside the players for the full 10 seconds.\nENVIRONMENT: dust rolls; owls swirl; red light pulses in the cracks; sunlight flashes.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "ballcourt",
+            "time_light": "bright-afternoon",
+            "camera_motion": "track"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B13",
+      "sentences": [
+        "S21"
+      ],
+      "start": 86.5,
+      "end": 93.12,
+      "dur": 6.62,
+      "device": "process-cutaway",
+      "narration_says": "It reached them through a louse, swallowed by a toad, swallowed by a snake, swallowed by a hawk.",
+      "viewer_sees": "PROCESS CUTAWAY: a hawk drawn like an anatomical plate, inside it a snake, inside that a toad, inside that one louse glowing as the message",
+      "shots": [
+        {
+          "shot_id": "13",
+          "beat_id": "B13",
+          "link_group": null,
+          "t_in": 86.5,
+          "t_out": 93.125,
+          "use_in": 0,
+          "use_out": 6.625,
+          "use_len": 6.625,
+          "motion_budget": 6.625,
+          "gen_len": 8,
+          "source_file": "shots/part13.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "the hawk cutaway with nested animals",
+            "the snake inside the hawk",
+            "the toad inside the snake",
+            "the glowing louse inside the toad"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a hawk drawn like an anatomical plate on aged cream paper, its body cut open to show one snake coiled inside it, one toad inside the snake, and inside the toad one tiny louse glowing gold as the message\nACTION: an illustrated cutaway shows a hawk, inside it a snake, inside the snake a toad and inside the toad one glowing louse: the message passing from one swallowed creature to the next\nSETTING: an aged cream plate with fine brown ink hatching and a thin gold-ink border, soft paper fibres and faint foxing. The plate is drawn in the manner of a natural-history engraving, with a thin ruled frame and a scale of tiny tick marks along the lower edge; the paper shows faint horizontal chain lines and a coffee-coloured stain at one corner, and a soft shadow suggests that the plate lies on a dark tabletop under a lamp.\nCAMERA: camera faces the plate straight on, eye level, medium shot, slowly moving in.\nFRAME LAYOUT: center — the hawk in profile, large, wings half open; inside its chest — the coiled snake; inside the snake’s middle — the toad; inside the toad — one tiny glowing louse; upper left — the hawk’s eye and hooked beak; lower edge — the gold-ink border.\nFACING: we see the hawk in profile from its left side, its head turned toward screen-right; the animals inside face the same way.\nSCREEN DIRECTION: a thin gold glow passes from the louse outward through the toad, the snake and the hawk toward the right; the hawk’s wing feathers ruffle toward the right.\nLIGHT: soft warm lamp light on the plate, a bright gold glow in the louse, gentle shadow in the paper fibres.\nPALETTE: paper cream, ink brown, gold, jade green\nDETAIL: fine feather hatching, individual snake scales, the toad’s warty skin, a gold glowing speck, paper fibre, tiny barbs on the flight feathers, overlapping diamond scales on the snake, a pale throat sac on the toad, the louse no bigger than a grain of rice but glowing gold like a spark in a dark room.\nNOT IN FRAME: any text or labels, people, a second hawk, a second louse.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 6.625s; everything keeps moving at the same natural pace through the end of the 8s generation.\n0–1s: the tiny louse inside the toad begins to glow gold and the toad’s throat swells and pulses.\n1–3s: the glow spreads outward through the snake, which uncoils a little inside the hawk; scales ripple in sequence.\n3–5s: the hawk’s chest rises with a breath and its wing feathers ruffle; the gold glow travels through each animal in turn toward the beak.\n5–7s: the hawk’s head turns toward the right and its eye flashes gold; the camera pushes closer to the glowing chain.\n7–8s: the glow pulses again from the louse outward to the hawk, wing feathers lifting, as the camera keeps moving in.\nCAMERA: one continuous slow push toward the glowing louse for the full 8 seconds.\nENVIRONMENT: gold glow pulses; feathers ruffle; scales ripple; lamp light flickers.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "nested-animals",
+            "time_light": "dim-gold",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B14",
+      "sentences": [
+        "S22"
+      ],
+      "start": 93.12,
+      "end": 98.24,
+      "dur": 5.12,
+      "device": null,
+      "narration_says": "Before they left, the twins planted two canes in the middle of their grandmother's house.",
+      "viewer_sees": "The twins plant two green canes in the packed earth floor in the middle of their grandmother’s house while she watches from the hearth",
+      "shots": [
+        {
+          "shot_id": "14",
+          "beat_id": "B14",
+          "link_group": null,
+          "t_in": 93.125,
+          "t_out": 98.25,
+          "use_in": 0,
+          "use_out": 5.125,
+          "use_len": 5.125,
+          "motion_budget": 5.125,
+          "gen_len": 6,
+          "source_file": "shots/part14.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "hunahpu",
+            "xbalanque",
+            "twin-canes"
+          ],
+          "visual_priority": [
+            "Hunahpu and Xbalanque planting the canes",
+            "the two canes in the middle of the floor",
+            "their grandmother watching from the hearth",
+            "the warm hearth glow"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Hunahpu, a lean Maya ballplayer of about twenty, a smooth oval face with a small beard-less chin, black spots painted on both cheeks, long black hair under a jade-green headband, a heavy jade ear spool, kneeling at the left pressing the first cane upright into the packed earth floor with both hands\nSUBJECT 2: Xbalanque, a lean Maya ballplayer of about twenty, a smooth oval face like his brother, patches of jaguar pelt on both cheeks and forearms, long black hair under a dark blue headband, a heavy jade ear spool, kneeling beside him, pushing soil around the second cane\nSUBJECT 3: two tall green maize canes with long ribbon leaves, standing side by side in the packed earth floor of a thatched house, each about as high as a man, the two canes planted side by side in the middle of the floor, their long leaves just beginning to sway\nACTION: before leaving, the twins plant two canes in the packed earth floor in the middle of their grandmother’s house while she watches from the hearth\nSETTING: the inside of a Maya thatched house, packed earth floor, a low hearth with a clay pot and glowing embers, woven mats along the walls, a thatched roof of palm, dusty light from the doorway\nCAMERA: camera stands at the doorway looking in, slightly high angle, medium shot.\nFRAME LAYOUT: left third — the twins kneeling at the canes, near-camera and large; center — the two canes planted in the middle of the floor; right third — their old grandmother seated at the hearth, medium, in a plain white huipil with her white hair in a braid, her eyes on the canes; upper edge — the thatched roof.\nFACING: we see the twins three-quarter from the front and left, their heads bent toward the canes and screen-right; the grandmother three-quarter from the front and right, her gaze toward screen-left.\nSCREEN DIRECTION: the twins press earth around the canes from the left toward the right; hearth smoke rises and drifts toward the right; light from the doorway slides across the floor from the left.\nLIGHT: warm ember glow from the hearth at the right, dusty gold light from the doorway at the left, soft shadow in the roof.\nPALETTE: ember orange, earth brown, palm tan, white huipil\nDETAIL: ribbon leaves of the canes, packed earth with finger marks, woven mat patterns, drifting hearth smoke.\nNOT IN FRAME: children, any text, blood.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 5.125s; everything keeps moving at the same natural pace through the end of the 6s generation.\n0–1s: Hunahpu presses the first cane upright into the packed earth while Xbalanque pushes soil around the second with both hands.\n1–3s: the twins tamp the earth firm around both canes and glance at each other; the grandmother at the hearth lifts a hand to her chest.\n3–4.5s: they rise together and brush off their palms; the canes sway at the touch and their long leaves rustle.\n4.5–6s: the twins look toward the door and the grandmother watches the canes while hearth smoke drifts across the floor.\nCAMERA: one continuous slow push toward the canes for the full 6 seconds.\nENVIRONMENT: hearth smoke drifts; embers glow; leaves rustle; dust floats in the door light.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "high",
+            "location": "grandmother-house",
+            "time_light": "firelight-warm",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B15",
+      "sentences": [
+        "S23",
+        "S24"
+      ],
+      "start": 98.24,
+      "end": 103.24,
+      "dur": 5,
+      "device": "before-after",
+      "narration_says": "If the canes dried, they were dead. If they sprouted, they lived.",
+      "viewer_sees": "BEFORE / AFTER diptych: left half the two canes dry and brown, right half the same two canes green and sprouting",
+      "shots": [
+        {
+          "shot_id": "15",
+          "beat_id": "B15",
+          "link_group": null,
+          "t_in": 98.25,
+          "t_out": 103.25,
+          "use_in": 0,
+          "use_out": 5,
+          "use_len": 5,
+          "motion_budget": null,
+          "gen_len": null,
+          "source_file": "shots/shot15.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "twin-canes"
+          ],
+          "visual_priority": [
+            "the two canes dead at the left and green at the right",
+            "the thin dividing line",
+            "the cold grey light on the dead half",
+            "the warm gold light on the living half"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: two tall green maize canes with long ribbon leaves, standing side by side in the packed earth floor of a thatched house, each about as high as a man, shown twice in a split frame divided by one thin vertical line: on the left half the two canes dry, brown and bent with curled dead leaves, on the right half the same two canes green and upright with fresh sprouts at their bases\nACTION: the same two canes in the middle of the grandmother’s house in two states: dried and dead at the left, green and sprouting at the right\nSETTING: the packed earth floor in the middle of a Maya thatched house, the hearth glow at the edge, a thin vertical dividing line running down the exact center of the frame. A trail of fallen ash lies across the floor at the left half, and at the right half a small beetle crosses the dark earth beside a sprout; at the very bottom edge the packed earth carries the marks of kneeling knees and finger-pressed soil.\nCAMERA: camera stands level with the canes, eye level, medium shot, locked.\nFRAME LAYOUT: left half — the two dry brown canes with curled dead leaves on grey dust, cool and dim; right half — the same two canes green and upright with fresh sprouts and a warm glow; center — the thin vertical dividing line; lower edge — the packed earth floor across both halves.\nFACING: we see both pairs of canes from the front at the same angle, their leaf tips toward the upper edge.\nSCREEN DIRECTION: a dry leaf curls at the left; a new green leaf unfurls at the right; one ember spark rises at the right edge.\nLIGHT: cold grey light on the dead left half, warm gold light on the living right half.\nPALETTE: dead brown and grey, living green and gold\nDETAIL: split dry fibres on the dead canes, bright ribbon leaves with dew on the living canes, cracked dust at the left, dark moist earth at the right.\nNOT IN FRAME: people, any text, a third cane.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "grandmother-house",
+            "time_light": "firelight-warm",
+            "camera_motion": "locked"
+          },
+          "render_mode": "still",
+          "still_motion": "hold"
+        }
+      ]
+    },
+    {
+      "beat_id": "B16",
+      "sentences": [
+        "S25",
+        "S26"
+      ],
+      "start": 103.24,
+      "end": 108.52,
+      "dur": 5.28,
+      "device": null,
+      "narration_says": "They crossed the rivers on their blowguns. A mosquito went ahead and bit each lord in turn.",
+      "viewer_sees": "The twins cross a river by walking on their blowguns laid like a bridge, a single mosquito glint flying ahead of them",
+      "shots": [
+        {
+          "shot_id": "16",
+          "beat_id": "B16",
+          "link_group": null,
+          "t_in": 103.25,
+          "t_out": 108.5,
+          "use_in": 0,
+          "use_out": 5.25,
+          "use_len": 5.25,
+          "motion_budget": 5.25,
+          "gen_len": 6,
+          "source_file": "shots/part16.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "hunahpu",
+            "xbalanque"
+          ],
+          "visual_priority": [
+            "Hunahpu and Xbalanque crossing on blowguns",
+            "the dark red river below",
+            "the tiny glinting mosquito ahead",
+            "the far bank with its red glow"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Hunahpu, a lean Maya ballplayer of about twenty, a smooth oval face with a small beard-less chin, black spots painted on both cheeks, long black hair under a jade-green headband, a heavy jade ear spool, walking along a long blowgun laid across the river like a narrow plank, balancing with his arms out, at the left\nSUBJECT 2: Xbalanque, a lean Maya ballplayer of about twenty, a smooth oval face like his brother, patches of jaguar pelt on both cheeks and forearms, long black hair under a dark blue headband, a heavy jade ear spool, following along a second blowgun laid beside the first, his arms out\nACTION: the twins cross a river of dark red water by walking along their long blowguns laid across it like narrow bridges, a single mosquito glinting in the air ahead of them\nSETTING: a wide river of dark red water in the underworld, steep rock banks in smoke, two long reed blowguns laid across the water, the far bank at the right with a dim red glow\nCAMERA: camera stands on the near bank, slightly low, long shot, tracking beside them.\nFRAME LAYOUT: left third — the near bank and the twins stepping onto the blowguns, medium; center — the twins mid-river on the two narrow blowguns, small, over dark red water; right third — the far bank with a dim red glow and a tiny glinting mosquito, far and hazy; lower edge — red ripples.\nFACING: we see the twins from the side and slightly front, their faces turned toward screen-right and the far bank; the mosquito flies away toward screen-right.\nSCREEN DIRECTION: the twins pace out over the water from the left toward the right on their blowguns; the mosquito flies ahead toward the far bank; the river flows from the right toward the left.\nLIGHT: dim ember-red glow from the far bank, red reflections on the water, a bright pinpoint glint on the mosquito.\nPALETTE: ember red, rock black, reed tan, jade green\nDETAIL: bamboo-like blowgun sections, ripples in the red water, smoke curls over the far bank, the mosquito’s tiny wings.\nNOT IN FRAME: the lords, any text, blood, a stone bridge.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 5.25s; everything keeps moving at the same natural pace through the end of the 6s generation.\n0–1s: the twins step onto the blowguns and balance with arms out; the tiny mosquito lifts off from the near bank.\n1–3s: they walk steadily toward the right along the narrow reeds, the blowguns bowing under their weight; the mosquito zigzags ahead.\n3–4.5s: red ripples slap the reeds below their feet; Xbalanque sways and steadies himself while Hunahpu glances back.\n4.5–6s: the mosquito reaches the far bank and vanishes into the smoke as the twins keep walking, arms balanced.\nCAMERA: one continuous slow track beside the twins for the full 6 seconds.\nENVIRONMENT: red water flows left; smoke curls over the far bank; ripples slap the reeds; embers glow.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "blood-river",
+            "time_light": "dim-red",
+            "camera_motion": "track"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B17",
+      "sentences": [
+        "S27"
+      ],
+      "start": 108.52,
+      "end": 111.9,
+      "dur": 3.38,
+      "device": null,
+      "narration_says": "Each cried out, and the next named him.",
+      "viewer_sees": "A row of lords in the dim hall each flinch and cry out in turn, mouths wide and hands slapping at their necks, one tiny mosquito glint streaking along the row",
+      "shots": [
+        {
+          "shot_id": "17",
+          "beat_id": "B17",
+          "link_group": null,
+          "t_in": 108.5,
+          "t_out": 111.917,
+          "use_in": 0,
+          "use_out": 3.417,
+          "use_len": 3.417,
+          "motion_budget": null,
+          "gen_len": null,
+          "source_file": "shots/shot17.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "xibalba-lords",
+            "xibalba-hall"
+          ],
+          "visual_priority": [
+            "the lords of Xibalba crying out one after another",
+            "the tiny streak of the mosquito along the row",
+            "the hands slapping at their necks",
+            "the dim hall of Xibalba"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: tall stern lords of the Maya underworld, pale ash-grey painted faces with sunken black eyes, towering headdresses of owl feathers and bone, long mantles woven in black and ash grey, necklaces of carved bone, six lords seated in a row on their dais, each flinching and crying out in turn, mouths wide, one hand slapping at the neck, headdress feathers jolted\nSUBJECT 2: a vast dim underworld council hall of black stone, tall rough columns carved with bone and owl motifs, a long dais with a row of carved stone seats, hearth fires burning low and red, the hall seen as black columns and ember hearths, one tiny glinting mosquito streaking along the row\nACTION: one after another the lords of Xibalba cry out and slap at their necks as a tiny mosquito streaks along the row\nSETTING: the council hall of Xibalba, a long dais of carved seats, black columns, hearth fires low\nCAMERA: camera stands on the hall floor facing the dais, low angle, close shot on the row.\nFRAME LAYOUT: center — six lords seated in a row on their dais, large; right third — the first lords crying out, near-camera; left third — the last lords not yet bitten, smaller and hazy; along the row — a bright pinpoint streak; upper edge — black carved columns.\nFACING: we see the lords from the front, their faces toward camera, mouths open, eyes wide; the mosquito’s glint runs along the row toward screen-left.\nSCREEN DIRECTION: the mosquito’s glint streaks along the dais from the right toward the left; each lord’s head jerks up in turn from the right toward the left.\nLIGHT: dim ember-red hearth light from the lower edge, ghost-pale faces, a bright white pinpoint on the mosquito.\nPALETTE: ember red, ash grey, bone white, black\nDETAIL: painted faces with sunken eyes, owl-feather headdresses jolted, bone necklaces swinging, a thin streak of light, sweat on their brows, a jolted headdress feather falling past a shoulder, one lord’s mouth stretched in a roar, the jolted jade beads of a necklace, a thin gleam of sweat on pale painted cheeks.\nNOT IN FRAME: the twins, any text, blood.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "CU",
+            "angle": "low",
+            "location": "xibalba-hall",
+            "time_light": "dim-lamp",
+            "camera_motion": "push"
+          },
+          "render_mode": "still",
+          "still_motion": "push"
+        }
+      ]
+    },
+    {
+      "beat_id": "B18",
+      "sentences": [
+        "S28",
+        "S29"
+      ],
+      "start": 111.9,
+      "end": 118.9,
+      "dur": 7,
+      "device": null,
+      "narration_says": "So the twins greeted every lord by name, and refused the burning bench. Then came the nights.",
+      "viewer_sees": "The twins greet each lord by name and step around the glowing bench; as they pass, the hall torches gutter and night falls over Xibalba",
+      "shots": [
+        {
+          "shot_id": "18",
+          "beat_id": "B18",
+          "link_group": null,
+          "t_in": 111.917,
+          "t_out": 118.917,
+          "use_in": 0,
+          "use_out": 7,
+          "use_len": 7,
+          "motion_budget": 7,
+          "gen_len": 8,
+          "source_file": "shots/part18.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "hunahpu",
+            "xbalanque",
+            "xibalba-lords"
+          ],
+          "visual_priority": [
+            "Hunahpu and Xbalanque greeting every lord by name",
+            "the glowing bench they step around",
+            "the astonished lords on the dais",
+            "the torches guttering as night falls"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Hunahpu, a lean Maya ballplayer of about twenty, a smooth oval face with a small beard-less chin, black spots painted on both cheeks, long black hair under a jade-green headband, a heavy jade ear spool, walking at the left third along the dais, his right hand raised in greeting toward the nearest lord, speaking his name\nSUBJECT 2: Xbalanque, a lean Maya ballplayer of about twenty, a smooth oval face like his brother, patches of jaguar pelt on both cheeks and forearms, long black hair under a dark blue headband, a heavy jade ear spool, beside him, stepping wide around the glowing bench, his eyes on the lords\nSUBJECT 3: tall stern lords of the Maya underworld, pale ash-grey painted faces with sunken black eyes, towering headdresses of owl feathers and bone, long mantles woven in black and ash grey, necklaces of carved bone, seated along the dais at the right in a row, astonished, leaning back, one named aloud\nACTION: the twins greet each lord by name and step around the glowing bench instead of sitting; as they pass, the hall torches gutter and night falls over Xibalba\nSETTING: a long dais and a stone bench glowing dull red at the center of the council hall floor, wall torches burning, columns carved with owl and bone patterns fading into deep dark\nCAMERA: camera walks beside the twins on the hall floor, eye level, medium shot.\nFRAME LAYOUT: left third — the twins walking, near-camera and large, cropped at the thigh; center — the glowing bench with heat shimmer, medium; right third — the row of lords on the dais, astonished; upper edge — wall torches guttering; far right — a column fading into dark.\nFACING: we see Hunahpu and Xbalanque from the front and left, their faces turned toward the row of lords at screen-right; the lords look back toward screen-left.\nSCREEN DIRECTION: the twins walk from the left toward the right along the dais; torch flames flicker and drop one by one from the left toward the right; darkness spreads across the hall.\nLIGHT: red glow from the bench on the floor, torches dimming from warm orange to dark red, faces ghost-pale.\nPALETTE: coal red, black, bone white, jade green\nDETAIL: carved bone and owl motifs, sparks lifting from the bench, painted lords’ faces, torch smoke.\nNOT IN FRAME: the twins sitting, burns, any text.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 7s; everything keeps moving at the same natural pace through the end of the 8s generation.\n0–1s: Hunahpu lifts his right hand and names the first lord aloud; the lord’s jaw drops and he leans back in his seat.\n1–3s: Xbalanque calls the next name and the twins walk on along the dais, stepping wide around the glowing bench; heat shimmer ripples at their legs.\n3–5s: they greet lord after lord, each answered by a startled flinch; the torch flames on the wall flicker lower.\n5–7s: the torches gutter out one by one from the left toward the right and the hall darkens, the bench glowing like a coal.\n7–8s: only the red glow and ghost-pale faces remain as the twins keep walking along the dais into the dark.\nCAMERA: one continuous slow track beside the twins for the full 8 seconds.\nENVIRONMENT: torch flames gutter; heat shimmer ripples; smoke curls; darkness spreads.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "xibalba-hall",
+            "time_light": "dim-lamp",
+            "camera_motion": "track"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B19",
+      "sentences": [
+        "S30"
+      ],
+      "start": 118.9,
+      "end": 127.58,
+      "dur": 8.68,
+      "device": null,
+      "narration_says": "In the House of Darkness, they lit the lords' torch with a macaw's red feathers and their cigars with fireflies, and returned them unburned.",
+      "viewer_sees": "In the House of Darkness the twins light the lords’ torch with red macaw feathers and their cigars with fireflies, and every one comes through unburned",
+      "shots": [
+        {
+          "shot_id": "19",
+          "beat_id": "B19",
+          "link_group": null,
+          "t_in": 118.917,
+          "t_out": 127.583,
+          "use_in": 0,
+          "use_out": 8.666,
+          "use_len": 8.666,
+          "motion_budget": 8.666,
+          "gen_len": 10,
+          "source_file": "shots/part19.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "hunahpu",
+            "xbalanque",
+            "house-of-darkness"
+          ],
+          "visual_priority": [
+            "Hunahpu and Xbalanque with the feather torch and the firefly cigars",
+            "the red macaw feathers glowing like flame",
+            "the fireflies on the cigar tips",
+            "the pitch-black chamber"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Hunahpu, a lean Maya ballplayer of about twenty, a smooth oval face with a small beard-less chin, black spots painted on both cheeks, long black hair under a jade-green headband, a heavy jade ear spool, sitting at the left third, holding up the lords’ pine torch whose tip is bound with red macaw feathers that glow like flame, his face lit red\nSUBJECT 2: Xbalanque, a lean Maya ballplayer of about twenty, a smooth oval face like his brother, patches of jaguar pelt on both cheeks and forearms, long black hair under a dark blue headband, a heavy jade ear spool, sitting beside him, holding two cigars each tipped with a glowing firefly, his face turned toward his brother\nSUBJECT 3: a pitch-black square stone chamber with rough fitted walls, a low stone doorway sealed by a heavy slab, a bare stone floor, no window and no furniture, the chamber of the first night, the stone slab door at the right, black beyond\nACTION: in the House of Darkness the twins keep the lords’ torch alight with a tuft of red macaw feathers and their cigars with fireflies, and every piece comes through unburned\nSETTING: a square stone chamber in Xibalba, rough fitted walls, a bare stone floor, one slab door, black darkness outside the glow of the feathers and the fireflies\nCAMERA: camera stands a little way off in the dark, eye level, medium shot.\nFRAME LAYOUT: left third — Hunahpu with the red-feathered torch, near-camera and large; center — Xbalanque with the two firefly cigars, near-camera and large; right third — the stone slab door, small and dark; upper edge — black; lower edge — the stone floor in red glow.\nFACING: Hunahpu is seen from the front and left, his face lit red, and Xbalanque beside him looks toward his brother; the torch and cigars face camera.\nSCREEN DIRECTION: fireflies drift up from the cigars toward the right; the red feather tips shimmer toward the right; at the door a band of grey dawn light creeps in from the right.\nLIGHT: a warm red glow from the macaw feathers, soft green-gold glints from the fireflies, deep black beyond.\nPALETTE: feather red, firefly green-gold, stone grey, black\nDETAIL: red macaw feather barbs glowing like flame, tiny firefly bodies with bright tails, unburned pine pitch, soot-free wall.\nNOT IN FRAME: flames burning the torch, ash stubs, the lords, any text.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 8.666s; everything keeps moving at the same natural pace through the end of the 10s generation.\n0–1s: Hunahpu raises the torch and the red macaw feathers at its tip shimmer like a flame; Xbalanque lifts the cigars and the fireflies on them pulse green-gold.\n1–3s: the twins sit calmly as the night passes; the glow of the feathers sways and the fireflies drift in a slow ring.\n3–5s: Xbalanque lifts a cigar to his lips and the firefly flares; Hunahpu turns the torch in his hand and the red light crawls over the stone.\n5–7.5s: a grey band of dawn light creeps across the floor from the door at the right; the feathers’ red glow pales against it.\n7.5–10s: the twins rise and lift the unburned torch and cigars toward the door as the dawn light spreads and the fireflies drift.\nCAMERA: one continuous slow push toward the two twins for the full 10 seconds.\nENVIRONMENT: fireflies drift; feather glow shimmers; dawn light creeps; dust floats.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "house-of-darkness",
+            "time_light": "torch-red",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B20",
+      "sentences": [
+        "S31"
+      ],
+      "start": 127.58,
+      "end": 132.72,
+      "dur": 5.14,
+      "device": null,
+      "narration_says": "In the House of Cold they did not freeze, and the jaguars were thrown bones.",
+      "viewer_sees": "In a hail-swept stone chamber the twins sit unshivering while two jaguars gnaw bones thrown to them",
+      "shots": [
+        {
+          "shot_id": "20",
+          "beat_id": "B20",
+          "link_group": null,
+          "t_in": 127.583,
+          "t_out": 132.708,
+          "use_in": 0,
+          "use_out": 5.125,
+          "use_len": 5.125,
+          "motion_budget": 5.125,
+          "gen_len": 6,
+          "source_file": "shots/part20.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "hunahpu",
+            "xbalanque"
+          ],
+          "visual_priority": [
+            "Hunahpu and Xbalanque sitting calm in the House of Cold",
+            "the two jaguars gnawing bones",
+            "the hail driving through the roof gap",
+            "the frost on the walls"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Hunahpu, a lean Maya ballplayer of about twenty, a smooth oval face with a small beard-less chin, black spots painted on both cheeks, long black hair under a jade-green headband, a heavy jade ear spool, sitting cross-legged at the left of the chamber, calm, frost on his shoulders but no shiver, arms loose\nSUBJECT 2: Xbalanque, a lean Maya ballplayer of about twenty, a smooth oval face like his brother, patches of jaguar pelt on both cheeks and forearms, long black hair under a dark blue headband, a heavy jade ear spool, sitting beside him, tossing a bone toward the jaguars with a steady hand\nACTION: in the House of Cold the twins sit unshivering in a hail-swept chamber while two jaguars gnaw the bones thrown to them\nSETTING: a bare stone chamber of Xibalba glazed with white frost, hail driving in through a gap in the roof, icicles hanging from the walls, a floor of ice and scattered bone. Icicles as long as a forearm hang from the roof gap and the shattered ice on the floor is scattered with bone fragments; a thin layer of snow has already collected in the corners, and the air is so cold that each breath of the jaguars hangs as a white plume.\nCAMERA: camera stands at the chamber’s center, eye level, medium shot.\nFRAME LAYOUT: left third — the twins sitting, near-camera and large; right third — two jaguars crouched over bones, medium; center — hail bouncing on the icy floor; upper edge — icicles and the broken roof gap.\nFACING: the twins sit seen from the front and slightly right, calm, their gaze toward the jaguars at screen-right; the jaguars bend their heads over the bones, facing screen-left.\nSCREEN DIRECTION: hail falls from the upper right toward the lower left; the jaguars gnaw toward the left; breath mist drifts toward the right.\nLIGHT: cold blue-white light through the roof gap, a warm amber glint in the jaguars’ eyes.\nPALETTE: ice white, blue, jaguar gold, bone cream\nDETAIL: frost crystals on the walls, jaguar rosettes, bone ends, hailstones bouncing.\nNOT IN FRAME: shivering, blood, the lords, any text.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 5.125s; everything keeps moving at the same natural pace through the end of the 6s generation.\n0–1s: hail drives down through the gap in the roof and bounces on the icy floor; the twins sit with calm faces, frost forming on their shoulders.\n1–3s: Xbalanque tosses a bone across the floor and a jaguar pounces on it; the second jaguar nudges in and both gnaw.\n3–4.5s: Hunahpu tosses another bone and the jaguars drag it apart, jaws working; hail ricochets around them.\n4.5–6s: the twins breathe slow clouds of mist while the jaguars crunch on and the hail keeps falling.\nCAMERA: one continuous slow push toward the twins for the full 6 seconds.\nENVIRONMENT: hail falls; frost glitters; breath mists; icicles drip.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "house-of-cold",
+            "time_light": "ice-blue",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B21",
+      "sentences": [
+        "S32"
+      ],
+      "start": 132.72,
+      "end": 139.52,
+      "dur": 6.8,
+      "device": null,
+      "narration_says": "In the House of Bats, Hunahpu looked out to see if dawn had come, and a bat cut off his head.",
+      "viewer_sees": "Bats whirl in the dark; Hunahpu peers out of his blowgun to look for dawn as a huge winged shadow sweeps across",
+      "shots": [
+        {
+          "shot_id": "21",
+          "beat_id": "B21",
+          "link_group": null,
+          "t_in": 132.708,
+          "t_out": 139.5,
+          "use_in": 0,
+          "use_out": 6.792,
+          "use_len": 6.792,
+          "motion_budget": 6.792,
+          "gen_len": 8,
+          "source_file": "shots/part21.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "hunahpu"
+          ],
+          "visual_priority": [
+            "Hunahpu peeking out of his blowgun",
+            "the colossal bat with obsidian-edged wings",
+            "the whirling smaller bats",
+            "the sliver of grey light at the door"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Hunahpu, a lean Maya ballplayer of about twenty, a smooth oval face with a small beard-less chin, black spots painted on both cheeks, long black hair under a jade-green headband, a heavy jade ear spool, at the lower left, his head just peeking out from the open end of a long blowgun lying on the stone floor, wide-eyed, looking for dawn, only his head and shoulders showing\nSCALE: the bat is monumental, its wingspan filling the chamber from wall to wall, far larger than the blowguns and the young man; Hunahpu is a small bright face at the lower left; strong size contrast carries the frame.\nACTION: Hunahpu peeks out of his blowgun to see whether dawn has come, and a huge winged shadow, the bat, sweeps across the chamber\nSETTING: a dark stone chamber in Xibalba, rough walls, bats whirling in the air, a sliver of grey light at the high door, two blowguns lying on the floor, an obsidian-edged sweep of wings overhead\nCAMERA: camera stands on the floor beside the blowguns, low angle, medium shot.\nFRAME LAYOUT: lower left — Hunahpu’s head and shoulders at the open end of the blowgun, near-camera; upper two thirds — the colossal bat with obsidian-edged wings spread across the chamber, dark; right third — swirling smaller bats; upper right — a sliver of grey light at the door.\nFACING: we see Hunahpu’s face from the front and slightly below, his eyes turned up toward screen-right; the bat shows its belly and one outstretched wing toward camera.\nSCREEN DIRECTION: the bat’s wing sweeps from the right toward the left across the frame; bats swirl in a ring toward the left; dust is flung toward the left.\nLIGHT: faint cold grey light from the high door at the upper right, a bright obsidian glint on the bat’s wing edge, deep dark blue elsewhere.\nPALETTE: night blue, black, obsidian glint, pale grey\nDETAIL: the leathery membranes of the wings, an obsidian-sharp edge, fur on the bat’s belly, dust in the air.\nNOT IN FRAME: blood, a severed head, gore, the second twin visible, any text.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 6.792s; everything keeps moving at the same natural pace through the end of the 8s generation.\n0–1s: bats whirl through the dark chamber and Hunahpu’s head rises a little from the open end of the blowgun, eyes scanning for dawn.\n1–3s: he turns his face toward the sliver of grey light at the door, lips parted; a swarm of small bats swirls past overhead.\n3–5s: a colossal winged shadow glides in from the right across the ceiling and its obsidian-edged wing sweeps across the frame.\n5–7s: the wing sweeps over the blowgun and dust is flung up; the camera tilts as the dark swallows the lower left.\n7–8s: the bats keep whirling overhead and the great wing sweeps back toward the left while dust drifts down.\nCAMERA: one continuous slow push toward the blowgun with a slight tilt up for the full 8 seconds.\nENVIRONMENT: bats whirl; dust is flung; cold light flickers; wing membranes ripple.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "low",
+            "location": "house-of-bats",
+            "time_light": "dark-blue",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B22",
+      "sentences": [
+        "S33",
+        "S34"
+      ],
+      "start": 139.52,
+      "end": 145.48,
+      "dur": 5.96,
+      "device": "crowd-as-texture",
+      "narration_says": "His brother called every animal in the world. The turtle took the place of the head.",
+      "viewer_sees": "Animals of every kind stream across the floor toward Xbalanque; a turtle steps forward from the swarm",
+      "shots": [
+        {
+          "shot_id": "22",
+          "beat_id": "B22",
+          "link_group": null,
+          "t_in": 139.5,
+          "t_out": 145.5,
+          "use_in": 0,
+          "use_out": 6,
+          "use_len": 6,
+          "motion_budget": 6,
+          "gen_len": 6,
+          "source_file": "shots/part22.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "xbalanque"
+          ],
+          "visual_priority": [
+            "Xbalanque calling the animals",
+            "the stream of animals pouring in",
+            "the turtle stepping forward",
+            "the grey light from the door"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Xbalanque, a lean Maya ballplayer of about twenty, a smooth oval face like his brother, patches of jaguar pelt on both cheeks and forearms, long black hair under a dark blue headband, a heavy jade ear spool, kneeling at the left third in the dark chamber, arms spread wide, calling out, his face lifted toward the doorway\nACTION: Xbalanque calls every animal in the world; a swarm of creatures streams across the floor toward him and a turtle steps forward from the swarm\nSETTING: a dark stone chamber of Xibalba with a rough floor, grey light from the door at the right, creatures pouring through the doorway: jaguars, tapirs, coatis, monkeys, deer, snakes, macaws and one turtle. More animals wait in the doorway light than the floor can hold: armadillos, deer, a line of ants carrying leaf fragments, a spotted frog, a tangle of snakes and a pair of owls on the lintel, all pushing toward the kneeling man; the air is thick with dust and feathers.\nCAMERA: camera stands near Xbalanque, eye level, medium shot.\nFRAME LAYOUT: left third — Xbalanque kneeling, near-camera and large, arms spread; center and right third — a dense stream of animals of every kind pouring in toward him, medium to small; lower center — a turtle stepping forward, near-camera; upper edge — the dark roof.\nFACING: we see Xbalanque three-quarter from the front and right, his face lifted toward the animals at screen-right; the animals face toward screen-left.\nSCREEN DIRECTION: the animals stream from the right edge toward the left in a dense line; the turtle steps from the swarm toward the left; dust swirls toward the left.\nLIGHT: grey dawn light from the door at the right, a warm gleam on fur and feathers, deep blue shadow.\nPALETTE: dawn grey, jaguar gold, macaw red, deep blue\nDETAIL: individual rosettes and feathers, tapir snouts, snake coils, dust in the shaft of light, a cracked shell patterned with hexagons on the turtle, the whiskers on a coati’s nose, glossy eyes catching the pale light, feathers drifting down.\nNOT IN FRAME: blood, any text, a human head, any person but Xbalanque.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 6s; everything keeps moving at the same natural pace through the end of the 6s generation.\n0–1s: Xbalanque throws his arms wide and calls; a jaguar and a tapir burst through the doorway at the right.\n1–3s: more animals pour in, monkeys leaping over deer, macaws flapping overhead; the stream sweeps toward him across the floor.\n3–4.5s: the swarm thickens and a turtle steps out of it toward Xbalanque, its head lifted; dust swirls around the paws.\n4.5–6s: the animals keep streaming in toward the left and Xbalanque lowers his arms and bends toward the turtle.\nCAMERA: one continuous slow push toward Xbalanque and the turtle for the full 6 seconds.\nENVIRONMENT: dust swirls; feathers flutter; fur ripples; light shafts flicker.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "xibalba-floor",
+            "time_light": "dim-lamp",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B23",
+      "sentences": [
+        "S35"
+      ],
+      "start": 145.48,
+      "end": 151.8,
+      "dur": 6.32,
+      "device": null,
+      "narration_says": "In the next ball game, the lords used the real head as their ball, and Xbalanque set a rabbit loose.",
+      "viewer_sees": "The lords play with a pale round head as a ball; a rabbit bursts loose from beside Xbalanque",
+      "shots": [
+        {
+          "shot_id": "23",
+          "beat_id": "B23",
+          "link_group": null,
+          "t_in": 145.5,
+          "t_out": 151.792,
+          "use_in": 0,
+          "use_out": 6.292,
+          "use_len": 6.292,
+          "motion_budget": 6.292,
+          "gen_len": 8,
+          "source_file": "shots/part23.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "xibalba-lords",
+            "xbalanque"
+          ],
+          "visual_priority": [
+            "the lords of Xibalba playing with the pale round head",
+            "the rabbit about to bolt",
+            "Xbalanque watching calmly",
+            "the red torchlight on the court"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: tall stern lords of the Maya underworld, pale ash-grey painted faces with sunken black eyes, towering headdresses of owl feathers and bone, long mantles woven in black and ash grey, necklaces of carved bone, on the ballcourt of Xibalba at the right half, striking a pale round head like a ball with their hips, laughing, the nearest lord leaping\nSUBJECT 2: Xbalanque, a lean Maya ballplayer of about twenty, a smooth oval face like his brother, patches of jaguar pelt on both cheeks and forearms, long black hair under a dark blue headband, a heavy jade ear spool, standing at the left third, a rabbit crouched hidden at his feet, watching the head, his face calm\nACTION: in the next ball game the lords knock the real pale head around the court as their ball, and a rabbit bursts loose from beside Xbalanque\nSETTING: the ballcourt of Xibalba lit by torches, black stone walls with carved bone rings, a floor of dark plaster, red torch glow, smoke\nCAMERA: camera runs along the court at floor level, eye level, long shot.\nFRAME LAYOUT: right half — the lords on the court striking the pale round head in a high arc, large and dark; center — the pale head in the air; left third — Xbalanque standing, a small rabbit at his feet, medium; upper edge — carved rings and smoke.\nFACING: we see the lords from the front and slightly left, their faces turned toward the head and toward screen-left; Xbalanque in profile from his right side, facing toward screen-right.\nSCREEN DIRECTION: the pale head flies from the lords at the right toward the left; the rabbit bursts from the left toward the right across the floor; torch smoke drifts toward the left.\nLIGHT: red torchlight from both sides, a pale glow on the round head, deep black shadow in the walls.\nPALETTE: torch red, black, bone white, fur brown\nDETAIL: carved bone rings, the pale smooth surface of the round head with closed eyes, the rabbit’s fur and ears, torch sparks.\nNOT IN FRAME: blood, gore, a skull, any text.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 6.292s; everything keeps moving at the same natural pace through the end of the 8s generation.\n0–1s: a lord leaps and strikes the pale round head with his hip and it sails across the court; the other lords roar and run after it.\n1–3s: the head bounces off a wall and a second lord knocks it back; Xbalanque watches with calm eyes, his hand lowering to the floor.\n3–5s: the rabbit at his feet bolts across the court toward the right, ears flat, kicking up dust.\n5–7s: the lords spin toward it in confusion, pointing and shouting, their headdress feathers flying.\n7–8s: the head rolls free along the floor and the lords start after the rabbit at full speed as torch smoke swirls.\nCAMERA: one continuous fast track along the court for the full 8 seconds.\nENVIRONMENT: torch smoke swirls; dust is kicked up; sparks fly; feathers flutter.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "ballcourt-xibalba",
+            "time_light": "torch-red",
+            "camera_motion": "track"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B24",
+      "sentences": [
+        "S36",
+        "S37"
+      ],
+      "start": 151.8,
+      "end": 157.04,
+      "dur": 5.24,
+      "device": null,
+      "narration_says": "While the lords chased it, he swapped the heads back. But the twins knew their end.",
+      "viewer_sees": "The lords chase the rabbit while Xbalanque swaps the heads back; the twins glance at a far oven glowing",
+      "shots": [
+        {
+          "shot_id": "24",
+          "beat_id": "B24",
+          "link_group": null,
+          "t_in": 151.792,
+          "t_out": 157.042,
+          "use_in": 0,
+          "use_out": 5.25,
+          "use_len": 5.25,
+          "motion_budget": 5.25,
+          "gen_len": 6,
+          "source_file": "shots/part24.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "xbalanque",
+            "hunahpu",
+            "xibalba-lords"
+          ],
+          "visual_priority": [
+            "Xbalanque swapping the heads back",
+            "the small turtle crawling away",
+            "the lords chasing the rabbit",
+            "the red glow of the far oven"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Xbalanque, a lean Maya ballplayer of about twenty, a smooth oval face like his brother, patches of jaguar pelt on both cheeks and forearms, long black hair under a dark blue headband, a heavy jade ear spool, kneeling at the left third bent over his brother under a dark cloak, pressing the real pale head into place with both hands, quick and quiet\nSUBJECT 2: Hunahpu, a lean Maya ballplayer of about twenty, a smooth oval face with a small beard-less chin, black spots painted on both cheeks, long black hair under a jade-green headband, a heavy jade ear spool, kneeling with his back half turned, his shoulders under the dark cloak, a small turtle crawling away on the floor beside him\nSUBJECT 3: tall stern lords of the Maya underworld, pale ash-grey painted faces with sunken black eyes, towering headdresses of owl feathers and bone, long mantles woven in black and ash grey, necklaces of carved bone, running far at the right edge after a rabbit, small, their backs turned, feathers flying\nACTION: while the lords chase the rabbit across the court Xbalanque quietly swaps the heads back; the twins glance toward a far oven glowing red\nSETTING: the corner of the Xibalba ballcourt in red torchlight, a black stone wall with carved bone rings, the far end of the court at the right where the lords run after a small rabbit, and beyond them the red glow of a great oven pit\nCAMERA: camera stands at the corner, slightly high angle, medium shot.\nFRAME LAYOUT: left third — the twins crouched together, near-camera and large, Xbalanque’s hands at Hunahpu’s shoulders under a dark cloak; lower center — a small turtle crawling away; right third — the lords running after the rabbit, small, backs turned; far right — the red glow of an oven pit, far and hazy.\nFACING: Xbalanque is seen from the left and front bending over his brother; both heads turn toward the glow at screen-right; the lords show only backs and flying feathers.\nSCREEN DIRECTION: the lords run from the center toward the right edge; the turtle crawls toward the left; the red glow pulses at the far right.\nLIGHT: red torchlight, a deep red glow at the far right, cold shadow on the twins’ faces.\nPALETTE: torch red, black, jade green, cloak dark blue\nDETAIL: feather barbs on the running lords, the turtle’s patterned shell, the weave of the cloak, torch sparks.\nNOT IN FRAME: blood, a severed head in view, any text.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 5.25s; everything keeps moving at the same natural pace through the end of the 6s generation.\n0–1s: the lords run off across the court toward the right chasing the rabbit, feathers flying; Xbalanque bends over his brother under the dark cloak.\n1–3s: Xbalanque’s hands work quickly at Hunahpu’s shoulders and a turtle crawls out from under the cloak toward the left.\n3–4.5s: Hunahpu straightens and the twins glance at each other and look toward the red glow of the far oven; the cloak swings.\n4.5–6s: the lords keep chasing the rabbit toward the right and the red glow pulses as the twins rise.\nCAMERA: one continuous slow push toward Xbalanque’s hands for the full 6 seconds.\nENVIRONMENT: torch sparks fly; dust rises; red glow pulses; feathers flutter.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "high",
+            "location": "ballcourt-xibalba",
+            "time_light": "torch-red",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B25",
+      "sentences": [
+        "S38"
+      ],
+      "start": 157.04,
+      "end": 166.1,
+      "dur": 9.06,
+      "device": null,
+      "narration_says": "They told two soothsayers how to answer when the lords asked what to do with their bones: grind them like maize, and scatter them in the river.",
+      "viewer_sees": "The twins whisper to two soothsayers beside a grinding stone, telling them how to answer the lords",
+      "shots": [
+        {
+          "shot_id": "25",
+          "beat_id": "B25",
+          "link_group": null,
+          "t_in": 157.042,
+          "t_out": 166.083,
+          "use_in": 0,
+          "use_out": 9.041,
+          "use_len": 9.041,
+          "motion_budget": null,
+          "gen_len": 10,
+          "source_file": "shots/part25.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "hunahpu",
+            "xbalanque",
+            "soothsayers"
+          ],
+          "visual_priority": [
+            "Hunahpu and Xbalanque whispering to the soothsayers",
+            "the stone grinding slab between them",
+            "the old soothsayers nodding",
+            "the red hearth glow"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Hunahpu, a lean Maya ballplayer of about twenty, a smooth oval face with a small beard-less chin, black spots painted on both cheeks, long black hair under a jade-green headband, a heavy jade ear spool, standing at the left third bending close to the first soothsayer, whispering and gesturing with one hand in a grinding circle\nSUBJECT 2: Xbalanque, a lean Maya ballplayer of about twenty, a smooth oval face like his brother, patches of jaguar pelt on both cheeks and forearms, long black hair under a dark blue headband, a heavy jade ear spool, beside him, pointing into the distance and miming a scatter with his hand\nSUBJECT 3: two aged Maya soothsayers, thin and bent, deep-lined faces, white hair tied up with cords, long plain cotton robes, one with a rattle of gourd and seeds, one with a pouch of copal incense, at the right half, leaning in, nodding slowly, one holding a rattle and one a copal pouch\nACTION: the twins whisper to two soothsayers beside a grinding stone, showing them with their hands how to answer the lords: grind the bones like maize and scatter them in the river\nSETTING: a dim corner of the hall of Xibalba, a stone grinding slab and hand stone for maize on the floor, a clay water jar, a hearth glow, a dark carved column\nCAMERA: camera stands two paces away, eye level, medium shot.\nFRAME LAYOUT: left third — the twins bending in, near-camera and large, cropped at the waist; center — the stone grinding slab and hand stone on the floor, medium; right third — the two soothsayers leaning toward the twins, near-camera, cropped at the thigh; upper edge — a dark carved column.\nFACING: the twins lean in from the left with their faces toward the soothsayers at screen-right; the old men face back toward screen-left.\nSCREEN DIRECTION: the twins’ hands mime grinding with a circular motion from the left toward the right; the soothsayers nod from the right toward the left; hearth sparks drift toward the right.\nLIGHT: low red hearth light from the lower right, warm on the faces, deep shadow beyond.\nPALETTE: hearth red, stone grey, cotton cream, jade green\nDETAIL: the worn dip of the grinding slab, the soothsayers’ lined faces, seeds in the gourd rattle, fibres of the robes.\nNOT IN FRAME: bones in view, the lords, any text.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 9.041s; everything keeps moving at the same natural pace through the end of the 10s generation.\n0–1s: Hunahpu leans toward the first soothsayer and whispers; Xbalanque presses a hand flat on the stone grinding slab.\n1–3s: Xbalanque rolls an empty hand over the stone in grinding circles; the soothsayers watch closely and one lifts his gourd rattle.\n3–5s: Hunahpu sweeps his hand outward as if scattering powder onto water; the second soothsayer nods slowly, copal pouch in hand.\n5–7.5s: both soothsayers repeat the grinding and scattering motions with their own hands while the twins nod encouragement.\n7.5–10s: the twins grip the soothsayers’ forearms in thanks and the old men nod; hearth sparks drift and shadows sway.\nCAMERA: one continuous slow push toward the grinding stone and the hands for the full 10 seconds.\nENVIRONMENT: hearth sparks drift; shadows sway; smoke from the copal pouch curls.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "xibalba-corner",
+            "time_light": "dim-lamp",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B26",
+      "sentences": [
+        "S39",
+        "S40"
+      ],
+      "start": 166.1,
+      "end": 172.1,
+      "dur": 6,
+      "device": null,
+      "narration_says": "The lords built an oven. The twins embraced and threw themselves in.",
+      "viewer_sees": "The lords stoke a huge oven pit; the twins embrace and leap into the flames",
+      "shots": [
+        {
+          "shot_id": "26",
+          "beat_id": "B26",
+          "link_group": null,
+          "t_in": 166.083,
+          "t_out": 172.083,
+          "use_in": 0,
+          "use_out": 6,
+          "use_len": 6,
+          "motion_budget": 6,
+          "gen_len": 6,
+          "source_file": "shots/part26.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "hunahpu",
+            "xbalanque",
+            "xibalba-lords"
+          ],
+          "visual_priority": [
+            "Hunahpu and Xbalanque embracing at the oven",
+            "the roaring mouth of the oven pit",
+            "the towering lords stoking it",
+            "the sparks climbing into the dark"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Hunahpu, a lean Maya ballplayer of about twenty, a smooth oval face with a small beard-less chin, black spots painted on both cheeks, long black hair under a jade-green headband, a heavy jade ear spool, at the left third at the lip of the oven pit, embracing his brother, his face calm, about to step in\nSCALE: the oven pit is huge, a great mouth of fire many times the height of the twins; the lords stoking it are towering dark figures; the twins read as two small bright figures at its lip.\nSUBJECT 2: Xbalanque, a lean Maya ballplayer of about twenty, a smooth oval face like his brother, patches of jaguar pelt on both cheeks and forearms, long black hair under a dark blue headband, a heavy jade ear spool, embracing Hunahpu, his face calm\nSUBJECT 3: tall stern lords of the Maya underworld, pale ash-grey painted faces with sunken black eyes, towering headdresses of owl feathers and bone, long mantles woven in black and ash grey, necklaces of carved bone, at the right, stoking the oven, feeding great logs into the fire, their faces lit orange, arms raised\nACTION: the lords stoke a huge oven pit and the twins embrace, calm, and leap into the flames\nSETTING: an enormous stone-lined oven pit in Xibalba, a mouth of roaring orange fire, stacked logs, black columns, sparks climbing into the dark, heat shimmer\nCAMERA: camera crouches at the pit’s lip, low angle, medium shot.\nFRAME LAYOUT: left third — the twins embracing at the lip, near-camera and large, cropped at the thigh; center — the roaring mouth of the oven pit, huge; right third — the lords stoking, tall dark shapes, medium; upper edge — sparks and black columns.\nFACING: we see the twins in profile from their left sides, their faces turned toward the fire at screen-right; the lords three-quarter, their faces lit orange, turned toward screen-left.\nSCREEN DIRECTION: the twins step from the left toward the right into the fire; sparks climb toward the upper right; the lords push logs in from the right edge.\nLIGHT: blazing orange fire light from the right on the twins’ faces and bodies, black silhouettes of the lords, a white-hot core.\nPALETTE: fire orange, white-hot yellow, black, jade green\nDETAIL: glowing logs and embers, heat shimmer lines, drifting sparks, jade ear spools catching the light.\nNOT IN FRAME: burning flesh, blood, gore, any text.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 6s; everything keeps moving at the same natural pace through the end of the 6s generation.\n0–1s: the lords heave logs into the pit and the fire roars higher; the twins turn to each other and embrace.\n1–3s: the twins press their foreheads together and breathe once, calm; sparks stream past them toward the upper right.\n3–4.5s: they step to the lip of the pit hand in hand and leap forward toward the right into the flames in one motion.\n4.5–6s: the fire flares white-hot where they entered and the lords recoil from the heat, feathers whipping, as sparks fill the air.\nCAMERA: one continuous slow push toward the twins and the fire for the full 6 seconds.\nENVIRONMENT: fire roars; sparks climb; heat shimmer ripples; smoke boils.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "low",
+            "location": "oven-pit",
+            "time_light": "fire-orange",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B27",
+      "sentences": [
+        "S41",
+        "S42"
+      ],
+      "start": 172.1,
+      "end": 180.88,
+      "dur": 8.78,
+      "device": null,
+      "narration_says": "The lords did as they were told. But the bones sank to the bottom of the river, and on the fifth day two fish-men rose.",
+      "viewer_sees": "The lords scatter ground ash into the river; underwater the ash sinks and on the fifth day two fish-men rise",
+      "shots": [
+        {
+          "shot_id": "27",
+          "beat_id": "B27",
+          "link_group": null,
+          "t_in": 172.083,
+          "t_out": 180.875,
+          "use_in": 0,
+          "use_out": 8.792,
+          "use_len": 8.792,
+          "motion_budget": 8.792,
+          "gen_len": 10,
+          "source_file": "shots/part27.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "xibalba-lords"
+          ],
+          "visual_priority": [
+            "the lords of Xibalba scattering ash into the river",
+            "the grey ash sinking through the water",
+            "the two fish-men taking shape on the riverbed",
+            "the waterline across the frame"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: tall stern lords of the Maya underworld, pale ash-grey painted faces with sunken black eyes, towering headdresses of owl feathers and bone, long mantles woven in black and ash grey, necklaces of carved bone, on the bank at the right half, scattering grey ash from open hands onto the river, large and dark, their faces turned toward the water at the left\nACTION: the lords scatter the ground ash into the river as ordered; under the water the grey ash sinks to the bottom, and on the fifth day two fish-men rise from it\nSETTING: a river of Xibalba at grey dawn seen at the waterline, the bank at the right with the lords, smoke over the far shore, below the surface a green-black riverbed with fine grey ash drifting down\nCAMERA: camera floats at the waterline, half above and half below, eye level, medium shot, sinking.\nFRAME LAYOUT: upper half right — the lords on the bank scattering grey ash, large and dark; upper half left — grey sky and smoke over the river; lower half — the underwater view with grey ash sinking toward a pale riverbed, and two faint human-like fish shapes taking form at the bottom left.\nFACING: the lords are seen from the front, their faces toward the river at screen-left, hands open and dropping the ash; the fish shapes face upward toward screen-right.\nSCREEN DIRECTION: ash falls from the lords’ hands toward the water and drifts down and toward the left; the two fish-men rise slowly from the lower left toward the upper right.\nLIGHT: cold grey dawn above, soft green-grey light below the surface, a faint silver glint on the rising shapes.\nPALETTE: ash grey, river green, black, silver\nDETAIL: fine ash grains in the water, fish scales on the rising men’s skin, ripples at the waterline, feathered headdresse, bubbles clinging to the rising shapes, thin strands of river weed waving in the current, the pale riverbed rippled like sand dunes in miniature, a faint silver gleam along the rising scales, soft clouds of ash lifting from the bed.\nNOT IN FRAME: blood, the twins in human form, any text.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 8.792s; everything keeps moving at the same natural pace through the end of the 10s generation.\n0–1s: the lords on the bank open their hands and grey ash pours out onto the river surface in drifting clouds.\n1–3s: the camera sinks below the waterline as the ash drifts down through the green water in slow curtains.\n3–5s: the ash reaches the pale riverbed and spreads in a thin grey layer; the light dims as the days pass.\n5–7.5s: two shapes stir in the ash and begin to rise, scaled like fish and shaped like men, their fins and arms waving slowly.\n7.5–10s: the two fish-men swim upward toward the surface in a swirl of fine ash while silver light plays across their scales.\nCAMERA: one continuous slow descent below the waterline for the full 10 seconds.\nENVIRONMENT: ash drifts; water ripples; silver light plays; small bubbles rise.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "river-xibalba",
+            "time_light": "grey-dawn",
+            "camera_motion": "track"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B28",
+      "sentences": [
+        "S43",
+        "S44"
+      ],
+      "start": 180.88,
+      "end": 187.4,
+      "dur": 6.52,
+      "device": null,
+      "narration_says": "Then two ragged wanderers appeared and danced. They burned a house and made it whole.",
+      "viewer_sees": "Two ragged wanderers dance before the lords; a small thatched house bursts into flame and then stands whole",
+      "shots": [
+        {
+          "shot_id": "28",
+          "beat_id": "B28",
+          "link_group": null,
+          "t_in": 180.875,
+          "t_out": 187.417,
+          "use_in": 0,
+          "use_out": 6.542,
+          "use_len": 6.542,
+          "motion_budget": 6.542,
+          "gen_len": 8,
+          "source_file": "shots/part28.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "hunahpu",
+            "xbalanque",
+            "xibalba-lords"
+          ],
+          "visual_priority": [
+            "Hunahpu and Xbalanque as ragged wanderers dancing",
+            "the small thatched house bursting into flame",
+            "the delighted lords on the dais",
+            "the torch smoke over the hall"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Hunahpu, a lean Maya ballplayer of about twenty, a smooth oval face with a small beard-less chin, black spots painted on both cheeks, long black hair under a jade-green headband, a heavy jade ear spool, dancing at the left third as a ragged wanderer in patched grey rags, hair matted, barefoot, one arm raised, light on his feet\nSUBJECT 2: Xbalanque, a lean Maya ballplayer of about twenty, a smooth oval face like his brother, patches of jaguar pelt on both cheeks and forearms, long black hair under a dark blue headband, a heavy jade ear spool, dancing beside him as a second ragged wanderer in torn brown cloth, a high step, his face smudged with ash\nSUBJECT 3: tall stern lords of the Maya underworld, pale ash-grey painted faces with sunken black eyes, towering headdresses of owl feathers and bone, long mantles woven in black and ash grey, necklaces of carved bone, seated along the dais at the right, leaning forward, delighted, their faces lit\nACTION: two ragged wanderers dance before the lords; a small thatched house bursts into flame and then stands whole\nSETTING: the hall of Xibalba lit by torches, black columns, a long dais at the right, a small thatched house of palm and cane standing on the hall floor\nCAMERA: camera stands at the dais end, eye level, long shot.\nFRAME LAYOUT: left third — the two ragged dancers, near-camera and large; center — the small thatched house on the floor, medium; right third — the lords on their dais, medium, leaning in; upper edge — columns and torch smoke.\nFACING: the dancers show three-quarter faces from the left, turned toward the lords at screen-right; the lords turn their faces leftward toward screen-left.\nSCREEN DIRECTION: the dancers circle from the left toward the center; flames leap from the house’s roof toward the upper right; the lords lean in toward the left.\nLIGHT: red torchlight, a hard orange flare from the burning house, faces lit warmly.\nPALETTE: torch red, fire orange, ragged grey and brown, black\nDETAIL: torn cloth fringes, ash-smudged faces, palm thatch curling in flame, drifting sparks.\nNOT IN FRAME: the twins in their normal dress, blood, any text.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 6.542s; everything keeps moving at the same natural pace through the end of the 8s generation.\n0–1s: the two ragged wanderers step into the hall dancing, arms swinging and bare feet slapping the stone; the lords lean in.\n1–3s: they whirl in circles toward the small thatched house and one of them flings a torch at its roof; flames leap up the thatch.\n3–5s: the house burns fiercely with the dancers circling it, sparks streaming toward the upper right; the lords shield their eyes.\n5–7s: the flames sink and fade and the house stands whole, its thatch fresh and green-gold, while the dancers bow with flourishes.\n7–8s: the lords clap and shout as the dancers whirl on, sparks fading from the air.\nCAMERA: one continuous slow push toward the dancers and the house for the full 8 seconds.\nENVIRONMENT: flames leap and fade; sparks stream; torch smoke swirls; dust kicks up from the dancing feet.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "xibalba-hall",
+            "time_light": "torch-red",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B29",
+      "sentences": [
+        "S45",
+        "S46"
+      ],
+      "start": 187.4,
+      "end": 192.38,
+      "dur": 4.98,
+      "device": null,
+      "narration_says": "They sacrificed each other, and rose. The lords were delighted.",
+      "viewer_sees": "One wanderer falls under a cloth, the other waves a hand and he rises; the lords laugh and clap",
+      "shots": [
+        {
+          "shot_id": "29",
+          "beat_id": "B29",
+          "link_group": null,
+          "t_in": 187.417,
+          "t_out": 192.375,
+          "use_in": 0,
+          "use_out": 4.958,
+          "use_len": 4.958,
+          "motion_budget": 4.958,
+          "gen_len": 6,
+          "source_file": "shots/part29.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "hunahpu",
+            "xbalanque",
+            "xibalba-lords"
+          ],
+          "visual_priority": [
+            "Hunahpu and Xbalanque as ragged wanderers performing",
+            "the white cloth lifting",
+            "the lords laughing and clapping",
+            "the torch-lit hall"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Hunahpu, a lean Maya ballplayer of about twenty, a smooth oval face with a small beard-less chin, black spots painted on both cheeks, long black hair under a jade-green headband, a heavy jade ear spool, standing at the left third as a ragged wanderer, waving one hand over the cloth with a flourish\nSUBJECT 2: Xbalanque, a lean Maya ballplayer of about twenty, a smooth oval face like his brother, patches of jaguar pelt on both cheeks and forearms, long black hair under a dark blue headband, a heavy jade ear spool, as the second ragged wanderer, lying flat under a thin white cloth on the floor at the center, about to rise\nSUBJECT 3: tall stern lords of the Maya underworld, pale ash-grey painted faces with sunken black eyes, towering headdresses of owl feathers and bone, long mantles woven in black and ash grey, necklaces of carved bone, on the dais at the right, laughing and clapping, delighted\nACTION: one wanderer lies under a cloth while the other waves a hand over him and he rises; the delighted lords laugh and clap\nSETTING: a torch-lit Xibalba hall with a long dais of carved seats, tall black columns, drifting smoke and a bare cleared floor\nCAMERA: camera crouches at floor level facing the dais, low angle, medium shot.\nFRAME LAYOUT: left third — the standing wanderer with his hand raised, near-camera and large; center — the other wanderer rising from under a white cloth, medium; right third — the lords laughing and clapping on their dais, medium; upper edge — columns.\nFACING: we see the performers from the left with their faces toward the dais at screen-right; the lords look left, toward screen-left, laughing.\nSCREEN DIRECTION: the cloth lifts and slides off toward the left as the wanderer rises; the lords’ hands clap toward the center from the right; sparks drift toward the right.\nLIGHT: red torch light, bright faces on the laughing lords, a pale shine on the white cloth.\nPALETTE: torch red, cloth white, ragged brown, black\nDETAIL: the folds of the white cloth, ash on the wanderers’ faces, the lords’ bone necklaces swinging, clapping hands.\nNOT IN FRAME: blood, a weapon in a wound, any text.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 4.958s; everything keeps moving at the same natural pace through the end of the 6s generation.\n0–1s: the standing wanderer sweeps a hand over the cloth where the other lies flat; the lords lean forward on their seats.\n1–3s: he waves his hand upward in a flourish and the cloth begins to swell and lift; the lords gasp and their feathers shake.\n3–4.5s: the second wanderer rises from under the cloth with arms spread and the cloth slides off him toward the left; the lords burst into laughter.\n4.5–6s: the wanderers bow together while the lords clap and stamp, headdress feathers flying, sparks drifting.\nCAMERA: one continuous slow push toward the wanderers for the full 6 seconds.\nENVIRONMENT: cloth ripples; sparks drift; torch smoke swirls; feathers flutter.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "low",
+            "location": "xibalba-hall",
+            "time_light": "dim-lamp",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B30",
+      "sentences": [
+        "S47",
+        "S48"
+      ],
+      "start": 192.38,
+      "end": 201.64,
+      "dur": 9.26,
+      "device": null,
+      "narration_says": "\"Do the same to us,\" they said. The twins killed the two chief lords, One Death and Seven Death, and did not bring them back.",
+      "viewer_sees": "The lords step forward eagerly; the twins strike the two chief lords, who collapse in dust, and the other lords recoil",
+      "shots": [
+        {
+          "shot_id": "30",
+          "beat_id": "B30",
+          "link_group": null,
+          "t_in": 192.375,
+          "t_out": 201.625,
+          "use_in": 0,
+          "use_out": 9.25,
+          "use_len": 9.25,
+          "motion_budget": null,
+          "gen_len": 10,
+          "source_file": "shots/part30.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "chief-lords",
+            "hunahpu",
+            "xbalanque"
+          ],
+          "visual_priority": [
+            "the chief lords One Death and Seven Death towering over the twins",
+            "the white flash at the twins’ raised hands",
+            "the other lords recoiling",
+            "the dust beginning to spiral"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: two towering chief lords of Xibalba, one lean with a white skull-painted face, one broad with a face painted half black, each in a vast headdress of black owl feathers and a mantle hung with bone beads, at the right half, stepping forward eagerly from the dais with arms open and smiling faces, their huge headdresses towering to the roof of the hall\nSCALE: the two chief lords are colossal, drawn far larger than the twins; their headdresses reach the black roof of the hall; the twins read as small bright figures at their feet; strong size contrast carries the frame.\nSUBJECT 2: Hunahpu, a lean Maya ballplayer of about twenty, a smooth oval face with a small beard-less chin, black spots painted on both cheeks, long black hair under a jade-green headband, a heavy jade ear spool, at the left third, a small bright figure, one arm swept out toward the chief lords\nSUBJECT 3: Xbalanque, a lean Maya ballplayer of about twenty, a smooth oval face like his brother, patches of jaguar pelt on both cheeks and forearms, long black hair under a dark blue headband, a heavy jade ear spool, beside him, a hand raised, his palm toward the chief lords\nACTION: the lords step forward eagerly, asking for the same trick; the twins strike the two chief lords, One Death and Seven Death, who collapse in a spiral of dust, and the other lords recoil\nSETTING: the great hall of Xibalba, black columns and carved owl and bone motifs, a high dais, torch smoke, the floor swept by a rush of dust\nCAMERA: camera crouches near the twins, low angle, long shot.\nFRAME LAYOUT: right half — the two chief lords stepping toward the center, towering, their headdresses reaching the roof; left third — the twins, small, near-camera, arms raised; far right — the other lords recoiling, medium and hazy; upper edge — black roof and smoke.\nFACING: we see the chief lords from the front and slightly below, their faces eager and turned toward screen-left; the twins from behind and the left, facing screen-right.\nSCREEN DIRECTION: the chief lords step from the right toward the center-left; dust spirals from their feet upward; the other lords stagger back toward the right edge.\nLIGHT: red torchlight from below on the lords’ faces, a white flash at the twins’ raised hands, black shadow.\nPALETTE: torch red, bone white, black, jade green\nDETAIL: the lean lord’s skull-painted face, the broad lord’s half-black face, giant owl-feather headdresses, bone beads scattering, dust grains.\nNOT IN FRAME: blood, gore, weapons, any text.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 9.25s; everything keeps moving at the same natural pace through the end of the 10s generation.\n0–1s: the two chief lords step down from the dais with eager faces and open arms; the other lords crowd the dais edge at the right.\n1–3s: the twins raise their arms and a flash of white light fills their hands; the chief lords stop and lean toward them, smiling.\n3–5s: the twins sweep their arms toward the two lords and a shock of white light cracks across the hall; the lords sway and their headdresses tilt.\n5–7.5s: the chief lords crumple into spirals of grey dust that whirl upward, bone beads clattering to the floor; the other lords stumble back.\n7.5–10s: the dust sweeps across the hall and the headdresses topple into it; the lords at the right edge shrink from the twins, torches guttering.\nCAMERA: one continuous slow push toward the twins and the lords for the full 10 seconds.\nENVIRONMENT: dust spirals; bone beads scatter; torch smoke swirls; flames gutter.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "low",
+            "location": "xibalba-hall",
+            "time_light": "white-flash-red",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B31",
+      "sentences": [
+        "S49",
+        "S50"
+      ],
+      "start": 201.64,
+      "end": 210.04,
+      "dur": 8.4,
+      "device": null,
+      "narration_says": "Then the twins honored their father, and rose into the sky. One became the sun, the other the moon.",
+      "viewer_sees": "The twins honor their father on a temple platform at first light, then rise into the sky above the temple city as two lights, one blazing gold and one pale silver: the sun and the moon",
+      "shots": [
+        {
+          "shot_id": "31",
+          "beat_id": "B31",
+          "link_group": null,
+          "t_in": 201.625,
+          "t_out": 210.042,
+          "use_in": 0,
+          "use_out": 8.417,
+          "use_len": 8.417,
+          "motion_budget": 8.417,
+          "gen_len": 10,
+          "source_file": "shots/part31.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "hunahpu",
+            "xbalanque",
+            "hun-hunahpu"
+          ],
+          "visual_priority": [
+            "Hunahpu and Xbalanque rising into the sky",
+            "their father on the temple platform",
+            "the vast gold sun and pale moon forming",
+            "the temple city at first light"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Hunahpu, a lean Maya ballplayer of about twenty, a smooth oval face with a small beard-less chin, black spots painted on both cheeks, long black hair under a jade-green headband, a heavy jade ear spool, standing at the left third on a temple platform at first light, bowing his head to his father and lifting toward the sky, his body outlined in gold light\nSCALE: the sun and the moon they become are vast, each many times the height of the temple; the twins rise as two small bright figures into them; strong size contrast carries the frame.\nSUBJECT 2: Xbalanque, a lean Maya ballplayer of about twenty, a smooth oval face like his brother, patches of jaguar pelt on both cheeks and forearms, long black hair under a dark blue headband, a heavy jade ear spool, beside him, lifting his arms as he starts to rise, his body outlined in silver light\nSUBJECT 3: Hun Hunahpu, a Maya ballplayer of about forty, a long calm face with a thin moustache, hair in a topknot tied with jade beads, a broad leather hip yoke, knee pads and a feathered headband, standing at the center of the platform, young and bright, a green maize sprout rising beside him, one arm lifted toward the dawn\nACTION: the twins honor their father on a temple platform at first light and rise into the sky above the temple city, one blazing gold as the sun and one pale silver as the moon\nSETTING: the stepped limestone platform of a Maya temple city at first light, white plaster temples with red roof combs below, jungle canopy, a sky shifting from deep blue to gold, green maize sprouting at the platform’s edge\nCAMERA: camera stands at the platform’s foot looking up, low angle, long shot, rising.\nFRAME LAYOUT: center — the father on the platform, medium; left third — Hunahpu in gold light lifting from the stone; right third — Xbalanque in silver light lifting from the stone; upper two thirds — the sky with a vast gold sun forming at the upper left and a vast pale moon forming at the upper right; lower edge — the temple stairs and plaster.\nFACING: we see the three figures from the front and below, their faces lifted toward the sky; Hunahpu’s gold light streams toward screen-left and Xbalanque’s silver toward screen-right.\nSCREEN DIRECTION: the twins rise from the platform upward, one toward the upper left and one toward the upper right; maize sprouts grow upward at the platform’s edge; light spreads outward.\nLIGHT: first light from the horizon, brilliant gold from the upper left, cool silver from the upper right, white plaster glowing.\nPALETTE: dawn gold, silver, deep blue, jade green\nDETAIL: plaster temple walls with red roof combs, maize leaves unfurling, gold and silver light rays, jade ear spools.\nNOT IN FRAME: any text, blood, a face drawn on the sun.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 8.417s; everything keeps moving at the same natural pace through the end of the 10s generation.\n0–1s: Hunahpu and Xbalanque bow their heads to their father on the platform; a green maize sprout breaks the plaster at its edge.\n1–3s: the father lifts his face and an arm toward the dawn, bright and young, while maize grows quickly beside him in unfurling leaves.\n3–5s: the twins step away from the stone and rise into the air, gold light streaming around Hunahpu and silver around Xbalanque.\n5–7.5s: they climb past the roof combs of the temple city as the camera rises with them and the sky brightens from blue to gold.\n7.5–10s: a vast gold sun swells at the upper left and a vast pale moon at the upper right, rays spreading over the city and the jungle.\nCAMERA: one continuous slow rise with the twins for the full 10 seconds.\nENVIRONMENT: maize grows; light rays spread; clouds drift; jungle canopy sways.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "low",
+            "location": "maya-sky",
+            "time_light": "dawn-gold",
+            "camera_motion": "reveal"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B32",
+      "sentences": [
+        "S51",
+        "S52"
+      ],
+      "start": 210.04,
+      "end": 224.4,
+      "dur": 14.36,
+      "device": null,
+      "narration_says": "No one knows how old the story is. Maya vases from a thousand years before the book show figures that may be the twins, but the book itself was written after the conquest, and scholars still argue about what it kept.",
+      "viewer_sees": "A Classic Maya painted vase turns slowly in a lamplit study with figures that may be the twins; the camera closes on the twin figures, then pulls back to an old manuscript and two scholars pointing at different lines",
+      "shots": [
+        {
+          "shot_id": "32",
+          "beat_id": "B32",
+          "link_group": null,
+          "t_in": 210.042,
+          "t_out": 217.292,
+          "use_in": 0,
+          "use_out": 7.25,
+          "use_len": 7.25,
+          "motion_budget": 7.25,
+          "gen_len": 8,
+          "source_file": "shots/part32.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "the Classic Maya painted vase",
+            "the two painted youths with spots and jaguar patches",
+            "the lamp light sliding over the glaze",
+            "the quiet study"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a Classic Maya painted vase, a tall cylinder of cream slip with black and orange painted figures in profile, two youthful ballplayers with spots and jaguar patches facing a lord on a throne, a border of glyph-like bands, turning slowly on a wooden table\nACTION: a Classic Maya painted vase turns slowly in a lamplit study; the painted figures on it may be the twins\nSETTING: a quiet study with a dark wooden table, a green-shaded lamp, a folded cloth, a shelf of books at the edge, the vase on a small turntable. Shelves of old books and a map of the Maya lowlands pinned to the wall stand out of focus on the far side of the room, a mug of cold tea sits at the table’s edge, and a thin wisp of dust turns slowly in the lamp’s beam.\nCAMERA: camera stands level with the vase, eye level, close shot, circling.\nFRAME LAYOUT: center — the tall painted vase, near-camera and large, filling the middle third of the frame; left third — the lamp glow and edge of the table; right third — a shelf of books, blurred; lower edge — the wooden table and cloth.\nFACING: we see the vase from the front with two painted figures in profile facing screen-right toward a seated lord; the vase turns from left to right.\nSCREEN DIRECTION: the vase turns slowly from the left toward the right; lamp light slides across its curved surface.\nLIGHT: warm lamp light from the upper left, a soft highlight on the glazed slip, deep brown shadow in the study.\nPALETTE: cream slip, orange, black line, lamp gold\nDETAIL: fine black outlines of the figures, spots and jaguar patches on the painted skin, glyph-like bands, crackle in the old slip, the cream slip dotted with tiny pits, orange and black lines drawn with a single steady brush, red bands at the rim and base, a small repaired crack running down one side, the unrolled painted scene showing a seated lord and a bowing figure.\nNOT IN FRAME: readable text, people, a museum label.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 7.25s; everything keeps moving at the same natural pace through the end of the 8s generation.\n0–1s: the vase begins to turn slowly on its stand and the lamp light glides across the cream slip.\n1–3s: the two painted youths in profile slide into view with spotted cheeks and jaguar patches, facing a seated lord.\n3–5s: the camera circles to the right as the turn continues and a band of glyph-like patterns crosses the frame.\n5–7s: the youths come round again, the painted lord’s headdress sweeping past as the lamp flame flickers.\n7–8s: the vase keeps turning and the camera circles closer to the youths’ faces as dust motes drift in the lamp beam.\nCAMERA: one continuous slow arc around the turning vase for the full 8 seconds.\nENVIRONMENT: lamp flame flickers; dust motes drift; light slides over the glaze; shadows sway.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "CU",
+            "angle": "eye",
+            "location": "vase-study",
+            "time_light": "warm-lamp",
+            "camera_motion": "track"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        },
+        {
+          "shot_id": "33",
+          "beat_id": "B32",
+          "link_group": null,
+          "t_in": 217.292,
+          "t_out": 224.417,
+          "use_in": 0,
+          "use_out": 7.125,
+          "use_len": 7.125,
+          "motion_budget": 7.125,
+          "gen_len": 8,
+          "source_file": "shots/part33.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "the painted twin figures on the vase",
+            "the old manuscript on the table",
+            "the white-haired scholar pointing at one line",
+            "the younger scholar pointing at a different line"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: the painted twin figures on a Classic Maya vase seen in extreme close-up, two youths in black outline on cream, which fall out of focus as the camera pulls back across a table to an old manuscript and two scholars\nACTION: the camera closes on the painted twin figures on the vase and pulls back from the vase to an old manuscript on the table where two scholars point at different lines and argue\nSETTING: a lamplit study with a long dark wooden table, the vase at the near edge, an open old manuscript of two columns of unreadable script, two scholars in shirtsleeves leaning over it, shelves of books\nCAMERA: camera starts an arm’s length from the vase, eye level, close shot, pulling back.\nFRAME LAYOUT: lower left — the vase with the painted twin figures, near-camera and large at first; center — the open manuscript on the table with two columns of unreadable script; right two thirds — the two scholars leaning over the page, one white-haired with round glasses at the left of the page and one younger with a beard at the right, each pointing at a different line; upper edge — shelves of books, hazy.\nFACING: we see the vase’s painted twins from the front facing screen-right; the scholars three-quarter from the front, their faces toward the page and toward each other.\nSCREEN DIRECTION: the camera pulls away from the vase toward the right; the scholars’ pointing hands move from the two sides toward different lines; lamp light slides across the table.\nLIGHT: warm lamp light from the upper left, a soft glow on the manuscript, brown shadow in the shelves.\nPALETTE: cream, lamp gold, wood brown, ink black\nDETAIL: fine black outline figures on the vase, aged paper fibres, two columns of illegible script, round glasses and rolled sleeve, a worn rubber eraser and a pencil beside the manuscript, creases across the aged paper, thin lamp shadows crossing the pages, the scholars’ rolled cuffs and a wristwatch strap, a thin ribbon bookmark.\nNOT IN FRAME: readable text, a museum label, any bright modern screen.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 7.125s; everything keeps moving at the same natural pace through the end of the 8s generation.\n0–1s: the camera starts close on the painted twins on the vase and the lamp light slides across their spotted cheeks.\n1–3s: the camera pulls back from the vase and the focus softens as the old manuscript comes into view on the table.\n3–5s: the two scholars lean into the frame over the page, the white-haired one tapping a line at the left of the page.\n5–7s: the younger scholar jabs a finger at a different line at the right and shakes his head; the white-haired scholar answers with an open hand.\n7–8s: the camera keeps pulling back as the two argue and turn pages, the lamp flame flickering over the manuscript.\nCAMERA: one continuous slow pull back from the vase to the table for the full 8 seconds.\nENVIRONMENT: lamp flame flickers; dust motes drift; pages stir; shadows sway.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "CU",
+            "angle": "eye",
+            "location": "vase-study",
+            "time_light": "warm-lamp",
+            "camera_motion": "pull"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B33",
+      "sentences": [
+        "S53",
+        "S54"
+      ],
+      "start": 224.4,
+      "end": 231.66,
+      "dur": 7.26,
+      "device": "macro-object",
+      "narration_says": "Their father lost because he did not know the tricks. The twins won because they had planned their own death.",
+      "viewer_sees": "A long stone shelf: burnt stubs of the father, then the macaw torch and firefly cigar, then two green canes sprouting through ash",
+      "shots": [
+        {
+          "shot_id": "34",
+          "beat_id": "B33",
+          "link_group": null,
+          "t_in": 224.417,
+          "t_out": 231.667,
+          "use_in": 0,
+          "use_out": 7.25,
+          "use_len": 7.25,
+          "motion_budget": null,
+          "gen_len": null,
+          "source_file": "shots/shot34.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "twin-canes"
+          ],
+          "visual_priority": [
+            "the two canes sprouting from the ash at the right",
+            "the red-feathered torch and the firefly cigar in the center",
+            "the burnt stubs at the left",
+            "the long dark stone shelf"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: two tall green maize canes with long ribbon leaves, standing side by side in the packed earth floor of a thatched house, each about as high as a man, at the right third of the shelf, standing tall as two green canes sprouting out of a bed of grey ash, bright leaves unfurling\nACTION: on one long stone shelf from left to right: the burnt-out stubs of the father’s torch and cigar, the unburned macaw-feather torch and firefly cigar of the twins, and two green canes sprouting through grey ash\nSETTING: a long shelf of dark stone in a dim chamber, a thin layer of grey ash on its left end, a clean cloth in its middle, a bed of ash with new growth at its right end, a faint warm firelight glow\nCAMERA: camera stands level with the shelf at its left end, eye level, close shot, panning right.\nFRAME LAYOUT: left third — two crumbled black stubs, a pine torch end and a cigar end, in grey ash, near-camera and large; center — an unburned pine torch with a tuft of red macaw feathers and a cigar tipped with a glowing firefly lying on a clean white cloth; right third — two tall green canes sprouting from a bed of ash with fresh leaves; lower edge — the edge of the dark stone shelf.\nFACING: we see the objects from the front at the same level; the stubs lie pointing toward screen-right; the cigar lies pointing toward screen-right; the canes stand upright.\nSCREEN DIRECTION: a thin thread of smoke rises from the stubs; the firefly glows; a new leaf unfurls on a cane toward the right.\nLIGHT: warm low firelight from the left growing brighter toward the right, a soft green glow on the canes, deep shadow beneath the shelf.\nPALETTE: ash grey, feather red, firefly green-gold, cane green\nDETAIL: crumbled char on the stubs, individual red feather barbs, firefly wings, dew on the ribbon leaves, grey ash grain, a faint thread of smoke rising from the stubs.\nNOT IN FRAME: hands, people, any text, a fourth object on the shelf.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "CU",
+            "angle": "eye",
+            "location": "altar-shelf",
+            "time_light": "firelight-warm",
+            "camera_motion": "pan"
+          },
+          "render_mode": "still",
+          "still_motion": "pan-right"
+        }
+      ]
+    },
+    {
+      "beat_id": "B34",
+      "sentences": [
+        "S55"
+      ],
+      "start": 231.66,
+      "end": 236.78,
+      "dur": 5.12,
+      "device": null,
+      "narration_says": "And the lords of death, it turns out, could not resist a good show.",
+      "viewer_sees": "The lords lean forward in their seats, rapt, applauding the show",
+      "shots": [
+        {
+          "shot_id": "35",
+          "beat_id": "B34",
+          "link_group": null,
+          "t_in": 231.667,
+          "t_out": 236.792,
+          "use_in": 0,
+          "use_out": 5.125,
+          "use_len": 5.125,
+          "motion_budget": 5.125,
+          "gen_len": 6,
+          "source_file": "shots/part35.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "xibalba-lords",
+            "xibalba-hall"
+          ],
+          "visual_priority": [
+            "the lords of Xibalba leaning forward, rapt",
+            "their hands lifted in applause",
+            "the cleared floor of the show",
+            "the torch-lit hall"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: tall stern lords of the Maya underworld, pale ash-grey painted faces with sunken black eyes, towering headdresses of owl feathers and bone, long mantles woven in black and ash grey, necklaces of carved bone, a row of lords at the right half on their dais, leaning far forward in their seats, rapt and delighted, mouths open, hands lifted to applaud\nSUBJECT 2: a vast dim underworld council hall of black stone, tall rough columns carved with bone and owl motifs, a long dais with a row of carved stone seats, hearth fires burning low and red, the hall seen from the floor, a space cleared for the show with sparks drifting\nACTION: the lords lean forward in their seats, rapt, applauding the show they cannot resist\nSETTING: the council hall of Xibalba at the end of the show, wall torches burning, a long dais with carved seats, owl-and-bone columns rising into smoke, a cleared floor with drifting spark. The torch flames in their wall brackets are reflected in the polished stone of the dais steps, and the smoke gathers in the black vault overhead in slow grey layers; the cleared floor still shows the scuffed paths of the dancers’ bare feet.\nCAMERA: camera crouches on the hall floor facing the dais, low angle, medium shot.\nFRAME LAYOUT: right half — the row of lords leaning forward on their dais, large; left third — the cleared floor with a scatter of sparks and a trail of cloth; upper edge — carved columns and torch smoke.\nFACING: the lords look down at the show from their dais, faces eager and turned toward screen-left, hands raised.\nSCREEN DIRECTION: applause ripples along the row from the right toward the left; sparks drift toward the right; feathers shake toward the left.\nLIGHT: warm red torch glow from the walls on the lords’ faces, black shadow overhead.\nPALETTE: torch red, bone white, black, jade green\nDETAIL: painted faces with wide eyes, bone necklaces swinging, headdress feathers, drifting spark, bone beads swinging and clicking against the necklaces, carved jaguar claws on the armrests.\nNOT IN FRAME: the twins, blood, any text.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 5.125s; everything keeps moving at the same natural pace through the end of the 6s generation.\n0–1s: the lords lean far forward in their seats and begin to clap, eyes wide; headdress feathers shake.\n1–3s: the applause rolls along the row from the right toward the left as one lord stamps his foot and another laughs aloud.\n3–4.5s: a lord leans so far forward he nearly slides off his seat and his neighbor hauls him back; sparks drift over the floor.\n4.5–6s: the lords keep clapping and cheering, begging for more, as torch smoke curls and the camera drifts closer.\nCAMERA: one continuous slow push toward the dais for the full 6 seconds.\nENVIRONMENT: sparks drift; torch smoke curls; feathers shake; shadows sway.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "low",
+            "location": "xibalba-hall",
+            "time_light": "dim-lamp",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B35",
+      "sentences": [
+        "S56"
+      ],
+      "start": 236.78,
+      "end": 240.4,
+      "dur": 3.62,
+      "device": null,
+      "narration_says": "A ball, a river and a long way down.",
+      "viewer_sees": "The rubber ball rests alone on the ballcourt floor at dusk, a long way down",
+      "shots": [
+        {
+          "shot_id": "36",
+          "beat_id": "B35",
+          "link_group": null,
+          "t_in": 236.792,
+          "t_out": 240.417,
+          "use_in": 0,
+          "use_out": 3.625,
+          "use_len": 3.625,
+          "motion_budget": null,
+          "gen_len": null,
+          "source_file": "shots/shot36.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "rubber-ball",
+            "ballcourt"
+          ],
+          "visual_priority": [
+            "the rubber ball alone on the ballcourt floor",
+            "the long empty alley",
+            "the dark cleft at the far end",
+            "the first star in the blue dusk"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a heavy solid ball of dark brown rubber about the size of a human head, scuffed and slightly flattened on one side, with a faint sheen and a pale chalky mark where it has struck stone, lying alone at the center of the plastered floor, a long shadow beside it\nSUBJECT 2: a Maya ballcourt, a long narrow I-shaped playing alley between two sloping stone walls of fitted limestone, a carved stone ring set high in each wall, plastered white floor, seen at dusk, empty, the stone rings dark, the long alley falling away to a dark cleft at the far right end\nACTION: the rubber ball lies alone on the ballcourt floor at dusk, the long alley running to a dark cleft in the distance\nSETTING: a Maya ballcourt at blue dusk, plastered floor with a faint chalky centerline, sloping limestone walls with stone rings catching the last light, a black cleft at the far end, the first star above\nCAMERA: camera stands close to the ground by the ball, low angle, long shot, pulling back.\nFRAME LAYOUT: lower left — the ball, near-camera and large; center — the long plastered alley receding; right third — the black cleft at the end of the court, small and hazy; upper edge — a deep blue strip of sky with one star.\nFACING: we see the ball from the front and slightly left; the court runs away from camera toward screen-right.\nSCREEN DIRECTION: a puff of dust drifts across the floor from the left toward the right; a cool breath of mist rises from the cleft toward the left.\nLIGHT: the last blue-gold dusk light along the rings, cool blue shadow on the floor, a faint red glow in the cleft.\nPALETTE: dusk blue, limestone cream, rubber brown, faint ember red\nDETAIL: the scuffed rubber with a chalk mark, hairline plaster cracks, a long shadow, stone ring edge, the faint ghost of a footprint beside the ball, a trace of rubber dust where it landed, a few fallen leaves blown into the court.\nNOT IN FRAME: people, owls, any text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "LS",
+            "angle": "low",
+            "location": "ballcourt",
+            "time_light": "blue-dusk",
+            "camera_motion": "pull"
+          },
+          "render_mode": "still",
+          "still_motion": "pull"
+        }
+      ]
+    },
+    {
+      "beat_id": "B36",
+      "sentences": [
+        "S57",
+        "S58"
+      ],
+      "start": 240.4,
+      "end": 248.607,
+      "dur": 8.207,
+      "device": null,
+      "narration_says": "If you like old stories from the people who first told them, leave a like and subscribe to Animated Tales. Until next time.",
+      "viewer_sees": "End card: poster of the whole story with the title, the twins, the lords and the SUBSCRIBE button",
+      "shots": [
+        {
+          "shot_id": "37",
+          "beat_id": "B36",
+          "link_group": null,
+          "t_in": 240.417,
+          "t_out": 248.625,
+          "use_in": 0,
+          "use_out": 8.208,
+          "use_len": 8.208,
+          "motion_budget": null,
+          "gen_len": null,
+          "source_file": "shots/shot37.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "hunahpu",
+            "xbalanque",
+            "xibalba-lords"
+          ],
+          "visual_priority": [
+            "Hunahpu at the far left third",
+            "Xbalanque beside him",
+            "the lords of Xibalba at the right third",
+            "the title across the upper third",
+            "the SUBSCRIBE button at the exact center"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSHOT: one epic poster of the whole story — the two brothers who beat the lords of death at their own game: the ball court where it began, the black cleft down to Xibalba, the houses of trial, the oven, the dance, and the lords who could not resist a good show.\nSUBJECT: Hunahpu, a lean Maya ballplayer of about twenty, a smooth oval face with a small beard-less chin, black spots painted on both cheeks, long black hair under a jade-green headband, a heavy jade ear spool, at the far left third, near-camera and large, cropped at the chest, a dark rubber ball held at his hip, his face lifted and bright and turned toward the lords at the right\nSUBJECT 2: Xbalanque, a lean Maya ballplayer of about twenty, a smooth oval face like his brother, patches of jaguar pelt on both cheeks and forearms, long black hair under a dark blue headband, a heavy jade ear spool, at the left of center, near-camera and large, cropped at the chest, a long blowgun over his shoulder, his face calm and turned toward the lords at the right\nSUBJECT 3: tall stern lords of the Maya underworld, pale ash-grey painted faces with sunken black eyes, towering headdresses of owl feathers and bone, long mantles woven in black and ash grey, necklaces of carved bone, at the right third, towering, near-camera and large, cropped at the chest, their faces turned toward the twins at the left, their expressions eager and delighted\nTITLE: across the top, \"TWO BROTHERS BEAT THE MAYA LORDS OF DEATH AT THEIR OWN GAME\" in large carved pale-stone capitals inlaid with jade green and edged with gold; under it, a thin ornamental line and the words \"A BALL GAME WITH DEATH\".\nBUTTON: at the exact center of the frame, a red rounded pill-shaped button with a thin gold rim, \"SUBSCRIBE\" in bold cream capitals, a small gold diamond on each side.\nACTION: the twins and the lords face each other across the center; between them, far and small, the plastered ballcourt runs down into a black cleft with owls rising from it, a roaring oven pit glows at one side and a calabash tree with a calm pale head stands at the other; sun and moon rise together in the upper corners.\nSETTING: an epic painted poster backdrop of a Maya ballcourt at dusk opening into a black cleft to the underworld, red ember light below, jungle canopy and a deep blue sky with a gold sun at the upper left and a pale moon at the upper right.\nCAMERA: camera holds square on the figures at their level, eye level, medium wide.\nFRAME LAYOUT: upper third — the title across the dusk sky with a small gold sun at the upper left and a small pale moon at the upper right; far left third — Hunahpu, near-camera and large, cropped at the chest; left of center — Xbalanque, near-camera and large, cropped at the chest; right third — the lords of Xibalba, towering, near-camera and large, cropped at the chest; center — the SUBSCRIBE button with, far and small around it, the ballcourt, the black cleft with owls, the oven glow and the calabash tree; lower edge — near-camera, the dark rubber ball, two blowguns, a red-feathered torch, a firefly cigar and two green canes.\nFACING: we see the twins three-quarter from the front and right, their faces turned toward screen-right and the lords; the lords three-quarter from the front and left, their faces turned toward screen-left and the twins.\nSCREEN DIRECTION: owls stream from the black cleft toward the left; sparks climb from the oven toward the upper right; mist drifts across the court toward the left; sun and moon rays spread outward from the upper corners.\nLIGHT: deep ember-red glow from the cleft at the center-right, warm gold from the sun at the upper left, cool silver from the moon at the upper right, a glint on the lettering.\nPALETTE: ember red, jade green, bone white, dusk blue\nDETAIL: faces readable and calm, spots and jaguar patches on the twins’ cheeks, the owl-feather headdresses of the lords, crisp lettering with every letter spelled right.\nNOT IN FRAME: any bare body, blood, logos, any other words or letters.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "end-card",
+            "time_light": "warm-gold",
+            "camera_motion": "locked"
+          },
+          "render_mode": "still",
+          "still_motion": "hold"
+        }
+      ]
+    }
+  ]
+}

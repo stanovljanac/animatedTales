@@ -1,0 +1,89 @@
+{
+  "slug": "hero-twins",
+  "title": "Two Brothers Beat the Maya Lords of Death at Their Own Game",
+  "status": "in-progress",
+  "voice": null,
+  "narration_file": "narration.mp3",
+  "final_file": null,
+  "endcard_file": "shots/shot37.jpeg",
+  "intro_file": null,
+  "intro_volume": 0.2,
+  "characters": [
+    {
+      "id": "hunahpu",
+      "name": "Hunahpu",
+      "locked_description": "Hunahpu, a lean Maya ballplayer of about twenty, a smooth oval face with a small beard-less chin, black spots painted on both cheeks, long black hair under a jade-green headband, a heavy jade ear spool"
+    },
+    {
+      "id": "xbalanque",
+      "name": "Xbalanque",
+      "locked_description": "Xbalanque, a lean Maya ballplayer of about twenty, a smooth oval face like his brother, patches of jaguar pelt on both cheeks and forearms, long black hair under a dark blue headband, a heavy jade ear spool"
+    },
+    {
+      "id": "hun-hunahpu",
+      "name": "Hun Hunahpu",
+      "locked_description": "Hun Hunahpu, a Maya ballplayer of about forty, a long calm face with a thin moustache, hair in a topknot tied with jade beads, a broad leather hip yoke, knee pads and a feathered headband"
+    },
+    {
+      "id": "vucub-hunahpu",
+      "name": "Vucub Hunahpu",
+      "locked_description": "Vucub Hunahpu, a younger Maya ballplayer, a rounder cheerful face, hair in a topknot with a red cotton band, a broad leather hip yoke, knee pads, a heavy shell ear spool"
+    },
+    {
+      "id": "xibalba-lords",
+      "name": "The lords of Xibalba",
+      "locked_description": "tall stern lords of the Maya underworld, pale ash-grey painted faces with sunken black eyes, towering headdresses of owl feathers and bone, long mantles woven in black and ash grey, necklaces of carved bone"
+    },
+    {
+      "id": "chief-lords",
+      "name": "One Death and Seven Death",
+      "locked_description": "two towering chief lords of Xibalba, one lean with a white skull-painted face, one broad with a face painted half black, each in a vast headdress of black owl feathers and a mantle hung with bone beads",
+      "scale_critical": true
+    },
+    {
+      "id": "young-woman",
+      "name": "The young woman",
+      "locked_description": "a young Maya woman of about twenty, a calm oval face, long black hair in a single braid, a white cotton huipil with a woven red neckline, a plain jade bead necklace"
+    },
+    {
+      "id": "soothsayers",
+      "name": "The two soothsayers",
+      "locked_description": "two aged Maya soothsayers, thin and bent, deep-lined faces, white hair tied up with cords, long plain cotton robes, one with a rattle of gourd and seeds, one with a pouch of copal incense"
+    }
+  ],
+  "locations": [
+    {
+      "id": "xibalba-hall",
+      "name": "The hall of Xibalba",
+      "locked_description": "a vast dim underworld council hall of black stone, tall rough columns carved with bone and owl motifs, a long dais with a row of carved stone seats, hearth fires burning low and red"
+    },
+    {
+      "id": "ballcourt",
+      "name": "The Maya ballcourt",
+      "locked_description": "a Maya ballcourt, a long narrow I-shaped playing alley between two sloping stone walls of fitted limestone, a carved stone ring set high in each wall, plastered white floor"
+    },
+    {
+      "id": "house-of-darkness",
+      "name": "The House of Darkness",
+      "locked_description": "a pitch-black square stone chamber with rough fitted walls, a low stone doorway sealed by a heavy slab, a bare stone floor, no window and no furniture"
+    }
+  ],
+  "key_props": [
+    {
+      "id": "rubber-ball",
+      "name": "The rubber ball",
+      "locked_description": "a heavy solid ball of dark brown rubber about the size of a human head, scuffed and slightly flattened on one side, with a faint sheen and a pale chalky mark where it has struck stone"
+    },
+    {
+      "id": "calabash-tree",
+      "name": "The calabash tree",
+      "locked_description": "a tall calabash tree with a gnarled pale trunk, spreading bare branches and a fork at head height, round green and gold gourd fruits hanging from the limbs"
+    },
+    {
+      "id": "twin-canes",
+      "name": "The two canes",
+      "locked_description": "two tall green maize canes with long ribbon leaves, standing side by side in the packed earth floor of a thatched house, each about as high as a man"
+    }
+  ],
+  "notes": "Samostalna epizoda, ideja #36 u docs/ideas.md, popunjava regiju North America (Mezoamerika, K'iche' Maje, Gvatemala) i epohu Myth & Legend. Izvor: Popol Vuh, spanski prevod Raynauda (Asturias i Gonzalez de Mendoza, 1927) na Wikisource, poglavlja 11-25 procitana; Spence 1908 je prepricavanje, ne prevod. Narracija snimljena i poravnata (timing.json). 37 shotova (32 klipa + 5 slika), beat mapa odobrena, lockovi i storyboard upisani; vidi notes.md (osa ekrana, režim, šta ostaje). Rezim shota je mesan, birano iz kadra, ne iz kredita. Imena u skripti: Hun Hunahpu, Hunahpu, Xbalanque, Xibalba, One Death i Seven Death (u spanskom prevodu su prevedena po znacenju: Maestro Mago, Brujito, Supremo Muerto). MITSKI REGISTAR: Xibalba i gospodari smrti su veci od pejzaza (sirina podzemnog sveta, dim, sumrak, svetlost koja reaguje); ali bez anahronog dizajna: klasicno/postklasicno majansko ruho (perje, jade, pamuk, maske), ne asteski i ne generican 'tribal'. Lordovi smrti su uobrazeni i radoznali, nisu cudovista; ne crtati ih kao demone iz zapadnog horora. Zivotinjski glasnici su sitne scene (vaska u zabi u zmiji u jastrebu): stilizovano, ne 'cute'. Zrtvovanje i smrt: bez krvi i bez prikazivanja vadjenja srca (skripta ga ne pominje); glava na drvetu i glava koja se vraca na telo prikazati kao slika, ne kao anatomija. Bez golog tela: blizanci i otac u majanskom ruhu. Loptaski teren (pitz) i obruc kao pravi rekviziti; loptu ne crtati kao lobanju osim u kadru gde skripta kaze glava. Dva trske na sredini bakine kuce su vazan rekvizit (znak zivota) i vracaju se u kadar kad se blizanci 'umiru'. Tacnost: broj kuca u prevodima se razlikuje, ne crtati 'Razor House' (to je Wikipedia, ne Raynaud). Skripta nikad ne tvrdi da su blizanci predkolumbijski prikazani na vazama: kaze 'mozda'. Protagonists za publish.md: naslov grupno ('Two Brothers') ili imenuje sve glavne (Hunahpu, Xbalanque, Hun Hunahpu), nikad jednog + deo."
+}

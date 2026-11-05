@@ -1,0 +1,456 @@
+[
+  {
+    "beat_id": "B01",
+    "sentences": [
+      "S01",
+      "S02",
+      "S03"
+    ],
+    "device": null,
+    "viewer_sees": "The twin brothers stand side by side on a ballcourt at dusk, ball in hand, facing a black cleft in the ground at the right from which owls spill into the air",
+    "tags": {
+      "location": "xibalba-mouth",
+      "time_light": "dusk-red"
+    }
+  },
+  {
+    "beat_id": "B02",
+    "sentences": [
+      "S04"
+    ],
+    "device": null,
+    "viewer_sees": "The Guatemalan highlands of the K’iche’ Maya: volcano, lake, mist, a village of thatched houses around a ceiba tree",
+    "tags": {
+      "location": "k-iche-highlands",
+      "time_light": "misty-morning"
+    }
+  },
+  {
+    "beat_id": "B03",
+    "sentences": [
+      "S05"
+    ],
+    "device": null,
+    "viewer_sees": "In 1701 a friar copies the old text by candlelight in a stone cell, the worn older pages beside him",
+    "tags": {
+      "location": "friar-cell",
+      "time_light": "candle-night"
+    }
+  },
+  {
+    "beat_id": "B04",
+    "sentences": [
+      "S06"
+    ],
+    "device": "process-cutaway",
+    "viewer_sees": "PROCESS CUTAWAY: a cross-section of the earth: two brothers play ball on a sunlit court above; below, in a dark hall under the same court, the lords of Xibalba look up as dust trickles from the ceiling",
+    "tags": {
+      "location": "earth-cross-section",
+      "time_light": "two-light"
+    }
+  },
+  {
+    "beat_id": "B05",
+    "sentences": [
+      "S07",
+      "S08"
+    ],
+    "device": null,
+    "viewer_sees": "Owls lead two brothers down a steep stair toward a river of red water that they cross",
+    "tags": {
+      "location": "blood-river",
+      "time_light": "dim-red"
+    }
+  },
+  {
+    "beat_id": "B06",
+    "sentences": [
+      "S09"
+    ],
+    "device": null,
+    "viewer_sees": "In the dim hall two brothers bow to two carved wooden figures seated in the seats of honor while the real lords watch from the shadows",
+    "tags": {
+      "location": "xibalba-hall",
+      "time_light": "dim-lamp"
+    }
+  },
+  {
+    "beat_id": "B07",
+    "sentences": [
+      "S10",
+      "S11",
+      "S12"
+    ],
+    "device": null,
+    "viewer_sees": "The lords laugh, then point to a stone bench that is glowing red like coals; the two brothers hesitate",
+    "tags": {
+      "location": "xibalba-hall",
+      "time_light": "dim-lamp"
+    }
+  },
+  {
+    "beat_id": "B08",
+    "sentences": [
+      "S13"
+    ],
+    "device": null,
+    "viewer_sees": "Two brothers sit back to back in a pitch-black chamber, each with a lit torch and a lit cigar, as a stone door closes",
+    "tags": {
+      "location": "house-of-darkness",
+      "time_light": "torch-only"
+    }
+  },
+  {
+    "beat_id": "B09",
+    "sentences": [
+      "S14",
+      "S15"
+    ],
+    "device": "empty-aftermath",
+    "viewer_sees": "EMPTY AFTERMATH: two burnt-out stubs of torch and cigar on a stone floor at dawn; the camera rises out through the door to a ballcourt where a last paving stone is set over a grave",
+    "tags": {
+      "location": "house-of-darkness",
+      "time_light": "grey-dawn"
+    }
+  },
+  {
+    "beat_id": "B10",
+    "sentences": [
+      "S16"
+    ],
+    "device": null,
+    "viewer_sees": "A bare calabash tree with one calm pale head resting in its fork, new round fruit swelling on every branch",
+    "tags": {
+      "location": "calabash-tree",
+      "time_light": "red-dusk"
+    }
+  },
+  {
+    "beat_id": "B11",
+    "sentences": [
+      "S17",
+      "S18"
+    ],
+    "device": null,
+    "viewer_sees": "A young woman reaches up toward the head in the tree; a glowing drop lands in her open palm",
+    "tags": {
+      "location": "calabash-tree",
+      "time_light": "red-dusk"
+    }
+  },
+  {
+    "beat_id": "B12",
+    "sentences": [
+      "S19",
+      "S20"
+    ],
+    "device": null,
+    "viewer_sees": "The twins play ball in the court; the ground shakes, dust sifts, owls burst out of cracks in the stone",
+    "tags": {
+      "location": "ballcourt",
+      "time_light": "bright-afternoon"
+    }
+  },
+  {
+    "beat_id": "B13",
+    "sentences": [
+      "S21"
+    ],
+    "device": "process-cutaway",
+    "viewer_sees": "PROCESS CUTAWAY: a hawk drawn like an anatomical plate, inside it a snake, inside that a toad, inside that one louse glowing as the message",
+    "tags": {
+      "location": "nested-animals",
+      "time_light": "dim-gold"
+    }
+  },
+  {
+    "beat_id": "B14",
+    "sentences": [
+      "S22"
+    ],
+    "device": null,
+    "viewer_sees": "The twins plant two green canes in the packed earth floor in the middle of their grandmother’s house while she watches from the hearth",
+    "tags": {
+      "location": "grandmother-house",
+      "time_light": "firelight-warm"
+    }
+  },
+  {
+    "beat_id": "B15",
+    "sentences": [
+      "S23",
+      "S24"
+    ],
+    "device": "before-after",
+    "viewer_sees": "BEFORE / AFTER diptych: left half the two canes dry and brown, right half the same two canes green and sprouting",
+    "tags": {
+      "location": "grandmother-house",
+      "time_light": "firelight-warm"
+    }
+  },
+  {
+    "beat_id": "B16",
+    "sentences": [
+      "S25",
+      "S26"
+    ],
+    "device": null,
+    "viewer_sees": "The twins cross a river by walking on their blowguns laid like a bridge, a single mosquito glint flying ahead of them",
+    "tags": {
+      "location": "blood-river",
+      "time_light": "dim-red"
+    }
+  },
+  {
+    "beat_id": "B17",
+    "sentences": [
+      "S27"
+    ],
+    "device": null,
+    "viewer_sees": "A row of lords in the dim hall each flinch and cry out in turn, mouths wide and hands slapping at their necks, one tiny mosquito glint streaking along the row",
+    "tags": {
+      "location": "xibalba-hall",
+      "time_light": "dim-lamp"
+    }
+  },
+  {
+    "beat_id": "B18",
+    "sentences": [
+      "S28",
+      "S29"
+    ],
+    "device": null,
+    "viewer_sees": "The twins greet each lord by name and step around the glowing bench; as they pass, the hall torches gutter and night falls over Xibalba",
+    "tags": {
+      "location": "xibalba-hall",
+      "time_light": "dim-lamp"
+    }
+  },
+  {
+    "beat_id": "B19",
+    "sentences": [
+      "S30"
+    ],
+    "device": null,
+    "viewer_sees": "In the House of Darkness the twins light the lords’ torch with red macaw feathers and their cigars with fireflies, and every one comes through unburned",
+    "tags": {
+      "location": "house-of-darkness",
+      "time_light": "torch-red"
+    }
+  },
+  {
+    "beat_id": "B20",
+    "sentences": [
+      "S31"
+    ],
+    "device": null,
+    "viewer_sees": "In a hail-swept stone chamber the twins sit unshivering while two jaguars gnaw bones thrown to them",
+    "tags": {
+      "location": "house-of-cold",
+      "time_light": "ice-blue"
+    }
+  },
+  {
+    "beat_id": "B21",
+    "sentences": [
+      "S32"
+    ],
+    "device": null,
+    "viewer_sees": "Bats whirl in the dark; Hunahpu peers out of his blowgun to look for dawn as a huge winged shadow sweeps across",
+    "tags": {
+      "location": "house-of-bats",
+      "time_light": "dark-blue"
+    }
+  },
+  {
+    "beat_id": "B22",
+    "sentences": [
+      "S33",
+      "S34"
+    ],
+    "device": "crowd-as-texture",
+    "viewer_sees": "Animals of every kind stream across the floor toward Xbalanque; a turtle steps forward from the swarm",
+    "tags": {
+      "location": "xibalba-floor",
+      "time_light": "dim-lamp"
+    }
+  },
+  {
+    "beat_id": "B23",
+    "sentences": [
+      "S35"
+    ],
+    "device": null,
+    "viewer_sees": "The lords play with a pale round head as a ball; a rabbit bursts loose from beside Xbalanque",
+    "tags": {
+      "location": "ballcourt-xibalba",
+      "time_light": "torch-red"
+    }
+  },
+  {
+    "beat_id": "B24",
+    "sentences": [
+      "S36",
+      "S37"
+    ],
+    "device": null,
+    "viewer_sees": "The lords chase the rabbit while Xbalanque swaps the heads back; the twins glance at a far oven glowing",
+    "tags": {
+      "location": "ballcourt-xibalba",
+      "time_light": "torch-red"
+    }
+  },
+  {
+    "beat_id": "B25",
+    "sentences": [
+      "S38"
+    ],
+    "device": null,
+    "viewer_sees": "The twins whisper to two soothsayers beside a grinding stone, telling them how to answer the lords",
+    "tags": {
+      "location": "xibalba-corner",
+      "time_light": "dim-lamp"
+    }
+  },
+  {
+    "beat_id": "B26",
+    "sentences": [
+      "S39",
+      "S40"
+    ],
+    "device": null,
+    "viewer_sees": "The lords stoke a huge oven pit; the twins embrace and leap into the flames",
+    "tags": {
+      "location": "oven-pit",
+      "time_light": "fire-orange"
+    }
+  },
+  {
+    "beat_id": "B27",
+    "sentences": [
+      "S41",
+      "S42"
+    ],
+    "device": null,
+    "viewer_sees": "The lords scatter ground ash into the river; underwater the ash sinks and on the fifth day two fish-men rise",
+    "tags": {
+      "location": "river-xibalba",
+      "time_light": "grey-dawn"
+    }
+  },
+  {
+    "beat_id": "B28",
+    "sentences": [
+      "S43",
+      "S44"
+    ],
+    "device": null,
+    "viewer_sees": "Two ragged wanderers dance before the lords; a small thatched house bursts into flame and then stands whole",
+    "tags": {
+      "location": "xibalba-hall",
+      "time_light": "dim-lamp"
+    }
+  },
+  {
+    "beat_id": "B29",
+    "sentences": [
+      "S45",
+      "S46"
+    ],
+    "device": null,
+    "viewer_sees": "One wanderer falls under a cloth, the other waves a hand and he rises; the lords laugh and clap",
+    "tags": {
+      "location": "xibalba-hall",
+      "time_light": "dim-lamp"
+    }
+  },
+  {
+    "beat_id": "B30",
+    "sentences": [
+      "S47",
+      "S48"
+    ],
+    "device": null,
+    "viewer_sees": "The lords step forward eagerly; the twins strike the two chief lords, who collapse in dust, and the other lords recoil",
+    "tags": {
+      "location": "xibalba-hall",
+      "time_light": "dim-lamp"
+    }
+  },
+  {
+    "beat_id": "B31",
+    "sentences": [
+      "S49",
+      "S50"
+    ],
+    "device": null,
+    "viewer_sees": "The twins honor their father on a temple platform at first light, then rise into the sky above the temple city as two lights, one blazing gold and one pale silver: the sun and the moon",
+    "tags": {
+      "location": "maya-sky",
+      "time_light": "dawn-gold"
+    }
+  },
+  {
+    "beat_id": "B32",
+    "sentences": [
+      "S51",
+      "S52"
+    ],
+    "device": null,
+    "viewer_sees": "A Classic Maya painted vase turns slowly in a lamplit study with figures that may be the twins; the camera closes on the twin figures, then pulls back to an old manuscript and two scholars pointing at different lines",
+    "tags": {
+      "location": "vase-study",
+      "time_light": "warm-lamp"
+    }
+  },
+  {
+    "beat_id": "B33",
+    "sentences": [
+      "S53",
+      "S54"
+    ],
+    "device": "macro-object",
+    "viewer_sees": "A long stone shelf: burnt stubs of the father, then the macaw torch and firefly cigar, then two green canes sprouting through ash",
+    "tags": {
+      "location": "altar-shelf",
+      "time_light": "firelight-warm"
+    }
+  },
+  {
+    "beat_id": "B34",
+    "sentences": [
+      "S55"
+    ],
+    "device": null,
+    "viewer_sees": "The lords lean forward in their seats, rapt, applauding the show",
+    "tags": {
+      "location": "xibalba-hall",
+      "time_light": "dim-lamp"
+    }
+  },
+  {
+    "beat_id": "B35",
+    "sentences": [
+      "S56"
+    ],
+    "device": null,
+    "viewer_sees": "The rubber ball rests alone on the ballcourt floor at dusk, a long way down",
+    "tags": {
+      "location": "ballcourt",
+      "time_light": "blue-dusk"
+    }
+  },
+  {
+    "beat_id": "B36",
+    "sentences": [
+      "S57",
+      "S58"
+    ],
+    "device": null,
+    "viewer_sees": "End card: poster of the whole story with the title, the twins, the lords and the SUBSCRIBE button",
+    "tags": {
+      "location": "end-card",
+      "time_light": "warm-gold"
+    }
+  }
+]
