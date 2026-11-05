@@ -29,6 +29,32 @@ Najviše rangirane ideje koje **nisu** `done`. Ove četiri postojeće epizode su
 
 ---
 
+## Pokrivenost regiona i epoha
+
+Cilj od 2026-11-04: **popuniti svaku regiju i svaku epohu sajta bar jednom**, pa tek onda birati ono što
+je najtraženije i najgledanije. Stanje sajta (karta ima 10 priča): Grčka 3, Egipat i Bliski istok 3, Italija 1,
+Sever 1, Azija 1, Pacifik 1. **Nedostaju regije:** Severna Amerika, Južna Amerika, Afrika, Australija.
+Epohe: Mit i legenda 2, Drevni svet 2, Klasična antika 6, **Srednji vek 0, Moderno doba 0.**
+
+Sve četiri nedostajuće regije i obe prazne epohe su popunjene epizodama u radu (faza 01→04, narraciju snima
+korisnik; na sajt idu tek kad se objave, ostaju `soon`):
+
+| Regija | Epizoda | Epoha |
+|---|---|---|
+| Južna Amerika | `#34 el-dorado` (Muisca, Kolumbija) | Moderno doba (c. 1537) |
+| Severna Amerika | `#36 hero-twins` (Popol Vuh, K'iche' Maje) | Mit i legenda |
+| Afrika | `#35 mansa-musa` (Mali, Kairo 1324) | Srednji vek |
+| Australija | `#10 emu-war` (Zapadna Australija 1932) | Moderno doba |
+
+Napomene: Mezoamerika je na svetskoj karti Severna Amerika (korisnik je Maje pomenuo uz Južnu); `#33
+three-underworlds` (čerokijska priča) je takođe severnoamerička, ali sajt vodi jednu regiju po epizodi, pa se
+odlučuje kad se epizoda objavi. Sajt traži četiri nove regije (`south-america`, `north-america`, `africa`,
+`australia`) u `REGIONS` i unose u `EVENTS`. **Dalje** (kad se prvi krug objavi): ono što je
+najtraženije i najgledanije, uz neistražene ideje iz Claudeovog znanja — Inke (Atahualpin otkup), Tenočtitlan
+(1325), Sundiata, Duga zmija. Ni jedna od njih nije bodovana.
+
+---
+
 ## Rangirana tabela
 
 Poređano po ukupnom skoru opadajuće. Redovi sa `done` učestvuju u tabeli radi kalibracije,
@@ -53,10 +79,12 @@ Legenda kolona: **M1** snaga hooka (×3) · **M2** naslov + tambnejl (×3) · **
 | 21 | ~~Why Zeus Was Terrified of His Own Children~~ → Titanomahija (preusmerena) | 5 | 5 | 5 | 4 | 4 | 4 | 2 | 3 | 4 | 4 | **83.7** | — | `re-aim` |
 | 32 | The Man Crowned to Die in the King's Place | 5 | 4 | 4 | 5 | 4 | 4 | 4 | 3 | 4 | 4 | **83.7** | radi odmah | `done` |
 | 30 | The Giant Who Tried to Steal the Sun | 5 | 5 | 4 | 4 | 3 | 4 | 5 | 3 | 3 | 4 | **83.2** | radi odmah | `scored` |
-| 10 | The War Against Birds | 5 | 5 | 5 | 5 | 2 | 3 | 2 | 5 | 4 | 3 | **81.6** | radi odmah | `scored` |
+| 10 | The War Against Birds | 5 | 5 | 5 | 5 | 2 | 3 | 2 | 5 | 4 | 3 | **81.6** | radi odmah | `done` |
 | 11 | How Humans Learned to Cross Entire Oceans Without a Compass | 5 | 4 | 4 | 4 | 3 | 4 | 4 | 4 | 4 | 4 | **81.1** | radi odmah | `done` |
 | 23 | Why Hades Let Persephone Leave | 4 | 4 | 5 | 3 | 5 | 5 | 2 | 4 | 4 | 4 | **81.1** | radi odmah | `scored` |
+| 36 | Two Brothers Beat the Maya Lords of Death at Their Own Game | 4 | 4 | 4 | 5 | 4 | 5 | 4 | 3 | 3 | 3 | **80.5** | radi odmah | `done` |
 | 22 | The Man Who Stole Fire From the Gods | 4 | 4 | 5 | 3 | 5 | 4 | 1 | 5 | 4 | 5 | **80.0** | radi odmah | `scored` |
+| 34 | El Dorado Was Never a City. It Was a Man on a Raft | 4 | 5 | 4 | 4 | 3 | 5 | 3 | 4 | 3 | 3 | **79.5** | oštriji ugao | `done` |
 | 1 | The Emperor Who Fought a War Against the Ocean | 5 | 5 | 4 | 3 | 3 | 5 | 3 | 4 | 3 | 1 | **78.4** | oštriji ugao | `scored` |
 | 19 | The Disease That Changed Medieval Europe | 4 | 4 | 4 | 4 | 5 | 4 | 2 | 4 | 5 | 2 | **77.9** | oštriji ugao | `scored` |
 | 33 | The Rule Nobody Could Keep in the Land of the Dead | 4 | 4 | 4 | 4 | 4 | 4 | 3 | 3 | 4 | 3 | **75.8** | oštriji ugao | `done` |
@@ -65,6 +93,7 @@ Legenda kolona: **M1** snaga hooka (×3) · **M2** naslov + tambnejl (×3) · **
 | 13 | The Civilization That Built a City Before Farming? | 4 | 5 | 3 | 4 | 2 | 4 | 3 | 4 | 3 | 4 | **74.2** | oštriji ugao | `scored` |
 | 4 | The Night Rome Nearly Lost Everything | 4 | 4 | 4 | 4 | 4 | 4 | 3 | 4 | 3 | 1 | **74.2** | oštriji ugao | `done` |
 | 7 | The Battle Where Elephants Changed Sides | 4 | 5 | 4 | 4 | 3 | 4 | 3 | 3 | 4 | 0 | **73.7** | oštriji ugao | `scored` |
+| 35 | A King Gave Away So Much Gold That Cairo's Price Fell | 4 | 4 | 4 | 4 | 3 | 4 | 2 | 4 | 4 | 3 | **73.7** | oštriji ugao | `done` |
 | 2 | The Battle Won by a Dead Man's Army | 4 | 4 | 4 | 3 | 4 | 4 | 2 | 4 | 4 | 1 | **71.6** | oštriji ugao | `done` |
 | 12 | The Invention That Made Civilization Count Everything | 4 | 3 | 4 | 4 | 2 | 3 | 4 | 4 | 4 | 5 | **71.6** | oštriji ugao | `scored` |
 | 24 | The Punishment of Tantalus: Food He Could Never Eat | 4 | 4 | 4 | 3 | 3 | 2 | 3 | 4 | 3 | 5 | **70.0** | oštriji ugao | `scored` |
@@ -201,7 +230,7 @@ Zašto ovaj skor: Premisa se razume bez ijednog datuma i imena, počinje kao aps
 
 #### #10 — The War Against Birds
 
-`status: scored` · **81.6** · radi odmah · izvorna oznaka: kat. 1 #10
+`status: done` · **81.6** · radi odmah · izvorna oznaka: kat. 1 #10 · `episodes/emu-war`
 
 Ocene M1–M10: 5 / 5 / 5 / 5 / 2 / 3 / 2 / 5 / 4 / 3 — sirovo 77.5 / 95.
 
@@ -210,6 +239,8 @@ Story: In 1932, Australia launched a military operation against emus damaging cr
 Hook: “Australia sent soldiers with machine guns to defeat a bird. The birds won.”
 
 Zašto ovaj skor: Premisa i poenta („ptice su pobedile“) rade bez ikakvog konteksta, ali tema je internet-mem sa desetinama postojećih videa i vizuelno je zaključana u isti pejzaž bez emotivnog uloga.
+
+**Proizvedena kao `episodes/emu-war` (2026-11-04)** u okviru cilja da se popuni svaka regija sajta (Australija). Kuka je prenesena doslovno; telo joj odgovara pitanjem „Ko je pobedio?" jer izvori ne daju jedinstven odgovor (novine iz 1953. kažu da su ptice pobedile, one iz 1935. da su mitraljezi ipak upalili, a ono što je stvarno proredilo emue bila je nagrada po glavi). **Izvori su samo sekundarni** — Wikipedia *Emu War* i tri lokalne ili popularne strane; Trove, Hansard i Meredithov izvestaj nisu mogli da se otvore, a brojke (50 do 500 ubijenih do 8. novembra; 986 koje tvrdi Meredith; 20.000 emua bez izvora) se ne slažu i u skripti su dati kao raspon ili kao tvrdnja. Meredithov citat o „diviziji sa nosivošću metaka kao ove ptice" potiče iz novina iz 1953. i u skripti stoji kao „is quoted as saying". Skor nije preračunat.
 
 #### #31 — The Pharaoh Whose Murder the Court Never Mentioned
 
@@ -529,6 +560,48 @@ Zašto ovaj skor: Pravilo koje se menja dok razlog za njegovo kršenje ostaje is
 Dodata van C03 liste, u sesiji u kojoj je izabrana: korisnik je tražio temu koja je već popularna, a ulazi u postojeće ili potencijalne plejliste — nacije i mitove koje kanal još nije radio (Japan, severnoamerički narodi) i **priče koje su slične u različitim kulturama**, uz pitanje kako su ljudi na krajevima sveta došli do istih mitova. Ovo je prva epizoda te potencijalne plejliste („Same Story, Different World"). Kategorija 3 jer je jezgro mit; sve tri verzije čitane su u izvoru (Chamberlain, *Kojiki* 1919 izd.; Mooney, *Myths of the Cherokee*, Gutenberg), a Orfej preko Plata, Vergilija i Ovidija. **Popularnost nije izmerena brojkama** — alat za pretragu ne daje gledanost — pa se oslanja na to što su i Orfej i Izanagi/Izanami među najpoznatijim silascima u zemlju mrtvih, a poređenje paralelnih mitova je ustaljen format niše.
 
 **Izoštrena u produkciji (2026-11-03):** opšta tema („tri mita su slična") suzena je na jednu stvar koja ima lice, ulog i kraj — **pravilo na pragu zemlje mrtvih**. Skor 75.8 opisuje ovu izoštrenu verziju i ispod je 80 jer M7 i M8 ostaju na 3 (dve najpoznatije priče niše i tri nova imena). Orfej je zato pet rečenica koje gledalac već zna i služe kao postavka; težište nose Izanagi i čerokijska kutija. Hook je prenet doslovno u skriptu. Zaključak o poreklu nije izmišljen: skripta navodi tri tumačenja i kaže da se ne zna.
+
+#### #34 — El Dorado Was Never a City. It Was a Man on a Raft
+
+`status: done` · **79.5** · oštriji ugao · izvorna oznaka: dodata 2026-11-04, van originalnih 30 · `episodes/el-dorado`
+
+Ocene M1–M10: 4 / 5 / 4 / 4 / 3 / 5 / 3 / 4 / 3 / 3 — sirovo 75.5 / 95.
+
+Story: "El Dorado" means "the gilded one", and it named a man before it named a place. In *El Carnero* (written 1636) the Bogotá chronicler Juan Rodríguez Freyle, who had it from his friend don Juan, cacique of Guatavita, describes how a Muisca heir fasted six years in a cave, then on Lake Guatavita was stripped, smeared with sticky earth and dusted with gold, and stood on a reed raft with a heap of gold and emeralds at his feet and four chiefs beside him, and threw the gold into the water. A Muisca man told a Spanish captain about it in Quito; three captains reached the Muisca highlands in 1537–39 and found gold and emeralds but no golden city; the name became a place, a city, a lake on European maps for two hundred years, and cost Walter Raleigh his son and his life. Antonio de Sepúlveda drained part of Lake Guatavita (by his own count taking 12,000 pesos from the shore) and Freyle helped bury him; in 1969 a gold raft with a seated chief and ten attendants was found in a cave at Pasca, though scholars argue whether it shows Guatavita. Nobody who wrote the ceremony down saw it, and the script says so once. Freyle confesses that he went hunting gold himself, in another sacred lake, and that the priest who led him there fell face down on the ground at the sight of the water and never spoke to him again.
+
+Hook: “El Dorado was not a city. It was a man — naked, covered in gold dust, standing on a raft in the middle of a mountain lake.”
+
+Zašto ovaj skor: Obrt „nije grad nego čovek" nosi jedna slika koja je i naslov i tambnejl (pozlaćen čovek na splavu usred jezera), a Frejle, koji prvo zapisuje ceremoniju pa lično traži zlato i vraća se praznih ruku, daje priči lice i kraj; spuštaju je to što je El Dorado jedna od najispričanijih legendi uopšte i što se ceremonija oslanja na jednog informanta zapisanog stotinu godina kasnije.
+
+Dodata van C03 liste, u sesiji u kojoj je izabrana: korisnik je postavio cilj da se popune sve regije i epohe sajta bar jednom (nedostaju Severna Amerika, Južna Amerika, Afrika i Australija), a tek posle toga ide ono što je najtraženije; za Južnu Ameriku tražio je priču o drevnim civilizacijama ili autohtonim narodima i prepustio izbor Claude-u. El Dorado je izabran jer je najprepoznatljivija južnoamerička legenda, ima predmet koji nosi tambnejl (splav iz Pasce) i vodi do Muiska, naroda koji kanal nije radio. **Popularnost nije izmerena brojkama** — alat za pretragu ne daje gledanost. Kategorija 3 jer je jezgro legenda, ali je pisana prema izvoru, ne prema prepričavanju: pročitan je ceo španski tekst Frejleovog *El Carnero*, koji ispravlja sažetke na vebu (telo se maže „lepljivom zemljom", ne smolom; ronjenja u jezero kod Frejlea nema; Sepúlvedu je poznavao lično). Ostalo je sekundarno (Bandelier 1893, Wikipedia); stranica Banco de la República i BBC članak nisu mogli da se otvore, Hemming nije čitan. Nijedan podatak o broju mrtvih nije potvrđen i nijedan ne ulazi u skriptu.
+
+#### #35 — A King Gave Away So Much Gold That Cairo's Price Fell
+
+`status: done` · **73.7** · oštriji ugao · izvorna oznaka: dodata 2026-11-04, van originalnih 30 · `episodes/mansa-musa`
+
+Ocene M1–M10: 4 / 4 / 4 / 4 / 3 / 4 / 2 / 4 / 4 / 3 — sirovo 70 / 95.
+
+Story: In July 1324 Mansa Musa, ruler of Mali, reached Cairo on his pilgrimage to Mecca. An Egyptian emir sent to meet him told the historian al-Umari what he saw: Musa spoke only through an interpreter although his Arabic was perfect, sent many loads of raw gold to the sultan's treasury, and refused the audience because he would have to kiss the ground — until a man beside him whispered and he said, "I make obeisance to God who created me," and bowed. He then flooded Cairo with gold, leaving no emir or office-holder without a load, and al-Umari says the price of gold fell and stayed low "for about twelve years". The twelve years rest on al-Umari alone, another chronicler gives a different figure, and a modern historian found the changes within normal swings. The return from Mecca ruined Musa: pilgrims died, supplies were lost, he borrowed from Cairo's merchants who per two chroniclers were never or only partly repaid. About 1375 the Catalan Atlas shows him with gold in his hand and calls him "the richest and noblest of all these lands", a caption modern writers turned into "richest man in history".
+
+Hook: “In 1324 a king from West Africa rode into Cairo and gave away so much gold that, one chronicler says, the price of gold stayed low for twelve years.”
+
+Zašto ovaj skor: Dvor, odbijanje da se poljubi zemlja i šapat nose scenu koja se ne zaboravlja, a poenta (cena zlata se možda i nije pomerila, ali priča jeste) prevrće „najbogatiji čovek ikad"; spuštaju ga to što je Mansa Musa jedna od najispričanijih ličnosti niše i što je lik velikodušan, a ne neko ko mnogo rizikuje.
+
+Dodata van C03 liste, u sesiji u kojoj je izabrana: cilj da se popuni svaka regija i epoha sajta bar jednom (Afrika i Srednji vek su bili prazni); izabrana je jer jedna sačuvana stranica al-Umarija daje i scenu i sumnju u sopstvene brojke. **Popularnost nije izmerena brojkama.** Kategorija 2 jer je priča o događaju iz stvarne istorije, ne o mitu. Primarni tekst je samo isečak al-Umarija u prevodu Levtziona i Hopkinsa (World History Commons); sve ostalo je Wikipedia. Brojevi pratnje (12.000 robova, 80 kamila, „18 tona zlata") nisu korišćeni: Wikipedia ih naziva književnim, iz jednog lanca prenosa. Ime emira ne stoji u isečku.
+
+#### #36 — Two Brothers Beat the Maya Lords of Death at Their Own Game
+
+`status: done` · **80.5** · radi odmah · izvorna oznaka: dodata 2026-11-04, van originalnih 30 · `episodes/hero-twins`
+
+Ocene M1–M10: 4 / 4 / 4 / 5 / 4 / 5 / 4 / 3 / 3 / 3 — sirovo 76.5 / 95.
+
+Story: In the Popol Vuh, the book of the K'iche' Maya of Guatemala, the lords of Xibalba, the underworld, invite the brothers Hun Hunahpu and Vucub Hunahpu to a ball game and kill them with tricks; the father's head in a tree spits into a young woman's hand and she bears twins, Hunahpu and Xbalanque. When the lords send the same invitation, the twins plant two canes in their grandmother's house as a sign of life, cross the rivers on their blowguns, learn the lords' names by sending a mosquito to bite each one, pass the houses of trial, lose and recover a head with the help of a turtle and a rabbit, then arrange their own death — the lords burn them, grind their bones, and the bones rise from the river as fish-men and ragged dancers who burn a house and restore it, sacrifice each other and return. The lords ask for the same trick, and the twins kill the two chief lords and do not revive them. The twins rise as sun and moon. The book was written down after the conquest and nobody knows how old the story is.
+
+Hook: “The lords of the Maya underworld invited two brothers to a ball game. It was a trap, and the brothers knew it. It was how their father had died.”
+
+Zašto ovaj skor: Pogrešan korak oca postaje pravilo igre za sinove — oni pobeđuju time što planiraju sopstvenu smrt, a gospodari smrti padaju jer žele da vide još jedan trik, što prevrće celu premisu; kuće probe, glasnici-životinje, trska kao znak života i loptaški teren daju najširi vizuelni raspon u listi, a spuštaju ga to što priča traži mnogo imena i što je zapisana tek posle osvajanja.
+
+Dodata van C03 liste, u sesiji u kojoj je izabrana: cilj da se popuni svaka regija sajta (Severna Amerika; Mezoamerika je na svetskoj karti Severna Amerika) uz korisnikovu želju za pričama o Majama. Kategorija 3 jer je jezgro mit. Čitan je pravi tekst: španski prevod Raynaudove francuske verzije (Asturias i González de Mendoza, 1927) na Wikisource-u, poglavlja 11–25; Spenceov engleski tekst iz 1908. je prepričavanje i korišćen je samo za poređenje, a prevod Goetza i Morleya nije mogao da se otvori. Broj i imena kuća probe razlikuju se među verzijama, pa skripta uzima samo ono u čemu se tekst i Wikipedia slažu. Ne nosi tvrdnju da su blizanci prikazani na majanskim vazama: kaže „možda".
 
 ---
 
