@@ -10,15 +10,16 @@ Poseidon did not laugh."), granice izmerene. `outro_start` 228.22 (S53). Tempo i
 
 ## Režim: mešovit
 
-**44 beata · 45 shotova · prosek 5.69s · plan 27 klipova · 18 slika.** Dva klipa (01 i 02) su
-kopije iz Part 3 i ne generišu se, pa u Flow-u ostaje **25 klipova**. `shotlist.mjs` ih ipak
-broji (27), pa su stvarni troškovi 2 klipa niži od zaglavlja čeklite.
+**44 beata · 45 shotova · prosek 5.69s · plan 26 klipova · 19 slika.** Dva klipa (01 i 02) su
+kopije iz Part 3 i ne generišu se, pa u Flow-u ostaje **24 klipa**. `shotlist.mjs` ih ipak
+broji (26), pa su stvarni troškovi 2 klipa niži od zaglavlja čeklite.
 
 Režim shota bira se vizuelno: pokret nosi informaciju → `clip`; kadar je držana tvrdnja → `still`.
 
 | Slika | Zašto |
 |---|---|
 | 04 Hera sa novorođenčetom, prazan presto | portret i tiha tvrdnja; „bez Zevsa" je prazan presto |
+| 07 dečak Hefest kuje u pećini | Flow odbija klip sa detetom u kadru („maloletnici"); slika ostaje, spor `pan-right` vodi od boginja ka polici sa nakitom |
 | 08 Hefest kod nakovnja | portret odluke („took his revenge") |
 | 09 zlatni presto stiže | predmet kao dar, bez radnje |
 | 14 Afrodita | portret („most beautiful") |
@@ -38,9 +39,9 @@ Režim shota bira se vizuelno: pokret nosi informaciju → `clip`; kadar je drž
 | 45 end kartica | uvek slika |
 
 Klipovi po dužini generisanja: 4s ×8 (02, 03, 06, 11, 21, 22, 23, 38), 6s ×7 (05, 10, 24, 30,
-31, 33, 37), 8s ×5 (01, 07, 18, 26, 36), 10s ×7 (12, 13, 17, 19, 20, 34, 40).
+31, 33, 37), 8s ×4 (01, 18, 26, 36), 10s ×7 (12, 13, 17, 19, 20, 34, 40).
 
-**Pokret slika:** push je podrazumevan, razbijen tamo gde bi se nizao — `pan-right` na 09,
+**Pokret slika:** push je podrazumevan, razbijen tamo gde bi se nizao — `pan-right` na 07 i 09,
 `pan-left` na 15 i 28, `pull` na 41 i 43, `hold` na 44 i 45. Svaki prati `SCREEN DIRECTION` svog
 kadra.
 
@@ -93,7 +94,7 @@ shota se ne šalje u Flow.
   compilation i svaki kasniji kadar u kome se pojave.
 - **Lokalni za Part 4:** `hermes`, `the-sea-goddesses` (Tetida i Eurinoma, bez imena u skripti),
   `sea-cave`, `the-forge`, `the-bedchamber`, `the-net`, `the-golden-throne`.
-- **Nisu zaključani:** dečak Hefest u pećini (07), novorođenče (04, 05), bog vina (12), džinovi
+- **Nisu zaključani:** dečak Hefest u pećini (07), novorođenče (04; u 05 je samo beli veo), bog vina (12), džinovi
   (18), slepi pesnik (15), boginja na kapcima (29), publika u 33 i 34. Afrodita u 34 i 37 je bez
   locka (lice sakriveno, vidi se samo kosa), jer treći lock pripada Aresu i mreži.
 - **Tri locka nose** 01, 17, 21, 24, 30, 31, 34, 36, 37, 40 i 45. **Bez locka:** 15, 29, 38, 39.
