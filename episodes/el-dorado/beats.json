@@ -1,0 +1,463 @@
+[
+  {
+    "beat_id": "B01",
+    "sentences": [
+      "S01",
+      "S02"
+    ],
+    "device": null,
+    "viewer_sees": "A man covered head to foot in gold dust stands on a reed raft in the exact middle of a round mountain lake at dawn, incense smoke rising, the whole shore ringed by steep green walls and not one building",
+    "tags": {
+      "location": "guatavita-lake",
+      "time_light": "dawn-mist"
+    }
+  },
+  {
+    "beat_id": "B02",
+    "sentences": [
+      "S03"
+    ],
+    "device": null,
+    "viewer_sees": "An old chronicler writes by candlelight in a whitewashed study in colonial Bogota, the quill moving across a thick page",
+    "tags": {
+      "location": "freyle-study",
+      "time_light": "candle-night"
+    }
+  },
+  {
+    "beat_id": "B03",
+    "sentences": [
+      "S04"
+    ],
+    "device": null,
+    "viewer_sees": "An old Muisca lord sits at a low fire in a highland yard and tells his story toward an empty stool at the right where the chronicler sat",
+    "tags": {
+      "location": "highland-yard",
+      "time_light": "late-afternoon"
+    }
+  },
+  {
+    "beat_id": "B04",
+    "sentences": [
+      "S05"
+    ],
+    "device": null,
+    "viewer_sees": "The young heir sits small and thin deep inside a cave mouth at dawn, a thin thread of cave fire, the highland outside pale and cold",
+    "tags": {
+      "location": "heir-cave",
+      "time_light": "night-firelight"
+    }
+  },
+  {
+    "beat_id": "B05",
+    "sentences": [
+      "S06",
+      "S07",
+      "S08"
+    ],
+    "device": "timeline-seasons",
+    "viewer_sees": "LOCKED VIEW out of the cave mouth over six years: the heir sits at the left on a reed mat beside one plain bowl, and the weather outside the opening turns through dry gold, rain, mist and frost",
+    "tags": {
+      "location": "heir-cave",
+      "time_light": "seasons-turning"
+    }
+  },
+  {
+    "beat_id": "B06",
+    "sentences": [
+      "S09",
+      "S10"
+    ],
+    "device": null,
+    "viewer_sees": "The heir steps out of the cave at night to look at the moon and the stars; as the camera rises, a far lake glints silver in the dark bowl below",
+    "tags": {
+      "location": "highland-slope",
+      "time_light": "night-moonlit"
+    }
+  },
+  {
+    "beat_id": "B07",
+    "sentences": [
+      "S11"
+    ],
+    "device": null,
+    "viewer_sees": "Muisca builders lash a great raft of reeds at the shore and set four clay braziers on it; incense smoke thickens until it dims the daylight",
+    "tags": {
+      "location": "guatavita-lake",
+      "time_light": "morning-smoke"
+    }
+  },
+  {
+    "beat_id": "B08",
+    "sentences": [
+      "S12"
+    ],
+    "device": "crowd-as-texture",
+    "viewer_sees": "Crowds in feathers and gold crowns pack the whole shore ring around the lake, small bright figures against green slopes",
+    "tags": {
+      "location": "guatavita-lake",
+      "time_light": "morning-smoke"
+    }
+  },
+  {
+    "beat_id": "B09",
+    "sentences": [
+      "S13"
+    ],
+    "device": null,
+    "viewer_sees": "Attendants smear the heir with sticky earth and dust him with powdered gold at the water edge until he glitters from head to foot",
+    "tags": {
+      "location": "guatavita-shore",
+      "time_light": "morning-smoke"
+    }
+  },
+  {
+    "beat_id": "B10",
+    "sentences": [
+      "S14"
+    ],
+    "device": null,
+    "viewer_sees": "The gold-covered heir stands on the raft with a heap of gold and emeralds at his feet and exactly four chiefs beside him, braziers smoking at the corners",
+    "tags": {
+      "location": "guatavita-lake",
+      "time_light": "morning-smoke"
+    }
+  },
+  {
+    "beat_id": "B11",
+    "sentences": [
+      "S15"
+    ],
+    "device": null,
+    "viewer_sees": "Horns sound and the shore roars as the raft is poled out toward the middle of the lake",
+    "tags": {
+      "location": "guatavita-lake",
+      "time_light": "morning-smoke"
+    }
+  },
+  {
+    "beat_id": "B12",
+    "sentences": [
+      "S16",
+      "S17"
+    ],
+    "device": null,
+    "viewer_sees": "A flag goes up for silence; the heir flings his gold into the water in one arc, and the four chiefs throw theirs",
+    "tags": {
+      "location": "guatavita-lake",
+      "time_light": "midday-hazy"
+    }
+  },
+  {
+    "beat_id": "B13",
+    "sentences": [
+      "S18",
+      "S19"
+    ],
+    "device": null,
+    "viewer_sees": "The flag comes down and the shore erupts again; the gilded heir stands alone at the center of the raft, lord of the lake",
+    "tags": {
+      "location": "guatavita-lake",
+      "time_light": "midday-hazy"
+    }
+  },
+  {
+    "beat_id": "B14",
+    "sentences": [
+      "S20",
+      "S21"
+    ],
+    "device": null,
+    "viewer_sees": "Under the water, gold figurines, discs and emeralds sink slowly through dark green water, glinting once each as they fall: a gift, not a hoard",
+    "tags": {
+      "location": "guatavita-water",
+      "time_light": "underwater-gold"
+    }
+  },
+  {
+    "beat_id": "B15",
+    "sentences": [
+      "S22"
+    ],
+    "device": null,
+    "viewer_sees": "A highland market where Muisca traders swap salt cakes and cotton mantles for gold; the camera slides right along the trail to a stream where a gold figurine is lowered into the water",
+    "tags": {
+      "location": "muisca-market",
+      "time_light": "bright-highland-day"
+    }
+  },
+  {
+    "beat_id": "B16",
+    "sentences": [
+      "S23"
+    ],
+    "device": null,
+    "viewer_sees": "In Quito, a Muisca man from the Bogota country tells a circle of Spanish soldiers about the gilded lord, hands sketching a man covered in gold",
+    "tags": {
+      "location": "quito-fire",
+      "time_light": "dusk-firelight"
+    }
+  },
+  {
+    "beat_id": "B17",
+    "sentences": [
+      "S24"
+    ],
+    "device": null,
+    "viewer_sees": "Belalcazar in steel helmet and breastplate rises from the fire and points up the mountains, calling for the gilded man",
+    "tags": {
+      "location": "quito-fire",
+      "time_light": "dusk-firelight"
+    }
+  },
+  {
+    "beat_id": "B18",
+    "sentences": [
+      "S25",
+      "S26",
+      "S27"
+    ],
+    "device": null,
+    "viewer_sees": "Three mounted Spanish captains crest a ridge; the camera pushes past them over a misty plateau of thatched round houses and a lake: gold and emeralds on a cloth, but no golden city",
+    "tags": {
+      "location": "highland-plateau",
+      "time_light": "overcast-mist"
+    }
+  },
+  {
+    "beat_id": "B19",
+    "sentences": [
+      "S28",
+      "S29"
+    ],
+    "device": "animated-map",
+    "viewer_sees": "A hand-drawn 17th century European map of the Guiana lands: a tiny gilded man icon becomes a golden town, then a huge inland lake called Parime, sea monsters and compass rose in the margins",
+    "tags": {
+      "location": "european-map",
+      "time_light": "parchment-candle"
+    }
+  },
+  {
+    "beat_id": "B20",
+    "sentences": [
+      "S30"
+    ],
+    "device": null,
+    "viewer_sees": "Raleigh stands at the rail of an Elizabethan ship moving up a jungle river, looking upstream toward a bend that never ends",
+    "tags": {
+      "location": "orinoco-river",
+      "time_light": "dusk-green"
+    }
+  },
+  {
+    "beat_id": "B21",
+    "sentences": [
+      "S31",
+      "S32"
+    ],
+    "device": "empty-aftermath",
+    "viewer_sees": "EMPTY AFTERMATH: a rusted morion helmet, a broken iron-bound chest, a torn banner and a snapped spade half sunk in jungle mud on a shore, the camera drifting to a still silent lake",
+    "tags": {
+      "location": "lake-shore-ruin",
+      "time_light": "dawn-grey"
+    }
+  },
+  {
+    "beat_id": "B22",
+    "sentences": [
+      "S33"
+    ],
+    "device": null,
+    "viewer_sees": "Laborers cut a V-shaped notch through the rim of the lake and the water pours out through the channel, exposing a gleaming mud shore while Sepulveda in a wide hat directs them",
+    "tags": {
+      "location": "guatavita-rim",
+      "time_light": "harsh-morning"
+    }
+  },
+  {
+    "beat_id": "B23",
+    "sentences": [
+      "S34",
+      "S35"
+    ],
+    "device": null,
+    "viewer_sees": "The second, deeper cut slumps and the water creeps back; the camera pans right along the muddy rim to a plain grave where Freyle and two workers fill in the earth over a poor man",
+    "tags": {
+      "location": "guatavita-rim",
+      "time_light": "overcast-grey"
+    }
+  },
+  {
+    "beat_id": "B24",
+    "sentences": [
+      "S36",
+      "S37"
+    ],
+    "device": null,
+    "viewer_sees": "A Pasca farmer in a felt hat and ruana kneels in a cave in 1969, lifts the lid of a clay jar and finds gold and pottery gleaming in his torchlight",
+    "tags": {
+      "location": "pasca-cave",
+      "time_light": "torch-dim"
+    }
+  },
+  {
+    "beat_id": "B25",
+    "sentences": [
+      "S38"
+    ],
+    "device": null,
+    "viewer_sees": "The small gold raft: a seated chief at the center, ten smaller figures standing around him, some masked, the surface granular as if it all came from one pour",
+    "tags": {
+      "location": "museum-case",
+      "time_light": "warm-museum-lamp"
+    }
+  },
+  {
+    "beat_id": "B26",
+    "sentences": [
+      "S39"
+    ],
+    "device": "process-cutaway",
+    "viewer_sees": "PROCESS CUTAWAY: a clay casting mold cut open to show the charcoal core and molten gold flowing in to fill ten tiny figures and one seated chief in a single pour",
+    "tags": {
+      "location": "goldsmith-workshop",
+      "time_light": "furnace-orange"
+    }
+  },
+  {
+    "beat_id": "B27",
+    "sentences": [
+      "S40"
+    ],
+    "device": "animated-map",
+    "viewer_sees": "A relief map of the Andean highlands: a gold dot at Pasca far from a ringed round lake at Guatavita, a thin dotted line drawing itself between them",
+    "tags": {
+      "location": "andes-relief-map",
+      "time_light": "parchment-lamp"
+    }
+  },
+  {
+    "beat_id": "B28",
+    "sentences": [
+      "S41"
+    ],
+    "device": null,
+    "viewer_sees": "A ghost of a reed raft with a tiny gold figure in thick mist over the lake, fading as the mist thickens and moves across the water",
+    "tags": {
+      "location": "guatavita-lake",
+      "time_light": "blue-dawn-mist"
+    }
+  },
+  {
+    "beat_id": "B29",
+    "sentences": [
+      "S42"
+    ],
+    "device": null,
+    "viewer_sees": "Close over the old chronicler hand and quill: the page fills with ink lines in a long careful script by candlelight, a century after the conquest",
+    "tags": {
+      "location": "freyle-study",
+      "time_light": "candle-night"
+    }
+  },
+  {
+    "beat_id": "B30",
+    "sentences": [
+      "S43",
+      "S44"
+    ],
+    "device": null,
+    "viewer_sees": "Freyle rides a mule up a paramo trail toward a dark lake under cloud; faint golden caiman shapes glint under the black water",
+    "tags": {
+      "location": "teusaca-trail",
+      "time_light": "cold-overcast"
+    }
+  },
+  {
+    "beat_id": "B31",
+    "sentences": [
+      "S45"
+    ],
+    "device": null,
+    "viewer_sees": "Freyle bows and speaks warmly to an old Muisca priest who once kept the shrine; the priest listens, then turns to lead him up the path",
+    "tags": {
+      "location": "teusaca-trail",
+      "time_light": "cold-overcast"
+    }
+  },
+  {
+    "beat_id": "B32",
+    "sentences": [
+      "S46",
+      "S47"
+    ],
+    "device": null,
+    "viewer_sees": "The old priest reaches the edge of the dark lake and falls face down on the ground; Freyle kneels and tries to lift him, in vain",
+    "tags": {
+      "location": "teusaca-shore",
+      "time_light": "cold-overcast"
+    }
+  },
+  {
+    "beat_id": "B33",
+    "sentences": [
+      "S48",
+      "S49"
+    ],
+    "device": null,
+    "viewer_sees": "Freyle walks back down the trail empty-handed, glancing back at the small figure of the priest still lying by the far lake",
+    "tags": {
+      "location": "teusaca-trail",
+      "time_light": "dusk-cold"
+    }
+  },
+  {
+    "beat_id": "B34",
+    "sentences": [
+      "S50"
+    ],
+    "device": null,
+    "viewer_sees": "A Spaniard’s gloved hand grabs for a gold piece in the glinting mud of an exposed shore",
+    "tags": {
+      "location": "guatavita-rim",
+      "time_light": "harsh-morning"
+    }
+  },
+  {
+    "beat_id": "B35",
+    "sentences": [
+      "S51"
+    ],
+    "device": null,
+    "viewer_sees": "The lake whole again at dawn, one gold figurine drifting down through the dark water under the surface",
+    "tags": {
+      "location": "guatavita-lake",
+      "time_light": "dawn-mist"
+    }
+  },
+  {
+    "beat_id": "B36",
+    "sentences": [
+      "S52"
+    ],
+    "device": null,
+    "viewer_sees": "A final wide view of the lake at golden dusk, mist rolling, a single thread of gold glint on the water where the raft once stood",
+    "tags": {
+      "location": "guatavita-lake",
+      "time_light": "golden-dusk"
+    }
+  },
+  {
+    "beat_id": "B37",
+    "sentences": [
+      "S53",
+      "S54"
+    ],
+    "device": null,
+    "viewer_sees": "End card: poster of the whole story with the title, the gilded heir, Freyle and the SUBSCRIBE button",
+    "tags": {
+      "location": "end-card",
+      "time_light": "warm-gold"
+    }
+  }
+]

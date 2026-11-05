@@ -1,0 +1,1878 @@
+{
+  "schema_version": 2,
+  "episode": "el-dorado",
+  "generated_at": "2026-11-05T21:48:23Z",
+  "narration_duration": 244.271,
+  "fps": 24,
+  "beats": [
+    {
+      "beat_id": "B01",
+      "sentences": [
+        "S01",
+        "S02"
+      ],
+      "start": 0,
+      "end": 9.62,
+      "dur": 9.62,
+      "device": null,
+      "narration_says": "El Dorado was not a city. It was a man — naked, covered in gold dust, standing on a raft in the middle of a mountain lake.",
+      "viewer_sees": "A man covered head to foot in gold dust stands on a reed raft in the exact middle of a round mountain lake at dawn, incense smoke rising, the whole shore ringed by steep green walls and not one building",
+      "shots": [
+        {
+          "shot_id": "01",
+          "beat_id": "B01",
+          "link_group": null,
+          "t_in": 0,
+          "t_out": 9.625,
+          "use_in": 0,
+          "use_out": 9.625,
+          "use_len": 9.625,
+          "motion_budget": null,
+          "gen_len": 10,
+          "source_file": "shots/part01.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "muisca-heir",
+            "reed-raft"
+          ],
+          "visual_priority": [
+            "the gilded Muisca heir standing on the raft",
+            "the reed raft with its four smoking braziers",
+            "the perfectly round lake with no city",
+            "the steep green walls ringing the shore"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a young Muisca heir of about twenty-five, a lean smooth face with high cheekbones, calm dark eyes, straight black hair cut at the shoulders, a slim upright build, a small gold ring through the nose, standing upright at the left of the raft with his arms a little away from his sides, his whole body, face and hair coated in glittering gold dust so that he reads as a living statue of gold, a plain white cotton cloth wrapped at his hips, his gold back and left shoulder toward us, his face in profile turned to the right\nSUBJECT 2: a great flat raft of bundled yellow reeds lashed with plaited cord, broad enough for six men, a raised bundled prow, a clay incense brazier standing at each of its four corners trailing grey smoke, the raft floating on the exact center of the lake, the four braziers at its corners sending up thick grey incense smoke\nACTION: a man covered head to foot in gold dust stands on a reed raft in the exact middle of a round mountain lake at dawn while incense smoke rises from four braziers around him and the first sun strikes his gold body\nSETTING: the center of Lake Guatavita, a perfectly round lake in a high Andean bowl, dark blue water ringed on every side by steep green walls of paramo grass and low scrub, thin mist along the rim, a narrow pale shore, no city and no building anywhere\nCAMERA: camera floats on the water twenty paces from the raft, eye level, long shot.\nFRAME LAYOUT: center — the gold-covered man on the reed raft, medium-sized in the frame; lower third — dark water carrying the raft’s reflection; upper two thirds — the green ring of lake walls and pale sky, far and hazy with mist; left edge — a low gold sun ray.\nFACING: we see the gilded man from behind and the left, his back and left shoulder toward camera, his face in profile toward screen-right and the far shore; the smoke leans toward screen-right.\nSCREEN DIRECTION: incense smoke streams from the braziers toward the right edge; one slow ripple spreads from the raft toward camera.\nLIGHT: low gold sunrise from the left edge, striking the gold dust so the man blazes brighter than anything in the frame; cool blue shadow on the water and a pale glow in the mist.\nPALETTE: gold, deep lake blue, paramo green, smoke grey\nDETAIL: individual gold flecks along his shoulders and arms, bundled reed lashings on the raft, three layers of green ridge fading into mist, scale carried by one small bright figure.\nNOT IN FRAME: any city, buildings, boats, other people, any text, a face seen from the front.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 9.625s; everything keeps moving at the same natural pace through the end of the 10s generation.\n0–1s: the camera starts gliding over the water toward the raft as the gold-covered man slowly lifts both arms; smoke pours up from the four braziers.\n1–3s: he turns his head toward the far shore and the gold on his shoulders ripples with light; mist drifts over the green walls.\n3–5s: the sun climbs over the left rim and its beam slides across his back so the gold flashes; the smoke bends to the right.\n5–7.5s: he raises one arm toward the center of the lake as the raft sways and the brazier flames flicker; ripples fan from the reeds.\n7.5–10s: the camera keeps gliding toward him as the glitter on his shoulders shifts with each breath and smoke curls across the sun.\nCAMERA: one continuous slow push toward the raft for the full 10 seconds.\nENVIRONMENT: smoke drifts right; mist slides over the water; ripples spread; sunlight creeps across the walls.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "guatavita-lake",
+            "time_light": "dawn-mist",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B02",
+      "sentences": [
+        "S03"
+      ],
+      "start": 9.62,
+      "end": 16.68,
+      "dur": 7.06,
+      "device": null,
+      "narration_says": "The best-known account was written in 1636 by Juan Rodríguez Freyle, a chronicler from Bogotá.",
+      "viewer_sees": "An old chronicler writes by candlelight in a whitewashed study in colonial Bogota, the quill moving across a thick page",
+      "shots": [
+        {
+          "shot_id": "02",
+          "beat_id": "B02",
+          "link_group": null,
+          "t_in": 9.625,
+          "t_out": 16.667,
+          "use_in": 0,
+          "use_out": 7.042,
+          "use_len": 7.042,
+          "motion_budget": 7.042,
+          "gen_len": 8,
+          "source_file": "shots/part02.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "freyle",
+            "freyle-study"
+          ],
+          "visual_priority": [
+            "Freyle writing at the desk",
+            "the single candle lighting his face",
+            "the thick page under his quill",
+            "the whitewashed study wall"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a lean Spanish colonial chronicler of about fifty, a long narrow face, deep-set dark eyes, a short pointed beard streaked with grey, a plain black doublet with a flat white collar, ink-stained fingers, seated at the desk at the left third, writing, his pen hand moving across a thick page, his face lit from below by one candle, deep concentration in the set of his mouth\nSUBJECT 2: a small whitewashed adobe study in colonial Bogota in 1636, a heavy wooden desk with an inkwell and a thick bound ledger, one candle, a small shuttered window, a rough clay-tile floor, the study seen with the heavy desk, a tall bound ledger and an inkwell at the lower edge\nACTION: the chronicler writes steadily with a goose-feather quill in the year 1636, dipping it, then drawing long lines of script across a thick page by candlelight\nSETTING: a cramped colonial study in Bogota, rough whitewashed adobe walls, a heavy dark wooden desk scarred with ink, a clay inkwell, loose pages, a shuttered window with a thin line of night at its edge, a clay-tile floor\nCAMERA: camera stands at the desk’s corner, eye level, medium shot.\nFRAME LAYOUT: left third — Freyle seated, near-camera and large, cropped at the waist; center — the thick page and the moving quill; right third — the candle in a brass holder with its pool of light; lower edge — the inkwell and a stack of loose pages.\nFACING: we see Freyle three-quarter from the front and right, his eyes down on the page; his writing hand is toward camera.\nSCREEN DIRECTION: the quill moves from the left edge of the page toward the right in short strokes; the candle flame leans toward the right.\nLIGHT: warm candle light from the right below, hard orange on his cheek and the page, deep brown shadow in the corners of the room.\nPALETTE: candle orange, whitewash cream, ink black, dark wood brown\nDETAIL: woven wool nap on his black doublet, the grain of the page, ink beading on the quill tip, wax running down the candle.\nNOT IN FRAME: any readable text on the page, other people, a window with daylight, the conquest battles.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 7.042s; everything keeps moving at the same natural pace through the end of the 8s generation.\n0–1s: Freyle dips the quill into the inkwell and draws it across the page in one firm line; the candle flame sways as his sleeve passes.\n1–3s: he writes line after line from the left toward the right, his lips moving with the words; ink glistens on the fresh strokes.\n3–5s: he lifts his eyes to the shuttered window and lowers them again to write on; his shadow swings across the whitewashed wall.\n5–7s: he turns the page with his left hand and begins a new line, the paper rustling; candle light pulses warm over his beard.\n7–8s: he writes on at the same steady pace while the camera drifts closer and a moth circles the flame.\nCAMERA: one continuous slow push toward Freyle’s quill hand for the full 10 seconds.\nENVIRONMENT: candle flame flickers; shadows sway on the wall; a moth circles the flame.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "freyle-study",
+            "time_light": "candle-night",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B03",
+      "sentences": [
+        "S04"
+      ],
+      "start": 16.68,
+      "end": 24.26,
+      "dur": 7.58,
+      "device": null,
+      "narration_says": "He had it from a friend: don Juan, the Muisca lord of Guatavita, whose uncle ruled when the Spaniards arrived.",
+      "viewer_sees": "An old Muisca lord sits at a low fire in a highland yard and tells his story toward an empty stool at the right where the chronicler sat",
+      "shots": [
+        {
+          "shot_id": "03",
+          "beat_id": "B03",
+          "link_group": null,
+          "t_in": 16.667,
+          "t_out": 24.25,
+          "use_in": 0,
+          "use_out": 7.583,
+          "use_len": 7.583,
+          "motion_budget": 7.583,
+          "gen_len": 8,
+          "source_file": "shots/part03.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "old-don-juan"
+          ],
+          "visual_priority": [
+            "the old don Juan speaking",
+            "the small fire between the two stools",
+            "the empty stool at the right where the chronicler sat",
+            "the highland slopes in the evening light"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: an old Muisca lord in his sixties, a deeply lined calm face, white hair cut straight at the shoulders, heavy-lidded dark eyes, a thin gold nose ring, a heavy red and ochre cotton mantle pinned at one shoulder, seated on a low carved wooden stool at the left third beside a small fire, speaking, one hand raised and open as he tells the story, his gaze fixed on the empty stool at the right\nACTION: the old Muisca lord tells his tale to a listener we do not see, one hand lifting in a slow arc as if tracing a raft on water, the other resting on his knee\nSETTING: a packed-earth yard before a thatched round house in the Bogota highlands in the late 1500s, a woven cane fence, a low fire of dry sticks, a second empty carved stool, green paramo slopes under high cloud\nCAMERA: camera stands two paces from the fire, eye level, medium shot.\nFRAME LAYOUT: left third — don Juan on his stool, near-camera and large; center — the low fire with rising sparks; right third — the second empty stool, a woven mat and a small clay cup; far upper right — green slopes and cloud, small and hazy.\nFACING: we see don Juan three-quarter from the front and left, his face turned toward screen-right and the empty stool; his raised hand is toward camera.\nSCREEN DIRECTION: sparks rise from the fire and drift toward the right edge; the cloud shadow crosses the slope from left to right.\nLIGHT: low gold evening sun from the left grazing his face and mantle, warm orange fire glow on his hands, cool blue shade on the far slope.\nPALETTE: ochre, red mantle, fire orange, paramo green\nDETAIL: woven wool nap on the red and ochre mantle, deep lines at his eyes, grain of the carved stool, ash drifting from the fire, smoke from the fire thinning into the cold air, the shine of old gold on his thin nose ring, a cracked clay cup of chicha at the foot of the stool.\nNOT IN FRAME: any other person, a Spaniard, a city, any text.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 7.583s; everything keeps moving at the same natural pace through the end of the 8s generation.\n0–1s: don Juan begins to speak, one raised hand sweeping out in a slow arc; the fire cracks and sparks leap toward the right.\n1–3s: his hand draws a circle in the air and flattens like the surface of water, his eyes following it; smoke leans toward the empty stool.\n3–5s: he nods slowly at something unseen and draws breath to go on; cloud shadow slides across the green slope at the upper right.\n5–7s: he taps two fingers on his knee as if counting years, his lips moving; the flames flare and shadows swing over the stool.\n7–8s: he keeps speaking in the same easy rhythm, his hand opening toward the empty stool, while the camera drifts closer.\nCAMERA: one continuous slow push toward don Juan for the full 8 seconds.\nENVIRONMENT: sparks drift right; cloud shadow crosses the slope; ash lifts from the fire.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "highland-yard",
+            "time_light": "late-afternoon",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B04",
+      "sentences": [
+        "S05"
+      ],
+      "start": 24.26,
+      "end": 27.92,
+      "dur": 3.66,
+      "device": null,
+      "narration_says": "Don Juan was in the middle of an heir's fast at that moment.",
+      "viewer_sees": "The young heir sits small and thin deep inside a cave mouth at dawn, a thin thread of cave fire, the highland outside pale and cold",
+      "shots": [
+        {
+          "shot_id": "04",
+          "beat_id": "B04",
+          "link_group": null,
+          "t_in": 24.25,
+          "t_out": 27.917,
+          "use_in": 0,
+          "use_out": 3.667,
+          "use_len": 3.667,
+          "motion_budget": null,
+          "gen_len": null,
+          "source_file": "shots/shot04.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "muisca-heir",
+            "heir-cave"
+          ],
+          "visual_priority": [
+            "the young Muisca heir sitting in the cave",
+            "the thin thread of fire beside him",
+            "the cold pale opening onto the highland",
+            "the rough rock walls"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a young Muisca heir of about twenty-five, a lean smooth face with high cheekbones, calm dark eyes, straight black hair cut at the shoulders, a slim upright build, a small gold ring through the nose, seated small and thin on a reed mat deep inside the cave at the left third, his shoulders wrapped in a plain cotton mantle, his face pale and hollowed by fasting, his eyes turned toward the pale opening at the right\nSUBJECT 2: a low dry cave in an Andean hillside, rough grey rock walls, a floor of woven reed mats, one small cooking fire, a rough opening onto cold highland slopes, the cave seen from inside, the rough opening a cold grey-blue shape at the right edge\nACTION: the young heir sits cross-legged at the start of his fast, a single thread of cave fire beside him, the dawn light outside pale and cold\nSETTING: the inside of a low cave in an Andean hillside, grey rock sweating with damp, woven reed mats, a small cooking fire, the cave mouth opening to a pale paramo slope with frailejon plants\nCAMERA: camera stands at the cave’s center, low and wide, long shot.\nFRAME LAYOUT: left third — the heir seated small on his mat; center — the thin fire and a plain clay bowl; right third — the cave opening, bright and cold, with a slope and one frailejon plant in it; upper edge — the dark rough roof of the cave.\nFACING: we see the heir from the front and slightly left, his eyes turned toward screen-right and the opening.\nSCREEN DIRECTION: a thin thread of smoke rises from the fire and bends toward the cave mouth at the right; a drop of water falls from the roof at the upper left.\nLIGHT: cold blue dawn light from the opening at the right, a small warm orange glow from the fire, deep black shadow in the rock.\nPALETTE: cave black, cold blue-grey, fire orange, reed tan\nDETAIL: the rough grain of the rock, the weave of the reed mats, the heir’s thin wrists, pale mist at the cave mouth.\nNOT IN FRAME: gold, other people, a woman, meat or food heaps, any text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "heir-cave",
+            "time_light": "night-firelight",
+            "camera_motion": "push"
+          },
+          "render_mode": "still",
+          "still_motion": "push"
+        }
+      ]
+    },
+    {
+      "beat_id": "B05",
+      "sentences": [
+        "S06",
+        "S07",
+        "S08"
+      ],
+      "start": 27.92,
+      "end": 36.78,
+      "dur": 8.86,
+      "device": "timeline-seasons",
+      "narration_says": "That was the custom, Freyle writes. An heir spent six years in a cave. No women, no meat, no salt, no chili.",
+      "viewer_sees": "LOCKED VIEW out of the cave mouth over six years: the heir sits at the left on a reed mat beside one plain bowl, and the weather outside the opening turns through dry gold, rain, mist and frost",
+      "shots": [
+        {
+          "shot_id": "05",
+          "beat_id": "B05",
+          "link_group": null,
+          "t_in": 27.917,
+          "t_out": 36.792,
+          "use_in": 0,
+          "use_out": 8.875,
+          "use_len": 8.875,
+          "motion_budget": 8.875,
+          "gen_len": 10,
+          "source_file": "shots/part05.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "muisca-heir",
+            "heir-cave"
+          ],
+          "visual_priority": [
+            "the Muisca heir sitting in the cave",
+            "the one plain bowl beside him",
+            "the weather turning outside the opening",
+            "the cave’s rough walls"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a young Muisca heir of about twenty-five, a lean smooth face with high cheekbones, calm dark eyes, straight black hair cut at the shoulders, a slim upright build, a small gold ring through the nose, seated cross-legged at the left of the cave on a reed mat beside one plain bowl, thin and calm, a cotton mantle drawn around his shoulders, his face in profile turned toward the opening at the right\nSUBJECT 2: a low dry cave in an Andean hillside, rough grey rock walls, a floor of woven reed mats, one small cooking fire, a rough opening onto cold highland slopes, the cave mouth seen from inside as a locked window onto the highland, the seasons turning beyond it\nACTION: six years of fasting pass over one locked view: the heir sits in the same place while the light and weather outside the cave mouth turn from dry gold grass to rain, to mist, to frost\nSETTING: the inside of a low dry cave in an Andean hillside, grey rock walls, reed mats, one plain clay bowl of boiled maize, the cave opening framing a paramo slope with grass and frailejon plants\nCAMERA: camera locked inside the cave facing the opening, eye level, long shot.\nFRAME LAYOUT: left third — the heir seated on his mat, near-camera; center — the plain bowl on the floor; right two thirds — the bright cave opening, a framed window of paramo slope and sky; upper edge — the dark roof of rock.\nFACING: we see the heir in profile from his left side, his face toward screen-right and the opening; the bowl’s rim faces camera.\nSCREEN DIRECTION: the light and weather in the opening change from gold to grey rain to white mist, drifting from right to left across the slope; a thin thread of fire smoke rises beside him.\nLIGHT: cold daylight from the opening at the right that changes colour through the seasons, a small warm orange glow from the fire, deep shadow in the rock.\nPALETTE: cave black, dry-grass gold, rain grey, frost white\nDETAIL: the grain of the rock, the weave of the mats, one plain bowl, the paramo grass changing colour beyond the opening.\nNOT IN FRAME: gold, other food, a woman, other people, any text.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 8.875s; everything keeps moving at the same natural pace through the end of the 10s generation.\n0–1s: the heir draws the mantle around his shoulders and breathes out, the fire thread beside him bending; outside, dry gold grass bends in the wind.\n1–3s: rain sweeps across the slope from right to left and the light dims; the heir lowers his gaze to the bowl and sinks into a long breath.\n3–5s: white mist rolls into the opening and swallows the grass; he lifts the bowl, sips and sets it down in the fire glow.\n5–7.5s: frost whitens the grass under a hard pale light; he rubs his hands together over the small fire, the flames leaning.\n7.5–10s: a new dry season returns gold at the opening and a pale sun slides across the cave floor; he lifts his head toward it.\nCAMERA: camera locked on the cave mouth for the full 10 seconds while the weather changes in the opening.\nENVIRONMENT: weather crosses the opening from right to left; fire smoke curls; light slides over the floor.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "heir-cave",
+            "time_light": "seasons-turning",
+            "camera_motion": "locked"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B06",
+      "sentences": [
+        "S09",
+        "S10"
+      ],
+      "start": 36.78,
+      "end": 43.08,
+      "dur": 6.3,
+      "device": null,
+      "narration_says": "He came out only at night, to look at the moon and the stars. Then came the lake.",
+      "viewer_sees": "The heir steps out of the cave at night to look at the moon and the stars; as the camera rises, a far lake glints silver in the dark bowl below",
+      "shots": [
+        {
+          "shot_id": "06",
+          "beat_id": "B06",
+          "link_group": null,
+          "t_in": 36.792,
+          "t_out": 43.083,
+          "use_in": 0,
+          "use_out": 6.291,
+          "use_len": 6.291,
+          "motion_budget": 6.291,
+          "gen_len": 8,
+          "source_file": "shots/part06.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "muisca-heir"
+          ],
+          "visual_priority": [
+            "the Muisca heir stepping out of the cave",
+            "the full moon and the stars",
+            "the paramo slope in moonlight",
+            "the far lake glinting in the bowl below"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a young Muisca heir of about twenty-five, a lean smooth face with high cheekbones, calm dark eyes, straight black hair cut at the shoulders, a slim upright build, a small gold ring through the nose, at the left third at the cave’s dark mouth, thin and pale, a plain cotton mantle around his shoulders, stepping out into the night with his face tipped up toward the moon, his figure small against a cold paramo slope\nACTION: the heir comes out of the cave at night and lifts his face to the moon and the stars; as the camera rises the dark bowl of a lake glints silver far below\nSETTING: a high paramo slope at night, tussock grass silvered with frost, furry frailejon plants in dark clumps, the black mouth of a cave at the left, a great round lake glinting in a dark bowl far below. Far down the slope a few tiny orange points of watch-fires mark the villages around the lake, and a thin trail of frost-whitened stones leads from the cave mouth toward the right.\nCAMERA: camera stands at the cave mouth looking up, low angle, medium shot, then rises.\nFRAME LAYOUT: left third — the heir at the cave mouth, near-camera and large, cropped at the thigh; upper right two thirds — a great pale moon and a spread of bright stars; lower right — the lake bowl far below, small and hazy with night mist.\nFACING: we see the heir three-quarter from behind and left, his face tipped up toward the moon at screen-right; his mantle hangs toward camera.\nSCREEN DIRECTION: his breath mists and drifts toward the right edge; thin clouds slide across the moon from the left toward the right.\nLIGHT: cold blue moonlight from the upper right silvering the mantle and the grass, a deep black cave mouth at the left, a pale glint on the far lake.\nPALETTE: night blue, moon silver, black, frost white\nDETAIL: frost crystals on the tussock grass, the weave of the mantle, the heir’s thin throat, individual stars in the sky.\nNOT IN FRAME: gold, other people, torches, any text.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 6.291s; everything keeps moving at the same natural pace through the end of the 8s generation.\n0–1s: the heir steps out of the dark cave mouth and lifts his face to the moon, his breath rising in a pale cloud; frost glitters at his feet.\n1–3s: he walks three slow paces toward the right edge across the frosted grass, his mantle swinging; the camera begins to rise.\n3–5s: thin clouds slide across the moon and the stars flicker as the camera climbs past his shoulder; the lake opens silver below.\n5–7s: he raises one open hand toward the stars while the camera keeps lifting; mist curls over the far lake.\n7–8s: the camera rises until the whole round lake glows in its dark bowl and the heir’s breath drifts away on the cold wind.\nCAMERA: one continuous slow rise from the heir at the cave mouth up toward the lake for the full 8 seconds.\nENVIRONMENT: breath mist drifts; clouds slide across the moon; frost glitters; night mist curls over the far lake.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "low",
+            "location": "highland-slope",
+            "time_light": "night-moonlit",
+            "camera_motion": "reveal"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B07",
+      "sentences": [
+        "S11"
+      ],
+      "start": 43.08,
+      "end": 52.06,
+      "dur": 8.98,
+      "device": null,
+      "narration_says": "On Lake Guatavita the people built a great raft of reeds and set four braziers on it, burning incense until the smoke dimmed the daylight.",
+      "viewer_sees": "Muisca builders lash a great raft of reeds at the shore and set four clay braziers on it; incense smoke thickens until it dims the daylight",
+      "shots": [
+        {
+          "shot_id": "07",
+          "beat_id": "B07",
+          "link_group": null,
+          "t_in": 43.083,
+          "t_out": 52.042,
+          "use_in": 0,
+          "use_out": 8.959,
+          "use_len": 8.959,
+          "motion_budget": 8.959,
+          "gen_len": 10,
+          "source_file": "shots/part07.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "reed-raft",
+            "muisca-crowd"
+          ],
+          "visual_priority": [
+            "the reed raft with four braziers",
+            "the builders pulling the cords",
+            "incense smoke thickening over the water",
+            "the lake shore at morning"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a great flat raft of bundled yellow reeds lashed with plaited cord, broad enough for six men, a raised bundled prow, a clay incense brazier standing at each of its four corners trailing grey smoke, lashed at the water’s edge of the lake, its four braziers newly set at the corners and starting to smoke, the raft long and flat on the shallow water\nSUBJECT 2: a crowd of Muisca men and women in cotton mantles dyed red, ochre and indigo, feather headdresses, gold crowns, gold pendants and nose rings, dark straight hair, bare feet, twelve Muisca builders in plain cotton mantles kneeling and standing along the raft, pulling cords tight and setting the braziers, a few feather headdresses among them\nACTION: Muisca builders lash the great reed raft on the shallow shore, set four clay braziers on it and light them; the incense smoke grows thick until it dims the daylight over the water\nSETTING: the shore of Lake Guatavita on a cold morning, pale pebbles and wet earth, bundles of cut reeds stacked on the bank, coils of cord, the round lake and its green walls opening beyond\nCAMERA: camera stands on the shore a few paces from the raft, eye level, long shot.\nFRAME LAYOUT: center — the long reed raft in the shallows, near-camera and large; left third — builders pulling a cord and setting the first brazier, cropped at the knee; right third — the open lake and a green wall, far and hazy; upper edge — grey incense smoke gathering into a low cloud.\nFACING: we see the builders from the side and slightly from the front, their faces toward the raft and the smoke; the raft’s long side faces camera.\nSCREEN DIRECTION: smoke rises from the four braziers and spreads toward the right edge; builders move from the left edge along the raft toward the right.\nLIGHT: cool low morning light from the left, the smoke turning the sun a dim copper, a warm orange glow inside each brazier.\nPALETTE: reed yellow, smoke grey, lake blue, copper\nDETAIL: the bundled reed lashings and plaited cords, wet earth and pebbles, grey ash lifting from each brazier.\nNOT IN FRAME: gold dust, the gilded man, boats, a city, any text.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 8.959s; everything keeps moving at the same natural pace through the end of the 10s generation.\n0–1s: two builders heave a bundle of reeds onto the raft’s left end and pull a cord tight; the nearest brazier takes a spark and smoke lifts.\n1–3s: a builder sets the second brazier at the edge and blows on the coals; others walk along the reeds toward the right setting clay pots.\n3–5s: the third and fourth braziers catch and grey smoke rolls over the lake, dimming the daylight to dull copper; builders step back and shade their eyes.\n5–7.5s: a builder tightens the last cord at the prow and the raft rocks in the shallows; incense smoke piles into a low drifting cloud.\n7.5–10s: the smoke keeps thickening and sliding to the right across the lake while the builders move along the raft tending the flames.\nCAMERA: one continuous slow push along the raft for the full 10 seconds.\nENVIRONMENT: smoke rolls and thickens; the raft rocks; ripples lap the pebbles; light turns copper.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "guatavita-lake",
+            "time_light": "morning-smoke",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B08",
+      "sentences": [
+        "S12"
+      ],
+      "start": 52.06,
+      "end": 55.84,
+      "dur": 3.78,
+      "device": "crowd-as-texture",
+      "narration_says": "Crowds ringed the shore in feathers and gold crowns.",
+      "viewer_sees": "Crowds in feathers and gold crowns pack the whole shore ring around the lake, small bright figures against green slopes",
+      "shots": [
+        {
+          "shot_id": "08",
+          "beat_id": "B08",
+          "link_group": null,
+          "t_in": 52.042,
+          "t_out": 55.833,
+          "use_in": 0,
+          "use_out": 3.791,
+          "use_len": 3.791,
+          "motion_budget": null,
+          "gen_len": null,
+          "source_file": "shots/shot08.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "muisca-crowd",
+            "guatavita-lake"
+          ],
+          "visual_priority": [
+            "the Muisca crowd ringing the shore",
+            "the unbroken ring of the round lake",
+            "the tiny smoking raft at the center",
+            "the green walls of the bowl"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a crowd of Muisca men and women in cotton mantles dyed red, ochre and indigo, feather headdresses, gold crowns, gold pendants and nose rings, dark straight hair, bare feet, thousands of small bright figures packed in a ring along the whole shore, feathers and gold crowns glittering, arms raised, each reduced to a mark of red, ochre, indigo and gold\nSUBJECT 2: a perfectly round mountain lake in a high Andean bowl, dark blue water ringed by steep walls of green paramo grass and low scrub, a narrow pale shore, thin mist along the rim, no building anywhere, seen from the high rim, the round lake an unbroken disc of dark water with a tiny raft at its center\nACTION: the whole shore is ringed with people in feathers and gold crowns, thousands of tiny figures standing shoulder to shoulder around the lake, all facing the raft in the middle\nSETTING: the high rim of the Andean bowl above Lake Guatavita, green paramo walls falling to a narrow pale shore, a thin line of smoke from a tiny raft at the center of the dark disc of water\nCAMERA: camera stands on the high rim above the lake, high angle, extreme wide shot.\nFRAME LAYOUT: center — the dark round lake with a tiny smoking raft at its middle; ring around it — the dense band of the crowd along the shore, a pattern of red, ochre, indigo and gold marks; outer ring — the steep green walls of the bowl, hazy; lower edge — near-camera, a few figures on the rim cropped at the shoulder.\nFACING: we see the crowd from above, every face and arm turned inward toward the raft at the center; the few figures at the lower edge show their backs.\nSCREEN DIRECTION: a ripple of raised arms passes around the ring of the shore from the left toward the right; a thread of smoke rises from the raft.\nLIGHT: cool flat morning light with a thin copper haze from the smoke, bright flecks of gold on the crowd.\nPALETTE: indigo, ochre, gold glints, lake blue\nDETAIL: pattern and rhythm of tiny colored figures, glints of gold on crowns and chests, no individual faces, layers of green wall fading into haze.\nNOT IN FRAME: close faces, boats, buildings, any text, the gilded man large.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "crowd",
+            "shot_size": "XLS",
+            "angle": "high",
+            "location": "guatavita-lake",
+            "time_light": "morning-smoke",
+            "camera_motion": "pull"
+          },
+          "render_mode": "still",
+          "still_motion": "pull"
+        }
+      ]
+    },
+    {
+      "beat_id": "B09",
+      "sentences": [
+        "S13"
+      ],
+      "start": 55.84,
+      "end": 63.64,
+      "dur": 7.8,
+      "device": null,
+      "narration_says": "They stripped the heir, smeared him with sticky earth, and dusted him with powdered gold until he was covered from head to foot.",
+      "viewer_sees": "Attendants smear the heir with sticky earth and dust him with powdered gold at the water edge until he glitters from head to foot",
+      "shots": [
+        {
+          "shot_id": "09",
+          "beat_id": "B09",
+          "link_group": null,
+          "t_in": 55.833,
+          "t_out": 63.625,
+          "use_in": 0,
+          "use_out": 7.792,
+          "use_len": 7.792,
+          "motion_budget": 7.792,
+          "gen_len": 8,
+          "source_file": "shots/part09.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "muisca-heir",
+            "muisca-crowd"
+          ],
+          "visual_priority": [
+            "the Muisca heir being covered in gold",
+            "the cloud of powdered gold in the air",
+            "the attendants smearing and dusting",
+            "the dark water at his knees"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a young Muisca heir of about twenty-five, a lean smooth face with high cheekbones, calm dark eyes, straight black hair cut at the shoulders, a slim upright build, a small gold ring through the nose, standing knee-deep at the water’s edge at the left third, a plain cloth wrapped at his hips, his back and left shoulder turned toward us, his skin already smeared with sticky grey-brown earth and half dusted with glittering gold, his arms held out from his sides, his face in profile turned to the right\nSUBJECT 2: a crowd of Muisca men and women in cotton mantles dyed red, ochre and indigo, feather headdresses, gold crowns, gold pendants and nose rings, dark straight hair, bare feet, four attendants in plain cotton mantles around him, two smearing earth on his back with their palms, one holding a clay bowl of powdered gold, one blowing gold dust through a hollow reed so that it floats in a bright cloud\nACTION: attendants smear the heir with sticky earth and dust him with powdered gold until the whole of his back and arms glitters from head to foot\nSETTING: the pebbled shore of Lake Guatavita at morning, wet earth, shallow clear water, a clay bowl of gold dust and a bowl of sticky earth on a flat stone, the smoking raft waiting a few paces away on the water\nCAMERA: camera stands three paces from the heir at the water’s edge, eye level, medium shot cropped at the waist.\nFRAME LAYOUT: left third — the heir, near-camera and large, cropped at the waist; center — two attendants working at his back with the cloud of gold dust between them; right third — the reed raft with its four braziers, far and hazy on the water; lower edge — the clay bowls on a stone.\nFACING: we see the heir from behind and the left, his gilded back and shoulder toward camera, his face in profile toward screen-right; the attendants face him and camera.\nSCREEN DIRECTION: gold dust drifts from the reed and the bowl across the heir’s shoulders toward the right edge; hands sweep along his back from the left toward the right.\nLIGHT: low copper light through incense haze from the right, bright points of gold along his shoulders, cool shade on the water.\nPALETTE: gold, mud brown, smoke copper, lake blue\nDETAIL: the cloud of gold flecks in the air, wet earth on skin, hollow reed tube, woven wool nap on the mantles.\nNOT IN FRAME: a front view of his body, any text, other boats, Spaniards.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 7.792s; everything keeps moving at the same natural pace through the end of the 8s generation.\n0–1s: an attendant presses both palms down the heir’s back, smearing earth; gold dust starts to float from the hollow reed.\n1–3s: a second attendant blows through the reed and a bright cloud of gold drifts over the heir’s shoulders; the first pours a stream of gold along his arm.\n3–5s: the gold takes on his back in a growing sheet of light while the attendants step around him; he turns slowly at the waist and the glitter flashes.\n5–7s: an attendant dusts gold over his neck with a feather fan; the heir lowers his arms and his gilded outline glows against the dark water.\n7–8s: the cloud of gold keeps drifting right as the attendants work along his legs and the camera glides closer.\nCAMERA: one continuous slow push toward the heir’s shoulder for the full 8 seconds.\nENVIRONMENT: gold dust floats; ripples touch his knees; smoke drifts across the raft.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "guatavita-shore",
+            "time_light": "morning-smoke",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B10",
+      "sentences": [
+        "S14"
+      ],
+      "start": 63.64,
+      "end": 69.72,
+      "dur": 6.08,
+      "device": null,
+      "narration_says": "He stood on the raft with a heap of gold and emeralds at his feet and four chiefs beside him.",
+      "viewer_sees": "The gold-covered heir stands on the raft with a heap of gold and emeralds at his feet and exactly four chiefs beside him, braziers smoking at the corners",
+      "shots": [
+        {
+          "shot_id": "10",
+          "beat_id": "B10",
+          "link_group": null,
+          "t_in": 63.625,
+          "t_out": 69.708,
+          "use_in": 0,
+          "use_out": 6.083,
+          "use_len": 6.083,
+          "motion_budget": 6.083,
+          "gen_len": 8,
+          "source_file": "shots/part10.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "muisca-heir",
+            "muisca-chiefs",
+            "offering-heap"
+          ],
+          "visual_priority": [
+            "the gilded Muisca heir at the center of the raft",
+            "exactly four chiefs, two on each side",
+            "the heap of gold and emeralds at his feet",
+            "the four braziers smoking at the corners"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a young Muisca heir of about twenty-five, a lean smooth face with high cheekbones, calm dark eyes, straight black hair cut at the shoulders, a slim upright build, a small gold ring through the nose, standing at the center of the raft, his whole body, face and hair coated in gold until he glows like a statue cast in the metal, a plain cloth at his hips, his gold face and chest turned slightly toward screen-right, a crown of feathers on his head\nSUBJECT 2: four Muisca chiefs, broad-shouldered men in their forties and fifties, each in a tall gold diadem with upright feather plumes, a wide gold breastplate and a thick cotton mantle woven in red, white and indigo stripes, exactly four chiefs, two standing at his left and two at his right, each looking toward the middle of the lake, standing straight in their bright striped mantles\nSUBJECT 3: a heap of raw gold ornaments and green emeralds: flat gold figurines, discs, nose rings and rough nuggets mixed with rough uncut green emeralds, the gold soft and warm, the emeralds dark and glassy, heaped at the heir’s feet on the reed floor, glinting, the pile as high as his knees\nACTION: the gold-covered heir stands upright on the raft with a heap of gold and emeralds at his feet, four chiefs beside him, as incense smoke from four braziers drifts over them\nSETTING: a great reed raft on the open water of Lake Guatavita at morning, the braziers at its four corners smoking, the ring of the lake wall faint in the haze beyond the raft’s edge\nCAMERA: camera stands on the water below the raft’s edge, low angle, medium shot.\nFRAME LAYOUT: center — the gilded heir, near-camera and large, cropped at the thigh; left third — two chiefs standing in a line; right third — two chiefs standing in a line; lower edge — the heap of gold and emeralds at the heir’s feet; upper edge — smoke and pale sky.\nFACING: we see the heir from the front and slightly below, his face calm and lifted toward screen-right; the chiefs show their faces in three-quarter, all looking toward the middle of the lake at screen-right.\nSCREEN DIRECTION: smoke drifts from the corner braziers across the group toward the right edge; the raft rocks gently so the heap glints from left to right.\nLIGHT: low copper sun from the left through incense haze, the gilded heir the brightest thing in the frame, warm shine on the heap, soft shadow on the chiefs’ faces.\nPALETTE: gold, emerald green, stripe red and indigo, smoke grey\nDETAIL: gold flecks on the heir’s face, emerald facets and the heap’s mixed gold, feather plumes on the diadems, woven stripes on the mantles.\nNOT IN FRAME: a fifth chief, boats, Spaniards, buildings, any text.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 6.083s; everything keeps moving at the same natural pace through the end of the 8s generation.\n0–1s: the heir draws a deep breath and lifts his chin, the gold on his chest flashing; the four chiefs turn their heads toward the middle of the lake.\n1–3s: smoke from the braziers rolls across the group and the raft rocks, so the heap of gold and emeralds at his feet glints in a slow wave.\n3–5s: the outer chiefs lift their arms to shoulder height and the plumes on their diadems sway; light crawls along the heir’s gilded arms.\n5–7s: a long low horn call sounds at the left and the chiefs’ mantles swing as the raft glides forward; ripples spread along its sides.\n7–8s: the camera keeps rising past the heir’s face as the smoke thickens and the group glides on over the water.\nCAMERA: one continuous slow push up toward the heir’s face for the full 8 seconds.\nENVIRONMENT: smoke thickens; ripples spread along the raft; plumes sway; light slides over the gold heap.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "low",
+            "location": "guatavita-lake",
+            "time_light": "morning-smoke",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B11",
+      "sentences": [
+        "S15"
+      ],
+      "start": 69.72,
+      "end": 74.16,
+      "dur": 4.44,
+      "device": null,
+      "narration_says": "Horns sounded and the shore roared until they reached the middle of the lake.",
+      "viewer_sees": "Horns sound and the shore roars as the raft is poled out toward the middle of the lake",
+      "shots": [
+        {
+          "shot_id": "11",
+          "beat_id": "B11",
+          "link_group": null,
+          "t_in": 69.708,
+          "t_out": 74.167,
+          "use_in": 0,
+          "use_out": 4.459,
+          "use_len": 4.459,
+          "motion_budget": 4.459,
+          "gen_len": 6,
+          "source_file": "shots/part11.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "reed-raft",
+            "muisca-crowd"
+          ],
+          "visual_priority": [
+            "the reed raft gliding out onto the lake",
+            "the crowd roaring on the near shore",
+            "the horns and conch trumpets",
+            "the wide water between shore and middle of the lake"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a great flat raft of bundled yellow reeds lashed with plaited cord, broad enough for six men, a raised bundled prow, a clay incense brazier standing at each of its four corners trailing grey smoke, gliding out from the left shore at the center of the lake, four braziers smoking, a gold-covered figure upright at its middle and four small chiefs beside him\nSUBJECT 2: a crowd of Muisca men and women in cotton mantles dyed red, ochre and indigo, feather headdresses, gold crowns, gold pendants and nose rings, dark straight hair, bare feet, the dense crowd along the near shore at the left third, arms raised, some blowing long wooden horns and conch trumpets, shouting\nACTION: horns sound and the shore roars as the raft is poled out from the bank toward the middle of the lake\nSETTING: Lake Guatavita at mid-morning, a pebbled near shore packed with people, wide dark water, the green wall of the bowl rising beyond in haze, thin incense smoke trailing from the raft\nCAMERA: camera stands on a low point of the shore at the left, eye level, long shot.\nFRAME LAYOUT: left third — the crowd along the shore with raised arms and horns, near-camera and large, cropped at the chest; center — the raft with its gold figure gliding away, medium and small; right third — open water and the far green wall, far and hazy.\nFACING: we see the crowd from behind and the side, their faces and horns turned toward the raft at screen-right; the raft shows its long side to camera.\nSCREEN DIRECTION: the raft glides from the left shore toward the right across the water; smoke trails behind it toward the left; sound-ripples pass along the crowd from the left toward the right.\nLIGHT: copper morning light through thin smoke, bright flecks on the gold crowns, a bright point on the gilded figure.\nPALETTE: indigo, ochre, gold, lake blue\nDETAIL: individual feather plumes, long wooden horns and spiral conch shells, ripples fanning from the poles, layered haze on the far wall.\nNOT IN FRAME: Spaniards, boats other than the raft, any text, buildings.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 4.459s; everything keeps moving at the same natural pace through the end of the 6s generation.\n0–1s: the crowd on the near shore lifts long horns and blows; the raft pushes off from the bank and its poles dip into the water.\n1–3s: the raft glides out from the left toward the right while arms wave on the shore and the noise ripples along the crowd; gold flashes from the figure on the raft.\n3–4.5s: the horns blast again and the crowd surges to the water’s edge; the raft turns slightly and a line of ripples spreads behind it.\n4.5–6s: the raft keeps gliding toward the middle of the lake as incense smoke trails behind it and the shouting rolls on.\nCAMERA: one continuous slow track to the right following the raft for the full 6 seconds.\nENVIRONMENT: smoke trails; ripples spread; feathers sway; haze moves over the far wall.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "guatavita-lake",
+            "time_light": "morning-smoke",
+            "camera_motion": "track"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B12",
+      "sentences": [
+        "S16",
+        "S17"
+      ],
+      "start": 74.16,
+      "end": 80.04,
+      "dur": 5.88,
+      "device": null,
+      "narration_says": "Then a flag went up for silence, and he threw the gold into the water. The chiefs threw theirs.",
+      "viewer_sees": "A flag goes up for silence; the heir flings his gold into the water in one arc, and the four chiefs throw theirs",
+      "shots": [
+        {
+          "shot_id": "12",
+          "beat_id": "B12",
+          "link_group": null,
+          "t_in": 74.167,
+          "t_out": 80.042,
+          "use_in": 0,
+          "use_out": 5.875,
+          "use_len": 5.875,
+          "motion_budget": 5.875,
+          "gen_len": 6,
+          "source_file": "shots/part12.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "muisca-heir",
+            "muisca-chiefs"
+          ],
+          "visual_priority": [
+            "the gilded Muisca heir throwing gold",
+            "the arc of gold falling toward the water",
+            "the four chiefs behind him with the white flag",
+            "the middle of the lake"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a young Muisca heir of about twenty-five, a lean smooth face with high cheekbones, calm dark eyes, straight black hair cut at the shoulders, a slim upright build, a small gold ring through the nose, standing at the center of the raft in profile, his whole body coated in gold, throwing a handful of gold ornaments out over the water with a sweeping right arm, his face turned to the right\nSUBJECT 2: four Muisca chiefs, broad-shouldered men in their forties and fifties, each in a tall gold diadem with upright feather plumes, a wide gold breastplate and a thick cotton mantle woven in red, white and indigo stripes, four chiefs in their striped mantles, the nearest lifting a tall pole with a white cotton flag in one hand to call silence, the others each holding a handful of gold of their own\nACTION: a flag goes up for silence, the heir flings the gold into the water in one great arc, and the chiefs throw theirs after it one by one\nSETTING: the raft in the exact middle of Lake Guatavita at midday, a hush over the water, the ring of the shore pale and tiny in the haze, braziers smoking at the raft’s corners\nCAMERA: camera stands level with the raft’s edge to the side, low angle, medium shot.\nFRAME LAYOUT: left third — the heir, near-camera and large, with his throwing arm swinging toward the right; center — the arc of gold pieces in the air; right third — the open lake and its far haze; left edge — a chief with the white flag raised on its pole, cropped at the thigh.\nFACING: we see the heir side-on from his left, his face turned toward screen-right and the water; the chiefs three-quarter, looking toward the water.\nSCREEN DIRECTION: the gold pieces fly from the heir’s hand toward the right edge and fall toward the water; the flag fabric stirs toward the right.\nLIGHT: hard white midday light flashing off the gold in the air and on the heir’s body, a pale haze over the water.\nPALETTE: gold, white flag, lake blue, haze grey\nDETAIL: glinting flat gold figurines and discs in the air, ripples radiating from where the gold hits the water, gold flecks on the heir’s arm.\nNOT IN FRAME: the crowd close up, Spaniards, boats, any text.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 5.875s; everything keeps moving at the same natural pace through the end of the 6s generation.\n0–1s: a chief raises the tall pole and the white flag lifts above the raft; the heir draws his right arm back, gold glinting in his fist.\n1–3s: the heir swings his arm forward and flings the gold in a great arc, pieces flashing; the nearest chief steps up beside him.\n3–4.5s: the gold drops into the lake in a ring of splashes; the first chief throws his handful after it and his mantle swings.\n4.5–6s: the other chiefs throw in turn, each arm following the one before; flashes of gold fall into the water along the same line.\nCAMERA: camera locked at the raft’s edge on the heir for the full 6 seconds.\nENVIRONMENT: ripples spread; the flag stirs; sunlight flashes off falling gold; smoke drifts.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "low",
+            "location": "guatavita-lake",
+            "time_light": "midday-hazy",
+            "camera_motion": "locked"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B13",
+      "sentences": [
+        "S18",
+        "S19"
+      ],
+      "start": 80.04,
+      "end": 85.92,
+      "dur": 5.88,
+      "device": null,
+      "narration_says": "When the flag came down, the noise began again. He was lord.",
+      "viewer_sees": "The flag comes down and the shore erupts again; the gilded heir stands alone at the center of the raft, lord of the lake",
+      "shots": [
+        {
+          "shot_id": "13",
+          "beat_id": "B13",
+          "link_group": null,
+          "t_in": 80.042,
+          "t_out": 85.917,
+          "use_in": 0,
+          "use_out": 5.875,
+          "use_len": 5.875,
+          "motion_budget": 5.875,
+          "gen_len": 6,
+          "source_file": "shots/part13.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "muisca-heir",
+            "muisca-crowd"
+          ],
+          "visual_priority": [
+            "the gilded Muisca heir alone on the raft",
+            "the shore erupting around the lake",
+            "the white flag coming down",
+            "the gold glinting under the water"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a young Muisca heir of about twenty-five, a lean smooth face with high cheekbones, calm dark eyes, straight black hair cut at the shoulders, a slim upright build, a small gold ring through the nose, standing alone at the center of the raft, his whole body coated in gold, arms lowered, his face calm and lifted, the lord of the lake, the chiefs small figures kneeling at the raft’s edge\nSUBJECT 2: a crowd of Muisca men and women in cotton mantles dyed red, ochre and indigo, feather headdresses, gold crowns, gold pendants and nose rings, dark straight hair, bare feet, the far shore ring of the crowd at the left edge and across the lake, far and small, erupting in roars, arms flung up, horns blowing\nACTION: the white flag comes down and the roar of the shore begins again; the gilded heir stands alone at the center of the raft, now lord of the lake\nSETTING: the center of Lake Guatavita at midday, the raft with its smoking braziers on dark water, rings of ripples where the gold fell, the green wall of the bowl rising beyond and a ring of people along the shore\nCAMERA: camera floats on the water below the raft, low angle, long shot, pulling back.\nFRAME LAYOUT: center — the gilded heir upright on the raft, near-camera and large; lower third — rings of ripples spreading on the dark water; left edge and across the far side — the ring of the shore crowd, small; upper two thirds — green wall and bright sky; raft’s edge — the chiefs kneeling, cropped at the knee.\nFACING: we see the heir from the front and below, his expression level and calm; the shore crowd shows only arms and plumes at a distance.\nSCREEN DIRECTION: ripples spread from the center toward camera; a wave of raised arms runs along the far shore from left to right; the white flag drops at the left of the raft.\nLIGHT: hard white midday sun striking the heir so a halo of gold light flares around him, bright glints along the water.\nPALETTE: gold, lake blue, haze white, green\nDETAIL: a halo of gold flecks, rings on the water, feather plumes along the far shore, fine rope ends on the raft’s edge.\nNOT IN FRAME: Spaniards, any text, boats, buildings.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 5.875s; everything keeps moving at the same natural pace through the end of the 6s generation.\n0–1s: the white flag drops at the raft’s edge and the whole shore erupts; the gilded heir stands upright as the sound rolls across the water.\n1–3s: arms fly up along the far shore in a wave and horns blast; the heir lowers his chin, light flaring off the gold on his chest.\n3–4.5s: the chiefs at the raft’s edge bow low while the heir turns his gaze across the lake; rings of ripples roll outward from the raft.\n4.5–6s: the camera pulls back and the crowd’s roar surges around the bowl; the heir’s gold halo brightens as smoke drifts across the sun.\nCAMERA: one continuous slow pull back from the heir for the full 6 seconds.\nENVIRONMENT: ripples roll outward; smoke drifts across the sun; plumes sway on the far shore; the flag fabric ripples.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "LS",
+            "angle": "low",
+            "location": "guatavita-lake",
+            "time_light": "midday-hazy",
+            "camera_motion": "pull"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B14",
+      "sentences": [
+        "S20",
+        "S21"
+      ],
+      "start": 85.92,
+      "end": 89.5,
+      "dur": 3.58,
+      "device": null,
+      "narration_says": "It was not treasure being hoarded. It was a gift.",
+      "viewer_sees": "Under the water, gold figurines, discs and emeralds sink slowly through dark green water, glinting once each as they fall: a gift, not a hoard",
+      "shots": [
+        {
+          "shot_id": "14",
+          "beat_id": "B14",
+          "link_group": null,
+          "t_in": 85.917,
+          "t_out": 89.5,
+          "use_in": 0,
+          "use_out": 3.583,
+          "use_len": 3.583,
+          "motion_budget": null,
+          "gen_len": null,
+          "source_file": "shots/shot14.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "the sinking gold figurine with spread arms",
+            "the gold disc and the emeralds",
+            "the shafts of light from the surface",
+            "the dark green water below"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a flat Muisca gold figurine of a tiny standing man with spread arms, a round gold disc, a gold nose ring and three rough green emeralds, all sinking slowly through dark green lake water, each turning and flashing once as it falls\nACTION: gold figurines, discs and emeralds fall in a loose line through dark green water from the bright surface toward the black depths, a gift let go, each piece flashing once as it turns\nSETTING: under the surface of Lake Guatavita, deep green-black water with fine drifting silt, a wavering bright ceiling of surface light far above, no bottom visible. Strings of tiny bubbles rise from each falling piece and wobble toward the surface; drifting silt hangs in the light shafts like fine dust, and far below the dark water thickens into a green-black void with no floor, so the gold seems to fall forever through a space that is cold, silent and larger than any room.\nCAMERA: camera hangs underwater beside the falling gold, eye level, close shot.\nFRAME LAYOUT: upper left — the figurine, near-camera and large; center — the gold disc and the nose ring a little lower; right third — three emeralds falling in a curve, smaller and hazy; upper edge — wavering shafts of pale light from the surface; lower edge — black water.\nFACING: we see the figurine from the front and slightly above, its spread arms toward camera; the disc turns its face toward camera.\nSCREEN DIRECTION: the pieces drift down from the upper left toward the lower right, turning slowly; fine silt rises past them toward the upper left.\nLIGHT: cool green light shafts from the surface above, each gold piece catching one bright flash, deep black below.\nPALETTE: deep green, gold, black, emerald\nDETAIL: hammered gold edges, facets of the emeralds, drifting silt grains, bubbles trailing from the falling piece, a worn thumbprint in the soft gold of the figurine’s chest, a tiny cord hole punched through the disc, one emerald with a pale chip along its edge, and a faint greenish bloom on the water where the light is thickest.\nNOT IN FRAME: hands, a raft, people, any text, a bottom or a city.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "CU",
+            "angle": "eye",
+            "location": "guatavita-water",
+            "time_light": "underwater-gold",
+            "camera_motion": "push"
+          },
+          "render_mode": "still",
+          "still_motion": "push"
+        }
+      ]
+    },
+    {
+      "beat_id": "B15",
+      "sentences": [
+        "S22"
+      ],
+      "start": 89.5,
+      "end": 96.62,
+      "dur": 7.12,
+      "device": null,
+      "narration_says": "The Muisca got most of their gold through trade, and what they made of it they gave to their gods, in lakes and rivers.",
+      "viewer_sees": "A highland market where Muisca traders swap salt cakes and cotton mantles for gold; the camera slides right along the trail to a stream where a gold figurine is lowered into the water",
+      "shots": [
+        {
+          "shot_id": "15",
+          "beat_id": "B15",
+          "link_group": null,
+          "t_in": 89.5,
+          "t_out": 96.625,
+          "use_in": 0,
+          "use_out": 7.125,
+          "use_len": 7.125,
+          "motion_budget": 7.125,
+          "gen_len": 8,
+          "source_file": "shots/part15.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "muisca-crowd"
+          ],
+          "visual_priority": [
+            "the Muisca crowd of traders swapping salt and cloth for gold",
+            "the porters carrying salt cakes along the path",
+            "the man lowering a gold figurine into the stream",
+            "the clear highland day"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a crowd of Muisca men and women in cotton mantles dyed red, ochre and indigo, feather headdresses, gold crowns, gold pendants and nose rings, dark straight hair, bare feet, traders in a busy highland market at the left and center, bargaining over cakes of white salt, folded red and indigo cotton mantles, green emeralds and small gold pieces, a lowland trader in a feathered headband pressing a gold disc into a Muisca merchant’s palm; at the far right a footpath runs to a clear stream where one man in a white mantle kneels with a small gold figurine\nACTION: Muisca traders swap salt cakes and cotton mantles for gold in a highland market; the camera slides right along the trail to a stream where a man lowers a gold figurine into the water\nSETTING: a high plateau market of the Muisca in the early 1500s, a beaten earth floor, woven mats laid with goods, round thatched houses at the edge, a footpath running down to a clear stream over stones, green hills and bright cloud\nCAMERA: camera stands at the left edge of the market, eye level, long shot, sliding to the right.\nFRAME LAYOUT: left third — the market stalls and bargaining traders, near-camera and large, cropped at the waist; center — the footpath with four porters carrying salt cakes on their backs, medium; right third — the stream and the kneeling man with the figurine, small; upper edge — round thatched houses and cloud, far and hazy.\nFACING: we see the traders from the front and side, faces bent over the goods; the man at the stream shows his back and left shoulder, his face turned toward the water.\nSCREEN DIRECTION: the camera slides along the market from the left toward the right; porters walk the path from the left toward the stream at the right.\nLIGHT: bright clear highland daylight, soft cloud shadows sliding over the green hills, crisp colour on the mantles.\nPALETTE: red, indigo, salt white, highland green\nDETAIL: woven wool nap on the red and indigo mantles, rough edges on the salt cakes, small gold figurines, clear water over stones.\nNOT IN FRAME: Spaniards, a stone city, a pyramid, any text.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 7.125s; everything keeps moving at the same natural pace through the end of the 8s generation.\n0–1s: a Muisca merchant lifts a folded red mantle toward a lowland trader who presses a gold disc into his palm; porters pass along the path at the center.\n1–3s: the camera starts sliding right past the stalls as traders argue and laugh, a woman hefts a cake of white salt and the mantles swing.\n3–5s: the camera glides along the footpath where the porters bend under their loads and a few turn down toward the stream.\n5–7s: at the stream a man in a white mantle kneels on the stones and lowers a small gold figurine toward the water; ripples spread from his hands.\n7–8s: he opens his fingers and the gold slips under the surface; the camera keeps gliding right as the clear water runs on.\nCAMERA: one continuous slow slide to the right along the market and the path for the full 8 seconds.\nENVIRONMENT: cloud shadows slide; the stream runs over stones; dust lifts; mantles sway.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "crowd",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "muisca-market",
+            "time_light": "bright-highland-day",
+            "camera_motion": "pan"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B16",
+      "sentences": [
+        "S23"
+      ],
+      "start": 96.62,
+      "end": 100.8,
+      "dur": 4.18,
+      "device": null,
+      "narration_says": "The Spaniards heard of it in Quito, from a man of the Bogotá country.",
+      "viewer_sees": "In Quito, a Muisca man from the Bogota country tells a circle of Spanish soldiers about the gilded lord, hands sketching a man covered in gold",
+      "shots": [
+        {
+          "shot_id": "16",
+          "beat_id": "B16",
+          "link_group": null,
+          "t_in": 96.625,
+          "t_out": 100.792,
+          "use_in": 0,
+          "use_out": 4.167,
+          "use_len": 4.167,
+          "motion_budget": 4.167,
+          "gen_len": 6,
+          "source_file": "shots/part16.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "conquistadors"
+          ],
+          "visual_priority": [
+            "the Spanish conquistadors listening",
+            "the Muisca trader sketching the gilded man in the air",
+            "the campfire between them",
+            "the dusk sky over the Andes"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Spanish conquistadors of the 1530s, bearded sunburned men in steel morion helmets, dented breastplates or quilted cotton jackets, leather boots, swords at the hip, one arquebus slung across a shoulder, four of them crouched and seated around a campfire at the right half, helmets tipped back, leaning in toward the left and listening hard\nACTION: in Quito a lean Muisca trader from the Bogota country tells the Spanish soldiers about the gilded lord, his hands sketching in the air a man covered from head to foot in gold\nSETTING: a Spanish camp at Quito in the 1530s at dusk, trampled earth, a low fire of dry branches, stacked helmets and canvas tents, the dark shapes of volcanic peaks under a fading sky. Beyond the fire the pale wall of a stone corral shows in the dusk, a rope line of drying cloth hangs between two poles, and the evening smoke of Quito lies in a low blue layer across the valley floor.\nCAMERA: camera stands at the fire’s side, eye level, medium shot.\nFRAME LAYOUT: left third — a Muisca trader in a striped cotton mantle standing, near-camera, cropped at the thigh, his hands sketching in the air; center — the campfire with rising sparks; right third — the four conquistadors leaning in, medium; upper edge — dusk sky and volcanic peaks, far and hazy.\nFACING: we see the trader three-quarter from the front and left, his face toward screen-right; the conquistadors show their faces three-quarter, all turned toward screen-left and the trader.\nSCREEN DIRECTION: sparks lift from the campfire and stream toward the right edge; the trader’s hands move in sweeping outlines from the left toward the right.\nLIGHT: warm firelight from the center on faces and steel, cool blue dusk on the peaks.\nPALETTE: fire orange, steel grey, dusk blue, mantle red\nDETAIL: dented steel and strap leather, firelight in beards, woven stripes on the trader’s mantle, rising spark, bootlaces knotted and knotted again, a wineskin passed from hand to hand, one soldier’s cheek smeared with soot, the trader’s plain bone bracelet, a small clay pipe glowing at the edge of the fire.\nNOT IN FRAME: gold in view, the lake, any text, women.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 4.167s; everything keeps moving at the same natural pace through the end of the 6s generation.\n0–1s: the trader sweeps both hands up and down in the air, outlining a tall man covered from head to toe; the nearest conquistador leans forward and his helmet tips back.\n1–3s: the trader cups his hands to show a heap at the man’s feet and flings his arms wide over an imagined lake; the soldiers trade looks and one grips his sword hilt as sparks rise.\n3–4.5s: the conquistadors lean closer one by one, firelight sliding over their steel; the trader raises a hand above his head as if showing the sun on gold.\n4.5–6s: the trader keeps speaking in wide arcing gestures while the soldiers murmur and nod, the fire glow pulsing on their faces.\nCAMERA: one continuous slow push toward the fire for the full 6 seconds.\nENVIRONMENT: fire sparks drift; smoke curls; dusk cloud edges slide over the peaks; cloaks stir.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "quito-fire",
+            "time_light": "dusk-firelight",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B17",
+      "sentences": [
+        "S24"
+      ],
+      "start": 100.8,
+      "end": 106.72,
+      "dur": 5.92,
+      "device": null,
+      "narration_says": "\"Let us go and find this gilded Indian,\" said the conquistador Sebastián de Belalcázar.",
+      "viewer_sees": "Belalcazar in steel helmet and breastplate rises from the fire and points up the mountains, calling for the gilded man",
+      "shots": [
+        {
+          "shot_id": "17",
+          "beat_id": "B17",
+          "link_group": null,
+          "t_in": 100.792,
+          "t_out": 106.708,
+          "use_in": 0,
+          "use_out": 5.916,
+          "use_len": 5.916,
+          "motion_budget": 5.916,
+          "gen_len": 6,
+          "source_file": "shots/part17.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "belalcazar"
+          ],
+          "visual_priority": [
+            "Belalcazar pointing toward the mountains",
+            "the firelight on his steel",
+            "the dark Andes ridge at the left",
+            "the campfire at his feet"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a Spanish conquistador captain in his fifties, a weathered square face, a short grizzled beard, a steel morion helmet, a dented steel breastplate over a stained red-brown doublet, a sword belt at the hip, rising from the fire at the right third with one boot on a log, his right arm flung out toward the mountains at the left, his face turned left and hard with excitement\nACTION: Belalcazar rises from the fire and points toward the mountains, calling out to find the gilded man\nSETTING: a conquistador camp at Quito at dusk, trampled earth, the red-orange fire at his feet, canvas tents, the long dark ridge of the Andes against a fading orange sky. Tents of rough canvas stand in a loose ring around the fire, a picket line of horses stamps at the edge of the light with their breath smoking, and a stack of pikes leans against a wooden cart loaded with iron-bound chests; far down the valley a few lights of the town glow.\nCAMERA: camera crouches beside the fire looking up, low angle, medium shot.\nFRAME LAYOUT: right third — Belalcazar standing, near-camera and large, cropped at the thigh, one arm thrown out to the left; center — the fire with a few sparks; left third — the dark ridge of mountains and a last band of orange sky, far and hazy.\nFACING: we see Belalcazar from the front and slightly right, his face turned toward screen-left; his pointing arm extends toward screen-left.\nSCREEN DIRECTION: sparks leap from the fire toward the left edge; his cloak swings from the right toward the left.\nLIGHT: hard orange firelight from below on his face and steel, a dying band of orange in the sky, deep blue-black mountains.\nPALETTE: firelight orange, steel grey, mountain blue-black\nDETAIL: dents in his breastplate, grizzled beard lit by the fire, the lacing of his boot, floating ash, the reddened skin of his neck above the steel gorget, a long scar through one eyebrow, the buckle of his sword belt polished bright, sparks reflected as tiny points in his eyes and on every rivet of the breastplate.\nNOT IN FRAME: other soldiers close up, gold, any text.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 5.916s; everything keeps moving at the same natural pace through the end of the 6s generation.\n0–1s: Belalcazar pushes up from the log, one boot driving into the earth; sparks scatter from the fire.\n1–3s: he throws his right arm out toward the mountains at the left and shouts, his cloak swinging; the flames flare and bend toward the left.\n3–4.5s: he jabs the air twice with his pointing hand and turns his head to rouse the camp; firelight flashes along his steel breastplate.\n4.5–6s: he strides one pace toward the left edge with his arm outstretched, his boots kicking ash; the sparks stream past toward the mountains.\nCAMERA: one continuous slow push up toward Belalcazar’s face for the full 6 seconds.\nENVIRONMENT: sparks stream left; smoke curls; the orange band of sky darkens; cloak and tent cloth ripple.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "low",
+            "location": "quito-fire",
+            "time_light": "dusk-firelight",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B18",
+      "sentences": [
+        "S25",
+        "S26",
+        "S27"
+      ],
+      "start": 106.72,
+      "end": 114.32,
+      "dur": 7.6,
+      "device": null,
+      "narration_says": "Three Spanish captains reached the highlands. They found gold and emeralds. They did not find a golden city.",
+      "viewer_sees": "Three mounted Spanish captains crest a ridge; the camera pushes past them over a misty plateau of thatched round houses and a lake: gold and emeralds on a cloth, but no golden city",
+      "shots": [
+        {
+          "shot_id": "18",
+          "beat_id": "B18",
+          "link_group": null,
+          "t_in": 106.708,
+          "t_out": 114.333,
+          "use_in": 0,
+          "use_out": 7.625,
+          "use_len": 7.625,
+          "motion_budget": 7.625,
+          "gen_len": 8,
+          "source_file": "shots/part18.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "conquistadors"
+          ],
+          "visual_priority": [
+            "exactly three Spanish conquistadors on horseback",
+            "the misty plateau of plain thatched round houses",
+            "the cloth with a little gold and emeralds at the lower left",
+            "the empty grey sky where a golden city should stand"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Spanish conquistadors of the 1530s, bearded sunburned men in steel morion helmets, dented breastplates or quilted cotton jackets, leather boots, swords at the hip, one arquebus slung across a shoulder, exactly three of them, riding three dark horses in a line along a ridge, entering from the right edge and moving left, steel helmets catching the light, one with a red cloak rolled behind the saddle\nACTION: three Spanish captains on horseback crest a ridge and the camera pushes past them over a misty plateau of plain thatched houses; a trader’s cloth shows a little gold and a few emeralds, but there is no golden city anywhere\nSETTING: a high Andean ridge in thin cold mist, a wide plateau below with scattered round thatched houses with conical roofs, woven cane fences, smoke from cooking fires, a small grey lake, tussock grass in the foreground\nCAMERA: camera stands on the ridge slightly ahead of the riders, eye level, long shot, moving forward.\nFRAME LAYOUT: right third — three riders on the ridge line, medium-sized, entering from the right edge; center — the misty plateau with round thatched houses and the grey lake, far and hazy; lower left — a Muisca trader beside a woven cloth with a few gold ornaments and green emeralds laid on it, near-camera and small; upper two thirds — grey sky and low cloud, empty.\nFACING: we see the riders from the front and slightly right, their faces turned toward screen-left and the plateau; the trader shows his back and shoulder, looking toward the riders.\nSCREEN DIRECTION: the riders move from the right edge toward the left along the ridge; mist drifts across the plateau from the right toward the left.\nLIGHT: flat cold overcast light, a pale glint on the steel helmets, mist softening the houses, a small warm glint of gold on the cloth.\nPALETTE: mist grey, thatch tan, steel, a touch of emerald and gold\nDETAIL: layers of tussock grass in the foreground, helmet dents, smoke threads from the round houses, the weave of the cloth.\nNOT IN FRAME: a golden city, a stone city, pyramids, any text.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 7.625s; everything keeps moving at the same natural pace through the end of the 8s generation.\n0–1s: three riders crest the ridge from the right edge, horses blowing steam, and ride toward the left; the lead rider shades his eyes.\n1–3s: the camera pushes forward past the stirrups over the plateau; manes toss and mist rolls over the round thatched houses.\n3–5s: the lead rider points at the houses and the grey lake and his two companions lean forward, scanning for a city that does not appear.\n5–7s: the camera slides past the trader at the lower left as he lifts a gold ornament toward the riders; smoke threads curl from the houses.\n7–8s: the riders keep walking their horses along the ridge toward the left while mist drifts across the empty sky, hooves kicking up grit.\nCAMERA: one continuous slow push forward past the riders over the plateau for the full 8 seconds.\nENVIRONMENT: mist drifts across the plateau; smoke curls from the thatched houses; horses’ breath steams; tussock grass bends in the wind.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "highland-plateau",
+            "time_light": "overcast-mist",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B19",
+      "sentences": [
+        "S28",
+        "S29"
+      ],
+      "start": 114.32,
+      "end": 123.78,
+      "dur": 9.46,
+      "device": "animated-map",
+      "narration_says": "The name soon left the man. It became a place, then a city, then a lake called Parime, drawn on European maps for two hundred years.",
+      "viewer_sees": "A hand-drawn 17th century European map of the Guiana lands: a tiny gilded man icon becomes a golden town, then a huge inland lake called Parime, sea monsters and compass rose in the margins",
+      "shots": [
+        {
+          "shot_id": "19",
+          "beat_id": "B19",
+          "link_group": null,
+          "t_in": 114.333,
+          "t_out": 123.792,
+          "use_in": 0,
+          "use_out": 9.459,
+          "use_len": 9.459,
+          "motion_budget": null,
+          "gen_len": 10,
+          "source_file": "shots/part19.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "the hand-drawn parchment map of Guiana",
+            "the tiny gilded man icon that grows into a golden town",
+            "the huge inland lake Parime at the right",
+            "the compass rose in the lower right"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a hand-drawn 17th-century European map of northern South America on aged cream parchment, fine engraved coastlines with small sailing ships and sea monsters, the Andes drawn as rows of little humps at the left, a huge inland lake with a small golden walled town on its shore at the right, ornamental flourishes in place of lettering\nACTION: a tiny gilded man drawn among the Andes at the left grows into a golden town and the name travels across the map until a vast lake called Parime and a golden city sit in the middle of unknown country\nSETTING: a sheet of aged cream parchment with brown ink hatching, soft candlelit creases and foxing, a decorative border of rope and waves, sea monsters curled in the margins\nCAMERA: camera hangs directly over the map, overhead, wide shot moving in.\nFRAME LAYOUT: center — the parchment map filling the frame; left third — the Andes as rows of little humps with a tiny gilded man icon among them; right third — the great inland lake with a small golden walled city on its shore; lower right — the compass rose, large; upper edge — the coast with sea monsters and small ships, small.\nFACING: we see the map from straight above, its top edge toward the upper edge of the frame; the ships and monsters face the coast.\nSCREEN DIRECTION: ink lines draw themselves from the left toward the right across the parchment; a golden trail of ink runs from the gilded man toward the lake at the right.\nLIGHT: warm low candlelight from the upper left, a soft glow on the parchment and gold highlights, long shadows in the creases.\nPALETTE: parchment cream, sepia ink, gold leaf, sea blue\nDETAIL: pattern of fine engraved hatching, tiny ships, scale-covered sea monsters, gold leaf catching the light, no readable lettering, tiny cracks in the aged parchment, brown water stains at the corners, a small repair patch in the lower margin, the faint outline of a coiled serpent worked into the border.\nNOT IN FRAME: readable text or letters, people, any modern map, any real labels.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 9.459s; everything keeps moving at the same natural pace through the end of the 10s generation.\n0–1s: ink lines at the lower left begin to draw themselves and a tiny gilded man appears among the drawn Andes, gleaming.\n1–3s: the gilded man swells and redraws itself as a small golden walled town while fine hatching spreads around it; a little ship sails the coast.\n3–5s: the golden town slides toward the right as a trail of ink, a great river unspooling ahead of it; a sea monster’s tail flicks in the margin.\n5–7.5s: a great inland lake outlines itself at the right in blue ink and fills with wavy lines, and a golden city blooms on its shore; the compass rose turns.\n7.5–10s: gold leaf shimmers across the lake and the city while fine rivers draw themselves in from the left and the map glows warm in the candlelight.\nCAMERA: one continuous slow push over the map from left to right for the full 10 seconds.\nENVIRONMENT: candlelight flickers; ink lines draw and bleed; gold leaf shimmers.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "map-diagram",
+            "shot_size": "aerial",
+            "angle": "overhead",
+            "location": "european-map",
+            "time_light": "parchment-candle",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B20",
+      "sentences": [
+        "S30"
+      ],
+      "start": 123.78,
+      "end": 130.68,
+      "dur": 6.9,
+      "device": null,
+      "narration_says": "Walter Raleigh sailed after it twice; the second time his son died, and the king had Raleigh executed.",
+      "viewer_sees": "Raleigh stands at the rail of an Elizabethan ship moving up a jungle river, looking upstream toward a bend that never ends",
+      "shots": [
+        {
+          "shot_id": "20",
+          "beat_id": "B20",
+          "link_group": null,
+          "t_in": 123.792,
+          "t_out": 130.667,
+          "use_in": 0,
+          "use_out": 6.875,
+          "use_len": 6.875,
+          "motion_budget": 6.875,
+          "gen_len": 8,
+          "source_file": "shots/part20.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "raleigh"
+          ],
+          "visual_priority": [
+            "Raleigh at the ship’s rail",
+            "the jungle river curving upstream",
+            "the dusk mist on the water",
+            "the carved rail and rigging"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: an Elizabethan adventurer in his forties, a tanned long face, a pointed brown beard and moustache, a pearl drop earring, a slashed black doublet with a small white ruff and a plumed hat, standing at the right third at the carved rail of a wooden ship, one hand gripping the rail, his plumed hat tilted, his face turned toward screen-left and the river ahead\nACTION: Raleigh stands at the rail of an Elizabethan ship moving up a jungle river at dusk, staring upstream toward a bend that never ends\nSETTING: a broad brown tropical river at dusk, walls of dense green jungle on both banks, hanging vines, a bend of water ahead lit pale gold, the carved wooden rail and ratlines of an Elizabethan ship. A flock of white egrets lifts from the mud flats of the near bank, a dead tree trunk drifts past on the current, and the first fireflies spark among the vines.\nCAMERA: camera stands on the deck beside the rail, eye level, medium shot, moving with the ship.\nFRAME LAYOUT: right third — Raleigh at the rail, near-camera and large, cropped at the waist; center — the river bend with pale gold water; left third — the jungle wall on the bank, dark green and hazy; lower edge — the carved rail and a coil of rope.\nFACING: we see Raleigh three-quarter from the front and right, his face and eyes turned toward screen-left and the river ahead; his hand on the rail is toward camera.\nSCREEN DIRECTION: the ship glides from the right toward the left up the river; the jungle bank slides past toward the right; mist drifts toward the right.\nLIGHT: low gold dusk light on the water ahead, cool green shade on the banks, warm rim light on his beard and ruff.\nPALETTE: river brown, jungle green, dusk gold, black doublet\nDETAIL: ruff folds, the glint of a pearl earring, the grain of the carved rail, vines hanging down the bank, ropes coiled on the deck, the curl of a damp ribbon at his sleeve.\nNOT IN FRAME: other crew close up, natives, any text, a golden city.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 6.875s; everything keeps moving at the same natural pace through the end of the 8s generation.\n0–1s: Raleigh grips the rail and leans forward, his plume stirring; the ship slides up the river and water rushes along the hull.\n1–3s: he lifts a hand to point up the river and tilts his head, scanning, while the jungle bank slides past toward the right and birds burst from the trees.\n3–5s: the ship swings around the bend and a new reach of river opens, pale gold; he narrows his eyes and his hand clenches on the rail.\n5–7s: another bend appears ahead and he exhales, shoulders dropping a little, one hand pulling at his beard; mist trails across the water toward the right.\n7–8s: he straightens and fixes his gaze on the next bend as the ship keeps gliding, spray flicking off the bow.\nCAMERA: one continuous slow track with the ship moving left for the full 8 seconds.\nENVIRONMENT: mist trails across the water; birds cross the sky; vines sway; the hull throws a bow wave.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "orinoco-river",
+            "time_light": "dusk-green",
+            "camera_motion": "track"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B21",
+      "sentences": [
+        "S31",
+        "S32"
+      ],
+      "start": 130.68,
+      "end": 138.1,
+      "dur": 7.42,
+      "device": "empty-aftermath",
+      "narration_says": "Freyle called it a name that \"has cost so many lives and fortunes.\" The lake kept most of its secrets.",
+      "viewer_sees": "EMPTY AFTERMATH: a rusted morion helmet, a broken iron-bound chest, a torn banner and a snapped spade half sunk in jungle mud on a shore, the camera drifting to a still silent lake",
+      "shots": [
+        {
+          "shot_id": "21",
+          "beat_id": "B21",
+          "link_group": null,
+          "t_in": 130.667,
+          "t_out": 138.083,
+          "use_in": 0,
+          "use_out": 7.416,
+          "use_len": 7.416,
+          "motion_budget": 7.416,
+          "gen_len": 8,
+          "source_file": "shots/part21.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "the rusted helmet in the mud",
+            "the open empty chest and snapped spade",
+            "the line of footprints leading to the lake",
+            "the calm dark lake"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a rusted steel morion helmet half sunk in grey mud, beside a broken iron-bound wooden chest with its lid hanging open and empty, a torn red banner and a snapped spade lying in the mud\nACTION: the debris of failed expeditions lies in the mud at the edge of a mountain lake: a helmet, a broken empty chest, a torn banner and a snapped spade; the camera drifts from them toward the calm dark lake that kept its secrets\nSETTING: the muddy edge of a high mountain lake after rain, wet grey mud with a line of old footprints, tussock grass, a wide dark calm lake and a green wall rising beyond, low grey cloud. A few slow bubbles rise from a drowned barrel at the water’s edge, a rotted rope trails into the shallows, and a heron stands in the shallows far along the shore.\nCAMERA: camera stands over the mud, high angle, medium shot, drifting left.\nFRAME LAYOUT: right third — the helmet, the open empty chest, the torn banner and the snapped spade in the mud, near-camera and large; center — wet grey mud with a line of old footprints leading toward the lake; left third — the calm dark lake and its green wall, far and hazy; upper edge — low grey cloud.\nFACING: we see the helmet from the front and above with its dents toward camera, the chest’s open mouth toward camera, the banner trailing toward screen-left.\nSCREEN DIRECTION: the camera drifts from the debris at the right toward the lake at the left; a thread of mist moves across the lake from the right toward the left; a drop falls from the helmet’s rim.\nLIGHT: flat dawn grey light, a cold pale shine on wet mud and rust, a faint silver glint on the lake.\nPALETTE: mud grey-brown, rust orange, lake blue-black, banner red\nDETAIL: rust flakes, the crust of dried mud, split wood grain on the chest, ripples on the lake, no legible markings on the banner, a leather boot split by the damp, green moss growing on the spade handle, a rust-eaten buckle, a clump of dead reeds beaten flat.\nNOT IN FRAME: people, bodies, gold, any text.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 7.416s; everything keeps moving at the same natural pace through the end of the 8s generation.\n0–1s: a drop of water falls from the rusted helmet’s rim and splashes in the mud; the camera starts to drift slowly across the debris.\n1–3s: a gust lifts the torn banner at the edge of the mud and lets it flap; the lid of the empty chest creaks on its hinge.\n3–5s: the camera slides past the snapped spade and along the line of footprints toward the left; thin mist crawls over the mud.\n5–7s: the calm dark lake comes into view and a pale ripple crosses its surface; reeds at the edge bend in a breeze.\n7–8s: the camera keeps drifting over the water toward the far green wall while mist slides across the lake and the debris leaves the frame.\nCAMERA: one continuous slow drift from the debris toward the lake at the left for the full 8 seconds.\nENVIRONMENT: mist crawls over mud and water; the banner flaps; water drips; reeds sway.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "MS",
+            "angle": "high",
+            "location": "lake-shore-ruin",
+            "time_light": "dawn-grey",
+            "camera_motion": "pan"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B22",
+      "sentences": [
+        "S33"
+      ],
+      "start": 138.1,
+      "end": 147.64,
+      "dur": 9.54,
+      "device": null,
+      "narration_says": "Antonio de Sepúlveda won a licence from Philip the Second to drain it, cut a channel, and said he took more than twelve thousand pesos from the exposed shore.",
+      "viewer_sees": "Laborers cut a V-shaped notch through the rim of the lake and the water pours out through the channel, exposing a gleaming mud shore while Sepulveda in a wide hat directs them",
+      "shots": [
+        {
+          "shot_id": "22",
+          "beat_id": "B22",
+          "link_group": null,
+          "t_in": 138.083,
+          "t_out": 147.625,
+          "use_in": 0,
+          "use_out": 9.542,
+          "use_len": 9.542,
+          "motion_budget": null,
+          "gen_len": 10,
+          "source_file": "shots/part22.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "sepulveda",
+            "guatavita-lake"
+          ],
+          "visual_priority": [
+            "Sepulveda directing the cut",
+            "the V-shaped notch with water pouring through",
+            "the exposed glinting mud shore",
+            "about a dozen laborers with spades and baskets"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a Spanish colonial merchant-engineer in his forties, a broad sunburned face, a dark pointed beard, a wide-brimmed felt hat, a worn leather jerkin over a white shirt with rolled sleeves, standing at the right third on the crest of the rim, one arm pointing down at the channel, his face turned toward screen-left and the notch\nSUBJECT 2: a perfectly round mountain lake in a high Andean bowl, dark blue water ringed by steep walls of green paramo grass and low scrub, a narrow pale shore, thin mist along the rim, no building anywhere, its water level falling, a wide band of exposed wet mud around the edge and the lake pouring out through a raw V-shaped notch cut in the rim at the center\nACTION: about a dozen Muisca laborers cut a V-shaped notch through the rim of the lake with wooden spades and baskets, and the water pours out through the channel, exposing a gleaming mud shore while Sepulveda directs them\nSETTING: the rim of Lake Guatavita on a harsh clear morning, a raw V-shaped notch cut down through the grassy rim to the water, a channel of brown water roaring down the outer slope, piles of spoil and wooden planks, tussock grass on the crest\nCAMERA: camera stands on the rim above the notch, high angle, long shot.\nFRAME LAYOUT: right third — Sepulveda on the rim crest, near-camera and large, cropped at the knee, his arm pointing down; center — the V-shaped notch with the roaring channel of brown water; left third — the shrinking lake with its wide band of glinting mud, far and hazy; lower edge — the laborers digging and carrying baskets along the notch, small.\nFACING: we see Sepulveda three-quarter from behind and the right, his face turned toward screen-left and the notch; the laborers show their sides and bent backs, faces toward the notch.\nSCREEN DIRECTION: the water pours from the lake at the left through the notch toward the right and down the outer slope toward camera; laborers carry baskets from the left toward the right.\nLIGHT: hard clear morning sun from the upper left, bright wet shine on the mud, deep shadow inside the notch.\nPALETTE: mud brown, water bronze, paramo green, gold glint\nDETAIL: the raw cut walls of the notch with roots hanging, glints of gold in the wet mud, spray at the foot of the channel, rope and spade textures.\nNOT IN FRAME: a stone city, the raft, any text, Spanish soldiers.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 9.542s; everything keeps moving at the same natural pace through the end of the 10s generation.\n0–1s: laborers drive wooden spades into the raw wall of the notch and swing baskets of earth away; Sepulveda lifts his arm and points down at the channel.\n1–3s: brown water gathers and rushes through the notch toward the right, spray bursting at the lip; the lake edge at the left pulls back from the grass.\n3–5s: the channel widens as earth slumps in; two laborers jump back and the water roars down the outer slope; wet mud shines at the left.\n5–7.5s: glints of gold flash in the exposed mud as the lake level drops; Sepulveda strides along the rim and waves the laborers on.\n7.5–10s: more laborers swing spades and carry baskets along the notch while the water keeps pouring and the mud flats widen.\nCAMERA: one continuous slow push down toward the notch for the full 10 seconds.\nENVIRONMENT: water roars and sprays; mud shines; baskets of earth swing; wind bends the grass on the rim.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "high",
+            "location": "guatavita-rim",
+            "time_light": "harsh-morning",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B23",
+      "sentences": [
+        "S34",
+        "S35"
+      ],
+      "start": 147.64,
+      "end": 154.86,
+      "dur": 7.22,
+      "device": null,
+      "narration_says": "Years later he tried to drain it deeper and could not. He died poor, and Freyle, who knew him, helped bury him.",
+      "viewer_sees": "The second, deeper cut slumps and the water creeps back; the camera pans right along the muddy rim to a plain grave where Freyle and two workers fill in the earth over a poor man",
+      "shots": [
+        {
+          "shot_id": "23",
+          "beat_id": "B23",
+          "link_group": null,
+          "t_in": 147.625,
+          "t_out": 154.875,
+          "use_in": 0,
+          "use_out": 7.25,
+          "use_len": 7.25,
+          "motion_budget": 7.25,
+          "gen_len": 8,
+          "source_file": "shots/part23.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "freyle"
+          ],
+          "visual_priority": [
+            "Freyle at the grave",
+            "the slumped second cut with water creeping back",
+            "the plain grave with its wooden cross",
+            "the lake rim under grey cloud"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a lean Spanish colonial chronicler of about fifty, a long narrow face, deep-set dark eyes, a short pointed beard streaked with grey, a plain black doublet with a flat white collar, ink-stained fingers, standing at the right third at the edge of a plain grave in the mud, his hat in his hands, his head bowed, with two workmen beside him filling in the earth with shovels\nACTION: the second, deeper cut slumps and the lake water creeps back into the channel; the camera pans right along the muddy rim to a plain grave where Freyle and two workmen fill in the earth over a poor man\nSETTING: the rim of Lake Guatavita under heavy grey cloud years later, the old notch slumped and half full of muddy water, tools abandoned in the mud, a bare patch of earth at the right with a simple wooden cross, wet grass\nCAMERA: camera stands on the rim at the left, eye level, long shot, panning right.\nFRAME LAYOUT: left third — the slumped second cut with brown water creeping back into it and a toppled plank, medium; center — a stretch of muddy rim with a line of footprints; right third — Freyle and two workmen at a plain grave with a simple wooden cross, medium; upper edge — heavy grey cloud.\nFACING: we see Freyle three-quarter from the front and left, his head bowed toward the grave at screen-right; the two workmen show their sides, shovels in hand.\nSCREEN DIRECTION: the camera pans along the rim from the left toward the right; water creeps up the slumped cut; shovelfuls of earth fall into the grave at the right.\nLIGHT: flat heavy grey light, a cold dull shine on the mud and water, a dark cross against the pale sky.\nPALETTE: mud brown, cloud grey, black doublet, wet green\nDETAIL: wet clay clods on the shovels, the grain of the wooden cross, brown water creeping up the cut, footprints in the mud, a hat brim dripping with the first drops of rain.\nNOT IN FRAME: gold, a stone church, any text, large crowds.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 7.25s; everything keeps moving at the same natural pace through the end of the 8s generation.\n0–1s: earth slumps down the wall of the old cut and brown water slides up the channel; the camera starts moving to the right along the rim.\n1–3s: a wooden plank topples into the muddy water and a ripple spreads; the camera glides past the footprints along the muddy rim.\n3–5s: the grave comes into view at the right and the two workmen lift shovelfuls of earth into it; Freyle stands bareheaded with his hat in his hands.\n5–7s: the earth thuds in and drifts down; Freyle bows his head lower and a gust tugs at his collar and beard.\n7–8s: the workmen keep shovelling at the same pace and the camera keeps sliding toward the cross as grey cloud moves over the rim.\nCAMERA: one continuous slow pan to the right along the rim for the full 8 seconds.\nENVIRONMENT: water creeps up the cut; grey cloud drifts; wind stirs grass and collar; clods tumble.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "guatavita-rim",
+            "time_light": "overcast-grey",
+            "camera_motion": "pan"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B24",
+      "sentences": [
+        "S36",
+        "S37"
+      ],
+      "start": 154.86,
+      "end": 163.2,
+      "dur": 8.34,
+      "device": null,
+      "narration_says": "A clue turned up in a cave. In 1969 a farmer at Pasca found gold and pottery and told his priest.",
+      "viewer_sees": "A Pasca farmer in a felt hat and ruana kneels in a cave in 1969, lifts the lid of a clay jar and finds gold and pottery gleaming in his torchlight",
+      "shots": [
+        {
+          "shot_id": "24",
+          "beat_id": "B24",
+          "link_group": null,
+          "t_in": 154.875,
+          "t_out": 163.208,
+          "use_in": 0,
+          "use_out": 8.333,
+          "use_len": 8.333,
+          "motion_budget": 8.333,
+          "gen_len": 10,
+          "source_file": "shots/part24.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "the farmer lifting the clay lid",
+            "the gold gleaming in the jar",
+            "the flashlight beam in the dust",
+            "the low rough cave"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a Colombian highland farmer of 1969, a lined sun-browned face, a battered felt hat, a heavy wool ruana in earth-brown stripes, rubber boots, kneeling in a low cave and lifting the lid from an old clay jar\nACTION: a farmer kneels in a low cave in 1969, lifts the lid from a clay jar and finds gold and pottery gleaming in the beam of his flashlight\nSETTING: a low dry cave in a hillside near Pasca, rough earth and stone walls, a floor of dust and fallen stones, several old clay jars and a heap of broken painted pottery, a battered metal flashlight in his left hand. A trail of boot prints in the dust leads out toward the cave mouth, where a hazy rectangle of daylight shows a dry grass hillside and a wire fence post; the air is cold and dry, and fallen stones and old bat droppings dust the floor.\nCAMERA: camera stands in the cave mouth at the right, eye level, medium shot.\nFRAME LAYOUT: left third — the farmer kneeling, near-camera and large, cropped at the waist; center — the clay jar with its lid lifted and a gleam of gold inside; right third — broken pottery and a second jar at the cave mouth, small; upper edge — the low rough roof.\nFACING: we see the farmer three-quarter from the front and right, his face bent toward the jar; the jar’s open mouth faces camera.\nSCREEN DIRECTION: the flashlight beam sweeps from the left across the jar toward the right; dust drifts toward the right.\nLIGHT: a narrow warm beam from the flashlight, a golden reflected glow on his face from the jar, deep dark cave shadow.\nPALETTE: dust brown, gold glow, earth black, cream clay\nDETAIL: dust motes in the beam, gold facets inside the jar, the weave of the ruana, cracked clay on the lid, chips of painted pottery in red and cream, the jar’s stopper cord rotted to a thread, a small gold nose ring caught between two shards, the farmer’s cracked fingernails.\nNOT IN FRAME: a priest, other people, museum cases, any text.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 8.333s; everything keeps moving at the same natural pace through the end of the 10s generation.\n0–1s: the farmer reaches out and grips the clay lid with his right hand; his flashlight beam trembles across the jar.\n1–3s: he lifts the lid slowly and a warm gleam of gold rises onto his face; dust floats up in the beam.\n3–5s: he sets the lid aside, leans over the jar and draws out a small gold figure, turning it in the light, his eyes wide.\n5–7.5s: he lays the figure on his ruana and reaches in again, lifting a fragment of painted pottery; the beam swings across the cave wall.\n7.5–10s: he keeps leaning over the jar, lifting out more pieces into the light, while dust drifts through the beam and gold flickers on his face.\nCAMERA: one continuous slow push toward the jar and the farmer’s face for the full 10 seconds.\nENVIRONMENT: dust floats in the beam; the beam trembles; gold glints flicker; cold air stirs the hat brim.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "pasca-cave",
+            "time_light": "torch-dim",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B25",
+      "sentences": [
+        "S38"
+      ],
+      "start": 163.2,
+      "end": 173.82,
+      "dur": 10.62,
+      "device": null,
+      "narration_says": "Among it was a gold raft twenty centimeters long: a seated chief, ten smaller figures around him, some masked, all cast in one pour.",
+      "viewer_sees": "The small gold raft: a seated chief at the center, ten smaller figures standing around him, some masked, the surface granular as if it all came from one pour",
+      "shots": [
+        {
+          "shot_id": "25",
+          "beat_id": "B25",
+          "link_group": null,
+          "t_in": 163.208,
+          "t_out": 168.5,
+          "use_in": 0,
+          "use_out": 5.292,
+          "use_len": 5.292,
+          "motion_budget": 5.292,
+          "gen_len": 6,
+          "source_file": "shots/part25.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "gold-raft"
+          ],
+          "visual_priority": [
+            "the small gold raft with its seated chief",
+            "the ring of ten smaller figures",
+            "the dark green velvet",
+            "the warm lamp light sliding over the gold"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a small cast-gold raft twenty centimetres long, a seated chief at the center with his arms crossed over his chest, ten smaller figures standing in a ring around him, some masked, a rough granular surface, resting on a dark green velvet cloth at the center of a small glass case, the seated chief at its middle with his arms crossed on his chest, the ten smaller figures in a ring around him, all warm gold\nACTION: the small gold raft rests on dark velvet while a warm lamp sweeps over it and the camera circles slowly\nSETTING: a quiet museum gallery in Bogota, a small glass case lined with dark green velvet, a pool of warm light, the cast gold surface granular and rough. The case sits on a plinth under a single pinpoint lamp; reflections of the gallery’s arches float in the glass above the velvet, and a faint smudge from a wiping cloth shows on one corner of the pane.\nCAMERA: camera stands a hand’s breadth above the velvet, eye level, close shot, circling.\nFRAME LAYOUT: center — the gold raft, near-camera and large, filling the middle two thirds of the frame; left third — the seated chief’s profile; right third — the line of smaller figures; lower edge — the velvet cloth; upper edge — soft dark.\nFACING: we see the raft from the front and slightly left, the seated chief facing camera with his arms crossed; the smaller figures face inward toward him.\nSCREEN DIRECTION: a band of lamp light slides along the raft from the left toward the right; faint dust motes drift toward the right.\nLIGHT: a warm soft lamp from the upper left, bright highlights on the gold, deep green shadow in the velvet.\nPALETTE: gold, velvet green, black, warm cream\nDETAIL: granular texture of the cast gold, tiny mask faces on some figures, the seated chief’s folded arms, wax-thread ridges from the mould, tiny air bubbles preserved in the cast surface, a hairline seam where two parts of the mould met, a bright burnished edge where the raft’s rim was cleaned.\nNOT IN FRAME: hands, people, any label or text, more than ten small figures.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 5.292s; everything keeps moving at the same natural pace through the end of the 6s generation.\n0–1s: the camera starts to circle the raft from its left side and a band of warm lamp light slides over the gold, flashing on the seated chief’s shoulders.\n1–3s: the camera arcs toward the front and the light glides along the line of small figures, each catching a bright edge in turn from left to right.\n3–4.5s: the seated chief’s folded arms come into full view as the camera swings gently round; dust motes sparkle in the lamp beam.\n4.5–6s: the camera keeps circling toward the raft’s right side while the light slides along the figures again and the velvet’s green sheen shifts.\nCAMERA: one continuous slow arc around the raft from left to right for the full 6 seconds.\nENVIRONMENT: dust motes drift in the lamp beam; light slides over the gold; the velvet’s sheen shifts.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "CU",
+            "angle": "eye",
+            "location": "museum-case",
+            "time_light": "warm-museum-lamp",
+            "camera_motion": "track"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        },
+        {
+          "shot_id": "26",
+          "beat_id": "B25",
+          "link_group": null,
+          "t_in": 168.5,
+          "t_out": 173.833,
+          "use_in": 0,
+          "use_out": 5.333,
+          "use_len": 5.333,
+          "motion_budget": 5.333,
+          "gen_len": 6,
+          "source_file": "shots/part26.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "gold-raft"
+          ],
+          "visual_priority": [
+            "the gold raft’s ten smaller figures around the seated chief",
+            "the masks on some figures",
+            "the seated chief at the right",
+            "the granular gold surface"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a small cast-gold raft twenty centimetres long, a seated chief at the center with his arms crossed over his chest, ten smaller figures standing in a ring around him, some masked, a rough granular surface, seen at extreme close range along its length, the ten smaller figures in a ring each distinct, some wearing small masks with pierced eyes, the seated chief a soft bright shape at the right\nACTION: the camera glides along the ring of ten smaller figures standing around the seated chief, each figure distinct, some wearing masks, all cast in one pour\nSETTING: a small glass case lined with dark green velvet in a quiet museum gallery, a pool of warm light on the cast gold. A shallow depth of focus melts the far end of the ring into a golden haze while the nearest figures stay sharp, and the velvet’s pile catches the lamp in tiny green sparks along its fibres.\nCAMERA: camera stands level with the small figures, a finger’s width above the velvet, extreme close shot, gliding.\nFRAME LAYOUT: left third — the first three small figures, near-camera and large, one masked; center — four more figures sharp in a curve; right third — the last three figures and the seated chief, a soft bright shape; lower edge — the velvet.\nFACING: we see the small figures from the front and slightly left, their faces and masks toward camera; the seated chief faces camera.\nSCREEN DIRECTION: the camera glides from the left end of the ring toward the right; a line of lamp light follows it along the figures.\nLIGHT: warm lamp from the upper left, a bright rim on each figure’s head, soft gold glow spreading across the velvet.\nPALETTE: gold, velvet green, black, warm cream\nDETAIL: tiny face masks with pierced eyes, ridged arms cast from wax threads, granular gold surface, one small nose ornament, each small body only the length of a fingernail, crossed arms, tiny round headdresses, a pierced hole where a mask’s eye should be, fine casting burrs along the legs.\nNOT IN FRAME: hands, any label or text, an eleventh small figure, people.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 5.333s; everything keeps moving at the same natural pace through the end of the 6s generation.\n0–1s: the camera begins gliding along the ring from the left, the first masked figure sliding past close to the lens as a band of warm light flashes across its mask.\n1–3s: figure after figure passes, each catching a bright edge in turn; the camera drifts a little lower so the small heads rise against the dark.\n3–4.5s: the center of the ring comes into view with the seated chief’s crossed arms soft and bright beyond; dust motes sparkle in the beam.\n4.5–6s: the camera keeps gliding past the last figures toward the right while the lamp light slides along the gold and the velvet’s sheen shifts.\nCAMERA: one continuous slow glide along the ring of figures for the full 6 seconds.\nENVIRONMENT: dust motes drift; lamp light slides; the sheen shifts on the velvet; a faint warm glow pulses.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "ECU",
+            "angle": "low",
+            "location": "museum-case",
+            "time_light": "warm-museum-lamp",
+            "camera_motion": "track"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B26",
+      "sentences": [
+        "S39"
+      ],
+      "start": 173.82,
+      "end": 179.64,
+      "dur": 5.82,
+      "device": "process-cutaway",
+      "narration_says": "Charcoal from its mold dates it to about 1300 to 1400, before Columbus.",
+      "viewer_sees": "PROCESS CUTAWAY: a clay casting mold cut open to show the charcoal core and molten gold flowing in to fill ten tiny figures and one seated chief in a single pour",
+      "shots": [
+        {
+          "shot_id": "27",
+          "beat_id": "B26",
+          "link_group": null,
+          "t_in": 173.833,
+          "t_out": 179.625,
+          "use_in": 0,
+          "use_out": 5.792,
+          "use_len": 5.792,
+          "motion_budget": 5.792,
+          "gen_len": 6,
+          "source_file": "shots/part27.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "the cut-open clay mold with its charcoal core",
+            "the molten gold flowing into the thin cavity",
+            "the seated chief and ten tiny figures filling with light",
+            "the furnace glow"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a clay casting mold of a small raft cut open in cross-section, a core of black charcoal inside a shell of fired red-brown clay, a thin hollow cavity shaped like a raft with a seated chief and ten tiny figures, molten gold pouring down a channel into it\nACTION: a clay casting mold is shown in cross-section while molten gold pours down its channel and fills the cavity of a seated chief and ten tiny figures in a single pour\nSETTING: a Muisca goldsmith’s workshop, a clay furnace glowing orange, charcoal embers, a rough bench with tongs and a crucible, the mold standing upright in a bed of sand. A bellows lies slumped on the bench beside the furnace, a pair of wooden tongs rests across a pot of water, and charcoal dust blackens the sand around the mould; the air above the furnace wavers with heat.\nCAMERA: camera faces the cut face of the mold straight on, eye level, close shot.\nFRAME LAYOUT: center — the mold in cross-section, near-camera and large: a charcoal core in the middle, a fired clay shell around it and the thin cavity shaped like a raft with a seated chief and ten tiny figures; upper right — a crucible tilting over the pouring channel; lower edge — glowing embers; left third — the furnace’s orange mouth, far and hazy.\nFACING: we see the mold’s cut face from the front; the crucible tips toward the mold from screen-right.\nSCREEN DIRECTION: molten gold runs from the crucible at the upper right down the channel and spreads through the cavity from the center toward the left and right.\nLIGHT: orange furnace glow from the left, white-hot shine on the molten gold, deep brown shadow on the clay.\nPALETTE: furnace orange, charcoal black, clay red-brown, molten gold\nDETAIL: cut layers of clay and charcoal in section, the thin glowing cavity filling, sparks, the grain of the charcoal, veins of hot orange running through the clay shell, small cracks glowing where the heat is highest, flecks of ash on the molten surface, a single spark leaping from the lip of the channel.\nNOT IN FRAME: people’s faces, any text, a modern foundry.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 5.792s; everything keeps moving at the same natural pace through the end of the 6s generation.\n0–1s: the crucible tips at the upper right and a thread of white-hot gold runs into the pouring channel; sparks leap from the lip.\n1–3s: the gold pours down the channel and enters the cavity, glowing as it floods the thin shape of the raft; the seated chief and the ten tiny figures fill one after another with light.\n3–4.5s: the glow spreads to the outer edge of the cavity and the clay shell around it brightens to orange; heat shimmer rises above the mold.\n4.5–6s: the last of the gold flows into the smallest figures at the left, the whole cavity shining, and sparks drift up from the channel.\nCAMERA: one continuous slow push toward the cut face of the mold for the full 6 seconds.\nENVIRONMENT: heat shimmer rises; sparks drift; embers pulse in the furnace; smoke curls from the clay.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "CU",
+            "angle": "eye",
+            "location": "goldsmith-workshop",
+            "time_light": "furnace-orange",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B27",
+      "sentences": [
+        "S40"
+      ],
+      "start": 179.64,
+      "end": 185.92,
+      "dur": 6.28,
+      "device": "animated-map",
+      "narration_says": "Whether it shows Guatavita, scholars argue; it was found at Pasca, not by that lake.",
+      "viewer_sees": "A relief map of the Andean highlands: a gold dot at Pasca far from a ringed round lake at Guatavita, a thin dotted line drawing itself between them",
+      "shots": [
+        {
+          "shot_id": "28",
+          "beat_id": "B27",
+          "link_group": null,
+          "t_in": 179.625,
+          "t_out": 185.917,
+          "use_in": 0,
+          "use_out": 6.292,
+          "use_len": 6.292,
+          "motion_budget": 6.292,
+          "gen_len": 8,
+          "source_file": "shots/part28.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "the relief map of the Andean highlands",
+            "the gold dot at Pasca at the lower left",
+            "the ringed round lake at Guatavita at the upper right",
+            "the thin dotted line drawing itself between them"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a hand-drawn relief map of the Andean highlands of Colombia on warm tan paper, two long cordilleras as shaded ridges, a gold dot marking Pasca at the lower left and a small ringed round lake marking Guatavita at the upper right, far apart\nACTION: a gold dot glows at Pasca at the lower left and a ringed round lake glows at Guatavita at the upper right, far from it, while a thin dotted line draws itself from one toward the other\nSETTING: a sheet of warm tan paper with soft pencil shading for the highlands, fine blue lines of rivers, a thin inked border, soft creases catching a lamp’s glow. The paper is soft at the folds and slightly foxed with brown, a small ink bottle and a worn pencil lie at one corner, and the lamp’s glow makes the shaded highlands look like real mountains under evening light; faint lines of latitude cross the sheet in thin grey ink.\nCAMERA: camera hovers straight above the map, overhead, wide shot drifting closer.\nFRAME LAYOUT: center — the relief map filling the frame with a long gap of ridges and rivers across its middle; lower left — a gold dot at Pasca among shaded ridges; upper right — a small ringed round lake at Guatavita; lower right — a small compass mark.\nFACING: we see the map from straight above, north toward the upper edge of the frame.\nSCREEN DIRECTION: a dotted line draws itself from the gold dot at the lower left toward the lake at the upper right.\nLIGHT: warm soft lamp light from the upper left with a faint shadow along the paper creases.\nPALETTE: paper tan, pencil grey, river blue, gold\nDETAIL: pencil shading on the ridges, a fine dotted line, tiny ink contour marks, a gold dot with a soft halo, no readable lettering, tiny triangle marks for peaks, a double blue thread for the river that runs between the two points, a small spiral mark for the lake, a halo of soft gold around the Pasca dot, the smudge of an old thumbprint.\nNOT IN FRAME: readable text, people, a modern road map.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 6.292s; everything keeps moving at the same natural pace through the end of the 8s generation.\n0–1s: the gold dot at the lower left pulses with a soft glow among the shaded ridges.\n1–3s: a thin dotted line starts drawing itself from the dot toward the upper right across the ridges, dot after dot.\n3–5s: the dotted line crosses a blue river and climbs over a shaded ridge; the small ringed lake at the upper right begins to glow in a pale ring.\n5–7s: the dotted line reaches toward the lake and ends short of it as the ring pulses, a gap of paper left between them; the lamp light shifts.\n7–8s: both marks keep pulsing in turn while the camera pushes in over the long distance between them.\nCAMERA: one continuous slow push over the map from the gold dot toward the lake for the full 8 seconds.\nENVIRONMENT: lamp light flickers; the dotted line draws; marks pulse; paper fibres catch the light.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "map-diagram",
+            "shot_size": "aerial",
+            "angle": "overhead",
+            "location": "andes-relief-map",
+            "time_light": "parchment-lamp",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B28",
+      "sentences": [
+        "S41"
+      ],
+      "start": 185.92,
+      "end": 190.42,
+      "dur": 4.5,
+      "device": null,
+      "narration_says": "And whether the ceremony happened as Freyle tells it, nobody can prove.",
+      "viewer_sees": "A ghost of a reed raft with a tiny gold figure in thick mist over the lake, fading as the mist thickens and moves across the water",
+      "shots": [
+        {
+          "shot_id": "29",
+          "beat_id": "B28",
+          "link_group": null,
+          "t_in": 185.917,
+          "t_out": 190.417,
+          "use_in": 0,
+          "use_out": 4.5,
+          "use_len": 4.5,
+          "motion_budget": 4.5,
+          "gen_len": 6,
+          "source_file": "shots/part29.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "reed-raft"
+          ],
+          "visual_priority": [
+            "the faint ghost of the reed raft",
+            "the tiny gold figure on it",
+            "the thick mist over the lake",
+            "the unseen shore"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a great flat raft of bundled yellow reeds lashed with plaited cord, broad enough for six men, a raised bundled prow, a clay incense brazier standing at each of its four corners trailing grey smoke, a faint ghost of itself in thick pale mist at the center of the frame, a tiny gold figure standing upright on it, the outline dissolving into the fog\nACTION: the ghost of a reed raft with a tiny gold figure floats in thick mist over the lake, its outline fading as the fog thickens and drifts across the water\nSETTING: the middle of Lake Guatavita at blue dawn, the water hidden under a bank of pale mist, the green walls dissolved, one faint disc of grey-blue light. Nothing on the shore can be seen; the mist is lit from within by a pearl-grey glow that seems to come from the water itself, and the faint disc of the sun is a pale smudge low on the right, too weak to cut through the fog. The water below the raft is a dull, smooth sheet with only the barest ring of ripple.\nCAMERA: camera floats low over the water, eye level, extreme wide shot.\nFRAME LAYOUT: center — the faint raft with its tiny gold figure, small and hazy; left third — drifting mist; right third — drifting mist; lower third — a pale glimmer of water; upper two thirds — blue-white fog.\nFACING: we see the raft from its long side, the tiny gold figure facing screen-right.\nSCREEN DIRECTION: mist drifts across the frame from the right toward the left, thickening over the raft.\nLIGHT: cold blue pre-dawn light diffused by fog, a single faint warm gold point where the figure stands.\nPALETTE: blue-white, grey, a point of gold\nDETAIL: layered mist with soft edges, one thin line of raft reeds, a speck of gold, no hard outline, a half-seen row of reed bundles forming the raft’s edge, a thread of smoke from one brazier tapering into the fog, the figure’s gold reduced to a single warm spark, thousands of minute water droplets hanging in the air.\nNOT IN FRAME: people close up, the crowd, shore details, any text.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 4.5s; everything keeps moving at the same natural pace through the end of the 6s generation.\n0–1s: the ghost raft glows faintly in the mist and the tiny gold figure on it lifts its arms a hand’s breadth.\n1–3s: a bank of mist slides in from the right across the water and the raft’s outline softens; thin smoke from its braziers merges with the fog.\n3–4.5s: the gold figure dims to a single warm point as the fog thickens over the raft; a pale ripple crosses the glimmering water.\n4.5–6s: the fog keeps sliding left across the whole frame and the raft melts into it until only a faint warm point remains.\nCAMERA: one continuous slow push into the mist toward the raft for the full 6 seconds.\nENVIRONMENT: mist drifts and thickens; water glimmers; faint smoke merges with fog; the light dims.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "XLS",
+            "angle": "eye",
+            "location": "guatavita-lake",
+            "time_light": "blue-dawn-mist",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B29",
+      "sentences": [
+        "S42"
+      ],
+      "start": 190.42,
+      "end": 196.1,
+      "dur": 5.68,
+      "device": null,
+      "narration_says": "He wrote it a century after the conquest, and the Spaniards who came hunting never saw it.",
+      "viewer_sees": "Close over the old chronicler hand and quill: the page fills with ink lines in a long careful script by candlelight, a century after the conquest",
+      "shots": [
+        {
+          "shot_id": "30",
+          "beat_id": "B29",
+          "link_group": null,
+          "t_in": 190.417,
+          "t_out": 196.083,
+          "use_in": 0,
+          "use_out": 5.666,
+          "use_len": 5.666,
+          "motion_budget": 5.666,
+          "gen_len": 6,
+          "source_file": "shots/part30.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "freyle"
+          ],
+          "visual_priority": [
+            "Freyle’s ink-stained hand with the quill",
+            "the page filling with long lines of script",
+            "the candle flame",
+            "the dark wood of the desk"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a lean Spanish colonial chronicler of about fifty, a long narrow face, deep-set dark eyes, a short pointed beard streaked with grey, a plain black doublet with a flat white collar, ink-stained fingers, seen only as his right hand, cuff and the edge of his black sleeve at the left of the frame, the quill gripped between thumb and two ink-stained fingers, his face out of frame\nACTION: the old chronicler’s hand draws long careful lines of script across a thick page by candlelight, a century after the conquest\nSETTING: the desk in a whitewashed study in Bogota at night, a thick page of heavy paper, a clay inkwell, a candle’s pool of light, the grain of dark wood. A second sheet of paper, half covered with lines of script, lies under his left hand, a small sand shaker stands by the inkwell, and the candle flame is mirrored in the polished brass of the holder; the room beyond the pool of light is only warm darkness.\nCAMERA: camera stands over the page, high angle, extreme close shot.\nFRAME LAYOUT: left third — his hand and quill tip, near-camera and large; center — the page with lines of unreadable script filling from the left; right third — the candle flame, soft and out of focus; lower edge — the inkwell rim; upper edge — dark wood.\nFACING: we see the hand from above and the right, the quill pointing toward screen-left to start each line and sweeping toward screen-right.\nSCREEN DIRECTION: the quill sweeps from the left toward the right across each line; the flame bends toward the right.\nLIGHT: candle glow across the page from the right, a bright rim on the quill and on wet ink, deep brown shadow.\nPALETTE: candle orange, paper cream, ink black, dark wood\nDETAIL: individual quill barbs, the sheen of wet ink, fibres of the heavy paper, an ink bead on the nib, an ink-stained fingertip, a faint tremor in the hand, a bead of sweat at the cuff, tiny splatters of ink at the line ends, the quill’s slit nib visible.\nNOT IN FRAME: his face, readable letters, other people, any legible text.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 5.666s; everything keeps moving at the same natural pace through the end of the 6s generation.\n0–1s: the quill glides across the page in a long sweeping stroke, leaving a glistening trail of ink.\n1–3s: he dips the nib in the inkwell at the lower edge and returns to start a new line at the left, the hand moving steadily toward the right.\n3–4.5s: the line grows across the page in careful loops while the candle flame bends and flares; a drop of ink gathers on the nib.\n4.5–6s: the hand reaches the end of the line and drops down to begin another at the left, the quill barbs trembling with each stroke.\nCAMERA: one continuous slow push toward the quill tip for the full 6 seconds.\nENVIRONMENT: candle flame flickers; ink glistens; paper fibres catch the light; a faint draft stirs the page edge.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "ECU",
+            "angle": "high",
+            "location": "freyle-study",
+            "time_light": "candle-night",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B30",
+      "sentences": [
+        "S43",
+        "S44"
+      ],
+      "start": 196.1,
+      "end": 204.88,
+      "dur": 8.78,
+      "device": null,
+      "narration_says": "Freyle went hunting himself, and he confesses it. He wanted one of two golden caimans said to lie in another sacred lake, Teusacá.",
+      "viewer_sees": "Freyle rides a mule up a paramo trail toward a dark lake under cloud; faint golden caiman shapes glint under the black water",
+      "shots": [
+        {
+          "shot_id": "31",
+          "beat_id": "B30",
+          "link_group": null,
+          "t_in": 196.083,
+          "t_out": 204.875,
+          "use_in": 0,
+          "use_out": 8.792,
+          "use_len": 8.792,
+          "motion_budget": 8.792,
+          "gen_len": 10,
+          "source_file": "shots/part31.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "freyle",
+            "teusaca-lake"
+          ],
+          "visual_priority": [
+            "Freyle riding his mule up the trail",
+            "the dark lake of Teusaca",
+            "the faint golden caiman shapes under the water",
+            "the low cloud over the paramo"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a lean Spanish colonial chronicler of about fifty, a long narrow face, deep-set dark eyes, a short pointed beard streaked with grey, a plain black doublet with a flat white collar, ink-stained fingers, riding a brown mule up a narrow stony trail at the right third, leaning forward in the saddle, a plain dark cloak over his doublet, his face turned toward screen-left and the lake\nSUBJECT 2: a small dark lake high in the paramo, black water under low cloud, a rim of tussock grass and furry frailejon plants, a rocky shore, bare windswept hills, a dark lake at the left of the frame, faint golden caiman shapes glimmering far under the black surface\nACTION: Freyle rides a mule up a paramo trail toward a dark lake under low cloud while faint golden caiman shapes glint far under the black water\nSETTING: a cold high paramo, a narrow stony trail climbing between tussock grass and furry frailejon plants, low drifting cloud, bare windswept hills, a small dark lake at the head of the trail\nCAMERA: camera walks beside the trail, eye level, long shot, tracking.\nFRAME LAYOUT: right third — Freyle on the mule, near-camera and large, cropped at the mule’s knee; left third — the dark lake with faint gold caiman shapes under its surface, medium, hazy; center — the trail climbing, frailejon plants at its edge; upper edge — low grey cloud.\nFACING: we see Freyle three-quarter from the front and right, his face turned toward screen-left and the lake; the mule’s head points toward screen-left.\nSCREEN DIRECTION: the mule climbs the trail from the right toward the left; cloud drifts from the left toward the right; ripples cross the lake from the left.\nLIGHT: cold flat grey light, a pale shine on the black water, two faint gold glints under it.\nPALETTE: grey, black water, tussock tan, a touch of gold\nDETAIL: furry frailejon leaves, the mule’s breath mist, the weave of the wool cloak, two long caiman shapes of faint gold under the water.\nNOT IN FRAME: other riders, the priest, any text, a golden caiman clear out of the water.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 8.792s; everything keeps moving at the same natural pace through the end of the 10s generation.\n0–1s: the mule climbs the trail toward the left, its hooves clattering on stones; Freyle sways in the saddle with the steps.\n1–3s: the camera tracks alongside as cloud slides across the hills and cold wind lifts his cloak; the dark lake grows nearer at the left.\n3–5s: two faint golden caiman shapes flicker under the black water and Freyle lifts his head to watch them, his hand tightening on the reins.\n5–7.5s: the mule tosses its head and puffs mist; Freyle leans forward as the trail steepens; ripples cross the lake from the left toward the right.\n7.5–10s: he keeps riding up toward the lake as the gold shapes flash once more beneath the surface and cloud pours over the hills.\nCAMERA: one continuous slow track alongside the rider for the full 10 seconds.\nENVIRONMENT: cloud drifts; wind bends the tussock grass and frailejon leaves; the mule’s breath steams; ripples cross the lake.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "teusaca-trail",
+            "time_light": "cold-overcast",
+            "camera_motion": "track"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B31",
+      "sentences": [
+        "S45"
+      ],
+      "start": 204.88,
+      "end": 209.5,
+      "dur": 4.62,
+      "device": null,
+      "narration_says": "He flattered a priest who had once kept that shrine, and the priest led him there.",
+      "viewer_sees": "Freyle bows and speaks warmly to an old Muisca priest who once kept the shrine; the priest listens, then turns to lead him up the path",
+      "shots": [
+        {
+          "shot_id": "32",
+          "beat_id": "B31",
+          "link_group": null,
+          "t_in": 204.875,
+          "t_out": 209.5,
+          "use_in": 0,
+          "use_out": 4.625,
+          "use_len": 4.625,
+          "motion_budget": 4.625,
+          "gen_len": 6,
+          "source_file": "shots/part32.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "freyle",
+            "muisca-priest"
+          ],
+          "visual_priority": [
+            "Freyle bowing and flattering the priest",
+            "the old Muisca priest listening",
+            "the stony trail climbing toward the lake",
+            "the cold grey paramo"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a lean Spanish colonial chronicler of about fifty, a long narrow face, deep-set dark eyes, a short pointed beard streaked with grey, a plain black doublet with a flat white collar, ink-stained fingers, standing at the right third bowing from the waist with his hat in one hand and speaking warmly, a smooth courtier’s smile, his face turned toward screen-left\nSUBJECT 2: an old Muisca priest, a lean weathered face with deep lines, long grey hair tied back with a cotton band, a plain white cotton mantle, a small gold pendant on a cord, bare feet, standing at the left third beside the trail, listening, half turned toward the path up the hill, his face softening\nACTION: Freyle bows and speaks warmly to an old Muisca priest who once kept the shrine; the priest listens and turns to lead him up the path\nSETTING: a stony paramo trail below a cloud-covered hill, tussock grass, a few frailejon plants, a low stone marker, a thin line of mist, a glimpse of a dark lake far up the trail at the left\nCAMERA: camera stands two paces from them, eye level, medium shot.\nFRAME LAYOUT: left third — the priest, near-camera and large, cropped at the thigh, half turned toward the trail; right third — Freyle bowing, near-camera and large, cropped at the thigh; center — the stony trail climbing toward the left; upper left — a glimpse of dark water, far and hazy.\nFACING: we see the priest three-quarter from the front and left, his face softening toward screen-right; Freyle three-quarter from the front and right, his face toward screen-left; both faces are visible.\nSCREEN DIRECTION: the priest turns and walks from the right toward the left up the trail; Freyle follows from the right edge; mist drifts from the left toward the right.\nLIGHT: cold flat grey light with a warm rim on the priest’s grey hair, a pale glint on Freyle’s collar.\nPALETTE: grey, cotton white, black doublet, tussock tan\nDETAIL: the wool weave of Freyle’s cloak, the priest’s cotton mantle and gold pendant, frost on the tussock, stones on the trail.\nNOT IN FRAME: gold in hand, other people, any text, the lake close up.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 4.625s; everything keeps moving at the same natural pace through the end of the 6s generation.\n0–1s: Freyle sweeps his hat off and bows from the waist, speaking, his free hand opening toward the priest; the priest’s brows lift.\n1–3s: Freyle straightens and presses a hand to his chest with a warm smile; the priest studies him in silence, his pendant swinging slightly.\n3–4.5s: the priest gives a slow nod and turns toward the trail at the left; his white mantle swings and he lifts one hand to beckon.\n4.5–6s: the priest steps up the trail toward the left and Freyle follows from the right edge, pulling his hat on; mist drifts across their path.\nCAMERA: one continuous slow push toward the two men for the full 6 seconds.\nENVIRONMENT: mist drifts; tussock grass bends; cloak and mantle sway; breath clouds in the cold.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "teusaca-trail",
+            "time_light": "cold-overcast",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B32",
+      "sentences": [
+        "S46",
+        "S47"
+      ],
+      "start": 209.5,
+      "end": 218.04,
+      "dur": 8.54,
+      "device": null,
+      "narration_says": "When the water came into view, the priest fell face down on the ground. Freyle could not raise him, and never got another word out of him.",
+      "viewer_sees": "The old priest reaches the edge of the dark lake and falls face down on the ground; Freyle kneels and tries to lift him, in vain",
+      "shots": [
+        {
+          "shot_id": "33",
+          "beat_id": "B32",
+          "link_group": null,
+          "t_in": 209.5,
+          "t_out": 218.042,
+          "use_in": 0,
+          "use_out": 8.542,
+          "use_len": 8.542,
+          "motion_budget": 8.542,
+          "gen_len": 10,
+          "source_file": "shots/part33.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "muisca-priest",
+            "freyle",
+            "teusaca-lake"
+          ],
+          "visual_priority": [
+            "the old Muisca priest falling face down",
+            "Freyle kneeling and trying to lift him",
+            "the black lake just in view",
+            "the low cloud over the paramo"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: an old Muisca priest, a lean weathered face with deep lines, long grey hair tied back with a cotton band, a plain white cotton mantle, a small gold pendant on a cord, bare feet, at the left third at the water’s edge, going down in awe onto the stones, his body bending from the knees, his arms spreading and his forehead toward the ground\nSUBJECT 2: a lean Spanish colonial chronicler of about fifty, a long narrow face, deep-set dark eyes, a short pointed beard streaked with grey, a plain black doublet with a flat white collar, ink-stained fingers, at the right third, dropping to his knees beside the priest and trying to raise him by the shoulders, his face stricken\nSUBJECT 3: a small dark lake high in the paramo, black water under low cloud, a rim of tussock grass and furry frailejon plants, a rocky shore, bare windswept hills, the dark lake just revealed at the upper left, black water under low cloud\nACTION: when the dark water comes into view the old priest falls face down on the stones; Freyle kneels and tries to raise him but cannot\nSETTING: the stony shore of a small dark lake high in the paramo, black water under heavy low cloud, tussock grass, frailejon plants, wet grey stones at the water’s edge\nCAMERA: camera stands on the shore a little way off, slightly high angle, medium shot.\nFRAME LAYOUT: left third — the priest going down onto the stones at the water’s edge, near-camera and large; right third — Freyle kneeling and reaching for the priest’s shoulders, near-camera and large; center — wet stones and a thin shoreline; upper left — the black lake and low cloud, far and hazy.\nFACING: we see the priest from the side and slightly above as he goes down, his face toward the stones; Freyle three-quarter from the front and right, his face stricken and bent toward the priest.\nSCREEN DIRECTION: the priest drops from upright toward the ground at the left; Freyle’s arms pull toward the right edge as he strains to lift him; cloud drifts from the left toward the right.\nLIGHT: cold flat grey light, a pale metallic shine on the black water, a faint warm gleam of the priest’s gold pendant.\nPALETTE: black water, grey stone, cotton white, black doublet\nDETAIL: wet pebbles, the priest’s grey hair spread on the stones, the weave of Freyle’s cloak, ripples on the dark lake.\nNOT IN FRAME: gold in view, other people, any text, a Spanish soldier.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 8.542s; everything keeps moving at the same natural pace through the end of the 10s generation.\n0–1s: the priest comes to the water’s edge with his eyes on the black lake, his shoulders trembling, while Freyle steps up at the right.\n1–3s: the priest’s knees give and he drops forward onto the stones, his arms spreading wide; Freyle lunges toward him.\n3–5s: Freyle kneels, grips the priest’s shoulders and pulls, his face tight; the priest’s body does not lift and his grey hair spreads on the pebbles.\n5–7.5s: Freyle shifts his grip and heaves again, calling to him, his cloak dragging in the wet stones; ripples cross the dark lake from the left.\n7.5–10s: Freyle keeps pulling at the priest’s shoulders with both hands and looks up at the lake while cloud slides over the water.\nCAMERA: one continuous slow push toward the two men for the full 10 seconds.\nENVIRONMENT: cloud drifts; ripples cross the black water; wind lifts the grey hair and cloak; breath steams.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "high",
+            "location": "teusaca-shore",
+            "time_light": "cold-overcast",
+            "camera_motion": "push"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B33",
+      "sentences": [
+        "S48",
+        "S49"
+      ],
+      "start": 218.04,
+      "end": 224.36,
+      "dur": 6.32,
+      "device": null,
+      "narration_says": "\"I left him there,\" he wrote, \"and went back with nothing.\" He does not say why the man fell.",
+      "viewer_sees": "Freyle walks back down the trail empty-handed, glancing back at the small figure of the priest still lying by the far lake",
+      "shots": [
+        {
+          "shot_id": "34",
+          "beat_id": "B33",
+          "link_group": null,
+          "t_in": 218.042,
+          "t_out": 224.375,
+          "use_in": 0,
+          "use_out": 6.333,
+          "use_len": 6.333,
+          "motion_budget": 6.333,
+          "gen_len": 8,
+          "source_file": "shots/part34.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "freyle"
+          ],
+          "visual_priority": [
+            "Freyle walking away empty-handed",
+            "the tiny figure of the priest by the far lake",
+            "the dusk light on the paramo",
+            "the empty trail"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a lean Spanish colonial chronicler of about fifty, a long narrow face, deep-set dark eyes, a short pointed beard streaked with grey, a plain black doublet with a flat white collar, ink-stained fingers, walking down a trail toward the right third, his hands empty at his sides, his shoulders low, his face turned back over his left shoulder toward screen-left\nACTION: Freyle walks back down the trail with nothing in his hands, glancing back at the small figure of the priest still lying by the far lake\nSETTING: a high paramo trail at dusk, tussock grass and frailejon plants in a cold wind, low cloud tinged with cold orange, a small dark lake far up the trail at the left with a tiny dark figure lying beside it. Somewhere above the clouds the sun is going down; the hills are bare and wind-combed, a few stunted shrubs bend east in the gale, and the trail is a pale thread of crushed stone winding down between boulders.\nCAMERA: camera walks ahead of him down the trail, eye level, long shot.\nFRAME LAYOUT: right third — Freyle walking, near-camera and large, cropped at the knee; left third — the far lake and a tiny figure lying by it, small and hazy; center — the empty trail; upper edge — cold orange cloud.\nFACING: we see Freyle from the front and slightly right, his head turned back toward screen-left; his empty hands hang toward camera.\nSCREEN DIRECTION: Freyle walks from the left toward the right down the trail; cloud streams from the left toward the right.\nLIGHT: dusk with a cold orange band under the cloud, a pale glimmer on the lake, long soft shadows.\nPALETTE: cold orange, grey, tussock tan, black doublet\nDETAIL: frost-silvered tussock, the wool of his cloak lifted by wind, the tiny figure by the lake, pebbles on the trail, a boot print filled with frost, a loose stone rolling off the path edge, the tassel of his cloak twisting in the wind, his hat pulled low, dark mud on his boots.\nNOT IN FRAME: gold, other people close up, any text.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 6.333s; everything keeps moving at the same natural pace through the end of the 8s generation.\n0–1s: Freyle walks down the trail toward the right edge, his empty hands swinging, his cloak snapping in the wind.\n1–3s: he glances back over his shoulder toward the far lake and slows for one stride and walks on; the camera backs away down the trail.\n3–5s: the orange band under the cloud deepens; Freyle pulls his collar up against the cold and bows his head.\n5–7s: he walks on with long steps past a clump of frailejon plants swaying in the wind; the small figure by the lake grows smaller at the left.\n7–8s: the camera keeps backing away down the trail with him as cloud streams overhead and the light fades toward the right.\nCAMERA: one continuous slow track backward down the trail ahead of Freyle for the full 8 seconds.\nENVIRONMENT: cloud streams; wind bends the grass and frailejon leaves; cloak and collar flap; dusk light deepens.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "LS",
+            "angle": "eye",
+            "location": "teusaca-trail",
+            "time_light": "dusk-cold",
+            "camera_motion": "track"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B34",
+      "sentences": [
+        "S50"
+      ],
+      "start": 224.36,
+      "end": 228.34,
+      "dur": 3.98,
+      "device": null,
+      "narration_says": "The Spaniards were looking for a place where gold lay for the taking.",
+      "viewer_sees": "A Spaniard’s gloved hand grabs for a gold piece in the glinting mud of an exposed shore",
+      "shots": [
+        {
+          "shot_id": "35",
+          "beat_id": "B34",
+          "link_group": null,
+          "t_in": 224.375,
+          "t_out": 228.333,
+          "use_in": 0,
+          "use_out": 3.958,
+          "use_len": 3.958,
+          "motion_budget": null,
+          "gen_len": null,
+          "source_file": "shots/shot35.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "the gloved hand closing on the gold",
+            "the gold figurines and disc in the mud",
+            "the wet shine of the exposed shore",
+            "the hazy line of the lake"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a gauntleted steel-and-leather glove closing on a handful of glinting gold pieces in wet grey mud, flat gold figurines and a gold disc half buried, a smear of mud on the glove’s cuff\nACTION: a Spaniard’s gloved hand grabs for a gold piece lying in the glinting mud of an exposed shore\nSETTING: the exposed muddy shore of a drained mountain lake, wet grey mud with scattered gold ornaments, the edge of a rusted spade at the lower right, thin mist beyond. More gold lies half-buried farther along the mud: a flat figurine of a standing man, a hammered disc, a ring, and a small gold animal with its tail curled; footprints and the drag mark of a shovel cross the mud, and a thin film of water shimmers in every hollow, reflecting the pale sky.\nCAMERA: camera stands over the mud, high angle, close shot.\nFRAME LAYOUT: right third — the gloved hand reaching in, near-camera and large, cropped at the wrist; center — the gold figurines and disc glinting in the mud; left third — more mud and a few more gold flecks, soft; upper edge — a hazy line of the lake, far.\nFACING: we see the glove from above, its back toward camera, its fingers curling toward screen-left; the gold pieces face up.\nSCREEN DIRECTION: the glove reaches from the right edge toward the gold at the left; a thread of mist drifts across the mud toward the left.\nLIGHT: hard bright morning sun from the upper left, bright flashes on the gold and the wet mud, a dull metal glint on the glove.\nPALETTE: mud grey-brown, gold, steel grey, leather brown\nDETAIL: mud clods on the glove cuff, the hammered edge of the gold disc, tiny gold flecks in wet mud, wet shine, tiny grains of mud cracked along the glove’s seams, the polished curve of the steel finger plates, a gold nose ring pressed deep into the mud so that only its edge shows, bright wet reflections on every piece, a single worm trail across the clay.\nNOT IN FRAME: a face, other people, any text, the lake close up.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "CU",
+            "angle": "high",
+            "location": "guatavita-rim",
+            "time_light": "harsh-morning",
+            "camera_motion": "push"
+          },
+          "render_mode": "still",
+          "still_motion": "push"
+        }
+      ]
+    },
+    {
+      "beat_id": "B35",
+      "sentences": [
+        "S51"
+      ],
+      "start": 228.34,
+      "end": 232.02,
+      "dur": 3.68,
+      "device": null,
+      "narration_says": "What the Muisca had was a lake where it was given away.",
+      "viewer_sees": "The lake whole again at dawn, one gold figurine drifting down through the dark water under the surface",
+      "shots": [
+        {
+          "shot_id": "36",
+          "beat_id": "B35",
+          "link_group": null,
+          "t_in": 228.333,
+          "t_out": 232,
+          "use_in": 0,
+          "use_out": 3.667,
+          "use_len": 3.667,
+          "motion_budget": null,
+          "gen_len": null,
+          "source_file": "shots/shot36.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "the single gold figurine falling",
+            "the pale disc of the surface far above",
+            "the black-green depths",
+            "the thread of gold light"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: one flat Muisca gold figurine of a tiny standing man with spread arms falling slowly through dark green lake water, a single thread of gold light trailing it\nACTION: one gold figurine drifts down through the dark water of the lake, given away and never taken back\nSETTING: deep below the surface of Lake Guatavita at dawn, the water a green-black void with fine silt, a faint pale disc of sky far above ringed by spreading ripple. A thin trail of silver bubbles from its fall hangs in the water above it like a spiral of tiny pearls; beyond the figurine the water deepens through green into dark blue, then black, and broad shafts of dawn light hang diagonally from the upper left, each carrying its own cloud of drifting silt grains. The surface far above is a ring of broken silver where ripples cross one another.\nCAMERA: camera drifts down beside the figurine, eye level, close shot, pulling away upward.\nFRAME LAYOUT: center — the single figurine, small, bright and sharp; upper third — the pale disc of the surface far above with a ring of ripples; lower two thirds — black-green depths; right edge — a few silt specks.\nFACING: we see the figurine from the front, its spread arms toward camera, falling feet first.\nSCREEN DIRECTION: the figurine drifts slowly down from the upper center toward the lower center; silt specks rise past it toward the upper right.\nLIGHT: a faint cool glow from the surface above, one warm gold gleam on the figurine, black depths.\nPALETTE: green-black, pale blue, one gold\nDETAIL: hammered edges of the tiny figure, drifting silt, trailing bubbles, soft rings on the surface far above, a thumb-sized figure with arms stretched wide and tiny round hands, a small chip at its left foot, a worn smooth face with two dots for eyes, the hammered texture of the gold catching a hint of warm light on one shoulder, bubbles clinging to its arm, a fine line of silt trailing from its head.\nNOT IN FRAME: hands, a raft, any text, a lake bottom.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "CU",
+            "angle": "eye",
+            "location": "guatavita-lake",
+            "time_light": "dawn-mist",
+            "camera_motion": "pull"
+          },
+          "render_mode": "still",
+          "still_motion": "pull"
+        }
+      ]
+    },
+    {
+      "beat_id": "B36",
+      "sentences": [
+        "S52"
+      ],
+      "start": 232.02,
+      "end": 236.78,
+      "dur": 4.76,
+      "device": null,
+      "narration_says": "The gold went into the lake, and the legend went around the world.",
+      "viewer_sees": "A final wide view of the lake at golden dusk, mist rolling, a single thread of gold glint on the water where the raft once stood",
+      "shots": [
+        {
+          "shot_id": "37",
+          "beat_id": "B36",
+          "link_group": null,
+          "t_in": 232,
+          "t_out": 236.792,
+          "use_in": 0,
+          "use_out": 4.792,
+          "use_len": 4.792,
+          "motion_budget": 4.792,
+          "gen_len": 6,
+          "source_file": "shots/part37.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "guatavita-lake"
+          ],
+          "visual_priority": [
+            "the round Lake Guatavita at golden dusk",
+            "the thread of gold glint at its center",
+            "the rolling mist",
+            "the green walls of the bowl"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a perfectly round mountain lake in a high Andean bowl, dark blue water ringed by steep walls of green paramo grass and low scrub, a narrow pale shore, thin mist along the rim, no building anywhere, seen whole from the high rim at golden dusk, the surface smooth and dark gold, mist rolling in from the right, one thin thread of gold glint on the water at the exact center where the raft once stood\nACTION: the lake lies whole in the last gold light, mist rolling across it, one thin thread of gold glint on the water where the raft once stood\nSETTING: the high rim above Lake Guatavita at golden dusk, green paramo walls in long shadow, the dark disc of the lake below, thin mist rolling in, a first faint star. Small clumps of paramo grass in the foreground carry beads of evening dew, a faint path of beaten earth runs along the rim toward the left, and far across the bowl the lights of two small thatched villages are just beginning to show as tiny orange points.\nCAMERA: camera stands on the high rim, high angle, extreme wide shot, pulling back.\nFRAME LAYOUT: center — the round lake with its thread of gold glint at the exact middle, medium; lower edge — tussock grass on the rim, near-camera; left and right thirds — green walls in long shadow, far and hazy; upper edge — a gold-orange sky with one faint star.\nFACING: we look down on the lake from the rim; the tussock grass bends toward screen-right.\nSCREEN DIRECTION: mist rolls across the lake from the right toward the left; the thread of gold glint shimmers at the center; the grass bends toward the right.\nLIGHT: low gold dusk light from the left sky, a warm shine on the water, long cool shadows on the walls.\nPALETTE: dusk gold, dark lake, green, soft orange\nDETAIL: layers of green wall fading into haze, a thin gold shimmer on dark water, tussock blades in the foreground, mist with soft edges.\nNOT IN FRAME: the raft, people, buildings, any text.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 4.792s; everything keeps moving at the same natural pace through the end of the 6s generation.\n0–1s: mist begins rolling across the lake from the right and the thread of gold glint shimmers at its center; tussock blades bend in the breeze.\n1–3s: the camera pulls back along the rim as the golden light slides down the green walls and the mist thickens over the water.\n3–4.5s: the gold thread brightens and ripples spread from it in slow rings; a flock of small birds crosses the sky from left to right.\n4.5–6s: the camera keeps pulling back as mist covers more of the lake and the sky deepens toward orange and blue.\nCAMERA: one continuous slow pull back along the rim for the full 6 seconds.\nENVIRONMENT: mist rolls; ripples spread from the gold thread; birds cross the sky; grass blades bend; dusk light slides down the walls.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image.\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts.",
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "XLS",
+            "angle": "high",
+            "location": "guatavita-lake",
+            "time_light": "golden-dusk",
+            "camera_motion": "pull"
+          },
+          "render_mode": "clip",
+          "still_motion": null
+        }
+      ]
+    },
+    {
+      "beat_id": "B37",
+      "sentences": [
+        "S53",
+        "S54"
+      ],
+      "start": 236.78,
+      "end": 244.271,
+      "dur": 7.491,
+      "device": null,
+      "narration_says": "If you like legends with a real story hidden inside, leave a like and subscribe to Animated Tales. Until next time.",
+      "viewer_sees": "End card: poster of the whole story with the title, the gilded heir, Freyle and the SUBSCRIBE button",
+      "shots": [
+        {
+          "shot_id": "38",
+          "beat_id": "B37",
+          "link_group": null,
+          "t_in": 236.792,
+          "t_out": 244.292,
+          "use_in": 0,
+          "use_out": 7.5,
+          "use_len": 7.5,
+          "motion_budget": null,
+          "gen_len": null,
+          "source_file": "shots/shot38.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "muisca-heir",
+            "freyle",
+            "reed-raft"
+          ],
+          "visual_priority": [
+            "the gilded Muisca heir at the far left third",
+            "Freyle with his quill at the right third",
+            "the title across the upper third",
+            "the SUBSCRIBE button at the exact center",
+            "the round lake with the tiny smoking raft"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSHOT: one epic poster of the whole story — the gold-covered heir of the Muisca on his reed raft in the middle of a round mountain lake, the old chronicler Freyle who wrote it down, the Spanish hunters who rode up the mountains after a golden city that was never there, and the gold that was only ever given to the water.\nSUBJECT: a young Muisca heir of about twenty-five, a lean smooth face with high cheekbones, calm dark eyes, straight black hair cut at the shoulders, a slim upright build, a small gold ring through the nose, at the far left third, near-camera and large, cropped at the chest, his whole body, face and hair coated in glittering gold dust, a plain cloth at his hips, his face lifted and calm and turned toward the lake at the right\nSUBJECT 2: a lean Spanish colonial chronicler of about fifty, a long narrow face, deep-set dark eyes, a short pointed beard streaked with grey, a plain black doublet with a flat white collar, ink-stained fingers, at the right third, near-camera and large, cropped at the chest, a goose-feather quill in his ink-stained hand, his face turned toward the lake at the left\nSUBJECT 3: a great flat raft of bundled yellow reeds lashed with plaited cord, broad enough for six men, a raised bundled prow, a clay incense brazier standing at each of its four corners trailing grey smoke, small and far at the center of the round lake just below the button, a tiny gold figure upright on it and four tiny smoking braziers at its corners\nTITLE: across the top, \"EL DORADO WAS NEVER A CITY.\" in large carved dark-bronze capitals with a bright gold edge, and under it \"IT WAS A MAN ON A RAFT\" in smaller gold-leaf capitals; under that, a thin ornamental line and the words \"A GIFT THE HUNTERS NEVER SAW\".\nBUTTON: at the exact center of the frame, a red rounded pill-shaped button with a thin gold rim, \"SUBSCRIBE\" in bold cream capitals, a small gold diamond on each side.\nACTION: the gilded heir and the chronicler look inward toward the lake between them; across the green slopes beyond the lake three small Spanish riders in steel helmets climb from the right edge toward it; a few gold figurines and emeralds sink into the water below the button.\nSETTING: an epic painted poster backdrop of a perfectly round Andean lake in a high green bowl under a golden dawn sky, thin mist along the rim, pale shore, paramo slopes climbing into cloud on both sides, no city anywhere.\nCAMERA: camera holds square on the two figures at their level, eye level, medium wide.\nFRAME LAYOUT: upper third — the title across the dawn sky; far left third — the gilded heir, near-camera and large, cropped at the chest; right third — Freyle with his quill, near-camera and large, cropped at the chest; center — the SUBSCRIBE button with the round lake around it and, far and small, the reed raft with a tiny gold figure and smoke; far right on the green slopes — three small riders; lower edge — near-camera, scattered gold figurines, rough emeralds, a small gold raft of eleven tiny figures, a quill and a closed ledger.\nFACING: we see the heir three-quarter from the front and right, his face turned toward screen-right and the lake; Freyle three-quarter from the front and left, his face turned toward screen-left and the lake; the riders show their sides, heading toward screen-left.\nSCREEN DIRECTION: the three riders climb the far slope from the right edge toward the left; smoke rises from the raft; gold glints sink toward the lower center; the mist drifts toward the left.\nLIGHT: warm gold dawn light across the lake, a bright glow on the heir’s gold body, candle-warm light on Freyle’s face, a glint on the lettering.\nPALETTE: gold, lake blue, paramo green, ink black\nDETAIL: faces readable and calm, flecks of gold on the heir’s skin, the barbs of the quill, crisp lettering with every letter spelled right.\nNOT IN FRAME: any uncoated bare skin below the gold, logos, any other words or letters.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "eye",
+            "location": "end-card",
+            "time_light": "warm-gold",
+            "camera_motion": "locked"
+          },
+          "render_mode": "still",
+          "still_motion": "hold"
+        }
+      ]
+    }
+  ]
+}

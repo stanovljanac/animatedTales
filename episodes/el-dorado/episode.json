@@ -1,0 +1,103 @@
+{
+  "slug": "el-dorado",
+  "title": "El Dorado Was Never a City. It Was a Man on a Raft",
+  "status": "in-progress",
+  "voice": null,
+  "narration_file": "narration.mp3",
+  "final_file": null,
+  "endcard_file": "shots/shot38.jpeg",
+  "intro_file": null,
+  "intro_volume": 0.2,
+  "characters": [
+    {
+      "id": "muisca-heir",
+      "name": "The Muisca Heir (don Juan)",
+      "locked_description": "a young Muisca heir of about twenty-five, a lean smooth face with high cheekbones, calm dark eyes, straight black hair cut at the shoulders, a slim upright build, a small gold ring through the nose"
+    },
+    {
+      "id": "old-don-juan",
+      "name": "Old don Juan",
+      "locked_description": "an old Muisca lord in his sixties, a deeply lined calm face, white hair cut straight at the shoulders, heavy-lidded dark eyes, a thin gold nose ring, a heavy red and ochre cotton mantle pinned at one shoulder"
+    },
+    {
+      "id": "muisca-chiefs",
+      "name": "The four Muisca chiefs",
+      "locked_description": "four Muisca chiefs, broad-shouldered men in their forties and fifties, each in a tall gold diadem with upright feather plumes, a wide gold breastplate and a thick cotton mantle woven in red, white and indigo stripes"
+    },
+    {
+      "id": "muisca-crowd",
+      "name": "The Muisca crowd",
+      "locked_description": "a crowd of Muisca men and women in cotton mantles dyed red, ochre and indigo, feather headdresses, gold crowns, gold pendants and nose rings, dark straight hair, bare feet"
+    },
+    {
+      "id": "freyle",
+      "name": "Juan Rodriguez Freyle",
+      "locked_description": "a lean Spanish colonial chronicler of about fifty, a long narrow face, deep-set dark eyes, a short pointed beard streaked with grey, a plain black doublet with a flat white collar, ink-stained fingers"
+    },
+    {
+      "id": "belalcazar",
+      "name": "Sebastian de Belalcazar",
+      "locked_description": "a Spanish conquistador captain in his fifties, a weathered square face, a short grizzled beard, a steel morion helmet, a dented steel breastplate over a stained red-brown doublet, a sword belt at the hip"
+    },
+    {
+      "id": "conquistadors",
+      "name": "Spanish conquistadors",
+      "locked_description": "Spanish conquistadors of the 1530s, bearded sunburned men in steel morion helmets, dented breastplates or quilted cotton jackets, leather boots, swords at the hip, one arquebus slung across a shoulder"
+    },
+    {
+      "id": "raleigh",
+      "name": "Sir Walter Raleigh",
+      "locked_description": "an Elizabethan adventurer in his forties, a tanned long face, a pointed brown beard and moustache, a pearl drop earring, a slashed black doublet with a small white ruff and a plumed hat"
+    },
+    {
+      "id": "sepulveda",
+      "name": "Antonio de Sepulveda",
+      "locked_description": "a Spanish colonial merchant-engineer in his forties, a broad sunburned face, a dark pointed beard, a wide-brimmed felt hat, a worn leather jerkin over a white shirt with rolled sleeves"
+    },
+    {
+      "id": "muisca-priest",
+      "name": "The old Muisca priest",
+      "locked_description": "an old Muisca priest, a lean weathered face with deep lines, long grey hair tied back with a cotton band, a plain white cotton mantle, a small gold pendant on a cord, bare feet"
+    }
+  ],
+  "locations": [
+    {
+      "id": "guatavita-lake",
+      "name": "Lake Guatavita",
+      "locked_description": "a perfectly round mountain lake in a high Andean bowl, dark blue water ringed by steep walls of green paramo grass and low scrub, a narrow pale shore, thin mist along the rim, no building anywhere"
+    },
+    {
+      "id": "heir-cave",
+      "name": "The heir's cave",
+      "locked_description": "a low dry cave in an Andean hillside, rough grey rock walls, a floor of woven reed mats, one small cooking fire, a rough opening onto cold highland slopes"
+    },
+    {
+      "id": "freyle-study",
+      "name": "Freyle's study in Bogota",
+      "locked_description": "a small whitewashed adobe study in colonial Bogota in 1636, a heavy wooden desk with an inkwell and a thick bound ledger, one candle, a small shuttered window, a rough clay-tile floor"
+    },
+    {
+      "id": "teusaca-lake",
+      "name": "Lake Teusaca",
+      "locked_description": "a small dark lake high in the paramo, black water under low cloud, a rim of tussock grass and furry frailejon plants, a rocky shore, bare windswept hills"
+    }
+  ],
+  "key_props": [
+    {
+      "id": "reed-raft",
+      "name": "The reed raft",
+      "locked_description": "a great flat raft of bundled yellow reeds lashed with plaited cord, broad enough for six men, a raised bundled prow, a clay incense brazier standing at each of its four corners trailing grey smoke"
+    },
+    {
+      "id": "gold-raft",
+      "name": "The gold raft of Pasca",
+      "locked_description": "a small cast-gold raft twenty centimetres long, a seated chief at the center with his arms crossed over his chest, ten smaller figures standing in a ring around him, some masked, a rough granular surface"
+    },
+    {
+      "id": "offering-heap",
+      "name": "The heap of gold and emeralds",
+      "locked_description": "a heap of raw gold ornaments and green emeralds: flat gold figurines, discs, nose rings and rough nuggets mixed with rough uncut green emeralds, the gold soft and warm, the emeralds dark and glassy"
+    }
+  ],
+  "notes": "Samostalna epizoda, ideja #34 u docs/ideas.md, prva juznoamericka na kanalu (region South America, epoha Modern Era, dogadjaj c. 1537). Muisca, jezero Guatavita, Kolumbija. Glavni izvor je Freyle, El Carnero (1636), ceo spanski tekst procitan: cerimonija, post od sest godina u pecini, balsa od trske sa cetiri ziska, 'lepljiva zemlja' i zlatni prah, gomila zlata i smaragda pod nogama, cetiri poglavice, zastava za tisinu, Teusaca i svestenik. Narracija snimljena i poravnata (timing.json). 38 shotova (32 klipa + 6 slika), beat mapa odobrena, lockovi i storyboard upisani; vidi notes.md (osa ekrana, režim, šta ostaje). Rezim shota je mesan, birano iz kadra, ne iz kredita. Tacnost perioda: Muisca nisu Inke ni Asteci. Visoki andski paramo (hladno, magla, tresetna trava, jezero u kotlini), splav od trske (ne kanu, ne drveni brod), perje, zlatne krune i nakit, pamucni pokrivaci; nikakav kameni grad ni piramida. Spanci 1530-ih: celicni sljem (morion), kiraska, pas; Raleigh: elizabetinska odeca. Raft iz Pasce (Museo del Oro): 19.5 cm, jedanaest figura, centralni poglavica sedi na duhu sa rukama preko grudi, deset manjih, neke maskirane; lost-wax u jednom izlivanju; to je predmet za krupni plan. Pozlacen covek: telo prekriveno zlatnim prahom od glave do pete, prikazati iz daljine, sa leda ili u dimu, bez anatomije (nikad golo telo u kadru). Cerimonija je ljudska skala, ali velika scena (dim, vatre, rulja po obali, zastava); nije mit sa bogovima. Tacnost: Freyle NE pominje ronjenje u jezero ni suprugu koja se udavila; to ne crtati kao Freyleovo. Pazi: cerimoniju ne prikazivati kao nesto sto su Spanci gledali; nijedan Spanac je nije video. Brojke 'hiljade mrtvih' nisu potvrdjene, ne ide u naslov ni opis. 'Dvanaest hiljada pesosa' je Sepulvedina sopstvena tvrdnja. Protagonists za publish.md se upisuju pre naslova: naslov ne imenuje nikog (El Dorado je legenda) ili imenuje sve glavne (Freyle, Belalcazar, Raleigh, Sepulveda), nikad jednog + deo."
+}
