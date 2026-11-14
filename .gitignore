@@ -41,6 +41,9 @@ tests/fixtures/*-episode/qc-report.md
 episodes/*/storyboard.md
 tests/fixtures/*-episode/storyboard.md
 
+# --- Flow kandidati (tools/flow-images.mjs): slike, pregled i stanje jedne smene ---
+episodes/*/flow/
+
 # --- Explicitly tracked despite the rules above ---
 !.gitignore
 

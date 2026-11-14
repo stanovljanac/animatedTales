@@ -134,6 +134,11 @@ kadrova. Cela tabela parova je u `README.md` → „JSON i njegovi `.md` parnjac
 
 Gotovo je kad `lint.mjs` vrati exit 0 i kad `storyboard.md` nije stariji od `storyboard.json`-a.
 
+**Sledeći korak su slike:** `node tools/flow-images.mjs episodes/<slug>` pravi četiri kandidata
+po shotu u Flow-u i pregled za izbor ([`flow-images.md`](../../../docs/reference/flow-images.md)).
+Shot čiji je prompt ovaj prolaz prepisao, a slike za njega već postoje, alat sam prepoznaje po
+otisku prompta i generiše ponovo — ne treba ga posebno navoditi.
+
 ## Šta ovaj skil ne radi
 
 - **Ne menja `script.md`** ni `timing.json`. Skripta je zamrznuta posle rendera narracije.

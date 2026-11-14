@@ -1,5 +1,9 @@
 # Flow tabla — generisanje sa posla
 
+> **Slike više ne idu kroz tablu.** Kod kuće ih `tools/flow-images.mjs` pravi sam — četiri
+> kandidata po shotu i pregled za izbor ([`flow-images.md`](flow-images.md)). Tabla ostaje za
+> ono što alat ne radi: klipove, i smenu na mestu gde nema ni `storyboard.json` ni ovog računara.
+
 Faza 07 je jedina faza koja je čist ručni rad u pregledaču, i jedina koja staje iz
 razloga koji nema veze sa poslom: dnevnih 50 kredita propadne jer kod kuće nema vremena,
 a na poslu ima pola sata i nema `storyboard.json`.

@@ -20,12 +20,17 @@ Zato nijedan kadar ne može da „pojede" tuđe vreme, a zbir se poklapa sa narr
 | 05 | poravnanje narracije sa tekstom (Whisper) | `tools/align.mjs` → `timing.json` |
 | 06 | beat mapa i skelet storyboard-a | `tools/beatplan.mjs` → `storyboard.json` |
 | 07 | promptovi, QA i čitljiv prikaz | `tools/lint.mjs`, `tools/render.mjs`, `tools/shotlist.mjs` |
+| 07+ | slike u Google Flow-u — 4 kandidata po shotu, bez ruku, i pregled za izbor | `tools/flow-images.mjs`, [`docs/reference/flow-images.md`](docs/reference/flow-images.md) |
 | 08 | montaža u `final.mp4` | `tools/assemble.mjs` |
 | 09 | Shortovi (9:16) iz gotovog videa, u `episodes/<slug>/short/` | `tools/short.mjs`, [`docs/shorts.md`](docs/shorts.md) |
 
-Slike i klipovi se generišu ručno u Google Flow-u — `shotlist.mjs` ispisuje čeklistu kojom se
-to radi. Ista čeklista u zaglavlju nosi i **budžet kredita**: slika je u Flow-u besplatna, klip
-nije, pa je budžet epizode uvek budžet za video, a dnevnih 50 kredita diktira raspored —
+Slike pravi `flow-images.mjs`: kroz pravi Chrome otvori Flow projekat, podesi Image · 16:9 · x4
+i za svaki shot pošalje image prompt doslovno, pa ostavi četiri kandidata po shotu i pregled
+`episodes/<slug>/flow/index.html` za izbor ([`docs/reference/flow-images.md`](docs/reference/flow-images.md)).
+Izbor najbolje slike i klip od nje ostaju ručni posao u Flow-u — pregled uz svaki shot nosi
+animation prompt i dužinu, a `shotlist.mjs` istu čeklistu za terminal. Čeklista u zaglavlju
+nosi i **budžet kredita**: slika je u Flow-u besplatna, klip nije, pa je budžet epizode uvek
+budžet za video, a dnevnih 50 kredita diktira raspored —
 [`docs/reference/google-ai-plus.md`](docs/reference/google-ai-plus.md).
 
 Ista čeklista sa `--board` izlazi kao **Flow tabla** za tab u Google Docs-u: promptovi tamo gde
@@ -41,10 +46,11 @@ košta nula kredita, a pošto joj je rez kraći (2.5–9.0s umesto 3.0–10.0s),
 
 ## Pokretanje
 
-Alati su čist Node — nema `package.json`, nema `npm install`. Traži se **Node 20+**
-(`node --test` nad folderom) i `ffmpeg`, koji se uzima iz `imageio_ffmpeg` jer `ffprobe`
-u ovom okruženju ne postoji. Jedina faza sa spoljašnjom zavisnošću je 05: `align.mjs` zove
-`tools/whisper_words.py`, kojem treba Python sa `faster-whisper` i skinut `small.en` model.
+Alati su čist Node — nema `package.json`, nema `npm install`. Traži se **Node 22+**
+(ugrađen `WebSocket` za `flow-images.mjs`) i `ffmpeg`, koji se uzima iz `imageio_ffmpeg` jer
+`ffprobe` u ovom okruženju ne postoji. Faza 05 zove `tools/whisper_words.py`, kojem treba
+Python sa `faster-whisper` i skinut `small.en` model; `flow-images.mjs` traži instaliran
+Google Chrome (zaseban profil, prijava jednom — `--login`).
 
 ```
 node tools/align.mjs     episodes/<slug>
@@ -53,6 +59,7 @@ node tools/lint.mjs      episodes/<slug> --no-media
 node tools/render.mjs    episodes/<slug>
 node tools/shotlist.mjs  episodes/<slug>
 node tools/shotlist.mjs  episodes/<slug> --board | Set-Clipboard
+node tools/flow-images.mjs episodes/<slug>
 node tools/assemble.mjs  episodes/<slug>
 node tools/short.mjs     episodes/<slug> short1 --sheet
 ```
@@ -60,7 +67,7 @@ node tools/short.mjs     episodes/<slug> short1 --sheet
 Svaki alat ima `--help`. Provere:
 
 ```
-node --test tests/            # 469 testova
+node --test "tests/*.test.mjs"   # 569 testova (Node 22+ ne prima sam folder)
 node tests/check-fixtures.mjs # izvršni oblik ugovora iz schemas.md
 ```
 
@@ -73,6 +80,8 @@ node tests/check-fixtures.mjs # izvršni oblik ugovora iz schemas.md
 | `docs/prompts/` | promptovi za faze koje se rade u chat modelu |
 | `docs/reference/google-ai-plus.md` | šta pretplata daje lancu i koliko epizoda staje u mesec |
 | `docs/reference/flow-board.md` | `--board` tabla: generisanje van kuće, iz taba u Google Docs-u |
+| `docs/reference/flow-images.md` | slike u Flow-u bez ruku: prijava, krug, opcije, kad pukne |
+| `episodes/<slug>/flow/` | kandidati iz Flow-a, `index.html` za izbor i `flow.json` stanje — ne komituje se |
 | `tools/` | ceo lanac, čist Node, bez zavisnosti |
 | `tests/` | testovi i fixture epizode koje definišu ugovor |
 | `episodes/<slug>/` | `episode.json`, `script.md`, `timing.json`, `storyboard.json`, `notes.md` |
