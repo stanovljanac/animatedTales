@@ -1,11 +1,11 @@
 {
   "slug": "buffalo-jump",
   "title": "How Hunters With No Horse and No Gun Herded Bison Off a Cliff",
-  "status": "draft",
+  "status": "in-progress",
   "voice": null,
   "narration_file": "narration.mp3",
   "final_file": null,
-  "endcard_file": null,
+  "endcard_file": "shots/shot58.jpeg",
   "intro_file": null,
   "intro_volume": 0.2,
   "protagonists": [
@@ -14,8 +14,106 @@
       "Head-Smashed-In"
     ]
   ],
-  "characters": [],
-  "locations": [],
-  "key_props": [],
-  "notes": "Samostalna epizoda, ideja #40 u docs/ideas.md (dodata 2026-11-16 na korisnikov zahtev: 'anticka prica kako su ljudi radili nesto sto je danas normalno, lov/ribolov/gradnja kuca iz bilo kog dela sveta'), prva sa Velikih ravnica i prva 'kako se zivelo' prica na kanalu (region North America, epoha Ancient World; praksa traje oko 5800 godina, do sredine 1800-ih). Faza 04 zavrsena: research.md i script.md (~990 reci, oko 6.0-6.7 min pri 148-166 reci/min; pravilo od 2026-11-16: plafon 10 min, duzinu bira tema); lockovi, timing i storyboard cekaju narraciju. Rezim shota (still, klip ili mesano) bira se tek iz slike, ne iz kredita. Izvor: Jack Brink, Imagining Head-Smashed-In (AU Press 2008, otvoreni pristup, poglavlja 1, 4, 5, 6, 9), Wikipedia, National Trust of Canada; vodic centra (PDF) nije procitan. Skripta pripoveda REKONSTRUKCIJU lova (ne ocevidno svedocenje: 'nema zivih svedoka', Brink); jedna recenica kaze 'archaeologists think'. Priča o imenu je predanje Piikani, ispricana kao predanje, uz primedbu starešina da pripada drugom skoku. Pitanje 'rasipanja' je u skripti (Brinkovo poglavlje 'Overkill?'): pravilo da svaka zivotinja mora da pogine, sa razlogom lovaca (prezivela zivotinja upozorava druga stada), bez odbrane i bez optuzbe. TACNOST PERIODA/KULTURE: Blackfoot/Piikani pre konja i pusaka: koza i krzno, mokasine, luk i strele, koplja i toljage, tipi sator od bizonove koze, travois bez konja = psi vuku (ne konji!); runneri u vucjim ili teladi kozama sa kapuljacom od glave; kamene hrpe (cairns) kao niske hrpe sa sipljem/busenom/granjem, ne zidovi; liticom u rdjastom pescaru Porcupine Hills, travnati basen, potok/izvor ispod litice. Bizoni: realni (tamni, grba, rogovi), ne 'bufalo' iz Azije; prikazati stado kao gust vodjen niz, ne haos. Ne crtati krv i lesine u prvom planu (kraj lova: telo i pad, ne anatomija), ne crtati mladica ispod litice osim kao senku/ledje ispod ispusta, ne karikatura ('divljak'). Crvene mrlje na litici su rdja, ne krv (Brink). Fidler 1792-93: evropski trgovac u odeci iz 18. veka, na konju, Piikani konjanici sa lukovima; konji dolaze tek u 1700-im. Protagonists za publish.md: glavni lik je mesto (Buffalo Jump / Head-Smashed-In); svaki naslov ga imenuje ('Buffalo Jump' ili 'Head-Smashed-In')."
+  "characters": [
+    {
+      "id": "buffalo-runner",
+      "name": "The buffalo runner",
+      "locked_description": "a young Piikani buffalo runner of about twenty, lean and wiry, two long dark braids, a plain fringed buckskin shirt and leggings, soft moccasins, hands and forearms dull with sage and fat"
+    },
+    {
+      "id": "piikani-hunters",
+      "name": "The Piikani hunters",
+      "locked_description": "Piikani hunters of the northern Plains, lean men in fringed buckskin shirts, leggings and moccasins, long dark hair in braids, carrying stone-headed spears, wooden clubs and short bows, bison-hide robes over their shoulders"
+    },
+    {
+      "id": "hidden-people",
+      "name": "The people of the camp",
+      "locked_description": "Piikani men and women of the camp, in fringed buckskin shirts and long buckskin dresses, dark braids, watchful weathered faces, bison-hide robes gathered in their arms"
+    },
+    {
+      "id": "bison",
+      "name": "The bison",
+      "locked_description": "plains bison, massive dark brown animals with a huge shaggy shoulder hump, a heavy bearded head carried low, short curved black horns, a dark woolly mane and slimmer tawny hindquarters"
+    },
+    {
+      "id": "fur-trader",
+      "name": "The European traveler",
+      "locked_description": "a European fur trader in his thirties, a lean sunburnt face, a long dark wool coat with brass buttons, a wide-brimmed felt hat, a leather satchel and a small notebook"
+    },
+    {
+      "id": "blackfoot-elder",
+      "name": "The Blackfoot elder",
+      "locked_description": "a Blackfoot elder in his seventies, a deeply lined calm face, two long grey braids, a dark felt hat with a beaded band, a dark wool vest over a plain shirt"
+    },
+    {
+      "id": "archaeologist",
+      "name": "The archaeologist",
+      "locked_description": "an archaeologist in his fifties, a short grey beard, a sunburnt face, a wide-brimmed canvas hat, a faded canvas field shirt, a small trowel in one hand and a field notebook in the other"
+    },
+    {
+      "id": "piikani-riders",
+      "name": "The Piikani riders",
+      "locked_description": "Piikani riders of the 1790s on horseback, lean men in fringed buckskin shirts and leggings, long hair worn loose with one eagle feather, bows and quivers across their backs, riding unshod brown and grey horses with rawhide bridles"
+    }
+  ],
+  "locations": [
+    {
+      "id": "plains-basin",
+      "name": "The grass basin",
+      "locked_description": "a wide rolling basin of short golden grass on the northern Plains, low swells and a thread of creek, a huge pale sky and the blue foothills of the Rocky Mountains along the horizon"
+    },
+    {
+      "id": "drive-lanes",
+      "name": "The cairn lanes",
+      "locked_description": "two long lines of low waist-high cairns, each a heap of grey and rust stones topped with dry brush and cut sod, spaced a few paces apart, converging across golden grass like the sides of a funnel"
+    },
+    {
+      "id": "jump-cliff",
+      "name": "The sandstone cliff",
+      "locked_description": "a pale sandstone cliff about ten metres high, rust-red streaks down its face, a flat grassy top and a sharp lip, a steep slope of boulders and tall grass at its foot"
+    },
+    {
+      "id": "kill-camp",
+      "name": "The camp by the spring",
+      "locked_description": "a camp on a level meadow beside a clear spring and a small creek, hide tipis with smoke rising from their tops, hides pegged flat on the grass, dogs with pole travois, low cooking fires"
+    },
+    {
+      "id": "winter-camp",
+      "name": "The winter camp",
+      "locked_description": "a winter camp of hide tipis in a sheltered river bottom under bare cottonwoods, snow on the ground, smoke from every tipi top, drying racks hung with dark strips of meat, dogs curled in the snow"
+    },
+    {
+      "id": "interpretive-centre",
+      "name": "The interpretive centre",
+      "locked_description": "a low museum of pale rough stone and glass built into the sandstone cliff, terraced roofs planted with prairie grass, a long path winding up the slope"
+    }
+  ],
+  "key_props": [
+    {
+      "id": "sage-bones",
+      "name": "The sage head-bone",
+      "locked_description": "a bleached bison head-bone lying in short grass, thick sprigs of grey-green sage stuffed into its empty eye sockets and nostrils, long curved horn cores"
+    },
+    {
+      "id": "drying-rack",
+      "name": "The drying rack",
+      "locked_description": "a tall rack of lashed wooden poles hung with long thin strips of dark red bison meat, drying in sun and wind, a low smoky fire beneath"
+    },
+    {
+      "id": "bone-layers",
+      "name": "The bone layers",
+      "locked_description": "a clean vertical cut through the earth, layer upon layer of pale bison bones packed in dark soil with thin bands of grey ash, a red and white measuring pole standing in the cut"
+    },
+    {
+      "id": "old-print",
+      "name": "The old sepia print",
+      "locked_description": "an old sepia print with a pale deckled border, showing a grass slope below a cliff, thickly strewn with white bones"
+    },
+    {
+      "id": "pickup-trucks",
+      "name": "The twenty-five pickup trucks",
+      "locked_description": "twenty-five identical pale grey modern pickup trucks parked in a tidy grid of five rows of five, drawn like a diagram"
+    }
+  ],
+  "notes": "Samostalna epizoda, ideja #40 u docs/ideas.md (dodata 2026-11-16), prva sa Velikih ravnica i prva 'kako se zivelo' prica na kanalu (region North America, epoha Ancient World; praksa traje oko 5800 godina, do sredine 1800-ih). Narracija snimljena i poravnata (timing.json, 361.4s, 70 recenica, small.en, 98.2% tokena). 58 shotova (49 klipova + 9 slika), beat mapa odobrena unapred; vidi notes.md. Skripta pripoveda REKONSTRUKCIJU lova (ne ocevidno svedocenje: 'nema zivih svedoka', Brink); jedna recenica kaze 'archaeologists think'. Prica o imenu je predanje Piikani, ispricana kao predanje, uz primedbu starešina da pripada drugom skoku. Pitanje 'rasipanja' je u skripti (Brinkovo poglavlje 'Overkill?'): pravilo da svaka zivotinja mora da pogine, sa razlogom lovaca (prezivela zivotinja upozorava druga stada), bez odbrane i bez optuzbe. TACNOST PERIODA/KULTURE: Blackfoot/Piikani pre konja i pusaka: koza i krzno, mokasine, luk i strele, koplja i toljage, tipi sator od bizonove koze, travois bez konja = psi vuku (ne konji!); runneri u vucjim ili teladi kozama sa kapuljacom od glave; kamene hrpe (cairns) kao niske hrpe sa sipljem/busenom/granjem, ne zidovi; litica u rdjastom pescaru Porcupine Hills, travnati basen, potok/izvor ispod litice. Bizoni: realni (tamni, grba, rogovi), ne 'bufalo' iz Azije; prikazati stado kao gust vodjen niz, ne haos. Ne crtati krv i lesine u prvom planu (kraj lova: telo i pad, ne anatomija), ne crtati mladica ispod litice osim kao senku/ledje ispod ispusta, ne karikatura ('divljak'). Crvene mrlje na litici su rdja, ne krv (Brink). Fidler 1792-93: evropski trgovac u odeci iz 18. veka, na konju, Piikani konjanici sa lukovima; konji dolaze tek u 1700-im. Deca: skripta pominje decu iza hrpa i mladica, ali se NE crtaju kao figure (Flow filter za maloletnike): ljudi iza hrpa su odrasli, mladic je mala figura s leda ili samo senka. Protagonists za publish.md: glavni lik je mesto (Buffalo Jump / Head-Smashed-In); svaki naslov ga imenuje ('Buffalo Jump' ili 'Head-Smashed-In')."
 }

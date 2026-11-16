@@ -1,0 +1,600 @@
+[
+  {
+    "beat_id": "B01",
+    "sentences": [
+      "S01"
+    ],
+    "device": null,
+    "viewer_sees": "One lean hunter on foot stands small in the grass; beyond him a vast dark herd of bison, each animal far larger than he is",
+    "tags": {
+      "location": "plains-basin",
+      "time_light": "midday-hard-sun"
+    }
+  },
+  {
+    "beat_id": "B02",
+    "sentences": [
+      "S02"
+    ],
+    "device": "timeline-seasons",
+    "viewer_sees": "TIMELINE/SEASONS — one locked view over the Alberta basin, the light and the grass turning through seasons, small bands of hunters crossing and fading, the cliff unchanged",
+    "tags": {
+      "location": "plains-basin",
+      "time_light": "golden-hour"
+    }
+  },
+  {
+    "beat_id": "B03",
+    "sentences": [
+      "S03",
+      "S04"
+    ],
+    "device": null,
+    "viewer_sees": "A runner in a wolf hide lies low in the grass, watching a calm herd; patience, not a chase",
+    "tags": {
+      "location": "plains-basin",
+      "time_light": "dawn-mist"
+    }
+  },
+  {
+    "beat_id": "B04",
+    "sentences": [
+      "S05"
+    ],
+    "device": "empty-aftermath",
+    "viewer_sees": "EMPTY AFTERMATH — the quiet grass slope below the cliff today, wind in the grass, nobody there",
+    "tags": {
+      "location": "jump-cliff",
+      "time_light": "overcast-grey"
+    }
+  },
+  {
+    "beat_id": "B05",
+    "sentences": [
+      "S06"
+    ],
+    "device": null,
+    "viewer_sees": "A European traveler sketches a distant hunt in his notebook; an archaeologist kneels at a dig; Blackfoot elders tell the story to the archaeologists",
+    "tags": {
+      "location": "modern-ridge",
+      "time_light": "late-afternoon"
+    }
+  },
+  {
+    "beat_id": "B06",
+    "sentences": [
+      "S07",
+      "S08"
+    ],
+    "device": null,
+    "viewer_sees": "The camera climbs the sandstone cliff face and over the lip, revealing the wide grass basin beyond",
+    "tags": {
+      "location": "jump-cliff",
+      "time_light": "midday-hard-sun"
+    }
+  },
+  {
+    "beat_id": "B07",
+    "sentences": [
+      "S09"
+    ],
+    "device": null,
+    "viewer_sees": "A line of people walks across the dry basin with burning grass torches; fire creeps low and smoke drifts, fresh green shoots at the edge of the burn",
+    "tags": {
+      "location": "plains-basin",
+      "time_light": "late-afternoon"
+    }
+  },
+  {
+    "beat_id": "B08",
+    "sentences": [
+      "S10"
+    ],
+    "device": null,
+    "viewer_sees": "An aerial glide along two converging lines of stone cairns that widen like a funnel toward the grass basin and narrow toward the cliff",
+    "tags": {
+      "location": "drive-lanes",
+      "time_light": "golden-hour"
+    }
+  },
+  {
+    "beat_id": "B09",
+    "sentences": [
+      "S11"
+    ],
+    "device": null,
+    "viewer_sees": "Hands lay dry brush and cut sod on top of a heap of stones, making the cairn taller",
+    "tags": {
+      "location": "drive-lanes",
+      "time_light": "midday-hard-sun"
+    }
+  },
+  {
+    "beat_id": "B10",
+    "sentences": [
+      "S12",
+      "S13"
+    ],
+    "device": "macro-object",
+    "viewer_sees": "MACRO OBJECT — a bison's wet nose and flaring nostrils, wind-whipped grass; the nose is the whole story",
+    "tags": {
+      "location": "plains-basin",
+      "time_light": "golden-hour"
+    }
+  },
+  {
+    "beat_id": "B11",
+    "sentences": [
+      "S14"
+    ],
+    "device": null,
+    "viewer_sees": "Wind ripples sweep across the grass from the herd over the whole funnel of cairns, one direction only",
+    "tags": {
+      "location": "drive-lanes",
+      "time_light": "late-afternoon"
+    }
+  },
+  {
+    "beat_id": "B12",
+    "sentences": [
+      "S15"
+    ],
+    "device": null,
+    "viewer_sees": "Dawn at the camp: sage smoke drifts over young men standing in a line, a hand sweeping the smoke",
+    "tags": {
+      "location": "kill-camp",
+      "time_light": "dawn-mist"
+    }
+  },
+  {
+    "beat_id": "B13",
+    "sentences": [
+      "S16"
+    ],
+    "device": "process-cutaway",
+    "viewer_sees": "PROCESS — a young man pulls a grey wolf hide over his shoulders, another presses sage and fat into the fur",
+    "tags": {
+      "location": "kill-camp",
+      "time_light": "dawn-mist"
+    }
+  },
+  {
+    "beat_id": "B14",
+    "sentences": [
+      "S17",
+      "S18",
+      "S19"
+    ],
+    "device": null,
+    "viewer_sees": "A runner in a wolf hide crawls on hands and knees through tall grass, so animal that he reads as a wolf",
+    "tags": {
+      "location": "plains-basin",
+      "time_light": "golden-hour"
+    }
+  },
+  {
+    "beat_id": "B15",
+    "sentences": [
+      "S20"
+    ],
+    "device": null,
+    "viewer_sees": "A runner in a calf skin throws his head back and cries like a lost calf; a cow bison lifts her head, ears forward",
+    "tags": {
+      "location": "plains-basin",
+      "time_light": "late-afternoon"
+    }
+  },
+  {
+    "beat_id": "B16",
+    "sentences": [
+      "S21"
+    ],
+    "device": null,
+    "viewer_sees": "Two calf-skin runners crawl ahead; a line of cows follows one slow step at a time toward the mouth of the cairn lanes",
+    "tags": {
+      "location": "drive-lanes",
+      "time_light": "late-afternoon"
+    }
+  },
+  {
+    "beat_id": "B17",
+    "sentences": [
+      "S22",
+      "S23"
+    ],
+    "device": null,
+    "viewer_sees": "Hunters crawl in single file through the grass; seen from above the line looks like a big snake, bison watching",
+    "tags": {
+      "location": "plains-basin",
+      "time_light": "midday-hard-sun"
+    }
+  },
+  {
+    "beat_id": "B18",
+    "sentences": [
+      "S24",
+      "S25"
+    ],
+    "device": null,
+    "viewer_sees": "A row of people crouches hidden behind a line of cairns, only eyes and robes above the stones",
+    "tags": {
+      "location": "drive-lanes",
+      "time_light": "late-afternoon"
+    }
+  },
+  {
+    "beat_id": "B19",
+    "sentences": [
+      "S26"
+    ],
+    "device": null,
+    "viewer_sees": "The herd has passed; people rise from behind the cairns and wave robes along the lanes, turning one straying animal back into line",
+    "tags": {
+      "location": "drive-lanes",
+      "time_light": "late-afternoon"
+    }
+  },
+  {
+    "beat_id": "B20",
+    "sentences": [
+      "S27",
+      "S28"
+    ],
+    "device": "crowd-as-texture",
+    "viewer_sees": "CROWD-AS-TEXTURE — a dense pack of bison walks slowly in one tight mass along the lane, dust rising, a pause, then on again",
+    "tags": {
+      "location": "drive-lanes",
+      "time_light": "golden-hour"
+    }
+  },
+  {
+    "beat_id": "B21",
+    "sentences": [
+      "S29",
+      "S30"
+    ],
+    "device": null,
+    "viewer_sees": "Overhead: first a long thin straggling line of bison reaching the cliff edge and turning aside; then a tight pack arriving as one dark mass",
+    "tags": {
+      "location": "jump-cliff",
+      "time_light": "late-afternoon"
+    }
+  },
+  {
+    "beat_id": "B22",
+    "sentences": [
+      "S31"
+    ],
+    "device": null,
+    "viewer_sees": "The herd breaks into a run downhill along the lane, around a gentle curve that hides the cliff edge",
+    "tags": {
+      "location": "drive-lanes",
+      "time_light": "late-afternoon"
+    }
+  },
+  {
+    "beat_id": "B23",
+    "sentences": [
+      "S32"
+    ],
+    "device": null,
+    "viewer_sees": "The leaders brake at the lip, legs braced, dust surging; the pack behind pushes them on",
+    "tags": {
+      "location": "jump-cliff",
+      "time_light": "late-afternoon"
+    }
+  },
+  {
+    "beat_id": "B24",
+    "sentences": [
+      "S33",
+      "S34"
+    ],
+    "device": null,
+    "viewer_sees": "Seen from below, a cloud of dust at the empty lip and one bison silhouette dropping against the sky",
+    "tags": {
+      "location": "jump-cliff",
+      "time_light": "late-afternoon"
+    }
+  },
+  {
+    "beat_id": "B25",
+    "sentences": [
+      "S35"
+    ],
+    "device": null,
+    "viewer_sees": "At the foot of the cliff, hunters hold spears level and keep their distance from one big bison still standing in the dust",
+    "tags": {
+      "location": "kill-camp",
+      "time_light": "dusk-violet"
+    }
+  },
+  {
+    "beat_id": "B26",
+    "sentences": [
+      "S36",
+      "S37"
+    ],
+    "device": "ledger-accumulation",
+    "viewer_sees": "LEDGER/ACCUMULATION — the great heap of animals below the cliff, and beside it twenty-five pickup trucks in five rows of five, drawn like a diagram",
+    "tags": {
+      "location": "kill-camp",
+      "time_light": "dusk-violet"
+    }
+  },
+  {
+    "beat_id": "B27",
+    "sentences": [
+      "S38"
+    ],
+    "device": null,
+    "viewer_sees": "Night at the foot of the cliff: dozens of people scrape hides and cut meat by firelight, working without a pause",
+    "tags": {
+      "location": "kill-camp",
+      "time_light": "night-firelit"
+    }
+  },
+  {
+    "beat_id": "B28",
+    "sentences": [
+      "S39",
+      "S40"
+    ],
+    "device": null,
+    "viewer_sees": "The camp on level ground beside the spring, then long thin strips of red meat hanging on racks in the sun and wind",
+    "tags": {
+      "location": "kill-camp",
+      "time_light": "midday-hard-sun"
+    }
+  },
+  {
+    "beat_id": "B29",
+    "sentences": [
+      "S41"
+    ],
+    "device": "process-cutaway",
+    "viewer_sees": "PROCESS/CUTAWAY — a ten-metre cut through the earth, layer after layer of pale bone in dark soil, a small archaeologist beside it for scale",
+    "tags": {
+      "location": "excavation",
+      "time_light": "overcast-grey"
+    }
+  },
+  {
+    "beat_id": "B30",
+    "sentences": [
+      "S42",
+      "S43"
+    ],
+    "device": null,
+    "viewer_sees": "A European traveler on a rise looks down at the slope piled with bison and the busy camp, frowning, notebook in hand",
+    "tags": {
+      "location": "kill-camp",
+      "time_light": "late-afternoon"
+    }
+  },
+  {
+    "beat_id": "B31",
+    "sentences": [
+      "S44",
+      "S45"
+    ],
+    "device": null,
+    "viewer_sees": "The traveler at the right writes in his notebook and shakes his head; at the left a Piikani hunter looks steadily at the herd, unmoved",
+    "tags": {
+      "location": "kill-camp",
+      "time_light": "late-afternoon"
+    }
+  },
+  {
+    "beat_id": "B32",
+    "sentences": [
+      "S46"
+    ],
+    "device": "macro-object",
+    "viewer_sees": "MACRO OBJECT — a bison’s dark eye in extreme close-up, the cliff and a tiny herd reflected in it; the animal is aware and remembers",
+    "tags": {
+      "location": "plains-basin",
+      "time_light": "golden-hour"
+    }
+  },
+  {
+    "beat_id": "B33",
+    "sentences": [
+      "S47"
+    ],
+    "device": null,
+    "viewer_sees": "One bison runs alone across the open plain toward another herd on the far ridge, which lifts its heads and turns to look",
+    "tags": {
+      "location": "plains-basin",
+      "time_light": "golden-hour"
+    }
+  },
+  {
+    "beat_id": "B34",
+    "sentences": [
+      "S48",
+      "S49"
+    ],
+    "device": null,
+    "viewer_sees": "A bleached bison head-bone in the grass with sage stuffed into its eye sockets and nostrils; then a winter camp, people sharing dried meat by a fire",
+    "tags": {
+      "location": "kill-camp",
+      "time_light": "night-firelit"
+    }
+  },
+  {
+    "beat_id": "B35",
+    "sentences": [
+      "S50",
+      "S51"
+    ],
+    "device": null,
+    "viewer_sees": "A Blackfoot elder stands on the grass at golden hour, looking up at the cliff as if saying its name",
+    "tags": {
+      "location": "jump-cliff",
+      "time_light": "golden-hour"
+    }
+  },
+  {
+    "beat_id": "B36",
+    "sentences": [
+      "S52"
+    ],
+    "device": null,
+    "viewer_sees": "A small young figure seen from behind picks his way along the foot of the cliff toward a ledge, looking up at the lip",
+    "tags": {
+      "location": "jump-cliff",
+      "time_light": "late-afternoon"
+    }
+  },
+  {
+    "beat_id": "B37",
+    "sentences": [
+      "S53",
+      "S54"
+    ],
+    "device": null,
+    "viewer_sees": "A shadowed ledge under the cliff, a tiny dark shape pressed against the rock; below it the pile of animals rises toward the ledge, dust falling",
+    "tags": {
+      "location": "jump-cliff",
+      "time_light": "dusk-violet"
+    }
+  },
+  {
+    "beat_id": "B38",
+    "sentences": [
+      "S55"
+    ],
+    "device": null,
+    "viewer_sees": "Hunters haul the heavy animals aside with ropes and then stop, heads bowed, looking at the shadowed ledge; one lays a hide over what they found",
+    "tags": {
+      "location": "jump-cliff",
+      "time_light": "dusk-violet"
+    }
+  },
+  {
+    "beat_id": "B39",
+    "sentences": [
+      "S56",
+      "S57"
+    ],
+    "device": null,
+    "viewer_sees": "Blackfoot elders and an archaeologist sit on a grassy ridge; one elder points toward another cliff far off; then a close portrait of the elder, calm and level",
+    "tags": {
+      "location": "modern-ridge",
+      "time_light": "late-afternoon"
+    }
+  },
+  {
+    "beat_id": "B40",
+    "sentences": [
+      "S58",
+      "S59"
+    ],
+    "device": null,
+    "viewer_sees": "Winter: a Piikani rider on a horse crests the ridge; below, a fur trader on a brown horse watches riders drive a herd toward the old cliffs",
+    "tags": {
+      "location": "drive-lanes",
+      "time_light": "winter-snow-light"
+    }
+  },
+  {
+    "beat_id": "B41",
+    "sentences": [
+      "S60"
+    ],
+    "device": null,
+    "viewer_sees": "The herd bursts through the line of cairns and scatters back across the grass, riders wheeling after it; at the cliff one lone animal tumbles",
+    "tags": {
+      "location": "drive-lanes",
+      "time_light": "winter-snow-light"
+    }
+  },
+  {
+    "beat_id": "B42",
+    "sentences": [
+      "S61"
+    ],
+    "device": null,
+    "viewer_sees": "A horse trots straight over a low cairn of the old lane, ignoring it",
+    "tags": {
+      "location": "drive-lanes",
+      "time_light": "winter-snow-light"
+    }
+  },
+  {
+    "beat_id": "B43",
+    "sentences": [
+      "S62"
+    ],
+    "device": null,
+    "viewer_sees": "One mounted hunter alone gallops beside a few bison on the open plain, bow ready",
+    "tags": {
+      "location": "plains-basin",
+      "time_light": "late-afternoon"
+    }
+  },
+  {
+    "beat_id": "B44",
+    "sentences": [
+      "S63"
+    ],
+    "device": "empty-aftermath",
+    "viewer_sees": "EMPTY AFTERMATH — the same basin, grass bending, old cairn lines weathered, only a few lonely animals on the far ridge and then none",
+    "tags": {
+      "location": "plains-basin",
+      "time_light": "overcast-grey"
+    }
+  },
+  {
+    "beat_id": "B45",
+    "sentences": [
+      "S64"
+    ],
+    "device": "macro-object",
+    "viewer_sees": "MACRO OBJECT — an old sepia print on a worn table showing the slope below a cliff pale with bones; the camera pushes into it",
+    "tags": {
+      "location": "archive-table",
+      "time_light": "warm-lamp"
+    }
+  },
+  {
+    "beat_id": "B46",
+    "sentences": [
+      "S65"
+    ],
+    "device": null,
+    "viewer_sees": "The interpretive centre built into the cliff at golden hour, visitors small on the path; Piikani elders talk at a table beside the plans",
+    "tags": {
+      "location": "museum",
+      "time_light": "golden-hour"
+    }
+  },
+  {
+    "beat_id": "B47",
+    "sentences": [
+      "S66",
+      "S67",
+      "S68"
+    ],
+    "device": null,
+    "viewer_sees": "The empty cliff and basin at dusk; one rider on a fast horse gallops along the old cairn line, the old way left behind",
+    "tags": {
+      "location": "drive-lanes",
+      "time_light": "dusk-violet"
+    }
+  },
+  {
+    "beat_id": "B48",
+    "sentences": [
+      "S69",
+      "S70"
+    ],
+    "device": null,
+    "viewer_sees": "End card: a poster of the whole story with the title and the SUBSCRIBE button at the center",
+    "tags": {
+      "location": "end-card",
+      "time_light": "warm-gold"
+    }
+  }
+]
