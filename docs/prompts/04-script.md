@@ -1,7 +1,7 @@
 # Stage 04 — Script Writer
 
 **Paste into a fresh chat, together with:** `docs/reference/channel-bible.md` and the complete
-output of stage 03. That reference file defines the channel, the 5-minute ceiling and the three
+output of stage 03. That reference file defines the channel, the 10-minute ceiling and the three
 evidence categories; this prompt applies them without repeating them.
 
 **Output language: English**, even though the pasted reference file is in Serbian.
@@ -24,9 +24,11 @@ Prefer the research package's **essential** material; use **optional** material 
 clearly strengthens the story and fits naturally.
 
 A target duration may be supplied. It is a planning aid only — the real ElevenLabs runtime
-becomes authoritative later, and the five-minute ceiling always overrides the target. If the
-story is complete at 2:30, stop at 2:30. Never repeat information, pad transitions, over-explain
-or add facts to reach a number.
+becomes authoritative later, and the ten-minute ceiling (about 1,450 words of narration, outro
+included) always overrides the target. The length is chosen by the story, not by the ceiling: use
+the room the research's essential and supporting material needs, and no more. If the story is
+complete at 4:00, stop at 4:00. Never repeat information, pad transitions, over-explain or add
+facts to reach a number.
 
 ---
 
@@ -136,7 +138,7 @@ Rules:
   using its own key word. This is what stops every outro sounding identical.
 - **No generic filler.** "History is fascinating", "thanks for watching", "that's all for today"
   and their relatives are banned as the bridge.
-- **30–42 words**, roughly 11–16 seconds of narration. It counts inside the five-minute ceiling.
+- **30–42 words**, roughly 11–16 seconds of narration. It counts inside the ten-minute ceiling.
 - **Offer three variants** so the human can choose (see the output rules below).
 
 Worked example — the Rome episode, whose central noun is *night*:

@@ -82,18 +82,19 @@ koji se ne poklapaju sa svim ostalim videima u niši.
 | 4 | Jedna nedvosmislena slika koja se čita u malom formatu, plus kratak naslov koji sam po sebi otvara pitanje. |
 | 5 | Slika je toliko specifična i čudna da radi bez teksta (leš u papskoj odori na sudu, zupčanici izvučeni iz mora), a naslov je kratak i sam je hook. |
 
-### M3 — Kompletnost luka u 5 minuta (×2)
+### M3 — Kompletnost luka u 10 minuta (×2)
 
-Meri se da li priča ima **postavku, obrt i zatvaranje** unutar ~750 reči narracije,
-bez sečenja na pola i bez „a šta je bilo dalje, to je druga priča".
+Meri se da li priča ima **postavku, obrt i zatvaranje** unutar ~1.450 reči narracije (plafon od 10 minuta),
+bez sečenja na pola i bez „a šta je bilo dalje, to je druga priča". Do 2026-11-16 plafon je bio 5 minuta
+(~750 reči); ocene dodeljene tada ostaju kako su zatečene i ne preračunavaju se.
 
 | Ocena | Deskriptor |
 |---|---|
-| 0 | Tema je pregled epohe ili procesa bez početka i kraja; svako sečenje na 5 minuta je proizvoljno. |
-| 1 | Priča ima početak, ali kraj zahteva još jednu celu priču; u 5 minuta staje samo uvod. |
+| 0 | Tema je pregled epohe ili procesa bez početka i kraja; svako sečenje na 10 minuta je proizvoljno. |
+| 1 | Priča ima početak, ali kraj zahteva još jednu celu priču; u 10 minuta staje samo uvod. |
 | 2 | Luk staje, ali samo uz drastično sažimanje koje ubija sve detalje — ostaje suvo nabrajanje. |
 | 3 | Luk staje uz jedno svesno žrtvovanje (jedna linija radnje se odseca), i to se primeti, ali ne boli. |
-| 4 | Postavka, obrt i rasplet prirodno staju u 5 minuta; ostaje mesta za jednu digresiju ili detalj. |
+| 4 | Postavka, obrt i rasplet prirodno staju u 10 minuta; ostaje mesta za jednu digresiju ili detalj. |
 | 5 | Priča je *rođena* u toj dužini — ima jasan okidač, jednu promenu i konačan ishod, i pre bi se rastegla nego što bi se cepala. |
 
 ### M4 — Iznenađenje / kontraintuitivni payoff (×2)
@@ -214,7 +215,7 @@ zaokružen na jednu decimalu.
 |---|---|---|---|
 | M1 snaga hooka | 3 | 5 | 15 |
 | M2 naslov + tambnejl | 3 | 5 | 15 |
-| M3 luk u 5 min | 2 | 5 | 10 |
+| M3 luk u 10 min | 2 | 5 | 10 |
 | M4 iznenađenje | 2 | 5 | 10 |
 | M5 emotivni ulog | 2 | 3 | 6 |
 | M6 vizuelna raznovrsnost | 2 | 4 | 8 |

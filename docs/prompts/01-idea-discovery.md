@@ -1,7 +1,7 @@
 # Stage 01 — Idea Discovery
 
 **Paste into a fresh chat, together with:** `docs/reference/channel-bible.md`.
-That file defines the channel, the 5-minute ceiling and the rules on historical integrity.
+That file defines the channel, the 10-minute ceiling and the rules on historical integrity.
 This prompt does not repeat them.
 
 **Output language: English**, even though the pasted reference file is in Serbian.
@@ -86,7 +86,7 @@ diversity would cost story quality, story quality wins.
 
 ## Hard constraints
 
-- **Five-minute fit.** Every idea must be tellable in roughly 2–5 minutes. Reject anything
+- **Ten-minute fit.** Every idea must be tellable in roughly 3–10 minutes. Reject anything
   needing fifteen minutes of background before it becomes interesting, and anything too broad,
   too fragmented or too fact-heavy to land clearly.
 - **No invention.** Do not fabricate stories, and do not weld unrelated events into one

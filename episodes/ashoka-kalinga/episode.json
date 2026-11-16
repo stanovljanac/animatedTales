@@ -1,0 +1,18 @@
+{
+  "slug": "ashoka-kalinga",
+  "title": "The Emperor Who Won a War and Carved His Regret in Stone",
+  "status": "draft",
+  "voice": null,
+  "narration_file": "narration.mp3",
+  "final_file": null,
+  "endcard_file": null,
+  "intro_file": null,
+  "intro_volume": 0.2,
+  "protagonists": [
+    "Ashoka"
+  ],
+  "characters": [],
+  "locations": [],
+  "key_props": [],
+  "notes": "Samostalna epizoda, ideja #38 u docs/ideas.md (dodata 2026-11-16 na korisnikov zahtev: jedna od dve 'istorijska bitka ili bitan dogadjaj'), prva iz Juzne Azije na kanalu (region India, epoha Ancient World, oko 261. p.n.e.). Faza 04 zavrsena: research.md i script.md (~875 reci, oko 5.3-5.9 min pri 148-166 reci/min; pravilo od 2026-11-16: plafon 10 min, duzinu bira tema); lockovi, timing i storyboard cekaju narraciju. Rezim shota (still, klip ili mesano) bira se tek iz slike, ne iz kredita. Izvor: Dhammikin prevod Ashokinih edikata (Rock Edict 13 i dva kalinga edikta, citano u celini), Wikipedia (Kalinga War, Ashoka, Edicts of Ashoka); nijedan drugi prevod i nijedna moderna monografija nisu otvoreni. Brojke (150.000 deportovanih, 100.000 ubijenih) su Ashokine, ne nezavisne; skripta to kaze jednom. Legenda o braci i 'Ashoka the Fierce' (Mahavamsa) je u skripti jednom, oznacena kao kasna; izostavljeno svesno: price iz Ashokavadane, konverzija na bojnom polju, Dhauli kao bojno polje, 'reka Daya crvena' (bez izvora). TACNOST PERIODA: Mauryansko carstvo 3. v. p.n.e.: pesaci, konjica, ratni slonovi, kola; pamucne pregace/dhoti, turbani, nakit; drvene palate i kameni stubovi (pre-Ashoka arhitektura je drvo i cigla, kamen dolazi sa njim); stupe tek kasnije. Edikti: stene i polirani pesacnjakovi stubovi sa uklesanim redovima Brahmi pisma, klesari na skelama; ne latinicna slova, ne sanskrit u devanagari. Kalinga: obala, luka, brodovi, pirinac. Ne crtati bitku sa krvlju i lesinama u prvom planu; posledice (zgarista, kolone raseljenih) prikazati kao slike, ne kao anatomiju. Ashoka kao covek sredjih godina, ne svetac i ne zlikovac. Ime 'Ashoka' u edikima gotovo nikad ne stoji; skripta kaze da sebe zove 'Beloved of the Gods'. Protagonists za publish.md: naslov imenuje Ashoku (jedini imenovani glavni lik) ili nikog, nikad Ashoka + deo priče."
+}

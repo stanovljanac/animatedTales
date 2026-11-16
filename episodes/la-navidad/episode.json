@@ -1,0 +1,24 @@
+{
+  "slug": "la-navidad",
+  "title": "The First Spanish Settlement in the Americas Was Built From a Shipwreck",
+  "status": "draft",
+  "voice": null,
+  "narration_file": "narration.mp3",
+  "final_file": null,
+  "endcard_file": null,
+  "intro_file": null,
+  "intro_volume": 0.2,
+  "protagonists": [
+    "Columbus",
+    [
+      "La Navidad",
+      "Spanish Settlement",
+      "Spanish Town",
+      "Fort"
+    ]
+  ],
+  "characters": [],
+  "locations": [],
+  "key_props": [],
+  "notes": "Samostalna epizoda, ideja #37 u docs/ideas.md (dodata 2026-11-16 na korisnikov zahtev: bar jedna prica iz 1492 / ranog novog veka), jedina iz same 1492 na kanalu, el-dorado je iz c. 1537 (region Caribbean, epoha Modern Era, 24. dec 1492 - 27. nov 1493). Faza 04 zavrsena: research.md i script.md (~1052 reci, oko 6.3-7.1 min pri 148-166 reci/min; pravilo od 2026-11-16: plafon 10 min, duzinu bira tema); lockovi, timing i storyboard cekaju narraciju. Rezim shota (still, klip ili mesano) bira se tek iz slike, ne iz kredita. Izvor: Kolumbov dnevnik (Markham 1893, citan na archive.org), Chancino pismo (druga plovidba), Florida Museum (En Bas Saline), Euronews 12. okt 2026; Gutenberg je bio nedostupan. Ispravljena premisa: 'prvo evropsko naselje' je netacno (Nordijci, L'Anse aux Meadows), tacno je 'prvo spansko'. Broj ljudi: 39 po Kolumbovom dnevniku, 44 po zvanicnoj listi iz 1507 (skripta kaze 'by his own count'). Taino strana postoji samo kroz ono sto su Spanci zapisali (Guacanagari kod Chance); skripta to kaze jednom. TACNOST PERIODA: spanske karavele iz 1492 (Santa Maria nao, Nina karavela), mornari u kosuljama i kapama bez ukrasa, Kolumbo u tamnom plasu kapetana, Taino: pamucne pregaće i nakit od zlata, kanui izdubljeni iz jednog debla, hamak, kuce 'caney/bohio' sa slamnatim krovom; bez zlatnih gradova i bez Evropljana u oklopima konkistadora (to je kasnije). Brodolom: mirno more, mesec, greben; bez krvi i bez lesina u kadru (mrtvi samo kao daleka naznaka u polju). Cacique Guacanagari prikazan dostojanstveno, ne kao 'divljak' ni kao zrtva; Kolumbo ni heroj ni zlikovac. Tvrdnja 'bio je naivan/timid' pripada Kolumbu i skripta je prenosi kao njegovu recenicu. Protagonists za publish.md: recenica koja sazima pricu je 'Kolumbo je gubitak broda nazvao srecom, a tvrdjava od njegovih dasaka je izgubljena': glavni su Columbus i naselje (La Navidad / Spanish Town / Fort), ne Guacanagari (vazan lik, ali nepoznat novom gledaocu; sme u naslov kao kontekst, nikad umesto Kolumba i naselja). Naslov imenuje oba ili nijedan, nikad jedan + deo."
+}

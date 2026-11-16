@@ -1,7 +1,7 @@
 # Stage 03 — Research & Story Planner
 
 **Paste into a fresh chat, together with:** `docs/reference/channel-bible.md`.
-That file defines the channel, the 5-minute ceiling and the three evidence categories
+That file defines the channel, the 10-minute ceiling and the three evidence categories
 (historical record / tradition-myth-legend / interpretation-debate). This prompt does not
 repeat them — but it does apply them, so it will not work without that file.
 
@@ -67,7 +67,7 @@ was punished*. Not "Roman history" but *why Caesar crossed the Rubicon* or *why 
 collapsed*. The same narrowing applies to every subject.
 
 Where several stories compete, weigh them on curiosity, conflict, dramatic escalation, genuine
-significance, surprise, visual potential, clarity without heavy background, and five-minute fit.
+significance, surprise, visual potential, clarity without heavy background, and fit within the ten-minute ceiling.
 Take the best overall combination — not the one carrying the most facts.
 
 **Triage everything you find into three buckets**, and label them in the output:
@@ -140,7 +140,7 @@ MYTHS / LEGENDS / TRADITIONS   If applicable, kept clearly distinct from establi
 UNCERTAINTIES / DEBATES    Only where genuinely relevant.
 
 ESSENTIAL MATERIAL         What must survive into the script.
-OPTIONAL MATERIAL          What may be cut to stay within five minutes.
+OPTIONAL MATERIAL          What may be cut to stay within ten minutes.
 STORY STRUCTURE            Beginning → Development → Escalation → Turning point → Payoff,
                            adjusted to the chosen structure above.
 

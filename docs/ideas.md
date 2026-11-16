@@ -53,6 +53,14 @@ odlučuje kad se epizoda objavi. Sajt traži četiri nove regije (`south-america
 najtraženije i najgledanije, uz neistražene ideje iz Claudeovog znanja — Inke (Atahualpin otkup), Tenočtitlan
 (1325), Sundiata, Duga zmija. Ni jedna od njih nije bodovana.
 
+**Dopuna 2026-11-16:** korisnik je tražio još četiri skripte (dve o stvarnoj bici ili važnom događaju, jedna
+basna/mit, jedna o svakodnevnom životu nekada) i primetio da kanal nema priču iz 1492. ni iz novog veka. Dodate su
+(faza 01→04, `done`, narraciju snima korisnik): `#37 la-navidad` (Karibi, 1492–93, Moderno doba — jedina iz same
+1492; `el-dorado` je iz c. 1537), `#38 ashoka-kalinga` (Indija, c. 261. p.n.e., Drevni svet), `#39 rostam-and-sohrab`
+(Iran, Mit i legenda) i `#40 buffalo-jump` (Velike ravnice, Alberta; praksa od ~5.800 godina do sredine 1800-ih;
+Drevni svet). Sajt za njih traži regije kojih još nema (Južna Azija, Iran/Persija, Karibi) ili se uklapaju u
+postojeće (Severna Amerika za ravnice); odlučuje se pri objavi, kao i za `#33`.
+
 ---
 
 ## Rangirana tabela
@@ -80,16 +88,20 @@ Legenda kolona: **M1** snaga hooka (×3) · **M2** naslov + tambnejl (×3) · **
 | 32 | The Man Crowned to Die in the King's Place | 5 | 4 | 4 | 5 | 4 | 4 | 4 | 3 | 4 | 4 | **83.7** | radi odmah | `done` |
 | 30 | The Giant Who Tried to Steal the Sun | 5 | 5 | 4 | 4 | 3 | 4 | 5 | 3 | 3 | 4 | **83.2** | radi odmah | `scored` |
 | 10 | The War Against Birds | 5 | 5 | 5 | 5 | 2 | 3 | 2 | 5 | 4 | 3 | **81.6** | radi odmah | `done` |
+| 39 | The Hero Who Killed His Own Son Without Knowing It | 4 | 4 | 5 | 4 | 5 | 4 | 4 | 3 | 4 | 3 | **81.6** | radi odmah | `done` |
 | 11 | How Humans Learned to Cross Entire Oceans Without a Compass | 5 | 4 | 4 | 4 | 3 | 4 | 4 | 4 | 4 | 4 | **81.1** | radi odmah | `done` |
 | 23 | Why Hades Let Persephone Leave | 4 | 4 | 5 | 3 | 5 | 5 | 2 | 4 | 4 | 4 | **81.1** | radi odmah | `scored` |
 | 36 | Two Brothers Beat the Maya Lords of Death at Their Own Game | 4 | 4 | 4 | 5 | 4 | 5 | 4 | 3 | 3 | 3 | **80.5** | radi odmah | `done` |
 | 22 | The Man Who Stole Fire From the Gods | 4 | 4 | 5 | 3 | 5 | 4 | 1 | 5 | 4 | 5 | **80.0** | radi odmah | `scored` |
 | 34 | El Dorado Was Never a City. It Was a Man on a Raft | 4 | 5 | 4 | 4 | 3 | 5 | 3 | 4 | 3 | 3 | **79.5** | oštriji ugao | `done` |
+| 40 | How Hunters With No Horse and No Gun Herded Bison Off a Cliff | 4 | 4 | 4 | 4 | 3 | 5 | 4 | 4 | 4 | 3 | **78.9** | oštriji ugao | `done` |
 | 1 | The Emperor Who Fought a War Against the Ocean | 5 | 5 | 4 | 3 | 3 | 5 | 3 | 4 | 3 | 1 | **78.4** | oštriji ugao | `scored` |
 | 19 | The Disease That Changed Medieval Europe | 4 | 4 | 4 | 4 | 5 | 4 | 2 | 4 | 5 | 2 | **77.9** | oštriji ugao | `scored` |
+| 37 | The First Spanish Settlement in the Americas Was Built From a Shipwreck | 4 | 4 | 4 | 4 | 3 | 4 | 4 | 4 | 4 | 3 | **76.8** | oštriji ugao | `done` |
 | 33 | The Rule Nobody Could Keep in the Land of the Dead | 4 | 4 | 4 | 4 | 4 | 4 | 3 | 3 | 4 | 3 | **75.8** | oštriji ugao | `done` |
 | 27 | How Odin Traded an Eye for Knowledge | 4 | 4 | 4 | 3 | 4 | 3 | 3 | 4 | 4 | 5 | **75.3** | oštriji ugao | `scored` |
 | 29 | The God Who Became a Cow to Escape | 4 | 4 | 4 | 3 | 3 | 4 | 5 | 3 | 3 | 4 | **74.7** | oštriji ugao | `scored` |
+| 38 | The Emperor Who Won a War and Carved His Regret in Stone | 4 | 4 | 4 | 4 | 3 | 4 | 3 | 3 | 5 | 3 | **74.7** | oštriji ugao | `done` |
 | 13 | The Civilization That Built a City Before Farming? | 4 | 5 | 3 | 4 | 2 | 4 | 3 | 4 | 3 | 4 | **74.2** | oštriji ugao | `scored` |
 | 4 | The Night Rome Nearly Lost Everything | 4 | 4 | 4 | 4 | 4 | 4 | 3 | 4 | 3 | 1 | **74.2** | oštriji ugao | `done` |
 | 7 | The Battle Where Elephants Changed Sides | 4 | 5 | 4 | 4 | 3 | 4 | 3 | 3 | 4 | 0 | **73.7** | oštriji ugao | `scored` |
@@ -256,6 +268,34 @@ Zašto ovaj skor: Zapis suda koji ćuti baš o onome što gledalac hoće da zna 
 
 Dodata van C03 liste, u sesiji u kojoj je izabrana: epizoda od slika (`render_mode: "still"`), tema se birala slobodno, van top 5 i van Greek Gods serije. Bodovano po istoj rubrici; M10 meri animaciju kao i za ostale, iako epizoda od slika ne troši kredite.
 
+#### #37 — The First Spanish Settlement in the Americas Was Built From a Shipwreck
+
+`status: done` · **76.8** · oštriji ugao · izvorna oznaka: dodata 2026-11-16, van originalnih 30 · `episodes/la-navidad`
+
+Ocene M1–M10: 4 / 4 / 4 / 4 / 3 / 4 / 4 / 4 / 4 / 3 — sirovo 73 / 95.
+
+Story: On Christmas Eve 1492 the helmsman of the *Santa María* left the tiller to a ship's boy and the current set the ship on a sandbank off Hispaniola; the master fled in the boat, and the cacique Guacanagarí's people emptied the wreck in a few hours. Columbus called the loss "a piece of good fortune", built a fort from her timbers, named it La Navidad and left 39 men in it; when he returned in November 1493 it had burned to the ground and nobody was alive. Nobody has proved where it stood — a burned structure on a mound at En Bas Saline, Guacanagarí's town, is "the most likely candidate".
+
+Hook: “The first Spanish settlement in the Americas was built from a shipwreck. Within a year, nobody who lived in it was alive.”
+
+Zašto ovaj skor: Jedna slika (brod na boku na grebenu, tvrđava od njegovih dasaka) nosi i hook i naslov, a obrt „katastrofa je bila sreća" Kolumbovim sopstvenim rečima prevrće postavku; spuštaju je to što je Kolumbo jedna od najispričanijih ličnosti, što priča o ljudima u tvrđavi počiva na jednom svedočenju tainske strane preneto preko Španaca i što mesto nije dokazano.
+
+Dodata van C03 liste, u sesiji u kojoj je izabrana (2026-11-16): korisnik je tražio četiri nove skripte — dve o stvarnoj bici ili važnom događaju, jednu basnu/mit i jednu priču o tome kako su ljudi nekada radili ono što je danas normalno — i primetio da kanal nema nijednu priču od 1492. ili novog veka, pa treba bar jedna iz tog perioda; temu je birao Claude. Kategorija 1 jer je jezgro događaj sa lice (Kolumbo, Guacanagarí). **Premisa ispravljena:** „prvo evropsko naselje u Americi" je netačno (Norvežani, L'Anse aux Meadows, oko 1000), tačno je „prvo špansko". Čitan je Kolumbov dnevnik u Markhamovom prevodu (Hakluyt 1893) i Čankino pismo o drugom putovanju, uz Florida Museum i Euronews (12. 10. 2026); Gutenberg nije radio. Broj ljudi se razlikuje (39 po dnevniku, 44 po zvaničnoj listi, 36 u Wikipediji) — skripta kaže „thirty-nine, by his own count". **Popularnost nije izmerena brojkama.**
+
+#### #38 — The Emperor Who Won a War and Carved His Regret in Stone
+
+`status: done` · **74.7** · oštriji ugao · izvorna oznaka: dodata 2026-11-16, van originalnih 30 · `episodes/ashoka-kalinga`
+
+Ocene M1–M10: 4 / 4 / 4 / 4 / 3 / 4 / 3 / 3 / 5 / 3 — sirovo 71 / 95.
+
+Story: In his eighth year as king, around 261 BCE, Ashoka of the Mauryan Empire conquered Kalinga on India's east coast. No account of the fighting survives; what does is his own Rock Edict 13, which counts 150,000 deported and 100,000 killed and says he feels "deep remorse" — while still keeping his army and warning the forest peoples that he can punish them. The edict was cut across the empire, but not in Kalinga itself, where two other edicts speak to his officers and do not mention the war; the script, Brahmi, was forgotten, and James Prinsep deciphered it in 1837.
+
+Hook: “Around 261 BCE, an Indian emperor won a war, and then had his regret carved into rock.”
+
+Zašto ovaj skor: Osvajač koji u kamenu sam broji žrtve nosi hook i naslov, a obrt „izvinjenje nedostaje baš u zemlji koja je platila" menja značenje cele priče; spuštaju je to što su žrtve kolektiv bez lica, što traži tri nova pojma (Maurja, Kalinga, Dhamma) i što o samom ratu ne postoji nijedan opis.
+
+Dodata van C03 liste, u sesiji u kojoj je izabrana (2026-11-16): jedna od dve „istorijska bitka ili bitan događaj" koje je korisnik tražio; prva priča iz Južne Azije na kanalu. Kategorija 1. Čitan je pravi tekst: Dhammikin prevod svih 14 edikata i dva kalinška edikta (accesstoinsight.org), plus Wikipedia (Kalinga War, Ashoka); drugi prevod ni moderna monografija (Thapar) nisu otvoreni. Brojke su Ashokine, ne nezavisne, i skripta to kaže jednom. Legenda o braći i „Ashoka the Fierce" (Mahavamsa) stoji u skripti jednom, označena kao kasna; priče iz Ashokavadane su izostavljene jer ih edikti ne potvrđuju. **Popularnost nije izmerena brojkama.**
+
 ### Kategorija 2 — civilizacije i istorijske transformacije
 
 #### #11 — How Humans Learned to Cross Entire Oceans Without a Compass
@@ -399,6 +439,20 @@ Hook: “When the moon went dark over ancient Assyria, the king's scholars had a
 Zašto ovaj skor: Premisa zvuči nemoguće a zapisana je u pismima samih učenjaka („To the farmer, my lord"), a baštovan koji preživi kralja prevrće ceo ritual u poslednjem minutu; spuštaju je sedam imena iz dva sveta udaljena hiljadu godina i to što je najlepši deo priče kasna hronika, ne zapis.
 
 Dodata van C03 liste, u sesiji u kojoj je izabrana: epizoda od slika (`render_mode: "still"`), tema se birala slobodno, van top 5 i van Greek Gods serije — korisnik je pomenuo Mesopotamiju i „kako su živeli drevni ljudi". Kategorija 2 jer je priča o praksi jedne civilizacije, ne o mitu: sve iz Asirije je savremeni zapis (SAA 10). Bodovano po istoj rubrici; M10 meri animaciju kao i za ostale, iako epizoda od slika ne troši kredite.
+
+#### #40 — How Hunters With No Horse and No Gun Herded Bison Off a Cliff
+
+`status: done` · **78.9** · oštriji ugao · izvorna oznaka: dodata 2026-11-16, van originalnih 30 · `episodes/buffalo-jump`
+
+Ocene M1–M10: 4 / 4 / 4 / 4 / 3 / 5 / 4 / 4 / 4 / 3 — sirovo 75 / 95.
+
+Story: At Head-Smashed-In in Alberta, Blackfoot hunters on foot moved herds of bison over a ten-metre cliff for nearly six thousand years: they burned the basin to draw the herds, built lanes of stone cairns over ten kilometres long, and sent young "buffalo runners" in wolf hides and calf skins to lure the cows with a lost calf's cry, while people hid behind the cairns to close the way back. The herd had to arrive as one tight pack; the horses of the 1700s, not the bison, ended it. The site's name comes from a Piikani tradition about a young man who hid under the cliff to watch.
+
+Hook: “How do you move a herd of animals that weigh ten times what you do, run much faster than you, and have horns, when you have no horse and no rifle?”
+
+Zašto ovaj skor: Lov bez konja i oružja pokazuje se kao veština strpljenja i poznavanja životinje, a dijagram staza, maske od vučjih koža, skrivena litica i presek sloja kostiju daju najširi raspon uređaja među novim idejama; spuštaju je to što su likovi bezimeni, što lov ostaje rekonstrukcija bez očevidaca i što deo o obredima ne sme da se popuni izmišljanjem.
+
+Dodata van C03 liste, u sesiji u kojoj je izabrana (2026-11-16): korisnik je tražio „antičku priču o tome kako su ljudi radili nešto što je danas potpuno normalno — lovili, pecali, gde su gubili vreme, kako su gradili kuće — iz bilo kog dela sveta". Kategorija 2 jer je priča o praksi jedne civilizacije. Prva priča sa Velikih ravnica i prva „kako se živelo" priča kanala. Čitana je Brinkova knjiga *Imagining Head-Smashed-In* (AU Press 2008, otvoreni pristup, poglavlja 1, 4, 5, 6, 9) uz Wikipediju i National Trust of Canada; Blackfoot izvori samo posredno, preko Brinka. Starost lokaliteta se razlikuje po izvorima (5.500 / 5.800 / „skoro 6.000") — skripta kaže „nearly six thousand". Pitanje „rasipanja" lova (Brink ima poglavlje „Overkill?") je u skripti jednim pasusom: pravilo da svaka životinja mora da pogine i razlog lovaca, bez odbrane i bez optužbe. **Popularnost nije izmerena brojkama.**
 
 ### Kategorija 3 — mitologija, bogovi, religije i legende
 
@@ -602,6 +656,20 @@ Hook: “The lords of the Maya underworld invited two brothers to a ball game. I
 Zašto ovaj skor: Pogrešan korak oca postaje pravilo igre za sinove — oni pobeđuju time što planiraju sopstvenu smrt, a gospodari smrti padaju jer žele da vide još jedan trik, što prevrće celu premisu; kuće probe, glasnici-životinje, trska kao znak života i loptaški teren daju najširi vizuelni raspon u listi, a spuštaju ga to što priča traži mnogo imena i što je zapisana tek posle osvajanja.
 
 Dodata van C03 liste, u sesiji u kojoj je izabrana: cilj da se popuni svaka regija sajta (Severna Amerika; Mezoamerika je na svetskoj karti Severna Amerika) uz korisnikovu želju za pričama o Majama. Kategorija 3 jer je jezgro mit. Čitan je pravi tekst: španski prevod Raynaudove francuske verzije (Asturias i González de Mendoza, 1927) na Wikisource-u, poglavlja 11–25; Spenceov engleski tekst iz 1908. je prepričavanje i korišćen je samo za poređenje, a prevod Goetza i Morleya nije mogao da se otvori. Broj i imena kuća probe razlikuju se među verzijama, pa skripta uzima samo ono u čemu se tekst i Wikipedia slažu. Ne nosi tvrdnju da su blizanci prikazani na majanskim vazama: kaže „možda".
+
+#### #39 — The Hero Who Killed His Own Son Without Knowing It
+
+`status: done` · **81.6** · radi odmah · izvorna oznaka: dodata 2026-11-16, van originalnih 30 · `episodes/rostam-and-sohrab`
+
+Ocene M1–M10: 4 / 4 / 5 / 4 / 5 / 4 / 4 / 3 / 4 / 3 — sirovo 77.5 / 95.
+
+Story: In the *Shahnameh* (Ferdowsi, c. 1010) the champion Rostam fathers a son, Sohrab, on a night in Samangan and leaves without telling anyone, giving the mother an armband as a token. Sohrab grows up to lead the army of Turan against Iran, hoping to put his father on its throne; the king of Turan sends his warriors along on the secret condition that Rostam must never learn who is coming against him. In two days of single combat Sohrab twice asks the old champion whether he is Rostam, and Rostam, for pride and for his side's sake, denies it; he wins by breaking the boy's back, and only the armband under the mail shows him what he has done. The Iranian king refuses the healing balm, Sohrab dies, Rostam burns his own tent, and Sohrab's mother dies within a year.
+
+Hook: “Rostam, the greatest hero of Persia, fought a young stranger on a battlefield, and twice the stranger asked him his name. Rostam would not tell him.”
+
+Zašto ovaj skor: Pitanje „jesi li ti Rostam?" bez odgovora nosi hook, a lanac prećutkivanja iz razumnih razloga (ponos, zaštita, ambicija, strah, zavist) pretvara tragediju u nešto više od sudbine; spuštaju je šest imena i to što je zapisana kao legenda, a izvor je prepričavanje (Zimmern 1883), ne prevod.
+
+Dodata van C03 liste, u sesiji u kojoj je izabrana (2026-11-16): korisnik je tražio jednu basnu/izmišljenu priču/mit koji je interesantan; prva priča iz Irana na kanalu. Kategorija 3 jer je jezgro legenda; ispričana je kao legenda, u glasu predanja. Čitano je celo poglavlje „Rustem and Sohrab" u Zimmernovom *The Epic of Kings* (1883, archive.org), uz Wikipediju; detalji o Zindehu i trima Hujirovim lažima nisu proveravani u drugom prevodu (Warner, Davis, Clinton). Paralele — Hildebrandova pesma, irski *Aided Óenfhir Aífe*, indijski Babruvahana — nisu u skripti nego su sačuvane kao seme za plejlistu „Same Story, Different World" (otac ubija sina ne znajući). **Popularnost nije izmerena brojkama.**
 
 ---
 

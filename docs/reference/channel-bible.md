@@ -27,13 +27,18 @@ Vizuelni identitet nije opisan ovde nego kao jedan string za kopiranje — vidi 
 
 ## 2. Ciljni runtime
 
-**Tvrd plafon je 5 minuta finalnog videa.** Menja ga isključivo eksplicitna korisnikova odluka.
+**Tvrd plafon je 10 minuta finalnog videa.** Menja ga isključivo eksplicitna korisnikova odluka. Do 2026-11-16 je
+bio 5 minuta; tog dana je korisnik udvostručio sve (plafon i broj reči) — video sme da traje koliko tema traži,
+do 10 minuta.
 
-- Kraća jaka epizoda je bolja od slabe petominutne. Filer radi popunjavanja minutaže je zabranjen.
+- **Dužinu određuje tema, ne plafon.** Priča koja se zatvara za 4 minuta ostaje na 4 minuta; priča koja ima još
+  materijala vredi, ide do 10. Orijentir iz izmerenih epizoda: narracija ide ~148–166 reči u minuti, pa 10 minuta
+  znači najviše ~1.450 reči (telo + outro). Mere se uvek stvarno trajanje, ne broj reči.
+- Kraća jaka epizoda je bolja od slabe desetominutne. Filer radi popunjavanja minutaže je zabranjen.
 - Merodavno trajanje je **stvarno izmereno trajanje ElevenLabs narracije**, nikad procena iz broja
   reči. Sve vremenske invarijante montaže vise o toj jednoj izmerenoj vrednosti
   (`storyboard.narration_duration`, `docs/reference/schemas.md` §3.1).
-- Epizoda se završava obaveznim OUTRO odeljkom; on ulazi u tih 5 minuta i dobija svoj end-card shot.
+- Epizoda se završava obaveznim OUTRO odeljkom; on ulazi u tih 10 minuta i dobija svoj end-card shot.
 
 ---
 
