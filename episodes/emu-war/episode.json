@@ -1,15 +1,78 @@
 {
   "slug": "emu-war",
   "title": "The War Against Birds",
-  "status": "draft",
+  "status": "in-progress",
   "voice": null,
   "narration_file": "narration.mp3",
   "final_file": null,
-  "endcard_file": null,
+  "endcard_file": "shots/shot32.jpeg",
   "intro_file": null,
   "intro_volume": 0.2,
-  "characters": [],
-  "locations": [],
-  "key_props": [],
-  "notes": "Samostalna epizoda, ideja #10 u docs/ideas.md (bila 'scored', sad 'done'), prva australijska na kanalu (region Australia, epoha Modern Era, 1932). Zapadna Australija, pojas psenice, Campion. Izvori su iskljucivo sekundarni (Wikipedia Emu War i tri lokalne/popularne strane); Trove, Hansard i Meredithov izvestaj nisu otvoreni, ovo je zapisano u research.md i ideas.md. Faza 04 zavrsena: research.md i script.md (497 reci tela + 30 outro, ~3:34-3:47 pri 148-139 wpm; kratka epizoda, bez punjenja); lockovi, timing i storyboard cekaju narraciju. Rezim shota (still, klip ili mesano) bira se tek iz slike, ne iz kredita. Tacnost perioda: 1932, vojni Lewis mitraljezi iz Prvog svetskog rata (kruzni sarzer na vrhu), australijske uniforme 1930-ih (kaki, siroki sesir), kamion sa otvorenim sanducima, farmeri u radnim kosuljama i sesirima, pejzaz: suva zlatna psenica, ograde, grmlje (mallee), crvena zemlja. Emui: realna velicina i izgled (do 1.9 m visine), nikako crtani; humor ide iz kompozicije, ne iz karikature. Ne crtati krv i lesine; ubijeni emui samo kao daleka naznaka. Ne prikazivati istorijske osobe kao poznata lica osim opisanih (Meredith, Pearce, Beyer kao 'glas istoriografije' ne mora u kadar). Meredithov citat ('military division with the bullet-carrying capacity') potice iz novina iz 1953, skripta kaze 'is quoted as saying'. Brojke se ne slazu (50 do 500 ubijenih do 8. novembra; 986 tvrdi Meredith) i prikazuju se kao raspon, ne kao cinjenica. 'Birds won' je kuka iz ideas.md prenesena doslovno; skripta joj odgovara pitanjem 'So who won?'. Protagonists za publish.md se upisuju pre naslova: naslov ne imenuje nikog (emui i vojnici grupno) ili imenuje sve glavne (Meredith, Pearce), nikad jednog + deo."
+  "characters": [
+    {
+      "id": "meredith",
+      "name": "Major Meredith",
+      "locked_description": "Major Meredith, a lean Australian artillery officer of about forty, a sunburnt narrow face, a trim moustache, a khaki tunic with a leather Sam Browne belt, riding breeches and puttees, a khaki slouch hat with one brim pinned up"
+    },
+    {
+      "id": "gunners",
+      "name": "The two gunners",
+      "locked_description": "two young Australian artillery gunners in their twenties, sunburnt faces, khaki shirts with rolled sleeves, dusty breeches and puttees, khaki slouch hats with one brim pinned up, canvas webbing belts"
+    },
+    {
+      "id": "farmers",
+      "name": "The veteran farmers",
+      "locked_description": "veteran wheat farmers of Western Australia, weathered men in their forties, sun-creased faces, collarless cotton work shirts with rolled sleeves, braces, battered brown felt hats, dusty boots, a few old khaki army tunics"
+    },
+    {
+      "id": "pearce",
+      "name": "Sir George Pearce",
+      "locked_description": "Sir George Pearce, Australia’s Minister of Defence, a stout man in his early sixties, thinning white hair, a clipped white moustache, a dark three-piece suit with a high white collar and a watch chain"
+    },
+    {
+      "id": "emus",
+      "name": "The emus",
+      "locked_description": "wild emus, tall flightless birds nearly as tall as a man, shaggy drooping grey-brown feathers, a long bare blue-grey neck, a small head with a bright dark eye, long powerful pale legs"
+    }
+  ],
+  "locations": [
+    {
+      "id": "wheatbelt",
+      "name": "The wheatbelt",
+      "locked_description": "the wheatbelt of Western Australia, flat paddocks of dry golden wheat on red earth, grey wire-and-post fences, scattered low mallee scrub and a few pale gum trees, a vast open horizon"
+    },
+    {
+      "id": "campion-dam",
+      "name": "The Campion dam",
+      "locked_description": "a small farm dam in the wheatbelt, a raised bank of raw red earth around a shallow muddy pool, dry saltbush and low mallee scrub along the bank, one dead white gum stump"
+    },
+    {
+      "id": "parliament-chamber",
+      "name": "The House of Representatives",
+      "locked_description": "the House of Representatives chamber of 1932, curved rows of green leather benches, dark polished timber panelling, a high Speaker’s chair, a public gallery rail above and tall arched windows"
+    },
+    {
+      "id": "minister-office",
+      "name": "The minister’s office",
+      "locked_description": "a government minister’s office of 1932, dark timber panelling, a broad leather-topped desk, a large wall map of Australia, a tall window with white net curtains and a brass desk lamp"
+    }
+  ],
+  "key_props": [
+    {
+      "id": "lewis-gun",
+      "name": "The Lewis gun",
+      "locked_description": "a First World War Lewis machine gun on a folding bipod, a long barrel inside a perforated cooling jacket, a flat round pan magazine on top, a wooden stock and a pistol grip"
+    },
+    {
+      "id": "army-truck",
+      "name": "The army truck",
+      "locked_description": "a 1930s Australian army lorry, an open flat tray with low timber sides, a high boxy bonnet, big spoked wheels, a canvas-roofed cab, olive-khaki paint scuffed with red dust"
+    },
+    {
+      "id": "bounty-ledger",
+      "name": "The bounty ledger",
+      "locked_description": "a heavy bound ledger on a scarred timber counter, thick cream pages ruled in columns and filled with tick marks, a rubber stamp and an inkpad beside it, a pile of small paper claim slips"
+    }
+  ],
+  "notes": "Samostalna epizoda, ideja #10 u docs/ideas.md, prva australijska na kanalu (region Australia, epoha Modern Era, 1932). Zapadna Australija, pojas psenice, Campion. Izvori su iskljucivo sekundarni (Wikipedia Emu War i tri lokalne/popularne strane); Trove, Hansard i Meredithov izvestaj nisu otvoreni, zapisano u research.md i ideas.md. Narracija snimljena i poravnata (timing.json, 210.913s, 42 recenice). 31 beat, 32 shota (28 klipova + 4 slike), beat mapa odobrena unapred, lockovi i storyboard upisani; vidi notes.md (osa ekrana, rezim, sta ostaje) i alternatives.md (Plan B/C za 12, 13, 19). Rezim shota je mesan, birano iz kadra, ne iz kredita. Tacnost perioda: 1932, vojni Lewis mitraljezi iz Prvog svetskog rata (okrugli sarzer na vrhu), australijske uniforme 1930-ih (kaki, sesir sa podignutim obodom), kamion sa otvorenim sandukom, farmeri u radnim kosuljama i sesirima, pejzaz: suva zlatna psenica, ograde, grmlje (mallee), crvena zemlja. Emui: realna velicina i izgled (do 1.9 m visine), nikako crtani; humor ide iz kompozicije i mirnoce, ne iz karikature. Ne crtati krv i lesine; ubijeni emui nisu u kadru, posledica je prazan pasnjak i pero. Ne prikazivati istorijske osobe kao poznata lica: Meredith i Pearce su opisani, Beyer nije u kadru. Meredithov citat ('military division with the bullet-carrying capacity') potice iz novina iz 1953, skripta kaze 'is quoted as saying'. Brojke se ne slazu (50 do 500 ubijenih do 8. novembra; 986 tvrdi Meredith) i prikazuju se kao raspon, ne kao cinjenica. 'Birds won' je kuka iz ideas.md prenesena doslovno; skripta joj odgovara pitanjem 'So who won?'. Protagonists za publish.md se upisuju pre naslova: naslov ne imenuje nikog (emui i vojnici grupno) ili imenuje sve glavne (Meredith, Pearce), nikad jednog + deo."
 }

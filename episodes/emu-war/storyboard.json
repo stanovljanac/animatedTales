@@ -1,0 +1,1537 @@
+{
+  "schema_version": 2,
+  "episode": "emu-war",
+  "generated_at": "2026-11-16T19:27:18Z",
+  "narration_duration": 210.913,
+  "fps": 24,
+  "beats": [
+    {
+      "beat_id": "B01",
+      "sentences": [
+        "S01",
+        "S02"
+      ],
+      "start": 0,
+      "end": 7.28,
+      "dur": 7.28,
+      "device": null,
+      "narration_says": "Australia sent soldiers with machine guns to defeat a bird. The birds won.",
+      "viewer_sees": "Two gunners crouch behind a Lewis gun at the left of a wheat paddock, aimed at one lone emu that stands calmly at the right; the emu tilts its head, then turns and strides away unhurried",
+      "shots": [
+        {
+          "shot_id": "01",
+          "beat_id": "B01",
+          "link_group": null,
+          "t_in": 0,
+          "t_out": 7.292,
+          "use_in": 0,
+          "use_out": 7.292,
+          "use_len": 7.292,
+          "motion_budget": 7.292,
+          "gen_len": 8,
+          "source_file": "shots/part01.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "emus",
+            "gunners",
+            "lewis-gun"
+          ],
+          "visual_priority": [
+            "the emus: one lone emu standing calm and upright at the right",
+            "the two gunners crouched behind their gun",
+            "the Lewis gun aimed across the paddock",
+            "the ripe wheat and the red earth strip"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: wild emus, tall flightless birds nearly as tall as a man, shaggy drooping grey-brown feathers, a long bare blue-grey neck, a small head with a bright dark eye, long powerful pale legs, one lone emu, alone in this frame at the right third, near-camera and large, upright and calm, its small dark eye on the soldiers\nSUBJECT 2: two young Australian artillery gunners in their twenties, sunburnt faces, khaki shirts with rolled sleeves, dusty breeches and puttees, khaki slouch hats with one brim pinned up, canvas webbing belts, both crouched at the left third behind the gun, medium size, one with a hand on the pan magazine, the other with his cheek near the stock\nSUBJECT 3: a First World War Lewis machine gun on a folding bipod, a long barrel inside a perforated cooling jacket, a flat round pan magazine on top, a wooden stock and a pistol grip, mounted on its bipod at the left third between the two gunners, its barrel pointed toward the emu across the paddock\nACTION: the two gunners kneel in the dust behind the Lewis gun with its barrel trained on the lone emu; the emu stands tall at the right with its head high and its neck straight, looking back at them as if waiting to see what comes next\nSETTING: the wheatbelt of Western Australia, flat paddocks of dry golden wheat on red earth, grey wire-and-post fences, scattered low mallee scrub and a few pale gum trees, a vast open horizon; here a wide paddock of ripe pale gold wheat bent by a light wind, a strip of bare red earth along the near edge where the gun is set, two ammunition crates beside it, a sagging grey wire fence along the far edge, strong morning sun\nCAMERA: camera stands low in the wheat three paces from the emu, low angle, long shot.\nFRAME LAYOUT: right third — the lone emu, near-camera and large, cropped at the knee; left third — the two gunners and the Lewis gun, medium; center — the wheat paddock and the strip of red earth; far right edge — the post-and-wire fence, small and hazy; upper edge — a clear morning sky.\nFACING: the emu shows its left flank and the profile of its head, swung toward screen-left; the gunners turn their faces and shoulders to camera at an angle, both pairs of eyes on the emu.\nSCREEN DIRECTION: the barrel and the gunners’ gaze point from the left edge toward the right; wheat heads bend toward the right; a thread of dust drifts across the red earth toward the right.\nLIGHT: hard morning sun from the upper left, short sharp shadows under the gunners’ hat brims, a pale gold rim along the emu’s back feathers, bright wheat.\nPALETTE: wheat gold, red earth, khaki, sky blue\nDETAIL: figures readable by outline and posture, the perforated barrel jacket and round pan magazine readable as shapes, drooping emu feathers, layered wheat rows across the middle ground\nNOT IN FRAME: any other soldiers, vehicles, any text.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 7.292s; everything keeps moving at the same natural pace through the end of the 8s generation.\n0–1s: the left gunner swings the Lewis gun’s barrel toward screen-right while the other steadies the pan magazine; the lone emu lifts its head higher.\n1–3s: both gunners lean into the gun and the barrel tracks slowly across the wheat; the emu takes two unhurried steps toward screen-left, its neck swaying.\n3–5s: the emu tilts its head to study the gun with one dark eye; the nearer gunner pushes up his hat brim and squints along the barrel.\n5–7s: the emu turns on its long legs and strides away toward screen-right, unhurried; the gunners swing the barrel after it and lose it.\n7–8s: the emu keeps striding toward the right edge, growing smaller among the wheat; the gunners straighten up and watch it go.\nCAMERA: one continuous slow push toward the emu for the full 8 seconds.\nENVIRONMENT: wheat ripples in waves toward the right; dust lifts off the red earth; a fly crosses the sun.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "low",
+            "camera_motion": "push",
+            "location": "wheatbelt",
+            "time_light": "morning-hard-sun"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B02",
+      "sentences": [
+        "S03"
+      ],
+      "start": 7.28,
+      "end": 12.26,
+      "dur": 4.98,
+      "device": null,
+      "narration_says": "In 1932, farmers in Western Australia were in trouble.",
+      "viewer_sees": "A farmer stands in a dry wheat paddock, a fistful of thin withered ears in his hand, looking over cracked red earth and a sagging fence",
+      "shots": [
+        {
+          "shot_id": "02",
+          "beat_id": "B02",
+          "link_group": null,
+          "t_in": 7.292,
+          "t_out": 12.25,
+          "use_in": 0,
+          "use_out": 4.958,
+          "use_len": 4.958,
+          "motion_budget": 4.958,
+          "gen_len": 6,
+          "source_file": "shots/part02.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "farmers"
+          ],
+          "visual_priority": [
+            "the farmers: one worried farmer holding thin withered wheat ears",
+            "the thin crop and cracked red earth",
+            "the sagging fence line",
+            "the bleached empty sky"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: veteran wheat farmers of Western Australia, weathered men in their forties, sun-creased faces, collarless cotton work shirts with rolled sleeves, braces, battered brown felt hats, dusty boots, a few old khaki army tunics, one of them alone at the left third, near-camera, a fistful of thin pale withered wheat ears in his raised hand, his lined face worried, his hat pushed back\nACTION: the farmer stands in his dry paddock holding up a fistful of thin withered ears and looking at them, his other hand on his hip and his boots planted in the cracked red earth\nSETTING: the wheatbelt of Western Australia, flat paddocks of dry golden wheat on red earth, grey wire-and-post fences, scattered low mallee scrub and a few pale gum trees, a vast open horizon; here a thin sparse crop of short pale wheat with bare red patches between the rows, cracks in the dry soil, a sagging grey fence line along the far edge with one post leaning, heat haze at the horizon, a high pale sky with no cloud\nCAMERA: camera stands at the farmer’s elbow in the paddock, eye level, medium shot.\nFRAME LAYOUT: left third — the farmer, large in the near ground, cropped at the waist; center — thin pale wheat rows and cracked red earth; right third — the sagging fence and its one leaning post, far and hazy; upper edge — a bleached sky.\nFACING: the farmer turns his face and chest to camera at an angle, eyes on the ears in his raised hand and then out across the paddock toward screen-right.\nSCREEN DIRECTION: his gaze runs from the left edge toward the right across the paddock; a thin plume of dust drifts toward the right along the rows.\nLIGHT: flat hard midday sun almost overhead, short shadows under the hat brim, bleached highlights on the dry wheat, a faint heat shimmer.\nPALETTE: bleached straw, red earth, work-shirt grey, pale blue\nDETAIL: weathered skin and stubble on the face, creases in the cotton shirt, individual thin wheat ears, dust caught in the cracks of the soil\nNOT IN FRAME: emus, soldiers, vehicles, any text.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 4.958s; everything keeps moving at the same natural pace through the end of the 6s generation.\n0–1s: the farmer lifts the fistful of withered ears and turns them in the light with his thumb; a hot breeze pulls at his shirt.\n1–3s: he rubs the ears between his fingers and the dry husks crumble and blow toward screen-right; he lowers his head and exhales slowly.\n3–4.5s: he pushes his hat back with his wrist and looks out across the thin paddock toward the right; the fence wire hums and shivers.\n4.5–6s: he takes one slow step forward along the row, his boots cracking the dry crust; dust lifts and drifts toward the right edge.\nCAMERA: one continuous slow push toward the farmer’s face for the full 6 seconds.\nENVIRONMENT: heat haze shimmers over the soil; the thin wheat sways; a crow crosses the pale sky.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "eye",
+            "camera_motion": "push",
+            "location": "wheatbelt",
+            "time_light": "midday-dry-heat"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B03",
+      "sentences": [
+        "S04"
+      ],
+      "start": 12.26,
+      "end": 18.74,
+      "dur": 6.48,
+      "device": null,
+      "narration_says": "After the First World War, many veterans had been given land to farm, often poor land.",
+      "viewer_sees": "Veterans in old khaki tunics stand on a raw block of poor sandy land with a surveyor's peg, a tent and a half-built shed, looking over scrub that is not yet cleared",
+      "shots": [
+        {
+          "shot_id": "03",
+          "beat_id": "B03",
+          "link_group": null,
+          "t_in": 12.25,
+          "t_out": 18.75,
+          "use_in": 0,
+          "use_out": 6.5,
+          "use_len": 6.5,
+          "motion_budget": 6.5,
+          "gen_len": 8,
+          "source_file": "shots/part03.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "farmers"
+          ],
+          "visual_priority": [
+            "the farmers: five veterans in old khaki tunics on the raw block",
+            "the surveyor’s plan in the wind",
+            "the half-built shed and tent",
+            "the uncleared scrub and stumps"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: veteran wheat farmers of Western Australia, weathered men in their forties, sun-creased faces, collarless cotton work shirts with rolled sleeves, braces, battered brown felt hats, dusty boots, a few old khaki army tunics, five of them in this frame, standing in a loose group at the left half on a raw block of poor sandy land, two in old khaki army tunics, one unrolling a surveyor’s plan, one with a spade, looking out over uncleared scrub\nACTION: five veterans stand together on the raw block, the nearest in an old khaki tunic holding a surveyor’s plan against the wind while the others look out over the scrub, a spade standing upright in the sandy soil beside them and a canvas tent and a half-built tin shed at the far right\nSETTING: the wheatbelt of Western Australia, flat paddocks of dry golden wheat on red earth, grey wire-and-post fences, scattered low mallee scrub and a few pale gum trees, a vast open horizon; here a raw new block of poor pale sandy soil only half cleared, stumps of felled mallee in rows, a surveyor’s wooden peg with a strip of red cloth, a canvas tent and the frame of a small tin-roofed shed at the right, thin scrub beyond, late afternoon light\nCAMERA: camera stands on a pile of stumps at the edge of the clearing, high angle, long shot.\nFRAME LAYOUT: left third — the five veterans, medium, standing on the sandy block; center — the surveyor’s peg and rows of felled stumps; right third — the canvas tent and the shed frame, small and hazy; upper edge — uncleared mallee scrub and a low gold sky.\nFACING: the veterans angle their faces and chests toward camera, heads turned toward screen-right and the scrub; the nearest man reads along his plan with his eyes going right.\nSCREEN DIRECTION: the men’s gaze and the wind-pulled plan point from the left edge toward the right; dust blows across the sand toward the right.\nLIGHT: low late-afternoon sun from the right, long shadows falling toward the left, warm gold on the khaki and cold blue in the shadows of the stumps.\nPALETTE: sandy ochre, khaki, scrub green, low gold\nDETAIL: figures readable by outline and posture, khaki tunics against pale sand, rings on the cut stumps, the red cloth strip on the peg, the tin sheets of the shed\nNOT IN FRAME: emus, machine guns, bystanders, any text.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 6.5s; everything keeps moving at the same natural pace through the end of the 8s generation.\n0–1s: the man at the left lifts the surveyor’s plan against the wind and it snaps taut; the others turn their heads toward screen-right.\n1–3s: the veterans walk slowly along the line of stumps toward the right, one tapping the sandy soil with his boot; a second pulls his hat down against the glare.\n3–5s: the man with the plan points across the block toward the tent and the shed frame; the man with the spade lifts it onto his shoulder.\n5–7s: the group moves on toward the right edge, boots scuffing the sand; the cloth strip on the peg whips in the wind and dust rolls past.\n7–8s: the veterans keep walking toward the tent in a loose line while the low sun lengthens their shadows toward the left.\nCAMERA: one continuous slow pull back across the block for the full 8 seconds.\nENVIRONMENT: dust blows across the sand; scrub leaves shiver; smoke rises from a cooking fire by the tent.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "high",
+            "camera_motion": "pull",
+            "location": "wheatbelt",
+            "time_light": "late-afternoon"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B04",
+      "sentences": [
+        "S05",
+        "S06"
+      ],
+      "start": 18.74,
+      "end": 27.08,
+      "dur": 8.34,
+      "device": null,
+      "narration_says": "Then came the Depression, and the price of wheat kept falling, despite the government's promised help. And then came the emus.",
+      "viewer_sees": "Bags of unsold wheat stacked high at a railway siding under a tarpaulin, a farmer slumped on a sack; far along the line, the first emus appear at the edge of the paddock",
+      "shots": [
+        {
+          "shot_id": "04",
+          "beat_id": "B04",
+          "link_group": null,
+          "t_in": 18.75,
+          "t_out": 27.083,
+          "use_in": 0,
+          "use_out": 8.333,
+          "use_len": 8.333,
+          "motion_budget": 8.333,
+          "gen_len": 10,
+          "source_file": "shots/part04.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "farmers",
+            "emus"
+          ],
+          "visual_priority": [
+            "the farmers: one slumped farmer on his sack of wheat",
+            "the tall stack of unsold wheat sacks",
+            "the four tiny emus at the scrub",
+            "the rail line running away"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: veteran wheat farmers of Western Australia, weathered men in their forties, sun-creased faces, collarless cotton work shirts with rolled sleeves, braces, battered brown felt hats, dusty boots, a few old khaki army tunics, one of them alone at the left third, near-camera, sitting slumped on a sack of wheat with his elbows on his knees and his hat hanging in his hands, staring down at the dirt between his boots\nSUBJECT 2: wild emus, tall flightless birds nearly as tall as a man, shaggy drooping grey-brown feathers, a long bare blue-grey neck, a small head with a bright dark eye, long powerful pale legs, four of them at the far right edge, tiny and hazy, grazing in the grass at the line where the scrub meets the siding fence, their heads down\nACTION: the farmer sits slumped on a sack with his hat in his hands, staring at the dirt, and has not noticed anything beyond the siding; beside him the wheat sacks rise in a tall stack under a tarpaulin, and at the far right four tiny emus graze at the edge of the scrub\nSETTING: a country railway siding in the wheatbelt, a low timber platform and a corrugated-iron grain shed, a tall stack of full wheat sacks under a grey tarpaulin, a single rail line running away to the right across flat paddocks, a wooden signal post, a dirt track, overcast flat light\nCAMERA: camera stands on the platform edge, eye level, medium shot.\nFRAME LAYOUT: left third — the farmer on his sack, near-camera and large, cropped at the knee; center — the tall stack of wheat sacks under its tarpaulin, large; right third — the rail line and the signal post, far and hazy; far right edge — four tiny emus at the line of the scrub.\nFACING: the farmer slouches in profile, his face down toward the dirt and his hat hanging in his hands; the four emus stand in profile with their heads lowered to the grass and their bodies toward screen-left.\nSCREEN DIRECTION: chaff and dust drift along the platform from the left edge toward the right; the tarpaulin corner flaps toward the right; the four emus drift slowly toward the left.\nLIGHT: flat grey overcast light with no hard shadows, a faint cold blue cast on the corrugated iron, dull gold on the sacks.\nPALETTE: grey iron, sack buff, tarpaulin slate, dull red earth\nDETAIL: coarse hessian weave of the sacks, rust streaks on the corrugated iron, creases in the farmer’s hat, dust on his boots, rail ties running to the vanishing point\nNOT IN FRAME: trains, other people, any text on the sacks or the shed.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 8.333s; everything keeps moving at the same natural pace through the end of the 10s generation.\n0–1s: the farmer turns his hat slowly in his hands and lets out a long breath; chaff blows along the platform.\n1–3.5s: a loose corner of the tarpaulin flaps and he reaches out and presses it down over the sacks without looking up; the camera slides along the stack.\n3.5–6s: the farmer lifts his head and looks along the rail toward screen-right; far off, the four emus raise their heads and turn toward the sacks.\n6–8.5s: he rises slowly from the sack and pulls on his hat; the four emus start walking toward screen-left, necks bobbing, and more emus step out of the scrub at the right edge.\n8.5–10s: the farmer stares as the emus keep walking across the paddock toward him, more and more of them; chaff swirls along the platform.\nCAMERA: one continuous slow track along the stack toward the right for the full 10 seconds.\nENVIRONMENT: the tarpaulin flaps; chaff drifts along the platform; a telegraph wire sways.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts",
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "MS",
+            "angle": "eye",
+            "camera_motion": "track",
+            "location": "railway-siding",
+            "time_light": "overcast-flat"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B05",
+      "sentences": [
+        "S07"
+      ],
+      "start": 27.08,
+      "end": 35.38,
+      "dur": 8.3,
+      "device": "crowd-as-texture",
+      "narration_says": "By one count, there were as many as twenty thousand, moving across the wheat country around Campion and wrecking the crops and the fences.",
+      "viewer_sees": "CROWD-AS-TEXTURE — a broad river of emus pours through a gap in a fence line across the wheat, dust rising, a farmer small at the right edge watching",
+      "shots": [
+        {
+          "shot_id": "05",
+          "beat_id": "B05",
+          "link_group": null,
+          "t_in": 27.083,
+          "t_out": 35.375,
+          "use_in": 0,
+          "use_out": 8.292,
+          "use_len": 8.292,
+          "motion_budget": 8.292,
+          "gen_len": 10,
+          "source_file": "shots/part05.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "emus",
+            "farmers"
+          ],
+          "visual_priority": [
+            "the dense stream of emus pouring through the fence gap",
+            "the broken wire fence",
+            "the small farmer at the left edge",
+            "the flattened wheat and the dust"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: wild emus, tall flightless birds nearly as tall as a man, shaggy drooping grey-brown feathers, a long bare blue-grey neck, a small head with a bright dark eye, long powerful pale legs, dozens of them in this frame, a dense broad stream gathering at a gap in a wire fence and spilling through it, medium size, spread across the center and right of the frame, long necks bobbing, heads turned toward the left\nSUBJECT 2: veteran wheat farmers of Western Australia, weathered men in their forties, sun-creased faces, collarless cotton work shirts with rolled sleeves, braces, battered brown felt hats, dusty boots, a few old khaki army tunics, one of them alone at the left edge, small, standing among the ripe wheat with his hat in his hand, his body half-turned toward the oncoming birds\nACTION: a broad dense stream of emus gathers at a broken gap in a long wire fence, the first of them stepping through onto the wheat, while one small farmer stands among his standing crop at the left edge with his hat in his hand\nSETTING: the wheatbelt of Western Australia, flat paddocks of dry golden wheat on red earth, grey wire-and-post fences, scattered low mallee scrub and a few pale gum trees, a vast open horizon; here a long grey wire fence with a broken section where two posts lean and the wire hangs slack, ripe gold wheat on both sides of the fence line, a low dust haze over the far paddock, the sun low and gold\nCAMERA: camera stands on a raised bank beside the fence, high angle, long shot.\nFRAME LAYOUT: center and right third — the dense stream of emus gathering at the fence gap and spilling through it, medium; left third — the small farmer standing among the wheat; upper edge — a pale gold sky; lower edge — gold wheat and the fence wire, near-camera.\nFACING: the emus come at camera from the right in three-quarter view, necks and heads swung toward screen-left and the wheat; the farmer stands side-on, his face toward screen-right and the oncoming birds.\nSCREEN DIRECTION: the stream flows from the right edge toward the left across the paddock; dust lifts and drifts toward the left; wheat bends flat toward the left in the path of the birds.\nLIGHT: low gold sun from the left, long shadows streaming toward the right across the wheat, a gold rim on every emu’s back feathers, a warm dust haze.\nPALETTE: wheat gold, emu grey-brown, dust amber, pale sky\nDETAIL: the stream reads as a textured mass of necks, feathers and legs with a few individual birds sharp, the wire sagging between leaning posts, ripe wheat ears bent in the dust haze\nNOT IN FRAME: soldiers, vehicles, any text, close-ups of single birds.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 8.292s; everything keeps moving at the same natural pace through the end of the 10s generation.\n0–1s: the front rank of emus steps through the gap in the fence and onto the wheat; the farmer at the left lifts his head.\n1–3.5s: more emus pour through the gap and fan out toward screen-left, necks bobbing in rough unison; wheat bends flat under their feet.\n3.5–6s: the stream widens to fill the middle of the paddock, single birds darting ahead of the others; the farmer takes a step back and slowly puts on his hat.\n6–8.5s: the flood of emus keeps pouring through the gap and racing across the crop toward the left; dark lanes of flattened wheat open as they pass.\n8.5–10s: the farmer lowers his head and turns away from the crop as the emus keep flowing past him; dust drifts across the gold paddock.\nCAMERA: one continuous slow pan toward screen-left, following the stream, for the full 10 seconds.\nENVIRONMENT: dust haze rolls over the paddock; loose fence wire quivers.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts",
+          "tags": {
+            "subject_type": "crowd",
+            "shot_size": "LS",
+            "angle": "high",
+            "camera_motion": "pan",
+            "location": "wheatbelt",
+            "time_light": "golden-hour"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B06",
+      "sentences": [
+        "S08",
+        "S09"
+      ],
+      "start": 35.38,
+      "end": 39.36,
+      "dur": 3.98,
+      "device": null,
+      "narration_says": "The farmers were veterans. They knew what a machine gun could do.",
+      "viewer_sees": "On a rough kitchen table a worn khaki army tunic with faded medal ribbons lies beside a slouch hat and a small brown photograph of a Lewis gun crew",
+      "shots": [
+        {
+          "shot_id": "06",
+          "beat_id": "B06",
+          "link_group": null,
+          "t_in": 35.375,
+          "t_out": 39.375,
+          "use_in": 0,
+          "use_out": 4,
+          "use_len": 4,
+          "motion_budget": null,
+          "gen_len": null,
+          "source_file": "shots/shot06.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "the khaki tunic with its medal ribbons",
+            "the small photograph of a gun crew",
+            "the pinned-up slouch hat",
+            "the pool of lamplight on the table"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a worn khaki army tunic folded on a rough kitchen table, a row of three faded medal ribbons on its chest, beside it a battered slouch hat with its left brim pinned up and a small brown photograph of a row of soldiers around a machine gun\nACTION: the tunic, the hat and the photograph lie side by side on the scrubbed boards of the table, and a weathered man’s hand with dirt in the knuckles rests flat beside the photograph, the fingertips just touching its edge\nSETTING: the kitchen of a wheat farmhouse at night, a scrubbed pine table with a ring of lamp oil, a kerosene lamp with a glass chimney, a tin mug, a tin teapot with a dented lid, a heel of bread on a tin plate, a darned grey sock over a chair back, rough plank walls, a window that shows only the dark outside, a cooking pot hanging from a nail, moths circling the lamp\nCAMERA: camera hangs over the table, high angle, close shot.\nFRAME LAYOUT: center — the folded tunic with its medal ribbons, near-camera and large; right third — the slouch hat; left third — the small photograph and the farmer’s hand; upper edge — the lamp and its pool of light, soft; lower edge — the plank edge of the table.\nFACING: we look down on the chest of the tunic and its ribbons; the photograph is turned toward camera with its soldiers facing out; the hand points toward screen-right.\nSCREEN DIRECTION: a thread of lamp smoke rises from the chimney and drifts toward the right; the flame leans slightly toward the right.\nLIGHT: warm lamplight from the upper right, a soft yellow pool on the table, deep brown shadow all round, a thin cold blue from the window.\nPALETTE: khaki, lamp amber, pine brown, faded ribbon red\nDETAIL: woollen weave of the tunic, stitching on the pocket, fading stripes in the ribbons, dulled brass buttons, the grain of the pine boards, a curl of paper at the photograph’s corner, the dents in the tin mug and the darns in the sock\nNOT IN FRAME: faces in close-up, any text or writing, blood.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "CU",
+            "angle": "high",
+            "camera_motion": "push",
+            "location": "farm-kitchen",
+            "time_light": "lamplight"
+          },
+          "render_mode": "still",
+          "still_motion": "push"
+        }
+      ]
+    },
+    {
+      "beat_id": "B07",
+      "sentences": [
+        "S10"
+      ],
+      "start": 39.36,
+      "end": 44.32,
+      "dur": 4.96,
+      "device": null,
+      "narration_says": "A group of them went to the Minister of Defence, Sir George Pearce, and asked for some.",
+      "viewer_sees": "Three farmers in dusty work clothes, hats in their hands, walk into the minister's office toward Pearce's broad desk",
+      "shots": [
+        {
+          "shot_id": "07",
+          "beat_id": "B07",
+          "link_group": null,
+          "t_in": 39.375,
+          "t_out": 44.333,
+          "use_in": 0,
+          "use_out": 4.958,
+          "use_len": 4.958,
+          "motion_budget": 4.958,
+          "gen_len": 6,
+          "source_file": "shots/part07.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "farmers",
+            "pearce"
+          ],
+          "visual_priority": [
+            "the three farmers with hats in hand",
+            "the polished office floor with red dust on it",
+            "Sir George Pearce at his desk",
+            "the wall map of Australia"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: veteran wheat farmers of Western Australia, weathered men in their forties, sun-creased faces, collarless cotton work shirts with rolled sleeves, braces, battered brown felt hats, dusty boots, a few old khaki army tunics, three of them just inside the door at the left third, hats in their hands, dusty boots on a polished floor, their faces earnest and a little awkward\nSUBJECT 2: Sir George Pearce, Australia’s Minister of Defence, a stout man in his early sixties, thinning white hair, a clipped white moustache, a dark three-piece suit with a high white collar and a watch chain, seated at his broad desk at the right third, small and far, his hands folded on the leather top, looking up at them with a calm level gaze\nACTION: three farmers in dusty work clothes stand just inside the office door with their hats in their hands, the nearest taking a first step across the polished floor toward the broad desk where the minister sits waiting\nSETTING: a government minister’s office of 1932, dark timber panelling, a broad leather-topped desk, a large wall map of Australia, a tall window with white net curtains and a brass desk lamp; here the dark panelled door open at the left, red dust on the polished floorboards where the farmers have stepped, papers squared on the desk, a green-shaded lamp unlit in the daylight, a brass inkstand\nCAMERA: camera stands inside the room at the far end of the desk, eye level, medium shot.\nFRAME LAYOUT: left third — the three farmers, medium, just inside the door; right third — the minister at his broad desk, small and far; center — the polished floor and a strip of window light; upper edge — the wall map of Australia, large and out of focus.\nFACING: the farmers enter face-on to camera at the left, eyes toward screen-right and the desk; the minister looks back toward screen-left, his gaze on the visitors.\nSCREEN DIRECTION: the farmers cross from the left edge toward the right and the desk; dust motes drift across the shaft of window light toward the right.\nLIGHT: soft window daylight from the right through net curtains, the green desk lamp unlit, warm brown timber, pale dust hanging in the light.\nPALETTE: timber brown, work-shirt grey, desk leather green, map cream\nDETAIL: dust on the farmers’ boots against the polished boards, the weave of their shirts, the grain of the panelling, the stitched leather of the desk top and the brass inkstand\nNOT IN FRAME: soldiers, guns, other officials, any text on the map.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 4.958s; everything keeps moving at the same natural pace through the end of the 6s generation.\n0–1s: the three farmers step across the doorway onto the polished boards, hats held against their chests; dust shakes from their boots.\n1–3s: they walk in a loose line toward the desk at the right, the nearest slowing to let the others close up; the minister lifts his eyes from his papers.\n3–4.5s: the farmers reach the desk and the leader steps forward with his hat in both hands; the minister gestures toward the chairs and the others glance at each other.\n4.5–6s: the leader leans forward and speaks, one hand opening toward the desk; the minister listens with his chin lowered and taps one finger on the leather.\nCAMERA: one continuous slow track toward the right alongside the farmers for the full 6 seconds.\nENVIRONMENT: the net curtain stirs in the draught; motes of dust float through the shaft of window light; the lamp’s glass chimney glints.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "eye",
+            "camera_motion": "track",
+            "location": "minister-office",
+            "time_light": "window-daylight"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B08",
+      "sentences": [
+        "S11"
+      ],
+      "start": 44.32,
+      "end": 53.46,
+      "dur": 9.14,
+      "device": null,
+      "narration_says": "He agreed, on conditions: soldiers would work the guns, the state would pay for their transport, and the farmers would pay for the ammunition and food.",
+      "viewer_sees": "Pearce at his desk ticks off three conditions on three raised fingers, one after another, while the farmers across the desk nod",
+      "shots": [
+        {
+          "shot_id": "08",
+          "beat_id": "B08",
+          "link_group": null,
+          "t_in": 44.333,
+          "t_out": 53.458,
+          "use_in": 0,
+          "use_out": 9.125,
+          "use_len": 9.125,
+          "motion_budget": null,
+          "gen_len": 10,
+          "source_file": "shots/part08.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "pearce",
+            "farmers"
+          ],
+          "visual_priority": [
+            "Sir George Pearce with his finger raised",
+            "the three seated farmers listening",
+            "the broad leather desk and the letter",
+            "the wall map of Australia"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Sir George Pearce, Australia’s Minister of Defence, a stout man in his early sixties, thinning white hair, a clipped white moustache, a dark three-piece suit with a high white collar and a watch chain, seated at his broad desk at the right third, near-camera and large, cropped at the chest, his right hand raised with the index finger lifted, speaking steadily with a firm calm expression\nSUBJECT 2: veteran wheat farmers of Western Australia, weathered men in their forties, sun-creased faces, collarless cotton work shirts with rolled sleeves, braces, battered brown felt hats, dusty boots, a few old khaki army tunics, three of them seated on hard chairs at the left third across the desk, hats on their knees, leaning forward with their eyes on his raised hand\nACTION: the minister sits at his broad desk with his right hand raised and one finger lifted, about to count out his conditions, while the three farmers sit forward on their chairs with their hats on their knees and watch him\nSETTING: a government minister’s office of 1932, dark timber panelling, a broad leather-topped desk, a large wall map of Australia, a tall window with white net curtains and a brass desk lamp; here a leather blotter and a brass inkstand squared on the desk, a single typed letter held down by a glass paperweight, white net curtains lifting at the window, the large wall map of Australia with the west coast in shadow\nCAMERA: camera stands at the corner of the desk, eye level, medium shot.\nFRAME LAYOUT: right third — the minister, near-camera and large, cropped at the chest, his raised hand at the center-right; left third — the three seated farmers, medium; center — the broad leather desk with the letter and the inkstand; upper edge — the wall map, large and out of focus.\nFACING: the minister shows his chest and face to camera from the left side, turned toward screen-left and the farmers; the farmers sit with their faces and knees angled toward screen-right, eyes on his hand.\nSCREEN DIRECTION: his raised hand and gaze point from the right edge toward the left; the net curtain lifts and falls toward the left; dust motes drift through the window light toward the left.\nLIGHT: soft daylight from the window at the right, a bright highlight on his white moustache and collar, warm brown shadows on the left, the lamp unlit.\nPALETTE: dark suit black, timber brown, collar white, map cream\nDETAIL: the clipped white moustache, the stitching on the dark suit, the glint of the watch chain, the stitched leather of the blotter and the glass of the paperweight\nNOT IN FRAME: soldiers, weapons, any text on the letter or the map.",
+          "animation_prompt": "MOTION BUDGET: everything keeps moving at the same natural pace through the end of the 10s generation.\n0–1s: Pearce raises one finger and speaks; the three farmers lean toward him, their hat brims dipping.\n1–3.5s: he raises a second finger beside the first and turns his palm toward the farmers; the leader nods slowly while the man beside him exhales.\n3.5–6s: a third finger rises as he finishes counting; the farmers glance at one another and the nearest taps his hat brim against his knee.\n6–8.5s: Pearce lowers his hand, takes a pen from the inkstand and signs the letter; the leader leans forward and the net curtain lifts.\n8.5–10s: he slides the signed letter across the leather toward the farmers and the leader takes it with both hands; the others nod.\nCAMERA: one continuous slow push toward Pearce for the full 10 seconds.\nENVIRONMENT: net curtains lift and fall; dust motes drift through the window light; the glass paperweight glints.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "eye",
+            "camera_motion": "push",
+            "location": "minister-office",
+            "time_light": "window-daylight"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B09",
+      "sentences": [
+        "S12"
+      ],
+      "start": 53.46,
+      "end": 63.06,
+      "dur": 9.6,
+      "device": null,
+      "narration_says": "On the second of November, Major Meredith of the Royal Australian Artillery arrived at Campion with two soldiers, two Lewis guns, and ten thousand rounds.",
+      "viewer_sees": "An army truck pulls up on a dirt road at Campion; Major Meredith steps down and two gunners lift two Lewis guns and crates of ammunition from the tray",
+      "shots": [
+        {
+          "shot_id": "09",
+          "beat_id": "B09",
+          "link_group": null,
+          "t_in": 53.458,
+          "t_out": 63.042,
+          "use_in": 0,
+          "use_out": 9.584,
+          "use_len": 9.584,
+          "motion_budget": null,
+          "gen_len": 10,
+          "source_file": "shots/part09.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "meredith",
+            "army-truck",
+            "gunners"
+          ],
+          "visual_priority": [
+            "Major Meredith stepping down from the cab",
+            "the army truck with its loaded tray",
+            "the two gunners lifting down the two Lewis guns",
+            "the ten ammunition crates"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Major Meredith, a lean Australian artillery officer of about forty, a sunburnt narrow face, a trim moustache, a khaki tunic with a leather Sam Browne belt, riding breeches and puttees, a khaki slouch hat with one brim pinned up, stepping down from the cab at the center, one boot on the running board, his slouch hat tilted against the sun, binoculars hanging at his chest, looking out over the paddocks\nSUBJECT 2: a 1930s Australian army lorry, an open flat tray with low timber sides, a high boxy bonnet, big spoked wheels, a canvas-roofed cab, olive-khaki paint scuffed with red dust, pulled up at the left third on the dirt road, its flat tray loaded with ten wooden ammunition crates and folded canvas\nSUBJECT 3: two young Australian artillery gunners in their twenties, sunburnt faces, khaki shirts with rolled sleeves, dusty breeches and puttees, khaki slouch hats with one brim pinned up, canvas webbing belts, two of them on the tray taking hold of two long Lewis machine guns with round pan magazines on top, one gun already in the first man’s arms and the other lying on the planks\nACTION: the army truck has just pulled up on the red dirt road and stopped; the major steps down from the cab while the two gunners on the tray take hold of the two Lewis guns, the ten crates still stacked on the tray beside them\nSETTING: the wheatbelt of Western Australia, flat paddocks of dry golden wheat on red earth, grey wire-and-post fences, scattered low mallee scrub and a few pale gum trees, a vast open horizon; here a red dirt road running from the lower left toward the far right, a wheat paddock on each side, a grey fence, a clear bright morning, dust drifting from the truck’s tyres\nCAMERA: camera stands on the road ahead of the truck, low angle, long shot.\nFRAME LAYOUT: left third — the army truck with its loaded tray and the two gunners, medium; center — Major Meredith stepping from the cab, near-camera and large, cropped at the knee; right third — the road and the corrugated-iron shed, far and hazy; lower edge — red dust and wheel ruts, near-camera.\nFACING: Meredith steps out face-on to camera from the left, his gaze going to screen-right across the paddocks; the gunners look toward screen-right, eyes on the guns in their hands.\nSCREEN DIRECTION: the gunners lift the guns from the left edge toward the center; dust drifts from the tyres toward the right; the major’s gaze runs from the center toward the right edge.\nLIGHT: clear bright morning sun from the upper left, crisp short shadows under the truck, a warm gold rim on the khaki, a white-gold glare on the red road.\nPALETTE: olive khaki, red dust, wheat gold, bright sky blue\nDETAIL: figures readable by outline and posture, spoked wheels and the boxy bonnet, the perforated barrel jackets and round pan magazines, the grain of the timber crates\nNOT IN FRAME: emus, other vehicles, any text, bystanders.",
+          "animation_prompt": "MOTION BUDGET: everything keeps moving at the same natural pace through the end of the 10s generation.\n0–1s: Meredith steps down from the cab onto the red road and lifts his binoculars; the gunners on the tray reach for the two Lewis guns.\n1–3.5s: the gunners lower the first gun to the tailgate and swing down after it, boots thudding on the road; Meredith turns and points along the fence toward screen-right.\n3.5–6s: the second gun passes hand to hand from the tray to the road, the gunners straining; dust blows from the tyres across the track toward the right.\n6–8.5s: the gunners haul down the first of the ten crates and carry it to the roadside between them; Meredith scans the paddocks through the binoculars.\n8.5–10s: the gunners walk back for another crate; Meredith lowers the binoculars and nods toward the paddocks as the dust clears.\nCAMERA: one continuous slow pan toward screen-right following the major’s gaze for the full 10 seconds.\nENVIRONMENT: dust drifts from the tyres; the truck’s canvas flaps; wheat ripples in the paddocks; a hawk crosses the sky.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "low",
+            "camera_motion": "pan",
+            "location": "campion-road",
+            "time_light": "morning-clear"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B10",
+      "sentences": [
+        "S13"
+      ],
+      "start": 63.06,
+      "end": 67.78,
+      "dur": 4.72,
+      "device": null,
+      "narration_says": "The first emus were sighted at once, about fifty of them, out of range.",
+      "viewer_sees": "Meredith lowers his binoculars; far across the paddock a line of about fifty emus stands at the horizon, small and out of range, while the gunners wait beside the gun",
+      "shots": [
+        {
+          "shot_id": "10",
+          "beat_id": "B10",
+          "link_group": null,
+          "t_in": 63.042,
+          "t_out": 67.792,
+          "use_in": 0,
+          "use_out": 4.75,
+          "use_len": 4.75,
+          "motion_budget": 4.75,
+          "gen_len": 6,
+          "source_file": "shots/part10.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "meredith",
+            "gunners",
+            "lewis-gun"
+          ],
+          "visual_priority": [
+            "Major Meredith lowering his binoculars",
+            "the line of about fifty emus on the horizon",
+            "the gunners waiting beside the gun",
+            "the wide gold paddock"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Major Meredith, a lean Australian artillery officer of about forty, a sunburnt narrow face, a trim moustache, a khaki tunic with a leather Sam Browne belt, riding breeches and puttees, a khaki slouch hat with one brim pinned up, at the left third, near-camera, lowering his binoculars from his eyes and holding them against his chest, a narrow level look on his sunburnt face\nSUBJECT 2: two young Australian artillery gunners in their twenties, sunburnt faces, khaki shirts with rolled sleeves, dusty breeches and puttees, khaki slouch hats with one brim pinned up, canvas webbing belts, crouched together at the left edge beside the gun, medium, both looking toward the horizon with their hands loose on their knees\nSUBJECT 3: a First World War Lewis machine gun on a folding bipod, a long barrel inside a perforated cooling jacket, a flat round pan magazine on top, a wooden stock and a pistol grip, set up on its bipod between the major and the gunners, its barrel pointed along the paddock toward the right\nACTION: the major lowers his binoculars after one long look across the paddock; along the far horizon a line of about fifty emus stands small and out of range against the gold wheat, while the gunners wait beside the gun\nSETTING: the wheatbelt of Western Australia, flat paddocks of dry golden wheat on red earth, grey wire-and-post fences, scattered low mallee scrub and a few pale gum trees, a vast open horizon; here a wide flat paddock of ripe gold wheat running to a distant tree line, a red dirt track at the left edge where the gun is set, bright clear morning, heat shimmer at the horizon, one distant dead gum tree\nCAMERA: camera crouches at the gun’s side on the red track, low angle, medium shot.\nFRAME LAYOUT: left third — the major near-camera and large, cropped at the chest, the gunners and the Lewis gun beside him; center — the wide gold paddock; right third and far horizon — a line of about fifty emus, tiny and hazy; upper edge — clear sky.\nFACING: the major turns his face to camera from the right side, eyes on the horizon at screen-right; the gunners and the gun are in profile toward screen-right; the far emus face toward screen-left.\nSCREEN DIRECTION: the major’s gaze and the barrel point from the left edge toward the right horizon; heat shimmer wavers toward the right; wheat ears bend toward the right.\nLIGHT: hard clear morning sun from the upper left, a bright gold rim on the major’s hat brim, sharp shadows, shimmering heat at the horizon.\nPALETTE: khaki, wheat gold, red earth, hazy sky blue\nDETAIL: lines of sunburn at the eyes, the binocular strap and brass, the weave of the khaki tunic, a row of tiny emu silhouettes along the horizon\nNOT IN FRAME: close emus, vehicles, bystanders, any text.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 4.75s; everything keeps moving at the same natural pace through the end of the 6s generation.\n0–1s: Meredith lowers the binoculars and turns his head toward the gunners; the gunners straighten and follow his gaze.\n1–3s: he points along the horizon toward screen-right and the gunners squint; far away the line of emus lifts its heads together and sways.\n3–4.5s: the gunner nearest the gun swings the barrel a few degrees toward the right and pushes up his hat brim; the line of emus drifts along the horizon toward the left.\n4.5–6s: Meredith raises the binoculars again with both hands; the emus keep strolling along the horizon, tiny and unbothered, as heat shimmer wavers over the wheat.\nCAMERA: one continuous slow push toward the horizon for the full 6 seconds.\nENVIRONMENT: heat shimmer wavers at the horizon; wheat ears bend in the wind; dust lifts off the track.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "low",
+            "camera_motion": "push",
+            "location": "wheatbelt",
+            "time_light": "morning-clear"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B11",
+      "sentences": [
+        "S14"
+      ],
+      "start": 67.78,
+      "end": 73.42,
+      "dur": 5.64,
+      "device": null,
+      "narration_says": "The farmers tried to drive them into an ambush, but the birds split into small groups and scattered.",
+      "viewer_sees": "Farmers on foot and on horseback spread out across the paddock to drive the emus toward the gun; the emus split into small groups that run off in every direction",
+      "shots": [
+        {
+          "shot_id": "11",
+          "beat_id": "B11",
+          "link_group": null,
+          "t_in": 67.792,
+          "t_out": 73.417,
+          "use_in": 0,
+          "use_out": 5.625,
+          "use_len": 5.625,
+          "motion_budget": 5.625,
+          "gen_len": 6,
+          "source_file": "shots/part11.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "emus",
+            "farmers"
+          ],
+          "visual_priority": [
+            "the dense bunch of emus breaking into small groups",
+            "the line of six farmers at the right edge",
+            "the small gun crew at the dam bank",
+            "the wide gold paddock"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: wild emus, tall flightless birds nearly as tall as a man, shaggy drooping grey-brown feathers, a long bare blue-grey neck, a small head with a bright dark eye, long powerful pale legs, about fifty of them in this frame, one dense bunch at the center just beginning to break into four or five small groups, necks stretched, heads turned toward the left\nSUBJECT 2: veteran wheat farmers of Western Australia, weathered men in their forties, sun-creased faces, collarless cotton work shirts with rolled sleeves, braces, battered brown felt hats, dusty boots, a few old khaki army tunics, six of them at the right edge, on foot and on horseback, small and far, spread in a wide line with hats and arms raised, pushing the birds toward the left\nACTION: six farmers spread in a wide line at the far right edge wave their hats and arms and push forward, and the dense bunch of about fifty emus at the center is just beginning to break apart, while the small gun crew waits by the dam bank at the far left edge\nSETTING: the wheatbelt of Western Australia, flat paddocks of dry golden wheat on red earth, grey wire-and-post fences, scattered low mallee scrub and a few pale gum trees, a vast open horizon; here a wide gold paddock with a low raised dam bank at the far left edge and a dark patch of mallee beyond it, a red dirt track, a pale haze of dust over the far side of the paddock, high sun\nCAMERA: camera stands on a low rise in the middle of the paddock, high angle, extreme long shot.\nFRAME LAYOUT: center — the dense bunch of emus, medium, breaking into small groups; right third — the line of six farmers, small and far; far left edge — the dam bank and the small gun crew, tiny and hazy; lower edge — gold wheat, near-camera; upper edge — a bleached midday sky.\nFACING: the emus are seen from the front-right with their heads swung toward screen-left; the farmers at the right edge face screen-left with their arms raised; the gun crew at the left edge faces screen-right.\nSCREEN DIRECTION: the farmers sweep from the right edge toward the left; the emus break into groups that veer toward the left, the upper edge and the lower edge; dust streams toward the left.\nLIGHT: harsh midday sun from high overhead, short sharp shadows under each bird, bleached wheat, a pale dust haze.\nPALETTE: wheat gold, dust cream, emu grey-brown, bleached sky\nDETAIL: groups readable by outline and posture, individual birds sharp only at the center, layered gold wheat rows, a dust plume across the middle ground\nNOT IN FRAME: close-ups, vehicles, bystanders, any text.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 5.625s; everything keeps moving at the same natural pace through the end of the 6s generation.\n0–1s: the farmers at the right edge wave their hats and press forward; the dense bunch of emus tightens and starts moving toward screen-left.\n1–3s: the bunch splits into four small groups that peel away in different directions, necks stretched and legs flashing; dust lifts under each group.\n3–4.5s: two groups veer toward the upper edge and one toward the lower edge while the farmers spread wider, waving; the gun crew at the left turns to watch.\n4.5–6s: the groups spread farther apart across the gold paddock, each running its own way at full speed; the farmers slow and lower their arms.\nCAMERA: one continuous slow pan toward screen-left over the paddock for the full 6 seconds.\nENVIRONMENT: dust plumes drift across the paddock; wheat bends in the wind; heat haze shimmers.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts",
+          "tags": {
+            "subject_type": "crowd",
+            "shot_size": "XLS",
+            "angle": "high",
+            "camera_motion": "pan",
+            "location": "wheatbelt",
+            "time_light": "midday-hard-sun"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B12",
+      "sentences": [
+        "S15",
+        "S16"
+      ],
+      "start": 73.42,
+      "end": 82.08,
+      "dur": 8.66,
+      "device": null,
+      "narration_says": "Two days later, Meredith set up near a dam, and more than a thousand emus walked toward him. The gun jammed after twelve birds.",
+      "viewer_sees": "At the dam, Meredith and the gunners wait behind the Lewis gun as a wide wall of emus walks steadily toward them; the gun clacks and jams, the gunner works the handle, the flock keeps coming",
+      "shots": [
+        {
+          "shot_id": "12",
+          "beat_id": "B12",
+          "link_group": null,
+          "t_in": 73.417,
+          "t_out": 82.083,
+          "use_in": 0,
+          "use_out": 8.666,
+          "use_len": 8.666,
+          "motion_budget": 8.666,
+          "gen_len": 10,
+          "source_file": "shots/part12.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "emus",
+            "meredith",
+            "lewis-gun"
+          ],
+          "visual_priority": [
+            "the wide wall of emus walking toward the gun",
+            "Major Meredith kneeling beside the gun",
+            "the Lewis gun on the dam bank",
+            "the empty gold paddock and the dust haze"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: wild emus, tall flightless birds nearly as tall as a man, shaggy drooping grey-brown feathers, a long bare blue-grey neck, a small head with a bright dark eye, long powerful pale legs, a vast flock of more than a thousand, here a wide wall of them filling the right two thirds of the frame, dozens sharp at the front and the rest a grey-brown mass, walking steadily toward the left, necks upright\nSUBJECT 2: Major Meredith, a lean Australian artillery officer of about forty, a sunburnt narrow face, a trim moustache, a khaki tunic with a leather Sam Browne belt, riding breeches and puttees, a khaki slouch hat with one brim pinned up, kneeling beside the gun at the left third, medium, one hand raised to signal, his slouch hat low\nSUBJECT 3: a First World War Lewis machine gun on a folding bipod, a long barrel inside a perforated cooling jacket, a flat round pan magazine on top, a wooden stock and a pistol grip, set up on its bipod on the dam bank, one gunner crouched at its stock and a second holding a fresh pan magazine, its barrel pointed along the paddock toward the right\nACTION: the major kneels beside the Lewis gun with one hand raised, a gunner crouched at the stock and another holding a fresh pan magazine, watching a wide wall of emus walk toward them across the paddock\nSETTING: a small farm dam in the wheatbelt, a raised bank of raw red earth around a shallow muddy pool, dry saltbush and low mallee scrub along the bank, one dead white gum stump; here the raised red earth bank of the dam at the left where the gun is set, dry saltbush along the crest, a flat gold paddock to the right filled with the oncoming flock, afternoon sun\nCAMERA: camera stands beside the dam bank at the gun, eye level, long shot.\nFRAME LAYOUT: left third — the major, the gunners and the Lewis gun on the dam bank, medium; center and right third — the wall of emus walking toward the gun, stretching past the right edge; lower edge — dry saltbush and red earth, near-camera; upper edge — a warm afternoon sky.\nFACING: the major crouches in profile to camera with his face toward screen-right and the flock; the gunners look the same way; the emus walk at the gun in front view, heads toward screen-left.\nSCREEN DIRECTION: the flock advances from the right edge toward the left and the gun; dust drifts toward the left; the major’s raised hand points toward the right.\nLIGHT: warm low afternoon sun from the right, long shadows of the birds stretching toward the left, a gold rim on the feathers, dust glowing amber.\nPALETTE: amber dust, wheat gold, khaki, emu grey-brown\nDETAIL: dozens of emus sharp at the front with drooping feathers and pale legs, the rest a grey-brown mass, the perforated barrel jacket, crumbling red earth on the dam bank\nNOT IN FRAME: fallen birds, vehicles, any text.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 8.666s; everything keeps moving at the same natural pace through the end of the 10s generation.\n0–1s: the major drops his raised hand and the gunner at the stock pulls the cocking handle; the wall of emus keeps walking toward the left, necks upright.\n1–3.5s: the Lewis gun chatters in a short burst, red dust leaping up in the grass short of the flock; the flock slows and its heads swing.\n3.5–6s: the gun clacks and falls silent; the gunner yanks the cocking handle twice and smoke curls from the breech while the second gunner slaps the pan magazine.\n6–8.5s: the major leans over the jammed gun as both gunners work at it; the unhurried flock walks on toward them in an even line.\n8.5–10s: the nearest emus stride within a few paces of the dam bank and one lowers its head to look at the gun; dust drifts over the muddy pool.\nCAMERA: one continuous slow push toward the gun for the full 10 seconds.\nENVIRONMENT: dust lifts from the paddock; smoke curls from the breech.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "eye",
+            "camera_motion": "push",
+            "location": "campion-dam",
+            "time_light": "afternoon-warm"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B13",
+      "sentences": [
+        "S17"
+      ],
+      "start": 82.08,
+      "end": 87.3,
+      "dur": 5.22,
+      "device": null,
+      "narration_says": "A gun mounted on a truck was no use either, because the truck could not catch the birds.",
+      "viewer_sees": "A truck with a Lewis gun on its tray bounces across the paddock after a pair of emus that run easily ahead of it, the gunner clinging to the gun",
+      "shots": [
+        {
+          "shot_id": "13",
+          "beat_id": "B13",
+          "link_group": null,
+          "t_in": 82.083,
+          "t_out": 87.292,
+          "use_in": 0,
+          "use_out": 5.209,
+          "use_len": 5.209,
+          "motion_budget": 5.209,
+          "gen_len": 6,
+          "source_file": "shots/part13.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "army-truck",
+            "emus"
+          ],
+          "visual_priority": [
+            "the army truck bouncing across the paddock",
+            "the gunner clinging to the Lewis gun on the tray",
+            "the two emus running easily ahead",
+            "the trail of dust"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a 1930s Australian army lorry, an open flat tray with low timber sides, a high boxy bonnet, big spoked wheels, a canvas-roofed cab, olive-khaki paint scuffed with red dust, bouncing across the paddock at the left third, medium, a Lewis machine gun mounted on its open tray and a gunner clinging to the gun with both hands, dust streaming from its wheels\nSUBJECT 2: wild emus, tall flightless birds nearly as tall as a man, shaggy drooping grey-brown feathers, a long bare blue-grey neck, a small head with a bright dark eye, long powerful pale legs, a pair of them running easily ahead of the truck at the right third, long legs a blur, necks stretched forward, heads turned toward the right\nACTION: the army truck bumps across the paddock at the left with the Lewis gun fixed on its tray and a gunner gripping the gun with both hands, while two emus run easily ahead of it across the wheat toward the right\nSETTING: the wheatbelt of Western Australia, flat paddocks of dry golden wheat on red earth, grey wire-and-post fences, scattered low mallee scrub and a few pale gum trees, a vast open horizon; here an open gold paddock with a rough wheel track pressed through the crop, a dust trail rising from the truck, a low red bank far at the right, a bright afternoon sky\nCAMERA: camera runs alongside the truck across the paddock, low angle, long shot.\nFRAME LAYOUT: left third — the truck with the gun and the gunner, medium and large; center — the pressed wheel track and trailing dust; right third — the two emus running, medium, ahead of the truck; lower edge — gold wheat, near-camera; upper edge — a bright sky.\nFACING: we see the truck three-quarter from the front and the right, the gunner facing toward screen-right and the emus; the emus run in profile with their heads stretched toward the right.\nSCREEN DIRECTION: the truck and the emus move from the left edge toward the right; dust streams toward the left; wheat bends flat toward the left.\nLIGHT: bright afternoon sun from the upper right, a hard glare on the truck’s bonnet, short sharp shadows, golden dust.\nPALETTE: olive khaki, wheat gold, dust amber, emu grey-brown\nDETAIL: spoked wheels throwing dust, the boxy bonnet and canvas cab roof, the gun’s round pan magazine, emu legs as pale blurred strokes\nNOT IN FRAME: other vehicles, farmers, any text.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 5.209s; everything keeps moving at the same natural pace through the end of the 6s generation.\n0–1s: the truck bumps across the paddock toward screen-right with the gunner swaying on the tray; the two emus break into a run ahead of it.\n1–3s: the emus stretch their necks and open a gap of a few lengths, legs a blur; the truck lurches over a rut and the gunner clutches the gun.\n3–4.5s: the emus swerve sharply toward the upper right and the truck swings after them in a wide curve, wheels tearing at the crop; dust billows.\n4.5–6s: the emus pull easily away again, running free and unhurried; the truck bounces on after them, the gunner hanging on.\nCAMERA: one continuous tracking move alongside the truck, matching its speed, for the full 6 seconds.\nENVIRONMENT: dust billows from the wheels and rolls toward the left; wheat whips and flattens; the canvas on the cab flaps.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts",
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "LS",
+            "angle": "low",
+            "camera_motion": "track",
+            "location": "wheatbelt",
+            "time_light": "afternoon-warm"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B14",
+      "sentences": [
+        "S18"
+      ],
+      "start": 87.3,
+      "end": 93.72,
+      "dur": 6.42,
+      "device": "ledger-accumulation",
+      "narration_says": "By the eighth of November, six days in, the soldiers had fired twenty-five hundred rounds.",
+      "viewer_sees": "LEDGER/ACCUMULATION — a heap of spent brass cartridge cases and empty ammunition crates grows beside the gun, a gunner tipping out one more tray",
+      "shots": [
+        {
+          "shot_id": "14",
+          "beat_id": "B14",
+          "link_group": null,
+          "t_in": 87.292,
+          "t_out": 93.708,
+          "use_in": 0,
+          "use_out": 6.416,
+          "use_len": 6.416,
+          "motion_budget": null,
+          "gen_len": null,
+          "source_file": "shots/shot14.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "lewis-gun",
+            "gunners"
+          ],
+          "visual_priority": [
+            "the Lewis gun beside the great heap of spent brass cases",
+            "the heap of brass cartridge cases",
+            "the tired gunner with the last handful of brass",
+            "the leaning tower of empty crates"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a First World War Lewis machine gun on a folding bipod, a long barrel inside a perforated cooling jacket, a flat round pan magazine on top, a wooden stock and a pistol grip, standing on its bipod at the left third beside a great glittering heap of spent brass cartridge cases that spills across the red earth, its barrel pointed toward the empty paddock at the right\nSUBJECT 2: two young Australian artillery gunners in their twenties, sunburnt faces, khaki shirts with rolled sleeves, dusty breeches and puttees, khaki slouch hats with one brim pinned up, canvas webbing belts, one of them at the right of center, medium, hunched over a wooden ammunition crate he has just emptied, a last handful of brass in his bare hand, tired and dusty\nACTION: a great heap of spent brass cases lies at the foot of the Lewis gun beside a stack of empty ammunition crates, and a tired gunner stands over one empty crate with a last handful of brass in his hand, about to tip it onto the heap\nSETTING: a small farm dam in the wheatbelt, a raised bank of raw red earth around a shallow muddy pool, dry saltbush and low mallee scrub along the bank, one dead white gum stump; here the red earth bank at dusk with the muddy pool dark below, a leaning tower of empty wooden ammunition crates, a canvas sheet and a water bottle on the ground, a flat empty paddock fading into evening\nCAMERA: camera crouches low at the foot of the heap, low angle, medium shot.\nFRAME LAYOUT: left third — the Lewis gun on its bipod; center — the great heap of brass cases, near-camera and large; right third — the tired gunner and the leaning tower of empty crates, medium; upper edge — the dusk sky and the empty paddock, far and hazy.\nFACING: we see the gun in profile with its muzzle toward screen-right; the gunner faces three-quarter toward the heap, his gaze lowered to his hand.\nSCREEN DIRECTION: a thin thread of dust drifts toward the right from the gun’s barrel; the gunner’s gaze runs from the right of center down to the heap on the left.\nLIGHT: low orange dusk light from the left, deep long shadows toward the right, a warm glint on every brass case, a cold blue shade under the crates.\nPALETTE: brass gold, dusk orange, red earth, khaki\nDETAIL: countless individual brass cases catching the light, dents and scratches on the crates, the perforated barrel jacket, grit on the gunner’s sleeve and boots\nNOT IN FRAME: emus, bodies, any text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "MS",
+            "angle": "low",
+            "camera_motion": "push",
+            "location": "campion-dam",
+            "time_light": "dusk-orange"
+          },
+          "render_mode": "still",
+          "still_motion": "push"
+        }
+      ]
+    },
+    {
+      "beat_id": "B15",
+      "sentences": [
+        "S19"
+      ],
+      "start": 93.72,
+      "end": 98.1,
+      "dur": 4.38,
+      "device": null,
+      "narration_says": "Estimates of the birds killed run from fifty to five hundred.",
+      "viewer_sees": "A gunner with a small notebook and a farmer argue at the fence over how many emus fell, the gunner showing his tally, the farmer sweeping an arm across the paddock",
+      "shots": [
+        {
+          "shot_id": "15",
+          "beat_id": "B15",
+          "link_group": null,
+          "t_in": 93.708,
+          "t_out": 98.083,
+          "use_in": 0,
+          "use_out": 4.375,
+          "use_len": 4.375,
+          "motion_budget": 4.375,
+          "gen_len": 6,
+          "source_file": "shots/part15.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "gunners",
+            "farmers"
+          ],
+          "visual_priority": [
+            "the gunners: one gunner holding out his tally notebook",
+            "the farmer sweeping his arm across the paddock",
+            "the weathered fence rail between them",
+            "the grey-brown feathers on the wire"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: two young Australian artillery gunners in their twenties, sunburnt faces, khaki shirts with rolled sleeves, dusty breeches and puttees, khaki slouch hats with one brim pinned up, canvas webbing belts, one of them at the left third, near-camera, holding out a small notebook crowded with pencil tally marks, his eyebrows raised, a stub of pencil in his other hand\nSUBJECT 2: veteran wheat farmers of Western Australia, weathered men in their forties, sun-creased faces, collarless cotton work shirts with rolled sleeves, braces, battered brown felt hats, dusty boots, a few old khaki army tunics, one of them at the right third, medium, one arm swept wide across the paddock and his other hand gripping the fence rail, shaking his head and arguing\nACTION: a gunner at the left holds out a small notebook crowded with pencil tally marks while a farmer across the fence rail sweeps one arm wide over the paddock, the two of them frowning at each other, a few grey-brown feathers snagged on the wire between them\nSETTING: the wheatbelt of Western Australia, flat paddocks of dry golden wheat on red earth, grey wire-and-post fences, scattered low mallee scrub and a few pale gum trees, a vast open horizon; here a weathered timber fence rail between the two men with a few grey-brown feathers snagged on the wire, late afternoon light, a gold paddock beyond the farmer with a single dead gum, dry red earth underfoot\nCAMERA: camera stands at the fence post beside them, eye level, medium shot.\nFRAME LAYOUT: left third — the gunner with his notebook, near-camera and large, cropped at the waist; right third — the farmer, medium, arm wide; center — the weathered fence rail and its snagged feathers; far right edge — the gold paddock and one dead gum, small and hazy.\nFACING: the gunner angles his face and chest toward camera, eyes going right to the farmer; the farmer’s face and shoulders swing toward screen-left, his stare on the notebook.\nSCREEN DIRECTION: the gunner’s notebook and the farmer’s sweeping arm point at each other across the fence, left toward right and right toward left; the snagged feathers flutter toward the left.\nLIGHT: slanting late-day sun from the right, shadows pooling toward the left, a gold rim on the notebook and the fence rail, soft shade on the faces.\nPALETTE: khaki, wheat gold, timber grey, notebook cream\nDETAIL: pencil tally marks in bundles on the notebook page, creases in the work shirt, grain and splinters of the fence rail, grey-brown feathers on rusty wire\nNOT IN FRAME: emus, fallen birds, vehicles, any text or numerals.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 4.375s; everything keeps moving at the same natural pace through the end of the 6s generation.\n0–1s: the gunner jabs a finger at the tally in his notebook and thrusts it out; the farmer shakes his head and sweeps his arm across the paddock.\n1–3s: the farmer points at the horizon and spreads both hands wide, arguing for a far larger count; the gunner flips a page and shrugs.\n3–4.5s: the gunner crosses out a line and writes a new figure while the farmer leans over the rail to look, scowling; feathers flutter on the wire.\n4.5–6s: the two men square up across the rail, each raising his own number on his fingers, and glare at each other; a breeze lifts the notebook page.\nCAMERA: one continuous slow push toward the two men across the rail for the full 6 seconds.\nENVIRONMENT: feathers flutter on the wire; dust lifts off the red earth; the dead gum sways at the far right.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "eye",
+            "camera_motion": "locked",
+            "location": "wheatbelt",
+            "time_light": "late-afternoon"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B16",
+      "sentences": [
+        "S20"
+      ],
+      "start": 98.1,
+      "end": 103.46,
+      "dur": 5.36,
+      "device": null,
+      "narration_says": "Meredith's men had suffered no casualties, he reported, except for their dignity.",
+      "viewer_sees": "Meredith, dusty and level-faced, stands beside the truck while a gunner sits on the tray with his hat knocked to one side; behind them an emu strolls past the fence",
+      "shots": [
+        {
+          "shot_id": "16",
+          "beat_id": "B16",
+          "link_group": null,
+          "t_in": 98.083,
+          "t_out": 103.458,
+          "use_in": 0,
+          "use_out": 5.375,
+          "use_len": 5.375,
+          "motion_budget": 5.375,
+          "gen_len": 6,
+          "source_file": "shots/part16.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "meredith",
+            "gunners",
+            "army-truck"
+          ],
+          "visual_priority": [
+            "Major Meredith standing level-faced",
+            "the gunner on the tray with his hat knocked aside",
+            "the emu strolling along the fence",
+            "the dusty army truck"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Major Meredith, a lean Australian artillery officer of about forty, a sunburnt narrow face, a trim moustache, a khaki tunic with a leather Sam Browne belt, riding breeches and puttees, a khaki slouch hat with one brim pinned up, standing at the center, near-camera and large, dusty and level-faced, his hands clasped at his back, looking straight ahead with no expression at all\nSUBJECT 2: two young Australian artillery gunners in their twenties, sunburnt faces, khaki shirts with rolled sleeves, dusty breeches and puttees, khaki slouch hats with one brim pinned up, canvas webbing belts, one of them sitting on the edge of the tray at the left third, medium, his slouch hat tipped to one side and his arms folded, staring at nothing with a deadpan look\nSUBJECT 3: a 1930s Australian army lorry, an open flat tray with low timber sides, a high boxy bonnet, big spoked wheels, a canvas-roofed cab, olive-khaki paint scuffed with red dust, parked at the left third on the dirt road, its tray holding the Lewis gun and empty ammunition crates, thick red dust on its mudguards\nACTION: the major stands level-faced at the center beside the truck with his hands clasped at his back and a gunner sits on the edge of the tray with his hat tipped to one side and his arms folded; beyond the wire fence at the right a single emu strolls past at an easy walk\nSETTING: the wheatbelt of Western Australia, flat paddocks of dry golden wheat on red earth, grey wire-and-post fences, scattered low mallee scrub and a few pale gum trees, a vast open horizon; here a dirt road at the edge of the paddock with a grey wire fence along its right side, late afternoon, red dust coating everything, a few torn tufts of grey-brown feathers on the fence wire, the gold paddock beyond\nCAMERA: camera stands on the road a few paces from the major, eye level, medium shot.\nFRAME LAYOUT: center — Major Meredith, near-camera and large, cropped at the waist; left third — the truck with the gunner on its tray, medium; right third — the wire fence and the single emu strolling along it, medium-small; far right edge — the gold paddock, hazy.\nFACING: we see the major full-face from the front, his eyes toward camera; the gunner faces three-quarter toward screen-right with his gaze on nothing; the emu walks in profile with its head turned toward screen-left.\nSCREEN DIRECTION: the emu strolls along the fence from the right edge toward the left; dust drifts across the road toward the left; torn feathers on the wire flutter toward the left.\nLIGHT: low late-afternoon sun from the right, long shadows toward the left, warm gold on the khaki, red dust glowing, a soft rim on the emu’s back.\nPALETTE: dust red, khaki, wheat gold, emu grey-brown\nDETAIL: dust on the major’s tunic and sunburnt cheek, a dented slouch hat, frayed canvas straps, the scaled legs of the emu\nNOT IN FRAME: farmers, fallen birds, any text.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 5.375s; everything keeps moving at the same natural pace through the end of the 6s generation.\n0–1s: Meredith keeps a level face, his eyes tracking slowly along the fence toward screen-right; the gunner on the tray pushes his hat straight and looks at him.\n1–3s: the emu strolls past the fence at an unhurried walk toward screen-left, turning its head to look at the men; the gunner follows it with his eyes, arms folded.\n3–4.5s: Meredith blinks once and brushes a layer of red dust from his sleeve with a slow hand; the emu steps past the truck, its neck swaying.\n4.5–6s: the gunner tips his hat back down over his eyes with one finger; the emu strolls out toward the left edge, unhurried, and dust drifts after it.\nCAMERA: one continuous very slow push toward the major’s face for the full 6 seconds.\nENVIRONMENT: dust drifts across the road; feathers flutter on the fence wire; the truck’s canvas moves in the breeze.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "eye",
+            "camera_motion": "push",
+            "location": "campion-road",
+            "time_light": "late-afternoon"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B17",
+      "sentences": [
+        "S21"
+      ],
+      "start": 103.46,
+      "end": 109.48,
+      "dur": 6.02,
+      "device": null,
+      "narration_says": "That week, one member of Parliament asked, mockingly, whether a medal would be struck for the soldiers.",
+      "viewer_sees": "In the House of Representatives, one member leans over his bench with a grin and a raised hand while the benches around him laugh",
+      "shots": [
+        {
+          "shot_id": "17",
+          "beat_id": "B17",
+          "link_group": null,
+          "t_in": 103.458,
+          "t_out": 109.5,
+          "use_in": 0,
+          "use_out": 6.042,
+          "use_len": 6.042,
+          "motion_budget": 6.042,
+          "gen_len": 8,
+          "source_file": "shots/part17.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "the grinning member with the dangling medal",
+            "the laughing members on the benches",
+            "the green leather benches",
+            "the Speaker’s chair and tall windows"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a member of Parliament in a dark three-piece suit and round spectacles, leaning forward over the front rail of his green leather bench with a mocking grin, one hand raised high with a small bronze medal on a striped ribbon dangling from his fingers\nACTION: the member leans forward over the front rail of his bench with a broad grin and the small bronze medal dangling from his raised fingers, while the members on the benches around him lean toward each other, smiling, with their hands over their mouths\nSETTING: the House of Representatives chamber of 1932, curved rows of green leather benches, dark polished timber panelling, a high Speaker’s chair, a public gallery rail above and tall arched windows; here late-morning light slanting through the tall arched windows, rows of members in dark suits on both sides, a heavy mace on the table at the center, the Speaker in his chair small and far at the end\nCAMERA: camera stands in the aisle at the member’s level, eye level, medium shot.\nFRAME LAYOUT: left third — the member leaning on the rail, near-camera and large, cropped at the chest, the medal on its ribbon at the upper left; center — the green benches with members leaning toward each other, medium; right third — the Speaker’s chair and the arched windows, small and far; lower edge — the polished rail, near-camera.\nFACING: the member twists toward camera from the right side with his face toward screen-right and the benches opposite; the members around him turn their heads toward screen-left, eyes on him.\nSCREEN DIRECTION: the dangling medal swings from the left edge toward the right on its ribbon; the members on the benches lean toward the left; dust motes drift through the window light toward the right.\nLIGHT: slanting late-morning light from the tall windows at the right, pale gold beams with dust in them, warm highlights on the polished timber, soft green shade on the benches.\nPALETTE: bench green, polished timber brown, dark suit black, medal bronze\nDETAIL: the round spectacles and the mocking grin, the bronze medal and its striped ribbon, the stitching on the green leather, the grain of the polished rail, rows of members readable by outline\nNOT IN FRAME: soldiers, emus, any text.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 6.042s; everything keeps moving at the same natural pace through the end of the 8s generation.\n0–1s: the member dangles the little bronze medal from his raised fingers and grins around the chamber; the medal swings on its ribbon.\n1–3s: he turns the medal in the light and nods toward the opposite benches; the members around him begin to shake with laughter, shoulders bobbing.\n3–5s: a neighbor slaps the bench and wipes an eye with his handkerchief; the member lifts the medal higher and raises his eyebrows.\n5–7s: he lets the medal drop on its ribbon and spreads his hands in mock innocence; the benches ripple with more laughter and heads turn toward the right.\n7–8s: he leans on the rail again with the same grin, the medal swinging on its ribbon; dust drifts through the beams of window light.\nCAMERA: one continuous slow push toward the member for the full 8 seconds.\nENVIRONMENT: dust motes drift through the beams of window light; papers flutter on the table; heads bob along the benches.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "low",
+            "camera_motion": "push",
+            "location": "parliament-chamber",
+            "time_light": "chamber-daylight"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B18",
+      "sentences": [
+        "S22",
+        "S23"
+      ],
+      "start": 109.48,
+      "end": 116.66,
+      "dur": 7.18,
+      "device": null,
+      "narration_says": "On the eighth, Pearce pulled the troops out. The emus kept eating, and the Premier of Western Australia asked for help.",
+      "viewer_sees": "The army truck with the gunners drives away along the dirt road at the left while, at the right, the emus go on grazing in the wheat",
+      "shots": [
+        {
+          "shot_id": "18",
+          "beat_id": "B18",
+          "link_group": null,
+          "t_in": 109.5,
+          "t_out": 116.667,
+          "use_in": 0,
+          "use_out": 7.167,
+          "use_len": 7.167,
+          "motion_budget": 7.167,
+          "gen_len": 8,
+          "source_file": "shots/part18.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "emus",
+            "army-truck"
+          ],
+          "visual_priority": [
+            "the grazing emus at the right",
+            "the army truck driving away at the left",
+            "the long red road curving into the paddocks",
+            "the ripe wheat"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: wild emus, tall flightless birds nearly as tall as a man, shaggy drooping grey-brown feathers, a long bare blue-grey neck, a small head with a bright dark eye, long powerful pale legs, a loose group of six of them at the right third, near-camera, grazing in the ripe wheat with their heads down and their necks curved, one with its head lifted and looking after the truck\nSUBJECT 2: a 1930s Australian army lorry, an open flat tray with low timber sides, a high boxy bonnet, big spoked wheels, a canvas-roofed cab, olive-khaki paint scuffed with red dust, driving away along the dirt road at the left third, small and far, the gunners seated on its tray, a long trail of red dust rising from its wheels\nACTION: the emus graze calmly in the wheat at the right, the nearest lowering its head to a mouthful of ripe ears, while at the left the army truck with the gunners on its tray has just started to pull away along the dirt road\nSETTING: the wheatbelt of Western Australia, flat paddocks of dry golden wheat on red earth, grey wire-and-post fences, scattered low mallee scrub and a few pale gum trees, a vast open horizon; here a long red dirt road curving away toward the far left through gold paddocks, a grey wire fence between the road and the crop, soft clear morning light, a pale blue sky with a few small white clouds\nCAMERA: camera stands in the wheat among the emus, low angle, long shot.\nFRAME LAYOUT: right third — the six emus grazing, near-camera and large, cropped at the knee; left third — the army truck on the road with its dust trail, small and far; center — the grey fence and the ripe wheat; upper edge — a pale blue sky with a few small clouds.\nFACING: we see the emus in three-quarter profile, their heads turned down toward the wheat and one head lifted toward screen-left; the truck is seen from the rear three-quarter, its tray open toward screen-right.\nSCREEN DIRECTION: the truck drives from the center toward the left edge and out of the frame; its dust trail drifts toward the left; the emus’ heads bob slowly in the wheat.\nLIGHT: soft clear morning sun from the upper right, gentle shadows under the birds, a warm gold on the wheat ears, a pale haze of dust along the road.\nPALETTE: wheat gold, emu grey-brown, road red, pale sky blue\nDETAIL: soft drooping feathers on the nearest emus, pale scaled legs among the wheat stems, the tiny truck readable by outline, a thin dust trail\nNOT IN FRAME: close-ups of faces, bodies, farmers, any text.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 7.167s; everything keeps moving at the same natural pace through the end of the 8s generation.\n0–1s: the army truck pulls away along the road toward screen-left, its tray swaying with the gunners; the nearest emu raises its head to watch it go.\n1–3s: the truck gathers speed and its dust trail stretches toward the left; two emus stroll a few steps along the fence, pecking at wheat ears as they go.\n3–5s: the truck shrinks along the curving road; the emu at the front lowers its head and tears off a mouthful of ripe ears, chewing calmly.\n5–7s: the dust trail thins and drifts over the far paddock; the emus walk slowly deeper into the wheat, necks swaying, grazing as they move.\n7–8s: the truck dwindles to a speck at the left edge; the emus keep grazing across the gold crop, unbothered.\nCAMERA: one continuous slow pan toward screen-left following the truck for the full 8 seconds.\nENVIRONMENT: wheat ripples in the breeze; dust thins along the road; a few small clouds drift across the sky.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "low",
+            "camera_motion": "pan",
+            "location": "wheatbelt",
+            "time_light": "morning-clear"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B19",
+      "sentences": [
+        "S24",
+        "S25"
+      ],
+      "start": 116.66,
+      "end": 122.36,
+      "dur": 5.7,
+      "device": null,
+      "narration_says": "On the thirteenth, the guns went back. The first two days brought about forty emus.",
+      "viewer_sees": "The truck rolls back along the road, the gunners climb down and set the Lewis gun on its bipod at the verge; across the paddock emus break into small groups",
+      "shots": [
+        {
+          "shot_id": "19",
+          "beat_id": "B19",
+          "link_group": null,
+          "t_in": 116.667,
+          "t_out": 122.375,
+          "use_in": 0,
+          "use_out": 5.708,
+          "use_len": 5.708,
+          "motion_budget": 5.708,
+          "gen_len": 6,
+          "source_file": "shots/part19.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "gunners",
+            "lewis-gun",
+            "army-truck"
+          ],
+          "visual_priority": [
+            "the two gunners carrying the gun",
+            "the Lewis gun about to be set on the verge",
+            "the army truck at the left edge",
+            "the groups of emus across the paddock"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: two young Australian artillery gunners in their twenties, sunburnt faces, khaki shirts with rolled sleeves, dusty breeches and puttees, khaki slouch hats with one brim pinned up, canvas webbing belts, both of them at the left third, climbing down from the tray and carrying the gun between them, medium, their slouch hats tilted, a determined look on their faces\nSUBJECT 2: a First World War Lewis machine gun on a folding bipod, a long barrel inside a perforated cooling jacket, a flat round pan magazine on top, a wooden stock and a pistol grip, carried between the gunners, held by its bipod and stock, about to be set down on the verge, its barrel pointed toward the right\nSUBJECT 3: a 1930s Australian army lorry, an open flat tray with low timber sides, a high boxy bonnet, big spoked wheels, a canvas-roofed cab, olive-khaki paint scuffed with red dust, pulled up at the left edge of the road, its engine just stopped, a plume of red dust rolling past its tray\nACTION: the army truck has just pulled up at the roadside; the two gunners climb down from the tray carrying the Lewis gun between them toward the grassy verge, while across the paddock at the right many small groups of emus lift their heads\nSETTING: the wheatbelt of Western Australia, flat paddocks of dry golden wheat on red earth, grey wire-and-post fences, scattered low mallee scrub and a few pale gum trees, a vast open horizon; here a grassy verge beside the red dirt road, a grey fence, a wide paddock where small groups of emus stand and graze, bright morning sun with long soft shadows, a pale dust haze, a few small clouds\nCAMERA: camera stands on the verge ahead of the gunners, low angle, medium shot.\nFRAME LAYOUT: left third — the two gunners carrying the gun, near-camera and large, cropped at the knee, the truck at the left edge; center — the grassy verge and the grey fence; right third — many small groups of emus across the paddock, small and far; upper edge — a pale sky.\nFACING: the gunners advance toward camera from the left, their faces and shoulders angled toward screen-right and the paddock; the emus raise their heads toward screen-left.\nSCREEN DIRECTION: the gunners carry the gun from the left edge toward the center and the verge; dust rolls past the truck toward the right; the emus’ heads lift toward the left.\nLIGHT: bright low morning sun from the left, long soft shadows toward the right, a warm gold rim on the gunners’ shoulders, red dust glowing.\nPALETTE: khaki, red dust, wheat gold, pale sky blue\nDETAIL: creases and dust on the gunners’ sleeves, the perforated barrel jacket and pan magazine, grass seed heads on the verge, small emu groups readable by outline\nNOT IN FRAME: Meredith, farmers, fallen birds, any text.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 5.708s; everything keeps moving at the same natural pace through the end of the 6s generation.\n0–1s: the gunners step down from the tray with the gun between them and start along the verge toward screen-right; the emus lift their heads.\n1–3s: they set the gun on its bipod on the verge and drop to one knee, the first gunner sighting along the barrel; the groups of emus fidget and shift.\n3–4.5s: the second gunner fits a pan magazine onto the gun and slaps it home; the emu groups break apart and start running in different directions.\n4.5–6s: small groups of emus scatter across the paddock toward the right in all directions, dust rising under their feet; the gunners track them along the barrel.\nCAMERA: one continuous slow push toward the gunners for the full 6 seconds.\nENVIRONMENT: dust rolls past the truck; grass seed heads sway on the verge; red dust rises from the emus’ feet.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "low",
+            "camera_motion": "push",
+            "location": "campion-road",
+            "time_light": "morning-hard-sun"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B20",
+      "sentences": [
+        "S26",
+        "S27"
+      ],
+      "start": 122.36,
+      "end": 129.26,
+      "dur": 6.9,
+      "device": null,
+      "narration_says": "By the beginning of December, the soldiers were killing about a hundred a week. On the tenth, Meredith was recalled.",
+      "viewer_sees": "Meredith unfolds a telegram beside the truck and reads it; the gunners begin loading the Lewis gun back onto the tray as emus graze beyond the fence",
+      "shots": [
+        {
+          "shot_id": "20",
+          "beat_id": "B20",
+          "link_group": null,
+          "t_in": 122.375,
+          "t_out": 129.25,
+          "use_in": 0,
+          "use_out": 6.875,
+          "use_len": 6.875,
+          "motion_budget": 6.875,
+          "gen_len": 8,
+          "source_file": "shots/part20.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "meredith",
+            "lewis-gun",
+            "army-truck"
+          ],
+          "visual_priority": [
+            "Major Meredith reading the telegram",
+            "the Lewis gun being lifted toward the tray",
+            "the army truck with its lowered tailgate",
+            "the emus grazing beyond the fence"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Major Meredith, a lean Australian artillery officer of about forty, a sunburnt narrow face, a trim moustache, a khaki tunic with a leather Sam Browne belt, riding breeches and puttees, a khaki slouch hat with one brim pinned up, at the center, near-camera and large, holding a small folded telegram open in both hands and reading it with narrowed eyes, his jaw set\nSUBJECT 2: a First World War Lewis machine gun on a folding bipod, a long barrel inside a perforated cooling jacket, a flat round pan magazine on top, a wooden stock and a pistol grip, held between two gunners at the left third by its bipod and stock, its pan magazine removed, ready to be lifted up to the tray\nSUBJECT 3: a 1930s Australian army lorry, an open flat tray with low timber sides, a high boxy bonnet, big spoked wheels, a canvas-roofed cab, olive-khaki paint scuffed with red dust, parked at the left third, its tailgate lowered, its tray half-loaded with folded canvas and empty crates\nACTION: Meredith stands beside the truck at the center unfolding a small telegram, his eyes on the page and his jaw set; at the left two gunners stand at the lowered tailgate with the Lewis gun between them, waiting for his word, while a few emus graze beyond the fence at the right\nSETTING: the wheatbelt of Western Australia, flat paddocks of dry golden wheat on red earth, grey wire-and-post fences, scattered low mallee scrub and a few pale gum trees, a vast open horizon; here the red dirt road at midday with a grey fence along the right, a paddock of trampled gold wheat beyond it, a hard bright sky, heat shimmer over the road\nCAMERA: camera stands on the road at the tailgate end of the truck, eye level, medium shot.\nFRAME LAYOUT: center — Major Meredith holding the telegram, near-camera and large, cropped at the waist; left third — the truck with its lowered tailgate and the two gunners with the gun, medium; right third — the grey fence and a few emus grazing in the paddock, small and far.\nFACING: the major angles his chest and face to camera from the left, eyes down on the telegram; the gunners look toward screen-right, eyes on him; the far emus lower their heads to the wheat.\nSCREEN DIRECTION: the gunners lift the gun from the center toward the left and the tray; dust from the wheels drifts toward the left; the telegram flutters toward the right.\nLIGHT: hard midday sun from high overhead, short sharp shadows under hat brims and the truck, a bright white glare on the road, a warm gold rim on the khaki.\nPALETTE: khaki, road red, telegram cream, wheat gold\nDETAIL: the folded telegram’s creases, the major’s sunburnt cheek and set jaw, canvas webbing on the gunners, the perforated barrel jacket, grains of red dust on the tailgate\nNOT IN FRAME: farmers, fallen birds, any text or writing on the telegram.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 6.875s; everything keeps moving at the same natural pace through the end of the 8s generation.\n0–1s: Meredith reads the telegram, his eyes running down the page; the gunners at the tailgate shift their grip on the gun and wait for him.\n1–3s: he folds the telegram in half and in half again and slides it into his shirt pocket; the gunners look at each other and at him.\n3–5s: Meredith gives a short nod toward the tray and the gunners lift the Lewis gun between them toward the truck; he turns and looks out across the paddock.\n5–7s: the gunners slide the gun onto the tray and strap it down with canvas, one man hauling the strap tight; Meredith walks slowly toward the cab.\n7–8s: the gunners climb up onto the tray while Meredith opens the cab door and glances once toward the emus; dust drifts over the road.\nCAMERA: one continuous slow push toward the major for the full 8 seconds.\nENVIRONMENT: heat shimmer rises from the road; dust drifts around the wheels.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "eye",
+            "camera_motion": "locked",
+            "location": "campion-road",
+            "time_light": "midday-hard-sun"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B21",
+      "sentences": [
+        "S28"
+      ],
+      "start": 129.26,
+      "end": 138.12,
+      "dur": 8.86,
+      "device": null,
+      "narration_says": "His report claimed 986 birds killed with 9,860 rounds, exactly ten rounds for each one.",
+      "viewer_sees": "Meredith at a field table by lamplight writes his report, a neat row of ten brass cartridges and one grey emu feather beside the page",
+      "shots": [
+        {
+          "shot_id": "21",
+          "beat_id": "B21",
+          "link_group": null,
+          "t_in": 129.25,
+          "t_out": 138.125,
+          "use_in": 0,
+          "use_out": 8.875,
+          "use_len": 8.875,
+          "motion_budget": 8.875,
+          "gen_len": 10,
+          "source_file": "shots/part21.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "meredith"
+          ],
+          "visual_priority": [
+            "Major Meredith writing his report",
+            "the neat row of ten brass cartridges",
+            "the single grey-brown emu feather",
+            "the kerosene lamp and the glowing canvas"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Major Meredith, a lean Australian artillery officer of about forty, a sunburnt narrow face, a trim moustache, a khaki tunic with a leather Sam Browne belt, riding breeches and puttees, a khaki slouch hat with one brim pinned up, seated at a folding field table at the center, near-camera, his slouch hat off and laid beside him, writing carefully in a ruled report book with a pen, his face lit from below by the lamp\nACTION: the major sits at a folding field table inside a canvas tent with a pen poised above a ruled page; beside the page a neat row of ten brass cartridges and a single grey-brown emu feather lie on the table, and a kerosene lamp burns at the right\nSETTING: the inside of an army canvas tent at night, a folding field table with a ruled report book, an inkwell and a tin mug, a kerosene lamp with a glass chimney, canvas walls glowing amber, a folded khaki tunic over a camp stool\nCAMERA: camera stands across the table from the major, slightly high, close shot.\nFRAME LAYOUT: center — Major Meredith writing, near-camera and large, cropped at the chest; lower left — the neat row of ten brass cartridges and the grey-brown feather beside the page, near-camera; right third — the kerosene lamp, medium; upper edge — the glowing canvas wall.\nFACING: the major leans toward camera from the left side, his lamp-lit face and shoulders toward us, eyes down on the page.\nSCREEN DIRECTION: the pen moves along the ruled lines from the left edge toward the right; lamp smoke rises and curls toward the right; the feather’s barbs tremble in the draught.\nLIGHT: warm kerosene lamplight from the right, a golden pool on the page and the major’s face, deep brown shadows on the canvas, brass cartridges glinting in a row.\nPALETTE: lamp amber, canvas cream, khaki, brass gold\nDETAIL: the pen nib and wet ink, the ten brass cartridges each with its own glint, the soft barbs of the grey-brown feather, the weave of the canvas wall\nNOT IN FRAME: gunners, emus, any readable text or numerals on the page.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 8.875s; everything keeps moving at the same natural pace through the end of the 10s generation.\n0–1s: the major dips the pen in the inkwell and begins to write across the ruled page; the lamp flame leans toward screen-right.\n1–3.5s: his pen moves steadily along the lines and he glances along the row of brass cartridges before writing on; moths circle the lamp chimney.\n3.5–6s: he blows gently across the wet ink and the feather beside the page trembles; smoke curls from the lamp.\n6–8.5s: he writes a longer line, his lips moving slightly, and lays the pen across the page; his other hand drums two fingers on the table beside the feather.\n8.5–10s: he leans back in the folding chair and rubs his eyes with finger and thumb and lifts his head toward the lamp; smoke curls from the chimney.\nCAMERA: one continuous slow push toward the major’s hands and the page for the full 10 seconds.\nENVIRONMENT: lamp flame flickers; moths circle the chimney; the canvas wall breathes in and out; smoke curls upward.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "CU",
+            "angle": "high",
+            "camera_motion": "push",
+            "location": "army-camp",
+            "time_light": "lamplight"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B22",
+      "sentences": [
+        "S29"
+      ],
+      "start": 138.12,
+      "end": 142.4,
+      "dur": 4.28,
+      "device": "empty-aftermath",
+      "narration_says": "He added that another 2,500 had died of their wounds.",
+      "viewer_sees": "EMPTY AFTERMATH — grey-brown emu feathers drift over an empty wheat paddock at dusk, the fence line and one dead white gum quiet in the low light",
+      "shots": [
+        {
+          "shot_id": "22",
+          "beat_id": "B22",
+          "link_group": null,
+          "t_in": 138.125,
+          "t_out": 142.417,
+          "use_in": 0,
+          "use_out": 4.292,
+          "use_len": 4.292,
+          "motion_budget": 4.292,
+          "gen_len": 6,
+          "source_file": "shots/part22.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "three drifting grey-brown emu feathers",
+            "the empty paddock with its flattened lanes",
+            "the sagging fence and the white dead gum",
+            "the violet dusk sky"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: loose grey-brown emu feathers, long and soft with dark tips, drifting low across an empty paddock of trampled gold wheat at dusk, three of them large and sharp in the near ground\nACTION: three long grey-brown feathers hang in the evening air just above the trampled wheat at the left, about to be lifted by the breeze, over a wide empty paddock with not a single bird or person in it\nSETTING: the wheatbelt of Western Australia, flat paddocks of dry golden wheat on red earth, grey wire-and-post fences, scattered low mallee scrub and a few pale gum trees, a vast open horizon; here a wide empty paddock of trampled gold wheat with broad flattened lanes through it, tall dry grass tufts along a sagging grey fence with one white dead gum, a violet dusk sky with the last gold at the horizon, a thin crescent moon, a drift of pale dust low over the far edge\nCAMERA: camera stands low in the flattened wheat at the height of the feathers, eye level, long shot.\nFRAME LAYOUT: left third — three drifting feathers, near-camera and large; center — the wide empty paddock with its flattened lanes; right third — the sagging grey fence and the white dead gum, far and hazy; upper edge — the violet dusk sky and the thin moon.\nFACING: there are no figures; the feathers turn their broad faces toward camera as they hang over the wheat.\nSCREEN DIRECTION: the feathers drift slowly from the left edge toward the right across the empty paddock; the wheat sways toward the right; a thin dust haze moves toward the right.\nLIGHT: last gold light low at the horizon on the right, a violet sky above, soft cold shadows across the flattened wheat, a faint gold edge on each feather.\nPALETTE: dusk violet, trampled gold, feather grey-brown, moon white\nDETAIL: every barb of the three near feathers lit at the edge, flattened wheat stems in broad lanes, the prints of many three-toed feet pressed into the soil near camera, the dead gum’s pale bark, a few early stars at the top\nNOT IN FRAME: birds, bodies, people, vehicles, any text.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 4.292s; everything keeps moving at the same natural pace through the end of the 6s generation.\n0–1s: the three feathers lift off the air and drift slowly toward screen-right above the trampled wheat; the flattened stems quiver.\n1–3s: a gust carries the feathers higher and farther along the empty paddock, turning over and over; the wheat rolls in a long wave toward the right.\n3–4.5s: more loose feathers float into the frame from the left edge and drift after the first three; the last gold light slides across the flattened lanes.\n4.5–6s: the feathers sail on toward the fence and the pale gum at the right, small and slow; dusk deepens over the empty paddock.\nCAMERA: one continuous slow pan toward screen-right following the drifting feathers for the full 6 seconds.\nENVIRONMENT: wheat ripples in long waves; dust haze moves with the breeze; the thin moon glows; the fence wire hums.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts",
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "LS",
+            "angle": "eye",
+            "camera_motion": "pan",
+            "location": "wheatbelt",
+            "time_light": "dusk-violet"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B23",
+      "sentences": [
+        "S30"
+      ],
+      "start": 142.4,
+      "end": 148.32,
+      "dur": 5.92,
+      "device": null,
+      "narration_says": "A historian, Greg Beyer, calls the figure highly disputed and probably very inflated.",
+      "viewer_sees": "At an archive desk under a lamp, a scholar's hands in a tweed sleeve circle one figure on a yellowed typed report with a pencil and shake their head slowly",
+      "shots": [
+        {
+          "shot_id": "23",
+          "beat_id": "B23",
+          "link_group": null,
+          "t_in": 142.417,
+          "t_out": 148.333,
+          "use_in": 0,
+          "use_out": 5.916,
+          "use_len": 5.916,
+          "motion_budget": 5.916,
+          "gen_len": 6,
+          "source_file": "shots/part23.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "the scholar’s pencil and magnifying glass over the yellowed report",
+            "the circled line on the page",
+            "the green-shaded lamp",
+            "the stack of folders and the cold tea"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a scholar’s two hands in a worn tweed sleeve, one holding a sharpened pencil over a yellowed typed report and the other holding a magnifying glass above one line of typing, the page marked only by rows of grey type too small to read\nACTION: the scholar’s pencil hovers just above one line of the yellowed report with the magnifying glass held over it, and a lamp lights the page from the upper right; a stack of old folders and a tin of paperclips sit at the left edge\nSETTING: an archive reading desk of dark worn timber at night, a green-shaded brass lamp, a stack of cream folders tied with tape, a tin of paperclips, a cup of tea going cold, a pair of folded reading glasses, a battered brown leather satchel on the floor, rows of grey shelves lost in the dark at the top\nCAMERA: camera hangs over the desk, high angle, close shot.\nFRAME LAYOUT: center — the yellowed report with the magnifying glass and the pencil, near-camera and large; left third — the stack of folders and the paperclip tin; right third — the green-shaded lamp, medium; upper edge — the dark shelves, far and out of focus.\nFACING: we look down on the report page; the scholar’s hands enter from the lower right and point toward screen-left along the line of type.\nSCREEN DIRECTION: the pencil’s tip drifts from the right edge toward the left along the line; steam rises from the cup toward the left; dust motes drift through the lamp beam toward the left.\nLIGHT: warm green-shaded lamplight from the upper right, a bright pool on the yellowed page, deep brown shadow around it, a faint glint on the magnifying glass.\nPALETTE: paper yellow, lamp amber, tweed brown, desk green\nDETAIL: the grain of the old paper and its foxed edges, rows of grey typed lines too small to read, the tweed weave of the sleeve, the bevel of the magnifying glass, a paperclip’s tiny glint, the cracked leather of the satchel\nNOT IN FRAME: faces, readable words or numerals, soldiers, emus.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 5.916s; everything keeps moving at the same natural pace through the end of the 6s generation.\n0–1s: the pencil moves along one line of the yellowed report as the magnifying glass slides over it; dust motes drift through the lamp beam.\n1–3s: the hand draws a slow circle around one figure on the page and taps the pencil’s tip beside it twice; steam rises from the cup.\n3–4.5s: the other hand lifts the magnifying glass and tilts it, its lens flashing a bright crescent across the paper; the pencil hovers and shakes slowly from side to side.\n4.5–6s: the hand draws a second, wider circle around the first and sets the pencil down on the page; the lamp light flickers.\nCAMERA: one continuous slow push toward the circled line for the full 6 seconds.\nENVIRONMENT: dust motes drift through the lamp beam; steam rises from the tea; the lamp light flickers faintly.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts",
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "CU",
+            "angle": "high",
+            "camera_motion": "push",
+            "location": "archive-desk",
+            "time_light": "lamplight"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B24",
+      "sentences": [
+        "S31"
+      ],
+      "start": 148.32,
+      "end": 157.66,
+      "dur": 9.34,
+      "device": null,
+      "narration_says": "And Meredith is quoted as saying that a military division with the bullet-carrying capacity of these birds would face any army in the world.",
+      "viewer_sees": "Meredith stands on the dam bank at dusk as a long disciplined column of emus walks past him in single file like a division on parade, one turning its head to look at him",
+      "shots": [
+        {
+          "shot_id": "24",
+          "beat_id": "B24",
+          "link_group": null,
+          "t_in": 148.333,
+          "t_out": 157.667,
+          "use_in": 0,
+          "use_out": 9.334,
+          "use_len": 9.334,
+          "motion_budget": null,
+          "gen_len": 10,
+          "source_file": "shots/part24.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "emus",
+            "meredith"
+          ],
+          "visual_priority": [
+            "the long column of emus walking in single file",
+            "Major Meredith standing alone on the dam bank",
+            "the orange glow on the muddy pool",
+            "the dry saltbush along the crest"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: wild emus, tall flightless birds nearly as tall as a man, shaggy drooping grey-brown feathers, a long bare blue-grey neck, a small head with a bright dark eye, long powerful pale legs, a long disciplined column of twenty or more walking toward the left along the dam bank in single file, evenly spaced like a division on parade, necks upright and each bird the same distance from the next, medium size, one near the front turning its head to look at the major\nSUBJECT 2: Major Meredith, a lean Australian artillery officer of about forty, a sunburnt narrow face, a trim moustache, a khaki tunic with a leather Sam Browne belt, riding breeches and puttees, a khaki slouch hat with one brim pinned up, standing alone at the left third on the dam bank, near-camera and large, his hands clasped at his back, watching the column come with a level unreadable look\nACTION: the major stands alone on the dam bank at dusk with his hands clasped at his back while a long evenly spaced column of emus comes walking toward him along the bank in single file, necks upright, the nearest bird about to pass him\nSETTING: a small farm dam in the wheatbelt, a raised bank of raw red earth around a shallow muddy pool, dry saltbush and low mallee scrub along the bank, one dead white gum stump; here the red earth bank at dusk with the muddy pool turning orange below it, dry saltbush along the crest, the empty paddock beyond, a low blazing sun, long shadows\nCAMERA: camera stands on the bank a few paces from the major, low angle, long shot.\nFRAME LAYOUT: left third — Major Meredith, near-camera and large, cropped at the knee; center and right third — the column of emus in single file along the bank, receding toward the right, medium shrinking to small; lower edge — dry saltbush, near-camera; upper edge — the orange dusk sky.\nFACING: the major presents his face and chest to camera at an angle from the right, eyes on the column at screen-right; the emus walk in profile, heads toward screen-left, the nearest swinging its head toward the major.\nSCREEN DIRECTION: the column advances from the right edge toward the left in single file; long shadows stretch toward the left across the bank; the pool’s orange glow ripples toward the left.\nLIGHT: low blazing orange sun from the right, long deep shadows toward the left, a bright gold rim on each emu’s back feathers and on the major’s hat brim, cool violet shade in the saltbush.\nPALETTE: dusk orange, red earth, emu grey-brown, khaki\nDETAIL: each bird in the column readable by outline with its shaggy feathers lit at the edge, the major’s hat and tunic, crumbling red earth and saltbush leaves, the orange glow on the pool\nNOT IN FRAME: gunners, guns, fallen birds, farmers, any text.",
+          "animation_prompt": "MOTION BUDGET: everything keeps moving at the same natural pace through the end of the 10s generation.\n0–1s: the first emu in the column strides along the bank toward screen-left at an even pace; Meredith’s eyes follow it.\n1–3.5s: the column keeps coming in perfect single file, each bird the same distance from the next, necks swaying in unison; Meredith turns his head slowly to track them.\n3.5–6s: the nearest emu passes within a few paces of the major and turns its head to look at him, one dark eye catching the sun; Meredith meets its look without a flicker.\n6–8.5s: the column strides on past him, bird after bird, feathers swaying; Meredith keeps his hands clasped and his eyes level.\n8.5–10s: the last birds file past toward the left edge as the sun sinks lower; his shadow lengthens across the bank.\nCAMERA: one continuous slow push toward the major for the full 10 seconds.\nENVIRONMENT: orange light ripples on the muddy pool; dust lifts from the bank under the birds’ feet; saltbush sways.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "LS",
+            "angle": "low",
+            "camera_motion": "push",
+            "location": "campion-dam",
+            "time_light": "dusk-orange"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B25",
+      "sentences": [
+        "S32",
+        "S33"
+      ],
+      "start": 157.66,
+      "end": 168.74,
+      "dur": 11.08,
+      "device": null,
+      "narration_says": "The army never came back. The farmers asked again in 1934, 1943, and 1948, and each time were refused.",
+      "viewer_sees": "An empty dirt road at Campion with no truck on it and farmers waiting at the roadside; then at a government counter a clerk shakes his head and slides their written request back across to them",
+      "shots": [
+        {
+          "shot_id": "25",
+          "beat_id": "B25",
+          "link_group": null,
+          "t_in": 157.667,
+          "t_out": 163.333,
+          "use_in": 0,
+          "use_out": 5.666,
+          "use_len": 5.666,
+          "motion_budget": 5.666,
+          "gen_len": 6,
+          "source_file": "shots/part25.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "farmers"
+          ],
+          "visual_priority": [
+            "the four farmers waiting at the roadside",
+            "the long empty dirt road",
+            "the pale dried wheel ruts",
+            "the low grey sky"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: veteran wheat farmers of Western Australia, weathered men in their forties, sun-creased faces, collarless cotton work shirts with rolled sleeves, braces, battered brown felt hats, dusty boots, a few old khaki army tunics, four of them standing in a loose line at the left edge of the road, small, hats in their hands, looking down the empty road toward the right and waiting\nACTION: four farmers stand at the roadside with their hats in their hands, looking down the long empty dirt road toward the horizon where no truck is coming, the ruts of old wheels dry and pale in the red dust\nSETTING: the wheatbelt of Western Australia, flat paddocks of dry golden wheat on red earth, grey wire-and-post fences, scattered low mallee scrub and a few pale gum trees, a vast open horizon; here a long empty red dirt road running straight to a hazy horizon, old wheel ruts dried pale in the dust, a grey fence on both sides, overcast flat light and a low grey sky, a lone crow on a post\nCAMERA: camera stands in the middle of the road, eye level, long shot.\nFRAME LAYOUT: left third — the four farmers standing at the roadside, small, medium-far; center — the long empty road running to the horizon; right third — the grey fence and the empty paddock, far and hazy; upper edge — a low grey sky.\nFACING: the farmers stand with their faces and chests angled toward camera, all eyes going right down the empty road toward screen-right.\nSCREEN DIRECTION: the farmers’ gaze runs from the left edge along the road toward the right horizon; dust drifts slowly along the road toward the right; a loose hat brim flutters toward the right.\nLIGHT: flat overcast light, no hard shadows, a pale grey-white sky, dull red on the road, a faint cold blue on the fence wire.\nPALETTE: road red, sky grey, work-shirt grey, faded gold\nDETAIL: figures readable by outline and posture, pale dried wheel ruts in red dust, weathered fence posts, a lone crow on a post\nNOT IN FRAME: trucks, soldiers, emus, any text.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 5.666s; everything keeps moving at the same natural pace through the end of the 6s generation.\n0–1s: the four farmers shift their weight and look down the empty road toward screen-right; a breath of wind lifts dust along the ruts.\n1–3s: one farmer turns his hat in his hands and glances at the man beside him; the lone crow on the post hops and flaps its wings.\n3–4.5s: the leader of the four takes a few slow steps out onto the road and shades his eyes toward the horizon; the others follow his gaze.\n4.5–6s: the leader lowers his hand and his shoulders drop; the farmers turn toward each other and gather in the empty road as the dust drifts.\nCAMERA: one continuous slow pull back along the road for the full 6 seconds.\nENVIRONMENT: dust drifts along the ruts; the crow flaps on the post; the fence wire hums in the wind.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts",
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "LS",
+            "angle": "eye",
+            "camera_motion": "pull",
+            "location": "campion-road",
+            "time_light": "overcast-flat"
+          }
+        },
+        {
+          "shot_id": "26",
+          "beat_id": "B25",
+          "link_group": null,
+          "t_in": 163.333,
+          "t_out": 168.75,
+          "use_in": 0,
+          "use_out": 5.417,
+          "use_len": 5.417,
+          "motion_budget": 5.417,
+          "gen_len": 6,
+          "source_file": "shots/part26.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "farmers"
+          ],
+          "visual_priority": [
+            "the three farmers holding out their request",
+            "the clerk reading it with pressed lips",
+            "the scarred timber counter",
+            "the pigeonhole shelf of folded papers"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: veteran wheat farmers of Western Australia, weathered men in their forties, sun-creased faces, collarless cotton work shirts with rolled sleeves, braces, battered brown felt hats, dusty boots, a few old khaki army tunics, three of them at the left third, medium, hats in their hands, standing at a timber counter and holding out a written request, their faces hopeful\nACTION: three farmers stand at a scarred timber counter in a government office holding out a written request, while the clerk on the far side looks at it with his lips pressed together and one hand already flat on the counter\nSETTING: a government office counter of the 1930s in wood and brass, a tall timber counter scarred by pens and boots, a brass rail, a pigeonhole shelf stuffed with folded papers behind the clerk, a green-shaded lamp, a brass counter bell, a high window with pale light\nCAMERA: camera stands at the end of the counter, eye level, medium shot.\nFRAME LAYOUT: left third — the three farmers, medium, at the counter; right third — the clerk behind the counter, near-camera and large, cropped at the chest; center — the scarred timber counter with the written request on it; upper edge — the pigeonhole shelf and the high window, hazy.\nFACING: the farmers face the clerk across the counter, their faces angled toward camera and screen-right; the clerk looks down at the request, his face toward screen-left.\nSCREEN DIRECTION: the farmers’ hands hold the request out from the left edge toward the right; the clerk’s hand slides toward the left across the counter; dust motes drift through the window light toward the left.\nLIGHT: pale grey window light from the upper right, a green glow from the shaded lamp, soft cool shadows on the farmers’ faces, warm brown on the timber.\nPALETTE: timber brown, paper cream, lamp green, work-shirt grey\nDETAIL: scratches and pen marks on the counter, the folded request with ruled lines but no readable words, the clerk’s sleeve garters, dust on the farmers’ boots and hat brims\nNOT IN FRAME: soldiers, guns, emus, any readable text.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 5.417s; everything keeps moving at the same natural pace through the end of the 6s generation.\n0–1s: the leader of the farmers slides the written request across the counter toward screen-right; the clerk looks down at it.\n1–3s: the clerk reads for a moment and shakes his head slowly, lifting his hand in a small apologetic gesture; the farmers lean forward.\n3–4.5s: he slides the request back across the counter toward the left with two fingers; the leader stares at the paper and the other two look at their boots.\n4.5–6s: the leader takes the paper, folds it once and turns away from the counter with his hat in his other hand; the others follow him toward the left edge.\nCAMERA: one continuous slow push toward the counter for the full 6 seconds.\nENVIRONMENT: papers in the pigeonholes stir in a draught; the lamp’s green glow flickers; dust motes drift through the window light.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "eye",
+            "camera_motion": "locked",
+            "location": "government-office",
+            "time_light": "window-daylight"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B26",
+      "sentences": [
+        "S34"
+      ],
+      "start": 168.74,
+      "end": 173.24,
+      "dur": 4.5,
+      "device": null,
+      "narration_says": "What worked was the bounty the state had begun in 1923.",
+      "viewer_sees": "A clerk at a timber counter stamps a claim slip and slides a few coins across to a farmer, who pockets them and nods",
+      "shots": [
+        {
+          "shot_id": "27",
+          "beat_id": "B26",
+          "link_group": null,
+          "t_in": 168.75,
+          "t_out": 173.25,
+          "use_in": 0,
+          "use_out": 4.5,
+          "use_len": 4.5,
+          "motion_budget": 4.5,
+          "gen_len": 6,
+          "source_file": "shots/part27.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "farmers",
+            "bounty-ledger"
+          ],
+          "visual_priority": [
+            "the farmers: one farmer waiting with his hand open on the counter",
+            "the bounty ledger and the rubber stamp",
+            "the clerk raising the stamp",
+            "the short stack of coins"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: veteran wheat farmers of Western Australia, weathered men in their forties, sun-creased faces, collarless cotton work shirts with rolled sleeves, braces, battered brown felt hats, dusty boots, a few old khaki army tunics, one of them at the left edge, close to camera, cropped at the chest, his hand open on the counter and his hat pushed back, a small relieved smile starting\nSUBJECT 2: a heavy bound ledger on a scarred timber counter, thick cream pages ruled in columns and filled with tick marks, a rubber stamp and an inkpad beside it, a pile of small paper claim slips, open at the center of the counter, the clerk’s hand holding the rubber stamp raised above one claim slip, a short stack of stamped slips at its edge and a few small silver coins beside the inkpad\nACTION: the clerk at the right holds a rubber stamp raised above a claim slip on the open ledger while the farmer at the left waits with his hand open on the counter, a few small coins stacked beside the inkpad\nSETTING: a country bounty office of 1934, a scarred timber counter with a brass rail, a pigeonhole shelf of folded papers, a high window with pale gold light, a cash tin with its lid open, a coat stand with a brown felt hat\nCAMERA: camera stands at the farmer’s shoulder at the counter, eye level, medium shot.\nFRAME LAYOUT: left third — the farmer’s shoulder and profile, near-camera, cropped at the chest; center — the open ledger, the stamp and the inkpad on the counter; right third — the clerk, medium, in shirtsleeves and garters; upper edge — the pigeonhole shelf and the window, hazy.\nFACING: the farmer is in profile with his face toward screen-right and the clerk; the clerk looks down at the slip, his face toward screen-left.\nSCREEN DIRECTION: the clerk’s stamp comes down from the right edge toward the left; the coins slide toward the left across the timber; dust motes drift through the window light toward the left.\nLIGHT: warm gold window light from the upper right, a soft shine on the brass rail and the coins, cool shadow under the counter, a warm glow on the cream ledger pages.\nPALETTE: timber brown, ledger cream, brass gold, work-shirt grey\nDETAIL: the rubber stamp’s worn wooden handle and inkpad, tick marks in the ledger columns, small silver coins in a short stack, the clerk’s garters and sleeve cuffs\nNOT IN FRAME: soldiers, guns, emus, any readable text or numerals.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 4.5s; everything keeps moving at the same natural pace through the end of the 6s generation.\n0–1s: the clerk brings the rubber stamp down on the claim slip with a firm thump and lifts it again; the farmer watches with his hand open on the counter.\n1–3s: the clerk blows on the wet ink, tears the slip off and slides a few coins across the timber toward screen-left; the farmer’s fingers close over them.\n3–4.5s: the farmer weighs the coins in his palm, drops them in his shirt pocket and pats it; the clerk reaches for the next slip.\n4.5–6s: the farmer nods once to the clerk and touches his hat brim, turning toward the left edge; the clerk stamps again, thump after thump.\nCAMERA: one continuous slow push toward the farmer’s hand and the stamp for the full 6 seconds.\nENVIRONMENT: the brass rail glints in the window light; papers in the pigeonholes flutter; dust floats over the counter.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "eye",
+            "camera_motion": "push",
+            "location": "bounty-office",
+            "time_light": "window-daylight"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B27",
+      "sentences": [
+        "S35"
+      ],
+      "start": 173.24,
+      "end": 179.66,
+      "dur": 6.42,
+      "device": "ledger-accumulation",
+      "narration_says": "In six months of 1934, farmers claimed 57,034 bounties.",
+      "viewer_sees": "LEDGER/ACCUMULATION — stamped claim slips pile up on the clerk's counter faster than he can file them, the heap spilling over the edge while the line of farmers outside reaches out the door",
+      "shots": [
+        {
+          "shot_id": "28",
+          "beat_id": "B27",
+          "link_group": null,
+          "t_in": 173.25,
+          "t_out": 179.667,
+          "use_in": 0,
+          "use_out": 6.417,
+          "use_len": 6.417,
+          "motion_budget": 6.417,
+          "gen_len": 8,
+          "source_file": "shots/part28.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "bounty-ledger"
+          ],
+          "visual_priority": [
+            "the bounty ledger beside the great heap of stamped claim slips spilling off the counter",
+            "the open bounty ledger",
+            "the clerk stamping with a tired face",
+            "the line of farmers out the door"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a heavy bound ledger on a scarred timber counter, thick cream pages ruled in columns and filled with tick marks, a rubber stamp and an inkpad beside it, a pile of small paper claim slips, open at the left third of the counter, its pages thick with tick marks, a mountain of stamped claim slips heaped beside it and spilling over the counter’s edge in a paper cascade, near-camera and large\nACTION: a great heap of stamped claim slips has built up on the counter beside the open ledger and is beginning to slide over the edge, while the clerk at the center brings the stamp down on one more with a tired face and a line of six farmers in battered hats stretches out the open door at the right\nSETTING: a busy country bounty office, a scarred timber counter heaped with paper, the clerk’s inkpad and rubber stamp, a brass rail, an open door at the right with bright daylight and a long queue of men outside, a pigeonhole shelf overflowing with slips, dust in the sunbeams\nCAMERA: camera stands at the end of the counter, high angle, medium shot.\nFRAME LAYOUT: left third — the open ledger and the great heap of claim slips spilling over the counter’s edge, near-camera and large; center — the clerk, medium, stamping; right third — the open door and the line of farmers reaching out of the frame, medium-small; upper edge — the pigeonhole shelf overflowing with paper.\nFACING: we see the clerk three-quarter from the front and the left, his eyes on the slip; the farmers in the line face toward screen-left, their faces turned toward the counter.\nSCREEN DIRECTION: the line of farmers moves from the right edge toward the left and the counter; claim slips slide over the counter’s edge toward the left; dust drifts through the sunbeams toward the left.\nLIGHT: bright gold daylight pouring through the open door at the right, a long hard sunbeam across the counter, a warm shine on the paper heap, cool shade at the left.\nPALETTE: paper cream, timber brown, daylight gold, work-shirt grey\nDETAIL: individual stamped slips fanning out of the heap with ink marks, the clerk’s sleeve garters and tired eyes, the grain of the counter, dust in the sunbeam\nNOT IN FRAME: soldiers, guns, emus, any readable text or numerals.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 6.417s; everything keeps moving at the same natural pace through the end of the 8s generation.\n0–1s: the clerk slams the rubber stamp down on another slip and flicks it onto the heap; the line of farmers shuffles one step forward.\n1–3s: the heap of slips creeps toward the counter’s edge and a few slide off and flutter toward the floor; the clerk stamps again without looking up.\n3–5s: a farmer at the head of the line hands over a new claim and the clerk stamps it and drops it on the pile; the pile grows and slides further.\n5–7s: slip after slip pours over the counter’s edge as the clerk stamps faster; the farmers press in at the door.\n7–8s: the clerk wipes his brow with his wrist and reaches for the next claim; the cascade keeps spilling and the queue stretches out of the door.\nCAMERA: one continuous slow pull back from the heap toward the door for the full 8 seconds.\nENVIRONMENT: dust swirls in the sunbeam; loose slips flutter to the floor.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts",
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "MS",
+            "angle": "high",
+            "camera_motion": "pull",
+            "location": "bounty-office",
+            "time_light": "daylight-gold"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B28",
+      "sentences": [
+        "S36",
+        "S37"
+      ],
+      "start": 179.66,
+      "end": 189.14,
+      "dur": 9.48,
+      "device": null,
+      "narration_says": "So who won? The press called it the Emu War, and a later newspaper called the army's retreat the bird's most complete victory.",
+      "viewer_sees": "One emu stands tall on a red rise in the dawn light, the army truck small and far on the road below, leaving; the emu watches it go and lowers its head to graze",
+      "shots": [
+        {
+          "shot_id": "29",
+          "beat_id": "B28",
+          "link_group": null,
+          "t_in": 179.667,
+          "t_out": 189.125,
+          "use_in": 0,
+          "use_out": 9.458,
+          "use_len": 9.458,
+          "motion_budget": null,
+          "gen_len": 10,
+          "source_file": "shots/part29.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "emus",
+            "army-truck"
+          ],
+          "visual_priority": [
+            "the emus: one single emu standing tall on the red rise",
+            "the army truck small and far on the road",
+            "the gold paddocks and long shadows",
+            "the clear pale gold dawn sky"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: wild emus, tall flightless birds nearly as tall as a man, shaggy drooping grey-brown feathers, a long bare blue-grey neck, a small head with a bright dark eye, long powerful pale legs, just one in this frame, standing tall on a red rise at the right third, near-camera and large, upright and calm, its head high and its neck straight, looking out over the land\nSUBJECT 2: a 1930s Australian army lorry, an open flat tray with low timber sides, a high boxy bonnet, big spoked wheels, a canvas-roofed cab, olive-khaki paint scuffed with red dust, small and far on the road below at the left third, driving away, a thin trail of red dust rising from its wheels\nACTION: a single emu stands tall on a red rise in the early light with its head high and its neck straight, looking down at the road below where the army truck is small and far, just beginning to move away\nSETTING: the wheatbelt of Western Australia, flat paddocks of dry golden wheat on red earth, grey wire-and-post fences, scattered low mallee scrub and a few pale gum trees, a vast open horizon; here a rise of red earth with a few tufts of saltbush at the right, a red dirt road winding below through gold paddocks toward the left, a low sun just clearing the horizon, a clear pale gold sky, long cool shadows over the paddocks\nCAMERA: camera stands low on the rise at the emu’s side, low angle, long shot.\nFRAME LAYOUT: right third — the emu on the rise, near-camera and large, cropped at the knee against the sky; left third — the road and the small truck far below, hazy; center — gold paddocks and long shadows; upper edge — a clear pale gold sky.\nFACING: we see the emu in profile from its right side, its head turned toward screen-left and the road; the truck is seen from the rear three-quarter, moving away.\nSCREEN DIRECTION: the truck drives along the road from the center toward the left edge; its dust trail drifts toward the left; the emu’s feathers lift in the wind toward the left.\nLIGHT: low gold dawn sun from the right, a bright rim of gold along the emu’s back feathers and neck, long cool blue shadows over the paddocks, a faint mist on the road.\nPALETTE: dawn gold, red earth, emu grey-brown, pale sky\nDETAIL: individual shaggy feathers lit at the edges, the scaled skin of the legs, the tiny truck readable by outline, saltbush tufts on the rise, mist lying in the paddocks\nNOT IN FRAME: soldiers up close, gunners, fallen birds, any text.",
+          "animation_prompt": "MOTION BUDGET: everything keeps moving at the same natural pace through the end of the 10s generation.\n0–1s: the emu stands tall on the rise with its head high as the army truck pulls away along the road below toward screen-left; its feathers stir in the wind.\n1–3.5s: the truck rolls farther along the winding road, its dust trail stretching toward the left; the emu turns its head slowly to follow it.\n3.5–6s: the truck dwindles to a speck at the left edge of the paddocks; the emu takes one slow step forward to the lip of the rise, its neck swaying.\n6–8.5s: the dust trail fades over the empty road; the emu lowers its head to the saltbush at its feet and pulls off a leaf, chewing slowly.\n8.5–10s: the emu raises its head again and gazes out over the gold paddocks as the sun climbs and the long shadows shorten; mist lifts from the road.\nCAMERA: one continuous slow push toward the emu for the full 10 seconds.\nENVIRONMENT: mist lifts from the paddocks; saltbush shivers in the wind.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "LS",
+            "angle": "low",
+            "camera_motion": "push",
+            "location": "wheatbelt",
+            "time_light": "dawn-gold"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B29",
+      "sentences": [
+        "S38"
+      ],
+      "start": 189.14,
+      "end": 193.74,
+      "dur": 4.6,
+      "device": null,
+      "narration_says": "A paper in 1935 said the machine guns had worked after all.",
+      "viewer_sees": "A farmer leans on a fence reading a newspaper with a dry nod; behind him the wheat stands tall and untouched, one emu far out at the edge of the paddock",
+      "shots": [
+        {
+          "shot_id": "30",
+          "beat_id": "B29",
+          "link_group": null,
+          "t_in": 189.125,
+          "t_out": 193.75,
+          "use_in": 0,
+          "use_out": 4.625,
+          "use_len": 4.625,
+          "motion_budget": 4.625,
+          "gen_len": 6,
+          "source_file": "shots/part30.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "farmers"
+          ],
+          "visual_priority": [
+            "the farmers: one farmer reading his newspaper with a raised eyebrow",
+            "the tall untouched wheat",
+            "the single emu far out in the paddock",
+            "the weathered fence rail"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: veteran wheat farmers of Western Australia, weathered men in their forties, sun-creased faces, collarless cotton work shirts with rolled sleeves, braces, battered brown felt hats, dusty boots, a few old khaki army tunics, one of them at the left third, near-camera and large, cropped at the chest, leaning on a fence rail with a folded newspaper held open in both hands, reading it with one eyebrow raised and a dry half-smile\nACTION: the farmer leans on the top rail of a fence with a folded newspaper held open in both hands, reading it with a raised eyebrow, while beyond him the wheat stands tall and untouched in the evening light and a single emu stands far out at the edge of the paddock\nSETTING: the wheatbelt of Western Australia, flat paddocks of dry golden wheat on red earth, grey wire-and-post fences, scattered low mallee scrub and a few pale gum trees, a vast open horizon; here a paddock of tall dense golden wheat standing whole and untouched right up to the fence, a weathered timber fence rail, a clear warm late-afternoon sky, a single emu far off at the paddock’s edge\nCAMERA: camera stands at the fence on the farmer’s side, eye level, medium shot.\nFRAME LAYOUT: left third — the reading farmer, large and cropped at the chest, the newspaper raised; center — the fence rail and the tall untouched wheat; right third — a single emu far out at the paddock’s edge, small and hazy; upper edge — a warm clear sky.\nFACING: the farmer bends toward camera from the right side, eyes on the newspaper and then lifted toward screen-right; the far emu stands in profile with its head toward screen-left.\nSCREEN DIRECTION: the farmer’s gaze runs from the newspaper toward the right and the far emu; tall wheat sways toward the right; the newspaper’s edge flutters toward the right.\nLIGHT: warm low late-afternoon sun from the right, a gold rim on the farmer’s hat and the wheat heads, soft long shadows toward the left, a clear warm sky.\nPALETTE: wheat gold, newsprint cream, work-shirt grey, warm sky\nDETAIL: creases in the folded newspaper with only unreadable grey columns, the farmer’s stubble and one raised eyebrow, individual wheat ears glowing, splinters on the weathered rail\nNOT IN FRAME: soldiers, guns, trucks, any readable text or headlines.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 4.625s; everything keeps moving at the same natural pace through the end of the 6s generation.\n0–1s: the farmer lifts the newspaper higher and reads down the column with one eyebrow raised; the wheat heads sway in the evening breeze.\n1–3s: he snorts quietly and nods once in dry agreement, the corner of his mouth lifting; the far emu raises its head and looks toward him.\n3–4.5s: he lowers the paper and gazes across the tall untouched wheat toward screen-right; the newspaper’s edge flutters in the breeze.\n4.5–6s: he folds the paper in half against the rail and tucks it under his arm; the far emu strolls a few steps along the paddock’s edge.\nCAMERA: one continuous slow push toward the farmer for the full 6 seconds.\nENVIRONMENT: wheat ears sway in waves; the newspaper edge flutters; dust motes glow in the low sun.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "eye",
+            "camera_motion": "locked",
+            "location": "wheatbelt",
+            "time_light": "late-afternoon"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B30",
+      "sentences": [
+        "S39",
+        "S40"
+      ],
+      "start": 193.74,
+      "end": 202.36,
+      "dur": 8.62,
+      "device": "macro-object",
+      "narration_says": "What is clear is that it took a bounty to do what the guns could not. A war of birds, bullets and bounties.",
+      "viewer_sees": "MACRO OBJECT — along a weathered fence rail in warm evening light lie one grey emu feather, a short row of brass cartridges and a single stamped claim slip; a lone emu wanders the wheat beyond",
+      "shots": [
+        {
+          "shot_id": "31",
+          "beat_id": "B30",
+          "link_group": null,
+          "t_in": 193.75,
+          "t_out": 202.375,
+          "use_in": 0,
+          "use_out": 8.625,
+          "use_len": 8.625,
+          "motion_budget": null,
+          "gen_len": null,
+          "source_file": "shots/shot31.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "the long grey-brown emu feather",
+            "the short row of five brass cartridges",
+            "the single stamped claim slip",
+            "the lone emu far out in the wheat"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: laid in a line on a weathered timber fence rail in warm evening light, one long grey-brown emu feather, a short row of five brass cartridges and a single stamped claim slip\nACTION: the three objects lie in a line along the weathered rail, the feather at the left, the brass cartridges at the center and the stamped claim slip at the right, with a lone emu wandering the golden wheat far beyond\nSETTING: a weathered timber fence rail at sunset in the wheatbelt, silvered grey wood with deep cracks and rusty nail heads, a loose strand of old wire along its top with a spider’s thread strung from it, a field of gold wheat beyond going soft, a single emu far out in the wheat, a warm low sun on the horizon\nCAMERA: camera sits just above the rail at its level, eye level, close shot.\nFRAME LAYOUT: left third — the grey-brown feather, near-camera and large; center — the short row of brass cartridges, near-camera; right third — the stamped claim slip, near-camera; far upper right — a lone emu in the wheat, tiny and soft; upper edge — the warm sunset sky.\nFACING: we see the objects from the side across the rail, the feather’s vane turned toward camera, the cartridges with their rims toward screen-left and the slip face-up toward camera; the far emu faces toward screen-left.\nSCREEN DIRECTION: the feather’s barbs tremble toward the right in the evening breeze; the lone emu drifts slowly from the right edge toward the left; the wheat ripples toward the right.\nLIGHT: low warm sunset light from the right, long soft shadows from each object toward the left, a gold glint on the brass, a soft glow along the feather’s edge.\nPALETTE: sunset gold, silver-grey timber, brass, feather grey-brown\nDETAIL: weathered grain and cracks in the rail, every barb of the feather, five brass cartridges each with its own glint, stamped ink on the cream claim slip with no readable words, a spider’s thread catching the light, soft far wheat\nNOT IN FRAME: people, guns, readable text or numerals, blood.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "CU",
+            "angle": "eye",
+            "camera_motion": "push",
+            "location": "fence-rail",
+            "time_light": "sunset-warm"
+          },
+          "render_mode": "still",
+          "still_motion": "push"
+        }
+      ]
+    },
+    {
+      "beat_id": "B31",
+      "sentences": [
+        "S41",
+        "S42"
+      ],
+      "start": 202.36,
+      "end": 210.913,
+      "dur": 8.553,
+      "device": null,
+      "narration_says": "If you like the strange true stories history forgot to take seriously, leave a like and subscribe to Animated Tales. Until next time.",
+      "viewer_sees": "End card: poster of the whole story with the title, the major and the emu, and the SUBSCRIBE button",
+      "shots": [
+        {
+          "shot_id": "32",
+          "beat_id": "B31",
+          "link_group": null,
+          "t_in": 202.375,
+          "t_out": 210.917,
+          "use_in": 0,
+          "use_out": 8.542,
+          "use_len": 8.542,
+          "motion_budget": null,
+          "gen_len": null,
+          "source_file": "shots/shot32.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "meredith",
+            "emus",
+            "lewis-gun"
+          ],
+          "visual_priority": [
+            "Major Meredith at the far left third",
+            "the tall emu at the far right third",
+            "the title across the upper third",
+            "the SUBSCRIBE button at the exact center",
+            "the Lewis gun and the bounty ledger at the lower edge"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSHOT: one epic poster of the whole story — the major who led the soldiers and their machine guns, the tall emu that outwalked them, the Lewis gun and its spent brass, the wheat country with its fence and farmers, the army truck on the dirt road, and the claim ledger and stamped slips of the bounty that finally worked.\nSUBJECT: Major Meredith, a lean Australian artillery officer of about forty, a sunburnt narrow face, a trim moustache, a khaki tunic with a leather Sam Browne belt, riding breeches and puttees, a khaki slouch hat with one brim pinned up, at the far left third, near-camera and large, cropped at the chest, his slouch hat low, his face level and unreadable, turned toward the emu at the right\nSUBJECT 2: wild emus, tall flightless birds nearly as tall as a man, shaggy drooping grey-brown feathers, a long bare blue-grey neck, a small head with a bright dark eye, long powerful pale legs, a single tall one at the far right third, near-camera and large, cropped at the chest, its head high, one dark eye turned toward the major\nSUBJECT 3: a First World War Lewis machine gun on a folding bipod, a long barrel inside a perforated cooling jacket, a flat round pan magazine on top, a wooden stock and a pistol grip, lying across the lower edge at the left of center, near-camera, its barrel pointing toward screen-right, spent brass cases scattered around it\nTITLE: across the top, \"THE WAR AGAINST BIRDS\" in large weathered fence-timber capitals stencilled in khaki paint with a bright brass edge; under it, a thin ornamental line and the words \"A WAR OF BIRDS, BULLETS AND BOUNTIES\".\nBUTTON: at the exact center of the frame, a red rounded pill-shaped button with a thin gold rim, \"SUBSCRIBE\" in bold cream capitals, a small gold diamond on each side.\nACTION: the major and the emu face each other across the center; between them, far and small, an army truck drives along a red dirt road at the left of a gold wheat paddock where a few tiny farmers stand by a wire fence and a flock of emus walks in at the right; at the lower center a bound ledger with a rubber stamp and a pile of stamped slips lies beside the gun\nSETTING: an epic painted poster backdrop of the Western Australian wheatbelt at golden dusk, a sea of gold wheat running to a far horizon, a red dirt road at the left with a tiny army truck, a grey wire fence with a few tiny farmers, a drifting flock of emus at the right, a huge warm sky\nCAMERA: camera holds square on the two figures at their level, eye level, medium wide.\nFRAME LAYOUT: upper third — the title across the dusk sky; far left third — Major Meredith, near-camera and large, cropped at the chest; far right third — the tall emu, near-camera and large, cropped at the chest; center — the SUBSCRIBE button, with the wheat paddock, the red road and the tiny truck at the left, the fence and the farmers, and the walking flock at the right, far and small; lower edge — near-camera, the Lewis gun with scattered brass cases at the left of center and the bound ledger, rubber stamp and stamped slips at the right of center.\nFACING: Meredith turns his face to camera from the right side, eyes toward screen-right and the emu; the emu shows its left flank and head in three-quarter view, its eye toward screen-left and the major; the tiny truck drives toward screen-left and the flock faces toward screen-left.\nSCREEN DIRECTION: the tiny truck drives along the road from the center toward the left; the flock walks from the right edge toward the left; gold dust and wheat bend toward the left; loose brass cases catch the light at the lower edge.\nLIGHT: warm golden dusk light from the right, a bright rim on the emu’s feathers and the major’s hat, glints on the brass and the lettering, long soft shadows toward the left.\nPALETTE: dusk gold, wheat gold, khaki, red earth\nDETAIL: faces readable and level, the major’s tunic and hat brim, shaggy emu feathers, brass cases with bright glints, crisp lettering with every letter spelled right\nNOT IN FRAME: any bare body, fallen birds, logos, any other words or letters.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "eye",
+            "camera_motion": "locked",
+            "location": "end-card",
+            "time_light": "warm-gold"
+          },
+          "render_mode": "still",
+          "still_motion": "hold"
+        }
+      ]
+    }
+  ]
+}
