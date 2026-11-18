@@ -74,11 +74,17 @@ Nijedan `link_group`: svi beatovi imaju po jedan shot, rez je svuda tvrd.
 
 ## Šta ostaje
 
-1. **Flow:** 32 klipa + slike (04, 08, 14, 35, 36) + end kartica (38). Slike prve (0 kredita), pa proveri
-   brojeve pre klipova.
-2. **Pre montaže** otvori `shot38.jpeg` i potraži naslov „EL DORADO WAS NEVER A CITY. / IT WAS A MAN ON A
-   RAFT" i SUBSCRIBE dugme.
-3. **`protagonists`** u `episode.json` se upisuje pre naslova (`docs/publish.md`): naslov ili ne imenuje nikog
-   (El Dorado je legenda) ili imenuje sve glavne (Freyle, Belalcázar, Raleigh, Sepúlveda), nikad jednog + deo.
-4. **Publish komplet** (`publish.md`, `subtitles.srt`) se piše posle montaže; chapteri idu iz `timing.json`.
+Stanje 18. nov 2026: svih 38 shotova je predato u `shots/` (klipovi kao `shotN.mp4`, slike kao `shotN.jpg`) i kopirano
+pod storyboard imenima (`partNN.mp4`, `shotNN.jpeg`; originali netaknuti). Kontakt-list: sadržaj svakog kadra
+odgovara svom `SUBJECT`-u, end kartica (38) ima naslov i SUBSCRIBE.
+
+1. **Shot 01 je 1.7s prekratak** (`part01.mp4` 7.93s, beat B01 traži 9.625s). Korisnik je 18. nov odobrio da se
+   manjak podeli na pola: `"freeze_split": ["01"]` u `episode.json`, prvi frejm se drži 0.848s ispred klipa, poslednji
+   0.847s iza njega, pokret ide u sredini. Svi ostali klipovi su dovoljno dugi; nijedan shot ne troši manje od polovine
+   klipa.
+2. **`protagonists`** je upisan: `["El Dorado"]`. Freyle, Belalcázar, Raleigh i Sepúlveda su kontekst, ne glavni likovi.
+3. **`final.mp4` je renderovan** (18. nov 2026): 245.79s, 1920×1080 @ 24 fps, razlika od očekivanog −0.002s, 38 segmenata.
+   Publish komplet je gotov: `publish.md` (5 naslova, chapteri prolaze) i `subtitles.srt`.
+4. **Thumbnailovi:** `thumbnails.md`, pet koncepata sa A (bez teksta) i B (sa tekstom). Predlog testa: koncepti 1, 2, 3
+   sa naslovima 1, 2, 3 iz `publish.md`.
 5. **Sajt:** tek pri objavi, sa pravom sličicom, trajanjem i YouTube ID-jem (nova regija South America).

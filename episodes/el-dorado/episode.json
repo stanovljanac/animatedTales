@@ -4,10 +4,12 @@
   "status": "in-progress",
   "voice": null,
   "narration_file": "narration.mp3",
-  "final_file": null,
+  "final_file": "final.mp4",
   "endcard_file": "shots/shot38.jpeg",
   "intro_file": null,
   "intro_volume": 0.2,
+  "protagonists": ["El Dorado"],
+  "freeze_split": ["01"],
   "characters": [
     {
       "id": "muisca-heir",
