@@ -42,7 +42,7 @@ Render ide samo za montažu, jer je to jedino što editor ne ume. Rez se renderu
 - **Preskakanje:** rečenice koje ne nose Short ispadaju; ostaje ono što se razume bez long videa.
 - **Zvuk:** svaka rečenica se seče na stvarnu tišinu, razmak 0.24s, unutrašnje pauze skupljene na 0.3s.
 - **Slika iz izvora:** kadrovi iz `shots/` (klip 1080p, slika 2752×1536), svaki sa 9:16 prozorom koji prati lika; rez slike
-  je 0.08s pre glasa; zvuk klipova ispod narracije na 15%.
+  je 0.08s pre glasa; zvuk klipova ispod narracije na 10,5%.
 - **Titlovi** ugrađeni, aktivna reč zlatna.
 - Završetak koji se petlja u početak.
 

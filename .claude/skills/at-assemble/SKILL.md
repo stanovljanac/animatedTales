@@ -147,8 +147,10 @@ Ovako izgleda svaki video, a ne slideshow:
 - **Uvod je animiran.** `episode.json` → `intro_file` (npr. `shots/video1.mp4`) zamenjuje prvi
   shot; zvuk klipa ide ispod narracije na `intro_volume` (0.2) sa fade-om 0.3s pred rez.
 - **Zvuk klipova se čuje (od 2026-09-23).** Klipovi se ne mutiraju skroz: ambijent iz scene ide
-  ispod narracije na **15%** (`CLIP_VOLUME`). `episode.json` → `clip_volume` nadjačava, a `0` je
-  stari nemi režim. Still kadrovi i end card daju tišinu. Trag se slaže na sempl tačno uz
+  ispod narracije na **10,5%** (`CLIP_VOLUME = 0.105`). Bilo je 15%, ali je u nekim scenama
+  prenaglasilo narraciju, pa je 2026-11-18 smanjeno za 30% (0.15 × 0.7). Ako i ta jačina negde
+  pređe narraciju, prvo proveri taj klip, pa tek onda spuštaj podrazumevanu vrednost za sve.
+  `episode.json` → `clip_volume` nadjačava, a `0` je stari nemi režim. Still kadrovi i end card daju tišinu. Trag se slaže na sempl tačno uz
   frejmove (`ambientArgs`), pa ne može da se raziđe sa slikom. `qc-report.md` ima red
   „Zvuk klipova" sa brojem klipova koji uopšte imaju zvuk.
 - **End kartica je poslednji shot.** `endcard_file` (npr. `shots/endKartica.jpeg`) preuzima

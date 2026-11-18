@@ -33,7 +33,7 @@
 //      `pause` skuplja se na `pause`. Dugi dah naratora ostaje dah, ali ne traje 0.9s.
 //   3. Slika vodi glas: kadar se menja `cutLead` PRE nego što reč krene, pa oko stigne pre uha.
 //   4. Kadar dolazi iz IZVORA (klip 1080p, slika 2752×1536), ne iz final.mp4: jedan manje
-//      uvećanje, a zvuk klipa ide ispod narracije na 15% kao u dugom videu.
+//      uvećanje, a zvuk klipa ide ispod narracije na 10,5% kao u dugom videu.
 //   5. Prozor je `perspective` sa float uglovima (kao still pokret u assemble.mjs): klizanje i
 //      zum bez trzanja celih piksela.
 
@@ -61,8 +61,8 @@ export const EDIT = {
   tail: 0.6,
   /** Slika menja kadar ovoliko pre glasa. */
   cutLead: 0.08,
-  /** Zvuk klipova ispod narracije (isto kao CLIP_VOLUME u assemble.mjs). */
-  ambient: 0.15,
+  /** Zvuk klipova ispod narracije (isto kao CLIP_VOLUME u assemble.mjs: 10,5%). */
+  ambient: 0.105,
   /** Najduži Short. */
   maxDuration: 60,
 };
@@ -301,7 +301,7 @@ async function renderVisual(v, work, i) {
   return out;
 }
 
-/** Zvuk klipova (15%) kroz ceo Short; stillovi su tišina. */
+/** Zvuk klipova (10,5%) kroz ceo Short; stillovi su tišina. */
 async function renderAmbient(visuals, work) {
   const args = ['-hide_banner', '-y'];
   const parts = [];

@@ -8,7 +8,7 @@
 //   1. validacija — svaki shot ima svoj klip i izvor traje bar do `use_out`; pada pre rendera
 //   2. po shotu — `-ss use_in -t use_len`, `-an` (segment je samo slika), scale+fps
 //   3. konkatenacija — hard cut svuda osim unutar `link_group`-a (C10)
-//   4. narracija od `t=0`, a ispod nje zvuk klipova na `CLIP_VOLUME` (15%) — ambijentalni trag
+//   4. narracija od `t=0`, a ispod nje zvuk klipova na `CLIP_VOLUME` (10,5%) — ambijentalni trag
 //      se slaže odvojeno od segmenata, na sempl tačno uz frejmove (`ambientArgs`)
 //   5. end card — drži outro deo narracije + 1.5s repa
 //
@@ -99,10 +99,14 @@ export const INTRO_FADE = 0.3;
  * Jačina zvuka klipova ispod narracije kad `episode.json` ne kaže drugačije (`clip_volume`).
  *
  * Odluka korisnika (greek-gods-part-1, 2026-09-23): klipovi se **ne mutiraju skroz** — ambijent
- * iz same scene (vetar, vatra, voda, kamen) ide ispod narracije na 15%. `clip_volume: 0` vraća
+ * iz same scene (vetar, vatra, voda, kamen) ide ispod narracije. `clip_volume: 0` vraća
  * nemi režim, u kome je narracija jedini zvuk. Still kadrovi i end card nemaju zvuk i daju tišinu.
+ *
+ * Odluka korisnika (el-dorado, 2026-11-18): umesto 15% ide **30% tiše od toga**, 0.15 × 0.7 =
+ * 10,5%. Pri 15% je ambijent u nekim scenama prenaglasio narraciju; klipovi se razlikuju po
+ * glasnoći (bubanj, bitka, vodopad), pa je pravilo da narracija nikad ne gubi.
  */
-export const CLIP_VOLUME = 0.15;
+export const CLIP_VOLUME = 0.105;
 
 /**
  * Sample rate ambijentalnog traga i izlaza. Na 24 fps je to tačno 2000 semplova po frejmu, pa
@@ -1437,7 +1441,7 @@ export function qcReport(ctx) {
     // Klip bez audio streama daje tišinu; to nije greška, ali se ne prećutkuje.
     const silent = clips.filter((u) => info(u)?.exists && info(u).hasAudio === false);
     const found = clipVolume > 0
-      ? `${Math.round(clipVolume * 100)}% ispod narracije · ${clips.length - silent.length} od ${clips.length} klipova ima zvuk` +
+      ? `${pct(clipVolume)} ispod narracije · ${clips.length - silent.length} od ${clips.length} klipova ima zvuk` +
         (silent.length ? ` (bez zvuka: ${silent.map((u) => u.id).join(', ')})` : '')
       : 'isključen (`clip_volume: 0`)';
     L.push(`| Zvuk klipova | — | ${found} |`);
@@ -1709,7 +1713,7 @@ export async function main(argv) {
   console.log(`narracija ${slash(media.narration)} ${fmt(plan.narration)}s · ` +
     `outro_start ${outro.value === null ? '—' : fmt(outro.value)} (${outro.source}) · ` +
     `end card ${media.endcard === null ? '—' : slash(media.endcard)}`);
-  console.log(`zvuk klipova ${volume > 0 ? `${Math.round(volume * 100)}% ispod narracije` : 'isključen (clip_volume: 0)'}`);
+  console.log(`zvuk klipova ${volume > 0 ? `${pct(volume)} ispod narracije` : 'isključen (clip_volume: 0)'}`);
   for (const t of plan.trimmed) {
     console.log(`  ! shot ${t.shot_id} skraćen ${fmt(t.from)}s -> ${fmt(t.to)}s (upada u outro)`);
   }

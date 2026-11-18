@@ -843,8 +843,10 @@ test('muxArgs sa ambijentom: zvuk klipova ispod narracije, amix bez normalizacij
   assert.ok(!args.includes('-shortest'));
 });
 
-test('CLIP_VOLUME: odluka korisnika — klipovi se ne mutiraju, ambijent ide na 15%', () => {
-  assert.equal(CLIP_VOLUME, 0.15);
+test('CLIP_VOLUME: odluka korisnika — klipovi se ne mutiraju, ambijent ide na 10,5% (15% umanjeno za 30%)', () => {
+  assert.equal(CLIP_VOLUME, 0.105);
+  assert.ok(Math.abs(CLIP_VOLUME - 0.15 * 0.7) < 1e-12);
+  assert.ok(CLIP_VOLUME < INTRO_VOLUME, 'ambijent klipova nije glasniji od uvodnog klipa');
 });
 
 test('ambientArgs: klip od use_in na zadatoj jačini, end card tišina, komad po komad tačan u semplovima', () => {
@@ -855,7 +857,7 @@ test('ambientArgs: klip od use_in na zadatoj jačini, end card tišina, komad po
   const parts = graphOf(args).split(';');
 
   assert.equal(args.filter((a) => a === '-i').length, 2, 'end card nema ulaz, on je tišina');
-  assert.match(parts[0], /^\[0:a\].*atrim=start=0\.000000.*volume=0\.15.*atrim=end_sample=240000/);
+  assert.match(parts[0], /^\[0:a\].*atrim=start=0\.000000.*volume=0\.105,.*atrim=end_sample=240000/);
   assert.match(parts[1], /^\[1:a\].*atrim=start=1\.500000.*atrim=end_sample=144000/);
   assert.match(parts[2], /^anullsrc=r=48000:cl=stereo,atrim=end_sample=\d+\[p2\]$/);
   assert.equal(parts.at(-1), '[p0][p1][p2]concat=n=3:v=0:a=1[amb]');
@@ -1077,6 +1079,13 @@ test('qcReport: zamrznut shot nije prekratak izvor, ima svoju sekciju i red u re
   assert.match(md, /Zamrznut poslednji frejm \| — \| 1 od 1, odobreno u `freeze_tail`/);
   assert.match(md, /## Zamrznut poslednji frejm/);
   assert.match(md, /\| 01 \| `shots\/part01\.mp4` \| 6s \| 6\.25s \| 0\.25s \|/);
+});
+
+test('qcReport: red „Zvuk klipova" piše jačinu sa decimalom (10.5%), ne zaokruženu na 11%', () => {
+  const plan = planCuts(storyboardOf([6]), { outroStart: null, endcard: null });
+  const md = qcReport({ plan, sources: clipSource(8), width: 1920, height: 1080, clipVolume: CLIP_VOLUME });
+  assert.match(md, /Zvuk klipova \| — \| 10\.5% ispod narracije/);
+  assert.ok(!md.includes('11% ispod narracije'));
 });
 
 test('qcReport: bez zamrznutih shotova nema ni sekcije ni reda', () => {
