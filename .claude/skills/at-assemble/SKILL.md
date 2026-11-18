@@ -167,7 +167,17 @@ Kad je video spreman za objavu:
    nikad „the Pharaoh" / „the Emperor" umesto imena), DESCRIPTION sa Chapters blokom (prvi 0:00, najmanje 3, svaki
    ≥10s, vremena samo iz liste rečenica), HASHTAGS i PINNED COMMENT. Naslov dopunjuje
    thumbnail, ne ponavlja njegov tekst.
-3. Ponovo `node tools/publish.mjs episodes/<slug>` — mora da javi da chapteri prolaze.
+3. Napravi `episodes/<slug>/medium.md` po `docs/medium.md` — **uvek uz publish.md, u istoj sesiji**:
+   članak za Medium drugačiji od skripte (nove reči, dubina iz `research.md`), naslov ispod kog je
+   thumbnail linkovan na video (`{{THUMBNAIL}}` / `{{VIDEO_URL}}`, popunjava ih alat), 1 link ka videu
+   do 800 reči, 2 od 800, podnožje sa kanalom i sajtom. Video u tom trenutku još nije javan.
+4. Ponovo `node tools/publish.mjs episodes/<slug>` — mora da javi da chapteri, naslovi **i medium.md**
+   prolaze (isto možeš sa `node tools/medium.mjs episodes/<slug> --check`).
+5. Kad korisnik objavi video na YouTube-u, članak ide na Medium sam:
+   `node tools/medium.mjs episodes/<slug> --watch` čeka da se video pojavi u feedu kanala i objavi
+   ga; `node tools/medium.mjs --sweep` je jedan prolaz kroz sve epizode (Task Scheduler:
+   `--install-task`). Rezultat je u `episodes/<slug>/medium.json`; isti članak se nikad ne
+   objavljuje dvaput. Prvi put: `--login` (prijava jednom) i `--profile` (bio i About stranica).
 
 ## Šta ovaj skil ne radi
 

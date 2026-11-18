@@ -23,6 +23,7 @@ Zato nijedan kadar ne može da „pojede" tuđe vreme, a zbir se poklapa sa narr
 | 07+ | slike u Google Flow-u — 4 kandidata po shotu, bez ruku, i pregled za izbor | `tools/flow-images.mjs`, [`docs/reference/flow-images.md`](docs/reference/flow-images.md) |
 | 08 | montaža u `final.mp4` | `tools/assemble.mjs` |
 | 09 | Shortovi (9:16) iz gotovog videa, u `episodes/<slug>/short/` | `tools/short.mjs`, [`docs/shorts.md`](docs/shorts.md) |
+| 10 | Medium članak uz video: piše se uz publish komplet (`medium.md`), a objavljuje se sam čim video postane javan na YouTube-u | `tools/medium.mjs`, [`docs/medium.md`](docs/medium.md) |
 
 Slike pravi `flow-images.mjs`: kroz pravi Chrome otvori Flow projekat, podesi Image · 16:9 · x4
 i za svaki shot pošalje image prompt doslovno, pa ostavi četiri kandidata po shotu i pregled
@@ -55,7 +56,11 @@ Alati su čist Node — nema `package.json`, nema `npm install`. Traži se **Nod
 (ugrađen `WebSocket` za `flow-images.mjs`) i `ffmpeg`, koji se uzima iz `imageio_ffmpeg` jer
 `ffprobe` u ovom okruženju ne postoji. Faza 05 zove `tools/whisper_words.py`, kojem treba
 Python sa `faster-whisper` i skinut `small.en` model; `flow-images.mjs` traži instaliran
-Google Chrome (zaseban profil, prijava jednom — `--login`).
+Google Chrome (zaseban profil, prijava jednom — `--login`). `medium.mjs` vozi isti Chrome profil:
+prijava na Medium jednom (`node tools/medium.mjs --login`), pa `--profile` upisuje short bio i
+About stranicu. Medium više ne izdaje API tokene, pa se članak piše u pravi editor; šta je
+probano uživo i gde su granice (link ide na opis slike, ne na samu sliku) piše u
+[`docs/medium.md`](docs/medium.md).
 
 ```
 node tools/align.mjs     episodes/<slug>
@@ -67,12 +72,15 @@ node tools/shotlist.mjs  episodes/<slug> --board | Set-Clipboard
 node tools/flow-images.mjs episodes/<slug>
 node tools/assemble.mjs  episodes/<slug>
 node tools/short.mjs     episodes/<slug> short1 --sheet
+node tools/medium.mjs    episodes/<slug> --check        # medium.md prolazi pravila (isto proverava publish.mjs)
+node tools/medium.mjs    episodes/<slug> --watch        # čeka video u feedu kanala, pa objavi članak na Medium
+node tools/medium.mjs    --sweep                        # jedan prolaz kroz sve epizode (Task Scheduler: --install-task)
 ```
 
 Svaki alat ima `--help`. Provere:
 
 ```
-node --test "tests/*.test.mjs"   # 607 testova (Node 22+ ne prima sam folder)
+node --test "tests/*.test.mjs"   # 638 testova (Node 22+ ne prima sam folder)
 node tests/check-fixtures.mjs # izvršni oblik ugovora iz schemas.md
 ```
 
@@ -90,7 +98,8 @@ node tests/check-fixtures.mjs # izvršni oblik ugovora iz schemas.md
 | `episodes/<slug>/flow/` | `index.html` za izbor kandidata i `flow.json` stanje (slike samo uz `--download`) — ne komituje se |
 | `tools/` | ceo lanac, čist Node, bez zavisnosti |
 | `tests/` | testovi i fixture epizode koje definišu ugovor |
-| `episodes/<slug>/` | `episode.json`, `script.md`, `timing.json`, `storyboard.json`, `notes.md`, `publish.md`, `thumbnails.md` |
+| `docs/medium.md` | Medium članak uz video: format `medium.md`, pravila (drugačiji od skripte, 1–2 linka ka videu), bio profila, šta se dešava posle objave videa |
+| `episodes/<slug>/` | `episode.json`, `script.md`, `timing.json`, `storyboard.json`, `notes.md`, `publish.md`, `medium.md`, `medium.json` (stanje objave), `thumbnails.md` |
 
 ## Ugovor i provere
 

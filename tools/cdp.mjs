@@ -183,6 +183,8 @@ const KEYS = {
   Delete: { code: 'Delete', keyCode: 46 },
   ArrowDown: { code: 'ArrowDown', keyCode: 40 },
   ArrowUp: { code: 'ArrowUp', keyCode: 38 },
+  ArrowLeft: { code: 'ArrowLeft', keyCode: 37 },
+  ArrowRight: { code: 'ArrowRight', keyCode: 39 },
   End: { code: 'End', keyCode: 35 },
   Home: { code: 'Home', keyCode: 36 },
 };

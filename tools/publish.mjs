@@ -8,6 +8,8 @@
 //     -> štampa listu rečenica sa m:ss vremenima (materijal za chaptere)
 //     -> ako publish.md postoji, proverava njegove chaptere i naslove prema
 //        episode.json.protagonists (izlaz 1 kad ne prolaze)
+//     -> proverava i medium.md (Medium članak uz video, docs/medium.md): kad ga nema, samo
+//        podseća; kad postoji a ne prolazi pravila, izlaz 1
 //
 // Zašto SRT a ne JSON: YouTube Studio prima SRT, VTT, SBV i slične formate, JSON ne. SRT je
 // najjednostavniji i najmanje problematičan. Naracija u final.mp4 kreće od 0:00 (uvodni klip
@@ -20,6 +22,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { checkEpisode as checkMedium } from './medium.mjs';
 
 export const SUB_DEFAULTS = { maxChars: 42, maxLines: 2, maxDur: 7, minDur: 1, tail: 0.4 };
 
@@ -174,12 +177,12 @@ export function parseTitles(text) {
 }
 
 /** Ime kao cela reč, bez obzira na velika slova („Zeus's" da, „Zeusian" ne). */
-const nameRe = (name) =>
+export const nameRe = (name) =>
   new RegExp(`(?<![\\p{L}\\p{N}])${name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}(?![\\p{L}\\p{N}])`, 'iu');
 
 /** Lik je ime ili niz ravnopravnih oblika (nepoznat lik: ime ili uloga koju naslovi koriste). */
-const forms = (p) => (Array.isArray(p) ? p : [p]);
-const label = (p) => forms(p).join(' / ');
+export const forms = (p) => (Array.isArray(p) ? p : [p]);
+export const label = (p) => forms(p).join(' / ');
 
 /**
  * Naslov long videa prodaje ceo video: imenuje sve glavne likove (`episode.json.protagonists`)
@@ -242,7 +245,19 @@ function main(argv) {
   console.log(`\npublish.md · ${titles.length} naslova · glavni likovi: ${protagonists?.map(label).join(', ') || '—'}`);
   for (const e of titleErrors) console.log(`  GREŠKA ${e}`);
   if (!titleErrors.length) console.log('  naslovi prodaju ceo video (svi glavni likovi ili nijedan)');
-  return errors.length || titleErrors.length ? 1 : 0;
+
+  const medium = checkMedium(dir);
+  let mediumErrors = 0;
+  if (!medium.exists) {
+    console.log('\nmedium.md · nema ga — napiši članak za Medium po docs/medium.md (objavljuje se sam kad video postane javan)');
+  } else {
+    mediumErrors = medium.errors.length;
+    console.log(`\nmedium.md · ${medium.stats.words} reči · ${medium.stats.videoLinks}/${medium.stats.wantLinks} link(a) ka videu`);
+    for (const w of medium.warnings) console.log(`  upozorenje ${w}`);
+    for (const e of medium.errors) console.log(`  GREŠKA ${e}`);
+    if (!mediumErrors) console.log('  medium.md prolazi pravila iz docs/medium.md');
+  }
+  return errors.length || titleErrors.length || mediumErrors ? 1 : 0;
 }
 
 if (process.argv[1]
