@@ -25,7 +25,7 @@ još 25–40.
 STYLE:            <kanonski string iz style-string.md, doslovno>
 SUBJECT:          <ime lika>, <locked_description iz episode.json, doslovno, 25–40 reči>
 WEARING/PROPS:    <samo ono što ovaj kadar zaista pokazuje, a nije u locked_description>
-ACTION:           <jedna radnja, kontinuirana, bez „pa onda">
+ACTION:           <početni frejm: poza neposredno PRE ključne radnje — vidi „Početni frejm, ne sredina scene">
 SETTING:          <mesto, period, materijali>
 CAMERA:           <gde kamera stoji | eye/low/high/overhead | wide/medium/close>
 FRAME LAYOUT:     <šta je na kojoj trećini ekrana, sa near-camera / far parovima>
@@ -36,16 +36,59 @@ PALETTE:          <tri do četiri boje, ne više>
 NOT IN FRAME:     <šta je namerno isključeno>
 ```
 
+### Početni frejm, ne sredina scene
+
+`image_prompt` je **prvi frejm klipa**: Flow ga uzima kao početnu sliku i od njega animira ostatak.
+Zato slika prikazuje trenutak **pre** ključne radnje, a radnju i njen ishod nosi `animation_prompt`.
+Prompt koji u `ACTION` opiše sam događaj (predmet je već u letu, udarac je već pao, kuća već gori)
+daje sliku iz sredine scene: klip ili nema šta da animira, ili vrati radnju na početak i odigra je
+ponovo, a dobar deo kvarova (udvostručen pokret, predmet koji iskoči iz ruke) vodi odatle.
+
+Pravila za `ACTION` i blokove koji ga prate (`FRAME LAYOUT`, `FACING`, `SCREEN DIRECTION`):
+
+1. **Poza spremnosti, ne čin.** Ko gde stoji, šta drži, u šta gleda, kuda je okrenuto telo. Ruka koja
+   se zamahuje je povučena unazad, ne u zamahu; noga je oslonjena, ne u skoku.
+2. **Predmet miruje.** Lopta je u ruci ili na tlu, strela je na tetivi, baklja u šaci. Nikad „in the
+   air", „in flight", „mid-leap", „sails".
+3. **Nema kontakta.** Udarac, dodir, sudar, pad i lom su radnja, ne početak. U slici ostaje razmak
+   između onoga što deluje i onoga na šta deluje.
+4. **Nema ishoda.** Ono što se desi na kraju (kuća gori, lik ustaje, lordovi se raspadaju u prah,
+   riba-ljudi izranjaju) u slici ne postoji. Slika ima uzrok ili polazno stanje (kuća cela, lik leži,
+   lordovi stoje, mutna voda).
+5. **Smer je namera, ne pokret.** `FACING` i `SCREEN DIRECTION` kažu kuda su pogled, telo i težina
+   okrenuti („his drawn-back arm and gaze point toward the left"), ne kuda je nešto već poletelo.
+6. **Meta je vidljiva.** Kad radnja ide ka nečemu (zid, jama, reka, drugi lik), ono je u kadru i
+   na stranu ekrana na koju je radnja okrenuta, da animation prompt ima kuda da vodi pokret.
+
+Provera: ako bi se slika zamrznula tačno ovde, da li klip posle nje ima šta da pokaže u svih
+`gen_len` sekundi? Ako je odgovor „skoro ništa, sve se već desilo", slika je iz sredine.
+
+| Iz sredine scene (loše) | Početni frejm (dobro) |
+|---|---|
+| the lord strikes the ball and it sails across the court | the lord holds the ball drawn back at his hip, his eyes on the far wall |
+| a small thatched house bursts into flame | a lit torch in the dancer's raised hand, the small thatched house whole |
+| the wanderer rises from under the cloth | the wanderer lies under the cloth, the other raises a hand above it |
+| the twins strike the lords who collapse in dust | the twins raise their open hands, the lords step toward them smiling |
+| two fish-men rise from the ash | grey ash sinking through green water, the riverbed empty |
+| the twins leap into the oven | the twins stand hand in hand, facing the fire at the lip of the pit |
+
+U `animation_prompt` se zato prvi prorez (`0–1s:`) uvek vezuje na ono što slika već pokazuje:
+radnja kreće iz poze spremnosti, a ishod stiže u poslednjim prorezima.
+
+Početni frejm i filter ([`flow-filter.md`](flow-filter.md)) idu zajedno: slika bez kontakta,
+rane, leta ili skoka retko je ona koju Flow odbije, pa je ovo i prva linija odbrane.
+
+
 Četiri bloka od `CAMERA` do `SCREEN DIRECTION` plus `NOT IN FRAME` su ono što meri **S2**; njihova
 pravila i primeri su u `camera-language.md`, ne ovde.
 
-### Primer — 151 reč, prolazi P1, S1, S2, C1
+### Primer — 156 reči, prolazi P1, S1, S2, C1
 
 ```
 STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.
 SUBJECT: Hanno, a lean Carthaginian clerk of about fifty, close-cropped grey hair, a short curled beard, an undyed linen tunic belted with rope, a wax tablet under one arm.
 WEARING/PROPS: worn sandals, a bronze stylus.
-ACTION: he cuts one more mark into the wax.
+ACTION: he holds the stylus above the wax, ready to cut one more mark.
 SETTING: a stone quay of fitted limestone, crates along the edge.
 CAMERA: camera stands two paces from him on the quay, eye level, medium.
 FRAME LAYOUT: left third — Hanno, near-camera and large; center — the open tablet; right third — a moored hull, far and hazy.
@@ -61,7 +104,7 @@ provera **C1** traži kao podstring posle normalizacije.
 
 Računica koju vredi imati u glavi: 16 (`STYLE`) + 29 (`SUBJECT`) + 66 (pet kamera-blokova) =
 **111 reči** je potrošeno pre nego što si napisao išta o radnji, svetlu i boji. Ovaj primer staje
-na **151**, devet reči ispod plafona, a nema nijedan suvišan pridev. Sa dva lika u kadru
+na **156**, četiri reči ispod plafona, a nema nijedan suvišan pridev. Sa dva lika u kadru
 (dva `locked_description`-a) plafon se probija — tada se skraćuje `SETTING` i `WEARING/PROPS`,
 nikad kamera-blokovi.
 
@@ -190,6 +233,7 @@ pravilo 1 na delu.
 3. Nijedna zabranjena prostorna fraza (lista A u `camera-language.md`).
 4. Nijedna od pet reči koje impliciraju rez, u animation promptu.
 5. `locked_description` svakog lika iz `shot.characters[]` stoji doslovno u image promptu.
+   `ACTION` je početni frejm, ne sredina scene (`node tools/flow-risk.mjs` to meri).
 6. Prorezi animation prompta idu do `gen_len`, svaki nosi dve rečenice pokreta, i nijedan ne
    propisuje mirovanje („Pravila proreza").
 
@@ -216,7 +260,7 @@ STYLE:            <kanonski string iz style-string.md, doslovno>
 SUBJECT:          <PRIMARY lock — characters[0], locked_description doslovno>
 SCALE:            <3–4 tvrdnje o veličini; obavezan kad je entitet scale_critical>
 SUBJECT 2:        <SECONDARY lock, ako postoji; najviše dva>
-ACTION:           <jedna radnja, kontinuirana, bez „pa onda">
+ACTION:           <početni frejm: poza neposredno PRE ključne radnje — vidi „Početni frejm, ne sredina scene">
 SETTING:          <mesto, period, materijali>
 CAMERA:           <gde kamera stoji | eye/low/high/overhead | wide/medium/close>
 FRAME LAYOUT:     <šta je na kojoj trećini ekrana, sa near-camera / far parovima>
@@ -262,7 +306,7 @@ STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outl
 SUBJECT: Fenrir, a colossal grey-black wolf with a lean muscular frame, amber eyes, coarse shaggy fur along the shoulders, scarred muzzle and heavy jaws.
 SCALE: Fenrir is monumental, drawn far larger than any figure near him; his shoulder rises above the gods' heads; the gods read as small dark shapes beside his ribs; strong size contrast carries the frame.
 SUBJECT 2: Drómi, a massive black iron chain with links twice the thickness of ordinary forgework, riveted bands and reinforced collars, oily dark sheen, with the mass to sag under its own weight.
-ACTION: he rises against the collar as four gods haul on the slack.
+ACTION: he stands braced against the collar as four gods take hold of the slack.
 SETTING: black rock, standing water, cold northern shore.
 CAMERA: camera stands twelve paces off on the rock, low, wide.
 FRAME LAYOUT: center — the wolf, near-camera and large; left third — the gods, small; right third — a ridge, far and hazy.
@@ -340,5 +384,6 @@ lockovi (najviše tri); mesta u dubini idu kratkim opisom u `FRAME LAYOUT`. Prim
 5. Nijedna zabranjena prostorna fraza (lista A), nijedna prazna `SCREEN DIRECTION` (lista D).
 6. Nijedna od pet reči koje impliciraju rez, u animation promptu.
 7. `locked_description` nosi identitet — ako u njemu piše poza, greška je u `episode.json`.
+   `ACTION` je početni frejm (nema leta, kontakta ni ishoda), `node tools/flow-risk.mjs` ne javlja rizik.
 8. Animation prompt po „Pravilima proreza": prorezi do `gen_len`, nijedan duži od 2.5s, svaki sa
    dve rečenice pokreta, poslednji nastavlja radnju — nigde `hold`, `still`, `settles`, `freezes`.

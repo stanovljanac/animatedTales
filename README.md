@@ -16,7 +16,7 @@ Zato nijedan kadar ne može da „pojede" tuđe vreme, a zbir se poklapa sa narr
 | 01 | pronalaženje i bodovanje ideja | `docs/prompts/01-idea-discovery.md` |
 | 02 | izbor pobednika iz tabele | **ljudski korak** — nema prompta |
 | 03 | research i plan priče | `docs/prompts/03-research.md` |
-| 04 | pisanje skripte | `docs/prompts/04-script.md` |
+| 04 | pisanje skripte — sa ElevenLabs audio tagovima u zagradama (`[thoughtful]`, `[chuckles]`, `[short pause]`; nikad `[sighs]`) | `docs/prompts/04-script.md` |
 | 05 | poravnanje narracije sa tekstom (Whisper) | `tools/align.mjs` → `timing.json` |
 | 06 | beat mapa i skelet storyboard-a | `tools/beatplan.mjs` → `storyboard.json` |
 | 07 | promptovi, QA i čitljiv prikaz | `tools/lint.mjs`, `tools/render.mjs`, `tools/shotlist.mjs` |
@@ -27,11 +27,16 @@ Zato nijedan kadar ne može da „pojede" tuđe vreme, a zbir se poklapa sa narr
 Slike pravi `flow-images.mjs`: kroz pravi Chrome otvori Flow projekat, podesi Image · 16:9 · x4
 i za svaki shot pošalje image prompt doslovno, pa ostavi četiri kandidata po shotu i pregled
 `episodes/<slug>/flow/index.html` za izbor ([`docs/reference/flow-images.md`](docs/reference/flow-images.md)).
+Slike ostaju u Flow-u i ne skidaju se na računar; skidaju se samo konačni videi.
 Izbor najbolje slike i klip od nje ostaju ručni posao u Flow-u — pregled uz svaki shot nosi
 animation prompt i dužinu, a `shotlist.mjs` istu čeklistu za terminal. Čeklista u zaglavlju
 nosi i **budžet kredita**: slika je u Flow-u besplatna, klip nije, pa je budžet epizode uvek
 budžet za video, a dnevnih 50 kredita diktira raspored —
 [`docs/reference/google-ai-plus.md`](docs/reference/google-ai-plus.md).
+Kad Flow odbije klip (maloletnici, golotinja, nasilje, samopovređivanje), alternative po kategoriji
+su u [`docs/reference/flow-filter.md`](docs/reference/flow-filter.md): Plan A original, Plan B alternativna
+slika + animacija (`episodes/<slug>/alternatives.md`), Plan C still. `node tools/flow-risk.mjs episodes/<slug>` nalazi
+rizične shotove sa zamenom reči i slike koje prikazuju sredinu scene umesto prvog frejma.
 
 Ista čeklista sa `--board` izlazi kao **Flow tabla** za tab u Google Docs-u: promptovi tamo gde
 `storyboard.json` ne postoji, za generisanje van kuće. Ništa se ne sinhronizuje — tabla se
@@ -67,7 +72,7 @@ node tools/short.mjs     episodes/<slug> short1 --sheet
 Svaki alat ima `--help`. Provere:
 
 ```
-node --test "tests/*.test.mjs"   # 569 testova (Node 22+ ne prima sam folder)
+node --test "tests/*.test.mjs"   # 607 testova (Node 22+ ne prima sam folder)
 node tests/check-fixtures.mjs # izvršni oblik ugovora iz schemas.md
 ```
 
@@ -81,10 +86,11 @@ node tests/check-fixtures.mjs # izvršni oblik ugovora iz schemas.md
 | `docs/reference/google-ai-plus.md` | šta pretplata daje lancu i koliko epizoda staje u mesec |
 | `docs/reference/flow-board.md` | `--board` tabla: generisanje van kuće, iz taba u Google Docs-u |
 | `docs/reference/flow-images.md` | slike u Flow-u bez ruku: prijava, krug, opcije, kad pukne |
-| `episodes/<slug>/flow/` | kandidati iz Flow-a, `index.html` za izbor i `flow.json` stanje — ne komituje se |
+| `docs/reference/thumbnails.md` | thumbnailovi: pet koncepata po epizodi, A bez teksta i B sa tekstom, pravila i natpis |
+| `episodes/<slug>/flow/` | `index.html` za izbor kandidata i `flow.json` stanje (slike samo uz `--download`) — ne komituje se |
 | `tools/` | ceo lanac, čist Node, bez zavisnosti |
 | `tests/` | testovi i fixture epizode koje definišu ugovor |
-| `episodes/<slug>/` | `episode.json`, `script.md`, `timing.json`, `storyboard.json`, `notes.md` |
+| `episodes/<slug>/` | `episode.json`, `script.md`, `timing.json`, `storyboard.json`, `notes.md`, `publish.md`, `thumbnails.md` |
 
 ## Ugovor i provere
 

@@ -300,13 +300,32 @@ export function clipVolume(dir) {
  * @returns {Set<string>}
  */
 export function freezeTail(dir) {
+  return freezeList(dir, 'freeze_tail');
+}
+
+/**
+ * Shotovi kojima se manjak klipa **deli na pola**: pola je zamrznut prvi frejm ispred klipa, pola
+ * zamrznut poslednji frejm iza njega, a klip ide u sredini. `freeze_split` u `episode.json`, niz
+ * `shot_id`-ova, odobrenje po shotu kao i `freeze_tail`.
+ *
+ * Odluka korisnika (el-dorado, 2026-11-18): shot 01 je trajao 7.93s umesto 9.625s. Rep od 1.7s bi
+ * se video na kraju prvog kadra, pa se manjak deli i na početak, gde se prvi frejm drži pre nego
+ * što pokret krene. Shot u oba spiska se deli.
+ * @returns {Set<string>}
+ */
+export function freezeSplit(dir) {
+  return freezeList(dir, 'freeze_split');
+}
+
+/** Spisak shot_id-ova iz `episode.json` pod zadatim ključem; pogrešan oblik je greška. */
+function freezeList(dir, key) {
   const file = path.join(dir, 'episode.json');
   if (!fs.existsSync(file)) return new Set();
   const manifest = JSON.parse(fs.readFileSync(file, 'utf8'));
-  const list = manifest.freeze_tail;
+  const list = manifest[key];
   if (list === undefined || list === null) return new Set();
   if (!Array.isArray(list) || !list.every((id) => typeof id === 'string' && /^\d+$/.test(id))) {
-    throw new Error(`${file}: freeze_tail mora da bude niz shot_id-ova (npr. ["09", "12"]), a ne ${JSON.stringify(list)}`);
+    throw new Error(`${file}: ${key} mora da bude niz shot_id-ova (npr. ["09", "12"]), a ne ${JSON.stringify(list)}`);
   }
   return new Set(list.map((id) => id.padStart(2, '0')));
 }
@@ -585,19 +604,25 @@ export const renderUnits = (plan) =>
  * @param {object} plan iz `planCuts`; segmenti se menjaju na mestu
  * @param {Map} sources iz `inspectSources`
  * @param {Set<string>} approved iz `freezeTail`
- * @returns {{id: string, source: string, available: number, need: number, freeze: number}[]}
+ * @param {Set<string>} [split] iz `freezeSplit`: manjak se deli na zamrznut prvi (`freezeHead`) i
+ *   zamrznut poslednji (`freeze`) frejm; shot u oba spiska se deli
+ * @returns {{id: string, source: string, available: number, need: number, freeze: number, head: number}[]}
  */
-export function applyFreeze(plan, sources, approved) {
+export function applyFreeze(plan, sources, approved, split = new Set()) {
   const tol = 1 / plan.fps;
   const frozen = [];
   for (const u of renderUnits(plan)) {
-    if (u.kind === 'endcard' || u.mode === 'still' || u.intro || !approved.has(u.id)) continue;
+    if (u.kind === 'endcard' || u.mode === 'still' || u.intro) continue;
+    if (!approved.has(u.id) && !split.has(u.id)) continue;
     const info = sources.get(u.source);
     if (!info?.exists || info.available === null) continue;
     const need = round3(u.use_in + u.len);
     if (info.available >= need - tol) continue;
-    u.freeze = round3(need - info.available);
-    frozen.push({ id: u.id, source: u.source, available: info.available, need, freeze: u.freeze });
+    const missing = round3(need - info.available);
+    const head = split.has(u.id) ? round3(missing / 2) : 0;
+    if (head > 0) u.freezeHead = head;
+    u.freeze = round3(missing - head);
+    frozen.push({ id: u.id, source: u.source, available: info.available, need, freeze: u.freeze, head });
   }
   return frozen;
 }
@@ -657,8 +682,8 @@ export async function validate(plan, dir, media, { probe: probeFn = probe, sourc
       continue;
     }
     const need = round3(seg.use_in + seg.len);
-    // Zamrznut rep (`applyFreeze`) pokriva manjak samo kad ga je korisnik odobrio za taj shot.
-    if (info.available + (seg.freeze ?? 0) < need - tol) {
+    // Zamrznut početak i rep (`applyFreeze`) pokrivaju manjak samo kad ih je korisnik odobrio za taj shot.
+    if (info.available + (seg.freeze ?? 0) + (seg.freezeHead ?? 0) < need - tol) {
       problems.push(`shot ${seg.id}: ${seg.source} traje ${info.available}s, a treba do ${need}s`);
     }
   }
@@ -756,12 +781,17 @@ const encodeArgs = () => [
  * `-t` sam po sebi ume da isporuči frejm više ili manje na granici, a 33 takve greške se
  * sabiraju u drift koji T1 vidi.
  *
- * Zamrznut rep (`seg.freeze`, samo iz `freeze_tail`): `tpad` klonira poslednji frejm izvora
- * koliko izvor ne pokriva, plus dva frejma rezerve; `-frames:v` i dalje seče tačno.
+ * Zamrznut rep (`seg.freeze`, iz `freeze_tail` ili `freeze_split`): `tpad` klonira poslednji frejm
+ * izvora koliko izvor ne pokriva, plus dva frejma rezerve; `-frames:v` i dalje seče tačno.
+ * Zamrznut početak (`seg.freezeHead`, samo iz `freeze_split`): isti `tpad` klonira prvi frejm,
+ * u celim frejmovima, ispred klipa.
  */
 export function shotArgs(seg, { dir, width, height, fps, out }) {
-  const vf = seg.freeze
-    ? `${videoFilter(width, height, fps)},tpad=stop_mode=clone:stop_duration=${fmt6(seg.freeze + 2 / fps)}`
+  const pad = [];
+  if (seg.freezeHead) pad.push(`start=${Math.round(seg.freezeHead * fps)}`, 'start_mode=clone');
+  if (seg.freeze) pad.push('stop_mode=clone', `stop_duration=${fmt6(seg.freeze + 2 / fps)}`);
+  const vf = pad.length
+    ? `${videoFilter(width, height, fps)},tpad=${pad.join(':')}`
     : videoFilter(width, height, fps);
   return [
     '-hide_banner', '-nostdin', '-loglevel', 'error', '-y',
@@ -1000,10 +1030,18 @@ export function ambientArgs(plan, { dir, fps, volume, sources = null, intro = nu
     // Zamrznut rep nema zvuk (`apad` ga puni tišinom), pa fade pada na kraj stvarnog zvuka.
     const heard = samples / AUDIO_RATE - (seg.freeze ?? 0);
     const fadeAt = fmt6(Math.max(0, heard - fadeOut));
-    filters.push(`[${k}:a]aresample=${AUDIO_RATE},aformat=sample_fmts=fltp:channel_layouts=stereo,` +
-      `asetpts=PTS-STARTPTS,atrim=start=${fmt6(seg.use_in)},asetpts=PTS-STARTPTS,volume=${vol},` +
-      `apad=whole_len=${samples},atrim=end_sample=${samples},` +
-      `afade=t=in:d=${AUDIO_DECLICK},afade=t=out:st=${fadeAt}:d=${fadeOut}[${label}]`);
+    const head = `[${k}:a]aresample=${AUDIO_RATE},aformat=sample_fmts=fltp:channel_layouts=stereo,` +
+      `asetpts=PTS-STARTPTS,atrim=start=${fmt6(seg.use_in)},asetpts=PTS-STARTPTS,volume=${vol},`;
+    if (seg.freezeHead) {
+      // Zamrznut početak nema zvuk: klip kreće tek posle njega, istih celih frejmova kao slika,
+      // pa fade-in ide na stvarni početak zvuka, a ne na tišinu ispred njega.
+      const delay = samplesOf(Math.round(seg.freezeHead * fps), fps);
+      filters.push(`${head}afade=t=in:d=${AUDIO_DECLICK},adelay=${delay}S|${delay}S,` +
+        `apad=whole_len=${samples},atrim=end_sample=${samples},afade=t=out:st=${fadeAt}:d=${fadeOut}[${label}]`);
+    } else {
+      filters.push(`${head}apad=whole_len=${samples},atrim=end_sample=${samples},` +
+        `afade=t=in:d=${AUDIO_DECLICK},afade=t=out:st=${fadeAt}:d=${fadeOut}[${label}]`);
+    }
     return label;
   };
 
@@ -1106,6 +1144,7 @@ export function recipe(seg, { dir, width, height, fps }) {
     use_in: seg.use_in,
     // Samo kad postoji: polje koje bi svi segmenti nosili oborilo bi keš svih starih epizoda.
     ...(seg.freeze ? { freeze: seg.freeze } : {}),
+    ...(seg.freezeHead ? { freezeHead: seg.freezeHead } : {}),
     frames: seg.frames,
     width,
     height,
@@ -1337,10 +1376,11 @@ export function qcReport(ctx) {
   });
   const short = clips.filter((u) => {
     const i = info(u);
-    return i?.exists && i.available !== null && i.available + (u.freeze ?? 0) < need(u) - tol;
+    return i?.exists && i.available !== null && i.available + (u.freeze ?? 0) + (u.freezeHead ?? 0) < need(u) - tol;
   });
-  // Odobren manjak (`freeze_tail`) nije prekratak izvor, ali se ne prećutkuje.
-  const frozen = clips.filter((u) => u.freeze > 0);
+  // Odobren manjak (`freeze_tail`, `freeze_split`) nije prekratak izvor, ali se ne prećutkuje.
+  const frozen = clips.filter((u) => u.freeze > 0 && !u.freezeHead);
+  const frozenSplit = clips.filter((u) => u.freezeHead > 0);
 
   // Na kraju zuma se vidi `STILL_ZOOM` puta manje slike, pa je toliko i potrebno da se ne
   // dovlači naviše. WARN, ne ERROR: `--res` je odluka koja se donosi posle generisanja slika.
@@ -1382,6 +1422,9 @@ export function qcReport(ctx) {
   L.push(`| Prekratki izvori | ${short.length ? 'ERROR' : 'OK'} | ${short.length} od ${clips.length} |`);
   if (frozen.length) {
     L.push(`| Zamrznut poslednji frejm | — | ${frozen.length} od ${clips.length}, odobreno u \`freeze_tail\` |`);
+  }
+  if (frozenSplit.length) {
+    L.push(`| Zamrznut prvi i poslednji frejm | — | ${frozenSplit.length} od ${clips.length}, odobreno u \`freeze_split\` |`);
   }
   L.push(`| Ukupni drift | ${driftBad ? 'ERROR' : 'OK'} | ${signed(drift)}s (${signed(Math.round(drift * fps))} ${frameWord(Math.round(drift * fps))}) |`);
   L.push(`| Kandidati za regeneraciju | ${candidates.length ? 'WARN' : 'OK'} | ${candidates.length} od ${clips.length} |`);
@@ -1452,6 +1495,18 @@ export function qcReport(ctx) {
     L.push('| Shot | Klip | Traje | Treba do | Zamrznuto |', '|---|---|---|---|---|');
     for (const u of frozen) {
       L.push(`| ${u.id} | \`${u.source}\` | ${fmt(info(u).available)}s | ${fmt(need(u))}s | ${fmt(u.freeze)}s |`);
+    }
+    L.push('');
+  }
+
+  if (frozenSplit.length) {
+    L.push('## Zamrznut prvi i poslednji frejm', '');
+    L.push('Klip je kraći od svog reza, a korisnik je baš za taj shot odobrio da se manjak podeli na pola ' +
+      '(`freeze_split` u `episode.json`): prvi frejm se drži ispred klipa, poslednji iza njega, a pokret ide ' +
+      'u sredini. Bez tog odobrenja ovo bi bio prekratak izvor i montaža bi stala. Zvuk zamrznutih delova je tišina.', '');
+    L.push('| Shot | Klip | Traje | Treba do | Početak | Kraj |', '|---|---|---|---|---|---|');
+    for (const u of frozenSplit) {
+      L.push(`| ${u.id} | \`${u.source}\` | ${fmt(info(u).available)}s | ${fmt(need(u))}s | ${fmt(u.freezeHead)}s | ${fmt(u.freeze)}s |`);
     }
     L.push('');
   }
@@ -1647,7 +1702,7 @@ export async function main(argv) {
   }
 
   // Posle uvoda: uvodni klip zamenjuje izvor prvog segmenta, a on se ne zamrzava.
-  const frozen = applyFreeze(plan, sources, freezeTail(dir));
+  const frozen = applyFreeze(plan, sources, freezeTail(dir), freezeSplit(dir));
 
   console.log(`${storyboard.episode} · ${shots.length} ${plural(shots.length, 'shot', 'shota', 'shotova')} · ` +
     `${args.res} ${width}x${height} @ ${plan.fps} fps`);
@@ -1662,7 +1717,9 @@ export async function main(argv) {
     console.log(`  ! shot ${d.shot_id} izostavljen — ceo je iza outro_start-a (${fmt(d.t_in)}s)`);
   }
   for (const f of frozen) {
-    console.log(`  ! shot ${f.id} poslednji frejm zamrznut ${fmt(f.freeze)}s (freeze_tail)`);
+    console.log(f.head > 0
+      ? `  ! shot ${f.id} prvi frejm zamrznut ${fmt(f.head)}s, poslednji ${fmt(f.freeze)}s (freeze_split)`
+      : `  ! shot ${f.id} poslednji frejm zamrznut ${fmt(f.freeze)}s (freeze_tail)`);
   }
   if (args.dissolve) {
     console.log(`dissolve ${args.dissolve} frejmova · ${plan.dissolve.applied.length} primenjeno · ` +

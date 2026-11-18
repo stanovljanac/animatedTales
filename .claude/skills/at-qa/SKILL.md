@@ -70,6 +70,13 @@ Linter meri oblik. Ovo meri smisao, i radi se **na svakom prolazu**, i kad je BL
 - **early motion** — prvi prorez (`0–1s:`) nosi atmosferu umesto radnje, a kadar nije
   namerno miran ni refleksivan. Merljivo: pročitaj `0–1s:` liniju i pitaj se da li se u njoj
   nešto **dešava**.
+- **slika iz sredine scene** — `ACTION` image prompta opisuje sam događaj (predmet u letu, udarac već
+  pao, kuća već gori) umesto poze neposredno pre njega. Popravka je u image promptu, ne u klipu:
+  vidi „Početni frejm, ne sredina scene" u `prompt-templates.md`; `node tools/flow-risk.mjs
+  episodes/<slug>` ih nalazi mehanički.
+- **rizik za Flow filter** — sporne reči ili radnje (dete u opasnosti, gola koža velika u kadru,
+  rana, odvojen deo tela, skok u vatru). Isti alat ih prijavljuje sa zamenama, a alternative
+  (Plan B slika + animacija, pa Plan C still) su u `docs/reference/flow-filter.md`.
 - **zamrznut kraj** — poslednji prorez se ne završava na `gen_len`, ili propisuje mirovanje
   (`hold`, `holds still`, `goes still`, `settles`, `comes to rest`, `freezes`, `nothing moves`,
   `stays the same`), ili `MOTION BUDGET` linija kaže `hold to the end`. Model takav klip zamrzne

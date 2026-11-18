@@ -259,7 +259,7 @@ je novi `align.mjs` run nad novim `narration.mp3`.
 | `start` | number | da | Sekunde od početka fajla. |
 | `end` | number | da | `end > start`. |
 | `dur` | number | da | `end - start`. |
-| `text` | string | da | **Tekst iz `script.md`, ne iz ASR-a.** Ground truth; ASR daje samo vremena. |
+| `text` | string | da | **Tekst iz `script.md`, ne iz ASR-a.** Ground truth; ASR daje samo vremena. Bez ElevenLabs audio tagova (`[thoughtful]`, `[short pause]`) — `align.mjs` ih skida pre segmentacije (`tools/audio-tags.mjs`), pa ih nema ni u titlovima ni u `narration_says`. |
 | `confidence` | number | da | 0–1, prosek po rečima rečenice. `< 0.85` je upozorenje i predlog za `medium.en` rerun. |
 
 ### 2.3 `Word`

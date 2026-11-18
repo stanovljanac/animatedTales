@@ -18,6 +18,7 @@ import path from 'node:path';
 import { spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { probe, run as ffmpeg } from './ffmpeg.mjs';
+import { stripAudioTags, findBannedAudioTags } from './audio-tags.mjs';
 
 // ---------------------------------------------------------------------------
 // Normalizacija tokena — odluka C05
@@ -120,6 +121,11 @@ export function tokenize(text) {
 // Ostaje slučaj skraćenice pred velikim slovom ("Mr. Smith") — zato lista skraćenica ispod,
 // plus pravilo da je jedno slovo uvek inicijal ("J. R. Smith").
 // Prazan red deli rečenice i bez interpunkcije — pasus u skripti je uvek kraj misli.
+//
+// ElevenLabs audio tagovi (`[thoughtful]`, `[short pause]`) nisu izgovoreni tekst: skidaju se
+// pre segmentacije (`tools/audio-tags.mjs`), pa ih nema ni u rečenicama ni u `timing.json`-u.
+// Moraju pre segmentacije jer počinju malim slovom — "bird. [chuckles] The birds" se inače
+// ne bi razdvojilo posle tačke. Red koji se sastoji samo od taga ne prekida pasus.
 
 const ABBR = new Set(['mr', 'mrs', 'ms', 'dr', 'prof', 'st', 'sr', 'jr', 'vs', 'etc', 'eg', 'ie',
   'bc', 'ad', 'bce', 'ce', 'us', 'uk', 'ussr', 'phd', 'am', 'pm', 'no', 'fig', 'gen', 'capt',
@@ -192,7 +198,9 @@ export function parseScript(md) {
       if (/^outro\b/i.test(heading[1].trim())) section = 'outro';
       continue;
     }
-    const line = stripMarkdown(raw);
+    const untagged = stripAudioTags(raw);
+    if (untagged !== raw && !untagged.trim()) continue; // red samo sa tagom: nije ni tekst ni kraj pasusa
+    const line = stripMarkdown(untagged);
     if (!line) flush();
     else buf.push(line);
   }
@@ -719,7 +727,16 @@ export async function main(argv) {
     fs.mkdirSync(path.join(dir, '.cache'), { recursive: true });
     fs.writeFileSync(path.join(dir, '.cache', 'asr-script.md'), built.md + '\n', 'utf8');
   } else {
-    script = parseScript(fs.readFileSync(scriptFile, 'utf8'));
+    const md = fs.readFileSync(scriptFile, 'utf8');
+    const banned = findBannedAudioTags(md);
+    if (banned.length) {
+      throw new Error(
+        `${slash(scriptFile)} sadrži zabranjen audio tag: ${[...new Set(banned)].join(' ')}.\n` +
+          'Sigh tagovi ne ulaze u skriptu — veštački zvuče. Ukloni ih (i iz HTML komentara, ' +
+          'tamo stoje ALT varijante), pa ponovo renderuj narraciju u ElevenLabs-u i poravnaj.',
+      );
+    }
+    script = parseScript(md);
   }
   if (!script.sentences.length) throw new Error('skripta nema nijednu rečenicu');
 

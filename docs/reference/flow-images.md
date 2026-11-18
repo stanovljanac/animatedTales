@@ -4,6 +4,10 @@ Najduži ručni deo faze 07 bio je mehanički: novi projekat u Flow-u, Image · 
 svaki shot prompt nalepljen, poslat i dočekan. `tools/flow-images.mjs` radi taj deo sam i staje
 tačno tamo gde počinje ljudski posao: **izbor najbolje slike i animacija.**
 
+**Slike se ne skidaju na računar.** Alat ih samo generiše i imenuje u Flow-u; na disk stižu tek
+konačni videi (`shotNN.mp4`) koje skineš posle animacije. Skidanje slika postoji samo kao opcija
+`--download`.
+
 ```
 node tools/flow-images.mjs episodes/<slug>
 ```
@@ -36,9 +40,10 @@ Ništa se ne instalira: alat je čist Node kao ostatak lanca, a Chrome je spoljn
    ostane aktivan tab tog prozora — ni minimizovan prozor ni tab u pozadini Chrome ne iscrtava,
    pa ih alat sam vraća. U taj prozor ne klikći dok alat radi.
 
-2. **Otvori pregled** `episodes/<slug>/flow/index.html`. Shot po shot: četiri kandidata, red
-   `ACTION` iz prompta (šta treba da se vidi), dužina klipa u Flow-u i ime fajla za isporuku.
-   - **klik na sliku** je otvara u Flow-u, na njenoj stranici;
+2. **Otvori pregled** `episodes/<slug>/flow/index.html`. Shot po shot: četiri kandidata
+   (kartice sa imenom `shotNN-k`, bez sličica jer slike nisu na disku), red `ACTION` iz prompta
+   (šta treba da se vidi), dužina klipa u Flow-u i ime fajla za isporuku.
+   - **klik na karticu** otvara tu sliku u Flow-u, na njenoj stranici — tu je i gledaš i biraš;
    - **CLIP**: dugme „Kopiraj animation prompt" kopira prompt doslovno; dužina (4/6/8/10s) piše
      pored. Klip se, kao i do sada, snima kao `shotNN.mp4` u koren epizode;
    - **STILL**: izabranu sliku skini iz Flow-a i sačuvaj kao `shotNN.jpeg` — pokret daje montaža.
@@ -62,7 +67,7 @@ otisak prompta), pa je svako pokretanje nastavak:
 | gotov, prompt isti | preskače |
 | gotov, prompt prepisan u QA-u | generiše ponovo; novi kandidati dobijaju sledeće brojeve (`shot07-5`…), stari ostaju u pregledu označeni kao „stari prompt" |
 | nije uspeo | pokušava ponovo |
-| slike gotove, ime ili fajl fali | samo dovršava ime/fajl |
+| slike gotove, ime fali (ili fajl, uz `--download`) | samo dovršava ime/fajl |
 
 Prekid (Ctrl+C, pao internet, zatvoren Chrome) ne gubi ništa: pokreni istu komandu ponovo.
 
@@ -72,7 +77,7 @@ node tools/flow-images.mjs episodes/<slug> --redo 07        # još četiri kandi
 node tools/flow-images.mjs episodes/<slug> --dry-run        # šta bi uradio, bez pregledača
 ```
 
-Folder `flow/` se ne komituje (`.gitignore`): to su kandidati i stanje jedne smene, ne
+Folder `flow/` se ne komituje (`.gitignore`): to su pregled i stanje jedne smene, ne
 artefakt epizode. Izvor istine ostaje `storyboard.json`.
 
 ## Opcije
@@ -88,7 +93,8 @@ artefakt epizode. Izvor istine ostaje `storyboard.json`.
 | `--project "IME"` | ime novog projekta (podrazumevano slug velikim slovima) |
 | `--project-url URL` | radi u postojećem projektu (npr. onom koji si ručno započeo) |
 | `--new` | nov projekat i kad `flow.json` već ima jedan |
-| `--no-rename` / `--no-download` | bez preimenovanja u Flow-u / bez fajlova na disku |
+| `--download` | skini i slike na disk (`flow/shotNN-k.jpeg`, sličice u pregledu); podrazumevano se ništa ne skida |
+| `--no-rename` | bez preimenovanja slika u Flow-u |
 | `--login` | samo prijava |
 
 Podešavanja generisanja (Image · odnos · xN · model) Flow pamti **globalno**: posle alata i tvoj
@@ -127,4 +133,5 @@ Tri odluke, sve tri plaćene probom na živom Flow-u (nov 2026):
    navigacijom unutar aplikacije. Generisanje u toku pri tome teče dalje, pa se dok Flow radi
    jedan shot, slike prethodnog imenuju i skidaju.
 
-Slike u `flow/` su 1K original (1376×768). Za still kadar u montaži skini izabranu iz Flow-a.
+Sa `--download` slike u `flow/` su 1K original (1376×768). Za still kadar u montaži skini
+izabranu iz Flow-a kao `shotNN.jpeg`.

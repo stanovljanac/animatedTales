@@ -11,10 +11,13 @@
 // Posle prolaza ostaje:
 //   - Flow projekat sa N slika po shotu, svaka preimenovana u `shot07-2 <Flow-ov naslov>` —
 //     ime se vidi na slici u Flow-u i postaje ime fajla kad se slika skine iz Flow-a;
-//   - episodes/<slug>/flow/shot07-2.jpeg — 1K original svake slike;
 //   - episodes/<slug>/flow/index.html — pregled za izbor: kandidati shot po shot, klik na sliku
 //     je otvara u Flow-u, a ispod je animation prompt sa dugmetom za kopiranje;
 //   - episodes/<slug>/flow/flow.json — stanje: projekat, media ID-jevi, hash prompta.
+//
+// Slike se NE skidaju na računar: one žive u Flow-u, a na disk stižu tek konačni videi koje
+// korisnik sam skine posle animacije. Skidanje je samo na zahtev (`--download`) i tada daje
+// episodes/<slug>/flow/shot07-2.jpeg (1K original) i sličice u pregledu.
 //
 // Flow-ova pretraga nije put do slika jednog shota: semantička je („Head" vraća i „Woman") i
 // nove slike indeksira sa zakašnjenjem. Zato pregled vodi direktno na svaku sliku.
@@ -292,8 +295,8 @@ const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({
 
 /**
  * `flow/index.html` — svi kandidati shot po shot, u redosledu tajmlajna. Klik na sliku otvara
- * baš tu sliku u Flow-u, gde se bira „Animate". Slike su lokalne (`shot07-2.jpeg`), pa pregled
- * radi i kad Flow ne radi.
+ * baš tu sliku u Flow-u, gde se bira „Animate". Slike se podrazumevano ne skidaju, pa su
+ * kartice bez sličice; sličice (`shot07-2.jpeg`) postoje samo posle `--download`.
  * @param {object} storyboard
  * @param {object} state
  * @param {{now?: Date}} [opts]
@@ -333,7 +336,7 @@ export function renderIndex(storyboard, state, { now = new Date() } = {}) {
         const old = im.prompt_hash && im.prompt_hash !== cur;
         const pic = im.file
           ? `<img src="${esc(im.file)}" alt="${esc(im.name ?? imageBase(s.shot_id, im.k))}" loading="lazy">`
-          : '<div class="nofile">nije skinuto</div>';
+          : `<div class="nofile">${esc(imageBase(s.shot_id, im.k))} · otvori u Flow-u</div>`;
         const href = proj ? editUrl(proj, im.media_id) : '#';
         return `<a class="cand${old ? ' old' : ''}" href="${esc(href)}" target="_blank" rel="noopener">` +
           `${pic}<span>${esc(imageBase(s.shot_id, im.k))}${old ? ' · stari prompt' : ''}</span></a>`;
@@ -853,9 +856,9 @@ const USAGE = `node tools/flow-images.mjs <folder-epizode> [opcije]
   izbor najbolje i animacija ostaju tebi. Chrome se otvara sa zasebnim profilom; prvi put se
   u njemu prijaviš u Google, posle toga alat ulazi sam.
 
-  Posle prolaza: Flow projekat u kome je svaka slika nazvana shotNN-k, slike u
-  episodes/<slug>/flow/ i pregled za izbor episodes/<slug>/flow/index.html (klik na sliku je
-  otvara u Flow-u; animation prompt je ispod, sa dugmetom za kopiranje).
+  Posle prolaza: Flow projekat u kome je svaka slika nazvana shotNN-k i pregled za izbor
+  episodes/<slug>/flow/index.html (klik na sliku je otvara u Flow-u; animation prompt je ispod,
+  sa dugmetom za kopiranje). Slike se ne skidaju na računar — skidaš samo konačne videe.
   Prekinut prolaz se nastavlja ponovnim pokretanjem — gotovi shotovi se preskaču.
   Chrome prozor alata sme da stoji iza drugih prozora, ali ne minimizovan, i bez drugih tabova
   ispred taba alata dok radi (alat oba vraća sam).
@@ -871,7 +874,8 @@ const USAGE = `node tools/flow-images.mjs <folder-epizode> [opcije]
   --project-url URL  radi u postojećem projektu umesto da pravi nov
   --new              nov projekat i kad flow.json već ima jedan
   --no-rename        ne preimenuj slike u Flow-u
-  --no-download      ne skidaj slike na disk
+  --download         skini i slike na disk (episodes/<slug>/flow/shotNN-k.jpeg); bez ovoga
+                     se ništa ne skida
   --dry-run          samo ispiši šta bi uradio, bez pregledača
   --login            samo otvori Chrome i sačekaj prijavu u Google
   --port ${DEFAULT_PORT}        port za Chrome DevTools
@@ -882,7 +886,7 @@ const USAGE = `node tools/flow-images.mjs <folder-epizode> [opcije]
 export function parseArgs(argv) {
   const out = {
     dir: null, only: null, redo: null, count: 4, aspect: '16:9', model: null, parallel: 2, project: null,
-    projectUrl: null, newProject: false, rename: true, download: true, dryRun: false, login: false,
+    projectUrl: null, newProject: false, rename: true, download: false, dryRun: false, login: false,
     port: DEFAULT_PORT, help: false,
   };
   const ids = (v, flag) => {
@@ -922,7 +926,8 @@ export function parseArgs(argv) {
       case '--project-url': out.projectUrl = normalizeProjectUrl(value()); break;
       case '--new': out.newProject = true; break;
       case '--no-rename': out.rename = false; break;
-      case '--no-download': out.download = false; break;
+      case '--download': out.download = true; break;
+      case '--no-download': out.download = false; break; // stari naziv; sada je to podrazumevano
       case '--dry-run': out.dryRun = true; break;
       case '--login': out.login = true; break;
       case '--port': out.port = int(value(), flag, 1, 65535); break;

@@ -26,6 +26,13 @@ sam.
 Iz istog razloga alat ne dozvoljava da beat mapa nosi svoj tekst narracije:
 `beatplan.mjs` uvek izvodi `narration_says` iz `timing.json`-a.
 
+**Tagovi u zagradama nisu narracija.** `script.md` nosi ElevenLabs audio tagove
+(`[thoughtful]`, `[chuckles]`, `[short pause]`) — režijske napomene glasu koje se ne
+izgovaraju. `align.mjs` ih skida, pa ih `timing.json` nema. Kad citiraš skriptu (npr. u
+`notes.md` ili u promptu), citiraj izgovoreni tekst bez tagova, a tagove ne diraj: oni su
+deo zamrznute skripte. Ako `align.mjs` stane na zabranjen tag, to je greška skripte, ne alata —
+reci korisniku, ne uklanjaj ga sam (to traži novi render narracije).
+
 ## Tok
 
 Šest koraka. Checkpoint na trećem je jedino mesto gde se staje.
@@ -169,6 +176,14 @@ sheme, sa „Pravilima proreza").
 360–520, R5), P2 = 60–220 reči (meki cilj 150–210), kanonskim brojačem iz `schemas.md` §0.6, koji
 broji i nazive blokova. Plafoni su 2026-10-10 udvostručeni zato da bi promptovi bili **opisniji**:
 image prompt troši višak na `ACTION`, `SETTING`, `LIGHT` i `DETAIL`, animation prompt na proreze.
+
+**Image prompt je prvi frejm klipa, ne sredina scene.** `ACTION` opisuje pozu neposredno **pre**
+ključne radnje (predmet miruje, nema kontakta, nema ishoda), a radnju i ishod nosi animation
+prompt. Pravila i tabela „loše / dobro" su u `prompt-templates.md` → „Početni frejm, ne sredina
+scene". Kadrovi koji bi mogli da padnu na Flow filteru (dete, gola koža, rana, odsečen deo tela,
+skok u vatru) dobijaju još pri pisanju **Plan B** — alternativnu sliku i animaciju sa
+zamenjenim rečima — u `episodes/<slug>/alternatives.md`, a Plan C je still
+(`docs/reference/flow-filter.md`). `node tools/flow-risk.mjs episodes/<slug>` ih nalazi.
 
 **Pre prvog prompta odluči osu ekrana** (`camera-language.md`, „Osa ekrana — jedna po epizodi") i
 upiši je u `notes.md`. Osa ulazi u `FRAME LAYOUT`, `FACING`, `SCREEN DIRECTION`, `CAMERA` i

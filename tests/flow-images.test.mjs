@@ -61,24 +61,28 @@ function tmpEpisode(src) {
 
 // ------------------------------------------------------------------ argumenti
 
-test('parseArgs: podrazumevano 4 slike, 16:9, 2 paralelno, ime i fajl uključeni', () => {
+test('parseArgs: podrazumevano 4 slike, 16:9, 2 paralelno, ime da, skidanje slika ne', () => {
   const a = parseArgs(['episodes/el-dorado']);
   assert.equal(a.dir, 'episodes/el-dorado');
   assert.equal(a.count, 4);
   assert.equal(a.aspect, '16:9');
   assert.equal(a.parallel, 2);
   assert.equal(a.rename, true);
-  assert.equal(a.download, true);
+  assert.equal(a.download, false, 'slike se ne skidaju na računar osim na zahtev');
   assert.equal(a.model, null);
 });
 
+test('parseArgs: --download uključuje skidanje, --no-download ga i dalje isključuje', () => {
+  assert.equal(parseArgs(['ep', '--download']).download, true);
+  assert.equal(parseArgs(['ep', '--download', '--no-download']).download, false);
+});
+
 test('parseArgs: spiskovi shotova se skupljaju, a oblik --opcija=vrednost radi', () => {
-  const a = parseArgs(['ep', '--only', '07,12', '--only=3', '--redo', '5', '--count=2', '--no-rename', '--no-download']);
+  const a = parseArgs(['ep', '--only', '07,12', '--only=3', '--redo', '5', '--count=2', '--no-rename']);
   assert.deepEqual(a.only, ['07', '12', '3']);
   assert.deepEqual(a.redo, ['5']);
   assert.equal(a.count, 2);
   assert.equal(a.rename, false);
-  assert.equal(a.download, false);
 });
 
 test('parseArgs: granice i loše vrednosti su greška, ne tiho podrazumevano', () => {
@@ -279,7 +283,7 @@ test('renderIndex: svaka slika vodi na svoju stranicu u Flow-u; prompt je escapo
   assert.match(html, new RegExp(`href="${PROJECT}/edit/${ID(1)}"`));
   assert.match(html, new RegExp(`href="${PROJECT}/edit/${ID(2)}"`));
   assert.match(html, /<img src="shot01-1\.jpeg"/);
-  assert.match(html, /nije skinuto/);
+  assert.match(html, /shot01-2 · otvori u Flow-u/, 'slika bez fajla je kartica bez sličice, ne greška');
   assert.match(html, /nije uspelo: Flow &lt;odbio&gt;/);
   assert.match(html, /još nije generisano/);
   assert.match(html, /1\/3 shota generisano/);
@@ -332,4 +336,25 @@ test('main: kad je sve gotovo, ne otvara pregledač nego samo osveži pregled', 
   assert.equal(await main([dir], (l) => lines.push(l)), 0);
   assert.match(lines.join('\n'), /Nema posla/);
   assert.ok(fs.existsSync(path.join(dir, 'flow', 'index.html')));
+});
+
+test('main: slike bez fajla na disku nisu posao — bez --download pregledač se ne otvara', async () => {
+  const dir = tmpEpisode(GOOD);
+  const sb = load(GOOD);
+  const state = { version: 1, project_url: PROJECT, project_name: 'GOOD', shots: {} };
+  for (const [i, s] of shotsOf(sb).entries()) {
+    recordBatch(state, s, [{ mediaId: ID(i + 1), title: 'T' }]);
+    state.shots[s.shot_id].images[0].renamed = true; // imenovano u Flow-u, ništa na disku
+  }
+  saveState(dir, state);
+
+  const lines = [];
+  assert.equal(await main([dir], (l) => lines.push(l)), 0);
+  assert.match(lines.join('\n'), /Nema posla/);
+  assert.doesNotMatch(lines.join('\n'), /dovršavanje/);
+
+  // Na zahtev (--download) iste slike su zaostatak koji se dovršava.
+  const dry = [];
+  await main([dir, '--download', '--dry-run'], (l) => dry.push(l));
+  assert.match(dry.join('\n'), /dovršavanje imena\/fajlova/);
 });

@@ -36,6 +36,13 @@ U greek-gods-part-2 (2026-10-16) korisnik je ovo odobrio za manjkove od 0.2 do 0
 generisanje troši kredite. Zato u obaveštenju uz kratak manjak ponudi i ovu opciju, ali nikad
 je ne primeni bez odobrenja.
 
+**Manjak podeljen na pola** (`"freeze_split": ["01"]`, odobrio korisnik za el-dorado shot 01,
+2026-11-18, manjak 1.7s). Prvi frejm se drži ispred klipa, poslednji iza njega, svaki za pola
+manjka, a pokret ide u sredini. Dugačak rep od jednog zamrznutog frejma se vidi kao zastoj, pa za
+veći manjak ovo je druga opcija koju treba ponuditi uz regenerisanje. Isto važi: samo shotovi koje
+je korisnik imenovao, zvuk zamrznutih delova je tišina (klip kreće posle početka), a `qc-report.md`
+ima sekciju „Zamrznut prvi i poslednji frejm“. Shot u oba spiska se deli.
+
 Obaveštenje je tabela, po shotu: broj · vreme u videu (m:ss–m:ss) · šta fali · dužina
 generisanja (4/6/8/10s) · komanda `node tools/shotlist.mjs episodes/<slug> --only NN`.
 `--dry-run` i kontakt-list smeju da se puste. Render ne sme.

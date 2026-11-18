@@ -121,6 +121,80 @@ this"* unless the story has genuinely earned it.
 
 ---
 
+## Audio tags — delivery directions for ElevenLabs
+
+The narration is voiced by ElevenLabs **Eleven v3**, which treats a word in square brackets as a
+*direction to the voice* and does not speak it. Write these tags into the script so the voice
+knows where its delivery changes — this is how the archetype chosen above becomes a performance
+instead of a flat read. The tags live in the script itself; the pipeline strips them before
+anything is timed, subtitled or counted.
+
+**Format.** `[tag]` — lowercase, one to three words, inline, a single space before the text it
+colours. Place it **immediately before** the sentence or phrase it affects; the voice keeps that
+delivery until the next tag changes it. Never on a line of its own, never inside a word.
+
+**Palette** — a house vocabulary, not a closed list (v3 accepts free-form tags), but reuse beats
+variety:
+
+| Job | Tags |
+|---|---|
+| Register and emotion | `[thoughtful]` `[curious]` `[serious]` `[somber]` `[excited]` `[annoyed]` `[happy]` `[sarcastic]` |
+| Non-verbal | `[chuckles]` — dry irony only |
+| Timing | `[short pause]` · `[long pause]` — at most one `[long pause]`, before the payoff |
+
+**Where they go**
+
+- **The first sentence.** It carries a tag that sets the register for the whole read.
+- **Phase changes.** `[short pause]` opens a paragraph that changes time, place or phase of the
+  story — the beat the viewer needs before the next stretch.
+- **Turns of tone.** Tag the exact sentence where the story turns funny, tense, absurd, grim or
+  triumphant, not the paragraph before it.
+- **Irony.** `[chuckles]` goes *before* the line that holds the irony, never after it.
+- **The payoff.** The last story paragraph gets its own tag, so the ending lands in a different
+  state from the middle.
+- **The outro.** Tag the invitation so the sign-off is warmer than the story's last line.
+
+**Density.** About one tag every 3–6 sentences — roughly 10 in a 330-word script, 35–45 in a
+1,450-word one. Tag a *change*, not a rhythm: a tag that repeats the state the voice is already
+in is noise. One emotion tag per sentence; a pause may stack in front of it
+(`[short pause] [annoyed]`), and nothing stacks deeper than two.
+
+**Match the archetype.** *Commander* — `[serious]`, pauses, `[excited]` rarely, no `[chuckles]`.
+*Historian* — `[thoughtful]`, `[curious]`, pauses; `[chuckles]` only for dry irony, two or three
+times per episode at most. *Ancient* — `[somber]`, `[long pause]`; no `[excited]`, no
+`[chuckles]`. *Explorer* — `[curious]`, `[excited]`, `[happy]` freely. *Dark* — `[somber]`,
+`[serious]`; no `[happy]`, no `[chuckles]`.
+
+**Banned**
+
+- **`[sighs]` — never, in any form** (`[sigh]`, `[sighing]`, `[sighs heavily]`). The channel
+  owner finds it too artificial. For weariness or resignation use `[thoughtful]` or `[somber]`,
+  a `[short pause]`, and a flatter sentence. `tools/align.mjs` refuses a script that contains one.
+- **No sound-effect or music tags** (`[gunshot]`, `[applause]`, `[music]`). Sound cues are already
+  banned at this stage; a tag does not get around that.
+
+**The script must survive without them.** A tag changes delivery, never content: delete every tag
+and the script must read exactly as it should. Never leave a fact, name, number or pronunciation
+hint only inside a tag. Word counts — the ten-minute ceiling and the outro's 30–42 words — count
+spoken words only.
+
+```markdown
+[thoughtful] Australia sent soldiers with machine guns to defeat a bird. [chuckles] The birds won.
+
+[short pause] In 1932, farmers in Western Australia were in trouble. After the First World War,
+many veterans had been given land to farm, often poor land.
+
+And then came the emus. [excited] By one count, there were as many as twenty thousand, moving
+across the wheat country around Campion and wrecking the crops and the fences.
+```
+
+*For the human at the ElevenLabs step:* tags only act on **Eleven v3** — older models may read the
+brackets aloud. If the voice seems to ignore them, lower Stability (lower values make v3 more
+responsive to tags). `[short pause]` is not in ElevenLabs' published tag examples — v3 interprets
+it — so listen to it once; a comma or an ellipsis does the same job if it does not land.
+
+---
+
 ## The OUTRO — required, and a machine contract
 
 Every script ends with an outro section. It is not decoration: `tools/align.mjs` finds the
@@ -183,20 +257,24 @@ Return exactly these sections, in this order:
 
 - `## RECOMMENDED VOICE` — the archetype from stage 03.
 - `## VOICE CHARACTER` — the narrator voice, briefly.
-- `## VOICE DELIVERY` — pacing, intensity, emotional delivery, pauses, emphasis.
-- `## COMPLETE NARRATION SCRIPT` — the spoken text and nothing else.
-- `## OUTRO` — last, per the contract above.
+- `## VOICE DELIVERY` — pacing, intensity, emotional delivery, pauses, emphasis (in prose; the
+  tags themselves live in the script, not here).
+- `## COMPLETE NARRATION SCRIPT` — the spoken text with its audio tags, and nothing else.
+- `## OUTRO` — last, per the contract above; its sentences carry audio tags too.
 
-The narration must contain **only** spoken storytelling: no scene numbers or headings, image or
-animation prompts, camera or editing instructions, sound or music cues, timestamps, production
-notes, bracketed action, narrator directions, or commentary outside the narration itself.
+The narration must contain **only** spoken storytelling plus the audio tags defined above: no
+scene numbers or headings, image or animation prompts, camera or editing instructions, sound or
+music cues, timestamps, production notes, narrator directions, **no bracketed text other than
+audio tags**, or commentary outside the narration itself.
 
 Before returning, check the script yourself: it is still the approved story; the central question
 is answered and the conflict is clear; the opening creates curiosity and the viewer keeps gaining
 understanding; someone new to the subject can follow it; nothing unsupported, invented or
 mis-framed has crept in; it reads naturally aloud with varied rhythm; it sits safely inside five
 minutes; any recap of earlier parts stays within 2–4 sentences and ~50 words; the payoff lands
-and the final sentence is earned; and the outro obeys all four formatting rules.
+and the final sentence is earned; the audio tags follow their rules (first sentence tagged,
+roughly one tag every 3–6 sentences, no `[sighs]` in any form, nothing lost when they are
+deleted); and the outro obeys all four formatting rules.
 
 The hierarchy, when these pull against each other:
 **story → clarity → engagement → historical integrity → detail.**
