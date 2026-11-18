@@ -4,10 +4,14 @@
   "status": "in-progress",
   "voice": null,
   "narration_file": "narration.mp3",
-  "final_file": null,
+  "final_file": "final.mp4",
   "endcard_file": "shots/shot37.jpeg",
   "intro_file": null,
   "intro_volume": 0.2,
+  "protagonists": [
+    "Hunahpu",
+    "Xbalanque"
+  ],
   "characters": [
     {
       "id": "hunahpu",

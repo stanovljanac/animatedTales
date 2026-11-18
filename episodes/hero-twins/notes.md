@@ -46,7 +46,7 @@ Nijedan `link_group`.
   u 09 ide udesno ka igralištu.
 - **10–11:** drvo desno od mlade žene; kap pada zdesna ulevo u njen dlan.
 - **14–26:** blizanci levo, gospodari desno; u 23–24 lopta ide s desna ulevo, zec iz leva udesno; u 26 blizanci
-  skaču udesno u vatru.
+  idu udesno ka vatri (skok pokriva narracija, kadar staje pre njega).
 - **27–30:** gospodari na obali desno, blizanci kao „prosjaci" levo; u 30 glavni gospodari silaze s postolja
   zdesna ulevo.
 - **31:** blizanci i otac na platformi, dva svetla se dižu levo gore (sunce) i desno gore (mesec).
@@ -66,7 +66,7 @@ Nijedan `link_group`.
 - **Otac i stric su dva zasebna locka** (`hun-hunahpu`, `vucub-hunahpu`) jer ih skripta pominje kao „braću"
   pre blizanaca; blizanci i oni nikad nisu u istom kadru osim u 31.
 - **Bez krvi i bez golog tela:** glava na drvetu je mirna i bleda (10, 11), slepi miš je senka koja prelazi
-  preko cevi (21), glava u igri je gladak bledi oblik sa zatvorenim očima (23), „žrtvovanje" kao trik sa
+  preko cevi (21), lopta u igri je glatka bleda tikva bez lica (23, Plan B posle pada Plana A sa licem), „žrtvovanje" kao trik sa
   platnom (29), glavni gospodari se rasipaju u prašinu (30). Nijedna odrasla figura nije gola; svi su u
   majanskom ruhu.
 - **Bez dece:** blizanci su mladi ljudi, a mlada žena odrasla; nijedan kadar ne prikazuje dete (Flow filter).
@@ -86,3 +86,25 @@ Nijedan `link_group`.
 4. **Publish komplet** posle montaže; **S57 je interpolirana**, pa chapteri koji se oslanjaju na nju za
    outro treba da se proveravaju po `silencedetect`-u (241.23s).
 5. **Sajt:** tek pri objavi (nova regija North America; epoha Myth & Legend).
+
+## Flow filter i početni frejm (15. nov 2026)
+
+- **Početni frejm:** `image_prompt` je prvi frejm klipa, ne sredina scene. 23, 25, 26, 27, 28, 29, 30 i 31 su
+  prepisani tako da `ACTION` opisuje pozu pre radnje (lopta u ruci, baklja u ruci, kuća cela, lordovi još stoje,
+  prazno rečno dno), a radnja i ishod su u animation promptu. Pravila: `docs/reference/prompt-templates.md`.
+- **Plan B / Plan C:** alternative za rizične shotove su u [`alternatives.md`](alternatives.md). 23 i 26 su
+  prešli na Plan B (Plan A je pao); 29 i 30 drže Plan A u `storyboard.json`, Plan B i Plan C čekaju. Plan C je
+  u svim slučajevima still, `render_mode: still` + `still_motion: push`.
+
+## Montaža (15. nov 2026)
+
+- **Isporuka:** `shots/shotNN.mp4` / `.jpg` kopirani u `partNN.mp4` / `shotNN.jpeg` (originali netaknuti). Sadržaj svih 37
+  kadrova proveren na kontakt-listu prema `SUBJECT`-u; nijedan nije pomeren.
+- **23 je još** slika (Plan A kadar sa „glavom" u letu; klip nije prošao): prešao na Plan C u `storyboard.json`
+  (`render_mode: still`, `still_motion: push`, `source_file: shots/shot23.jpeg`). `image_prompt` u JSON-u je i dalje
+  Plan B tekst, jer slika nije od njega; ne regenerisati po njemu.
+- **26** je klip (Plan B animacija), kao što storyboard i traži.
+- 5 slika (15, 17, 23, 34, 36) + 31 klip + end kartica; `qc-report.md` čist, drift +0.018s, `final.mp4` 250.13s.
+- `protagonists`: Hunahpu, Xbalanque (Hun Hunahpu je kontekst). `publish.md` + `subtitles.srt` + `short/` gotovi.
+- Shortovi: 1 i 2 montaže (renderovane), 3 i 4 rezovi za editor (samo vremena i `.srt`).
+
