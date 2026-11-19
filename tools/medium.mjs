@@ -800,17 +800,23 @@ export async function writeArticle(m, a) {
   await m.shot('editor');
 
   // 2. naslov
+  await dismissTips(m);
   await m.clickSel(TITLE_SELS, 'polje za naslov');
   await typeText(page, a.title);
   await sleep(300);
+  // Nacrt dobija adresu /p/<id>/edit tek posle autosnimanja; beleži se pre provere naslova, da
+  // neuspeo pokušaj ne ostavi siroče nacrt koji sledeći pokušaj ne zna da nađe.
+  await page.waitFor(() => /\/p\/[0-9a-f]+\/edit/.test(location.href), { timeout: 8000, what: 'adresa nacrta' }).catch(() => false);
   let st = await m.state();
-  if (st.title !== a.title) throw new Error(`naslov nije upisan kako treba: „${st.title}“`);
+  if (/\/p\/[0-9a-f]+\/edit/.test(st.url)) a.onDraft?.(st.url);
+  // Medium pretvara ' u ’ i " u “ ”, pa se naslov poredi bez razlike u tipografskim navodnicima.
+  if (norm(st.title) !== norm(a.title)) throw new Error(`naslov nije upisan kako treba: „${st.title}“`);
   await page.press('Enter');
   await sleep(500);
-  a.onDraft?.(st.url);
 
   // 3. thumbnail kao slika (otpremanje u Medium), pa link ka videu
   await uploadThumbnail(m, a.thumb);
+  await dismissTips(m);
   await captionLink(m, a.videoUrl);
   await m.shot('thumbnail');
 
@@ -825,7 +831,7 @@ export async function writeArticle(m, a) {
   const want = a.blocks.filter((b) => b.type === 'h2' || b.type === 'h3').length;
   const videoLinks = st.links.filter((l) => l.href.includes(a.videoUrl.split('v=')[1])).length;
   const problems = [];
-  if (st.title !== a.title) problems.push(`naslov „${st.title}“`);
+  if (norm(st.title) !== norm(a.title)) problems.push(`naslov „${st.title}“`);
   if (!st.figures.some((f) => f.img)) problems.push('nema thumbnaila');
   if (st.headings.length < want) problems.push(`podnaslova ${st.headings.length} od ${want}`);
   if (videoLinks < 1) problems.push('nijedan link ka videu u tekstu');
@@ -860,6 +866,26 @@ export async function writeArticle(m, a) {
   const url = await waitPublished(m, a.title, a.publishWait ?? 90_000);
   await m.shot('objavljeno');
   return { status: 'published', url };
+}
+
+/**
+ * Medium-ova donja „fioka“ sa savetima za pisanje („Select text to change formatting…“) zauzima
+ * donju trećinu prozora i oduzima fokus editoru: klik na opis slike i trostruki klik za link tada
+ * završe u fioci. Zatvara se njenim dugmetom (`toggle-drawer`) kad je na ekranu.
+ */
+async function dismissTips(m) {
+  const { page } = m;
+  const at = await page.evaluate(() => {
+    const b = document.querySelector('.drawer [data-action="toggle-drawer"]');
+    if (!b) return null;
+    const r = b.getBoundingClientRect();
+    if (!r.width || !r.height || r.top < 0 || r.top > window.innerHeight - 20) return null;
+    return { x: Math.round(r.left + r.width / 2), y: Math.round(r.top + r.height / 2) };
+  });
+  if (!at) return false;
+  await page.click(at.x, at.y);
+  await sleep(700);
+  return true;
 }
 
 /** Čisti editor nacrta: Ctrl+A, Delete, dok ne ostane samo placeholder. */
