@@ -60,7 +60,7 @@ Izvorni plan kaže: **kvote se mere, ne nameću** dok nema podataka iz 3 epizode
 Zapiši u `episodes/<slug>/notes.md`:
 
 - broj beatova, broj shotova, prosečan `use_len`
-- distribucija `use_len` (koliko u 3–7s, koliko u 7–9s, koliko u 9–10s)
+- distribucija `use_len` (koliko u 3–7s, koliko u 7–9s, koliko u 9–10s, koliko preko 10s — to je R8)
 - upotrebljeni uređaji i njihova učestalost
 - trajanje whisper run-a
 - koliko si beatova ručno prepravio na checkpointu

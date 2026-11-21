@@ -309,7 +309,9 @@ stane. Pune odredbe su u `prompt-templates.md`, „Pravila proreza" — ovde je 
 najlakše zaboravi:
 
 - **Prorezi idu do `gen_len`, ne do `use_len`.** Na 8s generisanju poslednji prorez se završava
-  na `8s`, i kad je rez na 6.5s.
+  na `8s`, i kad je rez na 6.5s. `gen_len` je **najmanja cela sekunda 3–15** koja pokriva `use_len`
+  (Omni 1.2: 4.62s → 5s, ne 6s); `beatplan.mjs` je upisuje sam, a broj proreza raste sa njom
+  (3s → 3, 8s → 4–5, 13–15s → 6–7).
 - **Nijedan prorez nije duži od 2.5s** i svaki ima dve rečenice: glavna radnja (ko, čime, kuda,
   kojom brzinom) i šta se u istom trenutku još pomera.
 - **Poslednji prorez nastavlja radnju istim ritmom.** Nikad `hold`, `holds still`, `goes still`,
@@ -318,6 +320,22 @@ najlakše zaboravi:
   kaže `everything keeps moving … through the end of the <gen_len>s generation`.
 - **Tih kadar se piše usporenim pokretom**, ne odsustvom pokreta: dah, plamen, prašina u svetlu,
   spor push kamere.
+
+## Dužina klipa i cena (Omni 1.2)
+
+Flow generiše svaku celu sekundu od 3 do 15. Cena je **3 kr/s do 10s, 6 kr/s iznad** — klip od
+15s košta 60, koliko dva od 10s (`docs/reference/google-ai-plus.md` §2).
+
+- **Rez se bira prema priči, ne prema ceni.** Do 10s cena zavisi samo od ukupnih sekundi, ne od
+  toga kako su podeljene, pa kratak klip nije skuplji po sekundi (`3s` je dozvoljen; pravilo „4s
+  skoro nikad" iz Omni 1.1 je ukinuto). Granice reza ne treba ravnati na 4/6/8/10.
+- **Planer ne pravi shot duži od 10s** (`maxShot` u `tools/config.json`). Klip od 11–15s je
+  izuzetak koji uvodiš ručno samo kad scena traži **jedan neprekinut pokret** koji bi rez
+  pokvario. Svaki takav klip lint prijavljuje kao **R8** sa cenom iste dužine u dva klipa.
+  Teži je i za animaciju (6–7 proreza, veća šansa da kraj zamrzne).
+- **Sekunda viška je 3 kr.** Ne ostavljaj `gen_len` veći od potrebnog; R8 to javlja.
+- Epizoda od ~200s klipova je oko 600 kredita (stari cenovnik ~340), pa saopšti broj klipova jednom,
+  u jednoj liniji, bez tabele troška — kao i do sada.
 
 ## Šta ovaj skil ne radi
 

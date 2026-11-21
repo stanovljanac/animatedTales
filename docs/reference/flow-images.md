@@ -44,8 +44,8 @@ Ništa se ne instalira: alat je čist Node kao ostatak lanca, a Chrome je spoljn
    (kartice sa imenom `shotNN-k`, bez sličica jer slike nisu na disku), red `ACTION` iz prompta
    (šta treba da se vidi), dužina klipa u Flow-u i ime fajla za isporuku.
    - **klik na karticu** otvara tu sliku u Flow-u, na njenoj stranici — tu je i gledaš i biraš;
-   - **CLIP**: dugme „Kopiraj animation prompt" kopira prompt doslovno; dužina (4/6/8/10s) piše
-     pored. Klip se, kao i do sada, snima kao `shotNN.mp4` u koren epizode;
+   - **CLIP**: dugme „Kopiraj animation prompt" kopira prompt doslovno; dužina generisanja (cela sekunda 3–15,
+     Omni 1.2) piše pored. Klip se, kao i do sada, snima kao `shotNN.mp4` u koren epizode;
    - **STILL**: izabranu sliku skini iz Flow-a i sačuvaj kao `shotNN.jpeg` — pokret daje montaža.
 
 3. **Isporuka i montaža** su nepromenjene: `shotNN.mp4` / `shotNN.jpeg` u korenu epizode, pa

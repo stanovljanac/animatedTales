@@ -14,7 +14,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 import {
-  CEILING, DAILY, TIERS, creditLines, creditPlan,
+  CEILING, DAILY, MONTHLY, clipGenLen, creditLines, creditPlan, genCost,
   imageFile, main, parseArgs, renderBoard, renderShotlist, resolveOnly, shiftLine,
 } from '../tools/shotlist.mjs';
 
@@ -232,56 +232,92 @@ test('CLI: nepostojeći folder pada sa jasnom porukom', () => {
 
 // ---------------------------------------------------------------- Flow krediti
 
-test('krediti: cena je broj klipova puta tier, slike se ne računaju', () => {
-  const plan = creditPlan(27);
-  assert.deepEqual(plan.map((r) => r.total), [270, 540, 2700]);
+test('krediti: cena je zbir cena po dužini generisanja, ne broj klipova', () => {
+  // Omni 1.2 Flash: 3 kr/s do 10s, 6 kr/s iznad. Isti broj klipova, različita cena.
+  assert.equal(creditPlan([6, 6, 6]).total, 54);
+  assert.equal(creditPlan([10, 10, 10]).total, 90);
+  assert.equal(creditPlan([15, 15, 15]).total, 180);
+  assert.equal(creditPlan([3, 8, 12]).total, 9 + 24 + 42);
+  assert.equal(creditPlan([6, 6, 6]).seconds, 18);
 });
 
-test('krediti: Quality za celu epizodu probija mesečni plafon, Lite ne', () => {
-  const [lite, fast, quality] = creditPlan(33);
-  assert.equal(lite.overCeiling, false);
-  assert.equal(fast.overCeiling, false);
-  assert.equal(quality.overCeiling, true);
-  assert.ok(quality.total > CEILING);
+test('krediti: klip od 15s košta koliko dva od 10s', () => {
+  assert.equal(creditPlan([15]).total, creditPlan([10, 10]).total);
+  assert.equal(genCost(15), 60);
+});
+
+test('krediti: klipovi preko 10s se broje odvojeno', () => {
+  const r = creditPlan([8, 11, 15, 10]);
+  assert.equal(r.longClips, 2);
+  assert.equal(r.longTotal, 36 + 60);
+  assert.equal(creditPlan([8, 10]).longClips, 0);
+});
+
+test('krediti: mesečni plafon je 30 dnevnih + 1.000 mesečnih (Google AI Pro)', () => {
+  assert.equal(MONTHLY, 1000);
+  assert.equal(CEILING, 30 * DAILY + 1000);
+  assert.equal(creditPlan(new Array(40).fill(15)).overCeiling, 40 * 60 > CEILING);
+  assert.equal(creditPlan([8, 8]).overCeiling, false);
 });
 
 test('krediti: dani se računaju samo od dnevnih kredita', () => {
-  // 330 / 50 = 6.6 -> sedam dana; zaokružuje se naviše jer se sedmi dan mora otvoriti.
-  assert.equal(creditPlan(33)[0].days, Math.ceil(330 / DAILY));
-  assert.equal(creditPlan(33)[0].days, 7);
+  // 30 klipova od 6s = 540 kr; 540 / 50 = 10.8 -> jedanaest dana, zaokruženo naviše.
+  assert.equal(creditPlan(new Array(30).fill(6)).total, 540);
+  assert.equal(creditPlan(new Array(30).fill(6)).days, 11);
 });
 
 test('krediti: nula klipova ne košta ništa i ne probija plafon', () => {
-  for (const r of creditPlan(0)) {
-    assert.equal(r.total, 0);
-    assert.equal(r.days, 0);
-    assert.equal(r.overCeiling, false);
-  }
+  const r = creditPlan([]);
+  assert.equal(r.total, 0);
+  assert.equal(r.days, 0);
+  assert.equal(r.overCeiling, false);
 });
 
 test('krediti: hiljade se pišu tačkom, kako se čitaju', () => {
-  const out = creditLines(33).join('\n');
-  assert.ok(out.includes('3.300'), out);
-  assert.ok(out.includes('1.700'), out);
-  assert.ok(!out.includes('3300'), 'neformatiran broj je procurio u izlaz');
+  const out = creditLines(new Array(30).fill(15)).join('\n');
+  assert.ok(out.includes('1.800 cr'), out);
+  assert.ok(out.includes('1.000 cr/mesec'), out);
+  assert.ok(!out.includes('1800'), 'neformatiran broj je procurio u izlaz');
 });
 
 test('krediti: preko plafona se kaže umesto broja dana', () => {
-  const over = creditLines(33).find((l) => l.includes('Quality'));
+  const over = creditLines(new Array(50).fill(15)).find((l) => l.includes('Omni 1.2 Flash'));
   assert.ok(over.includes('preko mesečnog plafona'), over);
   assert.ok(!over.includes('dana po'), over);
+});
+
+test('krediti: zaglavlje nosi cenovnik i kaže da sekunda iznad 10s košta duplo', () => {
+  const out = creditLines([6, 12]).join('\n');
+  assert.ok(out.includes('Omni 1.2 Flash  18s generisanja = 60 cr'), out);
+  assert.ok(out.includes('3 cr/s do 10s, 6 cr/s iznad'), out);
+  assert.ok(out.includes('3s = 9 · 6s = 18 · 10s = 30 · 15s = 60'), out);
+  assert.ok(out.includes('Preko 10s: 1 klip, 42 cr'), out);
+  assert.ok(!out.includes('Veo'), 'Veo tierovi se ne koriste');
+});
+
+test('krediti: bez klipova preko 10s nema reda o dugim klipovima', () => {
+  assert.ok(!creditLines([3, 6, 10]).join('\n').includes('Preko 10s'));
+});
+
+test('clipGenLen: gen_len iz shota, a bez njega najmanja dužina koja pokriva use_len', () => {
+  assert.equal(clipGenLen({ gen_len: 7, use_len: 4.2 }), 7);
+  assert.equal(clipGenLen({ gen_len: null, use_len: 4.62 }), 5);
+  assert.equal(clipGenLen({ use_len: 12.3 }), 13);
+  assert.equal(clipGenLen({ gen_len: null, use_len: 15.4 }), 16, 'preko 15s ostaje račun, T4 je taj koji pada');
 });
 
 test('shotlist: zaglavlje nosi budžet za onoliko klipova koliko ima shotova', () => {
   const out = renderShotlist(load(GOOD));
   assert.ok(out.includes('FLOW KREDITI — 3 klipa'), out.split('\n').slice(0, 8).join('\n'));
+  // good-episode: gen_len 8 + 8 + 10 = 26s generisanja = 24 + 24 + 30
+  assert.ok(out.includes('26s generisanja = 78 cr'), out.split('\n').slice(0, 8).join('\n'));
 });
 
 test('shotlist: --only spušta račun na regenerisane shotove', () => {
   const sb = load(GOOD);
   const one = only(sb, ['1']);
   assert.ok(one.includes('FLOW KREDITI — 1 klip;'), one.split('\n').slice(0, 8).join('\n'));
-  assert.ok(one.includes(`${1 * TIERS[0].cost} cr`), 'cena jednog Lite klipa nije u izlazu');
+  assert.ok(one.includes('8s generisanja = 24 cr'), 'cena prvog klipa (8s) nije u izlazu');
 });
 
 test('shotlist: blok o kreditima stoji pre prvog shota, ne posle', () => {
@@ -302,18 +338,18 @@ test('shotlist: blok o kreditima stoji pre prvog shota, ne posle', () => {
 const STILL = path.join(FIX, 'still-episode');
 
 test('krediti: slike stoje uz klipove u zaglavlju, ali ne ulaze u račun', () => {
-  const out = creditLines(1, 5).join('\n');
+  const out = creditLines([6], 5).join('\n');
   assert.ok(out.includes('1 klip + 5 slika'), out);
-  assert.ok(out.includes(`${TIERS[0].cost} cr`), out);
+  assert.ok(out.includes('6s generisanja = 18 cr'), out);
   assert.ok(!out.includes('6 klipova'), out);
 });
 
-test('krediti: epizoda bez ijednog klipa dobija jedan red, ne tabelu tierova', () => {
-  const lines = creditLines(0, 45);
+test('krediti: epizoda bez ijednog klipa dobija jedan red, ne račun', () => {
+  const lines = creditLines([], 45);
   const out = lines.join('\n');
   assert.ok(out.includes('45 slika'), out);
   assert.ok(out.includes('0 kredita'), out);
-  for (const t of TIERS) assert.ok(!out.includes(t.name), `tier ${t.name} nema šta da bira`);
+  assert.ok(!out.includes('Omni'), 'nema klipa, nema modela koji se plaća');
 });
 
 test('shotlist: budžet broji samo klipove, i kad su shotovi mešani', () => {
@@ -435,9 +471,9 @@ test('board: --only komponuje i broji zaglavlje po prikazanim shotovima', () => 
 });
 
 test('board: smena se meri dnevnim kreditima, ne satima', () => {
-  assert.ok(board(load(GOOD)).includes(`Jedna smena = dnevnih ${DAILY} cr: 5 Lite · 2 Fast · 0 Quality`),
-    shiftLine(3));
-  assert.ok(board(load(STILL)).includes('Jedna smena = dnevnih 50 cr: 5 Lite · 2 Fast · 0 Quality'));
+  const line = `Jedna smena = dnevnih ${DAILY} cr: 5 × 3s · 2 × 6s · 1 × 10s · 0 × 15s`;
+  assert.ok(board(load(GOOD)).includes(line), shiftLine(3));
+  assert.ok(board(load(STILL)).includes(line));
 });
 
 test('board: epizoda bez ijednog klipa ne meri smenu kreditima', () => {

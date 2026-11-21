@@ -76,7 +76,9 @@ kod kuće, u `storyboard.json`, i vraća se u tab preko `--board`. Izvor istine 
 
 ## Smena se meri kreditima, ne satima
 
-Zaglavlje tabele ispisuje šta dnevnih 50 kredita stvarno nosi: **5 Lite, 2 Fast, 0
-Quality** klipova. Pola sata je više nego dovoljno za taj plafon, pa clip epizodu ne
-prekida vreme nego kapaljka. Still epizoda nema plafon — slika je besplatna, pa smena
+Zaglavlje tabele ispisuje šta dnevnih 50 kredita stvarno nosi (Omni 1.2, 3 kr/s do 10s):
+**5 klipova od 3s, 2 od 6s, 1 od 10s, 0 od 15s**. Klip od 14s ili 15s (54 i 60 kr) ne staje u
+dnevnih 50 i troši mesečne. Pola sata je više nego dovoljno za taj plafon, pa clip epizodu ne
+prekida vreme nego kapaljka. Zaglavlje nosi i račun epizode: sekunde generisanja, ukupne kredite,
+dane od dnevnih 50 i klipove preko 10s (sekunda iznad desete je duplo skuplja). Still epizoda nema plafon — slika je besplatna, pa smena
 traje koliko traje.

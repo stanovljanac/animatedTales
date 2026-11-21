@@ -44,7 +44,7 @@ je korisnik imenovao, zvuk zamrznutih delova je tišina (klip kreće posle poče
 ima sekciju „Zamrznut prvi i poslednji frejm“. Shot u oba spiska se deli.
 
 Obaveštenje je tabela, po shotu: broj · vreme u videu (m:ss–m:ss) · šta fali · dužina
-generisanja (4/6/8/10s) · komanda `node tools/shotlist.mjs episodes/<slug> --only NN`.
+generisanja (cela sekunda 3–15) · komanda `node tools/shotlist.mjs episodes/<slug> --only NN`.
 `--dry-run` i kontakt-list smeju da se puste. Render ne sme.
 
 ## Tok

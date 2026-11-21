@@ -33,7 +33,9 @@ Izbor najbolje slike i klip od nje ostaju ručni posao u Flow-u — pregled uz s
 animation prompt i dužinu, a `shotlist.mjs` istu čeklistu za terminal. Čeklista u zaglavlju
 nosi i **budžet kredita**: slika je u Flow-u besplatna, klip nije, pa je budžet epizode uvek
 budžet za video, a dnevnih 50 kredita diktira raspored —
-[`docs/reference/google-ai-plus.md`](docs/reference/google-ai-plus.md).
+[`docs/reference/google-ai-plus.md`](docs/reference/google-ai-plus.md). Model je Omni 1.2 Flash:
+klip se generiše u celim sekundama od 3 do 15, a cena je **3 kredita po sekundi do 10s i 6 iznad**
+(klip od 15s košta koliko dva od 10s), pa je 11–15s izuzetak koji lint prijavljuje kao R8.
 Kad Flow odbije klip (maloletnici, golotinja, nasilje, samopovređivanje), alternative po kategoriji
 su u [`docs/reference/flow-filter.md`](docs/reference/flow-filter.md): Plan A original, Plan B alternativna
 slika + animacija (`episodes/<slug>/alternatives.md`), Plan C still. `node tools/flow-risk.mjs episodes/<slug>` nalazi
@@ -75,12 +77,14 @@ node tools/short.mjs     episodes/<slug> short1 --sheet
 node tools/medium.mjs    episodes/<slug> --check        # medium.md prolazi pravila (isto proverava publish.mjs)
 node tools/medium.mjs    episodes/<slug> --watch        # čeka video u feedu kanala, pa objavi članak na Medium
 node tools/medium.mjs    --sweep                        # jedan prolaz kroz sve epizode (Task Scheduler: --install-task)
+node tools/disk.mjs      --report                       # veličina po epizodi, šta se sme očistiti (samo čita)
+node tools/disk.mjs      --clean [slug] [--yes]         # briše regenerabilni .cache javnih epizoda; bez --yes je suvo pokretanje
 ```
 
 Svaki alat ima `--help`. Provere:
 
 ```
-node --test "tests/*.test.mjs"   # 638 testova (Node 22+ ne prima sam folder)
+node --test "tests/*.test.mjs"   # 691 test (Node 22+ ne prima sam folder)
 node tests/check-fixtures.mjs # izvršni oblik ugovora iz schemas.md
 ```
 
@@ -105,10 +109,11 @@ node tests/check-fixtures.mjs # izvršni oblik ugovora iz schemas.md
 
 `tools/lint.mjs` deli nalaze na dva sloja i to je namerno:
 
-- **BLOCKING** (T1–T3, S1–S5, P1/P2, C1, F1) — merljivo je i obara `exit code`. Vremena se
+- **BLOCKING** (T1–T4, S1–S5, P1/P2, C1, F1) — merljivo je i obara `exit code`. Vremena se
   poklapaju, promptovi imaju obavezne blokove, zaključani opisi likova stoje doslovno u svakom
   kadru u kome lik učestvuje.
-- **ADVISORY** (R1–R6, C2) — izlistava se i ne obara ništa. Kvote se **mere, ne nameću**: prag
+- **ADVISORY** (R1–R8, C2) — izlistava se i ne obara ništa. R8 je cena generisanja: klip duži od
+  10s (6 kr/s umesto 3) i sekunde `gen_len`-a viška. Kvote se **mere, ne nameću**: prag
   se uvodi tek kad postoje podaci iz tri epizode.
 
 `storyboard.json` postoji u dve verzije ugovora. **Shema 2** (nove epizode) uvodi `SUBJECT`,

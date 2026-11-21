@@ -199,7 +199,7 @@ export function renderStoryboard(storyboard) {
               `(\`use_len\` ${fmt(s.use_len)}s)`,
             `- motion budget: ${s.motion_budget === null ? '—' : `${fmt(s.motion_budget)}s`}`,
             // Jedina brojka na ovoj listi koja je uputstvo operateru, a ne opis fajla: Flow
-            // prima samo 4/6/8/10s, pa se bira gen_len, a montaža krati na use_len.
+            // prima samo cele sekunde 3-15, pa se bira gen_len, a montaža krati na use_len.
             `- **generiši: ${s.gen_len === null ? '—' : `${s.gen_len}s`}** · koristi se ` +
               `${fmt(s.use_len)}s, ostatak je nastavak pokreta koji montaža odseca`,
             `- ingredient: ${s.ingredient_image === null ? '—' : `\`${s.ingredient_image}\``}`,

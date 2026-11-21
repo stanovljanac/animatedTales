@@ -1,6 +1,13 @@
 # Still kadrovi — epizoda od slika, bez Veo klipova
 
 **Status:** odobren za izvođenje · 2026-09-09
+
+> **Napomena (2026-11-21).** Ovo je dizajn-zapis iz 2026-09-09 i brojke u njemu su iz tog dana:
+> Veo klipovi, `3.0–10.0s` kao raspon klipa, `270–2700` kredita po epizodi, tabela tierova u
+> zaglavlju čekliste. Važeća pravila (od 2026-11-21, Omni 1.2 Flash): `docs/reference/schemas.md` §5.14 i `docs/reference/google-ai-plus.md` §2. Još važi sve što je ovde odlučeno o still kadrovima (`2.5–9.0s`,
+> `render_mode`, `still_motion`); zastarelo je samo ono što se odnosi na klip: raspon `use_len`
+> je sada 3.0–15.0s, a račun kredita ide po sekundama generisanja (3 kr/s do 10s, 6 kr/s iznad),
+> bez tierova.
 **Zahvata:** `tools/contract.mjs`, `tools/lint.mjs`, `tools/assemble.mjs`, `tools/shotlist.mjs`,
 `tools/render.mjs`, `tools/beatplan.mjs`, `docs/reference/schemas.md`, fixture i testovi.
 

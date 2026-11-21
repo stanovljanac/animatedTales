@@ -93,7 +93,7 @@ sb.beats.forEach((b, bi) => {
     ok(near(s.t_in, cursor), `${id}: t_in ${s.t_in} ne nastavlja tajmlajn na ${cursor} (T1: gap/preklapanje)`);
     ok(near(s.t_out, s.t_in + s.use_len), `${id}: t_out != t_in + use_len`);
     ok(near(s.use_out, s.use_in + s.use_len), `${id}: use_out != use_in + use_len`);
-    ok(s.use_len >= 3.0 && s.use_len <= 10.0, `${id}: T2 use_len ${s.use_len} van 3.0–10.0`);
+    ok(s.use_len >= 3.0 && s.use_len <= 15.0, `${id}: T2 use_len ${s.use_len} van 3.0–15.0`);
     for (const [k, v] of Object.entries({ t_in: s.t_in, t_out: s.t_out, use_in: s.use_in, use_out: s.use_out, use_len: s.use_len }))
       ok(isFrameAligned(v, fps), `${id}: ${k}=${v} nije frejm-poravnato na ${fps}fps`);
     ok(s.use_len >= 9.0 || s.motion_budget !== null, `${id}: T3 motion_budget nedostaje (use_len ${s.use_len} < 9.0)`);

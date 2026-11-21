@@ -13,14 +13,14 @@
 //
 //   M1  režim rendera — still_motion je važeći na still shotu i odsutan na clip shotu
 //   T1  pokrivenost tajmlajna — gapovi, preklapanja, sum(use_len) vs narration_duration (±0.2s)
-//   T2  use_len u 3.0–10.0s (still: 2.5–9.0s, uz use_in = 0)
+//   T2  use_len u 3.0–15.0s (still: 2.5–9.0s, uz use_in = 0); iznad 10s javlja se R8
 //   T3  motion_budget prisutan kad use_len < 9.0 (still: mora da bude null)
 //   S1  zabranjene prostorne fraze bez screen-position klauzule
 //   S2  pet obaveznih blokova u image promptu
 //   S3  reči koje impliciraju rez unutar klipa, u animation promptu (still: ne meri se)
 //   P1  image prompt 90–160 reči (shema 2: 90–720, end kartica 90–1200)
-//   P2  animation prompt 60–220 reči (still: mora da bude null)
-//   T4  gen_len je najmanje Flow generisanje koje pokriva use_len; prompt ga imenuje
+//   P2  animation prompt 60–220 reči, 60–330 kad se generiše duže od 10s (still: mora da bude null)
+//   T4  gen_len je cela sekunda 3–15s koja pokriva use_len; prompt imenuje istu brojku
 //   C1  locked_description doslovno u image promptu svakog shota gde entitet učestvuje
 //   F1  svaki shot ima svoj klip, izvor ≥ use_out (still: slika postoji i čita se)
 //
@@ -37,6 +37,7 @@
 //   R5  dužina image i animation prompta izvan mekog opsega (shema 2)
 //   R6  SCREEN DIRECTION bez imenovanog pokreta (shema 2)
 //   R7  still_motion se ne slaže sa tags.camera_motion
+//   R8  cena generisanja: klip duži od 10s (6 kr/s umesto 3) ili gen_len veći od potrebnog
 //   C2  broj multi-visual klipova
 //
 // Nalaz uvek nosi izmerenu i očekivanu vrednost. Bez izmerene vrednosti izveštaj je
@@ -48,7 +49,7 @@ import { fileURLToPath } from 'node:url';
 
 import { probe } from './ffmpeg.mjs';
 import {
-  EPS, genLen, GEN_TIERS, LIMITS, MULTI_VISUAL_MARKERS, R1_AXES, R1_ESCALATION_AXES, R1_MAX_DIFFERING,
+  EPS, animLimits, genCost, genLen, GEN_TIERS, LIMITS, MULTI_VISUAL_MARKERS, R1_AXES, R1_ESCALATION_AXES, R1_MAX_DIFFERING,
   R4_MIN_WORDS, RENDER_MODES, S2_BLOCKS, S2_BLOCKS_V2, S3_WORDS, STILL_MOTIONS,
   STILL_MOTION_CAMERA, TAGS,
   countWords, isStill, loadCameraLanguage, loadFixedPromptLines, loadStyleString,
@@ -63,7 +64,7 @@ import {
 export const CHECKS = ['M1', 'T1', 'T2', 'T3', 'T4', 'S1', 'S2', 'S3', 'S4', 'S5', 'P1', 'P2', 'C1', 'F1'];
 
 /** ADVISORY kodovi, redosledom ADVISORY tabele. Nikad ne ulaze u exit code. */
-export const ADVISORY = ['R1', 'R2', 'R3', 'R4', 'R5', 'R6', 'R7', 'C2'];
+export const ADVISORY = ['R1', 'R2', 'R3', 'R4', 'R5', 'R6', 'R7', 'R8', 'C2'];
 
 const near = (a, b) => Math.abs(a - b) < EPS;
 const fmt = (t) => Number(t).toFixed(3).replace(/\.?0+$/, '');
@@ -287,7 +288,7 @@ function checkShot(shot, { lists, entities, v = 1, endCard = false }) {
   }
 
   // T3 — motion_budget kad se pokret mora ugurati u manje od 9s.
-  // Na still shotu je obrnuto: budžet pokreta je instrukcija Veo modelu koliko sekundi ima,
+  // Na still shotu je obrnuto: budžet pokreta je instrukcija video modelu koliko sekundi ima,
   // a modela nema — pa polje mora da bude prazno.
   if (still) {
     if (shot.motion_budget !== null && shot.motion_budget !== undefined) {
@@ -322,8 +323,14 @@ function checkShot(shot, { lists, entities, v = 1, endCard = false }) {
     }
   }
 
-  // T4 - duzina generisanja. Flow prima samo 4/6/8/10s (contract.mjs `GEN_TIERS`), pa svaki
+  // T4 - duzina generisanja. Flow prima cele sekunde 3-15 (contract.mjs `GEN_TIERS`), pa svaki
   // klip nosi tu brojku i animation prompt je pise. Still shot nema sta da generise.
+  //
+  // BLOCKING je samo ono sto kvari klip: gen_len van lestvice, kraci od use_len, ili prompt
+  // koji pise drugu duzinu od one koja se generise. Da li je gen_len *najmanji* koji pokriva
+  // use_len je pitanje novca, ne ispravnosti — to meri R8. Od Omni 1.2 (2026-11-21) lestvica
+  // je gusta, pa storyboardi pisani za 4/6/8/10 ostaju ispravni (6s za use_len 4.62 i dalje
+  // radi), samo placaju sekundu-dve viska.
   if (still) {
     if (shot.gen_len !== null && shot.gen_len !== undefined) {
       out.push(finding('T4', where,
@@ -339,20 +346,24 @@ function checkShot(shot, { lists, entities, v = 1, endCard = false }) {
     } else if (shot.gen_len === null || shot.gen_len === undefined) {
       out.push(finding('T4', where, `gen_len je null, a use_len je ${fmt(shot.use_len)}s`,
         'null', `${want}s`));
-    } else if (!near(shot.gen_len, want)) {
+    } else if (!GEN_TIERS.some((t) => near(t, shot.gen_len))) {
       out.push(finding('T4', where,
-        `gen_len ${fmt(shot.gen_len)}s nije najmanje generisanje koje pokriva use_len ${fmt(shot.use_len)}s`,
-        `${fmt(shot.gen_len)}s`, `${want}s`));
+        `gen_len ${fmt(shot.gen_len)}s nije dužina koju Flow generiše`,
+        `${fmt(shot.gen_len)}s`, `cela sekunda ${GEN_TIERS[0]}–${GEN_TIERS[GEN_TIERS.length - 1]}s`));
+    } else if (shot.gen_len < shot.use_len - EPS) {
+      out.push(finding('T4', where,
+        `gen_len ${fmt(shot.gen_len)}s je kraći od use_len ${fmt(shot.use_len)}s — klip se ne može produžiti`,
+        `${fmt(shot.gen_len)}s`, `≥ ${fmt(shot.use_len)}s (najmanje ${want}s)`));
     } else {
       const g = String(shot.animation_prompt).match(GEN_LINE);
       if (!g) {
         out.push(finding('T4', where,
-          'MOTION BUDGET linija ne imenuje dužinu generisanja',
-          'nema brojke', `… through the end of the ${want}s generation`));
-      } else if (!near(Number(g[1]), want)) {
+          'animation prompt ne imenuje dužinu generisanja',
+          'nema brojke', `… through the end of the ${fmt(shot.gen_len)}s generation`));
+      } else if (!near(Number(g[1]), shot.gen_len)) {
         out.push(finding('T4', where,
-          `MOTION BUDGET kaže ${g[1]}s generation, a gen_len je ${want}s`,
-          `${g[1]}s`, `${want}s`));
+          `MOTION BUDGET kaže ${g[1]}s generation, a gen_len je ${fmt(shot.gen_len)}s`,
+          `${g[1]}s`, `${fmt(shot.gen_len)}s`));
       }
     }
   }
@@ -414,10 +425,12 @@ function checkShot(shot, { lists, entities, v = 1, endCard = false }) {
     }
   } else {
     const a = countWords(shot.animation_prompt);
-    if (a < LIMITS.animWords.min || a > LIMITS.animWords.max) {
+    // Plafon prati dužinu generisanja: preko 10s prorezi su 6-7, pa 220 reči ne staje.
+    const { hard } = animLimits(shot.gen_len);
+    if (a < hard.min || a > hard.max) {
       out.push(finding('P2', where,
-        `animation prompt ${a} reči — izvan granica ${LIMITS.animWords.min}–${LIMITS.animWords.max}`,
-        `${a} reči`, `${LIMITS.animWords.min}–${LIMITS.animWords.max}`));
+        `animation prompt ${a} reči — izvan granica ${hard.min}–${hard.max}`,
+        `${a} reči`, `${hard.min}–${hard.max}`));
     }
   }
 
@@ -852,7 +865,7 @@ function checkR5(storyboard) {
     // znači ništa.
     if (i < shots.length - 1) fields.push(['image', sh.image_prompt, LIMITS.imageSoft]);
     // Still shot nema animation prompt; `null` bi se brojao kao prompt od jedne reči.
-    if (!isStill(sh)) fields.push(['animation', sh.animation_prompt, LIMITS.animSoft]);
+    if (!isStill(sh)) fields.push(['animation', sh.animation_prompt, animLimits(sh.gen_len).soft]);
     for (const [field, text, { min, max }] of fields) {
       const n = countWords(text);
       if (n < min || n > max) {
@@ -918,6 +931,46 @@ function checkR7(storyboard) {
   return out;
 }
 
+// ---------------------------------------------------------------- R8
+
+/**
+ * Cena generisanja (Omni 1.2 Flash, `contract.mjs` `GEN_COST`). Dva razloga da klip košta više
+ * nego što mora, oba mere novac a ne ispravnost — zato signal, ne nalaz:
+ *
+ *  - `use_len` preko `LIMITS.longClip` (10s): sekunda iznad 10 kosta 6 kredita umesto 3, pa
+ *    15s klip košta koliko dva od 10s. Dugi klip je legitiman kad kadar to traži (jedan neprekinut
+ *    pokret), zato je ovo pitanje, ne zabrana; uz izmerenu cenu ide i cena iste dužine u dva klipa.
+ *  - `gen_len` veći od najmanjeg koji pokriva `use_len`: placa se sekunda koju montaža odseca.
+ *    T4 to ne blokira jer je storyboard pisan za lestvicu 4/6/8/10 i dalje ispravan.
+ */
+function checkR8(storyboard) {
+  const out = [];
+  for (const s of flatShots(storyboard)) {
+    if (isStill(s) || typeof s.gen_len !== 'number') continue;
+    const cost = genCost(s.gen_len);
+
+    if (s.use_len > LIMITS.longClip + EPS) {
+      const half = Math.ceil(s.gen_len / 2);
+      const split = genCost(half) + genCost(s.gen_len - half);
+      out.push(signal('R8', `shot ${s.shot_id}`,
+        `klip od ${fmt(s.use_len)}s (generisanje ${s.gen_len}s) košta ${cost} kr; ` +
+          `sekunda iznad ${LIMITS.longClip}s je duplo skuplja — ista dužina u dva klipa ` +
+          `(${half}s + ${s.gen_len - half}s) košta ${split} kr`,
+        `${cost} kr`));
+    }
+
+    const want = genLen(s.use_len);
+    if (want !== null && s.gen_len > want + EPS) {
+      const extra = s.gen_len - want;
+      out.push(signal('R8', `shot ${s.shot_id}`,
+        `gen_len ${s.gen_len}s, a use_len ${fmt(s.use_len)}s staje u ${want}s — ` +
+          `${extra}s viška, ${cost - genCost(want)} kr bačeno`,
+        `${cost - genCost(want)} kr`));
+    }
+  }
+  return out;
+}
+
 /**
  * Ceo ADVISORY sloj nad učitanim JSON-ovima. Ne vraća nalaze nego signale i **ne sme** da
  * učestvuje u exit code-u.
@@ -935,6 +988,7 @@ export function advise(storyboard, episode, opts = {}) {
     ...checkR5(storyboard),
     ...checkR6(storyboard, lists),
     ...checkR7(storyboard),
+    ...checkR8(storyboard),
     ...checkC2(storyboard),
   ]);
 }
@@ -999,6 +1053,7 @@ const ADVISORY_TITLES = {
   R5: 'dužina image i animation prompta izvan mekog opsega',
   R6: 'SCREEN DIRECTION bez imenovanog pokreta',
   R7: 'still_motion se ne slaže sa camera_motion',
+  R8: 'cena generisanja — klip duži od 10s ili sekunde viška',
   C2: 'multi-visual klipovi',
 };
 
@@ -1008,6 +1063,9 @@ const ADVISORY_NOTES = {
     'kanonski style string (`style-string.md`) i fiksne `PRESERVE`/`FORBID` linije ' +
     '(`prompt-templates.md`). C1 zahteva doslovno ponavljanje `locked_description`-a, pa bi bez ' +
     'tog izuzeća R4 lajao na svaki ispravan storyboard.',
+  R8: 'Legenda: Omni 1.2 Flash naplaćuje 3 kr po sekundi do 10s, a 6 kr po sekundi iznad toga ' +
+    '(`contract.mjs` `GEN_COST`). Klip od 11–15s je dozvoljen kad ga scena traži; ovo je pitanje ' +
+    'da li traži, ne zabrana. „Sekunde viška“ su gen_len iznad najmanjeg koji pokriva use_len.',
   C2: 'Legenda: meri se deklaracija u `animation_prompt`-u (`OPENING VISUAL`, `MIDDLE VISUAL`, …), ' +
     'ne posebno polje u `storyboard.json`.',
 };
@@ -1054,8 +1112,8 @@ export function renderReport({
 const USAGE = `node tools/lint.mjs <folder-epizode> [opcije]
 
   Deterministički QA. Piše <folder>/qa-report.md sa dve sekcije: BLOCKING
-  (deset provera; exit code 1 ako ima ijedan nalaz) i ADVISORY (pet
-  kreativnih signala; nikad ne menja exit code).
+  (deset provera; exit code 1 ako ima ijedan nalaz) i ADVISORY (kreativni
+  signali i cena generisanja; nikad ne menja exit code).
 
   --no-media    preskoči F1 (klipovi još ne postoje — storyboard faza)
   --no-write    ne piši qa-report.md, samo ispiši nalaze

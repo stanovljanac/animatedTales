@@ -20,13 +20,14 @@ Izlaz: `episodes/<slug>/qa-report.md` sa **dve strogo odvojene sekcije**. Exit c
 | # | Provera | Prag |
 |---|---|---|
 | T1 | pokrivenost tajmlajna: gapovi / preklapanja / `sum(use)` vs trajanje narracije | ±0.2s |
-| T2 | `use_len` u granicama | 3.0–10.0s |
+| T2 | `use_len` u granicama | 3.0–10.0s (od 2026-11-21, Omni 1.2: **3.0–15.0s**, vidi `schemas.md` §5.14) |
 | T3 | `motion_budget` prisutan kad `use_len < 9.0` | — |
+| T4 | *(dodato posle C06)* `gen_len` je cela sekunda 3–15, ne kraća od `use_len`, ista brojka u promptu | 3–15s (do 2026-11-21: 4/6/8/10s) |
 | S1 | zabranjene prostorne fraze bez screen-position klauzule | — |
 | S2 | obavezni blokovi u image promptu: `CAMERA`, `FRAME LAYOUT`, `FACING`, `SCREEN DIRECTION`, `NOT IN FRAME` | — |
 | S3 | reči koje impliciraju rez unutar klipa: `then`, `later`, `afterwards`, `cuts to`, `meanwhile` (u animation promptu) | — |
 | P1 | dužina image prompta | 90–160 reči |
-| P2 | dužina animation prompta | 60–100 reči |
+| P2 | dužina animation prompta | 60–100 reči *(važeće: 60–220; 60–330 kad je `gen_len` preko 10s)* |
 | C1 | `locked_description` iz `episode.json` prisutan **doslovno** u svakom shotu gde lik učestvuje | — |
 | F1 | svaki shot ima svoj `shots/partNN.mp4`, izvor ≥ `use_out` | — |
 
@@ -56,7 +57,7 @@ Izlaz: `episodes/<slug>/qa-report.md` sa **dve strogo odvojene sekcije**. Exit c
 Generated: <ts> · storyboard: <N> beatova, <M> shotova
 
 ## BLOCKING  (<k> nalaza)
-- [T2] shot 07: use_len 1.2s — izvan granica 3.0–10.0
+- [T2] shot 07: use_len 1.2s — izvan granica 3.0–15.0
 - [S2] shot 12: image prompt nema blok FACING
 ...
 

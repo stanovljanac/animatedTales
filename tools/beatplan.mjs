@@ -50,7 +50,7 @@ import { DEFAULTS, planTimeline } from './timeline.mjs';
 /**
  * Granice reza za still epizodu (schemas.md §3.3.2). Min i max dolaze iz istog mesta odakle
  * ih uzima T2; cilj je zaseban broj, jer plafon nije cilj. `motionBelow: 0` isključuje
- * `motion_budget` — nema Veo modela kome bi se zadao.
+ * `motion_budget` — nema video modela kome bi se zadao.
  */
 export const STILL_DEFAULTS = {
   minShot: LIMITS.stillUseLen.min,

@@ -58,7 +58,10 @@ inače:
   zaokruži na 1 frejm (0.0417s @ 24fps), poslednji shot upija ostatak
 ```
 
-Tvrde granice: **min 3.0s, max 10.0s** po shotu.
+Tvrde granice: **min 3.0s, max 10.0s** po shotu. *(Od 2026-11-21 Flow generiše do 15s, ali
+`maxShot` ostaje 10: sekunda iznad 10s košta duplo, pa planer sam ne pravi klip duži od toga.
+Duži klip se uvodi ručno kroz `tools/config.json`; T2 ga propušta do 15s, a lint ga prijavljuje
+kao R8. Vidi `schemas.md` §5.14.)*
 Sekundarni cilj: `use_len` u opsegu **7–9s**; splitter bira `n` koje daje najmanje odstupanje od 8s.
 Rezovi **uvek padaju na granice rečenica**.
 `motion_budget` se popunjava kad `use_len < 9.0`.

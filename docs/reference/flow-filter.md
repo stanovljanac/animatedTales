@@ -1,6 +1,6 @@
 # Flow filter — kad generisanje padne i šta tada
 
-Flow (image-to-video, Veo) odbija klip pre nego što ga napravi, a kredit vraća. Odbijanje gotovo
+Flow (image-to-video, Omni) odbija klip pre nego što ga napravi, a kredit vraća. Odbijanje gotovo
 uvek **ne zavisi od reči animation prompta**: filter gleda **izvornu sliku** i radnju koju
 prompt traži od nje. Zato većina popravki nije prepisivanje prompta nego jedna od tri stvari:
 promena slike, promena radnje ili izlazak iz Flow-a (still).
@@ -56,7 +56,7 @@ udarca, rane ili skoka retko je ona koju Flow odbije.
   [`visual-devices.md`](visual-devices.md) (`silhouette`, `empty-aftermath`, `macro-object`,
   `process-cutaway`). Radi kad je sama radnja okidač, a ne slika.
 - **Podeli shot na dva** kad sporan trenutak mora da postoji: kratak zaseban shot (still ili klip od
-  4s), ostatak klip. Menja `timing.json`, pa je poslednja opcija.
+  3s), ostatak klip. Menja `timing.json`, pa je poslednja opcija.
 
 **Plan C** — still (`render_mode: still`, `still_motion: push | pull | pan-left | pan-right | hold`,
 `animation_prompt: null`, `gen_len`/`motion_budget: null`, `source_file: shots/shotNN.jpeg`).

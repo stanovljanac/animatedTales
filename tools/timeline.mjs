@@ -18,7 +18,7 @@
 //     ako je bilo koja grupa < 3.0s -> smanji n i ponovi
 //     zaokruži na 1 frejm, poslednji shot upija ostatak
 //
-// uz sekundarni cilj „bira n koje daje najmanje odstupanje od 8s" i tvrde granice 3.0–10.0s.
+// uz sekundarni cilj „bira n koje daje najmanje odstupanje od 8s" i tvrde granice 3.0–10.0s (planer; od Omni 1.2 klip sme do 15s, vidi `maxShot` ispod).
 //
 // Ovde je to implementirano kao jedna optimizacija umesto kao petlja koja smanjuje n:
 //
@@ -71,6 +71,10 @@ import { EPS, LIMITS, isFrameAligned, q, round3 } from './contract.mjs';
 export const DEFAULTS = {
   fps: 24,
   minShot: 3.0,
+  // Ostaje 10 iako Omni 1.2 Flash generise do 15s (2026-11-21): iznad 10s sekunda kosta duplo
+  // (contract.mjs `genCost`), pa planer ne sme sam da pravi klip koji je skuplji od dva kraca.
+  // Epizoda kojoj scena zaista trazi jedan kadar od 11-15s podize `maxShot` u tools/config.json
+  // (do `LIMITS.useLen.max`, 15) — svaki takav klip posle prijavljuje R8.
   maxShot: 10.0,
   targetShot: 8.0,
   /** Ispod ovoga se popunjava motion_budget (schemas.md T3). */

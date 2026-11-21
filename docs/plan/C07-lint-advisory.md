@@ -19,6 +19,7 @@ Zato R2/R3 **nemaju prag** dok ne postoje podaci iz 3 epizode.
 | R2 | miks tipova shotova | **samo meri i prikaži**, bez praga: *„22 shota: 18 karakternih, 4 ambijentalna, 0 mapa/dijagrama"* |
 | R3 | upotrebljeni vizuelni uređaji | **samo izlistaj**: *„korišćeni uređaji: SILHOUETTE ×1"* |
 | R4 | ponavljanje n-grama između promptova | >12 uzastopnih identičnih reči |
+| R8 | *(dodato posle C07)* cena generisanja: klip čiji je `use_len` preko 10s (6 kr/s umesto 3) i `gen_len` veći od najmanjeg koji pokriva `use_len` | **samo meri**: cena u kreditima, cena iste dužine u dva klipa, bačeni krediti; nikad ne menja exit code |
 | C2 | broj multi-visual klipova | prikaz broja |
 
 Šest osa za R1 (dolaze kao `tags` iz `storyboard.json`, C01):

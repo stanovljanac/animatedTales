@@ -10,7 +10,7 @@ kako se generišu klipovi. Sve što se tiče pojedinačnog kadra živi u ostala 
 
 Animated Tales pretvara istorijske, mitološke i kulturno značajne teme u kratke ispričane epizode.
 Lanac produkcije je: istraživanje → scenario → ElevenLabs narracija → ilustrovani startni frejmovi →
-image-to-video animacija (Google Flow / Veo) → montaža. Radi ga **jedan čovek, uglavnom besplatnim
+image-to-video animacija (Google Flow / Omni 1.2 Flash) → montaža. Radi ga **jedan čovek, uglavnom besplatnim
 alatima**, i to je projektno ograničenje, ne izgovor — svaki predlog koji traži tim ili plaćeni
 studio se odbija.
 
@@ -27,18 +27,19 @@ Vizuelni identitet nije opisan ovde nego kao jedan string za kopiranje — vidi 
 
 ## 2. Ciljni runtime
 
-**Tvrd plafon je 10 minuta finalnog videa.** Menja ga isključivo eksplicitna korisnikova odluka. Do 2026-11-16 je
-bio 5 minuta; tog dana je korisnik udvostručio sve (plafon i broj reči) — video sme da traje koliko tema traži,
-do 10 minuta.
+**Tvrd plafon je 8 minuta finalnog videa.** Menja ga isključivo eksplicitna korisnikova odluka. Do 2026-11-16 je
+bio 5 minuta; tog dana je korisnik udvostručio sve (plafon i broj reči) na 10 minuta. Dana 2026-11-21, kad je Flow
+prešao na Omni 1.2 Flash i cena klipa se otprilike udvostručila, korisnik je plafon spustio na **8 minuta**:
+10 minuta animacije je ~1.600 kredita, a mesec nosi 2.500 (`google-ai-plus.md` §2 i §4).
 
 - **Dužinu određuje tema, ne plafon.** Priča koja se zatvara za 4 minuta ostaje na 4 minuta; priča koja ima još
-  materijala vredi, ide do 10. Orijentir iz izmerenih epizoda: narracija ide ~148–166 reči u minuti, pa 10 minuta
-  znači najviše ~1.450 reči (telo + outro). Mere se uvek stvarno trajanje, ne broj reči.
-- Kraća jaka epizoda je bolja od slabe desetominutne. Filer radi popunjavanja minutaže je zabranjen.
+  materijala vredi, ide do 8. Orijentir iz izmerenih epizoda: narracija ide ~148–166 reči u minuti, pa 8 minuta
+  znači najviše ~1.160 reči (telo + outro). Mere se uvek stvarno trajanje, ne broj reči.
+- Kraća jaka epizoda je bolja od slabe osmominutne. Filer radi popunjavanja minutaže je zabranjen.
 - Merodavno trajanje je **stvarno izmereno trajanje ElevenLabs narracije**, nikad procena iz broja
   reči. Sve vremenske invarijante montaže vise o toj jednoj izmerenoj vrednosti
   (`storyboard.narration_duration`, `docs/reference/schemas.md` §3.1).
-- Epizoda se završava obaveznim OUTRO odeljkom; on ulazi u tih 10 minuta i dobija svoj end-card shot.
+- Epizoda se završava obaveznim OUTRO odeljkom; on ulazi u tih 8 minuta i dobija svoj end-card shot.
 
 ---
 

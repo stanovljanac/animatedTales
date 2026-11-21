@@ -3,6 +3,13 @@
 Izvorni plan: `C:\Users\Mihailo\.claude\plans\dakle-goal-je-da-keen-pillow.md` (402 linije).
 Ovaj folder ga deli na **15 celina**, svaka projektovana da stane u jednu sesiju od 150k–200k tokena.
 
+> **Važeća pravila generisanja klipa (od 2026-11-21, Omni 1.2 Flash).** Ovaj plan opisuje gradnju
+> alata kakva je bila planirana; brojke i imena modela ispod (Veo, `max 10s po shotu`, 4/6/8/10s)
+> su stanje u trenutku pisanja celine. Danas važi: Flow generiše **svaku celu sekundu 3–15**,
+> cena je **3 kr/s do 10s i 6 kr/s iznad**, `use_len` je 3.0–15.0s (T2), planer reza ostaje na
+> 10s, klip 11–15s je izuzetak koji lint prijavljuje kao R8. Izvor istine: `docs/reference/schemas.md`
+> §5.14, cene u `docs/reference/google-ai-plus.md` §2, kod u `tools/contract.mjs`.
+
 ## Kako se pokreće jedna celina
 
 Svaka sesija počinje sa:

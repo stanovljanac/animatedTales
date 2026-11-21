@@ -16,7 +16,7 @@ node tools/assemble.mjs episodes/<slug> [--res 1080p]
 
 1. **Validacija** — svaki shot ima svoj `shots/partNN.mp4` i izvor je ≥ `use_out`.
    Pada rano i jasno; ne startuj render ako fali ijedan part.
-2. **Po shotu:** `-ss use_in -t use_len`, **`-an`** (izbacuje Veo audio),
+2. **Po shotu:** `-ss use_in -t use_len`, **`-an`** (izbacuje audio klipa iz Flow-a),
    `scale=1920:1080:flags=lanczos`, `fps=24`.
 3. **Konkatenacija** — hard cut između svih shotova (dissolve dolazi u C10).
 4. **Narracija** kao jedini audio stream, od `t=0`.

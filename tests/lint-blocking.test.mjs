@@ -237,20 +237,22 @@ test('T1: drift preko 0.2s je nalaz, ispod nije', () => {
 
 // ---------------------------------------------------------------- T2
 
-test('T2: granice 3.0 i 10.0 prolaze, 2.999 i 10.001 padaju', () => {
+test('T2: granice 3.0 i 15.0 prolaze, 2.9 i 15.1 padaju (Omni 1.2: klip do 15s)', () => {
   const at = (len) => only(run({ t_out: len, use_out: len, use_len: len, motion_budget: len,
     animation_prompt: animPrompt(80, len) }), 'T2');
   assert.deepEqual(at(3), []);
   assert.deepEqual(at(10), []);
+  assert.deepEqual(at(10.1), [], '10.1s više nije T2 nalaz — to je R8 pitanje o ceni');
+  assert.deepEqual(at(15), []);
   assert.equal(at(2.9).length, 1);
-  assert.equal(at(10.1).length, 1);
+  assert.equal(at(15.1).length, 1);
 });
 
 test('T2: nalaz nosi izmerenu dužinu', () => {
   const f = only(run({ t_out: 1.2, use_out: 1.2, use_len: 1.2, motion_budget: 1.2,
     animation_prompt: animPrompt(80, 1.2) }), 'T2');
   assert.equal(f[0].measured, '1.2s');
-  assert.equal(f[0].expected, '3.0–10.0s');
+  assert.equal(f[0].expected, '3.0–15.0s');
 });
 
 // ---------------------------------------------------------------- T3
@@ -441,6 +443,71 @@ test('P2: 59 pada, 60 i 220 prolaze, 221 pada', () => {
   assert.deepEqual(only(run({ animation_prompt: animPrompt(60) }), 'P2'), []);
   assert.deepEqual(only(run({ animation_prompt: animPrompt(220) }), 'P2'), []);
   assert.equal(only(run({ animation_prompt: animPrompt(221) }), 'P2').length, 1);
+});
+
+/** Animation prompt tačne dužine čija MOTION BUDGET linija imenuje `gen` s generisanja. */
+const genPrompt = (words, len, gen) => {
+  const base = `MOTION BUDGET: key action lands by ${len}s; everything keeps moving at the same ` +
+    `natural pace through the end of the ${gen}s generation.`;
+  return `${base}
+${filler(words - countWords(base))}`;
+};
+
+/** Shot sa zadatim `use_len` i `gen_len`; MOTION BUDGET linija prati `gen` ako nije zadato drugo. */
+const clip = (len, gen, over = {}) => run({
+  t_out: len, use_out: len, use_len: len, motion_budget: len < 9 ? len : null, gen_len: gen,
+  animation_prompt: genPrompt(80, len, gen), ...over,
+});
+
+test('P2, Omni 1.2: generisanje preko 10s ima plafon 330, do 10s ostaje 220', () => {
+  const long = (words) => only(clip(12, 12, { animation_prompt: genPrompt(words, 12, 12) }), 'P2');
+  assert.deepEqual(long(330), []);
+  assert.equal(long(331).length, 1);
+  assert.deepEqual(long(221), [], '221 reči je za 12s generisanje u redu, za 10s ne');
+  const short = (words) => only(clip(9.5, 10, { animation_prompt: genPrompt(words, 9.5, 10) }), 'P2');
+  assert.deepEqual(short(220), []);
+  assert.equal(short(221).length, 1);
+  assert.equal(long(331)[0].expected, '60–330');
+});
+
+// ---------------------------------------------------------------- T4 (Omni 1.2: gen_len 3-15)
+
+test('T4: gen_len je cela sekunda 3-15 koja pokriva use_len — najmanja ili veća', () => {
+  assert.deepEqual(only(clip(4.62, 5, {}), 'T4'), []);
+  assert.deepEqual(only(clip(3, 3, {}), 'T4'), []);
+  assert.deepEqual(only(clip(14.2, 15, {}), 'T4'), []);
+  // Storyboard pisan za lestvicu 4/6/8/10 ostaje ispravan: 6s za use_len 4.62 radi, samo je
+  // sekunda duža nego što treba. To je R8 (cena), ne BLOCKING.
+  assert.deepEqual(only(clip(4.62, 6, {}), 'T4'), []);
+  assert.deepEqual(only(clip(7.2, 8, {}), 'T4'), []);
+});
+
+test('T4: gen_len kraći od use_len pada — klip se ne može produžiti', () => {
+  const f = only(clip(4.62, 4, {}), 'T4');
+  assert.equal(f.length, 1);
+  assert.match(f[0].message, /kraći od use_len/);
+  assert.equal(f[0].measured, '4s');
+});
+
+test('T4: gen_len koji nije cela sekunda ili je van 3-15 pada', () => {
+  assert.equal(only(clip(4.6, 4.7, {}), 'T4').length, 1);
+  assert.equal(only(clip(4.62, 2, {}), 'T4').length, 1, '2s Flow ne generiše');
+  assert.equal(only(clip(14.2, 16, {}), 'T4').length, 1, '16s Flow ne generiše');
+  assert.match(only(clip(4.6, 4.7, {}), 'T4')[0].message, /nije dužina koju Flow generiše/);
+});
+
+test('T4: use_len duži od 15s nema generisanje koje bi ga pokrilo', () => {
+  const f = only(clip(15.4, 15, {}), 'T4');
+  assert.ok(f.some((x) => /duži od najdužeg generisanja/.test(x.message)), JSON.stringify(f));
+});
+
+test('T4: gen_len null na clip shotu pada, a MOTION BUDGET koji piše drugu dužinu pada', () => {
+  assert.equal(only(clip(6, null, {}), 'T4').length, 1);
+  const f = only(clip(4.62, 5, { animation_prompt: genPrompt(80, 4.62, 6) }), 'T4');
+  assert.equal(f.length, 1);
+  assert.match(f[0].message, /MOTION BUDGET kaže 6s generation, a gen_len je 5s/);
+  const none = only(clip(4.62, 5, { animation_prompt: animPrompt(80, 4.62) }), 'T4');
+  assert.match(none[0].message, /ne imenuje dužinu generisanja/);
 });
 
 test('P1: nalaz nosi izmereni broj reči', () => {

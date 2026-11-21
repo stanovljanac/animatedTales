@@ -518,7 +518,7 @@ i služi samo tome da se part prati bez prethodnog. Prethodni part je već na ka
 prepričava troši prvi minut na video koji gledalac nije kliknuo, a pravi se kao da je nov.
 
 > *Zašto:* Part 2 je otvorio rekapom od ~31s (S03–S09, sedam rečenica) sa tri nova klipa — shot03,
-> shot05 i shot06, 37 kredita — a sve što pokazuju Part 1 je već imao: Kron guta decu, izbacuje ih,
+> shot05 i shot06, 37 kredita po tadašnjem cenovniku Omni 1.1 — a sve što pokazuju Part 1 je već imao: Kron guta decu, izbacuje ih,
 > braća dele svet. Part 3 otvara jednom rečenicom i odmah ulazi u Metidu.
 
 1. **Rekap se piše prema kadrovima koji već postoje.** Svaka rečenica prepričava jedan događaj koji

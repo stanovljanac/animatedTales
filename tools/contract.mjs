@@ -52,7 +52,7 @@ export const TAGS = {
 // ---------------------------------------------------------------- režim rendera (schemas.md §3.3.2)
 
 /**
- * Kako shot postaje slika u pokretu. `clip` je Veo klip iz Flow-a; `still` je jedna slika
+ * Kako shot postaje slika u pokretu. `clip` je klip iz Flow-a (Omni); `still` je jedna slika
  * kojoj pokret daje montaža.
  *
  * **Odsutno polje znači `clip`.** Da je polje obavezno, svaki zatečeni `storyboard.json` bi u
@@ -106,9 +106,15 @@ export const S3_WORDS = ['then', 'later', 'afterwards', 'cuts to', 'meanwhile'];
 
 /** Pragovi iz BLOCKING tabele (docs/plan/C06-lint-blocking.md). */
 export const LIMITS = {
-  useLen: { min: 3.0, max: 10.0 },   // T2, clip
+  // T2, clip. Od Omni 1.2 Flash (2026-11-21) Flow generise 3-15s, pa je tvrdi plafon 15.
+  // Cenovnik se lomi na 10s (vidi GEN_COST) i zato 10 nije ogranicenje nego granica
+  // **jeftine sekunde**: planer reza (`timeline.mjs`, `tools/config.json`) i dalje ne pravi
+  // shot duzi od 10s, a svaki clip iznad njega prijavljuje R8. 11-15s je odluka scene, ne
+  // podrazumevano.
+  useLen: { min: 3.0, max: 15.0 },
+  longClip: 10.0,                    // R8 — iznad ove granice sekunda kosta duplo
   /**
-   * T2, still. 3.0–10.0 je Veo raspon i za sliku ne znači ništa. Uži raspon sa nižim podom
+   * T2, still. 3.0–10.0 je raspon klipa i za sliku ne znači ništa. Uži raspon sa nižim podom
    * drži tempo reza dovoljno visoko da niz slika čita kao film a ne kao slajdšou: epizoda od
    * četiri minuta pada na ~40–50 slika umesto 27. Pod je 2.5, a ne niže, zbog splittera —
    * rez kraći od toga ne može da padne na granicu rečenice u prosečnoj naraciji.
@@ -127,6 +133,11 @@ export const LIMITS = {
   // oblik (prompt-templates.md, „Animation template") opisuje svaki prorez do kraja
   // `gen_len`-a sa dve recenice, i to ne staje u 110.
   animWords: { min: 60, max: 220 },
+  // P2 za generisanje duze od 10s (Omni 1.2, 2026-11-21). Pravilo proreza (nijedan duzi od
+  // 2.5s, svaki sa dve recenice) daje 6-7 proreza na 13-15s: ~25 reci po prorezu plus ~77 reci
+  // fiksnih linija je 230-260, sto ne staje u 220. Plafon raste srazmerno duzini (220 x 15/10),
+  // a prompt se ne skracuje — isto obrazlozenje kao pri udvostrucenju od 2026-10-10.
+  animWordsLong: { min: 60, max: 330 },
   imageWordsV2: { min: 90, max: 720 },  // P1, shema 2 — tvrd plafon
   // P1, shema 2, poslednji shot. End kartica je rekapitulacija cele priče na jednom posteru:
   // tri locka (~130 reči) + `TITLE` + `BUTTON` (~70) + raspored po trećinama. Uvedena je na
@@ -135,24 +146,54 @@ export const LIMITS = {
   endCardWords: { min: 90, max: 1200 },
   imageSoft: { min: 360, max: 520 },    // R5, shema 2 — meki ciljni opseg (ADVISORY), bez end kartice
   animSoft: { min: 150, max: 210 },     // R5, shema 2 — meki ciljni opseg animation prompta (ADVISORY)
+  animSoftLong: { min: 200, max: 320 }, // R5, shema 2 — isto, za generisanje duze od 10s
   maxLocks: 3,                          // S5 — PRIMARY + najviše dva SECONDARY
   t1Drift: 0.2,                      // T1
 };
 
 /**
- * Duzine klipa koje Flow ume da generise. Sve ostalo je zaokruzivanje navise.
+ * Duzine klipa koje Flow ume da generise: svaka cela sekunda od 3 do 15 (Omni 1.2 Flash, od
+ * 2026-11-21). Do tada je Omni 1.1 primao samo 4, 6, 8 i 10. Sve izmedju je zaokruzivanje navise.
  *
  * Ovo je **ogranicenje alata, ne estetike**: `use_len` izlazi iz naracije i pada gde padne,
- * a generator prima samo ove cetiri vrednosti. Bez ovog polja rezija pise `MOTION BUDGET`
+ * a generator prima samo cele sekunde. Bez ovog polja rezija pise `MOTION BUDGET`
  * prema `use_len`, generator rasporedi pokret na svoju duzinu, i kljucni pokret zavrsi posle
  * reza — ili ga model stisne i stane ranije. Otud `gen_len`: prompt se pise prema duzini koja
  * se stvarno generise. Visak preko `use_len` je **nastavak istog pokreta**, ne zadrzan kadar:
  * prompt koji poslednje sekunde opise kao mirovanje dobija klip koji se zamrzne pre reza.
+ *
+ * Gusta lestvica menja i racun viska: sa korakom od 2s `use_len` 4.62 se generisao kao 6s
+ * (1.4s viska, 4 kredita), a sada kao 5s (0.4s viska).
  */
-export const GEN_TIERS = [4, 6, 8, 10];
+export const GEN_TIERS = Array.from({ length: 13 }, (_, i) => 3 + i);
 
-/** Najmanja dozvoljena duzina generisanja koja pokriva `useLen`; `null` kad ni 10s ne stize. */
+/** Najmanja dozvoljena duzina generisanja koja pokriva `useLen`; `null` kad ni 15s ne stize. */
 export const genLen = (useLen) => GEN_TIERS.find((t) => t >= useLen - EPS) ?? null;
+
+/**
+ * Cena generisanja u Flow kreditima, Omni 1.2 Flash (stanje 2026-11-21): 3 kredita po sekundi
+ * do 10s (3s = 9 ... 10s = 30), a iznad toga **6 po sekundi** (11s = 36 ... 15s = 60).
+ * Sekunda iznad 10s je dakle duplo skuplja, pa jedan klip od 15s kosta koliko dva od 10s.
+ * Slika je 0 kredita. Jedan izvor istine za `shotlist.mjs` i R8.
+ *
+ * Funkcija, ne samo tabela: storyboard sa `gen_len` van lestvice je T4 nalaz, ali cenu mu i
+ * dalje treba izracunati (ista linearna formula), jer se `shotlist.mjs` ne zaustavlja na tome.
+ */
+export const genCost = (gen) => (gen <= LIMITS.longClip
+  ? 3 * gen
+  : 3 * LIMITS.longClip + 6 * (gen - LIMITS.longClip));
+
+/** Tabela cena po lestvici: `{3: 9, 4: 12, ..., 10: 30, 11: 36, ..., 15: 60}`. */
+export const GEN_COST = Object.fromEntries(GEN_TIERS.map((s) => [s, genCost(s)]));
+
+/**
+ * Granice P2 (BLOCKING) i R5 (ADVISORY) za animation prompt klipa koji se generise `gen`
+ * sekundi. Generisanje duze od `LIMITS.longClip` ima 6-7 proreza umesto 3-5, pa dobija visi plafon.
+ * @returns {{hard: {min:number,max:number}, soft: {min:number,max:number}}}
+ */
+export const animLimits = (gen) => (gen > LIMITS.longClip + EPS
+  ? { hard: LIMITS.animWordsLong, soft: LIMITS.animSoftLong }
+  : { hard: LIMITS.animWords, soft: LIMITS.animSoft });
 
 // ---------------------------------------------------------------- S1: liste iz camera-language.md
 

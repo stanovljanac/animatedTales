@@ -157,13 +157,14 @@ test('main(): ADVISORY ne menja exit code', async () => {
   const lines = [];
   console.log = (...a) => lines.push(a.join(' '));
   try {
-    // Šest signala, nula BLOCKING nalaza -> i dalje 0.
+    // Osam signala (šest kreativnih + dva R8 jer fixture nosi gen_len sa stare lestvice
+    // 4/6/8/10), nula BLOCKING nalaza -> i dalje 0.
     assert.equal(await main([REPETITIVE, '--no-write']), 0);
-    assert.ok(lines.some((l) => /^ADVISORY: 6 signala /.test(l)), lines.join('\n'));
+    assert.ok(lines.some((l) => /^ADVISORY: 8 signala /.test(l)), lines.join('\n'));
     assert.ok(lines.some((l) => /\[R1\] shot 01–04: eskalacija/.test(l)));
     lines.length = 0;
     assert.equal(await main([LINKED, '--no-write']), 0);
-    assert.ok(lines.some((l) => /^ADVISORY: 3 signala /.test(l)));
+    assert.ok(lines.some((l) => /^ADVISORY: 4 signala /.test(l)));
     assert.ok(!lines.some((l) => /\[R1\]/.test(l)));
   } finally {
     console.log = log;
@@ -498,6 +499,64 @@ test('R5: shema 1 se ne meri', () => {
   assert.deepEqual(of(s, 'R5'), []);
 });
 
+// ---------------------------------------------------------------- R8 (Omni 1.2: cena generisanja)
+
+/** Clip shot sa zadatim `use_len` i `gen_len`; ostalo je beznačajno za R8. */
+const priced = (id, use, gen, over = {}) => mkShot(id, { use_len: use, gen_len: gen, ...over });
+
+test('R8: klip od 12s košta 42 kr i nudi cenu iste dužine u dva klipa', () => {
+  const s = msgs(run([priced('01', 12, 12)]), 'R8');
+  assert.equal(s.length, 1);
+  assert.match(s[0], /^shot 01: klip od 12s \(generisanje 12s\) košta 42 kr; /);
+  assert.match(s[0], /dva klipa \(6s \+ 6s\) košta 36 kr/);
+});
+
+test('R8: klip od 15s košta 60 kr, a podela na 8s + 7s je 45', () => {
+  const [sig] = of(run([priced('01', 15, 15)]), 'R8');
+  assert.equal(sig.measured, '60 kr');
+  assert.match(sig.message, /\(8s \+ 7s\) košta 45 kr/);
+});
+
+test('R8: klip od tačno 10s je u jeftinom delu cenovnika — nema signala', () => {
+  assert.deepEqual(of(run([priced('01', 10, 10)]), 'R8'), []);
+  assert.deepEqual(of(run([priced('01', 3, 3)]), 'R8'), []);
+});
+
+test('R8: 10.1s je već duplo skupo — prva sekunda preko granice se prijavljuje', () => {
+  const s = of(run([priced('01', 10.1, 11)]), 'R8');
+  assert.equal(s.length, 1);
+  assert.equal(s[0].measured, '36 kr');
+});
+
+test('R8: gen_len veći od najmanjeg koji pokriva use_len javlja bačene kredite', () => {
+  // Stara lestvica 4/6/8/10: use_len 4.62 -> 6s. Nova: 5s. Sekunda viška je 3 kr.
+  const s = of(run([priced('01', 4.62, 6)]), 'R8');
+  assert.equal(s.length, 1);
+  assert.equal(s[0].measured, '3 kr');
+  assert.match(s[0].message, /gen_len 6s, a use_len 4\.62s staje u 5s — 1s viška, 3 kr bačeno/);
+  assert.deepEqual(of(run([priced('01', 4.62, 5)]), 'R8'), []);
+});
+
+test('R8: dva razloga na jednom shotu daju dva signala', () => {
+  // use_len 11.2 traži 12s; 14s je 2s viška iznad desete = 12 kr, a klip je i dugačak.
+  const s = of(run([priced('01', 11.2, 14)]), 'R8');
+  assert.equal(s.length, 2);
+  assert.equal(s[1].measured, '12 kr');
+});
+
+test('R8: still shot i shot bez gen_len se ne mere', () => {
+  assert.deepEqual(of(run([mkShot('01', { render_mode: 'still', gen_len: null })]), 'R8'), []);
+  assert.deepEqual(of(run([mkShot('01')]), 'R8'), []);
+});
+
+test('R8: nikad ne menja BLOCKING — klip od 15s prolazi T2 i T4', () => {
+  const sb = mkSb([priced('01', 15, 15, {
+    animation_prompt: 'MOTION BUDGET: x through the end of the 15s generation.',
+  })]);
+  const blocking = lintStatic(sb, mkEp(), {}).filter((f) => ['T2', 'T4'].includes(f.code));
+  assert.deepEqual(blocking, []);
+});
+
 // ---------------------------------------------------------------- izveštaj i oblik
 
 test('advise: signali su sortirani redosledom ADVISORY tabele', () => {
@@ -505,7 +564,7 @@ test('advise: signali su sortirani redosledom ADVISORY tabele', () => {
   const got = advise(sb, ep).map((s) => s.code);
   const want = got.slice().sort((a, b) => ADVISORY.indexOf(a) - ADVISORY.indexOf(b));
   assert.deepEqual(got, want);
-  assert.deepEqual([...new Set(got)], ['R1', 'R2', 'R3', 'R4', 'C2']);
+  assert.deepEqual([...new Set(got)], ['R1', 'R2', 'R3', 'R4', 'R8', 'C2']);
 });
 
 test('advise: svaki signal nosi izmerenu vrednost', () => {
@@ -517,10 +576,10 @@ test('advise: svaki signal nosi izmerenu vrednost', () => {
   }
 });
 
-test('renderReport: ADVISORY je grupisan po kodu i nosi svih pet pododeljaka', () => {
+test('renderReport: ADVISORY je grupisan po kodu i nosi pododeljak za svaki kod', () => {
   const { sb, ep } = load(REPETITIVE);
   const md = renderReport({ storyboard: sb, findings: [], signals: advise(sb, ep) });
-  assert.match(md, /^## ADVISORY {2}\(6 signala\)$/m);
+  assert.match(md, /^## ADVISORY {2}\(8 signala\)$/m);
   for (const code of ADVISORY) assert.match(md, new RegExp(`^### ${code} — .+ {2}\\(\\d+\\)$`, 'm'));
   assert.ok(md.indexOf('### R1') < md.indexOf('### R2'));
   assert.ok(md.indexOf('## BLOCKING') < md.indexOf('## ADVISORY'));

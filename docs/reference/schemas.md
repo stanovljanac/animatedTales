@@ -363,15 +363,15 @@ prikazuje upravo ovaj nivo.
 | `t_out` | number | da | `= t_in + use_len`. Frejm-poravnato. |
 | `use_in` | number | da | Pozicija **unutar generisanog klipa** (`source_file`), sekunde. Frejm-poravnato. |
 | `use_out` | number | da | `= use_in + use_len`. Frejm-poravnato. |
-| `use_len` | number | da | Trajanje reza, 3.0–10.0s (T2). Frejm-poravnato. |
+| `use_len` | number | da | Trajanje reza, 3.0–15.0s (T2). Frejm-poravnato. **Iznad 10.0s** sekunda košta duplo (Omni 1.2, `google-ai-plus.md` §2) i R8 prijavljuje klip sa cenom; planer reza ne pravi shot duži od 10s sam. |
 | `motion_budget` | number \| null | da | Sekunda do koje ključna radnja mora da se vidi; ide u `MOTION BUDGET:` liniju animation prompta. **Nije kraj pokreta** — posle nje scena se kreće istim ritmom do kraja `gen_len`-a. Obavezan (`!== null`) kad `use_len < 9.0` (T3); tada `= use_len`. |
-| `gen_len` | number \| null | da | **Dužina koja se stvarno generiše u Flow-u**, iz `GEN_TIERS` (4 · 6 · 8 · 10s): najmanja koja pokriva `use_len`. `null` na still shotu. Proverava T4. Animation prompt opisuje svih `gen_len` sekundi; višak preko `use_len` je nastavak pokreta koji montaža odseca, nikad zadržan kadar (`prompt-templates.md`, „Pravila proreza"). |
+| `gen_len` | number \| null | da | **Dužina koja se stvarno generiše u Flow-u**, iz `GEN_TIERS` (svaka cela sekunda 3–15; do 2026-11-21 samo 4 · 6 · 8 · 10): najmanja koja pokriva `use_len` (4.62s → 5s). `null` na still shotu. T4 proverava da je cela sekunda 3–15, da nije kraća od `use_len` i da je ista brojka u promptu; da li je baš najmanja meri R8 (plaćena sekunda viška je 3 kr). Animation prompt opisuje svih `gen_len` sekundi; višak preko `use_len` je nastavak pokreta koji montaža odseca, nikad zadržan kadar (`prompt-templates.md`, „Pravila proreza"). |
 | `source_file` | string | da | `"shots/part07.mp4"` — klip iz Flow-a. F1 traži da postoji i da traje ≥ `use_out`. |
 | `ingredient_image` | string \| null | da | `"images/shot07.jpeg"` — slika koja u Flow ide kao *ingredient*. `null` kad se shot generiše bez nje. |
 | `characters` | array\<string\> | da | `id`-jevi iz `episode.json` (bilo kog od tri niza) koji se u shotu vide. Ulaz za C1. Prazan niz je legitiman. **Shema 2: redosled nosi značenje** — `characters[0]` je PRIMARY lock i mora doslovno da stoji u bloku `SUBJECT`; ostali su SECONDARY. Najviše `LIMITS.maxLocks` (3). Proverava S5. |
 | `visual_priority` | array\<string\> | shema 2 | Rangirana lista od **3 do 5** stavki: šta model sme da promaši poslednje. Stavka `[0]` mora da imenuje PRIMARY lock. **Ne ulazi u prompt** — vidi 3.3.1. Proverava S5. |
 | `image_prompt` | string | da | Shema 1: 90–160 reči. **Shema 2: 90–720 reči** po `countWords` (P1), sa mekim ciljnim opsegom 360–520 (R5, ADVISORY). Sadrži blokove iz S2. |
-| `animation_prompt` | string \| null | da | 60–220 reči po `countWords` (P2); na shemi 2 meki ciljni opseg 150–210 (R5, ADVISORY). Prorezi pokrivaju ceo `gen_len` i nijedan ne propisuje mirovanje (`prompt-templates.md`, „Pravila proreza"). **`null` na still shotu** — nema šta da se animira (3.3.2). |
+| `animation_prompt` | string \| null | da | 60–220 reči po `countWords` (P2), **60–330 kad je `gen_len` preko 10s** (6–7 proreza ne staje u 220); na shemi 2 meki ciljni opseg 150–210, odnosno 200–320 (R5, ADVISORY). Prorezi pokrivaju ceo `gen_len` i nijedan ne propisuje mirovanje (`prompt-templates.md`, „Pravila proreza"). **`null` na still shotu** — nema šta da se animira (3.3.2). |
 | `tags` | Tags | da | Šest osa, vidi 3.5. |
 | `render_mode` | `"clip"` \| `"still"` | ne | Odsutno ili `null` znači `"clip"`. `"still"` znači: shot nije klip nego jedna slika kojoj montaža daje pokret. Vidi 3.3.2. |
 | `still_motion` | string | still | `push` · `pull` · `pan-left` · `pan-right` · `hold`. Obavezan na still shotu, odsutan ili `null` na clip shotu. Vidi 3.3.2. |
@@ -464,7 +464,7 @@ iz zatvorene liste, a neslaganje sa `tags.camera_motion` prijavljuje R7 (ADVISOR
 | `source_file` | `shots/shot<shot_id>.jpeg` | Izvor shota je slika. Svaki potrošač već čita `source_file` kao „medij iz kog shot nastaje". |
 | `ingredient_image` | `null` | Ingredient postoji da bi ušao u Flow klip; klipa nema. |
 | `animation_prompt` | `null` | Nema šta da se animira. `null`, ne prazan string (0.5). |
-| `motion_budget` | `null` | Budžet pokreta je instrukcija Veo modelu koliko sekundi ima; nema modela. |
+| `motion_budget` | `null` | Budžet pokreta je instrukcija video modelu koliko sekundi ima; nema modela. |
 | `use_in` | `0.0` | Slika nema unutrašnji tajmlajn u koji bi se ušlo od 0.5s. |
 | `use_out` | `= use_len` | Posledica prethodnog. |
 | `use_len` | **2.5–9.0s** | Uži raspon od klipa (T2). Obrazloženje ispod. |
@@ -474,7 +474,7 @@ iz zatvorene liste, a neslaganje sa `tags.camera_motion` prijavljuje R7 (ADVISOR
 opisi važe nepromenjeno. `link_group` je dozvoljen — dissolve između dve slike radi isto kao
 između dva klipa, jer `xfade` radi nad segmentima, ne nad izvorima.
 
-**Zašto 2.5–9.0 a ne 3.0–10.0.** Veo raspon za sliku ne znači ništa. Uži raspon sa nižim podom
+**Zašto 2.5–9.0 a ne 3.0–10.0.** Raspon klipa (3.0–10.0s u planeru) za sliku ne znači ništa. Uži raspon sa nižim podom
 drži tempo reza dovoljno visoko da niz slika čita kao film a ne kao slajdšou: epizoda od četiri
 minuta pada na ~40–50 slika umesto 27. To je najveća poluga na to da li format radi, pa je i
 jedini broj ovde koji se očekuje da se menja posle prve merene epizode. Pod je 2.5 zbog
@@ -556,7 +556,7 @@ na 3 decimale (0.1), pa stroga jednakost pada na zaokruživanju, ne na grešci.
 7. Preko granice beatova: `poslednji_shot(Bn).t_out === prvi_shot(Bn+1).t_in`. Tajmlajn je
    neprekidan od `0.0` do `q(poslednji beat.end)`, bez rupa i preklapanja.
 8. `use_out === use_in + use_len`, `t_out === t_in + use_len`.
-9. `3.0 <= use_len <= 10.0`.
+9. `3.0 <= use_len <= 15.0` (do 2026-11-21 `10.0`; planer reza i dalje ne prelazi 10.0, vidi 5.3).
 10. Sva vremenska polja shota frejm-poravnata na `fps` (0.2).
 11. `abs(sum(use_len) - narration_duration) <= 0.2` (T1). Razlika nije greška: `narration_duration`
     je trajanje celog mp3 fajla, a poslednji beat se završava na kraju poslednje rečenice.
@@ -611,7 +611,7 @@ Tabela je prođena red po red.
 |---|---|---|---|---|
 | **M1** | režim rendera: `still_motion` važeći na still shotu, odsutan na clip shotu, `ingredient_image` prazan na still shotu | — | `shot.render_mode`, `shot.still_motion`, `shot.ingredient_image` | da |
 | **T1** | pokrivenost tajmlajna: gapovi / preklapanja / `sum(use)` vs trajanje narracije | ±0.2s | `shot.t_in`, `shot.t_out`, `shot.use_len`, `beat.start`, `beat.end`, `storyboard.narration_duration` | da |
-| **T2** | `use_len` u granicama; na still shotu i `use_in = 0` | clip 3.0–10.0s; **still 2.5–9.0s** | `shot.use_len`, `shot.use_in`, `shot.render_mode` | da |
+| **T2** | `use_len` u granicama; na still shotu i `use_in = 0` | clip 3.0–15.0s (iznad 10.0 javlja R8); **still 2.5–9.0s** | `shot.use_len`, `shot.use_in`, `shot.render_mode` | da |
 | **T3** | `motion_budget` prisutan kad `use_len < 9.0`; **na still shotu mora da bude `null`** | — | `shot.motion_budget`, `shot.use_len`, `shot.render_mode` | da |
 | **S1** | zabranjene prostorne fraze bez screen-position klauzule; na still shotu samo image prompt | — | `shot.image_prompt`, `shot.animation_prompt` | da |
 | **S2** | obavezni blokovi `CAMERA`, `FRAME LAYOUT`, `FACING`, `SCREEN DIRECTION`, `NOT IN FRAME`; **shema 2 uz njih `SUBJECT` i `DETAIL`** | — | `shot.image_prompt` | da |
@@ -619,8 +619,8 @@ Tabela je prođena red po red.
 | **S4** | blok `SCALE` kad shot nosi `scale_critical` entitet (shema 2) | — | `shot.characters[]` → `episode.json.*.scale_critical`, `shot.image_prompt` | da |
 | **S5** | hijerarhija lockova (shema 2): PRIMARY u `SUBJECT`, najviše 3 locka, `visual_priority` 3–5 stavki sa PRIMARY na vrhu | — | `shot.characters[]`, `shot.visual_priority`, `shot.image_prompt` | da |
 | **P1** | dužina image prompta | shema 1: 90–160; **shema 2: 90–720** reči, poslednji shot (end kartica) 90–1200 | `shot.image_prompt` + `countWords` (0.6) | da |
-| **P2** | dužina animation prompta; **na still shotu prompta ne sme biti** | 60–220 reči | `shot.animation_prompt` + `countWords` (0.6), `shot.render_mode` | da |
-| **T4** | `gen_len` je najmanji član `GEN_TIERS` koji pokriva `use_len`; **na still shotu `null`**; `MOTION BUDGET` linija imenuje istu brojku | 4 · 6 · 8 · 10s | `shot.gen_len`, `shot.use_len`, `shot.render_mode`, `shot.animation_prompt` | da |
+| **P2** | dužina animation prompta; **na still shotu prompta ne sme biti** | 60–220 reči; 60–330 kad je `gen_len` > 10s | `shot.animation_prompt` + `countWords` (0.6), `shot.render_mode` | da |
+| **T4** | `gen_len` je član `GEN_TIERS` i ne kraći od `use_len`; **na still shotu `null`**; animation prompt imenuje istu brojku (`… the <gen_len>s generation`). Da li je **najmanji** koji pokriva `use_len` je R8, ne T4 | cela sekunda 3–15s | `shot.gen_len`, `shot.use_len`, `shot.render_mode`, `shot.animation_prompt` | da |
 | **C1** | `locked_description` doslovno u svakom shotu gde lik učestvuje | — | `shot.characters[]` → `episode.json.{characters,locations,key_props}[].locked_description`, traži se u `shot.image_prompt` po `normalize` (0.7) | da |
 | **F1** | svaki shot ima svoj `shots/partNN.mp4`, izvor ≥ `use_out`; **na still shotu: `shots/shotNN.jpeg` postoji i čita se** | — | `shot.source_file`, `shot.use_out`, `shot.render_mode` (+ `probe()` iz `ffmpeg.mjs`) | da |
 
@@ -653,9 +653,10 @@ Ne blokira montažu, ali čita iste podatke.
 | R2 | miks tipova shotova | `shot.tags.subject_type` |
 | R3 | korišćeni vizuelni uređaji | `beat.device` |
 | R4 | ponavljanje n-grama > 12 reči | `shot.image_prompt`, `shot.animation_prompt`, **minus** svi `locked_description` iz `episode.json`, kanonski style string iz `docs/reference/style-string.md` i fiksne `PRESERVE`/`FORBID` linije iz `docs/reference/prompt-templates.md` |
-| R5 | dužina prompta izvan mekog opsega: image 360–520 (bez end kartice), animation 150–210 (bez still shotova); shema 2 | `shot.image_prompt`, `shot.animation_prompt` + `countWords` |
+| R5 | dužina prompta izvan mekog opsega: image 360–520 (bez end kartice), animation 150–210, a 200–320 kad je `gen_len` > 10s (bez still shotova); shema 2 | `shot.image_prompt`, `shot.animation_prompt` + `countWords` |
 | R6 | `SCREEN DIRECTION` popunjen negacijom (shema 2) | `shot.image_prompt`, lista D iz `docs/reference/camera-language.md` |
 | R7 | `still_motion` se ne slaže sa `tags.camera_motion` (samo still shotovi) | `shot.still_motion`, `shot.tags.camera_motion` |
+| R8 | cena generisanja (Omni 1.2): klip čiji je `use_len` preko 10s (6 kr/s umesto 3, uz cenu iste dužine u dva klipa) i `gen_len` veći od najmanjeg koji pokriva `use_len` (bačene sekunde × 3 kr) | `shot.use_len`, `shot.gen_len`, `shot.render_mode`, `GEN_COST` iz `tools/contract.mjs` |
 | C2 | broj multi-visual klipova; **imenilac su samo klipovi** | **nema polje**; meri se iz `shot.animation_prompt` — vidi 5.6 tačka 11 |
 
 **R4 protiv C1.** C1 *zahteva* da isti blok od 25–40 reči stoji u svakom shotu gde se lik pojavljuje;
@@ -718,6 +719,11 @@ splitter rešava jednu optimizaciju nad podelama na granicama rečenica:
 minimizuj  Σ (use_len_i − targetShot)²    uz   minShot ≤ use_len_i ≤ maxShot
 ```
 
+`maxShot` ostaje **10** i posle Omni 1.2 (generisanje do 15s): iznad 10s sekunda kosta duplo, pa
+planer sam ne pravi klip skuplji od dva kraća. Epizoda kojoj scena zaista traži jedan kadar od
+11–15s podiže `maxShot` u `tools/config.json` (najviše `LIMITS.useLen.max`); svaki takav klip posle
+prijavljuje R8.
+
 Broj shotova nije zadat unapred nego ispada iz rešenja. Ishod je isti kao verbatim algoritam na
 svim slučajevima iz izvornog plana (4.6s → 1; 23.4s → 3; 11.5s → 2×5.75; 20s → 3×6.67, ne 2×10),
 ali „grupe najbliže jednake" i „najmanje odstupanje od 8s" postaju jedan kriterijum umesto dva
@@ -739,7 +745,7 @@ Niži nivo se koristi samo kad viši nema rešenje — kazna po rezu je za red v
 kvadratne kazne, pa nivoi ne mogu da se pomešaju.
 
 **5. Upozorenja nisu prekršaji sheme.** Storyboard nastao rezom unutar rečenice i dalje zadovoljava
-invarijantu 9 (svi shotovi ostaju u 3.0–10.0s) i prolazi BLOCKING. Upozorenja su podaci
+invarijantu 9 (svi shotovi ostaju u 3.0–15.0s; planer ih drži u 3.0–10.0s) i prolazi BLOCKING. Upozorenja su podaci
 (`{ code, message, beat_id, sentence_id, at }`) koje `at-storyboard` prikazuje korisniku da odluči
 hoće li da prepravi beat mapu. Jedini izuzetak je **`beat-too-short`**: beat kraći od `minShot`
 dobija jedan shot ispod 3.0s, T2 će ga s pravom prijaviti, a popravka je spajanje beatova u beat
@@ -1324,7 +1330,7 @@ renderovati, pa bi prag bio izmišljen. `qc-report.md` ima sekciju „Still kadr
 generisanja slika.
 
 **9. Budžet kredita broji samo klipove.** „45 klipova po 0 kredita" i „45 slika" nisu ista
-rečenica pred Flow-om; epizoda bez ijednog klipa ne dobija ni tabelu tierova. Iz istog razloga
+rečenica pred Flow-om; epizoda bez ijednog klipa ne dobija ni račun kredita. Račun stoji na `gen_len`-u svakog klipa (3 kr/s do 10s, 6 kr/s iznad), ne na broju klipova. Iz istog razloga
 C2 ima klipove u imeniocu, a „Kandidati za regeneraciju" u QC izveštaju ne vide still kadrove —
 slika nema udeo iskorišćenja i izašla bi kao 0%.
 
@@ -1333,3 +1339,39 @@ je kanonski clip primer sa izmerenim brojevima citiranim u 3.8; still ugovor se 
 proverava nad fixture folderom kroz lint testove, tačno kao što `linked-episode` nosi ugovor
 lanaca. Fixture ima šest shotova — pet still sa svih pet pokreta i jedan clip, koji dokazuje da
 se režimi mešaju u istoj epizodi.
+
+### 5.14 Odluke donete uz Omni 1.2 Flash (obavezujuće) — lestvica 3–15s i cena po sekundi
+
+Izvor istine je `tools/contract.mjs` (`GEN_TIERS`, `genLen`, `genCost`, `LIMITS`, `animLimits`).
+Cenovnik i računica su u `docs/reference/google-ai-plus.md` §2 i §4.
+
+**1. Flow od 2026-11-21 generiše svaku celu sekundu od 3 do 15** (do tada samo 4, 6, 8 i 10).
+`GEN_TIERS` je `[3 … 15]`; `genLen(use_len)` je najmanja cela sekunda koja pokriva rez, pa se
+4.62s generiše kao 5s, ne kao 6s. Najkraći klip je 3s (bilo 4), najduži 15s (bilo 10).
+
+**2. Cena je 3 kr/s do 10s, 6 kr/s iznad** (3s = 9 … 10s = 30, 11s = 36 … 15s = 60). Klip od 15s
+košta koliko dva od 10s. Cena zato zavisi od ukupnih generisanih sekundi, a ne od broja klipova
+— pravilo „klip od 4s se izbegava jer je skupa sekunda" iz Omni 1.1 više ne važi.
+
+**3. 11–15s je izuzetak, ne podrazumevano.** T2 propušta `use_len` do 15.0s, ali planer reza
+(`maxShot`) ostaje 10, a svaki klip preko 10s prijavljuje **R8** sa cenom i cenom iste dužine
+u dva klipa. Duži klip se uvodi samo kad kadar traži jedan neprekinut pokret. Argument nije
+samo novac: što je klip duži, to je teže animirati ga do poslednje sekunde (13–15s traži 6–7
+proreza), a zamrznut kraj je ista greška kao „hold to the end".
+
+**4. T4 više ne traži „najmanje" generisanje.** BLOCKING je samo ono što kvari klip: `gen_len`
+van lestvice, kraći od `use_len`, ili prompt koji imenuje drugu dužinu od one koja se generiše.
+Da li je `gen_len` najmanji koji pokriva `use_len` prešlo je u R8, jer je to pitanje novca (3 kr po
+sekundi viška), a ne ispravnosti. Razlog je kompatibilnost: storyboardi pisani za lestvicu
+4/6/8/10 (6s za `use_len` 4.62) i dalje su ispravni, samo plaćaju sekundu-dve viška; da je T4
+ostao strog, svaki nedovršen storyboard bi pao na stotinak shotova zbog pravila koje je tek
+promenjeno. Novi storyboardi dobijaju najmanju dužinu iz `genLen`, pa R8 na njima ćuti.
+
+**5. P2 i R5 prate dužinu generisanja.** Do 10s ostaje 60–220 (meki cilj 150–210). Preko 10s je
+60–330 (meki cilj 200–320): pravilo proreza daje 6–7 proreza, ~25 reči svaki, uz ~77 reči fiksnih
+linija, što je 230–260 i ne staje u 220. Plafon se podiže, prompt se ne skraćuje (isto
+obrazloženje kao pri udvostručenju od 2026-10-10).
+
+**6. Račun kredita u `shotlist.mjs` stoji na `gen_len`-u svakog klipa.** Zaglavlje čekliste i
+Flow table ispisuje sekunde generisanja, ukupne kredite, dane od dnevnih 50 i klipove preko 10s.
+Mesečni budžet je 1.000 (Google AI Pro), plafon 2.500; stari Veo tierovi su uklonjeni.

@@ -18,8 +18,8 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 import {
-  LIMITS, RENDER_MODES, STILL_MOTIONS, STILL_MOTION_CAMERA,
-  assertDisplayable, isStill, renderMode,
+  GEN_COST, GEN_TIERS, LIMITS, RENDER_MODES, STILL_MOTIONS, STILL_MOTION_CAMERA,
+  animLimits, assertDisplayable, genCost, genLen, isStill, renderMode,
 } from '../tools/contract.mjs';
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
@@ -65,8 +65,51 @@ test('rečnici: dva režima, pet pokreta, i svaki pokret ima parnjak u camera_mo
 });
 
 test('granice trajanja: still je uži raspon od klipa, sa nižim podom', () => {
-  assert.deepEqual(LIMITS.useLen, { min: 3.0, max: 10.0 });
+  // Omni 1.2 Flash (2026-11-21): klip do 15s; 10s je granica jeftine sekunde, ne plafon.
+  assert.deepEqual(LIMITS.useLen, { min: 3.0, max: 15.0 });
+  assert.equal(LIMITS.longClip, 10.0);
   assert.deepEqual(LIMITS.stillUseLen, { min: 2.5, max: 9.0 });
+});
+
+// ---------------------------------------------------------------- lestvica generisanja i cena (Omni 1.2)
+
+test('GEN_TIERS: svaka cela sekunda od 3 do 15, ukupno 13', () => {
+  assert.deepEqual(GEN_TIERS, [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]);
+  assert.equal(GEN_TIERS[0], LIMITS.useLen.min);
+  assert.equal(GEN_TIERS.at(-1), LIMITS.useLen.max);
+});
+
+test('genLen: najmanja cela sekunda koja pokriva use_len; preko 15s nema odgovora', () => {
+  assert.equal(genLen(3), 3);
+  assert.equal(genLen(3.0004), 3, 'EPS: 3.0004s je i dalje 3s, ne 4s');
+  assert.equal(genLen(4.084), 5, 'sa lestvicom 4/6/8/10 ovo je bilo 6s');
+  assert.equal(genLen(4.62), 5);
+  assert.equal(genLen(7.2), 8);
+  assert.equal(genLen(10), 10);
+  assert.equal(genLen(10.5), 11);
+  assert.equal(genLen(15), 15);
+  assert.equal(genLen(15.01), null);
+});
+
+test('genCost: 3 kr/s do 10s, 6 kr/s iznad — tabela koju je Flow objavio', () => {
+  const flow = { 3: 9, 4: 12, 5: 15, 6: 18, 7: 21, 8: 24, 9: 27, 10: 30, 11: 36, 12: 42, 13: 48, 14: 54, 15: 60 };
+  assert.deepEqual(GEN_COST, flow);
+  for (const [s, cr] of Object.entries(flow)) assert.equal(genCost(Number(s)), cr, `${s}s`);
+});
+
+test('genCost: klip od 15s kosta koliko dva od 10s, a sekunda iznad 10s je duplo skuplja', () => {
+  assert.equal(genCost(15), 2 * genCost(10));
+  assert.equal(genCost(11) - genCost(10), 6);
+  assert.equal(genCost(10) - genCost(9), 3);
+});
+
+test('animLimits: iznad 10s generisanja plafon P2 raste, do 10s ostaje 220', () => {
+  assert.deepEqual(animLimits(10).hard, LIMITS.animWords);
+  assert.deepEqual(animLimits(3).hard, { min: 60, max: 220 });
+  assert.deepEqual(animLimits(11).hard, LIMITS.animWordsLong);
+  assert.deepEqual(animLimits(15).soft, LIMITS.animSoftLong);
+  assert.equal(animLimits(undefined).hard.max, 220, 'shot bez gen_len dobija obican plafon');
+  assert.ok(LIMITS.animWordsLong.max > LIMITS.animWords.max);
 });
 
 // ---------------------------------------------------------------- prikaz

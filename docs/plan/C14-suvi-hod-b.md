@@ -24,7 +24,7 @@ Prekid po bloku je bezbolan jer je `storyboard.json` jedini izvor istine.
 3. Popuni `characters[]` po shotu i **doslovno prekopiraj** `locked_description` iz `episode.json`
    u svaki prompt gde lik učestvuje (C1 to proverava).
 4. `MOTION BUDGET: key motion completes within <use_len>s` — obavezno kad `use_len < 9.0`.
-   Bez toga Veo raspoređuje pokret preko celih 10s i dobiješ pola akcije.
+   Bez toga model raspoređuje pokret preko cele dužine generisanja (`gen_len`; do 2026-11-21 do 10s, sada 3–15s) i dobiješ pola akcije.
 5. `node tools/lint.mjs episodes/<slug>` — popravi **sve** BLOCKING.
 6. ADVISORY protumači kroz `at-qa`: R1 eskalacije razmotri jednu po jednu, R2/R3 samo zabeleži.
 7. `node tools/render.mjs` → `storyboard.md`

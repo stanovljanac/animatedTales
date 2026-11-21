@@ -23,7 +23,7 @@ Opcije: `--no-media` (preskoči F1 kad klipovi još ne postoje) · `--no-write` 
 Nalaz izgleda ovako i nosi tačan `shot_id`:
 
 ```
-  [T2] shot 03: use_len 1.208s — izvan granica 3.0–10.0
+  [T2] shot 03: use_len 1.208s — izvan granica 3.0–15.0
   [S1] shot 01: image prompt: "in the background" bez screen-position klauzule — „…"
   [S2] shot 02: image prompt nema blok FACING
   [C1] shot 04: locked_description entiteta "hill-fort" nije doslovno u image promptu
@@ -44,9 +44,10 @@ Popravke po vrsti nalaza:
 | Nalaz | Šta je pokvareno | Popravka |
 |---|---|---|
 | **T1** | zbir `use_len` ne prati narraciju | **ne diraj promptove** — beat mapa je pogrešna, vrati se na `at-storyboard` |
-| **T2** | `use_len` van 3–10s | isto: beat mapa, ne prompt |
+| **T2** | `use_len` van 3–15s | isto: beat mapa, ne prompt |
+| **T4** | `gen_len` nije cela sekunda 3–15, kraći je od `use_len`, ili prompt imenuje drugu dužinu | postavi `gen_len` na najmanju celu sekundu koja pokriva `use_len` (4.62s → 5s) i prepiši `… the <gen_len>s generation` u `MOTION BUDGET` liniji; prorezi moraju da stignu do tog broja |
 | **T3** | nema `MOTION BUDGET` linije sa brojem | dopiši je; broj mora da bude jednak `use_len` |
-| **P1/P2** | broj reči van 90–720 / 60–220 (shema 1: 90–160; end kartica 90–1200) | image: skrati `SETTING` i `ACTION`, **nikad kamera-blokove**, nikad `locked_description` i nikad `SCALE`; animation: skrati `ENVIRONMENT`, nikad proreze |
+| **P1/P2** | broj reči van 90–720 / 60–220, a 60–330 kad je `gen_len` preko 10s (shema 1: 90–160; end kartica 90–1200) | image: skrati `SETTING` i `ACTION`, **nikad kamera-blokove**, nikad `locked_description` i nikad `SCALE`; animation: skrati `ENVIRONMENT`, nikad proreze |
 | **S1** | zabranjena prostorna fraza | zameni je screen-position klauzulom po `docs/reference/camera-language.md` |
 | **S2** | fali jedan od obaveznih blokova (pet kamera-blokova, na shemi 2 i `SUBJECT` i `DETAIL`) | dopiši blok verzalom sa dvotačkom |
 | **S4** | shot nosi `scale_critical` lock bez `SCALE` bloka | dopiši `SCALE` sa 3–4 tvrdnje o veličini; ponavljanje je tu namerno |
@@ -116,6 +117,7 @@ ne mehanički.
 | **R5** — prompt van mekog opsega (image 360–520, animation 150–210) | **image: nije nalaz.** Kadar kome je dovoljno nešto manje ne razvlačiš; signal čuva da to bude odluka, a ne previd. **Animation ispod 150 jeste razlog da pogledaš proreze** — kratak animation prompt je skoro uvek telegrafski prorez ili prorez koji ne stiže do `gen_len`. |
 | **R6** — prazna `SCREEN DIRECTION` | blok popunjen negacijom („nothing crosses the frame") je potrošen blok. Zaključan kadar je u redu — imenuj najsitniji živi element (pramen dlake, para daha, senka oblaka). |
 | **R7** — `still_motion` protiv `camera_motion` | pokret koji montaža izvodi ne slaže se sa tim šta tag kaže da kamera radi. **Nije nalaz**: `reveal` izveden kao spor zum je legitiman. Ali proveri i smer — `pan-left` uz `SCREEN DIRECTION` koji vodi udesno je greška koju niko drugi neće videti. |
+| **R8** — cena generisanja | klip preko 10s košta 6 kr po sekundi iznad desete (15s = 60 kr = dva klipa od 10s), a `gen_len` veći od najmanjeg koji pokriva `use_len` baca 3 kr po sekundi viška. **Nije nalaz.** Za klip preko 10s pitaj da li kadar traži jedan neprekinut pokret; ako ne, predloži podelu na dva klipa ≤10s (signal ispisuje cenu) — ali podela menja beat mapu, pa je to odluka `at-storyboard`-a. Za sekunde viška samo spusti `gen_len` i prepiši broj u `MOTION BUDGET`. |
 | **C2** — multi-visual klipovi | meri deklaraciju u `animation_prompt`-u (`OPENING VISUAL`, …), ne posebno polje. Imenilac su **samo klipovi** — still kadar nema animation prompt. |
 
 > **R2 i R3 nemaju prag i ne traže akciju** dok se ne izmere tri epizode. Kvote se mere, ne

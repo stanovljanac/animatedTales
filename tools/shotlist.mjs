@@ -27,7 +27,9 @@
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-import { chainLetter, countWords, isStill, linkChains, loadStoryboard, plural } from './contract.mjs';
+import {
+  LIMITS, chainLetter, countWords, genCost, genLen, isStill, linkChains, loadStoryboard, plural,
+} from './contract.mjs';
 
 const RULE = '='.repeat(74);
 const THIN = '-'.repeat(74);
@@ -80,18 +82,30 @@ export function resolveOnly(shots, only) {
 //
 // Slika je besplatna, klip nije — ceo budžet epizode je budžet za video. Brojke i
 // obrazloženje su u `docs/reference/google-ai-plus.md`; ovde stoje zato što se odluka o
-// tieru donosi pred Flow-om, sa ovom listom u ruci, a ne pri čitanju dokumentacije.
+// dužini klipa donosi pred Flow-om, sa ovom listom u ruci, a ne pri čitanju dokumentacije.
+//
+// Radni model je Omni 1.2 Flash (od 2026-11-21): cena ide po **dužini generisanja**, ne po
+// tieru — 3 kr/s do 10s, 6 kr/s iznad (`contract.mjs` `genCost`). Račun zato stoji na
+// `gen_len`-u svakog klipa, a ne na broju klipova: 27 klipova može da košta 480 ili 700 kredita.
 
-/** Kredita po klipu. Slika (Nano Banana) je 0 i ne pojavljuje se u računici. */
-export const TIERS = [
-  { name: 'Veo 3.1 Lite', cost: 10 },
-  { name: 'Veo 3.1 Fast', cost: 20 },
-  { name: 'Veo 3.1 Quality', cost: 100 },
-];
+/** Kredita po generisanju od `gen` sekundi. Slika (Nano Banana) je 0 i ne ulazi u račun. */
+export { genCost };
 
 export const DAILY = 50;          // svima, ne prenosi se u sutra
-export const MONTHLY = 200;       // AI Plus, ne prenosi se u naredni mesec
+export const MONTHLY = 1000;      // Google AI Pro (od ~2. nov 2026), ne prenosi se u naredni mesec
 export const CEILING = 30 * DAILY + MONTHLY;
+
+/** Dužine generisanja za primer „koliko staje u jednu smenu" — krajevi lestvice i sredina. */
+const SHIFT_LENS = [3, 6, 10, 15];
+
+/**
+ * Dužina generisanja jednog klipa. `gen_len` je obavezno polje (T4), ali čeklista se štampa i
+ * pre lint prolaza, pa se pri `null` računa najmanja dužina koja pokriva `use_len`.
+ * @param {{gen_len?: number|null, use_len: number}} shot clip shot
+ * @returns {number}
+ */
+export const clipGenLen = (shot) =>
+  shot.gen_len ?? genLen(shot.use_len) ?? Math.ceil(shot.use_len);
 
 // 1700 -> 1.700; bez regexa i bez toLocaleString, koji zavisi od ICU u okruženju.
 const thousands = (n) => {
@@ -105,20 +119,31 @@ const thousands = (n) => {
 };
 
 /**
- * Cena liste klipova po tieru.
+ * Cena liste klipova, računata po dužini generisanja svakog od njih.
  *
- * `days` računa **samo dnevne kredite**, jer je 200 mesečnih jednokratno: pokriju četiri
- * dana prvoj epizodi u mesecu i posle ih nema. Broj dana je zato gornja granica koja ne laže
- * u drugoj polovini meseca — a dnevni plafon je ono što stvarno diktira raspored.
+ * `days` računa **samo dnevne kredite**, jer je 1.000 mesečnih deljeno sa svim epizodama meseca
+ * i ne prenosi se: broj dana je zato gornja granica koja ne laže u drugoj polovini meseca — a
+ * dnevni plafon je ono što stvarno diktira raspored.
  *
- * @param {number} clips broj klipova koji se generiše
- * @returns {{name: string, cost: number, total: number, days: number, overCeiling: boolean}[]}
+ * `long*` izdvaja klipove duže od 10s: svaka njihova sekunda iznad desete je duplo skuplja, pa
+ * su to jedini klipovi čiju cenu vredi pročitati pojedinačno.
+ *
+ * @param {number[]} lens dužina generisanja svakog klipa, u sekundama
+ * @returns {{clips: number, seconds: number, total: number, days: number, overCeiling: boolean,
+ *   longClips: number, longTotal: number}}
  */
-export function creditPlan(clips) {
-  return TIERS.map(({ name, cost }) => {
-    const total = clips * cost;
-    return { name, cost, total, days: Math.ceil(total / DAILY), overCeiling: total > CEILING };
-  });
+export function creditPlan(lens) {
+  const total = lens.reduce((a, g) => a + genCost(g), 0);
+  const long = lens.filter((g) => g > LIMITS.longClip);
+  return {
+    clips: lens.length,
+    seconds: lens.reduce((a, g) => a + g, 0),
+    total,
+    days: Math.ceil(total / DAILY),
+    overCeiling: total > CEILING,
+    longClips: long.length,
+    longTotal: long.reduce((a, g) => a + genCost(g), 0),
+  };
 }
 
 /**
@@ -126,14 +151,15 @@ export function creditPlan(clips) {
  *
  * Still kadrovi se broje odvojeno i **ne ulaze u račun** (schemas.md §3.3.2): ceo smisao tog
  * formata je da budžet epizode padne na nulu, a „45 klipova po 0 kredita" i „45 slika" nisu
- * ista rečenica pred Flow-om. Epizoda bez ijednog klipa zato ne dobija ni tabelu tierova —
- * nema šta da se bira.
+ * ista rečenica pred Flow-om. Epizoda bez ijednog klipa zato ne dobija ni račun —
+ * nema šta da se plati.
  *
- * @param {number} clips broj klipova
+ * @param {number[]} lens dužina generisanja svakog klipa koji se generiše
  * @param {number} [stills] broj still kadrova
  * @returns {string[]} redovi
  */
-export function creditLines(clips, stills = 0) {
+export function creditLines(lens, stills = 0) {
+  const clips = lens.length;
   const what = [
     clips ? `${clips} ${plural(clips, 'klip', 'klipa', 'klipova')}` : null,
     stills ? `${stills} ${plural(stills, 'slika', 'slike', 'slika')}` : null,
@@ -142,17 +168,23 @@ export function creditLines(clips, stills = 0) {
   const out = ['', `FLOW KREDITI — ${what}; slike su besplatne (Nano Banana, 0 kredita)`];
 
   if (!clips) {
-    out.push('  Epizoda je cela od slika — nema šta da se plati i nema tiera da se bira.');
+    out.push('  Epizoda je cela od slika — nema šta da se plati.');
     return out;
   }
 
-  for (const r of creditPlan(clips)) {
-    const head = `  ${r.name.padEnd(16)}${String(r.cost).padStart(3)} cr/klip ${thousands(r.total).padStart(7)} cr`;
-    out.push(r.overCeiling
-      ? `${head}   preko mesečnog plafona (${thousands(CEILING)})`
-      : `${head}   ${r.days} ${plural(r.days, 'dan', 'dana', 'dana')} po ${DAILY} cr/dan`);
+  const r = creditPlan(lens);
+  out.push(
+    `  Omni 1.2 Flash  ${r.seconds}s generisanja = ${thousands(r.total)} cr` +
+      (r.overCeiling
+        ? `   preko mesečnog plafona (${thousands(CEILING)})`
+        : `   ${r.days} ${plural(r.days, 'dan', 'dana', 'dana')} po ${DAILY} cr/dan`),
+    `  Cena: 3 cr/s do ${LIMITS.longClip}s, 6 cr/s iznad (3s = ${genCost(3)} · 6s = ${genCost(6)} · ` +
+      `10s = ${genCost(10)} · 15s = ${genCost(15)}).`);
+  if (r.longClips) {
+    out.push(`  Preko ${LIMITS.longClip}s: ${r.longClips} ${plural(r.longClips, 'klip', 'klipa', 'klipova')}, ` +
+      `${thousands(r.longTotal)} cr — sekunda iznad desete je duplo skuplja.`);
   }
-  out.push(`  Stanje: ${DAILY} cr/dan + ${MONTHLY} cr/mesec (AI Plus); ništa se ne prenosi.`);
+  out.push(`  Stanje: ${DAILY} cr/dan + ${thousands(MONTHLY)} cr/mesec (Google AI Pro); ništa se ne prenosi.`);
   return out;
 }
 
@@ -160,16 +192,16 @@ export function creditLines(clips, stills = 0) {
  * Jedan red o tome koliko jedna smena pred Flow-om stvarno nosi.
  *
  * Dnevnih 50 kredita je ono što deli posao na smene (google-ai-plus.md §4), pa se smena meri
- * njima, a ne satima: pola sata je dovoljno za pet Lite klipova i za nijedan Quality.
- * Epizoda bez ijednog klipa nema plafon koji bi je prekinuo i to mora da stoji doslovno —
- * inače se čeka kredit koji se ne troši.
+ * njima, a ne satima: pola sata je dovoljno za pet klipova od 3s, za dva od 6s i za nijedan od
+ * 15s — taj ne staje u dnevnih 50 i troši mesečne. Epizoda bez ijednog klipa nema plafon koji bi
+ * je prekinuo i to mora da stoji doslovno — inače se čeka kredit koji se ne troši.
  *
  * @param {number} clips broj klipova
  * @returns {string} red
  */
 export function shiftLine(clips) {
   if (!clips) return '  Smena traje koliko traje: nema dnevnog plafona koji bi je prekinuo.';
-  const parts = TIERS.map(({ name, cost }) => `${Math.floor(DAILY / cost)} ${name.split(' ').at(-1)}`);
+  const parts = SHIFT_LENS.map((s) => `${Math.floor(DAILY / genCost(s))} × ${s}s`);
   return `  Jedna smena = dnevnih ${DAILY} cr: ${parts.join(' · ')}.`;
 }
 
@@ -254,12 +286,12 @@ export function renderShotlist(storyboard, { only = null } = {}) {
   const all = storyboard.beats.flatMap((b) => b.shots);
   const kept = only ? all.filter((s) => only.has(s.shot_id)) : all;
 
-  const clips = kept.filter((s) => !isStill(s)).length;
+  const lens = kept.filter((s) => !isStill(s)).map(clipGenLen);
   const L = [
     `shotlist — ${storyboard.episode} · ${countLabel(kept.length, all.length, only)}` +
       ' · redosled generisanja',
     'Promptovi se kopiraju doslovno, red po red, bez izmena i bez prelamanja.',
-    ...creditLines(clips, kept.length - clips),
+    ...creditLines(lens, kept.length - lens.length),
   ];
 
   for (const b of storyboard.beats) {
@@ -309,7 +341,7 @@ export function renderShotlist(storyboard, { only = null } = {}) {
 export function renderBoard(storyboard, { only = null, now = new Date() } = {}) {
   const all = storyboard.beats.flatMap((b) => b.shots);
   const kept = only ? all.filter((s) => only.has(s.shot_id)) : all;
-  const clips = kept.filter((s) => !isStill(s)).length;
+  const lens = kept.filter((s) => !isStill(s)).map(clipGenLen);
 
   const L = [
     `# ${storyboard.episode} — Flow tabla`,
@@ -319,8 +351,8 @@ export function renderBoard(storyboard, { only = null, now = new Date() } = {}) 
     'Promptovi se kopiraju doslovno, red po red, bez izmena i bez prelamanja.',
     'Na poslu se samo generiše: fajl ostaje u Flow biblioteci, ime dobija kod kuće, pri skidanju.',
     'LAST DONE: ___ — precrtaj shot čim je gotov; sledeći je prvi neprecrtan.',
-    ...creditLines(clips, kept.length - clips),
-    shiftLine(clips),
+    ...creditLines(lens, kept.length - lens.length),
+    shiftLine(lens.length),
   ];
 
   for (const b of storyboard.beats) {

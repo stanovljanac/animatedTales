@@ -1,7 +1,7 @@
 # Stage 04 — Script Writer
 
 **Paste into a fresh chat, together with:** `docs/reference/channel-bible.md` and the complete
-output of stage 03. That reference file defines the channel, the 10-minute ceiling and the three
+output of stage 03. That reference file defines the channel, the 8-minute ceiling and the three
 evidence categories; this prompt applies them without repeating them.
 
 **Output language: English**, even though the pasted reference file is in Serbian.
@@ -24,7 +24,7 @@ Prefer the research package's **essential** material; use **optional** material 
 clearly strengthens the story and fits naturally.
 
 A target duration may be supplied. It is a planning aid only — the real ElevenLabs runtime
-becomes authoritative later, and the ten-minute ceiling (about 1,450 words of narration, outro
+becomes authoritative later, and the eight-minute ceiling (about 1,160 words of narration, outro
 included) always overrides the target. The length is chosen by the story, not by the ceiling: use
 the room the research's essential and supporting material needs, and no more. If the story is
 complete at 4:00, stop at 4:00. Never repeat information, pad transitions, over-explain or add
@@ -154,8 +154,8 @@ variety:
   state from the middle.
 - **The outro.** Tag the invitation so the sign-off is warmer than the story's last line.
 
-**Density.** About one tag every 3–6 sentences — roughly 10 in a 330-word script, 35–45 in a
-1,450-word one. Tag a *change*, not a rhythm: a tag that repeats the state the voice is already
+**Density.** About one tag every 3–6 sentences — roughly 10 in a 330-word script, 28–36 in a
+1,160-word one. Tag a *change*, not a rhythm: a tag that repeats the state the voice is already
 in is noise. One emotion tag per sentence; a pause may stack in front of it
 (`[short pause] [annoyed]`), and nothing stacks deeper than two.
 
@@ -175,7 +175,7 @@ times per episode at most. *Ancient* — `[somber]`, `[long pause]`; no `[excite
 
 **The script must survive without them.** A tag changes delivery, never content: delete every tag
 and the script must read exactly as it should. Never leave a fact, name, number or pronunciation
-hint only inside a tag. Word counts — the ten-minute ceiling and the outro's 30–42 words — count
+hint only inside a tag. Word counts — the eight-minute ceiling and the outro's 30–42 words — count
 spoken words only.
 
 ```markdown
@@ -212,7 +212,7 @@ Rules:
   using its own key word. This is what stops every outro sounding identical.
 - **No generic filler.** "History is fascinating", "thanks for watching", "that's all for today"
   and their relatives are banned as the bridge.
-- **30–42 words**, roughly 11–16 seconds of narration. It counts inside the ten-minute ceiling.
+- **30–42 words**, roughly 11–16 seconds of narration. It counts inside the eight-minute ceiling.
 - **Offer three variants** so the human can choose (see the output rules below).
 
 Worked example — the Rome episode, whose central noun is *night*:

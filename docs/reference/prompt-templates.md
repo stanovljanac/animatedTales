@@ -5,7 +5,7 @@ Redosled blokova nije preporuka — model čita s početka, pa ono što je front
 težine. Zato identitet lika ide gore, a isključenja dole.
 
 Dužine su BLOCKING: **P1 = 90–160 reči** za image (shema 1; shema 2 ima svoj plafon, niže) i
-**P2 = 60–220 reči** za animation (obe sheme), po kanonskom brojaču iz `schemas.md` §0.6. Taj
+**P2 = 60–220 reči** za animation (obe sheme; **60–330** kad se klip generiše duže od 10s), po kanonskom brojaču iz `schemas.md` §0.6. Taj
 brojač broji i nazive blokova (`FRAME LAYOUT:` = 2 reči) i vremenske oznake (`0–1s:` = 1 reč), pa
 je gornja granica uža nego što deluje: `STYLE` blok pojede 16 reči, a svaki `locked_description`
 još 25–40.
@@ -147,8 +147,9 @@ bio je „izričito zadržan kadar" (`hold to the end`), a poslednji prorez je b
 1. **Prorezi pokrivaju ceo `gen_len`, ne `use_len`.** Poslednji prorez se završava brojem
    `gen_len` (`6.5–8s:` na 8s generisanju). Sekunde posle `use_len` montaža odseca, ali ih model
    generiše — i kad za njih nema opisa, popuni ih mirovanjem koje počne ranije, pre reza.
-2. **Prvi prorez je `0–1s:`, nijedan nije duži od 2.5s.** Okvirno: 4s → 3 proreza, 6s → 3–4,
-   8s → 4–5, 10s → 5.
+2. **Prvi prorez je `0–1s:`, nijedan nije duži od 2.5s.** Okvirno (Omni 1.2, svaka cela sekunda
+   3–15): 3s → 3 proreza od ~1s, 4–5s → 3, 6–7s → 3–4, 8–9s → 4–5, 10s → 5, 11–12s → 5–6,
+   13–15s → 6–7. Pravilo je isto na svakoj dužini; samo broj proreza raste sa njom.
 3. **Svaki prorez su dve rečenice, ~20–30 reči.** Prva: glavna radnja — ko ili šta, kojim delom
    tela ili kojim predmetom, u kom smeru ekrana, kojom brzinom. Druga: šta se u istom trenutku još
    pomera — drugi likovi, tkanina, kosa, plamen, dim, voda, svetlo.
@@ -167,6 +168,24 @@ bio je „izričito zadržan kadar" (`hold to the end`), a poslednji prorez je b
 Budžet: `MOTION BUDGET` 22 reči, četiri-pet proreza po ~25, `CAMERA` i `ENVIRONMENT` ~30,
 `PRESERVE` i `FORBID` 25 — **~190–210**. Plafon je 220 (P2), meki cilj 150–210 (R5, shema 2).
 Kad ne staje, skraćuje se `ENVIRONMENT`, nikad prorez.
+
+**Dugo generisanje (11–15s) ima viši plafon.** Šest-sedam proreza po ~25 reči uz ~77 fiksnih je
+230–260 reči i ne staje u 220, pa za `gen_len` preko 10s važi **P2 60–330, meki cilj 200–320**.
+Plafon se podiže, prompt se ne skraća. Kratko generisanje (3s) ima tri proreza od ~1s i staje u
+običan raspon: jedna radnja i jedan sporedni pokret po prorezu, i dalje bez mirovanja.
+
+### Dužina generisanja (Omni 1.2)
+
+`gen_len` je **najmanja cela sekunda 3–15 koja pokriva `use_len`** (4.62s → 5s). Svaka sekunda
+viška je 3 kredita bačena na deo koji montaža odseca; R8 to javlja. Do 10s je cena ravna
+(3 kr/s), pa kratak klip nije skuplji po sekundi, i zato se dužina bira prema kadru, ne prema ceni.
+
+**Iznad 10s je svaka sekunda duplo skuplja (6 kr), i takav klip je izuzetak.** Klip od 15s košta
+60, koliko dva od 10s. Piši ga samo kad je kadar **jedan neprekinut pokret** koji bi rez pokvario
+(dug hod kroz grad, spora panorama, jedna radnja bez prekida). Teži je i za animaciju: što je klip
+duži, to je veća šansa da model zamrzne kraj, pa prorezi moraju da nose pokret baš do poslednje
+sekunde. Kad se kadar može podeliti na dva klipa od ≤10s a da rez bude na mestu gde se ionako
+menja radnja, podeli se. R8 uz klip preko 10s ispisuje i cenu iste dužine u dva klipa.
 
 ### Loše i dobro — isti kadar
 
@@ -228,7 +247,7 @@ pravilo 1 na delu.
 
 ## Kontrolna lista pre upisa u `storyboard.json`
 
-1. Prebroj obe dužine kanonskim brojačem, ne na oko — 90–160 i 60–220.
+1. Prebroj obe dužine kanonskim brojačem, ne na oko — 90–160 i 60–220 (60–330 kad je `gen_len` preko 10s).
 2. Pet naziva blokova stoji u image promptu, verzalom i sa dvotačkom.
 3. Nijedna zabranjena prostorna fraza (lista A u `camera-language.md`).
 4. Nijedna od pet reči koje impliciraju rez, u animation promptu.
@@ -376,8 +395,8 @@ lockovi (najviše tri); mesta u dubini idu kratkim opisom u `FRAME LAYOUT`. Prim
 
 ## Kontrolna lista pre upisa (shema 2)
 
-1. Prebroj obe dužine kanonskim brojačem: **90–720** i **60–220** (meki ciljevi 360–520 i
-   150–210). Cilj je pokrivenost, ne broj.
+1. Prebroj obe dužine kanonskim brojačem: **90–720** i **60–220** (60–330 za
+   `gen_len` preko 10s; meki ciljevi 360–520 i 150–210, odnosno 200–320). Cilj je pokrivenost, ne broj.
 2. Sedam naziva blokova stoji u image promptu, plus `SCALE` kad je entitet `scale_critical`.
 3. `characters[0]` je vizuelni subjekt kadra i njegov lock stoji **u `SUBJECT` bloku**.
 4. `visual_priority` ima 3–5 stavki i `[0]` imenuje PRIMARY lock.
