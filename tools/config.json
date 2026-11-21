@@ -3,5 +3,12 @@
   "fps": 24,
   "maxShot": 10,
   "minShot": 3,
-  "targetShot": 8
+  "targetShot": 8,
+  "disk": {
+    "published": [
+      "antikythera-mechanism", "greek-gods-part-1", "greek-gods-part-2", "greek-gods-part-3",
+      "tyr-and-fenrir", "harem-conspiracy", "heavenly-horses", "marathon",
+      "night-when-rome-almost-fell", "polynesian-navigation", "croesus"
+    ]
+  }
 }
