@@ -6,12 +6,12 @@
 //   node tools/medium.mjs episodes/<slug> --check        provera medium.md (pravila iz docs/medium.md)
 //   node tools/medium.mjs episodes/<slug> --post         video je javan -> objavi članak na Medium
 //   node tools/medium.mjs episodes/<slug> --watch        čekaj da video postane javan, pa objavi
-//   node tools/medium.mjs --sweep                        jedan prolaz kroz sve epizode (za Task Scheduler)
+//   node tools/medium.mjs --sweep                        jedan prolaz kroz sve epizode (Task Scheduler, nedeljno)
 //   node tools/medium.mjs --login                        prijava na Medium (jednom, u Chrome prozoru alata)
 //   node tools/medium.mjs --status                       da li je Chrome profil alata prijavljen na Medium
 //   node tools/medium.mjs --profile                      short bio + About stranica profila
 //   node tools/medium.mjs --dump <url>                   dijagnostika: šta Medium stranica nudi (selektori)
-//   node tools/medium.mjs --install-task | --remove-task Task Scheduler za --sweep
+//   node tools/medium.mjs --install-task | --remove-task Task Scheduler za --sweep: ponedeljak 21:00, bez prozora
 //
 // Zašto kroz Chrome, a ne Medium API: Medium je prestao da izdaje integration tokene (2023), pa
 // objavljivanje preko API-ja za nove naloge ne postoji. Ostaje isto što radi ruka — editor. Alat
@@ -1160,8 +1160,9 @@ async function postEpisode(args, ep, feed) {
     log('  pa ili upiši medium_url i status "published" u medium.json, ili ponovi sa --force.');
     return 1;
   }
-  // --sweep se zove na 15 minuta: neuspeo članak se ne pokušava u nedogled (nacrt se reciklira,
-  // ali pokušaji se ipak ne gomilaju). Posle MAX_ATTEMPTS ostaje ručno: --post --force.
+  // --sweep se zove nedeljno: neuspeo članak se ne pokušava u nedogled (nacrt se reciklira, ali
+  // pokušaji se ipak ne gomilaju). Posle MAX_ATTEMPTS prolaza (to je tri nedelje) ostaje ručno:
+  // --post --force.
   const attemptsSoFar = ep.state?.status === 'failed' ? (ep.state.attempts ?? 1) : 0;
   if (attemptsSoFar >= MAX_ATTEMPTS && !args.force) {
     log(`  ${attemptsSoFar} neuspela pokušaja (medium.json: ${ep.state.error}). Ispravi uzrok pa ručno: node tools/medium.mjs episodes/${ep.slug} --post --force`);
@@ -1236,8 +1237,142 @@ async function postEpisode(args, ep, feed) {
   }
 }
 
+// ------------------------------------------------------------------ zadatak za Task Scheduler
+
+export const TASK_NAME = 'AnimatedTales Medium Sweep';
+
+/** Log veći od ovoga pokretač kopira u `<log>.1` pre sledećeg prolaza. */
+export const SWEEP_LOG_MAX_BYTES = 200 * 1024;
+
+const pad = (n) => String(n).padStart(2, '0');
+
+/** Lokalno vreme za log: `2026-11-23 21:00:02`. */
+export function stamp(d = new Date()) {
+  return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())} ${pad(d.getHours())}:${pad(d.getMinutes())}:${pad(d.getSeconds())}`;
+}
+
+/** Prvi ponedeljak u 21:00 strogo posle `now`, kao `YYYY-MM-DDT21:00:00` (StartBoundary zadatka). */
+export function nextMonday2100(now = new Date()) {
+  const d = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 21, 0, 0);
+  let ahead = (1 - d.getDay() + 7) % 7; // dana do ponedeljka; 0 = danas
+  if (ahead === 0 && d <= now) ahead = 7;
+  d.setDate(d.getDate() + ahead);
+  return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}T21:00:00`;
+}
+
+/** Komanda koju zadatak izvršava (isti oblik kao dosad; spoljni navodnici su za `cmd /c`). */
+export const sweepCommand = ({ node, script, log: logPath }) => `cmd /c ""${node}" "${script}" --sweep >> "${logPath}" 2>&1"`;
+
+/**
+ * Mali VBScript koji pokreće `sweepCommand` sa skrivenim prozorom (stil 0), čeka ga i vraća njegov
+ * izlazni kod. Rotacija loga ide ovde, pre `cmd`-a, jer `cmd` drži log otvoren pa ga Node ne
+ * može preimenovati.
+ */
+export function launcherVbs({ node, script, log: logPath, maxBytes = SWEEP_LOG_MAX_BYTES }) {
+  const q = (s) => s.replaceAll('"', '""');
+  return [
+    "' Generisano: node tools/medium.mjs --install-task. Pokreće --sweep bez prozora.",
+    'Set sh = CreateObject("WScript.Shell")',
+    'Set fso = CreateObject("Scripting.FileSystemObject")',
+    `logFile = "${q(logPath)}"`,
+    'If fso.FileExists(logFile) Then',
+    `  If fso.GetFile(logFile).Size > ${maxBytes} Then`,
+    '    fso.CopyFile logFile, logFile & ".1", True',
+    '    fso.DeleteFile logFile',
+    '  End If',
+    'End If',
+    `rc = sh.Run("${q(sweepCommand({ node, script, log: logPath }))}", 0, True)`,
+    'WScript.Quit rc',
+    '',
+  ].join('\r\n');
+}
+
+/** XML zadatka: nedeljno, ponedeljak u `start`; propušten prolaz se nadoknađuje (StartWhenAvailable). */
+export function sweepTaskXml({ vbs, start }) {
+  const esc = (s) => s.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;');
+  return `<?xml version="1.0" encoding="UTF-16"?>
+<Task version="1.2" xmlns="http://schemas.microsoft.com/windows/2004/02/mit/task">
+  <RegistrationInfo>
+    <Description>Medium članak uz video: nedeljni prolaz (node tools/medium.mjs --sweep).</Description>
+  </RegistrationInfo>
+  <Triggers>
+    <CalendarTrigger>
+      <StartBoundary>${start}</StartBoundary>
+      <Enabled>true</Enabled>
+      <ScheduleByWeek>
+        <DaysOfWeek><Monday /></DaysOfWeek>
+        <WeeksInterval>1</WeeksInterval>
+      </ScheduleByWeek>
+    </CalendarTrigger>
+  </Triggers>
+  <Principals>
+    <Principal id="Author">
+      <LogonType>InteractiveToken</LogonType>
+      <RunLevel>LeastPrivilege</RunLevel>
+    </Principal>
+  </Principals>
+  <Settings>
+    <MultipleInstancesPolicy>IgnoreNew</MultipleInstancesPolicy>
+    <DisallowStartIfOnBatteries>false</DisallowStartIfOnBatteries>
+    <StopIfGoingOnBatteries>false</StopIfGoingOnBatteries>
+    <StartWhenAvailable>true</StartWhenAvailable>
+    <ExecutionTimeLimit>PT1H</ExecutionTimeLimit>
+    <Enabled>true</Enabled>
+  </Settings>
+  <Actions Context="Author">
+    <Exec>
+      <Command>wscript.exe</Command>
+      <Arguments>//B //NoLogo "${esc(vbs)}"</Arguments>
+    </Exec>
+  </Actions>
+</Task>
+`;
+}
+
+/** `.vbs` i XML za WSH i Task Scheduler idu kao UTF-16LE sa BOM-om (putanja sme da ima bilo koji znak). */
+export const utf16leFile = (text) => Buffer.concat([Buffer.from([0xff, 0xfe]), Buffer.from(text, 'utf16le')]);
+
+/**
+ * Prolaz sa vremenom u logu: početak i kraj (kod, trajanje), i kad `run` pukne (tada kod 1, a
+ * greška ide dalje).
+ * @param {() => Promise<number>} run
+ */
+export async function stampedSweep(run, { now = () => new Date(), write = log } = {}) {
+  const t0 = now();
+  write(`[${stamp(t0)}] sweep: start`);
+  let code = 1;
+  try {
+    code = await run();
+    return code;
+  } finally {
+    const t1 = now();
+    write(`[${stamp(t1)}] sweep: kraj (kod ${code}, ${Math.round((t1 - t0) / 1000)} s)`);
+  }
+}
+
 const episodesDir = () => path.join(ROOT, 'episodes');
 const logFile = () => path.join(process.env.LOCALAPPDATA ?? os.homedir(), 'AnimatedTales', 'medium-sweep.log');
+
+/** Jedan prolaz kroz sve epizode sa medium.md koje još nisu objavljene. Vraća najgori izlazni kod. */
+async function sweepAll(args) {
+  const feed = await fetchFeed();
+  const dirs = fs.readdirSync(episodesDir()).map((d) => path.join(episodesDir(), d))
+    .filter((d) => fs.existsSync(path.join(d, 'medium.md')));
+  let worst = 0;
+  for (const dir of dirs) {
+    const ep = loadEpisode(dir);
+    if (!isPending(ep)) continue;
+    log(`\n— ${ep.slug}`);
+    try {
+      const code = await postEpisode(args, ep, feed);
+      if (code !== 0 && code !== 3) worst = code;
+    } catch (err) {
+      console.error(`  GREŠKA ${err.message}`);
+      worst = 1;
+    }
+  }
+  return worst;
+}
 
 async function main(argv) {
   const args = parseArgs(argv);
@@ -1268,25 +1403,8 @@ async function main(argv) {
       }
     }
 
-    case 'sweep': {
-      const feed = await fetchFeed();
-      const dirs = fs.readdirSync(episodesDir()).map((d) => path.join(episodesDir(), d))
-        .filter((d) => fs.existsSync(path.join(d, 'medium.md')));
-      let worst = 0;
-      for (const dir of dirs) {
-        const ep = loadEpisode(dir);
-        if (!isPending(ep)) continue;
-        log(`\n— ${ep.slug}`);
-        try {
-          const code = await postEpisode(args, ep, feed);
-          if (code !== 0 && code !== 3) worst = code;
-        } catch (err) {
-          console.error(`  GREŠKA ${err.message}`);
-          worst = 1;
-        }
-      }
-      return worst;
-    }
+    case 'sweep':
+      return stampedSweep(() => sweepAll(args));
 
     case 'login': {
       const m = await new MediumSession({ port: args.port }).open();
@@ -1339,17 +1457,25 @@ async function main(argv) {
     }
 
     case 'install-task': {
-      const node = process.execPath;
-      const script = fileURLToPath(import.meta.url);
-      const cmd = `cmd /c ""${node}" "${script}" --sweep >> "${logFile()}" 2>&1"`;
-      execFileSync('schtasks', ['/Create', '/F', '/SC', 'MINUTE', '/MO', '15', '/TN', 'AnimatedTales Medium Sweep', '/TR', cmd], { stdio: 'inherit' });
-      log('Task Scheduler: „AnimatedTales Medium Sweep“ na svakih 15 min (radi dok si prijavljen na Windows).');
-      log(`Log: ${logFile()}`);
+      const dir = path.dirname(logFile());
+      fs.mkdirSync(dir, { recursive: true });
+      const vbs = path.join(dir, 'medium-sweep.vbs');
+      fs.writeFileSync(vbs, utf16leFile(launcherVbs({ node: process.execPath, script: fileURLToPath(import.meta.url), log: logFile() })));
+      const xmlFile = path.join(os.tmpdir(), 'animatedtales-medium-sweep-task.xml');
+      fs.writeFileSync(xmlFile, utf16leFile(sweepTaskXml({ vbs, start: nextMonday2100() })));
+      try {
+        execFileSync('schtasks', ['/Create', '/F', '/TN', TASK_NAME, '/XML', xmlFile], { stdio: 'inherit' });
+      } finally {
+        fs.rmSync(xmlFile, { force: true });
+      }
+      log(`Task Scheduler: „${TASK_NAME}“ svakog ponedeljka u 21:00, bez prozora (radi dok si prijavljen na Windows;`);
+      log('  ako je računar bio ugašen, prolaz se nadoknađuje čim proradi).');
+      log(`Log sa vremenom: ${logFile()}`);
       return 0;
     }
 
     case 'remove-task':
-      execFileSync('schtasks', ['/Delete', '/F', '/TN', 'AnimatedTales Medium Sweep'], { stdio: 'inherit' });
+      execFileSync('schtasks', ['/Delete', '/F', '/TN', TASK_NAME], { stdio: 'inherit' });
       return 0;
 
     default:

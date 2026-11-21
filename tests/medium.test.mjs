@@ -11,11 +11,14 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
+import { spawnSync } from 'node:child_process';
 import {
   CHANNEL, SITE, PH_VIDEO, PH_THUMB, RULES, PROFILE, CAPTION,
   inlineLinks, plainText, parseMedium, validateMedium, shingles, overlap, descriptionOf,
   inlineHtml, bodyHtml, bodyText, parseFeed, matchEpisode, videoIdFrom, watchUrl, parseArgs,
   checkEpisode, loadEpisode, isPending,
+  SWEEP_LOG_MAX_BYTES, stamp, nextMonday2100, sweepCommand, launcherVbs, sweepTaskXml,
+  utf16leFile, stampedSweep,
 } from '../tools/medium.mjs';
 
 // ---------------------------------------------------------------- gradivo
@@ -377,4 +380,105 @@ test('isPending: čeka objavu samo epizoda sa medium.md koja nije objavljena', (
     fs.rmSync(dir, { recursive: true, force: true });
   }
   assert.equal(isPending(loadEpisode(tmpEpisode({ 'script.md': 'x' }))), false, 'bez medium.md nema šta da se objavi');
+});
+
+// ---------------------------------------------------------------- zadatak za Task Scheduler
+
+const CMD = {
+  node: 'C:\\Program Files\\nodejs\\node.exe',
+  script: 'F:\\AI\\Animated Tales\\tools\\medium.mjs',
+  log: 'C:\\Users\\M\\AppData\\Local\\AnimatedTales\\medium-sweep.log',
+};
+
+test('stamp: lokalno vreme kao YYYY-MM-DD HH:MM:SS', () => {
+  assert.equal(stamp(new Date(2026, 10, 23, 21, 0, 2)), '2026-11-23 21:00:02');
+  assert.equal(stamp(new Date(2026, 0, 5, 3, 4, 5)), '2026-01-05 03:04:05');
+});
+
+test('nextMonday2100: prvi ponedeljak u 21:00 strogo posle datuma', () => {
+  assert.equal(nextMonday2100(new Date(2026, 10, 21, 21, 40)), '2026-11-23T21:00:00', 'subota');
+  assert.equal(nextMonday2100(new Date(2026, 10, 23, 20, 0)), '2026-11-23T21:00:00', 'ponedeljak pre 21');
+  assert.equal(nextMonday2100(new Date(2026, 10, 23, 21, 0)), '2026-11-30T21:00:00', 'ponedeljak tačno 21:00');
+  assert.equal(nextMonday2100(new Date(2026, 10, 29, 12, 0)), '2026-11-30T21:00:00', 'nedelja');
+  assert.equal(nextMonday2100(new Date(2026, 11, 29, 9, 0)), '2027-01-04T21:00:00', 'prelaz godine');
+});
+
+test('sweepCommand: cmd /c sa navodnicima oko putanja sa razmakom', () => {
+  assert.equal(
+    sweepCommand(CMD),
+    'cmd /c ""C:\\Program Files\\nodejs\\node.exe" "F:\\AI\\Animated Tales\\tools\\medium.mjs" --sweep >> "C:\\Users\\M\\AppData\\Local\\AnimatedTales\\medium-sweep.log" 2>&1"',
+  );
+});
+
+test('launcherVbs: literal je ista komanda, vraća izlazni kod i ima prag rotacije', () => {
+  const vbs = launcherVbs(CMD);
+  const literal = vbs.match(/\.Run\("(.*)", 0, True\)/)[1].replaceAll('""', '"');
+  assert.equal(literal, sweepCommand(CMD));
+  assert.match(vbs, /WScript\.Quit/);
+  assert.ok(vbs.includes(`.Size > ${SWEEP_LOG_MAX_BYTES}`), 'prag rotacije');
+});
+
+test('sweepTaskXml: nedeljno u ponedeljak, nadoknada propuštenog, bez ponavljanja na 15 min', () => {
+  const xml = sweepTaskXml({ vbs: 'C:\\Users\\A&B\\AnimatedTales\\medium-sweep.vbs', start: '2026-11-23T21:00:00' });
+  assert.ok(xml.startsWith('<?xml version="1.0" encoding="UTF-16"?>'));
+  for (const re of [
+    /<StartBoundary>2026-11-23T21:00:00<\/StartBoundary>/,
+    /<ScheduleByWeek>[\s\S]*<Monday \/>[\s\S]*<WeeksInterval>1<\/WeeksInterval>/,
+    /<StartWhenAvailable>true</,
+    /<DisallowStartIfOnBatteries>false</,
+    /<ExecutionTimeLimit>PT1H</,
+    /<MultipleInstancesPolicy>IgnoreNew</,
+    /<LogonType>InteractiveToken</,
+    /<Command>wscript\.exe<\/Command>/,
+    /<Arguments>\/\/B \/\/NoLogo "C:\\Users\\A&amp;B\\AnimatedTales\\medium-sweep\.vbs"<\/Arguments>/,
+  ]) assert.match(xml, re);
+  assert.ok(!xml.includes('<Interval>'), 'nema ponavljanja na 15 minuta');
+});
+
+test('utf16leFile: BOM pa UTF-16LE', () => {
+  const buf = utf16leFile('č x');
+  assert.deepEqual([buf[0], buf[1]], [0xff, 0xfe]);
+  assert.equal(buf.subarray(2).toString('utf16le'), 'č x');
+});
+
+test('stampedSweep: start i kraj sa kodom i trajanjem, kod ide dalje', async () => {
+  const lines = [];
+  const times = [new Date(2026, 10, 23, 21, 0, 0), new Date(2026, 10, 23, 21, 0, 2)];
+  const code = await stampedSweep(async () => 4, { now: () => times.shift(), write: (s) => lines.push(s) });
+  assert.equal(code, 4);
+  assert.deepEqual(lines, ['[2026-11-23 21:00:00] sweep: start', '[2026-11-23 21:00:02] sweep: kraj (kod 4, 2 s)']);
+});
+
+test('stampedSweep: ako prolaz pukne, kraj je kod 1 i greška ide dalje', async () => {
+  const lines = [];
+  const times = [new Date(2026, 10, 23, 21, 0, 0), new Date(2026, 10, 23, 21, 0, 1)];
+  await assert.rejects(
+    stampedSweep(async () => { throw new Error('feed kanala: HTTP 500'); }, { now: () => times.shift(), write: (s) => lines.push(s) }),
+    /HTTP 500/,
+  );
+  assert.match(lines.at(-1), /sweep: kraj \(kod 1, /);
+});
+
+test('launcherVbs uživo: razmak u putanji, rotacija loga i izlazni kod', { skip: process.platform !== 'win32' }, () => {
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'medium sweep '));
+  try {
+    const script = path.join(dir, 'fake.mjs');
+    fs.writeFileSync(script, "console.log('ok', ...process.argv.slice(2)); process.exitCode = 7;\n");
+    const log = path.join(dir, 'sweep.log');
+    const vbs = path.join(dir, 'launch.vbs');
+    fs.writeFileSync(vbs, utf16leFile(launcherVbs({ node: process.execPath, script, log })));
+    fs.writeFileSync(log, 'x'.repeat(SWEEP_LOG_MAX_BYTES + 1));
+    const run = () => spawnSync('cscript', ['//nologo', vbs], { encoding: 'utf8' });
+
+    const first = run();
+    assert.equal(first.status, 7, `${first.stdout}${first.stderr}`);
+    assert.equal(fs.statSync(`${log}.1`).size, SWEEP_LOG_MAX_BYTES + 1, 'stari log je u .1');
+    assert.equal(fs.readFileSync(log, 'utf8').trim(), 'ok --sweep');
+
+    assert.equal(run().status, 7);
+    assert.equal(fs.statSync(`${log}.1`).size, SWEEP_LOG_MAX_BYTES + 1, 'ispod praga nema rotacije');
+    assert.deepEqual(fs.readFileSync(log, 'utf8').trim().split(/\r?\n/), ['ok --sweep', 'ok --sweep']);
+  } finally {
+    fs.rmSync(dir, { recursive: true, force: true });
+  }
 });
