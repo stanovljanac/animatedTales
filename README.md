@@ -84,7 +84,7 @@ node tools/disk.mjs      --clean [slug] [--yes]         # briše regenerabilni .
 Svaki alat ima `--help`. Provere:
 
 ```
-node --test "tests/*.test.mjs"   # 691 test (Node 22+ ne prima sam folder)
+node --test "tests/*.test.mjs"   # svi testovi (Node 22+ ne prima sam folder)
 node tests/check-fixtures.mjs # izvršni oblik ugovora iz schemas.md
 ```
 
@@ -92,6 +92,7 @@ node tests/check-fixtures.mjs # izvršni oblik ugovora iz schemas.md
 
 | Putanja | Sadržaj |
 |---|---|
+| `docs/PRD.md` · `TECH.md` · `DB.md` · `AGENTS.md` · `known_issues.md` | **SDD komplet**: šta i zašto, arhitektura i alati, model podataka, pravila za AI agente, otvoreni problemi |
 | `docs/reference/` | **ugovori** — `schemas.md` je izvor istine za sva tri JSON fajla epizode |
 | `docs/plan/` | plan rada po celinama (C01–C15) i evidencija odstupanja |
 | `docs/prompts/` | promptovi za faze koje se rade u chat modelu |
