@@ -1,11 +1,11 @@
 {
   "slug": "la-navidad",
   "title": "The First Spanish Settlement in the Americas Was Built From a Shipwreck",
-  "status": "draft",
+  "status": "in-progress",
   "voice": null,
   "narration_file": "narration.mp3",
   "final_file": null,
-  "endcard_file": null,
+  "endcard_file": "shots/shot58.jpeg",
   "intro_file": null,
   "intro_volume": 0.2,
   "protagonists": [
@@ -17,8 +17,86 @@
       "Fort"
     ]
   ],
-  "characters": [],
-  "locations": [],
-  "key_props": [],
+  "characters": [
+    {
+      "id": "columbus",
+      "name": "Christopher Columbus",
+      "locked_description": "Christopher Columbus, a tall Genoese mariner in his early forties, long reddish-grey hair to his shoulders, a weathered freckled face with a straight nose, a dark wool captain's cloak over a plain doublet, a flat dark cap"
+    },
+    {
+      "id": "guacanagari",
+      "name": "Guacanagarí",
+      "locked_description": "Guacanagarí, a Taíno cacique in his thirties, broad-shouldered and dignified, straight black hair cut level at the brow, a gold band across his forehead, round gold ear discs, a white cotton mantle over his shoulders and a woven cotton waistcloth"
+    },
+    {
+      "id": "crew",
+      "name": "sailors",
+      "locked_description": "Spanish sailors of 1492, weathered men aged twenty to forty, loose linen shirts, wool breeches, knitted red caps, rope belts with knives, sun-darkened faces and rough beards"
+    },
+    {
+      "id": "taino",
+      "name": "Taíno",
+      "locked_description": "Taíno islanders of 1492, adult men and women with straight black hair, red-brown skin, cotton waistcloths and short cotton wraps, shell necklaces, a few gold ear discs, woven baskets and gourd bowls"
+    },
+    {
+      "id": "archaeologists",
+      "name": "archaeologist",
+      "locked_description": "field archaeologists of today, men and women in khaki shirts and wide sun hats, kneeling on foam pads, with trowels, brushes, string-lined grids and white buckets"
+    }
+  ],
+  "locations": [
+    {
+      "id": "wreck-shore",
+      "name": "The shore of the wreck",
+      "locked_description": "a Caribbean beach on the north coast of Hispaniola, pale coral sand, a long sandbank offshore with white surf, green palm and sea-grape thickets and blue mountains inland"
+    },
+    {
+      "id": "taino-town",
+      "name": "Guacanagarí's town",
+      "locked_description": "a Taíno town of thatched round houses, a wide swept-clean earth square, tall palms, ceiba trees, hammocks, cooking fires and drying racks, ringed by green hills"
+    },
+    {
+      "id": "ship-deck",
+      "name": "The deck of the Santa María",
+      "locked_description": "the open main deck of a 1492 carrack, wide worn planks, a long wooden tiller bar, coiled rope, a high stern castle with a hatch, rigging and patched sails against the sky"
+    },
+    {
+      "id": "taino-house",
+      "name": "A large Taíno house",
+      "locked_description": "the inside of a large Taíno house, a high conical thatched roof of palm leaves, woven hammocks, carved wooden stools, clay pots and a low central fire"
+    },
+    {
+      "id": "navidad-site",
+      "name": "The mound of La Navidad",
+      "locked_description": "a low earth mound above a coastal field, a trodden bare yard on its crown, a few tall palms and thick grass at its foot, the sea to one side and blue hills inland"
+    },
+    {
+      "id": "excavation-mound",
+      "name": "The excavation at En Bas Saline",
+      "locked_description": "a low grassy mound on a river plain in northern Haiti, string-lined excavation trenches cut into dark soil, wooden stakes, wheelbarrows, a blue tarp tent and palms"
+    }
+  ],
+  "key_props": [
+    {
+      "id": "santa-maria",
+      "name": "Santa María",
+      "locked_description": "the Santa María, a broad round-hulled carrack of 1492, three masts, a high stern castle, patched cream sails with a red cross on the mainsail, dark tarred planking and a carved stern lantern"
+    },
+    {
+      "id": "nina",
+      "name": "The Niña",
+      "locked_description": "the Niña, a small light caravel of 1492, three masts with lateen sails, a faded red cross on a plain cream mainsail, weathered pale timber, a single deck and a low stern"
+    },
+    {
+      "id": "canoe",
+      "name": "The dugout canoe",
+      "locked_description": "a Taíno dugout canoe hollowed from a single dark tree trunk, long and narrow with raised pointed ends, wet smooth wood, adult paddlers kneeling in a row inside"
+    },
+    {
+      "id": "journal",
+      "name": "Columbus's journal",
+      "locked_description": "Columbus's journal, a thick bound book of rough pages with a worn brown leather cover, a small iron ink pot and a white goose-quill pen"
+    }
+  ],
   "notes": "Samostalna epizoda, ideja #37 u docs/ideas.md (dodata 2026-11-16 na korisnikov zahtev: bar jedna prica iz 1492 / ranog novog veka), jedina iz same 1492 na kanalu, el-dorado je iz c. 1537 (region Caribbean, epoha Modern Era, 24. dec 1492 - 27. nov 1493). Faza 04 zavrsena: research.md i script.md (~1052 reci, oko 6.3-7.1 min pri 148-166 reci/min; pravilo od 2026-11-16: plafon 10 min, duzinu bira tema); lockovi, timing i storyboard cekaju narraciju. Rezim shota (still, klip ili mesano) bira se tek iz slike, ne iz kredita. Izvor: Kolumbov dnevnik (Markham 1893, citan na archive.org), Chancino pismo (druga plovidba), Florida Museum (En Bas Saline), Euronews 12. okt 2026; Gutenberg je bio nedostupan. Ispravljena premisa: 'prvo evropsko naselje' je netacno (Nordijci, L'Anse aux Meadows), tacno je 'prvo spansko'. Broj ljudi: 39 po Kolumbovom dnevniku, 44 po zvanicnoj listi iz 1507 (skripta kaze 'by his own count'). Taino strana postoji samo kroz ono sto su Spanci zapisali (Guacanagari kod Chance); skripta to kaze jednom. TACNOST PERIODA: spanske karavele iz 1492 (Santa Maria nao, Nina karavela), mornari u kosuljama i kapama bez ukrasa, Kolumbo u tamnom plasu kapetana, Taino: pamucne pregaće i nakit od zlata, kanui izdubljeni iz jednog debla, hamak, kuce 'caney/bohio' sa slamnatim krovom; bez zlatnih gradova i bez Evropljana u oklopima konkistadora (to je kasnije). Brodolom: mirno more, mesec, greben; bez krvi i bez lesina u kadru (mrtvi samo kao daleka naznaka u polju). Cacique Guacanagari prikazan dostojanstveno, ne kao 'divljak' ni kao zrtva; Kolumbo ni heroj ni zlikovac. Tvrdnja 'bio je naivan/timid' pripada Kolumbu i skripta je prenosi kao njegovu recenicu. Protagonists za publish.md: recenica koja sazima pricu je 'Kolumbo je gubitak broda nazvao srecom, a tvrdjava od njegovih dasaka je izgubljena': glavni su Columbus i naselje (La Navidad / Spanish Town / Fort), ne Guacanagari (vazan lik, ali nepoznat novom gledaocu; sme u naslov kao kontekst, nikad umesto Kolumba i naselja). Naslov imenuje oba ili nijedan, nikad jedan + deo."
 }
