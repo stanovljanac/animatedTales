@@ -1,18 +1,116 @@
 {
   "slug": "ashoka-kalinga",
   "title": "The Emperor Who Won a War and Carved His Regret in Stone",
-  "status": "draft",
+  "status": "in-progress",
   "voice": null,
   "narration_file": "narration.mp3",
   "final_file": null,
-  "endcard_file": null,
+  "endcard_file": "shots/shot44.jpeg",
   "intro_file": null,
   "intro_volume": 0.2,
   "protagonists": [
     "Ashoka"
   ],
-  "characters": [],
-  "locations": [],
-  "key_props": [],
+  "characters": [
+    {
+      "id": "ashoka",
+      "name": "Ashoka",
+      "locked_description": "Ashoka, a Mauryan emperor in his forties, a strong lean face with a trimmed black beard and moustache, kohl-lined dark eyes, a white cotton robe with a deep red shoulder cloth, a gold chest chain, gold armbands and a cloth turban with a jeweled band"
+    },
+    {
+      "id": "mason",
+      "name": "stonecutter",
+      "locked_description": "a Mauryan stonecutter in his thirties, wiry and sun-darkened, a shaved head, an undyed cotton wrap and shoulder cloth, a worn leather apron, stone dust in his stubble, an iron chisel in one hand and a wooden mallet in the other"
+    },
+    {
+      "id": "courtiers",
+      "name": "officials",
+      "locked_description": "Mauryan court officials, men in white cotton robes with pleated sashes, cloth turbans with simple gold pins, trimmed beards, thin gold earrings, and scrolls or palm-leaf bundles in their hands"
+    },
+    {
+      "id": "soldiers",
+      "name": "soldiers",
+      "locked_description": "Mauryan soldiers of the third century BCE, infantry in white cotton tunics with leather cuirasses, round cloth turbans, long spears or bows, wicker shields and short curved swords"
+    },
+    {
+      "id": "kalingans",
+      "name": "Kalingans",
+      "locked_description": "people of Kalinga, adult men and women of the eastern coast, brown skin, dark hair tied in knots, white and indigo cotton wraps covering the body, shell and bead jewelry, with farming and fishing tools"
+    },
+    {
+      "id": "forest-people",
+      "name": "forest people",
+      "locked_description": "forest-dwelling people of central India, adult men and women with dark skin, hair knotted with leaves and feathers, leaf-and-cotton wraps, bows and quivers, garlands of seeds and beads"
+    },
+    {
+      "id": "monks",
+      "name": "monks",
+      "locked_description": "Buddhist monks of India, men with shaved heads and plain saffron robes draped over both shoulders, wooden alms bowls and cloth bags, calm faces"
+    },
+    {
+      "id": "princes",
+      "name": "princes",
+      "locked_description": "two young Mauryan princes in their twenties, clean-shaven and upright, white cotton robes with colored sashes, cloth turbans with small jewels and gold earrings"
+    },
+    {
+      "id": "firuz",
+      "name": "Firuz Shah",
+      "locked_description": "Sultan Firuz Shah Tughlaq, a bearded man of about sixty, a tall white turban with a gold band, a long dark green court robe with gold braid, a jeweled belt and a curved sword"
+    },
+    {
+      "id": "brahmin",
+      "name": "Brahmin",
+      "locked_description": "Brahmin scholars of India, older men in white cotton robes with shoulder cloths, shaved heads with a topknot, forehead marks, grey beards and palm-leaf manuscripts in their hands"
+    },
+    {
+      "id": "prinsep",
+      "name": "Prinsep",
+      "locked_description": "James Prinsep, a slender British scholar in his late thirties, sandy hair and side whiskers, a dark Victorian frock coat with a high white collar and cravat, ink on his fingers"
+    }
+  ],
+  "locations": [
+    {
+      "id": "pataliputra-hall",
+      "name": "The hall of Pataliputra",
+      "locked_description": "a pillared timber-and-stone hall of Pataliputra, tall wooden columns with carved capitals, latticed windows, carved screens, woven mats, a lion-footed throne dais and hanging brass lamps"
+    },
+    {
+      "id": "pataliputra-chamber",
+      "name": "The private chamber",
+      "locked_description": "a private lamplit chamber of the palace at Pataliputra, whitewashed brick walls, a low wooden bed and a woven mat, brass oil lamps and a carved lattice window"
+    },
+    {
+      "id": "kalinga-rock",
+      "name": "The rock at Dhauli",
+      "locked_description": "a rocky hillock on the Kalinga coast, a smoothed grey granite rock face, a carved stone elephant rising from the rock above it, green rice fields and a river below"
+    },
+    {
+      "id": "royal-kitchen",
+      "name": "The royal kitchen",
+      "locked_description": "a vast royal kitchen of the Mauryan palace, a long hall with rows of great bronze cauldrons over brick hearths, smoke-blackened beams and rows of clay storage jars"
+    },
+    {
+      "id": "mauryan-road",
+      "name": "The royal road",
+      "locked_description": "a dusty royal road of the Mauryan empire, packed earth between rice fields and groves, mango and banyan trees along the edge, a stepped well and a few milestone stones"
+    }
+  ],
+  "key_props": [
+    {
+      "id": "edict-rock",
+      "name": "The edict rock",
+      "locked_description": "a great grey granite boulder with one face smoothed flat and cut with rows of small neat incised characters, chisel marks and fresh pale dust along the cuts"
+    },
+    {
+      "id": "edict-pillar",
+      "name": "The pillar",
+      "locked_description": "a polished sandstone pillar, tall and smooth with a slight taper, a pale honey-gold sheen, rows of small neatly incised characters down one face and a flared bell-shaped capital at the top"
+    },
+    {
+      "id": "lion-capital",
+      "name": "The lion capital",
+      "locked_description": "the four-lion capital, four polished sandstone lions seated back to back facing four directions on a round slab carved with a wheel and four animals, honey-gold stone"
+    }
+  ],
   "notes": "Samostalna epizoda, ideja #38 u docs/ideas.md (dodata 2026-11-16 na korisnikov zahtev: jedna od dve 'istorijska bitka ili bitan dogadjaj'), prva iz Juzne Azije na kanalu (region India, epoha Ancient World, oko 261. p.n.e.). Faza 04 zavrsena: research.md i script.md (~875 reci, oko 5.3-5.9 min pri 148-166 reci/min; pravilo od 2026-11-16: plafon 10 min, duzinu bira tema); lockovi, timing i storyboard cekaju narraciju. Rezim shota (still, klip ili mesano) bira se tek iz slike, ne iz kredita. Izvor: Dhammikin prevod Ashokinih edikata (Rock Edict 13 i dva kalinga edikta, citano u celini), Wikipedia (Kalinga War, Ashoka, Edicts of Ashoka); nijedan drugi prevod i nijedna moderna monografija nisu otvoreni. Brojke (150.000 deportovanih, 100.000 ubijenih) su Ashokine, ne nezavisne; skripta to kaze jednom. Legenda o braci i 'Ashoka the Fierce' (Mahavamsa) je u skripti jednom, oznacena kao kasna; izostavljeno svesno: price iz Ashokavadane, konverzija na bojnom polju, Dhauli kao bojno polje, 'reka Daya crvena' (bez izvora). TACNOST PERIODA: Mauryansko carstvo 3. v. p.n.e.: pesaci, konjica, ratni slonovi, kola; pamucne pregace/dhoti, turbani, nakit; drvene palate i kameni stubovi (pre-Ashoka arhitektura je drvo i cigla, kamen dolazi sa njim); stupe tek kasnije. Edikti: stene i polirani pesacnjakovi stubovi sa uklesanim redovima Brahmi pisma, klesari na skelama; ne latinicna slova, ne sanskrit u devanagari. Kalinga: obala, luka, brodovi, pirinac. Ne crtati bitku sa krvlju i lesinama u prvom planu; posledice (zgarista, kolone raseljenih) prikazati kao slike, ne kao anatomiju. Ashoka kao covek sredjih godina, ne svetac i ne zlikovac. Ime 'Ashoka' u edikima gotovo nikad ne stoji; skripta kaze da sebe zove 'Beloved of the Gods'. Protagonists za publish.md: naslov imenuje Ashoku (jedini imenovani glavni lik) ili nikog, nikad Ashoka + deo priče."
 }

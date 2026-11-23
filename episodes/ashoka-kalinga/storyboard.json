@@ -1,0 +1,1993 @@
+{
+  "schema_version": 2,
+  "episode": "ashoka-kalinga",
+  "generated_at": "2026-11-23T22:10:47Z",
+  "narration_duration": 332.826,
+  "fps": 24,
+  "beats": [
+    {
+      "beat_id": "B01",
+      "sentences": [
+        "S01"
+      ],
+      "start": 0,
+      "end": 8.28,
+      "dur": 8.28,
+      "device": null,
+      "narration_says": "Around 261 BCE, an Indian emperor won a war, and then had his regret carved into rock.",
+      "viewer_sees": "A stonecutter chisels rows of small incised characters into a tall grey rock face while a robed emperor in gold ornaments stands a few paces off, arms folded, watching the chips fly",
+      "shots": [
+        {
+          "shot_id": "01",
+          "beat_id": "B01",
+          "link_group": null,
+          "t_in": 0,
+          "t_out": 8.292,
+          "use_in": 0,
+          "use_out": 8.292,
+          "use_len": 8.292,
+          "motion_budget": 8.292,
+          "gen_len": 9,
+          "source_file": "shots/part01.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "ashoka",
+            "mason",
+            "edict-rock"
+          ],
+          "visual_priority": [
+            "Ashoka watching the carving",
+            "the stonecutter at the rock",
+            "the rows of freshly cut characters",
+            "the chips of stone in the air"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Ashoka, a Mauryan emperor in his forties, a strong lean face with a trimmed black beard and moustache, kohl-lined dark eyes, a white cotton robe with a deep red shoulder cloth, a gold chest chain, gold armbands and a cloth turban with a jeweled band, standing at the left third a few paces from the rock, arms folded, his eyes on the carving\nSUBJECT 2: a Mauryan stonecutter in his thirties, wiry and sun-darkened, a shaved head, an undyed cotton wrap and shoulder cloth, a worn leather apron, stone dust in his stubble, an iron chisel in one hand and a wooden mallet in the other, at the right third on a low wooden scaffold, driving the chisel into the stone with the mallet\nSUBJECT 3: a great grey granite boulder with one face smoothed flat and cut with rows of small neat incised characters, chisel marks and fresh pale dust along the cuts, at the right edge, one smoothed face of grey stone already cut with a few neat rows of small characters\nACTION: the stonecutter stands on the scaffold with the chisel set against the stone and the mallet raised for the next blow, while Ashoka at the left stands with folded arms and watches\nSETTING: a bright morning at a quarry-edge site in the Mauryan lands, a wooden scaffold of lashed poles against the rock, a heap of pale stone chips and a basket of tools on the ground, dry grass and a few thorn trees, two attendants in white far off at the left, a hazy blue sky\nCAMERA: camera stands on the ground a few paces from the rock, eye level, medium shot.\nFRAME LAYOUT: left third — Ashoka, near-camera and large, cropped at the knee; right third — the stonecutter on the scaffold and the rock face, large; center — a strip of ground with stone chips; far left — two attendants, small and hazy; lower edge — near-camera chips and a tool basket.\nFACING: we see Ashoka in three-quarter view from the front with his eyes toward screen-right and the carving; the stonecutter shows his profile, facing screen-left toward the stone.\nSCREEN DIRECTION: the mallet falls from the upper left toward the stone at the right; chips fly toward the left; dust drifts toward the left.\nLIGHT: hard morning sun from the left, crisp shadows toward the right, a gold edge on the stone chips and on Ashoka's jewelry.\nPALETTE: stone grey, robe white, deep red, gold\nDETAIL: fine chisel marks and pale dust in every cut, cotton folds in the robe, gold armbands with small bright glints, rope lashings on the scaffold, grain of the granite\nNOT IN FRAME: any readable letters or words, blood, soldiers, a throne.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 8.292s; everything keeps moving at the same natural pace through the end of the 9s generation.\n0–1s: The stonecutter brings the mallet down on the chisel with a sharp crack and a spray of chips flies from the stone; Ashoka watches without moving his arms.\n1–3s: The mallet falls again and again in a steady rhythm, each blow cutting a small mark into the row; pale dust drifts across the sunlit rock.\n3–5s: The stonecutter shifts along the scaffold to a fresh line and sets the chisel; Ashoka takes a slow step closer and narrows his eyes at the cuts.\n5–7s: Chips patter on the ground and a breeze lifts the dust toward the left; the stonecutter wipes his forehead with the back of his wrist and swings again.\n7–9s: Ashoka tilts his head toward the newest row of characters as the blows continue; the shadow of the scaffold creeps across the stone.\nCAMERA: one continuous slow push toward the stonecutter and the carved rows for the full 9 seconds.\nENVIRONMENT: dust drifts in the sun; dry grass sways; a small lizard darts along the stone.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "eye",
+            "camera_motion": "push",
+            "location": "edict-rock",
+            "time_light": "morning-hard-sun"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B02",
+      "sentences": [
+        "S02"
+      ],
+      "start": 8.28,
+      "end": 16.46,
+      "dur": 8.18,
+      "device": null,
+      "narration_says": "The emperor was Ashoka, third king of the Mauryan dynasty, who ruled most of the subcontinent from the city of Pataliputra.",
+      "viewer_sees": "Ashoka sits enthroned in a pillared timber-and-stone hall of Pataliputra, courtiers and fan-bearers along the walls, a carved lion-footed throne, sunlight slanting through latticed windows",
+      "shots": [
+        {
+          "shot_id": "02",
+          "beat_id": "B02",
+          "link_group": null,
+          "t_in": 8.292,
+          "t_out": 16.458,
+          "use_in": 0,
+          "use_out": 8.166,
+          "use_len": 8.166,
+          "motion_budget": 8.166,
+          "gen_len": 9,
+          "source_file": "shots/part02.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "ashoka",
+            "courtiers"
+          ],
+          "visual_priority": [
+            "Ashoka enthroned",
+            "the court officials along the wall",
+            "the carved pillars and latticed light"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Ashoka, a Mauryan emperor in his forties, a strong lean face with a trimmed black beard and moustache, kohl-lined dark eyes, a white cotton robe with a deep red shoulder cloth, a gold chest chain, gold armbands and a cloth turban with a jeweled band, seated on the lion-footed throne at the left third, upright, one hand on the armrest, his gaze steady and calm\nSUBJECT 2: Mauryan court officials, men in white cotton robes with pleated sashes, cloth turbans with simple gold pins, trimmed beards, thin gold earrings, and scrolls or palm-leaf bundles in their hands, six of them standing along the walls and a fan-bearer waving a long fan at the right third\nACTION: Ashoka sits upright on the throne with one hand resting on the armrest, while officials stand along the walls and a fan-bearer lifts a long fan beside the dais\nSETTING: a pillared timber-and-stone hall of Pataliputra, tall wooden columns with carved capitals, latticed windows, carved screens, woven mats, a lion-footed throne dais and hanging brass lamps; here a morning audience in the palace, slanting bars of sunlight through carved lattice windows, tall painted wooden pillars, woven red mats across the floor, brass lamps hanging from chains, a carved screen at the far right, drifting incense smoke\nCAMERA: camera stands at the end of the hall on the mats, eye level, medium shot.\nFRAME LAYOUT: left third — Ashoka on the throne, near-camera and large, cropped at the knee; right third — the officials and the fan-bearer, medium; center — the mats and a pillar; upper edge — the lamps and carved beams; far right — the carved screen, hazy.\nFACING: we see Ashoka from the front in three-quarter view, his eyes toward screen-right and the court; the officials face screen-left toward the throne.\nSCREEN DIRECTION: the fan sweeps from the right toward the left; incense smoke drifts toward the left; bars of light slide toward the left across the mats.\nLIGHT: warm slanting sun from the upper right through the lattice, bright bars on the mats and the throne, soft shadow elsewhere.\nPALETTE: timber red-brown, robe white, gold, incense blue-grey\nDETAIL: carved lattice patterns thrown on the floor, cotton folds, gold glints on the armbands and the turban jewel, brass lamp chains, woven mat pattern\nNOT IN FRAME: any readable text, soldiers in battle, bare bodies, a map.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 8.166s; everything keeps moving at the same natural pace through the end of the 9s generation.\n0–1s: The fan-bearer sweeps the long fan in a slow arc; Ashoka turns his head toward an official who bows and steps forward.\n1–3s: The official offers a palm-leaf bundle and speaks; Ashoka listens with a steady gaze, one finger tapping the armrest.\n3–5s: Ashoka raises his hand and gestures to the left and the official bows and backs away; the incense smoke curls across the bars of light.\n5–7s: Another official crosses the mats from the right with a scroll, his sash swinging, and bows at the foot of the dais.\n7–9s: Ashoka lifts his chin and looks out over the hall; the fan sweeps again and the bars of sunlight slide along the mats.\nCAMERA: locked on Ashoka and the court, with a very slow drift toward the right, for the full 9 seconds.\nENVIRONMENT: incense smoke curls; lamp chains sway; light bars slide across the mats.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "eye",
+            "camera_motion": "locked",
+            "location": "pataliputra-hall",
+            "time_light": "window-daylight"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B03",
+      "sentences": [
+        "S03"
+      ],
+      "start": 16.46,
+      "end": 25.8,
+      "dur": 9.34,
+      "device": null,
+      "narration_says": "Later Buddhist legends say that he reached the throne over the bodies of his brothers, and that he was so cruel that he was known as Ashoka the Fierce.",
+      "viewer_sees": "Centuries later, a monk-scribe in an oil-lit monastery cell writes slowly on a palm-leaf manuscript while a faded painted mural of a fierce king on the wall behind him flickers in the lamplight",
+      "shots": [
+        {
+          "shot_id": "03",
+          "beat_id": "B03",
+          "link_group": null,
+          "t_in": 16.458,
+          "t_out": 25.792,
+          "use_in": 0,
+          "use_out": 9.334,
+          "use_len": 9.334,
+          "motion_budget": 9.334,
+          "gen_len": 10,
+          "source_file": "shots/part03.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "monks"
+          ],
+          "visual_priority": [
+            "one of the monks writing on the palm leaf",
+            "the faded mural of a fierce king",
+            "the oil lamp flame"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Buddhist monks of India, men with shaved heads and plain saffron robes draped over both shoulders, wooden alms bowls and cloth bags, calm faces, one monk at the center, seated cross-legged at a low wooden desk, writing slowly with a stylus on a long palm-leaf manuscript, his shaved head bent in the lamplight\nACTION: the monk sits at the low desk with the stylus poised above a long palm leaf, an oil lamp burning beside him and the faded mural of a fierce crowned king on the wall to the left\nSETTING: a small monastery cell centuries after the emperor's time, a rough plaster wall with a faded painted mural of a fierce crowned king with raised sword at the left, a low desk, a stack of palm-leaf manuscripts tied with cord, a clay oil lamp, a water jug, a narrow arched window of dark night\nCAMERA: camera stands across the desk from him, eye level, medium shot.\nFRAME LAYOUT: center — the monk and the manuscript, near-camera and large; left third — the faded mural, medium and soft; right third — the oil lamp and the stack of manuscripts; lower edge — the desk edge.\nFACING: we see the monk from the front, his face lowered and his eyes toward screen-right and the leaf; the mural king faces screen-right.\nSCREEN DIRECTION: the stylus moves from the left toward the right along the leaf; the lamp flame leans toward the right; the shadow of the monk wavers on the mural.\nLIGHT: warm oil-lamp light from the right, a gold pool on the leaf and his hands, deep brown shadow over the mural.\nPALETTE: lamp amber, plaster brown, saffron, ink black\nDETAIL: palm-leaf veins and the tiny scratched marks of the stylus, the cracked paint of the mural, folds in the saffron robe, soot on the lamp rim\nNOT IN FRAME: readable letters or words, bodies, battle scenes, Ashoka himself.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 9.334s; everything keeps moving at the same natural pace through the end of the 10s generation.\n0–1s: The monk draws the stylus along the palm leaf in a slow scratching line; the lamp flame quivers and the mural's shadows shift.\n1–3.3s: He lifts the stylus, blows a speck from the leaf and bends back to write; the shadow of his head sweeps over the faded king.\n3.3–5.5s: The line of marks lengthens along the leaf while the monk's lips move silently; moths circle the lamp.\n5.5–7.8s: He turns the leaf slightly and starts a new line, the stylus scratching steadily; the mural king's sword gleams in the flicker.\n7.8–10s: The monk pauses to dip his finger in a small pot of lamp-black and wipes it along the marks to darken them; the flame leans and recovers.\nCAMERA: one continuous slow push toward the monk and the palm leaf for the full 10 seconds.\nENVIRONMENT: the oil lamp flame flickers; moths circle; soot rises in a thin thread.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "eye",
+            "camera_motion": "push",
+            "location": "monastery-cell",
+            "time_light": "oil-lamp-dim"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B04",
+      "sentences": [
+        "S04",
+        "S05"
+      ],
+      "start": 25.8,
+      "end": 35.54,
+      "dur": 9.74,
+      "device": null,
+      "narration_says": "Those legends were written down long after his time, and his own words say nothing of them. What his words do describe begins with a war.",
+      "viewer_sees": "A polished stone pillar stands alone in an open field at dawn, rows of carved lines running down its face; the camera glides slowly toward the carving as the first light crosses it",
+      "shots": [
+        {
+          "shot_id": "04",
+          "beat_id": "B04",
+          "link_group": null,
+          "t_in": 25.792,
+          "t_out": 35.542,
+          "use_in": 0,
+          "use_out": 9.75,
+          "use_len": 9.75,
+          "motion_budget": 9.75,
+          "gen_len": 10,
+          "source_file": "shots/part04.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "edict-pillar"
+          ],
+          "visual_priority": [
+            "the edict pillar with its carved rows",
+            "the first light crossing the carving",
+            "the open field at dawn"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a polished sandstone pillar, tall and smooth with a slight taper, a pale honey-gold sheen, rows of small neatly incised characters down one face and a flared bell-shaped capital at the top, standing alone in an open field, its carved rows catching the first light as the sun climbs\nACTION: the pillar stands alone at the center of a wide open field at dawn, the first thin line of sunlight just touching the carved rows halfway up its shaft\nSETTING: an open plain at sunrise in the Indian countryside, a dry field with short golden grass, a few distant acacia trees and a low line of hills, a thin morning mist near the ground, a pale gold sky with wisps of cloud, a dirt track leading toward the pillar\nCAMERA: camera stands on the track at a distance, low angle, long shot.\nFRAME LAYOUT: center — the pillar, large and clear; upper edge — the pale gold sky; left third — the dirt track and a distant tree, small and hazy; right third — the low hills, far and hazy; lower edge — near-camera grass.\nFACING: we face the carved side of the pillar straight on, the rows of characters toward camera.\nSCREEN DIRECTION: the line of sunlight creeps up the shaft from the right edge of the stone toward the capital; mist drifts toward the left across the field.\nLIGHT: low gold sunrise from the right, a bright line sliding up the pillar, cool blue shadow on the field.\nPALETTE: pillar honey-gold, dawn pink, grass gold, hill blue\nDETAIL: the fine polished sheen and tapering shaft of the pillar, tiny incised rows of characters catching the light, grass blades with dew, layered mist\nNOT IN FRAME: people, any readable letters, buildings, banners.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 9.75s; everything keeps moving at the same natural pace through the end of the 10s generation.\n0–1s: The first sunlight touches the middle of the shaft and the carved rows begin to glow; mist drifts across the field.\n1–3.3s: The bright line climbs the pillar toward the capital, rows of characters lighting one after another; dew sparkles on the grass.\n3.3–5.5s: The capital flares gold as the sun clears the hills; a flock of small birds crosses the pale sky.\n5.5–7.8s: The whole shaft glows honey-gold and its shadow stretches across the field; the mist thins and lifts.\n7.8–10s: The camera nears the carved face and every row of characters stands out in the low raking light; grass blades sway in the breeze.\nCAMERA: a smooth continuous push toward the carved rows of the pillar for the full 10 seconds.\nENVIRONMENT: mist thins and drifts; grass sways; birds cross the sky.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts",
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "LS",
+            "angle": "eye",
+            "camera_motion": "push",
+            "location": "edict-pillar",
+            "time_light": "dawn-gold"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B05",
+      "sentences": [
+        "S06",
+        "S07",
+        "S08"
+      ],
+      "start": 35.54,
+      "end": 51.44,
+      "dur": 15.9,
+      "device": "animated-map",
+      "narration_says": "On the eastern coast, in what is now Odisha, the kingdom of Kalinga was still independent. Some scholars think it threatened the Mauryan roads to the south, and it controlled the trade of the coast. Eight years after his coronation, Ashoka conquered it.",
+      "viewer_sees": "ANIMATED MAP — on a cream parchment the eastern coast of India: coastal trade routes draw themselves along the shore around one shaded kingdom, then the colour of the Mauryan lands floods across it as army markers advance",
+      "shots": [
+        {
+          "shot_id": "05",
+          "beat_id": "B05",
+          "link_group": null,
+          "t_in": 35.542,
+          "t_out": 42.042,
+          "use_in": 0,
+          "use_out": 6.5,
+          "use_len": 6.5,
+          "motion_budget": 6.5,
+          "gen_len": 7,
+          "source_file": "shots/part05.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "the shaded kingdom on the eastern coast",
+            "the trade routes along the shore",
+            "the harbour icons",
+            "the road from the left"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a cream parchment map of the eastern coast of India seen from above, a hand-inked coastline running along the right edge, one inked kingdom shaded pale ochre on the coast, thin inked trade routes along the shore and from small harbour icons, and a faint band of inked road from the left\nACTION: the inked coast runs down the right edge with the pale ochre kingdom shaded on it, the harbour icons small along the shore, and the first thin trade line just beginning to draw itself outward\nSETTING: a scribe's table in warm lamplight, a worn parchment pinned flat with small brass weights, a faint wooden grain at the edges, a brass compass and a pair of dividers at the lower edge, a pale ink stain at one corner\nCAMERA: camera hangs directly over the table, overhead, aerial view.\nFRAME LAYOUT: right third — the inked coast and the shaded kingdom; center — the sea and the drawing trade lines; left third — the inked inland roads, faint; lower edge — the brass compass and dividers, cropped and soft.\nFACING: we look straight down on the map with the coast on the right and north at the top; small ship icons point toward screen-left.\nSCREEN DIRECTION: trade lines draw themselves from the right-hand harbours toward the left across the sea; ship icons slide along them toward the left.\nLIGHT: warm lamplight from the upper left, a soft golden pool on the parchment, a dark vignette at the corners.\nPALETTE: parchment cream, ink brown, ochre, sea teal\nDETAIL: fine ink hatching along the coast, small drawn waves, tiny palm and harbour symbols, fibres in the parchment, a brown stain\nNOT IN FRAME: real people, readable text or letters, modern borders, any battle.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 6.5s; everything keeps moving at the same natural pace through the end of the 7s generation.\n0–1s: Thin inked trade routes begin to draw themselves from the harbours along the right-hand coast, curling out over the sea.\n1–3s: Small ship icons slide along the new lines toward the left; more harbour icons appear along the shore one after another.\n3–5s: The routes lace together around the shaded kingdom and its harbours glow faintly; a faint inland road inks itself in from the left.\n5–7s: The road runs south along the coast toward the shaded kingdom and the lines of trade pulse once; lamplight ripples across the parchment.\nCAMERA: a slow continuous pan from the inland roads at the left toward the shaded coast at the right for the full 7 seconds.\nENVIRONMENT: lamplight flickers on the parchment; small ink waves pulse along the coast.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts",
+          "tags": {
+            "subject_type": "map-diagram",
+            "shot_size": "aerial",
+            "angle": "overhead",
+            "camera_motion": "pan",
+            "location": "parchment-map",
+            "time_light": "lamplight-warm"
+          }
+        },
+        {
+          "shot_id": "06",
+          "beat_id": "B05",
+          "link_group": null,
+          "t_in": 42.042,
+          "t_out": 51.458,
+          "use_in": 0,
+          "use_out": 9.416,
+          "use_len": 9.416,
+          "motion_budget": 9.416,
+          "gen_len": 10,
+          "source_file": "shots/part06.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "the red Mauryan colour flooding the ochre kingdom",
+            "the army markers advancing",
+            "the inked coastline"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: the same cream parchment map of the eastern coast from above, the left half washed in pale red for the Mauryan lands and the right-hand coastal kingdom still pale ochre, with small inked army markers of men and elephants marching from the red lands toward the ochre coast\nACTION: the red wash lies across the left of the map and the ochre kingdom at the right is still untouched, with a column of tiny army markers of men and elephants at the red border ready to march\nSETTING: a worn cartography desk under a hanging lamp, the sheet held down by four small iron weights, scuffed oak showing at its margins, a pair of brass dividers resting along the lower border\nCAMERA: camera hangs over the table, overhead, long view.\nFRAME LAYOUT: left half — the pale red Mauryan lands; right third — the ochre coastal kingdom and the sea; center — the army markers at the border; lower edge — brass dividers, cropped and soft.\nFACING: we look straight down on the map; the army markers point toward screen-right and the coast.\nSCREEN DIRECTION: the army markers march from the left toward the right; the red wash spreads from the left across the ochre kingdom toward the coast.\nLIGHT: warm lamplight from the upper left, a soft golden pool, a brightening red glow where the wash spreads.\nPALETTE: parchment cream, Mauryan red, ochre, ink brown\nDETAIL: tiny inked elephants and marching figures, fine hatching along the border, fibres in the parchment, pale wash bleeding along the paper grain\nNOT IN FRAME: real people, readable text, battle, blood, modern borders.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 9.416s; everything keeps moving at the same natural pace through the end of the 10s generation.\n0–1s: The army markers start marching from the red border toward the ochre coast; a thin line of red ink creeps after them.\n1–3.3s: The column of markers crosses the inked interior, tiny elephants swaying at its center; the red wash seeps outward after them.\n3.3–5.5s: The markers reach the edge of the ochre kingdom and the red spreads in a wide tide across its inland districts.\n5.5–7.8s: The wash flows over the ochre toward the coast, covering harbours one by one; the markers pour into the kingdom.\n7.8–10s: The whole kingdom turns red and glows; the markers stop at the sea's edge and the lamplight pulses across the parchment.\nCAMERA: one continuous slow push from the border toward the coast for the full 10 seconds.\nENVIRONMENT: lamplight flickers; the ink wash ripples along the paper grain; small waves pulse along the coast.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts",
+          "tags": {
+            "subject_type": "map-diagram",
+            "shot_size": "LS",
+            "angle": "overhead",
+            "camera_motion": "push",
+            "location": "parchment-map",
+            "time_light": "lamplight-warm"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B06",
+      "sentences": [
+        "S09",
+        "S10"
+      ],
+      "start": 51.44,
+      "end": 57.48,
+      "dur": 6.04,
+      "device": null,
+      "narration_says": "How the war was fought, nobody knows. No account of the battles has survived.",
+      "viewer_sees": "A broad river plain at dawn lies under thick mist; nothing can be made out in it, only a few pale tree crowns and the glint of the river, as the mist slowly drifts and closes again",
+      "shots": [
+        {
+          "shot_id": "07",
+          "beat_id": "B06",
+          "link_group": null,
+          "t_in": 51.458,
+          "t_out": 57.5,
+          "use_in": 0,
+          "use_out": 6.042,
+          "use_len": 6.042,
+          "motion_budget": 6.042,
+          "gen_len": 7,
+          "source_file": "shots/part07.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "the mist-covered river plain",
+            "the pale tree crowns above the mist",
+            "the glint of the river"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a broad river plain in thick white morning mist, a few pale tree crowns floating above the mist, the glint of a slow river and a low dark line of hills, with nothing else to be made out in the whiteness\nACTION: the mist lies thick over the plain with only a few pale tree crowns and the gleam of the river showing through, and not a single figure or object can be made out in the white\nSETTING: dawn on the eastern coastal plain of Kalinga, a wide shallow river curving through the mist, tufts of reed along its banks, scattered palm and mango crowns rising out of the whiteness, a faint pink glow in the sky, a few egrets as small white marks\nCAMERA: camera stands on a low embankment above the plain, eye level, long shot.\nFRAME LAYOUT: center — the river and the mist, wide; upper third — a pale pink-grey sky; left third — two tree crowns, small and soft; right third — the low line of hills, far and hazy; lower edge — near-camera reeds.\nFACING: we face the plain straight on with the river curving from screen-left toward the center.\nSCREEN DIRECTION: mist drifts and rolls from the right toward the left over the river; egrets glide from the right toward the left.\nLIGHT: soft pale dawn light from the lower left, a pink glow on the mist, cool grey shadows.\nPALETTE: mist white, pale pink, river grey-green, hill blue\nDETAIL: layers of mist at different depths, reed tips with dew, soft rings on the river, tree crowns fading into white\nNOT IN FRAME: people, soldiers, bodies, buildings, any text.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 6.042s; everything keeps moving at the same natural pace through the end of the 7s generation.\n0–1s: The mist rolls slowly across the plain, uncovering a bend of the river and covering it again; egrets glide low over the water.\n1–3s: A tree crown rises out of the white and sinks into it again; reeds along the foreground bank sway.\n3–5s: The mist thickens in one place and thins in another, folding over the river's glint; the pink glow brightens along the horizon.\n5–7s: More mist pours over the embankment and rolls across the plain; the pale tree crowns drift in and out of view.\nCAMERA: locked on the plain with a very slow drift toward the river for the full 7 seconds.\nENVIRONMENT: mist rolls and folds; reeds sway; ripples cross the river.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts",
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "LS",
+            "angle": "eye",
+            "camera_motion": "locked",
+            "location": "kalinga-plain",
+            "time_light": "dawn-mist"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B07",
+      "sentences": [
+        "S11"
+      ],
+      "start": 57.48,
+      "end": 65.82,
+      "dur": 8.34,
+      "device": null,
+      "narration_says": "What has survived is Ashoka's own account of the cost, cut into stone, in what scholars call the Thirteenth Rock Edict.",
+      "viewer_sees": "Close on a stonecutter's hands driving a chisel into a rock face, fresh chips flying, a line of carved characters growing under the mallet",
+      "shots": [
+        {
+          "shot_id": "08",
+          "beat_id": "B07",
+          "link_group": null,
+          "t_in": 57.5,
+          "t_out": 65.833,
+          "use_in": 0,
+          "use_out": 8.333,
+          "use_len": 8.333,
+          "motion_budget": 8.333,
+          "gen_len": 9,
+          "source_file": "shots/part08.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "mason",
+            "edict-rock"
+          ],
+          "visual_priority": [
+            "the stonecutter's hands driving the chisel",
+            "the growing line of characters",
+            "the flying chips of stone"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a Mauryan stonecutter in his thirties, wiry and sun-darkened, a shaved head, an undyed cotton wrap and shoulder cloth, a worn leather apron, stone dust in his stubble, an iron chisel in one hand and a wooden mallet in the other, only his hands and forearms in the frame, one hand setting the chisel against the stone and the other swinging the mallet\nSUBJECT 2: a great grey granite boulder with one face smoothed flat and cut with rows of small neat incised characters, chisel marks and fresh pale dust along the cuts, its smoothed face at the center with a newly cut line of characters growing under the chisel\nACTION: the stonecutter's left hand sets the chisel point against the smooth stone below a row of cut characters, and his right hand draws the mallet back, ready to fall on the chisel head\nSETTING: midday at the rock face, a smoothed grey granite surface with straight guide lines scratched across it, fine pale dust gathered on a ledge below, a few stone chips on the scaffold plank, hard white sunlight and a glimpse of dry grass at the lower edge\nCAMERA: camera stands at the scaffold beside the stone, eye level, close shot.\nFRAME LAYOUT: center — the chisel point and the cut line, near-camera and large; right third — the mallet hand, near-camera and large; left third — the finished rows of characters, soft; lower edge — the ledge with dust, cropped.\nFACING: we see the hands and the stone from the side; the chisel angles toward screen-left and down.\nSCREEN DIRECTION: the mallet falls from the upper right toward the chisel; chips and dust spray toward the left.\nLIGHT: hard midday sun from above and right, crisp tiny shadows in every cut, bright white on the dust.\nPALETTE: granite grey, dust white, skin brown, iron dark\nDETAIL: iron chisel burr and edge, calluses and dust in the knuckles, tiny flakes spraying, crisp incised strokes, guide lines scratched in the stone\nNOT IN FRAME: faces, any readable letters or words, blood, other people.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 8.333s; everything keeps moving at the same natural pace through the end of the 9s generation.\n0–1s: The mallet lands on the chisel head and a bright spray of chips jumps from the cut; the hand shifts the chisel a finger's width along the line.\n1–3s: Blow after blow rings on the iron and the new stroke deepens into the stone, dust puffing out each time.\n3–5s: The chisel hand turns the tool to cut a curved stroke and the mallet follows its rhythm; chips skitter down the face.\n5–7s: A small hand brush sweeps the dust from the new line and the crisp cuts show clean in the sun.\n7–9s: The mallet rises for the next blow as the chisel moves to the next stroke; fine pale dust drifts down the rock.\nCAMERA: one continuous slow push toward the chisel point and the cut line for the full 9 seconds.\nENVIRONMENT: dust drifts and falls; chips patter on the plank; heat shimmer rises off the stone.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts",
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "CU",
+            "angle": "eye",
+            "camera_motion": "push",
+            "location": "edict-rock",
+            "time_light": "midday-hard-sun"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B08",
+      "sentences": [
+        "S12",
+        "S13",
+        "S14"
+      ],
+      "start": 65.82,
+      "end": 74.3,
+      "dur": 8.48,
+      "device": "crowd-as-texture",
+      "narration_says": "One hundred and fifty thousand people were deported. One hundred thousand were killed. Many more died of other causes.",
+      "viewer_sees": "CROWD-AS-TEXTURE — a long slow column of deported people walks along a red dust road away from the camera, smoke rising from burned villages on the far horizon, no individual faces",
+      "shots": [
+        {
+          "shot_id": "09",
+          "beat_id": "B08",
+          "link_group": null,
+          "t_in": 65.833,
+          "t_out": 74.292,
+          "use_in": 0,
+          "use_out": 8.459,
+          "use_len": 8.459,
+          "motion_budget": 8.459,
+          "gen_len": 9,
+          "source_file": "shots/part09.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "kalingans"
+          ],
+          "visual_priority": [
+            "the Kalingans in a long column on the road",
+            "the dust raised by their feet",
+            "the smoke of burned villages on the horizon",
+            "the red earth road"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: people of Kalinga, adult men and women of the eastern coast, brown skin, dark hair tied in knots, white and indigo cotton wraps covering the body, shell and bead jewelry, with farming and fishing tools, a long slow column of deported people walking away from camera along a red dust road, small figures in white and indigo wraps with bundles on their heads, no individual faces\nACTION: the long column of people stands lined up along the red road with their bundles on their heads and their backs to camera, about to walk on away from the burned villages whose smoke rises on the horizon\nSETTING: a late afternoon road across the coastal plain, packed red earth lined with dry rice stubble and a few palms, three thin columns of dark smoke rising from burned villages on the far horizon, a hazy orange sky, dust hanging over the road\nCAMERA: camera looks down from a roadside embankment, high angle, long shot.\nFRAME LAYOUT: center — the column of people stretching along the road into the distance, small; right third — the smoke columns on the far horizon, hazy; left third — the dry rice stubble fields; lower edge — near-camera red road and a few figures large and cropped.\nFACING: we see the people from behind and above, their backs and bundles toward camera; the column goes away toward screen-left.\nSCREEN DIRECTION: the column walks from the near right edge toward the far left; dust drifts toward the left; the smoke leans toward the left.\nLIGHT: low orange late-afternoon sun from the right, long shadows toward the left, a thick amber haze over the plain.\nPALETTE: road red, haze amber, wrap white and indigo, smoke grey\nDETAIL: figures readable by outline and bundles, rising dust, rice stubble rows, thin smoke columns, no faces\nNOT IN FRAME: faces, bodies, soldiers striking people, blood, any text.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 8.459s; everything keeps moving at the same natural pace through the end of the 9s generation.\n0–1s: The column starts to walk away along the red road, bundles swaying, a low cloud of dust lifting from their feet.\n1–3s: More people stream in from the right edge and join the column; the dust thickens and drifts toward the left.\n3–5s: The column stretches farther along the road toward the horizon while the smoke from the burned villages leans in the wind.\n5–7s: The nearest walkers pass out of the lower edge of the frame and others take their place in a slow unbroken flow.\n7–9s: The column keeps walking into the haze and the figures at its far end dissolve in the dust; the orange sky darkens a little.\nCAMERA: a slow continuous track to the left along the road, following the column, for the full 9 seconds.\nENVIRONMENT: dust hangs and drifts; smoke columns lean; rice stubble stirs.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts",
+          "tags": {
+            "subject_type": "crowd",
+            "shot_size": "LS",
+            "angle": "high",
+            "camera_motion": "track",
+            "location": "kalinga-road",
+            "time_light": "late-afternoon-haze"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B09",
+      "sentences": [
+        "S15"
+      ],
+      "start": 74.3,
+      "end": 78.94,
+      "dur": 4.64,
+      "device": null,
+      "narration_says": "These are his own figures, not an independent count.",
+      "viewer_sees": "A chisel and wooden mallet rest on a stone ledge beside freshly cut columns of tally strokes; dust sifts down the rock face and no other hand is in the frame",
+      "shots": [
+        {
+          "shot_id": "10",
+          "beat_id": "B09",
+          "link_group": null,
+          "t_in": 74.292,
+          "t_out": 78.958,
+          "use_in": 0,
+          "use_out": 4.666,
+          "use_len": 4.666,
+          "motion_budget": null,
+          "gen_len": null,
+          "source_file": "shots/shot10.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "edict-rock"
+          ],
+          "visual_priority": [
+            "the edict rock with its tally columns",
+            "the chisel and mallet on the ledge",
+            "the dust sifting down the stone"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a great grey granite boulder with one face smoothed flat and cut with rows of small neat incised characters, chisel marks and fresh pale dust along the cuts, at the center, with freshly cut columns of tally strokes in neat rows, a chisel and a wooden mallet lying side by side on the stone ledge below it\nACTION: a chisel and a wooden mallet lie side by side on the stone ledge beneath the freshly cut columns of tally strokes, and fine pale dust sifts slowly down the rock face; no other hand is in the frame\nSETTING: the late afternoon at the rock, a stone ledge with a thin drift of pale dust and a few chips, the lower part of the scaffold at the left edge, dry grass at the lower right, a warm low light across the cut face\nCAMERA: camera stands close to the ledge, eye level, close shot.\nFRAME LAYOUT: center — the cut columns of tally strokes on the rock face, near-camera and large; lower third — the ledge with the chisel and mallet; left edge — the scaffold pole, soft; right third — blurred dry grass.\nFACING: we face the rock face straight on; the chisel and mallet lie parallel, pointing toward screen-right.\nSCREEN DIRECTION: a thin stream of dust slides down the stone toward the lower left; a dry grass blade quivers toward the left.\nLIGHT: low warm gold sun from the right, long raking shadows in each cut, a soft glow on the ledge.\nPALETTE: granite grey, dust cream, iron dark, gold light\nDETAIL: every tally stroke crisp with a lit edge, iron burr on the chisel head, wood grain and wear on the mallet, pale dust gathered in the corners\nNOT IN FRAME: people, hands, any readable numbers or letters, blood.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "CU",
+            "angle": "eye",
+            "camera_motion": "push",
+            "location": "edict-rock",
+            "time_light": "late-afternoon"
+          },
+          "render_mode": "still",
+          "still_motion": "push"
+        }
+      ]
+    },
+    {
+      "beat_id": "B10",
+      "sentences": [
+        "S16"
+      ],
+      "start": 78.94,
+      "end": 83.74,
+      "dur": 4.8,
+      "device": null,
+      "narration_says": "And then, he says, something changed.",
+      "viewer_sees": "Ashoka stands alone on a ridge at dusk, looking over a wide darkening plain, the red light fading from his face and robes as the wind lifts his cloak",
+      "shots": [
+        {
+          "shot_id": "11",
+          "beat_id": "B10",
+          "link_group": null,
+          "t_in": 78.958,
+          "t_out": 83.75,
+          "use_in": 0,
+          "use_out": 4.792,
+          "use_len": 4.792,
+          "motion_budget": null,
+          "gen_len": null,
+          "source_file": "shots/shot11.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "ashoka"
+          ],
+          "visual_priority": [
+            "Ashoka alone on the ridge",
+            "the darkening plain below",
+            "the red dusk light fading on his face"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Ashoka, a Mauryan emperor in his forties, a strong lean face with a trimmed black beard and moustache, kohl-lined dark eyes, a white cotton robe with a deep red shoulder cloth, a gold chest chain, gold armbands and a cloth turban with a jeweled band, standing alone on a rocky ridge, seen from the side, his gaze on the darkening plain far below, his cloak lifting in the wind\nACTION: he stands alone at the edge of the ridge with his hands hanging at his sides, looking out over the wide plain below, his red shoulder cloth lifting in the wind\nSETTING: a rocky ridge at dusk above a wide plain, bare stone and tufts of dry grass, the plain below dim with a few thin smoke threads and the glint of a river, a deep red sky with bands of grey cloud, the first stars, no other figures\nCAMERA: camera stands a few paces behind and to the side of him on the ridge, eye level, long shot.\nFRAME LAYOUT: left third — Ashoka, large and dark against the sky; center — the wide plain falling away, far and hazy; right third — a bare rock outcrop; upper edge — the red dusk sky.\nFACING: we see Ashoka in profile, his face and gaze toward screen-right and the plain; his back and cloak face camera.\nSCREEN DIRECTION: his cloak and shoulder cloth stream toward the left; the thin smoke threads on the plain drift toward the left; clouds slide toward the left.\nLIGHT: deep red dusk light from the right, a thin warm rim along his profile and cloak edge, blue-grey shadow on the ridge.\nPALETTE: dusk red, slate grey, robe white, shadow blue\nDETAIL: cloth folds in the wind, the rim light on his beard and turban, cracked stone, dry grass tufts, thin smoke threads far below\nNOT IN FRAME: other people, bodies, any text, soldiers.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "LS",
+            "angle": "eye",
+            "camera_motion": "push",
+            "location": "kalinga-ridge",
+            "time_light": "dusk-red"
+          },
+          "render_mode": "still",
+          "still_motion": "push"
+        }
+      ]
+    },
+    {
+      "beat_id": "B11",
+      "sentences": [
+        "S17"
+      ],
+      "start": 83.74,
+      "end": 92.54,
+      "dur": 8.8,
+      "device": null,
+      "narration_says": "After Kalinga was conquered, the king felt a strong inclination toward what he called Dhamma, a way of living by moral duty.",
+      "viewer_sees": "Ashoka sits alone on the floor of a lamplit chamber, a saffron-robed monk's low voice unseen, his hands open on his knees and his head slowly lifting toward the flame",
+      "shots": [
+        {
+          "shot_id": "12",
+          "beat_id": "B11",
+          "link_group": null,
+          "t_in": 83.75,
+          "t_out": 92.542,
+          "use_in": 0,
+          "use_out": 8.792,
+          "use_len": 8.792,
+          "motion_budget": 8.792,
+          "gen_len": 9,
+          "source_file": "shots/part12.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "ashoka"
+          ],
+          "visual_priority": [
+            "Ashoka sitting alone in the lamplight",
+            "the oil lamp flame",
+            "his open hands"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Ashoka, a Mauryan emperor in his forties, a strong lean face with a trimmed black beard and moustache, kohl-lined dark eyes, a white cotton robe with a deep red shoulder cloth, a gold chest chain, gold armbands and a cloth turban with a jeweled band, sitting on the mat in a plain white robe without his jewels, his hands open and palm-up on his knees, his head slowly lifting toward the flame\nACTION: Ashoka sits cross-legged on the woven mat with his hands open on his knees and his head still bowed, a single brass oil lamp burning on the floor before him\nSETTING: a private lamplit chamber of the palace at Pataliputra, whitewashed brick walls, a low wooden bed and a woven mat, brass oil lamps and a carved lattice window; here night in the chamber, the lamp on the floor throwing a warm pool across the mat, the carved lattice window casting a pattern of pale blue moonlight on the wall at the left, a folded saffron cloth beside him, his turban set aside on the bed\nCAMERA: camera stands across the mat from him, eye level, medium shot.\nFRAME LAYOUT: center — Ashoka seated, near-camera and large, cropped at the knee; lower third — the brass lamp and the mat; left third — the moonlit lattice, soft; right third — the low bed and the turban, soft.\nFACING: we see Ashoka from the front, his face lowered and lifting toward the lamp, his open hands facing up toward camera.\nSCREEN DIRECTION: the lamp flame leans toward the right; his gaze rises from the floor toward the flame; shadows sway toward the right across the wall.\nLIGHT: warm lamplight from below, a gold glow on his face and hands, cool moonlight from the lattice at the left, deep brown shadow around.\nPALETTE: lamp amber, robe white, moon blue, brown shadow\nDETAIL: the glow in his dark eyes, the creases between his brows, cotton folds, the flame's small bright core, the carved pattern of the lattice shadow\nNOT IN FRAME: other people, any text, weapons, jewels.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 8.792s; everything keeps moving at the same natural pace through the end of the 9s generation.\n0–1s: Ashoka slowly lifts his bowed head and his eyes meet the flame; the flame flickers and leans.\n1–3s: He draws a long breath and his open hands close slowly on his knees; the lamp's glow slides across his face.\n3–5s: He lifts his eyes to the lattice window and its pattern of moonlight; the shadows on the wall sway.\n5–7s: His hands open again and his gaze returns to the flame; a moth circles the lamp.\n7–9s: He bows his head a little and lifts it again toward the light, his breathing slow; the flame steadies and grows.\nCAMERA: one continuous slow push toward Ashoka and the flame for the full 9 seconds.\nENVIRONMENT: the lamp flame flickers; a moth circles; shadows sway on the lattice wall.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "MS",
+            "angle": "eye",
+            "camera_motion": "push",
+            "location": "pataliputra-chamber",
+            "time_light": "night-lamplit"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B12",
+      "sentences": [
+        "S18",
+        "S19"
+      ],
+      "start": 92.54,
+      "end": 101.58,
+      "dur": 9.04,
+      "device": null,
+      "narration_says": "Now, he says, he feels deep remorse for having conquered the Kalingas. The killing, the dying and the deportation pain him.",
+      "viewer_sees": "Close on Ashoka's face in flickering lamplight, eyes lowered, his jaw working, one hand rising slowly to cover his mouth",
+      "shots": [
+        {
+          "shot_id": "13",
+          "beat_id": "B12",
+          "link_group": null,
+          "t_in": 92.542,
+          "t_out": 101.583,
+          "use_in": 0,
+          "use_out": 9.041,
+          "use_len": 9.041,
+          "motion_budget": 9.041,
+          "gen_len": 10,
+          "source_file": "shots/part13.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "ashoka"
+          ],
+          "visual_priority": [
+            "Ashoka's lowered, pained face",
+            "the hand rising to his mouth",
+            "the flicker of lamplight on his skin"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Ashoka, a Mauryan emperor in his forties, a strong lean face with a trimmed black beard and moustache, kohl-lined dark eyes, a white cotton robe with a deep red shoulder cloth, a gold chest chain, gold armbands and a cloth turban with a jeweled band, his face close in the flickering lamplight, his eyes lowered, his jaw working, one hand rising slowly to cover his mouth\nACTION: his eyes are lowered and his jaw is set, with one hand just lifting from his chest toward his mouth, a tear shining at the edge of one eye\nSETTING: a private lamplit chamber of the palace at Pataliputra, whitewashed brick walls, a low wooden bed and a woven mat, brass oil lamps and a carved lattice window; here the lamplit chamber seen close, a soft blur of the lattice window at the left, the warm blur of the brass lamp at the lower right, a bare whitewashed wall, a thin thread of lamp smoke rising\nCAMERA: camera stands an arm's length from him, eye level, close shot.\nFRAME LAYOUT: center — Ashoka's face and rising hand, near-camera and large; lower right — the lamp, soft; left third — the lattice window, soft; upper edge — the turban band, cropped.\nFACING: we see his face three-quarter on, his eyes cast down toward screen-left; the hand rises toward his mouth from the right.\nSCREEN DIRECTION: his hand rises from the lower right toward his mouth; the lamp flame leans toward the left; the smoke thread drifts toward the left.\nLIGHT: warm flickering lamplight from the lower right, a gold glow on his cheek and the hand, deep shadow in his eye sockets.\nPALETTE: lamp gold, skin brown, shadow brown, robe white\nDETAIL: a bright tear at the lower lid, the grey in his beard, kohl lines, the tremor of his lip, the grain of his skin, the glints on the gold chain\nNOT IN FRAME: other people, any text, weapons, blood.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 9.041s; everything keeps moving at the same natural pace through the end of the 10s generation.\n0–1s: Ashoka's hand rises slowly toward his mouth and his jaw tightens; the lamplight flickers across his face.\n1–3.3s: His fingers press against his lips and his eyes close; a tear slides down his cheek.\n3.3–5.5s: He draws a shaking breath and his shoulders rise and fall; the flame leans and steadies.\n5.5–7.8s: His hand drops slowly to his chest and his eyes open and lift toward the light; the smoke thread curls.\n7.8–10s: He swallows and a long shudder passes across his face; the lamplight glows gold and soft on his skin.\nCAMERA: one continuous slow push toward Ashoka's face for the full 10 seconds.\nENVIRONMENT: the flame flickers; a thread of smoke curls; a faint breeze stirs his hair.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "CU",
+            "angle": "eye",
+            "camera_motion": "push",
+            "location": "pataliputra-chamber",
+            "time_light": "night-lamplit-close"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B13",
+      "sentences": [
+        "S20"
+      ],
+      "start": 101.58,
+      "end": 114.8,
+      "dur": 13.22,
+      "device": null,
+      "narration_says": "But he says he is pained even more by the fate of the teachers, the ascetics and the householders who lived peacefully there, and who were injured, killed, or separated from the people they loved.",
+      "viewer_sees": "A peaceful Kalingan village under a banyan tree where an ascetic teaches a few seated villagers; then a man and woman walk apart down a road, looking back over their shoulders toward each other as guards stand between them",
+      "shots": [
+        {
+          "shot_id": "14",
+          "beat_id": "B13",
+          "link_group": null,
+          "t_in": 101.583,
+          "t_out": 108.042,
+          "use_in": 0,
+          "use_out": 6.459,
+          "use_len": 6.459,
+          "motion_budget": 6.459,
+          "gen_len": 7,
+          "source_file": "shots/part14.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "kalingans"
+          ],
+          "visual_priority": [
+            "the Kalingans listening to the ascetic under the banyan",
+            "the banyan tree",
+            "the women with water pots",
+            "the thatched village"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: people of Kalinga, adult men and women of the eastern coast, brown skin, dark hair tied in knots, white and indigo cotton wraps covering the body, shell and bead jewelry, with farming and fishing tools, an ascetic with a long white beard and a plain white cloth seated at the center under a great banyan tree, teaching a small circle of four villagers seated on the ground before him, a few women with water pots passing at the right\nACTION: the ascetic sits cross-legged under the banyan tree with one hand raised in teaching, the four seated villagers listening, and the women with their water pots walk slowly past at the right\nSETTING: a peaceful village of the Kalinga coast in the morning, a huge banyan tree with hanging roots, thatched mud-brick houses at the far left, a well with a rope and bucket, rice fields bright green beyond, hens scratching in the dust, blue sky with scattered cloud\nCAMERA: camera stands on the village path, eye level, long shot.\nFRAME LAYOUT: center — the ascetic and the circle of villagers under the banyan, large; right third — the women with water pots, medium; far left — thatched houses, small and hazy; upper edge — the banyan canopy; lower edge — near-camera path dust.\nFACING: we see the ascetic from the front in three-quarter view, facing the listeners; the villagers show their backs and profiles, faces turned toward screen-right.\nSCREEN DIRECTION: the women walk from the right edge toward the left along the path; banyan leaves sway toward the left; hens scratch toward the left.\nLIGHT: soft warm morning sun from the upper left through the banyan, dappled light on the ground, bright green rice beyond.\nPALETTE: banyan green, mud brown, wrap white and indigo, sky blue\nDETAIL: banyan aerial roots and dappled leaf shadows, indigo checks in the cotton, clay water pots, hens in the dust, thatch fibres\nNOT IN FRAME: soldiers, weapons, smoke, any text.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 6.459s; everything keeps moving at the same natural pace through the end of the 7s generation.\n0–1s: The ascetic raises his hand and speaks; the four villagers lean in and one nods slowly while the women walk along the path.\n1–3s: The ascetic turns his palm upward in a slow gesture and a villager answers; a breeze stirs the banyan's hanging roots.\n3–5s: The women pass the well and one lowers the bucket on its rope; hens scratch and flutter at the edge of the circle.\n5–7s: The ascetic smiles and lowers his hand and the villagers sit quietly; the dappled light shifts on the dust.\nCAMERA: locked on the circle under the banyan with a very slow drift toward the left for the full 7 seconds.\nENVIRONMENT: banyan leaves sway; dappled light shifts; hens scratch in the dust.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "eye",
+            "camera_motion": "locked",
+            "location": "kalinga-village",
+            "time_light": "morning-clear"
+          }
+        },
+        {
+          "shot_id": "15",
+          "beat_id": "B13",
+          "link_group": null,
+          "t_in": 108.042,
+          "t_out": 114.792,
+          "use_in": 0,
+          "use_out": 6.75,
+          "use_len": 6.75,
+          "motion_budget": 6.75,
+          "gen_len": 7,
+          "source_file": "shots/part15.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "kalingans",
+            "soldiers"
+          ],
+          "visual_priority": [
+            "the Kalingans walking apart, looking back at each other",
+            "the two soldiers between them",
+            "the road leading in two directions"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: people of Kalinga, adult men and women of the eastern coast, brown skin, dark hair tied in knots, white and indigo cotton wraps covering the body, shell and bead jewelry, with farming and fishing tools, one man at the left third and one woman at the right third, adults, walking apart along the road, each looking back over their shoulder toward the other, hands reaching and falling short\nSUBJECT 2: Mauryan soldiers of the third century BCE, infantry in white cotton tunics with leather cuirasses, round cloth turbans, long spears or bows, wicker shields and short curved swords, two spearmen in the center standing between them, faces expressionless, spears held upright\nACTION: a man and a woman stand at the two sides of the road looking back toward each other with their hands half-lifted, while two soldiers stand upright between them\nSETTING: a late afternoon crossroads on the coastal plain, a packed red earth road forking in two directions, dry grass at the edges, a thin haze of dust, a lone palm at the left, low sun from the right\nCAMERA: camera stands on the road a few paces off, eye level, medium shot.\nFRAME LAYOUT: left third — the man, medium; right third — the woman, medium; center — the two soldiers, large and dark; lower edge — near-camera road dust; far edges — the two diverging roads, hazy.\nFACING: we see the man and the woman in three-quarter back views, their faces turned back toward the center; the soldiers face camera.\nSCREEN DIRECTION: the man walks from the center toward the left edge and the woman toward the right edge; dust drifts away from the center on both sides.\nLIGHT: low amber sun from the right, long shadows toward the left, a warm haze on the road.\nPALETTE: road red, amber haze, wrap indigo and white, spear grey\nDETAIL: cotton folds and indigo checks, spear heads catching light, dust rising from sandals, cracked road earth, a woven bundle on her head\nNOT IN FRAME: violence, blood, any text, close-ups of faces.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 6.75s; everything keeps moving at the same natural pace through the end of the 7s generation.\n0–1s: The man and the woman start walking apart, looking back toward each other with their hands half-raised; the soldiers stand square between them.\n1–3s: They keep walking in opposite directions, their eyes on each other, their steps slowing; dust lifts from their sandals.\n3–5s: Their reaching hands fall and they turn their faces back toward the road ahead; the soldiers do not move.\n5–7s: The two figures grow smaller along the diverging roads while the soldiers stand in the center; the amber light dims.\nCAMERA: a slow continuous pan from the man at the left toward the woman at the right for the full 7 seconds.\nENVIRONMENT: dust drifts away from the center; the palm sways; the light dims toward amber-red.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "eye",
+            "camera_motion": "pan",
+            "location": "kalinga-road",
+            "time_light": "late-afternoon"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B14",
+      "sentences": [
+        "S21"
+      ],
+      "start": 114.8,
+      "end": 120.56,
+      "dur": 5.76,
+      "device": "macro-object",
+      "narration_says": "Even a hundredth, or a thousandth, part of what happened at Kalinga would now pain him.",
+      "viewer_sees": "MACRO OBJECT — Ashoka's open hand holds a pinch of red earth, and the grains fall one by one through his fingers until only a few remain on his palm",
+      "shots": [
+        {
+          "shot_id": "16",
+          "beat_id": "B14",
+          "link_group": null,
+          "t_in": 114.792,
+          "t_out": 120.542,
+          "use_in": 0,
+          "use_out": 5.75,
+          "use_len": 5.75,
+          "motion_budget": null,
+          "gen_len": null,
+          "source_file": "shots/shot16.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "the pinch of red earth on the palm",
+            "the falling grains",
+            "the gold rings and the armband"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a man's open palm in close view holding a small pinch of fine red earth, with a few grains falling between the fingers, the hand marked by gold rings on two fingers and a gold armband at the wrist\nACTION: the open palm holds a small heap of fine red earth at the center, with a few single grains already slipping through the gap between two fingers\nSETTING: a soft window light in the palace chamber, the blurred whitewashed wall and the carved lattice window at the upper left, a patch of bare floor at the lower edge with a few red grains scattered, warm quiet air\nCAMERA: camera hangs over the hand, high angle, extreme close view.\nFRAME LAYOUT: center — the open palm and the pinch of earth, near-camera and large; right third — the gold armband, cropped; lower edge — the floor with scattered grains; upper left — the soft lattice window.\nFACING: we look down on the palm; the fingers point toward screen-left and the grains fall toward the lower left.\nSCREEN DIRECTION: single grains of red earth fall from the palm toward the lower left; a faint mote of dust drifts toward the left.\nLIGHT: soft daylight from the upper left, a gentle gold gleam on the rings and the armband, soft shadow in the palm's creases.\nPALETTE: earth red, skin brown, gold, wall cream\nDETAIL: the creases of the palm lined with red dust, each separate grain of earth, the shine on the gold rings, tiny hairs on the wrist\nNOT IN FRAME: faces, any text, blood, weapons.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "ECU",
+            "angle": "high",
+            "camera_motion": "push",
+            "location": "pataliputra-chamber",
+            "time_light": "window-daylight-soft"
+          },
+          "render_mode": "still",
+          "still_motion": "push"
+        }
+      ]
+    },
+    {
+      "beat_id": "B15",
+      "sentences": [
+        "S22",
+        "S23"
+      ],
+      "start": 120.56,
+      "end": 130.82,
+      "dur": 10.26,
+      "device": "ledger-accumulation",
+      "narration_says": "The other edicts show what that meant in practice. In the first, he writes that in his own kitchen, hundreds of thousands of animals used to be killed every day.",
+      "viewer_sees": "LEDGER/ACCUMULATION — a vast royal kitchen, rows upon rows of great bronze cauldrons over fires and cooks hauling pots, the rows stretching on and on",
+      "shots": [
+        {
+          "shot_id": "17",
+          "beat_id": "B15",
+          "link_group": null,
+          "t_in": 120.542,
+          "t_out": 123.917,
+          "use_in": 0,
+          "use_out": 3.375,
+          "use_len": 3.375,
+          "motion_budget": null,
+          "gen_len": null,
+          "source_file": "shots/shot17.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "royal-kitchen"
+          ],
+          "visual_priority": [
+            "the royal kitchen with its endless rows of cauldrons",
+            "the cooks hauling pots",
+            "the smoke under the beams",
+            "the glowing hearths"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a vast royal kitchen of the Mauryan palace, a long hall with rows of great bronze cauldrons over brick hearths, smoke-blackened beams and rows of clay storage jars, the rows upon rows of cauldrons stretching away down the hall under thick smoke, cooks small among them hauling great pots, the rows seeming to go on without end\nACTION: the cauldron rows run away down the long hall from near-camera to the far end, every hearth glowing under its bronze pot, cooks small among them carrying pots and fuel\nSETTING: the kitchen at midday with fires roaring, heaps of firewood stacked at the left, sacks of grain against the wall, great clay jars along the far end, ladles hung on the beams, smoke curling toward open vents high in the wall, shafts of white daylight through the vents\nCAMERA: camera stands at the entrance of the hall, eye level, long shot.\nFRAME LAYOUT: center — the rows of cauldrons receding down the hall, large near and small far; left third — the firewood stacks and the near hearths; right third — the grain sacks and clay jars; upper edge — the smoky beams and the light shafts.\nFACING: we face down the length of the hall; the cooks are seen from the side and the back, turned toward the hearths.\nSCREEN DIRECTION: smoke rises and drifts from the hearths toward the vents at the upper right; cooks carry pots from the left toward the right along the aisle.\nLIGHT: orange firelight from the hearths, white daylight shafts from the vents at the upper right, deep brown shadow in the beams.\nPALETTE: bronze, fire orange, smoke grey, clay brown\nDETAIL: bronze cauldron rims with soot, glowing coals, ladles, steam wisps, cooks readable by outline and posture, curls of smoke in the light shafts\nNOT IN FRAME: animals, blood, any text, close-ups of faces.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "architecture",
+            "shot_size": "LS",
+            "angle": "eye",
+            "camera_motion": "pan",
+            "location": "royal-kitchen",
+            "time_light": "firelight-smoky"
+          },
+          "render_mode": "still",
+          "still_motion": "pan-right"
+        },
+        {
+          "shot_id": "18",
+          "beat_id": "B15",
+          "link_group": null,
+          "t_in": 123.917,
+          "t_out": 130.833,
+          "use_in": 0,
+          "use_out": 6.916,
+          "use_len": 6.916,
+          "motion_budget": 6.916,
+          "gen_len": 7,
+          "source_file": "shots/part18.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "royal-kitchen"
+          ],
+          "visual_priority": [
+            "the royal kitchen with its rows of cauldrons",
+            "the cooks hauling a great pot",
+            "the stirring ladles",
+            "the steam"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a vast royal kitchen of the Mauryan palace, a long hall with rows of great bronze cauldrons over brick hearths, smoke-blackened beams and rows of clay storage jars, four cooks in the near rows hauling a great steaming pot between them on a pole, others stirring cauldrons with long ladles, the rows stretching far on and on\nACTION: four cooks in the near row stand at a great pot with a pole through its handles, ready to lift, while other cooks at the neighbouring cauldrons lean on long ladles\nSETTING: the kitchen at midday, bronze cauldrons in long rows over roaring brick hearths, heaps of firewood, a wooden table of cut vegetables and spice bowls at the left, smoke-blackened beams, shafts of white daylight from vents, steam rolling off every pot\nCAMERA: camera stands in the aisle between the rows, eye level, medium shot.\nFRAME LAYOUT: center — the four cooks and the great pot, near-camera and large; left third — the table of vegetables and spices; right third — the receding rows of cauldrons, medium to small; upper edge — the beams and the light shafts.\nFACING: we see the cooks three-quarter on, their faces turned toward the pot and screen-right; the ladle-holders show their profiles.\nSCREEN DIRECTION: the cooks lift and carry the pot from the left toward the right along the aisle; steam rises toward the upper right.\nLIGHT: orange firelight from the hearths, white shafts from the vents, a warm glow on the steam, deep brown shadow in the beams.\nPALETTE: bronze, fire orange, steam white, clay brown\nDETAIL: sooty bronze rims, the bend of the carrying pole, ladles, spice-bowl colors, glowing coal beds, droplets of steam\nNOT IN FRAME: animals, blood, any text, close-ups of faces.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 6.916s; everything keeps moving at the same natural pace through the end of the 7s generation.\n0–1s: The four cooks heave the pot off its hearth on the pole and stride along the aisle with it, steam streaming off the lip.\n1–3s: Cooks at the cauldrons stir with long ladles and shovel more fuel under the pots; sparks fly upward.\n3–5s: The carriers swing the great pot toward the far rows, others step aside to let them pass; steam rolls across the aisle.\n5–7s: More cooks hurry up the aisle with baskets and jars as the rows of cauldrons keep boiling on and on; smoke thickens under the beams.\nCAMERA: one continuous slow pull back along the aisle for the full 7 seconds.\nENVIRONMENT: steam rolls; sparks fly; smoke drifts through the light shafts.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "eye",
+            "camera_motion": "pull",
+            "location": "royal-kitchen",
+            "time_light": "firelight-smoky"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B16",
+      "sentences": [
+        "S24"
+      ],
+      "start": 130.82,
+      "end": 136.54,
+      "dur": 5.72,
+      "device": null,
+      "narration_says": "Now only three are, two peacocks and a deer, and not always the deer.",
+      "viewer_sees": "In the quiet kitchen courtyard two peacocks and one deer stand together on swept stone beside an open doorway, a cook with a bowl looking at them",
+      "shots": [
+        {
+          "shot_id": "19",
+          "beat_id": "B16",
+          "link_group": null,
+          "t_in": 130.833,
+          "t_out": 136.542,
+          "use_in": 0,
+          "use_out": 5.709,
+          "use_len": 5.709,
+          "motion_budget": null,
+          "gen_len": null,
+          "source_file": "shots/shot19.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "the two peacocks and the one deer",
+            "the cook with the bowl",
+            "the open kitchen doorway"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: two peacocks and one deer standing together on swept stone in a quiet palace kitchen courtyard beside an open doorway, the peacocks with trailing blue-green tails and the deer with a spotted tan coat, and a cook in a white wrap holding a small bowl and looking at them\nACTION: two peacocks and one deer stand close together on the swept stone courtyard, three animals in all, while a cook with a small bowl stands at the open doorway at the right looking at them\nSETTING: a quiet courtyard of the royal kitchen in the soft early morning, swept grey flagstones, a brick wall at the left with a climbing creeper, an open wooden doorway at the right with a glimpse of dim smoky rows beyond, a stone water trough, one banyan sapling in a pot\nCAMERA: camera stands in the courtyard a few paces from the animals, eye level, medium shot.\nFRAME LAYOUT: left and center — the two peacocks and the deer, near-camera and large, one deer between two peacocks; right third — the cook and the doorway, medium; far left — the brick wall, soft; lower edge — near-camera flagstones.\nFACING: we see the peacocks and the deer in three-quarter side views facing screen-right toward the cook; the cook faces screen-left toward them.\nSCREEN DIRECTION: a peacock's long tail trails toward the left; the deer lowers its head toward the right; a thread of kitchen smoke from the doorway drifts toward the left.\nLIGHT: soft pale morning light from the upper left, a gentle sheen on the blue-green tails, soft shadows on the stone.\nPALETTE: peacock blue-green, deer tan, wrap white, flagstone grey\nDETAIL: the eyed patterns on the tail feathers, the white spots on the deer's coat, the cook's cotton folds, the grain of the flagstones, the bowl's clay glaze\nNOT IN FRAME: blood, knives, any other animals, a fourth animal, any text.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "eye",
+            "camera_motion": "locked",
+            "location": "royal-kitchen",
+            "time_light": "morning-soft"
+          },
+          "render_mode": "still",
+          "still_motion": "hold"
+        }
+      ]
+    },
+    {
+      "beat_id": "B17",
+      "sentences": [
+        "S25"
+      ],
+      "start": 136.54,
+      "end": 145.34,
+      "dur": 8.8,
+      "device": null,
+      "narration_says": "In the second, he says he has provided medical treatment for people and for animals, and has had wells dug and trees planted along the roads.",
+      "viewer_sees": "A dusty road lined with newly planted saplings and a stepped well where workers lower pots, while a healer in a plain wrap tends the leg of a bullock by the roadside",
+      "shots": [
+        {
+          "shot_id": "20",
+          "beat_id": "B17",
+          "link_group": null,
+          "t_in": 136.542,
+          "t_out": 145.333,
+          "use_in": 0,
+          "use_out": 8.791,
+          "use_len": 8.791,
+          "motion_budget": 8.791,
+          "gen_len": 9,
+          "source_file": "shots/part20.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "mauryan-road"
+          ],
+          "visual_priority": [
+            "the royal road lined with young saplings",
+            "the workers at the stepped well",
+            "the healer tending the bullock",
+            "the travelers in the shade"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a dusty royal road of the Mauryan empire, packed earth between rice fields and groves, mango and banyan trees along the edge, a stepped well and a few milestone stones, a row of newly planted saplings staked along the road edge, workers lowering clay pots on ropes into the stepped well at the left, and at the right a healer in a plain wrap kneeling to bind the leg of a bullock beside the road\nACTION: workers at the well haul up pots on ropes while a healer kneels beside a standing bullock at the right with a roll of cloth in his hand, and the saplings stand in a neat row along the road\nSETTING: a warm afternoon on the road, a row of thin saplings each with a wooden stake and a ring of stones, a well of stepped stone with a pulley, a cart of grain waiting in the shade of a mango tree, a few travelers resting on the steps, rice fields bright green beyond\nCAMERA: camera stands on the road edge, eye level, long shot.\nFRAME LAYOUT: left third — the stepped well and workers, medium; center — the road and the row of saplings; right third — the healer and the bullock, medium; far right — the rice fields, hazy; upper edge — mango branches.\nFACING: we see the workers in profile hauling toward screen-left; the healer faces toward screen-left toward the bullock's leg; the bullock stands in profile facing screen-left.\nSCREEN DIRECTION: ropes pull from the well toward the left; a traveler walks along the road from the right toward the left; leaves sway toward the left.\nLIGHT: warm afternoon sun from the upper right, dappled shade under the mango, a bright gleam on the wet well steps.\nPALETTE: road tan, rice green, wrap white, clay red\nDETAIL: rope fibres, wet stone steps, the saplings' tender leaves and stakes, the healer's cloth strips, the bullock's hide and bell, clay pots\nNOT IN FRAME: soldiers, blood, any text.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 8.791s; everything keeps moving at the same natural pace through the end of the 9s generation.\n0–1s: The workers pull the ropes and a clay pot rises dripping from the well; the healer winds a cloth strip around the bullock's leg.\n1–3s: A worker pours water from the pot into a stone trough and another stoops to water the nearest sapling; the bullock shifts its weight.\n3–5s: The healer ties off the bandage and pats the bullock's flank; a traveler on the steps rises and walks past.\n5–7s: More pots rise from the well and the workers move along the row of saplings, watering each in turn; the mango leaves rustle.\n7–9s: The bullock lifts its head and the healer leads it a few steps along the road; the dappled shade slides over the group.\nCAMERA: a slow continuous pan to the right from the well toward the healer for the full 9 seconds.\nENVIRONMENT: leaves rustle; water drips from the well; dust lifts from the road.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "eye",
+            "camera_motion": "pan",
+            "location": "mauryan-road",
+            "time_light": "afternoon-warm"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B18",
+      "sentences": [
+        "S26"
+      ],
+      "start": 145.34,
+      "end": 154.78,
+      "dur": 9.44,
+      "device": null,
+      "narration_says": "In the sixth, he orders his reporters to bring him the people's business at any hour, whether he is eating, in the women's quarters, or in his carriage.",
+      "viewer_sees": "Ashoka eats from a low platter on a mat in a lamplit room when a breathless messenger kneels in the doorway with a scroll and he raises his hand to let him speak",
+      "shots": [
+        {
+          "shot_id": "21",
+          "beat_id": "B18",
+          "link_group": null,
+          "t_in": 145.333,
+          "t_out": 154.792,
+          "use_in": 0,
+          "use_out": 9.459,
+          "use_len": 9.459,
+          "motion_budget": 9.459,
+          "gen_len": 10,
+          "source_file": "shots/part21.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "ashoka",
+            "courtiers"
+          ],
+          "visual_priority": [
+            "Ashoka eating at the low platter",
+            "the officials' messenger kneeling with the scroll",
+            "the lamplit room"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Ashoka, a Mauryan emperor in his forties, a strong lean face with a trimmed black beard and moustache, kohl-lined dark eyes, a white cotton robe with a deep red shoulder cloth, a gold chest chain, gold armbands and a cloth turban with a jeweled band, at the left third, seated on a mat before a low platter of food, a fold of bread in his hand, glancing up as he is interrupted\nSUBJECT 2: Mauryan court officials, men in white cotton robes with pleated sashes, cloth turbans with simple gold pins, trimmed beards, thin gold earrings, and scrolls or palm-leaf bundles in their hands, a breathless messenger in a dusty white robe at the right third, kneeling in the doorway with a scroll held out\nACTION: Ashoka sits at his low platter with a piece of bread halfway to his mouth, his head turning toward the doorway where a messenger kneels breathless with a scroll held out\nSETTING: a private lamplit chamber of the palace at Pataliputra, whitewashed brick walls, a low wooden bed and a woven mat, brass oil lamps and a carved lattice window; here an evening meal in the palace, a low wooden tray with brass bowls of rice and lentils and a jug of water, brass lamps lit on the floor, the doorway at the right with a dark corridor and one more official waiting, the carved lattice window dark blue at the left, a damp dust on the messenger's sandals\nCAMERA: camera stands across the room, eye level, medium shot.\nFRAME LAYOUT: left third — Ashoka and the platter, near-camera and large, cropped at the knee; right third — the kneeling messenger in the doorway, medium; center — the mat and the brass lamps; far right — the dark corridor, hazy.\nFACING: we see Ashoka three-quarter on, his face and eyes turned toward screen-right and the messenger; the messenger faces screen-left, his head bowed and the scroll extended.\nSCREEN DIRECTION: the messenger's scroll extends from the right toward the left; Ashoka's raised hand moves toward the right in a signal to speak; the lamp flames lean toward the right.\nLIGHT: warm lamplight from the lower center, gold on the faces and the brass bowls, cool blue dusk at the lattice, deep brown shadow in the corners.\nPALETTE: lamp amber, robe white, brass gold, dusk blue\nDETAIL: rice grains in the brass bowl, the dust on the messenger's feet, cotton folds, the wax seal and cord on the scroll, the glints on Ashoka's gold chain\nNOT IN FRAME: any readable text, soldiers, weapons, other people at the table.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 9.459s; everything keeps moving at the same natural pace through the end of the 10s generation.\n0–1s: The messenger drops to his knees in the doorway and extends the scroll; Ashoka lowers the bread and lifts his hand to him.\n1–3.3s: Ashoka beckons the messenger forward with two fingers and he shuffles across the mat on his knees; the lamp flames bend.\n3.3–5.5s: The messenger speaks quickly in a low voice while Ashoka listens, his eyes on the scroll; steam rises from the bowl.\n5.5–7.8s: Ashoka takes the scroll and unrolls it, reading with a furrowed brow; the messenger bows his head to the mat.\n7.8–10s: Ashoka sets the bread aside and nods at the messenger and gestures for him to go on; the lamp flames flicker on the bowls.\nCAMERA: locked on Ashoka and the messenger with a very slow drift toward the right for the full 10 seconds.\nENVIRONMENT: steam rises from the bowls; lamp flames flicker; shadows sway on the lattice.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "eye",
+            "camera_motion": "locked",
+            "location": "pataliputra-chamber",
+            "time_light": "evening-lamplit"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B19",
+      "sentences": [
+        "S27"
+      ],
+      "start": 154.78,
+      "end": 164.12,
+      "dur": 9.34,
+      "device": null,
+      "narration_says": "And he appointed new officers, to see that prisoners were treated properly, and that those who had families to support, or who were old, were released.",
+      "viewer_sees": "A heavy wooden prison gate stands open as an officer in a plain tunic leads an elderly man out into the light, where a woman waits with her hands joined",
+      "shots": [
+        {
+          "shot_id": "22",
+          "beat_id": "B19",
+          "link_group": null,
+          "t_in": 154.792,
+          "t_out": 164.125,
+          "use_in": 0,
+          "use_out": 9.333,
+          "use_len": 9.333,
+          "motion_budget": 9.333,
+          "gen_len": 10,
+          "source_file": "shots/part22.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "courtiers",
+            "kalingans"
+          ],
+          "visual_priority": [
+            "the officials' officer leading the elderly man out",
+            "the woman waiting with joined hands",
+            "the open wooden prison gate"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Mauryan court officials, men in white cotton robes with pleated sashes, cloth turbans with simple gold pins, trimmed beards, thin gold earrings, and scrolls or palm-leaf bundles in their hands, one officer at the left third in a plain white tunic, walking out through the open gate and leading an elderly grey-bearded man by the arm\nSUBJECT 2: people of Kalinga, adult men and women of the eastern coast, brown skin, dark hair tied in knots, white and indigo cotton wraps covering the body, shell and bead jewelry, with farming and fishing tools, a woman at the right third waiting with her hands joined, a bundle of cloth at her feet\nACTION: the officer stands in the open gate with his hand on the elderly man's arm, the old man stepping out into the light, while the woman at the right waits with her hands joined at her chest\nSETTING: a heavy wooden prison gate of the Mauryan town standing open in the morning, a thick brick wall with a barred opening, a swept earth yard, a neem tree at the right throwing dappled shade, two small pigeons on the wall, bright light beyond the gate\nCAMERA: camera stands in the yard a few paces from the gate, eye level, medium shot.\nFRAME LAYOUT: left third — the officer and the elderly man at the gate, near-camera and large; right third — the woman and her bundle, medium; center — the swept yard; far left — the open gate and bright light, hazy; upper right — the neem tree.\nFACING: we see the officer and the old man three-quarter on, faces turned toward screen-right and the woman; the woman faces screen-left, her eyes on the old man.\nSCREEN DIRECTION: the old man steps from the gate toward the right; the woman takes a step toward the left; pigeons lift from the wall toward the right.\nLIGHT: bright morning sun from the left through the gate, a long warm shaft across the yard, dappled shade under the neem.\nPALETTE: brick red, robe white, earth tan, neem green\nDETAIL: the weave of the cotton, grey in the old man's beard, the heavy iron fittings of the gate, the swept arcs in the dust, a pigeon's ruffled feathers\nNOT IN FRAME: chains in close-up, violence, any text.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 9.333s; everything keeps moving at the same natural pace through the end of the 10s generation.\n0–1s: The officer leads the old man through the gate and into the sunlit yard; the woman lowers her joined hands and takes a step toward them.\n1–3.3s: The old man pauses and lifts his face to the light and the officer releases his arm; pigeons burst up from the wall.\n3.3–5.5s: The old man walks slowly across the yard toward the woman; the officer steps aside and bows his head.\n5.5–7.8s: The woman reaches him and takes his hands in hers; she lifts her bundle and puts it on his arm.\n7.8–10s: The old man bows his head over their joined hands and the two stand together; the dappled light slides over them.\nCAMERA: one continuous slow push toward the old man and the woman for the full 9 seconds.\nENVIRONMENT: pigeons flutter; neem leaves sway; dust glows in the shaft of sun.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "eye",
+            "camera_motion": "push",
+            "location": "prison-gate",
+            "time_light": "morning-clear"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B20",
+      "sentences": [
+        "S28",
+        "S29"
+      ],
+      "start": 164.12,
+      "end": 168.76,
+      "dur": 4.64,
+      "device": "crowd-as-texture",
+      "narration_says": "It is not a renunciation of power, though. Ashoka kept his army.",
+      "viewer_sees": "CROWD-AS-TEXTURE — seen from above, the Mauryan army massed on a plain in tight ranks of infantry, war elephants and chariots, dust rising, one banner line moving across the whole formation",
+      "shots": [
+        {
+          "shot_id": "23",
+          "beat_id": "B20",
+          "link_group": null,
+          "t_in": 164.125,
+          "t_out": 168.75,
+          "use_in": 0,
+          "use_out": 4.625,
+          "use_len": 4.625,
+          "motion_budget": 4.625,
+          "gen_len": 5,
+          "source_file": "shots/part23.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "soldiers"
+          ],
+          "visual_priority": [
+            "the Mauryan soldiers massed in square ranks",
+            "the elephants and chariots in their blocks",
+            "the moving banner line",
+            "the rising dust"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Mauryan soldiers of the third century BCE, infantry in white cotton tunics with leather cuirasses, round cloth turbans, long spears or bows, wicker shields and short curved swords, massed in tight square ranks of infantry with war elephants and chariots in separate blocks, seen from directly above, a long banner line moving across the whole formation\nACTION: the soldiers stand in tight ranks on the plain in neat square blocks with the elephants and chariots set apart, ready to move, a banner line stretched along the front rank\nSETTING: a flat dry plain seen from above at midday, blocks of infantry in white and brown, a block of elephants with painted foreheads and howdahs, a block of chariots with two horses each, a column of dust at the edge, long shadows beside every figure, a dry riverbed at one side\nCAMERA: camera hangs high above the plain, overhead, aerial view.\nFRAME LAYOUT: full frame — the army in square blocks, figures as small marks; center — a block of elephants; left third — infantry blocks; right third — chariots; lower right — one slightly broken rank at the edge; no individual faces.\nFACING: we look straight down on the ranks; the formation points toward screen-right.\nSCREEN DIRECTION: the banner line moves from the left toward the right across the front of the formation; dust drifts toward the left; the blocks advance slowly toward the right.\nLIGHT: high midday sun, short crisp shadows beside every figure, a warm dust haze over the plain.\nPALETTE: plain tan, tunic white, elephant grey, banner red\nDETAIL: a pattern of shields and spears in ordered rows, elephants as grey masses with howdahs, chariot wheel spokes, long thin shadows, a few banners\nNOT IN FRAME: close-ups of faces, bodies, fire, any text.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 4.625s; everything keeps moving at the same natural pace through the end of the 5s generation.\n0–1s: The blocks of infantry begin to march and the banner line sweeps along the front rank; dust rises in thin columns.\n1–3s: The elephants sway forward in their block and the chariot wheels start to turn; the formation ripples like a single body.\n3–5s: The whole army advances in order toward the right and the dust thickens into a low brown haze over the plain.\nCAMERA: one continuous slow pull up and back from the formation for the full 5 seconds.\nENVIRONMENT: dust rises and drifts; banners ripple; shadows slide with the marching blocks.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts",
+          "tags": {
+            "subject_type": "crowd",
+            "shot_size": "aerial",
+            "angle": "overhead",
+            "camera_motion": "pull",
+            "location": "army-plain",
+            "time_light": "midday-dust"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B21",
+      "sentences": [
+        "S30"
+      ],
+      "start": 168.76,
+      "end": 177.26,
+      "dur": 8.5,
+      "device": null,
+      "narration_says": "In the Thirteenth Edict he warns the forest peoples of his lands that, despite his remorse, he still has the power to punish them.",
+      "viewer_sees": "At a forest edge a Mauryan officer with armed soldiers faces a group of forest-dwelling people with bows and leaf-and-cotton wraps, the officer raising one firm hand",
+      "shots": [
+        {
+          "shot_id": "24",
+          "beat_id": "B21",
+          "link_group": null,
+          "t_in": 168.75,
+          "t_out": 177.25,
+          "use_in": 0,
+          "use_out": 8.5,
+          "use_len": 8.5,
+          "motion_budget": 8.5,
+          "gen_len": 9,
+          "source_file": "shots/part24.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "soldiers",
+            "forest-people"
+          ],
+          "visual_priority": [
+            "the Mauryan soldiers with the officer's raised hand",
+            "the forest people watching with their bows low",
+            "the edge of the forest"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Mauryan soldiers of the third century BCE, infantry in white cotton tunics with leather cuirasses, round cloth turbans, long spears or bows, wicker shields and short curved swords, an officer at the left third with four spearmen behind his shoulders, one firm hand raised in a warning\nSUBJECT 2: forest-dwelling people of central India, adult men and women with dark skin, hair knotted with leaves and feathers, leaf-and-cotton wraps, bows and quivers, garlands of seeds and beads, a group of six at the right third standing at the forest edge with bows held low and eyes steady\nACTION: the officer stands at the left with one firm hand raised and four spearmen at his shoulders, while the forest people at the right stand at the tree line with their bows held low\nSETTING: the edge of a dense sal forest in the late afternoon, tall straight trunks with deep green shade, a clearing of trampled grass and red earth between the two groups, a narrow path leading into the trees, a few hanging creepers, shafts of gold light low through the leaves\nCAMERA: camera stands in the clearing to the side of the two groups, eye level, medium shot.\nFRAME LAYOUT: left third — the officer and the spearmen, large; right third — the forest people at the tree line, medium; center — the empty strip of trampled grass; upper edge — the dark canopy; far right — the narrow path into the trees, hazy.\nFACING: we see the officer in profile with his face and raised hand toward screen-right; the spearmen face screen-right; the forest people face screen-left toward the officer.\nSCREEN DIRECTION: the officer's hand lifts and points toward the right; a breeze moves the leaves from the right toward the left; a few spears tilt toward the right.\nLIGHT: low gold sun from the left through the leaves, long shadows toward the right, deep green shade in the trees.\nPALETTE: forest green, robe white, red earth, gold light\nDETAIL: spear heads catching light, feather and leaf ties in hair, hanging creepers, the officer's pleated sash, bark texture on the trunks\nNOT IN FRAME: drawn arrows, blood, any text.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 8.5s; everything keeps moving at the same natural pace through the end of the 9s generation.\n0–1s: The officer raises his hand higher and speaks sternly; the spearmen straighten their spears and the forest people tighten their grip on their bows.\n1–3s: The officer takes a slow step forward and points toward the tree line; a forest man at the front lifts his chin.\n3–5s: The forest people murmur among themselves and shift on their feet; leaves flutter overhead.\n5–7s: The officer lowers his hand and lets it fall open at his side; the forest man answers with a slow nod and a flat hand.\n7–9s: The two groups face each other across the strip of grass as the gold light slides lower through the leaves.\nCAMERA: locked on the two groups while the view eases slightly rightward over the full 9 seconds.\nENVIRONMENT: leaves flutter; light shafts slide; a bird flits through the canopy.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "eye",
+            "camera_motion": "locked",
+            "location": "forest-edge",
+            "time_light": "late-afternoon"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B22",
+      "sentences": [
+        "S31",
+        "S32"
+      ],
+      "start": 177.26,
+      "end": 183.58,
+      "dur": 6.32,
+      "device": "macro-object",
+      "narration_says": "What he gave up was conquest. The only victory he now called the best was a victory by Dhamma.",
+      "viewer_sees": "MACRO OBJECT — a sheathed sword lies on a folded cloth beside a carved stone wheel, a thin ribbon of incense smoke curling up between them",
+      "shots": [
+        {
+          "shot_id": "25",
+          "beat_id": "B22",
+          "link_group": null,
+          "t_in": 177.25,
+          "t_out": 183.583,
+          "use_in": 0,
+          "use_out": 6.333,
+          "use_len": 6.333,
+          "motion_budget": 6.333,
+          "gen_len": 7,
+          "source_file": "shots/part25.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "the sheathed sword on the cloth",
+            "the carved stone wheel",
+            "the ribbon of incense smoke"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a sheathed iron sword with a plain leather scabbard lying on a folded white cloth, beside a carved stone wheel of twenty-four spokes, a thin ribbon of incense smoke curling up between them\nACTION: the sheathed sword lies on the folded cloth at the left and the carved stone wheel stands upright at the right, with a thin ribbon of incense smoke just beginning to rise between them\nSETTING: a still quiet table in the palace chamber, a polished dark wood surface with a white cotton cloth, a small brass incense burner at the upper center, soft daylight from the lattice window, a blurred whitewashed wall and a brass lamp at the far left\nCAMERA: camera hangs over the table, high angle, close shot.\nFRAME LAYOUT: left third — the sheathed sword on its cloth, near-camera and large; right third — the stone wheel, near-camera and large; center — the incense burner and the rising smoke; upper edge — the whitewashed wall, soft.\nFACING: we look down on the objects; the sword's hilt points toward screen-left and the wheel faces toward camera.\nSCREEN DIRECTION: the incense smoke curls from the burner toward the upper left and drifts between the objects; a slow ray of light moves across the cloth toward the right.\nLIGHT: soft daylight from the upper left through the lattice, a gentle pattern of light on the cloth, a warm gleam on the wheel's stone.\nPALETTE: cloth white, iron grey, honey stone, smoke blue\nDETAIL: the leather grain of the scabbard, the iron hilt wrap, the carved spokes and rim of the wheel, the woven threads of the cloth, grey incense smoke\nNOT IN FRAME: people, any readable text, a drawn blade, blood.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 6.333s; everything keeps moving at the same natural pace through the end of the 7s generation.\n0–1s: The incense smoke curls upward between the sword and the wheel; the lattice light drifts across the white cloth.\n1–3s: The smoke thickens and winds around the wheel's carved rim and on toward the sword's hilt; a mote of dust glints.\n3–5s: A thin ray of light slides over the wheel and picks out each spoke in turn; the sword lies in shadow.\n5–7s: The smoke rises in a slow spiral between the two objects as the light creeps along the cloth toward the sword.\nCAMERA: a slow continuous push toward the space between the sword and the wheel for the full 7 seconds.\nENVIRONMENT: incense smoke curls and drifts; light slides across the cloth; dust motes float.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts",
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "CU",
+            "angle": "high",
+            "camera_motion": "push",
+            "location": "pataliputra-chamber",
+            "time_light": "window-daylight-soft"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B23",
+      "sentences": [
+        "S33"
+      ],
+      "start": 183.58,
+      "end": 202.86,
+      "dur": 19.28,
+      "device": "animated-map",
+      "narration_says": "He claimed that this kind of conquest had already reached further than any army: the edict names five Greek kings, Antiochos of Syria, Ptolemy of Egypt, Antigonos of Macedonia, Magas of Cyrene and Alexander of Epirus, and the Tamil kingdoms of the south.",
+      "viewer_sees": "ANIMATED MAP — on a parchment, thin lines of envoys and monks travel out from India westward across deserts to five marked Greek kingdoms, then southward to the Tamil lands, dots lighting up along each line",
+      "shots": [
+        {
+          "shot_id": "26",
+          "beat_id": "B23",
+          "link_group": null,
+          "t_in": 183.583,
+          "t_out": 193.542,
+          "use_in": 0,
+          "use_out": 9.959,
+          "use_len": 9.959,
+          "motion_budget": 9.959,
+          "gen_len": 10,
+          "source_file": "shots/part26.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "the five Greek kingdom symbols",
+            "the thin envoy lines crossing the deserts",
+            "India at the right",
+            "the western lands"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a cream parchment map from above with India at the center-right and the lands to the west toward the left, where five inked kingdom symbols (a lion for Syria, an ibis for Egypt, a helmet for Macedonia, a silphium plant for Cyrene and an eagle for Epirus) wait, and thin inked lines of envoys and monks running from India westward across the deserts\nACTION: the parchment lies with India at the right and the five kingdom symbols dimly inked at the left, and a first thin line of envoy markers is just leaving India toward the west\nSETTING: a chart-making bench in golden lamplight, the sheet pegged flat at its corners with polished stones, pale ochre hatching of desert across the middle of the map, a bone-handled compass at the lower border, dark brown shading toward the corners\nCAMERA: camera hangs over the table, overhead, long view.\nFRAME LAYOUT: right third — the inked outline of India; center — the desert hatching and the envoy lines; left third — the five kingdom symbols in a loose arc, small; lower edge — the brass compass, cropped and soft.\nFACING: we look straight down on the map; the envoy markers point toward screen-left.\nSCREEN DIRECTION: the envoy lines draw themselves from the right edge toward the left across the deserts; each kingdom symbol lights up as the line reaches it.\nLIGHT: warm lamplight from the upper left, a soft golden pool, a warm glow brightening at each kingdom symbol as it lights.\nPALETTE: parchment cream, ink brown, desert ochre, lamp gold\nDETAIL: tiny envoy and camel markers, fine desert hatching, each symbol drawn with small ink strokes, fibres in the parchment, a brown stain at one corner\nNOT IN FRAME: real people, readable text or letters, modern borders, battle.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 9.959s; everything keeps moving at the same natural pace through the end of the 10s generation.\n0–1s: Thin lines of envoy markers leave India and draw themselves across the deserts toward the left; the first kingdom symbol begins to glow.\n1–3.3s: The lines reach the first symbol and the lion lights gold; more lines fan out toward the ibis and the helmet.\n3.3–5.5s: The ibis and the helmet light up one after the other as small camel markers trundle along the lines; lamplight ripples across the paper.\n5.5–7.8s: The silphium plant and the eagle glow in turn as the lines reach the far west; envoys pause at each symbol and move on.\n7.8–10s: All five symbols glow together and the lines pulse gold across the whole width of the map.\nCAMERA: a slow continuous pan from India at the right toward the western lands at the left for the full 10 seconds.\nENVIRONMENT: lamplight flickers on the parchment; faint ink waves pulse along the desert hatching.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts",
+          "tags": {
+            "subject_type": "map-diagram",
+            "shot_size": "LS",
+            "angle": "overhead",
+            "camera_motion": "pan",
+            "location": "parchment-map",
+            "time_light": "lamplight-warm"
+          }
+        },
+        {
+          "shot_id": "27",
+          "beat_id": "B23",
+          "link_group": null,
+          "t_in": 193.542,
+          "t_out": 202.875,
+          "use_in": 0,
+          "use_out": 9.333,
+          "use_len": 9.333,
+          "motion_budget": 9.333,
+          "gen_len": 10,
+          "source_file": "shots/part27.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "the Tamil kingdom symbols in the south",
+            "the thin lines running south",
+            "the Mauryan heartland at the upper left"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a cream parchment map of the Indian subcontinent from above, the Mauryan heartland at the upper left and the southern tip at the lower right drawn as the Tamil lands with three inked palm-and-pearl symbols, and thin inked lines of monks and envoys running down from the north toward the south\nACTION: the Mauryan heartland is inked at the upper left and the southern lands lie at the lower right with the three symbols dimly drawn, and a first thin line of marker figures is just leaving the north\nSETTING: a copyist slanted desk in amber lamplight, the sheet clipped with small bronze rings, a reed pen and an ink horn at the lower border, shaded corners, tiny inked rivers and hills drawn across the middle\nCAMERA: camera hangs over the table, overhead, long view.\nFRAME LAYOUT: upper left — the Mauryan heartland; center — the inked rivers and hills; lower right — the three Tamil symbols near the southern tip; lower edge — the reed pen and the ink horn, cropped and out of focus.\nFACING: the view is straight down onto the sheet, north at the top; the marker figures point toward the lower right.\nSCREEN DIRECTION: the lines of monks and envoys draw themselves from the upper left toward the lower right down the length of the land; each symbol lights up in turn.\nLIGHT: amber lamplight from the upper right, a mellow pool in the middle of the sheet, a small burst of glow at every symbol as it lights.\nPALETTE: parchment cream, ink brown, sea teal, lamp gold\nDETAIL: tiny walking figures and ox-cart markers, hatched hills, thin river lines, palm and pearl symbols drawn with small strokes, fibres in the parchment\nNOT IN FRAME: real people, readable text or letters, modern borders, battle.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 9.333s; everything keeps moving at the same natural pace through the end of the 10s generation.\n0–1s: Thin lines of tiny monks and envoys begin to draw themselves down from the heartland toward the south; ink rivers glimmer.\n1–3.3s: The lines run across the inked hills and rivers, small ox-cart markers rolling along them; the first Tamil symbol begins to glow.\n3.3–5.5s: The lines reach the first palm symbol and it lights gold; two more lines branch toward the pearl symbols.\n5.5–7.8s: The pearl symbols light up one after the other along the southern coast as the markers walk on; lamplight ripples across the paper.\n7.8–10s: All three southern symbols glow and the lines pulse gold from north to south across the whole map.\nCAMERA: one continuous slow push from the north toward the southern tip at the lower right for the full 10 seconds.\nENVIRONMENT: lamplight flickers; faint ink waves pulse along the coasts; tiny river lines shimmer.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts",
+          "tags": {
+            "subject_type": "map-diagram",
+            "shot_size": "aerial",
+            "angle": "overhead",
+            "camera_motion": "push",
+            "location": "parchment-map",
+            "time_light": "lamplight-warm"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B24",
+      "sentences": [
+        "S34"
+      ],
+      "start": 202.86,
+      "end": 212.24,
+      "dur": 9.38,
+      "device": null,
+      "narration_says": "And he wrote that he had the edict carved so that his sons and great-grandsons would not start new wars, or, if they did, would show forbearance.",
+      "viewer_sees": "Ashoka and two grown sons stand before a freshly carved stone; Ashoka rests a hand on it and the young men look at it gravely",
+      "shots": [
+        {
+          "shot_id": "28",
+          "beat_id": "B24",
+          "link_group": null,
+          "t_in": 202.875,
+          "t_out": 212.25,
+          "use_in": 0,
+          "use_out": 9.375,
+          "use_len": 9.375,
+          "motion_budget": 9.375,
+          "gen_len": 10,
+          "source_file": "shots/part28.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "ashoka",
+            "princes",
+            "edict-pillar"
+          ],
+          "visual_priority": [
+            "Ashoka's hand on the carved stone",
+            "the two princes reading the stone gravely",
+            "the freshly cut rows on the pillar"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Ashoka, a Mauryan emperor in his forties, a strong lean face with a trimmed black beard and moustache, kohl-lined dark eyes, a white cotton robe with a deep red shoulder cloth, a gold chest chain, gold armbands and a cloth turban with a jeweled band, standing at the left third beside the freshly carved stone, one hand resting on its polished surface, his face grave and thoughtful\nSUBJECT 2: two young Mauryan princes in their twenties, clean-shaven and upright, white cotton robes with colored sashes, cloth turbans with small jewels and gold earrings, two of them standing at the center, hands joined, looking at the carved rows with serious faces\nSUBJECT 3: a polished sandstone pillar, tall and smooth with a slight taper, a pale honey-gold sheen, rows of small neatly incised characters down one face and a flared bell-shaped capital at the top, at the right third, rising behind the group, its new rows of characters fresh and pale\nACTION: Ashoka stands beside the freshly carved pillar with one hand just touching its polished surface, and his two grown sons stand next to him looking up at the carved rows\nSETTING: a late afternoon in a courtyard of the palace, a freshly erected pillar in the center of a swept stone floor, a low wall of brick and a mango tree at the left, a few attendants far off at the right in white, a warm low light on the pale new carving\nCAMERA: camera stands on the courtyard floor a few paces from the group, eye level, medium shot.\nFRAME LAYOUT: left third — Ashoka beside the stone, near-camera and large, cut off at the thigh; center — the two princes, medium; right third — the pillar and its carved rows, large; far right — attendants, small and hazy.\nFACING: we see Ashoka in three-quarter view with his face and hand toward screen-right and the stone; the princes show their profiles, their faces turned toward screen-right and the carving.\nSCREEN DIRECTION: Ashoka's hand slides along the stone toward the right; the princes' gaze climbs up the rows toward the capital; light slides along the shaft toward the right.\nLIGHT: low warm gold sun from the left, long shadows toward the right, a bright gleam on the polished pillar.\nPALETTE: pillar honey-gold, robe white, gold, mango green\nDETAIL: the polished sheen of the sandstone, the crisp pale cuts of the new characters, cotton folds and colored sashes, gold earrings with small glints\nNOT IN FRAME: any readable letters, soldiers, weapons.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 9.375s; everything keeps moving at the same natural pace through the end of the 10s generation.\n0–1s: Ashoka slides his hand slowly down the face of the stone and says a few words; the princes lift their eyes to the carved rows.\n1–3.3s: The first prince reaches out and touches a line of characters; the second tilts his head and follows the rows with his eyes.\n3.3–5.5s: Ashoka lays his other hand on the first prince's shoulder and speaks quietly; both young men nod gravely.\n5.5–7.8s: The princes step closer to the pillar and run their fingers along the lowest row; the light slides up the shaft.\n7.8–10s: Ashoka stands between them with his hand on the stone; the three of them look up together as the gold light fades from the capital.\nCAMERA: one continuous slow push toward the three men and the pillar for the full 10 seconds.\nENVIRONMENT: mango leaves sway; dust motes drift; the low light slides up the shaft.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "eye",
+            "camera_motion": "push",
+            "location": "edict-pillar",
+            "time_light": "late-afternoon"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B25",
+      "sentences": [
+        "S35"
+      ],
+      "start": 212.24,
+      "end": 221.06,
+      "dur": 8.82,
+      "device": null,
+      "narration_says": "He had it cut in many places, on rocks and polished stone pillars across the empire, from the northwest frontier to the south.",
+      "viewer_sees": "A long road crosses a wide landscape of hills, river and plain, and polished stone pillars rise at intervals along it, each in a different terrain, as the camera sweeps along",
+      "shots": [
+        {
+          "shot_id": "29",
+          "beat_id": "B25",
+          "link_group": null,
+          "t_in": 212.25,
+          "t_out": 221.042,
+          "use_in": 0,
+          "use_out": 8.792,
+          "use_len": 8.792,
+          "motion_budget": 8.792,
+          "gen_len": 9,
+          "source_file": "shots/part29.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "edict-pillar"
+          ],
+          "visual_priority": [
+            "the edict pillars along the long road",
+            "the different landscapes",
+            "the long road winding away"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a polished sandstone pillar, tall and smooth with a slight taper, a pale honey-gold sheen, rows of small neatly incised characters down one face and a flared bell-shaped capital at the top, rising at intervals along a long road, each in a different terrain: one on a hilltop, one beside a river, one in open plain, small and honey-gold in the evening light\nACTION: the long road winds across the wide landscape with polished pillars rising at intervals along it, one on a hilltop at the left, one by a river at the center, one on the plain at the right\nSETTING: a dusty royal road of the Mauryan empire, packed earth between rice fields and groves, mango and banyan trees along the edge, a stepped well and a few milestone stones; here a wide landscape at golden hour seen from a height, hills with dry forest at the left, a shining river at the center, a green rice plain at the right, a mango grove, a tiny caravan on the road, a pillar on each of the three terrains and a far one on the horizon, warm haze\nCAMERA: camera hangs high above the landscape, high angle, extra-long shot.\nFRAME LAYOUT: center — the road winding through the landscape; left third — a hilltop pillar; center — a riverside pillar; right third — a plain pillar; far horizon — one more pillar, tiny; lower edge — near-camera treetops.\nFACING: we look down on the landscape with the road leading toward the right horizon; the pillars show their carved faces toward camera.\nSCREEN DIRECTION: the camera sweeps from the left across the landscape toward the right; a tiny caravan moves along the road toward the right; river glints slide toward the right.\nLIGHT: low gold sun from the left, long shadows toward the right, a warm haze softening the far hills.\nPALETTE: gold light, rice green, hill brown, river silver\nDETAIL: each pillar as a small bright line with a shadow, the road's pale ribbon, textured hills, glitter on the river, tiny caravan figures\nNOT IN FRAME: close-ups, any readable letters, large figures, battle.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 8.792s; everything keeps moving at the same natural pace through the end of the 9s generation.\n0–1s: The camera sweeps over the hilltop pillar and its long shadow; the road winds away beneath it.\n1–3s: The riverside pillar glows as the river glitters; a tiny caravan moves along the road.\n3–5s: The camera glides past the plain pillar and its shadow across the green rice; the haze brightens.\n5–7s: The far pillar on the horizon comes into view and the road runs on toward it; the light deepens to orange.\n7–9s: The camera keeps sweeping across the wide landscape and more pillars appear at intervals; the golden light climbs up each shaft.\nCAMERA: a slow continuous track to the right along the road, high above the land, for the full 9 seconds.\nENVIRONMENT: river glints; haze drifts; rice fields ripple in the wind.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts",
+          "tags": {
+            "subject_type": "architecture",
+            "shot_size": "XLS",
+            "angle": "high",
+            "camera_motion": "track",
+            "location": "mauryan-road",
+            "time_light": "golden-hour"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B26",
+      "sentences": [
+        "S36",
+        "S37"
+      ],
+      "start": 221.06,
+      "end": 228.02,
+      "dur": 6.96,
+      "device": null,
+      "narration_says": "In Kalinga itself, it isn't there. At the sites in the conquered land, the rocks carry different edicts.",
+      "viewer_sees": "Beside the Kalinga coast a granite hillock with a carved stone elephant rising from its rock; Mauryan officers stand before the rock face, looking up at it",
+      "shots": [
+        {
+          "shot_id": "30",
+          "beat_id": "B26",
+          "link_group": null,
+          "t_in": 221.042,
+          "t_out": 228,
+          "use_in": 0,
+          "use_out": 6.958,
+          "use_len": 6.958,
+          "motion_budget": 6.958,
+          "gen_len": 7,
+          "source_file": "shots/part30.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "courtiers",
+            "kalinga-rock"
+          ],
+          "visual_priority": [
+            "the officials looking up at the rock",
+            "the carved stone elephant",
+            "the smooth rock face"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Mauryan court officials, men in white cotton robes with pleated sashes, cloth turbans with simple gold pins, trimmed beards, thin gold earrings, and scrolls or palm-leaf bundles in their hands, five of them standing in a row at the left third, heads tipped back, looking up at the rock face\nSUBJECT 2: a rocky hillock on the Kalinga coast, a smoothed grey granite rock face, a carved stone elephant rising from the rock above it, green rice fields and a river below, at the center and right, rising above them, with its carved elephant at the top and a long smooth face below\nACTION: five officials stand in a row at the foot of the rock with their heads tipped back, looking up at the smooth face and the carved elephant above it\nSETTING: midday on the Kalinga coast, a granite hillock with a smooth rock face and a carved stone elephant, a worn stone path leading to its foot, dry grass and a few thorn bushes, green rice fields and a silver river below at the far right, a few white clouds in a blue sky\nCAMERA: camera stands at the foot of the rock, low angle, long shot.\nFRAME LAYOUT: left third — the five officials, medium; center and right — the rock face with the carved elephant at the top, large; lower edge — near-camera path stones; far right — the rice fields and river, small and hazy.\nFACING: we see the officials from behind and in three-quarter back view, their heads tipped back and their faces toward screen-right and the rock; the elephant faces screen-left.\nSCREEN DIRECTION: the officials' gaze climbs from the left toward the upper right up the rock face; their shadows slide toward the left; a breeze moves the dry grass toward the left.\nLIGHT: bright midday sun from the upper right, crisp shadows on the rock, a gold gleam on the elephant's back.\nPALETTE: granite grey, robe white, grass gold, sky blue\nDETAIL: tool marks on the smoothed rock, the carved elephant's ears and trunk, cotton folds, thorn bush spikes, the layered green of the paddies\nNOT IN FRAME: any readable letters, soldiers, blood.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 6.958s; everything keeps moving at the same natural pace through the end of the 7s generation.\n0–1s: The officials tip their heads further back and one raises his hand to shade his eyes; a breeze lifts the dry grass.\n1–3s: The officials take a step toward the rock together and one of them points up at the elephant; the camera rises with their gaze.\n3–5s: They stop and stand at the foot of the face, murmuring to each other; the shadow of a cloud slides over the rock.\n5–7s: One official steps up and lays his palm on the smooth stone; the others watch him and the sunlight shifts on the elephant.\nCAMERA: one continuous slow push and tilt up the rock face toward the elephant for the full 7 seconds.\nENVIRONMENT: dry grass sways; cloud shadows slide over the rock; a hawk circles above.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "low",
+            "camera_motion": "push",
+            "location": "kalinga-rock",
+            "time_light": "midday-bright"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B27",
+      "sentences": [
+        "S38",
+        "S39"
+      ],
+      "start": 228.02,
+      "end": 241.18,
+      "dur": 13.16,
+      "device": null,
+      "narration_says": "They do not mention the war, or any regret. They speak to his officers, telling them that all men are his children, and that some people are being imprisoned, treated harshly and even killed without cause.",
+      "viewer_sees": "A royal reader stands before the rock addressing a row of seated Mauryan officers; the officers listen, one frowning, one lowering his eyes",
+      "shots": [
+        {
+          "shot_id": "31",
+          "beat_id": "B27",
+          "link_group": null,
+          "t_in": 228,
+          "t_out": 231.167,
+          "use_in": 0,
+          "use_out": 3.167,
+          "use_len": 3.167,
+          "motion_budget": null,
+          "gen_len": null,
+          "source_file": "shots/shot31.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "edict-rock"
+          ],
+          "visual_priority": [
+            "the edict rock with its rows of carved characters",
+            "the tool marks in the grooves",
+            "the warm raking light"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a great grey granite boulder with one face smoothed flat and cut with rows of small neat incised characters, chisel marks and fresh pale dust along the cuts, filling the frame, with its rows of small incised characters running across the smooth face and the tool marks of the stonecutters still visible in the grooves\nACTION: the carved rows run across the stone from the left edge toward the right, each stroke clean and deep, with a small lizard on a ledge at the lower right\nSETTING: the rock face in the afternoon, a worn ledge at the bottom with a thin drift of dust, a tuft of dry grass in a crack at the lower left, a small lizard on the ledge, a warm raking light across the surface\nCAMERA: camera stands close to the stone, eye level, close shot.\nFRAME LAYOUT: center — the rows of carved characters, near-camera and large; lower right — the ledge and the lizard; lower left — the grass tuft in the crack; upper edge — the lip of the smooth face, cropped.\nFACING: we face the rock face straight on; the rows run toward screen-right.\nSCREEN DIRECTION: a thin drift of dust slides along the ledge toward the left; the lizard's tail twitches toward the left; the dry grass bends toward the left.\nLIGHT: warm raking afternoon light from the right, long shadows in every groove, a gold glow on the ridges.\nPALETTE: granite grey, gold light, dust cream, lizard green\nDETAIL: crisp edges of every incised stroke, tool marks in the grooves, the grain of the granite, a thin crack with a grass tuft, the lizard's scales\nNOT IN FRAME: people, any readable letters or numbers, blood.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "CU",
+            "angle": "eye",
+            "camera_motion": "pan",
+            "location": "kalinga-rock",
+            "time_light": "afternoon-warm"
+          },
+          "render_mode": "still",
+          "still_motion": "pan-left"
+        },
+        {
+          "shot_id": "32",
+          "beat_id": "B27",
+          "link_group": null,
+          "t_in": 231.167,
+          "t_out": 241.167,
+          "use_in": 0,
+          "use_out": 10,
+          "use_len": 10,
+          "motion_budget": 10,
+          "gen_len": 10,
+          "source_file": "shots/part32.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "courtiers",
+            "kalinga-rock"
+          ],
+          "visual_priority": [
+            "the officials listening to the reader",
+            "the royal reader with the scroll",
+            "the carved rock face",
+            "the frowning officer"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Mauryan court officials, men in white cotton robes with pleated sashes, cloth turbans with simple gold pins, trimmed beards, thin gold earrings, and scrolls or palm-leaf bundles in their hands, a royal reader at the left third standing before the rock, a palm-leaf scroll in his hands, reading aloud to a row of five seated officers, one of them frowning, one lowering his eyes\nSUBJECT 2: a rocky hillock on the Kalinga coast, a smoothed grey granite rock face, a carved stone elephant rising from the rock above it, green rice fields and a river below, at the right third, with its smooth face and the carved elephant above\nACTION: the reader stands before the rock with the scroll lifted and his mouth open mid-sentence, while the five officers sit cross-legged in a row on the ground before him, one frowning and one with his eyes lowered\nSETTING: a warm afternoon at the foot of the rock on the Kalinga coast, packed earth with sparse grass, a worn stone path, a thorn bush at the left, the rice fields and a silver river far below at the right, long gold shadows, a few small birds on the rock face\nCAMERA: camera stands on the ground to the side of the row, eye level, medium shot.\nFRAME LAYOUT: left third — the reader, near-camera and large; center — the row of five seated officers, medium; right third — the rock face and the elephant, large; lower edge — near-camera dry grass.\nFACING: we see the reader in three-quarter view, his face toward screen-right and the officers; the officers show their profiles, facing screen-left toward the reader.\nSCREEN DIRECTION: the reader's scroll sweeps from the left toward the right over the row; a breeze lifts the scroll's edge toward the right; shadows lengthen toward the right.\nLIGHT: warm gold afternoon sun from the left, long shadows toward the right, a soft gleam on the rock.\nPALETTE: rock grey, robe white, earth tan, gold light\nDETAIL: the palm-leaf slats and cord of the scroll, the frowning officer's creased brow, cotton folds, a bird on a ledge, the elephant's carved ear\nNOT IN FRAME: any readable letters, soldiers, blood.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 10s; everything keeps moving at the same natural pace through the end of the 10s generation.\n0–1s: The reader lifts the scroll and reads aloud in a steady voice; the five officers sit and listen, the frowning one shaking his head slightly.\n1–3.3s: The reader turns his palm toward the officers and goes on reading; one officer lowers his eyes to the ground.\n3.3–5.5s: The reader lowers the scroll and looks along the row; an officer whispers to his neighbour.\n5.5–7.8s: The frowning officer folds his arms and looks away toward the rock; the reader lifts the scroll again and reads on.\n7.8–10s: The reader's voice carries across the slope and the officers keep listening in silence; birds flutter along the rock face.\nCAMERA: a slow continuous pan from the reader at the left toward the rock at the right for the full 10 seconds.\nENVIRONMENT: a breeze lifts the scroll and the dry grass; birds flutter on the rock; shadows lengthen.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "eye",
+            "camera_motion": "pan",
+            "location": "kalinga-rock",
+            "time_light": "afternoon-warm"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B28",
+      "sentences": [
+        "S40",
+        "S41"
+      ],
+      "start": 241.18,
+      "end": 247.52,
+      "dur": 6.34,
+      "device": null,
+      "narration_says": "Why? Perhaps a king did not think it wise to confess to the people he had conquered.",
+      "viewer_sees": "Ashoka stands on a low dais before gathered Kalingan elders, his lips closed and hands joined behind his back; a blank stone slab beside him waits uncarved",
+      "shots": [
+        {
+          "shot_id": "33",
+          "beat_id": "B28",
+          "link_group": null,
+          "t_in": 241.167,
+          "t_out": 247.5,
+          "use_in": 0,
+          "use_out": 6.333,
+          "use_len": 6.333,
+          "motion_budget": null,
+          "gen_len": null,
+          "source_file": "shots/shot33.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "ashoka",
+            "kalingans"
+          ],
+          "visual_priority": [
+            "Ashoka standing silent on the dais",
+            "the Kalingan elders looking up at him",
+            "the blank stone slab"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Ashoka, a Mauryan emperor in his forties, a strong lean face with a trimmed black beard and moustache, kohl-lined dark eyes, a white cotton robe with a deep red shoulder cloth, a gold chest chain, gold armbands and a cloth turban with a jeweled band, standing on a low dais at the left third with his hands joined behind his back, his lips closed and his eyes on the elders, a blank smooth stone slab standing uncarved beside him\nSUBJECT 2: people of Kalinga, adult men and women of the eastern coast, brown skin, dark hair tied in knots, white and indigo cotton wraps covering the body, shell and bead jewelry, with farming and fishing tools, six elders at the right third seated on the ground before the dais, grey-haired men and women in white and indigo wraps, looking up at him\nACTION: Ashoka stands on the low dais with his hands joined behind his back and his lips closed, the blank stone slab beside him, while the six elders sit and look up at him\nSETTING: a late afternoon gathering on the Kalinga hillside, a low earth dais with a woven mat, the blank smooth slab on a wooden base at the left, the grey rock face with its carved elephant far at the left, green rice fields and the river at the right, a few thatched roofs in the haze\nCAMERA: camera stands among the elders at the level of the dais, eye level, medium shot.\nFRAME LAYOUT: left third — Ashoka on the dais and the blank slab, near-camera and large, cropped at the knee; right third — the six elders seated, medium; center — the empty ground between; far right — the fields and river, hazy.\nFACING: we see Ashoka from the front in three-quarter view, his face and closed lips toward screen-right; the elders face screen-left toward him.\nSCREEN DIRECTION: a breeze lifts the end of Ashoka's shoulder cloth toward the right; dust drifts toward the left across the ground.\nLIGHT: low gold afternoon sun from the left, long shadows toward the right, a warm rim on his turban and cloak.\nPALETTE: slab grey, robe white and red, gold light, rice green\nDETAIL: the weave of the elders' wraps, grey hair and wrinkles, the polished blank face of the slab, gold glints on Ashoka's chain, dust motes in the light\nNOT IN FRAME: any readable letters, soldiers, weapons.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "eye",
+            "camera_motion": "locked",
+            "location": "kalinga-rock",
+            "time_light": "late-afternoon"
+          },
+          "render_mode": "still",
+          "still_motion": "hold"
+        }
+      ]
+    },
+    {
+      "beat_id": "B29",
+      "sentences": [
+        "S42",
+        "S43"
+      ],
+      "start": 247.52,
+      "end": 255.84,
+      "dur": 8.32,
+      "device": null,
+      "narration_says": "Perhaps, as some scholars suggest, the account of the war was written for people far away, who could not check it. Nobody knows.",
+      "viewer_sees": "A lone rider on a long road crosses sand dunes toward a far frontier town, a scroll case at his saddle, a stone pillar at the roadside and endless sand beyond",
+      "shots": [
+        {
+          "shot_id": "34",
+          "beat_id": "B29",
+          "link_group": null,
+          "t_in": 247.5,
+          "t_out": 255.833,
+          "use_in": 0,
+          "use_out": 8.333,
+          "use_len": 8.333,
+          "motion_budget": 8.333,
+          "gen_len": 9,
+          "source_file": "shots/part34.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "visual_priority": [
+            "the lone rider on the dune road",
+            "the stone pillar at the roadside",
+            "the far frontier town",
+            "the endless sand"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a lone rider on a bay horse crossing a long road of tan sand dunes toward a far walled frontier town, a leather scroll case at his saddle, a single stone pillar standing at the roadside and endless sand beyond\nACTION: the rider has just reined in beside the roadside pillar at the left, his leather scroll case at the saddle, with the far walled town small at the right and rippled dunes around\nSETTING: a desert frontier road in the midday heat, tan sand dunes with wind-sculpted crests, a faint track of hoofprints, a pale blue sky with a haze on the horizon, a mud-brick walled town with a gate tower small at the far right, a few dry thorn bushes\nCAMERA: camera stands on a dune crest, eye level, extra-long shot.\nFRAME LAYOUT: left third — the rider and the pillar, medium; center — the sand road winding across the dunes; far right — the walled town, small and hazy; lower edge — near-camera dune crest with rippled sand.\nFACING: we see the rider in profile with his horse facing toward screen-right and the town; the pillar shows its carved face toward camera.\nSCREEN DIRECTION: the rider rides from the left toward the right along the road; sand streams off the dune crests toward the right; the horse's tail streams toward the left.\nLIGHT: hard midday sun from above and slightly left, short crisp shadows, a pale shimmering haze.\nPALETTE: sand tan, sky pale blue, horse bay brown, town ochre\nDETAIL: rippled sand patterns, hoofprints in the track, the horse's muscles, the leather case and straps, the pillar's thin shadow\nNOT IN FRAME: close-ups of faces, any readable letters, other riders, water.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 8.333s; everything keeps moving at the same natural pace through the end of the 9s generation.\n0–1s: The rider urges the horse forward along the road and sand kicks up behind its hooves; wind streams sand off the dune crests.\n1–3s: The horse trots along the sand road, the scroll case bouncing at the saddle; the pillar slides away toward the left.\n3–5s: Heat shimmer ripples over the dunes as the rider crosses a long stretch of sand; the walled town grows slightly.\n5–7s: The rider passes another dune crest and the horse leans into the climb; sand streams down the slope in thin rivers.\n7–9s: The horse reaches the top of the crest and the road runs on toward the town; the haze trembles in the heat.\nCAMERA: a slow continuous track to the right following the rider across the dunes for the full 9 seconds.\nENVIRONMENT: sand streams off the crests; heat shimmer ripples; a hawk glides across the pale sky.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts",
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "XLS",
+            "angle": "eye",
+            "camera_motion": "track",
+            "location": "frontier-road",
+            "time_light": "midday-haze"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B30",
+      "sentences": [
+        "S44",
+        "S45"
+      ],
+      "start": 255.84,
+      "end": 265.16,
+      "dur": 9.32,
+      "device": "timeline-seasons",
+      "narration_says": "Then the world forgot the writing itself. The script, Brahmi, went out of use, and for some two thousand years nobody could read it.",
+      "viewer_sees": "TIMELINE/SEASONS — one fixed view of a pillar in a field: seasons turn, moss and vines creep up the carved letters, village rooftops appear and change, until the writing is hidden",
+      "shots": [
+        {
+          "shot_id": "35",
+          "beat_id": "B30",
+          "link_group": null,
+          "t_in": 255.833,
+          "t_out": 265.167,
+          "use_in": 0,
+          "use_out": 9.334,
+          "use_len": 9.334,
+          "motion_budget": 9.334,
+          "gen_len": 10,
+          "source_file": "shots/part35.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "edict-pillar"
+          ],
+          "visual_priority": [
+            "the edict pillar with its carved rows",
+            "the creepers and moss climbing the shaft",
+            "the turning seasons",
+            "the village roofs in the distance"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a polished sandstone pillar, tall and smooth with a slight taper, a pale honey-gold sheen, rows of small neatly incised characters down one face and a flared bell-shaped capital at the top, standing in a field at the center, seen from a fixed view, its carved rows slowly vanishing as moss and creepers climb the shaft and the seasons turn around it\nACTION: the pillar stands at the center of the field in clear green summer light with its carved rows fully visible and the village roofs small at the far right, before the seasons begin to turn\nSETTING: a fixed view of an open field with a pillar, a green summer meadow, a few small thatched roofs and a grove at the far right, a low line of hills, a large pale sky with white clouds, a bare tree at the left that will change with the seasons\nCAMERA: camera is fixed on a tripod-steady view at a distance, eye level, long shot.\nFRAME LAYOUT: center — the pillar, large and clear; left third — the bare tree, medium; right third — the village roofs and grove, small and hazy; lower edge — near-camera grass.\nFACING: from the fixed view we see the carved face of the pillar toward camera and the field spread around it.\nSCREEN DIRECTION: light and shadow sweep across the field from the left toward the right as the days turn; creepers climb the shaft toward the capital.\nLIGHT: clear summer light from the upper left that shifts through gold, grey and white over the cycle of seasons.\nPALETTE: summer green, pillar honey-gold, sky blue, creeper dark green\nDETAIL: the carved rows slowly covered by moss and creepers, grass changing from green to gold to snow-pale grey, roofs of the village changing, seasonal clouds\nNOT IN FRAME: people in close-up, any readable letters, a camera move, modern objects.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 9.334s; everything keeps moving at the same natural pace through the end of the 10s generation.\n0–1s: Summer light sweeps across the field and the grass turns from green to gold; a first thin creeper curls up the base of the pillar.\n1–3.3s: The sky greys and the bare tree loses its leaves; the creepers climb higher and moss spreads across the lower carved rows.\n3.3–5.5s: Winter light turns the field pale and a thin mist drifts through; the village roofs change and the creepers reach the middle of the shaft.\n5.5–7.8s: Spring rain shimmers across the field and new leaves open on the tree; moss and creepers cover most of the carved rows.\n7.8–10s: The seasons turn once more and the field greens and golds again; the creepers wrap the whole shaft and the writing disappears under them.\nCAMERA: locked on the pillar from a fixed view for the full 10 seconds.\nENVIRONMENT: clouds race across the sky; grass changes color; creepers grow up the shaft.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts",
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "LS",
+            "angle": "eye",
+            "camera_motion": "locked",
+            "location": "edict-pillar",
+            "time_light": "season-cycle"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B31",
+      "sentences": [
+        "S46"
+      ],
+      "start": 265.16,
+      "end": 269.17,
+      "dur": 4.01,
+      "device": null,
+      "narration_says": "Buddhist legends kept the memory of Ashoka, but not his words.",
+      "viewer_sees": "Monks in saffron robes chant before a white domed stupa at dusk, oil lamps lit along its base",
+      "shots": [
+        {
+          "shot_id": "36",
+          "beat_id": "B31",
+          "link_group": null,
+          "t_in": 265.167,
+          "t_out": 269.167,
+          "use_in": 0,
+          "use_out": 4,
+          "use_len": 4,
+          "motion_budget": null,
+          "gen_len": null,
+          "source_file": "shots/shot36.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "monks"
+          ],
+          "visual_priority": [
+            "the monks chanting before the stupa",
+            "the white domed stupa",
+            "the oil lamps along its base"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Buddhist monks of India, men with shaved heads and plain saffron robes draped over both shoulders, wooden alms bowls and cloth bags, calm faces, eight of them seated in rows before a white domed stupa at the center, chanting with their eyes closed, small oil lamps lit along the base of the dome\nACTION: the monks sit cross-legged in rows before the white domed stupa at the center, their hands resting on their knees, the oil lamps along the base of the dome just lit\nSETTING: a courtyard at dusk with a white-plastered domed stupa on a round stone base with a railing of carved posts, a ring of tiny oil lamps along the base, a gate arch of stone at the left, a few banyan trees, a deep blue sky with the first stars\nCAMERA: camera stands at the edge of the court, eye level, long shot.\nFRAME LAYOUT: center — the white stupa, large; lower third — the rows of seated monks, medium; left third — the gate arch, small and hazy; right third — a banyan tree; lower edge — near-camera lamps.\nFACING: we see the monks from behind and in three-quarter back view, facing the stupa; the stupa shows its dome and railing to camera.\nSCREEN DIRECTION: smoke from the lamps rises and drifts toward the right; the monks sway slightly in unison toward the right; a breeze lifts their robe edges toward the right.\nLIGHT: warm gold light from the oil lamps along the stupa's base, a deep blue dusk sky above, soft violet shadow in the court.\nPALETTE: plaster white, saffron, lamp gold, dusk blue\nDETAIL: the carved railing posts, lamp flames in small clay bowls, saffron robe folds, the plaster curve of the dome, the first stars\nNOT IN FRAME: close-ups of faces, any text, soldiers, Ashoka.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "eye",
+            "camera_motion": "push",
+            "location": "stupa-court",
+            "time_light": "dusk-lamplit"
+          },
+          "render_mode": "still",
+          "still_motion": "push"
+        }
+      ]
+    },
+    {
+      "beat_id": "B32",
+      "sentences": [
+        "S47",
+        "S48"
+      ],
+      "start": 269.17,
+      "end": 286.08,
+      "dur": 16.91,
+      "device": null,
+      "narration_says": "In the fourteenth century, the sultan Firuz Shah Tughlaq had two of the pillars carried to Delhi. According to a chronicle of his court, he asked Brahmin scholars what they said, and they told him that the inscriptions foretold that only a king named Firuz could ever move them.",
+      "viewer_sees": "Hundreds of men haul a massive stone pillar lying on a huge wheeled cart with thick ropes toward a river while a sultan on horseback watches; then Brahmin scholars gather around the pillar, one shaking his head",
+      "shots": [
+        {
+          "shot_id": "37",
+          "beat_id": "B32",
+          "link_group": null,
+          "t_in": 269.167,
+          "t_out": 277.667,
+          "use_in": 0,
+          "use_out": 8.5,
+          "use_len": 8.5,
+          "motion_budget": 8.5,
+          "gen_len": 9,
+          "source_file": "shots/part37.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "firuz",
+            "edict-pillar"
+          ],
+          "visual_priority": [
+            "Firuz Shah watching the haul from his horse",
+            "the pillar on its huge cart",
+            "the hundreds of men on the ropes",
+            "the river ahead"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Sultan Firuz Shah Tughlaq, a bearded man of about sixty, a tall white turban with a gold band, a long dark green court robe with gold braid, a jeweled belt and a curved sword, mounted at the left third on a white horse, watching the haul with a calm face, a retinue of horsemen behind his shoulder\nSUBJECT 2: a polished sandstone pillar, tall and smooth with a slight taper, a pale honey-gold sheen, rows of small neatly incised characters down one face and a flared bell-shaped capital at the top, lying on its side on a huge wheeled timber cart at the center, wrapped in raw silk and reeds, with hundreds of men hauling the cart by thick ropes toward a river at the right\nACTION: Firuz Shah sits on his white horse at the left watching, while hundreds of men stand along the ropes ahead of the huge cart with the pillar on it, ready to haul toward the river at the right\nSETTING: a bright afternoon on the plain in the fourteenth century, a dusty haul road toward a wide river with moored boats at the far right, a cart of heavy timber on many wooden wheels, ropes as thick as an arm running from its front to the haulers, a few banners of green silk, a dry plain with scattered acacias\nCAMERA: camera stands on a rise beside the road, slightly high angle, long shot.\nFRAME LAYOUT: left third — Firuz Shah and the horsemen, medium; center — the pillar on its cart, large; center and right — the ropes and the long mass of haulers, medium to small; far right — the river and the moored boats, small and hazy.\nFACING: we see Firuz in profile with his face toward screen-right and the cart; the haulers lean forward with their backs partly to camera, facing screen-right.\nSCREEN DIRECTION: the haulers pull from the center toward the right; the cart rolls slowly toward the right; dust drifts toward the left.\nLIGHT: bright afternoon sun from the upper left, crisp shadows, a warm haze of dust over the haulers.\nPALETTE: plain tan, banner green, rope brown, river blue\nDETAIL: the hauling ropes straining taut, men as small figures bent in a line, the wooden wheels, the pillar wrapped in silk and reeds, the horse's trappings\nNOT IN FRAME: close-ups of faces, any text, blood.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 8.5s; everything keeps moving at the same natural pace through the end of the 9s generation.\n0–1s: The haulers heave on the ropes and the great cart groans into motion; Firuz Shah watches from his horse, his head turning to follow it.\n1–3s: The cart rolls forward on its heavy wheels with the pillar swaying slightly in its silk wrapping; dust billows from beneath.\n3–5s: More men take up the ropes and the long line of haulers leans in unison toward the right; Firuz's banner ripples.\n5–7s: The cart crosses a dip and the haulers surge to keep it moving; the horsemen at the left walk their horses alongside.\n7–9s: The pillar glints in the sun as the cart rolls on toward the river and the boats; the dust thickens over the plain.\nCAMERA: a slow continuous pan to the right following the cart toward the river for the full 9 seconds.\nENVIRONMENT: dust billows; banners ripple; the river glints in the distance.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "LS",
+            "angle": "eye",
+            "camera_motion": "pan",
+            "location": "delhi-sultanate",
+            "time_light": "afternoon-warm"
+          }
+        },
+        {
+          "shot_id": "38",
+          "beat_id": "B32",
+          "link_group": null,
+          "t_in": 277.667,
+          "t_out": 286.083,
+          "use_in": 0,
+          "use_out": 8.416,
+          "use_len": 8.416,
+          "motion_budget": 8.416,
+          "gen_len": 9,
+          "source_file": "shots/part38.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "brahmin",
+            "edict-pillar"
+          ],
+          "visual_priority": [
+            "the Brahmin scholars gathered around the pillar",
+            "the scholar shaking his head",
+            "the carved rows they cannot read"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Brahmin scholars of India, older men in white cotton robes with shoulder cloths, shaved heads with a topknot, forehead marks, grey beards and palm-leaf manuscripts in their hands, five of them gathered around the pillar at the left and center, peering at its carved rows, one pointing at a line, one shaking his head, two murmuring together\nSUBJECT 2: a polished sandstone pillar, tall and smooth with a slight taper, a pale honey-gold sheen, rows of small neatly incised characters down one face and a flared bell-shaped capital at the top, standing upright at the right third, its carved rows of strange characters facing the scholars\nACTION: five Brahmin scholars crowd around the pillar looking up at its carved rows, one scholar pointing at a line with a long finger while another shakes his head\nSETTING: a courtyard of a fourteenth-century palace in Delhi, a high sandstone wall with arched niches and a pointed gateway at the left, the pillar set up on a stone base in the courtyard, a few attendants in green at the far left, a polished stone floor, a blue sky with scattered clouds\nCAMERA: camera stands in the courtyard near the foot of the pointed gateway, eye level, medium shot.\nFRAME LAYOUT: left and center — the five scholars gathered, large; right third — the pillar and its carved rows, large; far left — the pointed gateway and attendants, small and hazy; lower edge — near-camera floor.\nFACING: we see the scholars in three-quarter back and side views, their faces turned toward screen-right and the carved rows; the pillar faces camera.\nSCREEN DIRECTION: the scholars' gaze and pointing finger move from the left across the rows toward the right; the manuscripts flutter toward the right in a breeze.\nLIGHT: warm afternoon sun from the upper left, crisp shadows on the stone floor, a soft glow on the pillar.\nPALETTE: sandstone honey, robe white, green, blue sky\nDETAIL: grey beards and topknots, palm-leaf manuscripts in hand, the deep-cut rows on the pillar, cotton folds, forehead marks\nNOT IN FRAME: any readable letters, weapons, Firuz in close-up.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 8.416s; everything keeps moving at the same natural pace through the end of the 9s generation.\n0–1s: The scholars crowd close to the pillar and peer at the rows; one scholar lifts his long finger and traces a line of characters.\n1–3s: Two scholars murmur and compare notes on their palm leaves while a third shakes his head slowly and turns away.\n3–5s: The scholar at the pillar steps back and spreads his hands as if baffled; a manuscript flutters in the breeze.\n5–7s: The scholars gather in a tight circle and speak together in low voices, glancing up at the pillar again and again.\n7–9s: One of them steps forward and gestures broadly at the rows as the others fall silent; the sun slides up the pillar.\nCAMERA: one continuous slow push toward the scholars and the carved pillar for the full 9 seconds.\nENVIRONMENT: manuscript leaves flutter; dust motes drift; light slides up the pillar.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "eye",
+            "camera_motion": "push",
+            "location": "delhi-sultanate",
+            "time_light": "afternoon-warm"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B33",
+      "sentences": [
+        "S49"
+      ],
+      "start": 286.08,
+      "end": 295.28,
+      "dur": 9.2,
+      "device": null,
+      "narration_says": "In 1837, the British scholar James Prinsep deciphered the script, and a king known mostly through stories began to speak for himself again.",
+      "viewer_sees": "In an 1830s study in Calcutta a British scholar at a desk piled with ink rubbings of carved letters compares one sheet to another, a pundit beside him pointing, a lamp lit",
+      "shots": [
+        {
+          "shot_id": "39",
+          "beat_id": "B33",
+          "link_group": null,
+          "t_in": 286.083,
+          "t_out": 295.292,
+          "use_in": 0,
+          "use_out": 9.209,
+          "use_len": 9.209,
+          "motion_budget": 9.209,
+          "gen_len": 10,
+          "source_file": "shots/part39.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "prinsep",
+            "brahmin"
+          ],
+          "visual_priority": [
+            "Prinsep comparing two rubbings",
+            "the pundit pointing at a line",
+            "the desk of ink rubbings",
+            "the lamp"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: James Prinsep, a slender British scholar in his late thirties, sandy hair and side whiskers, a dark Victorian frock coat with a high white collar and cravat, ink on his fingers, seated at a desk piled with sheets of ink rubbings, holding one rubbing up beside another and comparing them closely, a pencil behind his ear\nSUBJECT 2: Brahmin scholars of India, older men in white cotton robes with shoulder cloths, shaved heads with a topknot, forehead marks, grey beards and palm-leaf manuscripts in their hands, one pundit standing at his shoulder, an older man in white, pointing with a thin finger at a line of characters\nACTION: Prinsep holds one sheet of ink rubbing beside another at the lamp with a furrowed brow, while the pundit at his shoulder points a thin finger at a line on the first sheet\nSETTING: a study in Calcutta in the 1830s at night, a heavy teak desk piled with large sheets of ink rubbings of carved characters, an oil lamp with a glass chimney, an inkwell and pens, a shelf of books, a shuttered window and a punkah fan hanging unmoving in the corner, a map on the wall\nCAMERA: camera stands across the desk, eye level, medium shot.\nFRAME LAYOUT: center — Prinsep and the two sheets, near-camera and large; right third — the pundit at his shoulder, medium; left third — the lamp and the pile of rubbings; upper edge — the shelf of books, soft.\nFACING: we see Prinsep three-quarter on, his face lowered toward the sheets and his eyes toward screen-right; the pundit shows his profile, facing screen-left toward the sheets.\nSCREEN DIRECTION: the pundit's finger moves from the right along the line toward the left; Prinsep's eyes follow it; the lamp flame leans toward the right.\nLIGHT: warm oil-lamp light from the left, a gold pool on the desk and faces, deep brown shadow on the shelves.\nPALETTE: lamp amber, rubbing grey-white, coat black, teak brown\nDETAIL: the black ink rubbings with white-cut characters, ink stains on Prinsep's fingers, the glass of the lamp, the pundit's grey beard and white robe, wood grain\nNOT IN FRAME: readable Latin text, any other people, daylight.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 9.209s; everything keeps moving at the same natural pace through the end of the 10s generation.\n0–1s: Prinsep lifts the two sheets side by side in the lamplight and his eyes jump between them; the pundit leans over his shoulder.\n1–3.3s: The pundit points a thin finger at a line and speaks softly; Prinsep takes the pencil from behind his ear and makes a note.\n3.3–5.5s: Prinsep lays one sheet down and pulls another from the pile, laying the two side by side; the lamp flame flickers.\n5.5–7.8s: He taps the same character on both sheets and looks up at the pundit with sudden excitement; the pundit nods.\n7.8–10s: Prinsep bends over the desk and writes quickly, the pundit pointing on; the lamp light glows on the paper.\nCAMERA: one continuous slow push toward Prinsep and the rubbings for the full 10 seconds.\nENVIRONMENT: the lamp flame flickers; moths circle; the paper edges stir in the draft.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts",
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "eye",
+            "camera_motion": "push",
+            "location": "prinsep-study",
+            "time_light": "lamplight-warm"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B34",
+      "sentences": [
+        "S50",
+        "S51"
+      ],
+      "start": 295.28,
+      "end": 303.52,
+      "dur": 8.24,
+      "device": null,
+      "narration_says": "In most of his edicts, he does not even use his own name. He calls himself only Beloved of the Gods.",
+      "viewer_sees": "Ashoka stands alone under an open sky, face tilted upward toward the light, cranes crossing above him; nothing identifies him in the frame",
+      "shots": [
+        {
+          "shot_id": "40",
+          "beat_id": "B34",
+          "link_group": null,
+          "t_in": 295.292,
+          "t_out": 303.5,
+          "use_in": 0,
+          "use_out": 8.208,
+          "use_len": 8.208,
+          "motion_budget": 8.208,
+          "gen_len": 9,
+          "source_file": "shots/part40.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "ashoka"
+          ],
+          "visual_priority": [
+            "Ashoka alone with his face tilted to the sky",
+            "the cranes crossing above him",
+            "the open sky and the light"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: Ashoka, a Mauryan emperor in his forties, a strong lean face with a trimmed black beard and moustache, kohl-lined dark eyes, a white cotton robe with a deep red shoulder cloth, a gold chest chain, gold armbands and a cloth turban with a jeweled band, standing alone under an open sky, his face tilted upward into the light, a white cloth lifted by the wind, with nothing in the frame to name him\nACTION: Ashoka stands alone in an open field with his arms relaxed at his sides and his face tilted up into the morning light, a flock of cranes just coming into view in the sky above him\nSETTING: an open field under a huge morning sky, short green grass, a line of faint hills far off, wide soft clouds lit gold from below, a flock of cranes in a long wavering line crossing high above, a clear pale light and no building or object near him\nCAMERA: camera stands in the grass at his feet, low angle, long shot.\nFRAME LAYOUT: center — Ashoka, large against the sky, cropped at the knee; upper third — the open sky with the line of cranes; left third — clouds; right third — clouds and light; lower edge — near-camera grass.\nFACING: we see Ashoka from the front, his face tilted up and his eyes toward the sky; his robe lifts toward screen-left.\nSCREEN DIRECTION: the cranes fly in a line from the right edge toward the left across the sky; his shoulder cloth lifts toward the left; clouds drift toward the left.\nLIGHT: clear golden morning light from the upper right, a warm glow on his face and his raised chin, long soft shadow toward the left.\nPALETTE: sky pale gold, robe white and red, cloud cream, grass green\nDETAIL: the wind-lifted folds of his cloth, the glow on his beard and brow, the crane wing shapes, cloud edges lit with gold, grass blades\nNOT IN FRAME: crowns, a throne, other people, any text, buildings.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 8.208s; everything keeps moving at the same natural pace through the end of the 9s generation.\n0–1s: Ashoka lifts his face a little higher and breathes in; the first cranes cross the sky above him.\n1–3s: The line of cranes flies steadily from the right toward the left across the clouds; his shoulder cloth stirs.\n3–5s: He lifts one open hand toward the sky and lowers it; the wind combs the grass around his feet.\n5–7s: More cranes appear and sweep in long wavering lines overhead while he watches; the light brightens across the clouds.\n7–9s: The camera drifts back as he stands with his face to the light; the cranes carry on across the wide sky.\nCAMERA: one continuous slow pull back from Ashoka for the full 9 seconds.\nENVIRONMENT: the grass ripples; clouds drift; the cranes call faintly and the light brightens.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts",
+          "tags": {
+            "subject_type": "character",
+            "shot_size": "LS",
+            "angle": "low",
+            "camera_motion": "pull",
+            "location": "edict-pillar",
+            "time_light": "morning-clear"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B35",
+      "sentences": [
+        "S52"
+      ],
+      "start": 303.52,
+      "end": 309.8,
+      "dur": 6.28,
+      "device": null,
+      "narration_says": "Today, the lion carved on top of one of his pillars is the emblem of the Republic of India.",
+      "viewer_sees": "The four-lion capital on top of a polished pillar at dawn, the stone lions facing four ways and gold light on their manes",
+      "shots": [
+        {
+          "shot_id": "41",
+          "beat_id": "B35",
+          "link_group": null,
+          "t_in": 303.5,
+          "t_out": 309.792,
+          "use_in": 0,
+          "use_out": 6.292,
+          "use_len": 6.292,
+          "motion_budget": null,
+          "gen_len": null,
+          "source_file": "shots/shot41.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "lion-capital"
+          ],
+          "visual_priority": [
+            "the four-lion capital",
+            "the gold dawn light on the manes",
+            "the tall polished pillar"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: the four-lion capital, four polished sandstone lions seated back to back facing four directions on a round slab carved with a wheel and four animals, honey-gold stone, crowning a tall polished pillar, the four stone lions facing four ways with gold light on their manes, set against a pale dawn sky\nACTION: the four lions sit back to back on their round slab at the top of the tall pillar, their faces turned out toward the four directions, the dawn light catching their carved manes\nSETTING: dawn at a pillar site, a tall polished shaft rising from the lower edge of the frame, a pale gold sky with thin streaks of cloud, a few small birds in flight and the soft blur of green trees at the far lower corners\nCAMERA: camera stands at the pillar's foot looking up, low angle, close shot.\nFRAME LAYOUT: center — the four-lion capital, near-camera and large; lower third — the top of the polished shaft; upper edge — the pale gold sky and the birds; far lower corners — blurred trees.\nFACING: we see two lions in profile and one lion's face turned toward screen-right at the front, the others turned away; the carved wheel on the slab faces camera.\nSCREEN DIRECTION: the light slides across the manes from the right toward the left; two small birds cross the sky from the left toward the right.\nLIGHT: low gold dawn light from the right, a bright rim on every mane and nose, soft blue shadow on the shaft.\nPALETTE: stone honey-gold, dawn pink, sky pale blue, shadow blue\nDETAIL: the carved curls of the manes, the polished sheen of the sandstone, the wheel and animals carved on the slab, grain in the stone\nNOT IN FRAME: people, any text, modern objects, flags.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "CU",
+            "angle": "low",
+            "camera_motion": "pull",
+            "location": "lion-pillar",
+            "time_light": "dawn-gold"
+          },
+          "render_mode": "still",
+          "still_motion": "pull"
+        }
+      ]
+    },
+    {
+      "beat_id": "B36",
+      "sentences": [
+        "S53"
+      ],
+      "start": 309.8,
+      "end": 318.1,
+      "dur": 8.3,
+      "device": "empty-aftermath",
+      "narration_says": "Of all the places where Ashoka said he was sorry, the one place where we do not find it is the land that paid for the war.",
+      "viewer_sees": "EMPTY AFTERMATH — a wide view of the Kalinga hillside with green fields and a river below and a bare smooth rock face with no carving on it, the wind moving the grass",
+      "shots": [
+        {
+          "shot_id": "42",
+          "beat_id": "B36",
+          "link_group": null,
+          "t_in": 309.792,
+          "t_out": 318.083,
+          "use_in": 0,
+          "use_out": 8.291,
+          "use_len": 8.291,
+          "motion_budget": 8.291,
+          "gen_len": 9,
+          "source_file": "shots/part42.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "kalinga-rock"
+          ],
+          "visual_priority": [
+            "the rock at Dhauli with its bare face",
+            "the green fields below",
+            "the slow river",
+            "the soft dusk"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a rocky hillock on the Kalinga coast, a smoothed grey granite rock face, a carved stone elephant rising from the rock above it, green rice fields and a river below, seen from far above, a bare smooth rock face with no carving of letters on it, the carved elephant above, green fields and a slow river below, the wind moving the grass\nACTION: the bare smooth rock face lies at the center of the wide Kalinga hillside with the carved elephant above it, the green fields and the river spreading below and no figure anywhere\nSETTING: a soft dusk on the Kalinga coast, a long view over rice paddies in bright green and the river glinting silver as it winds toward a far pale sea, a few thatched roofs and palm groves, thin smoke from cooking fires, a violet and rose sky\nCAMERA: camera hangs high above the hillside and out over the plain, high angle, extra-long shot.\nFRAME LAYOUT: upper center — the rock and its bare face, medium; lower two thirds — the green fields and the river winding toward the right; far right — the pale sea, small and hazy; lower edge — near-camera palm tops.\nFACING: we look down on the hillside with the bare rock face turned toward camera; the river runs toward screen-right.\nSCREEN DIRECTION: the camera rises away from the rock; grass waves toward the left; river glints slide toward the right; smoke threads lean toward the left.\nLIGHT: soft violet-rose dusk light from the right, a gentle glow on the river, long soft shadows toward the left.\nPALETTE: rice green, river silver, rock grey, dusk rose\nDETAIL: the pattern of paddies in rows, tiny palms, the thin river, the grain of the bare stone, thin smoke from the roofs, soft clouds\nNOT IN FRAME: people, any readable letters, soldiers, battle.",
+          "animation_prompt": "MOTION BUDGET: key action lands by 8.291s; everything keeps moving at the same natural pace through the end of the 9s generation.\n0–1s: The camera begins to rise over the hillside and the bare rock face shrinks; grass waves across the slope.\n1–3s: The green paddies spread out below in neat rows and the river glints silver as it winds; palm tops sway.\n3–5s: The camera keeps rising and the whole coastal plain opens out toward the pale sea; thin smoke threads lean over the roofs.\n5–7s: The rock grows small on the hill as the dusk deepens to rose and violet; birds cross the plain.\n7–9s: The wide Kalinga landscape lies open under the dusk sky, the river carrying the last light toward the sea.\nCAMERA: one continuous slow pull up and back from the rock for the full 9 seconds.\nENVIRONMENT: grass waves; river glints; birds cross the plain; smoke threads drift.\nPRESERVE: same characters, clothing, props, architecture, palette and composition as the source image\nFORBID: cuts, scene changes, new characters, on-screen text, camera teleports, style shifts",
+          "tags": {
+            "subject_type": "environment",
+            "shot_size": "XLS",
+            "angle": "high",
+            "camera_motion": "pull",
+            "location": "kalinga-rock",
+            "time_light": "dusk-soft"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B37",
+      "sentences": [
+        "S54",
+        "S55",
+        "S56"
+      ],
+      "start": 318.1,
+      "end": 332.826,
+      "dur": 14.726,
+      "device": null,
+      "narration_says": "Some of history's most honest words were carved in stone, and then lost for centuries. If you like forgotten stories and turning points like this, leave a like and subscribe to Animated Tales. Until next time.",
+      "viewer_sees": "END CARD",
+      "shots": [
+        {
+          "shot_id": "43",
+          "beat_id": "B37",
+          "link_group": null,
+          "t_in": 318.083,
+          "t_out": 325.292,
+          "use_in": 0,
+          "use_out": 7.209,
+          "use_len": 7.209,
+          "motion_budget": null,
+          "gen_len": null,
+          "source_file": "shots/shot43.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "edict-pillar"
+          ],
+          "visual_priority": [
+            "the edict pillar leaning in tall grass",
+            "the creepers and moss over the carved rows",
+            "the distant village"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSUBJECT: a polished sandstone pillar, tall and smooth with a slight taper, a pale honey-gold sheen, rows of small neatly incised characters down one face and a flared bell-shaped capital at the top, leaning slightly in tall grass at dusk, creepers over its lower rows and moss in the carved characters, a distant village with a thin thread of smoke far at the right\nACTION: the pillar leans slightly at the center of a wide meadow of tall grass, creepers climbing its lower shaft and moss filling the carved rows, with the soft dusk behind it\nSETTING: a meadow at dusk, tall pale grass in waves, scattered white flowers, a distant village with a few thatched roofs and a thin smoke thread at the far right, low hills in violet haze, a pale rose sky with the first star, a few bats as tiny marks\nCAMERA: camera stands in the grass at a distance, eye level, long shot.\nFRAME LAYOUT: center — the leaning pillar, large; right third — the distant village, small and hazy; left third — tall grass, soft; upper edge — the rose sky and the first star; lower edge — near-camera grass.\nFACING: the pillar shows its creeper-wrapped carved side toward camera, leaning a little toward screen-left.\nSCREEN DIRECTION: the tall grass waves from the left toward the right; the village smoke leans toward the right; a bat crosses the sky toward the right.\nLIGHT: soft rose dusk light from the right, a faint gold rim on the pillar's edge, deep violet shadow in the grass.\nPALETTE: dusk rose, grass pale gold, pillar honey-grey, hill violet\nDETAIL: moss in the carved grooves, creeper leaves, individual grass seed heads, white flower specks, a hint of the polished sheen under the moss\nNOT IN FRAME: people, any readable letters, modern objects, fire.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "object",
+            "shot_size": "LS",
+            "angle": "eye",
+            "camera_motion": "pull",
+            "location": "edict-pillar",
+            "time_light": "dusk-soft"
+          },
+          "render_mode": "still",
+          "still_motion": "pull"
+        },
+        {
+          "shot_id": "44",
+          "beat_id": "B37",
+          "link_group": null,
+          "t_in": 325.292,
+          "t_out": 332.833,
+          "use_in": 0,
+          "use_out": 7.541,
+          "use_len": 7.541,
+          "motion_budget": null,
+          "gen_len": null,
+          "source_file": "shots/shot44.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "ashoka",
+            "kalingans",
+            "edict-pillar"
+          ],
+          "visual_priority": [
+            "Ashoka at the far left third",
+            "the Kalingan elder at the far right third",
+            "the title across the upper third",
+            "the SUBSCRIBE button at the exact center",
+            "the pillar, the carved rock and the sword and wheel at the lower edge"
+          ],
+          "image_prompt": "STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.\nSHOT: one epic poster of the whole story — the emperor who won the war and carved his regret, the people of Kalinga who paid for it, the army marching toward the coast, the rock where the words were cut, the polished pillar, and the sword and the stone wheel that tell what he gave up.\nSUBJECT: Ashoka, a Mauryan emperor in his forties, a strong lean face with a trimmed black beard and moustache, kohl-lined dark eyes, a white cotton robe with a deep red shoulder cloth, a gold chest chain, gold armbands and a cloth turban with a jeweled band, at the far left third, near-camera and large, cropped at the chest, his turban and gold chain bright, his face grave and level, turned toward the right\nSUBJECT 2: people of Kalinga, adult men and women of the eastern coast, brown skin, dark hair tied in knots, white and indigo cotton wraps covering the body, shell and bead jewelry, with farming and fishing tools, one elder woman at the far right third, near-camera and large, cropped at the chest, in a white and indigo wrap, her face calm and dignified, turned toward the left\nSUBJECT 3: a polished sandstone pillar, tall and smooth with a slight taper, a pale honey-gold sheen, rows of small neatly incised characters down one face and a flared bell-shaped capital at the top, a polished pillar rising at the lower center-left of the frame, small and far, its rows of characters pale in the light\nTITLE: \"THE EMPEROR WHO WON A WAR AND CARVED HIS REGRET IN STONE\" in large carved sandstone capitals in warm gold with a chiseled edge; under it, a thin ornamental line and the words \"A VICTOR'S REGRET IN STONE\".\nBUTTON: at the exact center of the frame, a red rounded pill-shaped button with a thin gold rim, \"SUBSCRIBE\" in bold cream capitals, a small gold diamond on each side.\nACTION: the emperor and the Kalingan elder face each other across the center; between them, far and small, the Mauryan army marches in square blocks along the left horizon toward a green Kalinga coast at the right, the granite rock with its carved elephant stands on a hill beside a river, and a polished pillar rises on a plain; at the lower edge lie a sheathed sword and a carved stone wheel side by side\nSETTING: an epic painted poster backdrop of India at golden dusk, a wide plain with the Mauryan army in blocks at the left, the green Kalinga coast with rice paddies and a river at the right, a granite hill with a carved elephant, a polished pillar on the plain, a distant white stupa, a huge warm sky streaked with gold\nCAMERA: camera holds square on the two figures at their level, eye level, medium wide.\nFRAME LAYOUT: upper third — the title across the dusk sky; far left third — Ashoka, near-camera and large, cropped at the chest; far right third — the Kalingan elder, near-camera and large, cropped at the chest; center — the SUBSCRIBE button, with the marching army and the pillar at the left, the Kalinga coast, the river and the granite rock at the right, all far and small; lower edge — near-camera, a sheathed sword at the left of center and a carved stone wheel at the right of center.\nFACING: Ashoka turns his face to camera from the left side, eyes toward screen-right and the elder; the elder shows her face three-quarter, eyes toward screen-left and the emperor; the small army marches toward screen-right.\nSCREEN DIRECTION: the small army marches from the left toward the center; the river runs toward the right; golden dust drifts toward the right; glints slide along the sword and the stone wheel at the lower edge.\nLIGHT: warm golden dusk light from the right, a bright rim on both faces and on the gold chain, glints on the lettering, long soft shadows toward the left.\nPALETTE: dusk gold, sandstone honey, rice green, deep red\nDETAIL: faces readable and level, cotton folds, gold chain and turban jewel, the carved spokes of the wheel, polished pillar sheen, crisp lettering with every letter spelled right\nNOT IN FRAME: any bare body, blood, bodies on the ground, logos, any other words or letters.",
+          "animation_prompt": null,
+          "tags": {
+            "subject_type": "group",
+            "shot_size": "MS",
+            "angle": "eye",
+            "camera_motion": "locked",
+            "location": "end-card",
+            "time_light": "warm-gold"
+          },
+          "render_mode": "still",
+          "still_motion": "hold"
+        }
+      ]
+    }
+  ]
+}
