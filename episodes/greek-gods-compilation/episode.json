@@ -1,0 +1,26 @@
+{
+  "slug": "greek-gods-compilation",
+  "title": "The Complete Saga of the 12 Greek Gods and Their Family: From Cronus's Prophecy to the Net",
+  "protagonists": [
+    [
+      "12 Greek Gods",
+      "12 Gods",
+      "Twelve Gods"
+    ]
+  ],
+  "status": "draft",
+  "voice": null,
+  "narration_file": "narration.mp3",
+  "final_file": "final.mp4",
+  "endcard_file": null,
+  "intro_file": null,
+  "freeze_tail": [
+    "209",
+    "212",
+    "215",
+    "230",
+    "235",
+    "239"
+  ],
+  "notes": "Compilation serije Greek Gods: sva četiri dela u jednom videu. Priča svakog dela ostaje, a rekap na početku nastavaka (Part 2 S01–S09, Part 3 nema rekap osim jedne uvodne rečenice, Part 4 S01–S03) i outro sa end karticom (od outro_start-a) otpadaju. Spojevi: Part 1→2 koristi Part 2 S02 („Their three sisters were never given a lot.“) preko prelaznog still-a kacige i tri senke; Part 2→3 je direktan rez; Part 3→4 koristi Part 4 S02 („Hera could not stop a child born from her husband's head.“) preko Herinog besa (shot03). Sastavljeno alatom tools/compile.mjs, montaža assemble.mjs. Uvod (framing/intro.mp3) i završna rečenica sa držanjem za YouTube završni ekran (framing/outro.mp3) snimaju se po framing.md; kadrovi uvoda i završetka su neiskorišćene slike iz outroa delova (Part 3 shot 47/48/49, Part 1 shot 36, Part 2 shot 45, Part 4 shot 44 i 43)."
+}

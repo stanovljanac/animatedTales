@@ -73,6 +73,7 @@ node tools/shotlist.mjs  episodes/<slug>
 node tools/shotlist.mjs  episodes/<slug> --board | Set-Clipboard
 node tools/flow-images.mjs episodes/<slug>
 node tools/assemble.mjs  episodes/<slug>
+node tools/compile.mjs   episodes/<slug>                # compilation: sklapa delove serije u jednu epizodu (compile.json), pa assemble
 node tools/short.mjs     episodes/<slug> short1 --sheet
 node tools/medium.mjs    episodes/<slug> --check        # medium.md prolazi pravila (isto proverava publish.mjs)
 node tools/medium.mjs    episodes/<slug> --watch        # čeka video u feedu kanala, pa objavi članak na Medium

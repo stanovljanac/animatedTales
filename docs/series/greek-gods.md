@@ -1,6 +1,6 @@
 # Serija — Greek Gods
 
-**Status:** mapa potvrđena, Part 1 i Part 2 gotovi, Part 3 ima research, skriptu, lockove i storyboard (`episodes/greek-gods-part-3`), Part 4 ima research, skriptu i lockove (`episodes/greek-gods-part-4`). Ovaj fajl je **izvor istine za celu seriju** i piše se
+**Status:** mapa potvrđena, sva četiri dela gotova, compilation sklopljen (`episodes/greek-gods-compilation`, §8). Ovaj fajl je **izvor istine za celu seriju** i piše se
 pre nego što ijedan `episode.json` u seriji dobije sadržaj.
 
 **Čita ga:** svako ko počinje bilo koji part ili compilation. **Menja ga:** samo eksplicitna odluka
@@ -590,27 +590,27 @@ nadmetanje kao svoju scenu.
 
 ## 8. Plan compilationa
 
-**Naslov:** The 12 Gods of Greek Mythology · **Trajanje:** ~5 min · **Krediti: nula.**
+**Naslov:** The 12 Gods of Greek Mythology · **Trajanje:** ~15 min · **Krediti: nula.**
 
-Compilation je **nova narracija preko već generisanih kadrova iz sva četiri parta**. Ne generiše se
-nijedna nova slika ni klip. Jedan dan posla.
+**Odluka korisnika (2026-11-22): compilation je sva četiri dela sklopljena u jedan video**, a ne nova
+petominutna naracija preko starih kadrova (raniji plan ovog odeljka). Priča svakog dela ostaje cela;
+otpadaju samo ponovljeno — rekap na početku nastavaka — i kraj: outro sa najavom sledećeg dela,
+„leave a like and subscribe" i end kartica. Part 4 outro i dalje obećava „all twelve gods of this
+series… together in one story" i to je ovaj video. Tvrdi plafon od 8 minuta važi za epizode, ne za
+compilation sklopljen od četiri već objavljena dela.
 
-- ~25s po bogu × 12 = ~300s, plus uvod i outro → seče se do 5 minuta, tvrdog plafona iz
-  `channel-bible.md` §2.
-- Piše se **tek kad sva četiri parta postoje**, i objavljuje se bez čekanja na preglede: Part 4
-  outro ga obećava, pa je compilation obaveza serije, a ne nagrada za gledanost.
-- Lanac je isti kao za epizodu (`align` → `beatplan` → `lint` → `assemble`), ali se `shots/` folder
-  puni **kopijama i isečcima iz partova**, ne novim generisanjem. `episode.json` compilationa
-  kopira registar iz ovog fajla u celini.
-- Svaki bog dobija **jedan kadar koji je u svom partu već nosio njegov najjači trenutak**. Ako
-  compilationu za nekog boga fali kadar, to znači da je taj part imao rupu — a to se vidi tek ovde,
-  zato ovaj plan stoji pre Part 1.
-
-**Rizik koji treba pratiti:** partovi 2–4 moraju da ostave bar po jedan čist, „portretni" kadar po
-bogu — kadar u kome je bog sam i prepoznatljiv. U Part 1 to su pojedinačni kadrovi Zevsa, Posejdona
-i Hada (zato pojedinačni zaključani opisi postoje i pored grupnog).
-
----
+- Ništa se ne generiše: ni slika, ni klip, ni naracija. Sve je rez postojećeg.
+- Pravi se **novom epizodom** `episodes/greek-gods-compilation/` alatom `tools/compile.mjs` iz
+  `compile.json` (rečenice i kadrovi po delu); montažu radi običan `tools/assemble.mjs`, pa svi delovi
+  dobijaju isti template (zum 1.06, zvuk klipova 10,5%) bez obzira kad su prvi put sklopljeni.
+- **Šta otpada po delu:** Part 1 — outro S55–S60 i end kartica; Part 2 — rekap S01–S09 (tri brata,
+  Kron, podela) i outro; Part 3 — outro; Part 4 — rekap S01–S03 (dva kadra kopirana iz Part 3) i outro.
+- **Spojevi se rade postojećim materijalom, bez novih scena:** Part 1→2 vodi Part 2 S02 („Their three
+  sisters were never given a lot.") preko prelaznog still-a kacige i tri senke, koji je Part 2 već
+  imao; Part 2→3 je direktan rez; Part 3→4 vodi Part 4 S02 („Hera could not stop a child born from her
+  husband's head.") preko Herinog besa (Part 4 shot 03) umesto kopije iz Part 3. Obrazloženje i
+  predlog opcionih novih scena su u `episodes/greek-gods-compilation/notes.md`.
+- Rezovi zvuka su na stvarnoj tišini (ne na alignmentu), a prozor zvuka i slike je isti.
 
 ## 9. Kontrola
 

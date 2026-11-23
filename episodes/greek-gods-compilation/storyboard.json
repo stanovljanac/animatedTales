@@ -1,0 +1,5987 @@
+{
+  "schema_version": 2,
+  "episode": "greek-gods-compilation",
+  "generated_at": "2026-11-22T20:48:33.122Z",
+  "generated_by": "tools/compile.mjs",
+  "narration_duration": 950.833,
+  "fps": 24,
+  "beats": [
+    {
+      "beat_id": "B001",
+      "origin": {
+        "episode": "greek-gods-part-3",
+        "beat_id": "B47",
+        "framing": true
+      },
+      "narration_says": null,
+      "start": 0,
+      "end": 10.083,
+      "dur": 10.083,
+      "shots": [
+        {
+          "shot_id": "347",
+          "beat_id": "B001",
+          "link_group": null,
+          "t_in": 0,
+          "t_out": 10.083,
+          "use_in": 0,
+          "use_out": 10.083,
+          "use_len": 10.083,
+          "motion_budget": 10.083,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pull",
+          "source_file": "shots/3/shot47.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "zeus",
+            "cronus"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-3",
+            "shot_id": "47",
+            "source_file": "shots/shot47.jpeg"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B002",
+      "origin": {
+        "episode": "greek-gods-part-3",
+        "beat_id": "B48",
+        "framing": true
+      },
+      "narration_says": null,
+      "start": 10.083,
+      "end": 13.917,
+      "dur": 3.834,
+      "shots": [
+        {
+          "shot_id": "348",
+          "beat_id": "B002",
+          "link_group": null,
+          "t_in": 10.083,
+          "t_out": 13.917,
+          "use_in": 0,
+          "use_out": 3.834,
+          "use_len": 3.834,
+          "motion_budget": 3.834,
+          "gen_len": 8,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/3/part48.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "origin": {
+            "episode": "greek-gods-part-3",
+            "shot_id": "48",
+            "source_file": "shots/part48.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B003",
+      "origin": {
+        "episode": "greek-gods-part-1",
+        "beat_id": "B30",
+        "framing": true
+      },
+      "narration_says": null,
+      "start": 13.917,
+      "end": 18.458,
+      "dur": 4.541,
+      "shots": [
+        {
+          "shot_id": "136",
+          "beat_id": "B003",
+          "link_group": null,
+          "t_in": 13.917,
+          "t_out": 18.458,
+          "use_in": 0,
+          "use_out": 4.541,
+          "use_len": 4.541,
+          "motion_budget": 4.541,
+          "gen_len": 8,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/1/part36.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "origin": {
+            "episode": "greek-gods-part-1",
+            "shot_id": "36",
+            "source_file": "shots/part36.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B004",
+      "origin": {
+        "episode": "greek-gods-part-2",
+        "beat_id": "B42",
+        "framing": true
+      },
+      "narration_says": null,
+      "start": 18.458,
+      "end": 19.417,
+      "dur": 0.959,
+      "shots": [
+        {
+          "shot_id": "245",
+          "beat_id": "B004",
+          "link_group": null,
+          "t_in": 18.458,
+          "t_out": 19.417,
+          "use_in": 0,
+          "use_out": 0.959,
+          "use_len": 0.959,
+          "motion_budget": 0.959,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "hold",
+          "source_file": "shots/2/shot45.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "origin": {
+            "episode": "greek-gods-part-2",
+            "shot_id": "45",
+            "source_file": "shots/shot45.jpeg"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B005",
+      "origin": {
+        "episode": "greek-gods-part-3",
+        "beat_id": "B49",
+        "framing": true
+      },
+      "narration_says": null,
+      "start": 19.417,
+      "end": 20.25,
+      "dur": 0.833,
+      "shots": [
+        {
+          "shot_id": "349",
+          "beat_id": "B005",
+          "link_group": null,
+          "t_in": 19.417,
+          "t_out": 20.25,
+          "use_in": 0,
+          "use_out": 0.833,
+          "use_len": 0.833,
+          "motion_budget": 0.833,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/3/shot49.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "origin": {
+            "episode": "greek-gods-part-3",
+            "shot_id": "49",
+            "source_file": "shots/shot49.jpeg"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B006",
+      "origin": {
+        "episode": "greek-gods-part-4",
+        "beat_id": "B43",
+        "framing": true
+      },
+      "narration_says": null,
+      "start": 20.25,
+      "end": 24.708,
+      "dur": 4.458,
+      "shots": [
+        {
+          "shot_id": "444",
+          "beat_id": "B006",
+          "link_group": null,
+          "t_in": 20.25,
+          "t_out": 24.708,
+          "use_in": 0,
+          "use_out": 4.458,
+          "use_len": 4.458,
+          "motion_budget": 4.458,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "hold",
+          "source_file": "shots/4/shot44.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "the-net"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-4",
+            "shot_id": "44",
+            "source_file": "shots/shot44.jpeg"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B007",
+      "origin": {
+        "episode": "greek-gods-part-1",
+        "beat_id": "B01"
+      },
+      "narration_says": "Three brothers shook three lots in a helmet. Whatever each of them drew, he would rule it forever.",
+      "start": 24.708,
+      "end": 31.292,
+      "dur": 6.584,
+      "shots": [
+        {
+          "shot_id": "101",
+          "beat_id": "B007",
+          "link_group": null,
+          "t_in": 24.708,
+          "t_out": 31.292,
+          "use_in": 0,
+          "use_out": 6.584,
+          "use_len": 6.584,
+          "motion_budget": 6.584,
+          "gen_len": 8,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/1/part01.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "lot-helmet"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-1",
+            "shot_id": "01",
+            "source_file": "shots/part01.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B008",
+      "origin": {
+        "episode": "greek-gods-part-1",
+        "beat_id": "B02"
+      },
+      "narration_says": "To understand how the universe came to be divided that way, start with their father. Cronus ruled everything, and Cronus was afraid. He had been told that one of his children would overthrow him, exactly as he had overthrown his own father.",
+      "start": 31.292,
+      "end": 47.167,
+      "dur": 15.875,
+      "shots": [
+        {
+          "shot_id": "102",
+          "beat_id": "B008",
+          "link_group": null,
+          "t_in": 31.292,
+          "t_out": 37.292,
+          "use_in": 0,
+          "use_out": 6,
+          "use_len": 6,
+          "motion_budget": 6,
+          "gen_len": 6,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/1/part02.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "cronus"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-1",
+            "shot_id": "02",
+            "source_file": "shots/part02.mp4"
+          }
+        },
+        {
+          "shot_id": "103",
+          "beat_id": "B008",
+          "link_group": null,
+          "t_in": 37.292,
+          "t_out": 47.167,
+          "use_in": 0,
+          "use_out": 9.875,
+          "use_len": 9.875,
+          "motion_budget": 9.875,
+          "gen_len": 10,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/1/part03.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "cronus"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-1",
+            "shot_id": "03",
+            "source_file": "shots/part03.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B009",
+      "origin": {
+        "episode": "greek-gods-part-1",
+        "beat_id": "B03"
+      },
+      "narration_says": "So he found a solution. Every time his wife Rhea gave birth, he took the child and swallowed it.",
+      "start": 47.167,
+      "end": 53.917,
+      "dur": 6.75,
+      "shots": [
+        {
+          "shot_id": "104",
+          "beat_id": "B009",
+          "link_group": null,
+          "t_in": 47.167,
+          "t_out": 53.917,
+          "use_in": 0,
+          "use_out": 6.75,
+          "use_len": 6.75,
+          "motion_budget": 6.75,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "hold",
+          "source_file": "shots/1/shot04.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "cronus"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-1",
+            "shot_id": "04",
+            "source_file": "shots/shot04.jpeg"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B010",
+      "origin": {
+        "episode": "greek-gods-part-1",
+        "beat_id": "B04"
+      },
+      "narration_says": "Hestia. Demeter. Hera. Hades. Poseidon. Five children, alive, inside him.",
+      "start": 53.917,
+      "end": 61.417,
+      "dur": 7.5,
+      "shots": [
+        {
+          "shot_id": "105",
+          "beat_id": "B010",
+          "link_group": null,
+          "t_in": 53.917,
+          "t_out": 61.417,
+          "use_in": 0,
+          "use_out": 7.5,
+          "use_len": 7.5,
+          "motion_budget": 7.5,
+          "gen_len": 8,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/1/part05.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "cronus"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-1",
+            "shot_id": "05",
+            "source_file": "shots/part05.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B011",
+      "origin": {
+        "episode": "greek-gods-part-1",
+        "beat_id": "B05"
+      },
+      "narration_says": "When the sixth was coming, Rhea hid. She gave birth in a cave on Crete, and handed her husband a stone wrapped in a baby's blanket. He swallowed it without looking. The child was Zeus.",
+      "start": 61.417,
+      "end": 73.917,
+      "dur": 12.5,
+      "shots": [
+        {
+          "shot_id": "106",
+          "beat_id": "B011",
+          "link_group": null,
+          "t_in": 61.417,
+          "t_out": 69,
+          "use_in": 0,
+          "use_out": 7.583,
+          "use_len": 7.583,
+          "motion_budget": 7.583,
+          "gen_len": 8,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/1/part06.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "rhea"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-1",
+            "shot_id": "06",
+            "source_file": "shots/part06.mp4"
+          }
+        },
+        {
+          "shot_id": "107",
+          "beat_id": "B011",
+          "link_group": null,
+          "t_in": 69,
+          "t_out": 73.917,
+          "use_in": 0,
+          "use_out": 4.917,
+          "use_len": 4.917,
+          "motion_budget": 4.917,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pull",
+          "source_file": "shots/1/shot07.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "crete-cave"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-1",
+            "shot_id": "07",
+            "source_file": "shots/shot07.jpeg"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B012",
+      "origin": {
+        "episode": "greek-gods-part-1",
+        "beat_id": "B06"
+      },
+      "narration_says": "Grown, he came back and forced his father to bring up everything he had eaten.",
+      "start": 73.917,
+      "end": 78.083,
+      "dur": 4.166,
+      "shots": [
+        {
+          "shot_id": "108",
+          "beat_id": "B012",
+          "link_group": null,
+          "t_in": 73.917,
+          "t_out": 78.083,
+          "use_in": 0,
+          "use_out": 4.166,
+          "use_len": 4.166,
+          "motion_budget": 4.166,
+          "gen_len": 6,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/1/part08.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "zeus",
+            "cronus"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-1",
+            "shot_id": "08",
+            "source_file": "shots/part08.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B013",
+      "origin": {
+        "episode": "greek-gods-part-1",
+        "beat_id": "B07"
+      },
+      "narration_says": "The stone came first. Then his brothers and sisters, one at a time, undamaged.",
+      "start": 78.083,
+      "end": 84.5,
+      "dur": 6.417,
+      "shots": [
+        {
+          "shot_id": "109",
+          "beat_id": "B013",
+          "link_group": null,
+          "t_in": 78.083,
+          "t_out": 84.5,
+          "use_in": 0,
+          "use_out": 6.417,
+          "use_len": 6.417,
+          "motion_budget": 6.417,
+          "gen_len": 8,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/1/part09.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "the-five-siblings",
+            "the-stone",
+            "zeus"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-1",
+            "shot_id": "09",
+            "source_file": "shots/part09.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B014",
+      "origin": {
+        "episode": "greek-gods-part-1",
+        "beat_id": "B08"
+      },
+      "narration_says": "What followed was a war that lasted ten years, and neither side could finish it.",
+      "start": 84.5,
+      "end": 91,
+      "dur": 6.5,
+      "shots": [
+        {
+          "shot_id": "110",
+          "beat_id": "B014",
+          "link_group": null,
+          "t_in": 84.5,
+          "t_out": 91,
+          "use_in": 0,
+          "use_out": 6.5,
+          "use_len": 6.5,
+          "motion_budget": 6.5,
+          "gen_len": 8,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/1/part10.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "the-war-plain"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-1",
+            "shot_id": "10",
+            "source_file": "shots/part10.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B015",
+      "origin": {
+        "episode": "greek-gods-part-1",
+        "beat_id": "B09"
+      },
+      "narration_says": "So Zeus went down into the pit beneath the world and let out the prisoners kept there.",
+      "start": 91,
+      "end": 96.167,
+      "dur": 5.167,
+      "shots": [
+        {
+          "shot_id": "111",
+          "beat_id": "B015",
+          "link_group": null,
+          "t_in": 91,
+          "t_out": 96.167,
+          "use_in": 0,
+          "use_out": 5.167,
+          "use_len": 5.167,
+          "motion_budget": 5.167,
+          "gen_len": 6,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/1/part11.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "tartarus"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-1",
+            "shot_id": "11",
+            "source_file": "shots/part11.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B016",
+      "origin": {
+        "episode": "greek-gods-part-1",
+        "beat_id": "B10"
+      },
+      "narration_says": "Three one-eyed smiths made the weapons: a thunderbolt for Zeus, a trident for Poseidon, and for Hades a cap that made its wearer invisible.",
+      "start": 96.167,
+      "end": 105.375,
+      "dur": 9.208,
+      "shots": [
+        {
+          "shot_id": "112",
+          "beat_id": "B016",
+          "link_group": null,
+          "t_in": 96.167,
+          "t_out": 101.375,
+          "use_in": 0,
+          "use_out": 5.208,
+          "use_len": 5.208,
+          "motion_budget": 5.208,
+          "gen_len": 6,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/1/part12.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "the-cyclopes",
+            "thunderbolt"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-1",
+            "shot_id": "12",
+            "source_file": "shots/part12.mp4"
+          }
+        },
+        {
+          "shot_id": "113",
+          "beat_id": "B016",
+          "link_group": null,
+          "t_in": 101.375,
+          "t_out": 105.375,
+          "use_in": 0,
+          "use_out": 4,
+          "use_len": 4,
+          "motion_budget": 4,
+          "gen_len": 4,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/1/part13.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "thunderbolt",
+            "trident",
+            "cap-of-darkness"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-1",
+            "shot_id": "13",
+            "source_file": "shots/part13.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B017",
+      "origin": {
+        "episode": "greek-gods-part-1",
+        "beat_id": "B11"
+      },
+      "narration_says": "Three giants with a hundred arms each ended the fighting, and the Titans took their place in the pit.",
+      "start": 105.375,
+      "end": 111.5,
+      "dur": 6.125,
+      "shots": [
+        {
+          "shot_id": "114",
+          "beat_id": "B017",
+          "link_group": null,
+          "t_in": 105.375,
+          "t_out": 111.5,
+          "use_in": 0,
+          "use_out": 6.125,
+          "use_len": 6.125,
+          "motion_budget": 6.125,
+          "gen_len": 8,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/1/part14.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "the-hundred-handers"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-1",
+            "shot_id": "14",
+            "source_file": "shots/part14.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B018",
+      "origin": {
+        "episode": "greek-gods-part-1",
+        "beat_id": "B12"
+      },
+      "narration_says": "And then the winners had a problem. They had won a universe, and no agreement about who owned it.",
+      "start": 111.5,
+      "end": 118.542,
+      "dur": 7.042,
+      "shots": [
+        {
+          "shot_id": "115",
+          "beat_id": "B018",
+          "link_group": null,
+          "t_in": 111.5,
+          "t_out": 118.542,
+          "use_in": 0,
+          "use_out": 7.042,
+          "use_len": 7.042,
+          "motion_budget": 7.042,
+          "gen_len": 8,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/1/part15.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "origin": {
+            "episode": "greek-gods-part-1",
+            "shot_id": "15",
+            "source_file": "shots/part15.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B019",
+      "origin": {
+        "episode": "greek-gods-part-1",
+        "beat_id": "B13"
+      },
+      "narration_says": "They did not fight over it. According to Homer, they drew lots.",
+      "start": 118.542,
+      "end": 122.708,
+      "dur": 4.166,
+      "shots": [
+        {
+          "shot_id": "116",
+          "beat_id": "B019",
+          "link_group": null,
+          "t_in": 118.542,
+          "t_out": 122.708,
+          "use_in": 0,
+          "use_out": 4.166,
+          "use_len": 4.166,
+          "motion_budget": 4.166,
+          "gen_len": 6,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/1/part16.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "the-three-brothers",
+            "lot-helmet"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-1",
+            "shot_id": "16",
+            "source_file": "shots/part16.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B020",
+      "origin": {
+        "episode": "greek-gods-part-1",
+        "beat_id": "B14"
+      },
+      "narration_says": "Poseidon drew the sea. Hades drew the mist and the dark. Zeus drew the wide sky.",
+      "start": 122.708,
+      "end": 129,
+      "dur": 6.292,
+      "shots": [
+        {
+          "shot_id": "117",
+          "beat_id": "B020",
+          "link_group": null,
+          "t_in": 122.708,
+          "t_out": 129,
+          "use_in": 0,
+          "use_out": 6.292,
+          "use_len": 6.292,
+          "motion_budget": 6.292,
+          "gen_len": 8,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/1/part17.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "the-three-brothers"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-1",
+            "shot_id": "17",
+            "source_file": "shots/part17.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B021",
+      "origin": {
+        "episode": "greek-gods-part-1",
+        "beat_id": "B15"
+      },
+      "narration_says": "One part was left out of the draw on purpose. The earth, and Olympus itself, stayed common to all three.",
+      "start": 129,
+      "end": 136.042,
+      "dur": 7.042,
+      "shots": [
+        {
+          "shot_id": "118",
+          "beat_id": "B021",
+          "link_group": null,
+          "t_in": 129,
+          "t_out": 136.042,
+          "use_in": 0,
+          "use_out": 7.042,
+          "use_len": 7.042,
+          "motion_budget": 7.042,
+          "gen_len": 8,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/1/part18.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "olympus"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-1",
+            "shot_id": "18",
+            "source_file": "shots/part18.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B022",
+      "origin": {
+        "episode": "greek-gods-part-1",
+        "beat_id": "B16"
+      },
+      "narration_says": "The place they all cared about most was the one place nobody won.",
+      "start": 136.042,
+      "end": 141.083,
+      "dur": 5.041,
+      "shots": [
+        {
+          "shot_id": "119",
+          "beat_id": "B022",
+          "link_group": null,
+          "t_in": 136.042,
+          "t_out": 141.083,
+          "use_in": 0,
+          "use_out": 5.041,
+          "use_len": 5.041,
+          "motion_budget": 5.041,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "hold",
+          "source_file": "shots/1/shot19.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "the-three-brothers",
+            "olympus"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-1",
+            "shot_id": "19",
+            "source_file": "shots/shot19.jpeg"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B023",
+      "origin": {
+        "episode": "greek-gods-part-1",
+        "beat_id": "B17"
+      },
+      "narration_says": "Zeus took the sky, and with it something more useful than weather.",
+      "start": 141.083,
+      "end": 145.708,
+      "dur": 4.625,
+      "shots": [
+        {
+          "shot_id": "120",
+          "beat_id": "B023",
+          "link_group": null,
+          "t_in": 141.083,
+          "t_out": 145.708,
+          "use_in": 0,
+          "use_out": 4.625,
+          "use_len": 4.625,
+          "motion_budget": 4.625,
+          "gen_len": 6,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/1/part20.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "zeus"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-1",
+            "shot_id": "20",
+            "source_file": "shots/part20.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B024",
+      "origin": {
+        "episode": "greek-gods-part-1",
+        "beat_id": "B18"
+      },
+      "narration_says": "He became the god of the oath and of the stranger at the door — the rules that let strangers deal with each other at all.",
+      "start": 145.708,
+      "end": 153.292,
+      "dur": 7.584,
+      "shots": [
+        {
+          "shot_id": "121",
+          "beat_id": "B024",
+          "link_group": null,
+          "t_in": 145.708,
+          "t_out": 153.292,
+          "use_in": 0,
+          "use_out": 7.584,
+          "use_len": 7.584,
+          "motion_budget": 7.584,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/1/shot21.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "zeus"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-1",
+            "shot_id": "21",
+            "source_file": "shots/shot21.jpeg"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B025",
+      "origin": {
+        "episode": "greek-gods-part-1",
+        "beat_id": "B19"
+      },
+      "narration_says": "His weapon had been a gift from prisoners. His real power was the arrangement itself.",
+      "start": 153.292,
+      "end": 160.292,
+      "dur": 7,
+      "shots": [
+        {
+          "shot_id": "122",
+          "beat_id": "B025",
+          "link_group": null,
+          "t_in": 153.292,
+          "t_out": 160.292,
+          "use_in": 0,
+          "use_out": 7,
+          "use_len": 7,
+          "motion_budget": 7,
+          "gen_len": 8,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/1/part22.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "thunderbolt"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-1",
+            "shot_id": "22",
+            "source_file": "shots/part22.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B026",
+      "origin": {
+        "episode": "greek-gods-part-1",
+        "beat_id": "B20"
+      },
+      "narration_says": "Poseidon drew more of the world's surface than either brother, and never accepted the result.",
+      "start": 160.292,
+      "end": 166,
+      "dur": 5.708,
+      "shots": [
+        {
+          "shot_id": "123",
+          "beat_id": "B026",
+          "link_group": null,
+          "t_in": 160.292,
+          "t_out": 166,
+          "use_in": 0,
+          "use_out": 5.708,
+          "use_len": 5.708,
+          "motion_budget": 5.708,
+          "gen_len": 6,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/1/part23.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "poseidon",
+            "the-sea"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-1",
+            "shot_id": "23",
+            "source_file": "shots/part23.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B027",
+      "origin": {
+        "episode": "greek-gods-part-1",
+        "beat_id": "B21"
+      },
+      "narration_says": "In the Iliad he tells a messenger that they drew equally, that they are equals, and that Zeus has no right to give him orders. Then he backs down, because Zeus is the elder.",
+      "start": 166,
+      "end": 178.042,
+      "dur": 12.042,
+      "shots": [
+        {
+          "shot_id": "124",
+          "beat_id": "B027",
+          "link_group": null,
+          "t_in": 166,
+          "t_out": 173.833,
+          "use_in": 0,
+          "use_out": 7.833,
+          "use_len": 7.833,
+          "motion_budget": 7.833,
+          "gen_len": 8,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/1/part24.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "poseidon",
+            "trident"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-1",
+            "shot_id": "24",
+            "source_file": "shots/part24.mp4"
+          }
+        },
+        {
+          "shot_id": "125",
+          "beat_id": "B027",
+          "link_group": null,
+          "t_in": 173.833,
+          "t_out": 178.042,
+          "use_in": 0,
+          "use_out": 4.209,
+          "use_len": 4.209,
+          "motion_budget": 4.209,
+          "gen_len": 6,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/1/part25.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "poseidon",
+            "trident"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-1",
+            "shot_id": "25",
+            "source_file": "shots/part25.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B028",
+      "origin": {
+        "episode": "greek-gods-part-1",
+        "beat_id": "B22"
+      },
+      "narration_says": "Which is strange. Hesiod has Zeus born last of the six. Neither poem explains the difference.",
+      "start": 178.042,
+      "end": 185.708,
+      "dur": 7.666,
+      "shots": [
+        {
+          "shot_id": "126",
+          "beat_id": "B028",
+          "link_group": null,
+          "t_in": 178.042,
+          "t_out": 185.708,
+          "use_in": 0,
+          "use_out": 7.666,
+          "use_len": 7.666,
+          "motion_budget": 7.666,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pan-right",
+          "source_file": "shots/1/shot26.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "origin": {
+            "episode": "greek-gods-part-1",
+            "shot_id": "26",
+            "source_file": "shots/shot26.jpeg"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B029",
+      "origin": {
+        "episode": "greek-gods-part-1",
+        "beat_id": "B23"
+      },
+      "narration_says": "Hades drew worst. He got the dead, and a kingdom with no sky in it.",
+      "start": 185.708,
+      "end": 190.958,
+      "dur": 5.25,
+      "shots": [
+        {
+          "shot_id": "127",
+          "beat_id": "B029",
+          "link_group": null,
+          "t_in": 185.708,
+          "t_out": 190.958,
+          "use_in": 0,
+          "use_out": 5.25,
+          "use_len": 5.25,
+          "motion_budget": 5.25,
+          "gen_len": 6,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/1/part27.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "hades",
+            "the-underworld"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-1",
+            "shot_id": "27",
+            "source_file": "shots/part27.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B030",
+      "origin": {
+        "episode": "greek-gods-part-1",
+        "beat_id": "B24"
+      },
+      "narration_says": "He does not live on Olympus, and he is not one of the twelve who sit there.",
+      "start": 190.958,
+      "end": 195.708,
+      "dur": 4.75,
+      "shots": [
+        {
+          "shot_id": "128",
+          "beat_id": "B030",
+          "link_group": null,
+          "t_in": 190.958,
+          "t_out": 195.708,
+          "use_in": 0,
+          "use_out": 4.75,
+          "use_len": 4.75,
+          "motion_budget": 4.75,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pan-right",
+          "source_file": "shots/1/shot28.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "olympus"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-1",
+            "shot_id": "28",
+            "source_file": "shots/shot28.jpeg"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B031",
+      "origin": {
+        "episode": "greek-gods-part-1",
+        "beat_id": "B25"
+      },
+      "narration_says": "The Greeks were uneasy enough about him that they mostly avoided saying his name, and built him almost nothing under that name — one sanctuary, opened one day a year, with only the priest allowed inside.",
+      "start": 195.708,
+      "end": 210.083,
+      "dur": 14.375,
+      "shots": [
+        {
+          "shot_id": "129",
+          "beat_id": "B031",
+          "link_group": null,
+          "t_in": 195.708,
+          "t_out": 202.375,
+          "use_in": 0,
+          "use_out": 6.667,
+          "use_len": 6.667,
+          "motion_budget": 6.667,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/1/shot29.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "origin": {
+            "episode": "greek-gods-part-1",
+            "shot_id": "29",
+            "source_file": "shots/shot29.jpeg"
+          }
+        },
+        {
+          "shot_id": "130",
+          "beat_id": "B031",
+          "link_group": null,
+          "t_in": 202.375,
+          "t_out": 210.083,
+          "use_in": 0,
+          "use_out": 7.708,
+          "use_len": 7.708,
+          "motion_budget": 7.708,
+          "gen_len": 8,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/1/part30.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "origin": {
+            "episode": "greek-gods-part-1",
+            "shot_id": "30",
+            "source_file": "shots/part30.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B032",
+      "origin": {
+        "episode": "greek-gods-part-1",
+        "beat_id": "B26"
+      },
+      "narration_says": "What they called him instead was Plouton. The rich one.",
+      "start": 210.083,
+      "end": 215,
+      "dur": 4.917,
+      "shots": [
+        {
+          "shot_id": "131",
+          "beat_id": "B032",
+          "link_group": null,
+          "t_in": 210.083,
+          "t_out": 215,
+          "use_in": 0,
+          "use_out": 4.917,
+          "use_len": 4.917,
+          "motion_budget": 4.917,
+          "gen_len": 6,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/1/part31.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "hades"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-1",
+            "shot_id": "31",
+            "source_file": "shots/part31.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B033",
+      "origin": {
+        "episode": "greek-gods-part-1",
+        "beat_id": "B27"
+      },
+      "narration_says": "Because the dead were not all he had drawn. Everything that comes out of the ground comes out of his kingdom — the silver in the mines, the gold, and the seed that goes under the soil in autumn and comes back up in spring.",
+      "start": 215,
+      "end": 228.333,
+      "dur": 13.333,
+      "shots": [
+        {
+          "shot_id": "132",
+          "beat_id": "B033",
+          "link_group": null,
+          "t_in": 215,
+          "t_out": 221.583,
+          "use_in": 0,
+          "use_out": 6.583,
+          "use_len": 6.583,
+          "motion_budget": 6.583,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/1/shot32.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "origin": {
+            "episode": "greek-gods-part-1",
+            "shot_id": "32",
+            "source_file": "shots/shot32.jpeg"
+          }
+        },
+        {
+          "shot_id": "133",
+          "beat_id": "B033",
+          "link_group": null,
+          "t_in": 221.583,
+          "t_out": 228.333,
+          "use_in": 0,
+          "use_out": 6.75,
+          "use_len": 6.75,
+          "motion_budget": 6.75,
+          "gen_len": 8,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/1/part33.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "origin": {
+            "episode": "greek-gods-part-1",
+            "shot_id": "33",
+            "source_file": "shots/part33.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B034",
+      "origin": {
+        "episode": "greek-gods-part-1",
+        "beat_id": "B28"
+      },
+      "narration_says": "The brother who drew the darkness ended up holding the wealth of the world.",
+      "start": 228.333,
+      "end": 232.167,
+      "dur": 3.834,
+      "shots": [
+        {
+          "shot_id": "134",
+          "beat_id": "B034",
+          "link_group": null,
+          "t_in": 228.333,
+          "t_out": 232.167,
+          "use_in": 0,
+          "use_out": 3.834,
+          "use_len": 3.834,
+          "motion_budget": 3.834,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pull",
+          "source_file": "shots/1/shot34.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "hades",
+            "the-underworld"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-1",
+            "shot_id": "34",
+            "source_file": "shots/shot34.jpeg"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B035",
+      "origin": {
+        "episode": "greek-gods-part-1",
+        "beat_id": "B29"
+      },
+      "narration_says": "And every person who has ever lived arrives, eventually, in his share of it.",
+      "start": 232.167,
+      "end": 238.125,
+      "dur": 5.958,
+      "shots": [
+        {
+          "shot_id": "135",
+          "beat_id": "B035",
+          "link_group": null,
+          "t_in": 232.167,
+          "t_out": 238.125,
+          "use_in": 0,
+          "use_out": 5.958,
+          "use_len": 5.958,
+          "motion_budget": 5.958,
+          "gen_len": 6,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/1/part35.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "the-underworld"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-1",
+            "shot_id": "35",
+            "source_file": "shots/part35.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B036",
+      "origin": {
+        "episode": "greek-gods-part-2",
+        "beat_id": "B06"
+      },
+      "narration_says": "The full story of that draw is in the previous part. The sisters got no kingdom.",
+      "start": 238.125,
+      "end": 242.917,
+      "dur": 4.792,
+      "shots": [
+        {
+          "shot_id": "207",
+          "beat_id": "B036",
+          "link_group": null,
+          "t_in": 238.125,
+          "t_out": 242.917,
+          "use_in": 0,
+          "use_out": 4.792,
+          "use_len": 4.792,
+          "motion_budget": 4.792,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pull",
+          "source_file": "shots/2/shot07.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "origin": {
+            "episode": "greek-gods-part-2",
+            "shot_id": "07",
+            "source_file": "shots/shot07.jpeg"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B037",
+      "origin": {
+        "episode": "greek-gods-part-2",
+        "beat_id": "B07"
+      },
+      "narration_says": "They got something smaller, and closer to home: a marriage, a harvest, and a fire in the middle of the house.",
+      "start": 242.917,
+      "end": 250.875,
+      "dur": 7.958,
+      "shots": [
+        {
+          "shot_id": "208",
+          "beat_id": "B037",
+          "link_group": null,
+          "t_in": 242.917,
+          "t_out": 250.875,
+          "use_in": 0,
+          "use_out": 7.958,
+          "use_len": 7.958,
+          "motion_budget": 7.958,
+          "gen_len": 8,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/2/part08.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "greek-house"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-2",
+            "shot_id": "08",
+            "source_file": "shots/part08.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B038",
+      "origin": {
+        "episode": "greek-gods-part-2",
+        "beat_id": "B08"
+      },
+      "narration_says": "Hera married the winner. She became queen of the gods and goddess of marriage — married to the least faithful husband in Greek myth.",
+      "start": 250.875,
+      "end": 259.417,
+      "dur": 8.542,
+      "shots": [
+        {
+          "shot_id": "209",
+          "beat_id": "B038",
+          "link_group": null,
+          "t_in": 250.875,
+          "t_out": 259.417,
+          "use_in": 0,
+          "use_out": 8.542,
+          "use_len": 8.542,
+          "motion_budget": 8.542,
+          "gen_len": 10,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/2/part09.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "hera",
+            "zeus"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-2",
+            "shot_id": "09",
+            "source_file": "shots/part09.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B039",
+      "origin": {
+        "episode": "greek-gods-part-2",
+        "beat_id": "B09"
+      },
+      "narration_says": "She could not punish Zeus, so she went after the women he loved, and their children.",
+      "start": 259.417,
+      "end": 265.417,
+      "dur": 6,
+      "shots": [
+        {
+          "shot_id": "210",
+          "beat_id": "B039",
+          "link_group": null,
+          "t_in": 259.417,
+          "t_out": 265.417,
+          "use_in": 0,
+          "use_out": 6,
+          "use_len": 6,
+          "motion_budget": 6,
+          "gen_len": 6,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/2/part10.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "hera"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-2",
+            "shot_id": "10",
+            "source_file": "shots/part10.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B040",
+      "origin": {
+        "episode": "greek-gods-part-2",
+        "beat_id": "B10"
+      },
+      "narration_says": "Once she had Zeus put to sleep and sent a storm after his son Heracles. Zeus woke in a rage.",
+      "start": 265.417,
+      "end": 272,
+      "dur": 6.583,
+      "shots": [
+        {
+          "shot_id": "211",
+          "beat_id": "B040",
+          "link_group": null,
+          "t_in": 265.417,
+          "t_out": 272,
+          "use_in": 0,
+          "use_out": 6.583,
+          "use_len": 6.583,
+          "motion_budget": 6.583,
+          "gen_len": 8,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/2/part11.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "zeus",
+            "hera"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-2",
+            "shot_id": "11",
+            "source_file": "shots/part11.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B041",
+      "origin": {
+        "episode": "greek-gods-part-2",
+        "beat_id": "B11"
+      },
+      "narration_says": "He hung her from the sky, a golden chain on her wrists and two anvils tied to her feet.",
+      "start": 272,
+      "end": 278.208,
+      "dur": 6.208,
+      "shots": [
+        {
+          "shot_id": "212",
+          "beat_id": "B041",
+          "link_group": null,
+          "t_in": 272,
+          "t_out": 278.208,
+          "use_in": 0,
+          "use_out": 6.208,
+          "use_len": 6.208,
+          "motion_budget": 6.208,
+          "gen_len": 8,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/2/part12.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "hera"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-2",
+            "shot_id": "12",
+            "source_file": "shots/part12.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B042",
+      "origin": {
+        "episode": "greek-gods-part-2",
+        "beat_id": "B12"
+      },
+      "narration_says": "And yet the Greeks never treated her as the loser. At Olympia, Zeus's own sanctuary, her temple stood for more than a century before his.",
+      "start": 278.208,
+      "end": 287.042,
+      "dur": 8.834,
+      "shots": [
+        {
+          "shot_id": "213",
+          "beat_id": "B042",
+          "link_group": null,
+          "t_in": 278.208,
+          "t_out": 287.042,
+          "use_in": 0,
+          "use_out": 8.834,
+          "use_len": 8.834,
+          "motion_budget": 8.834,
+          "gen_len": 10,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/2/part13.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "heraion-olympia"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-2",
+            "shot_id": "13",
+            "source_file": "shots/part13.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B043",
+      "origin": {
+        "episode": "greek-gods-part-2",
+        "beat_id": "B13"
+      },
+      "narration_says": "And in one town in Arcadia she had three shrines: to Hera the Girl, Hera the Wife, and Hera the Widow — from the time she quarrelled with Zeus and went home.",
+      "start": 287.042,
+      "end": 299.833,
+      "dur": 12.791,
+      "shots": [
+        {
+          "shot_id": "214",
+          "beat_id": "B043",
+          "link_group": null,
+          "t_in": 287.042,
+          "t_out": 293.458,
+          "use_in": 0,
+          "use_out": 6.416,
+          "use_len": 6.416,
+          "motion_budget": 6.416,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pan-right",
+          "source_file": "shots/2/shot14.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "origin": {
+            "episode": "greek-gods-part-2",
+            "shot_id": "14",
+            "source_file": "shots/shot14.jpeg"
+          }
+        },
+        {
+          "shot_id": "215",
+          "beat_id": "B043",
+          "link_group": null,
+          "t_in": 293.458,
+          "t_out": 299.833,
+          "use_in": 0,
+          "use_out": 6.375,
+          "use_len": 6.375,
+          "motion_budget": 6.375,
+          "gen_len": 8,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/2/part15.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "hera"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-2",
+            "shot_id": "15",
+            "source_file": "shots/part15.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B044",
+      "origin": {
+        "episode": "greek-gods-part-2",
+        "beat_id": "B14"
+      },
+      "narration_says": "A widow, with a husband who could never die.",
+      "start": 299.833,
+      "end": 304.083,
+      "dur": 4.25,
+      "shots": [
+        {
+          "shot_id": "216",
+          "beat_id": "B044",
+          "link_group": null,
+          "t_in": 299.833,
+          "t_out": 304.083,
+          "use_in": 0,
+          "use_out": 4.25,
+          "use_len": 4.25,
+          "motion_budget": 4.25,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/2/shot16.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "hera"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-2",
+            "shot_id": "16",
+            "source_file": "shots/shot16.jpeg"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B045",
+      "origin": {
+        "episode": "greek-gods-part-2",
+        "beat_id": "B15"
+      },
+      "narration_says": "Demeter got the grain. With Zeus she had a daughter, Persephone.",
+      "start": 304.083,
+      "end": 308.333,
+      "dur": 4.25,
+      "shots": [
+        {
+          "shot_id": "217",
+          "beat_id": "B045",
+          "link_group": null,
+          "t_in": 304.083,
+          "t_out": 308.333,
+          "use_in": 0,
+          "use_out": 4.25,
+          "use_len": 4.25,
+          "motion_budget": 4.25,
+          "gen_len": 6,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/2/part17.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "demeter",
+            "persephone"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-2",
+            "shot_id": "17",
+            "source_file": "shots/part17.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B046",
+      "origin": {
+        "episode": "greek-gods-part-2",
+        "beat_id": "B16"
+      },
+      "narration_says": "One day the girl was picking flowers when the ground split open, and Hades drove up in a golden chariot and carried her down to the dead.",
+      "start": 308.333,
+      "end": 317.375,
+      "dur": 9.042,
+      "shots": [
+        {
+          "shot_id": "218",
+          "beat_id": "B046",
+          "link_group": null,
+          "t_in": 308.333,
+          "t_out": 317.375,
+          "use_in": 0,
+          "use_out": 9.042,
+          "use_len": 9.042,
+          "motion_budget": 9.042,
+          "gen_len": 10,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/2/part18.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "hades",
+            "persephone"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-2",
+            "shot_id": "18",
+            "source_file": "shots/part18.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B047",
+      "origin": {
+        "episode": "greek-gods-part-2",
+        "beat_id": "B17"
+      },
+      "narration_says": "Zeus, her own father, had promised her to him — without a word to her mother.",
+      "start": 317.375,
+      "end": 322.417,
+      "dur": 5.042,
+      "shots": [
+        {
+          "shot_id": "219",
+          "beat_id": "B047",
+          "link_group": null,
+          "t_in": 317.375,
+          "t_out": 322.417,
+          "use_in": 0,
+          "use_out": 5.042,
+          "use_len": 5.042,
+          "motion_budget": 5.042,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "hold",
+          "source_file": "shots/2/shot19.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "zeus",
+            "hades"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-2",
+            "shot_id": "19",
+            "source_file": "shots/shot19.jpeg"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B048",
+      "origin": {
+        "episode": "greek-gods-part-2",
+        "beat_id": "B18"
+      },
+      "narration_says": "For nine days Demeter searched the earth with a torch in each hand, without eating or washing.",
+      "start": 322.417,
+      "end": 329.125,
+      "dur": 6.708,
+      "shots": [
+        {
+          "shot_id": "220",
+          "beat_id": "B048",
+          "link_group": null,
+          "t_in": 322.417,
+          "t_out": 329.125,
+          "use_in": 0,
+          "use_out": 6.708,
+          "use_len": 6.708,
+          "motion_budget": 6.708,
+          "gen_len": 8,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/2/part20.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "demeter"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-2",
+            "shot_id": "20",
+            "source_file": "shots/part20.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B049",
+      "origin": {
+        "episode": "greek-gods-part-2",
+        "beat_id": "B19"
+      },
+      "narration_says": "Then the Sun, who sees everything, told her the truth. Hades was her own brother, he said, a fitting husband — lord of the third share he drew when the world was divided.",
+      "start": 329.125,
+      "end": 340.292,
+      "dur": 11.167,
+      "shots": [
+        {
+          "shot_id": "221",
+          "beat_id": "B049",
+          "link_group": null,
+          "t_in": 329.125,
+          "t_out": 333.208,
+          "use_in": 0,
+          "use_out": 4.083,
+          "use_len": 4.083,
+          "motion_budget": 4.083,
+          "gen_len": 6,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/2/part21.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "helios",
+            "demeter"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-2",
+            "shot_id": "21",
+            "source_file": "shots/part21.mp4"
+          }
+        },
+        {
+          "shot_id": "222",
+          "beat_id": "B049",
+          "link_group": null,
+          "t_in": 333.208,
+          "t_out": 340.292,
+          "use_in": 0,
+          "use_out": 7.084,
+          "use_len": 7.084,
+          "motion_budget": 7.084,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/2/shot22.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "hades",
+            "persephone",
+            "the-underworld"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-2",
+            "shot_id": "22",
+            "source_file": "shots/shot22.jpeg"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B050",
+      "origin": {
+        "episode": "greek-gods-part-2",
+        "beat_id": "B20"
+      },
+      "narration_says": "She did not accept it. She left Olympus, sat down in her temple at Eleusis, and stopped the grain.",
+      "start": 340.292,
+      "end": 347.708,
+      "dur": 7.416,
+      "shots": [
+        {
+          "shot_id": "223",
+          "beat_id": "B050",
+          "link_group": null,
+          "t_in": 340.292,
+          "t_out": 347.708,
+          "use_in": 0,
+          "use_out": 7.416,
+          "use_len": 7.416,
+          "motion_budget": 7.416,
+          "gen_len": 8,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/2/part23.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "demeter",
+            "eleusis-temple"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-2",
+            "shot_id": "23",
+            "source_file": "shots/part23.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B051",
+      "origin": {
+        "episode": "greek-gods-part-2",
+        "beat_id": "B21"
+      },
+      "narration_says": "For a whole year nothing grew; oxen dragged ploughs through the fields for nothing.",
+      "start": 347.708,
+      "end": 354.292,
+      "dur": 6.584,
+      "shots": [
+        {
+          "shot_id": "224",
+          "beat_id": "B051",
+          "link_group": null,
+          "t_in": 347.708,
+          "t_out": 354.292,
+          "use_in": 0,
+          "use_out": 6.584,
+          "use_len": 6.584,
+          "motion_budget": 6.584,
+          "gen_len": 8,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/2/part24.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "the-fields"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-2",
+            "shot_id": "24",
+            "source_file": "shots/part24.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B052",
+      "origin": {
+        "episode": "greek-gods-part-2",
+        "beat_id": "B22"
+      },
+      "narration_says": "Mankind was starving, and the gods were about to lose their sacrifices.",
+      "start": 354.292,
+      "end": 359.458,
+      "dur": 5.166,
+      "shots": [
+        {
+          "shot_id": "225",
+          "beat_id": "B052",
+          "link_group": null,
+          "t_in": 354.292,
+          "t_out": 359.458,
+          "use_in": 0,
+          "use_out": 5.166,
+          "use_len": 5.166,
+          "motion_budget": 5.166,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/2/shot25.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "origin": {
+            "episode": "greek-gods-part-2",
+            "shot_id": "25",
+            "source_file": "shots/shot25.jpeg"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B053",
+      "origin": {
+        "episode": "greek-gods-part-2",
+        "beat_id": "B23"
+      },
+      "narration_says": "Zeus sent a messenger, then every god on Olympus, one after another, bearing gifts.",
+      "start": 359.458,
+      "end": 364.458,
+      "dur": 5,
+      "shots": [
+        {
+          "shot_id": "226",
+          "beat_id": "B053",
+          "link_group": null,
+          "t_in": 359.458,
+          "t_out": 364.458,
+          "use_in": 0,
+          "use_out": 5,
+          "use_len": 5,
+          "motion_budget": 5,
+          "gen_len": 6,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/2/part26.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "eleusis-temple",
+            "demeter"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-2",
+            "shot_id": "26",
+            "source_file": "shots/part26.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B054",
+      "origin": {
+        "episode": "greek-gods-part-2",
+        "beat_id": "B24"
+      },
+      "narration_says": "She refused them all. Nothing would grow until she saw her daughter.",
+      "start": 364.458,
+      "end": 369.167,
+      "dur": 4.709,
+      "shots": [
+        {
+          "shot_id": "227",
+          "beat_id": "B054",
+          "link_group": null,
+          "t_in": 364.458,
+          "t_out": 369.167,
+          "use_in": 0,
+          "use_out": 4.709,
+          "use_len": 4.709,
+          "motion_budget": 4.709,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "hold",
+          "source_file": "shots/2/shot27.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "demeter"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-2",
+            "shot_id": "27",
+            "source_file": "shots/shot27.jpeg"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B055",
+      "origin": {
+        "episode": "greek-gods-part-2",
+        "beat_id": "B25"
+      },
+      "narration_says": "And the king of the sky gave in.",
+      "start": 369.167,
+      "end": 372.417,
+      "dur": 3.25,
+      "shots": [
+        {
+          "shot_id": "228",
+          "beat_id": "B055",
+          "link_group": null,
+          "t_in": 369.167,
+          "t_out": 372.417,
+          "use_in": 0,
+          "use_out": 3.25,
+          "use_len": 3.25,
+          "motion_budget": 3.25,
+          "gen_len": 4,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/2/part28.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "zeus",
+            "thunderbolt"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-2",
+            "shot_id": "28",
+            "source_file": "shots/part28.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B056",
+      "origin": {
+        "episode": "greek-gods-part-2",
+        "beat_id": "B26"
+      },
+      "narration_says": "He sent Hermes to bring Persephone back, and Hades let her go — but first he slipped her a single pomegranate seed.",
+      "start": 372.417,
+      "end": 379.625,
+      "dur": 7.208,
+      "shots": [
+        {
+          "shot_id": "229",
+          "beat_id": "B056",
+          "link_group": null,
+          "t_in": 372.417,
+          "t_out": 379.625,
+          "use_in": 0,
+          "use_out": 7.208,
+          "use_len": 7.208,
+          "motion_budget": 7.208,
+          "gen_len": 8,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/2/part29.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "persephone",
+            "hades",
+            "hermes"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-2",
+            "shot_id": "29",
+            "source_file": "shots/part29.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B057",
+      "origin": {
+        "episode": "greek-gods-part-2",
+        "beat_id": "B27"
+      },
+      "narration_says": "She had eaten in the land of the dead, so for a third of every year she would return below.",
+      "start": 379.625,
+      "end": 385.833,
+      "dur": 6.208,
+      "shots": [
+        {
+          "shot_id": "230",
+          "beat_id": "B057",
+          "link_group": null,
+          "t_in": 379.625,
+          "t_out": 385.833,
+          "use_in": 0,
+          "use_out": 6.208,
+          "use_len": 6.208,
+          "motion_budget": 6.208,
+          "gen_len": 8,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/2/part30.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "origin": {
+            "episode": "greek-gods-part-2",
+            "shot_id": "30",
+            "source_file": "shots/part30.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B058",
+      "origin": {
+        "episode": "greek-gods-part-2",
+        "beat_id": "B28"
+      },
+      "narration_says": "Only then did Demeter let the fields grow again.",
+      "start": 385.833,
+      "end": 389.542,
+      "dur": 3.709,
+      "shots": [
+        {
+          "shot_id": "231",
+          "beat_id": "B058",
+          "link_group": null,
+          "t_in": 385.833,
+          "t_out": 389.542,
+          "use_in": 0,
+          "use_out": 3.709,
+          "use_len": 3.709,
+          "motion_budget": 3.709,
+          "gen_len": 4,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/2/part31.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "the-fields"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-2",
+            "shot_id": "31",
+            "source_file": "shots/part31.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B059",
+      "origin": {
+        "episode": "greek-gods-part-2",
+        "beat_id": "B29"
+      },
+      "narration_says": "The sister with no kingdom had made the king of the sky back down, and the king of the dead give back what he had taken.",
+      "start": 389.542,
+      "end": 397.625,
+      "dur": 8.083,
+      "shots": [
+        {
+          "shot_id": "232",
+          "beat_id": "B059",
+          "link_group": null,
+          "t_in": 389.542,
+          "t_out": 397.625,
+          "use_in": 0,
+          "use_out": 8.083,
+          "use_len": 8.083,
+          "motion_budget": 8.083,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/2/shot32.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "demeter",
+            "persephone"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-2",
+            "shot_id": "32",
+            "source_file": "shots/shot32.jpeg"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B060",
+      "origin": {
+        "episode": "greek-gods-part-2",
+        "beat_id": "B30"
+      },
+      "narration_says": "Hestia got the fire. She was the first child Cronus swallowed, and the last to come back up.",
+      "start": 397.625,
+      "end": 404.917,
+      "dur": 7.292,
+      "shots": [
+        {
+          "shot_id": "233",
+          "beat_id": "B060",
+          "link_group": null,
+          "t_in": 397.625,
+          "t_out": 404.917,
+          "use_in": 0,
+          "use_out": 7.292,
+          "use_len": 7.292,
+          "motion_budget": 7.292,
+          "gen_len": 8,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/2/part33.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "hestia",
+            "olympus"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-2",
+            "shot_id": "33",
+            "source_file": "shots/part33.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B061",
+      "origin": {
+        "episode": "greek-gods-part-2",
+        "beat_id": "B31"
+      },
+      "narration_says": "Poseidon and Apollo both asked to marry her.",
+      "start": 404.917,
+      "end": 408.208,
+      "dur": 3.291,
+      "shots": [
+        {
+          "shot_id": "234",
+          "beat_id": "B061",
+          "link_group": null,
+          "t_in": 404.917,
+          "t_out": 408.208,
+          "use_in": 0,
+          "use_out": 3.291,
+          "use_len": 3.291,
+          "motion_budget": 3.291,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "hold",
+          "source_file": "shots/2/shot34.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "trident"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-2",
+            "shot_id": "34",
+            "source_file": "shots/shot34.jpeg"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B062",
+      "origin": {
+        "episode": "greek-gods-part-2",
+        "beat_id": "B32"
+      },
+      "narration_says": "She laid her hand on Zeus's head and swore never to marry at all.",
+      "start": 408.208,
+      "end": 412.542,
+      "dur": 4.334,
+      "shots": [
+        {
+          "shot_id": "235",
+          "beat_id": "B062",
+          "link_group": null,
+          "t_in": 408.208,
+          "t_out": 412.542,
+          "use_in": 0,
+          "use_out": 4.334,
+          "use_len": 4.334,
+          "motion_budget": 4.334,
+          "gen_len": 6,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/2/part35.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "hestia",
+            "zeus"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-2",
+            "shot_id": "35",
+            "source_file": "shots/part35.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B063",
+      "origin": {
+        "episode": "greek-gods-part-2",
+        "beat_id": "B33"
+      },
+      "narration_says": "So instead of a husband, Zeus gave her a place: the middle of every house.",
+      "start": 412.542,
+      "end": 417.583,
+      "dur": 5.041,
+      "shots": [
+        {
+          "shot_id": "236",
+          "beat_id": "B063",
+          "link_group": null,
+          "t_in": 412.542,
+          "t_out": 417.583,
+          "use_in": 0,
+          "use_out": 5.041,
+          "use_len": 5.041,
+          "motion_budget": 5.041,
+          "gen_len": 6,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/2/part36.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "origin": {
+            "episode": "greek-gods-part-2",
+            "shot_id": "36",
+            "source_file": "shots/part36.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B064",
+      "origin": {
+        "episode": "greek-gods-part-2",
+        "beat_id": "B34"
+      },
+      "narration_says": "The first offering at every feast went to her, and the last.",
+      "start": 417.583,
+      "end": 423.208,
+      "dur": 5.625,
+      "shots": [
+        {
+          "shot_id": "237",
+          "beat_id": "B064",
+          "link_group": null,
+          "t_in": 417.583,
+          "t_out": 423.208,
+          "use_in": 0,
+          "use_out": 5.625,
+          "use_len": 5.625,
+          "motion_budget": 5.625,
+          "gen_len": 6,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/2/part37.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "greek-house"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-2",
+            "shot_id": "37",
+            "source_file": "shots/part37.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B065",
+      "origin": {
+        "episode": "greek-gods-part-2",
+        "beat_id": "B35"
+      },
+      "narration_says": "Greek cities kept a public hearth, and when colonists sailed off to found a new city, they carried its fire with them.",
+      "start": 423.208,
+      "end": 431.167,
+      "dur": 7.959,
+      "shots": [
+        {
+          "shot_id": "238",
+          "beat_id": "B065",
+          "link_group": null,
+          "t_in": 423.208,
+          "t_out": 431.167,
+          "use_in": 0,
+          "use_out": 7.959,
+          "use_len": 7.959,
+          "motion_budget": 7.959,
+          "gen_len": 8,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/2/part38.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "origin": {
+            "episode": "greek-gods-part-2",
+            "shot_id": "38",
+            "source_file": "shots/part38.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B066",
+      "origin": {
+        "episode": "greek-gods-part-2",
+        "beat_id": "B36"
+      },
+      "narration_says": "She has almost no myths of her own. In Plato, when the gods ride out across heaven, Hestia alone stays home.",
+      "start": 431.167,
+      "end": 439.583,
+      "dur": 8.416,
+      "shots": [
+        {
+          "shot_id": "239",
+          "beat_id": "B066",
+          "link_group": null,
+          "t_in": 431.167,
+          "t_out": 439.583,
+          "use_in": 0,
+          "use_out": 8.416,
+          "use_len": 8.416,
+          "motion_budget": 8.416,
+          "gen_len": 10,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/2/part39.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "hestia",
+            "olympus"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-2",
+            "shot_id": "39",
+            "source_file": "shots/part39.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B067",
+      "origin": {
+        "episode": "greek-gods-part-2",
+        "beat_id": "B37"
+      },
+      "narration_says": "The brothers drew three places where no living person can stay.",
+      "start": 439.583,
+      "end": 443.708,
+      "dur": 4.125,
+      "shots": [
+        {
+          "shot_id": "240",
+          "beat_id": "B067",
+          "link_group": null,
+          "t_in": 439.583,
+          "t_out": 443.708,
+          "use_in": 0,
+          "use_out": 4.125,
+          "use_len": 4.125,
+          "motion_budget": 4.125,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/2/shot40.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "origin": {
+            "episode": "greek-gods-part-2",
+            "shot_id": "40",
+            "source_file": "shots/shot40.jpeg"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B068",
+      "origin": {
+        "episode": "greek-gods-part-2",
+        "beat_id": "B38"
+      },
+      "narration_says": "The sisters got the places where people live.",
+      "start": 443.708,
+      "end": 447.333,
+      "dur": 3.625,
+      "shots": [
+        {
+          "shot_id": "241",
+          "beat_id": "B068",
+          "link_group": null,
+          "t_in": 443.708,
+          "t_out": 447.333,
+          "use_in": 0,
+          "use_out": 3.625,
+          "use_len": 3.625,
+          "motion_budget": 3.625,
+          "gen_len": 4,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/2/part41.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "origin": {
+            "episode": "greek-gods-part-2",
+            "shot_id": "41",
+            "source_file": "shots/part41.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B069",
+      "origin": {
+        "episode": "greek-gods-part-2",
+        "beat_id": "B39"
+      },
+      "narration_says": "Every human life ends in Hades' kingdom. It is lived in theirs.",
+      "start": 447.333,
+      "end": 452.25,
+      "dur": 4.917,
+      "shots": [
+        {
+          "shot_id": "242",
+          "beat_id": "B069",
+          "link_group": null,
+          "t_in": 447.333,
+          "t_out": 452.25,
+          "use_in": 0,
+          "use_out": 4.917,
+          "use_len": 4.917,
+          "motion_budget": 4.917,
+          "gen_len": 6,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/2/part42.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "greek-house"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-2",
+            "shot_id": "42",
+            "source_file": "shots/part42.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B070",
+      "origin": {
+        "episode": "greek-gods-part-3",
+        "beat_id": "B01"
+      },
+      "narration_says": "Zeus had overthrown a father who swallowed his own children.",
+      "start": 452.25,
+      "end": 456.542,
+      "dur": 4.292,
+      "shots": [
+        {
+          "shot_id": "301",
+          "beat_id": "B070",
+          "link_group": null,
+          "t_in": 452.25,
+          "t_out": 456.542,
+          "use_in": 0,
+          "use_out": 4.292,
+          "use_len": 4.292,
+          "motion_budget": 4.292,
+          "gen_len": 6,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/3/part01.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "zeus",
+            "cronus",
+            "thunderbolt"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-3",
+            "shot_id": "01",
+            "source_file": "shots/part01.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B071",
+      "origin": {
+        "episode": "greek-gods-part-3",
+        "beat_id": "B02"
+      },
+      "narration_says": "Then he took a wife — and heard the same prophecy his father had heard.",
+      "start": 456.542,
+      "end": 462.458,
+      "dur": 5.916,
+      "shots": [
+        {
+          "shot_id": "302",
+          "beat_id": "B071",
+          "link_group": null,
+          "t_in": 456.542,
+          "t_out": 462.458,
+          "use_in": 0,
+          "use_out": 5.916,
+          "use_len": 5.916,
+          "motion_budget": 5.916,
+          "gen_len": 6,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/3/part02.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "zeus",
+            "metis",
+            "olympus"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-3",
+            "shot_id": "02",
+            "source_file": "shots/part02.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B072",
+      "origin": {
+        "episode": "greek-gods-part-3",
+        "beat_id": "B03"
+      },
+      "narration_says": "Her name was Metis, and she was wiser than any god or mortal.",
+      "start": 462.458,
+      "end": 467.625,
+      "dur": 5.167,
+      "shots": [
+        {
+          "shot_id": "303",
+          "beat_id": "B072",
+          "link_group": null,
+          "t_in": 462.458,
+          "t_out": 467.625,
+          "use_in": 0,
+          "use_out": 5.167,
+          "use_len": 5.167,
+          "motion_budget": 5.167,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/3/shot03.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "metis",
+            "olympus"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-3",
+            "shot_id": "03",
+            "source_file": "shots/shot03.jpeg"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B073",
+      "origin": {
+        "episode": "greek-gods-part-3",
+        "beat_id": "B04"
+      },
+      "narration_says": "Earth and Sky, the same two who had warned Cronus, told Zeus what she would bear.",
+      "start": 467.625,
+      "end": 472.875,
+      "dur": 5.25,
+      "shots": [
+        {
+          "shot_id": "304",
+          "beat_id": "B073",
+          "link_group": null,
+          "t_in": 467.625,
+          "t_out": 472.875,
+          "use_in": 0,
+          "use_out": 5.25,
+          "use_len": 5.25,
+          "motion_budget": 5.25,
+          "gen_len": 6,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/3/part04.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "zeus"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-3",
+            "shot_id": "04",
+            "source_file": "shots/part04.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B074",
+      "origin": {
+        "episode": "greek-gods-part-3",
+        "beat_id": "B05"
+      },
+      "narration_says": "First a daughter, his equal in strength and judgment.",
+      "start": 472.875,
+      "end": 476.75,
+      "dur": 3.875,
+      "shots": [
+        {
+          "shot_id": "305",
+          "beat_id": "B074",
+          "link_group": null,
+          "t_in": 472.875,
+          "t_out": 476.75,
+          "use_in": 0,
+          "use_out": 3.875,
+          "use_len": 3.875,
+          "motion_budget": 3.875,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/3/shot05.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "zeus",
+            "olympus"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-3",
+            "shot_id": "05",
+            "source_file": "shots/shot05.jpeg"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B075",
+      "origin": {
+        "episode": "greek-gods-part-3",
+        "beat_id": "B06"
+      },
+      "narration_says": "Then a son, who would be king of gods and men.",
+      "start": 476.75,
+      "end": 481.792,
+      "dur": 5.042,
+      "shots": [
+        {
+          "shot_id": "306",
+          "beat_id": "B075",
+          "link_group": null,
+          "t_in": 476.75,
+          "t_out": 481.792,
+          "use_in": 0,
+          "use_out": 5.042,
+          "use_len": 5.042,
+          "motion_budget": 5.042,
+          "gen_len": 6,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/3/part06.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "zeus",
+            "thunderbolt",
+            "olympus"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-3",
+            "shot_id": "06",
+            "source_file": "shots/part06.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B076",
+      "origin": {
+        "episode": "greek-gods-part-3",
+        "beat_id": "B07"
+      },
+      "narration_says": "Zeus did not wait for the son. He tricked Metis with soft words, and swallowed her whole.",
+      "start": 481.792,
+      "end": 488.5,
+      "dur": 6.708,
+      "shots": [
+        {
+          "shot_id": "307",
+          "beat_id": "B076",
+          "link_group": null,
+          "t_in": 481.792,
+          "t_out": 488.5,
+          "use_in": 0,
+          "use_out": 6.708,
+          "use_len": 6.708,
+          "motion_budget": 6.708,
+          "gen_len": 8,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/3/part07.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "zeus",
+            "metis",
+            "olympus"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-3",
+            "shot_id": "07",
+            "source_file": "shots/part07.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B077",
+      "origin": {
+        "episode": "greek-gods-part-3",
+        "beat_id": "B08"
+      },
+      "narration_says": "His father had swallowed the children, and one got away.",
+      "start": 488.5,
+      "end": 492.083,
+      "dur": 3.583,
+      "shots": [
+        {
+          "shot_id": "308",
+          "beat_id": "B077",
+          "link_group": null,
+          "t_in": 488.5,
+          "t_out": 492.083,
+          "use_in": 0,
+          "use_out": 3.583,
+          "use_len": 3.583,
+          "motion_budget": 3.583,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/3/shot08.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "cronus",
+            "the-stone"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-3",
+            "shot_id": "08",
+            "source_file": "shots/shot08.jpeg"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B078",
+      "origin": {
+        "episode": "greek-gods-part-3",
+        "beat_id": "B09"
+      },
+      "narration_says": "Zeus swallowed the mother. But the daughter was already inside her.",
+      "start": 492.083,
+      "end": 496.833,
+      "dur": 4.75,
+      "shots": [
+        {
+          "shot_id": "309",
+          "beat_id": "B078",
+          "link_group": null,
+          "t_in": 492.083,
+          "t_out": 496.833,
+          "use_in": 0,
+          "use_out": 4.75,
+          "use_len": 4.75,
+          "motion_budget": 4.75,
+          "gen_len": 6,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/3/part09.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "zeus",
+            "metis"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-3",
+            "shot_id": "09",
+            "source_file": "shots/part09.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B079",
+      "origin": {
+        "episode": "greek-gods-part-3",
+        "beat_id": "B10"
+      },
+      "narration_says": "In time, Zeus gave birth to her himself — out of his own head.",
+      "start": 496.833,
+      "end": 502,
+      "dur": 5.167,
+      "shots": [
+        {
+          "shot_id": "310",
+          "beat_id": "B079",
+          "link_group": null,
+          "t_in": 496.833,
+          "t_out": 502,
+          "use_in": 0,
+          "use_out": 5.167,
+          "use_len": 5.167,
+          "motion_budget": 5.167,
+          "gen_len": 6,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/3/part10.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "zeus",
+            "olympus"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-3",
+            "shot_id": "10",
+            "source_file": "shots/part10.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B080",
+      "origin": {
+        "episode": "greek-gods-part-3",
+        "beat_id": "B11"
+      },
+      "narration_says": "Later poets say it took an axe to split it open.",
+      "start": 502,
+      "end": 505.417,
+      "dur": 3.417,
+      "shots": [
+        {
+          "shot_id": "311",
+          "beat_id": "B080",
+          "link_group": null,
+          "t_in": 502,
+          "t_out": 505.417,
+          "use_in": 0,
+          "use_out": 3.417,
+          "use_len": 3.417,
+          "motion_budget": 3.417,
+          "gen_len": 4,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/3/part11.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "origin": {
+            "episode": "greek-gods-part-3",
+            "shot_id": "11",
+            "source_file": "shots/part11.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B081",
+      "origin": {
+        "episode": "greek-gods-part-3",
+        "beat_id": "B12"
+      },
+      "narration_says": "Out leapt a grown woman in golden armour, shaking a spear.",
+      "start": 505.417,
+      "end": 510.292,
+      "dur": 4.875,
+      "shots": [
+        {
+          "shot_id": "312",
+          "beat_id": "B081",
+          "link_group": null,
+          "t_in": 505.417,
+          "t_out": 510.292,
+          "use_in": 0,
+          "use_out": 4.875,
+          "use_len": 4.875,
+          "motion_budget": 4.875,
+          "gen_len": 6,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/3/part12.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "athena",
+            "zeus",
+            "olympus"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-3",
+            "shot_id": "12",
+            "source_file": "shots/part12.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B082",
+      "origin": {
+        "episode": "greek-gods-part-3",
+        "beat_id": "B13"
+      },
+      "narration_says": "Olympus shook, the sea heaved, and the Sun stopped his horses in the sky until she took the armour off.",
+      "start": 510.292,
+      "end": 517.292,
+      "dur": 7,
+      "shots": [
+        {
+          "shot_id": "313",
+          "beat_id": "B082",
+          "link_group": null,
+          "t_in": 510.292,
+          "t_out": 517.292,
+          "use_in": 0,
+          "use_out": 7,
+          "use_len": 7,
+          "motion_budget": 7,
+          "gen_len": 8,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/3/part13.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "helios",
+            "olympus"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-3",
+            "shot_id": "13",
+            "source_file": "shots/part13.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B083",
+      "origin": {
+        "episode": "greek-gods-part-3",
+        "beat_id": "B14"
+      },
+      "narration_says": "This was Athena. Her mother's name meant cunning wisdom, and Athena became its goddess, in craft and in war.",
+      "start": 517.292,
+      "end": 524.958,
+      "dur": 7.666,
+      "shots": [
+        {
+          "shot_id": "314",
+          "beat_id": "B083",
+          "link_group": null,
+          "t_in": 517.292,
+          "t_out": 524.958,
+          "use_in": 0,
+          "use_out": 7.666,
+          "use_len": 7.666,
+          "motion_budget": 7.666,
+          "gen_len": 8,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/3/part14.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "athena",
+            "olympus"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-3",
+            "shot_id": "14",
+            "source_file": "shots/part14.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B084",
+      "origin": {
+        "episode": "greek-gods-part-3",
+        "beat_id": "B15"
+      },
+      "narration_says": "And Metis never left. Hesiod says Zeus kept her inside him, to counsel him on good and evil.",
+      "start": 524.958,
+      "end": 532.25,
+      "dur": 7.292,
+      "shots": [
+        {
+          "shot_id": "315",
+          "beat_id": "B084",
+          "link_group": null,
+          "t_in": 524.958,
+          "t_out": 532.25,
+          "use_in": 0,
+          "use_out": 7.292,
+          "use_len": 7.292,
+          "motion_budget": 7.292,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/3/shot15.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "zeus",
+            "metis",
+            "olympus"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-3",
+            "shot_id": "15",
+            "source_file": "shots/shot15.jpeg"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B085",
+      "origin": {
+        "episode": "greek-gods-part-3",
+        "beat_id": "B16"
+      },
+      "narration_says": "When the gods chose their cities, Athena and her uncle Poseidon both wanted Athens.",
+      "start": 532.25,
+      "end": 538.667,
+      "dur": 6.417,
+      "shots": [
+        {
+          "shot_id": "316",
+          "beat_id": "B085",
+          "link_group": null,
+          "t_in": 532.25,
+          "t_out": 538.667,
+          "use_in": 0,
+          "use_out": 6.417,
+          "use_len": 6.417,
+          "motion_budget": 6.417,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "hold",
+          "source_file": "shots/3/shot16.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "athena",
+            "poseidon",
+            "trident"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-3",
+            "shot_id": "16",
+            "source_file": "shots/shot16.jpeg"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B086",
+      "origin": {
+        "episode": "greek-gods-part-3",
+        "beat_id": "B17"
+      },
+      "narration_says": "He struck the rock of the Acropolis with his trident, and salt water welled up. She planted an olive tree.",
+      "start": 538.667,
+      "end": 546.083,
+      "dur": 7.416,
+      "shots": [
+        {
+          "shot_id": "317",
+          "beat_id": "B086",
+          "link_group": null,
+          "t_in": 538.667,
+          "t_out": 546.083,
+          "use_in": 0,
+          "use_out": 7.416,
+          "use_len": 7.416,
+          "motion_budget": 7.416,
+          "gen_len": 8,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/3/part17.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "poseidon",
+            "athena",
+            "trident"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-3",
+            "shot_id": "17",
+            "source_file": "shots/part17.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B087",
+      "origin": {
+        "episode": "greek-gods-part-3",
+        "beat_id": "B18"
+      },
+      "narration_says": "The gods gave her the city, and Poseidon, the brother who never accepted his share, flooded the plain in anger.",
+      "start": 546.083,
+      "end": 552.917,
+      "dur": 6.834,
+      "shots": [
+        {
+          "shot_id": "318",
+          "beat_id": "B087",
+          "link_group": null,
+          "t_in": 546.083,
+          "t_out": 552.917,
+          "use_in": 0,
+          "use_out": 6.834,
+          "use_len": 6.834,
+          "motion_budget": 6.834,
+          "gen_len": 8,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/3/part18.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "poseidon",
+            "trident",
+            "acropolis"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-3",
+            "shot_id": "18",
+            "source_file": "shots/part18.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B088",
+      "origin": {
+        "episode": "greek-gods-part-3",
+        "beat_id": "B19"
+      },
+      "narration_says": "The daughter of the swallowed wife became her father's favourite — in one Athenian tragedy, the only god trusted with the keys to his thunderbolt.",
+      "start": 552.917,
+      "end": 562.75,
+      "dur": 9.833,
+      "shots": [
+        {
+          "shot_id": "319",
+          "beat_id": "B088",
+          "link_group": null,
+          "t_in": 552.917,
+          "t_out": 562.75,
+          "use_in": 0,
+          "use_out": 9.833,
+          "use_len": 9.833,
+          "motion_budget": 9.833,
+          "gen_len": 10,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/3/part19.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "athena",
+            "thunderbolt-key",
+            "thunderbolt"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-3",
+            "shot_id": "19",
+            "source_file": "shots/part19.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B089",
+      "origin": {
+        "episode": "greek-gods-part-3",
+        "beat_id": "B20"
+      },
+      "narration_says": "Hera could not stop a child born from her husband's head. A child carried by another woman was different.",
+      "start": 562.75,
+      "end": 570.792,
+      "dur": 8.042,
+      "shots": [
+        {
+          "shot_id": "320",
+          "beat_id": "B089",
+          "link_group": null,
+          "t_in": 562.75,
+          "t_out": 570.792,
+          "use_in": 0,
+          "use_out": 8.042,
+          "use_len": 8.042,
+          "motion_budget": 8.042,
+          "gen_len": 10,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/3/part20.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "hera",
+            "olympus"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-3",
+            "shot_id": "20",
+            "source_file": "shots/part20.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B090",
+      "origin": {
+        "episode": "greek-gods-part-3",
+        "beat_id": "B21"
+      },
+      "narration_says": "Leto was pregnant with Zeus's twins, and Hera hunted her across the earth.",
+      "start": 570.792,
+      "end": 575.875,
+      "dur": 5.083,
+      "shots": [
+        {
+          "shot_id": "321",
+          "beat_id": "B090",
+          "link_group": null,
+          "t_in": 570.792,
+          "t_out": 575.875,
+          "use_in": 0,
+          "use_out": 5.083,
+          "use_len": 5.083,
+          "motion_budget": 5.083,
+          "gen_len": 6,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/3/part21.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "leto",
+            "hera"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-3",
+            "shot_id": "21",
+            "source_file": "shots/part21.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B091",
+      "origin": {
+        "episode": "greek-gods-part-3",
+        "beat_id": "B22"
+      },
+      "narration_says": "Land after land turned her away; none dared let her give birth.",
+      "start": 575.875,
+      "end": 581.208,
+      "dur": 5.333,
+      "shots": [
+        {
+          "shot_id": "322",
+          "beat_id": "B091",
+          "link_group": null,
+          "t_in": 575.875,
+          "t_out": 581.208,
+          "use_in": 0,
+          "use_out": 5.333,
+          "use_len": 5.333,
+          "motion_budget": 5.333,
+          "gen_len": 6,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/3/part22.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "origin": {
+            "episode": "greek-gods-part-3",
+            "shot_id": "22",
+            "source_file": "shots/part22.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B092",
+      "origin": {
+        "episode": "greek-gods-part-3",
+        "beat_id": "B23"
+      },
+      "narration_says": "At last she reached Delos — a bare rock that, in some tellings, floated loose on the sea.",
+      "start": 581.208,
+      "end": 586.417,
+      "dur": 5.209,
+      "shots": [
+        {
+          "shot_id": "323",
+          "beat_id": "B092",
+          "link_group": null,
+          "t_in": 581.208,
+          "t_out": 586.417,
+          "use_in": 0,
+          "use_out": 5.209,
+          "use_len": 5.209,
+          "motion_budget": 5.209,
+          "gen_len": 6,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/3/part23.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "delos",
+            "leto"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-3",
+            "shot_id": "23",
+            "source_file": "shots/part23.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B093",
+      "origin": {
+        "episode": "greek-gods-part-3",
+        "beat_id": "B24"
+      },
+      "narration_says": "Even Delos was afraid the god would despise it and kick it into the waves.",
+      "start": 586.417,
+      "end": 592.625,
+      "dur": 6.208,
+      "shots": [
+        {
+          "shot_id": "324",
+          "beat_id": "B093",
+          "link_group": null,
+          "t_in": 586.417,
+          "t_out": 592.625,
+          "use_in": 0,
+          "use_out": 6.208,
+          "use_len": 6.208,
+          "motion_budget": 6.208,
+          "gen_len": 8,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/3/part24.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "leto",
+            "delos"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-3",
+            "shot_id": "24",
+            "source_file": "shots/part24.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B094",
+      "origin": {
+        "episode": "greek-gods-part-3",
+        "beat_id": "B25"
+      },
+      "narration_says": "So Leto swore an oath: his temple would make Delos rich forever.",
+      "start": 592.625,
+      "end": 598.625,
+      "dur": 6,
+      "shots": [
+        {
+          "shot_id": "325",
+          "beat_id": "B094",
+          "link_group": null,
+          "t_in": 592.625,
+          "t_out": 598.625,
+          "use_in": 0,
+          "use_out": 6,
+          "use_len": 6,
+          "motion_budget": 6,
+          "gen_len": 6,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/3/part25.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "leto",
+            "delos"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-3",
+            "shot_id": "25",
+            "source_file": "shots/part25.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B095",
+      "origin": {
+        "episode": "greek-gods-part-3",
+        "beat_id": "B26"
+      },
+      "narration_says": "Her labour lasted nine days and nine nights.",
+      "start": 598.625,
+      "end": 601.833,
+      "dur": 3.208,
+      "shots": [
+        {
+          "shot_id": "326",
+          "beat_id": "B095",
+          "link_group": null,
+          "t_in": 598.625,
+          "t_out": 601.833,
+          "use_in": 0,
+          "use_out": 3.208,
+          "use_len": 3.208,
+          "motion_budget": 3.208,
+          "gen_len": 4,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/3/part26.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "delos",
+            "leto"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-3",
+            "shot_id": "26",
+            "source_file": "shots/part26.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B096",
+      "origin": {
+        "episode": "greek-gods-part-3",
+        "beat_id": "B27"
+      },
+      "narration_says": "Every great goddess came — except Hera, who kept the goddess of childbirth beside her on Olympus.",
+      "start": 601.833,
+      "end": 608.958,
+      "dur": 7.125,
+      "shots": [
+        {
+          "shot_id": "327",
+          "beat_id": "B096",
+          "link_group": null,
+          "t_in": 601.833,
+          "t_out": 608.958,
+          "use_in": 0,
+          "use_out": 7.125,
+          "use_len": 7.125,
+          "motion_budget": 7.125,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/3/shot27.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "hera",
+            "eileithyia",
+            "olympus"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-3",
+            "shot_id": "27",
+            "source_file": "shots/shot27.jpeg"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B097",
+      "origin": {
+        "episode": "greek-gods-part-3",
+        "beat_id": "B28"
+      },
+      "narration_says": "The others sent a messenger to fetch her in secret, with a bribe: a golden necklace, nine cubits long.",
+      "start": 608.958,
+      "end": 615.833,
+      "dur": 6.875,
+      "shots": [
+        {
+          "shot_id": "328",
+          "beat_id": "B097",
+          "link_group": null,
+          "t_in": 608.958,
+          "t_out": 615.833,
+          "use_in": 0,
+          "use_out": 6.875,
+          "use_len": 6.875,
+          "motion_budget": 6.875,
+          "gen_len": 8,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/3/part28.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "iris",
+            "the-sea"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-3",
+            "shot_id": "28",
+            "source_file": "shots/part28.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B098",
+      "origin": {
+        "episode": "greek-gods-part-3",
+        "beat_id": "B29"
+      },
+      "narration_says": "The moment she set foot on Delos, Leto threw her arms around a palm tree, the earth laughed beneath her, and the child sprang out into the light.",
+      "start": 615.833,
+      "end": 625.583,
+      "dur": 9.75,
+      "shots": [
+        {
+          "shot_id": "329",
+          "beat_id": "B098",
+          "link_group": null,
+          "t_in": 615.833,
+          "t_out": 625.583,
+          "use_in": 0,
+          "use_out": 9.75,
+          "use_len": 9.75,
+          "motion_budget": 9.75,
+          "gen_len": 10,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/3/part29.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "leto",
+            "delos"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-3",
+            "shot_id": "29",
+            "source_file": "shots/part29.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B099",
+      "origin": {
+        "episode": "greek-gods-part-3",
+        "beat_id": "B30"
+      },
+      "narration_says": "It was Apollo. The whole island blossomed with gold, and the newborn god spoke at once.",
+      "start": 625.583,
+      "end": 632.167,
+      "dur": 6.584,
+      "shots": [
+        {
+          "shot_id": "330",
+          "beat_id": "B099",
+          "link_group": null,
+          "t_in": 625.583,
+          "t_out": 632.167,
+          "use_in": 0,
+          "use_out": 6.584,
+          "use_len": 6.584,
+          "motion_budget": 6.584,
+          "gen_len": 8,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/3/part30.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "delos"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-3",
+            "shot_id": "30",
+            "source_file": "shots/part30.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B100",
+      "origin": {
+        "episode": "greek-gods-part-3",
+        "beat_id": "B31"
+      },
+      "narration_says": "The lyre and the bow would be his, he said, and he would tell mankind the will of Zeus.",
+      "start": 632.167,
+      "end": 638.458,
+      "dur": 6.291,
+      "shots": [
+        {
+          "shot_id": "331",
+          "beat_id": "B100",
+          "link_group": null,
+          "t_in": 632.167,
+          "t_out": 638.458,
+          "use_in": 0,
+          "use_out": 6.291,
+          "use_len": 6.291,
+          "motion_budget": 6.291,
+          "gen_len": 8,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/3/part31.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "apollo",
+            "delos"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-3",
+            "shot_id": "31",
+            "source_file": "shots/part31.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B101",
+      "origin": {
+        "episode": "greek-gods-part-3",
+        "beat_id": "B32"
+      },
+      "narration_says": "In a later telling, his twin sister Artemis was born first — and helped her mother deliver him.",
+      "start": 638.458,
+      "end": 645.333,
+      "dur": 6.875,
+      "shots": [
+        {
+          "shot_id": "332",
+          "beat_id": "B101",
+          "link_group": null,
+          "t_in": 638.458,
+          "t_out": 645.333,
+          "use_in": 0,
+          "use_out": 6.875,
+          "use_len": 6.875,
+          "motion_budget": 6.875,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/3/shot32.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "leto",
+            "delos"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-3",
+            "shot_id": "32",
+            "source_file": "shots/shot32.jpeg"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B102",
+      "origin": {
+        "episode": "greek-gods-part-3",
+        "beat_id": "B33"
+      },
+      "narration_says": "She grew up a hunter, unmarried, at home in the wild.",
+      "start": 645.333,
+      "end": 649.167,
+      "dur": 3.834,
+      "shots": [
+        {
+          "shot_id": "333",
+          "beat_id": "B102",
+          "link_group": null,
+          "t_in": 645.333,
+          "t_out": 649.167,
+          "use_in": 0,
+          "use_out": 3.834,
+          "use_len": 3.834,
+          "motion_budget": 3.834,
+          "gen_len": 4,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/3/part33.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "artemis"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-3",
+            "shot_id": "33",
+            "source_file": "shots/part33.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B103",
+      "origin": {
+        "episode": "greek-gods-part-3",
+        "beat_id": "B34"
+      },
+      "narration_says": "Her mother had been turned away by every land on earth.",
+      "start": 649.167,
+      "end": 653.083,
+      "dur": 3.916,
+      "shots": [
+        {
+          "shot_id": "334",
+          "beat_id": "B103",
+          "link_group": null,
+          "t_in": 649.167,
+          "t_out": 653.083,
+          "use_in": 0,
+          "use_out": 3.916,
+          "use_len": 3.916,
+          "motion_budget": 3.916,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/3/shot34.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "leto"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-3",
+            "shot_id": "34",
+            "source_file": "shots/shot34.jpeg"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B104",
+      "origin": {
+        "episode": "greek-gods-part-3",
+        "beat_id": "B35"
+      },
+      "narration_says": "Now every woman in labour called on her.",
+      "start": 653.083,
+      "end": 656.667,
+      "dur": 3.584,
+      "shots": [
+        {
+          "shot_id": "335",
+          "beat_id": "B104",
+          "link_group": null,
+          "t_in": 653.083,
+          "t_out": 656.667,
+          "use_in": 0,
+          "use_out": 3.584,
+          "use_len": 3.584,
+          "motion_budget": 3.584,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pan-left",
+          "source_file": "shots/3/shot35.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "origin": {
+            "episode": "greek-gods-part-3",
+            "shot_id": "35",
+            "source_file": "shots/shot35.jpeg"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B105",
+      "origin": {
+        "episode": "greek-gods-part-3",
+        "beat_id": "B36"
+      },
+      "narration_says": "Apollo founded his oracle at Delphi, where he killed the serpent that lived there.",
+      "start": 656.667,
+      "end": 662.208,
+      "dur": 5.541,
+      "shots": [
+        {
+          "shot_id": "336",
+          "beat_id": "B105",
+          "link_group": null,
+          "t_in": 656.667,
+          "t_out": 662.208,
+          "use_in": 0,
+          "use_out": 5.541,
+          "use_len": 5.541,
+          "motion_budget": 5.541,
+          "gen_len": 6,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/3/part36.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "apollo",
+            "delphi"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-3",
+            "shot_id": "36",
+            "source_file": "shots/part36.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B106",
+      "origin": {
+        "episode": "greek-gods-part-3",
+        "beat_id": "B37"
+      },
+      "narration_says": "For a thousand years, cities asked him what was coming before they went to war or founded colonies.",
+      "start": 662.208,
+      "end": 668.875,
+      "dur": 6.667,
+      "shots": [
+        {
+          "shot_id": "337",
+          "beat_id": "B106",
+          "link_group": null,
+          "t_in": 662.208,
+          "t_out": 668.875,
+          "use_in": 0,
+          "use_out": 6.667,
+          "use_len": 6.667,
+          "motion_budget": 6.667,
+          "gen_len": 8,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/3/part37.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "delphi"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-3",
+            "shot_id": "37",
+            "source_file": "shots/part37.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B107",
+      "origin": {
+        "episode": "greek-gods-part-3",
+        "beat_id": "B38"
+      },
+      "narration_says": "And at Delphi, Hesiod says, Zeus had set up the stone his father swallowed in his place.",
+      "start": 668.875,
+      "end": 674.708,
+      "dur": 5.833,
+      "shots": [
+        {
+          "shot_id": "338",
+          "beat_id": "B107",
+          "link_group": null,
+          "t_in": 668.875,
+          "t_out": 674.708,
+          "use_in": 0,
+          "use_out": 5.833,
+          "use_len": 5.833,
+          "motion_budget": 5.833,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/3/shot38.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "the-stone"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-3",
+            "shot_id": "38",
+            "source_file": "shots/shot38.jpeg"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B108",
+      "origin": {
+        "episode": "greek-gods-part-3",
+        "beat_id": "B39"
+      },
+      "narration_says": "The god of prophecy kept the stone where this whole story began.",
+      "start": 674.708,
+      "end": 679.375,
+      "dur": 4.667,
+      "shots": [
+        {
+          "shot_id": "339",
+          "beat_id": "B108",
+          "link_group": null,
+          "t_in": 674.708,
+          "t_out": 679.375,
+          "use_in": 0,
+          "use_out": 4.667,
+          "use_len": 4.667,
+          "motion_budget": 4.667,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pull",
+          "source_file": "shots/3/shot39.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "apollo",
+            "the-stone"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-3",
+            "shot_id": "39",
+            "source_file": "shots/shot39.jpeg"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B109",
+      "origin": {
+        "episode": "greek-gods-part-3",
+        "beat_id": "B40"
+      },
+      "narration_says": "Centuries later, Athens ruled that no one could be born on Delos, or die there.",
+      "start": 679.375,
+      "end": 684.375,
+      "dur": 5,
+      "shots": [
+        {
+          "shot_id": "340",
+          "beat_id": "B109",
+          "link_group": null,
+          "t_in": 679.375,
+          "t_out": 684.375,
+          "use_in": 0,
+          "use_out": 5,
+          "use_len": 5,
+          "motion_budget": 5,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pan-left",
+          "source_file": "shots/3/shot40.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "origin": {
+            "episode": "greek-gods-part-3",
+            "shot_id": "40",
+            "source_file": "shots/shot40.jpeg"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B110",
+      "origin": {
+        "episode": "greek-gods-part-3",
+        "beat_id": "B41"
+      },
+      "narration_says": "The one land that let Leto give birth became the one place in Greece where nobody could.",
+      "start": 684.375,
+      "end": 690,
+      "dur": 5.625,
+      "shots": [
+        {
+          "shot_id": "341",
+          "beat_id": "B110",
+          "link_group": null,
+          "t_in": 684.375,
+          "t_out": 690,
+          "use_in": 0,
+          "use_out": 5.625,
+          "use_len": 5.625,
+          "motion_budget": 5.625,
+          "gen_len": 6,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/3/part41.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "origin": {
+            "episode": "greek-gods-part-3",
+            "shot_id": "41",
+            "source_file": "shots/part41.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B111",
+      "origin": {
+        "episode": "greek-gods-part-3",
+        "beat_id": "B42"
+      },
+      "narration_says": "None of the three was supposed to be born.",
+      "start": 690,
+      "end": 693.167,
+      "dur": 3.167,
+      "shots": [
+        {
+          "shot_id": "342",
+          "beat_id": "B111",
+          "link_group": null,
+          "t_in": 690,
+          "t_out": 693.167,
+          "use_in": 0,
+          "use_out": 3.167,
+          "use_len": 3.167,
+          "motion_budget": 3.167,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "hold",
+          "source_file": "shots/3/shot42.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "the-three-children",
+            "olympus"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-3",
+            "shot_id": "42",
+            "source_file": "shots/shot42.jpeg"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B112",
+      "origin": {
+        "episode": "greek-gods-part-3",
+        "beat_id": "B43"
+      },
+      "narration_says": "One came out of her father's head and ended up holding the keys to his thunderbolt.",
+      "start": 693.167,
+      "end": 697.875,
+      "dur": 4.708,
+      "shots": [
+        {
+          "shot_id": "343",
+          "beat_id": "B112",
+          "link_group": null,
+          "t_in": 693.167,
+          "t_out": 697.875,
+          "use_in": 0,
+          "use_out": 4.708,
+          "use_len": 4.708,
+          "motion_budget": 4.708,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/3/shot43.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "athena",
+            "thunderbolt-key",
+            "olympus"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-3",
+            "shot_id": "43",
+            "source_file": "shots/shot43.jpeg"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B113",
+      "origin": {
+        "episode": "greek-gods-part-3",
+        "beat_id": "B44"
+      },
+      "narration_says": "Two came off a drifting rock and became the goddess of birth and the voice of prophecy.",
+      "start": 697.875,
+      "end": 703.375,
+      "dur": 5.5,
+      "shots": [
+        {
+          "shot_id": "344",
+          "beat_id": "B113",
+          "link_group": null,
+          "t_in": 697.875,
+          "t_out": 703.375,
+          "use_in": 0,
+          "use_out": 5.5,
+          "use_len": 5.5,
+          "motion_budget": 5.5,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pan-right",
+          "source_file": "shots/3/shot44.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "artemis",
+            "apollo",
+            "delos"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-3",
+            "shot_id": "44",
+            "source_file": "shots/shot44.jpeg"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B114",
+      "origin": {
+        "episode": "greek-gods-part-3",
+        "beat_id": "B45"
+      },
+      "narration_says": "The only child who never came was the son who would have been king.",
+      "start": 703.375,
+      "end": 707.833,
+      "dur": 4.458,
+      "shots": [
+        {
+          "shot_id": "345",
+          "beat_id": "B114",
+          "link_group": null,
+          "t_in": 703.375,
+          "t_out": 707.833,
+          "use_in": 0,
+          "use_out": 4.458,
+          "use_len": 4.458,
+          "motion_budget": 4.458,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/3/shot45.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "olympus"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-3",
+            "shot_id": "45",
+            "source_file": "shots/shot45.jpeg"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B115",
+      "origin": {
+        "episode": "greek-gods-part-3",
+        "beat_id": "B46"
+      },
+      "narration_says": "His mother is still inside Zeus.",
+      "start": 707.833,
+      "end": 710.792,
+      "dur": 2.959,
+      "shots": [
+        {
+          "shot_id": "346",
+          "beat_id": "B115",
+          "link_group": null,
+          "t_in": 707.833,
+          "t_out": 710.792,
+          "use_in": 0,
+          "use_out": 2.959,
+          "use_len": 2.959,
+          "motion_budget": 2.959,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "hold",
+          "source_file": "shots/3/shot46.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "zeus"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-3",
+            "shot_id": "46",
+            "source_file": "shots/shot46.jpeg"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B116",
+      "origin": {
+        "episode": "greek-gods-part-4",
+        "beat_id": "B03"
+      },
+      "narration_says": "So, Hesiod says, she answered in anger.",
+      "start": 710.792,
+      "end": 714.375,
+      "dur": 3.583,
+      "shots": [
+        {
+          "shot_id": "403",
+          "beat_id": "B116",
+          "link_group": null,
+          "t_in": 710.792,
+          "t_out": 714.375,
+          "use_in": 0,
+          "use_out": 3.583,
+          "use_len": 3.583,
+          "motion_budget": 3.583,
+          "gen_len": 4,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/4/shot03.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "hera"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-4",
+            "shot_id": "03",
+            "source_file": "shots/shot03.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B117",
+      "origin": {
+        "episode": "greek-gods-part-4",
+        "beat_id": "B04"
+      },
+      "narration_says": "She bore a son of her own, without Zeus — Hephaestus, who would become the greatest craftsman among the gods.",
+      "start": 714.375,
+      "end": 722.417,
+      "dur": 8.042,
+      "shots": [
+        {
+          "shot_id": "404",
+          "beat_id": "B117",
+          "link_group": null,
+          "t_in": 714.375,
+          "t_out": 722.417,
+          "use_in": 0,
+          "use_out": 8.042,
+          "use_len": 8.042,
+          "motion_budget": 8.042,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/4/shot04.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "hera",
+            "olympus"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-4",
+            "shot_id": "04",
+            "source_file": "shots/shot04.jpeg"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B118",
+      "origin": {
+        "episode": "greek-gods-part-4",
+        "beat_id": "B05"
+      },
+      "narration_says": "But he was born lame, and Hera was ashamed of him. She threw him off Olympus.",
+      "start": 722.417,
+      "end": 728,
+      "dur": 5.583,
+      "shots": [
+        {
+          "shot_id": "405",
+          "beat_id": "B118",
+          "link_group": null,
+          "t_in": 722.417,
+          "t_out": 728,
+          "use_in": 0,
+          "use_out": 5.583,
+          "use_len": 5.583,
+          "motion_budget": 5.583,
+          "gen_len": 6,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/4/shot05.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "hera"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-4",
+            "shot_id": "05",
+            "source_file": "shots/shot05.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B119",
+      "origin": {
+        "episode": "greek-gods-part-4",
+        "beat_id": "B06"
+      },
+      "narration_says": "Two sea goddesses caught him as he fell.",
+      "start": 728,
+      "end": 731.5,
+      "dur": 3.5,
+      "shots": [
+        {
+          "shot_id": "406",
+          "beat_id": "B119",
+          "link_group": null,
+          "t_in": 728,
+          "t_out": 731.5,
+          "use_in": 0,
+          "use_out": 3.5,
+          "use_len": 3.5,
+          "motion_budget": 3.5,
+          "gen_len": 4,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/4/shot06.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "the-sea-goddesses",
+            "the-sea"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-4",
+            "shot_id": "06",
+            "source_file": "shots/shot06.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B120",
+      "origin": {
+        "episode": "greek-gods-part-4",
+        "beat_id": "B07"
+      },
+      "narration_says": "For nine years he lived in a cave beneath the waves, making jewellery for them, and no other god knew he was alive.",
+      "start": 731.5,
+      "end": 738.917,
+      "dur": 7.417,
+      "shots": [
+        {
+          "shot_id": "407",
+          "beat_id": "B120",
+          "link_group": null,
+          "t_in": 731.5,
+          "t_out": 738.917,
+          "use_in": 0,
+          "use_out": 7.417,
+          "use_len": 7.417,
+          "motion_budget": 7.417,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pan-right",
+          "source_file": "shots/4/shot07.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "the-sea-goddesses",
+            "sea-cave"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-4",
+            "shot_id": "07",
+            "source_file": "shots/shot07.jpeg"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B121",
+      "origin": {
+        "episode": "greek-gods-part-4",
+        "beat_id": "B08"
+      },
+      "narration_says": "A later tradition says he took his revenge.",
+      "start": 738.917,
+      "end": 742.167,
+      "dur": 3.25,
+      "shots": [
+        {
+          "shot_id": "408",
+          "beat_id": "B121",
+          "link_group": null,
+          "t_in": 738.917,
+          "t_out": 742.167,
+          "use_in": 0,
+          "use_out": 3.25,
+          "use_len": 3.25,
+          "motion_budget": 3.25,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/4/shot08.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "hephaestus",
+            "the-forge"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-4",
+            "shot_id": "08",
+            "source_file": "shots/shot08.jpeg"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B122",
+      "origin": {
+        "episode": "greek-gods-part-4",
+        "beat_id": "B09"
+      },
+      "narration_says": "When he was grown, he sent his mother a gift: a golden throne.",
+      "start": 742.167,
+      "end": 746.958,
+      "dur": 4.791,
+      "shots": [
+        {
+          "shot_id": "409",
+          "beat_id": "B122",
+          "link_group": null,
+          "t_in": 742.167,
+          "t_out": 746.958,
+          "use_in": 0,
+          "use_out": 4.791,
+          "use_len": 4.791,
+          "motion_budget": 4.791,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pan-right",
+          "source_file": "shots/4/shot09.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "the-golden-throne",
+            "olympus"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-4",
+            "shot_id": "09",
+            "source_file": "shots/shot09.jpeg"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B123",
+      "origin": {
+        "episode": "greek-gods-part-4",
+        "beat_id": "B10"
+      },
+      "narration_says": "Hera sat down, and invisible chains closed around her. She could not stand.",
+      "start": 746.958,
+      "end": 752.792,
+      "dur": 5.834,
+      "shots": [
+        {
+          "shot_id": "410",
+          "beat_id": "B123",
+          "link_group": null,
+          "t_in": 746.958,
+          "t_out": 752.792,
+          "use_in": 0,
+          "use_out": 5.834,
+          "use_len": 5.834,
+          "motion_budget": 5.834,
+          "gen_len": 6,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/4/shot10.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "hera",
+            "the-golden-throne"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-4",
+            "shot_id": "10",
+            "source_file": "shots/shot10.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B124",
+      "origin": {
+        "episode": "greek-gods-part-4",
+        "beat_id": "B11"
+      },
+      "narration_says": "Hephaestus refused to come to Olympus and free her.",
+      "start": 752.792,
+      "end": 755.833,
+      "dur": 3.041,
+      "shots": [
+        {
+          "shot_id": "411",
+          "beat_id": "B124",
+          "link_group": null,
+          "t_in": 752.792,
+          "t_out": 755.833,
+          "use_in": 0,
+          "use_out": 3.041,
+          "use_len": 3.041,
+          "motion_budget": 3.041,
+          "gen_len": 4,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/4/shot11.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "hephaestus",
+            "the-forge"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-4",
+            "shot_id": "11",
+            "source_file": "shots/shot11.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B125",
+      "origin": {
+        "episode": "greek-gods-part-4",
+        "beat_id": "B12"
+      },
+      "narration_says": "He would listen to no god except one — the god of wine, who made him drunk and led him up the mountain. Hera went free.",
+      "start": 755.833,
+      "end": 764.625,
+      "dur": 8.792,
+      "shots": [
+        {
+          "shot_id": "412",
+          "beat_id": "B125",
+          "link_group": null,
+          "t_in": 755.833,
+          "t_out": 764.625,
+          "use_in": 0,
+          "use_out": 8.792,
+          "use_len": 8.792,
+          "motion_budget": 8.792,
+          "gen_len": 10,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/4/shot12.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "hephaestus"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-4",
+            "shot_id": "12",
+            "source_file": "shots/shot12.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B126",
+      "origin": {
+        "episode": "greek-gods-part-4",
+        "beat_id": "B13"
+      },
+      "narration_says": "In time, Olympus needed him. He built the houses the gods lived in, and servants of gold that could think, and speak.",
+      "start": 764.625,
+      "end": 772.708,
+      "dur": 8.083,
+      "shots": [
+        {
+          "shot_id": "413",
+          "beat_id": "B126",
+          "link_group": null,
+          "t_in": 764.625,
+          "t_out": 772.708,
+          "use_in": 0,
+          "use_out": 8.083,
+          "use_len": 8.083,
+          "motion_budget": 8.083,
+          "gen_len": 10,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/4/shot13.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "hephaestus",
+            "the-forge"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-4",
+            "shot_id": "13",
+            "source_file": "shots/shot13.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B127",
+      "origin": {
+        "episode": "greek-gods-part-4",
+        "beat_id": "B14"
+      },
+      "narration_says": "He married Aphrodite, the most beautiful of the goddesses.",
+      "start": 772.708,
+      "end": 776.667,
+      "dur": 3.959,
+      "shots": [
+        {
+          "shot_id": "414",
+          "beat_id": "B127",
+          "link_group": null,
+          "t_in": 772.708,
+          "t_out": 776.667,
+          "use_in": 0,
+          "use_out": 3.959,
+          "use_len": 3.959,
+          "motion_budget": 3.959,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/4/shot14.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "aphrodite",
+            "olympus"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-4",
+            "shot_id": "14",
+            "source_file": "shots/shot14.jpeg"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B128",
+      "origin": {
+        "episode": "greek-gods-part-4",
+        "beat_id": "B15"
+      },
+      "narration_says": "Homer's Odyssey tells what came next, in a song a blind poet sings at a king's feast.",
+      "start": 776.667,
+      "end": 782.583,
+      "dur": 5.916,
+      "shots": [
+        {
+          "shot_id": "415",
+          "beat_id": "B128",
+          "link_group": null,
+          "t_in": 776.667,
+          "t_out": 782.583,
+          "use_in": 0,
+          "use_out": 5.916,
+          "use_len": 5.916,
+          "motion_budget": 5.916,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pan-left",
+          "source_file": "shots/4/shot15.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "origin": {
+            "episode": "greek-gods-part-4",
+            "shot_id": "15",
+            "source_file": "shots/shot15.jpeg"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B129",
+      "origin": {
+        "episode": "greek-gods-part-4",
+        "beat_id": "B16"
+      },
+      "narration_says": "Aphrodite loved another: Ares, the god of war.",
+      "start": 782.583,
+      "end": 786.917,
+      "dur": 4.334,
+      "shots": [
+        {
+          "shot_id": "416",
+          "beat_id": "B129",
+          "link_group": null,
+          "t_in": 782.583,
+          "t_out": 786.917,
+          "use_in": 0,
+          "use_out": 4.334,
+          "use_len": 4.334,
+          "motion_budget": 4.334,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/4/shot16.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "ares",
+            "olympus"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-4",
+            "shot_id": "16",
+            "source_file": "shots/shot16.jpeg"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B130",
+      "origin": {
+        "episode": "greek-gods-part-4",
+        "beat_id": "B17"
+      },
+      "narration_says": "He was Hera's other son — Hephaestus's own brother — the swiftest god on Olympus, and the one Zeus said he hated most.",
+      "start": 786.917,
+      "end": 795.208,
+      "dur": 8.291,
+      "shots": [
+        {
+          "shot_id": "417",
+          "beat_id": "B130",
+          "link_group": null,
+          "t_in": 786.917,
+          "t_out": 795.208,
+          "use_in": 0,
+          "use_out": 8.291,
+          "use_len": 8.291,
+          "motion_budget": 8.291,
+          "gen_len": 10,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/4/shot17.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "ares",
+            "zeus",
+            "olympus"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-4",
+            "shot_id": "17",
+            "source_file": "shots/shot17.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B131",
+      "origin": {
+        "episode": "greek-gods-part-4",
+        "beat_id": "B18"
+      },
+      "narration_says": "Once, two giants had chained him in a bronze jar for thirteen months, until Hermes stole him out.",
+      "start": 795.208,
+      "end": 801.833,
+      "dur": 6.625,
+      "shots": [
+        {
+          "shot_id": "418",
+          "beat_id": "B131",
+          "link_group": null,
+          "t_in": 795.208,
+          "t_out": 801.833,
+          "use_in": 0,
+          "use_out": 6.625,
+          "use_len": 6.625,
+          "motion_budget": 6.625,
+          "gen_len": 8,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/4/shot18.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "ares",
+            "hermes"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-4",
+            "shot_id": "18",
+            "source_file": "shots/shot18.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B132",
+      "origin": {
+        "episode": "greek-gods-part-4",
+        "beat_id": "B19"
+      },
+      "narration_says": "But the Sun sees everything. Helios saw the two of them together, and went straight to Hephaestus. Hephaestus went to his forge.",
+      "start": 801.833,
+      "end": 810.625,
+      "dur": 8.792,
+      "shots": [
+        {
+          "shot_id": "419",
+          "beat_id": "B132",
+          "link_group": null,
+          "t_in": 801.833,
+          "t_out": 810.625,
+          "use_in": 0,
+          "use_out": 8.792,
+          "use_len": 8.792,
+          "motion_budget": 8.792,
+          "gen_len": 10,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/4/shot19.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "helios",
+            "hephaestus"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-4",
+            "shot_id": "19",
+            "source_file": "shots/shot19.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B133",
+      "origin": {
+        "episode": "greek-gods-part-4",
+        "beat_id": "B20"
+      },
+      "narration_says": "He hammered out chains as fine as spider webs — too fine for any god to see, too strong for any god to break.",
+      "start": 810.625,
+      "end": 818.667,
+      "dur": 8.042,
+      "shots": [
+        {
+          "shot_id": "420",
+          "beat_id": "B133",
+          "link_group": null,
+          "t_in": 810.625,
+          "t_out": 818.667,
+          "use_in": 0,
+          "use_out": 8.042,
+          "use_len": 8.042,
+          "motion_budget": 8.042,
+          "gen_len": 10,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/4/shot20.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "hephaestus",
+            "the-net"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-4",
+            "shot_id": "20",
+            "source_file": "shots/shot20.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B134",
+      "origin": {
+        "episode": "greek-gods-part-4",
+        "beat_id": "B21"
+      },
+      "narration_says": "He fixed them around his bed, and hung them from the roof beams.",
+      "start": 818.667,
+      "end": 822.375,
+      "dur": 3.708,
+      "shots": [
+        {
+          "shot_id": "421",
+          "beat_id": "B134",
+          "link_group": null,
+          "t_in": 818.667,
+          "t_out": 822.375,
+          "use_in": 0,
+          "use_out": 3.708,
+          "use_len": 3.708,
+          "motion_budget": 3.708,
+          "gen_len": 4,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/4/shot21.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "hephaestus",
+            "the-net",
+            "the-bedchamber"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-4",
+            "shot_id": "21",
+            "source_file": "shots/shot21.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B135",
+      "origin": {
+        "episode": "greek-gods-part-4",
+        "beat_id": "B22"
+      },
+      "narration_says": "Then he announced that he was leaving for Lemnos.",
+      "start": 822.375,
+      "end": 825.667,
+      "dur": 3.292,
+      "shots": [
+        {
+          "shot_id": "422",
+          "beat_id": "B135",
+          "link_group": null,
+          "t_in": 822.375,
+          "t_out": 825.667,
+          "use_in": 0,
+          "use_out": 3.292,
+          "use_len": 3.292,
+          "motion_budget": 3.292,
+          "gen_len": 4,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/4/shot22.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "hephaestus"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-4",
+            "shot_id": "22",
+            "source_file": "shots/shot22.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B136",
+      "origin": {
+        "episode": "greek-gods-part-4",
+        "beat_id": "B23"
+      },
+      "narration_says": "Ares had been watching the house. He came at once.",
+      "start": 825.667,
+      "end": 829.292,
+      "dur": 3.625,
+      "shots": [
+        {
+          "shot_id": "423",
+          "beat_id": "B136",
+          "link_group": null,
+          "t_in": 825.667,
+          "t_out": 829.292,
+          "use_in": 0,
+          "use_out": 3.625,
+          "use_len": 3.625,
+          "motion_budget": 3.625,
+          "gen_len": 4,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/4/shot23.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "ares"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-4",
+            "shot_id": "23",
+            "source_file": "shots/shot23.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B137",
+      "origin": {
+        "episode": "greek-gods-part-4",
+        "beat_id": "B24"
+      },
+      "narration_says": "The two lay down together — and the chains closed around them, and neither could lift a limb.",
+      "start": 829.292,
+      "end": 835.208,
+      "dur": 5.916,
+      "shots": [
+        {
+          "shot_id": "424",
+          "beat_id": "B137",
+          "link_group": null,
+          "t_in": 829.292,
+          "t_out": 835.208,
+          "use_in": 0,
+          "use_out": 5.916,
+          "use_len": 5.916,
+          "motion_budget": 5.916,
+          "gen_len": 6,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/4/shot24.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "aphrodite",
+            "ares",
+            "the-net"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-4",
+            "shot_id": "24",
+            "source_file": "shots/shot24.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B138",
+      "origin": {
+        "episode": "greek-gods-part-4",
+        "beat_id": "B25"
+      },
+      "narration_says": "Hephaestus turned back before Lemnos. He stood in his doorway and called for Zeus and every god to come and see something laughable and unbearable.",
+      "start": 835.208,
+      "end": 844.667,
+      "dur": 9.459,
+      "shots": [
+        {
+          "shot_id": "425",
+          "beat_id": "B138",
+          "link_group": null,
+          "t_in": 835.208,
+          "t_out": 837.708,
+          "use_in": 0,
+          "use_out": 2.5,
+          "use_len": 2.5,
+          "motion_budget": 2.5,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/4/shot25.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "hephaestus"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-4",
+            "shot_id": "25",
+            "source_file": "shots/shot25.jpeg"
+          }
+        },
+        {
+          "shot_id": "426",
+          "beat_id": "B138",
+          "link_group": null,
+          "t_in": 837.708,
+          "t_out": 844.667,
+          "use_in": 0,
+          "use_out": 6.959,
+          "use_len": 6.959,
+          "motion_budget": 6.959,
+          "gen_len": 8,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/4/shot26.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "hephaestus"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-4",
+            "shot_id": "26",
+            "source_file": "shots/shot26.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B139",
+      "origin": {
+        "episode": "greek-gods-part-4",
+        "beat_id": "B26"
+      },
+      "narration_says": "Aphrodite, he said, had always scorned him for his lame leg, and loved Ares because Ares was handsome and sound of foot.",
+      "start": 844.667,
+      "end": 852.875,
+      "dur": 8.208,
+      "shots": [
+        {
+          "shot_id": "427",
+          "beat_id": "B139",
+          "link_group": null,
+          "t_in": 844.667,
+          "t_out": 852.875,
+          "use_in": 0,
+          "use_out": 8.208,
+          "use_len": 8.208,
+          "motion_budget": 8.208,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/4/shot27.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "hephaestus"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-4",
+            "shot_id": "27",
+            "source_file": "shots/shot27.jpeg"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B140",
+      "origin": {
+        "episode": "greek-gods-part-4",
+        "beat_id": "B27"
+      },
+      "narration_says": "He demanded that Zeus give back every gift he had paid for her.",
+      "start": 852.875,
+      "end": 856.917,
+      "dur": 4.042,
+      "shots": [
+        {
+          "shot_id": "428",
+          "beat_id": "B140",
+          "link_group": null,
+          "t_in": 852.875,
+          "t_out": 856.917,
+          "use_in": 0,
+          "use_out": 4.042,
+          "use_len": 4.042,
+          "motion_budget": 4.042,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pan-left",
+          "source_file": "shots/4/shot28.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "zeus",
+            "hephaestus"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-4",
+            "shot_id": "28",
+            "source_file": "shots/shot28.jpeg"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B141",
+      "origin": {
+        "episode": "greek-gods-part-4",
+        "beat_id": "B28"
+      },
+      "narration_says": "The goddesses stayed at home, out of shame.",
+      "start": 856.917,
+      "end": 859.833,
+      "dur": 2.916,
+      "shots": [
+        {
+          "shot_id": "429",
+          "beat_id": "B141",
+          "link_group": null,
+          "t_in": 856.917,
+          "t_out": 859.833,
+          "use_in": 0,
+          "use_out": 2.916,
+          "use_len": 2.916,
+          "motion_budget": 2.916,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/4/shot29.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "origin": {
+            "episode": "greek-gods-part-4",
+            "shot_id": "29",
+            "source_file": "shots/shot29.jpeg"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B142",
+      "origin": {
+        "episode": "greek-gods-part-4",
+        "beat_id": "B29"
+      },
+      "narration_says": "The gods came — Poseidon, Apollo and Hermes.",
+      "start": 859.833,
+      "end": 864.125,
+      "dur": 4.292,
+      "shots": [
+        {
+          "shot_id": "430",
+          "beat_id": "B142",
+          "link_group": null,
+          "t_in": 859.833,
+          "t_out": 864.125,
+          "use_in": 0,
+          "use_out": 4.292,
+          "use_len": 4.292,
+          "motion_budget": 4.292,
+          "gen_len": 6,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/4/shot30.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "poseidon",
+            "apollo",
+            "hermes"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-4",
+            "shot_id": "30",
+            "source_file": "shots/shot30.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B143",
+      "origin": {
+        "episode": "greek-gods-part-4",
+        "beat_id": "B30"
+      },
+      "narration_says": "Apollo asked Hermes whether he would take such chains for a night with golden Aphrodite.",
+      "start": 864.125,
+      "end": 869.708,
+      "dur": 5.583,
+      "shots": [
+        {
+          "shot_id": "431",
+          "beat_id": "B143",
+          "link_group": null,
+          "t_in": 864.125,
+          "t_out": 869.708,
+          "use_in": 0,
+          "use_out": 5.583,
+          "use_len": 5.583,
+          "motion_budget": 5.583,
+          "gen_len": 6,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/4/shot31.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "apollo",
+            "hermes",
+            "the-net"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-4",
+            "shot_id": "31",
+            "source_file": "shots/shot31.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B144",
+      "origin": {
+        "episode": "greek-gods-part-4",
+        "beat_id": "B31"
+      },
+      "narration_says": "Hermes said he would take three times as many, with every god looking on.",
+      "start": 869.708,
+      "end": 875.958,
+      "dur": 6.25,
+      "shots": [
+        {
+          "shot_id": "432",
+          "beat_id": "B144",
+          "link_group": null,
+          "t_in": 869.708,
+          "t_out": 875.958,
+          "use_in": 0,
+          "use_out": 6.25,
+          "use_len": 6.25,
+          "motion_budget": 6.25,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/4/shot32.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "hermes"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-4",
+            "shot_id": "32",
+            "source_file": "shots/shot32.jpeg"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B145",
+      "origin": {
+        "episode": "greek-gods-part-4",
+        "beat_id": "B32"
+      },
+      "narration_says": "The gods roared with laughter. \"Bad deeds do not prosper,\" one said.",
+      "start": 875.958,
+      "end": 881.75,
+      "dur": 5.792,
+      "shots": [
+        {
+          "shot_id": "433",
+          "beat_id": "B145",
+          "link_group": null,
+          "t_in": 875.958,
+          "t_out": 881.75,
+          "use_in": 0,
+          "use_out": 5.792,
+          "use_len": 5.792,
+          "motion_budget": 5.792,
+          "gen_len": 6,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/4/shot33.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "apollo",
+            "hermes"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-4",
+            "shot_id": "33",
+            "source_file": "shots/shot33.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B146",
+      "origin": {
+        "episode": "greek-gods-part-4",
+        "beat_id": "B33"
+      },
+      "narration_says": "\"The slow one has caught the swift. Lame as he is, Hephaestus has caught the swiftest god on Olympus — by craft.\"",
+      "start": 881.75,
+      "end": 890.458,
+      "dur": 8.708,
+      "shots": [
+        {
+          "shot_id": "434",
+          "beat_id": "B146",
+          "link_group": null,
+          "t_in": 881.75,
+          "t_out": 890.458,
+          "use_in": 0,
+          "use_out": 8.708,
+          "use_len": 8.708,
+          "motion_budget": 8.708,
+          "gen_len": 10,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/4/shot34.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "hephaestus",
+            "the-net",
+            "ares"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-4",
+            "shot_id": "34",
+            "source_file": "shots/shot34.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B147",
+      "origin": {
+        "episode": "greek-gods-part-4",
+        "beat_id": "B34"
+      },
+      "narration_says": "Only Poseidon did not laugh.",
+      "start": 890.458,
+      "end": 893.125,
+      "dur": 2.667,
+      "shots": [
+        {
+          "shot_id": "435",
+          "beat_id": "B147",
+          "link_group": null,
+          "t_in": 890.458,
+          "t_out": 893.125,
+          "use_in": 0,
+          "use_out": 2.667,
+          "use_len": 2.667,
+          "motion_budget": 2.667,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/4/shot35.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "poseidon"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-4",
+            "shot_id": "35",
+            "source_file": "shots/shot35.jpeg"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B148",
+      "origin": {
+        "episode": "greek-gods-part-4",
+        "beat_id": "B35"
+      },
+      "narration_says": "He begged Hephaestus to let Ares go, and promised that if Ares ran without paying, Poseidon himself would pay.",
+      "start": 893.125,
+      "end": 900.875,
+      "dur": 7.75,
+      "shots": [
+        {
+          "shot_id": "436",
+          "beat_id": "B148",
+          "link_group": null,
+          "t_in": 893.125,
+          "t_out": 900.875,
+          "use_in": 0,
+          "use_out": 7.75,
+          "use_len": 7.75,
+          "motion_budget": 7.75,
+          "gen_len": 8,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/4/shot36.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "poseidon",
+            "hephaestus",
+            "the-net"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-4",
+            "shot_id": "36",
+            "source_file": "shots/shot36.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B149",
+      "origin": {
+        "episode": "greek-gods-part-4",
+        "beat_id": "B36"
+      },
+      "narration_says": "Hephaestus could not refuse him, and undid the chains.",
+      "start": 900.875,
+      "end": 905.375,
+      "dur": 4.5,
+      "shots": [
+        {
+          "shot_id": "437",
+          "beat_id": "B149",
+          "link_group": null,
+          "t_in": 900.875,
+          "t_out": 905.375,
+          "use_in": 0,
+          "use_out": 4.5,
+          "use_len": 4.5,
+          "motion_budget": 4.5,
+          "gen_len": 6,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/4/shot37.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "hephaestus",
+            "the-net",
+            "ares"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-4",
+            "shot_id": "37",
+            "source_file": "shots/shot37.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B150",
+      "origin": {
+        "episode": "greek-gods-part-4",
+        "beat_id": "B37"
+      },
+      "narration_says": "Ares fled to Thrace. Aphrodite went to Cyprus.",
+      "start": 905.375,
+      "end": 909.25,
+      "dur": 3.875,
+      "shots": [
+        {
+          "shot_id": "438",
+          "beat_id": "B150",
+          "link_group": null,
+          "t_in": 905.375,
+          "t_out": 909.25,
+          "use_in": 0,
+          "use_out": 3.875,
+          "use_len": 3.875,
+          "motion_budget": 3.875,
+          "gen_len": 4,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/4/shot38.mp4",
+          "ingredient_image": null,
+          "characters": [],
+          "origin": {
+            "episode": "greek-gods-part-4",
+            "shot_id": "38",
+            "source_file": "shots/shot38.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B151",
+      "origin": {
+        "episode": "greek-gods-part-4",
+        "beat_id": "B38"
+      },
+      "narration_says": "Hesiod gives the two of them three children: Fear, Panic and Harmony.",
+      "start": 909.25,
+      "end": 915,
+      "dur": 5.75,
+      "shots": [
+        {
+          "shot_id": "439",
+          "beat_id": "B151",
+          "link_group": null,
+          "t_in": 909.25,
+          "t_out": 915,
+          "use_in": 0,
+          "use_out": 5.75,
+          "use_len": 5.75,
+          "motion_budget": 5.75,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "push",
+          "source_file": "shots/4/shot39.jpeg",
+          "ingredient_image": null,
+          "characters": [],
+          "origin": {
+            "episode": "greek-gods-part-4",
+            "shot_id": "39",
+            "source_file": "shots/shot39.jpeg"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B152",
+      "origin": {
+        "episode": "greek-gods-part-4",
+        "beat_id": "B39"
+      },
+      "narration_says": "Hephaestus could never outrun anyone, so twice he built a trap instead: a throne for his mother, and a net for his wife.",
+      "start": 915,
+      "end": 924,
+      "dur": 9,
+      "shots": [
+        {
+          "shot_id": "440",
+          "beat_id": "B152",
+          "link_group": null,
+          "t_in": 915,
+          "t_out": 924,
+          "use_in": 0,
+          "use_out": 9,
+          "use_len": 9,
+          "motion_budget": 9,
+          "gen_len": 10,
+          "render_mode": "clip",
+          "still_motion": null,
+          "source_file": "shots/4/shot40.mp4",
+          "ingredient_image": null,
+          "characters": [
+            "hephaestus",
+            "the-golden-throne",
+            "the-net"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-4",
+            "shot_id": "40",
+            "source_file": "shots/shot40.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B153",
+      "origin": {
+        "episode": "greek-gods-part-4",
+        "beat_id": "B40"
+      },
+      "narration_says": "Both times he caught them. And both times, in the end, he let them go.",
+      "start": 924,
+      "end": 929.5,
+      "dur": 5.5,
+      "shots": [
+        {
+          "shot_id": "441",
+          "beat_id": "B153",
+          "link_group": null,
+          "t_in": 924,
+          "t_out": 929.5,
+          "use_in": 0,
+          "use_out": 5.5,
+          "use_len": 5.5,
+          "motion_budget": 5.5,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pull",
+          "source_file": "shots/4/shot41.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "hephaestus"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-4",
+            "shot_id": "41",
+            "source_file": "shots/shot41.jpeg"
+          }
+        }
+      ]
+    },
+    {
+      "beat_id": "B154",
+      "origin": {
+        "episode": "greek-gods-part-4",
+        "beat_id": "B42",
+        "framing": true
+      },
+      "narration_says": null,
+      "start": 929.5,
+      "end": 950.833,
+      "dur": 21.333,
+      "shots": [
+        {
+          "shot_id": "443",
+          "beat_id": "B154",
+          "link_group": null,
+          "t_in": 929.5,
+          "t_out": 950.833,
+          "use_in": 0,
+          "use_out": 21.333,
+          "use_len": 21.333,
+          "motion_budget": 21.333,
+          "gen_len": null,
+          "render_mode": "still",
+          "still_motion": "pull",
+          "source_file": "shots/4/shot43.jpeg",
+          "ingredient_image": null,
+          "characters": [
+            "olympus"
+          ],
+          "origin": {
+            "episode": "greek-gods-part-4",
+            "shot_id": "43",
+            "source_file": "shots/shot43.jpeg"
+          }
+        }
+      ]
+    }
+  ]
+}

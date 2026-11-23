@@ -22,7 +22,7 @@ import {
   AUDIO_RATE, CLIP_VOLUME, ENCODE, INTRO_VOLUME, RES, STILL_SUPERSAMPLE, STILL_ZOOM, TAIL, ambientArgs, applyFreeze,
   assertAssemblable, build, canWrite, clipVolume, freezeSplit, freezeTail,
   concatArgs, concatText, endcardArgs, endcardStart, introClip, mediaNames, muxArgs, parseArgs, planCuts, qcReport,
-  readOutroStart, recipe, shotArgs, stillArgs, stillFilter, timeProblems, validate, videoFilter,
+  readOutroStart, recipe, shotArgs, stillArgs, stillFilter, timeProblems, validate, videoFilter, filterToScript,
 } from '../tools/assemble.mjs';
 
 // ---------------------------------------------------------------- pomoćno
@@ -1171,4 +1171,23 @@ test('qcReport: freeze_split ima svoju sekciju sa početkom i krajem, a nije pre
   assert.match(md, /## Zamrznut prvi i poslednji frejm/);
   assert.match(md, /\| 01 \| `shots\/part01\.mp4` \| 6s \| 6\.25s \| 0\.125s \| 0\.125s \|/);
   assert.ok(!md.includes('## Zamrznut poslednji frejm'), 'rep-only sekcija ne sme da se pojavi');
+});
+
+// ---------------------------------------------------------------- predugačke komande (compilation)
+
+test('filterToScript: kratka komanda ostaje netaknuta', () => {
+  const args = ['-y', '-i', 'a.mp4', '-filter_complex', '[0:a]anull[a]', '-map', '[a]', 'out.wav'];
+  assert.deepEqual(filterToScript(args, 'nikad-napisan.txt'), args);
+});
+
+test('filterToScript: predugačak filter graf ide u fajl, a ostali argumenti ostaju na mestu', () => {
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'at-asm-'));
+  const graph = Array.from({ length: 200 }, (_, i) => `[${i}:a]anull[p${i}]`).join(';');
+  const args = ['-y', '-i', 'a.mp4', '-filter_complex', graph, '-map', '[amb]', 'out.wav'];
+  const file = path.join(dir, 'filter.txt');
+  const out = filterToScript(args, file, 500);
+  assert.equal(fs.readFileSync(file, 'utf8'), graph);
+  assert.deepEqual(out, ['-y', '-i', 'a.mp4', '-filter_complex_script', file, '-map', '[amb]', 'out.wav']);
+  assert.ok(!out.includes('-filter_complex'));
+  fs.rmSync(dir, { recursive: true, force: true });
 });

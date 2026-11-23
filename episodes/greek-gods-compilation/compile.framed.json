@@ -1,0 +1,173 @@
+{
+  "slug": "greek-gods-compilation",
+  "title": "The Complete Saga of the 12 Greek Gods and Their Family: From Cronus's Prophecy to the Net",
+  "notes": "Compilation serije Greek Gods: sva četiri dela u jednom videu. Priča svakog dela ostaje, a rekap na početku nastavaka (Part 2 S01–S09, Part 3 nema rekap osim jedne uvodne rečenice, Part 4 S01–S03) i outro sa end karticom (od outro_start-a) otpadaju. Spojevi: Part 1→2 koristi Part 2 S02 („Their three sisters were never given a lot.“) preko prelaznog still-a kacige i tri senke; Part 2→3 je direktan rez; Part 3→4 koristi Part 4 S02 („Hera could not stop a child born from her husband's head.“) preko Herinog besa (shot03). Sastavljeno alatom tools/compile.mjs, montaža assemble.mjs. Uvod (framing/intro.mp3) i završna rečenica sa držanjem za YouTube završni ekran (framing/outro.mp3) snimaju se po framing.md; kadrovi uvoda i završetka su neiskorišćene slike iz outroa delova (Part 3 shot 47/48/49, Part 1 shot 36, Part 2 shot 45, Part 4 shot 44 i 43).",
+  "runs": [
+    {
+      "audio": "framing/intro.mp3",
+      "text": [
+        {
+          "text": "Twelve gods.",
+          "start": 0.13,
+          "end": 1.33
+        },
+        {
+          "text": "Four stories.",
+          "start": 2,
+          "end": 3.07
+        },
+        {
+          "text": "One family.",
+          "start": 3.56,
+          "end": 4.45
+        },
+        {
+          "text": "It begins with a father who swallowed his own children to escape a prophecy.",
+          "start": 5.16,
+          "end": 9.65
+        },
+        {
+          "text": "It ends with a son who built a net no one could see.",
+          "start": 10.23,
+          "end": 13.63
+        },
+        {
+          "text": "Everything in between — the sky, the sea, the dead,",
+          "start": 14.25,
+          "end": 18.32
+        },
+        {
+          "text": "the harvest, the hunt, the war —",
+          "start": 18.63,
+          "end": 21.05
+        },
+        {
+          "text": "is what that family made of what it was given.",
+          "start": 21.47,
+          "end": 23.96
+        }
+      ],
+      "chapter": "Twelve Gods, One Family",
+      "tail": 0.8,
+      "shots": [
+        {
+          "episode": "greek-gods-part-3",
+          "prefix": "3",
+          "shot": "47"
+        },
+        {
+          "episode": "greek-gods-part-3",
+          "prefix": "3",
+          "shot": "48",
+          "at": 10.1
+        },
+        {
+          "episode": "greek-gods-part-1",
+          "prefix": "1",
+          "shot": "36",
+          "at": 13.95
+        },
+        {
+          "episode": "greek-gods-part-2",
+          "prefix": "2",
+          "shot": "45",
+          "at": 18.5
+        },
+        {
+          "episode": "greek-gods-part-3",
+          "prefix": "3",
+          "shot": "49",
+          "at": 19.45
+        },
+        {
+          "episode": "greek-gods-part-4",
+          "prefix": "4",
+          "shot": "44",
+          "at": 20.3
+        }
+      ],
+      "hold": 0.6
+    },
+    {
+      "episode": "greek-gods-part-1",
+      "prefix": "1",
+      "from": "S01",
+      "to": "S54",
+      "chapter": "The Lottery for the Universe"
+    },
+    {
+      "episode": "greek-gods-part-2",
+      "prefix": "2",
+      "from": "S02",
+      "to": "S02",
+      "visual": "07",
+      "chapter": "The Three Sisters Who Got No Kingdom",
+      "tail": 0.7
+    },
+    {
+      "episode": "greek-gods-part-2",
+      "prefix": "2",
+      "from": "S10",
+      "to": "S53"
+    },
+    {
+      "episode": "greek-gods-part-3",
+      "prefix": "3",
+      "from": "S01",
+      "to": "S53",
+      "chapter": "Born in Spite of Everything"
+    },
+    {
+      "episode": "greek-gods-part-4",
+      "prefix": "4",
+      "from": "S02",
+      "to": "S02",
+      "visual": "03",
+      "chapter": "The Net That Caught the God of War",
+      "tail": 0.7
+    },
+    {
+      "episode": "greek-gods-part-4",
+      "prefix": "4",
+      "from": "S04",
+      "to": "S52",
+      "lead": 0.4
+    },
+    {
+      "audio": "framing/outro.mp3",
+      "text": [
+        {
+          "text": "Twelve thrones around one fire.",
+          "start": 0.15,
+          "end": 2.37
+        },
+        {
+          "text": "Some were drawn by lot, some were won in war, and some were never offered at all.",
+          "start": 2.99,
+          "end": 8.82
+        },
+        {
+          "text": "They sat down together anyway.",
+          "start": 9.47,
+          "end": 11.13
+        }
+      ],
+      "tail": 0.6,
+      "hold": 10,
+      "shots": [
+        {
+          "episode": "greek-gods-part-4",
+          "prefix": "4",
+          "shot": "43"
+        }
+      ]
+    }
+  ],
+  "protagonists": [
+    [
+      "12 Greek Gods",
+      "12 Gods",
+      "Twelve Gods"
+    ]
+  ]
+}

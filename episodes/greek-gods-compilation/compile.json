@@ -1,0 +1,52 @@
+{
+  "slug": "greek-gods-compilation",
+  "title": "The 12 Gods of Greek Mythology: Zeus, Poseidon, Hades, Hera, Demeter, Hestia, Athena, Apollo, Artemis, Hephaestus, Aphrodite and Ares",
+  "notes": "Compilation serije Greek Gods: sva četiri dela u jednom videu. Priča svakog dela ostaje, a rekap na početku nastavaka (Part 2 S01–S09, Part 3 nema rekap osim jedne uvodne rečenice, Part 4 S01–S03) i outro sa end karticom (od outro_start-a) otpadaju. Spojevi: Part 1→2 koristi Part 2 S02 („Their three sisters were never given a lot.“) preko prelaznog still-a kacige i tri senke; Part 2→3 je direktan rez; Part 3→4 koristi Part 4 S02 („Hera could not stop a child born from her husband's head.“) preko Herinog besa (shot03). Sastavljeno alatom tools/compile.mjs, montaža assemble.mjs.",
+  "runs": [
+    {
+      "episode": "greek-gods-part-1",
+      "prefix": "1",
+      "from": "S01",
+      "to": "S54",
+      "chapter": "The Lottery for the Universe"
+    },
+    {
+      "episode": "greek-gods-part-2",
+      "prefix": "2",
+      "from": "S02",
+      "to": "S02",
+      "visual": "07",
+      "chapter": "The Three Sisters Who Got No Kingdom",
+      "tail": 0.7
+    },
+    {
+      "episode": "greek-gods-part-2",
+      "prefix": "2",
+      "from": "S10",
+      "to": "S53"
+    },
+    {
+      "episode": "greek-gods-part-3",
+      "prefix": "3",
+      "from": "S01",
+      "to": "S53",
+      "chapter": "Born in Spite of Everything"
+    },
+    {
+      "episode": "greek-gods-part-4",
+      "prefix": "4",
+      "from": "S02",
+      "to": "S02",
+      "visual": "03",
+      "chapter": "The Net That Caught the God of War",
+      "tail": 0.7
+    },
+    {
+      "episode": "greek-gods-part-4",
+      "prefix": "4",
+      "from": "S04",
+      "to": "S52",
+      "lead": 0.4
+    }
+  ]
+}

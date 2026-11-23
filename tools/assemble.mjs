@@ -1116,6 +1116,21 @@ export function muxArgs(video, audio, out, ambient = null) {
   ];
 }
 
+/**
+ * Windows ne prima komandu dužu od ~32k znakova. Ambijentalni trag ima po jedan ulaz i jedan
+ * filter po klipu, pa epizoda od ~100 klipova (compilation, `tools/compile.mjs`) to premaši i
+ * ffmpeg se ne pokrene (`ENAMETOOLONG`). Iznad `ARGS_LIMIT` filter graf ide u fajl.
+ */
+export const ARGS_LIMIT = 24000;
+
+/** Argumenti sa `-filter_complex` zamenjenim `-filter_complex_script <file>` kad su predugi. */
+export function filterToScript(args, file, limit = ARGS_LIMIT) {
+  const i = args.indexOf('-filter_complex');
+  if (i < 0 || args.join(' ').length <= limit) return args;
+  fs.writeFileSync(file, args[i + 1], 'utf8');
+  return [...args.slice(0, i), '-filter_complex_script', file, ...args.slice(i + 2)];
+}
+
 // ---------------------------------------------------------------- keš segmenata
 
 /**
@@ -1315,9 +1330,9 @@ export async function build(plan, dir, opts) {
   if (volume > 0 || opts.intro) {
     ambientFile = path.join(cacheDir, 'ambient.wav');
     onProgress({ state: 'ambient' });
-    await runner(ambientArgs(plan, {
+    await runner(filterToScript(ambientArgs(plan, {
       dir, fps, volume, sources: opts.sources ?? null, intro: opts.intro ?? null, out: ambientFile,
-    }));
+    }), path.join(cacheDir, 'ambient-filter.txt')));
   }
 
   const outFile = path.join(dir, out);
