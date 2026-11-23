@@ -10,7 +10,7 @@
 ## 1. Arhitektura u jednoj slici
 
 Lanac je **timeline-first** i **file-based**: svaka faza čita fajlove prethodne i piše svoje. Nema servera,
-baze ni procesa u pozadini (osim Windows Task Schedulera za Medium). Između faza stoji ugovor, ne API.
+baze ni procesa u pozadini (Task Scheduler za Medium je ukinut 23. nov 2026; objava je ručna). Između faza stoji ugovor, ne API.
 
 ```
  ideja ─► research ─► script.md ──(ljudski: ElevenLabs)──► narration.mp3
@@ -50,7 +50,7 @@ baze ni procesa u pozadini (osim Windows Task Schedulera za Medium). Između faz
 | **ffmpeg** | `imageio_ffmpeg` 7.1, putanja u `tools/config.json` → `ffmpegPath` | rezanje, enkodiranje, zvuk; **`ffprobe` ne postoji** |
 | **Python 3.11** + `faster-whisper` | model `small.en` (rezerva `medium.en`) | `tools/whisper_words.py` — ASR sa vremenima po reči |
 | **Google Chrome** | zaseban profil `%LOCALAPPDATA%\AnimatedTales\flow-chrome` | Flow (`flow-images.mjs`) i Medium (`medium.mjs`) kroz CDP |
-| **Windows Task Scheduler** | `schtasks` | nedeljni `medium.mjs --sweep` (pon 21:00, bez prozora) |
+| ~~Windows Task Scheduler~~ | `schtasks` | ukinut 23. nov 2026; `medium.mjs --post` pokreće se ručno |
 | **Git** | `.gitignore` izbacuje sve medije | repo drži samo ugovore, alate, tekstove |
 
 Nema `package.json`, `npm install`, bundlera ni CI-ja. Sve se pokreće sa `node tools/<alat>.mjs`.

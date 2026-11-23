@@ -161,16 +161,7 @@ It must pass. (`node tools/publish.mjs episodes/<slug>` runs the same check.)
 ## WHAT HAPPENS AFTER
 
 1. The video goes public on YouTube (the user does this).
-2. The scheduled `--sweep` (Windows Task Scheduler task "AnimatedTales Medium Sweep", once a week,
-   Monday 21:00, with a hidden window; a run missed because the PC was off or nobody was logged in
-   is made up as soon as the PC is back; `node tools/medium.mjs --install-task` creates it,
-   `--remove-task` deletes it; log with timestamps in
-   `%LOCALAPPDATA%\AnimatedTales\medium-sweep.log`) sees the video in the channel feed (the last 15
-   uploads, about three weeks), matches it to the episode by title or description, fills
-   `{{VIDEO_URL}}` and `{{THUMBNAIL}}`, and posts the article to Medium through the logged-in Chrome
-   profile. `node tools/medium.mjs episodes/<slug> --watch` does the same for one episode, in the
-   foreground. A failed article gets one retry per weekly run, three runs in all, then it waits for
-   a person (`--post --force`).
+2. **Since 2026-11-23 there is no scheduled task** (the Windows Task Scheduler job was removed; do not reinstall it unless the owner asks). The owner posts by hand once the video is public: `node tools/medium.mjs episodes/<slug> --post` (the tool finds the video in the channel feed by title or description, fills `{{VIDEO_URL}}` and `{{THUMBNAIL}}`, and posts through the logged-in Chrome profile; `--video ID` names it explicitly). `--watch` does the same for one episode in the foreground; `--sweep` is one manual pass over every episode. A failed article keeps its draft; after three failed attempts it waits for `--post --force`.
 3. `episodes/<slug>/medium.json` records the video ID and the Medium URL. The tool never posts the
    same episode twice. Editing `medium.md` after the article is live: `--post --force` rewrites the
    published story from the file and clicks "Save and publish" (the URL stays the same).
