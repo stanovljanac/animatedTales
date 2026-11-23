@@ -544,7 +544,12 @@ function pImageReady(mediaId, gridAria) {
   if (!location.pathname.endsWith(`/edit/${mediaId}`)) return null;
   const boxes = [...document.querySelectorAll('[role=textbox]')].map((e) => e.getAttribute('aria-label'));
   if (boxes.includes(gridAria) || !boxes.includes('What do you want to change?')) return null;
-  const img = [...document.querySelectorAll('img')].find((i) => i.src.includes(mediaId) && i.naturalWidth > 0);
+  // 2026-11-24: Flow više ne stavlja media ID u adresu slike (`flow.google.com/asb/ANqv…`), pa je
+  // provera „src sadrži mediaId" večno padala i preimenovanje je isteklo na svakoj slici. Putanja
+  // stranice (`/edit/<mediaId>`) već jemči koja je slika otvorena; glavna slika je najveća učitana.
+  const loaded = [...document.querySelectorAll('img')].filter((i) => i.naturalWidth > 0);
+  const img = loaded.find((i) => i.src.includes(mediaId)) ??
+    loaded.sort((a, b) => b.naturalWidth * b.naturalHeight - a.naturalWidth * a.naturalHeight)[0];
   const inputs = document.querySelectorAll('input[aria-label="Editable text"]');
   if (!img || inputs.length !== 1) return null;
   return { title: inputs[0].value, src: img.src };

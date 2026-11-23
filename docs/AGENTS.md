@@ -41,7 +41,7 @@
 | klipovi | **vlasnik** u Flow-u | pripremiti čeklistu, `--board`, Plan B/C | generisati klipove, trošiti kredite |
 | 08 montaža | alat | `assemble.mjs`, čitati `qc-report.md`, imenovati shotove za regeneraciju | renderovati kad nešto fali |
 | publish komplet | agent + alat | `publish.md`, `medium.md`, `thumbnails.md`; `publish.mjs` | objavljivati na YouTube |
-| Medium | alat (sam, kad je video javan) | `--check`, `--status` | `--post`/`--sweep` bez izričitog zahteva |
+| Medium | **vlasnik** pokreće objavu ručno (posle javnog videa); Task Scheduler ukinut 23. nov 2026 | `--check`, `--status`; `--post` samo na izričit zahtev | `--sweep`, `--install-task` (ne vraćati zadatak bez zahteva) |
 | Shortovi | agent + alat | `shorts.md`/`shorts.json`, renderovati **montažu** | renderovati običan rez (radi vlasnik u editoru) |
 | sajt kanala | **vlasnik** | pripremiti unos za `data.js` | menjati zaseban repo bez zahteva |
 
@@ -96,8 +96,11 @@
 ### Ponašanje
 
 27. **Zatvori svaki prozor/tab koji otvoriš** (Playwright, CDP, Chrome) na kraju posla; proveri `Get-Process chrome` i port 9333.
-28. **Ne objavljuj ništa spolja** (YouTube, Medium, sajt) i ne troši kredite bez izričitog zahteva; Medium objavljuje alat kad video postane javan.
-29. **Izveštaj iskreno**: pad testa, preskočen korak ili nepotvrđena činjenica se navode, ne glade.
+28. **Ne objavljuj ništa spolja** (YouTube, Medium, sajt) i ne troši kredite bez izričitog zahteva; Medium se objavljuje ručno na zahtev vlasnika (`--post`), bez Task Schedulera.
+29. **Slike u Flow-u moraju imati ime `shotNN-k`** (k = 1–4): vlasnik filtrira `shotN` i animira redom. `imena 0/4` u logu `flow-images`
+    je kvar — prekini, popravi, proveri `flow/flow.json` (sve `renamed`) pre nego što javiš „gotovo". Ne gasi ni jedan prolaz lančano
+    (`a; b`): kad prekineš prvi, drugi krene sam.
+30. **Izveštaj iskreno**: pad testa, preskočen korak ili nepotvrđena činjenica se navode, ne glade.
 
 ## 4. Radni postupak za tipične zadatke
 

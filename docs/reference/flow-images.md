@@ -54,6 +54,14 @@ Ništa se ne instalira: alat je čist Node kao ostatak lanca, a Chrome je spoljn
 U Flow projektu je svaka slika preimenovana u `shotNN-k <Flow-ov naslov>` (`shot07-2 Gilded man
 on lake raft`). Ime se vidi na slici i postaje ime fajla kad se slika skine iz Flow-a.
 
+**Ime je obaveza, ne ukras (23. nov 2026).** Vlasnik u Flow-u filtrira `shotN`, bira jednu od četiri
+slike i animira shotove redom od 1. Slike ne stižu redom (generisanje je paralelno), pa bez imena
+`shotNN-k` ne zna koja slika pripada kom shotu i mora svaku da otvara. Zato je `imena 0/4` u logu
+**kvar**, ne upozorenje: prekini prolaz, nađi uzrok, pa nastavi. Posle prolaza proveri
+`flow/flow.json` (`renamed` mora biti true za sve slike) i tek onda javi da je gotovo.
+Uzrok kvara 23. nov: `pImageReady` je tražio media ID u adresi slike, a Flow ga je izbacio
+(`flow.google.com/asb/…`) — svako preimenovanje je isteklo na 30 s, od prvog shota.
+
 **Flow-ova pretraga nije put do slika jednog shota.** Semantička je („Head" vraća i „Woman") i
 nove slike indeksira sa zakašnjenjem — zato pregled vodi pravo na svaku sliku.
 
