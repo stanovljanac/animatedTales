@@ -85,6 +85,8 @@ odgovara svom `SUBJECT`-u, end kartica (38) ima naslov i SUBSCRIBE.
 2. **`protagonists`** je upisan: `["El Dorado"]`. Freyle, Belalcázar, Raleigh i Sepúlveda su kontekst, ne glavni likovi.
 3. **`final.mp4` je renderovan** (18. nov 2026): 245.79s, 1920×1080 @ 24 fps, razlika od očekivanog −0.002s, 38 segmenata.
    Publish komplet je gotov: `publish.md` (5 naslova, chapteri prolaze) i `subtitles.srt`.
-4. **Thumbnailovi:** `thumbnails.md`, pet koncepata sa A (bez teksta) i B (sa tekstom). Predlog testa: koncepti 1, 2, 3
-   sa naslovima 1, 2, 3 iz `publish.md`.
+4. **Thumbnailovi:** druga serija (26. nov 2026, nova pravila iz `docs/reference/thumbnails.md`): `thumbnails.md`, koncepti
+   6–10, samo sa natpisom, zlatni čovek velik u kruni i zlatnom oklopu. Slike su generisane alatom (`flow/thumb6B-1` …,
+   pregled `flow/thumbnails.html`). Predlog testa: 6, 7 i 9, sa naslovima 3, 1 i 2 iz `publish.md`. Prva serija (1–5, A/B)
+   je u git istoriji.
 5. **Sajt:** tek pri objavi, sa pravom sličicom, trajanjem i YouTube ID-jem (nova regija South America).

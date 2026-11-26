@@ -1,298 +1,178 @@
 # Thumbnailovi — el-dorado
 
-Pet koncepata, svaki u dve varijante: **A bez teksta** i **B sa tekstom**. A i B su isti prompt; B ima samo još jedan `TEXT:` blok i drugačiji `NOT IN FRAME`, pa test poredi samo natpis. Pravila po kojima su pisani su u [`docs/reference/thumbnails.md`](../../docs/reference/thumbnails.md).
+Druga serija (26. nov 2026), po pravilima iz [`docs/reference/thumbnails.md`](../../docs/reference/thumbnails.md). Prva serija
+(koncepti 1–5, A/B, 18. nov) je zamenjena: pisana je po starim pravilima (sporedne scene, A varijante bez teksta). Ova je u
+git istoriji (`f3bcd06`). Flow: Image · 16:9 · x4, samo varijanta sa natpisom, slike `thumb6B-1` … u `flow/`.
 
-## Šta je ovde drugačije od starih thumbnailova
+**Glavna slika videa:** El Dorado nije bio grad nego čovek. Mladi naslednik Muiske, posut zlatnim prahom od glave do pete,
+stoji na splavu od trske nasred okruglog planinskog jezera Guatavita i baca zlato i smaragde u vodu, dok obala urla. Španci
+su posle toga dva veka tražili zlatni grad koga nije bilo. Svaki koncept pokazuje zlatnog čoveka, zlato i jezero (ili lovce
+koji ga jure).
 
-Stari su pokušavali da ispričaju celu priču u jednom kadru (pet likova, piramida, pomračenje, naslov preko sredine). Tvoje tri reference rade suprotno:
-
-- **jedna scena = jedna poenta** koja se vidi bez čitanja (stampedo na jednog lovca, ogromna ema naspram vojnika, kralj na belom konju pred kapijom);
-- **kontrast veličina ili kontrast očekivanja** — jedan veliki lik ili predmet, jedan veliki „problem“ naspram njega;
-- **namerno prazan komad neba, magle ili kamena** u jednom uglu, tamo ide natpis i ništa se ne briše sa slike;
-- **mali broj jakih boja**, jedna topla tačka koja vuče oko.
-
-Natpis nije naslov videa: to je rečenica od 3–5 reči, pouka ili misao lika, i naslov je ne ponavlja.
-
-## Kako se koristi
-
-1. **Flow:** Image · 16:9 · x4, prompt doslovno (jedan blok = jedan prompt). `flow-images.mjs` pravi samo slike shotova, thumbnailovi se rade ručno.
-2. **A i B generiši u istoj sesiji** da prođu isti uslovi. Ako B napravi grešku u slovima, ne ispravljaj prompt: uzmi A i dodaj natpis u editoru (isti tekst, ista boja, isti ugao).
-3. **Proveri** na 168×94 px (veličina u listi na telefonu): vidi li se poenta i čita li se natpis. Donji desni ugao zauzima oznaka trajanja — nema lica ni slova tamo. YouTube traži 1280×720, najviše 2 MB.
-4. **Test:** u YouTube Studiju „Test & compare“ ide do tri thumbnaila. Predlog je dole, sa po jednim naslovom uz svaki.
+**Zlatni čovek u thumbnailu:** lice je lock `muisca-heir` iz `episode.json`. Kostim je pojačan do „zlatnog čoveka" ikonografijom
+iz samog videa: zlatna kruna sa perjem (shot 13), zlatni prah po licu i rukama (01, 09, 38), zlatni oklop na grudima (lock
+poglavica) i bele pamučne tkanine (10, 13). Grudi su uvek pod zlatnim oklopom. Pozlaćen lik ne ide go, velik i spreda
+(`notes.md`, `flow-filter.md`).
 
 ## Pregled
 
-| # | Koncept | Poenta | Natpis (B) | Ugao | Naslov uz njega |
-|---|---|---|---|---|---|
-| 1 | Poklon u jezeru | Čovek prekriven zlatom baca zlato u vodu | HE THREW THE GOLD AWAY | gore desno | El Dorado Was Never a City. It Was a Man on a Raft |
-| 2 | Lovci i duh u magli | Španci traže zlatni grad, a ono što su čuli stoji u magli pred njima | THEY NEVER SAW IT | gore levo | What Was El Dorado, Really? A Gilded Lord, a Sacred Lake and a Hunt That Cost Lives |
-| 3 | Isušiti jezero | Jedan čovek preseče zid jezera da bi ga ispraznio i pokupio zlato sa dna | DRAIN THE LAKE. TAKE THE GOLD. | gore levo | How a Gift Thrown Into a Mountain Lake Became the Legend of El Dorado |
-| 4 | Bez ičega nazad | Čovek koji je zapisao legendu o zlatu odlazi bez zlata | I WENT BACK WITH NOTHING | gore levo | El Dorado: A Muisca Heir, a Reed Raft and the Chronicler Who Went Hunting for the Gold Himself |
-| 5 | Zlatni splav iz pećine | Jedini predmet koji je preživeo: zlatni splav od 20 cm iz pećine u Pasci, a iza njega jezero sa pravim splavom | WAS THIS EL DORADO? | gore levo | From a Gilded Heir on a Raft to a Lost City on European Maps: The Story of El Dorado |
+| # | Koncept | Natpis | Izvor | Naslov uz njega |
+|---|---|---|---|---|
+| 6 | Zlatni čovek nad jezerom | EL DORADO / WAS A MAN | shot 01, 08, 13, 38 | How a Gift Thrown Into a Mountain Lake Became the Legend of El Dorado |
+| 7 | Zlato u jezero | HE THREW THE GOLD INTO THE LAKE | shot 10, 12 | El Dorado Was Never a City. It Was a Man on a Raft |
+| 8 | Legenda nad lovcima | EL DORADO / THEY NEVER FOUND IT | shot 17, 18, 29 | From a Gilded Heir on a Raft to a Lost City on European Maps: The Story of El Dorado |
+| 9 | Zlato na dnu | IS THE GOLD STILL IN THE LAKE? | shot 12, 14, 37 | What Was El Dorado, Really? A Gilded Lord, a Sacred Lake and a Hunt That Cost Lives |
+| 10 | Novi gospodar | THE REAL EL DORADO | shot 13 | El Dorado: A Muisca Heir, a Reed Raft and the Chronicler Who Went Hunting for the Gold Himself |
 
-## Preporučeni test (tri od pet)
+## Preporučeni test
 
-| Thumbnail | Zašto baš on | Naslov |
-|---|---|---|
-| **1 Poklon u jezeru** | ikona legende i preokret u jednom pokretu; najjača slika, vidi se i na malom | El Dorado Was Never a City. It Was a Man on a Raft |
-| **2 Lovci i duh u magli** | misterija i „vidim nešto što oni ne vide“; hladna paleta, različita od ostala dva | What Was El Dorado, Really? A Gilded Lord, a Sacred Lake and a Hunt That Cost Lives |
-| **3 Isušiti jezero** | pohlepa i akcija, ljudski lik koji gleda; druga vrsta radoznalosti („zašto?“) | How a Gift Thrown Into a Mountain Lake Became the Legend of El Dorado |
-
-Tri različita okidača (preokret, pohlepa, misterija) i tri različite palete (zlatno-plavo, kamen-blato, indigo) znače da pobednik nešto kaže, a ne samo „ova je lepša“. Natpis je gore desno samo u prvom, u drugom i trećem je gore levo, jer taj ugao u njihovim kadrovima ništa ne zaklanja. Koncepti 4 i 5 su rezerva za drugi krug ili za thumbnail Shorta.
-
-Naslovi su isti u `publish.md`: naslov broj N ide uz koncept broj N. Naslov ne ponavlja frazu natpisa uz koji ide; pojedinačne reči poput „gold“ i „lake“ su u ovoj priči neizbežne.
+**6, 7 i 9**: tri udice (ko je bio El Dorado, šta je radio sa zlatom, gde je zlato sad) i tri palete (zora, sunce kroz dim,
+sumrak pod vodom). Naslov 1 („…Never a City…") ide uz 7, a ne uz 6, jer bi ponovio natpis „WAS A MAN". 8 i 10 su rezerva.
 
 ---
 
-## 1. Poklon u jezeru
+## 6. Zlatni čovek nad jezerom
 
-**Poenta:** Čovek prekriven zlatom baca zlato u vodu — preokret cele priče („nije blago, nego dar“) u jednom pokretu.
-**Šta se vidi za sekundu:** Zlatna figura, luk zlata kroz vazduh, tamno jezero. Zlato leti, ne leži.
-**Natpis (B):** „HE THREW THE GOLD AWAY“ — gore desno, tamnocrvena (#B3161B) sa tankim krem rubom. Alternative: „EL DORADO WAS A MAN (naslov videa kao natpis)“ · „HE WAS LORD (rečenica S19)“.
-**Naslov uz njega:** El Dorado Was Never a City. It Was a Man on a Raft
-**Pazi:** Flow filter „sexual content“ za zlatom premazan lik (flow-filter.md, el-dorado shot 13): zato je lik sa leđa i u profilu, bela tkanina do ispod kolena, zlatni pektoral, dim preko nogu. Ako Flow ipak odbije: smanji lika na pola visine kadra, tri četvrtine, mangal sa dimom ispred (Plan B iz flow-filter.md). Naslednik nikad nije gol spreda.
-
-### 1A — bez teksta (645 reči)
-
-```text
-STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.
-SHOT: one clear moment, readable at phone size — the gold-covered Muisca heir stands on his reed raft in the middle of a round mountain lake and hurls a handful of gold and emeralds into the water: the man called El Dorado giving his gold away.
-SUBJECT: a young Muisca heir of about twenty-five, a lean smooth face with high cheekbones, calm dark eyes, straight black hair cut at the shoulders, a slim upright build, a small gold ring through the nose, at the left third, large, filling two thirds of the frame height and cropped at the thigh, seen from behind and from the side with his head turned in clean profile toward the right, his back, shoulders, arms, neck, face and hair plated in glittering gold dust until he shines like a figure cast in the metal, a long plain white cotton cloth wrapped from his waist to below his knees, a broad gold pectoral disc on his chest seen edge-on from the side, a crown of upright feathers on his head, his right arm swung out to the right with the hand open and the fingers spread at the moment of release, his face calm and lifted
-SUBJECT 2: a glittering arc of thrown gold flying from his open hand across the middle of the frame toward the right: flat gold figurines, discs, nose rings, rough nuggets and a few dark green emeralds, each piece catching the sun, the arc ending in a bright splash and spreading rings on the dark water at the right
-SUBJECT 3: the reed raft under his feet, only its left part in the frame at the lower left: bundled yellow reeds lashed with plaited cord, a raised bundled prow, one clay incense brazier at its corner trailing grey smoke, a heap of gold and emeralds at his feet
-ACTION: the last pieces of gold are still leaving his fingers while smoke from the brazier drifts across his legs
-SETTING: a perfectly round mountain lake in a high Andean bowl, dark blue water ringed by steep walls of green paramo grass and low scrub, a narrow pale shore, thin mist along the rim, no building anywhere, a thin ring of tiny Muisca figures in red, ochre and indigo mantles along the far shore, far and small, arms raised
-CAMERA: eye level with the heir, a little low, medium-wide shot, the camera floating still on the water beside the raft.
-FRAME LAYOUT: left third — the gilded heir, large, back and profile; center — the arc of gold across the frame at chest height; right and lower right — the splash and the rings on the dark water; middle distance — the thin ring of the far shore crowd, small; upper right quarter — open, calm pale dawn sky with thin mist, smooth and EMPTY, nothing in it.
-FACING: we see the heir from behind and in profile, his face turned toward screen-right and the thrown gold; the far crowd shows only raised arms and plumes.
-SCREEN DIRECTION: the gold flies from left to right; ripples spread outward from the splash; smoke drifts to the right.
-LIGHT: a low gold sun on the right horizon behind the arc, a bright rim of light along the heir’s gold back and shoulder, hard glints along the whole arc, a soft mist glow in the sky.
-PALETTE: gold, deep lake blue, paramo green, pale dawn cream, a touch of crimson in the far mantles
-DETAIL: flecks of gold dust shedding from his skin, emerald facets, the hammered edges of the flying figurines, plaited rope on the raft, crisp splash droplets.
-NOT IN FRAME: any bare uncoated skin, a frontal view of his torso, Spaniards, other boats, buildings, a city, any text, letters, numbers, logos, watermarks.
-```
-
-### 1B — sa tekstom (720 reči)
-
-```text
-STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.
-SHOT: one clear moment, readable at phone size — the gold-covered Muisca heir stands on his reed raft in the middle of a round mountain lake and hurls a handful of gold and emeralds into the water: the man called El Dorado giving his gold away.
-SUBJECT: a young Muisca heir of about twenty-five, a lean smooth face with high cheekbones, calm dark eyes, straight black hair cut at the shoulders, a slim upright build, a small gold ring through the nose, at the left third, large, filling two thirds of the frame height and cropped at the thigh, seen from behind and from the side with his head turned in clean profile toward the right, his back, shoulders, arms, neck, face and hair plated in glittering gold dust until he shines like a figure cast in the metal, a long plain white cotton cloth wrapped from his waist to below his knees, a broad gold pectoral disc on his chest seen edge-on from the side, a crown of upright feathers on his head, his right arm swung out to the right with the hand open and the fingers spread at the moment of release, his face calm and lifted
-SUBJECT 2: a glittering arc of thrown gold flying from his open hand across the middle of the frame toward the right: flat gold figurines, discs, nose rings, rough nuggets and a few dark green emeralds, each piece catching the sun, the arc ending in a bright splash and spreading rings on the dark water at the right
-SUBJECT 3: the reed raft under his feet, only its left part in the frame at the lower left: bundled yellow reeds lashed with plaited cord, a raised bundled prow, one clay incense brazier at its corner trailing grey smoke, a heap of gold and emeralds at his feet
-ACTION: the last pieces of gold are still leaving his fingers while smoke from the brazier drifts across his legs
-SETTING: a perfectly round mountain lake in a high Andean bowl, dark blue water ringed by steep walls of green paramo grass and low scrub, a narrow pale shore, thin mist along the rim, no building anywhere, a thin ring of tiny Muisca figures in red, ochre and indigo mantles along the far shore, far and small, arms raised
-CAMERA: eye level with the heir, a little low, medium-wide shot, the camera floating still on the water beside the raft.
-FRAME LAYOUT: left third — the gilded heir, large, back and profile; center — the arc of gold across the frame at chest height; right and lower right — the splash and the rings on the dark water; middle distance — the thin ring of the far shore crowd, small; upper right quarter — open, calm pale dawn sky with thin mist, smooth and EMPTY, nothing in it.
-TEXT: in the upper right quarter, the words "HE THREW THE GOLD AWAY" on two lines, "HE THREW" above "THE GOLD AWAY", huge bold hand-lettered capitals with a heavy cut-out look, deep crimson red (#B3161B) with a thin cream outline and a soft dark shadow, straight and not rotated, sitting only on the empty area and touching nothing else, spelled exactly like this, no other words anywhere in the image.
-FACING: we see the heir from behind and in profile, his face turned toward screen-right and the thrown gold; the far crowd shows only raised arms and plumes.
-SCREEN DIRECTION: the gold flies from left to right; ripples spread outward from the splash; smoke drifts to the right.
-LIGHT: a low gold sun on the right horizon behind the arc, a bright rim of light along the heir’s gold back and shoulder, hard glints along the whole arc, a soft mist glow in the sky.
-PALETTE: gold, deep lake blue, paramo green, pale dawn cream, a touch of crimson in the far mantles
-DETAIL: flecks of gold dust shedding from his skin, emerald facets, the hammered edges of the flying figurines, plaited rope on the raft, crisp splash droplets.
-NOT IN FRAME: any bare uncoated skin, a frontal view of his torso, Spaniards, other boats, buildings, a city, logos, watermarks, any words or letters other than the title text.
-```
-
----
-
-## 2. Lovci i duh u magli
-
-**Poenta:** Španci traže zlatni grad, a ono što su čuli stoji u magli pred njima — i ne vide ga. Gledalac vidi ono što lovci ne vide.
-**Šta se vidi za sekundu:** Tri čelične kacige u kontra-svetlu, ogromno jezero u magli i jedna mala topla zlatna tačka u sredini.
-**Natpis (B):** „THEY NEVER SAW IT“ — gore levo, jarkozlatna (#FFC62E) sa debelim tamnosmeđim rubom. Alternative: „NEVER A CITY (iz naslova videa)“ · „A MAN, NOT A CITY“.
-**Naslov uz njega:** What Was El Dorado, Really? A Gilded Lord, a Sacred Lake and a Hunt That Cost Lives
-**Pazi:** Tačnost: nijedan Španac nije video ceremoniju (notes.md), zato je splav DUH u magli — prikazan samo gledaocu, kao u shotu 29 — a lovci gledaju prazno jezero. Muisca ne smeju biti na obali.
-
-### 2A — bez teksta (548 reči)
-
-```text
-STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.
-SHOT: the hunters’ view of the legend — three Spanish conquistadors on a rocky ridge stare across a round mountain lake full of mist, looking for a golden city; only the viewer can see, faint in the mist, the reed raft and the glowing gold figure that the hunters never saw.
-SUBJECT: a Spanish conquistador captain in his fifties, a weathered square face, a short grizzled beard, a steel morion helmet, a dented steel breastplate over a stained red-brown doublet, a sword belt at the hip, in front at the right third, large, from the chest up, seen from behind and in profile, his helmeted head turned toward the left, one hand held flat above his brows against the glare, the other arm stretched out across the lake, pointing
-SUBJECT 2: two companions, Spanish conquistadors of the 1530s, bearded sunburned men in steel morion helmets, dented breastplates or quilted cotton jackets, leather boots, swords at the hip, one arquebus slung across a shoulder, exactly two, a step behind the captain and a little lower, smaller in the frame, seen from behind in their helmets, both staring toward the left
-SUBJECT 3: a faint translucent ghost of the ceremony: a reed raft with four thin trails of smoke and one tiny upright figure glowing gold, small and far at the left center of the lake, half dissolved in the mist, as if remembered rather than seen
-ACTION: the captain points, the men search the water, the wind bends the grass on the ridge, the mist drifts slowly across the lake toward the left
-SETTING: a perfectly round mountain lake in a high Andean bowl at dusk, thick white mist lying on the whole water and thinning toward the rim, steep walls of green paramo grass, no building anywhere; in the foreground a rocky ridge with tussock grass and a few furry frailejon plants
-CAMERA: just behind and slightly below the men’s shoulders, eye level, medium-wide shot, the camera still.
-FRAME LAYOUT: right third — the three conquistadors, the captain largest, cropped at the chest; left center — the misty lake with the ghost raft glowing at its heart; lower left — dark ridge rock with a few frailejones, kept simple; upper left — open deep indigo dusk sky fading into grey mist, smooth and EMPTY, nothing in it.
-FACING: all three men are seen from behind and in profile, looking toward screen-left, none looking at the viewer.
-SCREEN DIRECTION: the captain’s arm points from right to left; the mist drifts toward the left; the glow of the ghost figure rises slowly.
-LIGHT: cold blue dusk light with a bright rim of light along the steel helmets and breastplates; the ghost figure is the only warm gold in the frame and its glow stains the nearest mist.
-PALETTE: indigo, mist grey, cold steel, one warm gold glow
-DETAIL: dented steel and rivets on the helmets, the grain of the breastplates, frost-white tussock grass, the glow on the mist, the faint braziers and the four threads of smoke on the ghost raft.
-NOT IN FRAME: Muisca people, a crowd on the shore, a visible ceremony, a city, buildings, boats, any text, letters, numbers, logos, watermarks.
-```
-
-### 2B — sa tekstom (620 reči)
-
-```text
-STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.
-SHOT: the hunters’ view of the legend — three Spanish conquistadors on a rocky ridge stare across a round mountain lake full of mist, looking for a golden city; only the viewer can see, faint in the mist, the reed raft and the glowing gold figure that the hunters never saw.
-SUBJECT: a Spanish conquistador captain in his fifties, a weathered square face, a short grizzled beard, a steel morion helmet, a dented steel breastplate over a stained red-brown doublet, a sword belt at the hip, in front at the right third, large, from the chest up, seen from behind and in profile, his helmeted head turned toward the left, one hand held flat above his brows against the glare, the other arm stretched out across the lake, pointing
-SUBJECT 2: two companions, Spanish conquistadors of the 1530s, bearded sunburned men in steel morion helmets, dented breastplates or quilted cotton jackets, leather boots, swords at the hip, one arquebus slung across a shoulder, exactly two, a step behind the captain and a little lower, smaller in the frame, seen from behind in their helmets, both staring toward the left
-SUBJECT 3: a faint translucent ghost of the ceremony: a reed raft with four thin trails of smoke and one tiny upright figure glowing gold, small and far at the left center of the lake, half dissolved in the mist, as if remembered rather than seen
-ACTION: the captain points, the men search the water, the wind bends the grass on the ridge, the mist drifts slowly across the lake toward the left
-SETTING: a perfectly round mountain lake in a high Andean bowl at dusk, thick white mist lying on the whole water and thinning toward the rim, steep walls of green paramo grass, no building anywhere; in the foreground a rocky ridge with tussock grass and a few furry frailejon plants
-CAMERA: just behind and slightly below the men’s shoulders, eye level, medium-wide shot, the camera still.
-FRAME LAYOUT: right third — the three conquistadors, the captain largest, cropped at the chest; left center — the misty lake with the ghost raft glowing at its heart; lower left — dark ridge rock with a few frailejones, kept simple; upper left — open deep indigo dusk sky fading into grey mist, smooth and EMPTY, nothing in it.
-TEXT: in the upper left corner, the words "THEY NEVER SAW IT" on two lines, "THEY NEVER" above "SAW IT", huge bold hand-lettered capitals with a heavy cut-out look, bright gold-yellow (#FFC62E) with a thick dark brown outline and a soft shadow, straight and not rotated, sitting only on the empty area and touching nothing else, spelled exactly like this, no other words anywhere in the image.
-FACING: all three men are seen from behind and in profile, looking toward screen-left, none looking at the viewer.
-SCREEN DIRECTION: the captain’s arm points from right to left; the mist drifts toward the left; the glow of the ghost figure rises slowly.
-LIGHT: cold blue dusk light with a bright rim of light along the steel helmets and breastplates; the ghost figure is the only warm gold in the frame and its glow stains the nearest mist.
-PALETTE: indigo, mist grey, cold steel, one warm gold glow
-DETAIL: dented steel and rivets on the helmets, the grain of the breastplates, frost-white tussock grass, the glow on the mist, the faint braziers and the four threads of smoke on the ghost raft.
-NOT IN FRAME: Muisca people, a crowd on the shore, a visible ceremony, a city, buildings, boats, logos, watermarks, any words or letters other than the title text.
-```
-
----
-
-## 3. Isušiti jezero
-
-**Poenta:** Jedan čovek preseče zid jezera da bi ga ispraznio i pokupio zlato sa dna — pohlepa iza lova na El Dorado, u akciji.
-**Šta se vidi za sekundu:** Mlaz mutne vode kroz urez, polupuno jezero sa blatom i varnicama zlata, čovek u šeširu koji gleda i zna šta hoće.
-**Natpis (B):** „DRAIN THE LAKE. TAKE THE GOLD.“ — gore levo, krem (#FFF1CF) sa debelim crnim rubom. Alternative: „THEY DRAINED THE LAKE“ · „12,000 PESOS FROM THE MUD (Sepúlvedina tvrdnja, S33)“.
+**Poenta:** Zlatni čovek u kruni, velik, diže zlatnu figuricu iznad okruglog jezera; splav i obala puna ljudi su ispod njega.
+**Natpis (B):** „EL DORADO / WAS A MAN“ — gore desno, na crnoj traci.
 **Naslov uz njega:** How a Gift Thrown Into a Mountain Lake Became the Legend of El Dorado
-**Pazi:** Tačnost: Sepúlveda je prosekao kanal i spustio vodu, ne ispraznio jezero do dna (drugi put nije mogao dublje). Zato je jezero „spušteno“, ne suvo. Dvanaest hiljada pesosa je njegova sopstvena tvrdnja i ne ide u natpis kao činjenica.
+**Pazi:** tvrdnja je premisa skripte („El Dorado was not a city. It was a man"), ne pitanje. Grudi pod oklopom, bez kamenih zgrada i Španaca.
+**Izvor:** shot 01 (splav sa četiri kamina), shot 08 (obala prstenom oko jezera), shot 13 (kruna), shot 38 (pozlaćeno lice).
 
-### 3A — bez teksta (506 reči)
-
-```text
-STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.
-SHOT: one man has cut a gash through the wall of a sacred lake to drain it and pick the gold off its shore — the greed behind the hunt for El Dorado, caught in the act.
-SUBJECT: a Spanish colonial merchant-engineer in his forties, a broad sunburned face, a dark pointed beard, a wide-brimmed felt hat, a worn leather jerkin over a white shirt with rolled sleeves, at the right third, large, from the waist up, seen from behind and from the side with his face in three-quarter profile turned down and toward the left, the brim of his hat shading his eyes, one fist on his hip, the other arm stretched out toward the cut, a grim satisfied set to his mouth
-SUBJECT 2: a raw man-made gash cut through the green grass wall of the crater at the lower center-left, a thundering torrent of brown muddy water pouring out through it and down the slope toward the camera, white foam and spray, about a dozen tiny workers with spades and baskets on both lips of the cut, far and small
-SUBJECT 3: the round lake beyond the cut, its level visibly lowered: a wide ring of pale wet mud shore exposed all around the water, gold nuggets and small gold figurines scattered in the mud and glinting like sparks
-ACTION: the torrent roars through the cut, the workers dig at its edges, the man watches the water drop and the gold appear
-SETTING: a high Andean crater lake in a bowl of green paramo grass under heavy storm clouds, no building, no ships, no Muisca crowd
-CAMERA: low angle from beside the man’s shoulder, medium-wide shot, the camera still.
-FRAME LAYOUT: right third — the man, large, cropped at the waist; lower center and lower left — the cut and the torrent; center — the half-emptied lake with its pale muddy ring and the sparks of gold; upper left — a big bank of dark slate-grey storm cloud, smooth and EMPTY, nothing in it.
-FACING: we see the man from behind and the side, his face in three-quarter profile turned toward screen-left and down at the cut; the workers are tiny and faceless.
-SCREEN DIRECTION: the water pours from the cut toward the camera and to the right; his arm points from right to left; clouds drift to the right.
-LIGHT: a single break in the storm clouds drops a warm gold shaft onto the exposed mud so the scattered gold sparkles; cool flat light on the man’s face; wet shine on the torrent.
-PALETTE: storm slate, wet mud brown, paramo green, gold sparks
-DETAIL: the grain of the leather jerkin, the sweat on his sunburned face, the torn turf at the lips of the cut, foam and flying droplets, the glints of gold in the mud.
-NOT IN FRAME: Muisca people, a ceremony, a gilded man, ships, buildings, a city, any text, letters, numbers, logos, watermarks.
-```
-
-### 3B — sa tekstom (581 reči)
+### 6B — sa natpisom
 
 ```text
 STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.
-SHOT: one man has cut a gash through the wall of a sacred lake to drain it and pick the gold off its shore — the greed behind the hunt for El Dorado, caught in the act.
-SUBJECT: a Spanish colonial merchant-engineer in his forties, a broad sunburned face, a dark pointed beard, a wide-brimmed felt hat, a worn leather jerkin over a white shirt with rolled sleeves, at the right third, large, from the waist up, seen from behind and from the side with his face in three-quarter profile turned down and toward the left, the brim of his hat shading his eyes, one fist on his hip, the other arm stretched out toward the cut, a grim satisfied set to his mouth
-SUBJECT 2: a raw man-made gash cut through the green grass wall of the crater at the lower center-left, a thundering torrent of brown muddy water pouring out through it and down the slope toward the camera, white foam and spray, about a dozen tiny workers with spades and baskets on both lips of the cut, far and small
-SUBJECT 3: the round lake beyond the cut, its level visibly lowered: a wide ring of pale wet mud shore exposed all around the water, gold nuggets and small gold figurines scattered in the mud and glinting like sparks
-ACTION: the torrent roars through the cut, the workers dig at its edges, the man watches the water drop and the gold appear
-SETTING: a high Andean crater lake in a bowl of green paramo grass under heavy storm clouds, no building, no ships, no Muisca crowd
-CAMERA: low angle from beside the man’s shoulder, medium-wide shot, the camera still.
-FRAME LAYOUT: right third — the man, large, cropped at the waist; lower center and lower left — the cut and the torrent; center — the half-emptied lake with its pale muddy ring and the sparks of gold; upper left — a big bank of dark slate-grey storm cloud, smooth and EMPTY, nothing in it.
-TEXT: in the upper left corner, the words "DRAIN THE LAKE. TAKE THE GOLD." on two lines, "DRAIN THE LAKE." above "TAKE THE GOLD.", huge bold hand-lettered capitals with a heavy cut-out look, cream white (#FFF1CF) with a thick black outline and a soft shadow, straight and not rotated, sitting only on the empty area and touching nothing else, spelled exactly like this, no other words anywhere in the image.
-FACING: we see the man from behind and the side, his face in three-quarter profile turned toward screen-left and down at the cut; the workers are tiny and faceless.
-SCREEN DIRECTION: the water pours from the cut toward the camera and to the right; his arm points from right to left; clouds drift to the right.
-LIGHT: a single break in the storm clouds drops a warm gold shaft onto the exposed mud so the scattered gold sparkles; cool flat light on the man’s face; wet shine on the torrent.
-PALETTE: storm slate, wet mud brown, paramo green, gold sparks
-DETAIL: the grain of the leather jerkin, the sweat on his sunburned face, the torn turf at the lips of the cut, foam and flying droplets, the glints of gold in the mud.
-NOT IN FRAME: Muisca people, a ceremony, a gilded man, ships, buildings, a city, logos, watermarks, any words or letters other than the title text.
+THUMBNAIL: a YouTube thumbnail with one big hero and one big title, bold saturated colors, strong contrast, the whole idea readable at phone size.
+SHOT: El Dorado, the gilded man of the legend, towers over the sacred round lake where his people gave their gold away.
+SUBJECT: the gilded heir, El Dorado: a young Muisca heir of about twenty-five, a lean smooth face with high cheekbones, calm dark eyes, straight black hair cut at the shoulders, a slim upright build, a small gold ring through the nose; dusted all over with fine powdered gold, so his face, neck, arms and hands shine like polished metal; dressed as the golden man of the legend: a tall gold crown with upright gold plumes, gold ear spools, a wide hammered gold breastplate covering his whole chest, a white cotton cloth over one shoulder; seen from the chest up, very large in the left half of the frame, his crowned head in the upper half of the frame, his right hand raising a flat gold figurine beside his face, his chin lifted, his eyes on the lake to the right
+SUBJECT 2: far below him on the water at the right, small: a flat raft of bundled yellow reeds with a clay incense brazier at each of its four corners trailing grey smoke
+SUBJECT 3: tiny Muisca crowds in red, ochre and indigo mantles, feather headdresses and gold crowns ringing the whole shore, every face turned up toward him
+SETTING: Lake Guatavita below and behind him: a perfectly round dark blue mountain lake in a high Andean bowl, steep walls of green paramo grass, thin mist along the rim, no building anywhere
+CAMERA: low angle hero shot from just below his chest, close, so he rises above the whole crater.
+FRAME LAYOUT: left half: the gilded man, large, from the chest up; right half, lower part: the lake, the raft and the crowd; upper right: calm sunrise sky above the crater rim, smooth and EMPTY, for the title; lower right corner: only water and grass, nothing important.
+TEXT: a two-level title in the upper right, set on one rough black brush-stroke banner: the first line "EL DORADO" in huge heavy bold serif capital letters like the title of an epic film poster, metallic gold with a carved bevel, a thick dark brown outline and a soft black drop shadow; below it "WAS A MAN" in smaller heavy serif capital letters, warm cream white with a thick black outline; the title block covers about half the frame width; spelled exactly like this, nothing else written anywhere, never touching the face.
+FACING: the gilded man in three-quarter view turned toward screen-right; the crowd looks up at him.
+LIGHT: low early sun from the right breaking through the mist, a bright rim on his crown and gilded face, the figurine the brightest thing in the frame.
+PALETTE: blazing gold, deep lake blue, saturated paramo green, peach and rose sunrise sky, red and indigo accents.
+DETAIL: gold dust glittering on his skin, hammered breastplate, gold plumes, curls of brazier smoke.
+NOT IN FRAME: a bare chest, minted coins, stone temples, pyramids, Spanish soldiers, a second gilded figure, extra words or letters.
 ```
 
 ---
 
-## 4. Bez ičega nazad
+## 7. Zlato u jezero
 
-**Poenta:** Čovek koji je zapisao legendu o zlatu odlazi bez zlata — sveštenik leži ničice pred crnim jezerom. Ljudski vrhunac priče.
-**Šta se vidi za sekundu:** Bela mrlja na crnom kamenju (sveštenik), čovek u crnom iznad njega, crno jezero. Nešto je pošlo naopako.
-**Natpis (B):** „I WENT BACK WITH NOTHING“ — gore levo, jarkonarandžasta (#FF7A1A) sa debelim skoro crnim rubom. Alternative: „I LEFT HIM THERE“ · „HE NEVER SAID WHY (S49)“.
-**Naslov uz njega:** El Dorado: A Muisca Heir, a Reed Raft and the Chronicler Who Went Hunting for the Gold Himself
-**Pazi:** Rezervni koncept: slika ne kaže „El Dorado“ na prvi pogled, pa se oslanja na natpis i naslov. Najjači je kao thumbnail za Short iz poslednje trećine (shotovi 31–34). Navod je Freyleov i doslovan iz skripte (S48).
+**Poenta:** Zlatni čovek sa ivice splava baca luk zlata i smaragda u tamno jezero; četiri poglavice iza njega čekaju svoj red.
+**Natpis (B):** „HE THREW THE GOLD INTO THE LAKE“ — gore desno, preko neba između dima.
+**Naslov uz njega:** El Dorado Was Never a City. It Was a Man on a Raft
+**Pazi:** po Freyleu: gomila zlata i smaragda, četiri poglavice, kamini sa tamjanom. Nikad kovanice. Nema Španaca, jer nijedan nije video ceremoniju.
+**Izvor:** shot 10 (naslednik, četiri poglavice, gomila pod nogama), shot 12 (bacanje), bliže i iz nivoa vode.
 
-### 4A — bez teksta (543 reči)
-
-```text
-STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.
-SHOT: the loneliest moment of the hunt — the chronicler who wrote down the El Dorado ceremony stands over the old priest who has thrown himself face down on the shore of a black mountain lake, and he will go back with nothing.
-SUBJECT: a lean Spanish colonial chronicler of about fifty, a long narrow face, deep-set dark eyes, a short pointed beard streaked with grey, a plain black doublet with a flat white collar, ink-stained fingers, at the right third, standing, large, cropped at the thigh, a long black cloak over the doublet, his flat black hat crushed in one hand, three-quarter view turned toward the left and down, his face stunned and hollow, not triumphant
-SUBJECT 2: an old Muisca priest, a lean weathered face with deep lines, long grey hair tied back with a cotton band, a plain white cotton mantle, a small gold pendant on a cord, bare feet, lying face down on the stony shore at the lower center-left with his arms stretched out toward the water, his white cotton mantle spread across the dark stones, his long grey hair loose, the whitest and brightest shape in the frame
-SUBJECT 3: a small dark lake high in the paramo, black water under low cloud, a rim of tussock grass and furry frailejon plants, a rocky shore, bare windswept hills, two faint warm gold glints deep under the black water side by side, the vague outline of two small caimans, barely visible
-ACTION: the priest lies still, the man stands over him with his hand open, the wind moves the tufts of frailejon grass and nothing else moves
-SETTING: the shore of a small dark lake high in the paramo under low cloud, a rocky edge with tussock grass and furry frailejon plants at the lower right, bare windswept hills, no building
-CAMERA: low, near the ground on the shore, eye level with the fallen priest, medium-wide shot, the camera still.
-FRAME LAYOUT: right third — the chronicler, large, cropped at the thigh; lower center-left — the priest on the dark stones; across the middle — the black lake with the two faint glints; lower right edge — frailejon plants on rock; upper left — low pale grey cloud, soft, smooth and EMPTY, nothing in it.
-FACING: the chronicler is seen in three-quarter view looking down and to the left at the priest; the priest lies with his head toward screen-left and the water; neither looks at the viewer.
-SCREEN DIRECTION: the lake lies at the left; the cloud drifts slowly to the left; the man’s gaze runs from right to left and down.
-LIGHT: cold grey overcast, soft and without hard shadows; only the white mantle, the small gold pendant on the priest’s chest and the two glints in the water carry any warmth.
-PALETTE: slate grey, black water, bone white, a small warm gold accent
-DETAIL: the weave of the cotton mantle, wet stones, the pendant on its cord, ink on his fingertips, hoar on the tussock grass, the faint glints under the water.
-NOT IN FRAME: Muisca crowds, soldiers, buildings, boats, a golden city, any text, letters, numbers, logos, watermarks.
-```
-
-### 4B — sa tekstom (616 reči)
+### 7B — sa natpisom
 
 ```text
 STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.
-SHOT: the loneliest moment of the hunt — the chronicler who wrote down the El Dorado ceremony stands over the old priest who has thrown himself face down on the shore of a black mountain lake, and he will go back with nothing.
-SUBJECT: a lean Spanish colonial chronicler of about fifty, a long narrow face, deep-set dark eyes, a short pointed beard streaked with grey, a plain black doublet with a flat white collar, ink-stained fingers, at the right third, standing, large, cropped at the thigh, a long black cloak over the doublet, his flat black hat crushed in one hand, three-quarter view turned toward the left and down, his face stunned and hollow, not triumphant
-SUBJECT 2: an old Muisca priest, a lean weathered face with deep lines, long grey hair tied back with a cotton band, a plain white cotton mantle, a small gold pendant on a cord, bare feet, lying face down on the stony shore at the lower center-left with his arms stretched out toward the water, his white cotton mantle spread across the dark stones, his long grey hair loose, the whitest and brightest shape in the frame
-SUBJECT 3: a small dark lake high in the paramo, black water under low cloud, a rim of tussock grass and furry frailejon plants, a rocky shore, bare windswept hills, two faint warm gold glints deep under the black water side by side, the vague outline of two small caimans, barely visible
-ACTION: the priest lies still, the man stands over him with his hand open, the wind moves the tufts of frailejon grass and nothing else moves
-SETTING: the shore of a small dark lake high in the paramo under low cloud, a rocky edge with tussock grass and furry frailejon plants at the lower right, bare windswept hills, no building
-CAMERA: low, near the ground on the shore, eye level with the fallen priest, medium-wide shot, the camera still.
-FRAME LAYOUT: right third — the chronicler, large, cropped at the thigh; lower center-left — the priest on the dark stones; across the middle — the black lake with the two faint glints; lower right edge — frailejon plants on rock; upper left — low pale grey cloud, soft, smooth and EMPTY, nothing in it.
-TEXT: in the upper left corner, the words "I WENT BACK WITH NOTHING" on two lines, "I WENT BACK" above "WITH NOTHING", huge bold hand-lettered capitals with a heavy cut-out look, vivid orange (#FF7A1A) with a thick near-black outline and a soft shadow, straight and not rotated, sitting only on the empty area and touching nothing else, spelled exactly like this, no other words anywhere in the image.
-FACING: the chronicler is seen in three-quarter view looking down and to the left at the priest; the priest lies with his head toward screen-left and the water; neither looks at the viewer.
-SCREEN DIRECTION: the lake lies at the left; the cloud drifts slowly to the left; the man’s gaze runs from right to left and down.
-LIGHT: cold grey overcast, soft and without hard shadows; only the white mantle, the small gold pendant on the priest’s chest and the two glints in the water carry any warmth.
-PALETTE: slate grey, black water, bone white, a small warm gold accent
-DETAIL: the weave of the cotton mantle, wet stones, the pendant on its cord, ink on his fingertips, hoar on the tussock grass, the faint glints under the water.
-NOT IN FRAME: Muisca crowds, soldiers, buildings, boats, a golden city, logos, watermarks, any words or letters other than the title text.
+THUMBNAIL: a YouTube thumbnail with one big hero and one big title, bold saturated colors, strong contrast, the whole idea readable at phone size.
+SHOT: the gilded man of the legend flings a shower of gold and emeralds from his reed raft into the sacred lake.
+SUBJECT: the gilded heir, El Dorado: a young Muisca heir of about twenty-five, a lean smooth face with high cheekbones, calm dark eyes, straight black hair cut at the shoulders, a slim upright build, a small gold ring through the nose; dusted all over with fine powdered gold, so his face, neck, arms and hands shine like polished metal; dressed as the golden man of the legend: a tall gold crown with upright gold plumes, gold ear spools, a wide hammered gold breastplate covering his whole chest, a white cotton cloth wrapped from the waist to the knee; seen from the waist up, very large in the left 45 percent of the frame, at the edge of the raft at the end of a wide throw, both arms swept toward the right, his face in three-quarter profile, calm and solemn
+SUBJECT 2: a bright arc of gold flying from his hands over the water to the center of the frame: flat gold figurines, discs, nose rings and rough uncut green emeralds, spinning and flashing, the first pieces splashing into the dark lake
+SUBJECT 3: behind his left shoulder on the raft, smaller and softer: four Muisca chiefs in tall gold diadems with feather plumes and mantles striped red, white and indigo, each holding a gold piece ready to throw, watching him
+SETTING: the middle of Lake Guatavita, a round dark mountain lake in a bowl of green paramo, no building anywhere; grey-white incense smoke from the braziers on the raft drifting across the frame, a tiny cheering crowd on the far shore
+CAMERA: low, at water level just off the raft, looking up at him, close.
+FRAME LAYOUT: left 45 percent: the gilded man, large; center: the flying gold and emeralds; upper right: an open patch of hazy sky between the smoke, smooth and EMPTY, for the title; lower right corner: only dark water, nothing important.
+TEXT: the title "HE THREW THE GOLD INTO THE LAKE" in the upper right on three lines, "HE THREW" / "THE GOLD" / "INTO THE LAKE", in huge heavy bold serif capital letters like the title of an epic film poster, metallic gold with a carved bevel, a thick dark brown outline and a soft black drop shadow, the words "THE GOLD" the largest; the title block covers about half the frame width; spelled exactly like this, nothing else written anywhere, never touching the face.
+FACING: the gilded man in three-quarter profile facing screen-right; the chiefs look at him.
+LIGHT: hard warm sun shafts from the upper left through the smoke, the flying gold blazing, his gilded arms shining.
+PALETTE: blazing gold, emerald green flashes, deep teal-black water, warm amber smoke, striped red and indigo mantles.
+DETAIL: spinning flat figurines, faceted emeralds, splash droplets, powdered gold on his fingers.
+NOT IN FRAME: a bare chest, minted coins, a canoe or wooden boat, Spanish soldiers, children, extra words or letters.
 ```
 
 ---
 
-## 5. Zlatni splav iz pećine
+## 8. Legenda nad lovcima
 
-**Poenta:** Jedini predmet koji je preživeo: zlatni splav od 20 cm iz pećine u Pasci, a iza njega jezero sa pravim splavom. Minijatura i događaj u istom kadru.
-**Šta se vidi za sekundu:** Ruke drže blistav zlatni splav u mraku, a kroz otvor pećine sija jezero. Predmet je glavni junak.
-**Natpis (B):** „WAS THIS EL DORADO?“ — gore levo, smaragdna mint (#2BE3A0) sa debelim crnim rubom. Alternative: „FOUND IN A CAVE, 1969“ · „20 CM OF GOLD“.
+**Poenta:** Zlatni čovek se diže kao vizija iz andske magle, a ispod njega sitni konkvistadori na grebenu traže zlatni grad.
+**Natpis (B):** „EL DORADO / THEY NEVER FOUND IT“ — gore desno, na crnoj traci.
 **Naslov uz njega:** From a Gilded Heir on a Raft to a Lost City on European Maps: The Story of El Dorado
-**Pazi:** Tačnost: raft je iz Pasce, ne sa Guatavite (S40), i nije dokaz ceremonije (S41) — zato natpis pita, ne tvrdi. Ruke su najčešća greška generatora: gledaj sve četiri varijante, brojanje deset figura nije bitno za thumbnail ali sedeći poglavica u sredini jeste.
+**Pazi:** „it" je zlatni grad. Video: „They did not find a golden city." Vizija je legenda, ne bog. Španci su na grebenu, odvojeni od jezera i ceremonije.
+**Izvor:** shot 17 (Belalcázar pokazuje), shot 18 (jahači nad visoravni u magli), shot 29 (splav kao duh u magli).
 
-### 5A — bez teksta (545 reči)
+### 8B — sa natpisom
 
 ```text
 STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.
-SHOT: the clue that turned up in a cave — an old farmer’s hands lift a small cast-gold raft, a seated chief and ten figures around him, out of the dark, while the round sacred lake glows beyond the cave mouth and a tiny reed raft floats on it in the same arrangement.
-SUBJECT: two weathered brown hands of an old farmer at the lower left, thick cracked fingers with dirt under the nails, the frayed cuff of a rough cotton sleeve, cupped under and lifting a small cast-gold raft twenty centimetres long, a seated chief at the center with his arms crossed over his chest, ten smaller figures standing in a ring around him, some masked, a rough granular surface, the raft large in the frame, about two fifths of the frame width, tilted slightly toward the camera so that the seated chief and the ring of ten figures all read clearly
-SUBJECT 2: the warm beam of a hand lantern from the lower left cutting through floating dust and lighting the gold raft so that it blazes against the black
-SUBJECT 3: at the right third, the mouth of the cave as a bright opening framing a perfectly round mountain lake in a high Andean bowl, dark blue water ringed by steep walls of green paramo grass and low scrub, a narrow pale shore, thin mist along the rim, no building anywhere, seen at dawn, with a tiny reed raft at the center of the water trailing four thin threads of smoke
-ACTION: the hands hold the raft perfectly still, dust turns in the lantern beam, the threads of smoke rise from the tiny raft on the far lake
-SETTING: a low dry cave in an Andean hillside, rough grey rock walls, a clay pot half full of gold ornaments and one green emerald at the lower right edge
-CAMERA: close-medium shot from slightly below the raft, looking up a little, the camera still.
-FRAME LAYOUT: lower left to center — the hands and the blazing gold raft, large; right third — the cave mouth with the dawn lake and the tiny raft; lower right edge — the clay pot; upper left and across the top — the black rough rock of the cave ceiling, dark, smooth and EMPTY, nothing in it.
-FACING: the seated gold chief faces the viewer, his arms crossed over his chest; the hands come in from the lower left edge; the lake at the right is seen straight on.
-SCREEN DIRECTION: the lantern beam runs from lower left toward upper right; the smoke on the far lake rises straight up.
-LIGHT: the lantern beam in warm gold from the lower left; cool blue-gold dawn light from the cave mouth; everything else in deep shadow.
-PALETTE: cave black, blazing gold, dawn blue, a touch of emerald green
-DETAIL: the rough granular surface of the cast gold, tiny masks on some of the figures, dust in the beam, dirt in the creases of the fingers, the hammered rim of a gold disc in the pot.
-NOT IN FRAME: a museum, glass cases, Spaniards, a gilded man, a crowd, any text, letters, numbers, logos, watermarks.
+THUMBNAIL: a YouTube thumbnail with one big hero and one big title, bold saturated colors, strong contrast, the whole idea readable at phone size.
+SHOT: the gilded man of the legend rises like a vision out of the Andean mist, and far below him conquistadors search for a city of gold that is not there.
+SUBJECT: the gilded heir, El Dorado: a young Muisca heir of about twenty-five, a lean smooth face with high cheekbones, calm dark eyes, straight black hair cut at the shoulders, a slim upright build, a small gold ring through the nose; dusted all over with fine powdered gold, so his face, neck, arms and hands shine like polished metal; dressed as the golden man of the legend: a tall gold crown with upright gold plumes, gold ear spools, a wide hammered gold breastplate covering his whole chest, a white cotton cloth over one shoulder; seen from the chest up, enormous, filling the left half of the frame like a vision in the sky above the mountains, his crowned head in the upper half of the frame, below the chest his figure dissolving into glowing golden mist, one open hand at his chest, his eyes looking down to the right at the men below, calm and out of reach
+SUBJECT 2: three Spanish conquistadors of the 1530s, bearded men in steel morion helmets and dented breastplates, on horseback on a rocky ridge at the lower right, small, one pointing up at the golden figure, one holding a rolled map
+SETTING: the high Andes at dusk: jagged ridges fading into layers of mist, frailejon plants on the ridge, a round dark lake far down in a valley
+CAMERA: low, from just behind the riders' ridge, looking up past them at the enormous golden figure.
+FRAME LAYOUT: left half: the golden figure, enormous, from the chest up; lower right: the three small riders on the ridge; upper right: deep violet dusk sky, smooth and EMPTY, for the title; lower right corner: only rocks and grass, nothing important.
+TEXT: a two-level title in the upper right, set on one rough black brush-stroke banner: the first line "EL DORADO" in huge heavy bold serif capital letters like the title of an epic film poster, metallic gold with a carved bevel, a thick dark brown outline and a soft black drop shadow; below it "THEY NEVER FOUND IT" on two lines in smaller heavy serif capital letters, warm cream white with a thick black outline; the title block covers about half the frame width; spelled exactly like this, nothing else written anywhere, never touching the face.
+FACING: the golden figure in three-quarter view turned toward screen-right, looking down; the riders look up at him.
+LIGHT: the figure glowing warm gold from within, the last orange sun low behind the far ridges, a thin rim of light on the helmets.
+PALETTE: glowing gold, deep violet and indigo sky, an orange sunset band, cold blue-grey mountains, steel grey helmets.
+DETAIL: gold dust sparkling where the figure melts into the mist, hammered breastplate, morion helmet combs.
+NOT IN FRAME: a bare chest, a city of gold, stone temples, pyramids, minted coins, extra words or letters.
 ```
 
-### 5B — sa tekstom (617 reči)
+---
+
+## 9. Zlato na dnu
+
+**Poenta:** Pogled pola iznad, pola ispod vode: zlatni čovek sa splava pušta zlato, a ispod površine ono tone u zeleni mrak ka gomili na dnu.
+**Natpis (B):** „IS THE GOLD STILL IN THE LAKE?“ — gore desno, preko neba.
+**Naslov uz njega:** What Was El Dorado, Really? A Gilded Lord, a Sacred Lake and a Hunt That Cost Lives
+**Pazi:** pitanje, nikad tvrdnja. Sepúlveda je odneo deo sa ogoljene obale, a dublje nije uspeo. Video: „The lake kept most of its secrets."
+**Izvor:** shot 12 (bacanje sa splava), shot 14 (zlato tone kroz zelenu vodu), shot 37 (jedna figurica tone).
+
+### 9B — sa natpisom
 
 ```text
 STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.
-SHOT: the clue that turned up in a cave — an old farmer’s hands lift a small cast-gold raft, a seated chief and ten figures around him, out of the dark, while the round sacred lake glows beyond the cave mouth and a tiny reed raft floats on it in the same arrangement.
-SUBJECT: two weathered brown hands of an old farmer at the lower left, thick cracked fingers with dirt under the nails, the frayed cuff of a rough cotton sleeve, cupped under and lifting a small cast-gold raft twenty centimetres long, a seated chief at the center with his arms crossed over his chest, ten smaller figures standing in a ring around him, some masked, a rough granular surface, the raft large in the frame, about two fifths of the frame width, tilted slightly toward the camera so that the seated chief and the ring of ten figures all read clearly
-SUBJECT 2: the warm beam of a hand lantern from the lower left cutting through floating dust and lighting the gold raft so that it blazes against the black
-SUBJECT 3: at the right third, the mouth of the cave as a bright opening framing a perfectly round mountain lake in a high Andean bowl, dark blue water ringed by steep walls of green paramo grass and low scrub, a narrow pale shore, thin mist along the rim, no building anywhere, seen at dawn, with a tiny reed raft at the center of the water trailing four thin threads of smoke
-ACTION: the hands hold the raft perfectly still, dust turns in the lantern beam, the threads of smoke rise from the tiny raft on the far lake
-SETTING: a low dry cave in an Andean hillside, rough grey rock walls, a clay pot half full of gold ornaments and one green emerald at the lower right edge
-CAMERA: close-medium shot from slightly below the raft, looking up a little, the camera still.
-FRAME LAYOUT: lower left to center — the hands and the blazing gold raft, large; right third — the cave mouth with the dawn lake and the tiny raft; lower right edge — the clay pot; upper left and across the top — the black rough rock of the cave ceiling, dark, smooth and EMPTY, nothing in it.
-TEXT: in the upper left corner, the words "WAS THIS EL DORADO?" on two lines, "WAS THIS" above "EL DORADO?", huge bold hand-lettered capitals with a heavy cut-out look, bright emerald-mint green (#2BE3A0) with a thick black outline and a soft shadow, straight and not rotated, sitting only on the empty area and touching nothing else, spelled exactly like this, no other words anywhere in the image.
-FACING: the seated gold chief faces the viewer, his arms crossed over his chest; the hands come in from the lower left edge; the lake at the right is seen straight on.
-SCREEN DIRECTION: the lantern beam runs from lower left toward upper right; the smoke on the far lake rises straight up.
-LIGHT: the lantern beam in warm gold from the lower left; cool blue-gold dawn light from the cave mouth; everything else in deep shadow.
-PALETTE: cave black, blazing gold, dawn blue, a touch of emerald green
-DETAIL: the rough granular surface of the cast gold, tiny masks on some of the figures, dust in the beam, dirt in the creases of the fingers, the hammered rim of a gold disc in the pot.
-NOT IN FRAME: a museum, glass cases, Spaniards, a gilded man, a crowd, logos, watermarks, any words or letters other than the title text.
+THUMBNAIL: a YouTube thumbnail with one big hero and one big title, bold saturated colors, strong contrast, the whole idea readable at phone size.
+SHOT: a half-underwater view of the sacred lake: the gilded man lets gold fall from his raft, and below the surface it sinks into the green dark.
+SUBJECT: the gilded heir, El Dorado: a young Muisca heir of about twenty-five, a lean smooth face with high cheekbones, calm dark eyes, straight black hair cut at the shoulders, a slim upright build, a small gold ring through the nose; dusted all over with fine powdered gold, so his face, neck, arms and hands shine like polished metal; dressed as the golden man of the legend: a tall gold crown with upright gold plumes, gold ear spools, a wide hammered gold breastplate covering his whole chest, a white cotton cloth over one shoulder; seen from the chest up above the waterline, very large in the upper left of the frame, kneeling at the edge of a raft of bundled yellow reeds and leaning over the water, his right hand opening just above the surface to let a flat gold figurine fall, his eyes following it down, calm and solemn
+SUBJECT 2: below the waterline across the lower half of the frame: flat gold figurines, discs, nose rings and rough uncut green emeralds sinking through deep green water in shafts of light, down to a dim lake bed where a heap of old gold glints in the silt
+SETTING: Lake Guatavita at dusk, a round mountain lake in a bowl of green paramo, no building anywhere; above the water the crater walls and a sky of orange and violet
+CAMERA: a split-level view at the waterline, half above and half below the surface, close to the gilded man; the waterline runs straight across the frame a little below the middle.
+FRAME LAYOUT: upper left: the gilded man, large, above the water; lower half: the underwater depth with the sinking gold; upper right: dusk sky above the crater rim, smooth and EMPTY, for the title; lower right corner: only dark green water, nothing important.
+TEXT: the title "IS THE GOLD STILL IN THE LAKE?" in the upper right on two lines, "IS THE GOLD" / "STILL IN THE LAKE?", in huge heavy bold serif capital letters like the title of an epic film poster, metallic gold with a carved bevel, a thick dark brown outline and a soft black drop shadow, "STILL IN THE LAKE?" the largest; the title block covers about half the frame width; spelled exactly like this, nothing else written anywhere, never touching the face.
+FACING: the gilded man in three-quarter view turned toward screen-right, looking down.
+LIGHT: the last warm sun from the right on his gilded face and hand; below, green shafts of light fading into black, every falling piece of gold catching the light.
+PALETTE: emerald and bottle green water, blazing gold, orange and violet dusk sky, deep black-green depth.
+DETAIL: the rippled line of the surface, rising bubbles, a trail of gold dust behind the figurine.
+NOT IN FRAME: a bare chest, minted coins, divers, a skeleton, Spanish soldiers, extra words or letters.
+```
+
+---
+
+## 10. Novi gospodar
+
+**Poenta:** Zlatni čovek u kruni stoji na splavu nasred jezera, ruke uvis sa zlatom i smaragdom, poglavica diže zastavu, a cela obala kliče.
+**Natpis (B):** „THE REAL EL DORADO“ — gore desno, na crnoj traci.
+**Naslov uz njega:** El Dorado: A Muisca Heir, a Reed Raft and the Chronicler Who Went Hunting for the Gold Himself
+**Pazi:** zastava i rogovi su iz Freylea („a flag went up… Horns sounded"). Kadar iz videa kao osnova, kao vlasnikov „CAIRO NEVER FORGOT". Bez Španaca.
+**Izvor:** shot 13 (naslednik u kruni na splavu, obala puna ljudi), shot 11 (obala kliče), bliže i iz nivoa vode.
+
+### 10B — sa natpisom
+
+```text
+STYLE: detailed hand-drawn 2D historical animation illustration, clean dark outlines, expressive stylized characters, layered environments, 16:9.
+THUMBNAIL: a YouTube thumbnail with one big hero and one big title, bold saturated colors, strong contrast, the whole idea readable at phone size.
+SHOT: the crowned gilded man stands on his reed raft in the middle of the lake, gold raised high, while the whole shore roars for its new lord.
+SUBJECT: the gilded heir, El Dorado: a young Muisca heir of about twenty-five, a lean smooth face with high cheekbones, calm dark eyes, straight black hair cut at the shoulders, a slim upright build, a small gold ring through the nose; dusted all over with fine powdered gold, so his face, neck, arms and hands shine like polished metal; dressed as the golden man of the legend: a tall gold crown with upright gold plumes, gold ear spools, a wide hammered gold breastplate covering his whole chest, a white cotton cloth wrapped from the waist to the knee; seen from the waist up, very large in the left half of the frame, both arms raised high, a flat gold figurine in his right hand and a rough green emerald in his left, his face proud and calm
+SUBJECT 2: under him a flat raft of bundled yellow reeds with a clay incense brazier at each of its four corners trailing grey smoke; behind his shoulder one Muisca chief in a feathered gold diadem raising a long white cotton flag
+SUBJECT 3: Muisca crowds in red, ochre and indigo mantles, feather headdresses and gold crowns packed along the shore at the right, arms raised, cheering, a few blowing long horns, every face turned toward him
+SETTING: Lake Guatavita at midday: a perfectly round dark blue mountain lake in a high Andean bowl, steep walls of green paramo grass, no building anywhere
+CAMERA: low, from the water just in front of the raft, looking up at him, close.
+FRAME LAYOUT: left half: the gilded man, large, from the waist up; right half, lower part: the cheering shore and the crater wall; upper right: clear blue sky, smooth and EMPTY, for the title; lower right corner: only water and reeds, nothing important.
+TEXT: the title "THE REAL EL DORADO" in the upper right on two lines, "THE REAL" / "EL DORADO", set on one rough black brush-stroke banner, in huge heavy bold serif capital letters like the title of an epic film poster, metallic gold with a carved bevel, a thick dark brown outline and a soft black drop shadow, "EL DORADO" the largest; the title block covers about half the frame width; spelled exactly like this, nothing else written anywhere, never touching the face.
+FACING: the gilded man in three-quarter view turned toward screen-right; the crowd and the chief look at him.
+LIGHT: bright midday sun, a hard rim of light on his crown and arms, the raised gold and emerald the brightest things in the frame.
+PALETTE: saturated sky blue, emerald paramo green, blazing gold, deep lake blue, red, ochre and indigo crowd, white flag.
+DETAIL: gold dust glittering on his raised arms, the faceted emerald, plumes of the crown, curls of brazier smoke.
+NOT IN FRAME: a bare chest, minted coins, stone temples, pyramids, Spanish soldiers, children, extra words or letters.
 ```
