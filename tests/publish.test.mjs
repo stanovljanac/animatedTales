@@ -8,7 +8,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import {
   buildCues, chunkTokens, wrapLines, srtTime, toSrt, parseChapters, validateChapters, clock, SUB_DEFAULTS,
-  parseTitles, validateTitles,
+  parseTitles, validateTitles, parsePlaylists, validatePlaylists,
 } from '../tools/publish.mjs';
 
 /** Rečenica sa rečima od po 0.3s. */
@@ -152,4 +152,31 @@ test('clock', () => {
   assert.equal(clock(0), '0:00');
   assert.equal(clock(117.2), '1:57');
   assert.equal(clock(3725), '1:02:05');
+});
+
+// 26. nov 2026, zahtev vlasnika: plejliste se odlučuju i zapisuju pri publishu, u `publish.md`.
+test('parsePlaylists: stavke ispod PLAYLISTS:, ime, ID i oznaka; nova plejlista bez ID-ja', () => {
+  const md = [
+    'HASHTAGS:', '#AnimatedTales', '',
+    'PLAYLISTS:',
+    '- Ancient Americas (PLA7y22Sz8NpI) — primary',
+    '- Ancient Mysteries & Discoveries (PLCJ0-2X4_lHM)',
+    '- Same Story, Different World (new) — create it first',
+    '',
+    'SUBTITLES:', 'subtitles.srt',
+  ].join('\n');
+  assert.deepEqual(parsePlaylists(md), [
+    { name: 'Ancient Americas', id: 'PLA7y22Sz8NpI', isNew: false, note: 'primary' },
+    { name: 'Ancient Mysteries & Discoveries', id: 'PLCJ0-2X4_lHM', isNew: false, note: '' },
+    { name: 'Same Story, Different World', id: null, isNew: true, note: 'create it first' },
+  ]);
+  assert.equal(parsePlaylists('TITLE OPTIONS:\n1. A — b'), null, 'bez odeljka: null, ne prazna lista');
+  assert.deepEqual(parsePlaylists('PLAYLISTS:\n\nSUBTITLES:'), []);
+});
+
+test('validatePlaylists: odeljak fali, prazan ili stavka bez ID-ja i bez (new) su upozorenja', () => {
+  assert.match(validatePlaylists(null)[0], /nema PLAYLISTS/);
+  assert.match(validatePlaylists([])[0], /prazan/);
+  assert.match(validatePlaylists([{ name: 'Kings', id: null, isNew: false, note: '' }])[0], /Kings/);
+  assert.deepEqual(validatePlaylists([{ name: 'Kings, Crowns & Conspiracies', id: 'PLEBO7vEBCib8', isNew: false, note: 'primary' }]), []);
 });

@@ -7,7 +7,7 @@
 //     -> piše episodes/<slug>/subtitles.srt
 //     -> štampa listu rečenica sa m:ss vremenima (materijal za chaptere)
 //     -> ako publish.md postoji, proverava njegove chaptere i naslove prema
-//        episode.json.protagonists (izlaz 1 kad ne prolaze)
+//        episode.json.protagonists (izlaz 1 kad ne prolaze) i štampa PLAYLISTS (samo upozorenje)
 //     -> proverava i medium.md (Medium članak uz video, docs/medium.md): kad ga nema, samo
 //        podseća; kad postoji a ne prolazi pravila, izlaz 1
 //
@@ -176,6 +176,41 @@ export function parseTitles(text) {
   return out;
 }
 
+/**
+ * PLAYLISTS iz publish.md -> [{ name, id, isNew, note }] ili `null` kad odeljka nema.
+ * Stavka: `- Ime (ID) — oznaka`; plejlista koja još ne postoji ima `(new)` umesto ID-ja.
+ * 26. nov 2026: plejliste su do sada živele samo u YouTube Studiju i u `data.js` sajta, pa se za
+ * neobjavljenu epizodu nije znalo kuda ide; odluka se sad zapisuje pri publishu (docs/publish.md).
+ */
+export function parsePlaylists(text) {
+  const lines = text.split(/\r?\n/);
+  const start = lines.findIndex((l) => l.trim() === 'PLAYLISTS:');
+  if (start < 0) return null;
+  const out = [];
+  for (const line of lines.slice(start + 1)) {
+    const t = line.trim();
+    if (!t) continue;
+    const m = t.match(/^-\s+(.+)$/);
+    if (!m) break;
+    const cut = m[1].lastIndexOf(' — ');
+    const head = (cut > 0 ? m[1].slice(0, cut) : m[1]).trim();
+    const note = cut > 0 ? m[1].slice(cut + 3).trim() : '';
+    const p = head.match(/^(.+?)\s*\(([^()]+)\)$/);
+    const tag = p?.[2].trim();
+    const isNew = tag?.toLowerCase() === 'new';
+    out.push({ name: (p ? p[1] : head).trim(), id: tag && !isNew ? tag : null, isNew, note });
+  }
+  return out;
+}
+
+/** Upozorenja za PLAYLISTS (ADVISORY: ne menjaju izlazni kod). Vraća listu poruka. */
+export function validatePlaylists(playlists) {
+  if (playlists === null) return ['nema PLAYLISTS — upiši u koje plejliste ide video (docs/publish.md → PLAYLISTS)'];
+  if (!playlists.length) return ['PLAYLISTS je prazan — bar jedna plejlista, ili jedna nova sa (new)'];
+  return playlists.filter((p) => !p.id && !p.isNew)
+    .map((p) => `plejlista „${p.name}" nema ID — prepiši ga iz data.js sajta ili stavi (new)`);
+}
+
 /** Ime kao cela reč, bez obzira na velika slova („Zeus's" da, „Zeusian" ne). */
 export const nameRe = (name) =>
   new RegExp(`(?<![\\p{L}\\p{N}])${name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}(?![\\p{L}\\p{N}])`, 'iu');
@@ -245,6 +280,10 @@ function main(argv) {
   console.log(`\npublish.md · ${titles.length} naslova · glavni likovi: ${protagonists?.map(label).join(', ') || '—'}`);
   for (const e of titleErrors) console.log(`  GREŠKA ${e}`);
   if (!titleErrors.length) console.log('  naslovi prodaju ceo video (svi glavni likovi ili nijedan)');
+
+  const playlists = parsePlaylists(text);
+  console.log(`\npublish.md · plejliste: ${playlists?.map((p) => p.name + (p.isNew ? ' (nova)' : '')).join(', ') || '—'}`);
+  for (const w of validatePlaylists(playlists)) console.log(`  upozorenje ${w}`);
 
   const medium = checkMedium(dir);
   let mediumErrors = 0;

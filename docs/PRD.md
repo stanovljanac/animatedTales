@@ -64,7 +64,7 @@ bez ručnog računanja vremena, sa proverljivim kvalitetom promptova i bez izmi�
 | Izlaz | Fajl(ovi) | Nastaje u |
 |---|---|---|
 | **Epizoda** (16:9, 24 fps) | `episodes/<slug>/final.mp4` + `qc-report.md` | faza 08 — `assemble.mjs` |
-| **Publish komplet** | `publish.md` (5 naslova, description sa chapterima, hashtagovi, pin komentar), `subtitles.srt` | `publish.mjs` + tekst po `docs/publish.md` |
+| **Publish komplet** | `publish.md` (5 naslova, description sa chapterima, hashtagovi, pin komentar, plejliste), `subtitles.srt` | `publish.mjs` + tekst po `docs/publish.md` |
 | **Thumbnailovi** | `thumbnails.md` — 5 koncepata (A bez teksta, B sa tekstom) | `docs/reference/thumbnails.md` |
 | **Shortovi** (9:16, 1080×1920) | `short/shorts.md`, `shorts.json`, `shortN.mp4`, `shortN.srt` | faza 09 — `short.mjs`, `short-edit.mjs` |
 | **Medium članak** | `medium.md`, `medium.json` (stanje) | faza 10 — `medium.mjs` |
@@ -156,7 +156,7 @@ postoji u repou" (bar skripta), ne „javno objavljena".**
 | **Samo skripta + research** | `ashoka-kalinga`, `la-navidad`, `rostam-and-sohrab` |
 
 Status ideja (`done` / `scored` / `re-aim`) vodi `docs/ideas.md`. Plejliste kanala žive na sajtu (`PLAYLISTS` u
-`data.js`). Medium članci objavljeni: `hero-twins` i `substitute-king` (`medium.json` → `status: "published"`).
+`data.js`); za svaku epizodu odluka je u `PLAYLISTS:` njenog `publish.md`. Medium članci objavljeni: `hero-twins` i `substitute-king` (`medium.json` → `status: "published"`).
 
 ## 10. Istorija taskova (rekonstruisano iz git-a)
 

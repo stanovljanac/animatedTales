@@ -74,7 +74,7 @@ Ključne veze:
 | `shots/partNN.mp4` · `shots/shotNN.jpeg` | medij | L | `assemble`, `lint` F1 | ne | klip iz Flow-a / still slika (+ `images/shotNN.jpeg` za ingredient) |
 | `endcard.jpeg` (ili `endcard_file`) | medij | L | `assemble` | ne | poslednji shot: poster-rekapitulacija + SUBSCRIBE |
 | `final.mp4` | medij | T | L (upload) | ne | `final_file` u manifestu |
-| `publish.md` | MD | A | `publish`, `medium` | da | 5 naslova, description + chapteri, hashtagovi, pin komentar |
+| `publish.md` | MD | A | `publish`, `medium` | da | 5 naslova, description + chapteri, hashtagovi, pin komentar, plejliste |
 | `subtitles.srt` | SRT | T (`publish`) | L (YouTube Studio) | da | izvedeno iz `timing.json` |
 | `thumbnails.md` | MD | A | L | da | 5 koncepata |
 | `medium.md` | MD | A | `medium`, `publish` | da | front matter `tags:` + placeholderi |
@@ -83,6 +83,7 @@ Ključne veze:
 | `short/shorts.md`, `short/shorts.json` | MD, JSON | A | `short`, `short-edit` | da | starije epizode: `shorts.md` u korenu |
 | `short/shortN.mp4` · `.srt` | medij, SRT | T | L | mp4 ne | samo „montaža" se renderuje |
 | `flow/index.html`, `flow/flow.json` | HTML, JSON | T (`flow-images`) | L | **ne** | stanje jedne smene |
+| `flow/thumbnails.html`, `flow/thumbnails.json`, `flow/thumb1A-k.jpeg` | HTML, JSON, slike | T (`flow-images --thumbnails`) | L | **ne** | thumbnail kandidati; isti oblik stanja kao `flow.json`, ključ je id prompta (`1A`) |
 | `.cache/` | razno | T | T | ne | `asr-words.json`, `assemble.json`, `seg/`, `concat.txt`, `video.mp4`, `ambient.wav` |
 
 Globalno:
@@ -199,7 +200,7 @@ lines: [{ id, from?, to?, before? }], visuals: [{ shot, at, frame: [[cx, cy, z],
 
 | Dokument | Strukturni kontrakt |
 |---|---|
-| `publish.md` | 5 naslova (rangirani), description sa chapterima `m:ss`, hashtagovi, pin komentar; `publish.mjs` proverava chaptere i `protagonists` u naslovima |
+| `publish.md` | 5 naslova (rangirani), description sa chapterima `m:ss`, hashtagovi, pin komentar, `PLAYLISTS` (ime i ID iz `data.js` sajta; `(new)` za plejlistu koja još ne postoji; `added` kad je video u njoj); `publish.mjs` proverava chaptere i `protagonists` u naslovima, a za plejliste samo upozorava |
 | `subtitles.srt` | ≤ 42 znaka po redu, ≤ 2 reda, 1–7 s po titlu |
 | `medium.md` | front matter `tags:` (3–5, ≤ 25 znakova) → jedan `# Naslov` → prvo thumbnail-link → 1–2 linka ka videu |
 | `docs/ideas.md` tabela | `# · naslov · M1…M10 (0–5) · ukupno /100 · pojas · status`; skor = `Σ(težina·ocena)/95·100` |
