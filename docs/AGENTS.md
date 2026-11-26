@@ -40,7 +40,7 @@
 | 07+ slike | alat (agent pokreće posle QA) | `flow-images.mjs` | birati najbolju sliku (to je vlasnik) |
 | klipovi | **vlasnik** u Flow-u | pripremiti čeklistu, `--board`, Plan B/C | generisati klipove, trošiti kredite |
 | 08 montaža | alat | `assemble.mjs`, čitati `qc-report.md`, imenovati shotove za regeneraciju | renderovati kad nešto fali |
-| publish komplet | agent + alat | `publish.md`, `medium.md`, `thumbnails.md`; `publish.mjs` | objavljivati na YouTube |
+| publish komplet | agent + alat | `publish.md`, `medium.md`, `thumbnails.md`; `publish.mjs`; `flow-images --thumbnails` | objavljivati na YouTube; birati konačni thumbnail (predlaže, bira vlasnik) |
 | Medium | **vlasnik** pokreće objavu ručno (posle javnog videa); Task Scheduler ukinut 23. nov 2026 | `--check`, `--status`; `--post` samo na izričit zahtev | `--sweep`, `--install-task` (ne vraćati zadatak bez zahteva) |
 | Shortovi | agent + alat | `shorts.md`/`shorts.json`, renderovati **montažu** | renderovati običan rez (radi vlasnik u editoru) |
 | sajt kanala | **vlasnik** | pripremiti unos za `data.js` | menjati zaseban repo bez zahteva |
@@ -111,7 +111,7 @@
 | **QA** | `lint` → pročitaj BLOCKING/ADVISORY → popravi **samo pale** shotove → `lint` → `render` |
 | **Slike** | posle QA: `flow-risk` → `flow-images` (Chrome, jedan profil) → vlasnik bira i animira → zatvori prozor |
 | **Montaža** | proveri sve delove (kontakt-lista) → `assemble` → `qc-report.md` → navedi shotove za regeneraciju |
-| **Publish** | `publish.md` + `medium.md` + `thumbnails.md` po `docs/` → `publish.mjs` dok ne prođe |
+| **Publish** | `publish.md` + `medium.md` + `thumbnails.md` po `docs/` (thumbnail = **glavna slika videa**: junak velik i obučen kao obećanje + ime/najveća udica, nikad sporedna scena; prvo kontakt-lista kadrova) → `publish.mjs` dok ne prođe → **kraj:** `flow-images.mjs --thumbnails` (4 slike po promptu, pregled `flow/thumbnails.html`, provera `imena` i `flow/thumbnails.json`) → vlasnik bira |
 | **Short** | `shorts.md` + `shorts.json` u `short/`; `short.mjs --sheet`; renderuje se samo montaža |
 | **Compilation** | `compile.json` → `compile --dry-run` → `compile` → `assemble` (nula kredita) |
 | **Izmena ugovora** | `schemas.md` + `contract.mjs` + fixture + test u istoj izmeni; sve potrošače proveri |
