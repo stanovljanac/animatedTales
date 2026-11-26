@@ -103,10 +103,33 @@ artefakt epizode. Izvor istine ostaje `storyboard.json`.
 | `--new` | nov projekat i kad `flow.json` već ima jedan |
 | `--download` | skini i slike na disk (`flow/shotNN-k.jpeg`, sličice u pregledu); podrazumevano se ništa ne skida |
 | `--no-rename` | bez preimenovanja slika u Flow-u |
+| `--thumbnails` | promptovi iz `thumbnails.md` umesto storyboarda (vidi ispod) |
 | `--login` | samo prijava |
 
 Podešavanja generisanja (Image · odnos · xN · model) Flow pamti **globalno**: posle alata i tvoj
 ručni rad u Flow-u kreće sa x4.
+
+## Thumbnailovi (`--thumbnails`)
+
+```
+node tools/flow-images.mjs episodes/<slug> --thumbnails
+```
+
+Isti krug, ali nad `thumbnails.md`. Svaki prompt (`1A` … `5B`) je jedan „shot" sa 4 slike. Pokreće
+se kao kraj publish procesa, odmah kad je `thumbnails.md` napisan ([`thumbnails.md`](thumbnails.md)).
+
+| | shotovi | thumbnailovi |
+|---|---|---|
+| izvor | `storyboard.json` | `thumbnails.md` (```text blok posle `### 1A`) |
+| Flow projekat | `MANSA MUSA` | `MANSA MUSA THUMBNAILS` (zaseban, da `shotN` filter ostane čist) |
+| ime slike | `shot07-2 …` | `thumb1A-2 …` |
+| stanje / pregled | `flow/flow.json` · `flow/index.html` | `flow/thumbnails.json` · `flow/thumbnails.html` |
+| skidanje | samo uz `--download` | podrazumevano (`--no-download` isključuje) |
+
+Thumbnail se bira poređenjem svih kandidata i proverom na 168×94 px, a izabrani ide na YouTube sa
+diska. Zato pregled pored svake slike pokazuje i njenu kopiju u veličini telefona, a svaka skinuta slika je
+pretvorena u **JPEG 1280×720** (`toYoutubeJpeg`). YouTube ne prima webp, a ovako fajl ide na upload bez editora. `--only`/`--redo`
+primaju id prompta (`2A`, `3b`).
 
 ## Kad nešto pukne
 
@@ -124,6 +147,12 @@ samo njih. Shot koji padne pokuša se još jednom posle 30s u istom prolazu.
   ipak napravljene, ali ih alat ne može da veže za shot.
 - **Chrome se ne javlja na portu** — Chrome sa istim profilom je već otvoren bez porta za
   debagovanje. Zatvori taj prozor i pokreni alat ponovo.
+- **„skinuta slika je ista kao thumb7B-4.jpeg"** — fajl je bajt-za-bajt isti kao fajl druge slike,
+  pa je sa stranice uzeta pogrešna slika. Alat ga briše i ne broji u „fajlovi N/4", a ponovno
+  pokretanje ga skida opet. Uzrok iz 26. nov (el-dorado 8B-1, 9B-1, 10B-1): posle povratka iz mreže
+  stranica nove slike kratko drži prethodno otvorenu sliku. Zato `pImageReady` ne prihvata adresu
+  slike koju je alat poslednju otvorio. Ime u Flow-u nije bilo pogođeno. Posle svakog prolaza ipak
+  pogledaj kontakt-list: dva ista kadra pod različitim imenima su ovaj kvar.
 
 ## Kako radi
 
@@ -141,5 +170,10 @@ Tri odluke, sve tri plaćene probom na živom Flow-u (nov 2026):
    navigacijom unutar aplikacije. Generisanje u toku pri tome teče dalje, pa se dok Flow radi
    jedan shot, slike prethodnog imenuju i skidaju.
 
-Sa `--download` slike u `flow/` su 1K original (1376×768). Za still kadar u montaži skini
-izabranu iz Flow-a kao `shotNN.jpeg`.
+Sa `--download` slike u `flow/` su 1K original (1376×768, Flow ih vraća čas kao `.webp`, čas kao `.jpeg`). Za still
+kadar u montaži skini izabranu iz Flow-a kao `shotNN.jpeg`.
+
+**Koja slika se skida (26. nov 2026).** Stranica slike nosi traku sa svim slikama projekta (25×25 na ekranu), a svaka
+je učitana u punih 1376×768. Pravilo „najveća učitana slika" je zato uzimalo prvu sliku trake, i `--download` je od
+24. nov skidao tuđe slike pod tačnim imenom. Imena u Flow-u nisu bila pogođena, jer se ime upisuje u polje stranice.
+Glavna slika je `alt="Read-only image view"`, a rezerva je najveća slika **na ekranu**.

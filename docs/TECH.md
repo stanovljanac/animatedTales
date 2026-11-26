@@ -94,7 +94,7 @@ Svi alati imaju `--help`. **Ulaz** je uvek folder epizode (`episodes/<slug>`, il
 | `shotlist.mjs` | `storyboard.json` → čeklista za Flow, budžet kredita, `--board` | da |
 | `flow-risk.mjs` | rizične reči za filter + „sredina scene" u image promptu | da |
 | `cdp.mjs` | minimalan Chrome DevTools Protocol klijent (bez zavisnosti) | — |
-| `flow-images.mjs` | `storyboard.json` → Flow → `flow/index.html`, `flow/flow.json` | `planShots`, hash prompta |
+| `flow-images.mjs` | `storyboard.json` → Flow → `flow/index.html`, `flow/flow.json`; `--thumbnails`: `thumbnails.md` → `flow/thumbnails.html`, `flow/thumbnails.json` | `planShots`, hash prompta, `parseThumbnails` |
 | `assemble.mjs` | storyboard + klipovi + narracija + end kartica → `final.mp4`, `qc-report.md` | `planCuts`, filteri, recepti |
 | `compile.mjs` | `compile.json` (rečenice i kadrovi delova) → montažni storyboard/timing/titlovi | planiranje prozora |
 | `publish.mjs` | `timing.json` → `subtitles.srt`; provera chaptera, naslova, `medium.md` | da |
@@ -112,7 +112,7 @@ node tools/lint.mjs       episodes/<slug> [--no-media] [--no-write]
 node tools/render.mjs     episodes/<slug> [--stdout]
 node tools/shotlist.mjs   episodes/<slug> [--only 07,12] [--board]
 node tools/flow-risk.mjs  episodes/<slug> [--only 23,26]
-node tools/flow-images.mjs episodes/<slug> [--only 07,12] [--count 4] [--login] [--download]
+node tools/flow-images.mjs episodes/<slug> [--only 07,12] [--count 4] [--login] [--download] [--thumbnails]
 node tools/assemble.mjs   episodes/<slug> [--dissolve 8] [--res 1080p] [--out f.mp4] [--force]
 node tools/compile.mjs    episodes/<slug> [--dry-run] [--no-audio] [--no-link]
 node tools/publish.mjs    episodes/<slug>
@@ -188,6 +188,11 @@ Pravi Chrome sa `--remote-debugging-port` i zasebnim profilom (Chrome 136+ ne do
 Google odbija prijavu u automatizovan pregledač). Klikovi i kucanje idu kroz `Input.*` (isTrusted događaji);
 `Runtime.enable` se namerno ne zove. Stanje po shotu: `status`, `prompt_hash`, `images[]` (media ID, naslov, ime). Izmenjen
 prompt → shot se ponovo generiše (`planShots`). Slike se ne skidaju (osim `--download`); skidaju se samo konačni videi.
+
+`--thumbnails` (26. nov 2026) vozi isti krug nad `thumbnails.md`: svaki prompt (1A…5B) kao „shot", zaseban projekat
+`<SLUG> THUMBNAILS`, imena `thumb1A-k`, stanje `flow/thumbnails.json`, pregled `flow/thumbnails.html` sa kopijom svake
+slike na 168×94 px. Ovde se slike **skidaju** podrazumevano (`--no-download` isključuje) i pretvaraju u JPEG 1280×720: izbor je poređenje svih kandidata,
+a izabrani ide na YouTube sa diska. Prazan red u promptu je greška parsera (doslovnost u ProseMirror polju).
 
 ## 6. Sistem provera
 

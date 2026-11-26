@@ -41,6 +41,14 @@
 //
 // Slika je besplatna (0 kredita), pa nema budžeta koji bi ovo kočio; ograničenje je samo
 // Flow-ovo vreme generisanja (~20–35s po shotu). Dva prompta idu paralelno.
+//
+// `--thumbnails` vozi isti krug nad `thumbnails.md` umesto nad storyboardom (26. nov 2026,
+// zahtev vlasnika: thumbnailovi se prave alatom kao kraj publish procesa). Svaki prompt (1A, 1B…)
+// dobija N slika u zasebnom projektu `<SLUG> THUMBNAILS` — ne u projektu epizode, jer vlasnik tamo
+// filtrira `shotN` i animira redom, a thumbnail tu nema šta da traži. Slike se zovu `thumb1A-k`,
+// pregled je `flow/thumbnails.html`, stanje `flow/thumbnails.json`. Za razliku od shotova, slike
+// se ovde podrazumevano skidaju: izbor thumbnaila je poređenje svih kandidata jedan pored drugog
+// i provera na 168×94 px (reference/thumbnails.md), a izabrani ionako ide na YouTube sa diska.
 
 import crypto from 'node:crypto';
 import fs from 'node:fs';
@@ -51,6 +59,7 @@ import {
   CDP, DEFAULT_PORT, defaultProfileDir, ensureChrome, ensureWindowShown, openPage, sleep, targetUrl,
 } from './cdp.mjs';
 import { countWords, isStill, loadStoryboard, plural } from './contract.mjs';
+import { run } from './ffmpeg.mjs';
 import { resolveOnly } from './shotlist.mjs';
 
 export const FLOW_HOME = 'https://flow.google.com/';
@@ -70,10 +79,10 @@ export const promptHash = (text) => crypto.createHash('sha256').update(String(te
 /** `el-dorado` -> `EL DORADO` — isti oblik kao ručno pravljeni projekti (`HERO TWINS`). */
 export const projectNameFor = (slug) => String(slug).split('-').filter(Boolean).join(' ').toUpperCase();
 
-/** `07`, 2 -> `shot07-2` — ime kandidata u Flow-u i na disku. */
-export const imageBase = (shotId, k) => `shot${shotId}-${k}`;
+/** `07`, 2 -> `shot07-2` — ime kandidata u Flow-u i na disku; thumbnail: `1A`, 2, 'thumb' -> `thumb1A-2`. */
+export const imageBase = (shotId, k, prefix = 'shot') => `${prefix}${shotId}-${k}`;
 
-const TAG = /^shot[0-9A-Za-z]+-\d+(\s+|$)/;
+const TAG = /^(?:shot|thumb)[0-9A-Za-z]+-\d+(\s+|$)/;
 
 /**
  * Ime slike u Flow-u: oznaka shota pa Flow-ov naslov (`shot07-2 Gilded man on lake raft`).
@@ -82,9 +91,10 @@ const TAG = /^shot[0-9A-Za-z]+-\d+(\s+|$)/;
  * nema nigde — „…" zato ostaje, da se vidi da je reč odsečena. Već postojeća oznaka se skida:
  * ponovljeno preimenovanje ne sme da je udvostruči.
  */
-export function imageName(shotId, k, title) {
+export function imageName(shotId, k, title, prefix = 'shot') {
   const clean = String(title ?? '').replace(TAG, '').replace(/\s+/g, ' ').trim();
-  return clean ? `${imageBase(shotId, k)} ${clean}` : imageBase(shotId, k);
+  const base = imageBase(shotId, k, prefix);
+  return clean ? `${base} ${clean}` : base;
 }
 
 /** Adresa jedne slike u Flow-u — klik iz pregleda vodi pravo na nju. */
@@ -209,12 +219,13 @@ export function parseGenerated(body, prompt) {
 // ------------------------------------------------------------------ stanje
 
 export const flowDir = (dir) => path.join(dir, 'flow');
-export const stateFile = (dir) => path.join(flowDir(dir), 'flow.json');
+/** `flow.json` za shotove, `thumbnails.json` za thumbnailove — dva projekta, dva stanja. */
+export const stateFile = (dir, name = 'flow.json') => path.join(flowDir(dir), name);
 
 export const emptyState = () => ({ version: 1, project_url: null, project_name: null, shots: {} });
 
-export function loadState(dir) {
-  const file = stateFile(dir);
+export function loadState(dir, name = 'flow.json') {
+  const file = stateFile(dir, name);
   if (!fs.existsSync(file)) return emptyState();
   let s;
   try {
@@ -226,8 +237,8 @@ export function loadState(dir) {
 }
 
 /** Upis preko privremenog fajla: prekid usred upisa ne ostavlja polovičan JSON. */
-export function saveState(dir, state) {
-  const file = stateFile(dir);
+export function saveState(dir, state, name = 'flow.json') {
+  const file = stateFile(dir, name);
   fs.mkdirSync(path.dirname(file), { recursive: true });
   fs.writeFileSync(`${file}.tmp`, JSON.stringify(state, null, 2) + '\n');
   fs.renameSync(`${file}.tmp`, file);
@@ -425,6 +436,201 @@ ${sections}
 `;
 }
 
+// ------------------------------------------------------------------ thumbnailovi (thumbnails.md)
+
+export const THUMB_PREFIX = 'thumb';
+export const THUMB_STATE = 'thumbnails.json';
+export const THUMB_INDEX = 'thumbnails.html';
+const VARIANT = { A: 'bez teksta', B: 'sa tekstom' };
+
+/**
+ * Koncepti i promptovi iz `thumbnails.md` (oblik: docs/reference/thumbnails.md). Prompt je
+ * sadržaj prvog ```text bloka posle naslova `### 1A …`, doslovno — isti tekst koji bi se ručno
+ * lepio u Flow. Koncept (`## 1. Ime`) daje poentu, natpis, ugao i naslov za pregled.
+ *
+ * Prazan red u promptu je greška, ne tiha ispravka: prompt je jedan blok redova kao u
+ * storyboardu, a ProseMirror prazan red pretvara u prazan pasus, pa doslovnost ne bi bila
+ * zajemčena. Bolje da autor ukloni red nego da alat šalje nešto drugo od onoga što piše.
+ * @param {string} md
+ * @returns {{concepts: object[], prompts: {id: string, concept: number, variant: string, prompt: string}[]}}
+ */
+export function parseThumbnails(md) {
+  const lines = String(md).replace(/\r\n?/g, '\n').split('\n');
+  const concepts = [];
+  const prompts = [];
+  let concept = null;
+  for (let i = 0; i < lines.length; i += 1) {
+    const line = lines[i];
+    let m;
+    if ((m = /^## (\d+)\.\s+(.+?)\s*$/.exec(line))) {
+      concept = { n: Number(m[1]), name: m[2], point: '', caption: '', corner: '', headline: '', warn: '' };
+      concepts.push(concept);
+    } else if ((m = /^### (\d+)([AB])\b/.exec(line))) {
+      const id = `${m[1]}${m[2]}`;
+      if (prompts.some((p) => p.id === id)) throw new Error(`thumbnails.md: prompt ${id} se ponavlja (red ${i + 1})`);
+      let j = i + 1;
+      while (j < lines.length && !lines[j].trim()) j += 1;
+      if (!/^```text\s*$/.test(lines[j] ?? '')) throw new Error(`thumbnails.md: posle „### ${id}" (red ${i + 1}) nema \`\`\`text bloka`);
+      let k = j + 1;
+      while (k < lines.length && !/^```\s*$/.test(lines[k])) k += 1;
+      if (k >= lines.length) throw new Error(`thumbnails.md: blok prompta ${id} nije zatvoren`);
+      const body = lines.slice(j + 1, k).map((l) => l.replace(/\s+$/, ''));
+      const blank = body.findIndex((l) => !l);
+      if (blank >= 0) throw new Error(`thumbnails.md: prazan red u promptu ${id} (red ${j + 2 + blank}) — ukloni ga`);
+      if (!body.length) throw new Error(`thumbnails.md: prompt ${id} je prazan`);
+      prompts.push({ id, concept: Number(m[1]), variant: m[2], prompt: body.join('\n') });
+      i = k;
+    } else if (concept && (m = /^\*\*Poenta:\*\*\s*(.+)$/.exec(line))) {
+      concept.point = m[1].trim();
+    } else if (concept && (m = /^\*\*Natpis \(B\):\*\*\s*(.+)$/.exec(line))) {
+      concept.caption = (/[„"“]([^“”"]+)[“”"]/.exec(m[1])?.[1] ?? m[1]).trim();
+      concept.corner = (/—\s*([^,.]+)/.exec(m[1])?.[1] ?? '').trim();
+    } else if (concept && (m = /^\*\*Naslov uz njega:\*\*\s*(.+)$/.exec(line))) {
+      concept.headline = m[1].trim();
+    } else if (concept && (m = /^\*\*Pazi:\*\*\s*(.+)$/.exec(line))) {
+      concept.warn = m[1].trim();
+    }
+  }
+  if (!prompts.length) throw new Error('thumbnails.md: nema nijednog prompta (### 1A … sa ```text blokom)');
+  return { concepts, prompts };
+}
+
+/** YouTube thumbnail: JPG/PNG/GIF, preporuka 1280×720, do 2 MB. */
+export const YT_THUMB = { width: 1280, height: 720 };
+
+/**
+ * Skinutu sliku pretvara u JPEG 1280×720 spreman za YouTube upload i briše original. Flow vraća
+ * slike čas kao `.webp`, čas kao `.jpeg` (1376×768) — webp YouTube ne prima, a izabrani thumbnail
+ * treba da ide na upload bez koraka u editoru (26. nov 2026). 1376×768 je 1,79 : 1, pa je
+ * skaliranje na 16:9 sabijanje od 0,7% — neprimetno, bez odsecanja ivice sa natpisom.
+ * @returns {Promise<string>} ime novog fajla (bez foldera)
+ */
+export async function toYoutubeJpeg(dir, file, base) {
+  const out = `${base}.jpeg`;
+  const tmp = `${base}.yt.jpeg`;
+  await run(['-hide_banner', '-loglevel', 'error', '-y', '-i', path.join(dir, file),
+    '-vf', `scale=${YT_THUMB.width}:${YT_THUMB.height}:flags=lanczos`, '-frames:v', '1', '-q:v', '2',
+    path.join(dir, tmp)], { timeout: 60_000 });
+  fs.rmSync(path.join(dir, file), { force: true });
+  fs.renameSync(path.join(dir, tmp), path.join(dir, out));
+  return out;
+}
+
+/** Promptovi kao „shotovi" za isti krug kao storyboard: `shot_id` je `1A`, `image_prompt` prompt. */
+export const thumbItems = (thumbs) => thumbs.prompts.map((p) => ({ shot_id: p.id, image_prompt: p.prompt }));
+
+/**
+ * `flow/thumbnails.html` — koncept po koncept, A i B jedan ispod drugog, da se porede isti kadar
+ * bez natpisa i sa njim. Uz svaku skinutu sliku stoji i njena kopija na 168×94 px: tolika je
+ * sličica na telefonu, a thumbnail koji se tu ne čita je promašen (reference/thumbnails.md §5).
+ * @param {string} slug
+ * @param {{concepts: object[], prompts: object[]}} thumbs
+ * @param {object} state `thumbnails.json`
+ * @param {{now?: Date}} [opts]
+ */
+export function renderThumbIndex(slug, thumbs, state, { now = new Date() } = {}) {
+  const proj = state.project_url;
+  const total = thumbs.prompts.length;
+  const done = thumbs.prompts.filter((p) => state.shots[p.id]?.status === 'done').length;
+  const byN = new Map(thumbs.concepts.map((c) => [c.n, c]));
+  const nums = [...new Set(thumbs.prompts.map((p) => p.concept))];
+
+  const nav = thumbs.prompts.map((p) => {
+    const st = state.shots[p.id];
+    const cls = !st ? 'todo' : st.status === 'done' ? 'ok' : 'bad';
+    return `<a class="${cls}" href="#t${esc(p.id)}">${esc(p.id)}</a>`;
+  }).join('');
+
+  const block = (p) => {
+    const st = state.shots[p.id];
+    const cur = promptHash(p.prompt);
+    let body;
+    if (!st) body = '<p class="note">još nije generisano</p>';
+    else if (st.status !== 'done') body = `<p class="note bad">nije uspelo: ${esc(st.error ?? 'nepoznat razlog')}</p>`;
+    else {
+      body = '<div class="cands">' + st.images.map((im) => {
+        const base = imageBase(p.id, im.k, THUMB_PREFIX);
+        const old = im.prompt_hash && im.prompt_hash !== cur;
+        const href = proj ? editUrl(proj, im.media_id) : '#';
+        const pic = im.file
+          ? `<img src="${esc(im.file)}" alt="${esc(im.name ?? base)}" loading="lazy">`
+          : `<div class="nofile">${esc(base)} · otvori u Flow-u</div>`;
+        const mini = im.file ? `<img class="mini" src="${esc(im.file)}" alt="" width="168" height="94" loading="lazy">` : '';
+        return `<div class="cand${old ? ' old' : ''}"><a href="${esc(href)}" target="_blank" rel="noopener">${pic}</a>` +
+          `<div class="foot">${mini}<span>${esc(base)}${old ? ' · stari prompt' : ''}${mini ? '<br><small>168×94</small>' : ''}</span></div></div>`;
+      }).join('') + '</div>';
+    }
+    return `<div class="variant" id="t${esc(p.id)}">` +
+      `<h3>${esc(p.id)} <small>${esc(VARIANT[p.variant] ?? '')}</small></h3>${body}` +
+      `<details><summary>prompt (${countWords(p.prompt)} reči)</summary><pre>${esc(p.prompt)}</pre></details></div>`;
+  };
+
+  const sections = nums.map((n) => {
+    const c = byN.get(n);
+    const meta = c ? [
+      c.point && `<p class="point">${esc(c.point)}</p>`,
+      `<p class="meta">${c.caption ? `natpis (B): <b>„${esc(c.caption)}“</b>${c.corner ? ` · ${esc(c.corner)}` : ''}` : ''}` +
+        `${c.headline ? `${c.caption ? '<br>' : ''}naslov uz njega: <b>${esc(c.headline)}</b>` : ''}</p>`,
+      c.warn && `<p class="note bad">pazi: ${esc(c.warn)}</p>`,
+    ].filter(Boolean).join('') : '';
+    return `<section id="c${n}"><h2>${n}. ${esc(c?.name ?? '')}</h2>${meta}` +
+      thumbs.prompts.filter((p) => p.concept === n).map(block).join('') + '</section>';
+  }).join('\n');
+
+  return `<!doctype html>
+<html lang="sr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>${esc(slug)} — thumbnail kandidati</title>
+<style>
+  :root { --bg: #111; --fg: #eee; --dim: #999; --card: #1c1c1c; --ok: #5c5; --bad: #e66; --accent: #8ab4f8; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 15px/1.45 system-ui, sans-serif; }
+  header { position: sticky; top: 0; z-index: 1; background: #000d; backdrop-filter: blur(6px); padding: 12px 16px; border-bottom: 1px solid #333; }
+  header h1 { margin: 0 0 6px; font-size: 18px; }
+  header p { margin: 0 0 8px; color: var(--dim); }
+  header a { color: var(--accent); }
+  nav { display: flex; flex-wrap: wrap; gap: 4px; }
+  nav a { padding: 2px 7px; border-radius: 4px; background: var(--card); color: var(--fg); text-decoration: none; font-size: 13px; }
+  nav a.ok { box-shadow: inset 0 -2px var(--ok); } nav a.bad { box-shadow: inset 0 -2px var(--bad); } nav a.todo { color: var(--dim); }
+  main { padding: 8px 16px 48px; }
+  section { padding: 18px 0; border-bottom: 1px solid #2a2a2a; }
+  h2 { margin: 0 0 4px; font-size: 18px; }
+  h3 { margin: 14px 0 6px; font-size: 15px; } h3 small { color: var(--dim); font-weight: normal; }
+  .variant { scroll-margin-top: 120px; }
+  .point { margin: 0 0 4px; color: #ccc; } .meta { margin: 0 0 6px; color: var(--dim); } .meta b { color: var(--fg); font-weight: 600; }
+  .cands { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 10px; }
+  .cand { background: var(--card); border-radius: 8px; overflow: hidden; }
+  .cand a { display: block; }
+  .cand a img, .nofile { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+  .nofile { display: grid; place-items: center; color: var(--dim); }
+  .cand:hover { outline: 2px solid var(--accent); }
+  .cand.old { opacity: .45; }
+  .foot { display: flex; gap: 10px; align-items: center; padding: 8px; font-size: 13px; }
+  .foot small { color: var(--dim); }
+  .mini { width: 168px; height: 94px; object-fit: cover; border-radius: 3px; flex: none; }
+  .note { color: var(--dim); } .note.bad { color: var(--bad); }
+  details { margin-top: 6px; } summary { cursor: pointer; font-size: 13px; color: var(--dim); }
+  pre { white-space: pre-wrap; background: var(--card); padding: 10px; border-radius: 6px; font-size: 13px; max-width: 110ch; }
+</style>
+</head>
+<body>
+<header>
+  <h1>${esc(slug)} — thumbnail kandidati</h1>
+  <p>${done}/${total} ${plural(total, 'prompt', 'prompta', 'promptova')} generisano · ` +
+    `${proj ? `<a href="${esc(proj)}" target="_blank" rel="noopener">${esc(state.project_name ?? 'Flow projekat')}</a> · ` : ''}` +
+    `klik na sliku je otvara u Flow-u · osveženo ${esc(now.toISOString().slice(0, 16).replace('T', ' '))} UTC</p>
+  <nav>${nav}</nav>
+</header>
+<main>
+${sections}
+</main>
+</body>
+</html>
+`;
+}
+
 // ------------------------------------------------------------------ u stranici
 //
 // Ove funkcije se šalju u Flow tab kao tekst (`Page.evaluate`), pa ne smeju da zatvaraju
@@ -540,16 +746,31 @@ function pGridReady(pathname, aria) {
  * projekta). Zato se traži da polja za prompt iz mreže više nema, a da je tu polje stranice
  * slike; inače bi se preimenovao projekat umesto slike.
  */
-function pImageReady(mediaId, gridAria) {
+export function pImageReady(mediaId, gridAria, staleSrc = null) {
   if (!location.pathname.endsWith(`/edit/${mediaId}`)) return null;
   const boxes = [...document.querySelectorAll('[role=textbox]')].map((e) => e.getAttribute('aria-label'));
   if (boxes.includes(gridAria) || !boxes.includes('What do you want to change?')) return null;
   // 2026-11-24: Flow više ne stavlja media ID u adresu slike (`flow.google.com/asb/ANqv…`), pa je
   // provera „src sadrži mediaId" večno padala i preimenovanje je isteklo na svakoj slici. Putanja
-  // stranice (`/edit/<mediaId>`) već jemči koja je slika otvorena; glavna slika je najveća učitana.
-  const loaded = [...document.querySelectorAll('img')].filter((i) => i.naturalWidth > 0);
+  // stranice (`/edit/<mediaId>`) već jemči koja je slika otvorena.
+  // 2026-11-26: glavna slika NIJE najveća učitana. Stranica nosi traku sa svim slikama projekta
+  // (25×25 na ekranu), a svaka je učitana u punih 1376×768, pa je „najveća prirodna" bila prva
+  // slika trake i `--download` je skidao tuđe slike (mansa-musa thumbnailovi: 1A-2 je bio slika
+  // iz 1B). Glavna je „Read-only image view"; rezerva je najveća slika **na ekranu**.
+  // 2026-11-26 (mansa-musa 6B/8B/9B/10B): odmah posle generisanja na stranici je učitana samo
+  // sitna mutna sličica, ista za sve slike, pa je skinuta kao slika (četiri bajt-za-bajt iste
+  // plave mrlje). Slika iz Flow-a je 1376×768 (ili uspravno 768×1376), pa stranica nije spremna
+  // dok duža strana nije bar 1000 px. Broj stoji ovde jer se funkcija šalje u pregledač bez okoline.
+  // 2026-11-26 (el-dorado 8B-1/9B-1/10B-1): posle povratka iz mreže stranica nove slike još drži
+  // prethodno otvorenu sliku, učitanu i pune veličine, dok se nova tek učitava, pa je skinuta
+  // prethodna (7B-4, 8B-4, 9B-4) pod novim imenom. Ime je bilo tačno jer se polje osveži odmah.
+  // Zato se adresa slike koju je alat poslednju otvorio (`staleSrc`) ne prihvata.
+  const loaded = [...document.querySelectorAll('img')]
+    .filter((i) => i.complete && Math.max(i.naturalWidth, i.naturalHeight) >= 1000 && i.src !== staleSrc);
+  const area = (i) => { const r = i.getBoundingClientRect(); return r.width * r.height; };
   const img = loaded.find((i) => i.src.includes(mediaId)) ??
-    loaded.sort((a, b) => b.naturalWidth * b.naturalHeight - a.naturalWidth * a.naturalHeight)[0];
+    loaded.find((i) => i.alt === 'Read-only image view' && area(i) > 0) ??
+    loaded.filter((i) => area(i) > 0).sort((a, b) => area(b) - area(a))[0];
   const inputs = document.querySelectorAll('input[aria-label="Editable text"]');
   if (!img || inputs.length !== 1) return null;
   return { title: inputs[0].value, src: img.src };
@@ -571,6 +792,8 @@ export class Flow {
     /** requestId -> {prompt, status: 'pending'|'ok'|'failed', body?, error?} */
     this.requests = new Map();
     this.awaiting = null;
+    /** adresa poslednje otvorene slike — stranica sledeće je ume zadržati (vidi `pImageReady`) */
+    this.lastImageSrc = null;
   }
 
   find(spec) {
@@ -771,10 +994,10 @@ export class Flow {
       if (got === prompt) return;
       let i = 0;
       while (i < Math.min(got?.length ?? 0, prompt.length) && got[i] === prompt[i]) i += 1;
-      this.log(`  prompt u Flow polju se razlikuje od storyboard.json na znaku ${i} (pokušaj ${attempt}): ` +
+      this.log(`  prompt u Flow polju se razlikuje od izvora na znaku ${i} (pokušaj ${attempt}): ` +
         `${JSON.stringify((got ?? '').slice(i, i + 30))} umesto ${JSON.stringify(prompt.slice(i, i + 30))}`);
     }
-    throw new Error('prompt u Flow polju nije doslovno isti kao u storyboard.json — ne šaljem');
+    throw new Error('prompt u Flow polju nije doslovno isti kao u izvoru (storyboard.json / thumbnails.md) — ne šaljem');
   }
 
   /**
@@ -808,10 +1031,17 @@ export class Flow {
     }
   }
 
-  /** Otvara stranicu slike (bez učitavanja); vraća njeno trenutno ime i svežu adresu slike. */
+  /**
+   * Otvara stranicu slike (bez učitavanja); vraća njeno trenutno ime i svežu adresu slike.
+   * Adresa prethodno otvorene slike se pamti i ne prihvata (vidi `pImageReady`).
+   */
   async openImage(mediaId) {
     await this.page.evaluate(pGo, `${this.projectPath}/edit/${mediaId}`);
-    return this.page.waitFor(pImageReady, { args: [mediaId, PROMPT_ARIA], timeout: 30_000, what: 'stranica slike' });
+    const got = await this.page.waitFor(pImageReady, {
+      args: [mediaId, PROMPT_ARIA, this.lastImageSrc ?? null], timeout: 30_000, what: 'stranica slike',
+    });
+    this.lastImageSrc = got.src;
+    return got;
   }
 
   /** Ime slike na njenoj stranici — upis pa provera da je ostao. */
@@ -853,9 +1083,25 @@ export async function download(src, dir, base, cookie) {
   return file;
 }
 
+/**
+ * Druga slika istog posla čiji je fajl bajt-za-bajt isti kao fajl ove, ili `null`. Različite slike iz
+ * Flow-a nikad nisu iste, pa je isti fajl znak da je skinuta pogrešna slika (zastareo prikaz,
+ * el-dorado 26. nov 2026) — log „fajlovi 4/4" tada ne sme da prođe.
+ * @param {string} dir folder sa fajlovima (`flow/`)
+ * @param {{media_id: string, file: string|null}} im
+ * @param {{media_id: string, file: string|null}[]} images sve slike posla
+ */
+export function sameFile(dir, im, images) {
+  const read = (f) => { try { return fs.readFileSync(path.join(dir, f)); } catch { return null; } };
+  const mine = im.file ? read(im.file) : null;
+  if (!mine) return null;
+  return images.find((o) => o.media_id !== im.media_id && o.file && o.file !== im.file &&
+    read(o.file)?.equals(mine)) ?? null;
+}
+
 // ---------------------------------------------------------------- CLI
 
-const USAGE = `node tools/flow-images.mjs <folder-epizode> [opcije]
+const USAGE =`node tools/flow-images.mjs <folder-epizode> [opcije]
 
   Za svaki shot iz storyboard.json pravi slike u Google Flow-u (podrazumevano 4) i staje:
   izbor najbolje i animacija ostaju tebi. Chrome se otvara sa zasebnim profilom; prvi put se
@@ -868,7 +1114,10 @@ const USAGE = `node tools/flow-images.mjs <folder-epizode> [opcije]
   Chrome prozor alata sme da stoji iza drugih prozora, ali ne minimizovan, i bez drugih tabova
   ispred taba alata dok radi (alat oba vraća sam).
 
-  --only 07,12,18    samo ti shotovi (prima i 7 i 07)
+  --thumbnails       promptovi iz thumbnails.md umesto storyboard.json: zaseban projekat
+                     „<SLUG> THUMBNAILS", slike thumb1A-k, pregled flow/thumbnails.html;
+                     slike se skidaju na disk (--no-download isključuje)
+  --only 07,12,18    samo ti shotovi (prima i 7 i 07; uz --thumbnails 1A,2B)
   --redo 07,12       generiši ponovo i ako su gotovi (novi kandidati dobijaju sledeće brojeve)
   --count 4          slika po shotu, 1–4
   --aspect 16:9      ${ASPECTS.join(', ')}
@@ -880,7 +1129,7 @@ const USAGE = `node tools/flow-images.mjs <folder-epizode> [opcije]
   --new              nov projekat i kad flow.json već ima jedan
   --no-rename        ne preimenuj slike u Flow-u
   --download         skini i slike na disk (episodes/<slug>/flow/shotNN-k.jpeg); bez ovoga
-                     se ništa ne skida
+                     se ništa ne skida (osim uz --thumbnails)
   --dry-run          samo ispiši šta bi uradio, bez pregledača
   --login            samo otvori Chrome i sačekaj prijavu u Google
   --port ${DEFAULT_PORT}        port za Chrome DevTools
@@ -891,8 +1140,8 @@ const USAGE = `node tools/flow-images.mjs <folder-epizode> [opcije]
 export function parseArgs(argv) {
   const out = {
     dir: null, only: null, redo: null, count: 4, aspect: '16:9', model: null, parallel: 2, project: null,
-    projectUrl: null, newProject: false, rename: true, download: false, dryRun: false, login: false,
-    port: DEFAULT_PORT, help: false,
+    projectUrl: null, newProject: false, rename: true, download: null, dryRun: false, login: false,
+    port: DEFAULT_PORT, help: false, thumbnails: false,
   };
   const ids = (v, flag) => {
     const list = v.split(',').map((s) => s.trim()).filter(Boolean);
@@ -934,6 +1183,7 @@ export function parseArgs(argv) {
       case '--download': out.download = true; break;
       case '--no-download': out.download = false; break; // stari naziv; sada je to podrazumevano
       case '--dry-run': out.dryRun = true; break;
+      case '--thumbnails': out.thumbnails = true; break;
       case '--login': out.login = true; break;
       case '--port': out.port = int(value(), flag, 1, 65535); break;
       default:
@@ -944,6 +1194,12 @@ export function parseArgs(argv) {
   }
   if (out.newProject && out.projectUrl) throw new Error('--new i --project-url ne idu zajedno');
   if (!out.help && !out.login && !out.dir) throw new Error(`nedostaje folder epizode\n\n${USAGE}`);
+  // Shotovi se ne skidaju (živi u Flow-u do animacije); thumbnailovi da — vidi zaglavlje.
+  if (out.download === null) out.download = out.thumbnails;
+  if (out.thumbnails) {
+    out.only = out.only?.map((s) => s.toUpperCase()) ?? null;
+    out.redo = out.redo?.map((s) => s.toUpperCase()) ?? null;
+  }
   return out;
 }
 
@@ -969,6 +1225,43 @@ async function connectFlow(port, log, { projectUrl = null, anyFlowTab = false } 
   return { cdp, flow: new Flow(page, cdp, log) };
 }
 
+/**
+ * Šta se generiše: shotovi iz `storyboard.json` ili promptovi iz `thumbnails.md`. Krug (plan,
+ * slanje, imena, nastavak posle prekida) je isti; razlikuju se izvor, ime projekta, oznaka
+ * slike, fajl stanja i pregled.
+ * @param {string} dirArg folder epizode ili samo slug
+ * @param {{thumbnails?: boolean}} [opts]
+ */
+export function loadJob(dirArg, { thumbnails = false } = {}) {
+  if (!thumbnails) {
+    const { dir, storyboard } = loadStoryboard(dirArg);
+    const slug = storyboard.episode ?? path.basename(path.resolve(dir));
+    return {
+      dir, slug, items: storyboard.beats.flatMap((b) => b.shots),
+      prefix: 'shot', label: 'shot', per: 'shotu', stateName: 'flow.json', indexName: 'index.html',
+      projectName: projectNameFor(slug),
+      header: (n) => `${n} ${plural(n, 'shot', 'shota', 'shotova')} u storyboardu`,
+      render: (state) => renderIndex(storyboard, state),
+      finale: 'Izbor: otvori pregled, klik na najbolju sliku je otvara u Flow-u; animation prompt je ispod kandidata.',
+    };
+  }
+  let dir = dirArg;
+  if (!fs.existsSync(dir) && !dir.includes('/') && !dir.includes(path.sep)) dir = path.join('episodes', dir);
+  if (!fs.existsSync(dir)) throw new Error(`folder epizode ne postoji: ${dirArg}`);
+  const file = path.join(dir, 'thumbnails.md');
+  if (!fs.existsSync(file)) throw new Error(`nema thumbnails.md u ${dirArg} — prvo ga napiši (docs/reference/thumbnails.md)`);
+  const thumbs = parseThumbnails(fs.readFileSync(file, 'utf8'));
+  const slug = path.basename(path.resolve(dir));
+  return {
+    dir, slug, items: thumbItems(thumbs),
+    prefix: THUMB_PREFIX, label: 'thumb', per: 'promptu', stateName: THUMB_STATE, indexName: THUMB_INDEX, youtube: true,
+    projectName: `${projectNameFor(slug)} THUMBNAILS`,
+    header: (n) => `${n} ${plural(n, 'prompt', 'prompta', 'promptova')} u thumbnails.md`,
+    render: (state) => renderThumbIndex(slug, thumbs, state),
+    finale: 'Izbor: otvori pregled — uz svaku sliku je i njena veličina na telefonu (168×94); slike su u flow/ kao JPEG 1280×720 za YouTube (thumb1A-1.jpeg …).',
+  };
+}
+
 export async function main(argv, log = console.log) {
   const args = parseArgs(argv);
   if (args.help) {
@@ -987,17 +1280,17 @@ export async function main(argv, log = console.log) {
     return 0;
   }
 
-  const { dir, storyboard } = loadStoryboard(args.dir);
-  const slug = storyboard.episode ?? path.basename(path.resolve(dir));
-  const shots = storyboard.beats.flatMap((b) => b.shots);
+  const job = loadJob(args.dir, { thumbnails: args.thumbnails });
+  const { dir, slug, items: shots } = job;
   const ids = shots.map((s) => s.shot_id);
   const only = args.only ? resolveOnly(ids, args.only) : null;
   const redo = args.redo ? resolveOnly(ids, args.redo) : new Set();
   const inScope = (s) => !only || only.has(s.shot_id);
 
-  const state = loadState(dir);
+  const state = loadState(dir, job.stateName);
   if (args.newProject) state.project_url = null;
   if (args.projectUrl) state.project_url = args.projectUrl;
+  const save = () => saveState(dir, state, job.stateName);
 
   const { todo, skip } = planShots(shots, state, { only, redo });
   const opts = { rename: args.rename, download: args.download };
@@ -1007,22 +1300,22 @@ export async function main(argv, log = console.log) {
   const outDir = flowDir(dir);
   const writeIndex = () => {
     fs.mkdirSync(outDir, { recursive: true });
-    fs.writeFileSync(path.join(outDir, 'index.html'), renderIndex(storyboard, state));
+    fs.writeFileSync(path.join(outDir, job.indexName), job.render(state));
   };
 
-  log(`flow-images — ${slug} · ${shots.length} ${plural(shots.length, 'shot', 'shota', 'shotova')} u storyboardu · ` +
-    `${args.count} ${plural(args.count, 'slika', 'slike', 'slika')} po shotu · ${args.aspect} · ${args.parallel} paralelno`);
+  log(`flow-images — ${slug} · ${job.header(shots.length)} · ` +
+    `${args.count} ${plural(args.count, 'slika', 'slike', 'slika')} po ${job.per} · ${args.aspect} · ${args.parallel} paralelno`);
   log(`  za generisanje: ${todo.length ? todo.map((t) => t.shot.shot_id + (t.why === 'nov' ? '' : ` (${t.why})`)).join(', ') : 'ništa'}`);
   const done = skip.filter((s) => s.why === 'gotov');
   if (done.length) log(`  već gotovo: ${done.length} (${done.map((s) => s.shot.shot_id).join(', ')})`);
   for (const s of skip.filter((x) => x.why !== 'gotov')) log(`  preskačem ${s.shot.shot_id}: ${s.why}`);
   if (leftovers.length) log(`  dovršavanje imena/fajlova: ${leftovers.map((s) => s.shot_id).join(', ')}`);
-  log(`  projekat: ${state.project_url ?? `nov — „${args.project ?? projectNameFor(slug)}"`}`);
+  log(`  projekat: ${state.project_url ?? `nov — „${args.project ?? job.projectName}"`}`);
 
   if (args.dryRun) return 0;
   if (!todo.length && !leftovers.length) {
     writeIndex();
-    log(`Nema posla. Pregled: ${path.resolve(outDir, 'index.html')}`);
+    log(`Nema posla. Pregled: ${path.resolve(outDir, job.indexName)}`);
     return 0;
   }
 
@@ -1036,9 +1329,9 @@ export async function main(argv, log = console.log) {
       await flow.openProject(state.project_url);
       state.project_name = await flow.projectTitle() ?? state.project_name;
     } else {
-      state.project_name = args.project ?? projectNameFor(slug);
+      state.project_name = args.project ?? job.projectName;
       state.project_url = await flow.createProject(state.project_name);
-      saveState(dir, state);
+      save();
       log(`Nov projekat „${state.project_name}": ${state.project_url}`);
     }
     await flow.watchGenerations();
@@ -1053,8 +1346,8 @@ export async function main(argv, log = console.log) {
     const w = String(total).length;
     const order = new Map(queue.map((q, i) => [q.shot.shot_id, i + 1]));
     const tag = (shot) => (order.has(shot.shot_id)
-      ? `[${pad(order.get(shot.shot_id), w)}/${total}] shot ${shot.shot_id}`
-      : `${' '.repeat(2 * w + 3)} shot ${shot.shot_id}`);
+      ? `[${pad(order.get(shot.shot_id), w)}/${total}] ${job.label} ${shot.shot_id}`
+      : `${' '.repeat(2 * w + 3)} ${job.label} ${shot.shot_id}`);
     /** requestId -> {item, t0} */
     const inflight = new Map();
     /** shotovi čije slike čekaju ime i fajl; prvo zaostaci iz ranijih prolaza */
@@ -1075,20 +1368,30 @@ export async function main(argv, log = console.log) {
         writeIndex();
         return;
       }
-      const base = imageBase(shot.shot_id, im.k);
+      const base = imageBase(shot.shot_id, im.k, job.prefix);
       try {
         const { title, src } = await flow.openImage(im.media_id);
         if (args.rename && !im.renamed) {
-          const name = imageName(shot.shot_id, im.k, title || im.title);
+          const name = imageName(shot.shot_id, im.k, title || im.title, job.prefix);
           await flow.renameOpenImage(name);
           Object.assign(im, { renamed: true, name });
         }
-        if (args.download && !im.file) im.file = await download(src, outDir, base, cookie);
+        if (args.download && !im.file) {
+          const got = await download(src, outDir, base, cookie);
+          im.file = job.youtube ? await toYoutubeJpeg(outDir, got, base) : got;
+          const all = Object.values(state.shots).flatMap((s) => s.images ?? []);
+          const twin = sameFile(outDir, im, all);
+          if (twin) {
+            fs.rmSync(path.join(outDir, im.file), { force: true });
+            im.file = null;
+            throw new Error(`skinuta slika je ista kao ${twin.file} — pogrešna slika sa stranice, fajl obrisan`);
+          }
+        }
       } catch (err) {
         gaveUp.add(im.media_id);
         log(`${tag(shot)}  ${base}: ${err.message} (pokušava se pri sledećem pokretanju)`);
       }
-      saveState(dir, state);
+      save();
     };
 
     while (queue.length || inflight.size || finishing.length) {
@@ -1120,7 +1423,7 @@ export async function main(argv, log = console.log) {
           if (/doslovno|promenio se Flow/.test(err.message) || next.tries >= 2) {
             recordFailure(state, next.shot, err.message);
             failed.set(next.shot.shot_id, err.message);
-            saveState(dir, state);
+            save();
             log(`${tag(next.shot)}  NIJE POSLATO: ${err.message}`);
           } else {
             log(`${tag(next.shot)}  nije poslato (${err.message}) — ponovo za 30s`);
@@ -1142,7 +1445,7 @@ export async function main(argv, log = console.log) {
         if (res.media.length) {
           const fresh = recordBatch(state, f.item.shot, res.media);
           failed.delete(f.item.shot.shot_id);
-          saveState(dir, state);
+          save();
           if (args.rename || args.download) finishing.push(f.item.shot);
           else writeIndex();
           log(`${tag(f.item.shot)}  ${fresh.length}/${args.count} ${plural(fresh.length, 'slika', 'slike', 'slika')} za ${secs}s`);
@@ -1152,7 +1455,7 @@ export async function main(argv, log = console.log) {
         } else {
           recordFailure(state, f.item.shot, res.error);
           failed.set(f.item.shot.shot_id, res.error);
-          saveState(dir, state);
+          save();
           log(`${tag(f.item.shot)}  NIJE USPELO: ${res.error}`);
         }
       }
@@ -1166,7 +1469,7 @@ export async function main(argv, log = console.log) {
     }
     await flow.toGrid().catch(() => {});
   } finally {
-    saveState(dir, state);
+    save();
     writeIndex();
     cdp.close();
   }
@@ -1174,12 +1477,12 @@ export async function main(argv, log = console.log) {
   const mins = ((Date.now() - t0) / 60_000).toFixed(1);
   log('');
   log(`Gotovo za ${mins} min. Projekat: ${state.project_url}`);
-  log(`Pregled: ${path.resolve(outDir, 'index.html')}`);
+  log(`Pregled: ${path.resolve(outDir, job.indexName)}`);
   if (failed.size) {
     log(`Nije uspelo (${failed.size}): ${[...failed.keys()].join(', ')} — ponovno pokretanje pokušava samo njih.`);
     return 1;
   }
-  log('Izbor: otvori pregled, klik na najbolju sliku je otvara u Flow-u; animation prompt je ispod kandidata.');
+  log(job.finale);
   return 0;
 }
 

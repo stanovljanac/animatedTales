@@ -19,8 +19,10 @@ import { fileURLToPath } from 'node:url';
 import {
   batchPayloads, deepHas, editUrl, extFor, imageBase, imageName, loadState, main, normalizeProjectUrl,
   parseArgs, parseGenerated, planShots, projectNameFor, promptHash, recordBatch, recordFailure,
-  renderIndex, requestHasPrompt, saveState, stateFile, summaryOf, unfinished,
+  parseThumbnails, renderIndex, renderThumbIndex, requestHasPrompt, saveState, stateFile, summaryOf,
+  pImageReady, sameFile, thumbItems, toYoutubeJpeg, unfinished, YT_THUMB,
 } from '../tools/flow-images.mjs';
+import { probe, run } from '../tools/ffmpeg.mjs';
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const FIX = path.join(HERE, 'fixtures');
@@ -357,4 +359,248 @@ test('main: slike bez fajla na disku nisu posao — bez --download pregledač se
   const dry = [];
   await main([dir, '--download', '--dry-run'], (l) => dry.push(l));
   assert.match(dry.join('\n'), /dovršavanje imena\/fajlova/);
+});
+
+// ------------------------------------------------------------------ thumbnailovi (--thumbnails)
+
+const FENCE = '```';
+const THUMB_MD = `# Thumbnailovi — test-ep
+
+## Pregled
+
+| # | Koncept |
+|---|---|
+
+## 1. Zlato se prosipa
+
+**Poenta:** Kralj prosipa zlato.
+**Natpis (B):** „HE GAVE IT AWAY“ — gore levo, tamnocrvena (#B3161B). Alternative: „X“.
+**Naslov uz njega:** Did the King Really Crash Gold?
+**Pazi:** pozlaćen lik ne ide spreda.
+
+### 1A — bez teksta (9 reči)
+
+${FENCE}text
+STYLE: test, 16:9.
+SUBJECT: a king & his <sack>
+ACTION: gold falls
+${FENCE}
+
+### 1B — sa tekstom (12 reči)
+
+${FENCE}text
+STYLE: test, 16:9.
+SUBJECT: a king & his <sack>
+TEXT: the words "HE GAVE IT AWAY"
+ACTION: gold falls
+${FENCE}
+
+---
+
+## 2. Vaga
+
+**Poenta:** Vaga se nagnula.
+**Natpis (B):** „DID GOLD CRASH?“ — gore desno.
+**Naslov uz njega:** The King Who Gave Away Gold, or Did He?
+
+### 2A — bez teksta
+
+${FENCE}text
+STYLE: test, 16:9.
+SUBJECT: a balance
+${FENCE}
+`;
+
+function tmpThumbEpisode(md = THUMB_MD) {
+  const dir = path.join(fs.mkdtempSync(path.join(os.tmpdir(), 'flow-thumbs-')), 'test-ep');
+  fs.mkdirSync(dir);
+  if (md !== null) fs.writeFileSync(path.join(dir, 'thumbnails.md'), md);
+  return dir;
+}
+
+test('parseArgs --thumbnails: slike se skidaju osim uz --no-download; 1a i 1A su isti prompt', () => {
+  const a = parseArgs(['ep', '--thumbnails', '--only', '1a,2B', '--redo=3b']);
+  assert.equal(a.thumbnails, true);
+  assert.equal(a.download, true, 'izbor thumbnaila je poređenje na disku i na 168×94');
+  assert.deepEqual(a.only, ['1A', '2B']);
+  assert.deepEqual(a.redo, ['3B']);
+  assert.equal(parseArgs(['ep', '--thumbnails', '--no-download']).download, false);
+  assert.equal(parseArgs(['ep']).thumbnails, false);
+});
+
+test('imageName: thumbnail oznaka thumb1A-k, ni ona se ne udvostručuje', () => {
+  assert.equal(imageBase('1A', 2, 'thumb'), 'thumb1A-2');
+  assert.equal(imageName('1A', 2, 'King pours gold into crowd', 'thumb'), 'thumb1A-2 King pours gold into crowd');
+  assert.equal(imageName('1A', 3, 'thumb1A-2 King pours', 'thumb'), 'thumb1A-3 King pours');
+  assert.equal(imageName('1B', 1, '', 'thumb'), 'thumb1B-1');
+});
+
+test('parseThumbnails: promptovi doslovno iz text blokova, koncept daje natpis, ugao i naslov', () => {
+  const t = parseThumbnails(THUMB_MD.replace(/\n/g, '\r\n'));
+  assert.deepEqual(t.prompts.map((p) => `${p.id}:${p.concept}${p.variant}`), ['1A:1A', '1B:1B', '2A:2A']);
+  assert.equal(t.prompts[0].prompt, 'STYLE: test, 16:9.\nSUBJECT: a king & his <sack>\nACTION: gold falls');
+  assert.match(t.prompts[1].prompt, /^TEXT: the words "HE GAVE IT AWAY"$/m);
+  const [c1, c2] = t.concepts;
+  assert.deepEqual([c1.n, c1.name, c1.caption, c1.corner, c1.headline],
+    [1, 'Zlato se prosipa', 'HE GAVE IT AWAY', 'gore levo', 'Did the King Really Crash Gold?']);
+  assert.equal(c1.warn, 'pozlaćen lik ne ide spreda.');
+  assert.deepEqual([c2.caption, c2.corner], ['DID GOLD CRASH?', 'gore desno']);
+  assert.equal(thumbItems(t)[2].shot_id, '2A');
+  assert.equal(thumbItems(t)[2].image_prompt, t.prompts[2].prompt);
+});
+
+test('parseThumbnails: prazan red, blok koji fali ili nije zatvoren, ponovljen ili nijedan prompt su greška', () => {
+  assert.throws(() => parseThumbnails(THUMB_MD.replace('SUBJECT: a balance', '\nSUBJECT: a balance')), /prazan red u promptu 2A/);
+  assert.throws(() => parseThumbnails('## 1. X\n\n### 1A\n\nnema bloka\n'), /nema ```text bloka/);
+  assert.throws(() => parseThumbnails(`### 1A\n${FENCE}text\nSTYLE: x\n`), /nije zatvoren/);
+  assert.throws(() => parseThumbnails(`### 1A\n${FENCE}text\nA\n${FENCE}\n### 1A\n${FENCE}text\nB\n${FENCE}\n`), /1A se ponavlja/);
+  assert.throws(() => parseThumbnails('# samo naslov\n'), /nema nijednog prompta/);
+});
+
+test('renderThumbIndex: koncept po koncept, slika vodi u Flow, uz skinutu stoji 168×94, prompt doslovno', () => {
+  const t = parseThumbnails(THUMB_MD);
+  const items = thumbItems(t);
+  const state = { project_url: PROJECT, project_name: 'TEST EP THUMBNAILS', shots: {} };
+  recordBatch(state, items[0], [{ mediaId: ID(1), title: 'A' }, { mediaId: ID(2), title: 'B' }]);
+  state.shots['1A'].images[0].file = 'thumb1A-1.jpeg';
+  recordFailure(state, items[1], 'Flow <odbio>');
+  const html = renderThumbIndex('test-ep', t, state, { now: new Date('2026-11-26T10:00:00Z') });
+  assert.match(html, /<h2>1\. Zlato se prosipa<\/h2>/);
+  assert.match(html, /natpis \(B\): <b>„HE GAVE IT AWAY“<\/b> · gore levo/);
+  assert.match(html, /naslov uz njega: <b>Did the King Really Crash Gold\?<\/b>/);
+  assert.match(html, /pazi: pozlaćen lik/);
+  assert.match(html, new RegExp(`href="${PROJECT}/edit/${ID(1)}"`));
+  assert.match(html, /<img class="mini" src="thumb1A-1\.jpeg"[^>]*width="168" height="94"/);
+  assert.match(html, /thumb1A-2 · otvori u Flow-u/, 'neskinuta slika je kartica bez sličice');
+  assert.match(html, /nije uspelo: Flow &lt;odbio&gt;/);
+  assert.match(html, /1\/3 prompta generisano/);
+  assert.match(html, /<h3>1B <small>sa tekstom<\/small><\/h3>/);
+  const pre = html.match(/<div class="variant" id="t1A">[\s\S]*?<pre>([\s\S]*?)<\/pre>/)[1];
+  const back = pre.replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&amp;/g, '&');
+  assert.equal(back, t.prompts[0].prompt);
+});
+
+test('toYoutubeJpeg: webp 1376×768 iz Flow-a postaje JPEG 1280×720 pod istim imenom, original nestaje', async () => {
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'flow-yt-'));
+  await run(['-hide_banner', '-loglevel', 'error', '-y', '-f', 'lavfi', '-i', 'color=c=0x1F2A6B:s=1376x768',
+    '-frames:v', '1', path.join(dir, 'thumb2B-3.webp')]);
+  const out = await toYoutubeJpeg(dir, 'thumb2B-3.webp', 'thumb2B-3');
+  assert.equal(out, 'thumb2B-3.jpeg');
+  assert.deepEqual(fs.readdirSync(dir), ['thumb2B-3.jpeg'], 'ni original ni privremeni fajl ne ostaju');
+  const p = await probe(path.join(dir, out));
+  assert.deepEqual([p.width, p.height], [YT_THUMB.width, YT_THUMB.height]);
+  assert.ok(fs.statSync(path.join(dir, out)).size < 2 * 1024 * 1024, 'YouTube prima do 2 MB');
+
+  // Flow ume da vrati i .jpeg: isto ime, pretvaranje ga zamenjuje na mestu.
+  fs.renameSync(path.join(dir, out), path.join(dir, 'thumb2B-4.jpeg'));
+  assert.equal(await toYoutubeJpeg(dir, 'thumb2B-4.jpeg', 'thumb2B-4'), 'thumb2B-4.jpeg');
+  assert.deepEqual(fs.readdirSync(dir), ['thumb2B-4.jpeg']);
+});
+
+test('main --thumbnails --dry-run: promptovi iz thumbnails.md, zaseban projekat, ništa se ne piše', async () => {
+  const dir = tmpThumbEpisode();
+  const lines = [];
+  assert.equal(await main([dir, '--thumbnails', '--dry-run'], (l) => lines.push(l)), 0);
+  const out = lines.join('\n');
+  assert.match(out, /3 prompta u thumbnails\.md · 4 slike po promptu/);
+  assert.match(out, /za generisanje: 1A, 1B, 2A/);
+  assert.match(out, /projekat: nov — „TEST EP THUMBNAILS"/);
+  assert.equal(fs.existsSync(path.join(dir, 'flow')), false);
+
+  const only = [];
+  await main([dir, '--thumbnails', '--dry-run', '--only', '2a'], (l) => only.push(l));
+  assert.match(only.join('\n'), /za generisanje: 2A$/m);
+});
+
+test('main --thumbnails: stanje u thumbnails.json, ne dira flow.json shotova; bez thumbnails.md jasna greška', async () => {
+  const dir = tmpThumbEpisode();
+  const shotsState = { version: 1, project_url: PROJECT, project_name: 'TEST EP', shots: { '01': { status: 'done', images: [] } } };
+  saveState(dir, shotsState);
+  const t = parseThumbnails(THUMB_MD);
+  const state = { version: 1, project_url: PROJECT, project_name: 'TEST EP THUMBNAILS', shots: {} };
+  for (const [i, it] of thumbItems(t).entries()) {
+    recordBatch(state, it, [{ mediaId: ID(i + 1), title: 'T' }]);
+    Object.assign(state.shots[it.shot_id].images[0], { renamed: true, file: `thumb${it.shot_id}-1.jpeg` });
+  }
+  saveState(dir, state, 'thumbnails.json');
+  assert.equal(stateFile(dir, 'thumbnails.json'), path.join(dir, 'flow', 'thumbnails.json'));
+
+  const lines = [];
+  assert.equal(await main([dir, '--thumbnails'], (l) => lines.push(l)), 0);
+  assert.match(lines.join('\n'), /Nema posla\. Pregled: .*thumbnails\.html/);
+  assert.ok(fs.existsSync(path.join(dir, 'flow', 'thumbnails.html')));
+  assert.equal(fs.existsSync(path.join(dir, 'flow', 'index.html')), false, 'pregled shotova se ne prepisuje');
+  assert.deepEqual(loadState(dir), shotsState);
+
+  await assert.rejects(main([tmpThumbEpisode(null), '--thumbnails', '--dry-run'], () => {}), /nema thumbnails\.md/);
+});
+
+// 26. nov 2026, mansa-musa thumbnailovi 6B/8B/9B/10B: prva slika posle generisanja skinuta je kao
+// ista sitna mutna sličica (bajt-za-bajt isti fajl za četiri različite slike), jer je na stranici
+// slike u tom trenutku bila učitana samo ona. Stranica nije „spremna" dok slika nije pune veličine.
+test('pImageReady: sitna sličica nije slika; čeka se ona pune veličine (1376×768)', () => {
+  const MEDIA = '3a29acef-a0e2-463c-bd38-464acf9324bb';
+  const img = (src, alt, w, h, box = [800, 450]) => ({
+    src, alt, naturalWidth: w, naturalHeight: h, complete: true,
+    getBoundingClientRect: () => ({ width: box[0], height: box[1] }),
+  });
+  const page = (imgs) => ({
+    location: { pathname: `/fx/tools/flow/project/p/edit/${MEDIA}` },
+    document: {
+      querySelectorAll: (sel) => {
+        if (sel === 'img') return imgs;
+        if (sel === '[role=textbox]') return [{ getAttribute: () => 'What do you want to change?' }];
+        if (sel === 'input[aria-label="Editable text"]') return [{ value: 'King holding gold nugget' }];
+        return [];
+      },
+    },
+  });
+  const saved = { location: globalThis.location, document: globalThis.document };
+  try {
+    Object.assign(globalThis, page([img('https://flow.google.com/asb/blur', 'Read-only image view', 32, 18)]));
+    assert.equal(pImageReady(MEDIA, 'What do you want to create?'), null);
+
+    Object.assign(globalThis, page([
+      img('https://flow.google.com/asb/blur', 'Read-only image view', 32, 18),
+      img('https://flow.google.com/asb/full', 'Read-only image view', 1376, 768),
+    ]));
+    assert.deepEqual(pImageReady(MEDIA, 'What do you want to create?'),
+      { title: 'King holding gold nugget', src: 'https://flow.google.com/asb/full' });
+
+    // uspravna slika (9:16) je takođe pune veličine
+    Object.assign(globalThis, page([img('https://flow.google.com/asb/tall', 'Read-only image view', 768, 1376)]));
+    assert.equal(pImageReady(MEDIA, 'What do you want to create?')?.src, 'https://flow.google.com/asb/tall');
+
+    // 26. nov 2026, el-dorado thumbnailovi 8B-1/9B-1/10B-1: posle povratka iz mreže stranica nove
+    // slike još pokazuje prethodno otvorenu (pune veličine, učitanu), dok se nova tek učitava. Ta
+    // stara adresa se ne prihvata; čeka se nova, i kad obe stoje u stranici.
+    Object.assign(globalThis, page([img('https://flow.google.com/asb/prev', 'Read-only image view', 1376, 768)]));
+    assert.equal(pImageReady(MEDIA, 'What do you want to create?', 'https://flow.google.com/asb/prev'), null);
+    Object.assign(globalThis, page([
+      img('https://flow.google.com/asb/prev', 'Read-only image view', 1376, 768),
+      img('https://flow.google.com/asb/next', 'Read-only image view', 1376, 768),
+    ]));
+    assert.equal(pImageReady(MEDIA, 'What do you want to create?', 'https://flow.google.com/asb/prev')?.src,
+      'https://flow.google.com/asb/next');
+  } finally {
+    Object.assign(globalThis, saved);
+  }
+});
+
+test('sameFile: bajt-za-bajt isti fajl druge slike je duplikat; različit ili nepostojeći nije', () => {
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'fi-dup-'));
+  try {
+    fs.writeFileSync(path.join(dir, 'thumb7B-4.jpeg'), 'AAAA');
+    fs.writeFileSync(path.join(dir, 'thumb8B-1.jpeg'), 'AAAA');
+    fs.writeFileSync(path.join(dir, 'thumb8B-2.jpeg'), 'BBBB');
+    const images = [
+      { media_id: 'a', file: 'thumb7B-4.jpeg' }, { media_id: 'b', file: 'thumb8B-1.jpeg' },
+      { media_id: 'c', file: 'thumb8B-2.jpeg' }, { media_id: 'd', file: null }, { media_id: 'e', file: 'nema.jpeg' },
+    ];
+    assert.equal(sameFile(dir, images[1], images)?.media_id, 'a');
+    assert.equal(sameFile(dir, images[2], images), null);
+    assert.equal(sameFile(dir, images[3], images), null);
+  } finally {
+    fs.rmSync(dir, { recursive: true, force: true });
+  }
 });

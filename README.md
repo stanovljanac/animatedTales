@@ -100,7 +100,7 @@ node tests/check-fixtures.mjs # izvršni oblik ugovora iz schemas.md
 | `docs/reference/google-ai-plus.md` | šta pretplata daje lancu i koliko epizoda staje u mesec |
 | `docs/reference/flow-board.md` | `--board` tabla: generisanje van kuće, iz taba u Google Docs-u |
 | `docs/reference/flow-images.md` | slike u Flow-u bez ruku: prijava, krug, opcije, kad pukne |
-| `docs/reference/thumbnails.md` | thumbnailovi: pet koncepata po epizodi, A bez teksta i B sa tekstom, pravila i natpis |
+| `docs/reference/thumbnails.md` | thumbnailovi: 4–5 koncepata po epizodi, glavna slika videa (junak velik + ime/udica), samo sa natpisom, tabela grešaka; slike pravi `flow-images.mjs --thumbnails` |
 | `episodes/<slug>/flow/` | `index.html` za izbor kandidata i `flow.json` stanje (slike samo uz `--download`) — ne komituje se |
 | `tools/` | ceo lanac, čist Node, bez zavisnosti |
 | `tests/` | testovi i fixture epizode koje definišu ugovor |
